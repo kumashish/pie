@@ -1,5 +1,4 @@
 <!-- MARKET-SNAPSHOT-START -->
-<<<<<<< HEAD
 ### 🌐 Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
