@@ -1,0 +1,65 @@
+PORTFOLIO INTELLIGENCE ENGINE
+================================
+
+Generated At : 2026-07-24 10:01:53 UTC
+Symbol       : ^NSEBANK
+Last Price   : 56,693.50
+
+TRADE RECOMMENDATION
+====================
+Strategy     : Call Debit Spread
+Actionable   : ✅ Yes
+
+SUGGESTED TRADE
+===============
+Expiry       : 2026-08-25
+Expected Move: 3,125.66
+VIX          : 18.62
+VIX Source   : live ^VIX
+Buy Call: 56,700.00
+Sell Call: 59,000.00
+
+Exit Strategy:
+- Exit if the trend regime becomes Neutral, Bear, or Strong Bear.
+- Exit if spot closes below EMA50.
+- Reassess or close at 21 days to expiry.
+
+Estimated from spot and annualized VIX only; premiums, liquidity, and execution are not included.
+
+Rationale
+---------
+Confirmed bullish trend supports a directional call debit spread.
+
+Limitations
+-----------
+- Validate estimated strikes and expiry against live option-chain liquidity and pricing.
+- This is an advisory signal, not an execution instruction.
+
+MARKET INTELLIGENCE
+-------------------
+Regime       : Strong Bull
+Trend Score  : 8.5 / 10
+Confidence   : 100%
+
+INDICATORS
+----------
+EMA20       : 57,394.70
+EMA50       : 56,830.37
+EMA200      : 56,516.43
+RSI(14)     : 45.11
+ATR(14)     : 774.91
+ADX(14)     : 13.99
+
+TREND EXPLANATION
+-----------------
+Trend Score: 8.5
+
+Reason:
+[PASS] Price is above EMA200.
+[PASS] EMA20 is above EMA50.
+[PASS] EMA50 is above EMA200.
+[PASS] RSI is healthy.
+[FAIL] ADX does not indicate a strong trend.
+[PASS] ATR is expanding.
+[FAIL] Price is not making higher highs.
+[FAIL] Price is not making higher lows.

@@ -1,4 +1,5 @@
 <!-- MARKET-SNAPSHOT-START -->
+<<<<<<< HEAD
 ### 🌐 Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
@@ -30,6 +31,20 @@
 | Total Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 52 | 10 | **83.3%** | +3.2% | **+44.8%** | -3.8% |
+=======
+| Market    | Updated   | Trend      | Strategy          | Signal | Since          |
+| --------- | --------- | ---------- | ----------------- | ------ | -------------- |
+| NIFTY 50  | 15:31 IST | 🔴 Bear     | Buy NIFTY 25-Aug-2026-23750-PE<br>Sell NIFTY 25-Aug-2026-23000-PE | Active | Today, 11:27   |
+| BANKNIFTY | 15:31 IST | 🟢 Strong Bull | Buy BANKNIFTY 25-Aug-2026-56700-CE<br>Sell BANKNIFTY 25-Aug-2026-59000-CE | NEW    | Today, 15:31   |
+| SPY       | 22:33 IST | 🟢 Strong Bull | Buy SPY 25-Aug-2026-741-CE<br>Sell SPY 25-Aug-2026-770-CE | NEW    | Today, 22:33   |
+| QQQ       | 22:33 IST | 🟢 Bull     | Buy QQQ 25-Aug-2026-689-CE<br>Sell QQQ 25-Aug-2026-716-CE | Active | Today, 12:31   |
+| HDFCBANK.NS | 15:31 IST | 🔴 Strong Bear | Buy HDFCBANK.NS 25-Aug-2026-743-PE<br>Sell HDFCBANK.NS 25-Aug-2026-712-PE | Active | Today, 13:27   |
+| ICICIBANK.NS | 15:31 IST | 🟢 Strong Bull | Buy ICICIBANK.NS 25-Aug-2026-1430-CE<br>Sell ICICIBANK.NS 25-Aug-2026-1490-CE | Active | Today, 13:27   |
+| INFY.NS   | 15:31 IST | 🔴 Strong Bear | Buy INFY.NS 25-Aug-2026-1041-PE<br>Sell INFY.NS 25-Aug-2026-998-PE | Active | Today, 13:27   |
+| SBIN.NS   | 15:31 IST | 🟢 Strong Bull | Buy SBIN.NS 25-Aug-2026-1015-CE<br>Sell SBIN.NS 25-Aug-2026-1057-CE | NEW    | Today, 15:31   |
+| TCS.NS    | 15:31 IST | 🔴 Bear     | Buy TCS.NS 25-Aug-2026-2254-PE<br>Sell TCS.NS 25-Aug-2026-2161-PE | Active | Today, 13:27   |
+| WIPRO.NS  | 15:31 IST | 🔴 Strong Bear | Buy WIPRO.NS 25-Aug-2026-177-PE<br>Sell WIPRO.NS 25-Aug-2026-170-PE | Active | Today, 13:27   |
+>>>>>>> 6454d45939dd411f6311217c3b6ed07ae905a099
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)

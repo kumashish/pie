@@ -1,0 +1,65 @@
+PORTFOLIO INTELLIGENCE ENGINE
+================================
+
+Generated At : 2026-07-24 10:01:54 UTC
+Symbol       : HDFCBANK.NS
+Last Price   : 742.80
+
+TRADE RECOMMENDATION
+====================
+Strategy     : Put Debit Spread
+Actionable   : ✅ Yes
+
+SUGGESTED TRADE
+===============
+Expiry       : 2026-08-25
+Expected Move: 40.95
+VIX          : 18.62
+VIX Source   : live ^VIX
+Buy Put : 743.00
+Sell Put : 712.00
+
+Exit Strategy:
+- Exit if the trend regime becomes Neutral, Bull, or Strong Bull.
+- Exit if spot closes above EMA50.
+- Reassess or close at 21 days to expiry.
+
+Estimated from spot and annualized VIX only; premiums, liquidity, and execution are not included.
+
+Rationale
+---------
+Confirmed bearish trend supports a directional put debit spread.
+
+Limitations
+-----------
+- Validate estimated strikes and expiry against live option-chain liquidity and pricing.
+- This is an advisory signal, not an execution instruction.
+
+MARKET INTELLIGENCE
+-------------------
+Regime       : Strong Bear
+Trend Score  : 1.0 / 10
+Confidence   : 100%
+
+INDICATORS
+----------
+EMA20       : 785.48
+EMA50       : 788.15
+EMA200      : 846.99
+RSI(14)     : 33.27
+ATR(14)     : 15.61
+ADX(14)     : 25.48
+
+TREND EXPLANATION
+-----------------
+Trend Score: 1.0
+
+Reason:
+[FAIL] Price is below EMA200.
+[FAIL] EMA20 is not above EMA50.
+[FAIL] EMA50 is not above EMA200.
+[FAIL] RSI is outside the healthy range.
+[PASS] ADX indicates a strong trend.
+[FAIL] ATR is not expanding.
+[FAIL] Price is not making higher highs.
+[FAIL] Price is not making higher lows.

@@ -1,0 +1,65 @@
+PORTFOLIO INTELLIGENCE ENGINE
+================================
+
+Generated At : 2026-07-24 10:01:57 UTC
+Symbol       : INFY.NS
+Last Price   : 1,040.90
+
+TRADE RECOMMENDATION
+====================
+Strategy     : Put Debit Spread
+Actionable   : ✅ Yes
+
+SUGGESTED TRADE
+===============
+Expiry       : 2026-08-25
+Expected Move: 57.39
+VIX          : 18.62
+VIX Source   : live ^VIX
+Buy Put : 1,041.00
+Sell Put : 998.00
+
+Exit Strategy:
+- Exit if the trend regime becomes Neutral, Bull, or Strong Bull.
+- Exit if spot closes above EMA50.
+- Reassess or close at 21 days to expiry.
+
+Estimated from spot and annualized VIX only; premiums, liquidity, and execution are not included.
+
+Rationale
+---------
+Confirmed bearish trend supports a directional put debit spread.
+
+Limitations
+-----------
+- Validate estimated strikes and expiry against live option-chain liquidity and pricing.
+- This is an advisory signal, not an execution instruction.
+
+MARKET INTELLIGENCE
+-------------------
+Regime       : Strong Bear
+Trend Score  : 0.5 / 10
+Confidence   : 100%
+
+INDICATORS
+----------
+EMA20       : 1,069.94
+EMA50       : 1,108.95
+EMA200      : 1,304.39
+RSI(14)     : 41.40
+ATR(14)     : 30.65
+ADX(14)     : 14.06
+
+TREND EXPLANATION
+-----------------
+Trend Score: 0.5
+
+Reason:
+[FAIL] Price is below EMA200.
+[FAIL] EMA20 is not above EMA50.
+[FAIL] EMA50 is not above EMA200.
+[FAIL] RSI is outside the healthy range.
+[FAIL] ADX does not indicate a strong trend.
+[PASS] ATR is expanding.
+[FAIL] Price is not making higher highs.
+[FAIL] Price is not making higher lows.
