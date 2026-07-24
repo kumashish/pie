@@ -2,47 +2,17 @@
 ### 🌐 Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 22:14 IST | 🟢 Naked Put       | 8.5/10    | Sell SPY 25-Aug-2026-520-PE | New                    |
-| NIFTY 50  | 22:12 IST | 🔴 Put Debit Spread | 7.6/10    | Buy NIFTY 25-Aug-2026-23750-PE<br> Sell NIFTY 25-Aug-2026-23000-PE | Active (Today, 11:27)  |
-| BANKNIFTY | 22:12 IST | 🟢 Call Debit Spread | 7.4/10    | Buy BANKNIFTY 25-Aug-2026-56700-CE<br> Sell BANKNIFTY 25-Aug-2026-59000-CE | Active (Today, 15:46)  |
-| QQQ       | 22:12 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-686-CE<br> Sell QQQ 25-Aug-2026-714-CE | Active (Today, 12:31)  |
+| SPY       | 00:26 IST | 🟢 Call Debit Spread | 7.0/10    | Buy SPY 25-Aug-2026-738-CE<br> Sell SPY 25-Aug-2026-769-CE | New                    |
+| QQQ       | 00:26 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-685-CE<br> Sell QQQ 25-Aug-2026-714-CE | New                    |
 
 ### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| TITAN.NS  | 22:12 IST | 🟢 Call Debit Spread | 10.0/10   | Buy TITAN 25-Aug-2026-4680-CE<br> Sell TITAN 25-Aug-2026-4870-CE | Active (Today, 15:47)  |
-| SUNPHARMA.NS | 22:12 IST | 🟢 Call Debit Spread | 9.9/10    | Buy SUNPHARMA 25-Aug-2026-1940-CE<br> Sell SUNPHARMA 25-Aug-2026-2020-CE | Active (Today, 15:47)  |
-| ICICIBANK.NS | 22:12 IST | 🟢 Call Debit Spread | 9.6/10    | Buy ICICIBANK 25-Aug-2026-1430-CE<br> Sell ICICIBANK 25-Aug-2026-1490-CE | Active (Today, 13:27)  |
-| BAJAJ-AUTO.NS | 22:12 IST | 🟢 Call Debit Spread | 9.6/10    | Buy BAJAJ-AUTO 25-Aug-2026-11100-CE<br> Sell BAJAJ-AUTO 25-Aug-2026-11600-CE | Active (Today, 15:46)  |
-| HDFCBANK.NS | 22:12 IST | 🔴 Put Debit Spread | 9.2/10    | Buy HDFCBANK 25-Aug-2026-740-PE<br> Sell HDFCBANK 25-Aug-2026-710-PE | Active (Today, 13:27)  |
-| HDFCLIFE.NS | 22:12 IST | 🔴 Put Debit Spread | 9.0/10    | Buy HDFCLIFE 25-Aug-2026-560-PE<br> Sell HDFCLIFE 25-Aug-2026-540-PE | Active (Today, 15:46)  |
-| HINDALCO.NS | 22:12 IST | 🟡 Long Butterfly  | 8.3/10    | Buy HINDALCO 25-Aug-2026-920-CE<br> Sell 2x HINDALCO 25-Aug-2026-940-CE<br> Buy HINDALCO 25-Aug-2026-970-CE | Active (Today, 15:57)  |
-| JSWSTEEL.NS | 22:12 IST | 🟡 Long Butterfly  | 7.5/10    | Buy JSWSTEEL 25-Aug-2026-1210-CE<br> Sell 2x JSWSTEEL 25-Aug-2026-1240-CE<br> Buy JSWSTEEL 25-Aug-2026-1280-CE | Active (Today, 16:20)  |
-| HCLTECH.NS | 22:12 IST | 🟡 Iron Condor     | 7.1/10    | Buy HCLTECH 25-Aug-2026-1170-PE<br> Sell HCLTECH 25-Aug-2026-1200-PE<br> Sell HCLTECH 25-Aug-2026-1340-CE<br> Buy HCLTECH 25-Aug-2026-1380-CE | Active (Today, 20:42)  |
-| TCS.NS    | 22:12 IST | 🟡 Credit Spread   | 6.9/10    | Sell TCS 25-Aug-2026-2320-CE<br> Buy TCS 25-Aug-2026-2380-CE | Active (Today, 22:10)  |
-| SBILIFE.NS | 22:12 IST | 🟡 Iron Condor     | 6.8/10    | Buy SBILIFE 25-Aug-2026-1700-PE<br> Sell SBILIFE 25-Aug-2026-1760-PE<br> Sell SBILIFE 25-Aug-2026-1960-CE<br> Buy SBILIFE 25-Aug-2026-2010-CE | Active (Today, 20:42)  |
-| M&M.NS    | 22:12 IST | 🟡 Long Butterfly  | 6.4/10    | Buy M&M 25-Aug-2026-3070-CE<br> Sell 2x M&M 25-Aug-2026-3160-CE<br> Buy M&M 25-Aug-2026-3250-CE | Active (Today, 16:40)  |
-| ULTRACEMCO.NS | 22:12 IST | 🟡 Long Butterfly  | 6.2/10    | Buy ULTRACEMCO 25-Aug-2026-11500-CE<br> Sell 2x ULTRACEMCO 25-Aug-2026-11800-CE<br> Buy ULTRACEMCO 25-Aug-2026-12200-CE | Active (Today, 16:36)  |
-| BHARTIARTL.NS | 22:12 IST | 🟡 Iron Condor     | 6.1/10    | Buy BHARTIARTL 25-Aug-2026-1740-PE<br> Sell BHARTIARTL 25-Aug-2026-1790-PE<br> Sell BHARTIARTL 25-Aug-2026-2000-CE<br> Buy BHARTIARTL 25-Aug-2026-2060-CE | Active (Today, 22:10)  |
-| BAJAJFINSV.NS | 22:12 IST | 🟡 Iron Condor     | 6.1/10    | Buy BAJAJFINSV 25-Aug-2026-1720-PE<br> Sell BAJAJFINSV 25-Aug-2026-1770-PE<br> Sell BAJAJFINSV 25-Aug-2026-1980-CE<br> Buy BAJAJFINSV 25-Aug-2026-2030-CE | Active (Today, 22:10)  |
 
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 52 | 10 | **83.3%** | +3.2% | **+44.8%** | -3.8% |
-=======
-| Market    | Updated   | Trend      | Strategy          | Signal | Since          |
-| --------- | --------- | ---------- | ----------------- | ------ | -------------- |
-| NIFTY 50  | 15:31 IST | 🔴 Bear     | Buy NIFTY 25-Aug-2026-23750-PE<br>Sell NIFTY 25-Aug-2026-23000-PE | Active | Today, 11:27   |
-| BANKNIFTY | 15:31 IST | 🟢 Strong Bull | Buy BANKNIFTY 25-Aug-2026-56700-CE<br>Sell BANKNIFTY 25-Aug-2026-59000-CE | NEW    | Today, 15:31   |
-| SPY       | 22:33 IST | 🟢 Strong Bull | Buy SPY 25-Aug-2026-741-CE<br>Sell SPY 25-Aug-2026-770-CE | NEW    | Today, 22:33   |
-| QQQ       | 22:33 IST | 🟢 Bull     | Buy QQQ 25-Aug-2026-689-CE<br>Sell QQQ 25-Aug-2026-716-CE | Active | Today, 12:31   |
-| HDFCBANK.NS | 15:31 IST | 🔴 Strong Bear | Buy HDFCBANK.NS 25-Aug-2026-743-PE<br>Sell HDFCBANK.NS 25-Aug-2026-712-PE | Active | Today, 13:27   |
-| ICICIBANK.NS | 15:31 IST | 🟢 Strong Bull | Buy ICICIBANK.NS 25-Aug-2026-1430-CE<br>Sell ICICIBANK.NS 25-Aug-2026-1490-CE | Active | Today, 13:27   |
-| INFY.NS   | 15:31 IST | 🔴 Strong Bear | Buy INFY.NS 25-Aug-2026-1041-PE<br>Sell INFY.NS 25-Aug-2026-998-PE | Active | Today, 13:27   |
-| SBIN.NS   | 15:31 IST | 🟢 Strong Bull | Buy SBIN.NS 25-Aug-2026-1015-CE<br>Sell SBIN.NS 25-Aug-2026-1057-CE | NEW    | Today, 15:31   |
-| TCS.NS    | 15:31 IST | 🔴 Bear     | Buy TCS.NS 25-Aug-2026-2254-PE<br>Sell TCS.NS 25-Aug-2026-2161-PE | Active | Today, 13:27   |
-| WIPRO.NS  | 15:31 IST | 🔴 Strong Bear | Buy WIPRO.NS 25-Aug-2026-177-PE<br>Sell WIPRO.NS 25-Aug-2026-170-PE | Active | Today, 13:27   |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)

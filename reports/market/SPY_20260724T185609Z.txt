@@ -1,0 +1,67 @@
+PORTFOLIO INTELLIGENCE ENGINE
+================================
+
+Generated At : 2026-07-24 18:56:09 UTC
+Symbol       : SPY
+Last Price   : 738.37
+
+TRADE RECOMMENDATION
+====================
+Strategy     : Call Debit Spread
+Actionable   : ✅ Yes
+
+SUGGESTED TRADE
+===============
+Expiry       : 2026-08-25
+Expected Move: 41.32
+VIX          : 18.90
+VIX Source   : live ^VIX
+Buy Call: 738.00
+Sell Call: 769.00
+
+Exit Strategy:
+- Exit if the trend regime becomes Neutral, Bear, or Strong Bear.
+- Exit if spot closes below EMA50.
+- Reassess or close at 21 days to expiry.
+
+Estimated from spot and annualized VIX only; premiums, liquidity, and execution are not included.
+
+Rationale
+---------
+Best fit strategy (69.8% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and relative strength favors Call Debit Spread.
+
+Limitations
+-----------
+- Validate estimated strikes and expiry against live option-chain liquidity.
+- This is an advisory signal, not an execution instruction.
+
+MARKET INTELLIGENCE
+-------------------
+Regime       : Bull
+Trend Score  : 7.5 / 10
+Confidence   : 100% [Grade: A (High Conviction)]
+
+INDICATORS
+----------
+EMA20       : 745.10
+EMA50       : 738.89
+EMA100      : 723.94
+EMA200      : 699.27
+RSI(14)     : 44.73
+ATR(14)     : 8.14
+ADX(14)     : 19.43
+BB(20,2)    : 0.19
+
+TREND EXPLANATION
+-----------------
+Trend Score: 7.5
+
+Reason:
+[PASS] Price is above EMA200.
+[PASS] EMA20 is above EMA50.
+[PASS] EMA50 is above EMA200.
+[FAIL] RSI is outside the healthy range.
+[FAIL] ADX does not indicate a strong trend.
+[FAIL] ATR is not expanding.
+[PASS] Price is making higher highs.
+[PASS] Price is making higher lows.
