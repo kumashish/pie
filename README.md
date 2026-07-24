@@ -43,7 +43,6 @@
 | SBIN.NS   | 15:31 IST | 🟢 Strong Bull | Buy SBIN.NS 25-Aug-2026-1015-CE<br>Sell SBIN.NS 25-Aug-2026-1057-CE | NEW    | Today, 15:31   |
 | TCS.NS    | 15:31 IST | 🔴 Bear     | Buy TCS.NS 25-Aug-2026-2254-PE<br>Sell TCS.NS 25-Aug-2026-2161-PE | Active | Today, 13:27   |
 | WIPRO.NS  | 15:31 IST | 🔴 Strong Bear | Buy WIPRO.NS 25-Aug-2026-177-PE<br>Sell WIPRO.NS 25-Aug-2026-170-PE | Active | Today, 13:27   |
->>>>>>> 6454d45939dd411f6311217c3b6ed07ae905a099
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
