@@ -15,28 +15,159 @@ def load_market_data(json_path: str = "market_snapshot.json") -> list[dict]:
         return []
 
 
+def format_regime_badge(trend_str: str) -> str:
+    """Format market regime with color-coded status badges."""
+    clean = trend_str.strip().lower()
+    if "strong_bull" in clean or "strong bull" in clean:
+        return "🟢 Strong Bull"
+    if "bull" in clean:
+        return "🟢 Bull"
+    if "strong_bear" in clean or "strong bear" in clean:
+        return "🔴 Strong Bear"
+    if "bear" in clean:
+        return "🔴 Bear"
+    if "neutral" in clean:
+        return "🟡 Neutral"
+    return trend_str
+
+
+def format_fit_score_badge(fit_score: float) -> str:
+    """Format strategy fit score as Score / 10."""
+    score_out_of_10 = min(10.0, max(0.0, fit_score / 10.0))
+    if fit_score > 0.0:
+        return f"{score_out_of_10:.1f}/10"
+    return "N/A"
+
+
+def get_strategy_display_name(stype: str) -> str:
+    """Get clean color-coded full human-readable strategy name.
+
+    🟢 Bullish Strategies (Call Debit Spread, Naked Put, PMCC)
+    🔴 Bearish Strategies (Put Debit Spread, Naked Call)
+    🟡 Neutral Strategies (Long Butterfly, Iron Condor, Iron Butterfly, Jade Lizard, etc.)
+    """
+    clean = stype.lower().replace("_", " ").strip()
+    if not clean:
+        return "N/A"
+
+    if clean in {"call debit spread", "call_debit_spread"}:
+        return "🟢 Call Debit Spread"
+    if clean in {"put debit spread", "put_debit_spread"}:
+        return "🔴 Put Debit Spread"
+    if clean in {"butterfly", "long butterfly", "long_butterfly"}:
+        return "🟡 Long Butterfly"
+    if clean in {"broken wing butterfly", "broken_wing_butterfly"}:
+        return "🟡 Broken Wing Butterfly"
+    if clean in {"iron condor", "iron_condor"}:
+        return "🟡 Iron Condor"
+    if clean in {"iron butterfly", "iron_butterfly"}:
+        return "🟡 Iron Butterfly"
+    if clean in {"jade lizard", "jade_lizard"}:
+        return "🟡 Jade Lizard"
+    if clean in {"credit spread", "credit_spread"}:
+        return "🟡 Credit Spread"
+    if clean in {"naked put", "naked_put"}:
+        return "🟢 Naked Put"
+    if clean in {"naked call", "naked_call"}:
+        return "🔴 Naked Call"
+    if clean in {"short strangle", "short_strangle"}:
+        return "🟡 Short Strangle"
+    if clean in {"collar"}:
+        return "🟡 Collar"
+    if clean in {"poor mans covered call", "poor_mans_covered_call"}:
+        return "🟢 Poor Man's Covered Call"
+    return f"🟡 {clean.title()}"
+
+
 def format_market_table(markets: list[dict]) -> str:
-    """Format market data as Markdown table."""
+    """Format market snapshot entries into Markdown tables."""
     if not markets:
         return "<!-- MARKET-SNAPSHOT-START -->\n<!-- MARKET-SNAPSHOT-END -->"
-    
-    # Build table header and rows
-    lines = ["<!-- MARKET-SNAPSHOT-START -->"]
-    lines.append("| Market    | Updated   | Trend      | Strategy          | Signal | Since  |")
-    lines.append("| --------- | --------- | ---------- | ----------------- | ------ | ------ |")
-    
+
+    always_include = {"^NSEI", "^NSEBANK", "SPY", "QQQ", "NIFTY 50", "BANKNIFTY"}
+    simple_debit_types = {"call_debit_spread", "put_debit_spread"}
+
+    table1_data = []
+    table2_data = []
+    table3_data = []
+
     for market in markets:
+        symbol = market.get("symbol", "").upper()
         market_name = market.get("market", "")
-        updated = market.get("updated", "")
-        trend = market.get("trend", "")
+        fit_score = float(market.get("fit_score", 0.0))
+        stype = market.get("strategy_type", "").lower()
         strategy = market.get("strategy", "")
-        signal = market.get("signal", "")
+        signal_raw = market.get("signal", "")
+
+        if strategy == "No Trade":
+            continue
+
+        if "exit" in signal_raw.lower() or "close" in signal_raw.lower():
+            table3_data.append(market)
+        elif symbol in always_include or market_name.upper() in always_include:
+            table1_data.append(market)
+        else:
+            is_simple_debit = stype in simple_debit_types
+            if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
+                table2_data.append(market)
+
+    table1_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table2_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+
+    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
+
+    lines = ["<!-- MARKET-SNAPSHOT-START -->"]
+    lines.append("### 🌐 Macro Benchmark Indices")
+    lines.append(header)
+    for market in table1_data:
+        market_name = market.get("market", "")
+        stype = market.get("strategy_type", "")
+        strat_name = get_strategy_display_name(stype)
+        fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+        updated = market.get("updated", "")
+        strategy = market.get("strategy", "")
+        signal_raw = market.get("signal", "")
         since = market.get("since", "")
-        
-        # Pad columns for alignment
-        line = f"| {market_name:<9} | {updated:<9} | {trend:<10} | {strategy:<17} | {signal:<6} | {since:<6} |"
-        lines.append(line)
-    
+        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+
+    lines.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
+    lines.append(header)
+    for market in table2_data:
+        market_name = market.get("market", "")
+        stype = market.get("strategy_type", "")
+        strat_name = get_strategy_display_name(stype)
+        fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+        updated = market.get("updated", "")
+        strategy = market.get("strategy", "")
+        signal_raw = market.get("signal", "")
+        since = market.get("since", "")
+        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+
+    if table3_data:
+        lines.append("\n### ⚡ Recently Closed / Exit Signals")
+        lines.append(header)
+        for market in table3_data:
+            market_name = market.get("market", "")
+            stype = market.get("strategy_type", "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+            updated = market.get("updated", "")
+            strategy = market.get("strategy", "")
+            signal_raw = market.get("signal", "")
+            since = market.get("since", "")
+            signal_display = f"{signal_raw} ({since})" if since else signal_raw
+            lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+
+    try:
+        from pie.market.performance import PerformanceTracker
+        summary = PerformanceTracker().calculate_summary()
+        lines.append("\n" + summary.format_markdown_table())
+    except Exception:
+        pass
+
     lines.append("<!-- MARKET-SNAPSHOT-END -->")
     return "\n".join(lines)
 

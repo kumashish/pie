@@ -7,6 +7,7 @@ from pie.market.indicators.base import IndicatorResult
 from pie.market.strategy import StrategyRecommendation, StrategyType
 from pie.market.trend.models import ConfidenceScore, MarketRegime, TrendAnalysis, TrendScore
 from pie.reporting.market import write_market_report
+from pie.reporting.readme_update import generate_readme_snapshot
 
 
 def test_write_market_report_creates_timestamped_dashboard(tmp_path: Path) -> None:
@@ -46,3 +47,45 @@ def test_write_market_report_creates_timestamped_dashboard(tmp_path: Path) -> No
     assert "PORTFOLIO INTELLIGENCE ENGINE" in dashboard
     assert "Strategy     : Call Debit Spread" in dashboard
     assert "No Trade: a live VIX-based estimate is unavailable" in dashboard
+
+
+def test_generate_readme_snapshot_filters_strong_trends_and_always_includes_core_indices() -> None:
+    now = datetime(2026, 7, 24, 12, 0, 0)
+    market_data = [
+        {
+            "symbol": "^NSEI",
+            "market": "NIFTY 50",
+            "last_updated": datetime(2026, 7, 24, 12, 0, 0),
+            "trend": "🔴 Bear",
+            "fit_score": 73.9,
+            "strategy": "Put Spread",
+            "signal": "Active",
+            "signal_since": datetime(2026, 7, 24, 12, 0, 0),
+        },
+        {
+            "symbol": "AAPL",
+            "market": "AAPL",
+            "last_updated": datetime(2026, 7, 24, 12, 0, 0),
+            "trend": "🟡 Neutral",
+            "fit_score": 0.0,
+            "strategy": "No Trade",
+            "signal": "Hold",
+            "signal_since": datetime(2026, 7, 24, 12, 0, 0),
+        },
+        {
+            "symbol": "INFY.NS",
+            "market": "INFY.NS",
+            "last_updated": datetime(2026, 7, 24, 12, 0, 0),
+            "trend": "🔴 Strong Bear",
+            "fit_score": 85.0,
+            "strategy": "Put Spread",
+            "signal": "Active",
+            "signal_since": datetime(2026, 7, 24, 12, 0, 0),
+        },
+    ]
+
+    snapshot_md = generate_readme_snapshot(market_data, current_time=now)
+    assert "NIFTY 50" in snapshot_md
+    assert "INFY.NS" in snapshot_md
+    assert "AAPL" not in snapshot_md
+

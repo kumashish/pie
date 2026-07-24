@@ -62,7 +62,7 @@ def write_market_report(
             "-" * 19,
             f"Regime       : {trend.regime.replace('_', ' ').title()}",
             f"Trend Score  : {trend.trend_score.value:.1f} / 10",
-            f"Confidence   : {trend.confidence.value:.0%}",
+            f"Confidence   : {trend.confidence.value:.0%} [Grade: {trend.confidence.grade}]",
             "",
             "INDICATORS",
             "-" * 10,

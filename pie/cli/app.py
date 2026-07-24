@@ -5,6 +5,7 @@ from decimal import Decimal
 from pathlib import Path
 from typing import Annotated
 
+import polars as pl
 import typer
 from rich.console import Console
 from rich.table import Table
@@ -18,7 +19,7 @@ from pie.market.indicators.engine import IndicatorEngine
 from pie.market.strategy import StrategyRecommendation, select_strategy
 from pie.market.trade_estimate import EstimatedTrade, estimate_trade
 from pie.market.trend.engine import TrendEngine
-from pie.market_data.csv_loader import load_ohlcv_csv
+from pie.market_data.csv_loader import load_cached_market_data, load_ohlcv_csv, save_market_data
 from pie.market_data.exceptions import MarketDataError
 from pie.market_data.snapshots import SnapshotBuilder
 from pie.providers.yahoo import UrllibHTTPClient, YahooFinanceProvider
@@ -51,20 +52,37 @@ def _format_strike(strike: float) -> str:
 def format_trade_legs(symbol: str, estimated_trade: EstimatedTrade | None) -> str:
     """Render an estimated trade as option-symbol-style leg lines.
 
-    e.g. "Buy NIFTY 28-Jul-2026-23600-PE<br>Sell NIFTY 28-Jul-2026-23000-PE"
-    (<br> forces a line break inside a markdown table cell.)
+    e.g. "Buy 1x NIFTY 28-Jul-2026-23600-PE<br> Sell 1x NIFTY 28-Jul-2026-23000-PE"
+    or Butterfly: "Buy 1x HINDALCO 25-Aug-2026-920-CE<br> Sell 2x HINDALCO 25-Aug-2026-940-CE<br> Buy 1x HINDALCO 25-Aug-2026-970-CE"
     """
     if estimated_trade is None:
         return "No Trade"
     display_symbol = OPTION_SYMBOL_NAMES.get(symbol, symbol)
+    clean_symbol = display_symbol.replace(".NS", "").replace(".ns", "").strip()
     expiry = estimated_trade.expiration.strftime("%d-%b-%Y")
     right_suffix = {"put": "PE", "call": "CE"}
-    lines = [
-        f"{leg.action.title()} {display_symbol} {expiry}-{_format_strike(leg.strike)}-"
-        f"{right_suffix[leg.right.value]}"
-        for leg in estimated_trade.legs
-    ]
-    return "<br>".join(lines)
+
+    grouped: list[tuple[TradeLeg, int]] = []
+    for leg in estimated_trade.legs:
+        if (
+            grouped
+            and grouped[-1][0].action == leg.action
+            and grouped[-1][0].right == leg.right
+            and grouped[-1][0].strike == leg.strike
+        ):
+            prev_leg, count = grouped[-1]
+            grouped[-1] = (prev_leg, count + 1)
+        else:
+            grouped.append((leg, 1))
+
+    lines = []
+    for leg, count in grouped:
+        strike_str = _format_strike(leg.strike)
+        right_str = right_suffix[leg.right.value]
+        qty_str = f" {count}x" if count > 1 else ""
+        lines.append(f"{leg.action.title()}{qty_str} {clean_symbol} {expiry}-{strike_str}-{right_str}")
+
+    return "<br> ".join(lines)
 
 
 @app.command("analyze-market")
@@ -77,16 +95,24 @@ def analyze_market(
         Path, typer.Option(help="Directory for the timestamped text analysis report.")
     ] = Path("reports/market"),
 ) -> None:
-    """Fetch market data and calculate configured technical indicators."""
+    """Fetch market data, persist/append to local CSV cache, and calculate indicators."""
     try:
-        data = YahooFinanceProvider(UrllibHTTPClient()).fetch_history(
+        fetched_data = YahooFinanceProvider(UrllibHTTPClient()).fetch_history(
             symbol,
             period="2y",
             interval="1d",
         )
+        data = save_market_data(symbol, fetched_data)
     except MarketDataError as error:
-        console.print(f"Unable to analyze {symbol}: {error}", style="red")
-        raise typer.Exit(code=1) from error
+        cached_data = load_cached_market_data(symbol)
+        if cached_data is not None and cached_data.height >= 200:
+            console.print(
+                f"[yellow]Live fetch unavailable for {symbol}. Reusing local cached data ({cached_data.height} rows).[/yellow]"
+            )
+            data = cached_data
+        else:
+            console.print(f"Unable to analyze {symbol}: {error}", style="red")
+            raise typer.Exit(code=1) from error
     application_config = load_config(config) if config is not None else None
     configurations = application_config.indicators if application_config is not None else []
     engine = (
@@ -100,8 +126,10 @@ def analyze_market(
         if application_config is not None
         else TrendWeights().as_mapping()
     ).analyze(snapshot, results, data)
-    recommendation = select_strategy(trend)
-    estimated_trade = _estimate_trade(symbol, snapshot.last_price, recommendation)
+    vix, vix_source = _fetch_vix(symbol)
+    iv_rank = _calculate_iv_rank(data, vix)
+    recommendation = select_strategy(trend, iv_rank=iv_rank)
+    estimated_trade = estimate_trade(symbol, float(snapshot.last_price), vix, recommendation, vix_source)
     report_path = write_market_report(
         output_dir,
         snapshot,
@@ -119,9 +147,10 @@ def analyze_market(
     if not recommendation.actionable:
         signal_label = "Hold"
     elif status in {"NEW", "CHANGED"}:
-        signal_label = "NEW"
+        signal_label = "New"
     else:
         signal_label = "Active"
+    best_score = float(recommendation.fit_scores.get(recommendation.strategy.value, 0.0))
     upsert_snapshot_entry(
         Path("reports/market/snapshot.json"),
         {
@@ -130,6 +159,8 @@ def analyze_market(
             "last_updated": generated_at.isoformat(),
             "trend": REGIME_LABELS.get(trend.regime.value, trend.regime.value),
             "strategy": format_trade_legs(symbol, estimated_trade),
+            "strategy_type": recommendation.strategy.value,
+            "fit_score": best_score,
             "signal": signal_label,
             "signal_since": state.trend_started_at.isoformat(),
         },
@@ -144,7 +175,7 @@ def analyze_market(
     console.print(table)
     console.print(f"Market Regime: {trend.regime.replace('_', ' ').title()}")
     console.print(f"Trend Score: {trend.trend_score.value:.1f}")
-    console.print(f"Confidence: {trend.confidence.value:.0%}")
+    console.print(f"Confidence: {trend.confidence.value:.0%} [Grade: {trend.confidence.grade}]")
     console.print(trend.explanation)
     console.print(f"Recommendation: {recommendation.strategy.replace('_', ' ').title()}")
     if estimated_trade is not None:
@@ -223,11 +254,28 @@ def main() -> None:
     app()
 
 
-def _estimate_trade(
-    symbol: str, spot_price: Decimal, recommendation: StrategyRecommendation
-) -> EstimatedTrade | None:
-    if not recommendation.actionable:
-        return None
+def _calculate_iv_rank(data: pl.DataFrame, vix: float) -> float:
+    """Calculate stock volatility rank from rolling Historical Volatility (HV) percentile combined with VIX."""
+    vix_rank = min(100.0, max(0.0, ((vix - 12.0) / (30.0 - 12.0)) * 100.0))
+    if "close" not in data.columns or data.height < 30:
+        return vix_rank
+    try:
+        close = data.get_column("close")
+        returns = (close / close.shift(1)).log()
+        hv20 = (returns.rolling_std(window_size=20) * (252.0 ** 0.5)).drop_nulls()
+        if hv20.is_empty():
+            return vix_rank
+        current_hv = float(hv20.tail(1).item())
+        min_hv = float(hv20.min())
+        max_hv = float(hv20.max())
+        hv_rank = min(100.0, max(0.0, ((current_hv - min_hv) / (max_hv - min_hv + 1e-6)) * 100.0))
+        return round(hv_rank * 0.65 + vix_rank * 0.35, 1)
+    except Exception:
+        return vix_rank
+
+
+def _fetch_vix(symbol: str) -> tuple[float, str]:
+    """Fetch live VIX value or fallback assumption for a given symbol."""
     vix_symbol = VIX_SYMBOLS.get(symbol, "^VIX")
     try:
         vix_data = YahooFinanceProvider(UrllibHTTPClient()).fetch_history(
@@ -236,8 +284,15 @@ def _estimate_trade(
             interval="1d",
         )
         vix = float(vix_data.get_column("close").tail(1).item())
-        vix_source = f"live {vix_symbol}"
+        return vix, f"live {vix_symbol}"
     except (IndexError, MarketDataError, TypeError, ValueError):
-        vix = FALLBACK_VIX.get(symbol, 20.0)
-        vix_source = "fallback assumption"
+        return FALLBACK_VIX.get(symbol, 20.0), "fallback assumption"
+
+
+def _estimate_trade(
+    symbol: str, spot_price: Decimal, recommendation: StrategyRecommendation
+) -> EstimatedTrade | None:
+    if not recommendation.actionable:
+        return None
+    vix, vix_source = _fetch_vix(symbol)
     return estimate_trade(symbol, float(spot_price), vix, recommendation, vix_source)

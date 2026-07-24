@@ -1,60 +1,138 @@
 <!-- MARKET-SNAPSHOT-START -->
-| Market    | Updated   | Trend      | Strategy          | Signal | Since          |
-| --------- | --------- | ---------- | ----------------- | ------ | -------------- |
-| NIFTY 50  | 13:42 IST | 🔴 Bear     | Buy NIFTY 25-Aug-2026-23750-PE<br>Sell NIFTY 25-Aug-2026-23000-PE | Active | Today, 11:27   |
-| BANKNIFTY | 13:42 IST | 🟢 Bull     | Buy BANKNIFTY 25-Aug-2026-56600-CE<br>Sell BANKNIFTY 25-Aug-2026-59000-CE | NEW    | Today, 13:42   |
-| SPY       | 14:32 IST | 🟢 Bull     | Buy SPY 25-Aug-2026-738-CE<br>Sell SPY 25-Aug-2026-769-CE | Active | Today, 12:31   |
-| QQQ       | 14:32 IST | 🟢 Bull     | Buy QQQ 25-Aug-2026-692-CE<br>Sell QQQ 25-Aug-2026-721-CE | Active | Today, 12:31   |
-| HDFCBANK.NS | 13:42 IST | 🔴 Strong Bear | Buy HDFCBANK.NS 25-Aug-2026-746-PE<br>Sell HDFCBANK.NS 25-Aug-2026-715-PE | Active | Today, 13:27   |
-| ICICIBANK.NS | 13:42 IST | 🟢 Strong Bull | Buy ICICIBANK.NS 25-Aug-2026-1434-CE<br>Sell ICICIBANK.NS 25-Aug-2026-1494-CE | Active | Today, 13:27   |
-| INFY.NS   | 13:42 IST | 🔴 Strong Bear | Buy INFY.NS 25-Aug-2026-1026-PE<br>Sell INFY.NS 25-Aug-2026-983-PE | Active | Today, 13:27   |
-| SBIN.NS   | 13:42 IST | 🟢 Bull     | Buy SBIN.NS 25-Aug-2026-1012-CE<br>Sell SBIN.NS 25-Aug-2026-1054-CE | NEW    | Today, 13:42   |
-| TCS.NS    | 13:42 IST | 🔴 Bear     | Buy TCS.NS 25-Aug-2026-2244-PE<br>Sell TCS.NS 25-Aug-2026-2150-PE | Active | Today, 13:27   |
-| WIPRO.NS  | 13:42 IST | 🔴 Strong Bear | Buy WIPRO.NS 25-Aug-2026-177-PE<br>Sell WIPRO.NS 25-Aug-2026-170-PE | Active | Today, 13:27   |
+### 🌐 Macro Benchmark Indices
+| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| SPY       | 22:14 IST | 🟢 Naked Put       | 8.5/10    | Sell SPY 25-Aug-2026-520-PE | New                    |
+| NIFTY 50  | 22:12 IST | 🔴 Put Debit Spread | 7.6/10    | Buy NIFTY 25-Aug-2026-23750-PE<br> Sell NIFTY 25-Aug-2026-23000-PE | Active (Today, 11:27)  |
+| BANKNIFTY | 22:12 IST | 🟢 Call Debit Spread | 7.4/10    | Buy BANKNIFTY 25-Aug-2026-56700-CE<br> Sell BANKNIFTY 25-Aug-2026-59000-CE | Active (Today, 15:46)  |
+| QQQ       | 22:12 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-686-CE<br> Sell QQQ 25-Aug-2026-714-CE | Active (Today, 12:31)  |
+
+### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies
+| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| TITAN.NS  | 22:12 IST | 🟢 Call Debit Spread | 10.0/10   | Buy TITAN 25-Aug-2026-4680-CE<br> Sell TITAN 25-Aug-2026-4870-CE | Active (Today, 15:47)  |
+| SUNPHARMA.NS | 22:12 IST | 🟢 Call Debit Spread | 9.9/10    | Buy SUNPHARMA 25-Aug-2026-1940-CE<br> Sell SUNPHARMA 25-Aug-2026-2020-CE | Active (Today, 15:47)  |
+| ICICIBANK.NS | 22:12 IST | 🟢 Call Debit Spread | 9.6/10    | Buy ICICIBANK 25-Aug-2026-1430-CE<br> Sell ICICIBANK 25-Aug-2026-1490-CE | Active (Today, 13:27)  |
+| BAJAJ-AUTO.NS | 22:12 IST | 🟢 Call Debit Spread | 9.6/10    | Buy BAJAJ-AUTO 25-Aug-2026-11100-CE<br> Sell BAJAJ-AUTO 25-Aug-2026-11600-CE | Active (Today, 15:46)  |
+| HDFCBANK.NS | 22:12 IST | 🔴 Put Debit Spread | 9.2/10    | Buy HDFCBANK 25-Aug-2026-740-PE<br> Sell HDFCBANK 25-Aug-2026-710-PE | Active (Today, 13:27)  |
+| HDFCLIFE.NS | 22:12 IST | 🔴 Put Debit Spread | 9.0/10    | Buy HDFCLIFE 25-Aug-2026-560-PE<br> Sell HDFCLIFE 25-Aug-2026-540-PE | Active (Today, 15:46)  |
+| HINDALCO.NS | 22:12 IST | 🟡 Long Butterfly  | 8.3/10    | Buy HINDALCO 25-Aug-2026-920-CE<br> Sell 2x HINDALCO 25-Aug-2026-940-CE<br> Buy HINDALCO 25-Aug-2026-970-CE | Active (Today, 15:57)  |
+| JSWSTEEL.NS | 22:12 IST | 🟡 Long Butterfly  | 7.5/10    | Buy JSWSTEEL 25-Aug-2026-1210-CE<br> Sell 2x JSWSTEEL 25-Aug-2026-1240-CE<br> Buy JSWSTEEL 25-Aug-2026-1280-CE | Active (Today, 16:20)  |
+| HCLTECH.NS | 22:12 IST | 🟡 Iron Condor     | 7.1/10    | Buy HCLTECH 25-Aug-2026-1170-PE<br> Sell HCLTECH 25-Aug-2026-1200-PE<br> Sell HCLTECH 25-Aug-2026-1340-CE<br> Buy HCLTECH 25-Aug-2026-1380-CE | Active (Today, 20:42)  |
+| TCS.NS    | 22:12 IST | 🟡 Credit Spread   | 6.9/10    | Sell TCS 25-Aug-2026-2320-CE<br> Buy TCS 25-Aug-2026-2380-CE | Active (Today, 22:10)  |
+| SBILIFE.NS | 22:12 IST | 🟡 Iron Condor     | 6.8/10    | Buy SBILIFE 25-Aug-2026-1700-PE<br> Sell SBILIFE 25-Aug-2026-1760-PE<br> Sell SBILIFE 25-Aug-2026-1960-CE<br> Buy SBILIFE 25-Aug-2026-2010-CE | Active (Today, 20:42)  |
+| M&M.NS    | 22:12 IST | 🟡 Long Butterfly  | 6.4/10    | Buy M&M 25-Aug-2026-3070-CE<br> Sell 2x M&M 25-Aug-2026-3160-CE<br> Buy M&M 25-Aug-2026-3250-CE | Active (Today, 16:40)  |
+| ULTRACEMCO.NS | 22:12 IST | 🟡 Long Butterfly  | 6.2/10    | Buy ULTRACEMCO 25-Aug-2026-11500-CE<br> Sell 2x ULTRACEMCO 25-Aug-2026-11800-CE<br> Buy ULTRACEMCO 25-Aug-2026-12200-CE | Active (Today, 16:36)  |
+| BHARTIARTL.NS | 22:12 IST | 🟡 Iron Condor     | 6.1/10    | Buy BHARTIARTL 25-Aug-2026-1740-PE<br> Sell BHARTIARTL 25-Aug-2026-1790-PE<br> Sell BHARTIARTL 25-Aug-2026-2000-CE<br> Buy BHARTIARTL 25-Aug-2026-2060-CE | Active (Today, 22:10)  |
+| BAJAJFINSV.NS | 22:12 IST | 🟡 Iron Condor     | 6.1/10    | Buy BAJAJFINSV 25-Aug-2026-1720-PE<br> Sell BAJAJFINSV 25-Aug-2026-1770-PE<br> Sell BAJAJFINSV 25-Aug-2026-1980-CE<br> Buy BAJAJFINSV 25-Aug-2026-2030-CE | Active (Today, 22:10)  |
+
+### 📈 Signal Performance & Win-Rate Analytics
+| Total Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 52 | 10 | **83.3%** | +3.2% | **+44.8%** | -3.8% |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
+
 # Portfolio Intelligence
 
-A personal market and options decision engine for systematic premium selling, directional overlays, and adaptive learning.
+A personal market and options decision engine for systematic premium selling, directional overlays, adaptive learning, and automated trade lifecycle management.
 
-## What this does
+---
 
-- Scans market regime indicators
-- Scores portfolio risk and exposure
-- Suggests exactly one highest-expected-value trade
-- Learns from outcomes over time
+## 🧠 Quantitative Models & Reasoning
 
-## Core idea
+`portfolio-intelligence` uses a multi-layered quantitative engine that evaluates raw market OHLCV data, calculates technical indicators, classifies regimes, selects optimal option strategies, determines exact strike prices, and manages trade exit lifecycles.
 
-The engine treats your portfolio as a two-sided premium-selling book:
-- short calls
-- short puts
-- optional directional hedges
+```mermaid
+flowchart TD
+    A["Raw OHLCV Market Data"] --> B["1. Technical Indicator Engine"]
+    B --> C["2. Trend & Regime Scoring Model"]
+    C --> D["3. Option Strategy Selector & Fit Model"]
+    D --> E["4. Dynamic Strike Rounding & Leg Engine"]
+    E --> F["5. Quantitative Exit & Lifecycle Engine"]
+    F --> G["6. Multi-Channel Webhook Alerts"]
+```
 
-It aims to improve the whole portfolio, not just a single position.
+---
 
-## Planned structure
+### 1. Technical Indicator Engine (`pie/market/indicators/`)
+Computes mathematical indicators across 500 sessions of daily price history:
 
-- `config/` — scoring weights and risk limits
-- `engine/` — indicator, portfolio, and trade selection logic
-- `portfolio/` — position snapshots and buying power state
-- `recommendations/` — daily recommendation outputs
-- `outcomes/` — executed trade results and learning data
-- `reports/` — daily and weekly reports
-- `docs/` — design notes and operating rules
+- **Exponential Moving Averages (EMA 20, 50, 100, 200)**: Evaluates short, medium, and long-term trend alignment and moving average crossovers.
+- **Relative Strength Index (RSI 14)**: Identifies momentum health ($40 \le RSI \le 70$) vs overbought ($RSI > 70$) or oversold ($RSI < 30$) conditions.
+- **Average True Range (ATR 14)**: Measures dynamic market volatility to determine expected price move boundaries and option leg width spacing.
+- **Average Directional Index (ADX 14)**: Determines trend strength. $ADX > 25$ indicates a strong trend (ideal for Debit Spreads); $ADX < 20$ indicates range-bound consolidation (ideal for Butterflies/Iron Condors).
+- **Bollinger Bands (20, 2.0)**: Computes relative price position (%B) within a 2-standard-deviation channel for mean-reversion signals.
 
-## Status
+---
 
-Initial scaffold.
+### 2. Trend & Regime Scoring Engine (`pie/market/trend/`)
+Evaluates 8 pass/fail market conditions to compute a unified **Trend Score ($0.0 - 10.0$)**:
+
+$$\text{Trend Score} = \frac{\sum_{i=1}^{8} w_i \cdot \text{Condition}_i}{\sum w_i} \times 10$$
+
+| Pass/Fail Rule | Weight | Quantitative Rationale |
+| :--- | :---: | :--- |
+| **`Price > EMA 200`** | 2.0 | Long-term macro bull bias |
+| **`EMA 20 > EMA 50`** | 1.5 | Short-term momentum acceleration |
+| **`EMA 50 > EMA 200`** | 1.5 | Golden Cross / Structural bull alignment |
+| **`RSI Healthy`** | 1.0 | Momentum within optimal range ($40 - 70$) |
+| **`ADX Strong Trend`** | 1.0 | $ADX > 20$ confirms trend validity |
+| **`ATR Expanding`** | 1.0 | Volatility expansion supports directional expansion |
+| **`Higher Highs`** | 1.0 | Dynamic price action structure |
+| **`Higher Lows`** | 1.0 | Higher low support validation |
+
+#### Regime Classification Scale:
+- **`🟢 Strong Bull`** (Score $\ge 8.0/10$): High-conviction bullish directional setups.
+- **`🟢 Bull`** (Score $5.5 - 7.9/10$): Moderate bullish bias; range-bound / debit spread setups.
+- **`🟡 Neutral`** (Score $4.5 - 5.4/10$): Non-directional market; range strategies (Long Butterfly / Iron Condor).
+- **`🔴 Bear`** (Score $2.5 - 4.4/10$): Moderate bearish bias.
+- **`🔴 Strong Bear`** (Score $< 2.5/10$): High-conviction bearish directional setups.
+
+---
+
+### 3. Option Strategy Classifier & Fit Model (`pie/market/strategy.py`)
+Maps regime classification and Implied Volatility (IV) Rank to the highest-expected-value strategy:
+
+- **🟢 Call Debit Spread**: Selected for `Strong Bull` / `Bull` regimes with $ADX > 20$.
+- **🔴 Put Debit Spread**: Selected for `Strong Bear` / `Bear` regimes with $ADX > 20$.
+- **🟡 Long Butterfly**: Selected for range-bound markets ($ADX < 20$, $RSI \approx 50$) to capture low volatility compression at target strike.
+- **🟡 Iron Condor / Iron Butterfly**: Selected for neutral high-IV regimes to collect maximum option premium outside range wings.
+
+---
+
+### 4. Dynamic Strike Rounding & Leg Selection Model (`pie/market/trade_estimate.py`)
+Computes exact strike prices based on exchange tick sizes and price tier boundaries:
+
+- **Index Multipliers**: `BANKNIFTY` / `^NSEBANK` strikes are strictly rounded to multiples of **100**; `NIFTY 50` / `^NSEI` to **50**.
+- **Price Boundary Rule ($\ge 10,000$)**: Any stock or asset with a spot price $\ge 10,000$ (e.g. `BAJAJ-AUTO.NS` @ 11,130, `ULTRACEMCO.NS` @ 11,846) is rounded to multiples of **100**.
+- **Stock Multipliers ($< 10,000$)**: All other stock option strikes are rounded to multiples of **10** (e.g. `TITAN.NS` 4680 CE / 4870 CE).
+- **Leg Multipliers**: Groups identical legs into explicit quantity multipliers (`Sell 2x HINDALCO 25-Aug-2026-940-CE`) while omitting `1x` on single legs.
+
+---
+
+### 5. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
+Manages active positions and triggers trade exit signals based on 4 risk rules:
+
+- **`🔴 Exit (Regime Shift)`**: Exit immediately if trend score drops below threshold ($<4.5$ for Call Debit Spread) or regime reverses.
+- **`🟡 Exit (DTE < 10)`**: Close position at $\le 10$ Days to Expiration to eliminate exponential theta decay and pin/assignment risk.
+- **`🎯 Take Profit`**: Close position when spot price reaches short target strike (+50% to +75% max profit).
+- **`⚠️ Stop Loss`**: Close position if spot price breaches maximum loss boundary ($>2\times$ spread width away).
+
+---
+
+### 6. Multi-Channel Webhook Dispatcher (`pie/reporting/notifications.py`)
+Dispatches real-time signal alerts to **Telegram (`@groottex`)**, Slack, and Discord. Formats all alert timestamps natively in **IST (UTC+5:30)**.
+
+---
 
 ## Backtesting
 
-Run a reproducible local NIFTY backtest with the included OHLCV dataset:
+Run a reproducible local backtest with the included OHLCV dataset:
 
 ```bash
 uv run pie backtest-market ^NSEI --data-path data/market/nifty50_25years_ohlcv_1999_2026.csv
 ```
 
-The report evaluates directional trend signals against index returns; it does not model option-spread pricing.

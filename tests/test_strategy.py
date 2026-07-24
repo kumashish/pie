@@ -5,10 +5,19 @@ from pie.market.trend.models import ConfidenceScore, MarketRegime, TrendAnalysis
 
 
 def analysis(regime: MarketRegime, confidence: float = 1.0) -> TrendAnalysis:
+    score_map = {
+        MarketRegime.STRONG_BULL: 9.0,
+        MarketRegime.BULL: 7.0,
+        MarketRegime.NEUTRAL: 5.0,
+        MarketRegime.BEAR: 3.0,
+        MarketRegime.STRONG_BEAR: 1.0,
+        MarketRegime.UNKNOWN: 0.0,
+    }
+    score = score_map.get(regime, 5.0)
     return TrendAnalysis(
         symbol="SPY",
         timestamp=datetime(2026, 1, 1),
-        trend_score=TrendScore(value=7.0),
+        trend_score=TrendScore(value=score),
         confidence=ConfidenceScore(value=confidence),
         regime=regime,
         explanation="Test explanation",

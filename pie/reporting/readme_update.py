@@ -18,27 +18,29 @@ class MarketRow(TypedDict):
     since: str  # "Today, HH:MM" or "Jul 20, HH:MM IST"
 
 
-def utc_to_ist(dt: datetime) -> datetime:
-    """Convert UTC datetime to IST (UTC+5:30)."""
+def utc_to_ist(dt: datetime | str) -> datetime:
+    """Convert UTC datetime or ISO string to IST (UTC+5:30)."""
+    if isinstance(dt, str):
+        dt = datetime.fromisoformat(dt)
     ist_offset = timedelta(hours=5, minutes=30)
     return dt.astimezone(UTC).replace(tzinfo=None) + ist_offset
 
 
-def format_ist_time(dt: datetime, include_date: bool = False) -> str:
-    """Format datetime as IST time string.
-
-    Args:
-        dt: datetime object (can be in any timezone, will be converted to IST)
-        include_date: if True, include date in output
-    """
-    ist_dt = utc_to_ist(dt) if dt.tzinfo else dt
+def format_ist_time(dt: datetime | str, include_date: bool = False) -> str:
+    """Format datetime or ISO string as IST time string."""
+    if isinstance(dt, str):
+        try:
+            dt = datetime.fromisoformat(dt)
+        except ValueError:
+            return dt
+    ist_dt = utc_to_ist(dt) if getattr(dt, "tzinfo", None) is not None else dt
     if include_date:
         return ist_dt.strftime("%H:%M IST (%Y-%m-%d)")
     return ist_dt.strftime("%H:%M IST")
 
 
 def calculate_since(
-    signal_date: datetime, current_time: datetime | None = None
+    signal_date: datetime | str, current_time: datetime | None = None
 ) -> tuple[str, datetime]:
     """Calculate 'since' duration and format it in hybrid style.
 
@@ -89,25 +91,176 @@ def generate_readme_snapshot(
     Returns:
         Markdown table rows as string
     """
+def format_regime_badge(trend_str: str) -> str:
+    """Format market regime with color-coded status badges."""
+    clean = trend_str.strip().lower()
+    if "strong_bull" in clean or "strong bull" in clean:
+        return "🟢 Strong Bull"
+    if "bull" in clean:
+        return "🟢 Bull"
+    if "strong_bear" in clean or "strong bear" in clean:
+        return "🔴 Strong Bear"
+    if "bear" in clean:
+        return "🔴 Bear"
+    if "neutral" in clean:
+        return "🟡 Neutral"
+    return trend_str
+
+
+def format_fit_score_badge(fit_score: float) -> str:
+    """Format strategy fit score as Score / 10."""
+    score_out_of_10 = min(10.0, max(0.0, fit_score / 10.0))
+    if fit_score > 0.0:
+        return f"{score_out_of_10:.1f}/10"
+    return "N/A"
+
+
+def get_strategy_display_name(stype: str) -> str:
+    """Get clean color-coded full human-readable strategy name.
+
+    🟢 Bullish Strategies (Call Debit Spread, Naked Put, PMCC)
+    🔴 Bearish Strategies (Put Debit Spread, Naked Call)
+    🟡 Neutral Strategies (Long Butterfly, Iron Condor, Iron Butterfly, Jade Lizard, etc.)
+    """
+    clean = stype.lower().replace("_", " ").strip()
+    if not clean:
+        return "N/A"
+
+    if clean in {"call debit spread", "call_debit_spread"}:
+        return "🟢 Call Debit Spread"
+    if clean in {"put debit spread", "put_debit_spread"}:
+        return "🔴 Put Debit Spread"
+    if clean in {"butterfly", "long butterfly", "long_butterfly"}:
+        return "🟡 Long Butterfly"
+    if clean in {"broken wing butterfly", "broken_wing_butterfly"}:
+        return "🟡 Broken Wing Butterfly"
+    if clean in {"iron condor", "iron_condor"}:
+        return "🟡 Iron Condor"
+    if clean in {"iron butterfly", "iron_butterfly"}:
+        return "🟡 Iron Butterfly"
+    if clean in {"jade lizard", "jade_lizard"}:
+        return "🟡 Jade Lizard"
+    if clean in {"credit spread", "credit_spread"}:
+        return "🟡 Credit Spread"
+    if clean in {"naked put", "naked_put"}:
+        return "🟢 Naked Put"
+    if clean in {"naked call", "naked_call"}:
+        return "🔴 Naked Call"
+    if clean in {"short strangle", "short_strangle"}:
+        return "🟡 Short Strangle"
+    if clean in {"collar"}:
+        return "🟡 Collar"
+    if clean in {"poor mans covered call", "poor_mans_covered_call"}:
+        return "🟢 Poor Man's Covered Call"
+    return f"🟡 {clean.title()}"
+
+
+def generate_readme_snapshot(
+    market_data: list[dict],
+    current_time: datetime | None = None,
+) -> str:
+    """Generate 2 Markdown snapshot tables for README from market data entries.
+
+    Table 1: Macro Benchmark Indices (Always at the top)
+    Table 2: High Conviction (>90.0% Win Confidence) & Non-Debit Spread Strategies
+    """
     if current_time is None:
         current_time = datetime.now(UTC)
 
-    rows = ["| Market    | Updated   | Trend      | Strategy          | Signal | Since          |"]
-    rows.append("| --------- | --------- | ---------- | ----------------- | ------ | -------------- |")
+    always_include = {"^NSEI", "^NSEBANK", "SPY", "QQQ", "NIFTY 50", "BANKNIFTY"}
+    simple_debit_types = {"call_debit_spread", "put_debit_spread"}
+
+    table1_data = []
+    table2_data = []
+    table3_data = []
 
     for data in market_data:
-        market = data["market"]
+        symbol = data.get("symbol", "").upper()
+        market = data.get("market", "")
+        fit_score = float(data.get("fit_score", 0.0))
+        stype = data.get("strategy_type", "").lower()
+        strategy = data.get("strategy", "")
+        signal_raw = data.get("signal", "")
+
+        if strategy == "No Trade":
+            continue
+
+        if "exit" in signal_raw.lower() or "close" in signal_raw.lower():
+            table3_data.append(data)
+        elif symbol in always_include or market.upper() in always_include:
+            table1_data.append(data)
+        else:
+            # Table 2 condition: fit_score >= 60.0 (Score >= 6.0/10) AND (fit_score > 90.0 OR stype not a simple debit spread)
+            is_simple_debit = stype in simple_debit_types
+            if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
+                table2_data.append(data)
+
+    # Sort tables strictly by fit_score descending (highest confidence at top)
+    table1_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table2_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+
+    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
+
+    output_sections = ["### 🌐 Macro Benchmark Indices", header]
+    for data in table1_data:
         updated_time = format_ist_time(data["last_updated"], include_date=False)
-        trend = data["trend"]
+        market = data.get("market", "")
+        stype = data.get("strategy_type", "")
+        strat_name = get_strategy_display_name(stype)
+        fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
         strategy = data["strategy"]
-        signal = data["signal"]
+        signal_raw = data.get("signal", "")
+        since_text, _ = calculate_since(data["signal_since"], current_time)
+        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
 
-        since_text, signal_ist = calculate_since(data["signal_since"], current_time)
+        output_sections.append(
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+        )
 
-        row = f"| {market:<9} | {updated_time:<9} | {trend:<10} | {strategy:<17} | {signal:<6} | {since_text:<14} |"
-        rows.append(row)
+    output_sections.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
+    output_sections.append(header)
+    for data in table2_data:
+        updated_time = format_ist_time(data["last_updated"], include_date=False)
+        market = data.get("market", "")
+        stype = data.get("strategy_type", "")
+        strat_name = get_strategy_display_name(stype)
+        fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
+        strategy = data["strategy"]
+        signal_raw = data.get("signal", "")
+        since_text, _ = calculate_since(data["signal_since"], current_time)
+        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
 
-    return "\n".join(rows)
+        output_sections.append(
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+        )
+
+    if table3_data:
+        output_sections.append("\n### ⚡ Recently Closed / Exit Signals")
+        output_sections.append(header)
+        for data in table3_data:
+            updated_time = format_ist_time(data["last_updated"], include_date=False)
+            market = data.get("market", "")
+            stype = data.get("strategy_type", "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
+            strategy = data["strategy"]
+            signal_raw = data.get("signal", "")
+            since_text, _ = calculate_since(data["signal_since"], current_time)
+            signal_display = f"{signal_raw} ({since_text})"
+
+            output_sections.append(
+                f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+            )
+
+    try:
+        from pie.market.performance import PerformanceTracker
+        summary = PerformanceTracker().calculate_summary()
+        output_sections.append("\n" + summary.format_markdown_table())
+    except Exception:
+        pass
+
+    return "\n".join(output_sections)
 
 
 def update_readme_snapshot(
@@ -189,3 +342,11 @@ def load_market_data_from_json(json_file: Path) -> list[dict]:
         )
 
     return raw_data
+
+
+if __name__ == "__main__":
+    snapshot_file = Path("reports/market/snapshot.json")
+    readme_file = Path("README.md")
+    if snapshot_file.exists() and readme_file.exists():
+        market_data = load_market_data_from_json(snapshot_file)
+        update_readme_snapshot(readme_file, market_data)

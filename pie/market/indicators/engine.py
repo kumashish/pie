@@ -8,10 +8,20 @@ import polars as pl
 from pie.market.indicators.adx import ADX
 from pie.market.indicators.atr import ATR
 from pie.market.indicators.base import Indicator, IndicatorResult
+from pie.market.indicators.bollinger import BollingerBands
 from pie.market.indicators.ema import EMA
 from pie.market.indicators.rsi import RSI
 
-DEFAULT_INDICATORS: tuple[Indicator, ...] = (EMA(20), EMA(50), EMA(200), RSI(14), ATR(14), ADX(14))
+DEFAULT_INDICATORS: tuple[Indicator, ...] = (
+    EMA(20),
+    EMA(50),
+    EMA(100),
+    EMA(200),
+    RSI(14),
+    ATR(14),
+    ADX(14),
+    BollingerBands(20, 2.0),
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -53,6 +63,8 @@ class IndicatorEngine:
                     indicators.append(ATR(period))
                 case "adx":
                     indicators.append(ADX(period))
+                case "bollinger":
+                    indicators.append(BollingerBands(period))
                 case _:
                     msg = f"Unsupported indicator '{indicator_type}'."
                     raise ValueError(msg)
