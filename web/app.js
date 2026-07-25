@@ -389,7 +389,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showLoading() {
     loadingState.style.display = "block";
-    resultsContainer.style.display = "none";
     errorBanner.style.display = "none";
     analyzeBtn.disabled = true;
 
