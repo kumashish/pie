@@ -2,7 +2,7 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 07:28 IST | 🟡 Credit Spread   | 7.5/10    | Sell SPY 25-Aug-2026-759-CE<br> Buy SPY 25-Aug-2026-779-CE | New                    |
+| SPY       | 07:34 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 25-Aug-2026-524-PE | New                    |
 | QQQ       | 07:28 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-684-CE<br> Sell QQQ 25-Aug-2026-712-CE | Active (Today, 00:26)  |
 
 ### 🌐 Indian Macro Benchmark Indices
@@ -31,9 +31,9 @@
 | BAJAJFINSV.NS | 07:28 IST | 🟡 Iron Condor     | 6.1/10    | Buy BAJAJFINSV 25-Aug-2026-1720-PE<br> Sell BAJAJFINSV 25-Aug-2026-1780-PE<br> Sell BAJAJFINSV 25-Aug-2026-1980-CE<br> Buy BAJAJFINSV 25-Aug-2026-2030-CE | Active (Yesterday, 22:10) |
 
 ### 📈 Signal Performance & Win-Rate Analytics
-| Total Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 52 | 10 | **83.3%** | +3.2% | **+44.8%** | -3.8% |
+| Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 52 | 52 | 0 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
