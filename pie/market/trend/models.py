@@ -22,10 +22,12 @@ class MarketRegime(StrEnum):
 class ConfidenceGrade(StrEnum):
     """Letter grade derived from numerical confidence score."""
 
-    GRADE_A = "A (High Conviction)"
-    GRADE_B = "B (Moderate Conviction)"
-    GRADE_C = "C (Low Conviction)"
-    GRADE_F = "F (Untrusted)"
+    GRADE_A_PLUS = "A+"
+    GRADE_A = "A"
+    GRADE_B = "B"
+    GRADE_C = "C"
+    GRADE_D = "D"
+    GRADE_F = "F"
 
 
 class TrendScore(DomainModel):

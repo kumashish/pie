@@ -184,6 +184,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function getCleanGrade(data) {
+    if (!data) return "A";
+    let grade = data.confidence_grade || "";
+    grade = grade.replace(/Grade\s*/gi, "").replace(/\(.*?\)/gi, "").trim();
+    if (!grade) {
+      const score = data.fit_score !== undefined ? data.fit_score : 80;
+      grade = score >= 90 ? "A+" : (score >= 75 ? "A" : (score >= 60 ? "B" : (score >= 45 ? "C" : (score >= 30 ? "D" : "F"))));
+    }
+    return grade;
+  }
+
   function renderResults(data, shouldScroll = true) {
     errorBanner.style.display = "none";
     resultsContainer.style.display = "block";
@@ -199,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     resFitScore.textContent = (data.fit_score / 10.0).toFixed(1);
     resRegime.textContent = getRegimeBadgeText(data.regime);
-    resConfidence.textContent = data.confidence_grade;
+    resConfidence.textContent = getCleanGrade(data);
 
     // Strategy & Trade Recommendation
     resStrategyName.textContent = data.strategy_display;
