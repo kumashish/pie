@@ -26,6 +26,9 @@ from pie.providers.yahoo import UrllibHTTPClient, YahooFinanceProvider
 from pie.reporting.market import write_market_report
 from pie.reporting.snapshot import upsert_snapshot_entry
 
+from pie.market.exit_rules import evaluate_exit_condition
+from pie.reporting.notifications import NotificationDispatcher
+
 app = typer.Typer(help="Portfolio Intelligence Engine.", no_args_is_help=True)
 app.add_typer(readme_app, name="readme")
 console = Console()
@@ -139,32 +142,58 @@ def analyze_market(
         estimated_trade,
     )
     generated_at = datetime.now(UTC)
+    prev_state = SignalStateManager().load_state(symbol)
+    prev_regime = prev_state.last_regime if prev_state else trend.regime.value
+    prev_strategy = prev_state.last_strategy if prev_state else recommendation.strategy.value
+
     state, status = SignalStateManager().update_state(
         symbol=symbol,
         strategy=recommendation.strategy.value,
         regime=trend.regime.value,
     )
-    if not recommendation.actionable:
+
+    # Evaluate quantitative exit rules for active trade
+    should_exit = False
+    exit_reason = ""
+    if estimated_trade is not None:
+        should_exit, exit_reason = evaluate_exit_condition(
+            symbol=symbol,
+            spot_price=float(snapshot.last_price),
+            expiration=estimated_trade.expiration.isoformat(),
+            current_regime=trend.regime.value,
+            current_score=trend.trend_score.value,
+            previous_regime=prev_regime,
+            previous_strategy=prev_strategy,
+            estimated_trade=estimated_trade,
+            current_time=generated_at,
+        )
+
+    if should_exit:
+        signal_label = exit_reason
+    elif not recommendation.actionable:
         signal_label = "Hold"
     elif status in {"NEW", "CHANGED"}:
         signal_label = "New"
     else:
         signal_label = "Active"
+
     best_score = float(recommendation.fit_scores.get(recommendation.strategy.value, 0.0))
-    upsert_snapshot_entry(
-        Path("reports/market/snapshot.json"),
-        {
-            "symbol": symbol,
-            "market": MARKET_NAMES.get(symbol, symbol),
-            "last_updated": generated_at.isoformat(),
-            "trend": REGIME_LABELS.get(trend.regime.value, trend.regime.value),
-            "strategy": format_trade_legs(symbol, estimated_trade),
-            "strategy_type": recommendation.strategy.value,
-            "fit_score": best_score,
-            "signal": signal_label,
-            "signal_since": state.trend_started_at.isoformat(),
-        },
-    )
+    market_row = {
+        "symbol": symbol,
+        "market": MARKET_NAMES.get(symbol, symbol),
+        "last_updated": generated_at.isoformat(),
+        "trend": REGIME_LABELS.get(trend.regime.value, trend.regime.value),
+        "strategy": format_trade_legs(symbol, estimated_trade),
+        "strategy_type": recommendation.strategy.value,
+        "fit_score": best_score,
+        "signal": signal_label,
+        "signal_since": state.trend_started_at.isoformat(),
+    }
+    upsert_snapshot_entry(Path("reports/market/snapshot.json"), market_row)
+
+    # Dispatch real-time Telegram alert if signal is NEW or an EXIT/REVIEW trigger
+    if signal_label == "New" or should_exit:
+        NotificationDispatcher().dispatch_all(market_row)
     table = Table(title=f"Market Snapshot: {symbol}")
     table.add_column("Indicator")
     table.add_column("Value", justify="right")
