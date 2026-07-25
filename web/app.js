@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const foldIcon = document.getElementById("fold-icon");
   const foldText = document.getElementById("fold-text");
 
+  let isFolded = false;
+
   // Always keep Market Leaderboards EXPANDED on initial page load
   localStorage.removeItem("pie_leaderboard_folded");
   applyFoldState(false);
@@ -210,25 +212,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Render Option Legs
     if (data.estimated_trade && data.estimated_trade.legs && data.estimated_trade.legs.length > 0) {
-      resLegsContainer.innerHTML = data.estimated_trade.legs.map((leg) => `
-        <div class="leg-card">
-          <span class="leg-action ${leg.action.toLowerCase()}">${leg.action.toUpperCase()} ${leg.quantity}x</span>
-          <span class="leg-details">${data.symbol} ${leg.strike_formatted} ${leg.option_type}</span>
-          <span class="leg-expiry">Expiry: <strong>${leg.expiration_display}</strong> (${leg.dte} DTE)</span>
-        </div>
-      `).join("");
-      resExpirationWindow.textContent = `${data.estimated_trade.legs[0].dte} DTE`;
+      resLegsContainer.innerHTML = data.estimated_trade.legs.map((leg) => {
+        const act = (leg.action || "BUY").toUpperCase();
+        const qty = leg.quantity || 1;
+        const strikeStr = leg.strike_formatted || leg.strike || "";
+        const optType = leg.option_type || leg.type || "CE";
+        const expDisp = leg.expiration_display || leg.expiration || "45 DTE";
+        const dteVal = leg.dte || 45;
+        const actClass = act.toLowerCase().includes("buy") ? "buy" : "sell";
+
+        return `
+          <div class="leg-card">
+            <span class="leg-action ${actClass}">${act} ${qty}x</span>
+            <span class="leg-details">${data.symbol} ${strikeStr} ${optType}</span>
+            <span class="leg-expiry">Expiry: <strong>${expDisp}</strong> (${dteVal} DTE)</span>
+          </div>
+        `;
+      }).join("");
+      resExpirationWindow.textContent = `${data.estimated_trade.legs[0].dte || 45} DTE`;
     } else {
       resLegsContainer.innerHTML = `
         <div class="leg-card">
-          <span class="leg-details" style="color: #94a3b8;">No option legs recommended under current market conditions (${data.strategy_display}).</span>
+          <span class="leg-details" style="color: #94a3b8;">No option legs recommended under current market conditions (${data.strategy_display || 'N/A'}).</span>
         </div>
       `;
       resExpirationWindow.textContent = "N/A";
     }
 
     // Render Indicators Grid
-    const indEntries = Object.entries(data.indicators);
+    const indEntries = data.indicators ? Object.entries(data.indicators) : [];
     if (indEntries.length > 0) {
       resIndicatorsGrid.innerHTML = indEntries.map(([name, val]) => `
         <div class="ind-item">
@@ -242,18 +254,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Render Rules Table
     if (data.rules && data.rules.length > 0) {
-      resRulesTbody.innerHTML = data.rules.map((rule) => `
-        <tr>
-          <td>
-            <span class="status-badge ${rule.passed ? 'pass' : 'fail'}">
-              ${rule.passed ? 'PASS' : 'FAIL'}
-            </span>
-          </td>
-          <td><strong>${rule.name}</strong></td>
-          <td>${rule.score} / ${rule.max_score}</td>
-          <td style="color: #94a3b8;">${rule.explanation}</td>
-        </tr>
-      `).join("");
+      resRulesTbody.innerHTML = data.rules.map((rule) => {
+        const isPass = rule.passed === true || String(rule.score).toUpperCase() === "PASS";
+        const scoreStr = rule.max_score ? `${rule.score} / ${rule.max_score}` : (rule.score || (isPass ? "PASS" : "FAIL"));
+        return `
+          <tr>
+            <td>
+              <span class="status-badge ${isPass ? 'pass' : 'fail'}">
+                ${isPass ? 'PASS' : 'FAIL'}
+              </span>
+            </td>
+            <td><strong>${rule.name}</strong></td>
+            <td>${scoreStr}</td>
+            <td style="color: #94a3b8;">${rule.explanation || 'Condition evaluated'}</td>
+          </tr>
+        `;
+      }).join("");
     } else {
       resRulesTbody.innerHTML = "<tr><td colspan='4'>No rule evaluations available.</td></tr>";
     }
@@ -612,10 +628,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       estimated_trade: {
         strategy: "Call Debit Spread",
-        max_gain: "Defined Risk",
+        max_gain: "Defined Risk / Reward",
         legs: [
-          { action: "BUY", type: "CALL", strike: Math.round(basePrice * 0.99), dte: 45 },
-          { action: "SELL", type: "CALL", strike: Math.round(basePrice * 1.05), dte: 45 }
+          { action: "Buy", quantity: 1, strike: Math.round(basePrice * 0.99), strike_formatted: String(Math.round(basePrice * 0.99)), option_type: "CE", expiration_display: "45-Days", dte: 45 },
+          { action: "Sell", quantity: 1, strike: Math.round(basePrice * 1.05), strike_formatted: String(Math.round(basePrice * 1.05)), option_type: "CE", expiration_display: "45-Days", dte: 45 }
         ]
       }
     };
