@@ -136,40 +136,40 @@ document.addEventListener("DOMContentLoaded", () => {
     const targetSymbol = ALIAS_MAP[cleanSym] || cleanSym;
     const safeSymbol = targetSymbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
 
-    // 1. Try local REST API endpoint first (when running pie serve)
     try {
-      const response = await fetch(`/api/analyze?symbol=${encodeURIComponent(symbol)}`);
-      if (response.ok) {
-        const data = await response.json();
-        if (!data.error) {
+      // 1. Try local REST API endpoint first (when running pie serve)
+      try {
+        const response = await fetchWithTimeout(`/api/analyze?symbol=${encodeURIComponent(symbol)}`, 1500);
+        if (response.ok) {
+          const data = await response.json();
+          if (!data.error) {
+            renderResults(data);
+            return;
+          }
+        }
+      } catch (e) {
+        // Fall through to static pre-computed JSON
+      }
+
+      // 2. Fallback to static pre-computed JSON (when hosted on GitHub Pages)
+      try {
+        const response = await fetchWithTimeout(`data/${safeSymbol}.json`, 1500);
+        if (response.ok) {
+          const data = await response.json();
           renderResults(data);
-          hideLoading();
           return;
         }
+      } catch (err) {
+        // Fall through to live client-side engine
       }
-    } catch (e) {
-      // Fall through to static pre-computed JSON
-    }
 
-    // 2. Fallback to static pre-computed JSON (when hosted on GitHub Pages)
-    try {
-      const response = await fetch(`data/${safeSymbol}.json`);
-      if (response.ok) {
-        const data = await response.json();
-        renderResults(data);
-        hideLoading();
-        return;
+      // 3. Fallback to Live Client-Side Yahoo Finance Calculation Engine
+      try {
+        const liveData = await calculateLiveAnalysis(targetSymbol);
+        renderResults(liveData);
+      } catch (liveErr) {
+        showError(`Unable to analyze ${symbol}: ${liveErr.message}. Verify ticker symbol.`);
       }
-    } catch (err) {
-      // Fall through to live client-side engine
-    }
-
-    // 3. Fallback to Live Client-Side Yahoo Finance Calculation Engine
-    try {
-      const liveData = await calculateLiveAnalysis(targetSymbol);
-      renderResults(liveData);
-    } catch (liveErr) {
-      showError(`Unable to analyze ${symbol}: ${liveErr.message}. Verify ticker symbol.`);
     } finally {
       hideLoading();
     }
