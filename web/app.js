@@ -376,14 +376,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }).join("");
   }
 
+  let loadingTimeout = null;
+
   function showLoading() {
     loadingState.style.display = "block";
     resultsContainer.style.display = "none";
     errorBanner.style.display = "none";
     analyzeBtn.disabled = true;
+
+    if (loadingTimeout) clearTimeout(loadingTimeout);
+    loadingTimeout = setTimeout(() => {
+      if (loadingState.style.display === "block") {
+        hideLoading();
+        showError("Market data request timed out. Please try again or pick a benchmark ticker above.");
+      }
+    }, 6000);
   }
 
   function hideLoading() {
+    if (loadingTimeout) clearTimeout(loadingTimeout);
     loadingState.style.display = "none";
     analyzeBtn.disabled = false;
   }
@@ -394,7 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resultsContainer.style.display = "none";
   }
 
-  async function fetchWithTimeout(url, timeoutMs = 3500) {
+  async function fetchWithTimeout(url, timeoutMs = 2500) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeoutMs);
     try {
@@ -408,16 +419,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function calculateLiveAnalysis(symbol) {
+    const targetUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`;
     const fetchUrls = [
-      `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`,
-      `https://corsproxy.io/?url=${encodeURIComponent(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`)}`,
-      `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`)}`
+      targetUrl,
+      `https://corsproxy.io/?url=${encodeURIComponent(targetUrl)}`,
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`
     ];
 
     let chartData = null;
     for (const url of fetchUrls) {
       try {
-        const resp = await fetchWithTimeout(url, 3500);
+        const resp = await fetchWithTimeout(url, 2500);
         if (resp.ok) {
           const json = await resp.json();
           if (json?.chart?.result?.[0]) {
