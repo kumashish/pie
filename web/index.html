@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js?v=20260726_23"></script>
 </head>
 <body>
   <div class="app-container">
@@ -46,24 +45,24 @@
 
         <div class="quick-chips">
           <span class="chip-label">Quick Select:</span>
-          <button type="button" class="chip" data-symbol="SPY" onclick="window.selectTicker('SPY')">SPY</button>
-          <button type="button" class="chip" data-symbol="QQQ" onclick="window.selectTicker('QQQ')">QQQ</button>
-          <button type="button" class="chip" data-symbol="^NSEI" onclick="window.selectTicker('^NSEI')">NIFTY 50</button>
-          <button type="button" class="chip" data-symbol="^NSEBANK" onclick="window.selectTicker('^NSEBANK')">BANKNIFTY</button>
-          <button type="button" class="chip" data-symbol="NIFTY_FIN_SERVICE.NS" onclick="window.selectTicker('NIFTY_FIN_SERVICE.NS')">FINNIFTY</button>
-          <button type="button" class="chip" data-symbol="^NSEMDCP50" onclick="window.selectTicker('^NSEMDCP50')">MIDCAPNIFTY</button>
-          <button type="button" class="chip" data-symbol="^BSESN" onclick="window.selectTicker('^BSESN')">SENSEX</button>
-          <button type="button" class="chip" data-symbol="TITAN.NS" onclick="window.selectTicker('TITAN.NS')">TITAN.NS</button>
-          <button type="button" class="chip" data-symbol="NVDA" onclick="window.selectTicker('NVDA')">NVDA</button>
+          <button class="chip" data-symbol="SPY">SPY</button>
+          <button class="chip" data-symbol="QQQ">QQQ</button>
+          <button class="chip" data-symbol="^NSEI">NIFTY 50</button>
+          <button class="chip" data-symbol="^NSEBANK">BANKNIFTY</button>
+          <button class="chip" data-symbol="NIFTY_FIN_SERVICE.NS">FINNIFTY</button>
+          <button class="chip" data-symbol="^NSEMDCP50">MIDCAPNIFTY</button>
+          <button class="chip" data-symbol="^BSESN">SENSEX</button>
+          <button class="chip" data-symbol="TITAN.NS">TITAN.NS</button>
+          <button class="chip" data-symbol="NVDA">NVDA</button>
         </div>
       </div>
     </section>
 
-    <!-- Top 4 Recommended Trades Leaderboard (Foldable) -->
+    <!-- Top 5 Recommended Trades Leaderboard (Foldable) -->
     <section class="top-trades-section" id="top-trades-section">
       <div class="top-trades-header" id="leaderboard-toggle-btn">
         <div class="top-trades-title-area">
-          <span class="section-badge">🔥 TOP 4 HIGH-CONVICTION TRADES</span>
+          <span class="section-badge">🔥 TOP 5 HIGH-CONVICTION TRADES</span>
           <h2 class="section-title">Market Leaderboards</h2>
         </div>
         <button class="fold-toggle-btn" id="fold-toggle-btn" aria-label="Toggle Leaderboard">
@@ -74,86 +73,12 @@
 
       <div id="leaderboard-body" class="leaderboard-body">
         <div class="market-tabs">
-          <button class="market-tab active" id="tab-us" data-market="us">🇺🇸 U.S. Markets (Top 4)</button>
-          <button class="market-tab" id="tab-india" data-market="india">🇮🇳 Indian Markets (Top 4)</button>
+          <button class="market-tab active" id="tab-us" data-market="us">🇺🇸 U.S. Markets (Top 5)</button>
+          <button class="market-tab" id="tab-india" data-market="india">🇮🇳 Indian Markets (Top 5)</button>
         </div>
 
         <div id="top-trades-grid" class="top-trades-grid">
-          <div class="top-card">
-            <span class="top-card-rank">#1</span>
-            <div>
-              <div class="top-card-header">
-                <span class="top-card-symbol">SPY</span>
-                <span class="top-card-price">$738.93</span>
-              </div>
-              <div class="top-card-score">
-                <span class="score-val">8.6</span>
-                <span class="score-label">/10.0 (Strong Bull)</span>
-              </div>
-              <div class="top-card-strategy">Naked Put</div>
-              <div class="top-card-leg">Credit | 30-45 DTE | 30 Delta OTM</div>
-            </div>
-            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='SPY'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
-              Load Full Analysis ➔
-            </button>
-          </div>
-
-          <div class="top-card">
-            <span class="top-card-rank">#2</span>
-            <div>
-              <div class="top-card-header">
-                <span class="top-card-symbol">NVDA</span>
-                <span class="top-card-price">$206.84</span>
-              </div>
-              <div class="top-card-score">
-                <span class="score-val">8.1</span>
-                <span class="score-label">/10.0 (Strong Bull)</span>
-              </div>
-              <div class="top-card-strategy">Call Debit Spread</div>
-              <div class="top-card-leg">Debit | 30-60 DTE | 50 Delta ITM</div>
-            </div>
-            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='NVDA'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
-              Load Full Analysis ➔
-            </button>
-          </div>
-
-          <div class="top-card">
-            <span class="top-card-rank">#3</span>
-            <div>
-              <div class="top-card-header">
-                <span class="top-card-symbol">AAPL</span>
-                <span class="top-card-price">$224.30</span>
-              </div>
-              <div class="top-card-score">
-                <span class="score-val">7.5</span>
-                <span class="score-label">/10.0 (Bull)</span>
-              </div>
-              <div class="top-card-strategy">Call Debit Spread</div>
-              <div class="top-card-leg">Debit | 30-60 DTE | 50 Delta ITM</div>
-            </div>
-            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='AAPL'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
-              Load Full Analysis ➔
-            </button>
-          </div>
-
-          <div class="top-card">
-            <span class="top-card-rank">#4</span>
-            <div>
-              <div class="top-card-header">
-                <span class="top-card-symbol">QQQ</span>
-                <span class="top-card-price">$540.20</span>
-              </div>
-              <div class="top-card-score">
-                <span class="score-val">6.8</span>
-                <span class="score-label">/10.0 (Bull)</span>
-              </div>
-              <div class="top-card-strategy">Call Debit Spread</div>
-              <div class="top-card-leg">Debit | 30-60 DTE | 50 Delta ITM</div>
-            </div>
-            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='QQQ'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
-              Load Full Analysis ➔
-            </button>
-          </div>
+          <!-- Rendered dynamically by app.js -->
         </div>
       </div>
     </section>
@@ -171,7 +96,7 @@
     </div>
 
     <!-- Results Container -->
-    <main id="results-container" class="results-container">
+    <main id="results-container" class="results-container" style="display: none;">
       <!-- Hero Header: Stock Overview & Score -->
       <section class="hero-overview">
         <div class="overview-header">
@@ -302,5 +227,7 @@
       <p>Portfolio Intelligence Quantitative Engine &copy; 2026. Built with Python & Polars.</p>
     </footer>
   </div>
+
+  <script src="app.js?v=20260726_12"></script>
 </body>
 </html>

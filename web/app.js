@@ -1,12 +1,3 @@
-// Top-level global ticker select handler available immediately on window
-window.selectTicker = function(symbol) {
-  const symbolInput = document.getElementById("symbol-input");
-  if (symbolInput) symbolInput.value = symbol;
-  if (typeof window.fetchAnalysis === "function") {
-    window.fetchAnalysis(symbol, true);
-  }
-};
-
 document.addEventListener("DOMContentLoaded", () => {
   const searchForm = document.getElementById("search-form");
   const symbolInput = document.getElementById("symbol-input");
@@ -42,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const topTradesGrid = document.getElementById("top-trades-grid");
 
   let currentMarket = "us";
-  let top4US = JSON.parse(localStorage.getItem("pie_top4_us") || JSON.parse(localStorage.getItem("pie_top5_us") || "[]"));
-  let top4India = JSON.parse(localStorage.getItem("pie_top4_india") || JSON.parse(localStorage.getItem("pie_top5_india") || "[]"));
+  let top5US = JSON.parse(localStorage.getItem("pie_top5_us") || "[]");
+  let top5India = JSON.parse(localStorage.getItem("pie_top5_india") || "[]");
 
   if (tabUS && tabIndia) {
     tabUS.addEventListener("click", () => {
@@ -67,10 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const foldIcon = document.getElementById("fold-icon");
   const foldText = document.getElementById("fold-text");
 
-  let isFolded = false;
-
   // Always keep Market Leaderboards EXPANDED on initial page load
-  localStorage.removeItem("pie_leaderboard_folded");
   applyFoldState(false);
 
   if (leaderboardHeader) {
@@ -96,23 +84,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initLeaderboardFromIndex();
 
-  // Global Quick Select Handler
-  window.selectTicker = function(symbol) {
-    if (symbolInput) symbolInput.value = symbol;
-    fetchAnalysis(symbol, true);
-  };
-
   // Quick Chips
   document.querySelectorAll(".chip").forEach((chip) => {
-    chip.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      const symbol = chip.getAttribute("data-symbol") || chip.textContent.trim();
-      window.selectTicker(symbol);
+    chip.addEventListener("click", () => {
+      const symbol = chip.getAttribute("data-symbol");
+      symbolInput.value = symbol;
+      fetchAnalysis(symbol, true);
     });
   });
-
-  let activeSearchSymbol = null;
 
   // Search Form Submit
   searchForm.addEventListener("submit", (e) => {
@@ -123,33 +102,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  async function fetchStaticData(safeSymbol) {
-    const candidateUrls = [
-      `data/${safeSymbol}.json`,
-      `./data/${safeSymbol}.json`,
-      `/pie/data/${safeSymbol}.json`,
-      `https://kumashish.github.io/pie/data/${safeSymbol}.json`
-    ];
-
-    for (const url of candidateUrls) {
-      try {
-        const response = await fetchWithTimeout(url, 1200);
-        if (response.ok) {
-          const data = await response.json();
-          if (data && data.symbol) return data;
-        }
-      } catch (e) {
-        continue;
-      }
-    }
-    return null;
-  }
+  // Initial Silent Load for default symbol SPY (No blocking loading spinner on landing page)
+  fetchQuietly("SPY");
 
   async function fetchQuietly(symbol) {
-    const safeSymbol = symbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
     try {
-      const data = await fetchStaticData(safeSymbol);
-      if (data && (!activeSearchSymbol || activeSearchSymbol === symbol.toUpperCase())) {
+      const response = await fetchWithTimeout(`data/${symbol}.json`, 1500);
+      if (response.ok) {
+        const data = await response.json();
         renderResults(data, false);
       }
     } catch (e) {
@@ -175,30 +135,20 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   async function fetchAnalysis(symbol, isExplicitSearch = false) {
-    window.fetchAnalysis = fetchAnalysis;
-    const cleanSym = symbol.trim().toUpperCase();
-    activeSearchSymbol = cleanSym;
-
     if (isExplicitSearch) {
       isFolded = true;
       localStorage.setItem("pie_leaderboard_folded", true);
       applyFoldState(true);
     }
     showLoading();
+    const cleanSym = symbol.trim().toUpperCase();
     const targetSymbol = ALIAS_MAP[cleanSym] || cleanSym;
     const safeSymbol = targetSymbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
 
     try {
-      // 1. Try static JSON across candidate paths (Instant <10ms for GitHub Pages)
-      const staticData = await fetchStaticData(safeSymbol);
-      if (staticData) {
-        renderResults(staticData);
-        return;
-      }
-
-      // 2. Try local REST API endpoint (when running pie serve locally)
+      // 1. Try local REST API endpoint first (when running pie serve)
       try {
-        const response = await fetchWithTimeout(`/api/analyze?symbol=${encodeURIComponent(symbol)}`, 1200);
+        const response = await fetchWithTimeout(`/api/analyze?symbol=${encodeURIComponent(symbol)}`, 1500);
         if (response.ok) {
           const data = await response.json();
           if (!data.error) {
@@ -207,7 +157,19 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       } catch (e) {
-        // Fall through to live engine
+        // Fall through to static pre-computed JSON
+      }
+
+      // 2. Fallback to static pre-computed JSON (when hosted on GitHub Pages)
+      try {
+        const response = await fetchWithTimeout(`data/${safeSymbol}.json`, 1500);
+        if (response.ok) {
+          const data = await response.json();
+          renderResults(data);
+          return;
+        }
+      } catch (err) {
+        // Fall through to live client-side engine
       }
 
       // 3. Fallback to Live Client-Side Yahoo Finance Calculation Engine
@@ -215,9 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const liveData = await calculateLiveAnalysis(targetSymbol);
         renderResults(liveData);
       } catch (liveErr) {
-        // 4. Guaranteed deterministic fallback generator
-        const fallbackData = generateFallbackAnalysis(targetSymbol);
-        renderResults(fallbackData);
+        showError(`Unable to analyze ${symbol}: ${liveErr.message}. Verify ticker symbol.`);
       }
     } finally {
       hideLoading();
@@ -232,7 +192,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateLeaderboard(data);
 
     // Hero Overview
-    if (symbolInput && data.symbol) symbolInput.value = data.symbol;
     resSymbol.textContent = data.symbol;
     const currency = (data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX")) ? "₹" : "$";
     resPrice.textContent = `${currency}${data.last_price.toLocaleString()}`;
@@ -250,35 +209,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Render Option Legs
     if (data.estimated_trade && data.estimated_trade.legs && data.estimated_trade.legs.length > 0) {
-      resLegsContainer.innerHTML = data.estimated_trade.legs.map((leg) => {
-        const act = (leg.action || "BUY").toUpperCase();
-        const qty = leg.quantity || 1;
-        const strikeStr = leg.strike_formatted || leg.strike || "";
-        const optType = leg.option_type || leg.type || "CE";
-        const expDisp = leg.expiration_display || leg.expiration || "45 DTE";
-        const dteVal = leg.dte || 45;
-        const actClass = act.toLowerCase().includes("buy") ? "buy" : "sell";
-
-        return `
-          <div class="leg-card">
-            <span class="leg-action ${actClass}">${act} ${qty}x</span>
-            <span class="leg-details">${data.symbol} ${strikeStr} ${optType}</span>
-            <span class="leg-expiry">Expiry: <strong>${expDisp}</strong> (${dteVal} DTE)</span>
-          </div>
-        `;
-      }).join("");
-      resExpirationWindow.textContent = `${data.estimated_trade.legs[0].dte || 45} DTE`;
+      resLegsContainer.innerHTML = data.estimated_trade.legs.map((leg) => `
+        <div class="leg-card">
+          <span class="leg-action ${leg.action.toLowerCase()}">${leg.action.toUpperCase()} ${leg.quantity}x</span>
+          <span class="leg-details">${data.symbol} ${leg.strike_formatted} ${leg.option_type}</span>
+          <span class="leg-expiry">Expiry: <strong>${leg.expiration_display}</strong> (${leg.dte} DTE)</span>
+        </div>
+      `).join("");
+      resExpirationWindow.textContent = `${data.estimated_trade.legs[0].dte} DTE`;
     } else {
       resLegsContainer.innerHTML = `
         <div class="leg-card">
-          <span class="leg-details" style="color: #94a3b8;">No option legs recommended under current market conditions (${data.strategy_display || 'N/A'}).</span>
+          <span class="leg-details" style="color: #94a3b8;">No option legs recommended under current market conditions (${data.strategy_display}).</span>
         </div>
       `;
       resExpirationWindow.textContent = "N/A";
     }
 
     // Render Indicators Grid
-    const indEntries = data.indicators ? Object.entries(data.indicators) : [];
+    const indEntries = Object.entries(data.indicators);
     if (indEntries.length > 0) {
       resIndicatorsGrid.innerHTML = indEntries.map(([name, val]) => `
         <div class="ind-item">
@@ -292,22 +241,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Render Rules Table
     if (data.rules && data.rules.length > 0) {
-      resRulesTbody.innerHTML = data.rules.map((rule) => {
-        const isPass = rule.passed === true || String(rule.score).toUpperCase() === "PASS";
-        const scoreStr = rule.max_score ? `${rule.score} / ${rule.max_score}` : (rule.score || (isPass ? "PASS" : "FAIL"));
-        return `
-          <tr>
-            <td>
-              <span class="status-badge ${isPass ? 'pass' : 'fail'}">
-                ${isPass ? 'PASS' : 'FAIL'}
-              </span>
-            </td>
-            <td><strong>${rule.name}</strong></td>
-            <td>${scoreStr}</td>
-            <td style="color: #94a3b8;">${rule.explanation || 'Condition evaluated'}</td>
-          </tr>
-        `;
-      }).join("");
+      resRulesTbody.innerHTML = data.rules.map((rule) => `
+        <tr>
+          <td>
+            <span class="status-badge ${rule.passed ? 'pass' : 'fail'}">
+              ${rule.passed ? 'PASS' : 'FAIL'}
+            </span>
+          </td>
+          <td><strong>${rule.name}</strong></td>
+          <td>${rule.score} / ${rule.max_score}</td>
+          <td style="color: #94a3b8;">${rule.explanation}</td>
+        </tr>
+      `).join("");
     } else {
       resRulesTbody.innerHTML = "<tr><td colspan='4'>No rule evaluations available.</td></tr>";
     }
@@ -331,46 +276,49 @@ document.addEventListener("DOMContentLoaded", () => {
     return map[regime] || `⚪ ${regime}`;
   }
 
-  const DEFAULT_TOP4_US = [
-    { symbol: "SPY", last_price: 738.93, fit_score: 86.0, regime_display: "Strong Bull", strategy_display: "Naked Put", trade_profile: "Credit | 30-45 DTE | 30 Delta OTM", as_of: "Live Market Feed" },
-    { symbol: "NVDA", last_price: 206.84, fit_score: 81.0, regime_display: "Strong Bull", strategy_display: "Call Debit Spread", trade_profile: "Debit | 30-60 DTE | 50 Delta ITM", as_of: "Live Market Feed" },
-    { symbol: "AAPL", last_price: 224.30, fit_score: 75.0, regime_display: "Bull", strategy_display: "Call Debit Spread", trade_profile: "Debit | 30-60 DTE | 50 Delta ITM", as_of: "Live Market Feed" },
-    { symbol: "QQQ", last_price: 540.20, fit_score: 68.0, regime_display: "Bull", strategy_display: "Call Debit Spread", trade_profile: "Debit | 30-60 DTE | 50 Delta ITM", as_of: "Live Market Feed" }
-  ];
-
-  const DEFAULT_TOP4_INDIA = [
-    { symbol: "TITAN.NS", last_price: 3450.0, fit_score: 100.0, regime_display: "Strong Bull", strategy_display: "Call Debit Spread", trade_profile: "Debit | 30-60 DTE | 50 Delta ITM", as_of: "Live Market Feed" },
-    { symbol: "SUNPHARMA.NS", last_price: 1720.0, fit_score: 99.0, regime_display: "Strong Bull", strategy_display: "Call Debit Spread", trade_profile: "Debit | 30-60 DTE | 50 Delta ITM", as_of: "Live Market Feed" },
-    { symbol: "BAJAJ-AUTO.NS", last_price: 9850.0, fit_score: 96.0, regime_display: "Strong Bull", strategy_display: "Call Debit Spread", trade_profile: "Debit | 30-60 DTE | 50 Delta ITM", as_of: "Live Market Feed" },
-    { symbol: "ICICIBANK.NS", last_price: 1240.0, fit_score: 96.0, regime_display: "Strong Bull", strategy_display: "Call Debit Spread", trade_profile: "Debit | 30-60 DTE | 50 Delta ITM", as_of: "Live Market Feed" }
-  ];
-
   async function initLeaderboardFromIndex() {
-    try {
-      const resp = await fetchWithTimeout("data/index.json", 1500);
-      if (resp.ok) {
-        const indexList = await resp.json();
-        const usList = indexList.filter(item => !(item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX")));
-        const indiaList = indexList.filter(item => (item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX")));
-
-        if (usList.length > 0) top4US = usList.slice(0, 4);
-        if (indiaList.length > 0) top4India = indiaList.slice(0, 4);
-      }
-    } catch (e) {
-      // Fallback to default arrays
+    if (top5US.length > 0 && top5India.length > 0) {
+      renderLeaderboard();
+      return;
     }
 
-    if (!top4US || top4US.length === 0) top4US = [...DEFAULT_TOP4_US];
-    if (!top4India || top4India.length === 0) top4India = [...DEFAULT_TOP4_INDIA];
+    try {
+      const resp = await fetch("data/index.json");
+      if (resp.ok) {
+        const indexList = await resp.json();
+        for (const item of indexList) {
+          const isIndia = item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX");
+          const targetList = isIndia ? top5India : top5US;
+          if (!targetList.some(t => t.symbol === item.symbol)) {
+            targetList.push({
+              symbol: item.symbol,
+              last_price: item.last_price,
+              fit_score: item.fit_score,
+              regime_display: item.regime_display,
+              strategy_display: item.strategy_display,
+              trade_profile: item.trade_profile,
+              as_of: item.as_of
+            });
+          }
+        }
 
-    localStorage.setItem("pie_top4_us", JSON.stringify(top4US));
-    localStorage.setItem("pie_top4_india", JSON.stringify(top4India));
+        top5US.sort((a, b) => b.fit_score - a.fit_score);
+        top5India.sort((a, b) => b.fit_score - a.fit_score);
+        top5US = top5US.slice(0, 5);
+        top5India = top5India.slice(0, 5);
+
+        localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
+        localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
+      }
+    } catch (e) {
+      // Ignore
+    }
     renderLeaderboard();
   }
 
   function updateLeaderboard(data) {
     const isIndia = data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX");
-    const targetList = isIndia ? top4India : top4US;
+    const targetList = isIndia ? top5India : top5US;
 
     const existingIdx = targetList.findIndex(t => t.symbol === data.symbol);
     const newEntry = {
@@ -388,18 +336,18 @@ document.addEventListener("DOMContentLoaded", () => {
         targetList[existingIdx] = newEntry;
       }
     } else {
-      if (targetList.length < 4 || data.fit_score > targetList[targetList.length - 1].fit_score) {
+      if (targetList.length < 5 || data.fit_score > targetList[targetList.length - 1].fit_score) {
         targetList.push(newEntry);
       }
     }
 
     targetList.sort((a, b) => b.fit_score - a.fit_score);
     if (isIndia) {
-      top4India = targetList.slice(0, 4);
-      localStorage.setItem("pie_top4_india", JSON.stringify(top4India));
+      top5India = targetList.slice(0, 5);
+      localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
     } else {
-      top4US = targetList.slice(0, 4);
-      localStorage.setItem("pie_top4_us", JSON.stringify(top4US));
+      top5US = targetList.slice(0, 5);
+      localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
     }
 
     renderLeaderboard();
@@ -408,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderLeaderboard() {
     if (!topTradesGrid) return;
 
-    const targetList = (currentMarket === "india" ? top4India : top4US).slice(0, 4);
+    const targetList = currentMarket === "india" ? top5India : top5US;
     if (targetList.length === 0) {
       topTradesGrid.innerHTML = `<p style="color: #94a3b8; font-size: 13px;">No high-conviction trades calculated yet for ${currentMarket.toUpperCase()} market.</p>`;
       return;
@@ -443,11 +391,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showLoading() {
     loadingState.style.display = "block";
+    resultsContainer.style.display = "none";
     errorBanner.style.display = "none";
     analyzeBtn.disabled = true;
-    if (btnSpinner) btnSpinner.style.display = "inline-block";
-    const btnText = analyzeBtn.querySelector(".btn-text");
-    if (btnText) btnText.textContent = "Calculating...";
 
     if (loadingTimeout) clearTimeout(loadingTimeout);
     loadingTimeout = setTimeout(() => {
@@ -462,9 +408,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (loadingTimeout) clearTimeout(loadingTimeout);
     loadingState.style.display = "none";
     analyzeBtn.disabled = false;
-    if (btnSpinner) btnSpinner.style.display = "none";
-    const btnText = analyzeBtn.querySelector(".btn-text");
-    if (btnText) btnText.textContent = "Generate Trade Structure";
   }
 
   function showError(msg) {
@@ -672,10 +615,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       estimated_trade: {
         strategy: "Call Debit Spread",
-        max_gain: "Defined Risk / Reward",
+        max_gain: "Defined Risk",
         legs: [
-          { action: "Buy", quantity: 1, strike: Math.round(basePrice * 0.99), strike_formatted: String(Math.round(basePrice * 0.99)), option_type: "CE", expiration_display: "45-Days", dte: 45 },
-          { action: "Sell", quantity: 1, strike: Math.round(basePrice * 1.05), strike_formatted: String(Math.round(basePrice * 1.05)), option_type: "CE", expiration_display: "45-Days", dte: 45 }
+          { action: "BUY", type: "CALL", strike: Math.round(basePrice * 0.99), dte: 45 },
+          { action: "SELL", type: "CALL", strike: Math.round(basePrice * 1.05), dte: 45 }
         ]
       }
     };

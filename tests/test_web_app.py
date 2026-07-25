@@ -38,27 +38,12 @@ class TestWebAppUI(unittest.TestCase):
         self.assertIn('id="symbol-input"', self.index_content)
         self.assertIn('id="analyze-btn"', self.index_content)
 
-    def test_top_4_market_leaderboard_pre_rendered(self) -> None:
-        """Verify Top 4 Market Leaderboards are pre-rendered in index.html."""
-        self.assertIn("TOP 4 HIGH-CONVICTION TRADES", self.index_content)
-        self.assertIn("U.S. Markets (Top 4)", self.index_content)
-        self.assertIn("Indian Markets (Top 4)", self.index_content)
+    def test_top_5_market_leaderboard(self) -> None:
+        """Verify Top 5 Market Leaderboards structure in index.html."""
+        self.assertIn("TOP 5 HIGH-CONVICTION TRADES", self.index_content)
+        self.assertIn("U.S. Markets (Top 5)", self.index_content)
+        self.assertIn("Indian Markets (Top 5)", self.index_content)
         self.assertIn('<div id="top-trades-grid" class="top-trades-grid">', self.index_content)
-        top_cards = self.index_content.count('class="top-card"')
-        self.assertGreaterEqual(top_cards, 4, "Must pre-render at least 4 Top Trade cards in index.html")
-
-    def test_candidate_url_path_resolver_in_app_js(self) -> None:
-        """Verify candidate URL path resolver fetchStaticData exists in app.js."""
-        self.assertIn("fetchStaticData(safeSymbol)", self.app_content)
-        self.assertIn("candidateUrls", self.app_content)
-        self.assertIn("data/${safeSymbol}.json", self.app_content)
-        self.assertIn("https://kumashish.github.io/pie/data/${safeSymbol}.json", self.app_content)
-
-    def test_active_symbol_tracking_prevents_spy_overwrite(self) -> None:
-        """Verify activeSearchSymbol tracks active searches to prevent SPY overwrite race condition."""
-        self.assertIn("let activeSearchSymbol = null;", self.app_content)
-        self.assertIn("activeSearchSymbol = cleanSym;", self.app_content)
-        self.assertIn("activeSearchSymbol === symbol.toUpperCase()", self.app_content)
 
     def test_static_data_files_valid_schemas(self) -> None:
         """Verify static JSON dataset files exist and contain valid option schemas."""
