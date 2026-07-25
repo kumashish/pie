@@ -617,7 +617,45 @@ body {
 }
 
 .top-trades-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fold-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.fold-toggle-btn:hover {
+  background: rgba(0, 229, 255, 0.15);
+  color: var(--accent-cyan);
+  border-color: rgba(0, 229, 255, 0.3);
+}
+
+.leaderboard-body {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.top-trades-section.collapsed .leaderboard-body {
+  display: none;
+}
+
+.top-trades-section.collapsed {
+  padding-bottom: 18px;
 }
 
 .section-badge {

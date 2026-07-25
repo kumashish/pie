@@ -52,6 +52,39 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Foldable Leaderboard Toggle
+  const leaderboardSection = document.getElementById("top-trades-section");
+  const leaderboardHeader = document.getElementById("leaderboard-toggle-btn");
+  const foldIcon = document.getElementById("fold-icon");
+  const foldText = document.getElementById("fold-text");
+
+  let isFolded = localStorage.getItem("pie_leaderboard_folded") === "true";
+
+  if (isFolded && leaderboardSection) {
+    applyFoldState(true);
+  }
+
+  if (leaderboardHeader) {
+    leaderboardHeader.addEventListener("click", () => {
+      isFolded = !isFolded;
+      localStorage.setItem("pie_leaderboard_folded", isFolded);
+      applyFoldState(isFolded);
+    });
+  }
+
+  function applyFoldState(folded) {
+    if (!leaderboardSection) return;
+    if (folded) {
+      leaderboardSection.classList.add("collapsed");
+      if (foldIcon) foldIcon.textContent = "▶";
+      if (foldText) foldText.textContent = "Expand";
+    } else {
+      leaderboardSection.classList.remove("collapsed");
+      if (foldIcon) foldIcon.textContent = "▼";
+      if (foldText) foldText.textContent = "Collapse";
+    }
+  }
+
   initLeaderboardFromIndex();
 
   // Quick Chips
