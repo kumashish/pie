@@ -107,7 +107,7 @@ Manages active positions and triggers trade exit signals based on 4 risk rules:
 ---
 
 ### 6. Multi-Channel Webhook Dispatcher (`pie/reporting/notifications.py`)
-Dispatches real-time signal alerts to **Telegram (`@groottex`)**, Slack, and Discord. Formats all alert timestamps natively in **IST (UTC+5:30)**.
+Dispatches real-time signal alerts via telegram, Slack, and Discord.
 
 ---
 
