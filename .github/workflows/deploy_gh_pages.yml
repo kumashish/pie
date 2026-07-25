@@ -48,8 +48,6 @@ jobs:
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Web Assets Artifact
         uses: actions/upload-pages-artifact@v3
