@@ -87,14 +87,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initLeaderboardFromIndex();
 
+  // Global Quick Select Handler
+  window.selectTicker = function(symbol) {
+    if (symbolInput) symbolInput.value = symbol;
+    fetchAnalysis(symbol, true);
+  };
+
   // Quick Chips
   document.querySelectorAll(".chip").forEach((chip) => {
     chip.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      const symbol = chip.getAttribute("data-symbol");
-      if (symbolInput) symbolInput.value = symbol;
-      fetchAnalysis(symbol, true);
+      const symbol = chip.getAttribute("data-symbol") || chip.textContent.trim();
+      window.selectTicker(symbol);
     });
   });
 
