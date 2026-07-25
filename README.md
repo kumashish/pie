@@ -1,34 +1,34 @@
 <!-- MARKET-SNAPSHOT-START -->
 ### 🌐 U.S. Macro Benchmark Indices
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 07:36 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 25-Aug-2026-524-PE | Active (Today, 07:34)  |
-| QQQ       | 07:28 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-684-CE<br> Sell QQQ 25-Aug-2026-712-CE | Active (Today, 00:26)  |
+| Market    | Updated   | Regime            | Score     | Strategy          | CAGR (Expiry) | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ------------- | ---------------------- |
+| SPY       | 07:58 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 25-Aug-2026-525-PE | +573.1%/yr    | Active (Today, 07:34)  |
+| QQQ       | 07:28 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-684-CE<br> Sell QQQ 25-Aug-2026-712-CE | N/A (Debit)   | Active (Today, 00:26)  |
 
 ### 🌐 Indian Macro Benchmark Indices
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| NIFTY 50  | 07:28 IST | 🔴 Put Debit Spread | 7.6/10    | Buy NIFTY 25-Aug-2026-23750-PE<br> Sell NIFTY 25-Aug-2026-23000-PE | New                    |
-| BANKNIFTY | 07:28 IST | 🟢 Call Debit Spread | 7.4/10    | Buy BANKNIFTY 25-Aug-2026-56700-CE<br> Sell BANKNIFTY 25-Aug-2026-59000-CE | New                    |
+| Market    | Updated   | Regime            | Score     | Strategy          | CAGR (Expiry) | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ------------- | ---------------------- |
+| NIFTY 50  | 07:28 IST | 🔴 Put Debit Spread | 7.6/10    | Buy NIFTY 25-Aug-2026-23750-PE<br> Sell NIFTY 25-Aug-2026-23000-PE | N/A (Debit)   | New                    |
+| BANKNIFTY | 07:28 IST | 🟢 Call Debit Spread | 7.4/10    | Buy BANKNIFTY 25-Aug-2026-56700-CE<br> Sell BANKNIFTY 25-Aug-2026-59000-CE | N/A (Debit)   | New                    |
 
 ### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| TITAN.NS  | 07:28 IST | 🟢 Call Debit Spread | 10.0/10   | Buy TITAN 25-Aug-2026-4680-CE<br> Sell TITAN 25-Aug-2026-4870-CE | Active (Yesterday, 15:47) |
-| SUNPHARMA.NS | 07:28 IST | 🟢 Call Debit Spread | 9.9/10    | Buy SUNPHARMA 25-Aug-2026-1940-CE<br> Sell SUNPHARMA 25-Aug-2026-2020-CE | Active (Yesterday, 15:47) |
-| ICICIBANK.NS | 07:28 IST | 🟢 Call Debit Spread | 9.6/10    | Buy ICICIBANK 25-Aug-2026-1430-CE<br> Sell ICICIBANK 25-Aug-2026-1490-CE | New                    |
-| BAJAJ-AUTO.NS | 07:28 IST | 🟢 Call Debit Spread | 9.6/10    | Buy BAJAJ-AUTO 25-Aug-2026-11100-CE<br> Sell BAJAJ-AUTO 25-Aug-2026-11600-CE | Active (Yesterday, 15:46) |
-| HDFCBANK.NS | 07:28 IST | 🔴 Put Debit Spread | 9.2/10    | Buy HDFCBANK 25-Aug-2026-740-PE<br> Sell HDFCBANK 25-Aug-2026-710-PE | New                    |
-| HDFCLIFE.NS | 07:28 IST | 🔴 Put Debit Spread | 9.0/10    | Buy HDFCLIFE 25-Aug-2026-560-PE<br> Sell HDFCLIFE 25-Aug-2026-540-PE | Active (Yesterday, 15:46) |
-| HINDALCO.NS | 07:28 IST | 🟡 Long Butterfly  | 8.3/10    | Buy HINDALCO 25-Aug-2026-920-CE<br> Sell 2x HINDALCO 25-Aug-2026-940-CE<br> Buy HINDALCO 25-Aug-2026-970-CE | Active (Yesterday, 15:57) |
-| JSWSTEEL.NS | 07:28 IST | 🟡 Long Butterfly  | 7.5/10    | Buy JSWSTEEL 25-Aug-2026-1210-CE<br> Sell 2x JSWSTEEL 25-Aug-2026-1240-CE<br> Buy JSWSTEEL 25-Aug-2026-1270-CE | Active (Yesterday, 16:20) |
-| HCLTECH.NS | 07:28 IST | 🟡 Iron Condor     | 7.1/10    | Buy HCLTECH 25-Aug-2026-1170-PE<br> Sell HCLTECH 25-Aug-2026-1200-PE<br> Sell HCLTECH 25-Aug-2026-1340-CE<br> Buy HCLTECH 25-Aug-2026-1370-CE | Active (Yesterday, 20:42) |
-| TCS.NS    | 07:28 IST | 🟡 Credit Spread   | 6.9/10    | Sell TCS 25-Aug-2026-2320-CE<br> Buy TCS 25-Aug-2026-2380-CE | New                    |
-| SBILIFE.NS | 07:28 IST | 🟡 Iron Condor     | 6.8/10    | Buy SBILIFE 25-Aug-2026-1710-PE<br> Sell SBILIFE 25-Aug-2026-1760-PE<br> Sell SBILIFE 25-Aug-2026-1960-CE<br> Buy SBILIFE 25-Aug-2026-2010-CE | Active (Yesterday, 20:42) |
-| M&M.NS    | 07:28 IST | 🟡 Long Butterfly  | 6.4/10    | Buy M&M 25-Aug-2026-3080-CE<br> Sell 2x M&M 25-Aug-2026-3160-CE<br> Buy M&M 25-Aug-2026-3250-CE | Active (Yesterday, 16:40) |
-| ULTRACEMCO.NS | 07:28 IST | 🟡 Long Butterfly  | 6.2/10    | Buy ULTRACEMCO 25-Aug-2026-11500-CE<br> Sell 2x ULTRACEMCO 25-Aug-2026-11800-CE<br> Buy ULTRACEMCO 25-Aug-2026-12200-CE | Active (Yesterday, 16:36) |
-| BHARTIARTL.NS | 07:28 IST | 🟡 Iron Condor     | 6.1/10    | Buy BHARTIARTL 25-Aug-2026-1740-PE<br> Sell BHARTIARTL 25-Aug-2026-1800-PE<br> Sell BHARTIARTL 25-Aug-2026-2000-CE<br> Buy BHARTIARTL 25-Aug-2026-2050-CE | Active (Yesterday, 22:10) |
-| BAJAJFINSV.NS | 07:28 IST | 🟡 Iron Condor     | 6.1/10    | Buy BAJAJFINSV 25-Aug-2026-1720-PE<br> Sell BAJAJFINSV 25-Aug-2026-1780-PE<br> Sell BAJAJFINSV 25-Aug-2026-1980-CE<br> Buy BAJAJFINSV 25-Aug-2026-2030-CE | Active (Yesterday, 22:10) |
+| Market    | Updated   | Regime            | Score     | Strategy          | CAGR (Expiry) | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ------------- | ---------------------- |
+| TITAN.NS  | 07:28 IST | 🟢 Call Debit Spread | 10.0/10   | Buy TITAN 25-Aug-2026-4680-CE<br> Sell TITAN 25-Aug-2026-4870-CE | N/A (Debit)   | Active (Yesterday, 15:47) |
+| SUNPHARMA.NS | 07:28 IST | 🟢 Call Debit Spread | 9.9/10    | Buy SUNPHARMA 25-Aug-2026-1940-CE<br> Sell SUNPHARMA 25-Aug-2026-2020-CE | N/A (Debit)   | Active (Yesterday, 15:47) |
+| ICICIBANK.NS | 07:28 IST | 🟢 Call Debit Spread | 9.6/10    | Buy ICICIBANK 25-Aug-2026-1430-CE<br> Sell ICICIBANK 25-Aug-2026-1490-CE | N/A (Debit)   | New                    |
+| BAJAJ-AUTO.NS | 07:28 IST | 🟢 Call Debit Spread | 9.6/10    | Buy BAJAJ-AUTO 25-Aug-2026-11100-CE<br> Sell BAJAJ-AUTO 25-Aug-2026-11600-CE | N/A (Debit)   | Active (Yesterday, 15:46) |
+| HDFCBANK.NS | 07:28 IST | 🔴 Put Debit Spread | 9.2/10    | Buy HDFCBANK 25-Aug-2026-740-PE<br> Sell HDFCBANK 25-Aug-2026-710-PE | N/A (Debit)   | New                    |
+| HDFCLIFE.NS | 07:28 IST | 🔴 Put Debit Spread | 9.0/10    | Buy HDFCLIFE 25-Aug-2026-560-PE<br> Sell HDFCLIFE 25-Aug-2026-540-PE | N/A (Debit)   | Active (Yesterday, 15:46) |
+| HINDALCO.NS | 07:28 IST | 🟡 Long Butterfly  | 8.3/10    | Buy HINDALCO 25-Aug-2026-920-CE<br> Sell 2x HINDALCO 25-Aug-2026-940-CE<br> Buy HINDALCO 25-Aug-2026-970-CE | N/A (Debit)   | Active (Yesterday, 15:57) |
+| JSWSTEEL.NS | 07:28 IST | 🟡 Long Butterfly  | 7.5/10    | Buy JSWSTEEL 25-Aug-2026-1210-CE<br> Sell 2x JSWSTEEL 25-Aug-2026-1240-CE<br> Buy JSWSTEEL 25-Aug-2026-1270-CE | N/A (Debit)   | Active (Yesterday, 16:20) |
+| HCLTECH.NS | 07:28 IST | 🟡 Iron Condor     | 7.1/10    | Buy HCLTECH 25-Aug-2026-1170-PE<br> Sell HCLTECH 25-Aug-2026-1200-PE<br> Sell HCLTECH 25-Aug-2026-1340-CE<br> Buy HCLTECH 25-Aug-2026-1370-CE | +498.2%/yr    | Active (Yesterday, 20:42) |
+| TCS.NS    | 07:28 IST | 🟡 Credit Spread   | 6.9/10    | Sell TCS 25-Aug-2026-2320-CE<br> Buy TCS 25-Aug-2026-2380-CE | +486.8%/yr    | New                    |
+| SBILIFE.NS | 07:28 IST | 🟡 Iron Condor     | 6.8/10    | Buy SBILIFE 25-Aug-2026-1710-PE<br> Sell SBILIFE 25-Aug-2026-1760-PE<br> Sell SBILIFE 25-Aug-2026-1960-CE<br> Buy SBILIFE 25-Aug-2026-2010-CE | +481.4%/yr    | Active (Yesterday, 20:42) |
+| M&M.NS    | 07:28 IST | 🟡 Long Butterfly  | 6.4/10    | Buy M&M 25-Aug-2026-3080-CE<br> Sell 2x M&M 25-Aug-2026-3160-CE<br> Buy M&M 25-Aug-2026-3250-CE | N/A (Debit)   | Active (Yesterday, 16:40) |
+| ULTRACEMCO.NS | 07:28 IST | 🟡 Long Butterfly  | 6.2/10    | Buy ULTRACEMCO 25-Aug-2026-11500-CE<br> Sell 2x ULTRACEMCO 25-Aug-2026-11800-CE<br> Buy ULTRACEMCO 25-Aug-2026-12200-CE | N/A (Debit)   | Active (Yesterday, 16:36) |
+| BHARTIARTL.NS | 07:28 IST | 🟡 Iron Condor     | 6.1/10    | Buy BHARTIARTL 25-Aug-2026-1740-PE<br> Sell BHARTIARTL 25-Aug-2026-1800-PE<br> Sell BHARTIARTL 25-Aug-2026-2000-CE<br> Buy BHARTIARTL 25-Aug-2026-2050-CE | +448.4%/yr    | Active (Yesterday, 22:10) |
+| BAJAJFINSV.NS | 07:28 IST | 🟡 Iron Condor     | 6.1/10    | Buy BAJAJFINSV 25-Aug-2026-1720-PE<br> Sell BAJAJFINSV 25-Aug-2026-1780-PE<br> Sell BAJAJFINSV 25-Aug-2026-1980-CE<br> Buy BAJAJFINSV 25-Aug-2026-2030-CE | +446.9%/yr    | Active (Yesterday, 22:10) |
 
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |

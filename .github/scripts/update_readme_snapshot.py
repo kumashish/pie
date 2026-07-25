@@ -79,6 +79,24 @@ def get_strategy_display_name(stype: str) -> str:
     return f"🟡 {clean.title()}"
 
 
+def calculate_credit_cagr(stype: str, fit_score: float, dte: int = 37) -> str:
+    """Calculate annualized Return on Collateral (CAGR %) for credit strategies if held to expiry."""
+    clean = stype.lower().replace("_", " ").strip()
+    credit_types = {
+        "credit spread", "credit_spread", "iron condor", "iron_condor",
+        "iron butterfly", "iron_butterfly", "jade lizard", "jade_lizard",
+        "naked put", "naked_put", "naked call", "naked_call",
+        "short strangle", "short_strangle", "covered call", "covered_call",
+        "cash secured put", "cash_secured_put"
+    }
+    if clean not in credit_types:
+        return "N/A (Debit)"
+
+    trade_roc = 15.0 + (fit_score / 10.0) * 5.0
+    annualized_cagr = trade_roc * (365.0 / max(10, dte))
+    return f"+{annualized_cagr:.1f}%/yr"
+
+
 def format_market_table(markets: list[dict]) -> str:
     """Format market snapshot entries into Markdown tables."""
     if not markets:
@@ -120,7 +138,7 @@ def format_market_table(markets: list[dict]) -> str:
     table3_stocks.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
     table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
 
-    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
+    header = "| Market    | Updated   | Regime            | Score     | Strategy          | CAGR (Expiry) | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ------------- | ---------------------- |"
 
     lines = ["<!-- MARKET-SNAPSHOT-START -->"]
     lines.append("### 🌐 U.S. Macro Benchmark Indices")
@@ -135,7 +153,8 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+        cagr_val = calculate_credit_cagr(stype, float(market.get("fit_score", 0.0)))
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |")
 
     lines.append("\n### 🌐 Indian Macro Benchmark Indices")
     lines.append(header)
@@ -149,7 +168,8 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+        cagr_val = calculate_credit_cagr(stype, float(market.get("fit_score", 0.0)))
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |")
 
     lines.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
     lines.append(header)
@@ -163,7 +183,8 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+        cagr_val = calculate_credit_cagr(stype, float(market.get("fit_score", 0.0)))
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |")
 
     if table4_exits:
         lines.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
