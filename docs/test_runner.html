@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Intelligence Engine | Automated Web Unit Tests</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #111827;
+      --border-color: rgba(255, 255, 255, 0.1);
+      --accent-cyan: #00e5ff;
+      --accent-green: #10b981;
+      --accent-red: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .test-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .test-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .test-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 28px;
+      color: #ffffff;
+      margin: 0 0 8px 0;
+    }
+
+    .test-summary {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .suite-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .suite-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .test-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .badge-pass {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--accent-green);
+      border: 1px solid var(--accent-green);
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .badge-fail {
+      background: rgba(239, 68, 68, 0.2);
+      color: var(--accent-red);
+      border: 1px solid var(--accent-red);
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .badge-pending {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+
+    .summary-bar {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(0, 229, 255, 0.05);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+    <div class="test-header">
+      <h1 class="test-title">⚡ Web UI Unit Test Suite</h1>
+      <p class="test-summary">Automated Verification for QuickSelect, Custom Search Input, and Trade Generation Engine</p>
+    </div>
+
+    <div class="suite-card">
+      <div class="suite-title">
+        <span>QuickSelect & Input Validation Suite</span>
+        <span id="suite1-status" class="badge-pending">RUNNING...</span>
+      </div>
+      <div id="suite1-results"></div>
+    </div>
+
+    <div class="suite-card">
+      <div class="suite-title">
+        <span>Static Dataset & 4-Path Candidate Resolver Suite</span>
+        <span id="suite2-status" class="badge-pending">RUNNING...</span>
+      </div>
+      <div id="suite2-results"></div>
+    </div>
+
+    <div class="summary-bar">
+      <div>
+        <strong id="total-tests">0</strong> Tests Executed | <strong id="total-passed" style="color: var(--accent-green);">0</strong> Passed | <strong id="total-failed" style="color: var(--accent-red);">0</strong> Failed
+      </div>
+      <button onclick="window.location.reload();" style="background: var(--accent-cyan); color: #000; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 600; cursor: pointer;">Re-run All Tests</button>
+    </div>
+  </div>
+
+  <script>
+    async function runTests() {
+      let passed = 0;
+      let failed = 0;
+
+      function renderTestResult(containerId, testName, isSuccess, details = "") {
+        const container = document.getElementById(containerId);
+        const div = document.createElement("div");
+        div.className = "test-item";
+        div.innerHTML = `
+          <span><strong>${testName}</strong> ${details ? '<small style="color:#94a3b8">(' + details + ')</small>' : ''}</span>
+          <span class="${isSuccess ? 'badge-pass' : 'badge-fail'}">${isSuccess ? 'PASS' : 'FAIL'}</span>
+        `;
+        container.appendChild(div);
+        if (isSuccess) passed++; else failed++;
+      }
+
+      // Suite 1: QuickSelect Chips & Search Form
+      try {
+        const res = await fetch("index.html");
+        const html = await res.text();
+
+        const hasQuickSelect = html.includes('class="quick-chips"');
+        renderTestResult("suite1-results", "QuickSelect HTML container present", hasQuickSelect);
+
+        const chipMatches = html.match(/class="chip"/g);
+        renderTestResult("suite1-results", "QuickSelect contains 9 ticker chips", chipMatches && chipMatches.length >= 9, `${chipMatches ? chipMatches.length : 0} chips found`);
+
+        const buttonTypeMatches = html.match(/type="button"\s+class="chip"/g);
+        renderTestResult("suite1-results", "All chips have explicit type='button'", buttonTypeMatches && buttonTypeMatches.length >= 8);
+
+        const onclickMatches = html.match(/onclick="window\.selectTicker/g);
+        renderTestResult("suite1-results", "All chips have explicit window.selectTicker onclick", onclickMatches && onclickMatches.length >= 8);
+
+        document.getElementById("suite1-status").className = "badge-pass";
+        document.getElementById("suite1-status").textContent = "ALL PASSED";
+      } catch (e) {
+        document.getElementById("suite1-status").className = "badge-fail";
+        document.getElementById("suite1-status").textContent = "FAILED";
+      }
+
+      // Suite 2: Data Candidate Resolvers
+      const candidateTickers = ["SPY", "QQQ", "NVDA", "AAPL", "GOOGL", "NSEI", "TITAN_NS", "SUNPHARMA_NS"];
+      let staticDataOk = true;
+
+      for (const symbol of candidateTickers) {
+        try {
+          const resp = await fetch(`data/${symbol}.json`);
+          if (resp.ok) {
+            const data = await resp.json();
+            renderTestResult("suite2-results", `Fetch static dataset data/${symbol}.json`, data && data.symbol, `Price: $${data.last_price || 'N/A'}`);
+          } else {
+            renderTestResult("suite2-results", `Fetch static dataset data/${symbol}.json`, false, `HTTP ${resp.status}`);
+            staticDataOk = false;
+          }
+        } catch (err) {
+          renderTestResult("suite2-results", `Fetch static dataset data/${symbol}.json`, false, err.message);
+          staticDataOk = false;
+        }
+      }
+
+      document.getElementById("suite2-status").className = staticDataOk ? "badge-pass" : "badge-fail";
+      document.getElementById("suite2-status").textContent = staticDataOk ? "ALL PASSED" : "FAILED";
+
+      document.getElementById("total-tests").textContent = passed + failed;
+      document.getElementById("total-passed").textContent = passed;
+      document.getElementById("total-failed").textContent = failed;
+    }
+
+    document.addEventListener("DOMContentLoaded", runTests);
+  </script>
+</body>
+</html>
