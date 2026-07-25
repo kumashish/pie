@@ -166,9 +166,9 @@ def format_market_table(markets: list[dict]) -> str:
         lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
 
     if table4_exits:
-        lines.append("\n### ⚡ Recently Closed / Exit Signals")
+        lines.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
         lines.append(header)
-        for market in table4_exits:
+        for market in table4_exits[:5]:
             market_name = market.get("market", "")
             stype = market.get("strategy_type", "")
             strat_name = get_strategy_display_name(stype)
@@ -179,6 +179,7 @@ def format_market_table(markets: list[dict]) -> str:
             since = market.get("since", "")
             signal_display = f"{signal_raw} ({since})" if since else signal_raw
             lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+        lines.append('\n<a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>\n')
 
     try:
         from pie.market.performance import PerformanceTracker

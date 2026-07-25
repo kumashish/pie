@@ -257,9 +257,9 @@ def generate_readme_snapshot(
         )
 
     if table4_exits:
-        output_sections.append("\n### ⚡ Recently Closed / Exit Signals")
+        output_sections.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
         output_sections.append(header)
-        for data in table4_exits:
+        for data in table4_exits[:5]:
             updated_time = format_ist_time(data["last_updated"], include_date=False)
             market = data.get("market", "")
             stype = data.get("strategy_type", "")
@@ -273,6 +273,35 @@ def generate_readme_snapshot(
             output_sections.append(
                 f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
             )
+        output_sections.append(
+            '\n<a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>\n'
+        )
+
+        # Generate reports/market/closed_trades.md for full history
+        try:
+            history_file = Path("reports/market/closed_trades.md")
+            history_file.parent.mkdir(parents=True, exist_ok=True)
+            history_lines = [
+                "# 📜 Full Closed Trade History",
+                "",
+                header,
+            ]
+            for data in table4_exits:
+                updated_time = format_ist_time(data["last_updated"], include_date=False)
+                market = data.get("market", "")
+                stype = data.get("strategy_type", "")
+                strat_name = get_strategy_display_name(stype)
+                fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
+                strategy = data["strategy"]
+                signal_raw = data.get("signal", "")
+                since_text, _ = calculate_since(data["signal_since"], current_time)
+                signal_display = f"{signal_raw} ({since_text})"
+                history_lines.append(
+                    f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+                )
+            history_file.write_text("\n".join(history_lines), encoding="utf-8")
+        except Exception:
+            pass
 
     try:
         from pie.market.performance import PerformanceTracker

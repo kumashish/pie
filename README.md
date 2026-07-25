@@ -2,7 +2,7 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 07:34 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 25-Aug-2026-524-PE | New                    |
+| SPY       | 07:36 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 25-Aug-2026-524-PE | Active (Today, 07:34)  |
 | QQQ       | 07:28 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-684-CE<br> Sell QQQ 25-Aug-2026-712-CE | Active (Today, 00:26)  |
 
 ### 🌐 Indian Macro Benchmark Indices
