@@ -1,3 +1,12 @@
+// Top-level global ticker select handler available immediately on window
+window.selectTicker = function(symbol) {
+  const symbolInput = document.getElementById("symbol-input");
+  if (symbolInput) symbolInput.value = symbol;
+  if (typeof window.fetchAnalysis === "function") {
+    window.fetchAnalysis(symbol, true);
+  }
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const searchForm = document.getElementById("search-form");
   const symbolInput = document.getElementById("symbol-input");
@@ -166,6 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   async function fetchAnalysis(symbol, isExplicitSearch = false) {
+    window.fetchAnalysis = fetchAnalysis;
     const cleanSym = symbol.trim().toUpperCase();
     activeSearchSymbol = cleanSym;
 
