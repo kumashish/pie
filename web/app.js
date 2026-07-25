@@ -103,6 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  let activeSearchSymbol = null;
+
   // Search Form Submit
   searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -119,8 +121,12 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await fetchWithTimeout(`data/${symbol}.json`, 1500);
       if (response.ok) {
-        const data = await response.json();
-        renderResults(data, false);
+        if (!activeSearchSymbol || activeSearchSymbol === symbol.toUpperCase()) {
+          const data = await response.json();
+          if (!activeSearchSymbol || activeSearchSymbol === symbol.toUpperCase()) {
+            renderResults(data, false);
+          }
+        }
       }
     } catch (e) {
       // Quiet fallback
@@ -145,13 +151,15 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   async function fetchAnalysis(symbol, isExplicitSearch = false) {
+    const cleanSym = symbol.trim().toUpperCase();
+    activeSearchSymbol = cleanSym;
+
     if (isExplicitSearch) {
       isFolded = true;
       localStorage.setItem("pie_leaderboard_folded", true);
       applyFoldState(true);
     }
     showLoading();
-    const cleanSym = symbol.trim().toUpperCase();
     const targetSymbol = ALIAS_MAP[cleanSym] || cleanSym;
     const safeSymbol = targetSymbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
 
@@ -202,6 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateLeaderboard(data);
 
     // Hero Overview
+    if (symbolInput && data.symbol) symbolInput.value = data.symbol;
     resSymbol.textContent = data.symbol;
     const currency = (data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX")) ? "₹" : "$";
     resPrice.textContent = `${currency}${data.last_price.toLocaleString()}`;
