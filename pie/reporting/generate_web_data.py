@@ -38,12 +38,13 @@ POPULAR_SYMBOLS = [
 ]
 
 
-def generate_all_web_data(output_dir: Path = Path("web/data")) -> None:
+def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = Path("docs/data")) -> None:
     """Run market analysis for popular symbols and output JSON files for GitHub Pages."""
     output_dir.mkdir(parents=True, exist_ok=True)
+    docs_dir.mkdir(parents=True, exist_ok=True)
     summary_index = []
 
-    print(f"Generating static web data for {len(POPULAR_SYMBOLS)} symbols into {output_dir}...")
+    print(f"Generating static web data for {len(POPULAR_SYMBOLS)} symbols into {output_dir} and {docs_dir}...")
 
     for symbol in POPULAR_SYMBOLS:
         try:
@@ -52,8 +53,9 @@ def generate_all_web_data(output_dir: Path = Path("web/data")) -> None:
             
             # Save individual symbol JSON file (safe filename)
             safe_name = symbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(" ", "_")
-            file_path = output_dir / f"{safe_name}.json"
-            file_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+            content = json.dumps(data, indent=2)
+            (output_dir / f"{safe_name}.json").write_text(content, encoding="utf-8")
+            (docs_dir / f"{safe_name}.json").write_text(content, encoding="utf-8")
 
             # Add entry to master index
             summary_index.append({
@@ -71,8 +73,9 @@ def generate_all_web_data(output_dir: Path = Path("web/data")) -> None:
             print(f"⚠️ Warning: Failed to analyze {symbol}: {e}")
 
     # Write master index file
-    index_file = output_dir / "index.json"
-    index_file.write_text(json.dumps(summary_index, indent=2), encoding="utf-8")
+    index_content = json.dumps(summary_index, indent=2)
+    (output_dir / "index.json").write_text(index_content, encoding="utf-8")
+    (docs_dir / "index.json").write_text(index_content, encoding="utf-8")
     print(f"Successfully generated {len(summary_index)} web data files!")
 
 
