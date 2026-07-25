@@ -6,35 +6,83 @@ from pathlib import Path
 from pie.web.server import analyze_symbol
 
 POPULAR_SYMBOLS = [
-    # US Benchmarks & Equities
+    # US Major Benchmarks & ETFs
     "SPY",
     "QQQ",
+    "IWM",
+    "DIA",
+    "VTI",
+    # US Tech & Mega-Cap Equities
     "AAPL",
     "NVDA",
     "TSLA",
     "MSFT",
     "AMZN",
-    # Indian Benchmarks & Equities
+    "GOOGL",
+    "META",
+    "AMD",
+    "NFLX",
+    "PLTR",
+    "INTC",
+    "COIN",
+    "BAC",
+    "JPM",
+    "DIS",
+    # Indian Benchmark Indices
     "^NSEI",
     "^NSEBANK",
     "NIFTY_FIN_SERVICE.NS",
     "^NSEMDCP50",
     "^BSESN",
-    "TITAN.NS",
-    "SUNPHARMA.NS",
-    "ICICIBANK.NS",
-    "BAJAJ-AUTO.NS",
-    "HDFCBANK.NS",
-    "HDFCLIFE.NS",
-    "HINDALCO.NS",
-    "JSWSTEEL.NS",
-    "HCLTECH.NS",
+    # NIFTY 50 & Top Indian Blue-Chips
+    "RELIANCE.NS",
     "TCS.NS",
-    "SBILIFE.NS",
-    "M&M.NS",
-    "ULTRACEMCO.NS",
+    "HDFCBANK.NS",
+    "ICICIBANK.NS",
+    "INFY.NS",
     "BHARTIARTL.NS",
+    "ITC.NS",
+    "SBIN.NS",
+    "LT.NS",
+    "BAJFINANCE.NS",
+    "HINDUNILVR.NS",
+    "MARUTI.NS",
+    "TATAMOTORS.NS",
+    "AXISBANK.NS",
+    "KOTAKBANK.NS",
+    "SUNPHARMA.NS",
+    "TITAN.NS",
+    "ULTRACEMCO.NS",
+    "JSWSTEEL.NS",
+    "HINDALCO.NS",
+    "SBILIFE.NS",
+    "HDFCLIFE.NS",
+    "BAJAJ-AUTO.NS",
     "BAJAJFINSV.NS",
+    "M&M.NS",
+    "HCLTECH.NS",
+    "WIPRO.NS",
+    "ADANIENT.NS",
+    "ADANIPORTS.NS",
+    "NTPC.NS",
+    "POWERGRID.NS",
+    "COALINDIA.NS",
+    "ONGC.NS",
+    "BPCL.NS",
+    "GRASIM.NS",
+    "NESTLEIND.NS",
+    "CIPLA.NS",
+    "DRREDDY.NS",
+    "APOLLOHOSP.NS",
+    "EICHERMOT.NS",
+    "DIVISLAB.NS",
+    "HEROMOTOCO.NS",
+    "TATASTEEL.NS",
+    "TECHM.NS",
+    "BRITANNIA.NS",
+    "BEL.NS",
+    "TRENT.NS",
+    "SHRIRAMFIN.NS",
 ]
 
 
@@ -70,7 +118,7 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
                 "as_of": data["as_of"],
             })
         except Exception as e:
-            print(f"⚠️ Warning: Failed to analyze {symbol}: {e}")
+            print(f"[Warning] Failed to analyze {symbol}: {e}")
 
     # Write master index file
     index_content = json.dumps(summary_index, indent=2)
