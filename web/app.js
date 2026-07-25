@@ -48,9 +48,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial Fetch for default symbol SPY
   fetchAnalysis("SPY");
 
+  const ALIAS_MAP = {
+    "NIFTY 50": "^NSEI",
+    "NIFTY": "^NSEI",
+    "NIFTY50": "^NSEI",
+    "^NSEI": "^NSEI",
+    "BANKNIFTY": "^NSEBANK",
+    "BANK NIFTY": "^NSEBANK",
+    "^NSEBANK": "^NSEBANK",
+    "FINNIFTY": "NIFTY_FIN_SERVICE.NS",
+    "NIFTY_FIN_SERVICE.NS": "NIFTY_FIN_SERVICE.NS",
+    "MIDCAPNIFTY": "^NSEMDCP50",
+    "^NSEMDCP50": "^NSEMDCP50",
+    "SENSEX": "^BSESN",
+    "BSE SENSEX": "^BSESN",
+    "^BSESN": "^BSESN",
+  };
+
   async function fetchAnalysis(symbol) {
     showLoading();
-    const safeSymbol = symbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
+    const cleanSym = symbol.trim().toUpperCase();
+    const targetSymbol = ALIAS_MAP[cleanSym] || cleanSym;
+    const safeSymbol = targetSymbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
 
     // 1. Try local REST API endpoint first (when running pie serve)
     try {
