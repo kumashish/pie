@@ -211,9 +211,18 @@ class OptionIntelligenceHandler(BaseHTTPRequestHandler):
         self.wfile.write(content)
 
 
-def start_web_server(port: int = 8080) -> None:
+from socketserver import ThreadingMixIn
+
+
+class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
+    """Multi-threaded HTTP server handling concurrent requests in separate worker threads."""
+
+    daemon_threads = True
+
+
+def start_web_server(port: int = 8090) -> None:
     """Launch the option intelligence web server."""
     server_address = ("", port)
-    httpd = HTTPServer(server_address, OptionIntelligenceHandler)
+    httpd = ThreadedHTTPServer(server_address, OptionIntelligenceHandler)
     print(f"Starting Portfolio Intelligence Web Engine at http://localhost:{port}")
     httpd.serve_forever()
