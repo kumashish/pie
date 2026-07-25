@@ -310,6 +310,25 @@ def config_check(path: Path) -> None:
     console.print(f"Configuration is valid: {path}")
 
 
+@app.command("serve")
+def serve(
+    port: int = typer.Option(8090, "--port", "-p", help="Port to run the web UI server on."),
+    open_browser: bool = typer.Option(True, "--open/--no-open", help="Open browser automatically."),
+) -> None:
+    """Launch the interactive web UI dashboard server."""
+    import webbrowser
+    from pie.web.server import start_web_server
+
+    url = f"http://localhost:{port}"
+    console.print(f"[bold green]Starting Portfolio Intelligence Web Engine at {url}[/bold green]")
+    if open_browser:
+        try:
+            webbrowser.open(url)
+        except Exception:
+            pass
+    start_web_server(port=port)
+
+
 def main() -> None:
     """Run the CLI application."""
     app()
