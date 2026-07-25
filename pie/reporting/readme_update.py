@@ -228,13 +228,10 @@ def generate_readme_snapshot(
             if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
                 table3_stocks.append(data)
 
-    # Sort tables strictly by fit_score descending
-    table1_us.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table2_in.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table3_stocks.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_high_conviction = [data for data in table3_stocks if float(data.get("fit_score", 0.0)) >= 80.0]
+    table3_other_trades = [data for data in table3_stocks if float(data.get("fit_score", 0.0)) < 80.0]
 
-    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------------------- | ---------------------- |"
+    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
 
     output_sections = ["### 🌐 U.S. Macro Benchmark Indices", header]
     for data in table1_us:
@@ -247,10 +244,9 @@ def generate_readme_snapshot(
         signal_raw = data.get("signal", "")
         since_text, _ = calculate_since(data["signal_since"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
-        profile_val = get_trade_profile(stype)
 
         output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |"
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
         )
 
     output_sections.append("\n### 🌐 Indian Macro Benchmark Indices")
@@ -265,15 +261,14 @@ def generate_readme_snapshot(
         signal_raw = data.get("signal", "")
         since_text, _ = calculate_since(data["signal_since"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
-        profile_val = get_trade_profile(stype)
 
         output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |"
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
         )
 
-    output_sections.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
+    output_sections.append("\n### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies")
     output_sections.append(header)
-    for data in table3_stocks:
+    for data in table3_high_conviction:
         updated_time = format_ist_time(data["last_updated"], include_date=False)
         market = data.get("market", "")
         stype = data.get("strategy_type", "")
@@ -283,13 +278,44 @@ def generate_readme_snapshot(
         signal_raw = data.get("signal", "")
         since_text, _ = calculate_since(data["signal_since"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
-        profile_val = get_trade_profile(stype)
 
         output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |"
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
         )
 
+    if table3_other_trades:
+        output_sections.append(
+            '\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n'
+        )
+
+        # Generate reports/market/all_trades.md for lower score trades
+        try:
+            other_file = Path("reports/market/all_trades.md")
+            other_file.parent.mkdir(parents=True, exist_ok=True)
+            other_lines = [
+                "# 📜 Active & Range-Bound Strategies (Score < 8.0/10)",
+                "",
+                header,
+            ]
+            for data in table3_other_trades:
+                updated_time = format_ist_time(data["last_updated"], include_date=False)
+                market = data.get("market", "")
+                stype = data.get("strategy_type", "")
+                strat_name = get_strategy_display_name(stype)
+                fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
+                strategy = data["strategy"]
+                signal_raw = data.get("signal", "")
+                since_text, _ = calculate_since(data["signal_since"], current_time)
+                signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+                other_lines.append(
+                    f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+                )
+            other_file.write_text("\n".join(other_lines), encoding="utf-8")
+        except Exception:
+            pass
+
     if table4_exits:
+        output_sections.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
         output_sections.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
         output_sections.append(header)
         for data in table4_exits[:5]:

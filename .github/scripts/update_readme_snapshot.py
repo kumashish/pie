@@ -152,12 +152,10 @@ def format_market_table(markets: list[dict]) -> str:
             if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
                 table3_stocks.append(market)
 
-    table1_us.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table2_in.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table3_stocks.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_high_conviction = [market for market in table3_stocks if float(market.get("fit_score", 0.0)) >= 80.0]
+    table3_other_trades = [market for market in table3_stocks if float(market.get("fit_score", 0.0)) < 80.0]
 
-    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------------------- | ---------------------- |"
+    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
 
     lines = ["<!-- MARKET-SNAPSHOT-START -->"]
     lines.append("### 🌐 U.S. Macro Benchmark Indices")
@@ -172,8 +170,7 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        profile_val = get_trade_profile(stype)
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |")
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
 
     lines.append("\n### 🌐 Indian Macro Benchmark Indices")
     lines.append(header)
@@ -187,12 +184,11 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        profile_val = get_trade_profile(stype)
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |")
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
 
-    lines.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
+    lines.append("\n### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies")
     lines.append(header)
-    for market in table3_stocks:
+    for market in table3_high_conviction:
         market_name = market.get("market", "")
         stype = market.get("strategy_type", "")
         strat_name = get_strategy_display_name(stype)
@@ -202,8 +198,36 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        cagr_val = calculate_credit_cagr(stype, float(market.get("fit_score", 0.0)))
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |")
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+
+    if table3_other_trades:
+        lines.append('\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n')
+
+        # Write reports/market/all_trades.md for lower score trades
+        try:
+            other_file = Path("reports/market/all_trades.md")
+            other_file.parent.mkdir(parents=True, exist_ok=True)
+            other_lines = [
+                "# 📜 Active & Range-Bound Strategies (Score < 8.0/10)",
+                "",
+                header,
+            ]
+            for market in table3_other_trades:
+                market_name = market.get("market", "")
+                stype = market.get("strategy_type", "")
+                strat_name = get_strategy_display_name(stype)
+                fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+                updated = market.get("updated", "")
+                strategy = market.get("strategy", "")
+                signal_raw = market.get("signal", "")
+                since = market.get("since", "")
+                signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
+                other_lines.append(
+                    f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+                )
+            other_file.write_text("\n".join(other_lines), encoding="utf-8")
+        except Exception:
+            pass
 
     if table4_exits:
         lines.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
