@@ -149,7 +149,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const safeSymbol = targetSymbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
 
     try {
-      // 1. Try local REST API endpoint first (when running pie serve)
+      // 1. Try static pre-computed JSON first (Instant <10ms for GitHub Pages)
+      try {
+        const response = await fetchWithTimeout(`data/${safeSymbol}.json`, 1500);
+        if (response.ok) {
+          const data = await response.json();
+          renderResults(data);
+          return;
+        }
+      } catch (err) {
+        // Fall through to local API or live engine
+      }
+
+      // 2. Try local REST API endpoint (when running pie serve locally)
       try {
         const response = await fetchWithTimeout(`/api/analyze?symbol=${encodeURIComponent(symbol)}`, 1500);
         if (response.ok) {
@@ -160,19 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       } catch (e) {
-        // Fall through to static pre-computed JSON
-      }
-
-      // 2. Fallback to static pre-computed JSON (when hosted on GitHub Pages)
-      try {
-        const response = await fetchWithTimeout(`data/${safeSymbol}.json`, 1500);
-        if (response.ok) {
-          const data = await response.json();
-          renderResults(data);
-          return;
-        }
-      } catch (err) {
-        // Fall through to live client-side engine
+        // Fall through to live engine
       }
 
       // 3. Fallback to Live Client-Side Yahoo Finance Calculation Engine
@@ -407,6 +407,9 @@ document.addEventListener("DOMContentLoaded", () => {
     loadingState.style.display = "block";
     errorBanner.style.display = "none";
     analyzeBtn.disabled = true;
+    if (btnSpinner) btnSpinner.style.display = "inline-block";
+    const btnText = analyzeBtn.querySelector(".btn-text");
+    if (btnText) btnText.textContent = "Calculating...";
 
     if (loadingTimeout) clearTimeout(loadingTimeout);
     loadingTimeout = setTimeout(() => {
@@ -421,6 +424,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (loadingTimeout) clearTimeout(loadingTimeout);
     loadingState.style.display = "none";
     analyzeBtn.disabled = false;
+    if (btnSpinner) btnSpinner.style.display = "none";
+    const btnText = analyzeBtn.querySelector(".btn-text");
+    if (btnText) btnText.textContent = "Generate Trade Structure";
   }
 
   function showError(msg) {
