@@ -3,7 +3,7 @@
 | Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------------------- | ---------------------- |
 | SPY       | 08:03 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 25-Aug-2026-525-PE | Credit | 30-45 DTE | 15-25 Delta   | Active (Today, 07:34)  |
-| QQQ       | 07:28 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-684-CE<br> Sell QQQ 25-Aug-2026-712-CE | Debit | 30-60 DTE | 50 Delta ITM   | Active (Today, 00:26)  |
+| QQQ       | 08:05 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-685-CE<br> Sell QQQ 25-Aug-2026-715-CE | Debit | 30-60 DTE | 50 Delta ITM   | Active (Today, 00:26)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |
