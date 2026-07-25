@@ -89,9 +89,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Quick Chips
   document.querySelectorAll(".chip").forEach((chip) => {
-    chip.addEventListener("click", () => {
+    chip.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       const symbol = chip.getAttribute("data-symbol");
-      symbolInput.value = symbol;
+      if (symbolInput) symbolInput.value = symbol;
       fetchAnalysis(symbol, true);
     });
   });
