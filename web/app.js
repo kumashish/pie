@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     resFitScore.textContent = (data.fit_score / 10.0).toFixed(1);
     resRegime.textContent = getRegimeBadgeText(data.regime);
-    resConfidence.textContent = `Grade ${data.confidence_grade} (${data.confidence_percentage}% Conviction)`;
+    resConfidence.textContent = data.confidence_grade;
 
     // Strategy & Trade Recommendation
     resStrategyName.textContent = data.strategy_display;
