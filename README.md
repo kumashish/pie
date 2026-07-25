@@ -117,7 +117,25 @@ Computes exact strike prices based on exchange tick sizes and price tier boundar
 
 ---
 
-### 5. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
+### 5. Timeframe & DTE Framework (`pie/market/trade_estimate.py`)
+Applies optimal Days To Expiration (DTE) selection based on quantitative theta decay curves and delta/gamma risk profiles:
+
+| Strategy Type | Ideal DTE Range | Quantitative Rationale |
+| :--- | :---: | :--- |
+| **Covered Calls** | **30–45 Days** | Optimal theta decay curve while retaining upside potential |
+| **Cash-Secured Puts** | **30–45 Days** | Maximum theta decay per day with manageable assignment risk |
+| **Credit Spreads** | **30–45 Days** | Favorable theta decay with controlled gamma acceleration |
+| **Iron Condors / Iron Butterflies** | **30–45 Days** | Time for maximum premium decay in range-bound regimes |
+| **Jade Lizard** | **30–45 Days** | High premium collection without upside risk |
+| **Long Butterflies** | **30–45 Days** | Peak pin risk decay in narrow range regimes |
+| **Call / Put Debit Spreads** | **60–180 Days** | Reduces theta decay drag on directional trend plays |
+| **Long Calls / Long Puts** | **60–180 Days** | Minimizes daily theta loss while capturing trend momentum |
+| **Calendars & Diagonals (PMCC)** | **Long: 45–90 Days, Short: 20–45 Days** | Exploits differing theta decay curves across expiration cycles |
+| **LEAPS** | **1–2 Years (365–730 Days)** | Long-term directional exposure with stock replacement leverage |
+
+---
+
+### 6. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
 Manages active positions and triggers trade exit signals based on 4 risk rules:
 
 - **`🔴 Exit (Regime Shift)`**: Exit immediately if trend score drops below threshold ($<4.5$ for Call Debit Spread) or regime reverses.

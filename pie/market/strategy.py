@@ -27,6 +27,11 @@ class StrategyType(StrEnum):
     CREDIT_SPREAD = "credit_spread"
     SHORT_STRANGLE = "short_strangle"
     COLLAR = "collar"
+    COVERED_CALL = "covered_call"
+    CASH_SECURED_PUT = "cash_secured_put"
+    LONG_CALL = "long_call"
+    LONG_PUT = "long_put"
+    LEAPS = "leaps"
 
 
 class StrategyRecommendation(DomainModel):

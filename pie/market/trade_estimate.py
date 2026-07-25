@@ -10,6 +10,32 @@ from pydantic import Field
 from pie.core.models import DomainModel
 from pie.market.strategy import StrategyRecommendation, StrategyType
 
+# Strategy DTE Framework Mapping
+STRATEGY_DTE_CONFIGS = {
+    # 30-45 Days (Theta Decay Strategies)
+    StrategyType.COVERED_CALL: {"target": 37, "min": 30, "max": 45, "why": "Good theta decay while retaining upside"},
+    StrategyType.CASH_SECURED_PUT: {"target": 37, "min": 30, "max": 45, "why": "Best premium vs assignment risk"},
+    StrategyType.CREDIT_SPREAD: {"target": 37, "min": 30, "max": 45, "why": "Favorable theta with manageable gamma"},
+    StrategyType.IRON_CONDOR: {"target": 37, "min": 30, "max": 45, "why": "Time to benefit from premium decay"},
+    StrategyType.IRON_BUTTERFLY: {"target": 37, "min": 30, "max": 45, "why": "Time to benefit from premium decay"},
+    StrategyType.JADE_LIZARD: {"target": 37, "min": 30, "max": 45, "why": "Good premium without excessive gamma"},
+    StrategyType.BUTTERFLY: {"target": 37, "min": 30, "max": 45, "why": "Peak pin risk decay in range-bound regimes"},
+
+    # Spreads & Directional Overlays (30-60 Days)
+    StrategyType.CALL_DEBIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "Optimal theta decay vs upside capture"},
+    StrategyType.PUT_DEBIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "Optimal theta decay vs downside capture"},
+    StrategyType.LONG_CALL: {"target": 90, "min": 60, "max": 180, "why": "Reduce theta decay drag"},
+    StrategyType.LONG_PUT: {"target": 90, "min": 60, "max": 180, "why": "Reduce theta decay drag"},
+    StrategyType.NAKED_PUT: {"target": 37, "min": 30, "max": 45, "why": "Best premium vs assignment risk"},
+    StrategyType.NAKED_CALL: {"target": 37, "min": 30, "max": 45, "why": "Best premium vs assignment risk"},
+
+    # Calendars & Diagonals (Short 20-45 DTE, Long 45-90 DTE)
+    StrategyType.POOR_MANS_COVERED_CALL: {"target": 60, "min": 45, "max": 90, "why": "Exploits differing theta decay curves (Diagonals)"},
+
+    # LEAPS (1-2 Years)
+    StrategyType.LEAPS: {"target": 540, "min": 365, "max": 730, "why": "Long-term directional exposure"},
+}
+
 TARGET_DAYS_TO_EXPIRY = 37
 MINIMUM_DAYS_TO_EXPIRY = 30
 MAXIMUM_DAYS_TO_EXPIRY = 45
@@ -63,7 +89,7 @@ def estimate_trade(
         return None
 
     today = as_of or date.today()
-    expiration = _select_expiration(today)
+    expiration = _select_expiration(today, recommendation.strategy)
     days_to_expiry = (expiration - today).days
     expected_move = spot_price * (annualized_vix / 100.0) * math.sqrt(days_to_expiry / 365.0)
     increment = _strike_increment(symbol, spot_price)
@@ -245,19 +271,26 @@ def estimate_trade(
     )
 
 
-def _select_expiration(today: date) -> date:
+def _select_expiration(today: date, strategy: StrategyType = StrategyType.CALL_DEBIT_SPREAD) -> date:
+    cfg = STRATEGY_DTE_CONFIGS.get(strategy, {"target": 37, "min": 30, "max": 45})
+    target_dte = cfg["target"]
+    min_dte = cfg["min"]
+    max_dte = cfg["max"]
+
     expirations = [_last_tuesday(today.year, month) for month in range(1, 13)]
-    expirations.extend(_last_tuesday(today.year + 1, month) for month in range(1, 4))
+    expirations.extend(_last_tuesday(today.year + 1, month) for month in range(1, 13))
+    expirations.extend(_last_tuesday(today.year + 2, month) for month in range(1, 13))
+
     eligible = [
         expiration
         for expiration in expirations
-        if MINIMUM_DAYS_TO_EXPIRY <= (expiration - today).days <= MAXIMUM_DAYS_TO_EXPIRY
+        if min_dte <= (expiration - today).days <= max_dte
     ]
     if eligible:
         return min(
-            eligible, key=lambda expiration: abs((expiration - today).days - TARGET_DAYS_TO_EXPIRY)
+            eligible, key=lambda expiration: abs((expiration - today).days - target_dte)
         )
-    target = today + timedelta(days=TARGET_DAYS_TO_EXPIRY)
+    target = today + timedelta(days=target_dte)
     return target + timedelta(days=(1 - target.weekday()) % 7)
 
 
