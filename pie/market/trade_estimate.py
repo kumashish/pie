@@ -307,7 +307,7 @@ def _strike_increment(symbol: str, spot_price: float = 0.0) -> float:
     if sym_upper in {"^NSEI", "NIFTY", "NIFTY 50"}:
         return 50.0
     if sym_upper in {"SPY", "QQQ"}:
-        return 1.0
+        return 5.0
     # Anything above 10,000 spot price must be a multiple of 100
     if spot_price >= 10000.0:
         return 100.0

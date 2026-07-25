@@ -110,7 +110,7 @@ Maps regime classification and Implied Volatility (IV) Rank to the highest-expec
 ### 4. Dynamic Strike Rounding & Leg Selection Model (`pie/market/trade_estimate.py`)
 Computes exact strike prices based on exchange tick sizes and price tier boundaries:
 
-- **Index Multipliers**: `BANKNIFTY` / `^NSEBANK` strikes are strictly rounded to multiples of **100**; `NIFTY 50` / `^NSEI` to **50**.
+- **Index & Benchmark Multipliers**: `BANKNIFTY` / `^NSEBANK` strikes are strictly rounded to multiples of **100**; `NIFTY 50` / `^NSEI` to **50**; `SPY` & `QQQ` to multiples of **5**.
 - **Price Boundary Rule ($\ge 10,000$)**: Any stock or asset with a spot price $\ge 10,000$ (e.g. `BAJAJ-AUTO.NS` @ 11,130, `ULTRACEMCO.NS` @ 11,846) is rounded to multiples of **100**.
 - **Stock Multipliers ($< 10,000$)**: All other stock option strikes are rounded to multiples of **10** (e.g. `TITAN.NS` 4680 CE / 4870 CE).
 - **Leg Multipliers**: Groups identical legs into explicit quantity multipliers (`Sell 2x HINDALCO 25-Aug-2026-940-CE`) while omitting `1x` on single legs.
