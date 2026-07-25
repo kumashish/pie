@@ -84,12 +84,14 @@ def format_market_table(markets: list[dict]) -> str:
     if not markets:
         return "<!-- MARKET-SNAPSHOT-START -->\n<!-- MARKET-SNAPSHOT-END -->"
 
-    always_include = {"^NSEI", "^NSEBANK", "SPY", "QQQ", "NIFTY 50", "BANKNIFTY"}
+    us_benchmarks = {"SPY", "QQQ"}
+    indian_benchmarks = {"^NSEI", "^NSEBANK", "NIFTY 50", "BANKNIFTY"}
     simple_debit_types = {"call_debit_spread", "put_debit_spread"}
 
-    table1_data = []
-    table2_data = []
-    table3_data = []
+    table1_us = []
+    table2_in = []
+    table3_stocks = []
+    table4_exits = []
 
     for market in markets:
         symbol = market.get("symbol", "").upper()
@@ -103,24 +105,41 @@ def format_market_table(markets: list[dict]) -> str:
             continue
 
         if "exit" in signal_raw.lower() or "close" in signal_raw.lower():
-            table3_data.append(market)
-        elif symbol in always_include or market_name.upper() in always_include:
-            table1_data.append(market)
+            table4_exits.append(market)
+        elif symbol in us_benchmarks or market_name.upper() in us_benchmarks:
+            table1_us.append(market)
+        elif symbol in indian_benchmarks or market_name.upper() in indian_benchmarks:
+            table2_in.append(market)
         else:
             is_simple_debit = stype in simple_debit_types
             if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
-                table2_data.append(market)
+                table3_stocks.append(market)
 
-    table1_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table2_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table3_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table1_us.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table2_in.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_stocks.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
 
     header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
 
     lines = ["<!-- MARKET-SNAPSHOT-START -->"]
-    lines.append("### 🌐 Macro Benchmark Indices")
+    lines.append("### 🌐 U.S. Macro Benchmark Indices")
     lines.append(header)
-    for market in table1_data:
+    for market in table1_us:
+        market_name = market.get("market", "")
+        stype = market.get("strategy_type", "")
+        strat_name = get_strategy_display_name(stype)
+        fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+        updated = market.get("updated", "")
+        strategy = market.get("strategy", "")
+        signal_raw = market.get("signal", "")
+        since = market.get("since", "")
+        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+
+    lines.append("\n### 🌐 Indian Macro Benchmark Indices")
+    lines.append(header)
+    for market in table2_in:
         market_name = market.get("market", "")
         stype = market.get("strategy_type", "")
         strat_name = get_strategy_display_name(stype)
@@ -134,7 +153,7 @@ def format_market_table(markets: list[dict]) -> str:
 
     lines.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
     lines.append(header)
-    for market in table2_data:
+    for market in table3_stocks:
         market_name = market.get("market", "")
         stype = market.get("strategy_type", "")
         strat_name = get_strategy_display_name(stype)
@@ -146,10 +165,10 @@ def format_market_table(markets: list[dict]) -> str:
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
         lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
 
-    if table3_data:
+    if table4_exits:
         lines.append("\n### ⚡ Recently Closed / Exit Signals")
         lines.append(header)
-        for market in table3_data:
+        for market in table4_exits:
             market_name = market.get("market", "")
             stype = market.get("strategy_type", "")
             strat_name = get_strategy_display_name(stype)

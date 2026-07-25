@@ -167,12 +167,14 @@ def generate_readme_snapshot(
     if current_time is None:
         current_time = datetime.now(UTC)
 
-    always_include = {"^NSEI", "^NSEBANK", "SPY", "QQQ", "NIFTY 50", "BANKNIFTY"}
+    us_benchmarks = {"SPY", "QQQ"}
+    indian_benchmarks = {"^NSEI", "^NSEBANK", "NIFTY 50", "BANKNIFTY"}
     simple_debit_types = {"call_debit_spread", "put_debit_spread"}
 
-    table1_data = []
-    table2_data = []
-    table3_data = []
+    table1_us = []
+    table2_in = []
+    table3_stocks = []
+    table4_exits = []
 
     for data in market_data:
         symbol = data.get("symbol", "").upper()
@@ -186,24 +188,43 @@ def generate_readme_snapshot(
             continue
 
         if "exit" in signal_raw.lower() or "close" in signal_raw.lower():
-            table3_data.append(data)
-        elif symbol in always_include or market.upper() in always_include:
-            table1_data.append(data)
+            table4_exits.append(data)
+        elif symbol in us_benchmarks or market.upper() in us_benchmarks:
+            table1_us.append(data)
+        elif symbol in indian_benchmarks or market.upper() in indian_benchmarks:
+            table2_in.append(data)
         else:
-            # Table 2 condition: fit_score >= 60.0 (Score >= 6.0/10) AND (fit_score > 90.0 OR stype not a simple debit spread)
             is_simple_debit = stype in simple_debit_types
             if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
-                table2_data.append(data)
+                table3_stocks.append(data)
 
-    # Sort tables strictly by fit_score descending (highest confidence at top)
-    table1_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table2_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
-    table3_data.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    # Sort tables strictly by fit_score descending
+    table1_us.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table2_in.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_stocks.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
 
     header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
 
-    output_sections = ["### 🌐 Macro Benchmark Indices", header]
-    for data in table1_data:
+    output_sections = ["### 🌐 U.S. Macro Benchmark Indices", header]
+    for data in table1_us:
+        updated_time = format_ist_time(data["last_updated"], include_date=False)
+        market = data.get("market", "")
+        stype = data.get("strategy_type", "")
+        strat_name = get_strategy_display_name(stype)
+        fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
+        strategy = data["strategy"]
+        signal_raw = data.get("signal", "")
+        since_text, _ = calculate_since(data["signal_since"], current_time)
+        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+
+        output_sections.append(
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+        )
+
+    output_sections.append("\n### 🌐 Indian Macro Benchmark Indices")
+    output_sections.append(header)
+    for data in table2_in:
         updated_time = format_ist_time(data["last_updated"], include_date=False)
         market = data.get("market", "")
         stype = data.get("strategy_type", "")
@@ -220,7 +241,7 @@ def generate_readme_snapshot(
 
     output_sections.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
     output_sections.append(header)
-    for data in table2_data:
+    for data in table3_stocks:
         updated_time = format_ist_time(data["last_updated"], include_date=False)
         market = data.get("market", "")
         stype = data.get("strategy_type", "")
@@ -235,10 +256,10 @@ def generate_readme_snapshot(
             f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
         )
 
-    if table3_data:
+    if table4_exits:
         output_sections.append("\n### ⚡ Recently Closed / Exit Signals")
         output_sections.append(header)
-        for data in table3_data:
+        for data in table4_exits:
             updated_time = format_ist_time(data["last_updated"], include_date=False)
             market = data.get("market", "")
             stype = data.get("strategy_type", "")
