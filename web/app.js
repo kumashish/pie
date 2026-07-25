@@ -209,6 +209,11 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       resRulesTbody.innerHTML = "<tr><td colspan='4'>No rule evaluations available.</td></tr>";
     }
+
+    // Smooth scroll down to trade structure results
+    setTimeout(() => {
+      resultsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
   }
 
   function getRegimeBadgeText(regime) {
