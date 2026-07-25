@@ -340,9 +340,9 @@ def _last_thursday(year: int, month: int) -> date:
 
 def _strike_increment(symbol: str, spot_price: float = 0.0) -> float:
     sym_upper = symbol.upper()
-    if sym_upper in {"^NSEBANK", "BANKNIFTY", "^BSESN", "SENSEX"}:
+    if sym_upper in {"^NSEI", "NIFTY", "NIFTY 50", "NIFTY50", "^NSEBANK", "BANKNIFTY", "^BSESN", "SENSEX"}:
         return 100.0
-    if sym_upper in {"^NSEI", "NIFTY", "NIFTY 50", "NIFTY_FIN_SERVICE.NS", "FINNIFTY", "^NSEMDCP50", "MIDCAPNIFTY"}:
+    if sym_upper in {"NIFTY_FIN_SERVICE.NS", "FINNIFTY", "^NSEMDCP50", "MIDCAPNIFTY"}:
         return 50.0
     if sym_upper in {"SPY", "QQQ"}:
         return 5.0

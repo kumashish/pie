@@ -532,7 +532,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const expDate = calcExpirationDate();
     const dte = Math.ceil((expDate - new Date()) / (1000 * 60 * 60 * 24));
 
-    const strikeStep = getStrikeStep(lastPrice);
+    const strikeStep = getStrikeStep(lastPrice, symbol);
     const roundedSpot = Math.round(lastPrice / strikeStep) * strikeStep;
     const lowerStrike = regime.includes("bear") ? roundedSpot : Math.round((lastPrice * 0.98) / strikeStep) * strikeStep;
     const upperStrike = regime.includes("bear") ? Math.round((lastPrice * 0.95) / strikeStep) * strikeStep : Math.round((lastPrice * 1.03) / strikeStep) * strikeStep;
@@ -665,7 +665,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return atr;
   }
 
-  function getStrikeStep(price) {
+  function getStrikeStep(price, symbol = "") {
+    const sym = (symbol || "").toUpperCase();
+    if (sym.includes("NIFTY") || sym.includes("NSEI") || sym.includes("SENSEX") || sym.includes("BANK")) return 100;
     if (price > 10000) return 100;
     if (price > 1000) return 50;
     if (price > 100) return 5;
