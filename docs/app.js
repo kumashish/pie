@@ -351,17 +351,30 @@ document.addEventListener("DOMContentLoaded", () => {
     resultsContainer.style.display = "none";
   }
 
+  async function fetchWithTimeout(url, timeoutMs = 3500) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const response = await fetch(url, { signal: controller.signal });
+      clearTimeout(timer);
+      return response;
+    } catch (err) {
+      clearTimeout(timer);
+      throw err;
+    }
+  }
+
   async function calculateLiveAnalysis(symbol) {
-    const corsProxies = [
+    const fetchUrls = [
+      `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`,
       `https://corsproxy.io/?url=${encodeURIComponent(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`)}`,
-      `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`)}`,
-      `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2y&interval=1d`)}`
     ];
 
     let chartData = null;
-    for (const url of corsProxies) {
+    for (const url of fetchUrls) {
       try {
-        const resp = await fetch(url);
+        const resp = await fetchWithTimeout(url, 3500);
         if (resp.ok) {
           const json = await resp.json();
           if (json?.chart?.result?.[0]) {
