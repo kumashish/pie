@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     chip.addEventListener("click", () => {
       const symbol = chip.getAttribute("data-symbol");
       symbolInput.value = symbol;
-      fetchAnalysis(symbol);
+      fetchAnalysis(symbol, true);
     });
   });
 
@@ -101,12 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     const symbol = symbolInput.value.trim();
     if (symbol) {
-      fetchAnalysis(symbol);
+      fetchAnalysis(symbol, true);
     }
   });
 
   // Initial Fetch for default symbol SPY
-  fetchAnalysis("SPY");
+  fetchAnalysis("SPY", false);
 
   const ALIAS_MAP = {
     "NIFTY 50": "^NSEI",
@@ -125,7 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "^BSESN": "^BSESN",
   };
 
-  async function fetchAnalysis(symbol) {
+  async function fetchAnalysis(symbol, isExplicitSearch = false) {
+    if (isExplicitSearch) {
+      isFolded = true;
+      localStorage.setItem("pie_leaderboard_folded", true);
+      applyFoldState(true);
+    }
     showLoading();
     const cleanSym = symbol.trim().toUpperCase();
     const targetSymbol = ALIAS_MAP[cleanSym] || cleanSym;
