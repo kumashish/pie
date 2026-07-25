@@ -9,4 +9,22 @@ dist/
 build/
 .coverage
 coverage.xml
+
+# Environment & Secrets
 .env
+.env.local
+*.env
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated Transient Output & State
+reports/market/*.txt
+!reports/market/snapshot.json
+state/*.json
+scratch/
+tmp/
+
