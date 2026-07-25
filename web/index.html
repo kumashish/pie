@@ -58,6 +58,23 @@
       </div>
     </section>
 
+    <!-- Top 5 Recommended Trades Leaderboard -->
+    <section class="top-trades-section">
+      <div class="top-trades-header">
+        <span class="section-badge">🔥 TOP 5 HIGH-CONVICTION TRADES</span>
+        <h2 class="section-title">Market Leaderboards</h2>
+      </div>
+
+      <div class="market-tabs">
+        <button class="market-tab active" id="tab-us" data-market="us">🇺🇸 U.S. Markets (Top 5)</button>
+        <button class="market-tab" id="tab-india" data-market="india">🇮🇳 Indian Markets (Top 5)</button>
+      </div>
+
+      <div id="top-trades-grid" class="top-trades-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
     <!-- Loading State -->
     <div id="loading-state" class="loading-state" style="display: none;">
       <div class="pulse-loader"></div>

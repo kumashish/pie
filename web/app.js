@@ -27,6 +27,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const resIndicatorsGrid = document.getElementById("res-indicators-grid");
   const resRulesTbody = document.getElementById("res-rules-tbody");
 
+  // Leaderboard DOM & State
+  const tabUS = document.getElementById("tab-us");
+  const tabIndia = document.getElementById("tab-india");
+  const topTradesGrid = document.getElementById("top-trades-grid");
+
+  let currentMarket = "us";
+  let top5US = JSON.parse(localStorage.getItem("pie_top5_us") || "[]");
+  let top5India = JSON.parse(localStorage.getItem("pie_top5_india") || "[]");
+
+  if (tabUS && tabIndia) {
+    tabUS.addEventListener("click", () => {
+      currentMarket = "us";
+      tabUS.classList.add("active");
+      tabIndia.classList.remove("active");
+      renderLeaderboard();
+    });
+
+    tabIndia.addEventListener("click", () => {
+      currentMarket = "india";
+      tabIndia.classList.add("active");
+      tabUS.classList.remove("active");
+      renderLeaderboard();
+    });
+  }
+
+  initLeaderboardFromIndex();
+
   // Quick Chips
   document.querySelectorAll(".chip").forEach((chip) => {
     chip.addEventListener("click", () => {
@@ -114,6 +141,9 @@ document.addEventListener("DOMContentLoaded", () => {
     errorBanner.style.display = "none";
     resultsContainer.style.display = "block";
 
+    // Update Top 5 Leaderboard
+    updateLeaderboard(data);
+
     // Hero Overview
     resSymbol.textContent = data.symbol;
     const currency = (data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX")) ? "₹" : "$";
@@ -190,6 +220,117 @@ document.addEventListener("DOMContentLoaded", () => {
       "strong_bear": "🔴 Strong Bear",
     };
     return map[regime] || `⚪ ${regime}`;
+  }
+
+  async function initLeaderboardFromIndex() {
+    if (top5US.length > 0 && top5India.length > 0) {
+      renderLeaderboard();
+      return;
+    }
+
+    try {
+      const resp = await fetch("data/index.json");
+      if (resp.ok) {
+        const indexList = await resp.json();
+        for (const item of indexList) {
+          const isIndia = item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX");
+          const targetList = isIndia ? top5India : top5US;
+          if (!targetList.some(t => t.symbol === item.symbol)) {
+            targetList.push({
+              symbol: item.symbol,
+              last_price: item.last_price,
+              fit_score: item.fit_score,
+              regime_display: item.regime_display,
+              strategy_display: item.strategy_display,
+              trade_profile: item.trade_profile,
+              as_of: item.as_of
+            });
+          }
+        }
+
+        top5US.sort((a, b) => b.fit_score - a.fit_score);
+        top5India.sort((a, b) => b.fit_score - a.fit_score);
+        top5US = top5US.slice(0, 5);
+        top5India = top5India.slice(0, 5);
+
+        localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
+        localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
+      }
+    } catch (e) {
+      // Ignore
+    }
+    renderLeaderboard();
+  }
+
+  function updateLeaderboard(data) {
+    const isIndia = data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX");
+    const targetList = isIndia ? top5India : top5US;
+
+    const existingIdx = targetList.findIndex(t => t.symbol === data.symbol);
+    const newEntry = {
+      symbol: data.symbol,
+      last_price: data.last_price,
+      fit_score: data.fit_score,
+      regime_display: data.regime_display,
+      strategy_display: data.strategy_display,
+      trade_profile: data.trade_profile,
+      as_of: data.as_of
+    };
+
+    if (existingIdx !== -1) {
+      if (data.fit_score >= targetList[existingIdx].fit_score) {
+        targetList[existingIdx] = newEntry;
+      }
+    } else {
+      if (targetList.length < 5 || data.fit_score > targetList[targetList.length - 1].fit_score) {
+        targetList.push(newEntry);
+      }
+    }
+
+    targetList.sort((a, b) => b.fit_score - a.fit_score);
+    if (isIndia) {
+      top5India = targetList.slice(0, 5);
+      localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
+    } else {
+      top5US = targetList.slice(0, 5);
+      localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
+    }
+
+    renderLeaderboard();
+  }
+
+  function renderLeaderboard() {
+    if (!topTradesGrid) return;
+
+    const targetList = currentMarket === "india" ? top5India : top5US;
+    if (targetList.length === 0) {
+      topTradesGrid.innerHTML = `<p style="color: #94a3b8; font-size: 13px;">No high-conviction trades calculated yet for ${currentMarket.toUpperCase()} market.</p>`;
+      return;
+    }
+
+    topTradesGrid.innerHTML = targetList.map((item, idx) => {
+      const currency = (item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX")) ? "₹" : "$";
+      return `
+        <div class="top-card">
+          <span class="top-card-rank">#${idx + 1}</span>
+          <div>
+            <div class="top-card-header">
+              <span class="top-card-symbol">${item.symbol}</span>
+              <span class="top-card-price">${currency}${item.last_price.toLocaleString()}</span>
+            </div>
+            <div class="top-card-score">
+              <span class="score-val">${(item.fit_score / 10.0).toFixed(1)}</span>
+              <span class="score-label">/10.0 (${item.regime_display})</span>
+            </div>
+            <div class="top-card-strategy">${item.strategy_display}</div>
+            <div class="top-card-leg">${item.trade_profile}</div>
+          </div>
+          <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='${item.symbol}'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
+            Load Full Analysis ➔
+          </button>
+        </div>
+      `;
+    }).join("");
   }
 
   function showLoading() {
