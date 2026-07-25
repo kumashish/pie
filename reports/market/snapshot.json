@@ -24,20 +24,20 @@
   {
     "symbol": "SPY",
     "market": "SPY",
-    "last_updated": "2026-07-25T02:39:45.678415+00:00",
+    "last_updated": "2026-07-25T02:45:00.606675+00:00",
     "trend": "\ud83d\udfe2 Strong Bull",
-    "strategy": "Sell SPY 25-Aug-2026-525-PE",
+    "strategy": "Sell SPY 04-Sep-2026-490-PE",
     "strategy_type": "naked_put",
     "fit_score": 86.2,
-    "signal": "Active",
-    "signal_since": "2026-07-25T02:04:45.501921+00:00"
+    "signal": "New",
+    "signal_since": "2026-07-25T02:45:00.623945+00:00"
   },
   {
     "symbol": "QQQ",
     "market": "QQQ",
-    "last_updated": "2026-07-25T02:35:33.910768+00:00",
+    "last_updated": "2026-07-25T02:42:10.799133+00:00",
     "trend": "\ud83d\udfe2 Bull",
-    "strategy": "Buy QQQ 25-Aug-2026-685-CE<br> Sell QQQ 25-Aug-2026-715-CE",
+    "strategy": "Buy QQQ 18-Sep-2026-685-CE<br> Sell QQQ 18-Sep-2026-720-CE",
     "strategy_type": "call_debit_spread",
     "fit_score": 68.2,
     "signal": "Active",
@@ -396,6 +396,17 @@
     "signal_since": "2026-07-24T10:17:02.435858+00:00"
   },
   {
+    "symbol": "NIFTY_FIN_SERVICE.NS",
+    "market": "FINNIFTY",
+    "last_updated": "2026-07-25T02:57:16.917307+00:00",
+    "trend": "\ud83d\udfe2 Bull",
+    "strategy": "Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE",
+    "strategy_type": "call_debit_spread",
+    "fit_score": 59.2,
+    "signal": "New",
+    "signal_since": "2026-07-25T02:57:16.918419+00:00"
+  },
+  {
     "symbol": "NTPC.NS",
     "market": "NTPC.NS",
     "last_updated": "2026-07-25T01:58:23.660968+00:00",
@@ -570,5 +581,27 @@
     "fit_score": 73.3,
     "signal": "New",
     "signal_since": "2026-07-25T01:58:09.138929+00:00"
+  },
+  {
+    "symbol": "^BSESN",
+    "market": "SENSEX",
+    "last_updated": "2026-07-25T02:57:22.452135+00:00",
+    "trend": "\ud83d\udd34 Bear",
+    "strategy": "Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE",
+    "strategy_type": "put_debit_spread",
+    "fit_score": 75.3,
+    "signal": "New",
+    "signal_since": "2026-07-25T02:57:22.453677+00:00"
+  },
+  {
+    "symbol": "^NSEMDCP50",
+    "market": "MIDCAPNIFTY",
+    "last_updated": "2026-07-25T02:57:19.586608+00:00",
+    "trend": "\ud83d\udfe2 Strong Bull",
+    "strategy": "Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE",
+    "strategy_type": "call_debit_spread",
+    "fit_score": 77.2,
+    "signal": "New",
+    "signal_since": "2026-07-25T02:57:19.588318+00:00"
   }
 ]

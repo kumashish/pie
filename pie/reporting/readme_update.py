@@ -193,7 +193,12 @@ def generate_readme_snapshot(
         current_time = datetime.now(UTC)
 
     us_benchmarks = {"SPY", "QQQ"}
-    indian_benchmarks = {"^NSEI", "^NSEBANK", "NIFTY 50", "BANKNIFTY"}
+    indian_benchmarks = {
+        "^NSEI", "^NSEBANK", "NIFTY 50", "BANKNIFTY",
+        "NIFTY_FIN_SERVICE.NS", "FINNIFTY",
+        "^NSEMDCP50", "MIDCAPNIFTY",
+        "^BSESN", "SENSEX",
+    }
     simple_debit_types = {"call_debit_spread", "put_debit_spread"}
 
     table1_us = []

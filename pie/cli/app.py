@@ -33,8 +33,24 @@ app = typer.Typer(help="Portfolio Intelligence Engine.", no_args_is_help=True)
 app.add_typer(readme_app, name="readme")
 console = Console()
 
-MARKET_NAMES = {"^NSEI": "NIFTY 50", "^NSEBANK": "BANKNIFTY", "SPY": "SPY", "QQQ": "QQQ"}
-OPTION_SYMBOL_NAMES = {"^NSEI": "NIFTY", "^NSEBANK": "BANKNIFTY", "SPY": "SPY", "QQQ": "QQQ"}
+MARKET_NAMES = {
+    "^NSEI": "NIFTY 50",
+    "^NSEBANK": "BANKNIFTY",
+    "NIFTY_FIN_SERVICE.NS": "FINNIFTY",
+    "^NSEMDCP50": "MIDCAPNIFTY",
+    "^BSESN": "SENSEX",
+    "SPY": "SPY",
+    "QQQ": "QQQ",
+}
+OPTION_SYMBOL_NAMES = {
+    "^NSEI": "NIFTY",
+    "^NSEBANK": "BANKNIFTY",
+    "NIFTY_FIN_SERVICE.NS": "FINNIFTY",
+    "^NSEMDCP50": "MIDCAPNIFTY",
+    "^BSESN": "SENSEX",
+    "SPY": "SPY",
+    "QQQ": "QQQ",
+}
 REGIME_LABELS = {
     "strong_bull": "🟢 Strong Bull",
     "bull": "🟢 Bull",
@@ -44,8 +60,24 @@ REGIME_LABELS = {
     "unknown": "⚪ Unknown",
 }
 
-VIX_SYMBOLS = {"^NSEI": "^INDIAVIX", "SPY": "^VIX", "QQQ": "^VIX"}
-FALLBACK_VIX = {"^NSEI": 15.0, "SPY": 20.0, "QQQ": 20.0}
+VIX_SYMBOLS = {
+    "^NSEI": "^INDIAVIX",
+    "^NSEBANK": "^INDIAVIX",
+    "NIFTY_FIN_SERVICE.NS": "^INDIAVIX",
+    "^NSEMDCP50": "^INDIAVIX",
+    "^BSESN": "^INDIAVIX",
+    "SPY": "^VIX",
+    "QQQ": "^VIX",
+}
+FALLBACK_VIX = {
+    "^NSEI": 15.0,
+    "^NSEBANK": 15.0,
+    "NIFTY_FIN_SERVICE.NS": 15.0,
+    "^NSEMDCP50": 15.0,
+    "^BSESN": 15.0,
+    "SPY": 20.0,
+    "QQQ": 20.0,
+}
 
 
 def _format_strike(strike: float) -> str:

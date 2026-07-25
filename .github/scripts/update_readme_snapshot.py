@@ -117,7 +117,12 @@ def format_market_table(markets: list[dict]) -> str:
         return "<!-- MARKET-SNAPSHOT-START -->\n<!-- MARKET-SNAPSHOT-END -->"
 
     us_benchmarks = {"SPY", "QQQ"}
-    indian_benchmarks = {"^NSEI", "^NSEBANK", "NIFTY 50", "BANKNIFTY"}
+    indian_benchmarks = {
+        "^NSEI", "^NSEBANK", "NIFTY 50", "BANKNIFTY",
+        "NIFTY_FIN_SERVICE.NS", "FINNIFTY",
+        "^NSEMDCP50", "MIDCAPNIFTY",
+        "^BSESN", "SENSEX",
+    }
     simple_debit_types = {"call_debit_spread", "put_debit_spread"}
 
     table1_us = []

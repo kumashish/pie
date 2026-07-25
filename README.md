@@ -2,14 +2,17 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------------------- | ---------------------- |
-| SPY       | 08:03 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 25-Aug-2026-525-PE | Credit | 30-45 DTE | 15-25 Delta   | Active (Today, 07:34)  |
-| QQQ       | 08:05 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 25-Aug-2026-685-CE<br> Sell QQQ 25-Aug-2026-715-CE | Debit | 30-60 DTE | 50 Delta ITM   | Active (Today, 00:26)  |
+| SPY       | 08:15 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 04-Sep-2026-490-PE | Credit | 30-45 DTE | 15-25 Delta   | New                    |
+| QQQ       | 08:12 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 18-Sep-2026-685-CE<br> Sell QQQ 18-Sep-2026-720-CE | Debit | 30-60 DTE | 50 Delta ITM   | Active (Today, 00:26)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------------------- | ---------------------- |
+| MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | Debit | 30-60 DTE | 50 Delta ITM   | New                    |
 | NIFTY 50  | 07:28 IST | 🔴 Put Debit Spread | 7.6/10    | Buy NIFTY 25-Aug-2026-23750-PE<br> Sell NIFTY 25-Aug-2026-23000-PE | Debit | 30-60 DTE | 50 Delta ITM   | New                    |
+| SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | Debit | 30-60 DTE | 50 Delta ITM   | New                    |
 | BANKNIFTY | 07:28 IST | 🟢 Call Debit Spread | 7.4/10    | Buy BANKNIFTY 25-Aug-2026-56700-CE<br> Sell BANKNIFTY 25-Aug-2026-59000-CE | Debit | 30-60 DTE | 50 Delta ITM   | New                    |
+| FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | Debit | 30-60 DTE | 50 Delta ITM   | New                    |
 
 ### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |
@@ -33,7 +36,7 @@
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 52 | 52 | 0 | N/A | N/A | N/A | N/A |
+| 55 | 55 | 0 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
@@ -130,6 +133,13 @@ $$\text{Ideal DTE} = f(\text{Market Regime}, \text{Strategy Objective}, \text{Vo
 | **Neutral** | $12-18$ | Sideways Consolidation | Iron Condors, Butterflies | **35-45 DTE** | Range Wings |
 | **Bear** | $>20$ | Below EMAs | Bear Call Spreads | **30-45 DTE** | 15-20 Delta |
 | **High Volatility** | $>25$ | Any Trend Direction | Defined-Risk Spreads (Smaller Size) | **25-35 DTE** | 15-20 Delta |
+
+#### Exchange Option Expiration Rules Matrix
+| Market | Monthly Expiry | Weekly Expiry | Exchange Rule & Specifications |
+| :--- | :--- | :--- | :--- |
+| **USA (Equity & ETF Options)** | **3rd Friday of every month** | Mon / Wed / Fri Weeklies | Standard monthly OPEX expires on the 3rd Friday of every month |
+| **India (NSE Derivatives)** | **Last Tuesday of every month** | Every Tuesday | Since Sept 2025, NSE shifted index and stock derivatives from Thursday to Tuesday |
+| **India (BSE Derivatives)** | **Last Thursday of every month** | Every Thursday | BSE uses Thursday expiries under the revised SEBI framework |
 
 #### Step 2: The Theta-Gamma Lifecycle Curve
 | DTE Window | Dominant Greek | Seller's View | Actionable Rule |

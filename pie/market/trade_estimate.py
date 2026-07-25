@@ -89,7 +89,7 @@ def estimate_trade(
         return None
 
     today = as_of or date.today()
-    expiration = _select_expiration(today, recommendation.strategy)
+    expiration = _select_expiration(today, recommendation.strategy, symbol)
     days_to_expiry = (expiration - today).days
     expected_move = spot_price * (annualized_vix / 100.0) * math.sqrt(days_to_expiry / 365.0)
     increment = _strike_increment(symbol, spot_price)
@@ -271,15 +271,38 @@ def estimate_trade(
     )
 
 
-def _select_expiration(today: date, strategy: StrategyType = StrategyType.CALL_DEBIT_SPREAD) -> date:
+def _select_expiration(
+    today: date,
+    strategy: StrategyType = StrategyType.CALL_DEBIT_SPREAD,
+    symbol: str = "",
+) -> date:
     cfg = STRATEGY_DTE_CONFIGS.get(strategy, {"target": 37, "min": 30, "max": 45})
     target_dte = cfg["target"]
     min_dte = cfg["min"]
     max_dte = cfg["max"]
 
-    expirations = [_last_tuesday(today.year, month) for month in range(1, 13)]
-    expirations.extend(_last_tuesday(today.year + 1, month) for month in range(1, 13))
-    expirations.extend(_last_tuesday(today.year + 2, month) for month in range(1, 13))
+    sym_upper = symbol.upper()
+    is_us = sym_upper in {"SPY", "QQQ"} or (bool(symbol) and not symbol.endswith(".NS") and not symbol.endswith(".BO") and not symbol.startswith("^NSE"))
+    is_bse = symbol.endswith(".BO") or sym_upper.startswith("^BSE")
+
+    if is_us:
+        # U.S. Equity & ETF Options: 3rd Friday of every month
+        expirations = [_third_friday(today.year, month) for month in range(1, 13)]
+        expirations.extend(_third_friday(today.year + 1, month) for month in range(1, 13))
+        expirations.extend(_third_friday(today.year + 2, month) for month in range(1, 13))
+        target_weekday = 4  # Friday
+    elif is_bse:
+        # India (BSE): Last Thursday of every month
+        expirations = [_last_thursday(today.year, month) for month in range(1, 13)]
+        expirations.extend(_last_thursday(today.year + 1, month) for month in range(1, 13))
+        expirations.extend(_last_thursday(today.year + 2, month) for month in range(1, 13))
+        target_weekday = 3  # Thursday
+    else:
+        # India (NSE): Last Tuesday of every month (SEBI / NSE Rule)
+        expirations = [_last_tuesday(today.year, month) for month in range(1, 13)]
+        expirations.extend(_last_tuesday(today.year + 1, month) for month in range(1, 13))
+        expirations.extend(_last_tuesday(today.year + 2, month) for month in range(1, 13))
+        target_weekday = 1  # Tuesday
 
     eligible = [
         expiration
@@ -291,20 +314,35 @@ def _select_expiration(today: date, strategy: StrategyType = StrategyType.CALL_D
             eligible, key=lambda expiration: abs((expiration - today).days - target_dte)
         )
     target = today + timedelta(days=target_dte)
-    return target + timedelta(days=(1 - target.weekday()) % 7)
+    return target + timedelta(days=(target_weekday - target.weekday()) % 7)
+
+
+def _third_friday(year: int, month: int) -> date:
+    """Calculate the 3rd Friday of a given month for U.S. option expirations."""
+    first_day = date(year, month, 1)
+    first_friday = first_day + timedelta(days=(4 - first_day.weekday()) % 7)
+    return first_friday + timedelta(weeks=2)
 
 
 def _last_tuesday(year: int, month: int) -> date:
+    """Calculate the last Tuesday of a given month for Indian NSE option expirations."""
     last_day = calendar.monthrange(year, month)[1]
     candidate = date(year, month, last_day)
     return candidate - timedelta(days=(candidate.weekday() - 1) % 7)
 
 
+def _last_thursday(year: int, month: int) -> date:
+    """Calculate the last Thursday of a given month for Indian BSE option expirations."""
+    last_day = calendar.monthrange(year, month)[1]
+    candidate = date(year, month, last_day)
+    return candidate - timedelta(days=(candidate.weekday() - 3) % 7)
+
+
 def _strike_increment(symbol: str, spot_price: float = 0.0) -> float:
     sym_upper = symbol.upper()
-    if sym_upper in {"^NSEBANK", "BANKNIFTY"}:
+    if sym_upper in {"^NSEBANK", "BANKNIFTY", "^BSESN", "SENSEX"}:
         return 100.0
-    if sym_upper in {"^NSEI", "NIFTY", "NIFTY 50"}:
+    if sym_upper in {"^NSEI", "NIFTY", "NIFTY 50", "NIFTY_FIN_SERVICE.NS", "FINNIFTY", "^NSEMDCP50", "MIDCAPNIFTY"}:
         return 50.0
     if sym_upper in {"SPY", "QQQ"}:
         return 5.0
