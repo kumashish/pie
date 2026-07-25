@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const topTradesGrid = document.getElementById("top-trades-grid");
 
   let currentMarket = "us";
-  let top5US = JSON.parse(localStorage.getItem("pie_top5_us") || "[]");
-  let top5India = JSON.parse(localStorage.getItem("pie_top5_india") || "[]");
+  let top4US = JSON.parse(localStorage.getItem("pie_top4_us") || JSON.parse(localStorage.getItem("pie_top5_us") || "[]"));
+  let top4India = JSON.parse(localStorage.getItem("pie_top4_india") || JSON.parse(localStorage.getItem("pie_top5_india") || "[]"));
 
   if (tabUS && tabIndia) {
     tabUS.addEventListener("click", () => {
@@ -277,7 +277,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function initLeaderboardFromIndex() {
-    if (top5US.length > 0 && top5India.length > 0) {
+    if (top4US.length > 0 && top4India.length > 0) {
+      top4US = top4US.slice(0, 4);
+      top4India = top4India.slice(0, 4);
       renderLeaderboard();
       return;
     }
@@ -288,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const indexList = await resp.json();
         for (const item of indexList) {
           const isIndia = item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX");
-          const targetList = isIndia ? top5India : top5US;
+          const targetList = isIndia ? top4India : top4US;
           if (!targetList.some(t => t.symbol === item.symbol)) {
             targetList.push({
               symbol: item.symbol,
@@ -302,13 +304,13 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        top5US.sort((a, b) => b.fit_score - a.fit_score);
-        top5India.sort((a, b) => b.fit_score - a.fit_score);
-        top5US = top5US.slice(0, 5);
-        top5India = top5India.slice(0, 5);
+        top4US.sort((a, b) => b.fit_score - a.fit_score);
+        top4India.sort((a, b) => b.fit_score - a.fit_score);
+        top4US = top4US.slice(0, 4);
+        top4India = top4India.slice(0, 4);
 
-        localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
-        localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
+        localStorage.setItem("pie_top4_us", JSON.stringify(top4US));
+        localStorage.setItem("pie_top4_india", JSON.stringify(top4India));
       }
     } catch (e) {
       // Ignore
@@ -318,7 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateLeaderboard(data) {
     const isIndia = data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX");
-    const targetList = isIndia ? top5India : top5US;
+    const targetList = isIndia ? top4India : top4US;
 
     const existingIdx = targetList.findIndex(t => t.symbol === data.symbol);
     const newEntry = {
@@ -336,18 +338,18 @@ document.addEventListener("DOMContentLoaded", () => {
         targetList[existingIdx] = newEntry;
       }
     } else {
-      if (targetList.length < 5 || data.fit_score > targetList[targetList.length - 1].fit_score) {
+      if (targetList.length < 4 || data.fit_score > targetList[targetList.length - 1].fit_score) {
         targetList.push(newEntry);
       }
     }
 
     targetList.sort((a, b) => b.fit_score - a.fit_score);
     if (isIndia) {
-      top5India = targetList.slice(0, 5);
-      localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
+      top4India = targetList.slice(0, 4);
+      localStorage.setItem("pie_top4_india", JSON.stringify(top4India));
     } else {
-      top5US = targetList.slice(0, 5);
-      localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
+      top4US = targetList.slice(0, 4);
+      localStorage.setItem("pie_top4_us", JSON.stringify(top4US));
     }
 
     renderLeaderboard();
@@ -356,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderLeaderboard() {
     if (!topTradesGrid) return;
 
-    const targetList = currentMarket === "india" ? top5India : top5US;
+    const targetList = (currentMarket === "india" ? top4India : top4US).slice(0, 4);
     if (targetList.length === 0) {
       topTradesGrid.innerHTML = `<p style="color: #94a3b8; font-size: 13px;">No high-conviction trades calculated yet for ${currentMarket.toUpperCase()} market.</p>`;
       return;
