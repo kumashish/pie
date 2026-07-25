@@ -152,33 +152,43 @@ def get_strategy_display_name(stype: str) -> str:
         return "🟡 Collar"
     if clean in {"poor mans covered call", "poor_mans_covered_call"}:
         return "🟢 Poor Man's Covered Call"
-def calculate_credit_cagr(stype: str, fit_score: float, dte: int = 37) -> str:
-    """Calculate annualized Return on Collateral (CAGR %) for credit strategies if held to expiry."""
+def get_trade_profile(stype: str) -> str:
+    """Return deterministic strategy profile, target DTE, and short delta target."""
     clean = stype.lower().replace("_", " ").strip()
-    credit_types = {
-        "credit spread", "credit_spread", "iron condor", "iron_condor",
-        "iron butterfly", "iron_butterfly", "jade lizard", "jade_lizard",
-        "naked put", "naked_put", "naked call", "naked_call",
-        "short strangle", "short_strangle", "covered call", "covered_call",
-        "cash secured put", "cash_secured_put"
-    }
-    if clean not in credit_types:
-        return "N/A (Debit)"
-
-    trade_roc = 15.0 + (fit_score / 10.0) * 5.0
-    annualized_cagr = trade_roc * (365.0 / max(10, dte))
-    return f"+{annualized_cagr:.1f}%/yr"
+    if clean in {"covered call", "covered_call"}:
+        return "Credit | 30-45 DTE | 20-30 Delta"
+    if clean in {"cash secured put", "cash_secured_put", "naked put", "naked_put"}:
+        return "Credit | 30-45 DTE | 15-25 Delta"
+    if clean in {"credit spread", "credit_spread"}:
+        return "Credit | 30-45 DTE | 15-20 Delta"
+    if clean in {"iron condor", "iron_condor"}:
+        return "Credit | 35-45 DTE | 15 Delta Wings"
+    if clean in {"iron butterfly", "iron_butterfly"}:
+        return "Credit | 35-45 DTE | ATM Straddle"
+    if clean in {"jade lizard", "jade_lizard"}:
+        return "Credit | 30-45 DTE | 20 Delta Put"
+    if clean in {"naked call", "naked_call"}:
+        return "Credit | 30-45 DTE | 15-20 Delta"
+    if clean in {"short strangle", "short_strangle"}:
+        return "Credit | 30-45 DTE | 15-20 Delta"
+    if clean in {"butterfly", "long_butterfly", "broken wing butterfly", "broken_wing_butterfly"}:
+        return "Debit | 30-45 DTE | ATM Pin Target"
+    if clean in {"call debit spread", "call_debit_spread", "put debit spread", "put_debit_spread"}:
+        return "Debit | 30-60 DTE | 50 Delta ITM"
+    if clean in {"long call", "long_call", "long put", "long_put"}:
+        return "Debit | 60-180 DTE | 60 Delta"
+    if clean in {"poor mans covered call", "poor_mans_covered_call"}:
+        return "Diagonal | Long 60-90 / Short 20-30 DTE"
+    if clean in {"leaps"}:
+        return "Debit | 1-2 Yrs | 80 Delta"
+    return "Advisory | 30-45 DTE"
 
 
 def generate_readme_snapshot(
     market_data: list[dict],
     current_time: datetime | None = None,
 ) -> str:
-    """Generate 2 Markdown snapshot tables for README from market data entries.
-
-    Table 1: Macro Benchmark Indices (Always at the top)
-    Table 2: High Conviction (>90.0% Win Confidence) & Non-Debit Spread Strategies
-    """
+    """Generate Markdown snapshot tables for README from market data entries."""
     if current_time is None:
         current_time = datetime.now(UTC)
 
@@ -219,7 +229,7 @@ def generate_readme_snapshot(
     table3_stocks.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
     table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
 
-    header = "| Market    | Updated   | Regime            | Score     | Strategy          | CAGR (Expiry) | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ------------- | ---------------------- |"
+    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------------------- | ---------------------- |"
 
     output_sections = ["### 🌐 U.S. Macro Benchmark Indices", header]
     for data in table1_us:
@@ -232,10 +242,10 @@ def generate_readme_snapshot(
         signal_raw = data.get("signal", "")
         since_text, _ = calculate_since(data["signal_since"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
-        cagr_val = calculate_credit_cagr(stype, float(data.get("fit_score", 0.0)))
+        profile_val = get_trade_profile(stype)
 
         output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |"
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |"
         )
 
     output_sections.append("\n### 🌐 Indian Macro Benchmark Indices")
@@ -250,10 +260,10 @@ def generate_readme_snapshot(
         signal_raw = data.get("signal", "")
         since_text, _ = calculate_since(data["signal_since"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
-        cagr_val = calculate_credit_cagr(stype, float(data.get("fit_score", 0.0)))
+        profile_val = get_trade_profile(stype)
 
         output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |"
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |"
         )
 
     output_sections.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
@@ -268,10 +278,10 @@ def generate_readme_snapshot(
         signal_raw = data.get("signal", "")
         since_text, _ = calculate_since(data["signal_since"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
-        cagr_val = calculate_credit_cagr(stype, float(data.get("fit_score", 0.0)))
+        profile_val = get_trade_profile(stype)
 
         output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |"
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |"
         )
 
     if table4_exits:

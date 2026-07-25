@@ -79,22 +79,36 @@ def get_strategy_display_name(stype: str) -> str:
     return f"🟡 {clean.title()}"
 
 
-def calculate_credit_cagr(stype: str, fit_score: float, dte: int = 37) -> str:
-    """Calculate annualized Return on Collateral (CAGR %) for credit strategies if held to expiry."""
+def get_trade_profile(stype: str) -> str:
+    """Return deterministic strategy profile, target DTE, and short delta target."""
     clean = stype.lower().replace("_", " ").strip()
-    credit_types = {
-        "credit spread", "credit_spread", "iron condor", "iron_condor",
-        "iron butterfly", "iron_butterfly", "jade lizard", "jade_lizard",
-        "naked put", "naked_put", "naked call", "naked_call",
-        "short strangle", "short_strangle", "covered call", "covered_call",
-        "cash secured put", "cash_secured_put"
-    }
-    if clean not in credit_types:
-        return "N/A (Debit)"
-
-    trade_roc = 15.0 + (fit_score / 10.0) * 5.0
-    annualized_cagr = trade_roc * (365.0 / max(10, dte))
-    return f"+{annualized_cagr:.1f}%/yr"
+    if clean in {"covered call", "covered_call"}:
+        return "Credit | 30-45 DTE | 20-30 Delta"
+    if clean in {"cash secured put", "cash_secured_put", "naked put", "naked_put"}:
+        return "Credit | 30-45 DTE | 15-25 Delta"
+    if clean in {"credit spread", "credit_spread"}:
+        return "Credit | 30-45 DTE | 15-20 Delta"
+    if clean in {"iron condor", "iron_condor"}:
+        return "Credit | 35-45 DTE | 15 Delta Wings"
+    if clean in {"iron butterfly", "iron_butterfly"}:
+        return "Credit | 35-45 DTE | ATM Straddle"
+    if clean in {"jade lizard", "jade_lizard"}:
+        return "Credit | 30-45 DTE | 20 Delta Put"
+    if clean in {"naked call", "naked_call"}:
+        return "Credit | 30-45 DTE | 15-20 Delta"
+    if clean in {"short strangle", "short_strangle"}:
+        return "Credit | 30-45 DTE | 15-20 Delta"
+    if clean in {"butterfly", "long_butterfly", "broken wing butterfly", "broken_wing_butterfly"}:
+        return "Debit | 30-45 DTE | ATM Pin Target"
+    if clean in {"call debit spread", "call_debit_spread", "put debit spread", "put_debit_spread"}:
+        return "Debit | 30-60 DTE | 50 Delta ITM"
+    if clean in {"long call", "long_call", "long put", "long_put"}:
+        return "Debit | 60-180 DTE | 60 Delta"
+    if clean in {"poor mans covered call", "poor_mans_covered_call"}:
+        return "Diagonal | Long 60-90 / Short 20-30 DTE"
+    if clean in {"leaps"}:
+        return "Debit | 1-2 Yrs | 80 Delta"
+    return "Advisory | 30-45 DTE"
 
 
 def format_market_table(markets: list[dict]) -> str:
@@ -138,7 +152,7 @@ def format_market_table(markets: list[dict]) -> str:
     table3_stocks.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
     table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
 
-    header = "| Market    | Updated   | Regime            | Score     | Strategy          | CAGR (Expiry) | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ------------- | ---------------------- |"
+    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Trade Profile                      | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------------------- | ---------------------- |"
 
     lines = ["<!-- MARKET-SNAPSHOT-START -->"]
     lines.append("### 🌐 U.S. Macro Benchmark Indices")
@@ -153,8 +167,8 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        cagr_val = calculate_credit_cagr(stype, float(market.get("fit_score", 0.0)))
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |")
+        profile_val = get_trade_profile(stype)
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |")
 
     lines.append("\n### 🌐 Indian Macro Benchmark Indices")
     lines.append(header)
@@ -168,8 +182,8 @@ def format_market_table(markets: list[dict]) -> str:
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        cagr_val = calculate_credit_cagr(stype, float(market.get("fit_score", 0.0)))
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {cagr_val:<13} | {signal_display:<22} |")
+        profile_val = get_trade_profile(stype)
+        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {profile_val:<34} | {signal_display:<22} |")
 
     lines.append("\n### 🎯 High-Conviction (>9/10 Score) & Advanced Range Strategies")
     lines.append(header)
