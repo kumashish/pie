@@ -78,7 +78,81 @@
         </div>
 
         <div id="top-trades-grid" class="top-trades-grid">
-          <!-- Rendered dynamically by app.js -->
+          <div class="top-card">
+            <span class="top-card-rank">#1</span>
+            <div>
+              <div class="top-card-header">
+                <span class="top-card-symbol">SPY</span>
+                <span class="top-card-price">$738.93</span>
+              </div>
+              <div class="top-card-score">
+                <span class="score-val">8.6</span>
+                <span class="score-label">/10.0 (Strong Bull)</span>
+              </div>
+              <div class="top-card-strategy">Naked Put</div>
+              <div class="top-card-leg">Credit | 30-45 DTE | 30 Delta OTM</div>
+            </div>
+            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='SPY'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
+              Load Full Analysis ➔
+            </button>
+          </div>
+
+          <div class="top-card">
+            <span class="top-card-rank">#2</span>
+            <div>
+              <div class="top-card-header">
+                <span class="top-card-symbol">NVDA</span>
+                <span class="top-card-price">$206.84</span>
+              </div>
+              <div class="top-card-score">
+                <span class="score-val">8.1</span>
+                <span class="score-label">/10.0 (Strong Bull)</span>
+              </div>
+              <div class="top-card-strategy">Call Debit Spread</div>
+              <div class="top-card-leg">Debit | 30-60 DTE | 50 Delta ITM</div>
+            </div>
+            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='NVDA'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
+              Load Full Analysis ➔
+            </button>
+          </div>
+
+          <div class="top-card">
+            <span class="top-card-rank">#3</span>
+            <div>
+              <div class="top-card-header">
+                <span class="top-card-symbol">AAPL</span>
+                <span class="top-card-price">$224.30</span>
+              </div>
+              <div class="top-card-score">
+                <span class="score-val">7.5</span>
+                <span class="score-label">/10.0 (Bull)</span>
+              </div>
+              <div class="top-card-strategy">Call Debit Spread</div>
+              <div class="top-card-leg">Debit | 30-60 DTE | 50 Delta ITM</div>
+            </div>
+            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='AAPL'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
+              Load Full Analysis ➔
+            </button>
+          </div>
+
+          <div class="top-card">
+            <span class="top-card-rank">#4</span>
+            <div>
+              <div class="top-card-header">
+                <span class="top-card-symbol">QQQ</span>
+                <span class="top-card-price">$540.20</span>
+              </div>
+              <div class="top-card-score">
+                <span class="score-val">6.8</span>
+                <span class="score-label">/10.0 (Bull)</span>
+              </div>
+              <div class="top-card-strategy">Call Debit Spread</div>
+              <div class="top-card-leg">Debit | 30-60 DTE | 50 Delta ITM</div>
+            </div>
+            <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='QQQ'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
+              Load Full Analysis ➔
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -228,6 +302,6 @@
     </footer>
   </div>
 
-  <script src="app.js?v=20260726_14"></script>
+  <script src="app.js?v=20260726_15"></script>
 </body>
 </html>

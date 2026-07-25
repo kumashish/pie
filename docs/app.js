@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const foldText = document.getElementById("fold-text");
 
   // Always keep Market Leaderboards EXPANDED on initial page load
+  localStorage.removeItem("pie_leaderboard_folded");
   applyFoldState(false);
 
   if (leaderboardHeader) {
