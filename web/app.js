@@ -58,11 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const foldIcon = document.getElementById("fold-icon");
   const foldText = document.getElementById("fold-text");
 
-  let isFolded = localStorage.getItem("pie_leaderboard_folded") === "true";
-
-  if (isFolded && leaderboardSection) {
-    applyFoldState(true);
-  }
+  // Always keep Market Leaderboards EXPANDED on initial page load
+  applyFoldState(false);
 
   if (leaderboardHeader) {
     leaderboardHeader.addEventListener("click", () => {
@@ -105,8 +102,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Initial Fetch for default symbol SPY
-  fetchAnalysis("SPY", false);
+  // Initial Silent Load for default symbol SPY (No blocking loading spinner on landing page)
+  fetchQuietly("SPY");
+
+  async function fetchQuietly(symbol) {
+    try {
+      const response = await fetchWithTimeout(`data/${symbol}.json`, 1500);
+      if (response.ok) {
+        const data = await response.json();
+        renderResults(data, false);
+      }
+    } catch (e) {
+      // Quiet fallback
+    }
+  }
 
   const ALIAS_MAP = {
     "NIFTY 50": "^NSEI",
@@ -175,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function renderResults(data) {
+  function renderResults(data, shouldScroll = true) {
     errorBanner.style.display = "none";
     resultsContainer.style.display = "block";
 
@@ -248,10 +257,12 @@ document.addEventListener("DOMContentLoaded", () => {
       resRulesTbody.innerHTML = "<tr><td colspan='4'>No rule evaluations available.</td></tr>";
     }
 
-    // Smooth scroll down to trade structure results
-    setTimeout(() => {
-      resultsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 50);
+    // Smooth scroll down to trade structure results if requested
+    if (shouldScroll) {
+      setTimeout(() => {
+        resultsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
+    }
   }
 
   function getRegimeBadgeText(regime) {
