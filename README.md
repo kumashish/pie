@@ -117,30 +117,68 @@ Computes exact strike prices based on exchange tick sizes and price tier boundar
 
 ---
 
-### 5. Timeframe & DTE Framework (`pie/market/trade_estimate.py`)
-Applies optimal Days To Expiration (DTE) selection based on quantitative theta decay curves and delta/gamma risk profiles:
+### 5. Portfolio Manager's Decision Framework (`pie/market/trade_estimate.py`)
+Expiration and timeframe selection are **derived** from a multi-variable decision model:
 
-| Strategy Type | Ideal DTE Range | Quantitative Rationale |
-| :--- | :---: | :--- |
-| **Covered Calls** | **30-45 Days** | Optimal theta decay curve while retaining upside potential |
-| **Cash-Secured Puts** | **30-45 Days** | Maximum theta decay per day with manageable assignment risk |
-| **Credit Spreads** | **30-45 Days** | Favorable theta decay with controlled gamma acceleration |
-| **Iron Condors / Iron Butterflies** | **30-45 Days** | Time for maximum premium decay in range-bound regimes |
-| **Jade Lizard** | **30-45 Days** | High premium collection without upside risk |
-| **Long Butterflies** | **30-45 Days** | Peak pin risk decay in narrow range regimes |
-| **Call / Put Debit Spreads** | **30-60 Days** | Optimal balance between theta decay drag and directional trend capture |
-| **Long Calls / Long Puts** | **60-180 Days** | Minimizes daily theta loss while capturing trend momentum |
-| **Calendars & Diagonals (PMCC)** | **Long: 45-90 Days, Short: 20-45 Days** | Exploits differing theta decay curves across expiration cycles |
-| **LEAPS** | **1-2 Years (365-730 Days)** | Long-term directional exposure with stock replacement leverage |
+$$\text{Ideal DTE} = f(\text{Market Regime}, \text{Strategy Objective}, \text{Volatility (VIX)}, \text{Management Window})$$
+
+#### Step 1: Market & VIX Regime Selection Matrix
+| Market Regime | VIX Range | Technical Trend | Preferred Strategy | Target DTE | Short Strike Delta |
+| :--- | :---: | :--- | :--- | :---: | :---: |
+| **Strong Bull** | $<15$ | Above 50 & 200 EMA | Covered Calls, Cash-Secured Puts | **35-45 DTE** | 20-30 Delta |
+| **Bull** | $15-20$ | Above EMAs | Credit Put Spreads | **30-45 DTE** | 15-20 Delta |
+| **Neutral** | $12-18$ | Sideways Consolidation | Iron Condors, Butterflies | **35-45 DTE** | Range Wings |
+| **Bear** | $>20$ | Below EMAs | Bear Call Spreads | **30-45 DTE** | 15-20 Delta |
+| **High Volatility** | $>25$ | Any Trend Direction | Defined-Risk Spreads (Smaller Size) | **25-35 DTE** | 15-20 Delta |
+
+#### Step 2: The Theta-Gamma Lifecycle Curve
+| DTE Window | Dominant Greek | Seller's View | Actionable Rule |
+| :---: | :--- | :--- | :--- |
+| **$> 60$** | Vega | Safe but slower theta | Ideal for buying options, long spreads, LEAPS |
+| **$45-60$** | Balanced | Conservative selling | Early entry window for large position sizes |
+| **$30-45$** | **Theta Accelerates** | **Sweet Spot** | **Ideal entry window for systematic premium selling** |
+| **$21$** | Theta Very High | **First Review Window** | Manage winners at 50-75% max profit or if delta $>0.30$ |
+| **$14$** | **Gamma Explosion** | **Hard Exit Gate** | **Mandatory exit or roll to eliminate gamma acceleration** |
+| **$0-7$** | **Gamma Dominates** | Extreme Risk | Avoid holding short premium positions |
+
+#### Step 3: Portfolio Manager's Decision Tree
+```mermaid
+flowchart TD
+    Start["Market Signal Evaluated"] --> Type{"Buying or Selling Premium?"}
+    
+    Type -- "Buying Options (Directional)" --> BuyDTE["Set 60 - 180 DTE (Reduce Theta Drag)"]
+    Type -- "Selling Premium (Income)" --> VIX{"Check Volatility (VIX)"}
+    
+    VIX -- "VIX < 15" --> DTE1["35 - 45 DTE (15-25 Delta)"]
+    VIX -- "VIX 15 - 25" --> DTE2["30 - 45 DTE (15-20 Delta)"]
+    VIX -- "VIX > 25" --> DTE3["25 - 35 DTE (Defined-Risk Spreads, Smaller Size)"]
+    
+    DTE1 --> Manage["Trade Management Lifecycle"]
+    DTE2 --> Manage
+    DTE3 --> Manage
+    
+    Manage --> Target{"Check Position Status"}
+    Target -- "Profit >= 50% - 75%" --> Close1["🎯 Take Profit & Close"]
+    Target -- "DTE <= 21 & Delta > 0.30" --> Review["🟡 21 DTE First Review (Roll / Adjust)"]
+    Target -- "DTE <= 14" --> Gate["🔴 14 DTE Hard Exit Gate (Mandatory Close/Roll)"]
+```
+
+#### Step 4: Portfolio Manager's Rulebook
+- **Entry Window**: Open premium-selling positions at **30-45 DTE** to harvest theta in the acceleration zone.
+- **Delta Selection**: Choose **15-25 Delta** short strikes for high probability of profit.
+- **High Volatility Adjustment**: When VIX $>25$, compress duration to **25-35 DTE** and reduce position sizing.
+- **21 DTE First Review**: Reassess position; take profit if gain is $\ge 50-75\%$ or short delta exceeds $0.30$.
+- **14 DTE Hard Exit Gate**: Close or roll all short options before the final 14 days to eliminate gamma risk.
 
 ---
 
 ### 6. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
-Manages active positions and triggers trade exit signals based on 4 risk rules:
+Manages active positions and triggers trade exit signals based on 5 risk rules:
 
 - **`🔴 Exit (Regime Shift)`**: Exit immediately if trend score drops below threshold ($<4.5$ for Call Debit Spread) or regime reverses.
-- **`🟡 Exit (DTE < 10)`**: Close position at $\le 10$ Days to Expiration to eliminate exponential theta decay and pin/assignment risk.
-- **`🎯 Take Profit`**: Close position when spot price reaches short target strike (+50% to +75% max profit).
+- **`🔴 Exit / Roll (14 DTE Gamma Gate)`**: Mandatory exit or roll at $\le 14$ Days to Expiration to eliminate exponential gamma risk.
+- **`🟡 Review / Roll (21 DTE First Review)`**: First management review window at $\le 21$ Days to Expiration.
+- **`🎯 Take Profit (50%+ Max Profit)`**: Close position when spot price reaches short target strike or +50% max profit.
 - **`⚠️ Stop Loss`**: Close position if spot price breaches maximum loss boundary ($>2\times$ spread width away).
 
 ---

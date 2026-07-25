@@ -13,8 +13,10 @@ class ExitReason(StrEnum):
     """Exit triggers for active option strategies."""
 
     REGIME_SHIFT = "🔴 Exit (Regime Shift)"
+    GAMMA_GATE = "🔴 Exit / Roll (14 DTE Gamma Gate)"
+    FIRST_REVIEW = "🟡 Review / Roll (21 DTE First Review)"
     DTE_EXPIRATION = "🟡 Exit (DTE < 10)"
-    TAKE_PROFIT = "🎯 Take Profit"
+    TAKE_PROFIT = "🎯 Take Profit (50%+ Max Profit)"
     STOP_LOSS = "⚠️ Stop Loss"
     NONE = "Active"
 
@@ -70,16 +72,20 @@ def evaluate_exit_condition(
     estimated_trade: Optional[EstimatedTrade] = None,
     current_time: Optional[datetime] = None,
 ) -> tuple[bool, str]:
-    """Evaluate whether an active trade should be closed.
+    """Evaluate whether an active trade should be closed or rolled.
 
     Returns:
         (should_exit: bool, reason_display: str)
     """
     dte = calculate_dte(expiration, current_time)
 
-    # 1. DTE Rule: Exit if DTE <= 10 days to avoid gamma/pin risk
+    # 1. DTE Risk Gates:
     if dte <= 10:
         return True, ExitReason.DTE_EXPIRATION.value
+    if dte <= 14:
+        return True, ExitReason.GAMMA_GATE.value
+    if dte <= 21:
+        return True, ExitReason.FIRST_REVIEW.value
 
     # 2. Regime Shift Rule:
     # If strategy was Call Debit Spread / Bullish but regime switched to Bear/Strong Bear (score < 4.5)
