@@ -3,168 +3,131 @@
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-# Portfolio Intelligence
+# TradeCraft | Quantitative Stock & Options Engine
 
-A personal market and options decision engine for systematic premium selling, directional overlays, adaptive learning, and automated trade lifecycle management.
+**TradeCraft** (internal repository `portfolio-intelligence`) is a multi-regime quantitative decision engine designed for systematic equity swing trading, option spread generation, Renaissance Medallion-level risk sizing, and automated trade lifecycle management.
 
 ---
 
-## 🧠 Quantitative Models & Reasoning
+## 🧠 Quantitative Architecture & Modules
 
-`portfolio-intelligence` uses a multi-layered quantitative engine that evaluates raw market OHLCV data, calculates technical indicators, classifies regimes, selects optimal option strategies, determines exact strike prices, and manages trade exit lifecycles.
+TradeCraft operates across a multi-layered quantitative pipeline:
 
 ```mermaid
 flowchart TD
     A["Raw OHLCV Market Data"] --> B["1. Technical Indicator Engine"]
-    B --> C["2. Trend & Regime Scoring Model"]
-    C --> D["3. Option Strategy Selector & Fit Model"]
-    D --> E["4. Dynamic Strike Rounding & Leg Engine"]
-    E --> F["5. Quantitative Exit & Lifecycle Engine"]
-    F --> G["6. Multi-Channel Webhook Alerts"]
+    B --> C["2. 11-Rule Trend & Volume Matrix"]
+    C --> D["3. Multi-Regime Strategy Classifier"]
+    D --> E["4. Renaissance Risk & Kelly Sizing Engine"]
+    E --> F["5. Black-Scholes Greeks & 10k Monte Carlo Sim"]
+    F --> G["6. Dynamic Strike & Leg Generator"]
+    G --> H["7. Exit Lifecycle & Webhook Alerts"]
 ```
 
 ---
 
 ### 1. Technical Indicator Engine (`pie/market/indicators/`)
-Computes mathematical indicators across 500 sessions of daily price history:
+Calculates mathematical indicators across 500 sessions of daily price history:
 
 - **Exponential Moving Averages (EMA 20, 50, 100, 200)**: Evaluates short, medium, and long-term trend alignment and moving average crossovers.
-- **Relative Strength Index (RSI 14)**: Identifies momentum health ($40 \le RSI \le 70$) vs overbought ($RSI > 70$) or oversold ($RSI < 30$) conditions.
+- **Relative Strength Index (RSI 14)**: Identifies momentum health ($45 \le RSI \le 65$) vs overbought ($RSI > 68$) or oversold ($RSI < 32$) reversal conditions.
 - **Average True Range (ATR 14)**: Measures dynamic market volatility to determine expected price move boundaries and option leg width spacing.
-- **Average Directional Index (ADX 14)**: Determines trend strength. $ADX > 25$ indicates a strong trend (ideal for Debit Spreads); $ADX < 20$ indicates range-bound consolidation (ideal for Butterflies/Iron Condors).
-- **Bollinger Bands (20, 2.0)**: Computes relative price position (%B) within a 2-standard-deviation channel for mean-reversion signals.
+- **Average Directional Index (ADX 14)**: Determines trend strength. $ADX > 25$ confirms trend strength; $ADX < 20$ flags range-bound consolidation or squeezes.
+- **Bollinger Bands (20, 2.0)**: Computes relative price position (%B) to detect overextended bounds (%B > 1.02) or band squeezes (%B ~ 0.50).
 
 ---
 
-### 2. Trend & Regime Scoring Engine (`pie/market/trend/`)
-Evaluates 8 pass/fail market conditions to compute a unified **Trend Score ($0.0 - 10.0$)**:
+### 2. Upgraded 11-Rule Quantitative Matrix (`pie/market/trend/`)
+Evaluates 11 weighted pass/fail rules to compute a unified **Trend Score ($0.0 - 10.0$)**:
 
-$$\text{Trend Score} = \frac{\sum_{i=1}^{8} w_i \cdot \text{Condition}_i}{\sum w_i} \times 10$$
+$$\text{Trend Score} = \frac{\sum_{i=1}^{11} w_i \cdot \text{Condition}_i}{\sum w_i} \times 10$$
 
 | Pass/Fail Rule | Weight | Quantitative Rationale |
 | :--- | :---: | :--- |
-| **`Price > EMA 200`** | 2.0 | Long-term macro bull bias |
-| **`EMA 20 > EMA 50`** | 1.5 | Short-term momentum acceleration |
-| **`EMA 50 > EMA 200`** | 1.5 | Golden Cross / Structural bull alignment |
-| **`RSI Healthy`** | 1.0 | Momentum within optimal range ($40 - 70$) |
-| **`ADX Strong Trend`** | 1.0 | $ADX > 20$ confirms trend validity |
-| **`ATR Expanding`** | 1.0 | Volatility expansion supports directional expansion |
-| **`Higher Highs`** | 1.0 | Dynamic price action structure |
-| **`Higher Lows`** | 1.0 | Higher low support validation |
-
-#### Regime Classification Scale:
-- **`🟢 Strong Bull`** (Score $\ge 8.0/10$): High-conviction bullish directional setups.
-- **`🟢 Bull`** (Score $5.5 - 7.9/10$): Moderate bullish bias; range-bound / debit spread setups.
-- **`🟡 Neutral`** (Score $4.5 - 5.4/10$): Non-directional market; range strategies (Long Butterfly / Iron Condor).
-- **`🔴 Bear`** (Score $2.5 - 4.4/10$): Moderate bearish bias.
-- **`🔴 Strong Bear`** (Score $< 2.5/10$): High-conviction bearish directional setups.
+| **`Price > EMA 200`** | 20.0% | Long-term macro bull bias |
+| **`EMA 20 > EMA 50`** | 15.0% | Short-term momentum acceleration |
+| **`EMA 50 > EMA 200`** | 15.0% | Golden Cross / Structural bull alignment |
+| **`RSI Healthy`** | 10.0% | Momentum within optimal range ($45 - 65$) |
+| **`ADX Strong Trend`** | 10.0% | $ADX > 25$ confirms trend validity |
+| **`Institutional Volume Flow`** | 7.5% | **`Volume > 1.05x 20-day Average Volume`** (Smart money check) |
+| **`20-Day Relative Strength`** | 7.5% | Positive 20-day momentum return trajectory |
+| **`ATR Expanding`** | 5.0% | Volatility expansion supports directional moves |
+| **`Bollinger Exhaustion Check`** | 5.0% | **`%B <= 1.02`** (Prevents buying overextended band peaks) |
+| **`Higher Highs & Lows`** | 5.0% | Price action structure validation |
 
 ---
 
-### 3. Option Strategy Classifier & Fit Model (`pie/market/strategy.py`)
-Maps regime classification and Implied Volatility (IV) Rank to the highest-expected-value strategy:
+### 3. Multi-Regime Quantitative Strategy Classifier (`pie/market/strategy.py`)
+Dynamically routes trades into 4 specialized regime engines:
 
-- **🟢 Call Debit Spread**: Selected for `Strong Bull` / `Bull` regimes with $ADX > 20$.
-- **🔴 Put Debit Spread**: Selected for `Strong Bear` / `Bear` regimes with $ADX > 20$.
-- **🟡 Long Butterfly**: Selected for range-bound markets ($ADX < 20$, $RSI \approx 50$) to capture low volatility compression at target strike.
-- **🟡 Iron Condor / Iron Butterfly**: Selected for neutral high-IV regimes to collect maximum option premium outside range wings.
-
----
-
-### 4. Dynamic Strike Rounding & Leg Selection Model (`pie/market/trade_estimate.py`)
-Computes exact strike prices based on exchange tick sizes and price tier boundaries:
-
-- **Index & Benchmark Multipliers**: `BANKNIFTY` / `^NSEBANK` strikes are strictly rounded to multiples of **100**; `NIFTY 50` / `^NSEI` to **50**; `SPY` & `QQQ` to multiples of **5**.
-- **Price Boundary Rule ($\ge 10,000$)**: Any stock or asset with a spot price $\ge 10,000$ (e.g. `BAJAJ-AUTO.NS` @ 11,130, `ULTRACEMCO.NS` @ 11,846) is rounded to multiples of **100**.
-- **Stock Multipliers ($< 10,000$)**: All other stock option strikes are rounded to multiples of **10** (e.g. `TITAN.NS` 4680 Call / 4870 Call).
-- **Leg Multipliers**: Groups identical legs into explicit quantity multipliers (`Sell 2x HINDALCO 25-Aug-2026 940 Call`) while omitting `1x` on single legs.
+1. **🟢 Trend-Following Engine**:
+   - **`Call Debit Spread` / `Put Debit Spread` / `Cash Swing Long`**: Triggered when ADX > 25 and trend score is strong.
+2. **🔄 Counter-Trend / Mean-Reversion Engine (Fade Extremes)**:
+   - **`Bear Call Credit Spread` / `Collar` / `Bull Put Spread`**: Triggered when RSI > 68 (Overbought) or RSI < 32 (Oversold).
+3. **⚡ Volatility Squeeze Engine (Non-Directional)**:
+   - **`Long Straddle` / `Butterfly`**: Triggered when Bollinger Bands squeeze (low ADX + narrow %B range).
+4. **📉 High-IV Theta Harvesting Engine**:
+   - **`Jade Lizard` / `Iron Condor` / `Iron Butterfly`**: Triggered when IV Rank > 55% to collect Vega/Theta decay.
 
 ---
 
-### 5. Portfolio Manager's Decision Framework (`pie/market/trade_estimate.py`)
-Expiration and timeframe selection are **derived** from a multi-variable decision model:
+### 4. Renaissance Medallion Risk & Simulation Engines
 
-$$\text{Ideal DTE} = f(\text{Market Regime}, \text{Strategy Objective}, \text{Volatility (VIX)}, \text{Management Window})$$
+#### A. Dynamic Fractional Kelly Position Sizing Engine (`pie/market/trade_estimate.py`)
+Computes mathematically optimal capital allocation fraction ($f^*$) using win probability ($p$) and payout ratio ($b$):
 
-#### Step 1: Market & VIX Regime Selection Matrix
-| Market Regime | VIX Range | Technical Trend | Preferred Strategy | Target DTE | Short Strike Delta |
-| :--- | :---: | :--- | :--- | :---: | :---: |
-| **Strong Bull** | $<15$ | Above 50 & 200 EMA | Covered Calls, Cash-Secured Puts | **35-45 DTE** | 20-30 Delta |
-| **Bull** | $15-20$ | Above EMAs | Credit Put Spreads | **30-45 DTE** | 15-20 Delta |
-| **Neutral** | $12-18$ | Sideways Consolidation | Iron Condors, Butterflies | **35-45 DTE** | Range Wings |
-| **Bear** | $>20$ | Below EMAs | Bear Call Spreads | **30-45 DTE** | 15-20 Delta |
-| **High Volatility** | $>25$ | Any Trend Direction | Defined-Risk Spreads (Smaller Size) | **25-35 DTE** | 15-20 Delta |
+$$f^* = 0.50 \times \frac{p \cdot b - (1 - p)}{b}$$
 
-#### Exchange Option Expiration Rules Matrix
-| Market | Monthly Expiry | Weekly Expiry | Exchange Rule & Specifications |
-| :--- | :--- | :--- | :--- |
-| **USA (Equity & ETF Options)** | **3rd Friday of every month** | Mon / Wed / Fri Weeklies | Standard monthly OPEX expires on the 3rd Friday of every month |
-| **India (NSE Derivatives)** | **Last Tuesday of every month** | Every Tuesday | Since Sept 2025, NSE shifted index and stock derivatives from Thursday to Tuesday |
-| **India (BSE Derivatives)** | **Last Thursday of every month** | Every Thursday | BSE uses Thursday expiries under the revised SEBI framework |
+- Computes suggested contract lot sizes and caps maximum portfolio risk allocation at $\le 5\%$.
 
-#### Step 2: The Theta-Gamma Lifecycle Curve
-| DTE Window | Dominant Greek | Seller's View | Actionable Rule |
-| :---: | :--- | :--- | :--- |
-| **$> 60$** | Vega | Safe but slower theta | Ideal for buying options, long spreads, LEAPS |
-| **$45-60$** | Balanced | Conservative selling | Early entry window for large position sizes |
-| **$30-45$** | **Theta Accelerates** | **Sweet Spot** | **Ideal entry window for systematic premium selling** |
-| **$21$** | Theta Very High | **First Review Window** | Manage winners at 50-75% max profit or if delta $>0.30$ |
-| **$14$** | **Gamma Explosion** | **Hard Exit Gate** | **Mandatory exit or roll to eliminate gamma acceleration** |
-| **$0-7$** | **Gamma Dominates** | Extreme Risk | Avoid holding short premium positions |
+#### B. Black-Scholes Option Greeks Engine (`pie/market/greeks.py`)
+Computes closed-form analytical Option Greeks for all strategy legs:
+- **Delta ($\Delta$)**, **Gamma ($\Gamma$)**, **Theta ($\Theta$)**, **Vega ($\nu$)**.
 
-#### Step 3: Portfolio Manager's Decision Tree
-```mermaid
-flowchart TD
-    Start["Market Signal Evaluated"] --> Type{"Buying or Selling Premium?"}
-    
-    Type -- "Buying Options (Directional)" --> BuyDTE["Set 60 - 180 DTE (Reduce Theta Drag)"]
-    Type -- "Selling Premium (Income)" --> VIX{"Check Volatility (VIX)"}
-    
-    VIX -- "VIX < 15" --> DTE1["35 - 45 DTE (15-25 Delta)"]
-    VIX -- "VIX 15 - 25" --> DTE2["30 - 45 DTE (15-20 Delta)"]
-    VIX -- "VIX > 25" --> DTE3["25 - 35 DTE (Defined-Risk Spreads, Smaller Size)"]
-    
-    DTE1 --> Manage["Trade Management Lifecycle"]
-    DTE2 --> Manage
-    DTE3 --> Manage
-    
-    Manage --> Target{"Check Position Status"}
-    Target -- "Profit >= 50% - 75%" --> Close1["🎯 Take Profit & Close"]
-    Target -- "DTE <= 21 & Delta > 0.30" --> Review["🟡 21 DTE First Review (Roll / Adjust)"]
-    Target -- "DTE <= 14" --> Gate["🔴 14 DTE Hard Exit Gate (Mandatory Close/Roll)"]
+#### C. 10,000-Path Monte Carlo Simulator (`pie/market/simulation.py`)
+Runs 10,000 Geometric Brownian Motion (GBM) simulated price paths to compute:
+- **Probability of Profit (POP %)**: Exact percentage of 10,000 paths ending in profit.
+- **95% Value at Risk (VaR 95)**: Worst-case 5% drawdown threshold.
+
+#### D. Volatility Skew & Smile Optimizer (`pie/market/skew.py`)
+Optimizes option strike selection based on 25-Delta Put/Call IV Skew.
+
+---
+
+### 5. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
+Manages active trades via 5 risk rules:
+
+- **`🔴 Exit (Regime Shift)`**: Exit immediately if trend score drops below threshold ($<4.5$) or regime reverses.
+- **`🔴 Exit / Roll (14 DTE Gamma Gate)`**: Mandatory exit or roll at $\le 14$ DTE to eliminate exponential gamma risk.
+- **`🟡 Review / Roll (21 DTE First Review)`**: First management review window at $\le 21$ DTE.
+- **`🎯 Take Profit (50%+ Max Profit)`**: Close position when spot price reaches short target strike or +50% max profit.
+- **`⚠️ Stop Loss`**: Close position if spot price breaches maximum loss boundary.
+
+---
+
+### 6. Company Name Search & Real-Time Stock News Side Tab
+
+- **Company & Index Name Resolution**: Search company names directly (e.g. `"Titan"`, `"TCS"`, `"Reliance"`, `"Apple"`, `"Nifty 50"`) with live autocomplete suggestions.
+- **Real-Time Stock News Drawer**: Slide-out glassmorphism drawer displaying real-time headlines with automated **`🟢 BULLISH`**, **`🔴 BEARISH`**, and **`🟡 NEUTRAL`** sentiment badges.
+
+---
+
+## 🚀 Running Locally
+
+### Start Live Server
+```bash
+.venv\Scripts\python.exe -m pie.cli.app serve --port 8000
+```
+Open `http://localhost:8000` in your browser.
+
+### Run Test Suite
+```bash
+.venv\Scripts\pytest.exe
 ```
 
-#### Step 4: Portfolio Manager's Rulebook
-- **Entry Window**: Open premium-selling positions at **30-45 DTE** to harvest theta in the acceleration zone.
-- **Delta Selection**: Choose **15-25 Delta** short strikes for high probability of profit.
-- **High Volatility Adjustment**: When VIX $>25$, compress duration to **25-35 DTE** and reduce position sizing.
-- **21 DTE First Review**: Reassess position; take profit if gain is $\ge 50-75\%$ or short delta exceeds $0.30$.
-- **14 DTE Hard Exit Gate**: Close or roll all short options before the final 14 days to eliminate gamma risk.
-
----
-
-### 6. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
-Manages active positions and triggers trade exit signals based on 5 risk rules:
-
-- **`🔴 Exit (Regime Shift)`**: Exit immediately if trend score drops below threshold ($<4.5$ for Call Debit Spread) or regime reverses.
-- **`🔴 Exit / Roll (14 DTE Gamma Gate)`**: Mandatory exit or roll at $\le 14$ Days to Expiration to eliminate exponential gamma risk.
-- **`🟡 Review / Roll (21 DTE First Review)`**: First management review window at $\le 21$ Days to Expiration.
-- **`🎯 Take Profit (50%+ Max Profit)`**: Close position when spot price reaches short target strike or +50% max profit.
-- **`⚠️ Stop Loss`**: Close position if spot price breaches maximum loss boundary ($>2\times$ spread width away).
-
----
-
-### 6. Multi-Channel Webhook Dispatcher (`pie/reporting/notifications.py`)
-Dispatches real-time signal alerts via telegram, Slack, and Discord.
-
----
-
-## Backtesting
-
-Run a reproducible local backtest with the included OHLCV dataset:
-
+### Run Backtest
 ```bash
 uv run pie backtest-market ^NSEI --data-path data/market/nifty50_25years_ohlcv_1999_2026.csv
 ```
-
