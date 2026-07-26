@@ -279,6 +279,19 @@ document.addEventListener("DOMContentLoaded", () => {
     return grade;
   }
 
+  function getCurrencySymbol(symbol) {
+    if (!symbol) return "$";
+    const sym = symbol.toUpperCase();
+    if (sym.endsWith(".NS") || sym.endsWith(".BO") || sym.includes("NIFTY") || sym.includes("SENSEX") || sym.includes("_NS") || sym.includes("_BO")) {
+      return "₹";
+    }
+    const indianTickers = ["TCS", "INFY", "RELIANCE", "TITAN", "SUNPHARMA", "BAJAJ", "HDFCBANK", "ICICIBANK", "SBIN", "HINDALCO", "HDFCLIFE", "TATASTEEL", "TATAMOTORS", "WIPRO", "HCLTECH", "TECHM"];
+    if (indianTickers.some(t => sym.includes(t))) {
+      return "₹";
+    }
+    return "$";
+  }
+
   function renderResults(data, shouldScroll = true) {
     errorBanner.style.display = "none";
     resultsContainer.style.display = "block";
@@ -289,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Hero Overview
     resSymbol.textContent = data.symbol;
-    const currency = (data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX")) ? "₹" : "$";
+    const currency = getCurrencySymbol(data.symbol);
     resPrice.textContent = `${currency}${data.last_price.toLocaleString()}`;
     resAsOf.textContent = `As of ${data.as_of} IST | Annualized VIX: ${data.vix}%`;
 
@@ -638,15 +651,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const low50 = Math.min(...lows.slice(-50));
     const r8 = low20 >= low50 * 0.98;
 
+    const currency = getCurrencySymbol(symbol);
+
     const rulesList = [
-      { name: "Price Above EMA200", passed: r1, score: r1 ? 1.5 : 0.0, max_score: 1.5, explanation: `Price $${lastPrice.toFixed(2)} vs EMA200 $${ema200.toFixed(2)}` },
-      { name: "EMA20 Above EMA50", passed: r2, score: r2 ? 1.5 : 0.0, max_score: 1.5, explanation: `EMA20 $${ema20.toFixed(2)} vs EMA50 $${ema50.toFixed(2)}` },
-      { name: "EMA50 Above EMA200", passed: r3, score: r3 ? 1.5 : 0.0, max_score: 1.5, explanation: `EMA50 $${ema50.toFixed(2)} vs EMA200 $${ema200.toFixed(2)}` },
+      { name: "Price Above EMA200", passed: r1, score: r1 ? 1.5 : 0.0, max_score: 1.5, explanation: `Price ${currency}${lastPrice.toFixed(2)} vs EMA200 ${currency}${ema200.toFixed(2)}` },
+      { name: "EMA20 Above EMA50", passed: r2, score: r2 ? 1.5 : 0.0, max_score: 1.5, explanation: `EMA20 ${currency}${ema20.toFixed(2)} vs EMA50 ${currency}${ema50.toFixed(2)}` },
+      { name: "EMA50 Above EMA200", passed: r3, score: r3 ? 1.5 : 0.0, max_score: 1.5, explanation: `EMA50 ${currency}${ema50.toFixed(2)} vs EMA200 ${currency}${ema200.toFixed(2)}` },
       { name: "RSI Healthy Range (45-70)", passed: r4, score: r4 ? 1.5 : 0.0, max_score: 1.5, explanation: `Current RSI 14: ${rsi14.toFixed(1)}` },
       { name: "ADX Strong Trend (>20)", passed: r5, score: r5 ? 1.0 : 0.0, max_score: 1.0, explanation: `Current ADX 14: ${adx14.toFixed(1)}` },
-      { name: "ATR Volatility Expansion", passed: r6, score: r6 ? 1.0 : 0.0, max_score: 1.0, explanation: `Current ATR 14: $${atr14.toFixed(2)}` },
-      { name: "Higher Highs Structure", passed: r7, score: r7 ? 1.0 : 0.0, max_score: 1.0, explanation: `20d High $${high20.toFixed(2)} vs 50d High $${high50.toFixed(2)}` },
-      { name: "Higher Lows Structure", passed: r8, score: r8 ? 1.0 : 0.0, max_score: 1.0, explanation: `20d Low $${low20.toFixed(2)} vs 50d Low $${low50.toFixed(2)}` },
+      { name: "ATR Volatility Expansion", passed: r6, score: r6 ? 1.0 : 0.0, max_score: 1.0, explanation: `Current ATR 14: ${currency}${atr14.toFixed(2)}` },
+      { name: "Higher Highs Structure", passed: r7, score: r7 ? 1.0 : 0.0, max_score: 1.0, explanation: `20d High ${currency}${high20.toFixed(2)} vs 50d High ${currency}${high50.toFixed(2)}` },
+      { name: "Higher Lows Structure", passed: r8, score: r8 ? 1.0 : 0.0, max_score: 1.0, explanation: `20d Low ${currency}${low20.toFixed(2)} vs 50d Low ${currency}${low50.toFixed(2)}` },
     ];
 
     const totalScore = rulesList.reduce((acc, r) => acc + r.score, 0);
