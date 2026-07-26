@@ -124,7 +124,7 @@ class EMA50AboveEMA200Rule(TrendRule):
 
 @dataclass(frozen=True, slots=True)
 class RSIHealthyRule(TrendRule):
-    name: str = "RSI between 45 and 70"
+    name: str = "RSI between 50 and 65"
     weight: float = 0.0
 
     def evaluate(
@@ -137,7 +137,7 @@ class RSIHealthyRule(TrendRule):
         rsi = self._indicator(indicators, "RSI(14)")
         if rsi is None:
             return self._unavailable("RSI(14) is unavailable.")
-        passed = 45.0 <= rsi <= 70.0
+        passed = 50.0 <= rsi <= 65.0
         return RuleResult(
             self.name,
             passed,
@@ -149,7 +149,7 @@ class RSIHealthyRule(TrendRule):
 
 @dataclass(frozen=True, slots=True)
 class ADXStrongRule(TrendRule):
-    name: str = "ADX above 25"
+    name: str = "ADX above 30"
     weight: float = 0.0
 
     def evaluate(
@@ -162,7 +162,7 @@ class ADXStrongRule(TrendRule):
         adx = self._indicator(indicators, "ADX(14)")
         if adx is None:
             return self._unavailable("ADX(14) is unavailable.")
-        passed = adx > 25.0
+        passed = adx > 30.0
         return RuleResult(
             self.name,
             passed,

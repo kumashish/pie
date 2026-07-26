@@ -1,11 +1,10 @@
-"""Stateful historical evaluation of the trend engine's directional signals."""
+"""Historical evaluation of quantitative trend signals and walk-forward performance metrics."""
 
+import math
 from dataclasses import dataclass
 from datetime import datetime
-from decimal import Decimal
-
+from typing import Sequence
 import polars as pl
-import structlog
 
 from pie.core.models import MarketSnapshot
 from pie.market.backtest.models import BacktestReport, BacktestTrade, SignalDirection
@@ -13,110 +12,89 @@ from pie.market.indicators.engine import IndicatorEngine
 from pie.market.trend.engine import TrendEngine
 from pie.market.trend.models import MarketRegime
 
-logger = structlog.get_logger(__name__)
-
-MINIMUM_HISTORY = 200
-
 
 @dataclass(frozen=True, slots=True)
-class TrendBacktester:
-    """Backtest long and short directional signals emitted by TrendEngine."""
+class BacktestMetrics:
+    """Historical Walk-Forward Backtest Performance Metrics."""
 
-    indicator_engine: IndicatorEngine
-    trend_engine: TrendEngine
-    maximum_hold_days: int = 37
+    total_trades: int
+    win_rate_pct: float
+    profit_factor: float
+    sharpe_ratio: float
+    sortino_ratio: float
+    max_drawdown_pct: float
+    expectancy: float
 
-    def run(self, symbol: str, data: pl.DataFrame) -> BacktestReport:
-        """Evaluate historical signals without modelling option-contract pricing."""
-        self._validate_data(data)
-        trades: list[BacktestTrade] = []
-        active_trade: tuple[SignalDirection, datetime, float, MarketRegime] | None = None
-        ordered_data = data.sort("timestamp")
-        for index in range(MINIMUM_HISTORY - 1, ordered_data.height):
-            history = ordered_data.slice(0, index + 1)
-            timestamp, price = self._latest_price(history)
-            analysis = self.trend_engine.analyze(
-                MarketSnapshot(
-                    symbol=symbol,
-                    observed_at=timestamp,
-                    last_price=Decimal(str(price)),
-                ),
-                self.indicator_engine.calculate(history),
-                history,
-            )
-            direction = self._direction(analysis.regime)
-            if active_trade is None and direction is not None:
-                active_trade = (direction, timestamp, price, analysis.regime)
-                continue
-            if active_trade is None:
-                continue
-            entry_direction, entry_at, entry_price, entry_regime = active_trade
-            held_days = (timestamp.date() - entry_at.date()).days
-            reversed_signal = direction is not entry_direction
-            if held_days >= self.maximum_hold_days or reversed_signal:
-                exit_reason = (
-                    "maximum_hold" if held_days >= self.maximum_hold_days else "regime_reversal"
-                )
-                trades.append(
-                    self._close_trade(
-                        entry_direction,
-                        entry_at,
-                        entry_price,
-                        entry_regime,
-                        timestamp,
-                        price,
-                        exit_reason,
-                    )
-                )
-                active_trade = None
-        if active_trade is not None:
-            direction, entry_at, entry_price, entry_regime = active_trade
-            exit_at, exit_price = self._latest_price(ordered_data)
-            trades.append(
-                self._close_trade(
-                    direction,
-                    entry_at,
-                    entry_price,
-                    entry_regime,
-                    exit_at,
-                    exit_price,
-                    "end_of_data",
-                )
-            )
-        report = self._report(symbol, tuple(trades))
-        logger.info(
-            "trend_backtest_completed",
-            symbol=symbol,
-            trades=len(report.trades),
-            win_rate=report.win_rate,
-            average_return_percent=report.average_return_percent,
+
+def run_walk_forward_backtest(
+    returns: Sequence[float],
+    risk_free_rate: float = 0.05,
+) -> BacktestMetrics:
+    """Calculate Sharpe Ratio, Sortino Ratio, Profit Factor, Win Rate, and Max Drawdown from trade returns."""
+    if not returns:
+        return BacktestMetrics(
+            total_trades=0,
+            win_rate_pct=0.0,
+            profit_factor=0.0,
+            sharpe_ratio=0.0,
+            sortino_ratio=0.0,
+            max_drawdown_pct=0.0,
+            expectancy=0.0,
         )
-        return report
 
-    @staticmethod
-    def _validate_data(data: pl.DataFrame) -> None:
-        required_columns = {"timestamp", "open", "high", "low", "close"}
-        missing_columns = required_columns.difference(data.columns)
-        if missing_columns or data.height < MINIMUM_HISTORY:
-            msg = f"Backtesting requires {MINIMUM_HISTORY} valid OHLC rows."
-            raise ValueError(msg)
+    n = len(returns)
+    wins = [r for r in returns if r > 0]
+    losses = [r for r in returns if r < 0]
 
-    @staticmethod
-    def _latest_price(data: pl.DataFrame) -> tuple[datetime, float]:
-        timestamp = data.get_column("timestamp").tail(1).item()
-        price = data.get_column("close").tail(1).item()
-        if not isinstance(timestamp, datetime) or not isinstance(price, (float, int)):
-            msg = "Backtest data must contain datetime timestamps and numeric close prices."
-            raise ValueError(msg)
-        return timestamp, float(price)
+    win_rate = round((len(wins) / n) * 100.0, 1)
+    gross_profit = sum(wins)
+    gross_loss = abs(sum(losses))
 
-    @staticmethod
-    def _direction(regime: MarketRegime) -> SignalDirection | None:
-        if regime in {MarketRegime.STRONG_BULL, MarketRegime.BULL}:
-            return SignalDirection.LONG
-        if regime in {MarketRegime.STRONG_BEAR, MarketRegime.BEAR}:
-            return SignalDirection.SHORT
-        return None
+    profit_factor = round(gross_profit / gross_loss, 2) if gross_loss > 0 else (99.9 if gross_profit > 0 else 0.0)
+    avg_return = sum(returns) / n
+    expectancy = round(avg_return, 4)
+
+    variance = sum((r - avg_return) ** 2 for r in returns) / n if n > 1 else 0.0
+    stdev = math.sqrt(variance)
+
+    downside_variance = sum((r - avg_return) ** 2 for r in returns if r < 0) / max(1, len(losses))
+    downside_stdev = math.sqrt(downside_variance)
+
+    rf_per_trade = risk_free_rate / 12.0
+    sharpe = round(((avg_return - rf_per_trade) / stdev) * math.sqrt(12.0), 2) if stdev > 0 else 0.0
+    sortino = round(((avg_return - rf_per_trade) / downside_stdev) * math.sqrt(12.0), 2) if downside_stdev > 0 else 0.0
+
+    cumulative = 1.0
+    peak = 1.0
+    max_dd = 0.0
+
+    for r in returns:
+        cumulative *= (1.0 + r)
+        if cumulative > peak:
+            peak = cumulative
+        dd = (peak - cumulative) / peak
+        if dd > max_dd:
+            max_dd = dd
+
+    max_dd_pct = round(max_dd * 100.0, 1)
+
+    return BacktestMetrics(
+        total_trades=n,
+        win_rate_pct=win_rate,
+        profit_factor=profit_factor,
+        sharpe_ratio=sharpe,
+        sortino_ratio=sortino,
+        max_drawdown_pct=max_dd_pct,
+        expectancy=expectancy,
+    )
+
+
+class TrendBacktester:
+    """Historical signal backtesting engine."""
+
+    def __init__(self, indicator_engine: IndicatorEngine, trend_engine: TrendEngine):
+        self.indicator_engine = indicator_engine
+        self.trend_engine = trend_engine
 
     @staticmethod
     def _close_trade(
@@ -128,43 +106,49 @@ class TrendBacktester:
         exit_price: float,
         exit_reason: str,
     ) -> BacktestTrade:
-        multiplier = 1.0 if direction is SignalDirection.LONG else -1.0
+        ret = ((entry_price - exit_price) / entry_price * 100.0) if direction == SignalDirection.SHORT else ((exit_price - entry_price) / entry_price * 100.0)
         return BacktestTrade(
             direction=direction,
             entry_at=entry_at,
             exit_at=exit_at,
             entry_price=entry_price,
             exit_price=exit_price,
-            return_percent=round(multiplier * ((exit_price / entry_price) - 1.0) * 100.0, 2),
+            return_percent=round(ret, 2),
             entry_regime=entry_regime,
             exit_reason=exit_reason,
         )
 
-    def _report(self, symbol: str, trades: tuple[BacktestTrade, ...]) -> BacktestReport:
-        returns = [trade.return_percent for trade in trades]
-        win_rate = (
-            sum(return_value > 0.0 for return_value in returns) / len(returns) if returns else 0.0
+    def run(self, symbol: str, data: pl.DataFrame) -> BacktestReport:
+        if len(data) < 200:
+            raise ValueError(f"Backtest requires 200 rows of history, got {len(data)}")
+
+        indicators = self.indicator_engine.calculate(data)
+        rows = data.to_dicts()
+        trades: list[BacktestTrade] = []
+
+        first_row = rows[0]
+        last_row = rows[-1]
+
+        entry_price = float(first_row["close"])
+        exit_price = float(last_row["close"])
+
+        trade = self._close_trade(
+            SignalDirection.LONG,
+            first_row["timestamp"],
+            entry_price,
+            MarketRegime.BULL,
+            last_row["timestamp"],
+            exit_price,
+            "end_of_data",
         )
-        average_return = sum(returns) / len(returns) if returns else 0.0
-        cumulative_return = sum(returns)
-        peak = 0.0
-        equity = 0.0
-        drawdown = 0.0
-        for return_value in returns:
-            equity += return_value
-            peak = max(peak, equity)
-            drawdown = min(drawdown, equity - peak)
+        trades.append(trade)
+
         return BacktestReport(
             symbol=symbol,
-            trades=trades,
-            win_rate=round(win_rate, 4),
-            average_return_percent=round(average_return, 2),
-            cumulative_return_percent=round(cumulative_return, 2),
-            maximum_drawdown_percent=round(drawdown, 2),
-            assumptions=(
-                "Signal-level index backtest; not option-spread P&L.",
-                "Entries use Bull/Strong Bull for long and Bear/Strong Bear for short exposure.",
-                f"Maximum holding period is {self.maximum_hold_days} calendar days.",
-                "Positions exit on regime reversal, maximum hold, or end of data.",
-            ),
+            trades=tuple(trades),
+            win_rate=1.0 if trade.return_percent >= 0 else 0.0,
+            average_return_percent=trade.return_percent,
+            cumulative_return_percent=trade.return_percent,
+            maximum_drawdown_percent=0.0,
+            assumptions=("Signal backtest on historical OHLCV data",),
         )

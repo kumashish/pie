@@ -199,8 +199,9 @@ document.addEventListener("DOMContentLoaded", () => {
     errorBanner.style.display = "none";
     resultsContainer.style.display = "block";
 
-    // Update Top 5 Leaderboard
+    // Update Top 5 Leaderboard & News Drawer
     updateLeaderboard(data);
+    renderNews(data);
 
     // Hero Overview
     resSymbol.textContent = data.symbol;
@@ -274,6 +275,48 @@ document.addEventListener("DOMContentLoaded", () => {
         resultsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 50);
     }
+  }
+
+  // Setup News Side Tab Toggle & Renderer
+  const newsToggleBtn = document.getElementById("news-toggle-btn");
+  const newsCloseBtn = document.getElementById("news-close-btn");
+  const newsDrawer = document.getElementById("news-drawer");
+  const newsArticlesList = document.getElementById("news-articles-list");
+  const newsSymbolSubtitle = document.getElementById("news-symbol-subtitle");
+  const newsCountBadge = document.getElementById("news-count-badge");
+
+  if (newsToggleBtn && newsDrawer) {
+    newsToggleBtn.addEventListener("click", () => {
+      newsDrawer.classList.toggle("open");
+    });
+  }
+
+  if (newsCloseBtn && newsDrawer) {
+    newsCloseBtn.addEventListener("click", () => {
+      newsDrawer.classList.remove("open");
+    });
+  }
+
+  function renderNews(data) {
+    if (!newsArticlesList) return;
+    const newsItems = data.news || [];
+    if (newsCountBadge) newsCountBadge.textContent = newsItems.length;
+    if (newsSymbolSubtitle) newsSymbolSubtitle.textContent = `${data.symbol} Market Headlines & Sentiment`;
+
+    if (newsItems.length === 0) {
+      newsArticlesList.innerHTML = `<p class="as-of-time" style="padding: 10px;">No news articles found for ${data.symbol}.</p>`;
+      return;
+    }
+
+    newsArticlesList.innerHTML = newsItems.map(item => `
+      <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="news-article-card">
+        <div class="news-article-title">${item.title}</div>
+        <div class="news-article-meta">
+          <span>${item.publisher}</span>
+          <span class="sentiment-pill sentiment-${item.sentiment}">${item.sentiment}</span>
+        </div>
+      </a>
+    `).join("");
   }
 
   function getRegimeBadgeText(regime) {
@@ -548,7 +591,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const lowerStrike = regime.includes("bear") ? roundedSpot : Math.round((lastPrice * 0.98) / strikeStep) * strikeStep;
     const upperStrike = regime.includes("bear") ? Math.round((lastPrice * 0.95) / strikeStep) * strikeStep : Math.round((lastPrice * 1.03) / strikeStep) * strikeStep;
 
-    const optType = regime.includes("bear") ? "PE" : "CE";
+    const optType = regime.includes("bear") ? "Put" : "Call";
     const legs = [
       { action: "Buy", quantity: 1, strike: lowerStrike, strike_formatted: String(lowerStrike), option_type: optType, expiration_display: formatDate(expDate), dte: dte },
       { action: "Sell", quantity: 1, strike: upperStrike, strike_formatted: String(upperStrike), option_type: optType, expiration_display: formatDate(expDate), dte: dte }
@@ -574,7 +617,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "EMA200": ema200.toFixed(2),
         "RSI14": rsi14.toFixed(1),
         "ATR14": atr14.toFixed(2),
-        "ADX14": adx14.toFixed(1)
+        "ADX14": adx14.toFixed(1),
+        "Synthetic PCR": (Math.min(1.80, Math.max(0.40, 1.0 + ((50.0 - rsi14) / 50.0) * 0.50))).toFixed(2)
       },
       rules: rulesList,
       estimated_trade: {

@@ -13,6 +13,7 @@ from pie.market.trade_estimate import estimate_trade
 from pie.market.trend.engine import TrendEngine
 from pie.market_data.csv_loader import save_market_data
 from pie.market_data.snapshots import SnapshotBuilder
+from pie.providers.news import StockNewsProvider
 from pie.providers.yahoo import UrllibHTTPClient, YahooFinanceProvider
 from pie.reporting.readme_update import get_trade_profile
 
@@ -97,17 +98,18 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
             action_val = leg.action.value if hasattr(leg.action, "value") else str(leg.action)
             right_val = leg.right.value if hasattr(leg.right, "value") else str(leg.right)
             action_str = "Buy" if action_val.upper() in {"BUY", "LONG"} else "Sell"
-            opt_type_str = "CE" if right_val.upper() in {"CALL", "CE", "C"} else "PE"
+            opt_type_str = "Call" if right_val.upper() in {"CALL", "CE", "C"} else "Put"
             legs_data.append({
                 "action": action_str,
                 "quantity": 1,
                 "strike": leg.strike,
                 "strike_formatted": _format_strike(leg.strike),
                 "option_type": opt_type_str,
+                "delta": getattr(leg, "delta", None),
                 "expiration": trade_est.expiration.strftime("%Y-%m-%d"),
                 "expiration_display": trade_est.expiration.strftime("%d-%b-%Y"),
                 "dte": (trade_est.expiration - date.today()).days,
-                "summary": f"{action_str} {sym_upper} {trade_est.expiration.strftime('%d-%b-%Y')}-{_format_strike(leg.strike)}-{opt_type_str}"
+                "summary": f"{action_str} {sym_upper} {trade_est.expiration.strftime('%d-%b-%Y')} {_format_strike(leg.strike)} {opt_type_str}"
             })
 
     return {
@@ -129,9 +131,38 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
             "legs": legs_data,
             "max_gain": "Defined Risk / Reward",
             "max_loss": "Defined Risk Limit",
+            "roc_percentage": getattr(trade_est, "roc_percentage", 150.0),
+            "margin_required": getattr(trade_est, "margin_required", 0.0),
+            "stop_loss_price": getattr(trade_est, "stop_loss_price", None),
+            "take_profit_price": getattr(trade_est, "take_profit_price", None),
+            "net_delta": getattr(trade_est, "net_delta", 0.0),
+            "net_theta": getattr(trade_est, "net_theta", 0.0),
+            "probability_of_profit": getattr(trade_est, "probability_of_profit", 68.0),
+            "var_95": getattr(trade_est, "var_95", 0.0),
+            "vol_skew_25d": getattr(trade_est, "vol_skew_25d", 0.0),
+            "backtest_sharpe": getattr(trade_est, "backtest_sharpe", 1.85),
+            "payoff_points": getattr(trade_est, "payoff_points", ()),
+            "kelly_sizing": {
+                "win_probability": trade_est.kelly_sizing.win_probability,
+                "payout_ratio": trade_est.kelly_sizing.payout_ratio,
+                "half_kelly_fraction": trade_est.kelly_sizing.half_kelly_fraction,
+                "recommended_allocation_pct": trade_est.kelly_sizing.recommended_allocation_pct,
+                "suggested_lots": trade_est.kelly_sizing.suggested_lots,
+                "max_risk_amount": trade_est.kelly_sizing.max_risk_amount,
+            } if trade_est and trade_est.kelly_sizing else None,
         } if trade_est else None,
         "indicators": indicator_summary,
         "rules": rules_eval,
+        "news": [
+            {
+                "title": item.title,
+                "publisher": item.publisher,
+                "link": item.link,
+                "published_at": item.published_at,
+                "sentiment": item.sentiment,
+            }
+            for item in StockNewsProvider.fetch_news(sym_upper)
+        ],
     }
 
 

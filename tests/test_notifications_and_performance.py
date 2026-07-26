@@ -12,7 +12,7 @@ def test_notification_dispatcher_formatting():
         "fit_score": 9.5,
         "strategy_type": "call_debit_spread",
         "strategy_name": "🟢 Call Debit Spread",
-        "strategy": "Buy TITAN 25-Aug-2026-4680-CE<br> Sell TITAN 25-Aug-2026-4870-CE",
+        "strategy": "Buy TITAN 25-Aug-2026 4680 Call<br> Sell TITAN 25-Aug-2026 4870 Call",
         "signal": "Active (Today, 15:47)",
     }
 

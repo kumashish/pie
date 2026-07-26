@@ -231,6 +231,13 @@ def generate_readme_snapshot(
     table3_high_conviction = [data for data in table3_stocks if float(data.get("fit_score", 0.0)) >= 80.0]
     table3_other_trades = [data for data in table3_stocks if float(data.get("fit_score", 0.0)) < 80.0]
 
+    # Sort all trade lists by fit_score descending (highest score first)
+    table1_us.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table2_in.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_high_conviction.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table3_other_trades.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+    table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
+
     header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
 
     output_sections = ["### 🌐 U.S. Macro Benchmark Indices", header]

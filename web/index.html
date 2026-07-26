@@ -228,6 +228,27 @@
     </footer>
   </div>
 
-  <script src="app.js?v=20260726_12"></script>
+  <!-- Stock News & Sentiment Side Tab Drawer -->
+  <div id="news-side-tab" class="news-side-tab">
+    <button id="news-toggle-btn" class="news-toggle-btn" title="Latest Stock News & Sentiment">
+      <span class="news-tab-icon">📰</span>
+      <span class="news-tab-label">Stock News</span>
+      <span id="news-count-badge" class="news-badge">3</span>
+    </button>
+    <div id="news-drawer" class="news-drawer">
+      <div class="news-drawer-header">
+        <div class="news-drawer-title">
+          <h3>📰 Real-Time Stock News</h3>
+          <span class="news-subtitle" id="news-symbol-subtitle">Latest Market Headlines & Sentiment</span>
+        </div>
+        <button id="news-close-btn" class="news-close-btn">&times;</button>
+      </div>
+      <div id="news-articles-list" class="news-articles-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

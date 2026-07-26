@@ -87,15 +87,15 @@ def _format_strike(strike: float) -> str:
 def format_trade_legs(symbol: str, estimated_trade: EstimatedTrade | None) -> str:
     """Render an estimated trade as option-symbol-style leg lines.
 
-    e.g. "Buy 1x NIFTY 28-Jul-2026-23600-PE<br> Sell 1x NIFTY 28-Jul-2026-23000-PE"
-    or Butterfly: "Buy 1x HINDALCO 25-Aug-2026-920-CE<br> Sell 2x HINDALCO 25-Aug-2026-940-CE<br> Buy 1x HINDALCO 25-Aug-2026-970-CE"
+    e.g. "Buy 1x NIFTY 28-Jul-2026 23600 Put<br> Sell 1x NIFTY 28-Jul-2026 23000 Put"
+    or Butterfly: "Buy 1x HINDALCO 25-Aug-2026 920 Call<br> Sell 2x HINDALCO 25-Aug-2026 940 Call<br> Buy 1x HINDALCO 25-Aug-2026 970 Call"
     """
     if estimated_trade is None:
         return "No Trade"
     display_symbol = OPTION_SYMBOL_NAMES.get(symbol, symbol)
     clean_symbol = display_symbol.replace(".NS", "").replace(".ns", "").strip()
     expiry = estimated_trade.expiration.strftime("%d-%b-%Y")
-    right_suffix = {"put": "PE", "call": "CE"}
+    right_suffix = {"put": "Put", "call": "Call"}
 
     grouped: list[tuple[TradeLeg, int]] = []
     for leg in estimated_trade.legs:
@@ -115,9 +115,10 @@ def format_trade_legs(symbol: str, estimated_trade: EstimatedTrade | None) -> st
         strike_str = _format_strike(leg.strike)
         right_str = right_suffix[leg.right.value]
         qty_str = f" {count}x" if count > 1 else ""
-        lines.append(f"{leg.action.title()}{qty_str} {clean_symbol} {expiry}-{strike_str}-{right_str}")
+        lines.append(f"{leg.action.title()}{qty_str} {clean_symbol} {expiry} {strike_str} {right_str}")
 
     return "<br> ".join(lines)
+
 
 
 @app.command("analyze-market")

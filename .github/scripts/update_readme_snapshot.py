@@ -155,6 +155,13 @@ def format_market_table(markets: list[dict]) -> str:
     table3_high_conviction = [market for market in table3_stocks if float(market.get("fit_score", 0.0)) >= 80.0]
     table3_other_trades = [market for market in table3_stocks if float(market.get("fit_score", 0.0)) < 80.0]
 
+    # Sort all trade lists by fit_score descending (highest score first)
+    table1_us.sort(key=lambda m: float(m.get("fit_score", 0.0)), reverse=True)
+    table2_in.sort(key=lambda m: float(m.get("fit_score", 0.0)), reverse=True)
+    table3_high_conviction.sort(key=lambda m: float(m.get("fit_score", 0.0)), reverse=True)
+    table3_other_trades.sort(key=lambda m: float(m.get("fit_score", 0.0)), reverse=True)
+    table4_exits.sort(key=lambda m: float(m.get("fit_score", 0.0)), reverse=True)
+
     header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
 
     lines = ["<!-- MARKET-SNAPSHOT-START -->"]
@@ -263,7 +270,7 @@ def update_readme(readme_path: str = "README.md"):
         print(f"{readme_path} not found")
         return
     
-    content = readme.read_text()
+    content = readme.read_text(encoding="utf-8")
     markets = load_market_data()
     new_table = format_market_table(markets)
     
@@ -271,7 +278,7 @@ def update_readme(readme_path: str = "README.md"):
     pattern = r"<!-- MARKET-SNAPSHOT-START -->.*?<!-- MARKET-SNAPSHOT-END -->"
     updated_content = re.sub(pattern, new_table, content, flags=re.DOTALL)
     
-    readme.write_text(updated_content)
+    readme.write_text(updated_content, encoding="utf-8")
     print(f"Updated {readme_path} with {len(markets)} market entries")
 
 

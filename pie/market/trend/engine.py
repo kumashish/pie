@@ -59,6 +59,13 @@ class TrendEngine:
         results = tuple(rule.evaluate(snapshot, indicators, history) for rule in self.rules)
         score = calculate_trend_score(results)
         confidence = calculate_confidence(indicators, results)
+        indicator_values = {name: result.value for name, result in indicators.items()}
+        rsi_val = indicator_values.get("RSI(14)")
+        bb_val = indicator_values.get("BB(20,2)")
+        if rsi_val is not None and bb_val is not None:
+            synth_pcr = round(min(1.80, max(0.40, 1.0 + ((50.0 - rsi_val) / 50.0) * 0.50 + (0.50 - bb_val) * 0.40)), 2)
+            indicator_values["Synthetic PCR"] = synth_pcr
+
         analysis = TrendAnalysis(
             symbol=snapshot.symbol,
             timestamp=snapshot.observed_at,
@@ -66,7 +73,7 @@ class TrendEngine:
             confidence=confidence,
             regime=classify_regime(score, confidence, results),
             explanation=build_explanation(score, results),
-            indicator_values={name: result.value for name, result in indicators.items()},
+            indicator_values=indicator_values,
             passed_rules=tuple(result.name for result in results if result.passed),
             failed_rules=tuple(result.name for result in results if not result.passed),
         )

@@ -80,6 +80,15 @@ class NotificationDispatcher:
         }
         return results
 
+    def dispatch_high_conviction_alert(self, market_row: dict[str, Any]) -> dict[str, bool]:
+        """Dispatch real-time alert only if fit_score >= 8.0/10."""
+        score = market_row.get("fit_score", market_row.get("score", 0.0))
+        if isinstance(score, (int, float)) and score > 10.0:
+            score = score / 10.0
+        if score >= 8.0:
+            return self.dispatch_all(market_row)
+        return {"telegram": False, "slack": False, "discord": False}
+
     def _http_post(self, url: str, data: dict) -> bool:
         """Helper for making synchronous HTTP POST requests."""
         try:

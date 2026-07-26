@@ -1,37 +1,4 @@
 <!-- MARKET-SNAPSHOT-START -->
-### 🌐 U.S. Macro Benchmark Indices
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 08:39 IST | 🟢 Naked Put       | 8.6/10    | Sell SPY 04-Sep-2026-490-PE | Active (Today, 08:15)  |
-| QQQ       | 08:12 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 18-Sep-2026-685-CE<br> Sell QQQ 18-Sep-2026-720-CE | Active (Today, 00:26)  |
-
-### 🌐 Indian Macro Benchmark Indices
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| NIFTY 50  | 07:28 IST | 🔴 Put Debit Spread | 7.6/10    | Buy NIFTY 25-Aug-2026-23750-PE<br> Sell NIFTY 25-Aug-2026-23000-PE | New                    |
-| BANKNIFTY | 07:28 IST | 🟢 Call Debit Spread | 7.4/10    | Buy BANKNIFTY 25-Aug-2026-56700-CE<br> Sell BANKNIFTY 25-Aug-2026-59000-CE | New                    |
-| FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
-| SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
-
-### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| BAJAJ-AUTO.NS | 07:28 IST | 🟢 Call Debit Spread | 9.6/10    | Buy BAJAJ-AUTO 25-Aug-2026-11100-CE<br> Sell BAJAJ-AUTO 25-Aug-2026-11600-CE | Active (Yesterday, 15:46) |
-| HDFCBANK.NS | 07:28 IST | 🔴 Put Debit Spread | 9.2/10    | Buy HDFCBANK 25-Aug-2026-740-PE<br> Sell HDFCBANK 25-Aug-2026-710-PE | New                    |
-| HDFCLIFE.NS | 07:28 IST | 🔴 Put Debit Spread | 9.0/10    | Buy HDFCLIFE 25-Aug-2026-560-PE<br> Sell HDFCLIFE 25-Aug-2026-540-PE | Active (Yesterday, 15:46) |
-| HINDALCO.NS | 07:28 IST | 🟡 Long Butterfly  | 8.3/10    | Buy HINDALCO 25-Aug-2026-920-CE<br> Sell 2x HINDALCO 25-Aug-2026-940-CE<br> Buy HINDALCO 25-Aug-2026-970-CE | Active (Yesterday, 15:57) |
-| ICICIBANK.NS | 07:28 IST | 🟢 Call Debit Spread | 9.6/10    | Buy ICICIBANK 25-Aug-2026-1430-CE<br> Sell ICICIBANK 25-Aug-2026-1490-CE | New                    |
-| SUNPHARMA.NS | 07:28 IST | 🟢 Call Debit Spread | 9.9/10    | Buy SUNPHARMA 25-Aug-2026-1940-CE<br> Sell SUNPHARMA 25-Aug-2026-2020-CE | Active (Yesterday, 15:47) |
-| TITAN.NS  | 07:28 IST | 🟢 Call Debit Spread | 10.0/10   | Buy TITAN 25-Aug-2026-4680-CE<br> Sell TITAN 25-Aug-2026-4870-CE | Active (Yesterday, 15:47) |
-
-<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
-
-
-### 📈 Signal Performance & Win-Rate Analytics
-| Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 55 | 55 | 0 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
@@ -110,8 +77,8 @@ Computes exact strike prices based on exchange tick sizes and price tier boundar
 
 - **Index & Benchmark Multipliers**: `BANKNIFTY` / `^NSEBANK` strikes are strictly rounded to multiples of **100**; `NIFTY 50` / `^NSEI` to **50**; `SPY` & `QQQ` to multiples of **5**.
 - **Price Boundary Rule ($\ge 10,000$)**: Any stock or asset with a spot price $\ge 10,000$ (e.g. `BAJAJ-AUTO.NS` @ 11,130, `ULTRACEMCO.NS` @ 11,846) is rounded to multiples of **100**.
-- **Stock Multipliers ($< 10,000$)**: All other stock option strikes are rounded to multiples of **10** (e.g. `TITAN.NS` 4680 CE / 4870 CE).
-- **Leg Multipliers**: Groups identical legs into explicit quantity multipliers (`Sell 2x HINDALCO 25-Aug-2026-940-CE`) while omitting `1x` on single legs.
+- **Stock Multipliers ($< 10,000$)**: All other stock option strikes are rounded to multiples of **10** (e.g. `TITAN.NS` 4680 Call / 4870 Call).
+- **Leg Multipliers**: Groups identical legs into explicit quantity multipliers (`Sell 2x HINDALCO 25-Aug-2026 940 Call`) while omitting `1x` on single legs.
 
 ---
 
