@@ -260,3 +260,81 @@ class HigherLowsRule(TrendRule):
             self.weight,
             "Price is making higher lows." if passed else "Price is not making higher lows.",
         )
+
+
+@dataclass(frozen=True, slots=True)
+class InstitutionalVolumeRule(TrendRule):
+    name: str = "Institutional Volume Flow (>1.2x 20d Avg)"
+    weight: float = 0.0
+
+    def evaluate(
+        self,
+        snapshot: MarketSnapshot,
+        indicators: Mapping[str, IndicatorResult],
+        history: pl.DataFrame,
+    ) -> RuleResult:
+        """Check whether current volume exceeds 20-day average volume."""
+        if history.height < 20 or "volume" not in history.columns:
+            return self._unavailable("Insufficient volume history.")
+        volumes = history.get_column("volume").tail(20).to_list()
+        avg_vol = sum(volumes[:-1]) / max(1, len(volumes) - 1)
+        curr_vol = float(volumes[-1])
+        passed = curr_vol >= avg_vol * 1.05
+        return RuleResult(
+            self.name,
+            passed,
+            True,
+            self.weight,
+            f"Volume ({curr_vol:,.0f}) exceeds 20d average volume ({avg_vol:,.0f})." if passed else f"Volume ({curr_vol:,.0f}) is below institutional threshold ({avg_vol:,.0f}).",
+        )
+
+
+@dataclass(frozen=True, slots=True)
+class BollingerExhaustionRule(TrendRule):
+    name: str = "Bollinger Band Non-Overextended (%B <= 1.02)"
+    weight: float = 0.0
+
+    def evaluate(
+        self,
+        snapshot: MarketSnapshot,
+        indicators: Mapping[str, IndicatorResult],
+        history: pl.DataFrame,
+    ) -> RuleResult:
+        """Check whether price is stretched too far above upper Bollinger Band."""
+        pct_b = self._indicator(indicators, "BB(20,2)")
+        if pct_b is None:
+            return self._unavailable("Bollinger Bands unavailable.")
+        passed = pct_b <= 1.02
+        return RuleResult(
+            self.name,
+            passed,
+            True,
+            self.weight,
+            f"Bollinger %B ({pct_b:.2f}) within healthy bounds." if passed else f"Price overextended (%B {pct_b:.2f} > 1.02); risk of sharp mean-reversion.",
+        )
+
+
+@dataclass(frozen=True, slots=True)
+class RelativeStrengthRule(TrendRule):
+    name: str = "20-Day Momentum Relative Strength"
+    weight: float = 0.0
+
+    def evaluate(
+        self,
+        snapshot: MarketSnapshot,
+        indicators: Mapping[str, IndicatorResult],
+        history: pl.DataFrame,
+    ) -> RuleResult:
+        """Check 20-day price momentum return."""
+        if history.height < 20 or "close" not in history.columns:
+            return self._unavailable("Insufficient history for 20d momentum.")
+        closes = history.get_column("close").tail(20).to_list()
+        ret_20d = ((closes[-1] - closes[0]) / max(1e-6, closes[0])) * 100.0
+        passed = ret_20d > 0.0
+        return RuleResult(
+            self.name,
+            passed,
+            True,
+            self.weight,
+            f"20d momentum return (+{ret_20d:.1f}%) is positive." if passed else f"20d momentum return ({ret_20d:.1f}%) is negative.",
+        )

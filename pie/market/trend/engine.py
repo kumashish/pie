@@ -13,11 +13,14 @@ from pie.market.trend.models import TrendAnalysis
 from pie.market.trend.rules import (
     ADXStrongRule,
     ATRIncreasingRule,
+    BollingerExhaustionRule,
     EMA20AboveEMA50Rule,
     EMA50AboveEMA200Rule,
     HigherHighsRule,
     HigherLowsRule,
+    InstitutionalVolumeRule,
     PriceAboveEMA200Rule,
+    RelativeStrengthRule,
     RSIHealthyRule,
     TrendRule,
 )
@@ -34,8 +37,11 @@ class TrendEngine:
 
     @classmethod
     def from_weights(cls, weights: Mapping[str, float]) -> "TrendEngine":
-        """Create the independent rule set from configured rule weights."""
+        """Create the independent rule set from configured weights."""
         structure_weight = weights["structure"] / 2.0
+        vol_weight = weights.get("volume", 0.0)
+        rel_weight = weights.get("relative_strength", 0.0)
+        bb_weight = weights.get("bb_exhaustion", 0.0)
         return cls(
             rules=(
                 PriceAboveEMA200Rule(weight=weights["ema200"]),
@@ -46,6 +52,9 @@ class TrendEngine:
                 ATRIncreasingRule(weight=weights["atr"]),
                 HigherHighsRule(weight=structure_weight),
                 HigherLowsRule(weight=structure_weight),
+                InstitutionalVolumeRule(weight=vol_weight),
+                RelativeStrengthRule(weight=rel_weight),
+                BollingerExhaustionRule(weight=bb_weight),
             )
         )
 
