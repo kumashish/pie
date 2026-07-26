@@ -282,7 +282,20 @@ document.addEventListener("DOMContentLoaded", () => {
   function getCurrencySymbol(symbol) {
     if (!symbol) return "$";
     const sym = symbol.toUpperCase();
-    if (sym.endsWith(".NS") || sym.endsWith(".BO") || sym.includes("NIFTY") || sym.includes("SENSEX") || sym.includes("_NS") || sym.includes("_BO")) {
+    if (sym === "^VIX" || sym === "^GSPC" || sym === "^DJI" || sym === "^IXIC" || sym === "^RUT") {
+      return "$";
+    }
+    if (
+      sym.startsWith("^") ||
+      sym.endsWith(".NS") ||
+      sym.endsWith(".BO") ||
+      sym.includes("NIFTY") ||
+      sym.includes("SENSEX") ||
+      sym.includes("NSE") ||
+      sym.includes("BSE") ||
+      sym.includes("_NS") ||
+      sym.includes("_BO")
+    ) {
       return "₹";
     }
     const indianTickers = ["TCS", "INFY", "RELIANCE", "TITAN", "SUNPHARMA", "BAJAJ", "HDFCBANK", "ICICIBANK", "SBIN", "HINDALCO", "HDFCLIFE", "TATASTEEL", "TATAMOTORS", "WIPRO", "HCLTECH", "TECHM"];
@@ -509,7 +522,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     topTradesGrid.innerHTML = targetList.map((item, idx) => {
-      const currency = (item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX")) ? "₹" : "$";
+      const currency = getCurrencySymbol(item.symbol);
       return `
         <div class="top-card">
           <span class="top-card-rank">#${idx + 1}</span>
