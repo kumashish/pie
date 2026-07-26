@@ -55,13 +55,16 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
 
     # 4. Evaluate trend & regime
     weights = {
-        "ema200": 2.0,
-        "ema_cross": 1.5,
-        "ema_stack": 1.0,
-        "rsi": 1.0,
-        "adx": 1.0,
-        "atr": 1.0,
-        "structure": 1.5,
+        "ema200": 20.0,
+        "ema_cross": 15.0,
+        "ema_stack": 15.0,
+        "rsi": 10.0,
+        "adx": 10.0,
+        "volume": 7.5,
+        "relative_strength": 7.5,
+        "atr": 5.0,
+        "structure": 5.0,
+        "bb_exhaustion": 5.0,
     }
     trend_engine = TrendEngine.from_weights(weights)
 
