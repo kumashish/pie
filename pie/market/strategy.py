@@ -32,6 +32,8 @@ class StrategyType(StrEnum):
     LONG_CALL = "long_call"
     LONG_PUT = "long_put"
     LEAPS = "leaps"
+    CASH_SWING_LONG = "cash_swing_long"
+    CASH_SWING_SHORT = "cash_swing_short"
 
 
 class StrategyRecommendation(DomainModel):

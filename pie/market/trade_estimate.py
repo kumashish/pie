@@ -289,16 +289,18 @@ def estimate_trade(
             "Roll tested side or close at 21 days to expiry.",
         )
 
-    elif recommendation.strategy == StrategyType.COLLAR:
-        p_long = _round_to_increment(spot_price - expected_move * 0.5, increment)
-        c_short = _round_to_increment(spot_price + expected_move * 0.5, increment)
-        legs = (
-            TradeLeg(action="buy", right=OptionRight.PUT, strike=p_long),
-            TradeLeg(action="sell", right=OptionRight.CALL, strike=c_short),
-        )
+    elif recommendation.strategy == StrategyType.CASH_SWING_LONG:
+        legs = (TradeLeg(action="buy", right=OptionRight.CALL, strike=spot_price),)
         exit_strategy = (
-            "Protect long stock position against downside gap.",
-            "Re-evaluate when stock reaches short call target.",
+            "Cash Equity Swing Long: Hold position while spot price remains above EMA20.",
+            "Set trailing stop loss at EMA20 level or 5% trailing drawdown.",
+        )
+
+    elif recommendation.strategy == StrategyType.CASH_SWING_SHORT:
+        legs = (TradeLeg(action="sell", right=OptionRight.PUT, strike=spot_price),)
+        exit_strategy = (
+            "Cash Equity Swing Short: Maintain short position while spot remains below EMA20.",
+            "Set trailing stop loss above EMA20 resistance level.",
         )
 
     else:  # StrategyType.CREDIT_SPREAD
