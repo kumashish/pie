@@ -9,6 +9,59 @@ document.addEventListener("DOMContentLoaded", () => {
   const errorMessage = document.getElementById("error-message");
   const resultsContainer = document.getElementById("results-container");
 
+  const searchAutocomplete = document.getElementById("search-autocomplete");
+  let searchDebounceTimer = null;
+
+  if (symbolInput && searchAutocomplete) {
+    symbolInput.addEventListener("input", () => {
+      clearTimeout(searchDebounceTimer);
+      const query = symbolInput.value.trim();
+
+      if (query.length < 2) {
+        searchAutocomplete.style.display = "none";
+        searchAutocomplete.innerHTML = "";
+        return;
+      }
+
+      searchDebounceTimer = setTimeout(async () => {
+        try {
+          const resp = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+          if (resp.ok) {
+            const results = await resp.json();
+            if (results && results.length > 0) {
+              searchAutocomplete.innerHTML = results.map(item => `
+                <div class="autocomplete-item" data-symbol="${item.symbol}">
+                  <span class="autocomplete-name">${item.name}</span>
+                  <span class="autocomplete-sym">${item.symbol}</span>
+                </div>
+              `).join("");
+              searchAutocomplete.style.display = "block";
+
+              searchAutocomplete.querySelectorAll(".autocomplete-item").forEach(item => {
+                item.addEventListener("click", () => {
+                  const sym = item.getAttribute("data-symbol");
+                  symbolInput.value = sym;
+                  searchAutocomplete.style.display = "none";
+                  analyzeSymbol(sym);
+                });
+              });
+            } else {
+              searchAutocomplete.style.display = "none";
+            }
+          }
+        } catch (err) {
+          searchAutocomplete.style.display = "none";
+        }
+      }, 250);
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!symbolInput.contains(e.target) && !searchAutocomplete.contains(e.target)) {
+        searchAutocomplete.style.display = "none";
+      }
+    });
+  }
+
   // DOM Elements for Results
   const resSymbol = document.getElementById("res-symbol");
   const resPrice = document.getElementById("res-price");

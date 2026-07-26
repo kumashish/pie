@@ -14,6 +14,7 @@ from pie.market.trend.engine import TrendEngine
 from pie.market_data.csv_loader import save_market_data
 from pie.market_data.snapshots import SnapshotBuilder
 from pie.providers.news import StockNewsProvider
+from pie.providers.search import TickerSearchProvider
 from pie.providers.yahoo import UrllibHTTPClient, YahooFinanceProvider
 from pie.reporting.readme_update import get_trade_profile
 
@@ -182,9 +183,17 @@ class OptionIntelligenceHandler(BaseHTTPRequestHandler):
         parsed = urllib.parse.urlparse(self.path)
         path = parsed.path
 
+        if path == "/api/search":
+            query_params = urllib.parse.parse_qs(parsed.query)
+            q = query_params.get("q", [""])[0]
+            results = TickerSearchProvider.search_tickers(q)
+            self._send_json([{"symbol": r.symbol, "name": r.name, "exch": r.exch_disp} for r in results])
+            return
+
         if path == "/api/analyze":
             query = urllib.parse.parse_qs(parsed.query)
-            symbol = query.get("symbol", ["SPY"])[0]
+            symbol_raw = query.get("symbol", ["SPY"])[0]
+            symbol = TickerSearchProvider.resolve_ticker(symbol_raw)
             try:
                 result = analyze_symbol(symbol)
                 self._send_json(result)

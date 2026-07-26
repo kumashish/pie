@@ -35,7 +35,8 @@
         <form id="search-form" class="search-form">
           <div class="input-wrapper">
             <span class="search-icon">🔍</span>
-            <input type="text" id="symbol-input" placeholder="Search ticker symbol (e.g., SPY, QQQ, NIFTY 50, TITAN.NS)..." autocomplete="off" value="SPY">
+            <input type="text" id="symbol-input" placeholder="Search company name or ticker (e.g. Titan, Reliance, Apple, Nifty 50, SPY)..." autocomplete="off" value="SPY">
+            <div id="search-autocomplete" class="search-autocomplete" style="display: none;"></div>
             <button type="submit" id="analyze-btn" class="btn-primary">
               <span class="btn-text">Generate Trade Structure</span>
               <span class="spinner" id="btn-spinner" style="display: none;"></span>
