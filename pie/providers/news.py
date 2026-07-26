@@ -4,7 +4,6 @@ import json
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
-from typing import Sequence
 
 
 @dataclass(frozen=True, slots=True)

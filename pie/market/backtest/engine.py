@@ -5,8 +5,6 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Sequence
 import polars as pl
-
-from pie.core.models import MarketSnapshot
 from pie.market.backtest.models import BacktestReport, BacktestTrade, SignalDirection
 from pie.market.indicators.engine import IndicatorEngine
 from pie.market.trend.engine import TrendEngine

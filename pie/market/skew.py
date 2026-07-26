@@ -1,7 +1,6 @@
 """Implied Volatility Skew & Smile Optimizer Engine."""
 
 from dataclasses import dataclass
-from pie.market.strategy import StrategyType
 
 
 @dataclass(frozen=True, slots=True)

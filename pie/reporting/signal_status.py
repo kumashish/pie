@@ -1,6 +1,5 @@
 """Format signal status for market reports."""
 
-from datetime import UTC, datetime
 
 from pie.core.signal_state import SignalState
 

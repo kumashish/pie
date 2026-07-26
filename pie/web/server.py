@@ -1,7 +1,7 @@
 """Zero-dependency HTTP web server for interactive Portfolio Intelligence option trade analysis."""
 
 import json
-from datetime import date, datetime
+from datetime import date
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from typing import Any
