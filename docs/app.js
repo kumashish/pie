@@ -428,29 +428,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function initLeaderboardFromIndex() {
-    if (top5US.length > 0 && top5India.length > 0) {
-      renderLeaderboard();
-      return;
-    }
-
     try {
-      const resp = await fetch("data/index.json");
+      const resp = await fetch("data/index.json?v=20260727_02");
       if (resp.ok) {
         const indexList = await resp.json();
+        top5US = [];
+        top5India = [];
         for (const item of indexList) {
           const isIndia = item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX");
           const targetList = isIndia ? top5India : top5US;
-          if (!targetList.some(t => t.symbol === item.symbol)) {
-            targetList.push({
-              symbol: item.symbol,
-              last_price: item.last_price,
-              fit_score: item.fit_score,
-              regime_display: item.regime_display,
-              strategy_display: item.strategy_display,
-              trade_profile: item.trade_profile,
-              as_of: item.as_of
-            });
-          }
+          targetList.push({
+            symbol: item.symbol,
+            last_price: item.last_price,
+            fit_score: item.fit_score,
+            regime_display: item.regime_display,
+            strategy_display: item.strategy_display,
+            trade_profile: item.trade_profile || "Defined Risk | 30-45 DTE",
+            as_of: item.as_of
+          });
         }
 
         top5US.sort((a, b) => b.fit_score - a.fit_score);
@@ -462,7 +457,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
       }
     } catch (e) {
-      // Ignore
+      // Fallback
     }
     renderLeaderboard();
   }
