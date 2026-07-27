@@ -499,8 +499,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         top5US.sort((a, b) => b.fit_score - a.fit_score);
         top5India.sort((a, b) => b.fit_score - a.fit_score);
-        top5US = top5US.slice(0, 5);
-        top5India = top5India.slice(0, 5);
+        top5US = top5US.slice(0, 4);
+        top5India = top5India.slice(0, 4);
 
         localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
         localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
@@ -531,17 +531,17 @@ document.addEventListener("DOMContentLoaded", () => {
         targetList[existingIdx] = newEntry;
       }
     } else {
-      if (targetList.length < 5 || data.fit_score > targetList[targetList.length - 1].fit_score) {
+      if (targetList.length < 4 || data.fit_score > targetList[targetList.length - 1].fit_score) {
         targetList.push(newEntry);
       }
     }
 
     targetList.sort((a, b) => b.fit_score - a.fit_score);
     if (isIndia) {
-      top5India = targetList.slice(0, 5);
+      top5India = targetList.slice(0, 4);
       localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
     } else {
-      top5US = targetList.slice(0, 5);
+      top5US = targetList.slice(0, 4);
       localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
     }
 

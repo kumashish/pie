@@ -39,10 +39,10 @@ class TestWebAppUI(unittest.TestCase):
         self.assertIn('id="analyze-btn"', self.index_content)
 
     def test_top_5_market_leaderboard(self) -> None:
-        """Verify Top 5 Market Leaderboards structure in index.html."""
-        self.assertIn("TOP 5 HIGH-CONVICTION TRADES", self.index_content)
-        self.assertIn("U.S. Markets (Top 5)", self.index_content)
-        self.assertIn("Indian Markets (Top 5)", self.index_content)
+        """Verify Top 4 Market Leaderboards structure in index.html."""
+        self.assertIn("TOP 4 HIGH-CONVICTION TRADES", self.index_content)
+        self.assertIn("U.S. Markets (Top 4)", self.index_content)
+        self.assertIn("Indian Markets (Top 4)", self.index_content)
         self.assertIn('<div id="top-trades-grid" class="top-trades-grid">', self.index_content)
 
     def test_static_data_files_valid_schemas(self) -> None:
