@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "HDFCBANK": "HDFCBANK.NS",
     "HDFC BANK": "HDFCBANK.NS",
     "ICICIBANK": "ICICIBANK.NS",
-    "ICICI BANK": "ICICI BANK.NS",
+    "ICICI BANK": "ICICIBANK.NS",
     "SBIN": "SBIN.NS",
     "SBI": "SBIN.NS",
     "BAJAJ-AUTO": "BAJAJ-AUTO.NS",
