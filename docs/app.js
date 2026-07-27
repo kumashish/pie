@@ -299,8 +299,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getStaticDataPath(relativePath) {
     const pathname = window.location.pathname;
-    const dir = pathname.endsWith("/") ? pathname : pathname.substring(0, pathname.lastIndexOf("/") + 1);
-    return `${dir}${relativePath}`;
+    if (pathname.endsWith("/")) {
+      return `${pathname}${relativePath}`;
+    }
+    if (pathname.includes(".")) {
+      const dir = pathname.substring(0, pathname.lastIndexOf("/") + 1);
+      return `${dir}${relativePath}`;
+    }
+    return `${pathname}/${relativePath}`;
   }
 
   async function fetchQuietly(symbol) {
