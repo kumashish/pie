@@ -40,7 +40,7 @@ class TestWebAppUI(unittest.TestCase):
 
     def test_top_5_market_leaderboard(self) -> None:
         """Verify Top 4 Market Leaderboards structure in index.html."""
-        self.assertIn("TOP 4 HIGH-CONVICTION TRADES", self.index_content)
+        self.assertIn("Top 4 High-Conviction Trades", self.index_content)
         self.assertIn("U.S. Markets (Top 4)", self.index_content)
         self.assertIn("Indian Markets (Top 4)", self.index_content)
         self.assertIn('<div id="top-trades-grid" class="top-trades-grid">', self.index_content)
