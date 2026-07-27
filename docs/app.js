@@ -522,18 +522,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Render Rules Table
     if (data.rules && data.rules.length > 0) {
-      resRulesTbody.innerHTML = data.rules.map((rule) => `
-        <tr>
-          <td>
-            <span class="status-badge ${rule.passed ? 'pass' : 'fail'}">
-              ${rule.passed ? 'PASS' : 'FAIL'}
-            </span>
-          </td>
-          <td><strong>${rule.name}</strong></td>
-          <td>${rule.score} / ${rule.max_score}</td>
-          <td style="color: #94a3b8;">${rule.explanation}</td>
-        </tr>
-      `).join("");
+      resRulesTbody.innerHTML = data.rules.map((rule) => {
+        let scoreDisplay = "";
+        if (typeof rule.score === "number" && typeof rule.max_score === "number") {
+          scoreDisplay = `${rule.score.toFixed(1)} / ${rule.max_score.toFixed(1)}`;
+        } else if (typeof rule.score === "number") {
+          scoreDisplay = `${rule.score.toFixed(1)} / 1.0`;
+        } else if (rule.passed) {
+          scoreDisplay = "1.0 / 1.0";
+        } else {
+          scoreDisplay = "0.0 / 1.0";
+        }
+
+        return `
+          <tr>
+            <td>
+              <span class="status-badge ${rule.passed ? 'pass' : 'fail'}">
+                ${rule.passed ? 'PASS' : 'FAIL'}
+              </span>
+            </td>
+            <td><strong>${rule.name}</strong></td>
+            <td>${scoreDisplay}</td>
+            <td style="color: #94a3b8;">${rule.explanation}</td>
+          </tr>
+        `;
+      }).join("");
     } else {
       resRulesTbody.innerHTML = "<tr><td colspan='4'>No rule evaluations available.</td></tr>";
     }

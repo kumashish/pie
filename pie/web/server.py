@@ -91,9 +91,9 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
     # Format rules (passed vs failed)
     rules_eval = []
     for rule_name in trend_analysis.passed_rules:
-        rules_eval.append({"name": rule_name, "passed": True, "score": "PASS", "explanation": "Condition met"})
+        rules_eval.append({"name": rule_name, "passed": True, "score": 1.0, "max_score": 1.0, "explanation": "Condition met"})
     for rule_name in trend_analysis.failed_rules:
-        rules_eval.append({"name": rule_name, "passed": False, "score": "FAIL", "explanation": "Condition unfulfilled"})
+        rules_eval.append({"name": rule_name, "passed": False, "score": 0.0, "max_score": 1.0, "explanation": "Condition unfulfilled"})
 
     # Format trade legs
     legs_data = []
