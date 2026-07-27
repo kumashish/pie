@@ -12,14 +12,150 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchAutocomplete = document.getElementById("search-autocomplete");
   let searchDebounceTimer = null;
 
+  const DEFAULT_20_TRACKED = [
+    { symbol: "SPY", name: "S&P 500 ETF Trust", market: "US" },
+    { symbol: "QQQ", name: "Invesco Nasdaq 100 ETF", market: "US" },
+    { symbol: "^NSEI", name: "Nifty 50 Index", market: "IN" },
+    { symbol: "^NSEBANK", name: "Bank Nifty Index", market: "IN" },
+    { symbol: "NIFTY_FIN_SERVICE.NS", name: "Fin Nifty Index", market: "IN" },
+    { symbol: "^NSEMDCP50", name: "Midcap Nifty Index", market: "IN" },
+    { symbol: "^BSESN", name: "BSE Sensex Index", market: "IN" },
+    { symbol: "NVDA", name: "NVIDIA Corporation", market: "US" },
+    { symbol: "AAPL", name: "Apple Inc.", market: "US" },
+    { symbol: "MSFT", name: "Microsoft Corporation", market: "US" },
+    { symbol: "AMZN", name: "Amazon.com Inc.", market: "US" },
+    { symbol: "GOOGL", name: "Alphabet Inc.", market: "US" },
+    { symbol: "META", name: "Meta Platforms Inc.", market: "US" },
+    { symbol: "TSLA", name: "Tesla Inc.", market: "US" },
+    { symbol: "RELIANCE.NS", name: "Reliance Industries", market: "IN" },
+    { symbol: "TCS.NS", name: "Tata Consultancy Services", market: "IN" },
+    { symbol: "HDFCBANK.NS", name: "HDFC Bank Ltd.", market: "IN" },
+    { symbol: "ICICIBANK.NS", name: "ICICI Bank Ltd.", market: "IN" },
+    { symbol: "TITAN.NS", name: "Titan Company Ltd.", market: "IN" },
+    { symbol: "SUNPHARMA.NS", name: "Sun Pharmaceutical", market: "IN" }
+  ];
+
+  function getTrackedCache() {
+    try {
+      const stored = localStorage.getItem("pie_20_tracked_cache");
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch (e) {}
+    return DEFAULT_20_TRACKED;
+  }
+
+  function saveTrackedCache(symbol) {
+    if (!symbol) return;
+    const cleanSym = symbol.trim().toUpperCase();
+    const targetSym = ALIAS_MAP[cleanSym] || cleanSym;
+    let list = getTrackedCache();
+
+    list = list.filter(item => item.symbol.toUpperCase() !== targetSym.toUpperCase());
+
+    const match = DEFAULT_20_TRACKED.find(d => d.symbol.toUpperCase() === targetSym.toUpperCase());
+    const name = match ? match.name : targetSym;
+    const isIndia = isIndianSymbol(targetSym);
+
+    list.unshift({
+      symbol: targetSym,
+      name: name,
+      market: isIndia ? "IN" : "US"
+    });
+
+    list = list.slice(0, 20);
+    try {
+      localStorage.setItem("pie_20_tracked_cache", JSON.stringify(list));
+    } catch (e) {}
+
+    renderQuickSelectChips();
+  }
+
+  function renderTrackedAutocomplete(filterQuery = "") {
+    let list = getTrackedCache();
+    if (filterQuery) {
+      const q = filterQuery.trim().toUpperCase();
+      list = list.filter(item => item.symbol.toUpperCase().includes(q) || item.name.toUpperCase().includes(q));
+    }
+
+    if (list.length === 0) {
+      searchAutocomplete.style.display = "none";
+      return;
+    }
+
+    searchAutocomplete.innerHTML = `
+      <div style="padding: 8px 12px; font-size: 11px; font-weight: 800; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(0,0,0,0.3); display: flex; justify-content: space-between;">
+        <span>⭐ TOP 20 MOST TRACKED STOCKS & ETFS</span>
+        <span>CACHE ACTIVE</span>
+      </div>
+      ${list.map(item => `
+        <div class="autocomplete-item" data-symbol="${item.symbol}">
+          <span class="autocomplete-name">${item.market === 'IN' ? '🇮🇳' : '🇺🇸'} ${item.name}</span>
+          <span class="autocomplete-sym">${item.symbol}</span>
+        </div>
+      `).join("")}
+    `;
+    searchAutocomplete.style.display = "block";
+
+    searchAutocomplete.querySelectorAll(".autocomplete-item").forEach(item => {
+      item.addEventListener("click", () => {
+        const sym = item.getAttribute("data-symbol");
+        symbolInput.value = sym;
+        searchAutocomplete.style.display = "none";
+        fetchAnalysis(sym, true);
+      });
+    });
+  }
+
+  function renderQuickSelectChips() {
+    const chipsContainer = document.getElementById("quick-chips");
+    if (!chipsContainer) return;
+
+    const trackedList = getTrackedCache();
+    chipsContainer.innerHTML = `
+      <span class="chip-label">Quick Select (Top 20 Tracked):</span>
+      ${trackedList.map(item => {
+        const flag = item.market === "IN" ? "🇮🇳" : "🇺🇸";
+        const label = item.symbol === "^NSEI" ? "NIFTY 50" :
+                      item.symbol === "^NSEBANK" ? "BANKNIFTY" :
+                      item.symbol === "NIFTY_FIN_SERVICE.NS" ? "FINNIFTY" :
+                      item.symbol === "^NSEMDCP50" ? "MIDCAPNIFTY" :
+                      item.symbol === "^BSESN" ? "SENSEX" : item.symbol;
+        return `<button class="chip" data-symbol="${item.symbol}">${flag} ${label}</button>`;
+      }).join("")}
+    `;
+
+    chipsContainer.querySelectorAll(".chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        const sym = chip.getAttribute("data-symbol");
+        if (sym && symbolInput) {
+          symbolInput.value = sym;
+          fetchAnalysis(sym, true);
+        }
+      });
+    });
+  }
+
   if (symbolInput && searchAutocomplete) {
+    symbolInput.addEventListener("focus", () => {
+      if (symbolInput.value.trim().length < 2) {
+        renderTrackedAutocomplete();
+      }
+    });
+
+    symbolInput.addEventListener("click", () => {
+      if (symbolInput.value.trim().length < 2) {
+        renderTrackedAutocomplete();
+      }
+    });
+
     symbolInput.addEventListener("input", () => {
       clearTimeout(searchDebounceTimer);
       const query = symbolInput.value.trim();
 
       if (query.length < 2) {
-        searchAutocomplete.style.display = "none";
-        searchAutocomplete.innerHTML = "";
+        renderTrackedAutocomplete(query);
         return;
       }
 
@@ -42,15 +178,17 @@ document.addEventListener("DOMContentLoaded", () => {
                   const sym = item.getAttribute("data-symbol");
                   symbolInput.value = sym;
                   searchAutocomplete.style.display = "none";
-                  analyzeSymbol(sym);
+                  fetchAnalysis(sym, true);
                 });
               });
             } else {
-              searchAutocomplete.style.display = "none";
+              renderTrackedAutocomplete(query);
             }
+          } else {
+            renderTrackedAutocomplete(query);
           }
         } catch (err) {
-          searchAutocomplete.style.display = "none";
+          renderTrackedAutocomplete(query);
         }
       }, 250);
     });
@@ -136,6 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   initLeaderboardFromIndex();
+  renderQuickSelectChips();
 
   // Quick Chips
   document.querySelectorAll(".chip").forEach((chip) => {
@@ -237,6 +376,7 @@ document.addEventListener("DOMContentLoaded", () => {
       applyFoldState(true);
     }
     showLoading();
+    saveTrackedCache(symbol);
     const cleanSym = symbol.trim().toUpperCase();
     const targetSymbol = ALIAS_MAP[cleanSym] || cleanSym;
     const safeSymbol = targetSymbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
