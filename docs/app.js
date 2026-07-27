@@ -181,6 +181,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "FINNIFTY": "NIFTY_FIN_SERVICE.NS",
     "NIFTY_FIN_SERVICE.NS": "NIFTY_FIN_SERVICE.NS",
     "MIDCAPNIFTY": "^NSEMDCP50",
+    "MIDCAP NIFTY": "^NSEMDCP50",
+    "MIDCAP": "^NSEMDCP50",
+    "NIFTY MIDCAP": "^NSEMDCP50",
+    "NIFTY MIDCAP 50": "^NSEMDCP50",
+    "NSEMDCP50": "^NSEMDCP50",
+    "NSEMDCP": "^NSEMDCP50",
     "^NSEMDCP50": "^NSEMDCP50",
     "SENSEX": "^BSESN",
     "BSE SENSEX": "^BSESN",
@@ -294,11 +300,17 @@ document.addEventListener("DOMContentLoaded", () => {
       sym.includes("NSE") ||
       sym.includes("BSE") ||
       sym.includes("_NS") ||
-      sym.includes("_BO")
+      sym.includes("_BO") ||
+      sym.includes("MDCP") ||
+      sym.includes("MIDCAP")
     ) {
       return true;
     }
-    const indianTickers = ["TCS", "INFY", "RELIANCE", "TITAN", "SUNPHARMA", "BAJAJ", "HDFCBANK", "ICICIBANK", "SBIN", "HINDALCO", "HDFCLIFE", "TATASTEEL", "TATAMOTORS", "WIPRO", "HCLTECH", "TECHM", "MIDCAP", "FINNIFTY", "BANKNIFTY"];
+    const indianTickers = [
+      "TCS", "INFY", "RELIANCE", "TITAN", "SUNPHARMA", "BAJAJ", "HDFCBANK", "ICICIBANK",
+      "SBIN", "HINDALCO", "HDFCLIFE", "TATASTEEL", "TATAMOTORS", "WIPRO", "HCLTECH", "TECHM",
+      "MIDCAP", "FINNIFTY", "BANKNIFTY", "NSEMDCP", "MDCP50"
+    ];
     return indianTickers.some(t => sym.includes(t));
   }
 
