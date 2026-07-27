@@ -158,9 +158,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial Silent Load for default symbol SPY (No blocking loading spinner on landing page)
   fetchQuietly("SPY");
 
+  function getStaticDataPath(relativePath) {
+    const pathname = window.location.pathname;
+    const dir = pathname.endsWith("/") ? pathname : pathname.substring(0, pathname.lastIndexOf("/") + 1);
+    return `${dir}${relativePath}`;
+  }
+
   async function fetchQuietly(symbol) {
     try {
-      const response = await fetchWithTimeout(`data/${symbol}.json`, 1500);
+      const response = await fetchWithTimeout(getStaticDataPath(`data/${symbol}.json`), 4000);
       if (response.ok) {
         const data = await response.json();
         renderResults(data, false);
@@ -252,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 2. Fallback to static pre-computed JSON (when hosted on GitHub Pages)
       try {
-        const response = await fetchWithTimeout(`data/${safeSymbol}.json`, 1500);
+        const response = await fetchWithTimeout(getStaticDataPath(`data/${safeSymbol}.json`), 5000);
         if (response.ok) {
           const data = await response.json();
           renderResults(data);
@@ -485,7 +491,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function initLeaderboardFromIndex() {
     try {
-      const resp = await fetch("data/index.json?v=20260727_02");
+      const resp = await fetch(getStaticDataPath("data/index.json?v=20260727_02"));
       if (resp.ok) {
         const indexList = await resp.json();
         top5US = [];
