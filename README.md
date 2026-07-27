@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 17:18 IST | 🟢 Call Debit Spread | 5.8/10    | Buy QQQ 18-Sep-2026 685 Call<br> Sell QQQ 18-Sep-2026 720 Call | Active (Jul 25, 00:26 IST) |
-| SPY       | 17:18 IST | 🟢 Call Debit Spread | 5.8/10    | Buy SPY 18-Sep-2026 740 Call<br> Sell SPY 18-Sep-2026 775 Call | New                    |
+| SPY       | 02:19 IST | 🟢 Call Debit Spread | 6.0/10    | Buy SPY 18-Sep-2026 740 Call<br> Sell SPY 18-Sep-2026 780 Call | New                    |
+| QQQ       | 02:19 IST | 🟢 Call Debit Spread | 5.6/10    | Buy QQQ 18-Sep-2026 680 Call<br> Sell QQQ 18-Sep-2026 715 Call | Active (Jul 25, 00:26 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -17,7 +17,7 @@
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| JSWSTEEL.NS | 13:48 IST | 🟡 Long Butterfly  | 8.3/10    | Buy JSWSTEEL 08-Sep-2026 1200 Call<br> Sell 2x JSWSTEEL 08-Sep-2026 1240 Call<br> Buy JSWSTEEL 08-Sep-2026 1280 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 13:48) |
+| JSWSTEEL.NS | 13:48 IST | 🟡 Long Butterfly  | 8.3/10    | Buy JSWSTEEL 08-Sep-2026 1200 Call<br> Sell 2x JSWSTEEL 08-Sep-2026 1240 Call<br> Buy JSWSTEEL 08-Sep-2026 1280 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 13:48) |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
