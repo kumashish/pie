@@ -370,21 +370,25 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   async function fetchAnalysis(symbol, isExplicitSearch = false) {
+    if (!symbol) return;
     if (isExplicitSearch) {
       isFolded = true;
       localStorage.setItem("pie_leaderboard_folded", true);
       applyFoldState(true);
     }
     showLoading();
-    saveTrackedCache(symbol);
-    const cleanSym = symbol.trim().toUpperCase();
-    const targetSymbol = ALIAS_MAP[cleanSym] || cleanSym;
+
+    // Clean flags, emojis, and whitespace
+    const cleanSym = symbol.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1F1E6}-\u{1F1FF}]/gu, "").trim().toUpperCase();
+    const targetSymbol = (typeof ALIAS_MAP !== "undefined" && ALIAS_MAP[cleanSym]) ? ALIAS_MAP[cleanSym] : cleanSym;
     const safeSymbol = targetSymbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
+
+    saveTrackedCache(targetSymbol);
 
     try {
       // 1. Try local REST API endpoint first (when running pie serve)
       try {
-        const response = await fetchWithTimeout(`/api/analyze?symbol=${encodeURIComponent(symbol)}`, 1500);
+        const response = await fetchWithTimeout(`/api/analyze?symbol=${encodeURIComponent(targetSymbol)}`, 1000);
         if (response.ok) {
           const data = await response.json();
           if (!data.error) {
@@ -393,19 +397,25 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       } catch (e) {
-        // Fall through to static pre-computed JSON
+        // Fall through
       }
 
-      // 2. Fallback to static pre-computed JSON (when hosted on GitHub Pages)
-      try {
-        const response = await fetchWithTimeout(getStaticDataPath(`data/${safeSymbol}.json`), 5000);
-        if (response.ok) {
-          const data = await response.json();
-          renderResults(data);
-          return;
-        }
-      } catch (err) {
-        // Fall through to live client-side engine
+      // 2. Fallback to static pre-computed JSON (try direct relative path first)
+      const staticUrls = [
+        `data/${safeSymbol}.json`,
+        `./data/${safeSymbol}.json`,
+        getStaticDataPath(`data/${safeSymbol}.json`)
+      ];
+
+      for (const url of staticUrls) {
+        try {
+          const response = await fetchWithTimeout(url, 2000);
+          if (response.ok) {
+            const data = await response.json();
+            renderResults(data);
+            return;
+          }
+        } catch (err) {}
       }
 
       // 3. Fallback to Live Client-Side Yahoo Finance Calculation Engine
@@ -413,7 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const liveData = await calculateLiveAnalysis(targetSymbol);
         renderResults(liveData);
       } catch (liveErr) {
-        showError(`Unable to analyze ${symbol}: ${liveErr.message}. Verify ticker symbol.`);
+        showError(`Unable to analyze ${cleanSym}: ${liveErr.message}. Verify ticker symbol.`);
       }
     } finally {
       hideLoading();
@@ -744,13 +754,19 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="top-card-strategy">${item.strategy_display}</div>
             <div class="top-card-leg">${item.trade_profile}</div>
           </div>
-          <button class="top-card-btn" onclick="document.getElementById('symbol-input').value='${item.symbol}'; document.getElementById('search-form').dispatchEvent(new Event('submit'));">
+          <button class="top-card-btn" onclick="window.analyzeFromCard('${item.symbol}')">
             Load Full Analysis ➔
           </button>
         </div>
       `;
     }).join("");
   }
+
+  window.analyzeFromCard = function(symbol) {
+    if (!symbol) return;
+    if (symbolInput) symbolInput.value = symbol;
+    fetchAnalysis(symbol, true);
+  };
 
   let loadingTimeout = null;
 
