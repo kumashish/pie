@@ -279,11 +279,11 @@ document.addEventListener("DOMContentLoaded", () => {
     return grade;
   }
 
-  function getCurrencySymbol(symbol) {
-    if (!symbol) return "$";
+  function isIndianSymbol(symbol) {
+    if (!symbol) return false;
     const sym = symbol.toUpperCase();
     if (sym === "^VIX" || sym === "^GSPC" || sym === "^DJI" || sym === "^IXIC" || sym === "^RUT") {
-      return "$";
+      return false;
     }
     if (
       sym.startsWith("^") ||
@@ -296,13 +296,14 @@ document.addEventListener("DOMContentLoaded", () => {
       sym.includes("_NS") ||
       sym.includes("_BO")
     ) {
-      return "₹";
+      return true;
     }
-    const indianTickers = ["TCS", "INFY", "RELIANCE", "TITAN", "SUNPHARMA", "BAJAJ", "HDFCBANK", "ICICIBANK", "SBIN", "HINDALCO", "HDFCLIFE", "TATASTEEL", "TATAMOTORS", "WIPRO", "HCLTECH", "TECHM"];
-    if (indianTickers.some(t => sym.includes(t))) {
-      return "₹";
-    }
-    return "$";
+    const indianTickers = ["TCS", "INFY", "RELIANCE", "TITAN", "SUNPHARMA", "BAJAJ", "HDFCBANK", "ICICIBANK", "SBIN", "HINDALCO", "HDFCLIFE", "TATASTEEL", "TATAMOTORS", "WIPRO", "HCLTECH", "TECHM", "MIDCAP", "FINNIFTY", "BANKNIFTY"];
+    return indianTickers.some(t => sym.includes(t));
+  }
+
+  function getCurrencySymbol(symbol) {
+    return isIndianSymbol(symbol) ? "₹" : "$";
   }
 
   function renderResults(data, shouldScroll = true) {
@@ -471,7 +472,7 @@ document.addEventListener("DOMContentLoaded", () => {
         top5US = [];
         top5India = [];
         for (const item of indexList) {
-          const isIndia = item.symbol.endsWith(".NS") || item.symbol.endsWith(".BO") || item.symbol.includes("NIFTY") || item.symbol.includes("SENSEX");
+          const isIndia = isIndianSymbol(item.symbol);
           const targetList = isIndia ? top5India : top5US;
           targetList.push({
             symbol: item.symbol,
@@ -499,7 +500,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateLeaderboard(data) {
-    const isIndia = data.symbol.endsWith(".NS") || data.symbol.endsWith(".BO") || data.symbol.includes("NIFTY") || data.symbol.includes("SENSEX");
+    const isIndia = isIndianSymbol(data.symbol);
     const targetList = isIndia ? top5India : top5US;
 
     const existingIdx = targetList.findIndex(t => t.symbol === data.symbol);
@@ -712,7 +713,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tradeProfile = "Debit | 30-60 DTE | 50 Delta ITM";
     }
 
-    const isIndia = symbol.endsWith(".NS") || symbol.endsWith(".BO") || symbol.includes("NIFTY") || symbol.includes("SENSEX");
+    const isIndia = isIndianSymbol(symbol);
     const expDate = calcExpirationDate();
     const dte = Math.ceil((expDate - new Date()) / (1000 * 60 * 60 * 24));
 
@@ -760,7 +761,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function generateFallbackAnalysis(symbol) {
-    const isIndia = symbol.endsWith(".NS") || symbol.endsWith(".BO") || symbol.includes("NIFTY") || symbol.includes("SENSEX");
+    const isIndia = isIndianSymbol(symbol);
     const basePrice = isIndia ? 2450.0 : 210.0;
     const curr = isIndia ? "₹" : "$";
     
