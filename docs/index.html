@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260727_12">
+  <link rel="stylesheet" href="styles.css?v=20260727_13">
 </head>
 <body>
   <div class="app-container">
@@ -82,6 +82,26 @@
         </div>
 
         <div id="top-trades-grid" class="top-trades-grid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-Time Stock News & Sentiment Panel (Native Dashboard Section) -->
+    <section class="news-dashboard-section" id="news-dashboard-section">
+      <div class="news-dashboard-header" id="news-toggle-btn">
+        <div class="news-title-area">
+          <span class="section-badge">📰 Real-Time Stock News & Sentiment</span>
+          <h2 class="section-title" id="news-symbol-subtitle">SPY Market Headlines & Sentiment</h2>
+        </div>
+        <button class="fold-toggle-btn" id="news-fold-btn" aria-label="Toggle News Panel">
+          <span id="news-fold-icon">▼</span>
+          <span id="news-fold-text">Collapse</span>
+        </button>
+      </div>
+
+      <div id="news-dashboard-body" class="news-dashboard-body">
+        <div id="news-articles-list" class="news-articles-grid">
           <!-- Rendered dynamically by app.js -->
         </div>
       </div>
@@ -232,27 +252,6 @@
     </footer>
   </div>
 
-  <!-- Stock News & Sentiment Side Tab Drawer -->
-  <div id="news-side-tab" class="news-side-tab">
-    <button id="news-toggle-btn" class="news-toggle-btn" title="Latest Stock News & Sentiment">
-      <span class="news-tab-icon">📰</span>
-      <span class="news-tab-label">Stock News</span>
-      <span id="news-count-badge" class="news-badge">3</span>
-    </button>
-    <div id="news-drawer" class="news-drawer">
-      <div class="news-drawer-header">
-        <div class="news-drawer-title">
-          <h3>📰 Real-Time Stock News</h3>
-          <span class="news-subtitle" id="news-symbol-subtitle">Latest Market Headlines & Sentiment</span>
-        </div>
-        <button id="news-close-btn" class="news-close-btn">&times;</button>
-      </div>
-      <div id="news-articles-list" class="news-articles-list">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-    </div>
-  </div>
-
-  <script src="app.js?v=20260727_12"></script>
+  <script src="app.js?v=20260727_13"></script>
 </body>
 </html>

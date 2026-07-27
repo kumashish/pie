@@ -400,29 +400,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Setup News Side Tab Toggle & Renderer
+  // Setup Native Dashboard News Panel Toggle & Renderer
+  const newsDashboardSection = document.getElementById("news-dashboard-section");
   const newsToggleBtn = document.getElementById("news-toggle-btn");
-  const newsCloseBtn = document.getElementById("news-close-btn");
-  const newsDrawer = document.getElementById("news-drawer");
+  const newsFoldBtn = document.getElementById("news-fold-btn");
+  const newsFoldIcon = document.getElementById("news-fold-icon");
+  const newsFoldText = document.getElementById("news-fold-text");
   const newsArticlesList = document.getElementById("news-articles-list");
   const newsSymbolSubtitle = document.getElementById("news-symbol-subtitle");
-  const newsCountBadge = document.getElementById("news-count-badge");
 
-  if (newsDrawer && window.innerWidth >= 768) {
-    newsDrawer.classList.add("open");
-  } else if (newsDrawer) {
-    newsDrawer.classList.remove("open");
+  function toggleNewsPanel() {
+    if (!newsDashboardSection) return;
+    const isCollapsed = newsDashboardSection.classList.toggle("collapsed");
+    if (newsFoldIcon) newsFoldIcon.textContent = isCollapsed ? "▲" : "▼";
+    if (newsFoldText) newsFoldText.textContent = isCollapsed ? "Expand" : "Collapse";
   }
 
-  if (newsToggleBtn && newsDrawer) {
-    newsToggleBtn.addEventListener("click", () => {
-      newsDrawer.classList.toggle("open");
-    });
+  if (newsToggleBtn) {
+    newsToggleBtn.addEventListener("click", toggleNewsPanel);
   }
 
-  if (newsCloseBtn && newsDrawer) {
-    newsCloseBtn.addEventListener("click", () => {
-      newsDrawer.classList.remove("open");
+  if (newsFoldBtn) {
+    newsFoldBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleNewsPanel();
     });
   }
 
