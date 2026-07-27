@@ -12,6 +12,60 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchAutocomplete = document.getElementById("search-autocomplete");
   let searchDebounceTimer = null;
 
+  const ALIAS_MAP = {
+    "NIFTY": "^NSEI",
+    "NIFTY 50": "^NSEI",
+    "NIFTY50": "^NSEI",
+    "^NSEI": "^NSEI",
+    "BANKNIFTY": "^NSEBANK",
+    "BANK NIFTY": "^NSEBANK",
+    "^NSEBANK": "^NSEBANK",
+    "FINNIFTY": "NIFTY_FIN_SERVICE.NS",
+    "NIFTY_FIN_SERVICE.NS": "NIFTY_FIN_SERVICE.NS",
+    "MIDCAPNIFTY": "^NSEMDCP50",
+    "MIDCAP NIFTY": "^NSEMDCP50",
+    "MIDCAP": "^NSEMDCP50",
+    "NIFTY MIDCAP": "^NSEMDCP50",
+    "NIFTY MIDCAP 50": "^NSEMDCP50",
+    "NSEMDCP50": "^NSEMDCP50",
+    "NSEMDCP": "^NSEMDCP50",
+    "^NSEMDCP50": "^NSEMDCP50",
+    "SENSEX": "^BSESN",
+    "BSE SENSEX": "^BSESN",
+    "^BSESN": "^BSESN",
+    "TCS": "TCS.NS",
+    "TATA CONSULTANCY": "TCS.NS",
+    "TITAN": "TITAN.NS",
+    "RELIANCE": "RELIANCE.NS",
+    "INFY": "INFY.NS",
+    "INFOSYS": "INFY.NS",
+    "HDFCBANK": "HDFCBANK.NS",
+    "HDFC BANK": "HDFCBANK.NS",
+    "ICICIBANK": "ICICIBANK.NS",
+    "ICICI BANK": "ICICIBANK.NS",
+    "SBIN": "SBIN.NS",
+    "SBI": "SBIN.NS",
+    "BAJAJ-AUTO": "BAJAJ-AUTO.NS",
+    "BAJAJ AUTO": "BAJAJ-AUTO.NS",
+    "SUNPHARMA": "SUNPHARMA.NS",
+    "SUN PHARMA": "SUNPHARMA.NS",
+    "HINDALCO": "HINDALCO.NS",
+    "HDFCLIFE": "HDFCLIFE.NS",
+    "HDFC LIFE": "HDFCLIFE.NS",
+    "TATASTEEL": "TATASTEEL.NS",
+    "TATA STEEL": "TATASTEEL.NS",
+    "TATAMOTORS": "TATAMOTORS.NS",
+    "TATA MOTORS": "TATAMOTORS.NS",
+    "WIPRO": "WIPRO.NS",
+    "HCLTECH": "HCLTECH.NS",
+    "TECHM": "TECHM.NS",
+    "APPLE": "AAPL",
+    "NVIDIA": "NVDA",
+    "MICROSOFT": "MSFT",
+    "AMAZON": "AMZN",
+    "GOOGLE": "GOOGL",
+  };
+
   const DEFAULT_20_TRACKED = [
     { symbol: "SPY", name: "S&P 500 ETF Trust", market: "US" },
     { symbol: "QQQ", name: "Invesco Nasdaq 100 ETF", market: "US" },
@@ -48,28 +102,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function saveTrackedCache(symbol) {
     if (!symbol) return;
-    const cleanSym = symbol.trim().toUpperCase();
-    const targetSym = ALIAS_MAP[cleanSym] || cleanSym;
-    let list = getTrackedCache();
-
-    list = list.filter(item => item.symbol.toUpperCase() !== targetSym.toUpperCase());
-
-    const match = DEFAULT_20_TRACKED.find(d => d.symbol.toUpperCase() === targetSym.toUpperCase());
-    const name = match ? match.name : targetSym;
-    const isIndia = isIndianSymbol(targetSym);
-
-    list.unshift({
-      symbol: targetSym,
-      name: name,
-      market: isIndia ? "IN" : "US"
-    });
-
-    list = list.slice(0, 20);
     try {
-      localStorage.setItem("pie_20_tracked_cache", JSON.stringify(list));
-    } catch (e) {}
+      const cleanSym = symbol.trim().toUpperCase();
+      const targetSym = (typeof ALIAS_MAP !== "undefined" && ALIAS_MAP[cleanSym]) ? ALIAS_MAP[cleanSym] : cleanSym;
+      let list = getTrackedCache();
 
-    renderQuickSelectChips();
+      list = list.filter(item => item.symbol.toUpperCase() !== targetSym.toUpperCase());
+
+      const match = DEFAULT_20_TRACKED.find(d => d.symbol.toUpperCase() === targetSym.toUpperCase());
+      const name = match ? match.name : targetSym;
+      const isIndia = isIndianSymbol(targetSym);
+
+      list.unshift({
+        symbol: targetSym,
+        name: name,
+        market: isIndia ? "IN" : "US"
+      });
+
+      list = list.slice(0, 20);
+      localStorage.setItem("pie_20_tracked_cache", JSON.stringify(list));
+      renderQuickSelectChips();
+    } catch (e) {}
   }
 
   function renderTrackedAutocomplete(filterQuery = "") {
@@ -320,60 +373,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Quiet fallback
     }
   }
-
-  const ALIAS_MAP = {
-    "NIFTY": "^NSEI",
-    "NIFTY 50": "^NSEI",
-    "NIFTY50": "^NSEI",
-    "^NSEI": "^NSEI",
-    "BANKNIFTY": "^NSEBANK",
-    "BANK NIFTY": "^NSEBANK",
-    "^NSEBANK": "^NSEBANK",
-    "FINNIFTY": "NIFTY_FIN_SERVICE.NS",
-    "NIFTY_FIN_SERVICE.NS": "NIFTY_FIN_SERVICE.NS",
-    "MIDCAPNIFTY": "^NSEMDCP50",
-    "MIDCAP NIFTY": "^NSEMDCP50",
-    "MIDCAP": "^NSEMDCP50",
-    "NIFTY MIDCAP": "^NSEMDCP50",
-    "NIFTY MIDCAP 50": "^NSEMDCP50",
-    "NSEMDCP50": "^NSEMDCP50",
-    "NSEMDCP": "^NSEMDCP50",
-    "^NSEMDCP50": "^NSEMDCP50",
-    "SENSEX": "^BSESN",
-    "BSE SENSEX": "^BSESN",
-    "^BSESN": "^BSESN",
-    "TCS": "TCS.NS",
-    "TATA CONSULTANCY": "TCS.NS",
-    "TITAN": "TITAN.NS",
-    "RELIANCE": "RELIANCE.NS",
-    "INFY": "INFY.NS",
-    "INFOSYS": "INFY.NS",
-    "HDFCBANK": "HDFCBANK.NS",
-    "HDFC BANK": "HDFCBANK.NS",
-    "ICICIBANK": "ICICIBANK.NS",
-    "ICICI BANK": "ICICIBANK.NS",
-    "SBIN": "SBIN.NS",
-    "SBI": "SBIN.NS",
-    "BAJAJ-AUTO": "BAJAJ-AUTO.NS",
-    "BAJAJ AUTO": "BAJAJ-AUTO.NS",
-    "SUNPHARMA": "SUNPHARMA.NS",
-    "SUN PHARMA": "SUNPHARMA.NS",
-    "HINDALCO": "HINDALCO.NS",
-    "HDFCLIFE": "HDFCLIFE.NS",
-    "HDFC LIFE": "HDFCLIFE.NS",
-    "TATASTEEL": "TATASTEEL.NS",
-    "TATA STEEL": "TATASTEEL.NS",
-    "TATAMOTORS": "TATAMOTORS.NS",
-    "TATA MOTORS": "TATAMOTORS.NS",
-    "WIPRO": "WIPRO.NS",
-    "HCLTECH": "HCLTECH.NS",
-    "TECHM": "TECHM.NS",
-    "APPLE": "AAPL",
-    "NVIDIA": "NVDA",
-    "MICROSOFT": "MSFT",
-    "AMAZON": "AMZN",
-    "GOOGLE": "GOOGL",
-  };
 
   async function fetchAnalysis(symbol, isExplicitSearch = false) {
     if (!symbol) return;
