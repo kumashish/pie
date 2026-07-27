@@ -408,6 +408,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const newsSymbolSubtitle = document.getElementById("news-symbol-subtitle");
   const newsCountBadge = document.getElementById("news-count-badge");
 
+  if (newsDrawer) {
+    newsDrawer.classList.add("open");
+  }
+
   if (newsToggleBtn && newsDrawer) {
     newsToggleBtn.addEventListener("click", () => {
       newsDrawer.classList.toggle("open");
