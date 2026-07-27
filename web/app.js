@@ -408,8 +408,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const newsSymbolSubtitle = document.getElementById("news-symbol-subtitle");
   const newsCountBadge = document.getElementById("news-count-badge");
 
-  if (newsDrawer) {
+  if (newsDrawer && window.innerWidth >= 768) {
     newsDrawer.classList.add("open");
+  } else if (newsDrawer) {
+    newsDrawer.classList.remove("open");
   }
 
   if (newsToggleBtn && newsDrawer) {
