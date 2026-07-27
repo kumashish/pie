@@ -435,6 +435,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderNews(data) {
     if (!newsArticlesList) return;
+    if (window.innerWidth <= 768) {
+      if (newsDashboardSection) newsDashboardSection.style.display = "none";
+      return;
+    }
     const sym = (data && data.symbol) ? data.symbol : "SPY";
     let newsItems = (data && data.news && data.news.length > 0) ? data.news : null;
 

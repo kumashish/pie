@@ -882,7 +882,6 @@ body {
   }
 }
 
-/* Stock News & Sentiment Side Tab Drawer */
 /* Native News & Sentiment Panel */
 .news-dashboard-section {
   background: var(--bg-card);
@@ -891,6 +890,12 @@ body {
   border-radius: 20px;
   padding: 24px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .news-dashboard-section {
+    display: none !important;
+  }
 }
 
 .news-dashboard-header {
