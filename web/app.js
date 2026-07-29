@@ -518,11 +518,13 @@ document.addEventListener("DOMContentLoaded", () => {
     "SOXX","SMH","ARKK","GLD","SLV","TLT","HYG","LQD",
     "GDX","GDXJ","LABU","SOXL","TQQQ","SPXL","UVXY","VXX",
     "EEM","EFA","FXI","EWJ",
-    "^NSEI","^NSEBANK","^NSEMDCP50","NIFTY_FIN_SERVICE.NS","^BSESN",
+    "^NSEI","^NSEBANK","NIFTY_FIN_SERVICE.NS","^BSESN",
   ]);
 
   function getLiveTradeCategory(symbol) {
     const sym = (symbol || "").trim().toUpperCase();
+    const _CASH_OVERRIDES = new Set(["^NSEMDCP50"]);
+    if (_CASH_OVERRIDES.has(sym)) return "cash";
     if (_OPTIONS_ETFS.has(sym)) return "options";
     if (sym.startsWith("^")) return "options";
     return "cash";

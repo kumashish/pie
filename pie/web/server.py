@@ -26,7 +26,7 @@ def _format_strike(strike: float) -> str:
 
 # Indices and broad ETFs → options category (most liquid options market)
 _OPTIONS_INSTRUMENTS = {
-    "^NSEI", "^NSEBANK", "^NSEMDCP50", "NIFTY_FIN_SERVICE.NS", "^BSESN",
+    "^NSEI", "^NSEBANK", "NIFTY_FIN_SERVICE.NS", "^BSESN",
     "SPY", "QQQ", "IWM", "DIA", "VTI", "VOO",
     "XLF", "XLE", "XLK", "XLV", "XLI", "XLY", "XLP", "XLB", "XLU", "XLRE",
     "SOXX", "SMH", "ARKK", "GLD", "SLV", "TLT", "HYG", "LQD",
@@ -38,6 +38,10 @@ _OPTIONS_INSTRUMENTS = {
 def _get_trade_category(symbol: str) -> str:
     """Classify instrument as 'options' (indices/ETFs) or 'cash' (individual stocks)."""
     sym = symbol.strip().upper()
+    # Explicit cash overrides first
+    _CASH_OVERRIDES = {"^NSEMDCP50"}
+    if sym in _CASH_OVERRIDES:
+        return "cash"
     if sym in _OPTIONS_INSTRUMENTS:
         return "options"
     # Caret symbols are always indices → options
