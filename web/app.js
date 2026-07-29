@@ -277,6 +277,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const topTradesGrid = document.getElementById("top-trades-grid");
 
   let currentMarket = "us";
+
+  // Cache version: bump this whenever the fit_score scale or data format changes
+  const LEADERBOARD_CACHE_VERSION = "v3"; // 0-100 scale
+  if (localStorage.getItem("pie_leaderboard_cache_v") !== LEADERBOARD_CACHE_VERSION) {
+    localStorage.removeItem("pie_top5_us");
+    localStorage.removeItem("pie_top5_india");
+    localStorage.setItem("pie_leaderboard_cache_v", LEADERBOARD_CACHE_VERSION);
+  }
+
   let top5US = JSON.parse(localStorage.getItem("pie_top5_us") || "[]");
   let top5India = JSON.parse(localStorage.getItem("pie_top5_india") || "[]");
   let isFolded = false;
