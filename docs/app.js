@@ -279,6 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentMarket = "us";
   let top5US = JSON.parse(localStorage.getItem("pie_top5_us") || "[]");
   let top5India = JSON.parse(localStorage.getItem("pie_top5_india") || "[]");
+  let isFolded = false;
 
   if (tabUS && tabIndia) {
     tabUS.addEventListener("click", () => {
@@ -582,6 +583,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newsFoldText = document.getElementById("news-fold-text");
   const newsArticlesList = document.getElementById("news-articles-list");
   const newsSymbolSubtitle = document.getElementById("news-symbol-subtitle");
+  const newsCountBadge = document.getElementById("news-count-badge");
 
   function toggleNewsPanel() {
     if (!newsDashboardSection) return;
