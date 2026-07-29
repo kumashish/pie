@@ -272,39 +272,62 @@ document.addEventListener("DOMContentLoaded", () => {
   const resRulesTbody = document.getElementById("res-rules-tbody");
 
   // Leaderboard DOM & State
-  const tabUS = document.getElementById("tab-us");
-  const tabIndia = document.getElementById("tab-india");
+  const tabOptions = document.getElementById("tab-options");
+  const tabCash = document.getElementById("tab-cash");
+  const pillAll = document.getElementById("pill-all");
+  const pillUS = document.getElementById("pill-us");
+  const pillIndia = document.getElementById("pill-india");
   const topTradesGrid = document.getElementById("top-trades-grid");
 
-  let currentMarket = "us";
+  let currentCategory = "options"; // "options" | "cash"
+  let currentMarketFilter = "all";  // "all" | "us" | "india"
 
   // Cache version: bump this whenever the fit_score scale or data format changes
-  const LEADERBOARD_CACHE_VERSION = "v3"; // 0-100 scale
+  const LEADERBOARD_CACHE_VERSION = "v4"; // options/cash split
   if (localStorage.getItem("pie_leaderboard_cache_v") !== LEADERBOARD_CACHE_VERSION) {
     localStorage.removeItem("pie_top5_us");
     localStorage.removeItem("pie_top5_india");
+    localStorage.removeItem("pie_options_us");
+    localStorage.removeItem("pie_options_india");
+    localStorage.removeItem("pie_cash_us");
+    localStorage.removeItem("pie_cash_india");
     localStorage.setItem("pie_leaderboard_cache_v", LEADERBOARD_CACHE_VERSION);
   }
 
-  let top5US = JSON.parse(localStorage.getItem("pie_top5_us") || "[]");
-  let top5India = JSON.parse(localStorage.getItem("pie_top5_india") || "[]");
+  let optionsUS    = JSON.parse(localStorage.getItem("pie_options_us")    || "[]");
+  let optionsIndia = JSON.parse(localStorage.getItem("pie_options_india") || "[]");
+  let cashUS       = JSON.parse(localStorage.getItem("pie_cash_us")       || "[]");
+  let cashIndia    = JSON.parse(localStorage.getItem("pie_cash_india")    || "[]");
   let isFolded = false;
 
-  if (tabUS && tabIndia) {
-    tabUS.addEventListener("click", () => {
-      currentMarket = "us";
-      tabUS.classList.add("active");
-      tabIndia.classList.remove("active");
+  // Category tabs
+  if (tabOptions && tabCash) {
+    tabOptions.addEventListener("click", () => {
+      currentCategory = "options";
+      tabOptions.classList.add("active");
+      tabCash.classList.remove("active");
       renderLeaderboard();
     });
-
-    tabIndia.addEventListener("click", () => {
-      currentMarket = "india";
-      tabIndia.classList.add("active");
-      tabUS.classList.remove("active");
+    tabCash.addEventListener("click", () => {
+      currentCategory = "cash";
+      tabCash.classList.add("active");
+      tabOptions.classList.remove("active");
       renderLeaderboard();
     });
   }
+
+  // Market filter pills
+  function setFilterPill(market) {
+    currentMarketFilter = market;
+    [pillAll, pillUS, pillIndia].forEach(p => p && p.classList.remove("active"));
+    if (market === "all" && pillAll) pillAll.classList.add("active");
+    if (market === "us" && pillUS) pillUS.classList.add("active");
+    if (market === "india" && pillIndia) pillIndia.classList.add("active");
+    renderLeaderboard();
+  }
+  if (pillAll)   pillAll.addEventListener("click",   () => setFilterPill("all"));
+  if (pillUS)    pillUS.addEventListener("click",    () => setFilterPill("us"));
+  if (pillIndia) pillIndia.addEventListener("click", () => setFilterPill("india"));
 
   // Foldable Leaderboard Toggle
   const leaderboardSection = document.getElementById("top-trades-section");
@@ -487,6 +510,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getCurrencySymbol(symbol) {
     return isIndianSymbol(symbol) ? "₹" : "$";
+  }
+
+  const _OPTIONS_ETFS = new Set([
+    "SPY","QQQ","IWM","DIA","VTI","VOO",
+    "XLF","XLE","XLK","XLV","XLI","XLY","XLP","XLB","XLU","XLRE",
+    "SOXX","SMH","ARKK","GLD","SLV","TLT","HYG","LQD",
+    "GDX","GDXJ","LABU","SOXL","TQQQ","SPXL","UVXY","VXX",
+    "EEM","EFA","FXI","EWJ",
+    "^NSEI","^NSEBANK","^NSEMDCP50","NIFTY_FIN_SERVICE.NS","^BSESN",
+  ]);
+
+  function getLiveTradeCategory(symbol) {
+    const sym = (symbol || "").trim().toUpperCase();
+    if (_OPTIONS_ETFS.has(sym)) return "options";
+    if (sym.startsWith("^")) return "options";
+    return "cash";
   }
 
   function renderResults(data, shouldScroll = true) {
@@ -674,44 +713,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function initLeaderboardFromIndex() {
     try {
-      const resp = await fetch(getStaticDataPath("data/index.json?v=20260727_02"));
+      const resp = await fetch(getStaticDataPath("data/index.json?v=20260730_01"));
       if (resp.ok) {
         const indexList = await resp.json();
-        top5US = [];
-        top5India = [];
+        optionsUS = []; optionsIndia = []; cashUS = []; cashIndia = [];
         for (const item of indexList) {
           const isIndia = isIndianSymbol(item.symbol);
-          const targetList = isIndia ? top5India : top5US;
-          targetList.push({
+          const isCash = (item.trade_category === "cash");
+          const entry = {
             symbol: item.symbol,
             last_price: item.last_price,
             fit_score: item.fit_score,
             regime_display: item.regime_display,
             strategy_display: item.strategy_display,
             trade_profile: item.trade_profile || "Defined Risk | 30-45 DTE",
+            trade_category: item.trade_category || "options",
+            market: isIndia ? "india" : "us",
             as_of: item.as_of
-          });
+          };
+          if (isCash) {
+            (isIndia ? cashIndia : cashUS).push(entry);
+          } else {
+            (isIndia ? optionsIndia : optionsUS).push(entry);
+          }
         }
 
-        top5US.sort((a, b) => b.fit_score - a.fit_score);
-        top5India.sort((a, b) => b.fit_score - a.fit_score);
-        top5US = top5US.slice(0, 4);
-        top5India = top5India.slice(0, 4);
+        const sortAndSlice = list => list.sort((a, b) => b.fit_score - a.fit_score).slice(0, 6);
+        optionsUS    = sortAndSlice(optionsUS);
+        optionsIndia = sortAndSlice(optionsIndia);
+        cashUS       = sortAndSlice(cashUS);
+        cashIndia    = sortAndSlice(cashIndia);
 
-        localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
-        localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
+        localStorage.setItem("pie_options_us",    JSON.stringify(optionsUS));
+        localStorage.setItem("pie_options_india", JSON.stringify(optionsIndia));
+        localStorage.setItem("pie_cash_us",       JSON.stringify(cashUS));
+        localStorage.setItem("pie_cash_india",    JSON.stringify(cashIndia));
       }
     } catch (e) {
-      // Fallback
+      // Fallback to cached data
     }
     renderLeaderboard();
   }
 
   function updateLeaderboard(data) {
     const isIndia = isIndianSymbol(data.symbol);
-    const targetList = isIndia ? top5India : top5US;
+    const isCash = (data.trade_category === "cash") ||
+      (data.strategy_type && (data.strategy_type === "cash_swing_long" || data.strategy_type === "cash_swing_short"));
+    const targetList = isCash
+      ? (isIndia ? cashIndia : cashUS)
+      : (isIndia ? optionsIndia : optionsUS);
 
-    const existingIdx = targetList.findIndex(t => t.symbol === data.symbol);
     const newEntry = {
       symbol: data.symbol,
       last_price: data.last_price,
@@ -719,27 +770,24 @@ document.addEventListener("DOMContentLoaded", () => {
       regime_display: data.regime_display,
       strategy_display: data.strategy_display,
       trade_profile: data.trade_profile,
+      trade_category: isCash ? "cash" : "options",
+      market: isIndia ? "india" : "us",
       as_of: data.as_of
     };
 
+    const existingIdx = targetList.findIndex(t => t.symbol === data.symbol);
     if (existingIdx !== -1) {
-      if (data.fit_score >= targetList[existingIdx].fit_score) {
-        targetList[existingIdx] = newEntry;
-      }
+      if (data.fit_score >= targetList[existingIdx].fit_score) targetList[existingIdx] = newEntry;
     } else {
-      if (targetList.length < 4 || data.fit_score > targetList[targetList.length - 1].fit_score) {
-        targetList.push(newEntry);
-      }
+      targetList.push(newEntry);
     }
-
     targetList.sort((a, b) => b.fit_score - a.fit_score);
-    if (isIndia) {
-      top5India = targetList.slice(0, 4);
-      localStorage.setItem("pie_top5_india", JSON.stringify(top5India));
-    } else {
-      top5US = targetList.slice(0, 4);
-      localStorage.setItem("pie_top5_us", JSON.stringify(top5US));
-    }
+    const trimmed = targetList.slice(0, 6);
+
+    if (isCash && isIndia)    { cashIndia    = trimmed; localStorage.setItem("pie_cash_india",    JSON.stringify(trimmed)); }
+    else if (isCash)          { cashUS       = trimmed; localStorage.setItem("pie_cash_us",       JSON.stringify(trimmed)); }
+    else if (isIndia)         { optionsIndia = trimmed; localStorage.setItem("pie_options_india", JSON.stringify(trimmed)); }
+    else                      { optionsUS    = trimmed; localStorage.setItem("pie_options_us",    JSON.stringify(trimmed)); }
 
     renderLeaderboard();
   }
@@ -747,20 +795,37 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderLeaderboard() {
     if (!topTradesGrid) return;
 
-    const targetList = currentMarket === "india" ? top5India : top5US;
-    if (targetList.length === 0) {
-      topTradesGrid.innerHTML = `<p style="color: #94a3b8; font-size: 13px;">No high-conviction trades calculated yet for ${currentMarket.toUpperCase()} market.</p>`;
+    // Pick the right list(s) based on category + market filter
+    let list = [];
+    const isOptions = (currentCategory === "options");
+    if (currentMarketFilter === "all") {
+      list = isOptions
+        ? [...optionsUS, ...optionsIndia]
+        : [...cashUS, ...cashIndia];
+    } else if (currentMarketFilter === "us") {
+      list = isOptions ? optionsUS : cashUS;
+    } else {
+      list = isOptions ? optionsIndia : cashIndia;
+    }
+
+    list = list.sort((a, b) => b.fit_score - a.fit_score).slice(0, 4);
+
+    if (list.length === 0) {
+      const catLabel = isOptions ? "Options" : "Cash/Equity";
+      const mktLabel = currentMarketFilter === "all" ? "" : ` (${currentMarketFilter.toUpperCase()})`;
+      topTradesGrid.innerHTML = `<p style="color: #94a3b8; font-size: 13px;">No ${catLabel} signals${mktLabel} yet — data loads shortly.</p>`;
       return;
     }
 
-    topTradesGrid.innerHTML = targetList.map((item, idx) => {
+    topTradesGrid.innerHTML = list.map((item, idx) => {
       const currency = getCurrencySymbol(item.symbol);
+      const flag = (item.market === "india") ? "🇮🇳" : "🇺🇸";
       return `
         <div class="top-card">
           <span class="top-card-rank">#${idx + 1}</span>
           <div>
             <div class="top-card-header">
-              <span class="top-card-symbol">${item.symbol}</span>
+              <span class="top-card-symbol">${flag} ${item.symbol}</span>
               <span class="top-card-price">${currency}${item.last_price.toLocaleString()}</span>
             </div>
             <div class="top-card-score">
@@ -954,6 +1019,7 @@ document.addEventListener("DOMContentLoaded", () => {
       confidence_percentage: Math.round(fitScore),
       vix: 15.2,
       strategy_display: strategyDisplay,
+      trade_category: getLiveTradeCategory(symbol),
       trade_profile: tradeProfile,
       indicators: {
         "EMA20": ema20.toFixed(2),

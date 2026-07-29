@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260728_01">
+  <link rel="stylesheet" href="styles.css?v=20260728_04">
 </head>
 <body>
   <div class="app-container">
@@ -77,8 +77,13 @@
 
       <div id="leaderboard-body" class="leaderboard-body">
         <div class="market-tabs">
-          <button class="market-tab active" id="tab-us" data-market="us">🇺🇸 U.S. Markets (Top 4)</button>
-          <button class="market-tab" id="tab-india" data-market="india">🇮🇳 Indian Markets (Top 4)</button>
+          <button class="market-tab active" id="tab-options" data-category="options">📊 Options Strategies</button>
+          <button class="market-tab" id="tab-cash" data-category="cash">💵 Cash / Equity</button>
+        </div>
+        <div class="market-filter-pills">
+          <button class="filter-pill active" id="pill-all" data-market="all">🌐 All</button>
+          <button class="filter-pill" id="pill-us" data-market="us">🇺🇸 U.S.</button>
+          <button class="filter-pill" id="pill-india" data-market="india">🇮🇳 India</button>
         </div>
 
         <div id="top-trades-grid" class="top-trades-grid">
@@ -254,6 +259,6 @@
     </footer>
   </div>
 
-  <script src="app.js?v=20260730_02"></script>
+  <script src="app.js?v=20260730_03"></script>
 </body>
 </html>

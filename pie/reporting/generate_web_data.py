@@ -147,6 +147,7 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
                 "fit_score": data["fit_score"],
                 "strategy_display": data["strategy_display"],
                 "trade_profile": data["trade_profile"],
+                "trade_category": data.get("trade_category", "options"),
                 "as_of": data["as_of"],
             })
         except Exception as e:

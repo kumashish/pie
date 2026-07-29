@@ -24,6 +24,33 @@ def _format_strike(strike: float) -> str:
     return f"{int(strike)}" if strike.is_integer() else f"{strike:.1f}"
 
 
+# Indices and broad ETFs → options category (most liquid options market)
+_OPTIONS_INSTRUMENTS = {
+    "^NSEI", "^NSEBANK", "^NSEMDCP50", "NIFTY_FIN_SERVICE.NS", "^BSESN",
+    "SPY", "QQQ", "IWM", "DIA", "VTI", "VOO",
+    "XLF", "XLE", "XLK", "XLV", "XLI", "XLY", "XLP", "XLB", "XLU", "XLRE",
+    "SOXX", "SMH", "ARKK", "GLD", "SLV", "TLT", "HYG", "LQD",
+    "GDX", "GDXJ", "LABU", "SOXL", "TQQQ", "SPXL", "UVXY", "VXX",
+    "EEM", "EFA", "FXI", "EWJ",
+}
+
+
+def _get_trade_category(symbol: str) -> str:
+    """Classify instrument as 'options' (indices/ETFs) or 'cash' (individual stocks)."""
+    sym = symbol.strip().upper()
+    if sym in _OPTIONS_INSTRUMENTS:
+        return "options"
+    # Caret symbols are always indices → options
+    if sym.startswith("^"):
+        return "options"
+    # Individual stocks (NSE/BSE) → cash
+    if sym.endswith(".NS") or sym.endswith(".BO"):
+        return "cash"
+    # US individual stocks (single-word ticker, not in options list) → cash
+    # Short tickers that are clearly ETFs stay as options
+    return "cash"
+
+
 def analyze_symbol(symbol: str) -> dict[str, Any]:
     """Execute complete end-to-end market analysis and option trade structuring for a symbol."""
     sym_upper = symbol.strip().upper()
@@ -130,6 +157,7 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         "strategy_type": recommendation.strategy.value,
         "strategy_display": recommendation.strategy.value.replace("_", " ").title(),
         "trade_profile": get_trade_profile(recommendation.strategy.value),
+        "trade_category": _get_trade_category(sym_upper),
         "recommendation_reason": recommendation.rationale,
         "estimated_trade": {
             "legs": legs_data,
