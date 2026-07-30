@@ -1046,3 +1046,102 @@ body {
   color: #ffc107;
   border: 1px solid rgba(255, 193, 7, 0.3);
 }
+
+/* ── News Sidebar Layout ─────────────────────────────────────────────────── */
+.main-with-sidebar {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.main-with-sidebar .results-container {
+  flex: 1 1 0;
+  min-width: 0;
+  display: block !important;
+  padding: 0;
+  max-width: none;
+  margin: 0;
+}
+
+.news-sidebar {
+  flex: 0 0 300px;
+  width: 300px;
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 16px;
+  padding: 16px 14px;
+  backdrop-filter: blur(12px);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+}
+
+.news-sidebar-header {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.news-sidebar-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 5px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-sidebar-list .news-article-card {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.2s;
+}
+
+.news-sidebar-list .news-article-card:hover {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.news-sidebar-list .news-article-card .news-headline {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: #cbd5e1;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-sidebar-list .news-article-card .news-meta {
+  font-size: 10px;
+  color: #64748b;
+}
+
+@media (max-width: 1100px) {
+  .main-with-sidebar {
+    flex-direction: column;
+    padding: 0 12px 32px;
+  }
+  .news-sidebar {
+    position: static;
+    width: 100%;
+    flex: none;
+    max-height: 380px;
+  }
+}

@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const errorBanner = document.getElementById("error-banner");
   const errorMessage = document.getElementById("error-message");
   const resultsContainer = document.getElementById("results-container");
+  const mainWithSidebar = document.getElementById("main-with-sidebar");
 
   const searchAutocomplete = document.getElementById("search-autocomplete");
   let searchDebounceTimer = null;
@@ -532,7 +533,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderResults(data, shouldScroll = true) {
     errorBanner.style.display = "none";
-    resultsContainer.style.display = "block";
+    if (mainWithSidebar) mainWithSidebar.style.display = "flex";
+    else resultsContainer.style.display = "block";
 
     // Update Top 5 Leaderboard & News Drawer
     updateLeaderboard(data);
@@ -655,10 +657,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderNews(data) {
     if (!newsArticlesList) return;
-    if (window.innerWidth <= 768) {
-      if (newsDashboardSection) newsDashboardSection.style.display = "none";
-      return;
-    }
     const sym = (data && data.symbol) ? data.symbol : "SPY";
     let newsItems = (data && data.news && data.news.length > 0) ? data.news : null;
 
@@ -686,12 +684,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (newsCountBadge) newsCountBadge.textContent = newsItems.length;
-    if (newsSymbolSubtitle) newsSymbolSubtitle.textContent = `${sym} Market Headlines & Sentiment`;
+    if (newsSymbolSubtitle) newsSymbolSubtitle.textContent = `${sym} Headlines`;
 
     newsArticlesList.innerHTML = newsItems.map(item => `
       <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="news-article-card">
-        <div class="news-article-title">${item.title}</div>
-        <div class="news-article-meta">
+        <div class="news-headline">${item.title}</div>
+        <div class="news-meta">
           <span>${item.publisher}</span>
           <span class="sentiment-pill sentiment-${item.sentiment}">${item.sentiment.toUpperCase()}</span>
         </div>
@@ -855,7 +853,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showLoading() {
     loadingState.style.display = "block";
-    resultsContainer.style.display = "none";
+    if (mainWithSidebar) mainWithSidebar.style.display = "none";
+    else resultsContainer.style.display = "none";
     errorBanner.style.display = "none";
     analyzeBtn.disabled = true;
 
@@ -877,7 +876,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function showError(msg) {
     errorMessage.textContent = msg;
     errorBanner.style.display = "flex";
-    resultsContainer.style.display = "none";
+    if (mainWithSidebar) mainWithSidebar.style.display = "none";
+    else resultsContainer.style.display = "none";
   }
 
   async function fetchWithTimeout(url, timeoutMs = 2500) {

@@ -92,25 +92,6 @@
       </div>
     </section>
 
-    <!-- Real-Time Stock News & Sentiment Panel (Native Dashboard Section) -->
-    <section class="news-dashboard-section" id="news-dashboard-section">
-      <div class="news-dashboard-header" id="news-toggle-btn">
-        <div class="news-title-area">
-          <span class="section-badge">📰 Real-Time Stock News & Sentiment</span>
-          <h2 class="section-title" id="news-symbol-subtitle">SPY Market Headlines & Sentiment</h2>
-        </div>
-        <button class="fold-toggle-btn" id="news-fold-btn" aria-label="Toggle News Panel">
-          <span id="news-fold-icon">▼</span>
-          <span id="news-fold-text">Collapse</span>
-        </button>
-      </div>
-
-      <div id="news-dashboard-body" class="news-dashboard-body">
-        <div id="news-articles-list" class="news-articles-grid">
-          <!-- Rendered dynamically by app.js -->
-        </div>
-      </div>
-    </section>
 
     <!-- Loading State -->
     <div id="loading-state" class="loading-state" style="display: none;">
@@ -124,134 +105,150 @@
       <span id="error-message">Failed to load market data for ticker.</span>
     </div>
 
-    <!-- Results Container -->
-    <main id="results-container" class="results-container" style="display: none;">
-      <div class="analysis-hero-grid">
-        <!-- Hero Header: Stock Overview & Score -->
-        <section class="hero-overview">
-          <div class="overview-header">
-            <div>
-              <span class="symbol-badge" id="res-symbol">SPY</span>
-              <h1 class="stock-price" id="res-price">$738.93</h1>
-              <p class="as-of-time" id="res-as-of">As of Live Market Feed</p>
+    <!-- Main layout: results + news sidebar -->
+    <div class="main-with-sidebar" id="main-with-sidebar" style="display:none;">
+
+      <!-- Results Container -->
+      <main id="results-container" class="results-container">
+        <div class="analysis-hero-grid">
+          <!-- Hero Header: Stock Overview & Score -->
+          <section class="hero-overview">
+            <div class="overview-header">
+              <div>
+                <span class="symbol-badge" id="res-symbol">SPY</span>
+                <h1 class="stock-price" id="res-price">$738.93</h1>
+                <p class="as-of-time" id="res-as-of">As of Live Market Feed</p>
+              </div>
+
+              <div class="score-card">
+                <div class="score-ring">
+                  <span class="score-val" id="res-fit-score">8.5</span>
+                  <span class="score-denom">/ 10</span>
+                </div>
+                <div class="score-meta">
+                  <div class="regime-tag" id="res-regime">🟢 Strong Bull</div>
+                  <div class="confidence-tag" id="res-confidence">A</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Primary Recommended Option Trade Card -->
+          <section class="trade-recommendation-card">
+            <div class="card-header">
+              <div class="header-title">
+                <span class="recommend-badge">RECOMMENDED OPTION TRADE</span>
+                <h2 id="res-strategy-name">Credit Put Spread</h2>
+              </div>
+              <div class="trade-profile-pill" id="res-trade-profile">Credit | 30-45 DTE | 15-20 Delta</div>
             </div>
 
-            <div class="score-card">
-              <div class="score-ring">
-                <span class="score-val" id="res-fit-score">8.5</span>
-                <span class="score-denom">/ 10</span>
+            <div class="trade-legs-container" id="res-legs-container">
+              <!-- Dynamic Legs HTML -->
+            </div>
+
+            <div class="trade-metrics-row">
+              <div class="metric-box">
+                <span class="metric-lbl">Max Return / Risk</span>
+                <span class="metric-val highlight" id="res-max-gain">Defined</span>
               </div>
-              <div class="score-meta">
-                <div class="regime-tag" id="res-regime">🟢 Strong Bull</div>
-                <div class="confidence-tag" id="res-confidence">A</div>
+              <div class="metric-box">
+                <span class="metric-lbl">Implied Volatility (VIX)</span>
+                <span class="metric-val" id="res-vix">15.0</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-lbl">Target Expiration Window</span>
+                <span class="metric-val" id="res-expiration-window">30-45 DTE</span>
               </div>
             </div>
+          </section>
+        </div>
+
+        <!-- Technical Indicator Grid & Rules Breakdown -->
+        <div class="grid-two-col">
+          <!-- Technical Indicators Card -->
+          <div class="panel-card">
+            <div class="panel-header">
+              <h3>📊 Market Indicators</h3>
+            </div>
+            <div class="indicator-grid" id="res-indicators-grid">
+              <!-- Dynamic Indicators HTML -->
+            </div>
+          </div>
+
+          <!-- Portfolio Manager Exit & Risk Rules Card -->
+          <div class="panel-card">
+            <div class="panel-header">
+              <h3>🛡️ Position Exit & Risk Rules</h3>
+            </div>
+            <div class="exit-rules-list">
+              <div class="exit-rule-item profit">
+                <span class="rule-icon">🎯</span>
+                <div>
+                  <strong>50% Take Profit Rule</strong>
+                  <p>Close trade when 50% to 75% of maximum profit is realized</p>
+                </div>
+              </div>
+              <div class="exit-rule-item review">
+                <span class="rule-icon">🕒</span>
+                <div>
+                  <strong>21 DTE Review Window</strong>
+                  <p>Evaluate theta decay & delta expansion. Manage if delta exceeds 0.30</p>
+                </div>
+              </div>
+              <div class="exit-rule-item exit">
+                <span class="rule-icon">🔴</span>
+                <div>
+                  <strong>14 DTE Mandatory Gamma Exit Gate</strong>
+                  <p>Mandatory exit or roll at 14 DTE to eliminate gamma acceleration risk</p>
+                </div>
+              </div>
+              <div class="exit-rule-item stop">
+                <span class="rule-icon">⚠️</span>
+                <div>
+                  <strong>100% Max Stop Loss Limit</strong>
+                  <p>Close immediately if net loss reaches 1x net premium received</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantitative Decision Tree Rules Checklist -->
+        <section class="panel-card full-width">
+          <div class="panel-header">
+            <h3>🌲 Quantitative Trend Rules Checklist (8-Rule Matrix)</h3>
+          </div>
+          <div class="rules-table-container">
+            <table class="rules-table">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>Trend Rule</th>
+                  <th>Weighted Score</th>
+                  <th>Quantitative Explanation</th>
+                </tr>
+              </thead>
+              <tbody id="res-rules-tbody">
+                <!-- Dynamic Rules HTML -->
+              </tbody>
+            </table>
           </div>
         </section>
+      </main>
 
-        <!-- Primary Recommended Option Trade Card -->
-        <section class="trade-recommendation-card">
-          <div class="card-header">
-            <div class="header-title">
-              <span class="recommend-badge">RECOMMENDED OPTION TRADE</span>
-              <h2 id="res-strategy-name">Credit Put Spread</h2>
-            </div>
-            <div class="trade-profile-pill" id="res-trade-profile">Credit | 30-45 DTE | 15-20 Delta</div>
-          </div>
-
-          <div class="trade-legs-container" id="res-legs-container">
-            <!-- Dynamic Legs HTML -->
-          </div>
-
-          <div class="trade-metrics-row">
-            <div class="metric-box">
-              <span class="metric-lbl">Max Return / Risk</span>
-              <span class="metric-val highlight" id="res-max-gain">Defined</span>
-            </div>
-            <div class="metric-box">
-              <span class="metric-lbl">Implied Volatility (VIX)</span>
-              <span class="metric-val" id="res-vix">15.0</span>
-            </div>
-            <div class="metric-box">
-              <span class="metric-lbl">Target Expiration Window</span>
-              <span class="metric-val" id="res-expiration-window">30-45 DTE</span>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- Technical Indicator Grid & Rules Breakdown -->
-      <div class="grid-two-col">
-        <!-- Technical Indicators Card -->
-        <div class="panel-card">
-          <div class="panel-header">
-            <h3>📊 Market Indicators</h3>
-          </div>
-          <div class="indicator-grid" id="res-indicators-grid">
-            <!-- Dynamic Indicators HTML -->
-          </div>
+      <!-- News Sidebar -->
+      <aside class="news-sidebar" id="news-sidebar">
+        <div class="news-sidebar-header">
+          <span class="section-badge">📰 News & Sentiment</span>
+          <h3 class="news-sidebar-title" id="news-symbol-subtitle">Headlines</h3>
         </div>
+        <div id="news-articles-list" class="news-sidebar-list">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </aside>
 
-        <!-- Portfolio Manager Exit & Risk Rules Card -->
-        <div class="panel-card">
-          <div class="panel-header">
-            <h3>🛡️ Position Exit & Risk Rules</h3>
-          </div>
-          <div class="exit-rules-list">
-            <div class="exit-rule-item profit">
-              <span class="rule-icon">🎯</span>
-              <div>
-                <strong>50% Take Profit Rule</strong>
-                <p>Close trade when 50% to 75% of maximum profit is realized</p>
-              </div>
-            </div>
-            <div class="exit-rule-item review">
-              <span class="rule-icon">🕒</span>
-              <div>
-                <strong>21 DTE Review Window</strong>
-                <p>Evaluate theta decay & delta expansion. Manage if delta exceeds 0.30</p>
-              </div>
-            </div>
-            <div class="exit-rule-item exit">
-              <span class="rule-icon">🔴</span>
-              <div>
-                <strong>14 DTE Mandatory Gamma Exit Gate</strong>
-                <p>Mandatory exit or roll at 14 DTE to eliminate gamma acceleration risk</p>
-              </div>
-            </div>
-            <div class="exit-rule-item stop">
-              <span class="rule-icon">⚠️</span>
-              <div>
-                <strong>100% Max Stop Loss Limit</strong>
-                <p>Close immediately if net loss reaches 1x net premium received</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Quantitative Decision Tree Rules Checklist -->
-      <section class="panel-card full-width">
-        <div class="panel-header">
-          <h3>🌲 Quantitative Trend Rules Checklist (8-Rule Matrix)</h3>
-        </div>
-        <div class="rules-table-container">
-          <table class="rules-table">
-            <thead>
-              <tr>
-                <th>Status</th>
-                <th>Trend Rule</th>
-                <th>Weighted Score</th>
-                <th>Quantitative Explanation</th>
-              </tr>
-            </thead>
-            <tbody id="res-rules-tbody">
-              <!-- Dynamic Rules HTML -->
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </main>
+    </div><!-- /main-with-sidebar -->
 
     <!-- Footer -->
     <footer class="footer">
