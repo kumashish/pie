@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 22:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy SPY 18-Sep-2026 740 Call<br> Sell SPY 18-Sep-2026 780 Call | Active (Jul 28, 10:08 IST) |
-| QQQ       | 22:27 IST | 🟡 Long Butterfly  | 5.5/10    | Buy QQQ 18-Sep-2026 660 Call<br> Sell 2x QQQ 18-Sep-2026 680 Call<br> Buy QQQ 18-Sep-2026 705 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 20:10) |
+| SPY       | 00:23 IST | 🟢 Call Debit Spread | 5.9/10    | Buy SPY 18-Sep-2026 740 Call<br> Sell SPY 18-Sep-2026 775 Call | Active (Jul 28, 10:08 IST) |
+| QQQ       | 00:23 IST | 🟡 Long Butterfly  | 5.6/10    | Buy QQQ 18-Sep-2026 660 Call<br> Sell 2x QQQ 18-Sep-2026 680 Call<br> Buy QQQ 18-Sep-2026 705 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 20:10) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -12,7 +12,7 @@
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | BANKNIFTY | 15:36 IST | 🟢 Call Debit Spread | 5.9/10    | Buy BANKNIFTY 29-Sep-2026 57100 Call<br> Sell BANKNIFTY 29-Sep-2026 59200 Call | Active (Jul 28, 12:57 IST) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
-| NIFTY 50  | 15:36 IST | 🟡 Long Butterfly  | 5.6/10    | Buy NIFTY 29-Sep-2026 23700 Call<br> Sell 2x NIFTY 29-Sep-2026 24300 Call<br> Buy NIFTY 29-Sep-2026 24900 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 12:53) |
+| NIFTY 50  | 15:36 IST | 🟡 Long Butterfly  | 5.6/10    | Buy NIFTY 29-Sep-2026 23700 Call<br> Sell 2x NIFTY 29-Sep-2026 24300 Call<br> Buy NIFTY 29-Sep-2026 24900 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 12:53) |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
