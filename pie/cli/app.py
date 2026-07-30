@@ -226,7 +226,7 @@ def analyze_market(
 
     # Dispatch real-time Telegram alert if signal is NEW or an EXIT/REVIEW trigger
     if signal_label == "New" or should_exit:
-        NotificationDispatcher().dispatch_all(market_row)
+        NotificationDispatcher().dispatch_high_conviction_alert(market_row)
     table = Table(title=f"Market Snapshot: {symbol}")
     table.add_column("Indicator")
     table.add_column("Value", justify="right")

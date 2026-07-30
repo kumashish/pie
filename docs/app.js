@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { symbol: "^NSEI", name: "Nifty 50 Index", market: "IN" },
     { symbol: "^NSEBANK", name: "Bank Nifty Index", market: "IN" },
     { symbol: "NIFTY_FIN_SERVICE.NS", name: "Fin Nifty Index", market: "IN" },
-    { symbol: "^NSEMDCP50", name: "Midcap Nifty Index", market: "IN" },
+    // { symbol: "^NSEMDCP50", name: "Midcap Nifty Index", market: "IN" },
     { symbol: "^BSESN", name: "BSE Sensex Index", market: "IN" },
     { symbol: "NVDA", name: "NVIDIA Corporation", market: "US" },
     { symbol: "AAPL", name: "Apple Inc.", market: "US" },
@@ -1142,11 +1142,40 @@ document.addEventListener("DOMContentLoaded", () => {
     return 1;
   }
 
-  function calcExpirationDate() {
-    const d = new Date();
-    d.setDate(d.getDate() + 45);
+  function calcExpirationDate(symbol) {
+  // Helper to detect NIFTY index (weekly expiry) – includes ^NSEI or symbols containing 'NIFTY'
+  function isNiftyIdx(sym) {
+    const s = sym.toUpperCase();
+    return s === '^NSEI' || s.includes('NIFTY');
+  }
+
+  const now = new Date();
+  // Weekly expiry for NIFTY index (Friday of next week)
+  if (isIndianSymbol(symbol) && !isNiftyIdx(symbol)) {
+    // Monthly expiry – pick the 3rd Friday of the next month
+    const firstOfNextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+    let fridayCount = 0;
+    let d = new Date(firstOfNextMonth);
+    while (fridayCount < 3) {
+      if (d.getDay() === 5) { // Friday
+        fridayCount++;
+      }
+      if (fridayCount < 3) {
+        d.setDate(d.getDate() + 1);
+      }
+    }
     return d;
   }
+
+  // Default weekly expiry (next Friday) for US symbols or NIFTY
+  const expiration = new Date();
+  expiration.setDate(expiration.getDate() + 7);
+  // Move to the next Friday
+  while (expiration.getDay() !== 5) {
+    expiration.setDate(expiration.getDate() + 1);
+  }
+  return expiration;
+}
 
   function formatDate(d) {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

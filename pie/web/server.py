@@ -55,6 +55,57 @@ def _get_trade_category(symbol: str) -> str:
     return "cash"
 
 
+def _compute_cash_trade_setup(
+    last_price: float,
+    indicators: dict,
+    regime: str,
+) -> dict:
+    """Compute entry/stop/target levels for cash equity trades using ATR14 + EMA20."""
+    atr_key  = next((k for k in indicators if "ATR" in k.upper()), None)
+    ema20_key = next((k for k in indicators if k.upper() in ("EMA20", "EMA(20)")), None)
+    ema50_key = next((k for k in indicators if k.upper() in ("EMA50", "EMA(50)")), None)
+
+    atr  = float(indicators[atr_key].value)  if atr_key  and indicators[atr_key].value  else last_price * 0.015
+    ema20 = float(indicators[ema20_key].value) if ema20_key and indicators[ema20_key].value else last_price * 0.98
+    ema50 = float(indicators[ema50_key].value) if ema50_key and indicators[ema50_key].value else last_price * 0.95
+
+    is_bearish = regime in ("bear", "strong_bear")
+    entry = round(last_price, 2)
+
+    if is_bearish:
+        sl_atr  = round(entry + 1.5 * atr, 2)
+        sl_ema  = round(max(ema20, ema50) * 1.005, 2)
+        stop    = round(min(sl_atr, sl_ema), 2)
+        target1 = round(entry - 1.5 * atr, 2)
+        target2 = round(entry - 3.0 * atr, 2)
+        direction = "Short / Sell"
+    else:
+        sl_atr  = round(entry - 1.5 * atr, 2)
+        sl_ema  = round(min(ema20, ema50) * 0.995, 2)
+        stop    = round(max(sl_atr, sl_ema), 2)
+        target1 = round(entry + 1.5 * atr, 2)
+        target2 = round(entry + 3.0 * atr, 2)
+        direction = "Long / Buy"
+
+    risk   = round(abs(entry - stop), 2)
+    reward = round(abs(target2 - entry), 2)
+    rr     = round(reward / risk, 1) if risk > 0 else 2.0
+    atr_pct = atr / last_price
+    holding_days = 5 if atr_pct > 0.03 else (10 if atr_pct > 0.015 else 20)
+
+    return {
+        "direction": direction,
+        "entry": entry,
+        "stop_loss": stop,
+        "target_1": target1,
+        "target_2": target2,
+        "risk_per_share": risk,
+        "risk_reward": rr,
+        "atr14": round(atr, 2),
+        "holding_period_days": holding_days,
+    }
+
+
 def analyze_symbol(symbol: str) -> dict[str, Any]:
     """Execute complete end-to-end market analysis and option trade structuring for a symbol."""
     sym_upper = symbol.strip().upper()
@@ -163,6 +214,11 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         "trade_profile": get_trade_profile(recommendation.strategy.value),
         "trade_category": _get_trade_category(sym_upper),
         "recommendation_reason": recommendation.rationale,
+        "cash_trade_setup": _compute_cash_trade_setup(
+            float(snapshot.last_price),
+            indicators,
+            trend_analysis.regime.value,
+        ) if _get_trade_category(sym_upper) == "cash" else None,
         "estimated_trade": {
             "legs": legs_data,
             "max_gain": "Defined Risk / Reward",

@@ -43,6 +43,44 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
+      - name: Update NSE most active symbols
+        run: |
+          python - <<'PY'
+          import os, re, urllib.request, json
+          def fetch_active_symbols(output_path=None, limit=10):
+              url = "https://www.nseindia.com/market-data/most-active-underlying"
+              headers = {
+                  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+                  "Accept-Language": "en-US,en;q=0.9",
+              }
+              req = urllib.request.Request(url, headers=headers)
+              try:
+                  with urllib.request.urlopen(req, timeout=10) as resp:
+                      html = resp.read().decode("utf-8", errors="ignore")
+              except Exception as e:
+                  print(f"[Warning] Failed to fetch NSE active symbols: {e}")
+                  return []
+              candidates = re.findall(r">\\s*([A-Z]{2,5})\\s*</a>", html)
+              seen = set()
+              symbols = []
+              for sym in candidates:
+                  if sym not in seen:
+                      seen.add(sym)
+                      symbols.append(sym)
+                  if len(symbols) >= limit:
+                      break
+              symbols_ns = [f"{s}.NS" for s in symbols]
+              if not output_path:
+                  output_path = os.path.join(os.path.dirname(__file__), "..", "config", "market_symbols.txt")
+              os.makedirs(os.path.dirname(output_path), exist_ok=True)
+              with open(output_path, "w", encoding="utf-8") as f:
+                  f.write("\n".join(symbols_ns))
+              print(f"[Info] Wrote {len(symbols_ns)} active symbols to {output_path}")
+              return symbols_ns
+          if __name__ == "__main__":
+              fetch_active_symbols()
+          PY
+
       - name: Analyze market
         shell: bash
         run: |
@@ -102,6 +140,26 @@ jobs:
           if [ -n "$FAILED_SYMBOLS" ]; then
             echo "FAILED_SYMBOLS=$FAILED_SYMBOLS" >> "$GITHUB_ENV"
           fi
+
+      - name: Follow high‑conviction signals
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          path = os.path.join(os.path.dirname(__file__), '..', '..', 'pie', 'reporting', 'high_score_signals.json')
+          try:
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+          except FileNotFoundError:
+            data = []
+          open_symbols = [item['symbol'] for item in data if item.get('status') == 'open']
+          if not open_symbols:
+            print('No open high‑conviction alerts.')
+          else:
+            print('Following open high‑conviction alerts:', open_symbols)
+            for sym in open_symbols:
+                subprocess.run(['uv', 'run', 'pie', 'analyze-market', sym], check=False)
+          PY
 
       - name: Update README snapshot
         run: uv run pie readme update-readme-snapshot

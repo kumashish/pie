@@ -138,6 +138,8 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
             (docs_dir / f"{safe_name}.json").write_text(content, encoding="utf-8")
 
             # Add entry to master index
+            # Determine if this signal is a high‑score (fit_score >= 8)
+            is_high = data.get("fit_score", 0) >= 8
             summary_index.append({
                 "symbol": data["symbol"],
                 "file_key": safe_name,
@@ -148,8 +150,29 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
                 "strategy_display": data["strategy_display"],
                 "trade_profile": data["trade_profile"],
                 "trade_category": data.get("trade_category", "options"),
+                "cash_trade_setup": data.get("cash_trade_setup"),
                 "as_of": data["as_of"],
+                "is_high_score": is_high,
             })
+            # Update persistent high‑score list
+            if is_high:
+                import os, json
+                high_path = os.path.join(os.path.dirname(__file__), "high_score_signals.json")
+                try:
+                    with open(high_path, "r", encoding="utf-8") as f:
+                        high_list = json.load(f)
+                except FileNotFoundError:
+                    high_list = []
+                # Avoid duplicates by symbol
+                if not any(item["symbol"] == data["symbol"] for item in high_list):
+                    high_list.append({
+                        "symbol": data["symbol"],
+                        "fit_score": data["fit_score"],
+                        "first_seen": data["as_of"],
+                        "status": "open",
+                    })
+                    with open(high_path, "w", encoding="utf-8") as f:
+                        json.dump(high_list, f, indent=2)
         except Exception as e:
             print(f"[Warning] Failed to analyze {symbol}: {e}")
 
