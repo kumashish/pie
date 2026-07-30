@@ -34,6 +34,7 @@ class StrategyType(StrEnum):
     LEAPS = "leaps"
     CASH_SWING_LONG = "cash_swing_long"
     CASH_SWING_SHORT = "cash_swing_short"
+    TRADECRAFT_PUT = "tradecraft_put"
 
 
 class StrategyRecommendation(DomainModel):
@@ -247,7 +248,32 @@ def score_all_strategies(
         "Bullish trend with high spot price favors Collar protective put overlay.",
     )
 
-    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR}
+    # 14. TradeCraft Put: Sell 20-delta OTM Put after stock touches/bounces off 200 SMA
+    # Entry trigger: spot within 1.5×ATR of EMA200 with weekly bull alignment
+    _last_price_val = analysis.indicator_values.get("last_price")
+    ema200_touch_bonus = 0.0
+    if ema200 is not None and atr is not None and atr > 0:
+        _ref = _last_price_val if _last_price_val is not None else ema200
+        proximity_atr = abs(_ref - ema200) / atr
+        if proximity_atr <= 1.5:  # within 1.5×ATR of EMA200
+            ema200_touch_bonus = max(0.0, (1.5 - proximity_atr) / 1.5) * 40.0  # up to 40 pts
+    rsi_bounce_bonus = 10.0 if (rsi is not None and 38.0 <= rsi <= 55.0) else 0.0
+    rsi_collapse_penalty = 20.0 if (rsi is not None and rsi < 35.0) else 0.0
+    sma200_score = (
+        ema200_touch_bonus
+        + (iv_premium * 0.30)
+        + (weekly_bull_bonus * 2)
+        + rsi_bounce_bonus
+        + support_bonus
+        - rsi_collapse_penalty
+        - earnings_penalty
+    )
+    raw_scores[StrategyType.TRADECRAFT_PUT] = (
+        (sma200_score / 1.20) * confidence_mult,
+        "Stock touched 200 SMA support with weekly bull alignment — sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+    )
+
+    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT}
     bearish_types = {StrategyType.PUT_DEBIT_SPREAD, StrategyType.NAKED_CALL}
 
     results: dict[StrategyType, StrategyFitScore] = {}
@@ -306,7 +332,7 @@ def select_strategy(
     # Mean Reversion Wait Guardrail: Delay entry if momentum is overextended
     rsi = analysis.indicator_values.get("RSI(14)")
     synth_pcr = analysis.indicator_values.get("Synthetic PCR")
-    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR}
+    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT}
     bearish_types = {StrategyType.PUT_DEBIT_SPREAD, StrategyType.NAKED_CALL}
 
     pcr_str = f" [Synthetic PCR: {synth_pcr:.2f}]" if synth_pcr is not None else ""

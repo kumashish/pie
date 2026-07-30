@@ -39,6 +39,9 @@ STRATEGY_DTE_CONFIGS = {
 
     # LEAPS (1-2 Years)
     StrategyType.LEAPS: {"target": 540, "min": 365, "max": 730, "why": "Long-term directional exposure"},
+
+    # TradeCraft Put: 30-45 DTE monthly expiry
+    StrategyType.TRADECRAFT_PUT: {"target": 37, "min": 30, "max": 45, "why": "Optimal theta decay with 200 SMA bounce edge"},
 }
 
 TARGET_DAYS_TO_EXPIRY = 37
@@ -140,6 +143,9 @@ def estimate_trade(
     recommendation: StrategyRecommendation,
     vix_source: str,
     as_of: date | None = None,
+    atr14: float | None = None,
+    ema20: float | None = None,
+    ema50: float | None = None,
 ) -> EstimatedTrade | None:
     """Estimate a debit spread from live spot/VIX inputs, without option pricing."""
     if recommendation.strategy == StrategyType.NO_TRADE:
@@ -303,6 +309,16 @@ def estimate_trade(
             "Set trailing stop loss above EMA20 resistance level.",
         )
 
+    elif recommendation.strategy == StrategyType.TRADECRAFT_PUT:
+        # Sell 20-delta OTM put: strike at spot - 1×expected_move (approx 20-delta)
+        put_strike = _round_to_increment(spot_price - expected_move, increment)
+        legs = (TradeLeg(action="sell", right=OptionRight.PUT, strike=put_strike),)
+        exit_strategy = (
+            "TradeCraft Put: Close at 50% max profit (premium decay).",
+            "Exit immediately if spot closes more than 1×ATR below the 200 SMA (support breakdown).",
+            "Roll down and out if tested within 21 DTE.",
+        )
+
     else:  # StrategyType.CREDIT_SPREAD
         c_short = _round_to_increment(spot_price + expected_move * 0.5, increment)
         c_long = _round_to_increment(spot_price + expected_move * 1.0, increment)
@@ -342,6 +358,19 @@ def estimate_trade(
         else:
             stop_loss = round(spot_price * 1.02, 2)
             take_profit = round(atm_strike - width, 2)
+    elif recommendation.strategy in (StrategyType.CASH_SWING_LONG, StrategyType.CASH_SWING_SHORT):
+        # ATR14 + EMA-based stop/target (matches _compute_cash_trade_setup in server.py)
+        _atr = atr14 if atr14 and atr14 > 0 else spot_price * 0.015  # fallback: 1.5% of spot
+        _ema_low = min(ema20 or spot_price * 0.98, ema50 or spot_price * 0.95)
+        _ema_high = max(ema20 or spot_price * 0.98, ema50 or spot_price * 0.95)
+        roc_pct = 65.0
+        margin_req = round(_atr * 1.5, 2)
+        if recommendation.strategy == StrategyType.CASH_SWING_LONG:
+            stop_loss = round(max(spot_price - 1.5 * _atr, _ema_low * 0.995), 2)
+            take_profit = round(spot_price + 3.0 * _atr, 2)  # Target 2 (full ATR extension)
+        else:
+            stop_loss = round(min(spot_price + 1.5 * _atr, _ema_high * 1.005), 2)
+            take_profit = round(spot_price - 3.0 * _atr, 2)  # Target 2 (full ATR extension)
     else:
         roc_pct = 65.0
         margin_req = round(width, 2)
@@ -432,7 +461,12 @@ def _select_expiration(
             eligible, key=lambda expiration: abs((expiration - today).days - target_dte)
         )
     target = today + timedelta(days=target_dte)
-    return target + timedelta(days=(target_weekday - target.weekday()) % 7)
+    # Find the next monthly expiration after the target date
+    for exp in sorted(expirations):
+        if exp >= target:
+            return exp
+    # If none found (unlikely), return the earliest expiration in the next cycle
+    return expirations[0]
 
 
 def _third_friday(year: int, month: int) -> date:

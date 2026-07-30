@@ -96,6 +96,9 @@ Dynamically routes trades into 4 specialized regime engines:
    - **`Long Straddle` / `Butterfly`**: Triggered when Bollinger Bands squeeze (low ADX + narrow %B range).
 4. **📉 High-IV Theta Harvesting Engine**:
    - **`Jade Lizard` / `Iron Condor` / `Iron Butterfly`**: Triggered when IV Rank > 55% to collect Vega/Theta decay.
+5. **🎯 TradeCraft Put** *(proprietary)*:
+   - **`TradeCraft Put`**: Triggered when spot is within **1.5×ATR of the 200 SMA** with weekly bull alignment (EMA100 > EMA200) and RSI between 38–55 (bounce, not collapse). Sells a **~20-delta OTM put** at `spot − 1×expected_move`, collecting premium as the stock bounces off long-term structural support. Score is dominated by **EMA200 proximity bonus** (up to 40 pts) + IV premium + RSI bounce filter.
+
 
 ---
 
@@ -122,7 +125,48 @@ Optimizes option strike selection based on 25-Delta Put/Call IV Skew.
 
 ---
 
-### 5. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
+### 5. Cash Equity Swing Trading Engine (`pie/web/server.py → _compute_cash_trade_setup`)
+
+Cash Swing is a **directional equity trade** (no options) applied to individual stocks (`.NS`, `.BO`, US tickers). Target prices are computed using **ATR14** and **EMA20/EMA50** — not fixed percentages.
+
+#### 🟢 Cash Swing Long (Bullish regime)
+
+| Level | Formula | Rationale |
+| :--- | :--- | :--- |
+| **Entry** | `spot` | Current last price |
+| **Stop Loss** | `max(spot − 1.5×ATR14, min(EMA20, EMA50) × 0.995)` | Tightest of ATR-gate or EMA floor |
+| **Target 1** | `spot + 1.5 × ATR14` | First ATR extension — partial profit |
+| **Target 2** | `spot + 3.0 × ATR14` | Full ATR extension — full target |
+| **Hold Period** | ATR% > 3% → 5 days · ATR% > 1.5% → 10 days · else → 20 days | Scales with volatility regime |
+
+#### 🔴 Cash Swing Short (Bearish regime)
+
+| Level | Formula | Rationale |
+| :--- | :--- | :--- |
+| **Entry** | `spot` | Current last price |
+| **Stop Loss** | `min(spot + 1.5×ATR14, max(EMA20, EMA50) × 1.005)` | Closest of ATR-gate or EMA ceiling |
+| **Target 1** | `spot − 1.5 × ATR14` | First ATR extension downward |
+| **Target 2** | `spot − 3.0 × ATR14` | Full ATR extension — full target |
+| **Hold Period** | Same ATR%-based rule as Long | — |
+
+#### Risk / Reward
+
+```
+Risk   = |entry − stop_loss|
+Reward = |target_2 − entry|          (3×ATR)
+R:R    = Reward / Risk                (target ≥ 2.0)
+```
+
+#### Instrument Classification
+
+Stocks routed to cash (not options) when:
+- Symbol ends with `.NS` or `.BO` (NSE / BSE individual stocks)
+- US single-stock tickers **not** in the options whitelist (SPY, QQQ, ETFs, etc.)
+- Explicit overrides: e.g. `^NSEMDCP50` → cash
+
+---
+
+### 6. Quantitative Exit & Lifecycle Engine (`pie/market/exit_rules.py`)
 Manages active trades via 5 risk rules:
 
 - **`🔴 Exit (Regime Shift)`**: Exit immediately if trend score drops below threshold ($<4.5$) or regime reverses.

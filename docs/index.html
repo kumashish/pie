@@ -92,31 +92,6 @@
       </div>
     </section>
 
-    <!-- Real-Time Stock News & Sentiment Panel (Native Dashboard Section) -->
-    <section class="news-dashboard-section" id="news-dashboard-section">
-      <div class="news-dashboard-header" id="news-toggle-btn">
-        <div class="news-title-area">
-          <span class="section-badge">📰 Real-Time Stock News & Sentiment</span>
-          <h2 class="section-title" id="news-symbol-subtitle">SPY Market Headlines & Sentiment</h2>
-        </div>
-        <button class="fold-toggle-btn" id="news-fold-btn" aria-label="Toggle News Panel">
-          <span id="news-fold-icon">▼</span>
-          <span id="news-fold-text">Collapse</span>
-        </button>
-      </div>
-
-      <div id="news-dashboard-body" class="news-dashboard-body">
-        <div id="news-articles-list" class="news-articles-grid">
-          <!-- Rendered dynamically by app.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Loading State -->
-    <div id="loading-state" class="loading-state" style="display: none;">
-      <div class="pulse-loader"></div>
-      <p class="loading-text">Fetching 2-Year OHLCV Data & Evaluating Decision Rules...</p>
-    </div>
 
     <!-- Error Banner -->
     <div id="error-banner" class="error-banner" style="display: none;">
@@ -125,7 +100,8 @@
     </div>
 
     <!-- Results Container -->
-    <main id="results-container" class="results-container" style="display: none;">
+    <div class="content-wrapper">
+  <main id="results-container" class="results-container" style="display: none;">
       <div class="analysis-hero-grid">
         <!-- Hero Header: Stock Overview & Score -->
         <section class="hero-overview">
@@ -252,6 +228,15 @@
         </div>
       </section>
     </main>
+
+
+<!-- News Dashboard Side Panel -->
+<section id="news-dashboard-section" class="news-dashboard-section">
+  <h2 class="section-title">📈 Market News</h2>
+  <div id="news-content" class="news-content">
+    <!-- News items will be injected here by app.js -->
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">

@@ -155,12 +155,23 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
 
     # 5. Select strategy & estimate option trade structure
     recommendation = select_strategy(trend_analysis, iv_rank=min(100.0, max(0.0, ((annualized_vix - 12.0) / 18.0) * 100.0)))
+    # Extract ATR14 / EMA20 / EMA50 for cash swing stop/target computation
+    _atr_key  = next((k for k in indicators if "ATR" in k.upper()), None)
+    _ema20_key = next((k for k in indicators if k.upper() in ("EMA20", "EMA(20)")), None)
+    _ema50_key = next((k for k in indicators if k.upper() in ("EMA50", "EMA(50)")), None)
+    _atr14_val  = float(indicators[_atr_key].value)  if _atr_key  and indicators[_atr_key].value  else None
+    _ema20_val  = float(indicators[_ema20_key].value) if _ema20_key and indicators[_ema20_key].value else None
+    _ema50_val  = float(indicators[_ema50_key].value) if _ema50_key and indicators[_ema50_key].value else None
+
     trade_est = estimate_trade(
         symbol=sym_upper,
         spot_price=float(snapshot.last_price),
         annualized_vix=annualized_vix,
         recommendation=recommendation,
         vix_source="live",
+        atr14=_atr14_val,
+        ema20=_ema20_val,
+        ema50=_ema50_val,
     )
 
     # Format indicators

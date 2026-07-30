@@ -165,7 +165,16 @@ def analyze_market(
     vix, vix_source = _fetch_vix(symbol)
     iv_rank = _calculate_iv_rank(data, vix)
     recommendation = select_strategy(trend, iv_rank=iv_rank)
-    estimated_trade = estimate_trade(symbol, float(snapshot.last_price), vix, recommendation, vix_source)
+    _atr_key   = next((k for k in results if "ATR" in k.upper()), None)
+    _ema20_key = next((k for k in results if k.upper() in ("EMA20", "EMA(20)")), None)
+    _ema50_key = next((k for k in results if k.upper() in ("EMA50", "EMA(50)")), None)
+    _atr14_val  = float(results[_atr_key].value)  if _atr_key  and results[_atr_key].value  else None
+    _ema20_val  = float(results[_ema20_key].value) if _ema20_key and results[_ema20_key].value else None
+    _ema50_val  = float(results[_ema50_key].value) if _ema50_key and results[_ema50_key].value else None
+    estimated_trade = estimate_trade(
+        symbol, float(snapshot.last_price), vix, recommendation, vix_source,
+        atr14=_atr14_val, ema20=_ema20_val, ema50=_ema50_val,
+    )
     report_path = write_market_report(
         output_dir,
         snapshot,

@@ -18,6 +18,9 @@ class NotificationDispatcher:
         discord_url: Optional[str] = None,
     ):
         self.telegram_token = telegram_token or os.environ.get("TELEGRAM_BOT_TOKEN")
+        # Load list of subscriber chat IDs from a separate JSON file (default path config/telegram_subscribers.json)
+        self.telegram_subscribers = self._load_telegram_subscribers()
+        # Fallback to single chat ID from env for backward compatibility
         self.telegram_chat_id = telegram_chat_id or os.environ.get("TELEGRAM_CHAT_ID")
         self.slack_url = slack_url or os.environ.get("SLACK_WEBHOOK_URL")
         self.discord_url = discord_url or os.environ.get("DISCORD_WEBHOOK_URL")
@@ -41,20 +44,35 @@ class NotificationDispatcher:
             f"• *Score*: {score}/10\n"
             f"• *Signal*: {signal}\n"
             f"• *Structure*:\n  {strategy_structure}\n"
-            f"• *Timestamp*: {now_str}"
+            f"• *Timestamp*: {now_str}\n"
+            f"• *Expiry*: {market_row.get('expiration').isoformat() if isinstance(market_row.get('expiration'), datetime) else market_row.get('expiration')}"
         )
 
     def send_telegram(self, message: str) -> bool:
         """Send notification via Telegram Bot API."""
-        if not self.telegram_token or not self.telegram_chat_id:
+        if not self.telegram_token:
             return False
-        url = f"https://api.telegram.org/bot{self.telegram_token}/sendMessage"
-        payload = {
-            "chat_id": self.telegram_chat_id,
-            "text": message,
-            "parse_mode": "Markdown",
-        }
-        return self._http_post(url, payload)
+        if not self.telegram_token:
+            return False
+        # Use subscriber list if available, otherwise fallback to single chat ID
+        successes = []
+        # If a list of subscribers is loaded, send to each; otherwise use the single chat_id
+        targets = self.telegram_subscribers if self.telegram_subscribers else []
+        if not targets and self.telegram_chat_id:
+            targets = [self.telegram_chat_id]
+        if not targets:
+            return False
+        for chat_id in targets:
+            url = f"https://api.telegram.org/bot{self.telegram_token}/sendMessage"
+            payload = {
+                "chat_id": chat_id,
+                "text": message,
+                "parse_mode": "Markdown",
+            }
+            success = self._http_post(url, payload)
+            successes.append(success)
+        # Return True only if at least one message was sent successfully
+        return any(successes)
 
     def send_slack(self, message: str) -> bool:
         """Send notification via Slack Webhook."""
@@ -102,3 +120,21 @@ class NotificationDispatcher:
                 return 200 <= resp.status < 300
         except Exception:
             return False
+    def _load_telegram_subscribers(self, path: str = None) -> list[str]:
+        """Load Telegram subscriber chat IDs from a JSON file.
+        The file can be a simple list like ["12345", "67890"] or an object
+        {"subscribers": ["12345", "67890"]}. Returns an empty list on any error.
+        """
+        if path is None:
+            # Resolve default path relative to project root (config/telegram_subscribers.json)
+            base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+            path = os.path.join(base_dir, "config", "telegram_subscribers.json")
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    return [str(item) for item in data]
+                if isinstance(data, dict) and "subscribers" in data:
+                    return [str(item) for item in data["subscribers"]]
+        except Exception:
+            return []

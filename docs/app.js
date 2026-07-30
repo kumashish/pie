@@ -549,28 +549,42 @@ document.addEventListener("DOMContentLoaded", () => {
     resConfidence.textContent = getCleanGrade(data);
 
     // Strategy & Trade Recommendation
-    resStrategyName.textContent = data.strategy_display;
-    resTradeProfile.textContent = data.trade_profile;
-    resMaxGain.textContent = data.estimated_trade ? data.estimated_trade.max_gain : "Defined Risk";
-    resVix.textContent = `${data.vix}%`;
+// Strategy & Trade Recommendation with fallbacks
+    const tradeProfile = data.trade_profile || "Defined Risk";
+    const maxGain = data.estimated_trade && data.estimated_trade.max_gain !== undefined ? data.estimated_trade.max_gain : "Defined Risk";
+    resStrategyName.textContent = data.strategy_display || "N/A";
+    resTradeProfile.textContent = tradeProfile;
+    resMaxGain.textContent = maxGain;
+    resVix.textContent = `${data.vix ?? "-"}%`;
 
-    // Render Option Legs
-    if (data.estimated_trade && data.estimated_trade.legs && data.estimated_trade.legs.length > 0) {
-      resLegsContainer.innerHTML = data.estimated_trade.legs.map((leg) => `
-        <div class="leg-card">
-          <span class="leg-action ${leg.action.toLowerCase()}">${leg.action.toUpperCase()} ${leg.quantity}x</span>
-          <span class="leg-details">${data.symbol} ${leg.strike_formatted} ${leg.option_type}</span>
-          <span class="leg-expiry">Expiry: <strong>${leg.expiration_display}</strong> (${leg.dte} DTE)</span>
-        </div>
-      `).join("");
-      resExpirationWindow.textContent = `${data.estimated_trade.legs[0].dte} DTE`;
+    // Render Option Legs with safe defaults and monthly expiry filter
+    if (data.estimated_trade && Array.isArray(data.estimated_trade.legs) && data.estimated_trade.legs.length > 0) {
+        // Filter legs to monthly expiries (30-45 DTE) if any; otherwise use all legs
+        const monthlyLegs = data.estimated_trade.legs.filter(leg => leg.dte && leg.dte >= 30 && leg.dte <= 45);
+        const legsToRender = monthlyLegs.length > 0 ? monthlyLegs : data.estimated_trade.legs;
+        const legHtml = legsToRender.map((leg) => {
+            const action = (leg.action || "BUY").toUpperCase();
+            const qty = leg.quantity ?? 1;
+            const symbol = data.symbol ?? "";
+            const strike = leg.strike_formatted ?? "-";
+            const optType = leg.option_type ?? "";
+            const expiry = leg.expiration_display ?? "-";
+            const dte = leg.dte ?? "-";
+            return `
+            <div class="leg-card">
+              <span class="leg-action ${action.toLowerCase()}">${action} ${qty}x</span>
+              <span class="leg-details">${symbol} ${strike} ${optType}</span>
+              <span class="leg-expiry">Expiry: <strong>${expiry}</strong> (${dte} DTE)</span>
+            </div>`;
+        }).join("");
+        resLegsContainer.innerHTML = legHtml;
+        resExpirationWindow.textContent = `${legsToRender[0].dte ?? "N/A"} DTE`;
     } else {
-      resLegsContainer.innerHTML = `
-        <div class="leg-card">
-          <span class="leg-details" style="color: #94a3b8;">No option legs recommended under current market conditions (${data.strategy_display}).</span>
-        </div>
-      `;
-      resExpirationWindow.textContent = "N/A";
+        resLegsContainer.innerHTML = `
+            <div class="leg-card">
+                <span class="leg-details" style="color: #94a3b8;">No option legs recommended under current market conditions (${data.strategy_display || ""}).</span>
+            </div>`;
+        resExpirationWindow.textContent = "N/A";
     }
 
     // Render Indicators Grid
@@ -983,7 +997,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let regime = "neutral";
     let regimeDisplay = "Neutral";
     if (fitScore >= 80) { regime = "strong_bull"; regimeDisplay = "Strong Bull"; }
-    else if (fitScore >= 60) { regime = "bull"; regimeDisplay = "Bull"; }
+    else if (fitScore >= 55) { regime = "bull"; regimeDisplay = "Bull"; }
     else if (fitScore <= 20) { regime = "strong_bear"; regimeDisplay = "Strong Bear"; }
     else if (fitScore <= 40) { regime = "bear"; regimeDisplay = "Bear"; }
 
