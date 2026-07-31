@@ -2,17 +2,17 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 15:34 IST | 🟢 Call Debit Spread | 5.9/10    | Buy SPY 18-Sep-2026 740 Call<br> Sell SPY 18-Sep-2026 775 Call | Active (Jul 28, 10:08 IST) |
-| QQQ       | 15:34 IST | 🟡 Long Butterfly  | 5.6/10    | Buy QQQ 18-Sep-2026 660 Call<br> Sell 2x QQQ 18-Sep-2026 685 Call<br> Buy QQQ 18-Sep-2026 705 Call | Active (Yesterday, 20:10) |
+| SPY       | 15:51 IST | 🟢 Call Debit Spread | 5.9/10    | Buy SPY 18-Sep-2026 740 Call<br> Sell SPY 18-Sep-2026 775 Call | Active (Jul 28, 10:08 IST) |
+| QQQ       | 15:51 IST | 🟡 Long Butterfly  | 5.6/10    | Buy QQQ 18-Sep-2026 660 Call<br> Sell 2x QQQ 18-Sep-2026 685 Call<br> Buy QQQ 18-Sep-2026 705 Call | Active (Yesterday, 20:10) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| BANKNIFTY | 13:09 IST | 🟢 Call Debit Spread | 7.0/10    | Buy BANKNIFTY 29-Sep-2026 57300 Call<br> Sell BANKNIFTY 29-Sep-2026 59400 Call | New                    |
+| BANKNIFTY | 15:51 IST | 🟢 Call Debit Spread | 7.0/10    | Buy BANKNIFTY 29-Sep-2026 57300 Call<br> Sell BANKNIFTY 29-Sep-2026 59300 Call | Active (Today, 13:09)  |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
-| NIFTY 50  | 13:09 IST | 🟡 Long Butterfly  | 5.6/10    | Buy NIFTY 29-Sep-2026 23800 Call<br> Sell 2x NIFTY 29-Sep-2026 24400 Call<br> Buy NIFTY 29-Sep-2026 25000 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 13:09) |
+| NIFTY 50  | 15:51 IST | 🟡 Long Butterfly  | 5.6/10    | Buy NIFTY 29-Sep-2026 23800 Call<br> Sell 2x NIFTY 29-Sep-2026 24400 Call<br> Buy NIFTY 29-Sep-2026 25000 Call | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -21,20 +21,10 @@
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
 
-### ⚡ Recently Closed / Exit Signals (Last 5)
-
-### ⚡ Recently Closed / Exit Signals (Last 5)
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| HCLTECH.NS | 13:10 IST | 🔴 Put Debit Spread | 5.3/10    | Buy HCLTECH 29-Sep-2026 1350 Put<br> Sell HCLTECH 29-Sep-2026 1280 Put | 🔴 Exit (Regime Shift) (Today, 13:10) |
-
-<a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
-
-
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 55 | 54 | 1 | N/A | N/A | N/A | N/A |
+| 55 | 55 | 0 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
