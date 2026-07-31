@@ -2,15 +2,15 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 22:32 IST | 🟢 Call Debit Spread | 7.2/10    | Buy SPY 18-Sep-2026 745 Call<br> Sell SPY 18-Sep-2026 780 Call | Active (Today, 20:27)  |
-| QQQ       | 22:32 IST | 🟡 Long Butterfly  | 5.7/10    | Buy QQQ 18-Sep-2026 665 Call<br> Sell 2x QQQ 18-Sep-2026 690 Call<br> Buy QQQ 18-Sep-2026 710 Call | Active (Yesterday, 20:10) |
+| SPY       | 00:22 IST | 🟢 Call Debit Spread | 7.6/10    | Buy SPY 18-Sep-2026 745 Call<br> Sell SPY 18-Sep-2026 780 Call | Active (Yesterday, 20:27) |
+| QQQ       | 00:22 IST | 🟡 Long Butterfly  | 5.8/10    | Buy QQQ 18-Sep-2026 670 Call<br> Sell 2x QQQ 18-Sep-2026 690 Call<br> Buy QQQ 18-Sep-2026 710 Call | Active (Jul 30, 20:10 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| BANKNIFTY | 15:51 IST | 🟢 Call Debit Spread | 7.0/10    | Buy BANKNIFTY 29-Sep-2026 57300 Call<br> Sell BANKNIFTY 29-Sep-2026 59300 Call | Active (Today, 13:09)  |
+| BANKNIFTY | 15:51 IST | 🟢 Call Debit Spread | 7.0/10    | Buy BANKNIFTY 29-Sep-2026 57300 Call<br> Sell BANKNIFTY 29-Sep-2026 59300 Call | Active (Yesterday, 13:09) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 | NIFTY 50  | 15:51 IST | 🟡 Long Butterfly  | 5.6/10    | Buy NIFTY 29-Sep-2026 23800 Call<br> Sell 2x NIFTY 29-Sep-2026 24400 Call<br> Buy NIFTY 29-Sep-2026 25000 Call | New                    |
 
