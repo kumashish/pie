@@ -156,7 +156,7 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
             })
             # Update persistent high‑score list
             if is_high:
-                import os, json
+                import os
                 high_path = os.path.join(os.path.dirname(__file__), "high_score_signals.json")
                 try:
                     with open(high_path, "r", encoding="utf-8") as f:
