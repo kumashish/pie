@@ -69,10 +69,15 @@
           <span class="section-badge">🔥 Top 4 High-Conviction Trades</span>
           <h2 class="section-title">Market Quantitative Leaderboard</h2>
         </div>
-        <button class="fold-toggle-btn" id="fold-toggle-btn" aria-label="Toggle Leaderboard">
-          <span id="fold-icon">▼</span>
-          <span id="fold-text">Collapse</span>
-        </button>
+        <div class="top-trades-header-controls" style="display: flex; align-items: center; gap: 10px;">
+          <a href="https://finance.yahoo.com/research/screener" target="_blank" rel="noopener noreferrer" class="more-stocks-link" style="color: var(--accent-cyan); font-size: 12px; font-weight: 700; text-decoration: none; padding: 6px 12px; border-radius: 8px; background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.3); transition: all 0.2s;" onmouseover="this.style.background='rgba(0, 229, 255, 0.25)'" onmouseout="this.style.background='rgba(0, 229, 255, 0.1)'">
+            More Stocks &amp; Analysis ↗
+          </a>
+          <button class="fold-toggle-btn" id="fold-toggle-btn" aria-label="Toggle Leaderboard">
+            <span id="fold-icon">▼</span>
+            <span id="fold-text">Collapse</span>
+          </button>
+        </div>
       </div>
 
       <div id="leaderboard-body" class="leaderboard-body">
