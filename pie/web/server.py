@@ -35,23 +35,24 @@ _OPTIONS_INSTRUMENTS = {
 }
 
 
-def _get_trade_category(symbol: str) -> str:
-    """Classify instrument as 'options' (indices/ETFs) or 'cash' (individual stocks)."""
+def _get_trade_category(symbol: str, strategy_type: str = "") -> str:
+    """Classify recommendation into 'options' (derivatives strategies) or 'cash' (equity swing setups)."""
+    strat = (strategy_type or "").lower()
+    if strat in {"cash_swing_long", "cash_swing_short"}:
+        return "cash"
+    if strat in {
+        "call_debit_spread", "put_debit_spread", "naked_put", "naked_call",
+        "butterfly", "broken_wing_butterfly", "iron_condor", "iron_butterfly",
+        "jade_lizard", "credit_spread", "poor_mans_covered_call", "short_strangle", "collar"
+    }:
+        return "options"
+
     sym = symbol.strip().upper()
-    # Explicit cash overrides first
     _CASH_OVERRIDES = {"^NSEMDCP50"}
     if sym in _CASH_OVERRIDES:
         return "cash"
-    if sym in _OPTIONS_INSTRUMENTS:
+    if sym in _OPTIONS_INSTRUMENTS or sym.startswith("^"):
         return "options"
-    # Caret symbols are always indices → options
-    if sym.startswith("^"):
-        return "options"
-    # Individual stocks (NSE/BSE) → cash
-    if sym.endswith(".NS") or sym.endswith(".BO"):
-        return "cash"
-    # US individual stocks (single-word ticker, not in options list) → cash
-    # Short tickers that are clearly ETFs stay as options
     return "cash"
 
 
@@ -223,13 +224,13 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         "strategy_type": recommendation.strategy.value,
         "strategy_display": recommendation.strategy.value.replace("_", " ").title(),
         "trade_profile": get_trade_profile(recommendation.strategy.value),
-        "trade_category": _get_trade_category(sym_upper),
+        "trade_category": _get_trade_category(sym_upper, recommendation.strategy.value),
         "recommendation_reason": recommendation.rationale,
         "cash_trade_setup": _compute_cash_trade_setup(
             float(snapshot.last_price),
             indicators,
             trend_analysis.regime.value,
-        ) if _get_trade_category(sym_upper) == "cash" else None,
+        ) if _get_trade_category(sym_upper, recommendation.strategy.value) == "cash" else None,
         "estimated_trade": {
             "legs": legs_data,
             "max_gain": "Defined Risk / Reward",

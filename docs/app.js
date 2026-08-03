@@ -719,7 +719,7 @@ document.addEventListener("DOMContentLoaded", () => {
         optionsUS = []; optionsIndia = []; cashUS = []; cashIndia = [];
         for (const item of indexList) {
           const isIndia = isIndianSymbol(item.symbol);
-          const isCash = (item.trade_category === "cash");
+          const isCash = (item.trade_category === "cash" && (item.strategy_display.includes("Cash") || item.strategy_display.includes("Swing")));
           const entry = {
             symbol: item.symbol,
             last_price: item.last_price,
@@ -757,8 +757,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateLeaderboard(data) {
     const isIndia = isIndianSymbol(data.symbol);
-    const isCash = (data.trade_category === "cash") ||
-      (data.strategy_type && (data.strategy_type === "cash_swing_long" || data.strategy_type === "cash_swing_short"));
+    const isCash = (data.strategy_type && (data.strategy_type === "cash_swing_long" || data.strategy_type === "cash_swing_short")) ||
+      (data.strategy_display && (data.strategy_display.includes("Cash") || data.strategy_display.includes("Swing")));
     const targetList = isCash
       ? (isIndia ? cashIndia : cashUS)
       : (isIndia ? optionsIndia : optionsUS);
