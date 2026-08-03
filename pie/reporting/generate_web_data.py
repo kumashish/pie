@@ -18,7 +18,7 @@ POPULAR_SYMBOLS = [
     "XLE",
     "XLK",
     "SOXX",
-    # Tech, AI & Mega-Caps (20)
+    # High-Beta & Top High IV U.S. Stocks (25)
     "NVDA",
     "AAPL",
     "MSFT",
@@ -31,15 +31,20 @@ POPULAR_SYMBOLS = [
     "PLTR",
     "INTC",
     "COIN",
+    "MSTR",
+    "MARA",
+    "RIOT",
     "AVGO",
     "ARM",
     "SMCI",
+    "SOXL",
     "QCOM",
     "MU",
     "AMAT",
     "ORCL",
     "IBM",
-    # Financials, Retail, Industrial & Healthcare (20)
+    "UVXY",
+    # Financials, Retail, Industrial & Healthcare (15)
     "JPM",
     "BAC",
     "WFC",
@@ -54,12 +59,7 @@ POPULAR_SYMBOLS = [
     "NKE",
     "UNH",
     "LLY",
-    "JNJ",
-    "PFE",
     "XOM",
-    "CVX",
-    "CAT",
-    "GE",
     # Indian Benchmark Indices (5)
     "^NSEI",
     "^NSEBANK",
