@@ -271,6 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const resIndicatorsGrid = document.getElementById("res-indicators-grid");
   const resRulesTbody = document.getElementById("res-rules-tbody");
+  const resSummaryText = document.getElementById("res-summary-text");
 
   // Leaderboard DOM & State
   const tabOptions = document.getElementById("tab-options");
@@ -616,6 +617,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }).join("");
     } else {
       resRulesTbody.innerHTML = "<tr><td colspan='3'>No rule evaluations available.</td></tr>";
+    }
+
+    // Render Summary Rationale
+    if (resSummaryText) {
+      const reason = data.recommendation_reason || `Market Analysis completed for ${data.symbol}. Strategy fit score is ${(data.fit_score / 10.0).toFixed(1)} / 10 in a ${data.regime_display} market regime.`;
+      resSummaryText.innerHTML = `<p style="margin: 0;"><strong>${data.symbol} Quantitative Summary:</strong> ${reason}</p>`;
     }
 
     // Smooth scroll down to trade structure results if requested
