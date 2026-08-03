@@ -498,10 +498,17 @@ def _strike_increment(symbol: str, spot_price: float = 0.0) -> float:
         return 50.0
     if sym_upper in {"SPY", "QQQ"}:
         return 5.0
-    # Anything above 10,000 spot price must be a multiple of 100
+    # Intelligent strike scaling based on price range:
+    # Spot >= 20,000 -> 1000 step
+    # Spot >= 10,000 -> 500 step
+    # Spot >= 5,000  -> 100 step
+    if spot_price >= 20000.0:
+        return 1000.0
     if spot_price >= 10000.0:
+        return 500.0
+    if spot_price >= 5000.0:
         return 100.0
-    # Stock option strikes under 10,000 must be multiples of 10
+    # Stock option strikes under 5,000 default to multiples of 10
     return 10.0
 
 
