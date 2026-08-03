@@ -264,7 +264,7 @@ class HigherLowsRule(TrendRule):
 
 @dataclass(frozen=True, slots=True)
 class InstitutionalVolumeRule(TrendRule):
-    name: str = "Institutional Volume Flow (>1.2x 20d Avg)"
+    name: str = "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)"
     weight: float = 0.0
 
     def evaluate(
@@ -273,19 +273,26 @@ class InstitutionalVolumeRule(TrendRule):
         indicators: Mapping[str, IndicatorResult],
         history: pl.DataFrame,
     ) -> RuleResult:
-        """Check whether current volume exceeds 20-day average volume."""
+        """Check whether current volume exceeds 20-day average volume and meets 500k liquidity minimum."""
         if history.height < 20 or "volume" not in history.columns:
             return self._unavailable("Insufficient volume history.")
         volumes = history.get_column("volume").tail(20).to_list()
         avg_vol = sum(volumes[:-1]) / max(1, len(volumes) - 1)
         curr_vol = float(volumes[-1])
-        passed = curr_vol >= avg_vol * 1.05
+        sufficient_liquidity = avg_vol >= 500_000
+        passed = curr_vol >= avg_vol * 1.05 and sufficient_liquidity
+        if not sufficient_liquidity:
+            explanation = f"Low Option Liquidity Risk: 20d avg volume ({avg_vol:,.0f}) is below 500,000 shares limit."
+        elif passed:
+            explanation = f"High Option Liquidity: Volume ({curr_vol:,.0f}) exceeds 20d avg ({avg_vol:,.0f})."
+        else:
+            explanation = f"Volume ({curr_vol:,.0f}) below 20d avg ({avg_vol:,.0f}) but liquidity is sufficient."
         return RuleResult(
             self.name,
             passed,
             True,
             self.weight,
-            f"Volume ({curr_vol:,.0f}) exceeds 20d average volume ({avg_vol:,.0f})." if passed else f"Volume ({curr_vol:,.0f}) is below institutional threshold ({avg_vol:,.0f}).",
+            explanation,
         )
 
 
