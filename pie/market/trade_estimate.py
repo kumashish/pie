@@ -496,8 +496,9 @@ def _strike_increment(symbol: str, spot_price: float = 0.0) -> float:
         return 100.0
     if sym_upper in {"NIFTY_FIN_SERVICE.NS", "FINNIFTY", "^NSEMDCP50", "MIDCAPNIFTY"}:
         return 50.0
-    if sym_upper in {"SPY", "QQQ"}:
-        return 5.0
+    # Standard US liquid ETFs (SPY, QQQ, XLF, IWM, DIA, etc.) and lower priced stocks
+    if sym_upper in {"SPY", "QQQ", "IWM", "DIA", "XLF", "XLE", "XLK", "SOXX"}:
+        return 1.0 if spot_price < 100.0 else 5.0
     # Intelligent strike scaling based on price range:
     # Spot >= 20,000 -> 1000 step
     # Spot >= 10,000 -> 500 step
@@ -508,8 +509,11 @@ def _strike_increment(symbol: str, spot_price: float = 0.0) -> float:
         return 500.0
     if spot_price >= 5000.0:
         return 100.0
-    # Stock option strikes under 5,000 default to multiples of 10
-    return 10.0
+    if spot_price >= 1000.0:
+        return 50.0
+    if spot_price >= 100.0:
+        return 5.0
+    return 1.0
 
 
 def _round_to_increment(value: float, increment: float) -> float:
