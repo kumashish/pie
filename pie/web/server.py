@@ -189,26 +189,39 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
     for rule_name in trend_analysis.failed_rules:
         rules_eval.append({"name": rule_name, "passed": False, "score": 0.0, "max_score": 1.0, "explanation": "Condition unfulfilled"})
 
-    # Format trade legs
+    # Format trade legs (combining identical strikes/actions into multiples e.g. Sell 2x)
     legs_data = []
     if trade_est:
+        grouped_legs = []
         for leg in trade_est.legs:
             action_val = leg.action.value if hasattr(leg.action, "value") else str(leg.action)
             right_val = leg.right.value if hasattr(leg.right, "value") else str(leg.right)
             action_str = "Buy" if action_val.upper() in {"BUY", "LONG"} else "Sell"
             opt_type_str = "Call" if right_val.upper() in {"CALL", "CE", "C"} else "Put"
-            legs_data.append({
-                "action": action_str,
-                "quantity": 1,
-                "strike": leg.strike,
-                "strike_formatted": _format_strike(leg.strike),
-                "option_type": opt_type_str,
-                "delta": getattr(leg, "delta", None),
-                "expiration": trade_est.expiration.strftime("%Y-%m-%d"),
-                "expiration_display": trade_est.expiration.strftime("%d-%b-%Y"),
-                "dte": (trade_est.expiration - date.today()).days,
-                "summary": f"{action_str} {sym_upper} {trade_est.expiration.strftime('%d-%b-%Y')} {_format_strike(leg.strike)} {opt_type_str}"
-            })
+
+            if (
+                grouped_legs
+                and grouped_legs[-1]["action"] == action_str
+                and grouped_legs[-1]["strike"] == leg.strike
+                and grouped_legs[-1]["option_type"] == opt_type_str
+            ):
+                grouped_legs[-1]["quantity"] += 1
+            else:
+                grouped_legs.append({
+                    "action": action_str,
+                    "quantity": 1,
+                    "strike": leg.strike,
+                    "strike_formatted": _format_strike(leg.strike),
+                    "option_type": opt_type_str,
+                    "delta": getattr(leg, "delta", None),
+                    "expiration": trade_est.expiration.strftime("%Y-%m-%d"),
+                    "expiration_display": trade_est.expiration.strftime("%d-%b-%Y"),
+                    "dte": (trade_est.expiration - date.today()).days,
+                })
+        
+        for item in grouped_legs:
+            item["summary"] = f"{item['action']} {item['quantity']}x {sym_upper} {item['expiration_display']} {item['strike_formatted']} {item['option_type']}"
+            legs_data.append(item)
 
     return {
         "symbol": sym_upper,
