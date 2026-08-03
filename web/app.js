@@ -546,7 +546,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resPrice.textContent = `${currency}${data.last_price.toLocaleString()}`;
     resAsOf.textContent = `As of ${data.as_of} IST | Annualized VIX: ${data.vix}%`;
 
-    resFitScore.textContent = `${Math.round(data.fit_score)}%`;
+    resFitScore.textContent = (data.fit_score / 10.0).toFixed(1);
     resRegime.textContent = getRegimeBadgeText(data.regime);
     resConfidence.textContent = `Grade ${getCleanGrade(data)}`;
 
@@ -829,8 +829,8 @@ document.addEventListener("DOMContentLoaded", () => {
               <span class="top-card-price">${currency}${item.last_price.toLocaleString()}</span>
             </div>
             <div class="top-card-score">
-              <span class="score-val">${Math.round(item.fit_score)}</span>
-              <span class="score-label">/100 (${item.regime_display})</span>
+              <span class="score-val">${(item.fit_score / 10.0).toFixed(1)}</span>
+              <span class="score-label">/10.0 (${item.regime_display})</span>
             </div>
             <div class="top-card-strategy">${item.strategy_display}</div>
             <div class="top-card-leg">${item.trade_profile}</div>
