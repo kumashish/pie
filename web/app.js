@@ -610,13 +610,12 @@ document.addEventListener("DOMContentLoaded", () => {
               </span>
             </td>
             <td><strong>${rule.name}</strong></td>
-            <td>${scoreDisplay}</td>
-            <td style="color: #94a3b8;">${rule.explanation}</td>
+            <td style="color: #cbd5e1;">${rule.explanation}</td>
           </tr>
         `;
       }).join("");
     } else {
-      resRulesTbody.innerHTML = "<tr><td colspan='4'>No rule evaluations available.</td></tr>";
+      resRulesTbody.innerHTML = "<tr><td colspan='3'>No rule evaluations available.</td></tr>";
     }
 
     // Smooth scroll down to trade structure results if requested
