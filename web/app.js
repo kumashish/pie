@@ -546,9 +546,9 @@ document.addEventListener("DOMContentLoaded", () => {
     resPrice.textContent = `${currency}${data.last_price.toLocaleString()}`;
     resAsOf.textContent = `As of ${data.as_of} IST | Annualized VIX: ${data.vix}%`;
 
-    resFitScore.textContent = Math.round(data.fit_score);
+    resFitScore.textContent = `${Math.round(data.fit_score)}%`;
     resRegime.textContent = getRegimeBadgeText(data.regime);
-    resConfidence.textContent = getCleanGrade(data);
+    resConfidence.textContent = `Grade ${getCleanGrade(data)}`;
 
     // Strategy & Trade Recommendation
     resStrategyName.textContent = data.strategy_display;
