@@ -852,8 +852,78 @@ document.addEventListener("DOMContentLoaded", () => {
   window.analyzeFromCard = function(symbol) {
     if (!symbol) return;
     if (symbolInput) symbolInput.value = symbol;
+    const moreModal = document.getElementById("more-stocks-modal");
+    if (moreModal) moreModal.style.display = "none";
     fetchAnalysis(symbol, true);
   };
+
+  // Setup More Stocks & Analysis Modal
+  const moreStocksBtn = document.getElementById("more-stocks-btn");
+  const moreStocksModal = document.getElementById("more-stocks-modal");
+  const closeMoreModal = document.getElementById("close-more-modal");
+  const moreStocksGrid = document.getElementById("more-stocks-grid");
+
+  if (moreStocksBtn && moreStocksModal && moreStocksGrid) {
+    moreStocksBtn.addEventListener("click", () => {
+      // Get all current candidates based on selected category & market filter
+      let fullList = [];
+      const isOptions = (currentCategory === "options");
+      if (currentMarketFilter === "all") {
+        fullList = isOptions ? [...optionsUS, ...optionsIndia] : [...cashUS, ...cashIndia];
+      } else if (currentMarketFilter === "us") {
+        fullList = isOptions ? optionsUS : cashUS;
+      } else {
+        fullList = isOptions ? optionsIndia : cashIndia;
+      }
+
+      // Sort by score descending and slice outside the top 4
+      fullList = fullList.sort((a, b) => b.fit_score - a.fit_score);
+      const remainingList = fullList.slice(4);
+
+      if (remainingList.length === 0) {
+        moreStocksGrid.innerHTML = `<p style="color: #94a3b8; font-size: 14px; grid-column: 1 / -1;">No additional stock candidates tracked outside the top 4 recommendations.</p>`;
+      } else {
+        moreStocksGrid.innerHTML = remainingList.map((item, idx) => {
+          const currency = getCurrencySymbol(item.symbol);
+          const flag = (item.market === "india") ? "🇮🇳" : "🇺🇸";
+          return `
+            <div class="top-card" style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.08);">
+              <span class="top-card-rank">#${idx + 5}</span>
+              <div>
+                <div class="top-card-header">
+                  <span class="top-card-symbol">${flag} ${item.symbol}</span>
+                  <span class="top-card-price">${currency}${item.last_price.toLocaleString()}</span>
+                </div>
+                <div class="top-card-score">
+                  <span class="score-val">${(item.fit_score / 10.0).toFixed(1)}</span>
+                  <span class="score-label">/10.0 (${item.regime_display})</span>
+                </div>
+                <div class="top-card-strategy">${item.strategy_display}</div>
+                <div class="top-card-leg">${item.trade_profile}</div>
+              </div>
+              <button class="top-card-btn" onclick="window.analyzeFromCard('${item.symbol}')">
+                Load Full Analysis ➔
+              </button>
+            </div>
+          `;
+        }).join("");
+      }
+
+      moreStocksModal.style.display = "block";
+    });
+
+    if (closeMoreModal) {
+      closeMoreModal.addEventListener("click", () => {
+        moreStocksModal.style.display = "none";
+      });
+    }
+
+    moreStocksModal.addEventListener("click", (e) => {
+      if (e.target === moreStocksModal) {
+        moreStocksModal.style.display = "none";
+      }
+    });
+  }
 
   let loadingTimeout = null;
 

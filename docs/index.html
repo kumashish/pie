@@ -70,9 +70,9 @@
           <h2 class="section-title">Market Quantitative Leaderboard</h2>
         </div>
         <div class="top-trades-header-controls" style="display: flex; align-items: center; gap: 10px;">
-          <a href="https://finance.yahoo.com/research/screener" target="_blank" rel="noopener noreferrer" class="more-stocks-link" style="color: var(--accent-cyan); font-size: 12px; font-weight: 700; text-decoration: none; padding: 6px 12px; border-radius: 8px; background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.3); transition: all 0.2s;" onmouseover="this.style.background='rgba(0, 229, 255, 0.25)'" onmouseout="this.style.background='rgba(0, 229, 255, 0.1)'">
+          <button id="more-stocks-btn" class="more-stocks-link" style="color: var(--accent-cyan); font-size: 12px; font-weight: 700; border: 1px solid rgba(0, 229, 255, 0.3); padding: 6px 12px; border-radius: 8px; background: rgba(0, 229, 255, 0.1); cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='rgba(0, 229, 255, 0.25)'" onmouseout="this.style.background='rgba(0, 229, 255, 0.1)'">
             More Stocks &amp; Analysis ↗
-          </a>
+          </button>
           <button class="fold-toggle-btn" id="fold-toggle-btn" aria-label="Toggle Leaderboard">
             <span id="fold-icon">▼</span>
             <span id="fold-text">Collapse</span>
@@ -268,6 +268,25 @@
     <footer class="footer">
       <p>Portfolio Intelligence Quantitative Engine &copy; 2026. Built with Python & Polars.</p>
     </footer>
+  </div>
+
+  <!-- More Stocks & Analysis Modal -->
+  <div id="more-stocks-modal" style="display: none; position: fixed; inset: 0; background: rgba(5, 8, 16, 0.85); backdrop-filter: blur(12px); z-index: 99999; padding: 24px; overflow-y: auto;">
+    <div style="max-width: 1200px; margin: 40px auto; background: rgba(15, 23, 42, 0.95); border: 1px solid rgba(0, 229, 255, 0.3); border-radius: 20px; padding: 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 16px;">
+        <div>
+          <span class="section-badge" style="background: rgba(0,229,255,0.15); color: var(--accent-cyan); border-color: rgba(0,229,255,0.3);">📈 EXTENDED QUANTITATIVE SCREENER</span>
+          <h2 style="font-family: var(--font-heading); font-size: 22px; font-weight: 800; color: #ffffff; margin: 6px 0 0;">More Tracked Stocks &amp; Strategy Analysis</h2>
+        </div>
+        <button id="close-more-modal" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #ffffff; width: 36px; height: 36px; border-radius: 50%; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;">✕</button>
+      </div>
+
+      <p style="color: #94a3b8; font-size: 13px; margin-bottom: 20px;">Showing tracked market candidates outside the top 4 recommendations. Select any stock to load its full quantitative trade analysis.</p>
+      
+      <div id="more-stocks-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px;">
+        <!-- Dynamically populated by app.js -->
+      </div>
+    </div>
   </div>
 
   <script src="app.js?v=20260730_03"></script>
