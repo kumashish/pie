@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 23:40 IST | 🟢 Call Debit Spread | 6.8/10    | Buy SPY 18-Sep-2026 770 Call<br> Sell SPY 18-Sep-2026 805 Call | Hold (Jul 31, 20:27 IST) |
-| QQQ       | 23:40 IST | 🟢 Call Debit Spread | 6.3/10    | Buy QQQ 18-Sep-2026 725 Call<br> Sell QQQ 18-Sep-2026 755 Call | Active (Today, 18:44)  |
+| SPY       | 01:37 IST | 🟢 Call Debit Spread | 6.8/10    | Buy SPY 18-Sep-2026 770 Call<br> Sell SPY 18-Sep-2026 805 Call | Hold (Jul 31, 20:27 IST) |
+| QQQ       | 01:37 IST | 🟢 Call Debit Spread | 6.3/10    | Buy QQQ 18-Sep-2026 725 Call<br> Sell QQQ 18-Sep-2026 755 Call | Active (Yesterday, 18:44) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -12,7 +12,7 @@
 | BANKNIFTY | 15:51 IST | 🟢 Call Debit Spread | 7.7/10    | Buy BANKNIFTY 29-Sep-2026 57900 Call<br> Sell BANKNIFTY 29-Sep-2026 60000 Call | Active (Jul 31, 13:09 IST) |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
-| NIFTY 50  | 15:51 IST | 🟢 Call Debit Spread | 5.5/10    | Buy NIFTY 29-Sep-2026 24600 Call<br> Sell NIFTY 29-Sep-2026 25500 Call | Active (Today, 12:57)  |
+| NIFTY 50  | 15:51 IST | 🟢 Call Debit Spread | 5.5/10    | Buy NIFTY 29-Sep-2026 24600 Call<br> Sell NIFTY 29-Sep-2026 25500 Call | Active (Yesterday, 12:57) |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -26,7 +26,7 @@
 ### ⚡ Recently Closed / Exit Signals (Last 5)
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| HCLTECH.NS | 15:52 IST | 🔴 Put Debit Spread | 5.1/10    | Buy HCLTECH 29-Sep-2026 1350 Put<br> Sell HCLTECH 29-Sep-2026 1300 Put | 🔴 Exit (Regime Shift) (Today, 15:52) |
+| HCLTECH.NS | 15:52 IST | 🔴 Put Debit Spread | 5.1/10    | Buy HCLTECH 29-Sep-2026 1350 Put<br> Sell HCLTECH 29-Sep-2026 1300 Put | 🔴 Exit (Regime Shift) (Yesterday, 15:52) |
 
 <a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
 
