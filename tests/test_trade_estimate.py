@@ -55,3 +55,16 @@ def test_no_trade_strategy_does_not_create_estimate() -> None:
     )
 
     assert trade is None
+
+
+def test_third_friday_september_2026() -> None:
+    from pie.market.trade_estimate import _third_friday, _select_expiration
+
+    # Sept 1, 2026 is Tuesday. 1st Friday is Sept 4, 3rd Friday is Sept 18.
+    assert _third_friday(2026, 9) == date(2026, 9, 18)
+
+    # For US options (e.g. SPY) with target DTE ~37 starting 2026-08-12:
+    # 2026-08-12 + 37 days = 2026-09-18
+    exp = _select_expiration(date(2026, 8, 12), StrategyType.CALL_DEBIT_SPREAD, "SPY")
+    assert exp == date(2026, 9, 18)
+

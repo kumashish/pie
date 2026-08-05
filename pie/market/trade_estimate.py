@@ -472,6 +472,7 @@ def _select_expiration(
 def _third_friday(year: int, month: int) -> date:
     """Calculate the 3rd Friday of a given month for U.S. option expirations."""
     first_day = date(year, month, 1)
+    # first_day.weekday(): Monday=0, ..., Friday=4, Saturday=5, Sunday=6
     first_friday = first_day + timedelta(days=(4 - first_day.weekday()) % 7)
     return first_friday + timedelta(weeks=2)
 
