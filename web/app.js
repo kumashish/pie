@@ -60,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "WIPRO": "WIPRO.NS",
     "HCLTECH": "HCLTECH.NS",
     "TECHM": "TECHM.NS",
+    "EICHER": "EICHERMOT.NS",
+    "EICHERMOT": "EICHERMOT.NS",
+    "EICHER MOTORS": "EICHERMOT.NS",
     "APPLE": "AAPL",
     "NVIDIA": "NVDA",
     "MICROSOFT": "MSFT",
@@ -505,7 +508,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const indianTickers = [
       "TCS", "INFY", "RELIANCE", "TITAN", "SUNPHARMA", "BAJAJ", "HDFCBANK", "ICICIBANK",
       "SBIN", "HINDALCO", "HDFCLIFE", "TATASTEEL", "TATAMOTORS", "WIPRO", "HCLTECH", "TECHM",
-      "MIDCAP", "FINNIFTY", "BANKNIFTY", "NSEMDCP", "MDCP50"
+      "EICHER", "EICHERMOT", "MIDCAP", "FINNIFTY", "BANKNIFTY", "NSEMDCP", "MDCP50"
     ];
     return indianTickers.some(t => sym.includes(t));
   }
