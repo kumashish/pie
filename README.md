@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 23:39 IST | 🟢 Call Debit Spread | 7.7/10    | Buy QQQ 18-Sep-2026 720 Call<br> Sell QQQ 18-Sep-2026 745 Call | Active (Today, 05:52)  |
-| SPY       | 23:39 IST | 🟢 Call Debit Spread | 6.6/10    | Buy SPY 18-Sep-2026 770 Call<br> Sell SPY 18-Sep-2026 800 Call | Hold (Today, 19:17)    |
+| QQQ       | 00:57 IST | 🟢 Call Debit Spread | 7.7/10    | Buy QQQ 18-Sep-2026 720 Call<br> Sell QQQ 18-Sep-2026 745 Call | Active (Yesterday, 05:52) |
+| SPY       | 00:57 IST | 🟢 Call Debit Spread | 6.6/10    | Buy SPY 18-Sep-2026 775 Call<br> Sell SPY 18-Sep-2026 805 Call | Hold (Yesterday, 19:17) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -11,7 +11,7 @@
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | BANKNIFTY | 16:08 IST | 🟢 Call Debit Spread | 7.3/10    | Buy BANKNIFTY 29-Sep-2026 57700 Call<br> Sell BANKNIFTY 29-Sep-2026 59700 Call | Active (Jul 31, 13:09 IST) |
-| NIFTY 50  | 16:08 IST | 🟡 Long Butterfly  | 6.4/10    | Buy NIFTY 29-Sep-2026 24000 Call<br> Sell 2x NIFTY 29-Sep-2026 24600 Call<br> Buy NIFTY 29-Sep-2026 25100 Call | Active (Yesterday, 12:58) |
+| NIFTY 50  | 16:08 IST | 🟡 Long Butterfly  | 6.4/10    | Buy NIFTY 29-Sep-2026 24000 Call<br> Sell 2x NIFTY 29-Sep-2026 24600 Call<br> Buy NIFTY 29-Sep-2026 25100 Call | Active (Aug 06, 12:58 IST) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
