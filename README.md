@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 18:38 IST | 🟢 Call Debit Spread | 8.3/10    | Buy SPY 18-Sep-2026 770 Call<br> Sell SPY 18-Sep-2026 800 Call | Active (Today, 02:12)  |
-| QQQ       | 18:38 IST | 🟢 Call Debit Spread | 5.9/10    | Buy QQQ 18-Sep-2026 715 Call<br> Sell QQQ 18-Sep-2026 745 Call | Active (Yesterday, 22:29) |
+| SPY       | 05:52 IST | 🟢 Call Debit Spread | 7.8/10    | Buy SPY 18-Sep-2026 770 Call<br> Sell SPY 18-Sep-2026 800 Call | Active (Yesterday, 02:12) |
+| QQQ       | 05:52 IST | 🟢 Call Debit Spread | 7.3/10    | Buy QQQ 18-Sep-2026 715 Call<br> Sell QQQ 18-Sep-2026 745 Call | New                    |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -11,7 +11,7 @@
 | BANKNIFTY | 15:48 IST | 🟢 Call Debit Spread | 7.8/10    | Buy BANKNIFTY 29-Sep-2026 58100 Call<br> Sell BANKNIFTY 29-Sep-2026 60100 Call | Active (Jul 31, 13:09 IST) |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| NIFTY 50  | 15:48 IST | 🟡 Long Butterfly  | 6.0/10    | Buy NIFTY 29-Sep-2026 24100 Call<br> Sell 2x NIFTY 29-Sep-2026 24600 Call<br> Buy NIFTY 29-Sep-2026 25200 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 12:58) |
+| NIFTY 50  | 15:48 IST | 🟡 Long Butterfly  | 6.0/10    | Buy NIFTY 29-Sep-2026 24100 Call<br> Sell 2x NIFTY 29-Sep-2026 24600 Call<br> Buy NIFTY 29-Sep-2026 25200 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 12:58) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
