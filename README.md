@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 23:41 IST | 🟢 Call Debit Spread | 7.7/10    | Buy QQQ 18-Sep-2026 720 Call<br> Sell QQQ 18-Sep-2026 745 Call | Active (Aug 07, 05:52 IST) |
-| SPY       | 23:41 IST | 🟢 Call Debit Spread | 6.6/10    | Buy SPY 18-Sep-2026 775 Call<br> Sell SPY 18-Sep-2026 805 Call | Hold (Aug 07, 19:17 IST) |
+| QQQ       | 00:58 IST | 🟢 Call Debit Spread | 7.7/10    | Buy QQQ 18-Sep-2026 720 Call<br> Sell QQQ 18-Sep-2026 745 Call | Active (Aug 07, 05:52 IST) |
+| SPY       | 00:58 IST | 🟢 Call Debit Spread | 6.6/10    | Buy SPY 18-Sep-2026 775 Call<br> Sell SPY 18-Sep-2026 805 Call | Hold (Aug 07, 19:17 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -26,7 +26,7 @@
 ### ⚡ Recently Closed / Exit Signals (Last 5)
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| HCLTECH.NS | 15:35 IST | 🔴 Put Debit Spread | 5.2/10    | Buy HCLTECH 29-Sep-2026 1350 Put<br> Sell HCLTECH 29-Sep-2026 1300 Put | 🔴 Exit (Regime Shift) (Today, 15:35) |
+| HCLTECH.NS | 15:35 IST | 🔴 Put Debit Spread | 5.2/10    | Buy HCLTECH 29-Sep-2026 1350 Put<br> Sell HCLTECH 29-Sep-2026 1300 Put | 🔴 Exit (Regime Shift) (Yesterday, 15:35) |
 
 <a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
 
