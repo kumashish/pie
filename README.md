@@ -2,16 +2,16 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 14:36 IST | 🟢 Call Debit Spread | 7.8/10    | Buy QQQ 18-Sep-2026 730 Call<br> Sell QQQ 18-Sep-2026 755 Call | Active (Aug 07, 05:52 IST) |
-| SPY       | 14:36 IST | 🟢 Call Debit Spread | 6.5/10    | Buy SPY 18-Sep-2026 775 Call<br> Sell SPY 18-Sep-2026 800 Call | Hold (Aug 14, 19:21 IST) |
+| QQQ       | 14:55 IST | 🟢 Call Debit Spread | 7.8/10    | Buy QQQ 18-Sep-2026 730 Call<br> Sell QQQ 18-Sep-2026 755 Call | Active (Aug 07, 05:52 IST) |
+| SPY       | 14:55 IST | 🟢 Call Debit Spread | 6.5/10    | Buy SPY 18-Sep-2026 775 Call<br> Sell SPY 18-Sep-2026 800 Call | Hold (Aug 14, 19:21 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| NIFTY 50  | 13:56 IST | 🟡 Long Butterfly  | 7.4/10    | Buy NIFTY 29-Sep-2026 23900 Call<br> Sell 2x NIFTY 29-Sep-2026 24300 Call<br> Buy NIFTY 29-Sep-2026 24800 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 13:10) |
-| BANKNIFTY | 13:56 IST | 🟢 Call Debit Spread | 6.9/10    | Buy BANKNIFTY 29-Sep-2026 57600 Call<br> Sell BANKNIFTY 29-Sep-2026 59300 Call | Active (Today, 13:10)  |
+| BANKNIFTY | 14:55 IST | 🟢 Call Debit Spread | 7.0/10    | Buy BANKNIFTY 29-Sep-2026 57700 Call<br> Sell BANKNIFTY 29-Sep-2026 59400 Call | Active (Today, 13:10)  |
+| NIFTY 50  | 14:55 IST | 🟡 Long Butterfly  | 6.5/10    | Buy NIFTY 29-Sep-2026 23900 Call<br> Sell 2x NIFTY 29-Sep-2026 24300 Call<br> Buy NIFTY 29-Sep-2026 24800 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 13:10) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
