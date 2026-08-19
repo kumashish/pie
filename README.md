@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 23:18 IST | 🟢 Call Debit Spread | 7.7/10    | Buy SPY 18-Sep-2026 770 Call<br> Sell SPY 18-Sep-2026 795 Call | Active (Yesterday, 19:34) |
-| QQQ       | 23:18 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 18-Sep-2026 715 Call<br> Sell QQQ 18-Sep-2026 740 Call | Active (Aug 07, 05:52 IST) |
+| SPY       | 00:31 IST | 🟢 Call Debit Spread | 7.7/10    | Buy SPY 18-Sep-2026 770 Call<br> Sell SPY 18-Sep-2026 795 Call | Active (Aug 18, 19:34 IST) |
+| QQQ       | 00:31 IST | 🟢 Call Debit Spread | 6.8/10    | Buy QQQ 18-Sep-2026 715 Call<br> Sell QQQ 18-Sep-2026 740 Call | Active (Aug 07, 05:52 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -11,7 +11,7 @@
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | NIFTY 50  | 15:42 IST | 🔴 Put Debit Spread | 6.8/10    | Buy NIFTY 29-Sep-2026 24100 Put<br> Sell NIFTY 29-Sep-2026 23400 Put | Active (Aug 17, 15:46 IST) |
-| BANKNIFTY | 15:42 IST | 🟢 Call Debit Spread | 6.1/10    | Buy BANKNIFTY 29-Sep-2026 57200 Call<br> Sell BANKNIFTY 29-Sep-2026 58800 Call | Active (Yesterday, 15:42) |
+| BANKNIFTY | 15:42 IST | 🟢 Call Debit Spread | 6.1/10    | Buy BANKNIFTY 29-Sep-2026 57200 Call<br> Sell BANKNIFTY 29-Sep-2026 58800 Call | Active (Aug 18, 15:42 IST) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
