@@ -2,16 +2,16 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 11:31 IST | 🟢 Call Debit Spread | 7.4/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Aug 18, 19:34 IST) |
-| QQQ       | 11:31 IST | 🟢 Call Debit Spread | 6.9/10    | Buy QQQ 16-Oct-2026 715 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Aug 21, 21:27 IST) |
+| SPY       | 11:56 IST | 🟢 Call Debit Spread | 7.4/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Aug 18, 19:34 IST) |
+| QQQ       | 11:56 IST | 🟢 Call Debit Spread | 6.9/10    | Buy QQQ 16-Oct-2026 715 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Aug 21, 21:27 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| BANKNIFTY | 10:56 IST | 🟢 Call Debit Spread | 7.2/10    | Buy BANKNIFTY 29-Sep-2026 57600 Call<br> Sell BANKNIFTY 29-Sep-2026 59100 Call | Active (Aug 20, 10:47 IST) |
-| NIFTY 50  | 10:56 IST | 🔴 Put Debit Spread | 6.4/10    | Buy NIFTY 29-Sep-2026 24300 Put<br> Sell NIFTY 29-Sep-2026 23700 Put | Active (Aug 20, 14:49 IST) |
+| NIFTY 50  | 11:56 IST | 🔴 Put Debit Spread | 6.7/10    | Buy NIFTY 29-Sep-2026 24200 Put<br> Sell NIFTY 29-Sep-2026 23600 Put | Active (Aug 20, 14:49 IST) |
+| BANKNIFTY | 11:56 IST | 🟢 Call Debit Spread | 6.2/10    | Buy BANKNIFTY 29-Sep-2026 57400 Call<br> Sell BANKNIFTY 29-Sep-2026 58900 Call | New                    |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
