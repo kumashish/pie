@@ -2,5 +2,4 @@
 
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| BEL.NS    | 15:46 IST | 🟡 Long Butterfly  | 6.9/10    | Buy BEL 29-Sep-2026 405 Call<br> Sell 2x BEL 29-Sep-2026 415 Call<br> Buy BEL 29-Sep-2026 425 Call | New                    |
-| TATASTEEL.NS | 15:47 IST | 🟡 Long Butterfly  | 6.1/10    | Buy TATASTEEL 29-Sep-2026 180 Call<br> Sell 2x TATASTEEL 29-Sep-2026 185 Call<br> Buy TATASTEEL 29-Sep-2026 190 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 15:47) |
+| CIPLA.NS  | 10:49 IST | 🟡 Long Butterfly  | 6.4/10    | Buy CIPLA 29-Sep-2026 1400 Call<br> Sell 2x CIPLA 29-Sep-2026 1400 Call<br> Buy CIPLA 29-Sep-2026 1450 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 10:49) |
