@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 21:24 IST | 🟢 Call Debit Spread | 7.7/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Aug 18, 19:34 IST) |
-| QQQ       | 21:24 IST | 🟢 Call Debit Spread | 7.5/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 750 Call | New                    |
+| SPY       | 02:07 IST | 🟢 Call Debit Spread | 8.0/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Aug 18, 19:34 IST) |
+| QQQ       | 02:07 IST | 🟢 Call Debit Spread | 7.8/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 750 Call | Active (Yesterday, 21:24) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -11,13 +11,13 @@
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | BANKNIFTY | 21:24 IST | 🟢 Call Debit Spread | 7.2/10    | Buy BANKNIFTY 29-Sep-2026 57500 Call<br> Sell BANKNIFTY 29-Sep-2026 58900 Call | Active (Aug 25, 15:46 IST) |
-| NIFTY 50  | 21:24 IST | 🔴 Put Debit Spread | 6.8/10    | Buy NIFTY 29-Sep-2026 24100 Put<br> Sell NIFTY 29-Sep-2026 23500 Put | Active (Yesterday, 15:50) |
+| NIFTY 50  | 21:24 IST | 🔴 Put Debit Spread | 6.8/10    | Buy NIFTY 29-Sep-2026 24100 Put<br> Sell NIFTY 29-Sep-2026 23500 Put | Active (Aug 26, 15:50 IST) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| BEL.NS    | 21:25 IST | 🟡 Long Butterfly  | 8.1/10    | Buy BEL 29-Sep-2026 400 Call<br> Sell 2x BEL 29-Sep-2026 410 Call<br> Buy BEL 29-Sep-2026 420 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 21:25) |
+| BEL.NS    | 21:25 IST | 🟡 Long Butterfly  | 8.1/10    | Buy BEL 29-Sep-2026 400 Call<br> Sell 2x BEL 29-Sep-2026 410 Call<br> Buy BEL 29-Sep-2026 420 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 21:25) |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
