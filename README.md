@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 22:27 IST | 🟢 Call Debit Spread | 7.8/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Aug 18, 19:34 IST) |
-| QQQ       | 22:27 IST | 🟢 Call Debit Spread | 7.6/10    | Buy QQQ 16-Oct-2026 715 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Yesterday, 21:24) |
+| SPY       | 04:01 IST | 🟢 Call Debit Spread | 7.8/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Aug 18, 19:34 IST) |
+| QQQ       | 04:01 IST | 🟢 Call Debit Spread | 7.2/10    | Buy QQQ 16-Oct-2026 715 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Aug 27, 21:24 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -27,7 +27,7 @@
 ### ⚡ Recently Closed / Exit Signals (Last 5)
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| KOTAKBANK.NS | 22:28 IST | 🔴 Put Debit Spread | 5.3/10    | Buy KOTAKBANK 29-Sep-2026 425 Put<br> Sell KOTAKBANK 29-Sep-2026 410 Put | 🔴 Exit (Regime Shift) (Today, 22:28) |
+| KOTAKBANK.NS | 22:28 IST | 🔴 Put Debit Spread | 5.3/10    | Buy KOTAKBANK 29-Sep-2026 425 Put<br> Sell KOTAKBANK 29-Sep-2026 410 Put | 🔴 Exit (Regime Shift) (Yesterday, 22:28) |
 
 <a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
 
