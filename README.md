@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 20:30 IST | 🟢 Call Debit Spread | 7.1/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 795 Call | New                    |
-| QQQ       | 20:30 IST | 🟢 Call Debit Spread | 5.8/10    | Buy QQQ 16-Oct-2026 710 Call<br> Sell QQQ 16-Oct-2026 740 Call | Active (Today, 19:49)  |
+| SPY       | 00:10 IST | 🟢 Call Debit Spread | 5.9/10    | Buy SPY 16-Oct-2026 760 Call<br> Sell SPY 16-Oct-2026 790 Call | New                    |
+| QQQ       | 00:10 IST | 🟢 Call Debit Spread | 5.8/10    | Buy QQQ 16-Oct-2026 705 Call<br> Sell QQQ 16-Oct-2026 735 Call | Active (Yesterday, 19:49) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -11,13 +11,13 @@
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | NIFTY 50  | 19:49 IST | 🔴 Put Debit Spread | 6.5/10    | Buy NIFTY 27-Oct-2026 24100 Put<br> Sell NIFTY 27-Oct-2026 23300 Put | Active (Aug 26, 15:50 IST) |
-| BANKNIFTY | 19:49 IST | 🟢 Poor Man's Covered Call | 6.0/10    | Buy BANKNIFTY 27-Oct-2026 54900 Call<br> Sell BANKNIFTY 27-Oct-2026 58700 Call | Active (Today, 15:06)  |
+| BANKNIFTY | 19:49 IST | 🟢 Poor Man's Covered Call | 6.0/10    | Buy BANKNIFTY 27-Oct-2026 54900 Call<br> Sell BANKNIFTY 27-Oct-2026 58700 Call | Active (Yesterday, 15:06) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| BHARTIARTL.NS | 19:50 IST | 🟡 Iron Condor     | 8.2/10    | Buy BHARTIARTL 27-Oct-2026 1700 Put<br> Sell BHARTIARTL 27-Oct-2026 1750 Put<br> Sell BHARTIARTL 27-Oct-2026 2000 Call<br> Buy BHARTIARTL 27-Oct-2026 2050 Call | ⚠️ Stop Loss (Today, 19:50) |
+| BHARTIARTL.NS | 19:50 IST | 🟡 Iron Condor     | 8.2/10    | Buy BHARTIARTL 27-Oct-2026 1700 Put<br> Sell BHARTIARTL 27-Oct-2026 1750 Put<br> Sell BHARTIARTL 27-Oct-2026 2000 Call<br> Buy BHARTIARTL 27-Oct-2026 2050 Call | ⚠️ Stop Loss (Yesterday, 19:50) |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
