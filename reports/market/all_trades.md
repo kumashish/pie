@@ -2,8 +2,7 @@
 
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| CIPLA.NS  | 16:41 IST | 🟡 Long Butterfly  | 7.8/10    | Buy CIPLA 27-Oct-2026 1350 Call<br> Sell 2x CIPLA 27-Oct-2026 1400 Call<br> Buy CIPLA 27-Oct-2026 1450 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 16:41) |
-| BEL.NS    | 16:41 IST | 🟡 Long Butterfly  | 7.6/10    | Buy BEL 27-Oct-2026 400 Call<br> Sell 2x BEL 27-Oct-2026 415 Call<br> Buy BEL 27-Oct-2026 425 Call | New                    |
-| BHARTIARTL.NS | 16:41 IST | 🟡 Iron Condor     | 6.9/10    | Buy BHARTIARTL 27-Oct-2026 1650 Put<br> Sell BHARTIARTL 27-Oct-2026 1700 Put<br> Sell BHARTIARTL 27-Oct-2026 1900 Call<br> Buy BHARTIARTL 27-Oct-2026 2000 Call | ⚠️ Stop Loss (Yesterday, 16:41) |
-| ASIANPAINT.NS | 16:40 IST | 🟡 Long Butterfly  | 6.8/10    | Buy ASIANPAINT 27-Oct-2026 2550 Call<br> Sell 2x ASIANPAINT 27-Oct-2026 2650 Call<br> Buy ASIANPAINT 27-Oct-2026 2750 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 16:40) |
-| TCS.NS    | 16:40 IST | 🟡 Iron Condor     | 6.0/10    | Buy TCS 27-Oct-2026 2200 Put<br> Sell TCS 27-Oct-2026 2250 Put<br> Sell TCS 27-Oct-2026 2550 Call<br> Buy TCS 27-Oct-2026 2600 Call | ⚠️ Stop Loss (Yesterday, 16:40) |
+| AXISBANK.NS | 14:44 IST | 🟡 Long Butterfly  | 7.4/10    | Buy AXISBANK 27-Oct-2026 1250 Call<br> Sell 2x AXISBANK 27-Oct-2026 1250 Call<br> Buy AXISBANK 27-Oct-2026 1300 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 14:44) |
+| M&M.NS    | 14:44 IST | 🟡 Long Butterfly  | 7.1/10    | Buy M&M 27-Oct-2026 3050 Call<br> Sell 2x M&M 27-Oct-2026 3150 Call<br> Buy M&M 27-Oct-2026 3250 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 14:44) |
+| CIPLA.NS  | 14:44 IST | 🟡 Long Butterfly  | 6.3/10    | Buy CIPLA 27-Oct-2026 1350 Call<br> Sell 2x CIPLA 27-Oct-2026 1400 Call<br> Buy CIPLA 27-Oct-2026 1450 Call | New                    |
+| TCS.NS    | 14:44 IST | 🟡 Long Butterfly  | 6.2/10    | Buy TCS 27-Oct-2026 2250 Call<br> Sell 2x TCS 27-Oct-2026 2350 Call<br> Buy TCS 27-Oct-2026 2400 Call | Active (Yesterday, 14:36) |
