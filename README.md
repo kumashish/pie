@@ -2,13 +2,13 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 23:13 IST | 🟢 Call Debit Spread | 7.4/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Yesterday, 10:20) |
-| QQQ       | 23:13 IST | 🟢 Call Debit Spread | 7.4/10    | Buy QQQ 16-Oct-2026 715 Call<br> Sell QQQ 16-Oct-2026 740 Call | Active (Today, 14:36)  |
+| SPY       | 02:24 IST | 🟢 Call Debit Spread | 7.5/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Sep 03, 10:20 IST) |
+| QQQ       | 02:24 IST | 🟢 Call Debit Spread | 7.5/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Yesterday, 14:36) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| NIFTY 50  | 19:18 IST | 🔴 Put Debit Spread | 8.5/10    | Buy NIFTY 27-Oct-2026 23900 Put<br> Sell NIFTY 27-Oct-2026 23200 Put | Active (Today, 14:36)  |
+| NIFTY 50  | 19:18 IST | 🔴 Put Debit Spread | 8.5/10    | Buy NIFTY 27-Oct-2026 23900 Put<br> Sell NIFTY 27-Oct-2026 23200 Put | Active (Yesterday, 14:36) |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | BANKNIFTY | 19:18 IST | 🟢 Call Debit Spread | 6.1/10    | Buy BANKNIFTY 27-Oct-2026 57400 Call<br> Sell BANKNIFTY 27-Oct-2026 59200 Call | New                    |
