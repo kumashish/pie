@@ -2,16 +2,16 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 10:29 IST | 🟢 Call Debit Spread | 7.5/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 795 Call | Active (Sep 03, 10:20 IST) |
-| QQQ       | 10:29 IST | 🟢 Call Debit Spread | 7.5/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Sep 04, 14:36 IST) |
+| SPY       | 15:16 IST | 🟢 Call Debit Spread | 7.5/10    | Buy SPY 16-Oct-2026 770 Call<br> Sell SPY 16-Oct-2026 800 Call | Active (Sep 03, 10:20 IST) |
+| QQQ       | 15:16 IST | 🟢 Call Debit Spread | 7.5/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Sep 04, 14:36 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| NIFTY 50  | 19:18 IST | 🔴 Put Debit Spread | 8.5/10    | Buy NIFTY 27-Oct-2026 23900 Put<br> Sell NIFTY 27-Oct-2026 23200 Put | Active (Sep 04, 14:36 IST) |
+| NIFTY 50  | 15:16 IST | 🔴 Put Debit Spread | 7.8/10    | Buy NIFTY 27-Oct-2026 23800 Put<br> Sell NIFTY 27-Oct-2026 23100 Put | Hold (Sep 04, 14:36 IST) |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| BANKNIFTY | 19:18 IST | 🟢 Call Debit Spread | 6.1/10    | Buy BANKNIFTY 27-Oct-2026 57400 Call<br> Sell BANKNIFTY 27-Oct-2026 59200 Call | New                    |
+| BANKNIFTY | 15:16 IST | 🟢 Poor Man's Covered Call | 6.0/10    | Buy BANKNIFTY 27-Oct-2026 54700 Call<br> Sell BANKNIFTY 27-Oct-2026 58200 Call | New                    |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
@@ -21,10 +21,20 @@
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
 
+### ⚡ Recently Closed / Exit Signals (Last 5)
+
+### ⚡ Recently Closed / Exit Signals (Last 5)
+| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| SBIN.NS   | 15:16 IST | 🔴 Put Debit Spread | 6.0/10    | Buy SBIN 27-Oct-2026 1000 Put<br> Sell SBIN 27-Oct-2026 950 Put | 🔴 Exit (Regime Shift) (Today, 15:16) |
+
+<a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
+
+
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 55 | 55 | 0 | N/A | N/A | N/A | N/A |
+| 55 | 54 | 1 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)

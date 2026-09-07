@@ -2,5 +2,6 @@
 
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| AXISBANK.NS | 19:19 IST | 🟡 Long Butterfly  | 6.7/10    | Buy AXISBANK 27-Oct-2026 1250 Call<br> Sell 2x AXISBANK 27-Oct-2026 1250 Call<br> Buy AXISBANK 27-Oct-2026 1300 Call | 🎯 Take Profit (50%+ Max Profit) (Sep 04, 19:19 IST) |
-| M&M.NS    | 19:19 IST | 🟡 Long Butterfly  | 6.2/10    | Buy M&M 27-Oct-2026 3100 Call<br> Sell 2x M&M 27-Oct-2026 3150 Call<br> Buy M&M 27-Oct-2026 3250 Call | 🎯 Take Profit (50%+ Max Profit) (Sep 04, 19:19 IST) |
+| NESTLEIND.NS | 15:17 IST | 🟡 Iron Condor     | 7.4/10    | Buy NESTLEIND 27-Oct-2026 1300 Put<br> Sell NESTLEIND 27-Oct-2026 1300 Put<br> Sell NESTLEIND 27-Oct-2026 1500 Call<br> Buy NESTLEIND 27-Oct-2026 1500 Call | ⚠️ Stop Loss (Today, 15:17) |
+| ADANIPORTS.NS | 15:17 IST | 🟡 Long Butterfly  | 6.7/10    | Buy ADANIPORTS 27-Oct-2026 1650 Call<br> Sell 2x ADANIPORTS 27-Oct-2026 1700 Call<br> Buy ADANIPORTS 27-Oct-2026 1750 Call | New                    |
+| M&M.NS    | 15:17 IST | 🟡 Long Butterfly  | 6.5/10    | Buy M&M 27-Oct-2026 3050 Call<br> Sell 2x M&M 27-Oct-2026 3150 Call<br> Buy M&M 27-Oct-2026 3250 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 15:17) |
