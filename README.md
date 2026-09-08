@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 20:10 IST | 🟢 Call Debit Spread | 7.3/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Sep 04, 14:36 IST) |
-| SPY       | 20:10 IST | 🟢 Call Debit Spread | 7.2/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 795 Call | Active (Sep 03, 10:20 IST) |
+| QQQ       | 00:21 IST | 🟢 Call Debit Spread | 7.4/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Sep 04, 14:36 IST) |
+| SPY       | 00:21 IST | 🟢 Call Debit Spread | 7.2/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 795 Call | Active (Sep 03, 10:20 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -17,7 +17,7 @@
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| BEL.NS    | 19:25 IST | 🟡 Long Butterfly  | 9.5/10    | Buy BEL 27-Oct-2026 400 Call<br> Sell 2x BEL 27-Oct-2026 410 Call<br> Buy BEL 27-Oct-2026 420 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 19:25) |
+| BEL.NS    | 19:25 IST | 🟡 Long Butterfly  | 9.5/10    | Buy BEL 27-Oct-2026 400 Call<br> Sell 2x BEL 27-Oct-2026 410 Call<br> Buy BEL 27-Oct-2026 420 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:25) |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
