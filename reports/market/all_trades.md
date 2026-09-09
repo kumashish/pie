@@ -2,5 +2,6 @@
 
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| NESTLEIND.NS | 19:26 IST | 🟡 Iron Condor     | 7.0/10    | Buy NESTLEIND 27-Oct-2026 1300 Put<br> Sell NESTLEIND 27-Oct-2026 1300 Put<br> Sell NESTLEIND 27-Oct-2026 1500 Call<br> Buy NESTLEIND 27-Oct-2026 1500 Call | ⚠️ Stop Loss (Yesterday, 19:26) |
-| M&M.NS    | 19:26 IST | 🟡 Long Butterfly  | 6.8/10    | Buy M&M 27-Oct-2026 3050 Call<br> Sell 2x M&M 27-Oct-2026 3150 Call<br> Buy M&M 27-Oct-2026 3250 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:26) |
+| NESTLEIND.NS | 14:45 IST | 🟡 Iron Condor     | 7.4/10    | Buy NESTLEIND 27-Oct-2026 1250 Put<br> Sell NESTLEIND 27-Oct-2026 1300 Put<br> Sell NESTLEIND 27-Oct-2026 1500 Call<br> Buy NESTLEIND 27-Oct-2026 1500 Call | ⚠️ Stop Loss (Today, 14:45) |
+| TECHM.NS  | 14:45 IST | 🟡 Long Butterfly  | 6.6/10    | Buy TECHM 27-Oct-2026 1450 Call<br> Sell 2x TECHM 27-Oct-2026 1500 Call<br> Buy TECHM 27-Oct-2026 1550 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 14:45) |
+| HEROMOTOCO.NS | 14:45 IST | 🟡 Long Butterfly  | 6.4/10    | Buy HEROMOTOCO 27-Oct-2026 5100 Call<br> Sell 2x HEROMOTOCO 27-Oct-2026 5200 Call<br> Buy HEROMOTOCO 27-Oct-2026 5400 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 14:45) |

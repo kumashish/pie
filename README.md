@@ -2,22 +2,21 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 10:26 IST | 🟢 Call Debit Spread | 7.3/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Sep 04, 14:36 IST) |
-| SPY       | 10:26 IST | 🟢 Call Debit Spread | 6.8/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 795 Call | Active (Sep 03, 10:20 IST) |
+| QQQ       | 14:44 IST | 🟢 Call Debit Spread | 7.3/10    | Buy QQQ 16-Oct-2026 720 Call<br> Sell QQQ 16-Oct-2026 745 Call | Active (Sep 04, 14:36 IST) |
+| SPY       | 14:44 IST | 🟢 Call Debit Spread | 6.8/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 795 Call | Active (Sep 03, 10:20 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| NIFTY 50  | 19:25 IST | 🔴 Put Debit Spread | 7.8/10    | Buy NIFTY 27-Oct-2026 23600 Put<br> Sell NIFTY 27-Oct-2026 22900 Put | Hold (Sep 04, 14:36 IST) |
+| NIFTY 50  | 14:44 IST | 🔴 Put Debit Spread | 8.1/10    | Buy NIFTY 27-Oct-2026 23500 Put<br> Sell NIFTY 27-Oct-2026 22800 Put | Hold (Sep 04, 14:36 IST) |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| BANKNIFTY | 19:25 IST | 🟡 Long Butterfly  | 7.3/10    | Buy BANKNIFTY 27-Oct-2026 55600 Call<br> Sell 2x BANKNIFTY 27-Oct-2026 56800 Call<br> Buy BANKNIFTY 27-Oct-2026 57900 Call | New                    |
+| BANKNIFTY | 14:44 IST | 🟡 Long Butterfly  | 6.6/10    | Buy BANKNIFTY 27-Oct-2026 55300 Call<br> Sell 2x BANKNIFTY 27-Oct-2026 56500 Call<br> Buy BANKNIFTY 27-Oct-2026 57700 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:25) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| BEL.NS    | 19:25 IST | 🟡 Long Butterfly  | 9.5/10    | Buy BEL 27-Oct-2026 400 Call<br> Sell 2x BEL 27-Oct-2026 410 Call<br> Buy BEL 27-Oct-2026 420 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:25) |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
