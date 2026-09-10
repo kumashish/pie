@@ -2,4 +2,4 @@
 
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SBIN.NS   | 15:16 IST | 🔴 Put Debit Spread | 6.0/10    | Buy SBIN 27-Oct-2026 1000 Put<br> Sell SBIN 27-Oct-2026 950 Put | 🔴 Exit (Regime Shift) (Today, 15:16) |
+| ASIANPAINT.NS | 19:23 IST | 🟢 Call Debit Spread | 5.4/10    | Buy ASIANPAINT 27-Oct-2026 2500 Call<br> Sell ASIANPAINT 27-Oct-2026 2600 Call | 🔴 Exit (Regime Shift) (Today, 19:23) |
