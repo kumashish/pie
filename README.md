@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 20:02 IST | 🟢 Call Debit Spread | 6.0/10    | Buy SPY 16-Oct-2026 760 Call<br> Sell SPY 16-Oct-2026 790 Call | Active (Today, 10:29)  |
-| QQQ       | 20:02 IST | 🟢 Call Debit Spread | 5.8/10    | Buy QQQ 16-Oct-2026 710 Call<br> Sell QQQ 16-Oct-2026 740 Call | Active (Today, 19:22)  |
+| SPY       | 00:06 IST | 🟢 Call Debit Spread | 6.0/10    | Buy SPY 16-Oct-2026 760 Call<br> Sell SPY 16-Oct-2026 790 Call | Active (Yesterday, 10:29) |
+| QQQ       | 00:06 IST | 🟢 Call Debit Spread | 5.8/10    | Buy QQQ 16-Oct-2026 710 Call<br> Sell QQQ 16-Oct-2026 740 Call | Active (Yesterday, 19:22) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -11,7 +11,7 @@
 | NIFTY 50  | 19:22 IST | 🔴 Put Debit Spread | 7.8/10    | Buy NIFTY 27-Oct-2026 23500 Put<br> Sell NIFTY 27-Oct-2026 22800 Put | Hold (Sep 04, 14:36 IST) |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| BANKNIFTY | 19:22 IST | 🔴 Put Debit Spread | 6.1/10    | Buy BANKNIFTY 27-Oct-2026 56500 Put<br> Sell BANKNIFTY 27-Oct-2026 54700 Put | Active (Today, 14:43)  |
+| BANKNIFTY | 19:22 IST | 🔴 Put Debit Spread | 6.1/10    | Buy BANKNIFTY 27-Oct-2026 56500 Put<br> Sell BANKNIFTY 27-Oct-2026 54700 Put | Active (Yesterday, 14:43) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
@@ -26,7 +26,7 @@
 ### ⚡ Recently Closed / Exit Signals (Last 5)
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ASIANPAINT.NS | 19:23 IST | 🟢 Call Debit Spread | 5.4/10    | Buy ASIANPAINT 27-Oct-2026 2500 Call<br> Sell ASIANPAINT 27-Oct-2026 2600 Call | 🔴 Exit (Regime Shift) (Today, 19:23) |
+| ASIANPAINT.NS | 19:23 IST | 🟢 Call Debit Spread | 5.4/10    | Buy ASIANPAINT 27-Oct-2026 2500 Call<br> Sell ASIANPAINT 27-Oct-2026 2600 Call | 🔴 Exit (Regime Shift) (Yesterday, 19:23) |
 
 <a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
 
