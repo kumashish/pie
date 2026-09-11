@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | 20:01 IST | 🟢 Call Debit Spread | 7.3/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 795 Call | Active (Today, 19:22)  |
-| QQQ       | 20:01 IST | 🟢 Call Debit Spread | 7.3/10    | Buy QQQ 16-Oct-2026 715 Call<br> Sell QQQ 16-Oct-2026 740 Call | Active (Today, 19:22)  |
+| QQQ       | 00:12 IST | 🟢 Call Debit Spread | 7.3/10    | Buy QQQ 16-Oct-2026 715 Call<br> Sell QQQ 16-Oct-2026 740 Call | Active (Yesterday, 19:22) |
+| SPY       | 00:12 IST | 🟢 Call Debit Spread | 7.3/10    | Buy SPY 16-Oct-2026 765 Call<br> Sell SPY 16-Oct-2026 795 Call | Active (Yesterday, 19:22) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -12,7 +12,7 @@
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
-| BANKNIFTY | 19:22 IST | 🔴 Put Debit Spread | 5.7/10    | Buy BANKNIFTY 27-Oct-2026 56600 Put<br> Sell BANKNIFTY 27-Oct-2026 54700 Put | Active (Yesterday, 14:43) |
+| BANKNIFTY | 19:22 IST | 🔴 Put Debit Spread | 5.7/10    | Buy BANKNIFTY 27-Oct-2026 56600 Put<br> Sell BANKNIFTY 27-Oct-2026 54700 Put | Active (Sep 10, 14:43 IST) |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
