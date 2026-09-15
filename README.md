@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 20:38 IST | 🟢 Call Debit Spread | 6.1/10    | Buy QQQ 16-Oct-2026 705 Call<br> Sell QQQ 16-Oct-2026 730 Call | Active (Yesterday, 22:29) |
-| SPY       | 20:38 IST | 🟢 Call Debit Spread | 5.8/10    | Buy SPY 16-Oct-2026 755 Call<br> Sell SPY 16-Oct-2026 785 Call | Active (Yesterday, 22:29) |
+| QQQ       | 00:38 IST | 🟢 Call Debit Spread | 6.1/10    | Buy QQQ 16-Oct-2026 705 Call<br> Sell QQQ 16-Oct-2026 730 Call | Active (Sep 14, 22:29 IST) |
+| SPY       | 00:38 IST | 🟢 Call Debit Spread | 5.8/10    | Buy SPY 16-Oct-2026 755 Call<br> Sell SPY 16-Oct-2026 785 Call | Active (Sep 14, 22:29 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -26,7 +26,7 @@
 ### ⚡ Recently Closed / Exit Signals (Last 5)
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ASIANPAINT.NS | 20:00 IST | 🟢 Call Debit Spread | 5.2/10    | Buy ASIANPAINT 27-Oct-2026 2400 Call<br> Sell ASIANPAINT 27-Oct-2026 2500 Call | 🔴 Exit (Regime Shift) (Today, 20:00) |
+| ASIANPAINT.NS | 20:00 IST | 🟢 Call Debit Spread | 5.2/10    | Buy ASIANPAINT 27-Oct-2026 2400 Call<br> Sell ASIANPAINT 27-Oct-2026 2500 Call | 🔴 Exit (Regime Shift) (Yesterday, 20:00) |
 
 <a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
 
