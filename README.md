@@ -2,17 +2,17 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 19:09 IST | 🟢 Call Debit Spread | 7.3/10    | Buy QQQ 20-Nov-2026 715 Call<br> Sell QQQ 20-Nov-2026 750 Call | New                    |
-| SPY       | 19:09 IST | 🟢 Call Debit Spread | 6.1/10    | Buy SPY 20-Nov-2026 760 Call<br> Sell SPY 20-Nov-2026 795 Call | New                    |
+| QQQ       | 19:58 IST | 🟢 Call Debit Spread | 7.9/10    | Buy QQQ 20-Nov-2026 715 Call<br> Sell QQQ 20-Nov-2026 750 Call | Active (Today, 19:09)  |
+| SPY       | 19:58 IST | 🟢 Call Debit Spread | 6.1/10    | Buy SPY 20-Nov-2026 760 Call<br> Sell SPY 20-Nov-2026 800 Call | Active (Today, 19:09)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
-| NIFTY 50  | 15:10 IST | 🔴 Put Debit Spread | 7.5/10    | Buy NIFTY 27-Oct-2026 23300 Put<br> Sell NIFTY 27-Oct-2026 22600 Put | Hold (Sep 04, 14:36 IST) |
+| NIFTY 50  | 19:58 IST | 🔴 Put Debit Spread | 7.5/10    | Buy NIFTY 27-Oct-2026 23300 Put<br> Sell NIFTY 27-Oct-2026 22600 Put | Hold (Sep 04, 14:36 IST) |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
-| BANKNIFTY | 15:10 IST | 🔴 Put Debit Spread | 5.5/10    | Buy BANKNIFTY 27-Oct-2026 56100 Put<br> Sell BANKNIFTY 27-Oct-2026 54400 Put | Active (Sep 10, 14:43 IST) |
+| BANKNIFTY | 19:58 IST | 🔴 Put Debit Spread | 5.5/10    | Buy BANKNIFTY 27-Oct-2026 56100 Put<br> Sell BANKNIFTY 27-Oct-2026 54400 Put | Active (Sep 10, 14:43 IST) |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
