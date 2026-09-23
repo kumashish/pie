@@ -2,10 +2,10 @@
 
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| INDUSINDBK.NS | 19:43 IST | 🟡 Long Butterfly  | 7.9/10    | Buy INDUSINDBK 27-Oct-2026 935 Call<br> Sell 2x INDUSINDBK 27-Oct-2026 955 Call<br> Buy INDUSINDBK 27-Oct-2026 975 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:43) |
-| BAJFINANCE.NS | 19:43 IST | 🟡 Long Butterfly  | 7.5/10    | Buy BAJFINANCE 27-Oct-2026 1000 Call<br> Sell 2x BAJFINANCE 27-Oct-2026 1000 Call<br> Buy BAJFINANCE 27-Oct-2026 1050 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:43) |
-| SHRIRAMFIN.NS | 19:43 IST | 🟡 Long Butterfly  | 7.4/10    | Buy SHRIRAMFIN 27-Oct-2026 1000 Call<br> Sell 2x SHRIRAMFIN 27-Oct-2026 1000 Call<br> Buy SHRIRAMFIN 27-Oct-2026 1050 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:43) |
-| JSWSTEEL.NS | 19:43 IST | 🟡 Long Butterfly  | 7.4/10    | Buy JSWSTEEL 27-Oct-2026 1250 Call<br> Sell 2x JSWSTEEL 27-Oct-2026 1250 Call<br> Buy JSWSTEEL 27-Oct-2026 1300 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 19:43) |
-| SUNPHARMA.NS | 19:43 IST | 🟡 Long Butterfly  | 6.9/10    | Buy SUNPHARMA 27-Oct-2026 1800 Call<br> Sell 2x SUNPHARMA 27-Oct-2026 1850 Call<br> Buy SUNPHARMA 27-Oct-2026 1900 Call | New                    |
-| HINDALCO.NS | 19:43 IST | 🟡 Long Butterfly  | 6.8/10    | Buy HINDALCO 27-Oct-2026 950 Call<br> Sell 2x HINDALCO 27-Oct-2026 975 Call<br> Buy HINDALCO 27-Oct-2026 995 Call | New                    |
-| COALINDIA.NS | 19:43 IST | 🟡 Iron Condor     | 6.4/10    | Buy COALINDIA 27-Oct-2026 400 Put<br> Sell COALINDIA 27-Oct-2026 410 Put<br> Sell COALINDIA 27-Oct-2026 445 Call<br> Buy COALINDIA 27-Oct-2026 455 Call | ⚠️ Stop Loss (Yesterday, 19:43) |
+| HINDALCO.NS | 15:05 IST | 🟡 Long Butterfly  | 7.6/10    | Buy HINDALCO 27-Oct-2026 975 Call<br> Sell 2x HINDALCO 27-Oct-2026 1000 Call<br> Buy HINDALCO 27-Oct-2026 1020 Call | New                    |
+| TATASTEEL.NS | 15:06 IST | 🟡 Long Butterfly  | 7.6/10    | Buy TATASTEEL 27-Oct-2026 185 Call<br> Sell 2x TATASTEEL 27-Oct-2026 190 Call<br> Buy TATASTEEL 27-Oct-2026 195 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 15:06) |
+| INDUSINDBK.NS | 15:05 IST | 🟡 Long Butterfly  | 7.6/10    | Buy INDUSINDBK 27-Oct-2026 940 Call<br> Sell 2x INDUSINDBK 27-Oct-2026 960 Call<br> Buy INDUSINDBK 27-Oct-2026 980 Call | New                    |
+| SHRIRAMFIN.NS | 15:06 IST | 🟡 Long Butterfly  | 6.8/10    | Buy SHRIRAMFIN 27-Oct-2026 1000 Call<br> Sell 2x SHRIRAMFIN 27-Oct-2026 1000 Call<br> Buy SHRIRAMFIN 27-Oct-2026 1050 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 15:06) |
+| SUNPHARMA.NS | 15:06 IST | 🟡 Long Butterfly  | 6.4/10    | Buy SUNPHARMA 27-Oct-2026 1800 Call<br> Sell 2x SUNPHARMA 27-Oct-2026 1850 Call<br> Buy SUNPHARMA 27-Oct-2026 1900 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 15:06) |
+| NESTLEIND.NS | 15:05 IST | 🟡 Iron Condor     | 6.4/10    | Buy NESTLEIND 27-Oct-2026 1300 Put<br> Sell NESTLEIND 27-Oct-2026 1300 Put<br> Sell NESTLEIND 27-Oct-2026 1450 Call<br> Buy NESTLEIND 27-Oct-2026 1450 Call | ⚠️ Stop Loss (Today, 15:05) |
+| BAJFINANCE.NS | 15:05 IST | 🟡 Long Butterfly  | 6.2/10    | Buy BAJFINANCE 27-Oct-2026 1000 Call<br> Sell 2x BAJFINANCE 27-Oct-2026 1050 Call<br> Buy BAJFINANCE 27-Oct-2026 1050 Call | New                    |
