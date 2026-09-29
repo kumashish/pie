@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 19:41 IST | 🟢 Call Debit Spread | 7.8/10    | Buy QQQ 20-Nov-2026 740 Call<br> Sell QQQ 20-Nov-2026 775 Call | Active (Sep 23, 06:17 IST) |
-| SPY       | 19:41 IST | 🟢 Call Debit Spread | 6.9/10    | Buy SPY 20-Nov-2026 765 Call<br> Sell SPY 20-Nov-2026 800 Call | Active (Sep 25, 00:51 IST) |
+| QQQ       | 01:01 IST | 🟢 Call Debit Spread | 7.8/10    | Buy QQQ 20-Nov-2026 740 Call<br> Sell QQQ 20-Nov-2026 775 Call | Active (Sep 23, 06:17 IST) |
+| SPY       | 01:01 IST | 🟡 Long Butterfly  | 6.5/10    | Buy SPY 20-Nov-2026 740 Call<br> Sell 2x SPY 20-Nov-2026 765 Call<br> Buy SPY 20-Nov-2026 790 Call | New                    |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -11,14 +11,14 @@
 | MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
 | SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
 | NIFTY 50  | 16:25 IST | 🔴 Put Debit Spread | 7.5/10    | Buy NIFTY 24-Nov-2026 22700 Put<br> Sell NIFTY 24-Nov-2026 21800 Put | Hold (Sep 21, 15:44 IST) |
-| BANKNIFTY | 16:25 IST | 🔴 Put Debit Spread | 6.8/10    | Buy BANKNIFTY 24-Nov-2026 54300 Put<br> Sell BANKNIFTY 24-Nov-2026 52200 Put | Hold (Today, 16:25)    |
+| BANKNIFTY | 16:25 IST | 🔴 Put Debit Spread | 6.8/10    | Buy BANKNIFTY 24-Nov-2026 54300 Put<br> Sell BANKNIFTY 24-Nov-2026 52200 Put | Hold (Yesterday, 16:25) |
 | FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SUNPHARMA.NS | 16:26 IST | 🟡 Long Butterfly  | 8.9/10    | Buy SUNPHARMA 24-Nov-2026 1800 Call<br> Sell 2x SUNPHARMA 24-Nov-2026 1850 Call<br> Buy SUNPHARMA 24-Nov-2026 1900 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 16:26) |
-| ADANIENT.NS | 16:26 IST | 🟡 Long Butterfly  | 8.8/10    | Buy ADANIENT 24-Nov-2026 2900 Call<br> Sell 2x ADANIENT 24-Nov-2026 2950 Call<br> Buy ADANIENT 24-Nov-2026 3050 Call | 🎯 Take Profit (50%+ Max Profit) (Today, 16:26) |
+| SUNPHARMA.NS | 16:26 IST | 🟡 Long Butterfly  | 8.9/10    | Buy SUNPHARMA 24-Nov-2026 1800 Call<br> Sell 2x SUNPHARMA 24-Nov-2026 1850 Call<br> Buy SUNPHARMA 24-Nov-2026 1900 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 16:26) |
+| ADANIENT.NS | 16:26 IST | 🟡 Long Butterfly  | 8.8/10    | Buy ADANIENT 24-Nov-2026 2900 Call<br> Sell 2x ADANIENT 24-Nov-2026 2950 Call<br> Buy ADANIENT 24-Nov-2026 3050 Call | 🎯 Take Profit (50%+ Max Profit) (Yesterday, 16:26) |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
