@@ -208,16 +208,26 @@ def format_market_table(markets: list[dict]) -> str:
     if table3_other_trades:
         lines.append('\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n')
 
-        # Write reports/market/all_trades.md for lower score trades
+        # Write reports/market/all_trades.md for lower score trades divided by market
         try:
             other_file = Path("reports/market/all_trades.md")
             other_file.parent.mkdir(parents=True, exist_ok=True)
+            us_trades = []
+            in_trades = []
+            for market in table3_other_trades:
+                sym_upper = str(market.get("symbol") or "").upper()
+                if sym_upper.endswith(".NS") or sym_upper.endswith(".BO") or sym_upper.startswith("^NSE") or sym_upper.startswith("^BSE"):
+                    in_trades.append(market)
+                else:
+                    us_trades.append(market)
+
             other_lines = [
                 "# 📜 Active & Range-Bound Strategies (Score < 8.0/10)",
                 "",
+                "### 🇺🇸 U.S. Stocks & ETFs",
                 header,
             ]
-            for market in table3_other_trades:
+            for market in us_trades:
                 market_name = market.get("market", "")
                 stype = market.get("strategy_type", "")
                 strat_name = get_strategy_display_name(stype)
@@ -230,6 +240,26 @@ def format_market_table(markets: list[dict]) -> str:
                 other_lines.append(
                     f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
                 )
+
+            other_lines.extend([
+                "",
+                "### 🇮🇳 Indian Equities",
+                header,
+            ])
+            for market in in_trades:
+                market_name = market.get("market", "")
+                stype = market.get("strategy_type", "")
+                strat_name = get_strategy_display_name(stype)
+                fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+                updated = market.get("updated", "")
+                strategy = market.get("strategy", "")
+                signal_raw = market.get("signal", "")
+                since = market.get("since", "")
+                signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
+                other_lines.append(
+                    f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+                )
+
             other_file.write_text("\n".join(other_lines), encoding="utf-8")
         except Exception:
             pass

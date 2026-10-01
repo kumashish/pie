@@ -291,16 +291,27 @@ def generate_readme_snapshot(
         '\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n'
     )
 
-    # Always generate reports/market/all_trades.md for lower score trades
+    # Always generate reports/market/all_trades.md for lower score trades divided by market
     try:
         other_file = Path("reports/market/all_trades.md")
         other_file.parent.mkdir(parents=True, exist_ok=True)
+
+        us_trades = []
+        in_trades = []
+        for data in table3_other_trades:
+            sym_upper = str(data.get("symbol") or "").upper()
+            if sym_upper.endswith(".NS") or sym_upper.endswith(".BO") or sym_upper.startswith("^NSE") or sym_upper.startswith("^BSE"):
+                in_trades.append(data)
+            else:
+                us_trades.append(data)
+
         other_lines = [
             "# 📜 Active & Range-Bound Strategies (Score < 8.0/10)",
             "",
+            "### 🇺🇸 U.S. Stocks & ETFs",
             header,
         ]
-        for data in table3_other_trades:
+        for data in us_trades:
             updated_time = format_ist_time(data["last_updated"])
             market = str(data.get("market") or data.get("symbol") or "")
             stype = str(data.get("strategy_type") or "")
@@ -313,6 +324,26 @@ def generate_readme_snapshot(
             other_lines.append(
                 f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
             )
+
+        other_lines.extend([
+            "",
+            "### 🇮🇳 Indian Equities",
+            header,
+        ])
+        for data in in_trades:
+            updated_time = format_ist_time(data["last_updated"])
+            market = str(data.get("market") or data.get("symbol") or "")
+            stype = str(data.get("strategy_type") or "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+            strategy = str(data.get("strategy") or "No Trade")
+            signal_raw = str(data.get("signal") or "Hold")
+            since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+            signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+            other_lines.append(
+                f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+            )
+
         other_file.write_text("\n".join(other_lines), encoding="utf-8")
     except Exception as err:
         print(f"[Warning] Failed to generate all_trades.md: {err}")
@@ -342,12 +373,41 @@ def generate_readme_snapshot(
         try:
             history_file = Path("reports/market/closed_trades.md")
             history_file.parent.mkdir(parents=True, exist_ok=True)
+            us_exits = []
+            in_exits = []
+            for data in table4_exits:
+                sym_upper = str(data.get("symbol") or "").upper()
+                if sym_upper.endswith(".NS") or sym_upper.endswith(".BO") or sym_upper.startswith("^NSE") or sym_upper.startswith("^BSE"):
+                    in_exits.append(data)
+                else:
+                    us_exits.append(data)
+
             history_lines = [
                 "# 📜 Full Closed Trade History",
                 "",
+                "### 🇺🇸 U.S. Stocks & ETFs",
                 header,
             ]
-            for data in table4_exits:
+            for data in us_exits:
+                updated_time = format_ist_time(data["last_updated"])
+                market = str(data.get("market") or data.get("symbol") or "")
+                stype = str(data.get("strategy_type") or "")
+                strat_name = get_strategy_display_name(stype)
+                fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+                strategy = str(data.get("strategy") or "No Trade")
+                signal_raw = str(data.get("signal") or "Hold")
+                since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+                signal_display = f"{signal_raw} ({since_text})"
+                history_lines.append(
+                    f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+                )
+
+            history_lines.extend([
+                "",
+                "### 🇮🇳 Indian Equities",
+                header,
+            ])
+            for data in in_exits:
                 updated_time = format_ist_time(data["last_updated"])
                 market = str(data.get("market") or data.get("symbol") or "")
                 stype = str(data.get("strategy_type") or "")

@@ -1,5 +1,10 @@
 # 📜 Full Closed Trade History
 
+### 🇺🇸 U.S. Stocks & ETFs
+| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+
+### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | KOTAKBANK.NS | Oct 01, 22:24 IST | 🟢 Call Debit Spread | 7.9/10    | Buy KOTAKBANK 24-Nov-2026 420 Call<br> Sell KOTAKBANK 24-Nov-2026 440 Call | 🔴 Exit (Regime Shift) (Today, 22:24) |
