@@ -150,6 +150,7 @@ def get_strategy_display_name(stype: str) -> str:
         return "🟡 Collar"
     if clean in {"poor mans covered call", "poor_mans_covered_call"}:
         return "🟢 Poor Man's Covered Call"
+    return f"🟡 {clean.title()}"
 def get_trade_profile(stype: str) -> str:
     """Return deterministic strategy profile, target DTE, and short delta target."""
     clean = stype.lower().replace("_", " ").strip()
@@ -222,9 +223,7 @@ def generate_readme_snapshot(
         elif "exit" in signal_raw.lower() or "close" in signal_raw.lower():
             table4_exits.append(data)
         else:
-            is_simple_debit = stype in simple_debit_types
-            if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
-                table3_stocks.append(data)
+            table3_stocks.append(data)
 
     table3_high_conviction = [data for data in table3_stocks if float(data.get("fit_score", 0.0)) >= 80.0]
     table3_other_trades = [data for data in table3_stocks if float(data.get("fit_score", 0.0)) < 80.0]
@@ -240,14 +239,14 @@ def generate_readme_snapshot(
 
     output_sections = ["### 🌐 U.S. Macro Benchmark Indices", header]
     for data in table1_us:
-        updated_time = format_ist_time(data["last_updated"], include_date=False)
-        market = data.get("market", "")
-        stype = data.get("strategy_type", "")
+        updated_time = format_ist_time(data["last_updated"])
+        market = str(data.get("market") or data.get("symbol") or "")
+        stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
-        strategy = data["strategy"]
-        signal_raw = data.get("signal", "")
-        since_text, _ = calculate_since(data["signal_since"], current_time)
+        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+        strategy = str(data.get("strategy") or "No Trade")
+        signal_raw = str(data.get("signal") or "Hold")
+        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
 
         output_sections.append(
@@ -257,14 +256,14 @@ def generate_readme_snapshot(
     output_sections.append("\n### 🌐 Indian Macro Benchmark Indices")
     output_sections.append(header)
     for data in table2_in:
-        updated_time = format_ist_time(data["last_updated"], include_date=False)
-        market = data.get("market", "")
-        stype = data.get("strategy_type", "")
+        updated_time = format_ist_time(data["last_updated"])
+        market = str(data.get("market") or data.get("symbol") or "")
+        stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
-        strategy = data["strategy"]
-        signal_raw = data.get("signal", "")
-        since_text, _ = calculate_since(data["signal_since"], current_time)
+        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+        strategy = str(data.get("strategy") or "No Trade")
+        signal_raw = str(data.get("signal") or "Hold")
+        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
 
         output_sections.append(
@@ -274,64 +273,62 @@ def generate_readme_snapshot(
     output_sections.append("\n### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies")
     output_sections.append(header)
     for data in table3_high_conviction:
-        updated_time = format_ist_time(data["last_updated"], include_date=False)
-        market = data.get("market", "")
-        stype = data.get("strategy_type", "")
+        updated_time = format_ist_time(data["last_updated"])
+        market = str(data.get("market") or data.get("symbol") or "")
+        stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
-        strategy = data["strategy"]
-        signal_raw = data.get("signal", "")
-        since_text, _ = calculate_since(data["signal_since"], current_time)
+        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+        strategy = str(data.get("strategy") or "No Trade")
+        signal_raw = str(data.get("signal") or "Hold")
+        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
 
         output_sections.append(
             f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
         )
 
-    if table3_other_trades:
-        output_sections.append(
-            '\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n'
-        )
+    output_sections.append(
+        '\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n'
+    )
 
-        # Generate reports/market/all_trades.md for lower score trades
-        try:
-            other_file = Path("reports/market/all_trades.md")
-            other_file.parent.mkdir(parents=True, exist_ok=True)
-            other_lines = [
-                "# 📜 Active & Range-Bound Strategies (Score < 8.0/10)",
-                "",
-                header,
-            ]
-            for data in table3_other_trades:
-                updated_time = format_ist_time(data["last_updated"], include_date=False)
-                market = data.get("market", "")
-                stype = data.get("strategy_type", "")
-                strat_name = get_strategy_display_name(stype)
-                fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
-                strategy = data["strategy"]
-                signal_raw = data.get("signal", "")
-                since_text, _ = calculate_since(data["signal_since"], current_time)
-                signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
-                other_lines.append(
-                    f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
-                )
-            other_file.write_text("\n".join(other_lines), encoding="utf-8")
-        except Exception:
-            pass
+    # Always generate reports/market/all_trades.md for lower score trades
+    try:
+        other_file = Path("reports/market/all_trades.md")
+        other_file.parent.mkdir(parents=True, exist_ok=True)
+        other_lines = [
+            "# 📜 Active & Range-Bound Strategies (Score < 8.0/10)",
+            "",
+            header,
+        ]
+        for data in table3_other_trades:
+            updated_time = format_ist_time(data["last_updated"])
+            market = str(data.get("market") or data.get("symbol") or "")
+            stype = str(data.get("strategy_type") or "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+            strategy = str(data.get("strategy") or "No Trade")
+            signal_raw = str(data.get("signal") or "Hold")
+            since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+            signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+            other_lines.append(
+                f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+            )
+        other_file.write_text("\n".join(other_lines), encoding="utf-8")
+    except Exception as err:
+        print(f"[Warning] Failed to generate all_trades.md: {err}")
 
     if table4_exits:
         output_sections.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
-        output_sections.append("\n### ⚡ Recently Closed / Exit Signals (Last 5)")
         output_sections.append(header)
         for data in table4_exits[:5]:
-            updated_time = format_ist_time(data["last_updated"], include_date=False)
-            market = data.get("market", "")
-            stype = data.get("strategy_type", "")
+            updated_time = format_ist_time(data["last_updated"])
+            market = str(data.get("market") or data.get("symbol") or "")
+            stype = str(data.get("strategy_type") or "")
             strat_name = get_strategy_display_name(stype)
-            fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
-            strategy = data["strategy"]
-            signal_raw = data.get("signal", "")
-            since_text, _ = calculate_since(data["signal_since"], current_time)
+            fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+            strategy = str(data.get("strategy") or "No Trade")
+            signal_raw = str(data.get("signal") or "Hold")
+            since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
             signal_display = f"{signal_raw} ({since_text})"
 
             output_sections.append(
@@ -351,21 +348,21 @@ def generate_readme_snapshot(
                 header,
             ]
             for data in table4_exits:
-                updated_time = format_ist_time(data["last_updated"], include_date=False)
-                market = data.get("market", "")
-                stype = data.get("strategy_type", "")
+                updated_time = format_ist_time(data["last_updated"])
+                market = str(data.get("market") or data.get("symbol") or "")
+                stype = str(data.get("strategy_type") or "")
                 strat_name = get_strategy_display_name(stype)
-                fit_badge = format_fit_score_badge(float(data.get("fit_score", 0.0)))
-                strategy = data["strategy"]
-                signal_raw = data.get("signal", "")
-                since_text, _ = calculate_since(data["signal_since"], current_time)
+                fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+                strategy = str(data.get("strategy") or "No Trade")
+                signal_raw = str(data.get("signal") or "Hold")
+                since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
                 signal_display = f"{signal_raw} ({since_text})"
                 history_lines.append(
                     f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
                 )
             history_file.write_text("\n".join(history_lines), encoding="utf-8")
-        except Exception:
-            pass
+        except Exception as err:
+            print(f"[Warning] Failed to generate closed_trades.md: {err}")
 
     try:
         from pie.market.performance import PerformanceTracker

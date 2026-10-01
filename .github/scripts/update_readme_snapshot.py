@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 
-def load_market_data(json_path: str = "market_snapshot.json") -> list[dict]:
+def load_market_data(json_path: str = "reports/market/snapshot.json") -> list[dict]:
     """Load market data from JSON file."""
     try:
         with open(json_path) as f:
@@ -148,9 +148,7 @@ def format_market_table(markets: list[dict]) -> str:
         elif "exit" in signal_raw.lower() or "close" in signal_raw.lower():
             table4_exits.append(market)
         else:
-            is_simple_debit = stype in simple_debit_types
-            if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):
-                table3_stocks.append(market)
+            table3_stocks.append(market)
 
     table3_high_conviction = [market for market in table3_stocks if float(market.get("fit_score", 0.0)) >= 80.0]
     table3_other_trades = [market for market in table3_stocks if float(market.get("fit_score", 0.0)) < 80.0]
