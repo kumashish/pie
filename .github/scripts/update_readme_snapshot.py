@@ -141,12 +141,12 @@ def format_market_table(markets: list[dict]) -> str:
         if strategy == "No Trade":
             continue
 
-        if "exit" in signal_raw.lower() or "close" in signal_raw.lower():
-            table4_exits.append(market)
-        elif symbol in us_benchmarks or market_name.upper() in us_benchmarks:
+        if symbol in us_benchmarks or market_name.upper() in us_benchmarks:
             table1_us.append(market)
         elif symbol in indian_benchmarks or market_name.upper() in indian_benchmarks:
             table2_in.append(market)
+        elif "exit" in signal_raw.lower() or "close" in signal_raw.lower():
+            table4_exits.append(market)
         else:
             is_simple_debit = stype in simple_debit_types
             if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):

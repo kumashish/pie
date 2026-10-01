@@ -26,17 +26,15 @@ def utc_to_ist(dt: datetime | str) -> datetime:
     return dt.astimezone(UTC).replace(tzinfo=None) + ist_offset
 
 
-def format_ist_time(dt: datetime | str, include_date: bool = False) -> str:
-    """Format datetime or ISO string as IST time string."""
+def format_ist_time(dt: datetime | str, include_date: bool = True) -> str:
+    """Format datetime or ISO string as IST date and time string."""
     if isinstance(dt, str):
         try:
             dt = datetime.fromisoformat(dt)
         except ValueError:
             return dt
     ist_dt = utc_to_ist(dt) if getattr(dt, "tzinfo", None) is not None else dt
-    if include_date:
-        return ist_dt.strftime("%H:%M IST (%Y-%m-%d)")
-    return ist_dt.strftime("%H:%M IST")
+    return ist_dt.strftime("%b %d, %H:%M IST")
 
 
 def calculate_since(
@@ -217,12 +215,12 @@ def generate_readme_snapshot(
         if strategy == "No Trade":
             continue
 
-        if "exit" in signal_raw.lower() or "close" in signal_raw.lower():
-            table4_exits.append(data)
-        elif symbol in us_benchmarks or market.upper() in us_benchmarks:
+        if symbol in us_benchmarks or market.upper() in us_benchmarks:
             table1_us.append(data)
         elif symbol in indian_benchmarks or market.upper() in indian_benchmarks:
             table2_in.append(data)
+        elif "exit" in signal_raw.lower() or "close" in signal_raw.lower():
+            table4_exits.append(data)
         else:
             is_simple_debit = stype in simple_debit_types
             if fit_score >= 60.0 and (fit_score > 90.0 or not is_simple_debit):

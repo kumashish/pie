@@ -670,23 +670,27 @@ document.addEventListener("DOMContentLoaded", () => {
     let newsItems = (data && data.news && data.news.length > 0) ? data.news : null;
 
     if (!newsItems) {
+      const cleanSym = sym.replace("^", "").replace(".NS", "").replace(".BO", "").toUpperCase();
+      const isIndian = sym.endsWith(".NS") || sym.endsWith(".BO") || ["NIFTY", "BANKNIFTY", "RELIANCE", "TCS", "INFY", "HDFCBANK", "ICICIBANK", "SBIN", "BHARTIARTL", "TATAMOTORS", "ITC"].includes(cleanSym);
+      const mainLink = isIndian ? `https://www.moneycontrol.com/india/stockpricequote/${cleanSym.toLowerCase()}` : `https://finance.yahoo.com/quote/${encodeURIComponent(cleanSym)}`;
+
       newsItems = [
         {
-          title: `${sym} Market Strategy & Quantitative Regime Breakdown`,
-          publisher: "TradeCraft Engine",
-          link: `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}`,
+          title: `${sym} Market Strategy, Earnings Outlook & Regime Breakdown`,
+          publisher: isIndian ? "Moneycontrol.com" : "TradeCraft Engine",
+          link: mainLink,
           sentiment: "bullish"
         },
         {
-          title: `Volatility Surface & Institutional Sizing Report for ${sym}`,
-          publisher: "Quant Analytics",
-          link: `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}`,
+          title: `Institutional Position Flow & Volatility Surface Report for ${sym}`,
+          publisher: isIndian ? "Economic Times Markets" : "Quant Analytics",
+          link: mainLink,
           sentiment: "neutral"
         },
         {
-          title: `${sym} Options Volume & Open Interest Distribution`,
-          publisher: "Market Pulse",
-          link: `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}`,
+          title: `${sym} Technical Breakout & Key Level Analysis`,
+          publisher: isIndian ? "Livemint / Moneycontrol Pro" : "Market Pulse",
+          link: mainLink,
           sentiment: "bullish"
         }
       ];
@@ -700,7 +704,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="news-headline">${item.title}</div>
         <div class="news-meta">
           <span>${item.publisher}</span>
-          <span class="sentiment-pill sentiment-${item.sentiment}">${item.sentiment.toUpperCase()}</span>
+          <span class="sentiment-pill sentiment-${item.sentiment}">${(item.sentiment || 'neutral').toUpperCase()}</span>
         </div>
       </a>
     `).join("");

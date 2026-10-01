@@ -2,17 +2,17 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | 22:05 IST | 🟢 Call Debit Spread | 7.6/10    | Buy QQQ 20-Nov-2026 740 Call<br> Sell QQQ 20-Nov-2026 775 Call | Active (Sep 23, 06:17 IST) |
-| SPY       | 22:05 IST | 🟢 Call Debit Spread | 6.0/10    | Buy SPY 20-Nov-2026 760 Call<br> Sell SPY 20-Nov-2026 795 Call | Active (Today, 04:00)  |
+| QQQ       | Oct 01, 22:12 IST | 🟢 Call Debit Spread | 7.6/10    | Buy QQQ 20-Nov-2026 740 Call<br> Sell QQQ 20-Nov-2026 775 Call | New                    |
+| SPY       | Oct 01, 22:12 IST | 🟢 Call Debit Spread | 6.8/10    | Buy SPY 20-Nov-2026 760 Call<br> Sell SPY 20-Nov-2026 795 Call | New                    |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| MIDCAPNIFTY | 08:27 IST | 🟢 Call Debit Spread | 7.7/10    | Buy MIDCAPNIFTY 25-Aug-2026-17700-CE<br> Sell MIDCAPNIFTY 25-Aug-2026-18250-CE | New                    |
-| NIFTY 50  | 16:42 IST | 🔴 Put Debit Spread | 7.5/10    | Buy NIFTY 24-Nov-2026 22400 Put<br> Sell NIFTY 24-Nov-2026 21500 Put | Hold (Today, 16:42)    |
-| SENSEX    | 08:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 18-Sep-2026-76100-PE<br> Sell SENSEX 18-Sep-2026-73000-PE | New                    |
-| BANKNIFTY | 16:42 IST | 🔴 Put Debit Spread | 6.8/10    | Buy BANKNIFTY 24-Nov-2026 54500 Put<br> Sell BANKNIFTY 24-Nov-2026 52200 Put | Hold (Sep 29, 16:25 IST) |
-| FINNIFTY  | 08:27 IST | 🟢 Call Debit Spread | 5.9/10    | Buy FINNIFTY 25-Aug-2026-26900-CE<br> Sell FINNIFTY 25-Aug-2026-27750-CE | New                    |
+| SENSEX    | Oct 01, 22:12 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 20-Nov-2026 71900 Put<br> Sell SENSEX 20-Nov-2026 69000 Put | Hold (Today, 15:28)    |
+| NIFTY 50  | Oct 01, 22:12 IST | 🔴 Put Debit Spread | 7.5/10    | Buy NIFTY 24-Nov-2026 22400 Put<br> Sell NIFTY 24-Nov-2026 21500 Put | 🔴 Exit (Regime Shift) (Today, 22:12) |
+| BANKNIFTY | Oct 01, 22:12 IST | 🔴 Put Debit Spread | 6.8/10    | Buy BANKNIFTY 24-Nov-2026 54500 Put<br> Sell BANKNIFTY 24-Nov-2026 52200 Put | 🔴 Exit (Regime Shift) (Today, 22:12) |
+| FINNIFTY  | Oct 01, 22:12 IST | 🟡 Credit Spread   | 6.4/10    | Sell FINNIFTY 24-Nov-2026 25250 Call<br> Buy FINNIFTY 24-Nov-2026 25900 Call | ⚠️ Stop Loss (Today, 22:12) |
+| MIDCAPNIFTY | Oct 01, 22:12 IST | 🔴 Put Debit Spread | 5.1/10    | Buy MIDCAPNIFTY 24-Nov-2026 16850 Put<br> Sell MIDCAPNIFTY 24-Nov-2026 16150 Put | Hold (Today, 15:28)    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -24,7 +24,7 @@
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 55 | 55 | 0 | N/A | N/A | N/A | N/A |
+| 55 | 53 | 2 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)

@@ -2,4 +2,4 @@
 
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ASIANPAINT.NS | 20:00 IST | 🟢 Call Debit Spread | 5.2/10    | Buy ASIANPAINT 27-Oct-2026 2400 Call<br> Sell ASIANPAINT 27-Oct-2026 2500 Call | 🔴 Exit (Regime Shift) (Yesterday, 20:00) |
+| HCLTECH.NS | 15:52 IST | 🔴 Put Debit Spread | 5.1/10    | Buy HCLTECH 29-Sep-2026 1350 Put<br> Sell HCLTECH 29-Sep-2026 1300 Put | 🔴 Exit (Regime Shift) (Yesterday, 15:52) |
