@@ -171,7 +171,7 @@ def format_market_table(markets: list[dict]) -> str:
         strat_name = get_strategy_display_name(stype)
         fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
         updated = market.get("updated", "")
-        strategy = market.get("strategy", "")
+        strategy = str(market.get("strategy", "")).replace("<br>", " / ").replace("<br/>", " / ")
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
@@ -185,7 +185,7 @@ def format_market_table(markets: list[dict]) -> str:
         strat_name = get_strategy_display_name(stype)
         fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
         updated = market.get("updated", "")
-        strategy = market.get("strategy", "")
+        strategy = str(market.get("strategy", "")).replace("<br>", " / ").replace("<br/>", " / ")
         signal_raw = market.get("signal", "")
         since = market.get("since", "")
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
@@ -211,7 +211,7 @@ def format_market_table(markets: list[dict]) -> str:
             strat_name = get_strategy_display_name(stype)
             fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
             updated = market.get("updated", "")
-            strategy = market.get("strategy", "")
+            strategy = str(market.get("strategy", "")).replace("<br>", " / ").replace("<br/>", " / ")
             signal_raw = market.get("signal", "")
             since = market.get("since", "")
             signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
@@ -226,7 +226,7 @@ def format_market_table(markets: list[dict]) -> str:
             strat_name = get_strategy_display_name(stype)
             fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
             updated = market.get("updated", "")
-            strategy = market.get("strategy", "")
+            strategy = str(market.get("strategy", "")).replace("<br>", " / ").replace("<br/>", " / ")
             signal_raw = market.get("signal", "")
             since = market.get("since", "")
             signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
@@ -260,7 +260,7 @@ def format_market_table(markets: list[dict]) -> str:
                 strat_name = get_strategy_display_name(stype)
                 fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
                 updated = market.get("updated", "")
-                strategy = market.get("strategy", "")
+                strategy = str(market.get("strategy", "")).replace("<br>", " / ").replace("<br/>", " / ")
                 signal_raw = market.get("signal", "")
                 since = market.get("since", "")
                 signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
@@ -279,7 +279,7 @@ def format_market_table(markets: list[dict]) -> str:
                 strat_name = get_strategy_display_name(stype)
                 fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
                 updated = market.get("updated", "")
-                strategy = market.get("strategy", "")
+                strategy = str(market.get("strategy", "")).replace("<br>", " / ").replace("<br/>", " / ")
                 signal_raw = market.get("signal", "")
                 since = market.get("since", "")
                 signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
@@ -300,7 +300,7 @@ def format_market_table(markets: list[dict]) -> str:
             strat_name = get_strategy_display_name(stype)
             fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
             updated = market.get("updated", "")
-            strategy = market.get("strategy", "")
+            strategy = str(market.get("strategy", "")).replace("<br>", " / ").replace("<br/>", " / ")
             signal_raw = market.get("signal", "")
             since = market.get("since", "")
             signal_display = f"{signal_raw} ({since})" if since else signal_raw

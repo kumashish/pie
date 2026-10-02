@@ -244,7 +244,7 @@ def generate_readme_snapshot(
         stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
         fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = str(data.get("strategy") or "No Trade")
+        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
         signal_raw = str(data.get("signal") or "Hold")
         since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
@@ -261,7 +261,7 @@ def generate_readme_snapshot(
         stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
         fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = str(data.get("strategy") or "No Trade")
+        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
         signal_raw = str(data.get("signal") or "Hold")
         since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
@@ -278,7 +278,7 @@ def generate_readme_snapshot(
         stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
         fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = str(data.get("strategy") or "No Trade")
+        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
         signal_raw = str(data.get("signal") or "Hold")
         since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
@@ -317,7 +317,7 @@ def generate_readme_snapshot(
             stype = str(data.get("strategy_type") or "")
             strat_name = get_strategy_display_name(stype)
             fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-            strategy = str(data.get("strategy") or "No Trade")
+            strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
             signal_raw = str(data.get("signal") or "Hold")
             since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
             signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
@@ -336,7 +336,7 @@ def generate_readme_snapshot(
             stype = str(data.get("strategy_type") or "")
             strat_name = get_strategy_display_name(stype)
             fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-            strategy = str(data.get("strategy") or "No Trade")
+            strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
             signal_raw = str(data.get("signal") or "Hold")
             since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
             signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
@@ -357,7 +357,7 @@ def generate_readme_snapshot(
             stype = str(data.get("strategy_type") or "")
             strat_name = get_strategy_display_name(stype)
             fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-            strategy = str(data.get("strategy") or "No Trade")
+            strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
             signal_raw = str(data.get("signal") or "Hold")
             since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
             signal_display = f"{signal_raw} ({since_text})"
@@ -394,7 +394,7 @@ def generate_readme_snapshot(
                 stype = str(data.get("strategy_type") or "")
                 strat_name = get_strategy_display_name(stype)
                 fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-                strategy = str(data.get("strategy") or "No Trade")
+                strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
                 signal_raw = str(data.get("signal") or "Hold")
                 since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
                 signal_display = f"{signal_raw} ({since_text})"
@@ -413,7 +413,7 @@ def generate_readme_snapshot(
                 stype = str(data.get("strategy_type") or "")
                 strat_name = get_strategy_display_name(stype)
                 fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-                strategy = str(data.get("strategy") or "No Trade")
+                strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
                 signal_raw = str(data.get("signal") or "Hold")
                 since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
                 signal_display = f"{signal_raw} ({since_text})"
