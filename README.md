@@ -15,13 +15,18 @@
 | MIDCAPNIFTY |           | 🔴 Put Debit Spread | 5.1/10    | Buy MIDCAPNIFTY 24-Nov-2026 16850 Put<br> Sell MIDCAPNIFTY 24-Nov-2026 16150 Put | Hold                   |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
+#### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | MSFT      |           | 🟢 Call Debit Spread | 9.0/10    | Buy MSFT 20-Nov-2026 515 Call<br> Sell MSFT 20-Nov-2026 540 Call | New                    |
-| BPCL.NS   |           | 🔴 Put Debit Spread | 8.3/10    | Buy BPCL 24-Nov-2026 300 Put<br> Sell BPCL 24-Nov-2026 285 Put | New                    |
 | WMT       |           | 🔴 Put Debit Spread | 8.2/10    | Buy WMT 20-Nov-2026 105 Put<br> Sell WMT 20-Nov-2026 100 Put | New                    |
 | XLK       |           | 🟢 Call Debit Spread | 8.1/10    | Buy XLK 20-Nov-2026 195 Call<br> Sell XLK 20-Nov-2026 205 Call | New                    |
 | PLTR      |           | 🟢 Call Debit Spread | 8.1/10    | Buy PLTR 20-Nov-2026 190 Call<br> Sell PLTR 20-Nov-2026 200 Call | New                    |
+
+#### 🇮🇳 Indian Equities
+| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
+| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| BPCL.NS   |           | 🔴 Put Debit Spread | 8.3/10    | Buy BPCL 24-Nov-2026 300 Put<br> Sell BPCL 24-Nov-2026 285 Put | New                    |
 | BEL.NS    |           | 🔴 Put Debit Spread | 8.1/10    | Buy BEL 24-Nov-2026 385 Put<br> Sell BEL 24-Nov-2026 365 Put | New                    |
 | ITC.NS    |           | 🔴 Put Debit Spread | 8.1/10    | Buy ITC 24-Nov-2026 255 Put<br> Sell ITC 24-Nov-2026 245 Put | Active                 |
 | ULTRACEMCO.NS |           | 🔴 Put Debit Spread | 8.1/10    | Buy ULTRACEMCO 24-Nov-2026 10500 Put<br> Sell ULTRACEMCO 24-Nov-2026 10000 Put | New                    |

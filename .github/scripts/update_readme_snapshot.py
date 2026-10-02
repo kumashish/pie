@@ -192,18 +192,45 @@ def format_market_table(markets: list[dict]) -> str:
         lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
 
     lines.append("\n### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies")
-    lines.append(header)
+    
+    us_high = []
+    in_high = []
     for market in table3_high_conviction:
-        market_name = market.get("market", "")
-        stype = market.get("strategy_type", "")
-        strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
-        updated = market.get("updated", "")
-        strategy = market.get("strategy", "")
-        signal_raw = market.get("signal", "")
-        since = market.get("since", "")
-        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
-        lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+        sym_upper = str(market.get("symbol") or "").upper()
+        if sym_upper.endswith(".NS") or sym_upper.endswith(".BO") or sym_upper.startswith("^NSE") or sym_upper.startswith("^BSE"):
+            in_high.append(market)
+        else:
+            us_high.append(market)
+
+    if us_high:
+        lines.append("#### 🇺🇸 U.S. Stocks & ETFs")
+        lines.append(header)
+        for market in us_high:
+            market_name = market.get("market", "")
+            stype = market.get("strategy_type", "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+            updated = market.get("updated", "")
+            strategy = market.get("strategy", "")
+            signal_raw = market.get("signal", "")
+            since = market.get("since", "")
+            signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
+            lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
+
+    if in_high:
+        lines.append("\n#### 🇮🇳 Indian Equities")
+        lines.append(header)
+        for market in in_high:
+            market_name = market.get("market", "")
+            stype = market.get("strategy_type", "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = format_fit_score_badge(float(market.get("fit_score", 0.0)))
+            updated = market.get("updated", "")
+            strategy = market.get("strategy", "")
+            signal_raw = market.get("signal", "")
+            since = market.get("since", "")
+            signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since})" if since else signal_raw
+            lines.append(f"| {market_name:<9} | {updated:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |")
 
     if table3_other_trades:
         lines.append('\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n')
