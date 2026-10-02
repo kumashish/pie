@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | Oct 03, 00:05 IST | 🟢 Call Debit Spread | 7.6/10    | Buy QQQ 20-Nov-2026 750 Call /  Sell QQQ 20-Nov-2026 780 Call | Active (Oct 01, 22:12 IST) |
-| SPY       | Oct 03, 00:05 IST | 🟢 Call Debit Spread | 7.2/10    | Buy SPY 20-Nov-2026 770 Call /  Sell SPY 20-Nov-2026 805 Call | New                    |
+| SPY       | Oct 03, 04:37 IST | 🟢 Call Debit Spread | 7.3/10    | Buy SPY 20-Nov-2026 770 Call /  Sell SPY 20-Nov-2026 800 Call | Active (Today, 00:05)  |
+| QQQ       | Oct 03, 04:37 IST | 🟢 Poor Man's Covered Call | 6.3/10    | Buy QQQ 20-Nov-2026 710 Call /  Sell QQQ 20-Nov-2026 770 Call | Hold (Today, 04:37)    |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
