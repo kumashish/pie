@@ -2,34 +2,29 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       |           | 🟢 Call Debit Spread | 7.1/10    | Buy QQQ 20-Nov-2026 740 Call /  Sell QQQ 20-Nov-2026 770 Call | Active                 |
-| SPY       |           | 🟡 Long Butterfly  | 6.5/10    | Buy SPY 20-Nov-2026 740 Call /  Sell 2x SPY 20-Nov-2026 765 Call /  Buy SPY 20-Nov-2026 785 Call | Active                 |
+| QQQ       | Oct 03, 00:05 IST | 🟢 Call Debit Spread | 7.6/10    | Buy QQQ 20-Nov-2026 750 Call /  Sell QQQ 20-Nov-2026 780 Call | Active (Oct 01, 22:12 IST) |
+| SPY       | Oct 03, 00:05 IST | 🟢 Call Debit Spread | 7.2/10    | Buy SPY 20-Nov-2026 770 Call /  Sell SPY 20-Nov-2026 805 Call | New                    |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SENSEX    |           | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 20-Nov-2026 71900 Put /  Sell SENSEX 20-Nov-2026 69000 Put | Hold                   |
-| NIFTY 50  |           | 🔴 Put Debit Spread | 7.5/10    | Buy NIFTY 24-Nov-2026 22400 Put /  Sell NIFTY 24-Nov-2026 21500 Put | Hold                   |
-| BANKNIFTY |           | 🔴 Put Debit Spread | 6.8/10    | Buy BANKNIFTY 24-Nov-2026 54500 Put /  Sell BANKNIFTY 24-Nov-2026 52200 Put | Hold                   |
-| FINNIFTY  |           | 🟡 Credit Spread   | 6.4/10    | Sell FINNIFTY 24-Nov-2026 25250 Call /  Buy FINNIFTY 24-Nov-2026 25900 Call | ⚠️ Stop Loss           |
-| MIDCAPNIFTY |           | 🔴 Put Debit Spread | 5.1/10    | Buy MIDCAPNIFTY 24-Nov-2026 16850 Put /  Sell MIDCAPNIFTY 24-Nov-2026 16150 Put | Hold                   |
+| SENSEX    | Oct 01, 22:23 IST | 🔴 Put Debit Spread | 7.5/10    | Buy SENSEX 20-Nov-2026 71900 Put /  Sell SENSEX 20-Nov-2026 69000 Put | Hold (Oct 01, 15:28 IST) |
+| NIFTY 50  | Oct 01, 22:23 IST | 🔴 Put Debit Spread | 7.5/10    | Buy NIFTY 24-Nov-2026 22400 Put /  Sell NIFTY 24-Nov-2026 21500 Put | Hold (Oct 01, 22:12 IST) |
+| BANKNIFTY | Oct 01, 22:23 IST | 🔴 Put Debit Spread | 6.8/10    | Buy BANKNIFTY 24-Nov-2026 54500 Put /  Sell BANKNIFTY 24-Nov-2026 52200 Put | Hold (Oct 01, 22:12 IST) |
+| FINNIFTY  | Oct 01, 22:23 IST | 🟡 Credit Spread   | 6.4/10    | Sell FINNIFTY 24-Nov-2026 25250 Call /  Buy FINNIFTY 24-Nov-2026 25900 Call | ⚠️ Stop Loss (Oct 01, 22:12 IST) |
+| MIDCAPNIFTY | Oct 01, 22:23 IST | 🔴 Put Debit Spread | 5.1/10    | Buy MIDCAPNIFTY 24-Nov-2026 16850 Put /  Sell MIDCAPNIFTY 24-Nov-2026 16150 Put | Hold (Oct 01, 15:28 IST) |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
-#### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| MSFT      |           | 🟢 Call Debit Spread | 9.0/10    | Buy MSFT 20-Nov-2026 515 Call /  Sell MSFT 20-Nov-2026 540 Call | New                    |
-| WMT       |           | 🔴 Put Debit Spread | 8.2/10    | Buy WMT 20-Nov-2026 105 Put /  Sell WMT 20-Nov-2026 100 Put | New                    |
-| XLK       |           | 🟢 Call Debit Spread | 8.1/10    | Buy XLK 20-Nov-2026 195 Call /  Sell XLK 20-Nov-2026 205 Call | New                    |
-| PLTR      |           | 🟢 Call Debit Spread | 8.1/10    | Buy PLTR 20-Nov-2026 190 Call /  Sell PLTR 20-Nov-2026 200 Call | New                    |
-
-#### 🇮🇳 Indian Equities
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| BPCL.NS   |           | 🔴 Put Debit Spread | 8.3/10    | Buy BPCL 24-Nov-2026 300 Put /  Sell BPCL 24-Nov-2026 285 Put | New                    |
-| BEL.NS    |           | 🔴 Put Debit Spread | 8.1/10    | Buy BEL 24-Nov-2026 385 Put /  Sell BEL 24-Nov-2026 365 Put | New                    |
-| ITC.NS    |           | 🔴 Put Debit Spread | 8.1/10    | Buy ITC 24-Nov-2026 255 Put /  Sell ITC 24-Nov-2026 245 Put | Active                 |
-| ULTRACEMCO.NS |           | 🔴 Put Debit Spread | 8.1/10    | Buy ULTRACEMCO 24-Nov-2026 10500 Put /  Sell ULTRACEMCO 24-Nov-2026 10000 Put | New                    |
+| MSFT      | Oct 01, 22:23 IST | 🟢 Call Debit Spread | 9.0/10    | Buy MSFT 20-Nov-2026 515 Call /  Sell MSFT 20-Nov-2026 540 Call | New                    |
+| BPCL.NS   | Oct 01, 22:24 IST | 🔴 Put Debit Spread | 8.3/10    | Buy BPCL 24-Nov-2026 300 Put /  Sell BPCL 24-Nov-2026 285 Put | New                    |
+| WMT       | Oct 01, 22:23 IST | 🔴 Put Debit Spread | 8.2/10    | Buy WMT 20-Nov-2026 105 Put /  Sell WMT 20-Nov-2026 100 Put | New                    |
+| XLK       | Oct 01, 22:23 IST | 🟢 Call Debit Spread | 8.1/10    | Buy XLK 20-Nov-2026 195 Call /  Sell XLK 20-Nov-2026 205 Call | New                    |
+| PLTR      | Oct 01, 22:23 IST | 🟢 Call Debit Spread | 8.1/10    | Buy PLTR 20-Nov-2026 190 Call /  Sell PLTR 20-Nov-2026 200 Call | New                    |
+| BEL.NS    | Oct 01, 22:24 IST | 🔴 Put Debit Spread | 8.1/10    | Buy BEL 24-Nov-2026 385 Put /  Sell BEL 24-Nov-2026 365 Put | New                    |
+| ITC.NS    | Oct 01, 22:24 IST | 🔴 Put Debit Spread | 8.1/10    | Buy ITC 24-Nov-2026 255 Put /  Sell ITC 24-Nov-2026 245 Put | Active (Jul 24, 15:46 IST) |
+| ULTRACEMCO.NS | Oct 01, 22:24 IST | 🔴 Put Debit Spread | 8.1/10    | Buy ULTRACEMCO 24-Nov-2026 10500 Put /  Sell ULTRACEMCO 24-Nov-2026 10000 Put | New                    |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
@@ -37,11 +32,11 @@
 ### ⚡ Recently Closed / Exit Signals (Last 5)
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| KOTAKBANK.NS |           | 🟢 Call Debit Spread | 7.9/10    | Buy KOTAKBANK 24-Nov-2026 420 Call /  Sell KOTAKBANK 24-Nov-2026 440 Call | 🔴 Exit (Regime Shift)  |
-| CIPLA.NS  |           | 🔴 Put Debit Spread | 7.6/10    | Buy CIPLA 24-Nov-2026 1350 Put /  Sell CIPLA 24-Nov-2026 1300 Put | 🔴 Exit (Regime Shift)  |
-| ASIANPAINT.NS |           | 🔴 Put Debit Spread | 7.5/10    | Buy ASIANPAINT 24-Nov-2026 2400 Put /  Sell ASIANPAINT 24-Nov-2026 2300 Put | 🔴 Exit (Regime Shift)  |
-| APOLLOHOSP.NS |           | 🟡 Credit Spread   | 6.3/10    | Sell APOLLOHOSP 24-Nov-2026 8400 Call /  Buy APOLLOHOSP 24-Nov-2026 8700 Call | 🔴 Exit (Regime Shift)  |
-| SUNPHARMA.NS |           | 🔴 Put Debit Spread | 5.8/10    | Buy SUNPHARMA 24-Nov-2026 1800 Put /  Sell SUNPHARMA 24-Nov-2026 1700 Put | 🔴 Exit (Regime Shift)  |
+| KOTAKBANK.NS | Oct 01, 22:24 IST | 🟢 Call Debit Spread | 7.9/10    | Buy KOTAKBANK 24-Nov-2026 420 Call /  Sell KOTAKBANK 24-Nov-2026 440 Call | 🔴 Exit (Regime Shift) (Oct 01, 22:24 IST) |
+| CIPLA.NS  | Oct 01, 22:24 IST | 🔴 Put Debit Spread | 7.6/10    | Buy CIPLA 24-Nov-2026 1350 Put /  Sell CIPLA 24-Nov-2026 1300 Put | 🔴 Exit (Regime Shift) (Oct 01, 22:24 IST) |
+| ASIANPAINT.NS | Oct 01, 22:27 IST | 🔴 Put Debit Spread | 7.5/10    | Buy ASIANPAINT 24-Nov-2026 2400 Put /  Sell ASIANPAINT 24-Nov-2026 2300 Put | 🔴 Exit (Regime Shift) (Oct 01, 22:27 IST) |
+| APOLLOHOSP.NS | Oct 01, 22:24 IST | 🟡 Credit Spread   | 6.3/10    | Sell APOLLOHOSP 24-Nov-2026 8400 Call /  Buy APOLLOHOSP 24-Nov-2026 8700 Call | 🔴 Exit (Regime Shift) (Oct 01, 22:24 IST) |
+| SUNPHARMA.NS | Oct 01, 22:24 IST | 🔴 Put Debit Spread | 5.8/10    | Buy SUNPHARMA 24-Nov-2026 1800 Put /  Sell SUNPHARMA 24-Nov-2026 1700 Put | 🔴 Exit (Regime Shift) (Oct 01, 22:24 IST) |
 
 <a href="reports/market/closed_trades.md" target="_blank">📜 View Full Closed Trade History ➔</a>
 
