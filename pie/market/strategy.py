@@ -57,7 +57,7 @@ class StrategyFitScore(DomainModel):
 
 
 def score_all_strategies(
-    analysis: TrendAnalysis, iv_rank: float = 50.0
+    analysis: TrendAnalysis, iv_rank: float = 50.0, benchmark_regime: str | None = None
 ) -> dict[StrategyType, StrategyFitScore]:
     """Calculate a 0-100% confidence/suitability score for every candidate strategy."""
     trend_val = analysis.trend_score.value
@@ -70,6 +70,7 @@ def score_all_strategies(
     ema20 = analysis.indicator_values.get("EMA20")
     ema50 = analysis.indicator_values.get("EMA50")
     ema200 = analysis.indicator_values.get("EMA200")
+    last_price = analysis.indicator_values.get("last_price")
 
     # Fine-tuning adjustments from stock-specific indicators
     adx_boost = min(5.0, max(0.0, ((adx - 30.0) / 20.0) * 5.0)) if adx is not None else 0.0
@@ -101,6 +102,20 @@ def score_all_strategies(
     # Module 4: Sector Relative Strength (Relative Momentum vs Benchmark)
     rs_bull_bonus = 3.0 if (rsi is not None and 50.0 <= rsi <= 65.0 and trend_val >= 7.5) else 0.0
     rs_bear_bonus = 3.0 if (rsi is not None and 35.0 <= rsi <= 50.0 and trend_val <= 2.5) else 0.0
+
+    # Benchmark Confluence Penalty (Prevent counter-market directional trades)
+    bm_bull_penalty = 0.0
+    bm_bear_penalty = 0.0
+    if benchmark_regime:
+        bm_norm = benchmark_regime.lower()
+        if bm_norm in {"bear", "strong_bear"}:
+            bm_bull_penalty = 15.0  # Penalize bullish strategies when index is bearish
+        elif bm_norm in {"bull", "strong_bull"}:
+            bm_bear_penalty = 15.0  # Penalize bearish strategies when index is bullish
+
+    # Price vs EMA Confirmation Filter (only penalize if price actively breaks EMA20)
+    ema_bull_confirm = 5.0 if (last_price is not None and ema20 is not None and last_price >= ema20) else (-10.0 if (last_price is not None and ema20 is not None and last_price < ema20) else 0.0)
+    ema_bear_confirm = 5.0 if (last_price is not None and ema20 is not None and last_price <= ema20) else (-10.0 if (last_price is not None and ema20 is not None and last_price > ema20) else 0.0)
 
     # Module 5: ATR Multi-Period Expected Range Boundaries
     atr = analysis.indicator_values.get("ATR(14)")
@@ -142,14 +157,14 @@ def score_all_strategies(
     raw_scores: dict[StrategyType, tuple[float, str]] = {}
 
     # 1. Call Debit Spread: Bullish Trend or Oversold Dip Bounce
-    cds_score = (bullishness * 0.60) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus - alpha_lag_penalty - earnings_penalty
+    cds_score = (bullishness * 0.60) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm - alpha_lag_penalty - earnings_penalty - bm_bull_penalty
     raw_scores[StrategyType.CALL_DEBIT_SPREAD] = (
         (cds_score / 1.20) * confidence_mult,
         "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
     )
 
     # 2. Put Debit Spread: Bearish Trend or Overbought Exhaustion Fade
-    pds_score = (bearishness * 0.60) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus - earnings_penalty
+    pds_score = (bearishness * 0.60) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty
     raw_scores[StrategyType.PUT_DEBIT_SPREAD] = (
         (pds_score / 1.20) * confidence_mult,
         "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
@@ -297,7 +312,7 @@ def score_all_strategies(
 
 
 def select_strategy(
-    analysis: TrendAnalysis, iv_rank: float | None = None
+    analysis: TrendAnalysis, iv_rank: float | None = None, benchmark_regime: str | None = None
 ) -> StrategyRecommendation:
     """Select the option strategy that achieves the highest fit score."""
     if analysis.confidence.value < MINIMUM_CONFIDENCE:
@@ -308,7 +323,7 @@ def select_strategy(
         )
 
     iv = iv_rank if iv_rank is not None else 50.0
-    all_scores = score_all_strategies(analysis, iv)
+    all_scores = score_all_strategies(analysis, iv, benchmark_regime=benchmark_regime)
     fit_map = {stype.value: fit.score for stype, fit in all_scores.items()}
 
     if analysis.regime == MarketRegime.NEUTRAL and iv_rank is None:
