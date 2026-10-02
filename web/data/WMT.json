@@ -1,0 +1,405 @@
+{
+  "symbol": "WMT",
+  "last_price": 104.26,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.0,
+  "fit_score": 10.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 10.0,
+  "vix": 16.0,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (78.3% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 105.0,
+        "strike_formatted": "105",
+        "option_type": "Put",
+        "delta": -0.491,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x WMT 20-Nov-2026 105 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 100.0,
+        "strike_formatted": "100",
+        "option_type": "Put",
+        "delta": -0.196,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x WMT 20-Nov-2026 100 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 2.0,
+    "stop_loss_price": 106.35,
+    "take_profit_price": 100.0,
+    "net_delta": -0.295,
+    "net_theta": -0.004,
+    "probability_of_profit": 52.0,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 83.41,
+        "pnl": 3.0
+      },
+      {
+        "price": 84.24,
+        "pnl": 3.0
+      },
+      {
+        "price": 85.08,
+        "pnl": 3.0
+      },
+      {
+        "price": 85.91,
+        "pnl": 3.0
+      },
+      {
+        "price": 86.74,
+        "pnl": 3.0
+      },
+      {
+        "price": 87.58,
+        "pnl": 3.0
+      },
+      {
+        "price": 88.41,
+        "pnl": 3.0
+      },
+      {
+        "price": 89.25,
+        "pnl": 3.0
+      },
+      {
+        "price": 90.08,
+        "pnl": 3.0
+      },
+      {
+        "price": 90.91,
+        "pnl": 3.0
+      },
+      {
+        "price": 91.75,
+        "pnl": 3.0
+      },
+      {
+        "price": 92.58,
+        "pnl": 3.0
+      },
+      {
+        "price": 93.42,
+        "pnl": 3.0
+      },
+      {
+        "price": 94.25,
+        "pnl": 3.0
+      },
+      {
+        "price": 95.09,
+        "pnl": 3.0
+      },
+      {
+        "price": 95.92,
+        "pnl": 3.0
+      },
+      {
+        "price": 96.75,
+        "pnl": 3.0
+      },
+      {
+        "price": 97.59,
+        "pnl": 3.0
+      },
+      {
+        "price": 98.42,
+        "pnl": 3.0
+      },
+      {
+        "price": 99.26,
+        "pnl": 3.0
+      },
+      {
+        "price": 100.09,
+        "pnl": 2.91
+      },
+      {
+        "price": 100.92,
+        "pnl": 2.08
+      },
+      {
+        "price": 101.76,
+        "pnl": 1.24
+      },
+      {
+        "price": 102.59,
+        "pnl": 0.41
+      },
+      {
+        "price": 103.43,
+        "pnl": -0.43
+      },
+      {
+        "price": 104.26,
+        "pnl": -1.26
+      },
+      {
+        "price": 105.09,
+        "pnl": -2.0
+      },
+      {
+        "price": 105.93,
+        "pnl": -2.0
+      },
+      {
+        "price": 106.76,
+        "pnl": -2.0
+      },
+      {
+        "price": 107.6,
+        "pnl": -2.0
+      },
+      {
+        "price": 108.43,
+        "pnl": -2.0
+      },
+      {
+        "price": 109.26,
+        "pnl": -2.0
+      },
+      {
+        "price": 110.1,
+        "pnl": -2.0
+      },
+      {
+        "price": 110.93,
+        "pnl": -2.0
+      },
+      {
+        "price": 111.77,
+        "pnl": -2.0
+      },
+      {
+        "price": 112.6,
+        "pnl": -2.0
+      },
+      {
+        "price": 113.43,
+        "pnl": -2.0
+      },
+      {
+        "price": 114.27,
+        "pnl": -2.0
+      },
+      {
+        "price": 115.1,
+        "pnl": -2.0
+      },
+      {
+        "price": 115.94,
+        "pnl": -2.0
+      },
+      {
+        "price": 116.77,
+        "pnl": -2.0
+      },
+      {
+        "price": 117.61,
+        "pnl": -2.0
+      },
+      {
+        "price": 118.44,
+        "pnl": -2.0
+      },
+      {
+        "price": 119.27,
+        "pnl": -2.0
+      },
+      {
+        "price": 120.11,
+        "pnl": -2.0
+      },
+      {
+        "price": 120.94,
+        "pnl": -2.0
+      },
+      {
+        "price": 121.78,
+        "pnl": -2.0
+      },
+      {
+        "price": 122.61,
+        "pnl": -2.0
+      },
+      {
+        "price": 123.44,
+        "pnl": -2.0
+      },
+      {
+        "price": 124.28,
+        "pnl": -2.0
+      },
+      {
+        "price": 125.11,
+        "pnl": -2.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.774,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2966,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "107.20",
+    "EMA50": "109.18",
+    "EMA100": "112.30",
+    "EMA200": "113.23",
+    "RSI(14)": "40.08",
+    "ATR(14)": "2.24",
+    "ADX(14)": "10.75",
+    "BB(20,2)": "0.05"
+  },
+  "rules": [
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Does A Postal Service Backup Plan Materially Alter Amazon's Cash Outlook?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/does-postal-backup-plan-materially-075550891.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Target\u2019s (TGT) Turnaround Justify the 60% YTD Rally?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/target-tgt-turnaround-justify-60-020342395.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "How Risky Is Home Depot Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/risky-home-depot-stock-005108710.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Walmart (WMT) Could Be 33% Undervalued After Fresh Florida Store Opening",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/walmart-wmt-could-33-undervalued-000955155.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What a $3,000 Investment in Walmart Stock Could Be Worth in 1 Year",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-000-investment-walmart-stock-215000227.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "EAIGLE Unveils the Yard of the Future as AI Reshapes Freight Operations",
+      "publisher": "CNW Group",
+      "link": "https://finance.yahoo.com/technology/ai/articles/eaigle-unveils-yard-future-ai-170000773.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

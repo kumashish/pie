@@ -1,0 +1,405 @@
+{
+  "symbol": "BAJAJFINSV.NS",
+  "last_price": 1732.6,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.5,
+  "fit_score": 25.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 25.0,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (24.8) is oversold (< 35) [Synthetic PCR: 1.40]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1750.0,
+        "strike_formatted": "1750",
+        "option_type": "Put",
+        "delta": -0.509,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x BAJAJFINSV.NS 24-Nov-2026 1750 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1700.0,
+        "strike_formatted": "1700",
+        "option_type": "Put",
+        "delta": -0.307,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x BAJAJFINSV.NS 24-Nov-2026 1700 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 20.0,
+    "stop_loss_price": 1767.25,
+    "take_profit_price": 1700.0,
+    "net_delta": -0.202,
+    "net_theta": 0.008,
+    "probability_of_profit": 53.5,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 1386.08,
+        "pnl": 30.0
+      },
+      {
+        "price": 1399.94,
+        "pnl": 30.0
+      },
+      {
+        "price": 1413.8,
+        "pnl": 30.0
+      },
+      {
+        "price": 1427.66,
+        "pnl": 30.0
+      },
+      {
+        "price": 1441.52,
+        "pnl": 30.0
+      },
+      {
+        "price": 1455.38,
+        "pnl": 30.0
+      },
+      {
+        "price": 1469.24,
+        "pnl": 30.0
+      },
+      {
+        "price": 1483.11,
+        "pnl": 30.0
+      },
+      {
+        "price": 1496.97,
+        "pnl": 30.0
+      },
+      {
+        "price": 1510.83,
+        "pnl": 30.0
+      },
+      {
+        "price": 1524.69,
+        "pnl": 30.0
+      },
+      {
+        "price": 1538.55,
+        "pnl": 30.0
+      },
+      {
+        "price": 1552.41,
+        "pnl": 30.0
+      },
+      {
+        "price": 1566.27,
+        "pnl": 30.0
+      },
+      {
+        "price": 1580.13,
+        "pnl": 30.0
+      },
+      {
+        "price": 1593.99,
+        "pnl": 30.0
+      },
+      {
+        "price": 1607.85,
+        "pnl": 30.0
+      },
+      {
+        "price": 1621.71,
+        "pnl": 30.0
+      },
+      {
+        "price": 1635.57,
+        "pnl": 30.0
+      },
+      {
+        "price": 1649.44,
+        "pnl": 30.0
+      },
+      {
+        "price": 1663.3,
+        "pnl": 30.0
+      },
+      {
+        "price": 1677.16,
+        "pnl": 30.0
+      },
+      {
+        "price": 1691.02,
+        "pnl": 30.0
+      },
+      {
+        "price": 1704.88,
+        "pnl": 25.12
+      },
+      {
+        "price": 1718.74,
+        "pnl": 11.26
+      },
+      {
+        "price": 1732.6,
+        "pnl": -2.6
+      },
+      {
+        "price": 1746.46,
+        "pnl": -16.46
+      },
+      {
+        "price": 1760.32,
+        "pnl": -20.0
+      },
+      {
+        "price": 1774.18,
+        "pnl": -20.0
+      },
+      {
+        "price": 1788.04,
+        "pnl": -20.0
+      },
+      {
+        "price": 1801.9,
+        "pnl": -20.0
+      },
+      {
+        "price": 1815.76,
+        "pnl": -20.0
+      },
+      {
+        "price": 1829.63,
+        "pnl": -20.0
+      },
+      {
+        "price": 1843.49,
+        "pnl": -20.0
+      },
+      {
+        "price": 1857.35,
+        "pnl": -20.0
+      },
+      {
+        "price": 1871.21,
+        "pnl": -20.0
+      },
+      {
+        "price": 1885.07,
+        "pnl": -20.0
+      },
+      {
+        "price": 1898.93,
+        "pnl": -20.0
+      },
+      {
+        "price": 1912.79,
+        "pnl": -20.0
+      },
+      {
+        "price": 1926.65,
+        "pnl": -20.0
+      },
+      {
+        "price": 1940.51,
+        "pnl": -20.0
+      },
+      {
+        "price": 1954.37,
+        "pnl": -20.0
+      },
+      {
+        "price": 1968.23,
+        "pnl": -20.0
+      },
+      {
+        "price": 1982.09,
+        "pnl": -20.0
+      },
+      {
+        "price": 1995.96,
+        "pnl": -20.0
+      },
+      {
+        "price": 2009.82,
+        "pnl": -20.0
+      },
+      {
+        "price": 2023.68,
+        "pnl": -20.0
+      },
+      {
+        "price": 2037.54,
+        "pnl": -20.0
+      },
+      {
+        "price": 2051.4,
+        "pnl": -20.0
+      },
+      {
+        "price": 2065.26,
+        "pnl": -20.0
+      },
+      {
+        "price": 2079.12,
+        "pnl": -20.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.757,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2813,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1833.07",
+    "EMA50": "1884.63",
+    "EMA100": "1886.21",
+    "EMA200": "1892.24",
+    "RSI(14)": "24.79",
+    "ATR(14)": "36.29",
+    "ADX(14)": "51.85",
+    "BB(20,2)": "0.13"
+  },
+  "rules": [
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Stock Research Report for Bajaj Finserv Ltd",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRmZTaHlJZFU5WEo5RmFwSTVnaFI5MXpfdVdsSGk1VjBBNnQ1U2lDOEZzWlBsUWpfbEpNZ2UzMzdwbW5STE9NZjhCeUtiZ2FhdnNkQ3NoVjRoQVExRFYwXzVVczhhYW56ZG1sdzF0SUJ4LXo4UFRSSVJjc2lfNjN2T09SXzNtNUlfcWVyZXJpUQ?oc=5",
+      "published_at": "Wed, 02 Jun 2021",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Share Price Today 1 Oct 2026: Live NSE/BSE Rates, Technical Analysis and Expert Forecasts",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVThCdDBESmcxZDRQejc0Rk5xRk9HYWEza19PaDVybGJFa3Z6c2o3Tk1lb05MdFhsR01zeXpfRDZOeGpWdFhaZ2Z6X2EzNERZckFHSy13YkpxRkpMdDN6cmVaMUo1OHFhdjR5TF82QS1HQXVBQThja0RaY3FFQmVlVFB2YXhUT2hYb2VNMWZaNEpBNGhuMWoyTHRB?oc=5",
+      "published_at": "Thu, 07 Jul 2022",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q1 Results 2026 - Find Bajaj Finserv Q1 Earnings Result | BAJAJFINSV Q1 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPd2VHWmF2aXVOQzVGUVYxYmNpN1hFNGVUQm1JeUw5YkZvQ0N1dDhPS2dYbG5BeXMxcFZjUFByUERGQU1pZXVSeDBGSzZkWldqWmdRaC1yajg5Y2JKazE3UE5xLXNXNXRHNE1DTnpNSTM0c2RlQUg4Z2dWUmpSV253S1pUSk8?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q3 Results 2026 - Find Bajaj Finserv Q3 Earnings Result | BAJAJFINSV Q3 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm90bWxnUDlBSTNLMlVDM3F2Z3Y3WHAwN0Y2OXVpbHU0dzUwS01uM2g0MjBlRGJCY0s5V0V4Mm5ZS3MtakNQRXdqZHBad2lIOTFIQWxFakRfd09od0d2bnVvZVNwVXlweGxPU2NLYkEtaHR1enpDWl9nMVF5NjBsWi1WTlM?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q4 Results 2026 - Find Bajaj Finserv Q4 Earnings Result | BAJAJFINSV Q4 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTU8zTFFCQjJmcF95bVkzVU5YT1lNaFZNQXRCUlJwcjZTQmJYX3NDdmdzeFV1NnkzQ0d0VWhySU1DZ1JBbExuQWFpbktUODFCWHRER2V1bkRpMHpVZXViT0dURGJXaDBRdUdPX0FmcEhDZnVqWXVydTlJQkVzV1lYX0VVNkc?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Ltd.",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pVXB4bEtpRDh1d2VjRjBySUdwbnpMbkRBT0tEaVBpcEttTURqa21SNlNjcjRFOE1fVVJVd0tVeVVETVlCZ2FvNHBiVE1hYXR2dWtuZlRhOVhIUUNYQk9yc1dPTXEzeFI3UDREa3dsalRNWTB0b2hJ?oc=5",
+      "published_at": "Sun, 17 Jun 2018",
+      "sentiment": "neutral"
+    }
+  ]
+}

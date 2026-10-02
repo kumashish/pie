@@ -1,0 +1,405 @@
+{
+  "symbol": "INFY.NS",
+  "last_price": 1035.0,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.2,
+  "fit_score": 22.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 22.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (68.4% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1050.0,
+        "strike_formatted": "1050",
+        "option_type": "Put",
+        "delta": -0.541,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x INFY.NS 24-Nov-2026 1050 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1000.0,
+        "strike_formatted": "1000",
+        "option_type": "Put",
+        "delta": -0.217,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x INFY.NS 24-Nov-2026 1000 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 20.0,
+    "stop_loss_price": 1055.7,
+    "take_profit_price": 1000.0,
+    "net_delta": -0.324,
+    "net_theta": -0.007,
+    "probability_of_profit": 56.5,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 828.0,
+        "pnl": 30.0
+      },
+      {
+        "price": 836.28,
+        "pnl": 30.0
+      },
+      {
+        "price": 844.56,
+        "pnl": 30.0
+      },
+      {
+        "price": 852.84,
+        "pnl": 30.0
+      },
+      {
+        "price": 861.12,
+        "pnl": 30.0
+      },
+      {
+        "price": 869.4,
+        "pnl": 30.0
+      },
+      {
+        "price": 877.68,
+        "pnl": 30.0
+      },
+      {
+        "price": 885.96,
+        "pnl": 30.0
+      },
+      {
+        "price": 894.24,
+        "pnl": 30.0
+      },
+      {
+        "price": 902.52,
+        "pnl": 30.0
+      },
+      {
+        "price": 910.8,
+        "pnl": 30.0
+      },
+      {
+        "price": 919.08,
+        "pnl": 30.0
+      },
+      {
+        "price": 927.36,
+        "pnl": 30.0
+      },
+      {
+        "price": 935.64,
+        "pnl": 30.0
+      },
+      {
+        "price": 943.92,
+        "pnl": 30.0
+      },
+      {
+        "price": 952.2,
+        "pnl": 30.0
+      },
+      {
+        "price": 960.48,
+        "pnl": 30.0
+      },
+      {
+        "price": 968.76,
+        "pnl": 30.0
+      },
+      {
+        "price": 977.04,
+        "pnl": 30.0
+      },
+      {
+        "price": 985.32,
+        "pnl": 30.0
+      },
+      {
+        "price": 993.6,
+        "pnl": 30.0
+      },
+      {
+        "price": 1001.88,
+        "pnl": 28.12
+      },
+      {
+        "price": 1010.16,
+        "pnl": 19.84
+      },
+      {
+        "price": 1018.44,
+        "pnl": 11.56
+      },
+      {
+        "price": 1026.72,
+        "pnl": 3.28
+      },
+      {
+        "price": 1035.0,
+        "pnl": -5.0
+      },
+      {
+        "price": 1043.28,
+        "pnl": -13.28
+      },
+      {
+        "price": 1051.56,
+        "pnl": -20.0
+      },
+      {
+        "price": 1059.84,
+        "pnl": -20.0
+      },
+      {
+        "price": 1068.12,
+        "pnl": -20.0
+      },
+      {
+        "price": 1076.4,
+        "pnl": -20.0
+      },
+      {
+        "price": 1084.68,
+        "pnl": -20.0
+      },
+      {
+        "price": 1092.96,
+        "pnl": -20.0
+      },
+      {
+        "price": 1101.24,
+        "pnl": -20.0
+      },
+      {
+        "price": 1109.52,
+        "pnl": -20.0
+      },
+      {
+        "price": 1117.8,
+        "pnl": -20.0
+      },
+      {
+        "price": 1126.08,
+        "pnl": -20.0
+      },
+      {
+        "price": 1134.36,
+        "pnl": -20.0
+      },
+      {
+        "price": 1142.64,
+        "pnl": -20.0
+      },
+      {
+        "price": 1150.92,
+        "pnl": -20.0
+      },
+      {
+        "price": 1159.2,
+        "pnl": -20.0
+      },
+      {
+        "price": 1167.48,
+        "pnl": -20.0
+      },
+      {
+        "price": 1175.76,
+        "pnl": -20.0
+      },
+      {
+        "price": 1184.04,
+        "pnl": -20.0
+      },
+      {
+        "price": 1192.32,
+        "pnl": -20.0
+      },
+      {
+        "price": 1200.6,
+        "pnl": -20.0
+      },
+      {
+        "price": 1208.88,
+        "pnl": -20.0
+      },
+      {
+        "price": 1217.16,
+        "pnl": -20.0
+      },
+      {
+        "price": 1225.44,
+        "pnl": -20.0
+      },
+      {
+        "price": 1233.72,
+        "pnl": -20.0
+      },
+      {
+        "price": 1242.0,
+        "pnl": -20.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.739,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2651,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1043.69",
+    "EMA50": "1079.68",
+    "EMA100": "1125.60",
+    "EMA200": "1223.73",
+    "RSI(14)": "44.86",
+    "ATR(14)": "27.14",
+    "ADX(14)": "22.98",
+    "BB(20,2)": "0.45"
+  },
+  "rules": [
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "IT Q2 results 2026 date and time: TCS, Infosys, HCL Tech FY 2027 earnings announcement schedule",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPc1pjUlBJZXlVclpqWjhyaVgwVjZXWFU4UEZOWEtOb3JBNU1YM0J0Z1FDc2U2NTZmSGJKTTB5YlJEMU5xdjMzX3JGcDRRbWVDd0s5MmFUX0ZmR1IzeGRqSjVQT0tETzVfak1Uemh1RDk1R0hBdFpYMHBPdnYzTWRsNGMtblh2SVI1emxfMGx1LU1Edmc2VVBPQzJDd2tiYXg4MzJqV2xNS0ZWZzZpcFFOZi1SQVZuQWtqbFJnUnluRmw1Vjk2dzlJcTQ0THJCQnlielZMZGRnSUdxWFBJMWtsSDc4bjRvdHRvM2NjYVB4Q0N3NFpf0gH6AUFVX3lxTFBpOFI2M1lKNjBLUG9kZEJGNHU1WnozRmpTRThnMTdoT2VJdG81RjYyTjZXQnNUcTRieUgzY18tSWNtWnRUT0M3TUtNM0JOU1ZCdXNlamdyUGp0YUJKMXcxb1JYSXNjX1NlY3dFMy0wdlNOUk9hNkxBR3dSUGQ4WmtpeDhkTkhRM01ianZxX2owSDhQT192LUVwai0xcEt2UmxsRFdQNVl5NDJqUTdKcDQ4UUpIWkphSU5WQzNSLXdOdURtaG1XX21SNE1aRTV4eGk0QTdIZ24xOTItZm1JREM4Wnh2cGs0SE40N2dlRXJqRXBuWEN2RDNUQ0E?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Infosys' nearly 1 lakh employees to move into specialist roles as AI reshapes tech industry",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTFI0dVNQZDY2bWp0Y2dhajBIcVpkU3VQQzltWlNQanBXdjR6N3RGX2E0WEpSWG4tYmd2QTBRWDc3QTZTcXlNc1ZJLTBzTVR3cnAyZTUzMHlQSFVtbTMtYkdHVGpuUmNUM3h3Q3otVVl3c1prb0xfOWJEQ3ZMcFI4N191Zkc2cDhIaGM2empLM21IU3ctS19iZFhSY2EzNEtkT0ZVY29pb29SS1hPdjcyOHo3Y3hFV2VNd09MU044cHhRNHdQemdkMUhyRC1tTEZ5SzZab28ySlJiQWo3d1E3UFNlV0_SAeoBQVVfeXFMTnhCcDVaSzdvSEViX3owUmdhZmtGbzg0RDhTSXVXZjBUU21Cbnl3TGhJVDFDSmxxcXpEeGpRM1FmQkVHSGlXekN3T0NXM20zY1hscnZtSUEwRmdsR3QyYW5nT3MwbHdmMW1pRzB1M2F2akloVUVLQVZsejFIZ1lnN1lpS2NIN21OS1NKM0Y0Zm9laVNUVDI5djkzYS1JR3Q1LUdBRlAySGluV1Qtd0FWY3RNeXlPTHZ3WTRHRUszUEd6amY3Ujlqb05Ld19OemtUQ0JaODc0ZGxnU2U5Rkk5UC1BdlkwLWhGc2dB?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Infosys, Wipro shares crash to 6-year lows as IT sell-off gathers pace; what is weighing on the sector?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPaFZxazJxVldqZnk3R3dEd2podDZUSEloRlhsajlaVXUxeW9KQVR0NC1QNzJrNDZhN1E0NWVrVm96ZGgyOTZhX0tlZ0h2UlNIeXNTSFdwSnFIb0lUT081MTVHRVVXcGd4eTdjZDkzaEI0SGpQNUVYc0JGeDVScHdQQWtCc29nTzl3V1l6WENibDI2WGZ0NnNBRGdUX3YtS3c5YmtyU3huMkxDMnFmM2s1MmFNWGRmZVNsdUNKc0dzOTZQc1RXT25ZNjFsemRkb1l4dW1fYVdXdzNzWFhDaUtuNUd2Wm9PN0JmR09iTlpCRE5TdXZ2NGF2VS1rd0VLdXPSAYQCQVVfeXFMUGRtTW5BaUFmVkItS0lZS2taQkh5X1F2RmRBdU01d044dXZkdEVidWZaa0l1eWpyX05aOVNCdmNIaEItSXNZZjNmM21yQUZ3eXYtdXoxblRoMWwyZ3hCcHJ1dGcwNVRDeFV3OENYcWdlNExYOUU2VFFyRXB0ckVlNlgtWDhEZVFNTkNHbzA2SDBQeDhUOFNCUk9OdHhKdURiUnJlU0I3VW1fcmhrY1duNUVQcDlodnZzMFY5V202Nk5iZFI1MDhOSl9RM3NXUnZwbkYxaHgtUlFkc0lOeUZ0eGVmZlBiNE5SZ2lyX083aEtXN0tLVERxYW1Cc3lTM2lfd3hlYTA?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "10 Nifty 50 stocks, including Infosys and TCS, posted double-digit losses in September as market sell-off deepens",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOZ2pRUlZFVk1hekJBMXdMQ3JCUGFTdDBjWnJoLVVxUWhuT2pTVDBJVjZrUkNSQ3RCcm1TdDFNcnBHYnVfUnZRQ04wWUlfY0o2VEZ2RXFHNkRiQlFuMG0xYmlXSGhOZkhzVGoxZFQ1YjZTMHluWThSMWRPQnEzY20wS3pGQVV4eGRuZUZBQm1SRGhPLWtLWVBtbXJTLW5iVUlLc3ZCOUZ0RFFUTlJKTk1TRWU2b3lwdm9KTVdtYUpjM0U4YktpN21QajlMSlBkV29zQnF5eE1JVDAya0VPeGVxNXBTMlhSVzhoTVZwWmh1NGZSTXBldGJaekxUWlBBcXZ2UjV1YmVSY1F3Z1NHMHfSAZMCQVVfeXFMUENnQ0pmeC1zOHlsZmtlV0FTZzNodFhnTWVaVmxkQVcxTDVsQ2lQQkFHWmExV1A4VnJxdnRCWUQwMTFLbWJLMExGTjJNbVJoS05wSk9oU1BfbzVjTVdPX2ZEMUhuYjA1ZktQX0JPLWJLa0RlOVFVYXV2RW1LTzUwMkRhUlRiajBXNWZxdUNwSS1zREIwZllzYWIwMGYtWTRnSERySGxhQnd2Z200eVkzamZMU3FHdUcyYjhsYndBeFVuNzZOekE3X2xjVmFRMkYtYl92MlpqN1Z0T2dDdkRpRXJib3NJM1p2SFVocVZrN25JMDVJekJGSkhlNE1MbVVnTU1tN2FXTGJaTWNIM1NYd05fUFE?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "IT sector Q2 FY27 preview: TCS, Infosys to HCL Tech, Tech M\u2014 Kotak sees muted quarter for Indian IT giants",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOckhuR2oxRDVBYjFlWWY3aWphc090X3FJQ2Q1QWJocGNVZzJ1cWVGajNBSjIzeHA5amZIcTBoR0VwR1NUVnZqTkIyMklSQ1RhenM1bWlEeWlIYUVmRlM1TTJGdHVEYUVMdGIxMUZNWEY3R29GS21obTNpWnlDcDdKQmtCWjI3MnNsZ2R4V3pHcFdpY1NCR2N2ZU5RcVJZWXlGbnQ0N1d4WmF2TGg0X3JXTENoei1VemkxdnNsRTBmZzRhYURLeW1IQnRIRXVjd0xhUFZkM2I5Z19PWHdhc1gyZzR6NFVEVTZVU3fSAe8BQVVfeXFMTTl2Q2tqOHZYS2JkNlE2OXI0XzlzZVhHTXZWQXIxZE1vS05xa29DZ3hCcTBObWxsN1BiYkh6dTgwb2R5YlhqMDJoYUc0OUZuTlJUUE1zUk01NmczVDdDN2Z6cEZmWFFRcGtWMVlNT2M1endUVnJucjQ4Z3Q2Zm9jRUtSV1pyRERpQUV4YWZTWGRGckVMbXNKUHBfbjFjWUhyQ3RGZGJrdzFjcDF0NHpnS1dPSnhoazVnRGFicVZfd0pVSUhyTmxrV0h4QlctSVloV2RabjBlQUNBOHIwM2U1dXRIcmRCdFZCV3ZfOWR5M3M?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Infosys shares hit 6-year low intraday; here's how you should trade",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPY0xiVExlV0R5WTc2dWltMWc2ZVN4RWYxazRHSXM5NWR0dVFoX0dqTGxLYWRpN2NjbjVacEVZcnpJTlJacV9jWGx4OW9Wb1N1aGhrSnFISVdGRHROVEpNWTNydmJwNGJFek9oSnNGZkZsX21ick1WMzU3U0dOUkNUaUlZSFpOU2Q0RnZTOXB4Q1pULW1kaUM1Nk1ZMXFkcnEzX3kxdEpuejZpZUlqdlk4b1UwWDN2S09Cd215b3oyTXZEbk5sOXBwR0Yxd9IB0AFBVV95cUxOc1J5NHczelQwQ0FOemo0MTUwb1U5Qmp5UW5OZkd4TE1zd3laM2VvME1LS2NPQmRzQ3VBaFJ6c0FqRG5LRGpNbFdLNFp4QlNZR1B6ZnZPSmVWVGZfZHFyZksySnk2d01ETWlpbTdzNEN6NmJCYUtWdTcyb3M0WTBRbnhNT0t6SndzM1BraXFkdnl6LTc2RG5GbER1UzJNeUE2WV9IMDl0S2ROUlltaEFxVjZjc3BOWTNoWTE3dzQzVDFaY2NjQnpDWXdkR2UxMWZO?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

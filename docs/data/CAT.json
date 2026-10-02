@@ -1,0 +1,417 @@
+{
+  "symbol": "CAT",
+  "last_price": 823.14,
+  "as_of": "2026-08-03 13:30:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.0,
+  "fit_score": 40.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 40.0,
+  "vix": 15.61,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (55.0% fit - Grade C (Moderate)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 800.0,
+        "strike_formatted": "800",
+        "option_type": "Call",
+        "delta": 0.744,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Buy 1x CAT 18-Sep-2026 800 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 825.0,
+        "strike_formatted": "825",
+        "option_type": "Call",
+        "delta": 0.54,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Sell 2x CAT 18-Sep-2026 825 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 845.0,
+        "strike_formatted": "845",
+        "option_type": "Call",
+        "delta": 0.37,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Buy 1x CAT 18-Sep-2026 845 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 65.0,
+    "margin_required": 35.0,
+    "stop_loss_price": 798.45,
+    "take_profit_price": 847.83,
+    "net_delta": 0.034,
+    "net_theta": 0.044,
+    "probability_of_profit": 72.1,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 658.51,
+        "pnl": -35.0
+      },
+      {
+        "price": 665.1,
+        "pnl": -35.0
+      },
+      {
+        "price": 671.68,
+        "pnl": -35.0
+      },
+      {
+        "price": 678.27,
+        "pnl": -35.0
+      },
+      {
+        "price": 684.85,
+        "pnl": -35.0
+      },
+      {
+        "price": 691.44,
+        "pnl": -35.0
+      },
+      {
+        "price": 698.02,
+        "pnl": -35.0
+      },
+      {
+        "price": 704.61,
+        "pnl": -35.0
+      },
+      {
+        "price": 711.19,
+        "pnl": -35.0
+      },
+      {
+        "price": 717.78,
+        "pnl": -35.0
+      },
+      {
+        "price": 724.36,
+        "pnl": -35.0
+      },
+      {
+        "price": 730.95,
+        "pnl": -35.0
+      },
+      {
+        "price": 737.53,
+        "pnl": -35.0
+      },
+      {
+        "price": 744.12,
+        "pnl": -35.0
+      },
+      {
+        "price": 750.7,
+        "pnl": -35.0
+      },
+      {
+        "price": 757.29,
+        "pnl": -35.0
+      },
+      {
+        "price": 763.87,
+        "pnl": -35.0
+      },
+      {
+        "price": 770.46,
+        "pnl": -35.0
+      },
+      {
+        "price": 777.04,
+        "pnl": -35.0
+      },
+      {
+        "price": 783.63,
+        "pnl": -35.0
+      },
+      {
+        "price": 790.21,
+        "pnl": -35.0
+      },
+      {
+        "price": 796.8,
+        "pnl": -35.0
+      },
+      {
+        "price": 803.38,
+        "pnl": -31.62
+      },
+      {
+        "price": 809.97,
+        "pnl": -25.03
+      },
+      {
+        "price": 816.55,
+        "pnl": -18.45
+      },
+      {
+        "price": 823.14,
+        "pnl": -11.86
+      },
+      {
+        "price": 829.73,
+        "pnl": -14.73
+      },
+      {
+        "price": 836.31,
+        "pnl": -21.31
+      },
+      {
+        "price": 842.9,
+        "pnl": -27.9
+      },
+      {
+        "price": 849.48,
+        "pnl": -30.0
+      },
+      {
+        "price": 856.07,
+        "pnl": -30.0
+      },
+      {
+        "price": 862.65,
+        "pnl": -30.0
+      },
+      {
+        "price": 869.24,
+        "pnl": -30.0
+      },
+      {
+        "price": 875.82,
+        "pnl": -30.0
+      },
+      {
+        "price": 882.41,
+        "pnl": -30.0
+      },
+      {
+        "price": 888.99,
+        "pnl": -30.0
+      },
+      {
+        "price": 895.58,
+        "pnl": -30.0
+      },
+      {
+        "price": 902.16,
+        "pnl": -30.0
+      },
+      {
+        "price": 908.75,
+        "pnl": -30.0
+      },
+      {
+        "price": 915.33,
+        "pnl": -30.0
+      },
+      {
+        "price": 921.92,
+        "pnl": -30.0
+      },
+      {
+        "price": 928.5,
+        "pnl": -30.0
+      },
+      {
+        "price": 935.09,
+        "pnl": -30.0
+      },
+      {
+        "price": 941.67,
+        "pnl": -30.0
+      },
+      {
+        "price": 948.26,
+        "pnl": -30.0
+      },
+      {
+        "price": 954.84,
+        "pnl": -30.0
+      },
+      {
+        "price": 961.43,
+        "pnl": -30.0
+      },
+      {
+        "price": 968.01,
+        "pnl": -30.0
+      },
+      {
+        "price": 974.6,
+        "pnl": -30.0
+      },
+      {
+        "price": 981.18,
+        "pnl": -30.0
+      },
+      {
+        "price": 987.77,
+        "pnl": -30.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.693,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2237,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "874.92",
+    "EMA50": "892.21",
+    "EMA100": "851.76",
+    "EMA200": "755.81",
+    "RSI(14)": "38.10",
+    "ATR(14)": "40.70",
+    "ADX(14)": "25.37",
+    "BB(20,2)": "0.19"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Volume Flow (>1.2x 20d Avg)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "S&P 500 Quarterly Profit Growth Eases Amid Sharp Tech Slowdown, Oppenheimer Says",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-quarterly-profit-growth-160204284.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "CNH Industrial Q2 Earnings Call Highlights",
+      "publisher": "MarketBeat",
+      "link": "https://finance.yahoo.com/m/a645f4c9-8412-3bab-b792-a54516ccda4b/cnh-industrial-q2-earnings.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "CDW Q2 Earnings on the Horizon: Can it Deliver Another Beat?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/cdw-q2-earnings-horizon-deliver-141000520.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Caterpillar (CAT) Is Teaming Up With WM To Test Autonomous Landfill Compactors",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/caterpillar-cat-teaming-wm-test-130849003.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Earnings live updates: Marriott stock falls as Middle East drags, Trump brothers-backed American Bitcoin swings to loss",
+      "publisher": "Yahoo Finance",
+      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-130425228.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Update: Middle East Diplomacy Optimism, Oil Price Decline Lift US Equity Futures Pre-Bell",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/middle-east-diplomacy-optimism-oil-125549606.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

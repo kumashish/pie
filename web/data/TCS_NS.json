@@ -1,0 +1,405 @@
+{
+  "symbol": "TCS.NS",
+  "last_price": 2075.0,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 17.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (76.0% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 2100.0,
+        "strike_formatted": "2100",
+        "option_type": "Put",
+        "delta": -0.523,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x TCS.NS 24-Nov-2026 2100 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 2000.0,
+        "strike_formatted": "2000",
+        "option_type": "Put",
+        "delta": -0.204,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x TCS.NS 24-Nov-2026 2000 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 40.0,
+    "stop_loss_price": 2116.5,
+    "take_profit_price": 2000.0,
+    "net_delta": -0.319,
+    "net_theta": -0.028,
+    "probability_of_profit": 54.9,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 1660.0,
+        "pnl": 60.0
+      },
+      {
+        "price": 1676.6,
+        "pnl": 60.0
+      },
+      {
+        "price": 1693.2,
+        "pnl": 60.0
+      },
+      {
+        "price": 1709.8,
+        "pnl": 60.0
+      },
+      {
+        "price": 1726.4,
+        "pnl": 60.0
+      },
+      {
+        "price": 1743.0,
+        "pnl": 60.0
+      },
+      {
+        "price": 1759.6,
+        "pnl": 60.0
+      },
+      {
+        "price": 1776.2,
+        "pnl": 60.0
+      },
+      {
+        "price": 1792.8,
+        "pnl": 60.0
+      },
+      {
+        "price": 1809.4,
+        "pnl": 60.0
+      },
+      {
+        "price": 1826.0,
+        "pnl": 60.0
+      },
+      {
+        "price": 1842.6,
+        "pnl": 60.0
+      },
+      {
+        "price": 1859.2,
+        "pnl": 60.0
+      },
+      {
+        "price": 1875.8,
+        "pnl": 60.0
+      },
+      {
+        "price": 1892.4,
+        "pnl": 60.0
+      },
+      {
+        "price": 1909.0,
+        "pnl": 60.0
+      },
+      {
+        "price": 1925.6,
+        "pnl": 60.0
+      },
+      {
+        "price": 1942.2,
+        "pnl": 60.0
+      },
+      {
+        "price": 1958.8,
+        "pnl": 60.0
+      },
+      {
+        "price": 1975.4,
+        "pnl": 60.0
+      },
+      {
+        "price": 1992.0,
+        "pnl": 60.0
+      },
+      {
+        "price": 2008.6,
+        "pnl": 51.4
+      },
+      {
+        "price": 2025.2,
+        "pnl": 34.8
+      },
+      {
+        "price": 2041.8,
+        "pnl": 18.2
+      },
+      {
+        "price": 2058.4,
+        "pnl": 1.6
+      },
+      {
+        "price": 2075.0,
+        "pnl": -15.0
+      },
+      {
+        "price": 2091.6,
+        "pnl": -31.6
+      },
+      {
+        "price": 2108.2,
+        "pnl": -40.0
+      },
+      {
+        "price": 2124.8,
+        "pnl": -40.0
+      },
+      {
+        "price": 2141.4,
+        "pnl": -40.0
+      },
+      {
+        "price": 2158.0,
+        "pnl": -40.0
+      },
+      {
+        "price": 2174.6,
+        "pnl": -40.0
+      },
+      {
+        "price": 2191.2,
+        "pnl": -40.0
+      },
+      {
+        "price": 2207.8,
+        "pnl": -40.0
+      },
+      {
+        "price": 2224.4,
+        "pnl": -40.0
+      },
+      {
+        "price": 2241.0,
+        "pnl": -40.0
+      },
+      {
+        "price": 2257.6,
+        "pnl": -40.0
+      },
+      {
+        "price": 2274.2,
+        "pnl": -40.0
+      },
+      {
+        "price": 2290.8,
+        "pnl": -40.0
+      },
+      {
+        "price": 2307.4,
+        "pnl": -40.0
+      },
+      {
+        "price": 2324.0,
+        "pnl": -40.0
+      },
+      {
+        "price": 2340.6,
+        "pnl": -40.0
+      },
+      {
+        "price": 2357.2,
+        "pnl": -40.0
+      },
+      {
+        "price": 2373.8,
+        "pnl": -40.0
+      },
+      {
+        "price": 2390.4,
+        "pnl": -40.0
+      },
+      {
+        "price": 2407.0,
+        "pnl": -40.0
+      },
+      {
+        "price": 2423.6,
+        "pnl": -40.0
+      },
+      {
+        "price": 2440.2,
+        "pnl": -40.0
+      },
+      {
+        "price": 2456.8,
+        "pnl": -40.0
+      },
+      {
+        "price": 2473.4,
+        "pnl": -40.0
+      },
+      {
+        "price": 2490.0,
+        "pnl": -40.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.766,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2894,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "2143.88",
+    "EMA50": "2213.83",
+    "EMA100": "2286.90",
+    "EMA200": "2481.47",
+    "RSI(14)": "36.02",
+    "ATR(14)": "57.23",
+    "ADX(14)": "23.48",
+    "BB(20,2)": "0.25"
+  },
+  "rules": [
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "TCS to take over Best Buy\u2019s India GCC, turn it into AI capability centre",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNenNCTWNEN3lIOWtydTZib2dHaVgyM2xQZnZIdlFHVXFaQ3J2MldrMHVtYUpMZzdTOUdVeThJeER6aGVpQ2FjaU1WN1hYTkVNMEFoclgyZ0MyQjFRcTc5TXRoSTVnNWZDTHpMblJSc3pOVkd6VVlucmVLczNxczVxTW1Tb2E5S09xT0xKVVJOb2pObUNtNjVPdDI4MHBWa2d4UmJITzFHcXJOU2x4aHVsSzBWQk1WVGhqS2lnZlBrYVJjdUszemp3SDltQks3eEVyMVBuTThJYWEzMHlsYVVNbUhhMFhzQdIB6wFBVV95cUxNaTg3blNCN1ZsSDg0QnowUFJENWxFQ01WTTA0bkMtYWxQX05yU1Rqam9XOFUyZkE5djFJNC1CYXh1cC14ajFjdk95Z19wSUJodG1IM0xJZGtCOUFFRmxOQVdFYzJDalFpVWJHem9nTGkzNVJNZXBpa0F0NFJPazRLaEFfOGJMVVZXU0tTR3pKbXRhNWM2d3RMclZMZy1ROUpBakJhbkJoLXNnOWVHTm9sQXZGUF8xYjUwNzVTaEZyb0JSeUF5dWk3SWVLUzRkUVRaM3p4MHlYcl9OZGV3TDJST3dQZU5UY0loZzJv?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "'Stop trolling TCS': EY techie earning over Rs 50 lakh says Tata offered 25% hike",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQUxhSjhQRHYzd2tBMmtjLVVsVGJIamd2eWpqcDhFdUpUUl9VZkh4b3JpT1I4eDdZcTd0ZEM2dVpFYS1pbUd0RE50c05Fc3pwSUR2ZVpGOHRFc1ZtZXVSZVhyRnd1eWpGUXNVTkxlLVdLWTQySUU4QXgtUURlSXZTM2VsOHRLekpYdnNmdmhJaWZsVlhlWWVmZnY4UlczcUh3SEdqb2kwR1d0aFBuMFMyM2k4NWJPMGRBX2J4ZmlRUDRJMlFXSVhfV2cycW5UeHd30gHWAUFVX3lxTE9ueVVoZFpfaHpwSTRJYlItaHV4T0lWdmZ6VFdfc0FWa0lBak9MZ2FpOG5SVm4tbWxJeFRPVVFXV1BSTWxic29oUHNtODgtR0c5N0RxSHRtOVdDeVllYjBrekZaX3V6T005TTBHcU4wR2xWU28xWm5pUnZBdXBrVkg1ZGdWaEZMM3YtZnhLOUpVcTlPUjZ1N1dFN0ExeFJvNFFRamNPS2o4Ql9mZWttV3d3MENsNlI3aTNRZTNSOWdkVDcxTi1NZjNDcFlKcmUxUW5DbTFpa2c?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Rahul Gandhi asks who ordered TCS to change Form 6, whether firm was pressured",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNTjdnNzNGNERfc3J1YktSb1pCZmdLNlVfNU1lVmllV3NXM1JVYTcwQWFVWFA1ZGxyc0xfLWZ3dGFNRVNPV1o4enpYTDdBajdQa3FlNEk1QnEzN1JacV9tSzVDdTBOTEswakZKV3FkRnR3b18zUTFtb2VBOW1oeExlLUFYcC1Hbkctc01pUzZBY09DSjlCaWdibnQ1UFBYQm9jYmpVejI5UG5Va0RmdnhyenZuSzJMTlpYeG9oYjFhbXJLU2hTcGFzTjZEcHFEemc3X0lXSy1pZFJpdlhuMnFCcUtiODRIX1ZVdFlScl9aTWxsYTBPYlZvctIB8gFBVV95cUxQakpWRjVlRFM4WTRSbjIzcHBZOEE2QXhhdjhhZXZGNzRYaTU4WGdlVDRjc0FSQzlfeEtNZEFsUE8xaU1TdWdBX0I5aVhxY3JkN080SWpld1NjM3otWGY3ZHRoQ3lkbXptTVhOUEtfckFQVjZOUjZVWXlVbWFxWTU4TUo2VUYtWEM5azNaamhCdGx5bnhQTFUzMlVPOHltY0kzaDBYZkQ4SWFYdS1CWXY3Q19admV3dkROYzJ3TG5hVkJWZE05RXExTTNKM3oxNF95dkdPMXI3WE9GNlNfV0gtTzVtU0x6Njhoc2NLREFNeEFpZw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TCS to take over Best Buy's India GCC under multiyear deal",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNejQzNzBvWEJqS1kzNHhtYkUwUU9pMzAzRXFJemhrOXhEUWVDcHByZVVDaXVaNlplaHZwRUlNMkstMFIzblhYS0VtZUl5b2xVazNUS2Q0S1RxQnBUcV9WMmdZWkdadVZ5UE9iQlY1bHZNQVc1WW1JN0xQSFdBcjVsN1ZndjhzdU84REZ6YUhhdmxxSXRiblQ0VDNrS3pXeU5UUlEtcEN4a3o3a0hvYWtoRjZuaDNmdEptT1VxZ3l5TkotdlVsaXBicm1PTdIBxAFBVV95cUxNQWxGcmwzT1ZhN25yR1ctTVo3bnphUjNZelRMdVo1VDBNMEVuc2dSaGFHXzRFbWxyX0tGRGRTa1JHUG5rREc4U1BHS3JvaGJHTWFVbWF4VG9SNnFJU0lXUEZhMXlZNG1lbHVBZjRHZFluWWVNbDVVYXdzMDNJQk5rNzJIMW50c2U2S1NqOWd0eThHZkZNRnpncFQycUlfV3dXNDNLVG1TM0piQW1ST1RoblFLaHhjNjJBa0duMFFlMzVWUzZG?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Jefferies is bearish TCS, Wipro, 6 other IT stocks ahead of Q2 results. How many do you own?",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNVjB4OHZ1NzFNOTlWV1JuR0dGRV9jWkZIUXhFNEVGTEY4c01zRGNYRG4wQ3U1VzhYN1U5bmxRRVBnNmQzT0t0Y0pEVXExaTFKMG1tSnN1RWtlTndESHBXSzFhWm1acUFITTByQkpNSDc0QUNUTDJnUW9veWd3Qy1TR1I4QXJKdmh1VGNncWNQSW9vWlRaMzhOaGs3R3NUaTdpVDFLTnlTanBiWTRFUHZfdmRTNmlmMXUzX1VMNlNYMjU5LV9VYWxCRlY1Y181eHJTX3ByM2o2STJmQWd2aHdnUEFHT2hHenlxNEc5dURYdUZPLXlwQWh3WUVHLTFHdw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "TCS is buying into GCCs. What does it mean for India\u2019s captive model?",
+      "publisher": "ET GCC",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR3FERG5YTzlTR0kzNkNPNXR2REZrbUtRTTNKVEhURkZyQThnZnIzMG8yclRTNXhuNkdlNTFCS3BCMEhCN3BEa2w3WDBQbWNWZUgyZjBkb0s5LVA5NVFNN0FfbDVTRHFiaWx6V3dxcnJuUFl1WjUyU0dSRVo4Rk1ISnoyMnpsUGhnQ2JYN3Jhd216dzRLbzMxRjRJVU44TzJYNnYyMG9YVjQ3V2t1UE03dFBhcHNrbjluSVBHdUdFNVpkM3lLQkdjT0NKbUZZazhBMk83ZdIB2gFBVV95cUxPMGduT3p4MnRaLXNkc0R5MUpOTFZGTGdpaWpSNWR2OTBkME1pWFFQMTV2VHF1MHNvWUVXWk9ySTJJSE1SaDNEb1JUQ1c5U2xETERjT3dqWEw1YWM5NjBjNWlyNHdPS2FlREpMQ0l3NEZ5eUhlLUI4RzVGRGprWnA1aFNPZ3VuUXNiR1Nac1hlOGpLdm5ZTmpKWWZqNFM5RWplOVNIMzYyNmVSYlQ5Y3BHTERIOE82TmFhY3RlRERJQkxQUWFHODRhM2V6S0c1SmFoaTgwczJSeDJPUQ?oc=5",
+      "published_at": "Fri, 25 Sep 2026",
+      "sentiment": "bullish"
+    }
+  ]
+}

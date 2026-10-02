@@ -1,0 +1,405 @@
+{
+  "symbol": "MARUTI.NS",
+  "last_price": 11386.0,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.0,
+  "fit_score": 20.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 20.0,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (21.6) is oversold (< 35) [Synthetic PCR: 1.54]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 11500.0,
+        "strike_formatted": "11500",
+        "option_type": "Put",
+        "delta": -0.509,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x MARUTI.NS 24-Nov-2026 11500 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 11000.0,
+        "strike_formatted": "11000",
+        "option_type": "Put",
+        "delta": -0.216,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x MARUTI.NS 24-Nov-2026 11000 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 200.0,
+    "stop_loss_price": 11613.72,
+    "take_profit_price": 11000.0,
+    "net_delta": -0.293,
+    "net_theta": -0.144,
+    "probability_of_profit": 53.5,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 9108.8,
+        "pnl": 300.0
+      },
+      {
+        "price": 9199.89,
+        "pnl": 300.0
+      },
+      {
+        "price": 9290.98,
+        "pnl": 300.0
+      },
+      {
+        "price": 9382.06,
+        "pnl": 300.0
+      },
+      {
+        "price": 9473.15,
+        "pnl": 300.0
+      },
+      {
+        "price": 9564.24,
+        "pnl": 300.0
+      },
+      {
+        "price": 9655.33,
+        "pnl": 300.0
+      },
+      {
+        "price": 9746.42,
+        "pnl": 300.0
+      },
+      {
+        "price": 9837.5,
+        "pnl": 300.0
+      },
+      {
+        "price": 9928.59,
+        "pnl": 300.0
+      },
+      {
+        "price": 10019.68,
+        "pnl": 300.0
+      },
+      {
+        "price": 10110.77,
+        "pnl": 300.0
+      },
+      {
+        "price": 10201.86,
+        "pnl": 300.0
+      },
+      {
+        "price": 10292.94,
+        "pnl": 300.0
+      },
+      {
+        "price": 10384.03,
+        "pnl": 300.0
+      },
+      {
+        "price": 10475.12,
+        "pnl": 300.0
+      },
+      {
+        "price": 10566.21,
+        "pnl": 300.0
+      },
+      {
+        "price": 10657.3,
+        "pnl": 300.0
+      },
+      {
+        "price": 10748.38,
+        "pnl": 300.0
+      },
+      {
+        "price": 10839.47,
+        "pnl": 300.0
+      },
+      {
+        "price": 10930.56,
+        "pnl": 300.0
+      },
+      {
+        "price": 11021.65,
+        "pnl": 278.35
+      },
+      {
+        "price": 11112.74,
+        "pnl": 187.26
+      },
+      {
+        "price": 11203.82,
+        "pnl": 96.18
+      },
+      {
+        "price": 11294.91,
+        "pnl": 5.09
+      },
+      {
+        "price": 11386.0,
+        "pnl": -86.0
+      },
+      {
+        "price": 11477.09,
+        "pnl": -177.09
+      },
+      {
+        "price": 11568.18,
+        "pnl": -200.0
+      },
+      {
+        "price": 11659.26,
+        "pnl": -200.0
+      },
+      {
+        "price": 11750.35,
+        "pnl": -200.0
+      },
+      {
+        "price": 11841.44,
+        "pnl": -200.0
+      },
+      {
+        "price": 11932.53,
+        "pnl": -200.0
+      },
+      {
+        "price": 12023.62,
+        "pnl": -200.0
+      },
+      {
+        "price": 12114.7,
+        "pnl": -200.0
+      },
+      {
+        "price": 12205.79,
+        "pnl": -200.0
+      },
+      {
+        "price": 12296.88,
+        "pnl": -200.0
+      },
+      {
+        "price": 12387.97,
+        "pnl": -200.0
+      },
+      {
+        "price": 12479.06,
+        "pnl": -200.0
+      },
+      {
+        "price": 12570.14,
+        "pnl": -200.0
+      },
+      {
+        "price": 12661.23,
+        "pnl": -200.0
+      },
+      {
+        "price": 12752.32,
+        "pnl": -200.0
+      },
+      {
+        "price": 12843.41,
+        "pnl": -200.0
+      },
+      {
+        "price": 12934.5,
+        "pnl": -200.0
+      },
+      {
+        "price": 13025.58,
+        "pnl": -200.0
+      },
+      {
+        "price": 13116.67,
+        "pnl": -200.0
+      },
+      {
+        "price": 13207.76,
+        "pnl": -200.0
+      },
+      {
+        "price": 13298.85,
+        "pnl": -200.0
+      },
+      {
+        "price": 13389.94,
+        "pnl": -200.0
+      },
+      {
+        "price": 13481.02,
+        "pnl": -200.0
+      },
+      {
+        "price": 13572.11,
+        "pnl": -200.0
+      },
+      {
+        "price": 13663.2,
+        "pnl": -200.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.765,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2885,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "12265.94",
+    "EMA50": "12825.75",
+    "EMA100": "13220.56",
+    "EMA200": "13580.38",
+    "RSI(14)": "21.62",
+    "ATR(14)": "237.57",
+    "ADX(14)": "54.51",
+    "BB(20,2)": "-0.15"
+  },
+  "rules": [
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Bajaj Auto crashes 8%, auto stocks slide on weak September sales; Maruti, M&M among top losers,...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNQl9WSzQ2LVJ3Um4zeVRCVmp2T0gwV2o1Q2g4TjNoT1U1cFJWendYbWZEWk1idXhPNTJQS2xCRzB0dHEwZ3FaVnBjYzJ3aGJaekxlbGFUVDg4VDU3ZGFOeHZBM1JmMmJzRUxMUGg3c0F1SHdKcTQ5cGtwNXVYdDdtRjNTRE9WNGc4ZkdfNTZaMENkWmw4TEduRTdyeEJNNWhvcnhacDBFYjFtMFhYTUg3V2JXamhrZnV3MGQ1bTBTdzJoekZPcncyU0VwM1BIOTFGd08yekRzMnB0bkpBN3dOeVZKUDljTTh0ei1wWE1LMEFUUmk0UVZDaFNUT1pCUdIBgwJBVV95cUxPRnY0NjdxQm5fdjVLRXhQWkQ0Y0JLTWRaZ0RaUWtxekpfMDlBaHZfYk1YQUMwLVFDNjBSRkwwT08wQXdxR190Vm1mT0d6MWVwLVNVRDBSeGxvLS1hQ2lMVUlKVjJUbFdBYmR2cUZnbDdCUVlSN0lXSVROY3dQWm5rSmRudUNidDNJSzJlREVTWXJLYnZwTURCS2xtdEhfSmkzc3d1eVpfR0JTM0NNWjFiSC1wSkJrTkVEYW03N3BMNXBhSjl5UVJXM3FhZE1TSXdBeFBLSFNGQWg2SG9Pblk5YlhaUDFMU1FjdWRkQzVyYnZ3a1ZPOVRhNTJWZ3RJSTQ1WEI4?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Suzuki asks India suppliers to halt production one day a week as Maruti eyes 4 million cars",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZXFFWHpxLXFIMUpWZ210aVZaekZadWtPU015d2RnNmtfTE9XSGRRYzY1YkdsNkRqcThQdkM1dlV4WHpHX3U4bHJoRFV4V25UQ25uTlJQd3ZHa1U1cHZpOUoyWXdDNVFJOVhQVjRha3lId0ljS3drQjNxdTZDeEVqUWZ0YjFTcTlkdjgyeFcxRUtiQmN3M051azI2UDd3T2xzVExfWkZLN204Nl9UZmVzSHZvY0VkT20zLXFQR0tOX0Rka3BEajJvWXozV3lLRHNlQkw2M2lvb19KUVYzR2JuWFRn?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Maruti revs up production as booking backlog crosses 2 lakh ahead of festive season",
+      "publisher": "ET Auto",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxORndpYWp2bldUaXJfYUh6MzBQLWN3ZUVFbTVwdGtQcTdZbFBFMGkzamJaMERqWkkxeWVrZEo1V1JDbWtsZk9YbnctOUhkcEswNV8xZWVkV21EeXg1c3I5VkI3dHduNWs2eldGTmZPOExDLWZSZkstQjN1NWN0UkNzNG9QQmNiU2ZNcENpci04ekF0aFVjaVlXM1FmZGliQm5oYWoxblI4aFpDQzNaYTh2a3pVVFVVNGo3aDFwSnZTbDNGcG1OV290aGNMMmlLMWh1bDRKV1BsUHdieFRyV3QtRFN6aWVlSG15UUpJUXVZc9IB9AFBVV95cUxOWkpUdHR3ci1kZEVQODUzR2NyWExZa0dWNV9ocGM5bGVibFZSRkFidEtpem5WWEtZaFlnTVcyeXdzZ0NuTGx5dEVoRllHbGRvaGtER0d0SGh4ZVIySGVFMUdBR2dzWHQ2amFBWldFUFprbTBDUW9yMXlSZDhYY3NoTi1hekxvbHljTXdBMFJmQ2I4TV9uMllNTTJCT1puWUZKUU1reG8yTUljTzRmbk9rQXc5S3g0NHQ0T1VacHItM1d1S1I2OF9VRjNoaEFlVWR2bDBWRGlZYTdwYk93WjFnU3pPMTZSOHpudERsUDJ3R3pSaThL?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Maruti Suzuki September domestic sales jump 30% to 1.92 lakh units",
+      "publisher": "ET Auto",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTmtFcjBaZHJ3UmlEQnk4VXRpeVg0dS01M3Y0MlZYODdIQVdIWFRRYS1jMUVhNlRnUW1DOVZPMVFUakVZaGNnbHlwM19lMEdDdWdrUGlmRTZwaW1hUkhQNk01bDJFX2pacWpwRVo5b2lqRllRNExwdEhvYzBYM0phYXZkSGdvY1BmMDRTcHl1OHFhNG45MDBpbmwwdnhidlFBdXVEU1J4b19fcGJyT0hUcy05dkJ6Ym0xR2E0VG5Fbks2MURNR0tFVVhkRdIB0AFBVV95cUxQWHIwNUFrTWlTWnJVVVFMQ3dWbkFuQ25KTlptR0k1NjFvTnlYa2F5TWlzdFVkalY3dDRQYmhwSkZ6Y091MzNTYTVoMjZzbEdPLUZRWUhyZ2dCMW9hUmxEa2FPeXdoaVJYdVBjUmlwdnlUWlFTcEFrLTRKVk55VnZVZXIyWXFnUGptUmhGeEMza2hMNkU2cXo0UUttcWF1WWVVRWtwTE0xR2dnYTNRVllLNW1FZTNoZUx3WHVoeFBmVy1ST08xVUgxTTN5amJMZFNN?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Maruti Suzuki appoints Sarada Prasana Nayak as head of production",
+      "publisher": "ET Manufacturing",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOOFk4ek9fb1V1SXBDU0Z0ZzF2MnJXcUhaUEs4MHo0M0Rya1ZweURZMjQ4akNUdEhVUndfWjBkTm4xYlpyM3M3ZU5scTlkWVUyQmU0RkREcHFtNlo4THMzODBqTmdXS0xlZ21BV0RVdTlOci1YZ3k2bXFRNHQwWUV5QnU3MDFjZm9YQWNvUzJqektlUmZ1aTVySkU0RDhJNDhJbWdpSWtzUEFGUHo3YW45em1ZQTQwZGdxcW9ZbVJJc2dJd1NvQ2xyS3B3YVE5WUlCd3Fvc1Uwb29FWmtoaTBr0gHfAUFVX3lxTE44WTh6T19vVXVJcENTRnRnMXYycldxSFpQSzgwejQzRHJrVnB5RFkyNDhqQ1R0SFVSd19aMGRObjFiWnIzczdlTmxxOWRZVTJCZTRGRERwcW02WjhMczM4MGpOZ1dLTGVnbUFXRFV1OU5yLVhneTZtcVE0dDBZRXlCdTcwMWNmb1hBY29TMmp6S2VSZnVpNXJKRTREOEk0OEltZ2lJa3NQQUZQejdhbjl6bVlBNDBkZ3Fxb1ltUklzZ0l3U29DbHJLcHdhUTlZSUJ3cW9zVTBvb0Vaa2hpMGs?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\u201cMass Market Should Not Be Defined by a Price Point,\u201d Maruti Suzuki's Partho Banerjee",
+      "publisher": "ET BrandEquity",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQbTlFQ0xqNGl3Nk9XbXFha0wtUHBJRHRYYndra0JWOUVReTgzLVpSaVZwZVZ5WlpOZ2wzVXlENmJLcldFczBBendUNWY3eFR5a1YxN3RfNmI5eERqRm05VXljUUo2TncwVlBqY1l5c25NUVQtSzQtYjl5UzBobW5mNnBTSXlkSklpVW5Vamp4MG96UlBnbGw2dGtuVGFoWXA2aUM0MnNaSURudm4yRExtQjhCUUM1TE5lMGFJNzhJQnJRbXdLVDA5TjJUY3c5amtTRHJWdFhsSlRGWkxlSm0zamVoRkxqTjlqVjhn0gHwAUFVX3lxTE5uNENkaEJTRWJyOHNSU1VWSWEzVDF4alpQQXVEX016bUMxTDhMX1VWeGdfYnNGNEtmX3dXTkNpWmVJZjZmbkVSYVBaRWtVaEN2c1Z0V21UMHlqbjBuaDJocGhOdGxDV3NBdFFsNDFoeUpJOWF5V1huYktRWnlLUEtqVWI4Y2ktSGg0Zlc1RkJTRHhIdFZTTDBmRXBUSXpraU5uLXBOWVA3RVBWWGF5S0VMM0Yta1dva25WXzhkVTBPVkpqUGcwX1BfdG42WkhXYVZFUlFkM1UxTkVEeVRuZnhycEY0bGk2bHExTW9FSjkxdA?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

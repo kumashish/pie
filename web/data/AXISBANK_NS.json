@@ -1,0 +1,405 @@
+{
+  "symbol": "AXISBANK.NS",
+  "last_price": 1217.1,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.2,
+  "fit_score": 22.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 22.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (62.7% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1200.0,
+        "strike_formatted": "1200",
+        "option_type": "Put",
+        "delta": -0.339,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x AXISBANK.NS 24-Nov-2026 1200 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1150.0,
+        "strike_formatted": "1150",
+        "option_type": "Put",
+        "delta": -0.117,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x AXISBANK.NS 24-Nov-2026 1150 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 20.0,
+    "stop_loss_price": 1241.44,
+    "take_profit_price": 1150.0,
+    "net_delta": -0.222,
+    "net_theta": -0.069,
+    "probability_of_profit": 36.4,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 973.68,
+        "pnl": 30.0
+      },
+      {
+        "price": 983.42,
+        "pnl": 30.0
+      },
+      {
+        "price": 993.15,
+        "pnl": 30.0
+      },
+      {
+        "price": 1002.89,
+        "pnl": 30.0
+      },
+      {
+        "price": 1012.63,
+        "pnl": 30.0
+      },
+      {
+        "price": 1022.36,
+        "pnl": 30.0
+      },
+      {
+        "price": 1032.1,
+        "pnl": 30.0
+      },
+      {
+        "price": 1041.84,
+        "pnl": 30.0
+      },
+      {
+        "price": 1051.57,
+        "pnl": 30.0
+      },
+      {
+        "price": 1061.31,
+        "pnl": 30.0
+      },
+      {
+        "price": 1071.05,
+        "pnl": 30.0
+      },
+      {
+        "price": 1080.78,
+        "pnl": 30.0
+      },
+      {
+        "price": 1090.52,
+        "pnl": 30.0
+      },
+      {
+        "price": 1100.26,
+        "pnl": 30.0
+      },
+      {
+        "price": 1110.0,
+        "pnl": 30.0
+      },
+      {
+        "price": 1119.73,
+        "pnl": 30.0
+      },
+      {
+        "price": 1129.47,
+        "pnl": 30.0
+      },
+      {
+        "price": 1139.21,
+        "pnl": 30.0
+      },
+      {
+        "price": 1148.94,
+        "pnl": 30.0
+      },
+      {
+        "price": 1158.68,
+        "pnl": 21.32
+      },
+      {
+        "price": 1168.42,
+        "pnl": 11.58
+      },
+      {
+        "price": 1178.15,
+        "pnl": 1.85
+      },
+      {
+        "price": 1187.89,
+        "pnl": -7.89
+      },
+      {
+        "price": 1197.63,
+        "pnl": -17.63
+      },
+      {
+        "price": 1207.36,
+        "pnl": -20.0
+      },
+      {
+        "price": 1217.1,
+        "pnl": -20.0
+      },
+      {
+        "price": 1226.84,
+        "pnl": -20.0
+      },
+      {
+        "price": 1236.57,
+        "pnl": -20.0
+      },
+      {
+        "price": 1246.31,
+        "pnl": -20.0
+      },
+      {
+        "price": 1256.05,
+        "pnl": -20.0
+      },
+      {
+        "price": 1265.78,
+        "pnl": -20.0
+      },
+      {
+        "price": 1275.52,
+        "pnl": -20.0
+      },
+      {
+        "price": 1285.26,
+        "pnl": -20.0
+      },
+      {
+        "price": 1294.99,
+        "pnl": -20.0
+      },
+      {
+        "price": 1304.73,
+        "pnl": -20.0
+      },
+      {
+        "price": 1314.47,
+        "pnl": -20.0
+      },
+      {
+        "price": 1324.2,
+        "pnl": -20.0
+      },
+      {
+        "price": 1333.94,
+        "pnl": -20.0
+      },
+      {
+        "price": 1343.68,
+        "pnl": -20.0
+      },
+      {
+        "price": 1353.42,
+        "pnl": -20.0
+      },
+      {
+        "price": 1363.15,
+        "pnl": -20.0
+      },
+      {
+        "price": 1372.89,
+        "pnl": -20.0
+      },
+      {
+        "price": 1382.63,
+        "pnl": -20.0
+      },
+      {
+        "price": 1392.36,
+        "pnl": -20.0
+      },
+      {
+        "price": 1402.1,
+        "pnl": -20.0
+      },
+      {
+        "price": 1411.84,
+        "pnl": -20.0
+      },
+      {
+        "price": 1421.57,
+        "pnl": -20.0
+      },
+      {
+        "price": 1431.31,
+        "pnl": -20.0
+      },
+      {
+        "price": 1441.05,
+        "pnl": -20.0
+      },
+      {
+        "price": 1450.78,
+        "pnl": -20.0
+      },
+      {
+        "price": 1460.52,
+        "pnl": -20.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.719,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2471,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1232.37",
+    "EMA50": "1248.00",
+    "EMA100": "1262.54",
+    "EMA200": "1261.16",
+    "RSI(14)": "44.52",
+    "ATR(14)": "25.10",
+    "ADX(14)": "27.63",
+    "BB(20,2)": "0.26"
+  },
+  "rules": [
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Apple Pay launches in India with Axis Bank as first card partner: Check where you can use it and how to make payments",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPcGtoWVNuX3RpX1VycnNrSEoyLXBtdTFoRHQ2cGpkLTRYUWgwRzZwakJfUUxNNkdBNGRhNTg0Zzh2WEVFNk1jNWN6UU1nUV9ELWkwM05VOHdpY3RIclFvSV9XMXZkTUhqYUdYTEhQUS10aGZYMTMxa1NybHhNVzk4RWpfT1BESmVKQW1XTTF0RFBFNlR6V09sdVZKcVVsbjJRLVBoU3JBQzFrNkpOZmJHWjEyZU5nS1hnWElrcjJLLUJDRks3UFhqN1BIU09fY1VzQV83SmhJNzdWb3hSSWliOXhTd3E3SV83VDRjSXpoZDVRckVkWngzb2FtNURuRzctRkYzOTI4TVVVVlJlUmFzRTNn0gGXAkFVX3lxTE5xRTlrZURyWDFxdURIRmJiR2UyekpwZWFuZG1ubWk1Vi02YTNlSUxIRHRyUmNsTTVTV3pjQ1V5MzM3YWhUUEwyWF9LRGVBVzN6UVFEUXRyVTVsRjZtbzRZaVdpWEdVLTRxc0JtbmlOUmpZbXlUU2hiZkdibUhRLUFOR2V6cXdpdnN5cTFDOWcwSzhsV3RmRjhyeFB5YWlDSUNpbXR0UW9iN3hoRnh3V2pCSDIxMWRnX1JzZ2l3Y3hpSVRXdjRPR2l6ZHRhRVdSTEhIZkJWYXpFQ2V4emU4ZGNVRnFqTzZTZmluSVY4ZUpRdHF2ZUZ1UUdONXc4LWRHQ1hJNDJFMzhoY2tPNkFCSjdwUzVEdVh2aw?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apple Pay comes to Axis Bank credit cards: What changes and how can you pay?",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNT2d2VTdQdTA0a1VJaDZIbUY2UEtxc09fS1dvamJQY29zZXlrUS1lNkVrU2pNanhNWTBEZmc1Vk1CUTVNaDhrMENqdFA0Nl9sTmdTVlNscGxvM1ctWHVXZlpfMWtyRzhOdXJnTTk0ZDR6d3E5VFRjWU9mS3ZPM2lVR1JpLXVWd3VPYW01cTNIUGt4WWU1cHZMczBZTmZTVjJMZTRzWGdidHJmQ3ZKU0lOTklOLW1IU0hINTdlekxaU0E0el9pTml3QlRMWWNjZXJkU2JiWWdiYXFXVTRrTEVsN0pB0gHnAUFVX3lxTE1DYjdyQy1NNU9qUGRGT1l1ZHN1RFlqVC1vSEI4dUM0WTVtcTZIYjEyTlJCMDdyZjROMm9pT3dmNFRfdUNwaWdYdWpZOUtSM2lKdnc4NU1CRFE2WUhKZnVkMFpFM2x3QmVfaWNtZkZxRnV6VUI3bV9KQkM3WnN6LUV1dnlBTHg5YmY5YkpBcmQ2Njk5VmEzUFE3UmFWZ04tc0FwVzYyeHo0eFRYN2ZYaXhrZG1VWXJOb29lcWQ5OS1rTHJDY3pvdVpMTW5YOVM1X2VfRl81ZFJDczVrU2FXQlVjWGJ2MW9kMA?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apple Pay tie-up to make Axis Bank card a preferred payment choice, says CEO Amitabh Chaudhry",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQeVNtTzVTM0JXU01FR04yTGpkVXRfT25BZjM0a1c2NjBPSTdGeXpwWHJGMWM4V3RkNDVRaUI1NVo5ZjhaTkh1ODhhTEVKdWlpOXFBS1FwRUJhQkM5a3NsTmd2Rk5YNW5CamtBbGJYYVdiQ0dUV19Da1pBY0hEc0locnR2N0xOSlhvcVVzUFA4WXo0ekVaWFBGWWZoaFFNczNXeC1EbENSRkJpTjRlT2xGa3VZZ1RBMUQyTm9WOXdFc3RsdkV3QTZJbWp5YmViazQzN0FndVpWN0JwOWtndm5hYnhGem0yd9IB6wFBVV95cUxOeTFSOXppMTdyNVIzSUFob0FlbFlVbVkxSWVWTzQyQ3NJcmVPYS0xMUUxU0VtcFBQd0lCZGRpU1pOQUZjUHJpbS16X1R4ZXRHUjFxc2RrOXJJc01FaGtCSVIyRnBLaXZ5aVVmdTJTQVo5RXJIOVctYVRjWGppOUVuNHJVOXRrdEI4N0g4ZTB5cnNXbzlneHFfWU8yUWhmbTBJMUY0eUdRQ1BUS1d4bkFleFpseUE3cFZzTHR3TzRJbjk5TGgtelk2SHQ4bmNKaTVCZ2d0LVBBd3BlWkZTQ0REbnlISllBN0Q0Ykww?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Apple Pay launches in India after years of global rollout, Axis Bank first partner",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUjdqbnltWndhSG4zcVBCZmFNWjFROWFuS3lvSGNiNmhKXzE5bUxFWnNRaDFkYnFmX1ZKLXdTUkVLM1pVcGZnSExLWEUxRE9WZ0pNVWxVYmJodXVnQ3ROZ0JCSTQyMXZoOGVwaGVMYXlTazlIX0V3WG05aVJRNFppQTVrWjJTaV8yYmttOFB3eUpWZkRCU2JsNGZDNUhDdzlZdDgwTGo0VzkzLXdnUVdQT3VYWXBEdmNQU051WGhFck90eFZUeDh5WExEODlhS3NwWEJjN3hBV3h2WE3SAeABQVVfeXFMT3l3LUFpbV90bzZIeXBRV2xRUDFTa2xyekNMWXdNZ04tVEg4M0pGX0QtVHl5VHVyd0U0emhTaS01a1ZTVmlSS1J4b0Z4YkxpRHVHS19hM0VZNk1MbWtGM1lINzcyTEEtbGN5ME4wbkF5dzR1NURDZ1dGcXktNWthZ3FsQlBpVTFoRVRkSmZ3MFZFT1JDMV9RS3JMT1FGSVdNamM2VF9rbm1fanAwc2NLMmlsMDNQWjhIa3hjQV81RmJfTE80ZGpESlBsaHltY2hPMElqQ2pYcXRZX2k1SGQwcmo?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Indian banks are ahead on AI | Axis Bank x BCG",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcFNHSkZydGdGMVBrNkVTV0FEVFAxNnNaYXhvSlVvLXZQbmFKMTY2UDlaSHFQeXRZQlhXZVozOXB5NWo4OU9XSlk5c2d6MnF6c0JrNG55eHFyeHozeUhrQ2R2dFBYWnZFRFhzak95Qk9LYWhmeVdMVms2LTJwUzA4T3d6VkNsT1ZHQ2xtMUdtY2lPd2Z2amFSQ1p4Y25aaWRYdlHSAacBQVVfeXFMTk9Xb2NlelhJVGFqeFhTR3NBLTBqcVRkSVFRYW5MR0k1LXh2aTZrYlhqQWNFVlo5UGRZUEJzNERvRlhqc3JrVzFwZjdVQlR4MW1nV3FGWlVHeExyZWJkak95T3VZSnJ3enZVTWQtLWxBTnl5LTdoZ1hNeVBSQTJNQkFGQjVRZ014VElQQm1na3BGMXplbVlBT0EtUHRUeGR5eFlsNmFxZW8?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Axis Bank targets doubling data centre lending to meet India's AI demand",
+      "publisher": "ET Datacenters",
+      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQRzRaYWhhTEhtYmY3VWc0Vkl0OXRONk1NbHRmcnQ1OG5DLWpPSUswR3BaT2w1dGFFanh4RHVCSFI3OV84VzdkUjFUU3NSOTF1M25sUkZFRFUzVzZCcXpnMzVid2dTTkNLb1pNQkdER3JCQnotV0RKUnZ5QUJNbnRiWkxPYTh5NFdLblBuWmhIM21WUFdEX2c3c29rYUVsRGVHRl85T29tekd6MzJRdC1GZFowZXY2ZlE0d09CYjdHeWZRcFpDMk1VNTBrZURMeXhnaGpPeUFuVTZXbjFqd2tvbzFBQ1M3T1VIZy1lN2ZBV0piYVNycEZxSE44dHF2YkpseDhOajFmZGlTQ0VTQVF0dnZDZ3V5QzBnVlVTQlJn0gHsAUFVX3lxTE5fLVMwZU1FdTFEX2ZkQTFVTFNCRlJodEpFMUROZ2MxSTJ0YkllcUVVbFpfalpfcHB5WEdMU2puMlRKcDkyaUZPSFozYkhnbERILV9qTHBHZDFNbnJ5U2drY0ZJM3RTTml2U1hvSXlaZGt5VjR2WmU3RGZxSXFlQnNXV3hISUJxQlRtenBoNGJTa3VJVU1maTZ3by1yRU51Z1hKR21RS2c3SzdQWGxQeVNwbXlYMHMtekpQUlJQVWFQQjFLTGg3RXlsZU1WeFprTWdyTUtPSXp6Nm9RNW5rcVRaRkZOSTRhdXY5bmVp?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

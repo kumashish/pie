@@ -1,0 +1,405 @@
+{
+  "symbol": "BRITANNIA.NS",
+  "last_price": 4778.0,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.0,
+  "fit_score": 20.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 20.0,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (26.7) is oversold (< 35) [Synthetic PCR: 1.45]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 4800.0,
+        "strike_formatted": "4800",
+        "option_type": "Put",
+        "delta": -0.47,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x BRITANNIA.NS 24-Nov-2026 4800 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 4600.0,
+        "strike_formatted": "4600",
+        "option_type": "Put",
+        "delta": -0.198,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 4600 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 80.0,
+    "stop_loss_price": 4873.56,
+    "take_profit_price": 4600.0,
+    "net_delta": -0.272,
+    "net_theta": -0.109,
+    "probability_of_profit": 49.6,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 3822.4,
+        "pnl": 120.0
+      },
+      {
+        "price": 3860.62,
+        "pnl": 120.0
+      },
+      {
+        "price": 3898.85,
+        "pnl": 120.0
+      },
+      {
+        "price": 3937.07,
+        "pnl": 120.0
+      },
+      {
+        "price": 3975.3,
+        "pnl": 120.0
+      },
+      {
+        "price": 4013.52,
+        "pnl": 120.0
+      },
+      {
+        "price": 4051.74,
+        "pnl": 120.0
+      },
+      {
+        "price": 4089.97,
+        "pnl": 120.0
+      },
+      {
+        "price": 4128.19,
+        "pnl": 120.0
+      },
+      {
+        "price": 4166.42,
+        "pnl": 120.0
+      },
+      {
+        "price": 4204.64,
+        "pnl": 120.0
+      },
+      {
+        "price": 4242.86,
+        "pnl": 120.0
+      },
+      {
+        "price": 4281.09,
+        "pnl": 120.0
+      },
+      {
+        "price": 4319.31,
+        "pnl": 120.0
+      },
+      {
+        "price": 4357.54,
+        "pnl": 120.0
+      },
+      {
+        "price": 4395.76,
+        "pnl": 120.0
+      },
+      {
+        "price": 4433.98,
+        "pnl": 120.0
+      },
+      {
+        "price": 4472.21,
+        "pnl": 120.0
+      },
+      {
+        "price": 4510.43,
+        "pnl": 120.0
+      },
+      {
+        "price": 4548.66,
+        "pnl": 120.0
+      },
+      {
+        "price": 4586.88,
+        "pnl": 120.0
+      },
+      {
+        "price": 4625.1,
+        "pnl": 94.9
+      },
+      {
+        "price": 4663.33,
+        "pnl": 56.67
+      },
+      {
+        "price": 4701.55,
+        "pnl": 18.45
+      },
+      {
+        "price": 4739.78,
+        "pnl": -19.78
+      },
+      {
+        "price": 4778.0,
+        "pnl": -58.0
+      },
+      {
+        "price": 4816.22,
+        "pnl": -80.0
+      },
+      {
+        "price": 4854.45,
+        "pnl": -80.0
+      },
+      {
+        "price": 4892.67,
+        "pnl": -80.0
+      },
+      {
+        "price": 4930.9,
+        "pnl": -80.0
+      },
+      {
+        "price": 4969.12,
+        "pnl": -80.0
+      },
+      {
+        "price": 5007.34,
+        "pnl": -80.0
+      },
+      {
+        "price": 5045.57,
+        "pnl": -80.0
+      },
+      {
+        "price": 5083.79,
+        "pnl": -80.0
+      },
+      {
+        "price": 5122.02,
+        "pnl": -80.0
+      },
+      {
+        "price": 5160.24,
+        "pnl": -80.0
+      },
+      {
+        "price": 5198.46,
+        "pnl": -80.0
+      },
+      {
+        "price": 5236.69,
+        "pnl": -80.0
+      },
+      {
+        "price": 5274.91,
+        "pnl": -80.0
+      },
+      {
+        "price": 5313.14,
+        "pnl": -80.0
+      },
+      {
+        "price": 5351.36,
+        "pnl": -80.0
+      },
+      {
+        "price": 5389.58,
+        "pnl": -80.0
+      },
+      {
+        "price": 5427.81,
+        "pnl": -80.0
+      },
+      {
+        "price": 5466.03,
+        "pnl": -80.0
+      },
+      {
+        "price": 5504.26,
+        "pnl": -80.0
+      },
+      {
+        "price": 5542.48,
+        "pnl": -80.0
+      },
+      {
+        "price": 5580.7,
+        "pnl": -80.0
+      },
+      {
+        "price": 5618.93,
+        "pnl": -80.0
+      },
+      {
+        "price": 5657.15,
+        "pnl": -80.0
+      },
+      {
+        "price": 5695.38,
+        "pnl": -80.0
+      },
+      {
+        "price": 5733.6,
+        "pnl": -80.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.763,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2867,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "4975.75",
+    "EMA50": "5141.63",
+    "EMA100": "5279.79",
+    "EMA200": "5429.72",
+    "RSI(14)": "26.65",
+    "ATR(14)": "83.33",
+    "ADX(14)": "47.18",
+    "BB(20,2)": "-0.03"
+  },
+  "rules": [
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Britannia Industries Stocks Live Updates: Britannia Industries Sees 0.95% Decrease in Current Price, Beta",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxNNDNMcnFwbl9OVUxFRkdQX2dtNVh3WHJ6VF9ycG5EQjRiaXhiOVVUanhXNjN6NFE2T1RzeFUyenJxTnltYUVqTjlKeGtJTk4xX3ZnWXRMcms3OHoyS08wUDFhSjAxVXFLMW91UllVNnFRcjJjYnNBSTNuX1FWQ1dJVnhMSjV1bERJVnQwcTBLNF9LQUZRRXgzUTlMUncxWTdCY29qWFduZE9raTRaejRXaUdnSDZjU2dXM0xXVU1GZlF1WW9DNGhpUWRGeTBIYXVrUWgtRC1DNDJyMXFpZE1jSXVOdjZ6Q2gxM3Y1RV9JRWpTOFVsU3cwRHZMWlhoX1RDbnZUSUZHTEF3eGpZVVZ4anR3UXlkVlA5c0Z4WEV4ODJ4RnRkWmhPaDFRcHFINDVEQWNLek5qVzBCVHlwSHRpeGU5aldwa0ROUDJkVHo1LUlaeUI4Ym9xR1lybnRFN3JEMEJWc1FwQW95OEdZM0RDT3dORmzSAe4CQVVfeXFMTzR4VUdsenRqeUktbVU4VVRXWElfX0dQM0lCQXc0ZTZnbWV3WEo5R1ZhTVlvRTFCdU0yeUJmWE1Va1dlZUt4d0tYZGc1T1lqVVpOaHd0M3hJVHpmVHlxSWlRMXV1LWpIMndXLUVIR3JrMVBzem51RnpHMml1UWxFLVowQjRfTW85UjY2dW41aXJxSEpjRk1MYUdyUU1BZDdtRndHZ2FLZUp1MFRFSGZ0VDB4em8tUWxqYmFQbTBza2tHamUxakZmQ3NUUXNEQ2JITUphbGZOa3F1My1UT2hSZXJ5WklBOGdkVkRaM2NQeWtDT3p3NmNtNWxXTnhLS3JiamlCdWVqNHdjNnlPU1JfZ2NRN3RoZjhPX2xfWnhtazFCblN3SGJieGV5a2ZYa0EtYmZYR3kxRlRaVk1jUnk0TmFzaEZ6akZ4RFhzWDVUR29EelBjS3d4ck5BOGNzY1lYemlRX2pZTlZKdDNUOWxB?oc=5",
+      "published_at": "Thu, 22 Feb 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nomura picks Marico, Tata Consumer, ITC; flags 2QFY27 margin pressure from commodity costs",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYm9oQ2RwVXIzVnpDMnpwRmkxN1lhNThYX0pNV0dXNmNWYmxjYVRwM05hemg2MWJzenNNVC1NS3NadWdPTnlqSVEyMDdPZ1B5MlhzRms0dkFDR0JkQlpfQmhKemdXMVJqSldHVXBVUEU5NDBKRGYxa3BuemJuOGZQNkNQQXdyVmYxZTBZc0dfUHUzal9RSU1vdWtTWFlGNnJlcUZ4TUdyZ2hrRm5QM2U5QjBONElPQ2tCTTRiOFMzNDF6QjN0M182UDVUem41RU80UklvOEc2VVdwempQRzlDaHQ1M0FBQdIB6wFBVV95cUxOdWV0UVJMdkF1ZFNaMUVLaWpBSzFrVVZEelVvWm1KYXQ1RS0xZjkwZjFqbVhPNnNZZ0RMd09wUHMyblVvd0FEV05fVGpQY3RKSlhIV1h1bGl6Smt6UVVnbzk5WTlMNlRBaEdHZ3B1UUVJd0pKNU1sNUVuNWprS0FwV3FfbjlCUFlJSUplb2pGZWJINjVPOW9FQ0dqb1d2WV9iczhLb0otZGNXRUJvMUlxeFJKU0dYd2tBVkl6Q0I3OTZpZjIwNGFwQXZIanRsZktkYTJ6R1BHSUo4UFZEQmRzS3FVR211RVY1SGVN?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "India doesn't have pure-play AI stocks, but investors are betting on 'AI enablers'",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQjNvR1luSFdwN3dOakprODd0XzBGV2lGYm9qR2dFX3BXVFpRNjE0Z2xzeVg4TEdueWVsZzg2RVJ5RVJQNFpMcDBLTEdpR1lXNmtUMUdkeVFaMkh0V0tJVzVENk1CLWFVUUJmVi05emR0d0J2TWVGbmYwSUM4ZV91MEMxZkZLUmdoUGxnM3R1cFVuOEpZaU9sU2duZ0Qxci00RU5BV1VkRHhDOVRydmVTdVl2LWVEbWZ1bGt3bzJET3JKMUxUUkloVDBn?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The financial risks you cannot see coming",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVmNzd0k5b0R5SWdpMkhQTTQ1M0pMM1FaTkE2LU1RZGxGZXZ2SmNJSmplREhCMm5NQ1MzcktuczJpUUJDZHZwSWNMdC1aVjBreDBRaTBjbGdZY2U0YzhWU0g0VkcyVlo1OUxUNGt0dVUwZF9JR1NKX0JHTkhUNGV3QkVqV3hsc2RnVDRCeVI0OWJaeUNTbEZmQXptaGh1dGxUOWpZcTZGak9vajNubGRrdkt3Sk9XVjRNMVRtNEV2VDhxMzhfcXhWTEpPX3hPV1E2eTdiT3NuTG9qWC1peUtYd1gxVVE4WkJ6aVpuZnJZcG9MX2k2TlZ3dWhB0gH_AUFVX3lxTE12MVhGVUgwVGNLa2hMck51WUlEUzlCUlRwM0JVSDI3TUZSTmduWEVnU0dTTzJ6NFpZUUR6YVBTSTl1N2E0dUtKREtNeWdUQS03d2daREpjOE5ZRnNiZDRPMmxsVTFQZlpDMTdJSTZram9CaFctNXpaWkNmcjZGN1VIdGZCUVVhRk1hWk0tUmxOWW5ZOHIySFVqbTNnRXJKM0phT0w3WFZUUXNuVnFwOG43anA3cFZJdzNuU25tUGJXZkhhcndMQXYwOGY1US1KZWZjSzhlMmF4YjdPZDRsOGdiQlQ4c21lRXV2b1ZzeURLN3U3aW5pX0tmcHBBTG55bw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Taking Stock: Sensex, Nifty end flat amid volatility; metal, pharma stocks drag",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNlFuRkRRZUhlRVJyZnBmVEdDeTdqdk5ENjRJX2ItNnhSUjdVRHdLUnN4UERueWt1M3I2TER3dm8zcU85QlN4Y2ZTNGdNcnpEeFhWbWx4WlBQOWVKdHdzcmpSS0oydktFczVQa2hvRGRrOThnTmpIQ3pwcFpTQXViZThZT29FT042UWx6LVlpNk0zZ1RuaDhWZlZXZ2wzbDhKSjN4RzJsWFIzZGZ0UGxFTFJXMllWWFFDYkZRUFhlc2tsRVQ3cVJIZ25GUFo2N0hHVzM1aHRsd9IB3AFBVV95cUxNTG1lRURYT0VLVEplb2p5emQyMDB3d3BhZUM4b1ZJZk10NEo0c195N2ZEc09rQUJsUXNjRmNMaFBoNGc3bVV3M2R1ZWNSZDRPMEJuWENZdkVlT2RUVEhGWVA3VEdLQnRtSUc0RmNWMzF0MlY2cVhjMEF1d0VSc3FCbXdwb1A1Q0hfOTZ1cndBbThOZ282N0ZKRWZhWTUtOFE4WTZRdU9xcEotMmxXczBkZjRsVmlHdW1KZmM1TFIyZzE5VFpHNVVTODNybUstU0oxSVhwOUhUMnVEZWhh?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Before chasing new investments, ask yourself these six questions",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObkV4eU95M0R6MmhpNVgtNDBNZXFLczRmYkpiRE5Ea2tDSktiZEZ6cF9PTTFCTzkxY0s2OGJuRHhnYTNYaFNTcGJPam9XSXJBRU9EX1N0MENLV0ZOX1lDVFZTZnJ3UjJ6eFlJNGxpT1N6eFJ6dWwzQkxGYnF3ZkY0cGVkdHpoQUlVbnpyZjVZZUdOcmI4UkRDalM1UUsyYllNZWhNdlpRNXBzaU80Qzlxc09wZlVYd1hIRFdUR3FzSdIBxAFBVV95cUxOeXhiUVFsRUlmLUpyeXNYLWh1Rk51c0loQW83eXRPcVhPelptZjhra3pIcll0RU1fUzJpTDdqczZ6Q2l6ZTR4cjFBQWVFMzRmVERDNG16X29fUElnSl9LZGFiUTlmR2YtWWFWMU1DODFjTUtmTVhxdGQ5LUNDQnBkekdXV0hoeTF1UFZkMko5MHlxX3BQaFNzVXB6RmFRNUhaM1J6UFZ0RDVDRU5XUWtPZnEtQ08xSW1ObWMzc3hyWnhJcVpW?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

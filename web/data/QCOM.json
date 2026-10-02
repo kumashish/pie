@@ -1,0 +1,398 @@
+{
+  "symbol": "QCOM",
+  "last_price": 182.09,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.2,
+  "fit_score": 72.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 72.5,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (60.2% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 180.0,
+        "strike_formatted": "180",
+        "option_type": "Call",
+        "delta": 0.633,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x QCOM 20-Nov-2026 180 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 190.0,
+        "strike_formatted": "190",
+        "option_type": "Call",
+        "delta": 0.28,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x QCOM 20-Nov-2026 190 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 178.45,
+    "take_profit_price": 190.0,
+    "net_delta": 0.353,
+    "net_theta": -0.013,
+    "probability_of_profit": 60.8,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 145.67,
+        "pnl": -4.0
+      },
+      {
+        "price": 147.13,
+        "pnl": -4.0
+      },
+      {
+        "price": 148.59,
+        "pnl": -4.0
+      },
+      {
+        "price": 150.04,
+        "pnl": -4.0
+      },
+      {
+        "price": 151.5,
+        "pnl": -4.0
+      },
+      {
+        "price": 152.96,
+        "pnl": -4.0
+      },
+      {
+        "price": 154.41,
+        "pnl": -4.0
+      },
+      {
+        "price": 155.87,
+        "pnl": -4.0
+      },
+      {
+        "price": 157.33,
+        "pnl": -4.0
+      },
+      {
+        "price": 158.78,
+        "pnl": -4.0
+      },
+      {
+        "price": 160.24,
+        "pnl": -4.0
+      },
+      {
+        "price": 161.7,
+        "pnl": -4.0
+      },
+      {
+        "price": 163.15,
+        "pnl": -4.0
+      },
+      {
+        "price": 164.61,
+        "pnl": -4.0
+      },
+      {
+        "price": 166.07,
+        "pnl": -4.0
+      },
+      {
+        "price": 167.52,
+        "pnl": -4.0
+      },
+      {
+        "price": 168.98,
+        "pnl": -4.0
+      },
+      {
+        "price": 170.44,
+        "pnl": -4.0
+      },
+      {
+        "price": 171.89,
+        "pnl": -4.0
+      },
+      {
+        "price": 173.35,
+        "pnl": -4.0
+      },
+      {
+        "price": 174.81,
+        "pnl": -4.0
+      },
+      {
+        "price": 176.26,
+        "pnl": -4.0
+      },
+      {
+        "price": 177.72,
+        "pnl": -4.0
+      },
+      {
+        "price": 179.18,
+        "pnl": -4.0
+      },
+      {
+        "price": 180.63,
+        "pnl": -3.37
+      },
+      {
+        "price": 182.09,
+        "pnl": -1.91
+      },
+      {
+        "price": 183.55,
+        "pnl": -0.45
+      },
+      {
+        "price": 185.0,
+        "pnl": 1.0
+      },
+      {
+        "price": 186.46,
+        "pnl": 2.46
+      },
+      {
+        "price": 187.92,
+        "pnl": 3.92
+      },
+      {
+        "price": 189.37,
+        "pnl": 5.37
+      },
+      {
+        "price": 190.83,
+        "pnl": 6.0
+      },
+      {
+        "price": 192.29,
+        "pnl": 6.0
+      },
+      {
+        "price": 193.74,
+        "pnl": 6.0
+      },
+      {
+        "price": 195.2,
+        "pnl": 6.0
+      },
+      {
+        "price": 196.66,
+        "pnl": 6.0
+      },
+      {
+        "price": 198.11,
+        "pnl": 6.0
+      },
+      {
+        "price": 199.57,
+        "pnl": 6.0
+      },
+      {
+        "price": 201.03,
+        "pnl": 6.0
+      },
+      {
+        "price": 202.48,
+        "pnl": 6.0
+      },
+      {
+        "price": 203.94,
+        "pnl": 6.0
+      },
+      {
+        "price": 205.4,
+        "pnl": 6.0
+      },
+      {
+        "price": 206.85,
+        "pnl": 6.0
+      },
+      {
+        "price": 208.31,
+        "pnl": 6.0
+      },
+      {
+        "price": 209.77,
+        "pnl": 6.0
+      },
+      {
+        "price": 211.22,
+        "pnl": 6.0
+      },
+      {
+        "price": 212.68,
+        "pnl": 6.0
+      },
+      {
+        "price": 214.14,
+        "pnl": 6.0
+      },
+      {
+        "price": 215.59,
+        "pnl": 6.0
+      },
+      {
+        "price": 217.05,
+        "pnl": 6.0
+      },
+      {
+        "price": 218.51,
+        "pnl": 6.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.711,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2399,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "184.02",
+    "EMA50": "179.05",
+    "EMA100": "177.19",
+    "EMA200": "173.06",
+    "RSI(14)": "50.16",
+    "ATR(14)": "8.46",
+    "ADX(14)": "17.58",
+    "BB(20,2)": "0.44"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Is Marvell Stock Ready For A Slowdown In AI Demand?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/marvell-stock-ready-slowdown-ai-193233235.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Why Did AMD Stock Jump?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-did-amd-stock-jump-181321044.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Is NVIDIA Stock Increasing Your Market Risk?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-increasing-market-risk-180559650.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Qualcomm (QCOM): Can Its AI Strategy Overcome Skepticism Around Its Current Market Position?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/technology/ai/articles/qualcomm-qcom-ai-strategy-overcome-180128531.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Qualcomm Patent Case Remanded to Florida Court",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/qualcomm-patent-case-remanded-florida-123210525.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

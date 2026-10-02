@@ -1,0 +1,405 @@
+{
+  "symbol": "NVDA",
+  "last_price": 230.86,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.8,
+  "fit_score": 77.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 77.5,
+  "vix": 16.01,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (75.4% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 230.0,
+        "strike_formatted": "230",
+        "option_type": "Call",
+        "delta": 0.582,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x NVDA 20-Nov-2026 230 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 240.0,
+        "strike_formatted": "240",
+        "option_type": "Call",
+        "delta": 0.302,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x NVDA 20-Nov-2026 240 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 226.24,
+    "take_profit_price": 240.0,
+    "net_delta": 0.28,
+    "net_theta": -0.014,
+    "probability_of_profit": 55.3,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 184.69,
+        "pnl": -4.0
+      },
+      {
+        "price": 186.53,
+        "pnl": -4.0
+      },
+      {
+        "price": 188.38,
+        "pnl": -4.0
+      },
+      {
+        "price": 190.23,
+        "pnl": -4.0
+      },
+      {
+        "price": 192.08,
+        "pnl": -4.0
+      },
+      {
+        "price": 193.92,
+        "pnl": -4.0
+      },
+      {
+        "price": 195.77,
+        "pnl": -4.0
+      },
+      {
+        "price": 197.62,
+        "pnl": -4.0
+      },
+      {
+        "price": 199.46,
+        "pnl": -4.0
+      },
+      {
+        "price": 201.31,
+        "pnl": -4.0
+      },
+      {
+        "price": 203.16,
+        "pnl": -4.0
+      },
+      {
+        "price": 205.0,
+        "pnl": -4.0
+      },
+      {
+        "price": 206.85,
+        "pnl": -4.0
+      },
+      {
+        "price": 208.7,
+        "pnl": -4.0
+      },
+      {
+        "price": 210.54,
+        "pnl": -4.0
+      },
+      {
+        "price": 212.39,
+        "pnl": -4.0
+      },
+      {
+        "price": 214.24,
+        "pnl": -4.0
+      },
+      {
+        "price": 216.08,
+        "pnl": -4.0
+      },
+      {
+        "price": 217.93,
+        "pnl": -4.0
+      },
+      {
+        "price": 219.78,
+        "pnl": -4.0
+      },
+      {
+        "price": 221.63,
+        "pnl": -4.0
+      },
+      {
+        "price": 223.47,
+        "pnl": -4.0
+      },
+      {
+        "price": 225.32,
+        "pnl": -4.0
+      },
+      {
+        "price": 227.17,
+        "pnl": -4.0
+      },
+      {
+        "price": 229.01,
+        "pnl": -4.0
+      },
+      {
+        "price": 230.86,
+        "pnl": -3.14
+      },
+      {
+        "price": 232.71,
+        "pnl": -1.29
+      },
+      {
+        "price": 234.55,
+        "pnl": 0.55
+      },
+      {
+        "price": 236.4,
+        "pnl": 2.4
+      },
+      {
+        "price": 238.25,
+        "pnl": 4.25
+      },
+      {
+        "price": 240.09,
+        "pnl": 6.0
+      },
+      {
+        "price": 241.94,
+        "pnl": 6.0
+      },
+      {
+        "price": 243.79,
+        "pnl": 6.0
+      },
+      {
+        "price": 245.64,
+        "pnl": 6.0
+      },
+      {
+        "price": 247.48,
+        "pnl": 6.0
+      },
+      {
+        "price": 249.33,
+        "pnl": 6.0
+      },
+      {
+        "price": 251.18,
+        "pnl": 6.0
+      },
+      {
+        "price": 253.02,
+        "pnl": 6.0
+      },
+      {
+        "price": 254.87,
+        "pnl": 6.0
+      },
+      {
+        "price": 256.72,
+        "pnl": 6.0
+      },
+      {
+        "price": 258.56,
+        "pnl": 6.0
+      },
+      {
+        "price": 260.41,
+        "pnl": 6.0
+      },
+      {
+        "price": 262.26,
+        "pnl": 6.0
+      },
+      {
+        "price": 264.1,
+        "pnl": 6.0
+      },
+      {
+        "price": 265.95,
+        "pnl": 6.0
+      },
+      {
+        "price": 267.8,
+        "pnl": 6.0
+      },
+      {
+        "price": 269.64,
+        "pnl": 6.0
+      },
+      {
+        "price": 271.49,
+        "pnl": 6.0
+      },
+      {
+        "price": 273.34,
+        "pnl": 6.0
+      },
+      {
+        "price": 275.19,
+        "pnl": 6.0
+      },
+      {
+        "price": 277.03,
+        "pnl": 6.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.764,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2876,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "223.95",
+    "EMA50": "218.87",
+    "EMA100": "212.65",
+    "EMA200": "201.99",
+    "RSI(14)": "60.10",
+    "ATR(14)": "5.82",
+    "ADX(14)": "14.79",
+    "BB(20,2)": "0.80"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Micron Plans to Put Its Excess Cash Into Buybacks. Here's How Much of the Stock That Could Retire.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-plans-put-excess-cash-080601895.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Artificial Intelligence in Healthcare Market Forecasts Growth from $36.67B (2026) to $194.79B by 2031, Profiling Philips, Microsoft, Siemens Healthineers & NVIDIA",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/healthcare/articles/artificial-intelligence-healthcare-market-forecasts-080500135.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Prediction: Robinhood Stock Sets a New Record Before 2029",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-robinhood-stock-sets-record-073401298.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Chipotle Is Down 14% Compared to McDonald's 24%. But There's an Even Better Restaurant Stock to Buy in October.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/chipotle-down-14-compared-mcdonalds-072500214.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Stocktwits AI Roundup: Micron\u2019s Blowout Quarter, Nvidia\u2019s $150B Buyback And The Race For AI Agents",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/technology/ai/articles/stocktwits-ai-roundup-micron-blowout-071150791.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dividend, Earnings Upgrade and Options Activity Might Change The Case For Investing In Helios (HLIO)",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dividend-earnings-upgrade-options-activity-070824708.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    }
+  ]
+}

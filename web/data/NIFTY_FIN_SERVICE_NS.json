@@ -1,0 +1,405 @@
+{
+  "symbol": "NIFTY_FIN_SERVICE.NS",
+  "last_price": 24556.1,
+  "as_of": "2026-10-01 10:01:12",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.0,
+  "fit_score": 20.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 20.0,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (31.9) is oversold (< 35) [Synthetic PCR: 1.46]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 24550.0,
+        "strike_formatted": "24550",
+        "option_type": "Put",
+        "delta": -0.435,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 24550 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 23550.0,
+        "strike_formatted": "23550",
+        "option_type": "Put",
+        "delta": -0.179,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 23550 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 400.0,
+    "stop_loss_price": 25047.22,
+    "take_profit_price": 23550.0,
+    "net_delta": -0.256,
+    "net_theta": -0.781,
+    "probability_of_profit": 46.2,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 19644.88,
+        "pnl": 600.0
+      },
+      {
+        "price": 19841.33,
+        "pnl": 600.0
+      },
+      {
+        "price": 20037.78,
+        "pnl": 600.0
+      },
+      {
+        "price": 20234.23,
+        "pnl": 600.0
+      },
+      {
+        "price": 20430.67,
+        "pnl": 600.0
+      },
+      {
+        "price": 20627.12,
+        "pnl": 600.0
+      },
+      {
+        "price": 20823.57,
+        "pnl": 600.0
+      },
+      {
+        "price": 21020.02,
+        "pnl": 600.0
+      },
+      {
+        "price": 21216.47,
+        "pnl": 600.0
+      },
+      {
+        "price": 21412.92,
+        "pnl": 600.0
+      },
+      {
+        "price": 21609.37,
+        "pnl": 600.0
+      },
+      {
+        "price": 21805.82,
+        "pnl": 600.0
+      },
+      {
+        "price": 22002.27,
+        "pnl": 600.0
+      },
+      {
+        "price": 22198.71,
+        "pnl": 600.0
+      },
+      {
+        "price": 22395.16,
+        "pnl": 600.0
+      },
+      {
+        "price": 22591.61,
+        "pnl": 600.0
+      },
+      {
+        "price": 22788.06,
+        "pnl": 600.0
+      },
+      {
+        "price": 22984.51,
+        "pnl": 600.0
+      },
+      {
+        "price": 23180.96,
+        "pnl": 600.0
+      },
+      {
+        "price": 23377.41,
+        "pnl": 600.0
+      },
+      {
+        "price": 23573.86,
+        "pnl": 576.14
+      },
+      {
+        "price": 23770.3,
+        "pnl": 379.7
+      },
+      {
+        "price": 23966.75,
+        "pnl": 183.25
+      },
+      {
+        "price": 24163.2,
+        "pnl": -13.2
+      },
+      {
+        "price": 24359.65,
+        "pnl": -209.65
+      },
+      {
+        "price": 24556.1,
+        "pnl": -400.0
+      },
+      {
+        "price": 24752.55,
+        "pnl": -400.0
+      },
+      {
+        "price": 24949.0,
+        "pnl": -400.0
+      },
+      {
+        "price": 25145.45,
+        "pnl": -400.0
+      },
+      {
+        "price": 25341.89,
+        "pnl": -400.0
+      },
+      {
+        "price": 25538.34,
+        "pnl": -400.0
+      },
+      {
+        "price": 25734.79,
+        "pnl": -400.0
+      },
+      {
+        "price": 25931.24,
+        "pnl": -400.0
+      },
+      {
+        "price": 26127.69,
+        "pnl": -400.0
+      },
+      {
+        "price": 26324.14,
+        "pnl": -400.0
+      },
+      {
+        "price": 26520.59,
+        "pnl": -400.0
+      },
+      {
+        "price": 26717.04,
+        "pnl": -400.0
+      },
+      {
+        "price": 26913.49,
+        "pnl": -400.0
+      },
+      {
+        "price": 27109.93,
+        "pnl": -400.0
+      },
+      {
+        "price": 27306.38,
+        "pnl": -400.0
+      },
+      {
+        "price": 27502.83,
+        "pnl": -400.0
+      },
+      {
+        "price": 27699.28,
+        "pnl": -400.0
+      },
+      {
+        "price": 27895.73,
+        "pnl": -400.0
+      },
+      {
+        "price": 28092.18,
+        "pnl": -400.0
+      },
+      {
+        "price": 28288.63,
+        "pnl": -400.0
+      },
+      {
+        "price": 28485.08,
+        "pnl": -400.0
+      },
+      {
+        "price": 28681.52,
+        "pnl": -400.0
+      },
+      {
+        "price": 28877.97,
+        "pnl": -400.0
+      },
+      {
+        "price": 29074.42,
+        "pnl": -400.0
+      },
+      {
+        "price": 29270.87,
+        "pnl": -400.0
+      },
+      {
+        "price": 29467.32,
+        "pnl": -400.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.728,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2552,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "26196.84",
+    "EMA50": "26186.29",
+    "EMA100": "26232.28",
+    "EMA200": "26291.33",
+    "RSI(14)": "31.91",
+    "ATR(14)": "500.01",
+    "ADX(14)": "17.18",
+    "BB(20,2)": "-0.19"
+  },
+  "rules": [
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Stock Market: Stock Market Today | Stock Market Live News Update",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rN1l6YVVCd3lGQ3B3azRWVUY0NmJpdFJDaTZUc2RGcXlmbklqQ2FSdlpKNWtPb1hFaEdQSzJ3YXhWeGUzU21iRk1hRDRNMjFROVdFRjRyRFZUYnFS?oc=5",
+      "published_at": "Sun, 09 Jan 2011",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "United Kingdom Kingdom Boe Financial Policy Committee Record | Historical Dates 1971-2026 Data| Moneycontrol",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd203RXhfVHMtdWdCUkhJTmhFN3dlSVRRSlVFemt3b25Ib3VuSFRraUUtdjhQeGNzTTNUc0NNazY3NGhySGdfNS1BV1UtN2tHc1dxU3FTQzA5eXVkc1N6ZTNoaUI0Tm92WF9NOEJncWZnZkR4bW9LS3ZGYVJOcWVQY1JCVkFZRjlfMWU0eHIxUEpGRzFOMm56TTdWV0NCZk50Z2JEOUZGbzZ3T00?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Spain 2-Year Note Auction",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWEFZazQybFlqbm5ra0NkLVdTNXRXMWFBTVQteVJ1R25lMXlvR0xqbkUySGtVbElyTW9JVEk0TUloR0JoV1BJUkVHMzJTTHNjZF84elZnR2FuWmcwbnJKUUppZV80SndnV3plMmRWT3o0bnVKV0x3NHN5UXhJMjNjSzZWZ00tWW9P?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NIFTY 50: NSE Nifty Live, Sensex Nifty, Nifty 50 Stocks, NSE Market Live, Nifty 50 chart live",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLW92OWszMEFzdTctdS1TVFBfOHhYZ1VlSE9JZVR1RlY3WERHT0VKZXpZdndYWFpSRVhYbUJsckRqTjJ2R2JKQkk2ZzVxRXUxQVp5cmlucTUxUm4xWi1qX0pwVllLcThMeTVBTjFtQ3VSVG1WdmVoeTJQTkZERDE5c2tZNV9fbVdHaGdMQmJfYjl0UXJsektBemdXS0g?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Indian Indices - Markets Terminal",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSDgxUnFlTHZNWUwySllfWTBaWU1kdmllRE5GakY3b1dKakk5WXZna3BwOE11bzNKR1RwejhmLThPU3Q1S0RodlVXSVVZZ1JQRm5KYVo0ODdMNmJFSjJ4VktlSmZDWUNxSC1KNHhkSWRVZXVpOFk5Yi1qQWVaN2RuVHVzS1hSbjFPZkFGVFZFOEJHa09KaHc2dDlLQTZPT3lCT3hsRFUwbUc5SWJPb1Vjc0FZVnVncS1DTGc?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NIFTY FIN SERVICE Stock Price, Nifty FIN Service Market Indices, Nifty FIN Service Price, Stock Performance & Comparison",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBuWWxfNC1iS1FXbk1nWnJDQ0g1cW43VjhKU0NJNHBybnBiVUU3RG5hTFZOay0zRWI1Q3F1MlYxbGxpaWtoN2J5WG5JRkh0ZDhOQlVfNkRvc293SlRQZFZ3SDdzV204YjFObTMwTlhkdWMzLXVoTEExNQ?oc=5",
+      "published_at": "Fri, 11 May 2018",
+      "sentiment": "neutral"
+    }
+  ]
+}

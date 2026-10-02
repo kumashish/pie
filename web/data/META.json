@@ -1,0 +1,405 @@
+{
+  "symbol": "META",
+  "last_price": 725.93,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.5,
+  "fit_score": 85.0,
+  "confidence_grade": "A",
+  "confidence_percentage": 85.0,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (82.2% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 725.0,
+        "strike_formatted": "725",
+        "option_type": "Call",
+        "delta": 0.566,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x META 20-Nov-2026 725 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 755.0,
+        "strike_formatted": "755",
+        "option_type": "Call",
+        "delta": 0.299,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x META 20-Nov-2026 755 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 12.0,
+    "stop_loss_price": 711.41,
+    "take_profit_price": 755.0,
+    "net_delta": 0.267,
+    "net_theta": -0.044,
+    "probability_of_profit": 53.7,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 580.74,
+        "pnl": -12.0
+      },
+      {
+        "price": 586.55,
+        "pnl": -12.0
+      },
+      {
+        "price": 592.36,
+        "pnl": -12.0
+      },
+      {
+        "price": 598.17,
+        "pnl": -12.0
+      },
+      {
+        "price": 603.97,
+        "pnl": -12.0
+      },
+      {
+        "price": 609.78,
+        "pnl": -12.0
+      },
+      {
+        "price": 615.59,
+        "pnl": -12.0
+      },
+      {
+        "price": 621.4,
+        "pnl": -12.0
+      },
+      {
+        "price": 627.2,
+        "pnl": -12.0
+      },
+      {
+        "price": 633.01,
+        "pnl": -12.0
+      },
+      {
+        "price": 638.82,
+        "pnl": -12.0
+      },
+      {
+        "price": 644.63,
+        "pnl": -12.0
+      },
+      {
+        "price": 650.43,
+        "pnl": -12.0
+      },
+      {
+        "price": 656.24,
+        "pnl": -12.0
+      },
+      {
+        "price": 662.05,
+        "pnl": -12.0
+      },
+      {
+        "price": 667.86,
+        "pnl": -12.0
+      },
+      {
+        "price": 673.66,
+        "pnl": -12.0
+      },
+      {
+        "price": 679.47,
+        "pnl": -12.0
+      },
+      {
+        "price": 685.28,
+        "pnl": -12.0
+      },
+      {
+        "price": 691.09,
+        "pnl": -12.0
+      },
+      {
+        "price": 696.89,
+        "pnl": -12.0
+      },
+      {
+        "price": 702.7,
+        "pnl": -12.0
+      },
+      {
+        "price": 708.51,
+        "pnl": -12.0
+      },
+      {
+        "price": 714.32,
+        "pnl": -12.0
+      },
+      {
+        "price": 720.12,
+        "pnl": -12.0
+      },
+      {
+        "price": 725.93,
+        "pnl": -11.07
+      },
+      {
+        "price": 731.74,
+        "pnl": -5.26
+      },
+      {
+        "price": 737.54,
+        "pnl": 0.54
+      },
+      {
+        "price": 743.35,
+        "pnl": 6.35
+      },
+      {
+        "price": 749.16,
+        "pnl": 12.16
+      },
+      {
+        "price": 754.97,
+        "pnl": 17.97
+      },
+      {
+        "price": 760.77,
+        "pnl": 18.0
+      },
+      {
+        "price": 766.58,
+        "pnl": 18.0
+      },
+      {
+        "price": 772.39,
+        "pnl": 18.0
+      },
+      {
+        "price": 778.2,
+        "pnl": 18.0
+      },
+      {
+        "price": 784.0,
+        "pnl": 18.0
+      },
+      {
+        "price": 789.81,
+        "pnl": 18.0
+      },
+      {
+        "price": 795.62,
+        "pnl": 18.0
+      },
+      {
+        "price": 801.43,
+        "pnl": 18.0
+      },
+      {
+        "price": 807.23,
+        "pnl": 18.0
+      },
+      {
+        "price": 813.04,
+        "pnl": 18.0
+      },
+      {
+        "price": 818.85,
+        "pnl": 18.0
+      },
+      {
+        "price": 824.66,
+        "pnl": 18.0
+      },
+      {
+        "price": 830.46,
+        "pnl": 18.0
+      },
+      {
+        "price": 836.27,
+        "pnl": 18.0
+      },
+      {
+        "price": 842.08,
+        "pnl": 18.0
+      },
+      {
+        "price": 847.89,
+        "pnl": 18.0
+      },
+      {
+        "price": 853.69,
+        "pnl": 18.0
+      },
+      {
+        "price": 859.5,
+        "pnl": 18.0
+      },
+      {
+        "price": 865.31,
+        "pnl": 18.0
+      },
+      {
+        "price": 871.12,
+        "pnl": 18.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.788,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.3092,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "693.80",
+    "EMA50": "649.45",
+    "EMA100": "631.96",
+    "EMA200": "631.86",
+    "RSI(14)": "61.11",
+    "ATR(14)": "26.17",
+    "ADX(14)": "39.49",
+    "BB(20,2)": "0.68"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "META Stock Rides Muse AI To Best Quarter In Over 2 Years \u2014 But Analyst Warns Monetization Could Be 'Notoriously Slow'",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/meta-stock-rides-muse-ai-080528207.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dow Jones Futures: Stocks Rise Off Support As Yields Skid, Micron In Buy Area; Tesla, Jobs Report Due",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/f6c899dd-7f15-3879-b266-51980008982d/dow-jones-futures%3A-stocks.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Does A Postal Service Backup Plan Materially Alter Amazon's Cash Outlook?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/does-postal-backup-plan-materially-075550891.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocktwits AI Roundup: Micron\u2019s Blowout Quarter, Nvidia\u2019s $150B Buyback And The Race For AI Agents",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/technology/ai/articles/stocktwits-ai-roundup-micron-blowout-071150791.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The New Math of AI: Are Those Trillion-Dollar Numbers for Real?",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/6d11aa5b-b87e-3d75-800a-f15eb764f678/the-new-math-of-ai%3A-are-those.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "META Stock Holds Up Overnight: New Mexico Seeks Up To $40B Privacy Penalty In Cambridge Analytica Case",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/meta-stock-holds-overnight-mexico-054402427.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

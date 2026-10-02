@@ -1,0 +1,405 @@
+{
+  "symbol": "ITC.NS",
+  "last_price": 255.9,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 17.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (76.7% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 255.0,
+        "strike_formatted": "255",
+        "option_type": "Put",
+        "delta": -0.412,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x ITC.NS 24-Nov-2026 255 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 245.0,
+        "strike_formatted": "245",
+        "option_type": "Put",
+        "delta": -0.171,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x ITC.NS 24-Nov-2026 245 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 261.02,
+    "take_profit_price": 245.0,
+    "net_delta": -0.241,
+    "net_theta": -0.009,
+    "probability_of_profit": 43.9,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 204.72,
+        "pnl": 6.0
+      },
+      {
+        "price": 206.77,
+        "pnl": 6.0
+      },
+      {
+        "price": 208.81,
+        "pnl": 6.0
+      },
+      {
+        "price": 210.86,
+        "pnl": 6.0
+      },
+      {
+        "price": 212.91,
+        "pnl": 6.0
+      },
+      {
+        "price": 214.96,
+        "pnl": 6.0
+      },
+      {
+        "price": 217.0,
+        "pnl": 6.0
+      },
+      {
+        "price": 219.05,
+        "pnl": 6.0
+      },
+      {
+        "price": 221.1,
+        "pnl": 6.0
+      },
+      {
+        "price": 223.14,
+        "pnl": 6.0
+      },
+      {
+        "price": 225.19,
+        "pnl": 6.0
+      },
+      {
+        "price": 227.24,
+        "pnl": 6.0
+      },
+      {
+        "price": 229.29,
+        "pnl": 6.0
+      },
+      {
+        "price": 231.33,
+        "pnl": 6.0
+      },
+      {
+        "price": 233.38,
+        "pnl": 6.0
+      },
+      {
+        "price": 235.43,
+        "pnl": 6.0
+      },
+      {
+        "price": 237.48,
+        "pnl": 6.0
+      },
+      {
+        "price": 239.52,
+        "pnl": 6.0
+      },
+      {
+        "price": 241.57,
+        "pnl": 6.0
+      },
+      {
+        "price": 243.62,
+        "pnl": 6.0
+      },
+      {
+        "price": 245.66,
+        "pnl": 5.34
+      },
+      {
+        "price": 247.71,
+        "pnl": 3.29
+      },
+      {
+        "price": 249.76,
+        "pnl": 1.24
+      },
+      {
+        "price": 251.81,
+        "pnl": -0.81
+      },
+      {
+        "price": 253.85,
+        "pnl": -2.85
+      },
+      {
+        "price": 255.9,
+        "pnl": -4.0
+      },
+      {
+        "price": 257.95,
+        "pnl": -4.0
+      },
+      {
+        "price": 259.99,
+        "pnl": -4.0
+      },
+      {
+        "price": 262.04,
+        "pnl": -4.0
+      },
+      {
+        "price": 264.09,
+        "pnl": -4.0
+      },
+      {
+        "price": 266.14,
+        "pnl": -4.0
+      },
+      {
+        "price": 268.18,
+        "pnl": -4.0
+      },
+      {
+        "price": 270.23,
+        "pnl": -4.0
+      },
+      {
+        "price": 272.28,
+        "pnl": -4.0
+      },
+      {
+        "price": 274.32,
+        "pnl": -4.0
+      },
+      {
+        "price": 276.37,
+        "pnl": -4.0
+      },
+      {
+        "price": 278.42,
+        "pnl": -4.0
+      },
+      {
+        "price": 280.47,
+        "pnl": -4.0
+      },
+      {
+        "price": 282.51,
+        "pnl": -4.0
+      },
+      {
+        "price": 284.56,
+        "pnl": -4.0
+      },
+      {
+        "price": 286.61,
+        "pnl": -4.0
+      },
+      {
+        "price": 288.66,
+        "pnl": -4.0
+      },
+      {
+        "price": 290.7,
+        "pnl": -4.0
+      },
+      {
+        "price": 292.75,
+        "pnl": -4.0
+      },
+      {
+        "price": 294.8,
+        "pnl": -4.0
+      },
+      {
+        "price": 296.84,
+        "pnl": -4.0
+      },
+      {
+        "price": 298.89,
+        "pnl": -4.0
+      },
+      {
+        "price": 300.94,
+        "pnl": -4.0
+      },
+      {
+        "price": 302.99,
+        "pnl": -4.0
+      },
+      {
+        "price": 305.03,
+        "pnl": -4.0
+      },
+      {
+        "price": 307.08,
+        "pnl": -4.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.768,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2912,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "264.73",
+    "EMA50": "270.15",
+    "EMA100": "280.85",
+    "EMA200": "305.15",
+    "RSI(14)": "36.34",
+    "ATR(14)": "4.75",
+    "ADX(14)": "25.56",
+    "BB(20,2)": "-0.01"
+  },
+  "rules": [
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Nomura names Marico, Tata Consumer, ITC top picks as monsoon deficit raises rural demand concerns",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxObzZTZHpTVHZNcEJITjZKMmFsUHFqcGVYRkcwZDFwRHZtUm14VWRvckxLdEQ2UjJwU01UUVR4anQwdU5DS3Q3b2tERC1DNGtabDJXTUtIWWktc1RmTVdBck91NXUtNDBFZTZPZDBOcHNxZV9nM2V4ay1MWWhhY0Q3czhhazZEVHRYTUMwWWt3RVdVRlR3cldyTXhaSjBzQ1RKX3k4WlU1eTJxZUxPc1hvdzdQdGp3R1ltTzdUWm9mbkFFUTBDcW5nTmtlbzlmclptcUwtZ3MwQTZzbVMtUFJQcG9UbE5wRGM3TTY2dlItYmXSAfYBQVVfeXFMTUhJc29DeWRlZFR0V21Qa3hROFY0clcyalJ3ancyM3ZQYVROQzhaeTgtYUZVNG5JcFlEVjlVN2FPS21TWlg4VERuc28zb3FKeElVSHhZZW8wTVVtTzY1eTNGNGFaWFBuWTQ1US1xTl9hWm5CRWlwc2RMU2s0OHZ5MGpfdFoyZ1Q4M0FxSXg4Q0dmay0zYWtBdFFrREdnckFOMUtmZVVzSkdfNXJoQlEzYm1mZFByZ0dOZFB1WlVfdmhSVVZuWGZsYVdmVjhiOVdJeDBLc2kwcTNEbnZXQm9sLWkxZzNnb2ZZYXNLdkkzeFF2Z1pCMTdB?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HOW TO CLAIM PENDING ITC",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZUFUX3lxRVU0bDFDR0F3elZJanp5SzB4aFNnRmxBempPMndzVnF0SnZZWm9vc1lZUTFYa3g4YUI0Zi1ESjgwaXRCdHNFeWtfWV9kemJiVWNrSVRrdGdHV3ljbnNYWUtOZEd2ODhCLUdnN3FlN0pycWN3V25kYjQ3Ng?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ITC buys remaining Yoga Bar stake for Rs 645 crore, takes full ownership",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONlZzTGU3TDBqQWk2R2p4ZmRXZC1IZ184UXpFSzJjRnpjbUotaU9DVUJZNms4bjcxZlRsX29KVTFyTTgxaVlwdW5YdkZNZkIxeU41SUVSUW5tVkR3M2thajFsb2FJSkRCQTBkUENsdjZGdGtMOVBUdElveGFZRHpsRVlLXzd0UUUzcm1sa2NJa2E2WFhsbHFldkVfX1ZTU3VvTWxUSWxfTFNWanlLazBMdFl0bnJaVEViZFdfVF9aVkJKLWZZUGhn0gHMAUFVX3lxTFB1UUZ1UG9GbHBOQ1FfTU1OWG95WXdkOVdLTjJCcE8xNl84eHYyV1Z1UTFLOHVTX0t1NWxLUFV5RXA1bFQ5bFRkbDdqRzNxYUNGdGw0Wkl4Qjg0dkVqSWwtOG9NYWpxejZLNDBlYXE0WjJVMHhCN3NMUWp5cEdyQ2ZYbjR1RlhUQzIyMUpWaDhSRDVic1B0UlNSX1p2TTlEZFZIMzFHM3ZFNzkyT2RUQmRybFJPY0dJSW5FXzJsdU9HbUtxbko0ZFJ0WkVhcg?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Nomura picks Marico, Tata Consumer, ITC; flags 2QFY27 margin pressure from commodity costs",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYm9oQ2RwVXIzVnpDMnpwRmkxN1lhNThYX0pNV0dXNmNWYmxjYVRwM05hemg2MWJzenNNVC1NS3NadWdPTnlqSVEyMDdPZ1B5MlhzRms0dkFDR0JkQlpfQmhKemdXMVJqSldHVXBVUEU5NDBKRGYxa3BuemJuOGZQNkNQQXdyVmYxZTBZc0dfUHUzal9RSU1vdWtTWFlGNnJlcUZ4TUdyZ2hrRm5QM2U5QjBONElPQ2tCTTRiOFMzNDF6QjN0M182UDVUem41RU80UklvOEc2VVdwempQRzlDaHQ1M0FBQdIB6wFBVV95cUxOdWV0UVJMdkF1ZFNaMUVLaWpBSzFrVVZEelVvWm1KYXQ1RS0xZjkwZjFqbVhPNnNZZ0RMd09wUHMyblVvd0FEV05fVGpQY3RKSlhIV1h1bGl6Smt6UVVnbzk5WTlMNlRBaEdHZ3B1UUVJd0pKNU1sNUVuNWprS0FwV3FfbjlCUFlJSUplb2pGZWJINjVPOW9FQ0dqb1d2WV9iczhLb0otZGNXRUJvMUlxeFJKU0dYd2tBVkl6Q0I3OTZpZjIwNGFwQXZIanRsZktkYTJ6R1BHSUo4UFZEQmRzS3FVR211RVY1SGVN?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ITC\u2019s tobacco business is going cheap but Kotak Institutional Equities thinks market has it wrong",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96SDJEVDRlWEVUT01CeHdSQVc3WEh1RVBTZ0RyS1JScER3UzdLbHctSGNyNnRtZUNQOXNHejNnZ2M4SmdFTDRwTG1YNHZ1R0Y4LUt1b092WDVBV1pPZmh1RFNHa1M1QQ?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ITC Stocks Live Updates: ITC Closes at Rs 458.1 with 2.74% 3-Month Return",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOd1JxTGE2U3BSYnBPVW5fRFp2TVpLbUdPaFMxNmF1U1hHNms2VGtqUmgwSk0wRi1GZWhFTmo4UkFuakQxb2h5dGd0Q1hNTm1VUlhWUW9BREt4N3E3cThhZURxTmtQVUJqOVdvdVllcE1yOEdmY01TSFhrcy1YQkxEVzNodkNNM0lNVldpSnkzaVFVRTBITDVCY3RhRHd1Y1NMZWZjX1V6VENaektEZlhIYUlCc3dCRnpVcHdhbnVBTk1fQVdObkgwRHdJbTdwNWNYWkY0VS1IYmNiSmc5QmV0Y0hzNkNudU9GdWtSRnNiNWZZTnBDRGJEYzRISU5jbDZJUVk0ZVBsZjRHcjJfSWp3ajU4YTdVY0RvQjF3d1psODZZYnVPY3Vr0gGgAkFVX3lxTE5LdEZUOThfSHFLMVV6REVsd1M0aVBWUjZudXlvM0dQQW5zSFJnaWg0VDFUV2V4aXN3YXZ4UDZXX3ltQzRJOWhyWnVqaWdCRHpmVGowcENoSVVSNHc5SVZPVkZRWFhtamYtQXpRUTgxYTR5TVBVR08wTzJud1UwUUpTUnAwREJCdHAyaEFUT09HSFktM2w3TkRhQ1hOd0p1OGZaeU1iQ1dXZEFwSE1UQ04taGJTRnZZZ1FmckdTSVBvVU5uOXo4OS00aWY2dVlXeV9UNHNjUHNveG5jTFNwemZDMFRjU3ZEZHQyR2Z5Y21NUUlRWkVjcy0zSFpRVFB6UlZBREhzc0pod202Nmk3RnJCbE1Cd0NxZnJQY0xWOVJtNQ?oc=5",
+      "published_at": "Fri, 08 Dec 2023",
+      "sentiment": "neutral"
+    }
+  ]
+}

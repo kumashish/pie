@@ -1,0 +1,405 @@
+{
+  "symbol": "BAC",
+  "last_price": 53.73,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.2,
+  "fit_score": 42.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 42.5,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (59.4% fit - Grade C (Moderate)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 54.0,
+        "strike_formatted": "54",
+        "option_type": "Call",
+        "delta": 0.523,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x BAC 20-Nov-2026 54 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 56.0,
+        "strike_formatted": "56",
+        "option_type": "Call",
+        "delta": 0.287,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x BAC 20-Nov-2026 56 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 0.8,
+    "stop_loss_price": 52.66,
+    "take_profit_price": 56.0,
+    "net_delta": 0.236,
+    "net_theta": -0.003,
+    "probability_of_profit": 49.4,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 42.98,
+        "pnl": -0.8
+      },
+      {
+        "price": 43.41,
+        "pnl": -0.8
+      },
+      {
+        "price": 43.84,
+        "pnl": -0.8
+      },
+      {
+        "price": 44.27,
+        "pnl": -0.8
+      },
+      {
+        "price": 44.7,
+        "pnl": -0.8
+      },
+      {
+        "price": 45.13,
+        "pnl": -0.8
+      },
+      {
+        "price": 45.56,
+        "pnl": -0.8
+      },
+      {
+        "price": 45.99,
+        "pnl": -0.8
+      },
+      {
+        "price": 46.42,
+        "pnl": -0.8
+      },
+      {
+        "price": 46.85,
+        "pnl": -0.8
+      },
+      {
+        "price": 47.28,
+        "pnl": -0.8
+      },
+      {
+        "price": 47.71,
+        "pnl": -0.8
+      },
+      {
+        "price": 48.14,
+        "pnl": -0.8
+      },
+      {
+        "price": 48.57,
+        "pnl": -0.8
+      },
+      {
+        "price": 49.0,
+        "pnl": -0.8
+      },
+      {
+        "price": 49.43,
+        "pnl": -0.8
+      },
+      {
+        "price": 49.86,
+        "pnl": -0.8
+      },
+      {
+        "price": 50.29,
+        "pnl": -0.8
+      },
+      {
+        "price": 50.72,
+        "pnl": -0.8
+      },
+      {
+        "price": 51.15,
+        "pnl": -0.8
+      },
+      {
+        "price": 51.58,
+        "pnl": -0.8
+      },
+      {
+        "price": 52.01,
+        "pnl": -0.8
+      },
+      {
+        "price": 52.44,
+        "pnl": -0.8
+      },
+      {
+        "price": 52.87,
+        "pnl": -0.8
+      },
+      {
+        "price": 53.3,
+        "pnl": -0.8
+      },
+      {
+        "price": 53.73,
+        "pnl": -0.8
+      },
+      {
+        "price": 54.16,
+        "pnl": -0.64
+      },
+      {
+        "price": 54.59,
+        "pnl": -0.21
+      },
+      {
+        "price": 55.02,
+        "pnl": 0.22
+      },
+      {
+        "price": 55.45,
+        "pnl": 0.65
+      },
+      {
+        "price": 55.88,
+        "pnl": 1.08
+      },
+      {
+        "price": 56.31,
+        "pnl": 1.2
+      },
+      {
+        "price": 56.74,
+        "pnl": 1.2
+      },
+      {
+        "price": 57.17,
+        "pnl": 1.2
+      },
+      {
+        "price": 57.6,
+        "pnl": 1.2
+      },
+      {
+        "price": 58.03,
+        "pnl": 1.2
+      },
+      {
+        "price": 58.46,
+        "pnl": 1.2
+      },
+      {
+        "price": 58.89,
+        "pnl": 1.2
+      },
+      {
+        "price": 59.32,
+        "pnl": 1.2
+      },
+      {
+        "price": 59.75,
+        "pnl": 1.2
+      },
+      {
+        "price": 60.18,
+        "pnl": 1.2
+      },
+      {
+        "price": 60.61,
+        "pnl": 1.2
+      },
+      {
+        "price": 61.04,
+        "pnl": 1.2
+      },
+      {
+        "price": 61.47,
+        "pnl": 1.2
+      },
+      {
+        "price": 61.9,
+        "pnl": 1.2
+      },
+      {
+        "price": 62.33,
+        "pnl": 1.2
+      },
+      {
+        "price": 62.76,
+        "pnl": 1.2
+      },
+      {
+        "price": 63.19,
+        "pnl": 1.2
+      },
+      {
+        "price": 63.62,
+        "pnl": 1.2
+      },
+      {
+        "price": 64.05,
+        "pnl": 1.2
+      },
+      {
+        "price": 64.48,
+        "pnl": 1.2
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.708,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2372,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "57.67",
+    "EMA50": "59.22",
+    "EMA100": "58.32",
+    "EMA200": "55.94",
+    "RSI(14)": "21.95",
+    "ATR(14)": "1.18",
+    "ADX(14)": "40.38",
+    "BB(20,2)": "0.12"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "IonQ (IONQ) Stock Fair Value Edges Lower After Analysts Rework Growth And Risk",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ionq-ionq-stock-fair-value-050957003.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "BofA thinks Wall Street is underestimating one J&J drug",
+      "publisher": "TheStreet",
+      "link": "https://finance.yahoo.com/healthcare/articles/bofa-thinks-wall-street-underestimating-010300862.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bank of America Stocks Drop as AI Agents Challenge Deposit Inertia",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-stocks-drop-ai-235857425.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "AI in regulated industries: BofA and S&P on the huge gains to be had, and the risks of rushing in",
+      "publisher": "Fortune",
+      "link": "https://finance.yahoo.com/technology/ai/articles/ai-regulated-industries-bofa-p-233606223.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Bank of America\u2019s $5,000 gold forecast comes with a warning",
+      "publisher": "TheStreet",
+      "link": "https://finance.yahoo.com/markets/commodities/articles/bank-america-5-000-gold-194700901.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Bank stocks extend second-half slump amid sharp interest rate rise",
+      "publisher": "Yahoo Finance",
+      "link": "https://finance.yahoo.com/markets/stocks/article/bank-stocks-extend-second-half-slump-amid-sharp-interest-rate-rise-185202119.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    }
+  ]
+}

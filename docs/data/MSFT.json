@@ -1,0 +1,405 @@
+{
+  "symbol": "MSFT",
+  "last_price": 512.8,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 9.2,
+  "fit_score": 92.5,
+  "confidence_grade": "A",
+  "confidence_percentage": 92.5,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (86.6% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 515.0,
+        "strike_formatted": "515",
+        "option_type": "Call",
+        "delta": 0.528,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x MSFT 20-Nov-2026 515 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 540.0,
+        "strike_formatted": "540",
+        "option_type": "Call",
+        "delta": 0.23,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x MSFT 20-Nov-2026 540 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 502.54,
+    "take_profit_price": 540.0,
+    "net_delta": 0.298,
+    "net_theta": -0.048,
+    "probability_of_profit": 50.0,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 410.24,
+        "pnl": -10.0
+      },
+      {
+        "price": 414.34,
+        "pnl": -10.0
+      },
+      {
+        "price": 418.44,
+        "pnl": -10.0
+      },
+      {
+        "price": 422.55,
+        "pnl": -10.0
+      },
+      {
+        "price": 426.65,
+        "pnl": -10.0
+      },
+      {
+        "price": 430.75,
+        "pnl": -10.0
+      },
+      {
+        "price": 434.85,
+        "pnl": -10.0
+      },
+      {
+        "price": 438.96,
+        "pnl": -10.0
+      },
+      {
+        "price": 443.06,
+        "pnl": -10.0
+      },
+      {
+        "price": 447.16,
+        "pnl": -10.0
+      },
+      {
+        "price": 451.26,
+        "pnl": -10.0
+      },
+      {
+        "price": 455.37,
+        "pnl": -10.0
+      },
+      {
+        "price": 459.47,
+        "pnl": -10.0
+      },
+      {
+        "price": 463.57,
+        "pnl": -10.0
+      },
+      {
+        "price": 467.67,
+        "pnl": -10.0
+      },
+      {
+        "price": 471.78,
+        "pnl": -10.0
+      },
+      {
+        "price": 475.88,
+        "pnl": -10.0
+      },
+      {
+        "price": 479.98,
+        "pnl": -10.0
+      },
+      {
+        "price": 484.08,
+        "pnl": -10.0
+      },
+      {
+        "price": 488.19,
+        "pnl": -10.0
+      },
+      {
+        "price": 492.29,
+        "pnl": -10.0
+      },
+      {
+        "price": 496.39,
+        "pnl": -10.0
+      },
+      {
+        "price": 500.49,
+        "pnl": -10.0
+      },
+      {
+        "price": 504.6,
+        "pnl": -10.0
+      },
+      {
+        "price": 508.7,
+        "pnl": -10.0
+      },
+      {
+        "price": 512.8,
+        "pnl": -10.0
+      },
+      {
+        "price": 516.9,
+        "pnl": -8.1
+      },
+      {
+        "price": 521.0,
+        "pnl": -4.0
+      },
+      {
+        "price": 525.11,
+        "pnl": 0.11
+      },
+      {
+        "price": 529.21,
+        "pnl": 4.21
+      },
+      {
+        "price": 533.31,
+        "pnl": 8.31
+      },
+      {
+        "price": 537.41,
+        "pnl": 12.41
+      },
+      {
+        "price": 541.52,
+        "pnl": 15.0
+      },
+      {
+        "price": 545.62,
+        "pnl": 15.0
+      },
+      {
+        "price": 549.72,
+        "pnl": 15.0
+      },
+      {
+        "price": 553.82,
+        "pnl": 15.0
+      },
+      {
+        "price": 557.93,
+        "pnl": 15.0
+      },
+      {
+        "price": 562.03,
+        "pnl": 15.0
+      },
+      {
+        "price": 566.13,
+        "pnl": 15.0
+      },
+      {
+        "price": 570.23,
+        "pnl": 15.0
+      },
+      {
+        "price": 574.34,
+        "pnl": 15.0
+      },
+      {
+        "price": 578.44,
+        "pnl": 15.0
+      },
+      {
+        "price": 582.54,
+        "pnl": 15.0
+      },
+      {
+        "price": 586.64,
+        "pnl": 15.0
+      },
+      {
+        "price": 590.75,
+        "pnl": 15.0
+      },
+      {
+        "price": 594.85,
+        "pnl": 15.0
+      },
+      {
+        "price": 598.95,
+        "pnl": 15.0
+      },
+      {
+        "price": 603.05,
+        "pnl": 15.0
+      },
+      {
+        "price": 607.16,
+        "pnl": 15.0
+      },
+      {
+        "price": 611.26,
+        "pnl": 15.0
+      },
+      {
+        "price": 615.36,
+        "pnl": 15.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.803,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.3227,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "501.87",
+    "EMA50": "481.95",
+    "EMA100": "459.72",
+    "EMA200": "448.91",
+    "RSI(14)": "60.22",
+    "ATR(14)": "11.73",
+    "ADX(14)": "35.39",
+    "BB(20,2)": "0.86"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "META Stock Rides Muse AI To Best Quarter In Over 2 Years \u2014 But Analyst Warns Monetization Could Be 'Notoriously Slow'",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/meta-stock-rides-muse-ai-080528207.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Artificial Intelligence in Healthcare Market Forecasts Growth from $36.67B (2026) to $194.79B by 2031, Profiling Philips, Microsoft, Siemens Healthineers & NVIDIA",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/healthcare/articles/artificial-intelligence-healthcare-market-forecasts-080500135.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Does A Postal Service Backup Plan Materially Alter Amazon's Cash Outlook?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/does-postal-backup-plan-materially-075550891.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Dividend, Earnings Upgrade and Options Activity Might Change The Case For Investing In Helios (HLIO)",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dividend-earnings-upgrade-options-activity-070824708.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Quantum Computing Is Having a Moment. What to Know About the Hottest Sector After AI.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/ee2c0ec8-7fb9-386b-a8bd-92a7ae40c81d/quantum-computing-is-having-a.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Palantir Billionaire Peter Thiel Has 42% of His Portfolio in These 2 Artificial Intelligence Stocks",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/technology/ai/articles/palantir-billionaire-peter-thiel-42-042000104.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "symbol": "JSWSTEEL.NS",
+  "last_price": 1233.0,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.2,
+  "fit_score": 32.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 32.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (53.5% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1250.0,
+        "strike_formatted": "1250",
+        "option_type": "Put",
+        "delta": -0.536,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x JSWSTEEL.NS 24-Nov-2026 1250 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1200.0,
+        "strike_formatted": "1200",
+        "option_type": "Put",
+        "delta": -0.257,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x JSWSTEEL.NS 24-Nov-2026 1200 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 20.0,
+    "stop_loss_price": 1257.66,
+    "take_profit_price": 1200.0,
+    "net_delta": -0.279,
+    "net_theta": 0.002,
+    "probability_of_profit": 56.1,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 986.4,
+        "pnl": 30.0
+      },
+      {
+        "price": 996.26,
+        "pnl": 30.0
+      },
+      {
+        "price": 1006.13,
+        "pnl": 30.0
+      },
+      {
+        "price": 1015.99,
+        "pnl": 30.0
+      },
+      {
+        "price": 1025.86,
+        "pnl": 30.0
+      },
+      {
+        "price": 1035.72,
+        "pnl": 30.0
+      },
+      {
+        "price": 1045.58,
+        "pnl": 30.0
+      },
+      {
+        "price": 1055.45,
+        "pnl": 30.0
+      },
+      {
+        "price": 1065.31,
+        "pnl": 30.0
+      },
+      {
+        "price": 1075.18,
+        "pnl": 30.0
+      },
+      {
+        "price": 1085.04,
+        "pnl": 30.0
+      },
+      {
+        "price": 1094.9,
+        "pnl": 30.0
+      },
+      {
+        "price": 1104.77,
+        "pnl": 30.0
+      },
+      {
+        "price": 1114.63,
+        "pnl": 30.0
+      },
+      {
+        "price": 1124.5,
+        "pnl": 30.0
+      },
+      {
+        "price": 1134.36,
+        "pnl": 30.0
+      },
+      {
+        "price": 1144.22,
+        "pnl": 30.0
+      },
+      {
+        "price": 1154.09,
+        "pnl": 30.0
+      },
+      {
+        "price": 1163.95,
+        "pnl": 30.0
+      },
+      {
+        "price": 1173.82,
+        "pnl": 30.0
+      },
+      {
+        "price": 1183.68,
+        "pnl": 30.0
+      },
+      {
+        "price": 1193.54,
+        "pnl": 30.0
+      },
+      {
+        "price": 1203.41,
+        "pnl": 26.59
+      },
+      {
+        "price": 1213.27,
+        "pnl": 16.73
+      },
+      {
+        "price": 1223.14,
+        "pnl": 6.86
+      },
+      {
+        "price": 1233.0,
+        "pnl": -3.0
+      },
+      {
+        "price": 1242.86,
+        "pnl": -12.86
+      },
+      {
+        "price": 1252.73,
+        "pnl": -20.0
+      },
+      {
+        "price": 1262.59,
+        "pnl": -20.0
+      },
+      {
+        "price": 1272.46,
+        "pnl": -20.0
+      },
+      {
+        "price": 1282.32,
+        "pnl": -20.0
+      },
+      {
+        "price": 1292.18,
+        "pnl": -20.0
+      },
+      {
+        "price": 1302.05,
+        "pnl": -20.0
+      },
+      {
+        "price": 1311.91,
+        "pnl": -20.0
+      },
+      {
+        "price": 1321.78,
+        "pnl": -20.0
+      },
+      {
+        "price": 1331.64,
+        "pnl": -20.0
+      },
+      {
+        "price": 1341.5,
+        "pnl": -20.0
+      },
+      {
+        "price": 1351.37,
+        "pnl": -20.0
+      },
+      {
+        "price": 1361.23,
+        "pnl": -20.0
+      },
+      {
+        "price": 1371.1,
+        "pnl": -20.0
+      },
+      {
+        "price": 1380.96,
+        "pnl": -20.0
+      },
+      {
+        "price": 1390.82,
+        "pnl": -20.0
+      },
+      {
+        "price": 1400.69,
+        "pnl": -20.0
+      },
+      {
+        "price": 1410.55,
+        "pnl": -20.0
+      },
+      {
+        "price": 1420.42,
+        "pnl": -20.0
+      },
+      {
+        "price": 1430.28,
+        "pnl": -20.0
+      },
+      {
+        "price": 1440.14,
+        "pnl": -20.0
+      },
+      {
+        "price": 1450.01,
+        "pnl": -20.0
+      },
+      {
+        "price": 1459.87,
+        "pnl": -20.0
+      },
+      {
+        "price": 1469.74,
+        "pnl": -20.0
+      },
+      {
+        "price": 1479.6,
+        "pnl": -20.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.687,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2183,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1272.00",
+    "EMA50": "1277.18",
+    "EMA100": "1267.57",
+    "EMA200": "1233.92",
+    "RSI(14)": "38.85",
+    "ATR(14)": "25.43",
+    "ADX(14)": "16.35",
+    "BB(20,2)": "0.09"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Tata Steel, JSW Steel, Jindal Steel in focus as rebar prices rally; Nomura retains 'Buy'",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdjJWT3BMckdFWHJUaXgtbDBBWUFUd0lkV05OcWlNTHBBcXFmV2JIMWd1Nmc3RkpuTFVqTThFdWE2NGl4blN2VXFZWHFhTlA1V0l1SVdLSnFxOXhfN01VeGpGQXRsOU9VNUh0Tl83TG13NEpuWmNZcEdwWWYwSDF4YXBLalFEQWZud2ozRE9sM29TdW90WTFmQU1zNjJKci13ckhpM1BvUnBwRHEzcmZuMDU3NFVpUWZJNk52R3RaNC1qQTZjVmlQTzUwY29ncXl2R2RJTm96Zk5qX1pQbVg4cdIB5gFBVV95cUxQR2JwRDA4blZKOUxzaXZjTjBBbUNQckgydU5oM2xrMnVQeFh3YjRTZU51R2tKN1RFZzFfTUlNclprcVVXcC05VGJWZ04wRm4xd2JiQXRTNDJBcEc1c3lub2hxc0otQVk3S19xd0RsVmpOZUFSVFBLLWhTdDNsV0pCNVJqOWFNbGpDcUFxWVFvZjF5OUc0bG5QWWs1akRXQTBzajZXNkVpRFJWVV83WnY5NVBTb2Q3TU90c3BFQXUxVFRCVG5EMkZtTnBoZG9LZm81UnBZVEFGb3ZGT1k2anVqaTNhdngxdw?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "534",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORkd5dnFLdFVENFI2c1ZsMC1xYW11NjZDTU5iT0RKQTlTZHdaNVVsQkJTenlYNEdNejlWZG1UaEl2Tm1MU2pVZThhRG9UZTgzaU5ObWxabS1sT1prb3VuTExmSk9wamxVZ2h3M3ZiT05PWmlqd1VvRlRsUWRpOGRJWFNERG9zb0MtS05QYUtnVQ?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The financial risks you cannot see coming",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVmNzd0k5b0R5SWdpMkhQTTQ1M0pMM1FaTkE2LU1RZGxGZXZ2SmNJSmplREhCMm5NQ1MzcktuczJpUUJDZHZwSWNMdC1aVjBreDBRaTBjbGdZY2U0YzhWU0g0VkcyVlo1OUxUNGt0dVUwZF9JR1NKX0JHTkhUNGV3QkVqV3hsc2RnVDRCeVI0OWJaeUNTbEZmQXptaGh1dGxUOWpZcTZGak9vajNubGRrdkt3Sk9XVjRNMVRtNEV2VDhxMzhfcXhWTEpPX3hPV1E2eTdiT3NuTG9qWC1peUtYd1gxVVE4WkJ6aVpuZnJZcG9MX2k2TlZ3dWhB0gH_AUFVX3lxTE12MVhGVUgwVGNLa2hMck51WUlEUzlCUlRwM0JVSDI3TUZSTmduWEVnU0dTTzJ6NFpZUUR6YVBTSTl1N2E0dUtKREtNeWdUQS03d2daREpjOE5ZRnNiZDRPMmxsVTFQZlpDMTdJSTZram9CaFctNXpaWkNmcjZGN1VIdGZCUVVhRk1hWk0tUmxOWW5ZOHIySFVqbTNnRXJKM0phT0w3WFZUUXNuVnFwOG43anA3cFZJdzNuU25tUGJXZkhhcndMQXYwOGY1US1KZWZjSzhlMmF4YjdPZDRsOGdiQlQ4c21lRXV2b1ZzeURLN3U3aW5pX0tmcHBBTG55bw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Before chasing new investments, ask yourself these six questions",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObkV4eU95M0R6MmhpNVgtNDBNZXFLczRmYkpiRE5Ea2tDSktiZEZ6cF9PTTFCTzkxY0s2OGJuRHhnYTNYaFNTcGJPam9XSXJBRU9EX1N0MENLV0ZOX1lDVFZTZnJ3UjJ6eFlJNGxpT1N6eFJ6dWwzQkxGYnF3ZkY0cGVkdHpoQUlVbnpyZjVZZUdOcmI4UkRDalM1UUsyYllNZWhNdlpRNXBzaU80Qzlxc09wZlVYd1hIRFdUR3FzSdIBxAFBVV95cUxOeXhiUVFsRUlmLUpyeXNYLWh1Rk51c0loQW83eXRPcVhPelptZjhra3pIcll0RU1fUzJpTDdqczZ6Q2l6ZTR4cjFBQWVFMzRmVERDNG16X29fUElnSl9LZGFiUTlmR2YtWWFWMU1DODFjTUtmTVhxdGQ5LUNDQnBkekdXV0hoeTF1UFZkMko5MHlxX3BQaFNzVXB6RmFRNUhaM1J6UFZ0RDVDRU5XUWtPZnEtQ08xSW1ObWMzc3hyWnhJcVpW?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ICICI Pru AMC\u2019s S Naren on contrarian investing, AI risks and navigating a volatile market",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOOHFuenB6alU0TFBTeUc4ak91TEstZFBxUWlmclRUQWFPWUhVMm0xLWkxSFpxREdSNFE3cExISm9vbnRxbnBPdXdHSlB2NUtpZjBHcVhfT1dvQ0xCTXdidDB0S3FzSW9sbkJPbFJKdHJFQkdxSV9JQ0RJaklfSXBiRC0zNmVKR0M3QU1xcXNja29mWFFPdWJuMVl0Q2wxRnR1QmE2S2pnTzJWeWV1cVJHLWNiTjVsS1dQZ0I0SXo4QkxrWmpjN1ZDM0JjWnViVzdvXzVIVjZVWGE3UlF1XzBoajFxTzVHOGN5d0MzcHk1Si0wWkY5NnlUMjFral9Ma3dCeGxNcDNUajZLek1D0gGSAkFVX3lxTE0wUElmelh0Ujlacm5uWElhczBRNFZPOFhiNTJEMGlqbUtnRVlPT3hBNlFkNWhSWmROdzkwSk91bm5CWkVkVzhGUDBDMk5qMWhmb3lRdE50OVZPNDRtU2JqUWhzVC1NdXQxVHBmbEVUU0JlUzV2UDJxdEJ0N3gxb2NZam1ucU5GRGEzdGt0SFVrMUtFZDN5WjNjc09EQ1BiLTVkSl9naFFfdkZKSmRBNnktWlFpcVQ2NlZ6U0dLZkRSd0ZLSmY0WkhNYzdFeGlDUWg0OC1PSXhWZFVPUE1FQTRmS19fYUtQcWM1RVZzdGQ3MWJJTFlmbG8yS1NiRWpzSlpyNXhnS1h0YVh0WEZzSElydWc?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "bearish"
+    }
+  ]
+}

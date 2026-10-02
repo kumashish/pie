@@ -1,0 +1,405 @@
+{
+  "symbol": "ORCL",
+  "last_price": 138.07,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.0,
+  "fit_score": 10.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 10.0,
+  "vix": 16.0,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (76.6% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 140.0,
+        "strike_formatted": "140",
+        "option_type": "Put",
+        "delta": -0.537,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x ORCL 20-Nov-2026 140 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 135.0,
+        "strike_formatted": "135",
+        "option_type": "Put",
+        "delta": -0.299,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x ORCL 20-Nov-2026 135 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 2.0,
+    "stop_loss_price": 140.83,
+    "take_profit_price": 135.0,
+    "net_delta": -0.238,
+    "net_theta": 0.001,
+    "probability_of_profit": 56.3,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 110.46,
+        "pnl": 3.0
+      },
+      {
+        "price": 111.56,
+        "pnl": 3.0
+      },
+      {
+        "price": 112.67,
+        "pnl": 3.0
+      },
+      {
+        "price": 113.77,
+        "pnl": 3.0
+      },
+      {
+        "price": 114.87,
+        "pnl": 3.0
+      },
+      {
+        "price": 115.98,
+        "pnl": 3.0
+      },
+      {
+        "price": 117.08,
+        "pnl": 3.0
+      },
+      {
+        "price": 118.19,
+        "pnl": 3.0
+      },
+      {
+        "price": 119.29,
+        "pnl": 3.0
+      },
+      {
+        "price": 120.4,
+        "pnl": 3.0
+      },
+      {
+        "price": 121.5,
+        "pnl": 3.0
+      },
+      {
+        "price": 122.61,
+        "pnl": 3.0
+      },
+      {
+        "price": 123.71,
+        "pnl": 3.0
+      },
+      {
+        "price": 124.82,
+        "pnl": 3.0
+      },
+      {
+        "price": 125.92,
+        "pnl": 3.0
+      },
+      {
+        "price": 127.02,
+        "pnl": 3.0
+      },
+      {
+        "price": 128.13,
+        "pnl": 3.0
+      },
+      {
+        "price": 129.23,
+        "pnl": 3.0
+      },
+      {
+        "price": 130.34,
+        "pnl": 3.0
+      },
+      {
+        "price": 131.44,
+        "pnl": 3.0
+      },
+      {
+        "price": 132.55,
+        "pnl": 3.0
+      },
+      {
+        "price": 133.65,
+        "pnl": 3.0
+      },
+      {
+        "price": 134.76,
+        "pnl": 3.0
+      },
+      {
+        "price": 135.86,
+        "pnl": 2.14
+      },
+      {
+        "price": 136.97,
+        "pnl": 1.03
+      },
+      {
+        "price": 138.07,
+        "pnl": -0.07
+      },
+      {
+        "price": 139.17,
+        "pnl": -1.17
+      },
+      {
+        "price": 140.28,
+        "pnl": -2.0
+      },
+      {
+        "price": 141.38,
+        "pnl": -2.0
+      },
+      {
+        "price": 142.49,
+        "pnl": -2.0
+      },
+      {
+        "price": 143.59,
+        "pnl": -2.0
+      },
+      {
+        "price": 144.7,
+        "pnl": -2.0
+      },
+      {
+        "price": 145.8,
+        "pnl": -2.0
+      },
+      {
+        "price": 146.91,
+        "pnl": -2.0
+      },
+      {
+        "price": 148.01,
+        "pnl": -2.0
+      },
+      {
+        "price": 149.12,
+        "pnl": -2.0
+      },
+      {
+        "price": 150.22,
+        "pnl": -2.0
+      },
+      {
+        "price": 151.32,
+        "pnl": -2.0
+      },
+      {
+        "price": 152.43,
+        "pnl": -2.0
+      },
+      {
+        "price": 153.53,
+        "pnl": -2.0
+      },
+      {
+        "price": 154.64,
+        "pnl": -2.0
+      },
+      {
+        "price": 155.74,
+        "pnl": -2.0
+      },
+      {
+        "price": 156.85,
+        "pnl": -2.0
+      },
+      {
+        "price": 157.95,
+        "pnl": -2.0
+      },
+      {
+        "price": 159.06,
+        "pnl": -2.0
+      },
+      {
+        "price": 160.16,
+        "pnl": -2.0
+      },
+      {
+        "price": 161.27,
+        "pnl": -2.0
+      },
+      {
+        "price": 162.37,
+        "pnl": -2.0
+      },
+      {
+        "price": 163.47,
+        "pnl": -2.0
+      },
+      {
+        "price": 164.58,
+        "pnl": -2.0
+      },
+      {
+        "price": 165.68,
+        "pnl": -2.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.768,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2912,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "143.14",
+    "EMA50": "146.42",
+    "EMA100": "153.40",
+    "EMA200": "165.83",
+    "RSI(14)": "43.56",
+    "ATR(14)": "6.88",
+    "ADX(14)": "11.68",
+    "BB(20,2)": "0.25"
+  },
+  "rules": [
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Artificial Intelligence in Healthcare Market Forecasts Growth from $36.67B (2026) to $194.79B by 2031, Profiling Philips, Microsoft, Siemens Healthineers & NVIDIA",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/healthcare/articles/artificial-intelligence-healthcare-market-forecasts-080500135.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Secure File Transfer Market Forecasts Growth from $5.69B (2026) to $8.34B by 2031, Profiling IBM, Fortra, OPSWAT, Axway & Oracle",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/articles/secure-file-transfer-market-forecasts-080400427.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "The New Math of AI: Are Those Trillion-Dollar Numbers for Real?",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/6d11aa5b-b87e-3d75-800a-f15eb764f678/the-new-math-of-ai%3A-are-those.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Vernova (GEV) vs. Quanta Services (PWR): Which AI Power Stock Has More Room to Run?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/energy/articles/ge-vernova-gev-vs-quanta-021313409.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bloom Energy CEO Shrugs Off Oracle Force Majeure Worries, Says Bloom Boxes Are 'Fungible'",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/energy/articles/bloom-energy-ceo-shrugs-off-013954535.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Oracle data center deal could lower We Energies electric bills",
+      "publisher": "Milwaukee Journal Sentinel",
+      "link": "https://finance.yahoo.com/energy/articles/oracle-data-center-deal-could-001005109.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

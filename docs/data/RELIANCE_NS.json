@@ -1,0 +1,405 @@
+{
+  "symbol": "RELIANCE.NS",
+  "last_price": 1167.7,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.8,
+  "fit_score": 27.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 27.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (27.9) is oversold (< 35) [Synthetic PCR: 1.40]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1150.0,
+        "strike_formatted": "1150",
+        "option_type": "Put",
+        "delta": -0.331,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x RELIANCE.NS 24-Nov-2026 1150 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1100.0,
+        "strike_formatted": "1100",
+        "option_type": "Put",
+        "delta": -0.107,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x RELIANCE.NS 24-Nov-2026 1100 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 20.0,
+    "stop_loss_price": 1191.05,
+    "take_profit_price": 1100.0,
+    "net_delta": -0.224,
+    "net_theta": -0.071,
+    "probability_of_profit": 35.6,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 934.16,
+        "pnl": 30.0
+      },
+      {
+        "price": 943.5,
+        "pnl": 30.0
+      },
+      {
+        "price": 952.84,
+        "pnl": 30.0
+      },
+      {
+        "price": 962.18,
+        "pnl": 30.0
+      },
+      {
+        "price": 971.53,
+        "pnl": 30.0
+      },
+      {
+        "price": 980.87,
+        "pnl": 30.0
+      },
+      {
+        "price": 990.21,
+        "pnl": 30.0
+      },
+      {
+        "price": 999.55,
+        "pnl": 30.0
+      },
+      {
+        "price": 1008.89,
+        "pnl": 30.0
+      },
+      {
+        "price": 1018.23,
+        "pnl": 30.0
+      },
+      {
+        "price": 1027.58,
+        "pnl": 30.0
+      },
+      {
+        "price": 1036.92,
+        "pnl": 30.0
+      },
+      {
+        "price": 1046.26,
+        "pnl": 30.0
+      },
+      {
+        "price": 1055.6,
+        "pnl": 30.0
+      },
+      {
+        "price": 1064.94,
+        "pnl": 30.0
+      },
+      {
+        "price": 1074.28,
+        "pnl": 30.0
+      },
+      {
+        "price": 1083.63,
+        "pnl": 30.0
+      },
+      {
+        "price": 1092.97,
+        "pnl": 30.0
+      },
+      {
+        "price": 1102.31,
+        "pnl": 27.69
+      },
+      {
+        "price": 1111.65,
+        "pnl": 18.35
+      },
+      {
+        "price": 1120.99,
+        "pnl": 9.01
+      },
+      {
+        "price": 1130.33,
+        "pnl": -0.33
+      },
+      {
+        "price": 1139.68,
+        "pnl": -9.68
+      },
+      {
+        "price": 1149.02,
+        "pnl": -19.02
+      },
+      {
+        "price": 1158.36,
+        "pnl": -20.0
+      },
+      {
+        "price": 1167.7,
+        "pnl": -20.0
+      },
+      {
+        "price": 1177.04,
+        "pnl": -20.0
+      },
+      {
+        "price": 1186.38,
+        "pnl": -20.0
+      },
+      {
+        "price": 1195.72,
+        "pnl": -20.0
+      },
+      {
+        "price": 1205.07,
+        "pnl": -20.0
+      },
+      {
+        "price": 1214.41,
+        "pnl": -20.0
+      },
+      {
+        "price": 1223.75,
+        "pnl": -20.0
+      },
+      {
+        "price": 1233.09,
+        "pnl": -20.0
+      },
+      {
+        "price": 1242.43,
+        "pnl": -20.0
+      },
+      {
+        "price": 1251.77,
+        "pnl": -20.0
+      },
+      {
+        "price": 1261.12,
+        "pnl": -20.0
+      },
+      {
+        "price": 1270.46,
+        "pnl": -20.0
+      },
+      {
+        "price": 1279.8,
+        "pnl": -20.0
+      },
+      {
+        "price": 1289.14,
+        "pnl": -20.0
+      },
+      {
+        "price": 1298.48,
+        "pnl": -20.0
+      },
+      {
+        "price": 1307.82,
+        "pnl": -20.0
+      },
+      {
+        "price": 1317.17,
+        "pnl": -20.0
+      },
+      {
+        "price": 1326.51,
+        "pnl": -20.0
+      },
+      {
+        "price": 1335.85,
+        "pnl": -20.0
+      },
+      {
+        "price": 1345.19,
+        "pnl": -20.0
+      },
+      {
+        "price": 1354.53,
+        "pnl": -20.0
+      },
+      {
+        "price": 1363.87,
+        "pnl": -20.0
+      },
+      {
+        "price": 1373.22,
+        "pnl": -20.0
+      },
+      {
+        "price": 1382.56,
+        "pnl": -20.0
+      },
+      {
+        "price": 1391.9,
+        "pnl": -20.0
+      },
+      {
+        "price": 1401.24,
+        "pnl": -20.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.746,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2714,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1233.41",
+    "EMA50": "1267.74",
+    "EMA100": "1298.04",
+    "EMA200": "1335.89",
+    "RSI(14)": "27.92",
+    "ATR(14)": "20.08",
+    "ADX(14)": "41.10",
+    "BB(20,2)": "0.04"
+  },
+  "rules": [
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "NCLAT disposes of ADAVL appeal against IIHL over 'Reliance' brand",
+      "publisher": "ETLegalWorld.com",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORngxbXhacnRlTlFIZmlxRFBGNFZiY0VNZnNKQWl1elRlZjRjdllMZXRHOUJXT0NxSGpMLWtYZFliN1V0ZXZxQ3pETjFjU1A3Qnh6MFk0RnFnM1U2QW9SVFVEWEhTeWVoQ0pwX3dtQ3dBNUJnMExJTHJDTnYxNGtXQm9KN1FfRkpESC1QYXpoQ2N0ejMyQlROc1BheEh0THpkNFNYNDVKV2dWTF9rWXkzblU4cDdod25pM2VoaXBYS2ZLM0hRRFplXy10Zkg2LW1XU2fSAdIBQVVfeXFMTkZ4MW14WnJ0ZU5RSGZpcURQRjRWYmNFTWZzSkFpdXpUZWY0Y3ZZTGV0RzlCV09DcUhqTC1rWGRZYjdVdGV2cUN6RE4xY1NQN0J4ejBZNEZxZzNVNkFvUlRVRFhIU3llaENKcF93bUN3QTVCZzBMSUxyQ052MTRrV0JvSjdRX0ZKREgtUGF6aENjdHozMkJUTnNQYXhIdEx6ZDRTWDQ1SldnVkxfa1l5M25VOHA3aHduaTNlaGlwWEtmSzNIUURaZV8tdGZINi1tV1Nn?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "State Bank of India buys nearly 40% of Reliance's $1.35 billion debt sale",
+      "publisher": "cfo.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPN2RBWWZzX011T3o3TVBfQ19VQll5V0NXc08wdmR0d2M0ekpUbXE0cjR4TFA1VjBaX0l1eGx1NGI3aGRWaXdNOVJpY050Z0tMY2ExRnRFb09kdjctdmVmLVFmaEwzWWJ1RjllUXpWbkJuY19mUjE4TklKQ0pEdmlpQlh3NnUxSG41bTVaOWFuRE5iQUdHWmhydmQtNFBMNlJ0SU82Mk1id19uekppV2xWcC1LZ3dub2o5WTJGckVMdlIyVkI5T3ItTDVCQ0R0bERPVTV1dTFqUFB6RGxq0gHiAUFVX3lxTFBXOVlCdDc0ZUlwQXdMQl9YZTRjaFZjby1RTjRZRzBkSzNkUWRKakJwU3pLXzNNRTJ1eVd0N0tCSlVaRGpBNUlNcFktX2c5UVBSa0M4YnFTbEljaDVveE5SY2VYdWJtM1NKVDNzNjA4Rkk4dHhmY2hlb0JGN0VuOVo1VzdQTnl5VUlqam1oTEpCYkROWExnZTIzY2RUVzdQUGlKem9RTGZjZG4wYnB0SVdPcHdMbnR1ZGI2ZHZuTDdFNlhCa2ZYa081cDY2RHc5a0VTVllZNWppcG5XMllnWFRFMHc?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Reliance Jio announces 10th anniversary offer: JioBharat 4G phone with six months of recharge benefits at...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcHNNeTREaWVLekFSZm5JOXlIRFdoTWZ1dW5mc0R3UkhsdjJWWUo5ZW9SY1VDM0pWQzJGbUdNaFhaVTZxeG94YjM4M25EYndJdFFHTEJmM2xTYXg2NFFJbmpPNUVZSnJzNzE0aVJMSGkzRFNhVDVzbEI5ZHF5VGFfOGdVYWViaTJVaWFGaXQ4NXJWTHk0STlEZDVBOFBRSWFfYk1vVWFRellQSmUyUVV5c1pQUmgxeHp5U2xzZUFONm9ubk0yeTRmUUUxSS1QMkNlZHBHRWh1U2FncXRuUTQw0gHkAUFVX3lxTE01MFdkcHZfRURDVFlwbkNwT013N1ZsQ0QxeUF4M0hyZlZUN1oyY3c1TTY4dTdhS3FDYXZWOWpOWEtRdEItdGtBOWhoNUNxWF9SajJNajhhYkVfU19CcVJ2ZGxEa0FJbS1yUzFEQjJKTm82ak03UlhDbTBUYktlcEg3YWxIMUVHUnR3bHF4bTJDREJ1a2xZUlMxaXR4aWdBOG4xV1lnUnVFVlpoNGN6VzhmTDdZZ1FhMUdfSUhuY2FCZjkyclBBUUpfTHlSVFJic0otd0hWLTloclFLQ2pibkFjbmpUaQ?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "India\u2019s maritime playbook gets a sharper self-reliance push",
+      "publisher": "defence.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcVJ5MExOXzh6S1VUdUxwTjJmV093S0NJcTFTbm9nYnBFOEw5T1V3YWRSZUNhWVBQMHkwZWgwRUgzMlpFQlRCZ1pINlNkZkJRUUs5RWduSVZtelBvNXYwYjlEUVBJQWJWcVNGZDdGS09jRlNOYl9fNVlONk9DR29UcDNjN3BTaTBEVWxGa3VzWWxSYXhkQUIyU3pTZXh3UXlzUTNueVhJNEZoRjh3bzBNS3NjZFdydzRhX05MejlpLUtOXzhWdnVlT0czN3JTcl9DenlyS9IB2AFBVV95cUxPT0R2NGJUMEwxZ0o3ZzZoVkxIdDUxNHNQWEhqclg3RUYtZTVGWFd5bUt6ZU40RFJDQ1FxNnBPbWR4aFdJQ0w2OFZ3ZGk4V3pSSlBLdDJJZWZyVElrUWFGRzViWXY1XzNmTV9zemlHTzA4bktoa3I0MVh5alhQNUFuYTQ5WmdSZTZTSlltcG1VSERZbVd4aXlLckM4aFJjUVlBSnRMbTFjLWI1Y0VaNEhmSW5VT3NybDJrZTZTSWQ5dkx2Qm5oakFUbElFSXpUeE1mblRQR2VEOWk?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "India\u2019s defence push now faces a bigger test than self-reliance",
+      "publisher": "defence.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVEx1NW1DaUFmTkNvUHhYZlJCTi1Xa3BSR1VLQlRSR05GTmhuWXNuY1BlSmpPelNWZXp6Y2tmM1FUMm5UMF9FYUQxdVROd1UtZHZjOVFCdk5xdV9oQ1dxUzFsNGJwY1NHNVBVSjg0elBpVno3U1gxVFNXQ1d6czBTNEJ2QU1IbUFjT1hsWWlZMEo5SThGMFVuV3Y2by1ocF9mSXJQR0poWnUwSjF1cHdNRGc4QW16dUlOQ3lpd05CZFBITHdvMnJhSzRCQ1FDWVlHeDF4eGEzaVUwZ9IB3gFBVV95cUxOaHFXeno1Z1d4WWhZRWlhS3drUXJXQlBLZjJxTldZLVJPZnA3aW5oVUFveXBxb3g2a1ZRRFpya0hOYVhpNlh5OTU1dDA0a29IZEtKa1IyMTY3MnZpTnB5TUMwNW0xRjJCbThFVVBFQkNsNW5hS1BrN2JQS3prQWVreFVFX2dUTG5yeURQV2dqaHVqZXJsTDZyd3BzRXdDanNXN0RUMnkyVjlKN29EMFJJdXBPQ3pEUnVKWk03WlhzRkFOeXZoRUdkNEQtRzNZeUlJSWoteDduNjR2RkNGaUE?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Reliance Jio leads mobile subscriber additions, adds 24 lakh users in August: TRAI data",
+      "publisher": "ET BrandEquity",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQTFJyVHVhX3ozc3F2akVBWU9vbnJpYldEa3QzcVAxZFpDbkw3MFVsbE0wYXM1ZTBnNXk3dXBMSDNFWVpUQ0YwNWxVckNrMnFTYVROYktvd1NmMjRZelpFZ2J1bzJMRDFOZkZpYktpLXR6R1QxQmZsYm9FVTd0VUpNMWtLTEhYM0h6RnNycWxRa1Y2UGc2S0FFU19vTkN4eTg0Q2dSbWhfY3dadmg5WHRKdFNhQWtZbWdOS3B3RVBHYUpwZUhQRXQtTjFqUC1DdXc1ekVvTmlCNUlEM0I5SnlJZW9KZXE3UE9hMlQ1SEpNYjQ?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "symbol": "ADANIPORTS.NS",
+  "last_price": 1737.8,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.5,
+  "fit_score": 75.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 75.0,
+  "vix": 14.46,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (58.3% fit - Grade C (Moderate)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1750.0,
+        "strike_formatted": "1750",
+        "option_type": "Call",
+        "delta": 0.513,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x ADANIPORTS.NS 24-Nov-2026 1750 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1800.0,
+        "strike_formatted": "1800",
+        "option_type": "Call",
+        "delta": 0.316,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x ADANIPORTS.NS 24-Nov-2026 1800 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 20.0,
+    "stop_loss_price": 1703.04,
+    "take_profit_price": 1800.0,
+    "net_delta": 0.197,
+    "net_theta": -0.083,
+    "probability_of_profit": 48.6,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 1390.24,
+        "pnl": -20.0
+      },
+      {
+        "price": 1404.14,
+        "pnl": -20.0
+      },
+      {
+        "price": 1418.04,
+        "pnl": -20.0
+      },
+      {
+        "price": 1431.95,
+        "pnl": -20.0
+      },
+      {
+        "price": 1445.85,
+        "pnl": -20.0
+      },
+      {
+        "price": 1459.75,
+        "pnl": -20.0
+      },
+      {
+        "price": 1473.65,
+        "pnl": -20.0
+      },
+      {
+        "price": 1487.56,
+        "pnl": -20.0
+      },
+      {
+        "price": 1501.46,
+        "pnl": -20.0
+      },
+      {
+        "price": 1515.36,
+        "pnl": -20.0
+      },
+      {
+        "price": 1529.26,
+        "pnl": -20.0
+      },
+      {
+        "price": 1543.17,
+        "pnl": -20.0
+      },
+      {
+        "price": 1557.07,
+        "pnl": -20.0
+      },
+      {
+        "price": 1570.97,
+        "pnl": -20.0
+      },
+      {
+        "price": 1584.87,
+        "pnl": -20.0
+      },
+      {
+        "price": 1598.78,
+        "pnl": -20.0
+      },
+      {
+        "price": 1612.68,
+        "pnl": -20.0
+      },
+      {
+        "price": 1626.58,
+        "pnl": -20.0
+      },
+      {
+        "price": 1640.48,
+        "pnl": -20.0
+      },
+      {
+        "price": 1654.39,
+        "pnl": -20.0
+      },
+      {
+        "price": 1668.29,
+        "pnl": -20.0
+      },
+      {
+        "price": 1682.19,
+        "pnl": -20.0
+      },
+      {
+        "price": 1696.09,
+        "pnl": -20.0
+      },
+      {
+        "price": 1710.0,
+        "pnl": -20.0
+      },
+      {
+        "price": 1723.9,
+        "pnl": -20.0
+      },
+      {
+        "price": 1737.8,
+        "pnl": -20.0
+      },
+      {
+        "price": 1751.7,
+        "pnl": -18.3
+      },
+      {
+        "price": 1765.6,
+        "pnl": -4.4
+      },
+      {
+        "price": 1779.51,
+        "pnl": 9.51
+      },
+      {
+        "price": 1793.41,
+        "pnl": 23.41
+      },
+      {
+        "price": 1807.31,
+        "pnl": 30.0
+      },
+      {
+        "price": 1821.21,
+        "pnl": 30.0
+      },
+      {
+        "price": 1835.12,
+        "pnl": 30.0
+      },
+      {
+        "price": 1849.02,
+        "pnl": 30.0
+      },
+      {
+        "price": 1862.92,
+        "pnl": 30.0
+      },
+      {
+        "price": 1876.82,
+        "pnl": 30.0
+      },
+      {
+        "price": 1890.73,
+        "pnl": 30.0
+      },
+      {
+        "price": 1904.63,
+        "pnl": 30.0
+      },
+      {
+        "price": 1918.53,
+        "pnl": 30.0
+      },
+      {
+        "price": 1932.43,
+        "pnl": 30.0
+      },
+      {
+        "price": 1946.34,
+        "pnl": 30.0
+      },
+      {
+        "price": 1960.24,
+        "pnl": 30.0
+      },
+      {
+        "price": 1974.14,
+        "pnl": 30.0
+      },
+      {
+        "price": 1988.04,
+        "pnl": 30.0
+      },
+      {
+        "price": 2001.95,
+        "pnl": 30.0
+      },
+      {
+        "price": 2015.85,
+        "pnl": 30.0
+      },
+      {
+        "price": 2029.75,
+        "pnl": 30.0
+      },
+      {
+        "price": 2043.65,
+        "pnl": 30.0
+      },
+      {
+        "price": 2057.56,
+        "pnl": 30.0
+      },
+      {
+        "price": 2071.46,
+        "pnl": 30.0
+      },
+      {
+        "price": 2085.36,
+        "pnl": 30.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.704,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2336,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1761.17",
+    "EMA50": "1744.99",
+    "EMA100": "1721.79",
+    "EMA200": "1653.44",
+    "RSI(14)": "47.92",
+    "ATR(14)": "44.74",
+    "ADX(14)": "17.53",
+    "BB(20,2)": "0.34"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Warehousing growth to expand beyond Grade A cities: Adani Ports' Pankaj Bhardwaj",
+      "publisher": "ETHRWorld.com",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUnoyMTc3OTczeFhIVVVjTmpyWXhUUTY2bkpPdzZON1pzRU9ZdDBmVWtsN2ZSdEk2a0xhTmJtb2FDOWhNUGNmVGZuUHdBaU9NTERMMVBEa09zTVgtMDF4R0NuZG1hU3lkOXBNam1vNjFJbTg4Q2d5c1lkZHMwWDlBLTQ0MGM3MXlXRFhDSVdCR1h0UzgyMllzZHBGNDFWaDRoZkk4cFNRNW1MekwwMU9ZMjc4d2EyMnc4czdlNS1UV2dxZ05vNzNwdGQ4N1hscllfRS0tdTlGY19jUdIB3wFBVV95cUxQVVgzNDNLRHNtSnhHTkJ5UkJlR2VGd1BLb2ZnS0daNG5BeVZ4T3NUM3kwYzd1aVBXX1ZBT0tHWUR3cm93THBVVU5BdkNLYjRVQnZZVXBNQWVhZ3dNcU5idGFoZGRCZVhJOUtSaXVEWjFwYUJGRjhUSS10akFmVE1NclVqY2U0TTJoQTJPMHhBd3FhNEZoa0gyNWNuYVpfTS1LcFhhYldQd0JVOE02LWIyLWF3b0oxNFlhVHduQVpoSkFRem84RkdZYjNfTWllWG1uNEt2alJRcVVtMm5FX253?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Adani Ports doubles Colombo terminal capacity to 3.2 mn TEUs with $750 mn expansion",
+      "publisher": "ET Infra",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQLTdib19vMFVJd2ZUTnJDVlVNY0lJVmJKODRhOFJwcUdJWi14Rnpsa3BHQmFNTjRWMENkQmVQRjZydWRlQU5rR1NjRC10R2RZQVltZ0hDR2Jqcm1nSFlvZXVuc0pEWlRaVkFGYnhZVHI1NjdMcHQxSEo1d2NiZFA1cHJTM0o4UWdwYTFlRkx4TlAycFl0MmFveFlONlhNeW9iV3dxekljYVp1MWxaRWl4V0djNm5aT0Rtbm5qWWV3ZlhiRl9vMmsyZkM5aVlPdnR1bTJGQ3RTcE9RaEZzMHlhVVJ0a3dVczEtWF930gHwAUFVX3lxTE9VM3dHcEhZMjR4alpFTEhVaUgxaFZHdDFvM0NGaVhUZFBaWFE5VUtOY0NoQ0o4WkExemhXWm1McVU0VmNYU29hTXdtVlpiSWJsRjZ3RVJPaGxBMjNodWozMDAwaDlqclhtZ3QyMXZsN3dTUHY0VnhNS1VfWjBCd1BjQWdTZlpPX0ZJQm9WVGs4M0hGMDQ1T1A3eTllSkN1LV9KejNXam5laTR4bnY5NG1LSHFaYl9sTmxoSTNEN3NKVGhRdlJjYmdDZDZaZmNKZXpYQlU0Q0F6cEQ5OHhJT0h6clBTanlDMmRVRGxLMHdXTA?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "APSEZ, empty box depot operators work out compromise to end strike at Mundra Port",
+      "publisher": "ET Infra",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOT2NvQmRGVS1FVlVjc1NSanQ0TTRQY2ViOG1lZ0t3ekVGME1oYVhVWFlncV9McVh1b1VMTzFYc3QtTy1aTDNXZGhJRFdOMmVGVXpmRkxEYnFwdzN0TjVCS1lwTjE0Q09SSWlnRFhWNm1TcndzN1AyQTMta0hoX0RyMTNPQmNvNG9MNkIxaVMtVEZsN1lXQUI4MTJIWjJPd2VTR2hlYXBybUdIa1M3TWNCQnV0Ti1yLW1wdXJPQy0zajBuWDBucE9uQ1JGUG95Vm9WOFV1eVloTkp5SmdJR09lSHMwME9OSUFL0gHuAUFVX3lxTFA0R0RVRUZoNVQ3ak0tS1lCUGI4aTJLbzR4YzV6SElDV25KUXN6VzFZeVVQWFdYZUVfSHV0SlNCOFdCYmV6OG5WYnZLaE8xSjBiRTJ1TmdVazZnMWpTZFlOZUhPQVRTYU55UDhJNkdiV1VwTi10VUt0cktIeldueWtfOVA5UDhjQVRWUlpUaDVIRkVYY3ZMbkJIRDRKNUt5bjRLNjB0d2wwQ29qQlRsYVJVSG1pRjRwVFV6LWVkQklKY19QQlJPQ25FMkFGUjJheEh6VWMwbld5b2l5dkRTXzdtbWU1WTN3OTViS190TFE?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "adani ports and sez Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdng1Qm1FMkxSZjY2ZEVYb3JCVlhtZk9zcFozOVp5eFh0SE5EWkhNVDBsdktIM1RSNENuWWlVR2xKYzhFVmNaRVgyN3Z1b2NkSWNhWG5LU2JjU2NZRTFuVTNNczZVRTVhZWEwcERfeVdXNkozNFJPbFNzb1NTOTZVT0ZEcnU2TTQ?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xOUVDc1FKMFQ1RjJqRU9tT3E1aXlVSzZIVTBYczE1MWlZanNxYmRfbXpyWlBmbmR5M0pyXzBkTndoenNxZmtJRVdGYUhaRHVlNWtFSm16UXVndzNUUFFXS2RfRFdYVHBHOFE?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZml3R3pRYzV0R2MxbGFyWktmUUNpMHNnVjZMZjJuLXFUYVMtMTFIMzdIdVpPMXhsYURzcWtVSFJBekVudHNJQ00zWko3MVlGN2tlTG11MjlBTG9RWS1ERlV3WjV5WkJKeG51RVAyRGZCZmdjblZmT2M2bE5iZTdqbkwtekRjS1g1NC02Z0NCSQ?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

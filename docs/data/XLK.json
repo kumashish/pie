@@ -1,0 +1,405 @@
+{
+  "symbol": "XLK",
+  "last_price": 197.81,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.5,
+  "fit_score": 75.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 75.0,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (66.1) is overbought (> 65) [Synthetic PCR: 0.69]. Wait for a pullback toward EMA20 support before entering Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 200.0,
+        "strike_formatted": "200",
+        "option_type": "Call",
+        "delta": 0.482,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x XLK 20-Nov-2026 200 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 210.0,
+        "strike_formatted": "210",
+        "option_type": "Call",
+        "delta": 0.19,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x XLK 20-Nov-2026 210 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 193.85,
+    "take_profit_price": 210.0,
+    "net_delta": 0.292,
+    "net_theta": -0.023,
+    "probability_of_profit": 45.5,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 158.25,
+        "pnl": -4.0
+      },
+      {
+        "price": 159.83,
+        "pnl": -4.0
+      },
+      {
+        "price": 161.41,
+        "pnl": -4.0
+      },
+      {
+        "price": 163.0,
+        "pnl": -4.0
+      },
+      {
+        "price": 164.58,
+        "pnl": -4.0
+      },
+      {
+        "price": 166.16,
+        "pnl": -4.0
+      },
+      {
+        "price": 167.74,
+        "pnl": -4.0
+      },
+      {
+        "price": 169.33,
+        "pnl": -4.0
+      },
+      {
+        "price": 170.91,
+        "pnl": -4.0
+      },
+      {
+        "price": 172.49,
+        "pnl": -4.0
+      },
+      {
+        "price": 174.07,
+        "pnl": -4.0
+      },
+      {
+        "price": 175.66,
+        "pnl": -4.0
+      },
+      {
+        "price": 177.24,
+        "pnl": -4.0
+      },
+      {
+        "price": 178.82,
+        "pnl": -4.0
+      },
+      {
+        "price": 180.4,
+        "pnl": -4.0
+      },
+      {
+        "price": 181.99,
+        "pnl": -4.0
+      },
+      {
+        "price": 183.57,
+        "pnl": -4.0
+      },
+      {
+        "price": 185.15,
+        "pnl": -4.0
+      },
+      {
+        "price": 186.73,
+        "pnl": -4.0
+      },
+      {
+        "price": 188.32,
+        "pnl": -4.0
+      },
+      {
+        "price": 189.9,
+        "pnl": -4.0
+      },
+      {
+        "price": 191.48,
+        "pnl": -4.0
+      },
+      {
+        "price": 193.06,
+        "pnl": -4.0
+      },
+      {
+        "price": 194.65,
+        "pnl": -4.0
+      },
+      {
+        "price": 196.23,
+        "pnl": -4.0
+      },
+      {
+        "price": 197.81,
+        "pnl": -4.0
+      },
+      {
+        "price": 199.39,
+        "pnl": -4.0
+      },
+      {
+        "price": 200.97,
+        "pnl": -3.03
+      },
+      {
+        "price": 202.56,
+        "pnl": -1.44
+      },
+      {
+        "price": 204.14,
+        "pnl": 0.14
+      },
+      {
+        "price": 205.72,
+        "pnl": 1.72
+      },
+      {
+        "price": 207.3,
+        "pnl": 3.3
+      },
+      {
+        "price": 208.89,
+        "pnl": 4.89
+      },
+      {
+        "price": 210.47,
+        "pnl": 6.0
+      },
+      {
+        "price": 212.05,
+        "pnl": 6.0
+      },
+      {
+        "price": 213.63,
+        "pnl": 6.0
+      },
+      {
+        "price": 215.22,
+        "pnl": 6.0
+      },
+      {
+        "price": 216.8,
+        "pnl": 6.0
+      },
+      {
+        "price": 218.38,
+        "pnl": 6.0
+      },
+      {
+        "price": 219.96,
+        "pnl": 6.0
+      },
+      {
+        "price": 221.55,
+        "pnl": 6.0
+      },
+      {
+        "price": 223.13,
+        "pnl": 6.0
+      },
+      {
+        "price": 224.71,
+        "pnl": 6.0
+      },
+      {
+        "price": 226.29,
+        "pnl": 6.0
+      },
+      {
+        "price": 227.88,
+        "pnl": 6.0
+      },
+      {
+        "price": 229.46,
+        "pnl": 6.0
+      },
+      {
+        "price": 231.04,
+        "pnl": 6.0
+      },
+      {
+        "price": 232.62,
+        "pnl": 6.0
+      },
+      {
+        "price": 234.21,
+        "pnl": 6.0
+      },
+      {
+        "price": 235.79,
+        "pnl": 6.0
+      },
+      {
+        "price": 237.37,
+        "pnl": 6.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.73,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.257,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "191.65",
+    "EMA50": "187.29",
+    "EMA100": "180.80",
+    "EMA200": "168.84",
+    "RSI(14)": "66.11",
+    "ATR(14)": "3.17",
+    "ADX(14)": "15.35",
+    "BB(20,2)": "0.87"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Sector Update: Tech Stocks Gain Late Afternoon",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-afternoon-195143826.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sector Update: Tech",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-192610550.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Alphabet Slips After Gemini 4 Argon Launch as Tech Sector Rises; Microsoft Holds Steady, Amazon Dips",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/alphabet-slips-gemini-4-argon-175148352.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Sector Update: Tech Stocks Gain Thursday Afternoon",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-thursday-174233543.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Exchange-Traded Funds Mixed, US Equities Fall After Midday",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/articles/exchange-traded-funds-mixed-us-171345834.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Sector Update: Tech",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-170240637.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

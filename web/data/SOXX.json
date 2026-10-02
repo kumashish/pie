@@ -1,0 +1,405 @@
+{
+  "symbol": "SOXX",
+  "last_price": 576.33,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.2,
+  "fit_score": 82.5,
+  "confidence_grade": "A",
+  "confidence_percentage": 82.5,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (78.8% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 575.0,
+        "strike_formatted": "575",
+        "option_type": "Call",
+        "delta": 0.573,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x SOXX 20-Nov-2026 575 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 600.0,
+        "strike_formatted": "600",
+        "option_type": "Call",
+        "delta": 0.294,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x SOXX 20-Nov-2026 600 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 564.8,
+    "take_profit_price": 600.0,
+    "net_delta": 0.279,
+    "net_theta": -0.037,
+    "probability_of_profit": 54.4,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 461.06,
+        "pnl": -10.0
+      },
+      {
+        "price": 465.67,
+        "pnl": -10.0
+      },
+      {
+        "price": 470.29,
+        "pnl": -10.0
+      },
+      {
+        "price": 474.9,
+        "pnl": -10.0
+      },
+      {
+        "price": 479.51,
+        "pnl": -10.0
+      },
+      {
+        "price": 484.12,
+        "pnl": -10.0
+      },
+      {
+        "price": 488.73,
+        "pnl": -10.0
+      },
+      {
+        "price": 493.34,
+        "pnl": -10.0
+      },
+      {
+        "price": 497.95,
+        "pnl": -10.0
+      },
+      {
+        "price": 502.56,
+        "pnl": -10.0
+      },
+      {
+        "price": 507.17,
+        "pnl": -10.0
+      },
+      {
+        "price": 511.78,
+        "pnl": -10.0
+      },
+      {
+        "price": 516.39,
+        "pnl": -10.0
+      },
+      {
+        "price": 521.0,
+        "pnl": -10.0
+      },
+      {
+        "price": 525.61,
+        "pnl": -10.0
+      },
+      {
+        "price": 530.22,
+        "pnl": -10.0
+      },
+      {
+        "price": 534.83,
+        "pnl": -10.0
+      },
+      {
+        "price": 539.44,
+        "pnl": -10.0
+      },
+      {
+        "price": 544.06,
+        "pnl": -10.0
+      },
+      {
+        "price": 548.67,
+        "pnl": -10.0
+      },
+      {
+        "price": 553.28,
+        "pnl": -10.0
+      },
+      {
+        "price": 557.89,
+        "pnl": -10.0
+      },
+      {
+        "price": 562.5,
+        "pnl": -10.0
+      },
+      {
+        "price": 567.11,
+        "pnl": -10.0
+      },
+      {
+        "price": 571.72,
+        "pnl": -10.0
+      },
+      {
+        "price": 576.33,
+        "pnl": -8.67
+      },
+      {
+        "price": 580.94,
+        "pnl": -4.06
+      },
+      {
+        "price": 585.55,
+        "pnl": 0.55
+      },
+      {
+        "price": 590.16,
+        "pnl": 5.16
+      },
+      {
+        "price": 594.77,
+        "pnl": 9.77
+      },
+      {
+        "price": 599.38,
+        "pnl": 14.38
+      },
+      {
+        "price": 603.99,
+        "pnl": 15.0
+      },
+      {
+        "price": 608.6,
+        "pnl": 15.0
+      },
+      {
+        "price": 613.22,
+        "pnl": 15.0
+      },
+      {
+        "price": 617.83,
+        "pnl": 15.0
+      },
+      {
+        "price": 622.44,
+        "pnl": 15.0
+      },
+      {
+        "price": 627.05,
+        "pnl": 15.0
+      },
+      {
+        "price": 631.66,
+        "pnl": 15.0
+      },
+      {
+        "price": 636.27,
+        "pnl": 15.0
+      },
+      {
+        "price": 640.88,
+        "pnl": 15.0
+      },
+      {
+        "price": 645.49,
+        "pnl": 15.0
+      },
+      {
+        "price": 650.1,
+        "pnl": 15.0
+      },
+      {
+        "price": 654.71,
+        "pnl": 15.0
+      },
+      {
+        "price": 659.32,
+        "pnl": 15.0
+      },
+      {
+        "price": 663.93,
+        "pnl": 15.0
+      },
+      {
+        "price": 668.54,
+        "pnl": 15.0
+      },
+      {
+        "price": 673.15,
+        "pnl": 15.0
+      },
+      {
+        "price": 677.76,
+        "pnl": 15.0
+      },
+      {
+        "price": 682.37,
+        "pnl": 15.0
+      },
+      {
+        "price": 686.99,
+        "pnl": 15.0
+      },
+      {
+        "price": 691.6,
+        "pnl": 15.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.776,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2984,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "547.73",
+    "EMA50": "537.72",
+    "EMA100": "519.04",
+    "EMA200": "465.60",
+    "RSI(14)": "63.22",
+    "ATR(14)": "16.44",
+    "ADX(14)": "17.28",
+    "BB(20,2)": "0.83"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Applied Optoelectronics Is Up 205% This Year. Is It Too Late to Buy AAOI Stock Now?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-205-too-buy-185511376.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sector Update: Tech Stocks Edge Higher Premarket Thursday",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/articles/sector-tech-stocks-edge-higher-131227380.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Sector Update: Tech",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/articles/sector-tech-125545794.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here\u2019s What Michael Burry Sees in His Palantir Short That Others Don\u2019t",
+      "publisher": "Barchart",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-sees-palantir-short-121755325.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SOXX Posts Worst Quarter In Over A Year \u2014 Michael Burry Cites An 1880 Story To Flag AI\u2019s \u2018Power-Hungry\u2019 Chip Race",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/soxx-posts-worst-quarter-over-073140075.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Micron Earnings Could Be the Catalyst This Wildly Popular ETF Needs",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/b9a36510-b5a7-38b0-915e-a91031276b1b/micron-earnings-could-be-the.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

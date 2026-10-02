@@ -1,0 +1,405 @@
+{
+  "symbol": "WFC",
+  "last_price": 80.25,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.2,
+  "fit_score": 32.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 32.5,
+  "vix": 16.0,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (32.6) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 80.0,
+        "strike_formatted": "80",
+        "option_type": "Put",
+        "delta": -0.422,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x WFC 20-Nov-2026 80 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 76.0,
+        "strike_formatted": "76",
+        "option_type": "Put",
+        "delta": -0.142,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x WFC 20-Nov-2026 76 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 1.6,
+    "stop_loss_price": 81.86,
+    "take_profit_price": 76.0,
+    "net_delta": -0.28,
+    "net_theta": -0.005,
+    "probability_of_profit": 45.1,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 64.2,
+        "pnl": 2.4
+      },
+      {
+        "price": 64.84,
+        "pnl": 2.4
+      },
+      {
+        "price": 65.48,
+        "pnl": 2.4
+      },
+      {
+        "price": 66.13,
+        "pnl": 2.4
+      },
+      {
+        "price": 66.77,
+        "pnl": 2.4
+      },
+      {
+        "price": 67.41,
+        "pnl": 2.4
+      },
+      {
+        "price": 68.05,
+        "pnl": 2.4
+      },
+      {
+        "price": 68.69,
+        "pnl": 2.4
+      },
+      {
+        "price": 69.34,
+        "pnl": 2.4
+      },
+      {
+        "price": 69.98,
+        "pnl": 2.4
+      },
+      {
+        "price": 70.62,
+        "pnl": 2.4
+      },
+      {
+        "price": 71.26,
+        "pnl": 2.4
+      },
+      {
+        "price": 71.9,
+        "pnl": 2.4
+      },
+      {
+        "price": 72.55,
+        "pnl": 2.4
+      },
+      {
+        "price": 73.19,
+        "pnl": 2.4
+      },
+      {
+        "price": 73.83,
+        "pnl": 2.4
+      },
+      {
+        "price": 74.47,
+        "pnl": 2.4
+      },
+      {
+        "price": 75.11,
+        "pnl": 2.4
+      },
+      {
+        "price": 75.76,
+        "pnl": 2.4
+      },
+      {
+        "price": 76.4,
+        "pnl": 2.0
+      },
+      {
+        "price": 77.04,
+        "pnl": 1.36
+      },
+      {
+        "price": 77.68,
+        "pnl": 0.72
+      },
+      {
+        "price": 78.32,
+        "pnl": 0.08
+      },
+      {
+        "price": 78.97,
+        "pnl": -0.57
+      },
+      {
+        "price": 79.61,
+        "pnl": -1.21
+      },
+      {
+        "price": 80.25,
+        "pnl": -1.6
+      },
+      {
+        "price": 80.89,
+        "pnl": -1.6
+      },
+      {
+        "price": 81.53,
+        "pnl": -1.6
+      },
+      {
+        "price": 82.18,
+        "pnl": -1.6
+      },
+      {
+        "price": 82.82,
+        "pnl": -1.6
+      },
+      {
+        "price": 83.46,
+        "pnl": -1.6
+      },
+      {
+        "price": 84.1,
+        "pnl": -1.6
+      },
+      {
+        "price": 84.74,
+        "pnl": -1.6
+      },
+      {
+        "price": 85.39,
+        "pnl": -1.6
+      },
+      {
+        "price": 86.03,
+        "pnl": -1.6
+      },
+      {
+        "price": 86.67,
+        "pnl": -1.6
+      },
+      {
+        "price": 87.31,
+        "pnl": -1.6
+      },
+      {
+        "price": 87.95,
+        "pnl": -1.6
+      },
+      {
+        "price": 88.6,
+        "pnl": -1.6
+      },
+      {
+        "price": 89.24,
+        "pnl": -1.6
+      },
+      {
+        "price": 89.88,
+        "pnl": -1.6
+      },
+      {
+        "price": 90.52,
+        "pnl": -1.6
+      },
+      {
+        "price": 91.16,
+        "pnl": -1.6
+      },
+      {
+        "price": 91.81,
+        "pnl": -1.6
+      },
+      {
+        "price": 92.45,
+        "pnl": -1.6
+      },
+      {
+        "price": 93.09,
+        "pnl": -1.6
+      },
+      {
+        "price": 93.73,
+        "pnl": -1.6
+      },
+      {
+        "price": 94.37,
+        "pnl": -1.6
+      },
+      {
+        "price": 95.02,
+        "pnl": -1.6
+      },
+      {
+        "price": 95.66,
+        "pnl": -1.6
+      },
+      {
+        "price": 96.3,
+        "pnl": -1.6
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.673,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2057,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "84.11",
+    "EMA50": "85.26",
+    "EMA100": "84.86",
+    "EMA200": "83.90",
+    "RSI(14)": "32.58",
+    "ATR(14)": "1.93",
+    "ADX(14)": "23.07",
+    "BB(20,2)": "0.14"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "MSFT Stock Lands On Wells Fargo\u2019s Q4 \u2018Tactical Ideas List\u2019 \u2013 Analyst Sees A 41% Upside Potential",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/msft-stock-lands-wells-fargo-171306741.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microsoft Stock Gets Flashy New Price Target From Wells Fargo",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stock-gets-flashy-price-170430954.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AppLovin Falls 3% as Wells Fargo Calls Pixel Install Spike a False Start; Trade Desk Sits Out the Selloff, Magnite Dips",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/applovin-falls-3-wells-fargo-160210854.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "WFC's Credit Rating Upgraded to 'A-' by S&P, Outlook Remains Stable",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wfcs-credit-rating-upgraded-p-154100981.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Microsoft Just Got a $725 Price Target as Wells Fargo Bets on Its AI Edge",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-just-got-725-price-152718229.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netflix\u2019s Problem Isn\u2019t Subscribers, It\u2019s Losing the Attention War",
+      "publisher": "Barchart",
+      "link": "https://finance.yahoo.com/media-advertising/articles/netflix-problem-isn-t-subscribers-130002806.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

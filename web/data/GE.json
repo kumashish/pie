@@ -1,0 +1,405 @@
+{
+  "symbol": "GE",
+  "last_price": 363.93,
+  "as_of": "2026-08-03 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.5,
+  "fit_score": 75.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 75.0,
+  "vix": 15.6,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (73.8% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 365.0,
+        "strike_formatted": "365",
+        "option_type": "Call",
+        "delta": 0.535,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Buy 1x GE 18-Sep-2026 365 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 380.0,
+        "strike_formatted": "380",
+        "option_type": "Call",
+        "delta": 0.262,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Sell 1x GE 18-Sep-2026 380 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 6.0,
+    "stop_loss_price": 356.66,
+    "take_profit_price": 380.0,
+    "net_delta": 0.273,
+    "net_theta": -0.029,
+    "probability_of_profit": 51.0,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 291.15,
+        "pnl": -6.0
+      },
+      {
+        "price": 294.06,
+        "pnl": -6.0
+      },
+      {
+        "price": 296.97,
+        "pnl": -6.0
+      },
+      {
+        "price": 299.88,
+        "pnl": -6.0
+      },
+      {
+        "price": 302.79,
+        "pnl": -6.0
+      },
+      {
+        "price": 305.71,
+        "pnl": -6.0
+      },
+      {
+        "price": 308.62,
+        "pnl": -6.0
+      },
+      {
+        "price": 311.53,
+        "pnl": -6.0
+      },
+      {
+        "price": 314.44,
+        "pnl": -6.0
+      },
+      {
+        "price": 317.35,
+        "pnl": -6.0
+      },
+      {
+        "price": 320.26,
+        "pnl": -6.0
+      },
+      {
+        "price": 323.17,
+        "pnl": -6.0
+      },
+      {
+        "price": 326.09,
+        "pnl": -6.0
+      },
+      {
+        "price": 329.0,
+        "pnl": -6.0
+      },
+      {
+        "price": 331.91,
+        "pnl": -6.0
+      },
+      {
+        "price": 334.82,
+        "pnl": -6.0
+      },
+      {
+        "price": 337.73,
+        "pnl": -6.0
+      },
+      {
+        "price": 340.64,
+        "pnl": -6.0
+      },
+      {
+        "price": 343.55,
+        "pnl": -6.0
+      },
+      {
+        "price": 346.47,
+        "pnl": -6.0
+      },
+      {
+        "price": 349.38,
+        "pnl": -6.0
+      },
+      {
+        "price": 352.29,
+        "pnl": -6.0
+      },
+      {
+        "price": 355.2,
+        "pnl": -6.0
+      },
+      {
+        "price": 358.11,
+        "pnl": -6.0
+      },
+      {
+        "price": 361.02,
+        "pnl": -6.0
+      },
+      {
+        "price": 363.93,
+        "pnl": -6.0
+      },
+      {
+        "price": 366.85,
+        "pnl": -4.15
+      },
+      {
+        "price": 369.76,
+        "pnl": -1.24
+      },
+      {
+        "price": 372.67,
+        "pnl": 1.67
+      },
+      {
+        "price": 375.58,
+        "pnl": 4.58
+      },
+      {
+        "price": 378.49,
+        "pnl": 7.49
+      },
+      {
+        "price": 381.4,
+        "pnl": 9.0
+      },
+      {
+        "price": 384.32,
+        "pnl": 9.0
+      },
+      {
+        "price": 387.23,
+        "pnl": 9.0
+      },
+      {
+        "price": 390.14,
+        "pnl": 9.0
+      },
+      {
+        "price": 393.05,
+        "pnl": 9.0
+      },
+      {
+        "price": 395.96,
+        "pnl": 9.0
+      },
+      {
+        "price": 398.87,
+        "pnl": 9.0
+      },
+      {
+        "price": 401.78,
+        "pnl": 9.0
+      },
+      {
+        "price": 404.7,
+        "pnl": 9.0
+      },
+      {
+        "price": 407.61,
+        "pnl": 9.0
+      },
+      {
+        "price": 410.52,
+        "pnl": 9.0
+      },
+      {
+        "price": 413.43,
+        "pnl": 9.0
+      },
+      {
+        "price": 416.34,
+        "pnl": 9.0
+      },
+      {
+        "price": 419.25,
+        "pnl": 9.0
+      },
+      {
+        "price": 422.16,
+        "pnl": 9.0
+      },
+      {
+        "price": 425.08,
+        "pnl": 9.0
+      },
+      {
+        "price": 427.99,
+        "pnl": 9.0
+      },
+      {
+        "price": 430.9,
+        "pnl": 9.0
+      },
+      {
+        "price": 433.81,
+        "pnl": 9.0
+      },
+      {
+        "price": 436.72,
+        "pnl": 9.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.758,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2822,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "355.03",
+    "EMA50": "344.96",
+    "EMA100": "331.45",
+    "EMA200": "312.96",
+    "RSI(14)": "57.79",
+    "ATR(14)": "10.16",
+    "ADX(14)": "18.35",
+    "BB(20,2)": "0.81"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Volume Flow (>1.2x 20d Avg)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "The Production Ramp That Could Repower Boeing Stock",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/m/c4195c2a-7ad1-372f-b27b-fe4c0a605838/the-production-ramp-that.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Matthew Scagnelli Named ATSG Chief Human Resources Officer",
+      "publisher": "Business Wire",
+      "link": "https://finance.yahoo.com/small-business/articles/matthew-scagnelli-named-atsg-chief-134300855.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Elon Musk's AI Data Centers Need So Much Power He's Buying Gas Turbine Companies -- Who Else Benefits?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/m/e1bfa492-6d4b-33f1-a946-9ce0dc87f461/elon-musk%27s-ai-data-centers.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "GE Aerospace, AI Play Lead Five Stocks Near Buy Points",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/df151b04-cc7c-3a1a-a082-cc5bd30c5d51/ge-aerospace%2C-ai-play-lead.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "$5,000 in GE Vernova at Its 2024 Low Would Be Worth This Much Now",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/m/b248eaa4-5004-3d0d-bee0-63f8cca161fd/%245%2C000-in-ge-vernova-at-its.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IBD Stock Of The Day: GE Aerospace Rises In Buy Zone After Earnings Letdown",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/e194f146-3950-3068-b42b-3d3876acb920/ibd-stock-of-the-day%3A-ge.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    }
+  ]
+}

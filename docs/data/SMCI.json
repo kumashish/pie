@@ -1,0 +1,405 @@
+{
+  "symbol": "SMCI",
+  "last_price": 41.92,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.2,
+  "fit_score": 72.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 72.5,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (69.3% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 42.0,
+        "strike_formatted": "42",
+        "option_type": "Call",
+        "delta": 0.544,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x SMCI 20-Nov-2026 42 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 44.0,
+        "strike_formatted": "44",
+        "option_type": "Call",
+        "delta": 0.248,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x SMCI 20-Nov-2026 44 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 0.8,
+    "stop_loss_price": 41.08,
+    "take_profit_price": 44.0,
+    "net_delta": 0.296,
+    "net_theta": -0.004,
+    "probability_of_profit": 51.5,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 33.54,
+        "pnl": -0.8
+      },
+      {
+        "price": 33.87,
+        "pnl": -0.8
+      },
+      {
+        "price": 34.21,
+        "pnl": -0.8
+      },
+      {
+        "price": 34.54,
+        "pnl": -0.8
+      },
+      {
+        "price": 34.88,
+        "pnl": -0.8
+      },
+      {
+        "price": 35.21,
+        "pnl": -0.8
+      },
+      {
+        "price": 35.55,
+        "pnl": -0.8
+      },
+      {
+        "price": 35.88,
+        "pnl": -0.8
+      },
+      {
+        "price": 36.22,
+        "pnl": -0.8
+      },
+      {
+        "price": 36.55,
+        "pnl": -0.8
+      },
+      {
+        "price": 36.89,
+        "pnl": -0.8
+      },
+      {
+        "price": 37.22,
+        "pnl": -0.8
+      },
+      {
+        "price": 37.56,
+        "pnl": -0.8
+      },
+      {
+        "price": 37.9,
+        "pnl": -0.8
+      },
+      {
+        "price": 38.23,
+        "pnl": -0.8
+      },
+      {
+        "price": 38.57,
+        "pnl": -0.8
+      },
+      {
+        "price": 38.9,
+        "pnl": -0.8
+      },
+      {
+        "price": 39.24,
+        "pnl": -0.8
+      },
+      {
+        "price": 39.57,
+        "pnl": -0.8
+      },
+      {
+        "price": 39.91,
+        "pnl": -0.8
+      },
+      {
+        "price": 40.24,
+        "pnl": -0.8
+      },
+      {
+        "price": 40.58,
+        "pnl": -0.8
+      },
+      {
+        "price": 40.91,
+        "pnl": -0.8
+      },
+      {
+        "price": 41.25,
+        "pnl": -0.8
+      },
+      {
+        "price": 41.58,
+        "pnl": -0.8
+      },
+      {
+        "price": 41.92,
+        "pnl": -0.8
+      },
+      {
+        "price": 42.26,
+        "pnl": -0.54
+      },
+      {
+        "price": 42.59,
+        "pnl": -0.21
+      },
+      {
+        "price": 42.93,
+        "pnl": 0.13
+      },
+      {
+        "price": 43.26,
+        "pnl": 0.46
+      },
+      {
+        "price": 43.6,
+        "pnl": 0.8
+      },
+      {
+        "price": 43.93,
+        "pnl": 1.13
+      },
+      {
+        "price": 44.27,
+        "pnl": 1.2
+      },
+      {
+        "price": 44.6,
+        "pnl": 1.2
+      },
+      {
+        "price": 44.94,
+        "pnl": 1.2
+      },
+      {
+        "price": 45.27,
+        "pnl": 1.2
+      },
+      {
+        "price": 45.61,
+        "pnl": 1.2
+      },
+      {
+        "price": 45.94,
+        "pnl": 1.2
+      },
+      {
+        "price": 46.28,
+        "pnl": 1.2
+      },
+      {
+        "price": 46.62,
+        "pnl": 1.2
+      },
+      {
+        "price": 46.95,
+        "pnl": 1.2
+      },
+      {
+        "price": 47.29,
+        "pnl": 1.2
+      },
+      {
+        "price": 47.62,
+        "pnl": 1.2
+      },
+      {
+        "price": 47.96,
+        "pnl": 1.2
+      },
+      {
+        "price": 48.29,
+        "pnl": 1.2
+      },
+      {
+        "price": 48.63,
+        "pnl": 1.2
+      },
+      {
+        "price": 48.96,
+        "pnl": 1.2
+      },
+      {
+        "price": 49.3,
+        "pnl": 1.2
+      },
+      {
+        "price": 49.63,
+        "pnl": 1.2
+      },
+      {
+        "price": 49.97,
+        "pnl": 1.2
+      },
+      {
+        "price": 50.3,
+        "pnl": 1.2
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.743,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2687,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "39.96",
+    "EMA50": "37.21",
+    "EMA100": "35.11",
+    "EMA200": "34.84",
+    "RSI(14)": "58.74",
+    "ATR(14)": "2.26",
+    "ADX(14)": "26.27",
+    "BB(20,2)": "0.75"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "What Is The Case For Waiting On Hewlett Packard Enterprise Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/case-waiting-hewlett-packard-enterprise-194116984.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Vertiv Soars 49% YTD: Is This the Right Time to Buy the Stock?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/vertiv-soars-49-ytd-time-152800473.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SMCI or WDC: Which Is the Better Value Stock Right Now?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/smci-wdc-better-value-stock-144002564.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Super Micro Computer Stock Has More Room to Run",
+      "publisher": "Barchart",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-super-micro-computer-stock-142011134.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Penguin Solutions' AI Backlog Grows: Is Future Sales Taking Shape?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/technology/ai/articles/penguin-solutions-ai-backlog-grows-140700620.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top 3 AI Stocks With Revenue Growth Over 20%",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/top-3-ai-stocks-revenue-131010751.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    }
+  ]
+}

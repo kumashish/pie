@@ -1,0 +1,405 @@
+{
+  "symbol": "BPCL.NS",
+  "last_price": 300.6,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.2,
+  "fit_score": 12.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 12.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (77.5% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 300.0,
+        "strike_formatted": "300",
+        "option_type": "Put",
+        "delta": -0.422,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x BPCL.NS 24-Nov-2026 300 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 290.0,
+        "strike_formatted": "290",
+        "option_type": "Put",
+        "delta": -0.209,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x BPCL.NS 24-Nov-2026 290 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 306.61,
+    "take_profit_price": 290.0,
+    "net_delta": -0.213,
+    "net_theta": -0.007,
+    "probability_of_profit": 45.0,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 240.48,
+        "pnl": 6.0
+      },
+      {
+        "price": 242.88,
+        "pnl": 6.0
+      },
+      {
+        "price": 245.29,
+        "pnl": 6.0
+      },
+      {
+        "price": 247.69,
+        "pnl": 6.0
+      },
+      {
+        "price": 250.1,
+        "pnl": 6.0
+      },
+      {
+        "price": 252.5,
+        "pnl": 6.0
+      },
+      {
+        "price": 254.91,
+        "pnl": 6.0
+      },
+      {
+        "price": 257.31,
+        "pnl": 6.0
+      },
+      {
+        "price": 259.72,
+        "pnl": 6.0
+      },
+      {
+        "price": 262.12,
+        "pnl": 6.0
+      },
+      {
+        "price": 264.53,
+        "pnl": 6.0
+      },
+      {
+        "price": 266.93,
+        "pnl": 6.0
+      },
+      {
+        "price": 269.34,
+        "pnl": 6.0
+      },
+      {
+        "price": 271.74,
+        "pnl": 6.0
+      },
+      {
+        "price": 274.15,
+        "pnl": 6.0
+      },
+      {
+        "price": 276.55,
+        "pnl": 6.0
+      },
+      {
+        "price": 278.96,
+        "pnl": 6.0
+      },
+      {
+        "price": 281.36,
+        "pnl": 6.0
+      },
+      {
+        "price": 283.77,
+        "pnl": 6.0
+      },
+      {
+        "price": 286.17,
+        "pnl": 6.0
+      },
+      {
+        "price": 288.58,
+        "pnl": 6.0
+      },
+      {
+        "price": 290.98,
+        "pnl": 5.02
+      },
+      {
+        "price": 293.39,
+        "pnl": 2.61
+      },
+      {
+        "price": 295.79,
+        "pnl": 0.21
+      },
+      {
+        "price": 298.2,
+        "pnl": -2.2
+      },
+      {
+        "price": 300.6,
+        "pnl": -4.0
+      },
+      {
+        "price": 303.0,
+        "pnl": -4.0
+      },
+      {
+        "price": 305.41,
+        "pnl": -4.0
+      },
+      {
+        "price": 307.81,
+        "pnl": -4.0
+      },
+      {
+        "price": 310.22,
+        "pnl": -4.0
+      },
+      {
+        "price": 312.62,
+        "pnl": -4.0
+      },
+      {
+        "price": 315.03,
+        "pnl": -4.0
+      },
+      {
+        "price": 317.43,
+        "pnl": -4.0
+      },
+      {
+        "price": 319.84,
+        "pnl": -4.0
+      },
+      {
+        "price": 322.24,
+        "pnl": -4.0
+      },
+      {
+        "price": 324.65,
+        "pnl": -4.0
+      },
+      {
+        "price": 327.05,
+        "pnl": -4.0
+      },
+      {
+        "price": 329.46,
+        "pnl": -4.0
+      },
+      {
+        "price": 331.86,
+        "pnl": -4.0
+      },
+      {
+        "price": 334.27,
+        "pnl": -4.0
+      },
+      {
+        "price": 336.67,
+        "pnl": -4.0
+      },
+      {
+        "price": 339.08,
+        "pnl": -4.0
+      },
+      {
+        "price": 341.48,
+        "pnl": -4.0
+      },
+      {
+        "price": 343.89,
+        "pnl": -4.0
+      },
+      {
+        "price": 346.29,
+        "pnl": -4.0
+      },
+      {
+        "price": 348.7,
+        "pnl": -4.0
+      },
+      {
+        "price": 351.1,
+        "pnl": -4.0
+      },
+      {
+        "price": 353.51,
+        "pnl": -4.0
+      },
+      {
+        "price": 355.91,
+        "pnl": -4.0
+      },
+      {
+        "price": 358.32,
+        "pnl": -4.0
+      },
+      {
+        "price": 360.72,
+        "pnl": -4.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.771,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2939,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "307.44",
+    "EMA50": "310.13",
+    "EMA100": "312.24",
+    "EMA200": "317.23",
+    "RSI(14)": "41.00",
+    "ATR(14)": "6.95",
+    "ADX(14)": "27.92",
+    "BB(20,2)": "0.22"
+  },
+  "rules": [
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Akasa Air and BPCL test 1 per cent SAF on Mumbai-Goa commercial flight",
+      "publisher": "ET Sustainability",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTFc3Wmp5MUp5bDlVTmRKenM0bk1yeExtU0ZMbnp2aW9pQ2hDa1FKQ0tBZEpUY3AxZFFiOVJDZVlmS3Z5VnVzUVBEd2RvTHY1azZuSkppeFJrd2ZaSGZLdEZId2M2S1R4WTBIcnkzRVJuWUpScTd5SzZxM3hmanN6WThPeU1YXy1sOC1BbEVtNTVRQjRnQjdzNFFQcmZOTXRFUUliVU5qTlgyT1FxNGcwWThfVDFRdVhkb0dDV0pDM1dNWXRxYXZyWFNRZGN2QmJWQmlGWlNLbnUtNFNKcktZLU1ieUJvMk1NTlBCRld0bEpDQ2Zq0gH0AUFVX3lxTE9MVzdaankxSnlsOVVOZEp6czRuTXJ4TG1TRkxuenZpb2lDaENrUUpDS0FkSlRjcDFkUWI5UkNlWWZLdnlWdXNRUER3ZG9MdjVrNm5KSml4Umt3ZlpIZkt0Rkh3YzZLVHhZMEhyeTNFUm5ZSlJxN3lLNnEzeGZqc3pZOE95TVhfLWw4LUFsRW01NVFCNGdCN3M0UVByZk5NdEVRSWJVTmpOWDJPUXE0ZzBZOF9UMVF1WGRvR0NXSkMzV01ZdHFhdnJYU1FkY3ZCYlZCaUZaU0tudS00U0pyS1ktTWJ5Qm8yTU1OUEJGV3RsSkNDZmo?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IOC, HPCL, BPCL shares rise - What is behind the rally in crude oil-linked stocks?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNb0xKV3VOVlFINTAwTC1hdFJRa25XenR2V1h5Umdmd2VZSTlTaXZXN2JwVDQwbEFPb2NwRExyVmJza1VtWVNrM0ZfdFZJVlVZend0VVRwT2hETWxvVjA5eWtQdXdkUFNKRWIwZ3VaUXktS0dGckR4TzROUkp0ZER3eXZzRG55WUZNcTVMRFN6NVNxakE0U3RiVTNRYndtMC1adkpRUmZaUl9jWU1EdjhvMHF5OVdCUGR5MU92VVQ5SXAzVXM3U0tDMmtDb2NwM2tSNUduRHNJd2xfdlJMQkZkSNIB5gFBVV95cUxNTE44c3VMNzlEZUl0b1BHdEIyZTEtSjA1QlhMd2tjT0FGQk9WNDFkUy15Z3UxMnd1bVZ1cGszRkVOU1JuTkVQX2JoMTdYcDFTekR2UG04blN4VXl6Qk9UYktka0h1MGVJSDRoR0tjZE14SWdxUTV3djBwM2V1ZmtNemRRSGJsd2cyTld4ZVdEenMxQWJrY1FFelIycDA2NWpEUGJQSU5BOGxVc3FpMF82Tk9PdFpkYjRvUV9CME93R3MtYlc2U0Q0cEJYVHo5b3ZoRkM5cVNacFZYbDExdHJGWFVFZzNFUQ?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Cheaper at pumps, costlier in bulk: Jio-bp, Nayara cap diesel sales; PSUs may follow: Report",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQMjR3Mk02VzZ6c0luMG1IbUs4UnJuUFFxMU9qcDFUMVdpQ3ZPdDg5RjNiMUVSSW9wSnhaV3k2VmRYcTRBcENSb3kwSk9KRUxYQ3N1Tmw2WllwTFBVUWV2RXR4NU9EbTdsdW9HQUxuZ3ZsUVFYVXRDYXpoS1JMeGlyaDBVVDAzQUktRnVWcEJTWEJwazVTNFdxc0QxTmdUejB3VWJOTUQ0MmF2d1dtQVV1TzMzQTZGSnRLM0RhVFNXWmNoME9xcUtmS1pwYzUyTVpncm9aNDk4YnJPRVBYdXpxM285eFhSVkVpZmtHUU4zMFN2V3ZUbXAzOEVWdzVvMVE3NTlucdIB_gFBVV95cUxPX2VWYzEzRTFhSXpQNm1FS215d045cmJ2NEhJNEVuUWl6QThfdF9iZGhvQTdZUFdrRXk2NHg2TlRPSXFlcWlza2dIMFNwb29jX051dXBQTllBN0VVcVM0bE1vakZBZmdEeHNCY1UzWE1uVEFCWVBtVmlwbkE1LVhSVkw3T25zYncxdkU2c21XRHBtRnVsMlNBS2hxOHc0R2F4cEl6YkVKckpEc1ppVjNqUmxEVllCOGlnSVJaREhWcUhROGFvQ0NucDljRFdQQmdFSDg3aUpITWlsMVpsRGNVNm5BMzRhVEo3V2lPdEladUhRLWZFbFR5ZmxVRkUzdw?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Live: Bank Nifty gains ahead of quarterly updates; Hospital stocks decline | Closing Bell",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOYlM2dXB3bndkdWo4NVlUbXdyaHI0MEVSZTIyR1V3ZEVuTzJvX1JmcHh2MVJ4bVh1YXNzeVd1YW5hc0V4cWFMNExCMmdtNXVZYWlGMUZ5MmxfT090TXRZYkZWczNxb20wUUxVb25rSGgtSURxWElpWENtbUhSZGF4TnVVXzMyaEZ0aGJlVFRTZ0MtVFF3WF95UHpjZVctbHBid0NHWDJYMW5jRHQyaGhGbkVzcElBenY3SDlZT2RlbDJaSmdqZmc0SFl6Zm9RUWV5RHQ4T0JRUmJsNDRiQzVSV0hlcmJWdzVo0gHuAUFVX3lxTE9vRGpLY0l4c2RZS09yMjJrejE0Z2VOWlBVLU5YTG12djlPSWpnZ01oRThGMDdNdmRkeHpfXzZsQWZkWlB0Nnp4N2E4dE1RQUFfR3lnM1FXcnhZVXFiY3k5X01uMkEtdWRwUVBiOFNVSWJ5a1h4WHA2bm9kTzdVRURDWjY4RFBBX0xSZ0ZSQXlENWVERVptem51bzNndHQ5Z2VEcWpZdXNPSVUxbDdhQXFwRDVBVnVfYk01bDAySU4yZ3NMa0lLNFpQVG9qSlBJc3ptOEZlMEYtal9GNHhJVGZyUndlZ2NQUWNwZnUyNGc?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "The financial risks you cannot see coming",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVmNzd0k5b0R5SWdpMkhQTTQ1M0pMM1FaTkE2LU1RZGxGZXZ2SmNJSmplREhCMm5NQ1MzcktuczJpUUJDZHZwSWNMdC1aVjBreDBRaTBjbGdZY2U0YzhWU0g0VkcyVlo1OUxUNGt0dVUwZF9JR1NKX0JHTkhUNGV3QkVqV3hsc2RnVDRCeVI0OWJaeUNTbEZmQXptaGh1dGxUOWpZcTZGak9vajNubGRrdkt3Sk9XVjRNMVRtNEV2VDhxMzhfcXhWTEpPX3hPV1E2eTdiT3NuTG9qWC1peUtYd1gxVVE4WkJ6aVpuZnJZcG9MX2k2TlZ3dWhB0gH_AUFVX3lxTE12MVhGVUgwVGNLa2hMck51WUlEUzlCUlRwM0JVSDI3TUZSTmduWEVnU0dTTzJ6NFpZUUR6YVBTSTl1N2E0dUtKREtNeWdUQS03d2daREpjOE5ZRnNiZDRPMmxsVTFQZlpDMTdJSTZram9CaFctNXpaWkNmcjZGN1VIdGZCUVVhRk1hWk0tUmxOWW5ZOHIySFVqbTNnRXJKM0phT0w3WFZUUXNuVnFwOG43anA3cFZJdzNuU25tUGJXZkhhcndMQXYwOGY1US1KZWZjSzhlMmF4YjdPZDRsOGdiQlQ4c21lRXV2b1ZzeURLN3U3aW5pX0tmcHBBTG55bw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Before chasing new investments, ask yourself these six questions",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObkV4eU95M0R6MmhpNVgtNDBNZXFLczRmYkpiRE5Ea2tDSktiZEZ6cF9PTTFCTzkxY0s2OGJuRHhnYTNYaFNTcGJPam9XSXJBRU9EX1N0MENLV0ZOX1lDVFZTZnJ3UjJ6eFlJNGxpT1N6eFJ6dWwzQkxGYnF3ZkY0cGVkdHpoQUlVbnpyZjVZZUdOcmI4UkRDalM1UUsyYllNZWhNdlpRNXBzaU80Qzlxc09wZlVYd1hIRFdUR3FzSdIBxAFBVV95cUxOeXhiUVFsRUlmLUpyeXNYLWh1Rk51c0loQW83eXRPcVhPelptZjhra3pIcll0RU1fUzJpTDdqczZ6Q2l6ZTR4cjFBQWVFMzRmVERDNG16X29fUElnSl9LZGFiUTlmR2YtWWFWMU1DODFjTUtmTVhxdGQ5LUNDQnBkekdXV0hoeTF1UFZkMko5MHlxX3BQaFNzVXB6RmFRNUhaM1J6UFZ0RDVDRU5XUWtPZnEtQ08xSW1ObWMzc3hyWnhJcVpW?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

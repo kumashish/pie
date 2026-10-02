@@ -1,0 +1,405 @@
+{
+  "symbol": "APOLLOHOSP.NS",
+  "last_price": 8133.5,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.5,
+  "fit_score": 25.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 25.0,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (29.7) is oversold (< 35) [Synthetic PCR: 1.47]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 8100.0,
+        "strike_formatted": "8100",
+        "option_type": "Put",
+        "delta": -0.407,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 8100 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 7800.0,
+        "strike_formatted": "7800",
+        "option_type": "Put",
+        "delta": -0.179,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 7800 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 120.0,
+    "stop_loss_price": 8296.17,
+    "take_profit_price": 7800.0,
+    "net_delta": -0.228,
+    "net_theta": -0.269,
+    "probability_of_profit": 43.4,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 6506.8,
+        "pnl": 180.0
+      },
+      {
+        "price": 6571.87,
+        "pnl": 180.0
+      },
+      {
+        "price": 6636.94,
+        "pnl": 180.0
+      },
+      {
+        "price": 6702.0,
+        "pnl": 180.0
+      },
+      {
+        "price": 6767.07,
+        "pnl": 180.0
+      },
+      {
+        "price": 6832.14,
+        "pnl": 180.0
+      },
+      {
+        "price": 6897.21,
+        "pnl": 180.0
+      },
+      {
+        "price": 6962.28,
+        "pnl": 180.0
+      },
+      {
+        "price": 7027.34,
+        "pnl": 180.0
+      },
+      {
+        "price": 7092.41,
+        "pnl": 180.0
+      },
+      {
+        "price": 7157.48,
+        "pnl": 180.0
+      },
+      {
+        "price": 7222.55,
+        "pnl": 180.0
+      },
+      {
+        "price": 7287.62,
+        "pnl": 180.0
+      },
+      {
+        "price": 7352.68,
+        "pnl": 180.0
+      },
+      {
+        "price": 7417.75,
+        "pnl": 180.0
+      },
+      {
+        "price": 7482.82,
+        "pnl": 180.0
+      },
+      {
+        "price": 7547.89,
+        "pnl": 180.0
+      },
+      {
+        "price": 7612.96,
+        "pnl": 180.0
+      },
+      {
+        "price": 7678.02,
+        "pnl": 180.0
+      },
+      {
+        "price": 7743.09,
+        "pnl": 180.0
+      },
+      {
+        "price": 7808.16,
+        "pnl": 171.84
+      },
+      {
+        "price": 7873.23,
+        "pnl": 106.77
+      },
+      {
+        "price": 7938.3,
+        "pnl": 41.7
+      },
+      {
+        "price": 8003.36,
+        "pnl": -23.36
+      },
+      {
+        "price": 8068.43,
+        "pnl": -88.43
+      },
+      {
+        "price": 8133.5,
+        "pnl": -120.0
+      },
+      {
+        "price": 8198.57,
+        "pnl": -120.0
+      },
+      {
+        "price": 8263.64,
+        "pnl": -120.0
+      },
+      {
+        "price": 8328.7,
+        "pnl": -120.0
+      },
+      {
+        "price": 8393.77,
+        "pnl": -120.0
+      },
+      {
+        "price": 8458.84,
+        "pnl": -120.0
+      },
+      {
+        "price": 8523.91,
+        "pnl": -120.0
+      },
+      {
+        "price": 8588.98,
+        "pnl": -120.0
+      },
+      {
+        "price": 8654.04,
+        "pnl": -120.0
+      },
+      {
+        "price": 8719.11,
+        "pnl": -120.0
+      },
+      {
+        "price": 8784.18,
+        "pnl": -120.0
+      },
+      {
+        "price": 8849.25,
+        "pnl": -120.0
+      },
+      {
+        "price": 8914.32,
+        "pnl": -120.0
+      },
+      {
+        "price": 8979.38,
+        "pnl": -120.0
+      },
+      {
+        "price": 9044.45,
+        "pnl": -120.0
+      },
+      {
+        "price": 9109.52,
+        "pnl": -120.0
+      },
+      {
+        "price": 9174.59,
+        "pnl": -120.0
+      },
+      {
+        "price": 9239.66,
+        "pnl": -120.0
+      },
+      {
+        "price": 9304.72,
+        "pnl": -120.0
+      },
+      {
+        "price": 9369.79,
+        "pnl": -120.0
+      },
+      {
+        "price": 9434.86,
+        "pnl": -120.0
+      },
+      {
+        "price": 9499.93,
+        "pnl": -120.0
+      },
+      {
+        "price": 9565.0,
+        "pnl": -120.0
+      },
+      {
+        "price": 9630.06,
+        "pnl": -120.0
+      },
+      {
+        "price": 9695.13,
+        "pnl": -120.0
+      },
+      {
+        "price": 9760.2,
+        "pnl": -120.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.689,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2201,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "8708.58",
+    "EMA50": "8734.56",
+    "EMA100": "8574.41",
+    "EMA200": "8236.90",
+    "RSI(14)": "29.66",
+    "ATR(14)": "191.82",
+    "ADX(14)": "19.14",
+    "BB(20,2)": "-0.17"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Stock Research Report for Apollo Hospitals Enterprise Limited",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaGR3UVdwOUFVMjluMVFJbVI4NTlBT0hwOU5XN3N2YW44MnpoNHNZUzJCT2xqaVZ1WHZWdFRVTGZMQXQwTm41WEZ6bmFlU3JrNDFPa1EwYTQ4SlpSTm5oekJWcVVOTVozbjJDRjhEU09ETjNac21fbk1PUGJwaGJpV2w5ZnRTOU1tUUVsbXRUS1VjOTdhUHRjeG96S0ZscTBuNnln?oc=5",
+      "published_at": "Sat, 15 Aug 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Apollo Hospitals Enterprise News",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnJhSnJld212YnRvMzYyYjdINHVYLXVybk16Mm9HTXJYbWcyOVpNMnlxaWRZVkoxOG9uRUFZY3FKbi1Qa1lzUGdRc3lRZGt2NDFnN0NOMDdsMi1zUTlZMWctNFRSWlJQVVNjdkd6d0Myc3pwaU14Vmt0OEV2R2dXeFhYZkhuNEtyVkJhN1g5SFMxTXhqa1dHdlBGV3VaQmp0d3JVcmd0a3NzTUxL?oc=5",
+      "published_at": "Thu, 07 Jul 2022",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Apollo Hospitals Enterprise Q1 Results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNlBWc1hkWV8xd2tWenpGaW1UVVNEV1RXcmVTcmpTc0ZqRGc4TjJ4NXNwcXdVc3hwdXFoa25JQkVOVXJlR2kwSnBTaUZhZkYzcDZoOVRyRXo0eFh6d2RuaERBaWJiSlI0R19fSGVSNFdiaE1VM0JpcXMxNWdXcnBGS01jRGRkdlRJU2ZIWlYxdnpZSlBiN0dj?oc=5",
+      "published_at": "Mon, 24 Jul 2023",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Apollo Hosp performs 8 spine surgeries using 'Mazor Robotics'",
+      "publisher": "ET HealthWorld",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSTFDNmdGUS1XN2dZekNzRG1ob3kyMXJYSi1idHlySDRyWk1WS1JSTVBxTHJrRTBxWFNGQlZVYXZ1OTFpcWJyektLd1pjN3I3NTI0c0l3dlFxZDNqdUwtZDgwTDUyX0FrbUNPZmtkdV9GV0ZGajh2NmV1QVR2RG5NTEVGdk83aHhhRVE2TnNFOVRjeFAyVWdEc0hLSkRXWVAwNnRXMlgwaVVZdVJ4UzZiRXRJR09NNnhtbGxRVU9TT1lJcmYzSEHSAcsBQVVfeXFMTjQzNkpfSF9PcTg4QU9uYmx3bWRTVzZfdGVEeU9ibjZDOFlrU0RZSGdvQjc3dER2M0h4MFI2dXBjX0FnVUhadERPMmlfWHM3LVQtSVkwN2JNbmEzVFJJeFRYMXpWMUNuU3kyN2lGcEZDWS1hUHJ5SFZGd1dsLUliY2hkM0ZJUDJPbjRhQ0NFSkJLa2lyTjdWMTc5Uk1uS3dJc2ctTzVyT0JiY0dtNmhzekVUeW56d2hrVUV3aUVVRUNBci15dm0xZVYzZVk?oc=5",
+      "published_at": "Wed, 24 Aug 2016",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Apollo Hospitals Enterprises",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUzR2UlNicHQ4dWVrdVMyTWhRR05uY1RMRHlqaXFMMkgwWDYyOTNNSHlid1dCSTBTd0JKcGtXLU5RclZZVkZOalFCQUlWZ3hoRml1SnNqNEl5WDhwS0hfemFlZzc1dHhya3VNMVE5cDdWdE5zd3ZBRG5jRGdUWEZIaWFfcHJFS05jODVlaFMxMHUxV0k?oc=5",
+      "published_at": "Thu, 14 Nov 2024",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Apollo Hospitals Enterprises",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVnc2eXFjekxpeU1QNktrb1l3SHNVQXRKUVBOTms5blJEVjZaOWVQTmtLNWZjWkRELXEzZFVXWXg4TjlRcUJtNFo2djJMYy1tZzNMZElqUGdVelVzdEhIak5lbU1NM0VuYTBaQ0hlTWoxaDlsXzE2c3phck05aTBlR2NOa2ZLOV9M?oc=5",
+      "published_at": "Thu, 14 Nov 2024",
+      "sentiment": "bullish"
+    }
+  ]
+}

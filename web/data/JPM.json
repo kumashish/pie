@@ -1,0 +1,417 @@
+{
+  "symbol": "JPM",
+  "last_price": 333.18,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.5,
+  "fit_score": 45.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 45.0,
+  "vix": 16.0,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (66.7% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 325.0,
+        "strike_formatted": "325",
+        "option_type": "Call",
+        "delta": 0.715,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x JPM 20-Nov-2026 325 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 335.0,
+        "strike_formatted": "335",
+        "option_type": "Call",
+        "delta": 0.52,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 2x JPM 20-Nov-2026 335 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 345.0,
+        "strike_formatted": "345",
+        "option_type": "Call",
+        "delta": 0.326,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x JPM 20-Nov-2026 345 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 65.0,
+    "margin_required": 15.0,
+    "stop_loss_price": 323.18,
+    "take_profit_price": 343.18,
+    "net_delta": 0.001,
+    "net_theta": 0.02,
+    "probability_of_profit": 38.8,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 266.54,
+        "pnl": -15.0
+      },
+      {
+        "price": 269.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 271.87,
+        "pnl": -15.0
+      },
+      {
+        "price": 274.54,
+        "pnl": -15.0
+      },
+      {
+        "price": 277.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 279.87,
+        "pnl": -15.0
+      },
+      {
+        "price": 282.54,
+        "pnl": -15.0
+      },
+      {
+        "price": 285.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 287.87,
+        "pnl": -15.0
+      },
+      {
+        "price": 290.53,
+        "pnl": -15.0
+      },
+      {
+        "price": 293.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 295.86,
+        "pnl": -15.0
+      },
+      {
+        "price": 298.53,
+        "pnl": -15.0
+      },
+      {
+        "price": 301.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 303.86,
+        "pnl": -15.0
+      },
+      {
+        "price": 306.53,
+        "pnl": -15.0
+      },
+      {
+        "price": 309.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 311.86,
+        "pnl": -15.0
+      },
+      {
+        "price": 314.52,
+        "pnl": -15.0
+      },
+      {
+        "price": 317.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 319.85,
+        "pnl": -15.0
+      },
+      {
+        "price": 322.52,
+        "pnl": -15.0
+      },
+      {
+        "price": 325.18,
+        "pnl": -14.82
+      },
+      {
+        "price": 327.85,
+        "pnl": -12.15
+      },
+      {
+        "price": 330.51,
+        "pnl": -9.49
+      },
+      {
+        "price": 333.18,
+        "pnl": -6.82
+      },
+      {
+        "price": 335.85,
+        "pnl": -5.85
+      },
+      {
+        "price": 338.51,
+        "pnl": -8.51
+      },
+      {
+        "price": 341.18,
+        "pnl": -11.18
+      },
+      {
+        "price": 343.84,
+        "pnl": -13.84
+      },
+      {
+        "price": 346.51,
+        "pnl": -15.0
+      },
+      {
+        "price": 349.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 351.84,
+        "pnl": -15.0
+      },
+      {
+        "price": 354.5,
+        "pnl": -15.0
+      },
+      {
+        "price": 357.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 359.83,
+        "pnl": -15.0
+      },
+      {
+        "price": 362.5,
+        "pnl": -15.0
+      },
+      {
+        "price": 365.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 367.83,
+        "pnl": -15.0
+      },
+      {
+        "price": 370.5,
+        "pnl": -15.0
+      },
+      {
+        "price": 373.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 375.83,
+        "pnl": -15.0
+      },
+      {
+        "price": 378.49,
+        "pnl": -15.0
+      },
+      {
+        "price": 381.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 383.82,
+        "pnl": -15.0
+      },
+      {
+        "price": 386.49,
+        "pnl": -15.0
+      },
+      {
+        "price": 389.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 391.82,
+        "pnl": -15.0
+      },
+      {
+        "price": 394.49,
+        "pnl": -15.0
+      },
+      {
+        "price": 397.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 399.82,
+        "pnl": -15.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.733,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2597,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "343.94",
+    "EMA50": "345.99",
+    "EMA100": "338.61",
+    "EMA200": "325.19",
+    "RSI(14)": "35.13",
+    "ATR(14)": "6.58",
+    "ADX(14)": "22.81",
+    "BB(20,2)": "0.13"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Tech, Media & Telecom Roundup: Market Talk",
+      "publisher": "The Wall Street Journal",
+      "link": "https://finance.yahoo.com/m/1e430004-cf7c-39d6-8d99-3a6511d2b412/tech%2C-media-%26-telecom.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why Veteran Strategists on Wall Street Are Bracing for Greater Volatility",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/a9c0651a-d1c9-30ca-b788-a17d8c023337/why-veteran-strategists-on.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPMorgan Chase (JPM) Taps Bond Markets, Is The Stock Still Undervalued?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-jpm-taps-bond-180942734.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPMorgan M&A chief Hernan Cristerna retiring after 30 years",
+      "publisher": "Quartz",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-m-chief-hernan-cristerna-180543542.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Noah Holdings (NOAH) Stock Fair Value Moves Lower After JPMorgan Target Cut",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/noah-holdings-noah-stock-fair-170957877.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bond selloff could mean outsized portfolio changes at quarter's end\u00a0",
+      "publisher": "Reuters",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/bond-selloff-could-mean-outsized-090434167.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

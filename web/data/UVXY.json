@@ -1,0 +1,370 @@
+{
+  "symbol": "UVXY",
+  "last_price": 17.47,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 17.5,
+  "vix": 16.0,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (70.3% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 17.0,
+        "strike_formatted": "17",
+        "option_type": "Put",
+        "delta": -0.271,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x UVXY 20-Nov-2026 17 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 16.0,
+        "strike_formatted": "16",
+        "option_type": "Put",
+        "delta": -0.05,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x UVXY 20-Nov-2026 16 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 0.4,
+    "stop_loss_price": 17.82,
+    "take_profit_price": 16.0,
+    "net_delta": -0.221,
+    "net_theta": -0.002,
+    "probability_of_profit": 29.6,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 13.98,
+        "pnl": 0.6
+      },
+      {
+        "price": 14.12,
+        "pnl": 0.6
+      },
+      {
+        "price": 14.26,
+        "pnl": 0.6
+      },
+      {
+        "price": 14.4,
+        "pnl": 0.6
+      },
+      {
+        "price": 14.54,
+        "pnl": 0.6
+      },
+      {
+        "price": 14.67,
+        "pnl": 0.6
+      },
+      {
+        "price": 14.81,
+        "pnl": 0.6
+      },
+      {
+        "price": 14.95,
+        "pnl": 0.6
+      },
+      {
+        "price": 15.09,
+        "pnl": 0.6
+      },
+      {
+        "price": 15.23,
+        "pnl": 0.6
+      },
+      {
+        "price": 15.37,
+        "pnl": 0.6
+      },
+      {
+        "price": 15.51,
+        "pnl": 0.6
+      },
+      {
+        "price": 15.65,
+        "pnl": 0.6
+      },
+      {
+        "price": 15.79,
+        "pnl": 0.6
+      },
+      {
+        "price": 15.93,
+        "pnl": 0.6
+      },
+      {
+        "price": 16.07,
+        "pnl": 0.53
+      },
+      {
+        "price": 16.21,
+        "pnl": 0.39
+      },
+      {
+        "price": 16.35,
+        "pnl": 0.25
+      },
+      {
+        "price": 16.49,
+        "pnl": 0.11
+      },
+      {
+        "price": 16.63,
+        "pnl": -0.03
+      },
+      {
+        "price": 16.77,
+        "pnl": -0.17
+      },
+      {
+        "price": 16.91,
+        "pnl": -0.31
+      },
+      {
+        "price": 17.05,
+        "pnl": -0.4
+      },
+      {
+        "price": 17.19,
+        "pnl": -0.4
+      },
+      {
+        "price": 17.33,
+        "pnl": -0.4
+      },
+      {
+        "price": 17.47,
+        "pnl": -0.4
+      },
+      {
+        "price": 17.61,
+        "pnl": -0.4
+      },
+      {
+        "price": 17.75,
+        "pnl": -0.4
+      },
+      {
+        "price": 17.89,
+        "pnl": -0.4
+      },
+      {
+        "price": 18.03,
+        "pnl": -0.4
+      },
+      {
+        "price": 18.17,
+        "pnl": -0.4
+      },
+      {
+        "price": 18.31,
+        "pnl": -0.4
+      },
+      {
+        "price": 18.45,
+        "pnl": -0.4
+      },
+      {
+        "price": 18.59,
+        "pnl": -0.4
+      },
+      {
+        "price": 18.73,
+        "pnl": -0.4
+      },
+      {
+        "price": 18.87,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.01,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.15,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.29,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.43,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.57,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.71,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.85,
+        "pnl": -0.4
+      },
+      {
+        "price": 19.99,
+        "pnl": -0.4
+      },
+      {
+        "price": 20.13,
+        "pnl": -0.4
+      },
+      {
+        "price": 20.27,
+        "pnl": -0.4
+      },
+      {
+        "price": 20.4,
+        "pnl": -0.4
+      },
+      {
+        "price": 20.54,
+        "pnl": -0.4
+      },
+      {
+        "price": 20.68,
+        "pnl": -0.4
+      },
+      {
+        "price": 20.82,
+        "pnl": -0.4
+      },
+      {
+        "price": 20.96,
+        "pnl": -0.4
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.746,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2714,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "17.74",
+    "EMA50": "19.95",
+    "EMA100": "24.48",
+    "EMA200": "35.29",
+    "RSI(14)": "43.45",
+    "ATR(14)": "0.77",
+    "ADX(14)": "18.46",
+    "BB(20,2)": "0.44"
+  },
+  "rules": [
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Seeking Stability? Investing in These ETFs Could Make Sense Now",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/seeking-stability-investing-etfs-could-153400975.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

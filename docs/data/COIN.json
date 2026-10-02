@@ -1,0 +1,384 @@
+{
+  "symbol": "COIN",
+  "last_price": 189.29,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.2,
+  "fit_score": 32.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 32.5,
+  "vix": 16.0,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (53.5% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 190.0,
+        "strike_formatted": "190",
+        "option_type": "Put",
+        "delta": -0.468,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x COIN 20-Nov-2026 190 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 180.0,
+        "strike_formatted": "180",
+        "option_type": "Put",
+        "delta": -0.158,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x COIN 20-Nov-2026 180 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 193.08,
+    "take_profit_price": 180.0,
+    "net_delta": -0.31,
+    "net_theta": -0.009,
+    "probability_of_profit": 49.6,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 151.43,
+        "pnl": 6.0
+      },
+      {
+        "price": 152.95,
+        "pnl": 6.0
+      },
+      {
+        "price": 154.46,
+        "pnl": 6.0
+      },
+      {
+        "price": 155.97,
+        "pnl": 6.0
+      },
+      {
+        "price": 157.49,
+        "pnl": 6.0
+      },
+      {
+        "price": 159.0,
+        "pnl": 6.0
+      },
+      {
+        "price": 160.52,
+        "pnl": 6.0
+      },
+      {
+        "price": 162.03,
+        "pnl": 6.0
+      },
+      {
+        "price": 163.55,
+        "pnl": 6.0
+      },
+      {
+        "price": 165.06,
+        "pnl": 6.0
+      },
+      {
+        "price": 166.58,
+        "pnl": 6.0
+      },
+      {
+        "price": 168.09,
+        "pnl": 6.0
+      },
+      {
+        "price": 169.6,
+        "pnl": 6.0
+      },
+      {
+        "price": 171.12,
+        "pnl": 6.0
+      },
+      {
+        "price": 172.63,
+        "pnl": 6.0
+      },
+      {
+        "price": 174.15,
+        "pnl": 6.0
+      },
+      {
+        "price": 175.66,
+        "pnl": 6.0
+      },
+      {
+        "price": 177.18,
+        "pnl": 6.0
+      },
+      {
+        "price": 178.69,
+        "pnl": 6.0
+      },
+      {
+        "price": 180.2,
+        "pnl": 5.8
+      },
+      {
+        "price": 181.72,
+        "pnl": 4.28
+      },
+      {
+        "price": 183.23,
+        "pnl": 2.77
+      },
+      {
+        "price": 184.75,
+        "pnl": 1.25
+      },
+      {
+        "price": 186.26,
+        "pnl": -0.26
+      },
+      {
+        "price": 187.78,
+        "pnl": -1.78
+      },
+      {
+        "price": 189.29,
+        "pnl": -3.29
+      },
+      {
+        "price": 190.8,
+        "pnl": -4.0
+      },
+      {
+        "price": 192.32,
+        "pnl": -4.0
+      },
+      {
+        "price": 193.83,
+        "pnl": -4.0
+      },
+      {
+        "price": 195.35,
+        "pnl": -4.0
+      },
+      {
+        "price": 196.86,
+        "pnl": -4.0
+      },
+      {
+        "price": 198.38,
+        "pnl": -4.0
+      },
+      {
+        "price": 199.89,
+        "pnl": -4.0
+      },
+      {
+        "price": 201.4,
+        "pnl": -4.0
+      },
+      {
+        "price": 202.92,
+        "pnl": -4.0
+      },
+      {
+        "price": 204.43,
+        "pnl": -4.0
+      },
+      {
+        "price": 205.95,
+        "pnl": -4.0
+      },
+      {
+        "price": 207.46,
+        "pnl": -4.0
+      },
+      {
+        "price": 208.98,
+        "pnl": -4.0
+      },
+      {
+        "price": 210.49,
+        "pnl": -4.0
+      },
+      {
+        "price": 212.0,
+        "pnl": -4.0
+      },
+      {
+        "price": 213.52,
+        "pnl": -4.0
+      },
+      {
+        "price": 215.03,
+        "pnl": -4.0
+      },
+      {
+        "price": 216.55,
+        "pnl": -4.0
+      },
+      {
+        "price": 218.06,
+        "pnl": -4.0
+      },
+      {
+        "price": 219.58,
+        "pnl": -4.0
+      },
+      {
+        "price": 221.09,
+        "pnl": -4.0
+      },
+      {
+        "price": 222.61,
+        "pnl": -4.0
+      },
+      {
+        "price": 224.12,
+        "pnl": -4.0
+      },
+      {
+        "price": 225.63,
+        "pnl": -4.0
+      },
+      {
+        "price": 227.15,
+        "pnl": -4.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.687,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2183,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "186.56",
+    "EMA50": "178.33",
+    "EMA100": "178.45",
+    "EMA200": "194.07",
+    "RSI(14)": "53.35",
+    "ATR(14)": "10.94",
+    "ADX(14)": "24.22",
+    "BB(20,2)": "0.57"
+  },
+  "rules": [
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "The Next Crypto Boom Is Already Here",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/422a682c-20b8-3056-aa0e-22a39a091eac/the-next-crypto-boom-is.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Here's What a $500 Investment in Bitcoin Could Be Worth by 2030",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/heres-500-investment-bitcoin-could-052000945.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Visa-Led Consortium Launches OUSD Stablecoin",
+      "publisher": "CryptoProwl",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/visa-led-consortium-launches-ousd-161400214.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

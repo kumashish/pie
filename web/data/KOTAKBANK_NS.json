@@ -1,0 +1,405 @@
+{
+  "symbol": "KOTAKBANK.NS",
+  "last_price": 418.35,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.2,
+  "fit_score": 82.5,
+  "confidence_grade": "A",
+  "confidence_percentage": 82.5,
+  "vix": 14.46,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (76.6% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 420.0,
+        "strike_formatted": "420",
+        "option_type": "Call",
+        "delta": 0.535,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 420 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 435.0,
+        "strike_formatted": "435",
+        "option_type": "Call",
+        "delta": 0.292,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 435 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 6.0,
+    "stop_loss_price": 409.98,
+    "take_profit_price": 435.0,
+    "net_delta": 0.243,
+    "net_theta": -0.025,
+    "probability_of_profit": 51.0,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 334.68,
+        "pnl": -6.0
+      },
+      {
+        "price": 338.03,
+        "pnl": -6.0
+      },
+      {
+        "price": 341.37,
+        "pnl": -6.0
+      },
+      {
+        "price": 344.72,
+        "pnl": -6.0
+      },
+      {
+        "price": 348.07,
+        "pnl": -6.0
+      },
+      {
+        "price": 351.41,
+        "pnl": -6.0
+      },
+      {
+        "price": 354.76,
+        "pnl": -6.0
+      },
+      {
+        "price": 358.11,
+        "pnl": -6.0
+      },
+      {
+        "price": 361.45,
+        "pnl": -6.0
+      },
+      {
+        "price": 364.8,
+        "pnl": -6.0
+      },
+      {
+        "price": 368.15,
+        "pnl": -6.0
+      },
+      {
+        "price": 371.49,
+        "pnl": -6.0
+      },
+      {
+        "price": 374.84,
+        "pnl": -6.0
+      },
+      {
+        "price": 378.19,
+        "pnl": -6.0
+      },
+      {
+        "price": 381.54,
+        "pnl": -6.0
+      },
+      {
+        "price": 384.88,
+        "pnl": -6.0
+      },
+      {
+        "price": 388.23,
+        "pnl": -6.0
+      },
+      {
+        "price": 391.58,
+        "pnl": -6.0
+      },
+      {
+        "price": 394.92,
+        "pnl": -6.0
+      },
+      {
+        "price": 398.27,
+        "pnl": -6.0
+      },
+      {
+        "price": 401.62,
+        "pnl": -6.0
+      },
+      {
+        "price": 404.96,
+        "pnl": -6.0
+      },
+      {
+        "price": 408.31,
+        "pnl": -6.0
+      },
+      {
+        "price": 411.66,
+        "pnl": -6.0
+      },
+      {
+        "price": 415.0,
+        "pnl": -6.0
+      },
+      {
+        "price": 418.35,
+        "pnl": -6.0
+      },
+      {
+        "price": 421.7,
+        "pnl": -4.3
+      },
+      {
+        "price": 425.04,
+        "pnl": -0.96
+      },
+      {
+        "price": 428.39,
+        "pnl": 2.39
+      },
+      {
+        "price": 431.74,
+        "pnl": 5.74
+      },
+      {
+        "price": 435.08,
+        "pnl": 9.0
+      },
+      {
+        "price": 438.43,
+        "pnl": 9.0
+      },
+      {
+        "price": 441.78,
+        "pnl": 9.0
+      },
+      {
+        "price": 445.12,
+        "pnl": 9.0
+      },
+      {
+        "price": 448.47,
+        "pnl": 9.0
+      },
+      {
+        "price": 451.82,
+        "pnl": 9.0
+      },
+      {
+        "price": 455.16,
+        "pnl": 9.0
+      },
+      {
+        "price": 458.51,
+        "pnl": 9.0
+      },
+      {
+        "price": 461.86,
+        "pnl": 9.0
+      },
+      {
+        "price": 465.21,
+        "pnl": 9.0
+      },
+      {
+        "price": 468.55,
+        "pnl": 9.0
+      },
+      {
+        "price": 471.9,
+        "pnl": 9.0
+      },
+      {
+        "price": 475.25,
+        "pnl": 9.0
+      },
+      {
+        "price": 478.59,
+        "pnl": 9.0
+      },
+      {
+        "price": 481.94,
+        "pnl": 9.0
+      },
+      {
+        "price": 485.29,
+        "pnl": 9.0
+      },
+      {
+        "price": 488.63,
+        "pnl": 9.0
+      },
+      {
+        "price": 491.98,
+        "pnl": 9.0
+      },
+      {
+        "price": 495.33,
+        "pnl": 9.0
+      },
+      {
+        "price": 498.67,
+        "pnl": 9.0
+      },
+      {
+        "price": 502.02,
+        "pnl": 9.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.768,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2912,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "411.77",
+    "EMA50": "406.74",
+    "EMA100": "401.52",
+    "EMA200": "400.37",
+    "RSI(14)": "57.55",
+    "ATR(14)": "8.80",
+    "ADX(14)": "25.93",
+    "BB(20,2)": "0.68"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Kotak Mahindra Bank shares climb 4% after naming new MD, CEO - Can the stock rally further? Experts decode",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORjA0Y2YyQzZMTlJnanBoS0lmcktvbGxSRjJfUlNkTnF5QnIzeG15emV5QzlFV3diUGRvQUVZSFB4TVFmc29wUGIzbnZlRkxDckhOaDNXWEROdFFDUGQ3WHZJVk00b3dpQU1qTi02SjhJaDZGaXRwdjQwbzc5YW9DTzhtTmdndzNkLWpTS2lJNm94ejZNckZpRHdUWUVWTzBIdUZ2TF9tSTUyQXNzTGw0V1NkWjA4T2FwYjJIakFqV2RYcVJLYmZz0gHMAUFVX3lxTE9GWjgySVBrNkYxdzNsQkQ5NHl2MHhlZVZPQnhVbEFKMXo4OGk3ZWVuS2pHUTBEd0poSnllNDJsN0dwWksxWFVWR2R4aXl3NE5QeUNLVG80RlR2ak1ZMzNOV1Y0bVBvR3RuSXdzNjhVRm9CTWFKcFEyd0xxUkx5OGZLLVlvejNHbnZfRGRuZEw3NzZES2p5bXpYcHhHbmVYMjg3NF9ENXB2VTNpejE3emgtRHdaUmlHRlpkSWVPRDhRWldXWHhidm0yTkdtNw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Price Action: Kotak Bank shares up 3% on MD, CEO appointment; IT stocks gain, autos slip",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWHRJMmUxbTVoZlliQVhtOThueXBDZkxid0J3bkJFZmo5R3dZWWFwVzdqc0psaThjMEpqQmRvTzhVbkRsVThjeEV2OHd0WTZLY0dOazlmNEdUSTVka0lmUmJqcmhnQVhoY0RHY0VSdmpHX0ZJRVdLcVVGSnZNbE5GOE9wSGYtenE4Tm9McFNrSlp4LXdLS3VKeVdVNEZ2RW9CckpFSUx4QWY5cG12RDZYSkV4QkxUVTdMdEFkeUloTlRHMEhtZ1FNdkp2M1F3aVJMRHd0LUlMc3ZKaHVPRDVvdjhR0gHnAUFVX3lxTE5OQVJDbDMzVmpueDlpZDdnUHRYajg5NG1RUnhyQUhhckdaLWlDbm1RV3NaVjRPVTBVTVZyeEcxUVpzMmRyeF83TThFMU9sSVo5bFd2R1RCWkw5WDRJT2hEWUE0dXZKbFhwODJBckx3VU9QeFJuaGdEYURfNGxmYjZ5ODdteWQ5UFgwN3RGWFdGUGJNWHhRbFdOYW5mSU44SjBQa2JEWndxQVhPc2ZZVWlhRUlFcFQtMnE2VUMzUlNmaEhXM1d4NDZuMGQzODlDX0tGUFNfVkFNbjQ5WUZxOE9UMjg0eHlRVQ?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Who is Anup Kumar Saha, the banker set to lead Kotak Mahindra Bank next?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNnhHSUJ4X0JjelVHWVZEV1hFV2hKcW9XdlhFMWl0TGtUYi1Nb0R3eHFOV1ZDbVRBTWFwelUxSkxkcVRVUkpTLVNLclJOSUxld25ieE12WldITkpDcnVnU2hTSjJrd0JyaTBOb2tjZ0MwdXppMDR4YUV0amxVRjh4eDdmVVRWWmc5Qmh5Q29wTjlGT0ZZVy1zU21QOU92bUMtZ2dLUnlBd09PbGE2RlFBWHIwR01uVnZ6dHROdGs3blpOazBHc2fSAcsBQVVfeXFMTTBkOEsxYkFPOFAyWl9zQjFKU1RmU0pHMzcwZWNKblM0b2wzd2kyTzVVcWpVTU0tb2JDcEtUY09zbk9uUlllNnQwbGQ3UHlOWEJvZDFXYjhseVNjTzVjVlBkOFNNMmtUczVveXU2azhJR3FtNGJXRUcyX1VURUF1a0lCUnpYdmd4M2NURWdYV1k3WTJyd3M4d0d1LVNWamotZm5WSnFnUzVfelJGYU9hMnl0VjdDd3V1SVhfUXRQeWE1RVdySk5wbGZjVVk?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Growth, deposits and faster decisions await new CEO Anup Saha at Kotak Bank",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbHBEUE00T2RIQmlPXzZCZ3dVcTYwclpqSzAwNVpyZ1UxZWZyUGxrRDlaMnhNOGlicDJYWWtIbWVzSHppMTJpNVJxel8yekpnTTU3eUFvMkxpRUZPMWE1SnJ4QjNLX2NQOUlld2dwOU5ralJOVC1kaXQ3TlczWGU4V21zaUY2NkJRTzhYcUxZeEFvYjl5N1JkVkY4Y3dGTU5NUDlMeWJBdlFtbFd1cm1JcHNKdURFWmJtUTZkREFhMC1ncXNUSGFJS3FGRlpfMEHSAdQBQVVfeXFMTzk3RXZnWmNubmFRSHl2azhTQmxvNkhpMDBWYmo4ZzU5Unk3UTJVZWJzY2VpanRWZUhrYVlsRDE0TFZJT056TGpfNEVmbVBmYTJGVlUwbU0xd3RzRVRwMVBNb0ZKZG5KTVgtTlcwNGhWMDdxSEplb2REWlpnZ1NuUUNHLWhNakQ2UFMwLWVIYmxUWFZaNlRNU3lYTEY0ZFpMVGxPaHhQSzZnZEttanF3N3ExNmI4amZ0aS1yOU5sX3dLSFF4SzJuRThLajRlMWV0eXFCTHU?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "RBI approves Anup Kumar Saha as Kotak Mahindra Bank MD & CEO for 3 years",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOVlNPSl9hd1B1dVVOUXF6VVNzOUFrbEhvanJxQllMSGE2bHdFQ2xkNUZKUnpsRkNHRUN1cUV4WkxpV2VCYjRlOE1XbFdSX1VEaUxMSW1yXzJrUVNmUEdtNXd0YnNuNmczeWNrVTZ5eExCbHhZZ3AxZ1NLNzNFcXBlZ2lfaUNOLTdDQUdtTXFLN3hUZFByR1I0eGxmdWdsc2dsdkN5R2E2Z0oxR2R0UlY4YVpxakZsZWRkc2dMa1NoSjZORy1XMERMc2ZmRUdYYUF5Q0xiMF9MTGZsQzFxY0phRFdPWTlyT2Vhanln0gHwAUFVX3lxTE9ib1ZyMGhnRmZwX3ZlYUNxTll1emlKQXpCekNYWkFIdF81ODJzZUtWRzBYa3M5ZVhreUpfYUZzb3dpcnV1b0ZYdEJaM21ZWGZiT2l0S2FueUc5V1cwTFd0ajY1UnU1dmNPSjVtbVBWTE8yMUNlTEJsMm1BV0ItWmU4QjNTVDdaamRPclNodURwQURQbFV3X2dXZVUzLWJDYVY4UFpfUFJfVzludjljQ3Y4RmVyYWlHMldEdGl2QklKdFBtTUxGOXlpSHlYSkV3ejFUSmRXT2RiZGRia0hvWFFmM09QWm45T1dGTG0xdW9VYw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Kotak Mahindra Bank shares: How new MD-CEO Anup Saha's appointment can impact the stock - PL Capital decodes",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQbGJZZ2FvYmlMSUxYRlctRmtjUUQ2Q3lSMk9pOTRpOGhQT24xSzN0R1FyNGRjX3pJRjNoZV9JVlJPUUpzQ18yT1pwTFpkMEItX1ZZdzV3bkdHT1FkLTNybnJreEV2b3VjNFBGSVRTLThub3JkN3prdWl2aGlKYVRFVUFDQ3hsRUktbE1reUFUSGF2U1B1REtDQmVOWGhjLXUxVTV5SV9uNU5BZUpwcVhTR1VUeTctMnBUU3hfYU1nTlU4UGVoNXNadmhvZVhZd0tKNUtTdFllUGt2emVQTDlmSDU1V1gyVU1BUW02d2dlSWhzLVhwSTVZaFdLdG9pbE5IQ2lrStIBigJBVV95cUxOaGpyX2ZlT2xlS0FENWZBMkoxMnh4V3FJVFBLVTFhNkFHV2E2LUYxV1BfMUhUZzlBR0l3a2ZTQ0VJRk1tNHZ0aW9GcmcwTzdjdWZsNFlQdHJrQlVMNURzbHAtR01Da3Bjc1VuOXF0VVpjRFJwZlRkZElRakdxRjQzNE9VbkVyMEppYWwwR0doN093T3QxZTJqUzAweVF5dFFpdWd3SWdwVGd2ekJIQzZ4Uk4yRXM1dHQ1TlFldEZyd1Z1em04YnNmNDh6NDUteGFzbjB2ZDVQeGlQVkhvUDBEN1hCMnppT2NVVDRFWVh6ajA2WWJEV2IxVlFVRFc2MmlNWlNoMURyaFFPZw?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

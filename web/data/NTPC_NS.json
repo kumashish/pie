@@ -1,0 +1,405 @@
+{
+  "symbol": "NTPC.NS",
+  "last_price": 315.1,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.8,
+  "fit_score": 27.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 27.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (29.5) is oversold (< 35) [Synthetic PCR: 1.46]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 315.0,
+        "strike_formatted": "315",
+        "option_type": "Put",
+        "delta": -0.434,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x NTPC.NS 24-Nov-2026 315 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 300.0,
+        "strike_formatted": "300",
+        "option_type": "Put",
+        "delta": -0.147,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x NTPC.NS 24-Nov-2026 300 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 6.0,
+    "stop_loss_price": 321.4,
+    "take_profit_price": 300.0,
+    "net_delta": -0.287,
+    "net_theta": -0.014,
+    "probability_of_profit": 46.2,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 252.08,
+        "pnl": 9.0
+      },
+      {
+        "price": 254.6,
+        "pnl": 9.0
+      },
+      {
+        "price": 257.12,
+        "pnl": 9.0
+      },
+      {
+        "price": 259.64,
+        "pnl": 9.0
+      },
+      {
+        "price": 262.16,
+        "pnl": 9.0
+      },
+      {
+        "price": 264.68,
+        "pnl": 9.0
+      },
+      {
+        "price": 267.2,
+        "pnl": 9.0
+      },
+      {
+        "price": 269.73,
+        "pnl": 9.0
+      },
+      {
+        "price": 272.25,
+        "pnl": 9.0
+      },
+      {
+        "price": 274.77,
+        "pnl": 9.0
+      },
+      {
+        "price": 277.29,
+        "pnl": 9.0
+      },
+      {
+        "price": 279.81,
+        "pnl": 9.0
+      },
+      {
+        "price": 282.33,
+        "pnl": 9.0
+      },
+      {
+        "price": 284.85,
+        "pnl": 9.0
+      },
+      {
+        "price": 287.37,
+        "pnl": 9.0
+      },
+      {
+        "price": 289.89,
+        "pnl": 9.0
+      },
+      {
+        "price": 292.41,
+        "pnl": 9.0
+      },
+      {
+        "price": 294.93,
+        "pnl": 9.0
+      },
+      {
+        "price": 297.45,
+        "pnl": 9.0
+      },
+      {
+        "price": 299.98,
+        "pnl": 9.0
+      },
+      {
+        "price": 302.5,
+        "pnl": 6.5
+      },
+      {
+        "price": 305.02,
+        "pnl": 3.98
+      },
+      {
+        "price": 307.54,
+        "pnl": 1.46
+      },
+      {
+        "price": 310.06,
+        "pnl": -1.06
+      },
+      {
+        "price": 312.58,
+        "pnl": -3.58
+      },
+      {
+        "price": 315.1,
+        "pnl": -6.0
+      },
+      {
+        "price": 317.62,
+        "pnl": -6.0
+      },
+      {
+        "price": 320.14,
+        "pnl": -6.0
+      },
+      {
+        "price": 322.66,
+        "pnl": -6.0
+      },
+      {
+        "price": 325.18,
+        "pnl": -6.0
+      },
+      {
+        "price": 327.7,
+        "pnl": -6.0
+      },
+      {
+        "price": 330.22,
+        "pnl": -6.0
+      },
+      {
+        "price": 332.75,
+        "pnl": -6.0
+      },
+      {
+        "price": 335.27,
+        "pnl": -6.0
+      },
+      {
+        "price": 337.79,
+        "pnl": -6.0
+      },
+      {
+        "price": 340.31,
+        "pnl": -6.0
+      },
+      {
+        "price": 342.83,
+        "pnl": -6.0
+      },
+      {
+        "price": 345.35,
+        "pnl": -6.0
+      },
+      {
+        "price": 347.87,
+        "pnl": -6.0
+      },
+      {
+        "price": 350.39,
+        "pnl": -6.0
+      },
+      {
+        "price": 352.91,
+        "pnl": -6.0
+      },
+      {
+        "price": 355.43,
+        "pnl": -6.0
+      },
+      {
+        "price": 357.95,
+        "pnl": -6.0
+      },
+      {
+        "price": 360.47,
+        "pnl": -6.0
+      },
+      {
+        "price": 363.0,
+        "pnl": -6.0
+      },
+      {
+        "price": 365.52,
+        "pnl": -6.0
+      },
+      {
+        "price": 368.04,
+        "pnl": -6.0
+      },
+      {
+        "price": 370.56,
+        "pnl": -6.0
+      },
+      {
+        "price": 373.08,
+        "pnl": -6.0
+      },
+      {
+        "price": 375.6,
+        "pnl": -6.0
+      },
+      {
+        "price": 378.12,
+        "pnl": -6.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.742,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2678,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "326.79",
+    "EMA50": "334.74",
+    "EMA100": "344.39",
+    "EMA200": "350.41",
+    "RSI(14)": "29.47",
+    "ATR(14)": "5.41",
+    "ADX(14)": "36.28",
+    "BB(20,2)": "-0.13"
+  },
+  "rules": [
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "NTPC power generation rises 13% to 117.9 billion units in Q2",
+      "publisher": "ET Government",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmVfUHRIVHpqN0kydG5DOERhS2VESDFTNnYwWkVxVE92dkNCdGhBYk50WXlHNVpxQ2doclZaTUtWa0IxMXFzSzBLZHJiTTVDUTUyc1VHVEY4OTE2U3B3NDNTM0NEWklGc1BtcFUtUG5mUk1xbWZzSEpuRzM2Q21CVFB6NUNrMUxXcGpXbXk3N1ZZSDRTMUhwR3BRbWpHX1k0UmJKRlYxejJzU3kzMURkYlZBY0x3TlZwd29MTWdRMzBMWFpO0gHKAUFVX3lxTE84NGdteEFNWk1KbUF2SzVqZVRJR0FWSGVoWGI4QWN6OWNNcmpOLVhWb0RFZXBqTGZWWTFwZHJwNlBRSjVreE5YT1p1bG5OSmJod2VTZE8tNWUzTXhOOUR4SERCZTFIQWNzUWR6Y2xuZF9IekNWMDhwUzlZNXZ1R19FelFwcDJvMmlqT3hRTkdjVW5uU29KLThmb21oaTRJMHpIcG14V0xTYWoxMFhJbE9EMThJR1F0cHppNjNIQjNQVlJHV20yUlNtNnc?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "NTPC power generation rises 13% to 117.9 billion units in Q2",
+      "publisher": "ET EnergyWorld",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTUtPLUdIVVByc2lLSXBLOXN4aFlSb2tjdXZGeUlCV1BOdE1JeTN5N0pnQVhMQm94Z2JscUJPU1duUUJwWnp5cGloekIyZ0pFWl9tQ242Y1lEV3paVkFjSGwwMDZzcWNwbHhVZU4zZDFtdDMteXZiYlBiTDVTWFBURmhIa0FURDZ2d1hnNWdIZUFGN1k4QmlaanhZLTFyVzcwdXR0aTBjZ2NxRkRZVXNuN21BT091WmZySmdMTTEyY1VQdWh2NXFr0gHHAUFVX3lxTFBNS08tR0hVUHJzaUtJcEs5c3hoWVJva2N1dkZ5SUJXUE50TUl5M3k3SmdBWExCb3hnYmxxQk9TV25RQnBaenlwaWh6QjJnSkVaX21DbjZjWURXelpWQWNIbDAwNnNxY3BseFVlTjNkMW10My15dmJiUGJMNVNYUFRGaEhrQVRENnZ3WGc1Z0hlQUY3WThCaVpqeFktMXJXNzB1dHRpMGNnY3FGRFlVc243bUFPT3VaZnJKZ0xNMTJjVVB1aHY1cWs?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5tckVRYlNKaEc5bC14MDIxd0FuaWVhb21iM2FQM2dzR3JwVDNMeUZndkZMZURobjFBRzB4bnBQR3JVNHhGOG1pUEpFTE1MSzY4RTJydnJBWDViSVVSbUZmY004TDBRNWtCdDRSOFFn?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Power stocks fall despite \u20b91.86 lakh crore PM-DHARA scheme: Tata Power, Adani Power, NTPC, Power Grid in focus",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQd1lNLS1fZDN6UkM5Z09fbEx6VUR2Y2xZM0g1c2lNNFJfNEx3bl9TTUh2N1FZMk9rNmluTWNOLUdFeGpQYVJ6MlpsMFNtNzFWazNEa0xRaVFWY1dJUnNWRXJKVDlnUy1CVWVSclFjLVR0cEtYV1N3OWZVcDd4SExVU3l5Qy14SkxONGJST2JVWmdlXzlGNThzY19rbERVbEJ6M0pUV2NJSlNIZlllLVozTUhwcWZuZlN6bWU2RGl1T3kwTTA0VEtzZW13Zl9WS0p5bnJ0V2FNakRYRVU1aWxITldHY3NpWHlhdjZIaW5mWTViY2liWjFIMGNkZnJOMXM1cjAxWGhpMW1xQdIBjwJBVV95cUxNMUlqZkZWM0RoRVhuc3NCektKWDNQYTFieWRyVmZsYXNxVWRXOTBmMFZrdGR5bVRPWTJmdkw0Qkd3YmdCUEw0dkdJRm5QbGQ1bmljOGRtbkVodlZxcTNiQWFYajZ4aURFNndxeF9Jam1tTlJLdEJPc2ZRaW1QUnRWdE9xTHVSQTYyVTZmUGtlSWNQSnNDRzhsV040c01JQlhaWG5JNl9sZ19yY1lZLVJLSVVmWkYwdVlSTDBCYnEwU0dZdFlfTGV5TXZfWGQxWENDa1lNLWJnUVVjTDZBQk5Da0M5RGZiNmVwb0xwYlB1NmlOZFo1cVlWQ0h5ekVjc3dNbENva1BPSy1CU2hPTVgw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "NTPC, France\u2019s EDF Power Solutions form 50:50 JV to build low-carbon energy projects",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTy0wTE1sQ1ZvdWpoUkVJN3VwOGFMUTd0eWlpemh2V2RMN0x5aHNmeVpkWU5Mc01kUFRNSldXN3hJdmRYQWlnTHFCaDdKM1ZTQWxabXlEY3UyMGhHQUFIV2NjVUVrTkFMTE1JVE1HZDAwQkRraEdBQjBLdHRIWXJvTVowNlE3Qk53NHhaamJrYmtLYW84cTJKR1AyXzFQSnJJZE9HY2dPa0h5WmsyVVpwODVFZG5JXzByaE5EczJ0ZENnTVZSWUtuaTdiN3pNVWhiZ2JnY3NtODlKdlVGUldDMl9BQmzSAeoBQVVfeXFMTmp4TDVZVXd5QWlPa3A4Ym9MTDkzNTRLSlJKYjM5VWRRVUsxZFlnVXhmNjVJSHJaSnpUcVhNanBaRlVlZGRReDlFVGFIYWdWRXA4NFUySnMyaXZ5ckxiZVhQUDZjd2lxNmhfOGpnT1loVmN3WWZhQTZiTGVTdHh4TUlzbUYxTWJzTWlmSHhjV3AzaVZRckd4VF9FRmxpcFdzZmYwUlZELV94OFN0cGExellRRm9EOEtueDg1NnpBLVc0cEFCWEtnSUxPazM3RDRZY2NlVmdtTE9HMVpNWXRYbG1EWXpxYS1KN1hB?oc=5",
+      "published_at": "Sat, 26 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NTPC, EDF Power Solutions India form 50:50 JV for pumped storage, hydropower projects",
+      "publisher": "ET EnergyWorld",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUHNnR3Q4ZG41NTVnb1V2MVRCR3pZTXF4bFM1NVFmd0hEYU5lZGRFWHU4aEpVR29rSld6RndnUE5fYlROU3RyRzBIbXFKYlhlbHFpd1o5RTJOWERNSEN6dE5ZbktDTVFlVkV4OUE1SUZfbnhZSmhEUkV1WDJISzFDLWpaNEFBc09BMDl2SWRZRGd2VmtQdWJlc0NGaEJPNDh4S2FDT3N1SE9vNlc3LVBpUENyX3pVNzRtWnpGRGl0Ty1HcG5xclY0YTNSYmdrS0F6UVpaRWFVc1lyTHJpaXJxctIB5gFBVV95cUxOUzVCT3dvTFNaRXoySWtpV2NCNmJUSzBFMEQ4X3c4eHNYZ3lIUVhZN3JqMjJWcXR5Z0wtYlJkbWlzVm5ldFM2N2t2MHdpSE1Gcks2aVdMRGRqRHBwUVhnTURvMVRjdUo1elpZcWJ5MXJTUm1sYkRmZUhzblZWY2l5TUpMU21QM3FuSVlzNk9jd21pelN0bmM3Wkg5Sm9GOU5TVWhvNzVDeDkxSllYSTFROHhxMTZSbDRtbl9SeDNXZm56ZmlnSTYwOFNoOG1oNTdqNVBBLUY0TlhCX1djaTJWSzR2bTFaUQ?oc=5",
+      "published_at": "Sat, 26 Sep 2026",
+      "sentiment": "bearish"
+    }
+  ]
+}

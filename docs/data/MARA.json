@@ -1,0 +1,405 @@
+{
+  "symbol": "MARA",
+  "last_price": 11.21,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.0,
+  "fit_score": 20.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 20.0,
+  "vix": 16.0,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (67.3% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 11.0,
+        "strike_formatted": "11",
+        "option_type": "Put",
+        "delta": -0.32,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x MARA 20-Nov-2026 11 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 10.0,
+        "strike_formatted": "10",
+        "option_type": "Put",
+        "delta": -0.018,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x MARA 20-Nov-2026 10 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 0.4,
+    "stop_loss_price": 11.43,
+    "take_profit_price": 10.0,
+    "net_delta": -0.302,
+    "net_theta": -0.002,
+    "probability_of_profit": 34.8,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 8.97,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.06,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.15,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.24,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.33,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.42,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.51,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.6,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.69,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.78,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.86,
+        "pnl": 0.6
+      },
+      {
+        "price": 9.95,
+        "pnl": 0.6
+      },
+      {
+        "price": 10.04,
+        "pnl": 0.56
+      },
+      {
+        "price": 10.13,
+        "pnl": 0.47
+      },
+      {
+        "price": 10.22,
+        "pnl": 0.38
+      },
+      {
+        "price": 10.31,
+        "pnl": 0.29
+      },
+      {
+        "price": 10.4,
+        "pnl": 0.2
+      },
+      {
+        "price": 10.49,
+        "pnl": 0.11
+      },
+      {
+        "price": 10.58,
+        "pnl": 0.02
+      },
+      {
+        "price": 10.67,
+        "pnl": -0.07
+      },
+      {
+        "price": 10.76,
+        "pnl": -0.16
+      },
+      {
+        "price": 10.85,
+        "pnl": -0.25
+      },
+      {
+        "price": 10.94,
+        "pnl": -0.34
+      },
+      {
+        "price": 11.03,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.12,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.21,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.3,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.39,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.48,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.57,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.66,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.75,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.84,
+        "pnl": -0.4
+      },
+      {
+        "price": 11.93,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.02,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.11,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.2,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.29,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.38,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.47,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.56,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.64,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.73,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.82,
+        "pnl": -0.4
+      },
+      {
+        "price": 12.91,
+        "pnl": -0.4
+      },
+      {
+        "price": 13.0,
+        "pnl": -0.4
+      },
+      {
+        "price": 13.09,
+        "pnl": -0.4
+      },
+      {
+        "price": 13.18,
+        "pnl": -0.4
+      },
+      {
+        "price": 13.27,
+        "pnl": -0.4
+      },
+      {
+        "price": 13.36,
+        "pnl": -0.4
+      },
+      {
+        "price": 13.45,
+        "pnl": -0.4
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.736,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2624,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "11.93",
+    "EMA50": "11.73",
+    "EMA100": "11.73",
+    "EMA200": "12.06",
+    "RSI(14)": "44.57",
+    "ATR(14)": "0.83",
+    "ADX(14)": "20.42",
+    "BB(20,2)": "0.24"
+  },
+  "rules": [
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Has Buying Applied Digital Stock's Dips Paid Off?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/buying-applied-digital-stocks-dips-200056168.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Which Public Companies Hold the Most Bitcoin?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/public-companies-hold-most-bitcoin-163024045.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Marathon Digital Holdings, Inc. (MARA) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/marathon-digital-holdings-inc-mara-205003673.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Strive Crosses 27,000 BTC After $94.5 Million Bitcoin Purchase",
+      "publisher": "CryptoProwl",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/strive-crosses-27-000-btc-195400613.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can MARA Holdings (MARA) Trade At A Premium After Its Bitcoin Buy?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mara-holdings-mara-trade-premium-131258791.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MSTR Stock Has Become One of the Market\u2019s Most Unusual Bets",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mstr-stock-become-one-market-160047387.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "symbol": "MSTR",
+  "last_price": 160.5,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.0,
+  "fit_score": 70.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 70.0,
+  "vix": 16.0,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (57.7% fit - Grade C (Moderate)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 160.0,
+        "strike_formatted": "160",
+        "option_type": "Call",
+        "delta": 0.578,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x MSTR 20-Nov-2026 160 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 165.0,
+        "strike_formatted": "165",
+        "option_type": "Call",
+        "delta": 0.372,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x MSTR 20-Nov-2026 165 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 2.0,
+    "stop_loss_price": 157.29,
+    "take_profit_price": 165.0,
+    "net_delta": 0.206,
+    "net_theta": -0.006,
+    "probability_of_profit": 54.9,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 128.4,
+        "pnl": -2.0
+      },
+      {
+        "price": 129.68,
+        "pnl": -2.0
+      },
+      {
+        "price": 130.97,
+        "pnl": -2.0
+      },
+      {
+        "price": 132.25,
+        "pnl": -2.0
+      },
+      {
+        "price": 133.54,
+        "pnl": -2.0
+      },
+      {
+        "price": 134.82,
+        "pnl": -2.0
+      },
+      {
+        "price": 136.1,
+        "pnl": -2.0
+      },
+      {
+        "price": 137.39,
+        "pnl": -2.0
+      },
+      {
+        "price": 138.67,
+        "pnl": -2.0
+      },
+      {
+        "price": 139.96,
+        "pnl": -2.0
+      },
+      {
+        "price": 141.24,
+        "pnl": -2.0
+      },
+      {
+        "price": 142.52,
+        "pnl": -2.0
+      },
+      {
+        "price": 143.81,
+        "pnl": -2.0
+      },
+      {
+        "price": 145.09,
+        "pnl": -2.0
+      },
+      {
+        "price": 146.38,
+        "pnl": -2.0
+      },
+      {
+        "price": 147.66,
+        "pnl": -2.0
+      },
+      {
+        "price": 148.94,
+        "pnl": -2.0
+      },
+      {
+        "price": 150.23,
+        "pnl": -2.0
+      },
+      {
+        "price": 151.51,
+        "pnl": -2.0
+      },
+      {
+        "price": 152.8,
+        "pnl": -2.0
+      },
+      {
+        "price": 154.08,
+        "pnl": -2.0
+      },
+      {
+        "price": 155.36,
+        "pnl": -2.0
+      },
+      {
+        "price": 156.65,
+        "pnl": -2.0
+      },
+      {
+        "price": 157.93,
+        "pnl": -2.0
+      },
+      {
+        "price": 159.22,
+        "pnl": -2.0
+      },
+      {
+        "price": 160.5,
+        "pnl": -1.5
+      },
+      {
+        "price": 161.78,
+        "pnl": -0.22
+      },
+      {
+        "price": 163.07,
+        "pnl": 1.07
+      },
+      {
+        "price": 164.35,
+        "pnl": 2.35
+      },
+      {
+        "price": 165.64,
+        "pnl": 3.0
+      },
+      {
+        "price": 166.92,
+        "pnl": 3.0
+      },
+      {
+        "price": 168.2,
+        "pnl": 3.0
+      },
+      {
+        "price": 169.49,
+        "pnl": 3.0
+      },
+      {
+        "price": 170.77,
+        "pnl": 3.0
+      },
+      {
+        "price": 172.06,
+        "pnl": 3.0
+      },
+      {
+        "price": 173.34,
+        "pnl": 3.0
+      },
+      {
+        "price": 174.62,
+        "pnl": 3.0
+      },
+      {
+        "price": 175.91,
+        "pnl": 3.0
+      },
+      {
+        "price": 177.19,
+        "pnl": 3.0
+      },
+      {
+        "price": 178.48,
+        "pnl": 3.0
+      },
+      {
+        "price": 179.76,
+        "pnl": 3.0
+      },
+      {
+        "price": 181.04,
+        "pnl": 3.0
+      },
+      {
+        "price": 182.33,
+        "pnl": 3.0
+      },
+      {
+        "price": 183.61,
+        "pnl": 3.0
+      },
+      {
+        "price": 184.9,
+        "pnl": 3.0
+      },
+      {
+        "price": 186.18,
+        "pnl": 3.0
+      },
+      {
+        "price": 187.46,
+        "pnl": 3.0
+      },
+      {
+        "price": 188.75,
+        "pnl": 3.0
+      },
+      {
+        "price": 190.03,
+        "pnl": 3.0
+      },
+      {
+        "price": 191.32,
+        "pnl": 3.0
+      },
+      {
+        "price": 192.6,
+        "pnl": 3.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.702,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2318,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "147.12",
+    "EMA50": "132.44",
+    "EMA100": "131.17",
+    "EMA200": "152.90",
+    "RSI(14)": "63.06",
+    "ATR(14)": "8.95",
+    "ADX(14)": "39.08",
+    "BB(20,2)": "0.74"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "The Next Crypto Boom Is Already Here",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/422a682c-20b8-3056-aa0e-22a39a091eac/the-next-crypto-boom-is.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 High-Yield Financial Stocks to Buy in October",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-high-yield-financial-stocks-163000863.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Bitcoin Outperforms Stocks and Gold in September: What Surpassed Bitcoin?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-outperforms-stocks-gold-september-114355864.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Strategy (MSTR) Moved 3,568 BTC In Hours And Investors Want Answers",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/strategy-mstr-moved-3-568-070915940.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Michael Saylor Wants His Bitcoin Rival to Win: What's in It for MicroStrategy?",
+      "publisher": "BeInCrypto",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/michael-saylor-wants-bitcoin-rival-230647710.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bitcoin Rises on Cooler-Than-Expected Inflation Data",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/c70ccb34-c723-32f7-ab92-526d8986b670/bitcoin-rises-on.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    }
+  ]
+}

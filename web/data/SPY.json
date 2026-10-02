@@ -1,0 +1,417 @@
+{
+  "symbol": "SPY",
+  "last_price": 763.99,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.5,
+  "fit_score": 65.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 65.0,
+  "vix": 16.01,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (65.9% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 740.0,
+        "strike_formatted": "740",
+        "option_type": "Call",
+        "delta": 0.754,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x SPY 20-Nov-2026 740 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 765.0,
+        "strike_formatted": "765",
+        "option_type": "Call",
+        "delta": 0.548,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 2x SPY 20-Nov-2026 765 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 785.0,
+        "strike_formatted": "785",
+        "option_type": "Call",
+        "delta": 0.375,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x SPY 20-Nov-2026 785 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 65.0,
+    "margin_required": 35.0,
+    "stop_loss_price": 741.07,
+    "take_profit_price": 786.91,
+    "net_delta": 0.033,
+    "net_theta": 0.043,
+    "probability_of_profit": 73.0,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 611.19,
+        "pnl": -35.0
+      },
+      {
+        "price": 617.3,
+        "pnl": -35.0
+      },
+      {
+        "price": 623.42,
+        "pnl": -35.0
+      },
+      {
+        "price": 629.53,
+        "pnl": -35.0
+      },
+      {
+        "price": 635.64,
+        "pnl": -35.0
+      },
+      {
+        "price": 641.75,
+        "pnl": -35.0
+      },
+      {
+        "price": 647.86,
+        "pnl": -35.0
+      },
+      {
+        "price": 653.98,
+        "pnl": -35.0
+      },
+      {
+        "price": 660.09,
+        "pnl": -35.0
+      },
+      {
+        "price": 666.2,
+        "pnl": -35.0
+      },
+      {
+        "price": 672.31,
+        "pnl": -35.0
+      },
+      {
+        "price": 678.42,
+        "pnl": -35.0
+      },
+      {
+        "price": 684.54,
+        "pnl": -35.0
+      },
+      {
+        "price": 690.65,
+        "pnl": -35.0
+      },
+      {
+        "price": 696.76,
+        "pnl": -35.0
+      },
+      {
+        "price": 702.87,
+        "pnl": -35.0
+      },
+      {
+        "price": 708.98,
+        "pnl": -35.0
+      },
+      {
+        "price": 715.09,
+        "pnl": -35.0
+      },
+      {
+        "price": 721.21,
+        "pnl": -35.0
+      },
+      {
+        "price": 727.32,
+        "pnl": -35.0
+      },
+      {
+        "price": 733.43,
+        "pnl": -35.0
+      },
+      {
+        "price": 739.54,
+        "pnl": -35.0
+      },
+      {
+        "price": 745.65,
+        "pnl": -29.35
+      },
+      {
+        "price": 751.77,
+        "pnl": -23.23
+      },
+      {
+        "price": 757.88,
+        "pnl": -17.12
+      },
+      {
+        "price": 763.99,
+        "pnl": -11.01
+      },
+      {
+        "price": 770.1,
+        "pnl": -15.1
+      },
+      {
+        "price": 776.21,
+        "pnl": -21.21
+      },
+      {
+        "price": 782.33,
+        "pnl": -27.33
+      },
+      {
+        "price": 788.44,
+        "pnl": -30.0
+      },
+      {
+        "price": 794.55,
+        "pnl": -30.0
+      },
+      {
+        "price": 800.66,
+        "pnl": -30.0
+      },
+      {
+        "price": 806.77,
+        "pnl": -30.0
+      },
+      {
+        "price": 812.89,
+        "pnl": -30.0
+      },
+      {
+        "price": 819.0,
+        "pnl": -30.0
+      },
+      {
+        "price": 825.11,
+        "pnl": -30.0
+      },
+      {
+        "price": 831.22,
+        "pnl": -30.0
+      },
+      {
+        "price": 837.33,
+        "pnl": -30.0
+      },
+      {
+        "price": 843.44,
+        "pnl": -30.0
+      },
+      {
+        "price": 849.56,
+        "pnl": -30.0
+      },
+      {
+        "price": 855.67,
+        "pnl": -30.0
+      },
+      {
+        "price": 861.78,
+        "pnl": -30.0
+      },
+      {
+        "price": 867.89,
+        "pnl": -30.0
+      },
+      {
+        "price": 874.0,
+        "pnl": -30.0
+      },
+      {
+        "price": 880.12,
+        "pnl": -30.0
+      },
+      {
+        "price": 886.23,
+        "pnl": -30.0
+      },
+      {
+        "price": 892.34,
+        "pnl": -30.0
+      },
+      {
+        "price": 898.45,
+        "pnl": -30.0
+      },
+      {
+        "price": 904.56,
+        "pnl": -30.0
+      },
+      {
+        "price": 910.68,
+        "pnl": -30.0
+      },
+      {
+        "price": 916.79,
+        "pnl": -30.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.731,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2579,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "763.14",
+    "EMA50": "714.19",
+    "EMA100": "620.61",
+    "EMA200": "525.97",
+    "RSI(14)": "51.98",
+    "ATR(14)": "17.07",
+    "ADX(14)": "4.34",
+    "BB(20,2)": "0.45"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
+      "publisher": "Benzinga Prediction Markets",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-p-500-open-054725536.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "ETF Inflows Top Last Year's Record With a Quarter to Spare",
+      "publisher": "etf.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/etf-inflows-top-last-years-043228801.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "The Hidden Cost of Owning Every Stock: $167,050 of a $500,000 VTI Position Sits in Its Top Ten Names",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/hidden-cost-owning-every-stock-003342923.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "S&P 500, Nasdaq, Dow Futures Inch Higher As Investors Cheer Cooling Yields \u2014 GOOGL, MU, MAT, NVDA In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-dow-futures-232759547.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Tesla Is Down 20% in 2026. These Two Other EV Makers Are Doing Even Worse.",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-down-20-2026-two-191317192.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Snap Is Down 32% in 2026: Overlooked Bargain or Toxic Stock?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/snap-down-32-2026-overlooked-190217529.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    }
+  ]
+}

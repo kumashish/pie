@@ -1,0 +1,405 @@
+{
+  "symbol": "TITAN.NS",
+  "last_price": 4515.7,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.2,
+  "fit_score": 62.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 62.5,
+  "vix": 14.46,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (67.8% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 4500.0,
+        "strike_formatted": "4500",
+        "option_type": "Call",
+        "delta": 0.588,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4500 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 4700.0,
+        "strike_formatted": "4700",
+        "option_type": "Call",
+        "delta": 0.285,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4700 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 80.0,
+    "stop_loss_price": 4425.39,
+    "take_profit_price": 4700.0,
+    "net_delta": 0.303,
+    "net_theta": -0.292,
+    "probability_of_profit": 56.1,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 3612.56,
+        "pnl": -80.0
+      },
+      {
+        "price": 3648.69,
+        "pnl": -80.0
+      },
+      {
+        "price": 3684.81,
+        "pnl": -80.0
+      },
+      {
+        "price": 3720.94,
+        "pnl": -80.0
+      },
+      {
+        "price": 3757.06,
+        "pnl": -80.0
+      },
+      {
+        "price": 3793.19,
+        "pnl": -80.0
+      },
+      {
+        "price": 3829.31,
+        "pnl": -80.0
+      },
+      {
+        "price": 3865.44,
+        "pnl": -80.0
+      },
+      {
+        "price": 3901.56,
+        "pnl": -80.0
+      },
+      {
+        "price": 3937.69,
+        "pnl": -80.0
+      },
+      {
+        "price": 3973.82,
+        "pnl": -80.0
+      },
+      {
+        "price": 4009.94,
+        "pnl": -80.0
+      },
+      {
+        "price": 4046.07,
+        "pnl": -80.0
+      },
+      {
+        "price": 4082.19,
+        "pnl": -80.0
+      },
+      {
+        "price": 4118.32,
+        "pnl": -80.0
+      },
+      {
+        "price": 4154.44,
+        "pnl": -80.0
+      },
+      {
+        "price": 4190.57,
+        "pnl": -80.0
+      },
+      {
+        "price": 4226.7,
+        "pnl": -80.0
+      },
+      {
+        "price": 4262.82,
+        "pnl": -80.0
+      },
+      {
+        "price": 4298.95,
+        "pnl": -80.0
+      },
+      {
+        "price": 4335.07,
+        "pnl": -80.0
+      },
+      {
+        "price": 4371.2,
+        "pnl": -80.0
+      },
+      {
+        "price": 4407.32,
+        "pnl": -80.0
+      },
+      {
+        "price": 4443.45,
+        "pnl": -80.0
+      },
+      {
+        "price": 4479.57,
+        "pnl": -80.0
+      },
+      {
+        "price": 4515.7,
+        "pnl": -64.3
+      },
+      {
+        "price": 4551.83,
+        "pnl": -28.17
+      },
+      {
+        "price": 4587.95,
+        "pnl": 7.95
+      },
+      {
+        "price": 4624.08,
+        "pnl": 44.08
+      },
+      {
+        "price": 4660.2,
+        "pnl": 80.2
+      },
+      {
+        "price": 4696.33,
+        "pnl": 116.33
+      },
+      {
+        "price": 4732.45,
+        "pnl": 120.0
+      },
+      {
+        "price": 4768.58,
+        "pnl": 120.0
+      },
+      {
+        "price": 4804.71,
+        "pnl": 120.0
+      },
+      {
+        "price": 4840.83,
+        "pnl": 120.0
+      },
+      {
+        "price": 4876.96,
+        "pnl": 120.0
+      },
+      {
+        "price": 4913.08,
+        "pnl": 120.0
+      },
+      {
+        "price": 4949.21,
+        "pnl": 120.0
+      },
+      {
+        "price": 4985.33,
+        "pnl": 120.0
+      },
+      {
+        "price": 5021.46,
+        "pnl": 120.0
+      },
+      {
+        "price": 5057.58,
+        "pnl": 120.0
+      },
+      {
+        "price": 5093.71,
+        "pnl": 120.0
+      },
+      {
+        "price": 5129.84,
+        "pnl": 120.0
+      },
+      {
+        "price": 5165.96,
+        "pnl": 120.0
+      },
+      {
+        "price": 5202.09,
+        "pnl": 120.0
+      },
+      {
+        "price": 5238.21,
+        "pnl": 120.0
+      },
+      {
+        "price": 5274.34,
+        "pnl": 120.0
+      },
+      {
+        "price": 5310.46,
+        "pnl": 120.0
+      },
+      {
+        "price": 5346.59,
+        "pnl": 120.0
+      },
+      {
+        "price": 5382.71,
+        "pnl": 120.0
+      },
+      {
+        "price": 5418.84,
+        "pnl": 120.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.737,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2633,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "4834.24",
+    "EMA50": "4847.72",
+    "EMA100": "4705.83",
+    "EMA200": "4452.58",
+    "RSI(14)": "26.51",
+    "ATR(14)": "90.54",
+    "ADX(14)": "33.78",
+    "BB(20,2)": "-0.12"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Stocks to buy: Titan, Lenskart, Dabur among Nomura\u2019s 17 consumer picks. Do you own any?",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZXl4MVpkM3pha3VYTXFCX2Vnc2E1d3ljNHc0cUd6dGpTN01hcnFuNXhwTUI2SXU2emhPV0cyaGVwQ1hac25qS2Q0VTUwb2tsNU1ZMVJJaktHenZVN2gxM3dtQmZGNWxnQ05WWTd0Z2RpczBwSWNPZExuZHdPTzg1bGstOXdUNkVfckRwdG9IdktnTVh3RVRXQ2k3Z0FobDROeHdkclhlbWZoNXd0N3lMTDJValRWVjJlNWR1eGN5M0FPSHdfUEd6UXpuZDhrbVFZREhLQmxqeXpSN0FYZ2NBMTNLMkRVN2pTRFV4RGN4VEpSZzM5?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Titan can hit \u20b95,400 as quick commerce competition moderates, says Bernstein's Jignanshu Gor",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxORHg0QWhOeURjVW5LVG1CQXdyTGQ4VUVkdmtMN19lRl8yZEVDN0NFTDNfdFlTWDFfUWV4dlE2aVBDU1hXVVFYUVZYYjJNdTFyaTVJM1hmWVJHUjNSNW5CX29jX1EwaGtTM2Z0MlVLcXVubE1jd2tQUnVGVG96UGpWeFRCU1BvQXlPWE1pNE9TM1RJY1ZIclNTUFZuSEpUUE9sMGx1TXFwcXF0OHBQVmM2cjNNV19TZWl3N3VGc2RobjhnWWVkcjE3a0VUNXpmRGlGaEVFX3p5NmZoTXY3a2NUSmExWWwzaGF0VThIV1Rva21iLTRrazQ1RTZVSnjSAYICQVVfeXFMUFhYeXVjV3p0cHg5U01Lai1vSHN0aDNNcXkxNk02Mzd2c3hvS0x3X1A2bU1nY0N0RUpxOFM0WGpxOU5STHdfXzY0dTQ5WF9wNERaZVFKWF9OWFBEWjBnUWVPcmIzRkNHd0ljMTJ2b29IM29hY1FHcGYwR1BMTEVNS2lYeWlkTWJMMUNMYVd2ZTdlNGd5OU1RQ3VWM0VlcUJDVHlqVy1PTXZlcUt0U1p5ZDZIbVBjRlJjZDIxbXFvbHlNaGZ1YkZDcDJIV0xRX2xUekNENHlZOTRrdjJ3SV9Tb0doMG1xaWtPOFhUSjlzR1pUQi1xSWRiZkZEOXFhSzRKcGJ3?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From TCS, Titan to Tata Tele - Tata Group stocks fall as Trusts plans move to prevent holdco listing | Details here",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOTTcwS2tEak9BRk9pYmJISmM3bGp6eHlrQmtxdTNrYTRmTmdfd01FOTF4S2NvcmxxWXVYaFRKVmNkbkxKOGRZUFJfWi1qNkh4Mm4yQ3RkamY2U2RhcTk3NktwZDlGQXdtaUJrcmYyQmtKM2dwel81Tl95V3FtUUE5SXZwQTJKTjZ5eEU3SlJyUkNialljMFBzeDZHSWVhQ2FBY0l6UU40SXRxTHphUjJHeldadmxyUGY4Q1lmTzh0dE1WbHpYZjV5a1pJbXA0NHVQNnFSdWgyWGpHQlg2bWRITGpaSzdhNG5LdHQxd2JhMEUxY1BsWVF5MlBLZElCQU1GTkRJdjNOcXZfLTlx0gGSAkFVX3lxTE9HdjhUb1JuMEkxVGdub0FGM0ZJUm9NdGEza0dpTnppLXM0QzVhdmtiWU5aVVNCR2E1V0pJT0VyeV9ScDZidVBEV1BpVUotcndxQkFnSXZfbjUxR3VzMl9FMFJ5bzZiU19LMXRpQ0tWRlFtc21xaUZWb2JKYlM4NGt6a3l4Yldzc3VsSG9ualBXSFhpTld2VjhkaklRRnNWTUVWd1d4c1d0MnZnRVNTUGZlcTl4d2xlc2J0N0xGWFJmSmV5UnIxQ1lYNWxOcWhrRDQ2bEZGLVMxdjRiSHpTQXk0Z1drWE5BeXlxazhlVnlIaHA3cTk2UkNqQ2tGWmVaY1g1eEIwZ242WjEzOFVCemYyMlE?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "This single stock made Rekha Jhunjhunwala richer by over \u20b91,000 crore in Q2FY27 so far - Should you buy it now?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNU3JsYUF5bVpwbUtpTXhDbG1sWk10Q0JHTGxkeEl1bWdmRG4wWTB3RXl5dFJvVnlJbkNBa0h6b1drX0E2RzZ6dGNiWjkzMVZ2Y3JUSXA0VFB1cjVNQmZCbFRnenVqWC1BcGs0MzRkNlBVemVENjdObEdHbTZZclJRaFk3NzlORmExSnBKMlVuWDVjNGFqZkI4aVdscmgwNThhVXlzVDhiYWo1Y0p4OFYyRUhUSkZRRWdXekxsZEU1X1JHVlpNMFgxdHRhOFQ3UktXeUFVc0RTcHY3SXdZNXdKZTU2Q1g2eDM3eG1qY1JqUXFCcWNpaVY2V2JBNlotU1MwdWJ0VEkzck7SAY4CQVVfeXFMTW5jMWRrX3lxQU5FNEcyVFpFb2FHLWUyLWZqVVp3a1hUN216anRtN3MyZmVJR2p1cW41bkt4UGI4b21BUUx6YWpLeTlYVXB3LVJGVjFzOEZ3OThmREVZS1NMeGgzSTloYTRWY0NpN2doenk5cVhHTnNhWTBLU0pNZGxLdjBWSUZSaXBuRU5GVV9Qc0s2bFcyOEhMRnlKM3B4OUNLOFROOC1wWGhXQk9VRmJJREExSjkwTF9qdk5XY2JUaWs5NlFRMG01Z1RDbm94SHVUajBVVmJKM05KdWVjVEp3RGxPYnFFeTQyc1lXcjg1OE56LTNmN2lkS0hCaTFzaE9IRzdqTGVYM3FsbXJ3?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "UltraLED clocks 1,000+ visitors at InfoComm India 2026, expands Professional AV portfolio",
+      "publisher": "ET Manufacturing",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPX0s1Q05wSWhkYmhCa0tGSmU4cTlhVGZTWjREbEpfLXc1MUtnN3g1Q3lJUHAyQTlEcTJNcjFGYmZBNm1NNXJFbnpfbkFmQTRqZU15Wno4QWdJVzk1eE9jMERTelVqZm9iWHdUckJCMVdMdHUyc01ZQXZVRXJodUx6bzA2YnE0N04zSkF5MnZENy1rUTJobHlTcHRBTG9hTmE4U0tKRml0XzVrczk4aVBCUTVzd2h1cHFlMjUyUGRHSF9XQ2VKMGRFMm5hMDltWF84X2gtZjl2em9feUR0NkkxbWduR2VWVXNtY0ZSOUU2aHhvd9IB9wFBVV95cUxQenJoamo3VDVqczVUNU81VUE0T1hTMUlENHZka3NlQTVQaTFFcG9FMjBxamdFQnl3NGgwd3B1bjhYN1NhSm1iczJDTkFkTjZubW9qSWNTZm9ibWh5RWhkbXhvelRIeTVQc2dRU29fcEdOQ0VsbElOT3VhdmpYeUtjOGtTRlZmTTdOSFgtbk4tejRxay1jZ0VGM0otZjdSZjI1QTFZTS1sOUFHTkpEaHJQRFZjbnp0N1Q3VHh6elc4NHIyNjhlVG1lYVYzX1VrTVdHd05SY1hLdlhaaEtEdXNydXEzcXNOeHdsSHFXWVpYbUJldU5HcnZn?oc=5",
+      "published_at": "Fri, 25 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "From Zuckerberg, Pichai to Musk: Trump, tech titans sign AI pact; says industry can police itself",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPTWkzLVRqWnQydVd1Njlsc19BM0M3bk1VeS1Fb3JUS2ZpazRDODZfX2gyNVhwMVo2RG8yOV8zenUzUl9qTm1lNUFIMVhPTXp3THlqM04wN1pRUnEwUHh5WjZGYzJVN19rVjMtVjE5UWdGeHcxYzZFWDUtektHbU51VFRIVmk1bG4zckQtMEV2TFVEUDNfWmlQY1hHWW4zSU5DaGxyT2VMZUtZQ2NVWUhDUk1YM3ZVUVAxSGVmUXZGbkFHMEl2dXRSSEZNTVl6czJSWUxZN3MyN0lET0FkQkprMEdSMnNwWTBCenhPRGNEZXdnSDduaXJOYjh3?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

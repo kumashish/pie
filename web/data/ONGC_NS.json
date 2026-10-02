@@ -1,0 +1,405 @@
+{
+  "symbol": "ONGC.NS",
+  "last_price": 222.37,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.2,
+  "fit_score": 12.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 12.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (30.7) is oversold (< 35) [Synthetic PCR: 1.47]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 220.0,
+        "strike_formatted": "220",
+        "option_type": "Put",
+        "delta": -0.362,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x ONGC.NS 24-Nov-2026 220 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 210.0,
+        "strike_formatted": "210",
+        "option_type": "Put",
+        "delta": -0.115,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x ONGC.NS 24-Nov-2026 210 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 226.82,
+    "take_profit_price": 210.0,
+    "net_delta": -0.247,
+    "net_theta": -0.013,
+    "probability_of_profit": 38.7,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 177.9,
+        "pnl": 6.0
+      },
+      {
+        "price": 179.67,
+        "pnl": 6.0
+      },
+      {
+        "price": 181.45,
+        "pnl": 6.0
+      },
+      {
+        "price": 183.23,
+        "pnl": 6.0
+      },
+      {
+        "price": 185.01,
+        "pnl": 6.0
+      },
+      {
+        "price": 186.79,
+        "pnl": 6.0
+      },
+      {
+        "price": 188.57,
+        "pnl": 6.0
+      },
+      {
+        "price": 190.35,
+        "pnl": 6.0
+      },
+      {
+        "price": 192.13,
+        "pnl": 6.0
+      },
+      {
+        "price": 193.91,
+        "pnl": 6.0
+      },
+      {
+        "price": 195.69,
+        "pnl": 6.0
+      },
+      {
+        "price": 197.46,
+        "pnl": 6.0
+      },
+      {
+        "price": 199.24,
+        "pnl": 6.0
+      },
+      {
+        "price": 201.02,
+        "pnl": 6.0
+      },
+      {
+        "price": 202.8,
+        "pnl": 6.0
+      },
+      {
+        "price": 204.58,
+        "pnl": 6.0
+      },
+      {
+        "price": 206.36,
+        "pnl": 6.0
+      },
+      {
+        "price": 208.14,
+        "pnl": 6.0
+      },
+      {
+        "price": 209.92,
+        "pnl": 6.0
+      },
+      {
+        "price": 211.7,
+        "pnl": 4.3
+      },
+      {
+        "price": 213.48,
+        "pnl": 2.52
+      },
+      {
+        "price": 215.25,
+        "pnl": 0.75
+      },
+      {
+        "price": 217.03,
+        "pnl": -1.03
+      },
+      {
+        "price": 218.81,
+        "pnl": -2.81
+      },
+      {
+        "price": 220.59,
+        "pnl": -4.0
+      },
+      {
+        "price": 222.37,
+        "pnl": -4.0
+      },
+      {
+        "price": 224.15,
+        "pnl": -4.0
+      },
+      {
+        "price": 225.93,
+        "pnl": -4.0
+      },
+      {
+        "price": 227.71,
+        "pnl": -4.0
+      },
+      {
+        "price": 229.49,
+        "pnl": -4.0
+      },
+      {
+        "price": 231.26,
+        "pnl": -4.0
+      },
+      {
+        "price": 233.04,
+        "pnl": -4.0
+      },
+      {
+        "price": 234.82,
+        "pnl": -4.0
+      },
+      {
+        "price": 236.6,
+        "pnl": -4.0
+      },
+      {
+        "price": 238.38,
+        "pnl": -4.0
+      },
+      {
+        "price": 240.16,
+        "pnl": -4.0
+      },
+      {
+        "price": 241.94,
+        "pnl": -4.0
+      },
+      {
+        "price": 243.72,
+        "pnl": -4.0
+      },
+      {
+        "price": 245.5,
+        "pnl": -4.0
+      },
+      {
+        "price": 247.28,
+        "pnl": -4.0
+      },
+      {
+        "price": 249.05,
+        "pnl": -4.0
+      },
+      {
+        "price": 250.83,
+        "pnl": -4.0
+      },
+      {
+        "price": 252.61,
+        "pnl": -4.0
+      },
+      {
+        "price": 254.39,
+        "pnl": -4.0
+      },
+      {
+        "price": 256.17,
+        "pnl": -4.0
+      },
+      {
+        "price": 257.95,
+        "pnl": -4.0
+      },
+      {
+        "price": 259.73,
+        "pnl": -4.0
+      },
+      {
+        "price": 261.51,
+        "pnl": -4.0
+      },
+      {
+        "price": 263.29,
+        "pnl": -4.0
+      },
+      {
+        "price": 265.07,
+        "pnl": -4.0
+      },
+      {
+        "price": 266.84,
+        "pnl": -4.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.755,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2795,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "232.77",
+    "EMA50": "237.25",
+    "EMA100": "244.45",
+    "EMA200": "250.41",
+    "RSI(14)": "30.69",
+    "ATR(14)": "4.36",
+    "ADX(14)": "20.93",
+    "BB(20,2)": "-0.19"
+  },
+  "rules": [
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Buy ONGC, Sell Oil India| Kotak raises FY27 oil price assumption to $90",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNaDI2MHRrYTJuUEtJTmhNMFlNR0p6Wk9qNzNOSXRtYjBYb3E0RExvLS1EY3FDSU5jc3dnenhtdUdGZjgyTDF1YjlaVng4cHVKc1dsWldoSnh4Smoyam1DWldYZFlFSXRhT19SaTJreElBdkVKdEY5LVEzdWxjY3hrVXVqWW4yOW5yVXdid1lVS2ppeHU2WktRV3RmbTFneWF6YjlUYy1zb0pONDVKWUpQQmFLejUwV2ZBdVdDZi1oLThfSmUzOFJ5cjIzRGlYLWNsbzNiaNIB2gFBVV95cUxOZHFJbVpnV1JZS1J4Ymlvcnd0cjZNWFpjT2JqSHlvbkNwbVk5LTZIOFBrSFpXTG1xNkd3UFNVYTN3YkF5Mk5YMW9rVE5SaUdTRmlRT1E5YXU3QzJSMWhHckRUTk1Ld2VTYUpHQ0JGNkhJcXJrX28tU1dBNlNVWjhWYURUdjNWT20xREl5QkphNjc1ZTFsZXdDeWk3S0R3YngxZFIxaWhpNnJ6Umd4MUREV0VnaTZiX2FBY2FxeHlLaE5IN0RkUUhlcVVNN0o1OWZBNlhjcVRYNnBLdw?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TeGlPU2RvVDhJTkNieHUzZzlrUkYxVDNEWm5WRi1fcl9HaVp2aVVpVHFCdWdoNWt0Z3NjTjZIckthbFdObUlYNnBtT0JuYmczUS1fNHlYMjk2MnB3NzNrREswR2VVWTU4Q0lfLUlnOE0?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Three nations, one union under strain: The long history behind United Kingdom's latest breakup threat",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1sVnc4c25uWFk3ZTZEQlBsOGYtbVJ5TlNxMzBJaWdWcUdPWjBtc2paZ2E1LVg2LTVCb2w4dlltWnVJd0xwWjVveEY5V0xmNTNTT294U3ZZUEQzSVlmbVVtMGt5dzFCRkNwS2xQOXVzYVBRLUVDQnhr?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ahead of Market: 10 things that will decide stock market action on Thursday",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9zaVZpMHJJbTJWMHlQbG42b0dSVVlVNXJrSHIxSmlaTHF6YUpoc2NxZUhnNF9Vc21nU3FFeEdBUVVncFlzRjRWUEdOeGVWWC1pUnAwMzRRaUZBVnI1cmx6Z0Z3?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Live: Bank Nifty gains ahead of quarterly updates; Hospital stocks decline | Closing Bell",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOYlM2dXB3bndkdWo4NVlUbXdyaHI0MEVSZTIyR1V3ZEVuTzJvX1JmcHh2MVJ4bVh1YXNzeVd1YW5hc0V4cWFMNExCMmdtNXVZYWlGMUZ5MmxfT090TXRZYkZWczNxb20wUUxVb25rSGgtSURxWElpWENtbUhSZGF4TnVVXzMyaEZ0aGJlVFRTZ0MtVFF3WF95UHpjZVctbHBid0NHWDJYMW5jRHQyaGhGbkVzcElBenY3SDlZT2RlbDJaSmdqZmc0SFl6Zm9RUWV5RHQ4T0JRUmJsNDRiQzVSV0hlcmJWdzVo0gHuAUFVX3lxTE9vRGpLY0l4c2RZS09yMjJrejE0Z2VOWlBVLU5YTG12djlPSWpnZ01oRThGMDdNdmRkeHpfXzZsQWZkWlB0Nnp4N2E4dE1RQUFfR3lnM1FXcnhZVXFiY3k5X01uMkEtdWRwUVBiOFNVSWJ5a1h4WHA2bm9kTzdVRURDWjY4RFBBX0xSZ0ZSQXlENWVERVptem51bzNndHQ5Z2VEcWpZdXNPSVUxbDdhQXFwRDVBVnVfYk01bDAySU4yZ3NMa0lLNFpQVG9qSlBJc3ptOEZlMEYtal9GNHhJVGZyUndlZ2NQUWNwZnUyNGc?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Taking Stock: Sensex, Nifty end flat amid volatility; metal, pharma stocks drag",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNlFuRkRRZUhlRVJyZnBmVEdDeTdqdk5ENjRJX2ItNnhSUjdVRHdLUnN4UERueWt1M3I2TER3dm8zcU85QlN4Y2ZTNGdNcnpEeFhWbWx4WlBQOWVKdHdzcmpSS0oydktFczVQa2hvRGRrOThnTmpIQ3pwcFpTQXViZThZT29FT042UWx6LVlpNk0zZ1RuaDhWZlZXZ2wzbDhKSjN4RzJsWFIzZGZ0UGxFTFJXMllWWFFDYkZRUFhlc2tsRVQ3cVJIZ25GUFo2N0hHVzM1aHRsd9IB3AFBVV95cUxNTG1lRURYT0VLVEplb2p5emQyMDB3d3BhZUM4b1ZJZk10NEo0c195N2ZEc09rQUJsUXNjRmNMaFBoNGc3bVV3M2R1ZWNSZDRPMEJuWENZdkVlT2RUVEhGWVA3VEdLQnRtSUc0RmNWMzF0MlY2cVhjMEF1d0VSc3FCbXdwb1A1Q0hfOTZ1cndBbThOZ282N0ZKRWZhWTUtOFE4WTZRdU9xcEotMmxXczBkZjRsVmlHdW1KZmM1TFIyZzE5VFpHNVVTODNybUstU0oxSVhwOUhUMnVEZWhh?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

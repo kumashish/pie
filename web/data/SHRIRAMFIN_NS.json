@@ -1,0 +1,405 @@
+{
+  "symbol": "SHRIRAMFIN.NS",
+  "last_price": 945.0,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.2,
+  "fit_score": 42.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 42.5,
+  "vix": 14.46,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (59.4% fit - Grade C (Moderate)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 945.0,
+        "strike_formatted": "945",
+        "option_type": "Call",
+        "delta": 0.563,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 945 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 985.0,
+        "strike_formatted": "985",
+        "option_type": "Call",
+        "delta": 0.277,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 985 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 16.0,
+    "stop_loss_price": 926.1,
+    "take_profit_price": 985.0,
+    "net_delta": 0.286,
+    "net_theta": -0.064,
+    "probability_of_profit": 53.6,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 756.0,
+        "pnl": -16.0
+      },
+      {
+        "price": 763.56,
+        "pnl": -16.0
+      },
+      {
+        "price": 771.12,
+        "pnl": -16.0
+      },
+      {
+        "price": 778.68,
+        "pnl": -16.0
+      },
+      {
+        "price": 786.24,
+        "pnl": -16.0
+      },
+      {
+        "price": 793.8,
+        "pnl": -16.0
+      },
+      {
+        "price": 801.36,
+        "pnl": -16.0
+      },
+      {
+        "price": 808.92,
+        "pnl": -16.0
+      },
+      {
+        "price": 816.48,
+        "pnl": -16.0
+      },
+      {
+        "price": 824.04,
+        "pnl": -16.0
+      },
+      {
+        "price": 831.6,
+        "pnl": -16.0
+      },
+      {
+        "price": 839.16,
+        "pnl": -16.0
+      },
+      {
+        "price": 846.72,
+        "pnl": -16.0
+      },
+      {
+        "price": 854.28,
+        "pnl": -16.0
+      },
+      {
+        "price": 861.84,
+        "pnl": -16.0
+      },
+      {
+        "price": 869.4,
+        "pnl": -16.0
+      },
+      {
+        "price": 876.96,
+        "pnl": -16.0
+      },
+      {
+        "price": 884.52,
+        "pnl": -16.0
+      },
+      {
+        "price": 892.08,
+        "pnl": -16.0
+      },
+      {
+        "price": 899.64,
+        "pnl": -16.0
+      },
+      {
+        "price": 907.2,
+        "pnl": -16.0
+      },
+      {
+        "price": 914.76,
+        "pnl": -16.0
+      },
+      {
+        "price": 922.32,
+        "pnl": -16.0
+      },
+      {
+        "price": 929.88,
+        "pnl": -16.0
+      },
+      {
+        "price": 937.44,
+        "pnl": -16.0
+      },
+      {
+        "price": 945.0,
+        "pnl": -16.0
+      },
+      {
+        "price": 952.56,
+        "pnl": -8.44
+      },
+      {
+        "price": 960.12,
+        "pnl": -0.88
+      },
+      {
+        "price": 967.68,
+        "pnl": 6.68
+      },
+      {
+        "price": 975.24,
+        "pnl": 14.24
+      },
+      {
+        "price": 982.8,
+        "pnl": 21.8
+      },
+      {
+        "price": 990.36,
+        "pnl": 24.0
+      },
+      {
+        "price": 997.92,
+        "pnl": 24.0
+      },
+      {
+        "price": 1005.48,
+        "pnl": 24.0
+      },
+      {
+        "price": 1013.04,
+        "pnl": 24.0
+      },
+      {
+        "price": 1020.6,
+        "pnl": 24.0
+      },
+      {
+        "price": 1028.16,
+        "pnl": 24.0
+      },
+      {
+        "price": 1035.72,
+        "pnl": 24.0
+      },
+      {
+        "price": 1043.28,
+        "pnl": 24.0
+      },
+      {
+        "price": 1050.84,
+        "pnl": 24.0
+      },
+      {
+        "price": 1058.4,
+        "pnl": 24.0
+      },
+      {
+        "price": 1065.96,
+        "pnl": 24.0
+      },
+      {
+        "price": 1073.52,
+        "pnl": 24.0
+      },
+      {
+        "price": 1081.08,
+        "pnl": 24.0
+      },
+      {
+        "price": 1088.64,
+        "pnl": 24.0
+      },
+      {
+        "price": 1096.2,
+        "pnl": 24.0
+      },
+      {
+        "price": 1103.76,
+        "pnl": 24.0
+      },
+      {
+        "price": 1111.32,
+        "pnl": 24.0
+      },
+      {
+        "price": 1118.88,
+        "pnl": 24.0
+      },
+      {
+        "price": 1126.44,
+        "pnl": 24.0
+      },
+      {
+        "price": 1134.0,
+        "pnl": 24.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.708,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2372,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1005.47",
+    "EMA50": "1030.85",
+    "EMA100": "1023.62",
+    "EMA200": "975.68",
+    "RSI(14)": "29.81",
+    "ATR(14)": "25.30",
+    "ADX(14)": "35.28",
+    "BB(20,2)": "-0.05"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Shriram Finance Q3 Results 2026 - Find Shriram Finance Q3 Earnings Result | SHRIRAMFIN Q3 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVWJWXzRfQkZ3VnNEOVg1b3RrUzZpM04wR292eDZJMEdwV0xZdDFNN1pfRjJwM1Ixa0pCSnllbFdIZ3NkSEpDVDVoWUpKeTV2Zlk3ZkhZcng0SGtlYXZWakxmYm5RMHlTZlNhdlVXQVAwQS1rRW54UFhVY21ULVhPTHF5UVUxWjQ?oc=5",
+      "published_at": "Mon, 18 Sep 2023",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Budget impact: Shriram Fin, Poonawalla Fincorp, other NBFC shares fall up to 5% as higher gross borrowing...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPand0LXpET20wNnNyejFFUFgzVWZGT052VExtRUQ3dnZ0cFVGM2dTNFdleE9rMzhMNUUyWER1bUFQUVNPYkgwQk5MblpaeGdpUFNGMFFfTC1RT2RHR2RfRzVhMlNMM3JIS1VFYV9VNXdvZElTNFowTE90dEZfekQtNWlpTmVNT2hOQmF1NEVYUGhhMUF3NVl5ZWRRRTYyOXl6c0xuR09LMS1yOTBGNGg3akwxYWNNS3lqYmdvZHNzZHlYV0F3WmExRHBxLXBYUnNYNElyU3ZZNkpNTmIyaU5NSmFOSjRsYlBDWTVfRmY1TWx1X1BYaDZndkY4TUxSbERzMGt3Vm90OWhLNG9EX2k1d3Z4QktrZ9IBmwJBVV95cUxQc2dDMHI2aXNYUDNHT2drbUs0Nmlqdk5QcEg0eFYtQzB4WERPQ0tHVDJvLW9iWFJ5YVU1TDI2TGJjVkRZRmVBdjZQS1dvd1Z0MHRwemN3UkZSVU95VVdERk9od3hmVUJTQTJvWTJNMmhWMU1PLXRuX0VJTU91bDhneTFEVlNNS29vVl9TWEpJcExKQUkzaEpQVnFvdkpUMjgtNzhJODVBQ2p6ZXQxamV2T2p5MnRjV3gyV2ltQ0lhY3FtYWMtMGtBMlBJU1Y1b3hTUk1pWFAxTUczTzRyUV95S1FPeU5aaVdYY091Zm85OWJiSWhkZUVSXzVBRzlnTnJyd2tDNmczem1YcmJJcHk3dUU3TGdpaUZxdzVR?oc=5",
+      "published_at": "Mon, 02 Feb 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Shriram Finance",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE55VXlpemh3enFsLWltSVhPUHR2RHlLY24wZlU1bTd4LUgtVDVnSGxMYmdSaDJtVG51XzU4em9lNlJXQlhGdHVXb0ZEaTBZY3haRkYzOXF0NFdPY1NfUUp6SUFEb1F4aFI5cGg0V2lNNW9WcDI1N1ZLbA?oc=5",
+      "published_at": "Wed, 13 Nov 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shriram Fin may offer loans for upskilling courses",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNNC1HS1JfX0VjMmVXOHFYZFZrUVZWRUoyVFdBNWFqaG85dWVla01jVVYyaTNHR2J3QlJpTFRPUzlqejhBemQtc2dpTlY2NGpsVGZfam9qby04RHBHSEo3QUo2UjFseVZGaHJVRXpza2VBeTBYMFRYMnNlRVdfMEx3UWJGQkJ0cjZGWVdCNEFxa1JldGFJSTVxZVN1eDJ4SW1ibk5peldBOVJqU2tKUUxaaTBhOF9ab1Nla3g5ZDFQb0FVZzVnb0w5RHdGcHh4eWljWElmT0Q0V3l2V3l6T3QyY2FHVWZhUW80UUFFRmduNFpTRHBkam43WWkxYkVSWlZoY2fSAYcCQVVfeXFMUE01bFpuclFnR0RvbURsQk1mb0VBeG5nbjFZR0h6ZUtrVXU2cDA5dmc1Tk5FZmdqUmtjZDVTdTZ0YTgzQ1RuLUd5N0JUNzF5ai11RmJrMzA0bjBMOVVmOURnVXhUdG5RTVhYejNuNjVUamktajZSOVFwY0RDb1VQZkExTVFUQ2gxYmppTzZwbjd5d2VGMmZ2NWJBWjZQSFZsQVdFb01yYWktOW9KTnlEZUw2ZEpJM3pvWEl1WUJEandQb2JxM29UYnhtV3NIYkhWWTJ5T0FITGNHc3U3UnlDY055US1sMk15cHI2S2diVlZFeG52bUFkbUhOSmVqaW01aEpsbms4U3c?oc=5",
+      "published_at": "Sun, 21 May 2023",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "shriram trans Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RcXlNYjFaY3VZZkNpaGRuSFZYNU9fOFAwaEx4bXJxZnhkaGZhTmx1WkJtbHlKX00tV1VtbjBGVWt3NWc4ZnRLdDNKV1ZyZ3pEeXdZOGxrcDBCSHVpQ2o1MW1nbmlpelF0cTgtLTQ1YV9rRUtqMVlWanRIVU9Ldw?oc=5",
+      "published_at": "Fri, 05 Jan 2018",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DCM Shriram Fin Standalone March 2026 Net Sales at Rs 93.08 crore, down 17.69% Y-o-Y",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZi1GLTB1YUFPS2dVM1d4RHFVUnlhSG5Wc20zbC1uSHpDZGJsZkVFeHhkTEN1NVlrekdpbVFscGc2N0Z5bXdwR1ZXdG1hNUpHR1FlcEktZHFyUXpTc2xGVUhwYnZjUFAtbXY1SWhGMWVUS3dhcmdZWVZjLWRJVVZ4dTBKeUVscExTSWdSS3hOZTNTUWYwUTltN0Vpa2J0SHRXb29pc1M2cHYzTFhBazJTb3J1M2x5Zno1ODloYm5UUlB1RVZtSVlWbTBJMWFKaEkyUTNKOXppazduSjZzMGpyY2JB0gHnAUFVX3lxTE1DWTZ4WTJZU1dZUnc2TDhtQjZxQUg5RnE1a1F2QXdCUFp4eUxjc2VhWTRUcWprbU56c2VscngwOFBpRGFfWGlPMVlPblppUmFFSkkzY1EtTHJCb1EwaGZIUVRGb0licWRxQWFNbWd6TDE4TGVvX2Q4ZXZzNzV1NGJEcnRnanR5b245Z3pZZ1J3WHlXUE8wSm9tb0hVZ016Y0pmVWtuNEppWndCVXZvWDJMVDV5Z0RuSUxTTjVUczRqUnBCTmJpRWhKcjVTdnFCZHJkaHV1cGphb0VMNnRMbWhuODdDWkdRQQ?oc=5",
+      "published_at": "Wed, 20 May 2026",
+      "sentiment": "bearish"
+    }
+  ]
+}

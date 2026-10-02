@@ -1,0 +1,405 @@
+{
+  "symbol": "BEL.NS",
+  "last_price": 383.1,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 17.5,
+  "vix": 14.46,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (76.7% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 385.0,
+        "strike_formatted": "385",
+        "option_type": "Put",
+        "delta": -0.472,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x BEL.NS 24-Nov-2026 385 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 370.0,
+        "strike_formatted": "370",
+        "option_type": "Put",
+        "delta": -0.215,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x BEL.NS 24-Nov-2026 370 Put"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 150.0,
+    "margin_required": 6.0,
+    "stop_loss_price": 390.76,
+    "take_profit_price": 370.0,
+    "net_delta": -0.257,
+    "net_theta": -0.007,
+    "probability_of_profit": 49.9,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 306.48,
+        "pnl": 9.0
+      },
+      {
+        "price": 309.54,
+        "pnl": 9.0
+      },
+      {
+        "price": 312.61,
+        "pnl": 9.0
+      },
+      {
+        "price": 315.67,
+        "pnl": 9.0
+      },
+      {
+        "price": 318.74,
+        "pnl": 9.0
+      },
+      {
+        "price": 321.8,
+        "pnl": 9.0
+      },
+      {
+        "price": 324.87,
+        "pnl": 9.0
+      },
+      {
+        "price": 327.93,
+        "pnl": 9.0
+      },
+      {
+        "price": 331.0,
+        "pnl": 9.0
+      },
+      {
+        "price": 334.06,
+        "pnl": 9.0
+      },
+      {
+        "price": 337.13,
+        "pnl": 9.0
+      },
+      {
+        "price": 340.19,
+        "pnl": 9.0
+      },
+      {
+        "price": 343.26,
+        "pnl": 9.0
+      },
+      {
+        "price": 346.32,
+        "pnl": 9.0
+      },
+      {
+        "price": 349.39,
+        "pnl": 9.0
+      },
+      {
+        "price": 352.45,
+        "pnl": 9.0
+      },
+      {
+        "price": 355.52,
+        "pnl": 9.0
+      },
+      {
+        "price": 358.58,
+        "pnl": 9.0
+      },
+      {
+        "price": 361.65,
+        "pnl": 9.0
+      },
+      {
+        "price": 364.71,
+        "pnl": 9.0
+      },
+      {
+        "price": 367.78,
+        "pnl": 9.0
+      },
+      {
+        "price": 370.84,
+        "pnl": 8.16
+      },
+      {
+        "price": 373.91,
+        "pnl": 5.09
+      },
+      {
+        "price": 376.97,
+        "pnl": 2.03
+      },
+      {
+        "price": 380.04,
+        "pnl": -1.04
+      },
+      {
+        "price": 383.1,
+        "pnl": -4.1
+      },
+      {
+        "price": 386.16,
+        "pnl": -6.0
+      },
+      {
+        "price": 389.23,
+        "pnl": -6.0
+      },
+      {
+        "price": 392.29,
+        "pnl": -6.0
+      },
+      {
+        "price": 395.36,
+        "pnl": -6.0
+      },
+      {
+        "price": 398.42,
+        "pnl": -6.0
+      },
+      {
+        "price": 401.49,
+        "pnl": -6.0
+      },
+      {
+        "price": 404.55,
+        "pnl": -6.0
+      },
+      {
+        "price": 407.62,
+        "pnl": -6.0
+      },
+      {
+        "price": 410.68,
+        "pnl": -6.0
+      },
+      {
+        "price": 413.75,
+        "pnl": -6.0
+      },
+      {
+        "price": 416.81,
+        "pnl": -6.0
+      },
+      {
+        "price": 419.88,
+        "pnl": -6.0
+      },
+      {
+        "price": 422.94,
+        "pnl": -6.0
+      },
+      {
+        "price": 426.01,
+        "pnl": -6.0
+      },
+      {
+        "price": 429.07,
+        "pnl": -6.0
+      },
+      {
+        "price": 432.14,
+        "pnl": -6.0
+      },
+      {
+        "price": 435.2,
+        "pnl": -6.0
+      },
+      {
+        "price": 438.27,
+        "pnl": -6.0
+      },
+      {
+        "price": 441.33,
+        "pnl": -6.0
+      },
+      {
+        "price": 444.4,
+        "pnl": -6.0
+      },
+      {
+        "price": 447.46,
+        "pnl": -6.0
+      },
+      {
+        "price": 450.53,
+        "pnl": -6.0
+      },
+      {
+        "price": 453.59,
+        "pnl": -6.0
+      },
+      {
+        "price": 456.66,
+        "pnl": -6.0
+      },
+      {
+        "price": 459.72,
+        "pnl": -6.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.768,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2912,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "394.71",
+    "EMA50": "401.03",
+    "EMA100": "406.99",
+    "EMA200": "407.73",
+    "RSI(14)": "36.37",
+    "ATR(14)": "7.10",
+    "ADX(14)": "21.46",
+    "BB(20,2)": "0.13"
+  },
+  "rules": [
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Personal Finance",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaWZCWWQtVVVSOFZlakI4T3o0S2kxWjlibDBIc0FqYTVXdEk5T1Z3MzFabmZWSUttXy1JRFppTFdpcmw5eEFVZzVYV1BHR2M3Y0xnSjlkaVEwck9pWFBHVXZLTmM3MXdUd0Jhb2docnRWa0NUZ012c0wteldGZ2tXUVROSEFQcU1pN0lXejhJMWw?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Cochin Shipyard, Voltas, BEL, Tata Steel, Axis Bank, Vedanta Aluminium: Top stocks to buy | Target, SL by Ganesh Dongre",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOUWVNMzNGS3VPelFWNUh5RGRTUzJHR0ozV1h3V0tXeHhKNGlROTZWLU1iRlMtd2FSNnIxUlBuUXFFdEJjNkp5bTMyQ3pkejN0LVA5VS1kT1VzdWNDeEZUTkQzUGdOMm5odU5Fck5XdHBaa0NFOExadVZhT0NkdDc1aHd5bzdQMWJ3aE51MHBxSUs2REJqU2tON1hhd2g4YllCR3E5ZzJ2QWVPclZ4dW50bWpCaG5IVWlaaWlDMkNkNXRTcDlvcE10bXZtQWQ0RzZkRlpYd2tvbnRsNE1MV1Z1NmRjVjFHbHNGQnNRLUVxUGw3ZC1jc1dVdDFfNEZhemQ1N1V1RENOOFpkWEd50gGSAkFVX3lxTE1FN2g5ZC1NdjBGb0RQNVU2aE5tbDd5YnRRamtpQ21wNHhYNEhGNWJvRk5RSGs4Wkh0SWJ4b3pEU05jZV9oN3BOaURBejJMQWlneTZIRXRaTFRsMF9QZUhkLVZBaDRSa3lKa24tR0NFd3hXamUyYUU1Q0lRMlNzRnRHLVFVRWZCS3BsS2lIQVNPdlV1dzItZmpzRnJFc2dqc2VxN194WTlRQ0g5aVUzQjdFeEZZVzZsejR1Nmd6ZmZQclowbElyUVpLWHNCai1HY3NJZ2F1eHcwUHI4TTFlc3FtUmMtMFZTQXBNMVBxdGVkblNQY2dfekFaaFNIcEhTRVpvc1ZucUYwYjZqT0RPQkR4N0E?oc=5",
+      "published_at": "Sun, 27 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Greed and Fear index: BEL, Adani Energy to Eternal | Chris Wood's Jefferies India portfolio has 22 stocks for long term",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxObS1aX0NDZy1Ld3ctQnlnemk1MDlwTFZ1ZXNhMDU1SnZROUgwV1lHdkFVTV9QZ05BVDFQZGNMblNTU0RxMEtoZDZ1NFdsTEVjb3VlNk0tTHU1Uzg3Tmx0V0JsalF1Sjh2eS1uRk5KS1NUSEduUG1QR2lFeFFvS0cyckJnbzFBN0FSN3J5UEN4cFotWW4yS0Z2dmZGcnk5TkxQejBka2x4SHh6ejdEMkVxaFVwWmZqdmpoNEQyUXF2ckFvZFlhd2hJUGpmT0VUdDVFMFhyNDdmTllGdU9sZGdfekhTVk1tejdHLVd2N3Jpc2ZueEhGalZlU1RrLUhXaWxjRGxYbTJSOVViYVR4N2w4Y1N30gGXAkFVX3lxTE5JZzZ4V2NiSFNObk8tQjVBaDFSVHZnLXZUTjctV3NVMlRSSXB6WldOWWQ0a0NkWU8wWV9VRklnYS1XdGZUQzVtTWw5amxMaWVPSGhDMFVHZ3dOdWtCZDBqbXBtVlhYQ2RxSWI3d1UxdjNpX0toUnZFa3MzUDQxcnlEU2lmbTR3ZWRDTHNicWQ5ZU01NjJFYkdEaHIxelIwalhZT0ZxQUoxaXEycTNfSXFYXzQ4LWsxXzdSVmNyV3JZd1FBXzQ4MFdvZDRGYlc1MEljYV90Y1hrMEx1OU9Ca1VIZEtUeWRvaFB6S2tLYWxxWmdJWnhYbjhSb1c0UVU3WDBuYmI1OEd2RWQ5UGl6UkZQY3lFQWVXcw?oc=5",
+      "published_at": "Sat, 26 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB0R2VwWUFvZk1sUDJlTFJmcEx1dE50Sm1BdTFya0w4Q2w2dm1maWlhOU54YW5yb2hBbVpCT3MyTmthQ01HQ3o3WVdRWHRGd1VSNUF3R3FxQmN5Uks4UVdYS0FRdmJvQzN0eG9pSkFnNkgzZHNoVWFtZTYzY1A?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bondada Engineering commissions 221.7 MWp solar projects in Q2 FY27",
+      "publisher": "ET EnergyWorld",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTDdtWnlHbU8yT0lZTWZIX3Q1eVNHSmpCVkxFdkpGdXhEaFlVaXJ4WXVRYk56VVJoSzRYVUs2Q3RqSjlzeWxNa0hSdHpRUDNSVHFfTDQwY0JfV21LSmFHeEs4UjJNV1JsVHFmamx4TUpFREFrblF2Y2JLeml4S2ZRUW9sUGVpalEtaDdDNXJCWHFiQUtLNFBNZWZEMzFBSTdDN1NPNHNpR1dpNllWV3doU3JyQkxlb2dOSk1TQVB5eWhwcmNyRzd1WC1GQTJjcVRsZFHSAdcBQVVfeXFMTjBmUFkwNDJrZ0pvcDQ2cUV0VEJ1RTJsa1RKbk55Ty1faE44OUNuRTJOVnZpWG5pSmRnYU5RTjl1bHVwSnVnM2dic05NaHh4YXFrREIxME93MTY3aktmS2F0MEFWZ3Q1MkNjV2toMzBTaFVCbWltVzhtaVlJN20xNFVPSGtVZ0REX09CY1VSX2pGNU01S2x0OEtoWFl6N0dGeHZESEZVYkp5OHpwUGVwNEZXZC1vSXlfWHllLTdncGtaN1NIUTM2ZzlCX0hLVkNHMU5XWkRuVDA?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Akash missile system exported to Armenia, Tajikistan and Turkmenistan: Defence Secretary",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcnpmc1VZZGpudlQ5bEFKS0Zzc3ZwbXlnYWp0SGh3LUJIVEl6MTdES2dUZUV1OGxTWHBaVS0ydDNVZ0c1ZzVtamdZOEQ3aEVDX2xGNWNlaXlGUWpjWmgtQ3FqbzkzZndyamhLMW56TU5nckhZZjdIMzBSclpZMEJOZ21wSDlVcklhN3I4OW5NRlAxeFk5VTJsQWhjNDVZSm9QTjhnYS1qRkFPbENZeGtzR3FmVkh2dEhxcTRhREhSU3ZvcmRPMjk1NEVsalhoYmd0UU5j0gHYAUFVX3lxTE1LSkhFZUFWRU1EZHdNUGZsRmRmS0R4ZnhMTl9MNmVMZkxqWC1RUHdNVTB4V01SUG82T0JZUU8xem8xa3hrM0RWdlhKdzJ4Z3E2bVdNSGh1SV90aVBMb1B4QTU0aTNfeS1KUnRvbFRjYklfamRSNndiM3ZEaU9sbUdUSUVoUnljTml5NlV6TXJLWmZuVkI4Z0xBUFkzQVRYYjlPVUJpQUJyM2Fqa1Q0a0NEcVB5OVEtQjB4a0RTeDZEYlBld0hzNXM3NW1SaHJEVWlzaWVEQzZ4Ug?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

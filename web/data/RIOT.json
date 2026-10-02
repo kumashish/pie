@@ -1,0 +1,417 @@
+{
+  "symbol": "RIOT",
+  "last_price": 19.61,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.8,
+  "fit_score": 47.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 47.5,
+  "vix": 16.0,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (72.2% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 19.0,
+        "strike_formatted": "19",
+        "option_type": "Call",
+        "delta": 0.753,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x RIOT 20-Nov-2026 19 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 20.0,
+        "strike_formatted": "20",
+        "option_type": "Call",
+        "delta": 0.424,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 2x RIOT 20-Nov-2026 20 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 20.0,
+        "strike_formatted": "20",
+        "option_type": "Call",
+        "delta": 0.424,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x RIOT 20-Nov-2026 20 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 65.0,
+    "margin_required": 1.0,
+    "stop_loss_price": 19.02,
+    "take_profit_price": 20.2,
+    "net_delta": 0.329,
+    "net_theta": 0.0,
+    "probability_of_profit": 72.8,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 15.69,
+        "pnl": -1.0
+      },
+      {
+        "price": 15.84,
+        "pnl": -1.0
+      },
+      {
+        "price": 16.0,
+        "pnl": -1.0
+      },
+      {
+        "price": 16.16,
+        "pnl": -1.0
+      },
+      {
+        "price": 16.32,
+        "pnl": -1.0
+      },
+      {
+        "price": 16.47,
+        "pnl": -1.0
+      },
+      {
+        "price": 16.63,
+        "pnl": -1.0
+      },
+      {
+        "price": 16.79,
+        "pnl": -1.0
+      },
+      {
+        "price": 16.94,
+        "pnl": -1.0
+      },
+      {
+        "price": 17.1,
+        "pnl": -1.0
+      },
+      {
+        "price": 17.26,
+        "pnl": -1.0
+      },
+      {
+        "price": 17.41,
+        "pnl": -1.0
+      },
+      {
+        "price": 17.57,
+        "pnl": -1.0
+      },
+      {
+        "price": 17.73,
+        "pnl": -1.0
+      },
+      {
+        "price": 17.88,
+        "pnl": -1.0
+      },
+      {
+        "price": 18.04,
+        "pnl": -1.0
+      },
+      {
+        "price": 18.2,
+        "pnl": -1.0
+      },
+      {
+        "price": 18.35,
+        "pnl": -1.0
+      },
+      {
+        "price": 18.51,
+        "pnl": -1.0
+      },
+      {
+        "price": 18.67,
+        "pnl": -1.0
+      },
+      {
+        "price": 18.83,
+        "pnl": -1.0
+      },
+      {
+        "price": 18.98,
+        "pnl": -1.0
+      },
+      {
+        "price": 19.14,
+        "pnl": -0.86
+      },
+      {
+        "price": 19.3,
+        "pnl": -0.7
+      },
+      {
+        "price": 19.45,
+        "pnl": -0.55
+      },
+      {
+        "price": 19.61,
+        "pnl": -0.39
+      },
+      {
+        "price": 19.77,
+        "pnl": -0.23
+      },
+      {
+        "price": 19.92,
+        "pnl": -0.08
+      },
+      {
+        "price": 20.08,
+        "pnl": 0.0
+      },
+      {
+        "price": 20.24,
+        "pnl": 0.0
+      },
+      {
+        "price": 20.39,
+        "pnl": 0.0
+      },
+      {
+        "price": 20.55,
+        "pnl": 0.0
+      },
+      {
+        "price": 20.71,
+        "pnl": 0.0
+      },
+      {
+        "price": 20.87,
+        "pnl": 0.0
+      },
+      {
+        "price": 21.02,
+        "pnl": 0.0
+      },
+      {
+        "price": 21.18,
+        "pnl": 0.0
+      },
+      {
+        "price": 21.34,
+        "pnl": 0.0
+      },
+      {
+        "price": 21.49,
+        "pnl": 0.0
+      },
+      {
+        "price": 21.65,
+        "pnl": 0.0
+      },
+      {
+        "price": 21.81,
+        "pnl": 0.0
+      },
+      {
+        "price": 21.96,
+        "pnl": 0.0
+      },
+      {
+        "price": 22.12,
+        "pnl": 0.0
+      },
+      {
+        "price": 22.28,
+        "pnl": 0.0
+      },
+      {
+        "price": 22.43,
+        "pnl": 0.0
+      },
+      {
+        "price": 22.59,
+        "pnl": 0.0
+      },
+      {
+        "price": 22.75,
+        "pnl": 0.0
+      },
+      {
+        "price": 22.9,
+        "pnl": 0.0
+      },
+      {
+        "price": 23.06,
+        "pnl": 0.0
+      },
+      {
+        "price": 23.22,
+        "pnl": 0.0
+      },
+      {
+        "price": 23.38,
+        "pnl": 0.0
+      },
+      {
+        "price": 23.53,
+        "pnl": 0.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.753,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2777,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "21.65",
+    "EMA50": "21.50",
+    "EMA100": "21.21",
+    "EMA200": "19.77",
+    "RSI(14)": "41.35",
+    "ATR(14)": "1.50",
+    "ADX(14)": "16.11",
+    "BB(20,2)": "0.13"
+  },
+  "rules": [
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Riot Platforms, Inc. (RIOT) Stock Dips While Market Gains: Key Facts",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/riot-platforms-inc-riot-stock-205002916.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Has Buying Applied Digital Stock's Dips Paid Off?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/buying-applied-digital-stocks-dips-200056168.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Crypto Stocks Rise With Bitcoin Above $84K \u2013 Analysts Raise Riot, Robinhood Price Targets",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/crypto-stocks-rise-bitcoin-above-141225285.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "B. Riley Raises Price Target on Riot Platforms to $33 From $28, Keeps Buy Rating",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/b-riley-raises-price-target-115414883.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IREN vs. Riot Platforms: Which Bitcoin-to-AI Stock Looks Stronger Now?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/iren-vs-riot-platforms-bitcoin-142800496.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Riot Platforms (RIOT) Dropped, So What Is Drawing Attention Now?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/riot-platforms-riot-dropped-drawing-191043549.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    }
+  ]
+}

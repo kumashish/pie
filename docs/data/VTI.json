@@ -1,0 +1,417 @@
+{
+  "symbol": "VTI",
+  "last_price": 375.18,
+  "as_of": "2026-10-01 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.2,
+  "fit_score": 62.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 62.5,
+  "vix": 16.01,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (60.0% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 365.0,
+        "strike_formatted": "365",
+        "option_type": "Call",
+        "delta": 0.73,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x VTI 20-Nov-2026 365 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 375.0,
+        "strike_formatted": "375",
+        "option_type": "Call",
+        "delta": 0.56,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 2x VTI 20-Nov-2026 375 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 385.0,
+        "strike_formatted": "385",
+        "option_type": "Call",
+        "delta": 0.383,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x VTI 20-Nov-2026 385 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 65.0,
+    "margin_required": 15.0,
+    "stop_loss_price": 363.92,
+    "take_profit_price": 386.44,
+    "net_delta": -0.007,
+    "net_theta": 0.017,
+    "probability_of_profit": 34.6,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 300.14,
+        "pnl": -15.0
+      },
+      {
+        "price": 303.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 306.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 309.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 312.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 315.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 318.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 321.15,
+        "pnl": -15.0
+      },
+      {
+        "price": 324.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 327.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 330.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 333.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 336.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 339.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 342.16,
+        "pnl": -15.0
+      },
+      {
+        "price": 345.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 348.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 351.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 354.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 357.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 360.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 363.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 366.18,
+        "pnl": -13.82
+      },
+      {
+        "price": 369.18,
+        "pnl": -10.82
+      },
+      {
+        "price": 372.18,
+        "pnl": -7.82
+      },
+      {
+        "price": 375.18,
+        "pnl": -5.18
+      },
+      {
+        "price": 378.18,
+        "pnl": -8.18
+      },
+      {
+        "price": 381.18,
+        "pnl": -11.18
+      },
+      {
+        "price": 384.18,
+        "pnl": -14.18
+      },
+      {
+        "price": 387.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 390.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 393.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 396.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 399.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 402.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 405.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 408.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 411.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 414.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 417.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 420.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 423.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 426.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 429.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 432.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 435.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 438.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 441.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 444.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 447.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 450.22,
+        "pnl": -15.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.71,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.239,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "376.63",
+    "EMA50": "375.18",
+    "EMA100": "369.41",
+    "EMA200": "357.11",
+    "RSI(14)": "47.18",
+    "ATR(14)": "3.34",
+    "ADX(14)": "13.31",
+    "BB(20,2)": "0.38"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "The Hidden Cost of Owning Every Stock: $167,050 of a $500,000 VTI Position Sits in Its Top Ten Names",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/hidden-cost-owning-every-stock-003342923.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Best ETF to Own in Your 30s, 40s, 50s, and 60s, According to the Math",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/options/articles/best-etf-own-30s-40s-204031796.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What a $500,000 60/40 Portfolio Actually Looks Like, Built With ETFs",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/options/articles/500-000-60-40-portfolio-155037116.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What a $500,000 All Weather Portfolio Actually Looks Like, Built With ETFs",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/options/articles/500-000-weather-portfolio-actually-220528096.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Only 3 ETFs You Need to Retire, and How to Split Your Money Between Them",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/options/articles/only-3-etfs-retire-split-210541847.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is VOO or VTI the Better Long-Term Investment? Here's What History Suggests.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/voo-vti-better-long-term-032000162.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}

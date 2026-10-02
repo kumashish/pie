@@ -1,0 +1,417 @@
+{
+  "symbol": "ICICIBANK.NS",
+  "last_price": 1310.6,
+  "as_of": "2026-10-01 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.5,
+  "fit_score": 45.0,
+  "confidence_grade": "C",
+  "confidence_percentage": 45.0,
+  "vix": 14.46,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (62.6% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1250.0,
+        "strike_formatted": "1250",
+        "option_type": "Call",
+        "delta": 0.846,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x ICICIBANK.NS 24-Nov-2026 1250 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 1300.0,
+        "strike_formatted": "1300",
+        "option_type": "Call",
+        "delta": 0.62,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 2x ICICIBANK.NS 24-Nov-2026 1300 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1350.0,
+        "strike_formatted": "1350",
+        "option_type": "Call",
+        "delta": 0.353,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x ICICIBANK.NS 24-Nov-2026 1350 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1271.28,
+    "take_profit_price": 1349.92,
+    "net_delta": -0.041,
+    "net_theta": 0.113,
+    "probability_of_profit": 50.0,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 1048.48,
+        "pnl": -50.0
+      },
+      {
+        "price": 1058.96,
+        "pnl": -50.0
+      },
+      {
+        "price": 1069.45,
+        "pnl": -50.0
+      },
+      {
+        "price": 1079.93,
+        "pnl": -50.0
+      },
+      {
+        "price": 1090.42,
+        "pnl": -50.0
+      },
+      {
+        "price": 1100.9,
+        "pnl": -50.0
+      },
+      {
+        "price": 1111.39,
+        "pnl": -50.0
+      },
+      {
+        "price": 1121.87,
+        "pnl": -50.0
+      },
+      {
+        "price": 1132.36,
+        "pnl": -50.0
+      },
+      {
+        "price": 1142.84,
+        "pnl": -50.0
+      },
+      {
+        "price": 1153.33,
+        "pnl": -50.0
+      },
+      {
+        "price": 1163.81,
+        "pnl": -50.0
+      },
+      {
+        "price": 1174.3,
+        "pnl": -50.0
+      },
+      {
+        "price": 1184.78,
+        "pnl": -50.0
+      },
+      {
+        "price": 1195.27,
+        "pnl": -50.0
+      },
+      {
+        "price": 1205.75,
+        "pnl": -50.0
+      },
+      {
+        "price": 1216.24,
+        "pnl": -50.0
+      },
+      {
+        "price": 1226.72,
+        "pnl": -50.0
+      },
+      {
+        "price": 1237.21,
+        "pnl": -50.0
+      },
+      {
+        "price": 1247.69,
+        "pnl": -50.0
+      },
+      {
+        "price": 1258.18,
+        "pnl": -41.82
+      },
+      {
+        "price": 1268.66,
+        "pnl": -31.34
+      },
+      {
+        "price": 1279.15,
+        "pnl": -20.85
+      },
+      {
+        "price": 1289.63,
+        "pnl": -10.37
+      },
+      {
+        "price": 1300.12,
+        "pnl": -0.12
+      },
+      {
+        "price": 1310.6,
+        "pnl": -10.6
+      },
+      {
+        "price": 1321.08,
+        "pnl": -21.08
+      },
+      {
+        "price": 1331.57,
+        "pnl": -31.57
+      },
+      {
+        "price": 1342.05,
+        "pnl": -42.05
+      },
+      {
+        "price": 1352.54,
+        "pnl": -50.0
+      },
+      {
+        "price": 1363.02,
+        "pnl": -50.0
+      },
+      {
+        "price": 1373.51,
+        "pnl": -50.0
+      },
+      {
+        "price": 1383.99,
+        "pnl": -50.0
+      },
+      {
+        "price": 1394.48,
+        "pnl": -50.0
+      },
+      {
+        "price": 1404.96,
+        "pnl": -50.0
+      },
+      {
+        "price": 1415.45,
+        "pnl": -50.0
+      },
+      {
+        "price": 1425.93,
+        "pnl": -50.0
+      },
+      {
+        "price": 1436.42,
+        "pnl": -50.0
+      },
+      {
+        "price": 1446.9,
+        "pnl": -50.0
+      },
+      {
+        "price": 1457.39,
+        "pnl": -50.0
+      },
+      {
+        "price": 1467.87,
+        "pnl": -50.0
+      },
+      {
+        "price": 1478.36,
+        "pnl": -50.0
+      },
+      {
+        "price": 1488.84,
+        "pnl": -50.0
+      },
+      {
+        "price": 1499.33,
+        "pnl": -50.0
+      },
+      {
+        "price": 1509.81,
+        "pnl": -50.0
+      },
+      {
+        "price": 1520.3,
+        "pnl": -50.0
+      },
+      {
+        "price": 1530.78,
+        "pnl": -50.0
+      },
+      {
+        "price": 1541.27,
+        "pnl": -50.0
+      },
+      {
+        "price": 1551.75,
+        "pnl": -50.0
+      },
+      {
+        "price": 1562.24,
+        "pnl": -50.0
+      },
+      {
+        "price": 1572.72,
+        "pnl": -50.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.719,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2471,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "1348.68",
+    "EMA50": "1375.16",
+    "EMA100": "1372.68",
+    "EMA200": "1364.60",
+    "RSI(14)": "33.70",
+    "ATR(14)": "21.33",
+    "ADX(14)": "35.67",
+    "BB(20,2)": "0.21"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "ICICI Bank to decide on Bagchi's successor at ICICI Life in 2-3 days",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaFQ2NXJFeWJ6RDl2cEY1YUl3MHYtRi1XYVFPX2hDckpTTlQxbGxQcjNIeUNyV0lTRGwtUXRheHVTRkdtTFVsNXB4cTdGVEZBSFZIUlBrUFM3R3F6Q1lLUEg5MEUyeUdQYmFvUmtENVFCMDZVaWs3cVpuTGI2LVFlMUFzOFpyc2tzcTBxT3NURTUxSlRmRVlwMmJhalVlTXhVYlhES2d3NEQyS2FkNFFSSFJtOWxEd0NwNjNSX2F6cVVNT0ViTWc?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ICICI Bank: The CEO Factory",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeDdzSmtteWd2MTBoQzhVRXdwdUtBaXk3MGoxdjRHWTl5YmtZa0xUQ0w0NTl3VVFfRGtHMExkbWZjNnlkcjU3X1ZaMWdYREVqNzlzTWJqUlRZR2hpYnFqZldlUWhYLU1XQlhpY0xHTzQyZms4NmJOVzE0b2N3TUVLSFdfNVJySUU3czB2TnB30gGTAUFVX3lxTE9XMm9uRWlUT2RTRTl4ZGYwOUNSMHd3MG5iMkRiLUFWQ25Hc09MUENUOTNGYmgtdFJlVGlVcl9wWGpJS1ZxU01UYkJzZ2xGbDBsaFByRENBT280WVFXVElUempidk9MYzIzczM1Wm1yTExlT0dnVnA5eUNaOUx5YTFWb0U2RDZsWnFUYXFGTUNBTTBJdw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HDFC Bank appoints ICICI Bank veteran V.N. Srivatsan as Chief Compliance Officer",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT2ZqMFJkU1dwTFpseHBNSkk0aEJQQkN0OVdGY21qUnU5R0lFd2F1aHU5ZGhueGZoZTdqUXB3Q0QwNmhlZ3c5OEdRZmNGcHQycVZWR2NvLVF3N2ZyRnc2YTU0ZXJlS0NJMXhoTXhmZ2hud3M2STV6YTF5Ri0zb2djRFg5d1RRemtYT3RtR3ljZmwzdVhvc1VaZEdadnRfWDgtcW1ocE0xcnVxZ2lHOGZkcTdBOFpkajdSb1RiODVFV2VYTmdHMFBrVVdZNmZTOVZiaXhQadIB2gFBVV95cUxQMUNXZ3dfYVlxV0hTRHlLN3Jfd1ZQSHVMNUdwLWJ5ZENWMzdDNW9TQ0xIdUloUnNNdVpDLUR4UDJRako3SGxPMUZtV3hlZzYwQXBVMVFFdkNJb0hqc3NRN3gzejVnLVNhVHUyVldsRTZQelF3dFhISTlQSW1WYTgxYThzbkRRZ0pTNDRab05va2lvLVU5VENGMjhEZldQREktLWdNbnZkZGZ2RkllNkF6M2pzOTBQZ3lleW0zVk1pWjlKa3V0OTJMdXRMaTBfMHMzRW03SDZmaUxfZw?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ICICI Bank gets show cause notice over Rs 229 cr GST demand",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2NJQ01YN1BvVnM0dnpWSmE0eFRhS2hTTHpVRkI0OEFVZmp3YnFtNUJEOTJBc2pyNlFGOHU4dzhGbWo1N0ZnRmFiVXBfYXhBTEZlUkpLWmZrVXdYM3NuRE8yVmJqNVNFYTBiM0oyUE9HNDNDYmdPdkFWbDNFNmdTX0Zxd2xMX0VWUUhZbTExdmtvOXQ3WHJ0XzR2SjVKdWFRM0YxSm9kT1R3WDBoN1JkUy1DWmszXzBzdnd0YXIwbmsyUdIBxwFBVV95cUxNREF5by1CV2I5ems3Wk1iT2oxdnpNZmI0VFVZRmFSeklQQ3NlRi02M2JRZ1FkV2JpV2VJN3o4OVdlb0dsdHZZcG5oaHFKZVRPenJLQ01ZQXZpSUJEc0lES3BCU2NUNEtOSS02RGd2dXFsdjJIMjhMYzdnN3VRVm9NTWNrZ0hlMlJmVWpwU1N6amhRcm5yR1VJMEQ0UE40el85aFB6cHlwb2hRc1JIVUktNzFnVnFhdnotU1ZZVUtzNTdPRXdLWThB?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Elara Securities picks ICICI Bank, warns of auto margin risks from raw material costs",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOT1lpdnNndnFQSEpobTB3WHF6U3A0anE3a2lReTh4UWhuZnpwdFNYaDhwMVprRURuSDBjMjBNemNQTGxPTDNiODhuUWYzQlJ1ek95bTZnUlFYZk5PUEJzcGczaTU2b0V0Ym5XRk85SXdQOGdia25acy1ZemhWUXNPdHpDakF1VEphSkxKYXUwcjlYa19ORTYtejZOWDFEM3c0WWs5Z1l6LVNKLUExYXgtQkZPa1E2MDN3NW5pcEZnQW8tMEY4bWdqNDE4cDN4d0ZlNUxxVERUVG9WYVcxeFc3Qm5aMlprQlI3dDBGRWU0UW9XS29y0gH6AUFVX3lxTFBJNUFZeHVBVXdfeDgxS1JVSThXc0lLSk9RYXhHTVRKSERXTW1NTTVSX2dhZGpmemdpVlpqMW1jaklyZnhKZERzOXBmR185cnY5anNzZXJHbEFfWmVfSjM5UXFPTlc2ZFlfU3pOU1B2bEk0YWNvNGl0bzhTaGlrWjJ6UTk4RzNLenVZcDhaRS1pY0RhUTV6aV9IT0UwMDB3NGtWWXYzUlpWdFFGN2c5N25kMHJXSWJLM1E1NnMzUGZUR1E5WlFSQjg5WVktOWxHcVpYQkpwS3l2QVhFNkwyREo2VlhPOHBmMHROcjJGUjRlcGdtNUQ5UG5UdVE?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "SBI, HDFC Bank, ICICI Bank, others closed for Gandhi Jayanti. Is October 3 also a bank holiday?",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPTDd2NWxtUG5MWV9wZVJSdmx5ai15TlVXel9ld190MnM2VkZ3ODMzUG1aT21wUnFxOUg0Sk9VeFFSdGNLUjREQXBLOTlYNE14TnVBUTBlVWRlbHBpVE5JS1JmcUVkMXZvSVdGSDdfa3ZFTmUtVmZfWUVJWFQ5dC1pRjNwWnhFYWR2U2l1eDUzXzdVSm1EekdfcE9CekJLajV0Mks3NTZfWk9RVzYxTk94Z3NmN2xZSTM2c014Y0VuaTJhTE9OUFhDeF9zVEM3X2JxbDlaeXR1REZLT1ZsWWlMSjBPazdGMWh6blFZUVZueVZ2UmcySkNuQkJsNjJ6Z9IBgwJBVV95cUxObDhGcVNLWm5aV3BpME81ZHBQeUFCZ1RZVDFyaG9wYk9fdzd2ZkYyS2ZQQm5EaWl6REszZXk1TERvWFZIb1pmOGpsRk45aUlwLWNqU24zeV9JTWVod2U3elNMYk92RXc5c3pleGxSYnlTTVVpVTh4ejd3RzVRbW5iLUVLb0o5U21NTlZMSm5XaEJxbHRGSVFBWGUtbUlNS2ZST3ZfNUFiQUM4bUo5TktsWE1LQ2xjel8zVG10dG9QVXZpeTJFUUh3aElrNGZrak85Z1BoOWZlVDFzZ2VpRlp4ZzZGSXV1ekRRODdMUU05d0owWWM0Yl9jdW5IYlZnLXpvVVRz?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    }
+  ]
+}

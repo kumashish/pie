@@ -1,0 +1,417 @@
+{
+  "symbol": "JNJ",
+  "last_price": 252.77,
+  "as_of": "2026-08-03 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.0,
+  "fit_score": 60.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 60.0,
+  "vix": 15.61,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "trade_category": "options",
+  "recommendation_reason": "Best fit strategy (57.4% fit - Grade C (Moderate)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "cash_trade_setup": null,
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 245.0,
+        "strike_formatted": "245",
+        "option_type": "Call",
+        "delta": 0.76,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Buy 1x JNJ 18-Sep-2026 245 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 255.0,
+        "strike_formatted": "255",
+        "option_type": "Call",
+        "delta": 0.493,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Sell 2x JNJ 18-Sep-2026 255 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 260.0,
+        "strike_formatted": "260",
+        "option_type": "Call",
+        "delta": 0.357,
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 46,
+        "summary": "Buy 1x JNJ 18-Sep-2026 260 Call"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit",
+    "roc_percentage": 65.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 245.19,
+    "take_profit_price": 260.35,
+    "net_delta": 0.131,
+    "net_theta": 0.013,
+    "probability_of_profit": 73.8,
+    "var_95": 0.0,
+    "vol_skew_25d": 0.0,
+    "backtest_sharpe": 3.14,
+    "payoff_points": [
+      {
+        "price": 202.22,
+        "pnl": -10.0
+      },
+      {
+        "price": 204.24,
+        "pnl": -10.0
+      },
+      {
+        "price": 206.26,
+        "pnl": -10.0
+      },
+      {
+        "price": 208.28,
+        "pnl": -10.0
+      },
+      {
+        "price": 210.3,
+        "pnl": -10.0
+      },
+      {
+        "price": 212.33,
+        "pnl": -10.0
+      },
+      {
+        "price": 214.35,
+        "pnl": -10.0
+      },
+      {
+        "price": 216.37,
+        "pnl": -10.0
+      },
+      {
+        "price": 218.39,
+        "pnl": -10.0
+      },
+      {
+        "price": 220.42,
+        "pnl": -10.0
+      },
+      {
+        "price": 222.44,
+        "pnl": -10.0
+      },
+      {
+        "price": 224.46,
+        "pnl": -10.0
+      },
+      {
+        "price": 226.48,
+        "pnl": -10.0
+      },
+      {
+        "price": 228.5,
+        "pnl": -10.0
+      },
+      {
+        "price": 230.53,
+        "pnl": -10.0
+      },
+      {
+        "price": 232.55,
+        "pnl": -10.0
+      },
+      {
+        "price": 234.57,
+        "pnl": -10.0
+      },
+      {
+        "price": 236.59,
+        "pnl": -10.0
+      },
+      {
+        "price": 238.61,
+        "pnl": -10.0
+      },
+      {
+        "price": 240.64,
+        "pnl": -10.0
+      },
+      {
+        "price": 242.66,
+        "pnl": -10.0
+      },
+      {
+        "price": 244.68,
+        "pnl": -10.0
+      },
+      {
+        "price": 246.7,
+        "pnl": -8.3
+      },
+      {
+        "price": 248.73,
+        "pnl": -6.27
+      },
+      {
+        "price": 250.75,
+        "pnl": -4.25
+      },
+      {
+        "price": 252.77,
+        "pnl": -2.23
+      },
+      {
+        "price": 254.79,
+        "pnl": -0.21
+      },
+      {
+        "price": 256.81,
+        "pnl": -1.81
+      },
+      {
+        "price": 258.84,
+        "pnl": -3.84
+      },
+      {
+        "price": 260.86,
+        "pnl": -5.0
+      },
+      {
+        "price": 262.88,
+        "pnl": -5.0
+      },
+      {
+        "price": 264.9,
+        "pnl": -5.0
+      },
+      {
+        "price": 266.93,
+        "pnl": -5.0
+      },
+      {
+        "price": 268.95,
+        "pnl": -5.0
+      },
+      {
+        "price": 270.97,
+        "pnl": -5.0
+      },
+      {
+        "price": 272.99,
+        "pnl": -5.0
+      },
+      {
+        "price": 275.01,
+        "pnl": -5.0
+      },
+      {
+        "price": 277.04,
+        "pnl": -5.0
+      },
+      {
+        "price": 279.06,
+        "pnl": -5.0
+      },
+      {
+        "price": 281.08,
+        "pnl": -5.0
+      },
+      {
+        "price": 283.1,
+        "pnl": -5.0
+      },
+      {
+        "price": 285.12,
+        "pnl": -5.0
+      },
+      {
+        "price": 287.15,
+        "pnl": -5.0
+      },
+      {
+        "price": 289.17,
+        "pnl": -5.0
+      },
+      {
+        "price": 291.19,
+        "pnl": -5.0
+      },
+      {
+        "price": 293.21,
+        "pnl": -5.0
+      },
+      {
+        "price": 295.24,
+        "pnl": -5.0
+      },
+      {
+        "price": 297.26,
+        "pnl": -5.0
+      },
+      {
+        "price": 299.28,
+        "pnl": -5.0
+      },
+      {
+        "price": 301.3,
+        "pnl": -5.0
+      },
+      {
+        "price": 303.32,
+        "pnl": -5.0
+      }
+    ],
+    "kelly_sizing": {
+      "win_probability": 0.701,
+      "payout_ratio": 1.25,
+      "half_kelly_fraction": 0.2309,
+      "recommended_allocation_pct": 5.0,
+      "suggested_lots": 5,
+      "max_risk_amount": 5000.0
+    }
+  },
+  "indicators": {
+    "EMA20": "256.06",
+    "EMA50": "248.76",
+    "EMA100": "240.68",
+    "EMA200": "226.34",
+    "RSI(14)": "48.46",
+    "ATR(14)": "6.43",
+    "ADX(14)": "20.63",
+    "BB(20,2)": "0.31"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 30",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Volume Flow (>1.2x 20d Avg)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    }
+  ],
+  "news": [
+    {
+      "title": "Stock Market Today: Dow Jumps As Oil Skids On Trump Iran Move; Defense Play Clears Entry (Live Coverage)",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/cdc87a38-f6bc-3590-b126-efc5dcd8debd/stock-market-today%3A-dow-jumps.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "4 Biotech Stocks Likely to Outpace Q2 Earnings Estimates",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/healthcare/articles/4-biotech-stocks-likely-outpace-143400244.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Johnson & Johnson\u2019s OTTAVA Robotic Surgery System Targets Long-Term Growth",
+      "publisher": "MarketBeat",
+      "link": "https://finance.yahoo.com/m/6a1d7fce-31ae-3986-b31d-effc034dc179/johnson-%26-johnson%E2%80%99s-ottava.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Are Medical Stocks Lagging  Avantor (AVTR) This Year?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/medical-stocks-lagging-avantor-avtr-134002821.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is It Worth Investing in Johnson & Johnson (JNJ) Based on Wall Street's Bullish Views?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-johnson-johnson-jnj-133003158.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Weekly Stock List",
+      "publisher": "Argus Research",
+      "link": "https://finance.yahoo.com/m/a5150ffd-afbf-3d74-a2ab-ad7b991cd1bb/weekly-stock-list.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    }
+  ]
+}
