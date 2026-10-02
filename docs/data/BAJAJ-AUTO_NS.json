@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
   "vix": 14.46,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (21.3) is oversold (< 35) [Synthetic PCR: 1.59]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (65.0% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 10000.0,
-        "strike_formatted": "10000",
-        "option_type": "Put",
-        "delta": -0.405,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 10000 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 9500.0,
-        "strike_formatted": "9500",
-        "option_type": "Put",
-        "delta": -0.121,
+        "strike": 10500.0,
+        "strike_formatted": "10500",
+        "option_type": "Call",
+        "delta": 0.26,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 53,
-        "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 9500 Put"
+        "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 10500 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 10500.0,
+        "strike_formatted": "10500",
+        "option_type": "Call",
+        "delta": 0.26,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 10500 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 200.0,
-    "stop_loss_price": 10245.9,
-    "take_profit_price": 9500.0,
-    "net_delta": -0.284,
-    "net_theta": -0.566,
-    "probability_of_profit": 43.1,
+    "roc_percentage": 65.0,
+    "margin_required": 500.0,
+    "stop_loss_price": 9743.65,
+    "take_profit_price": 10346.35,
+    "net_delta": 0.0,
+    "net_theta": 0.0,
+    "probability_of_profit": 0.0,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 8036.0,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8116.36,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8196.72,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8277.08,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8357.44,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8437.8,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8518.16,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8598.52,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8678.88,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8759.24,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8839.6,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 8919.96,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9000.32,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9080.68,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9161.04,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9241.4,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9321.76,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9402.12,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9482.48,
-        "pnl": 300.0
+        "pnl": -500.0
       },
       {
         "price": 9562.84,
-        "pnl": 237.16
+        "pnl": -500.0
       },
       {
         "price": 9643.2,
-        "pnl": 156.8
+        "pnl": -500.0
       },
       {
         "price": 9723.56,
-        "pnl": 76.44
+        "pnl": -500.0
       },
       {
         "price": 9803.92,
-        "pnl": -3.92
+        "pnl": -500.0
       },
       {
         "price": 9884.28,
-        "pnl": -84.28
+        "pnl": -500.0
       },
       {
         "price": 9964.64,
-        "pnl": -164.64
+        "pnl": -500.0
       },
       {
         "price": 10045.0,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10125.36,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10205.72,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10286.08,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10366.44,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10446.8,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10527.16,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10607.52,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10687.88,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10768.24,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10848.6,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 10928.96,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11009.32,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11089.68,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11170.04,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11250.4,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11330.76,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11411.12,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11491.48,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11571.84,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11652.2,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11732.56,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11812.92,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11893.28,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 11973.64,
-        "pnl": -200.0
+        "pnl": -500.0
       },
       {
         "price": 12054.0,
-        "pnl": -200.0
+        "pnl": -500.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.689,
+      "win_probability": 0.728,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2201,
+      "half_kelly_fraction": 0.2552,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

@@ -156,36 +156,39 @@ def score_all_strategies(
 
     raw_scores: dict[StrategyType, tuple[float, str]] = {}
 
+    # User Strategy Preference Bonus (+10.0 pts for net-credit / theta decay strategies)
+    credit_preference_bonus = 10.0
+
     # 1. Call Debit Spread: Bullish Trend or Oversold Dip Bounce
-    cds_score = (bullishness * 0.60) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm - alpha_lag_penalty - earnings_penalty - bm_bull_penalty
+    cds_score = (bullishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm - alpha_lag_penalty - earnings_penalty - bm_bull_penalty
     raw_scores[StrategyType.CALL_DEBIT_SPREAD] = (
         (cds_score / 1.20) * confidence_mult,
         "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
     )
 
     # 2. Put Debit Spread: Bearish Trend or Overbought Exhaustion Fade
-    pds_score = (bearishness * 0.60) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty
+    pds_score = (bearishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty
     raw_scores[StrategyType.PUT_DEBIT_SPREAD] = (
         (pds_score / 1.20) * confidence_mult,
         "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
     )
 
     # 3. Jade Lizard: Bullish & High Vol Expansion (IV Rank >= 45)
-    jl_score = (bullishness * 0.40) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus - earnings_penalty
+    jl_score = (bullishness * 0.45) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + credit_preference_bonus - earnings_penalty
     raw_scores[StrategyType.JADE_LIZARD] = (
         (jl_score / 1.20) * confidence_mult,
-        "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk structure.",
+        "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
     )
 
-    # 4. Credit Spread (Bull Put / Bear Call): Directional & Counter-Trend Fade Edge
-    cs_score = (directional * 0.50) + (iv_premium * 0.35) + adx_boost + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) - earnings_penalty
+    # 4. Credit Spread (Bull Put / Bear Call): Preferred Directional Credit Strategy
+    cs_score = (directional * 0.65) + (iv_premium * 0.35) + adx_boost + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus - earnings_penalty
     raw_scores[StrategyType.CREDIT_SPREAD] = (
         (cs_score / 1.20) * confidence_mult,
-        "Directional trend with premium collection edge favors Credit Spread.",
+        "Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
     )
 
     # 5. Naked Put: Bullish & High IV Rank / Oversold Dip Bounce
-    np_score = (bullishness * 0.40) + (iv_premium * 0.45) + rsi_bull_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus + oversold_fade_bonus - earnings_penalty
+    np_score = (bullishness * 0.40) + (iv_premium * 0.45) + rsi_bull_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus + oversold_fade_bonus + credit_preference_bonus - earnings_penalty
     raw_scores[StrategyType.NAKED_PUT] = (
         (np_score / 1.20) * confidence_mult,
         "Bullish support with high IV rank favors Naked Put selling.",
@@ -193,11 +196,11 @@ def score_all_strategies(
 
     range_confidence_mult = max(0.90, confidence_mult) if (analysis.regime == MarketRegime.NEUTRAL or 4.0 <= trend_val <= 6.5) else confidence_mult
 
-    # 6. Iron Condor: Neutral & High IV Rank (Theta Harvesting)
-    ic_score = (neutrality * 0.70) + (iv_premium * 0.20) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + theta_harvest_bonus - earnings_penalty
+    # 6. Iron Condor: Preferred Neutral / Range-Bound Theta Harvesting Strategy
+    ic_score = (neutrality * 0.80) + (iv_premium * 0.30) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + theta_harvest_bonus + credit_preference_bonus - earnings_penalty
     raw_scores[StrategyType.IRON_CONDOR] = (
         (ic_score / 1.20) * range_confidence_mult,
-        "Range-bound trend with elevated IV favors Iron Condor premium collection.",
+        "Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
     )
 
     # 7. Butterfly: Neutral & Low IV / Volatility Squeeze Pinning

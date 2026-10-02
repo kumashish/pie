@@ -8,50 +8,62 @@
   "fit_score": 42.5,
   "confidence_grade": "C",
   "confidence_percentage": 42.5,
-  "vix": 16.0,
-  "strategy_type": "butterfly",
-  "strategy_display": "Butterfly",
-  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "vix": 15.93,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (61.0% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "recommendation_reason": "Best fit strategy (69.7% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 52.0,
-        "strike_formatted": "52",
-        "option_type": "Call",
-        "delta": 0.731,
+        "strike": 49.0,
+        "strike_formatted": "49",
+        "option_type": "Put",
+        "delta": -0.051,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x XLF 20-Nov-2026 52 Call"
+        "summary": "Buy 1x XLF 20-Nov-2026 49 Put"
       },
       {
         "action": "Sell",
-        "quantity": 2,
-        "strike": 53.0,
-        "strike_formatted": "53",
-        "option_type": "Call",
-        "delta": 0.615,
+        "quantity": 1,
+        "strike": 50.0,
+        "strike_formatted": "50",
+        "option_type": "Put",
+        "delta": -0.098,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Sell 2x XLF 20-Nov-2026 53 Call"
+        "summary": "Sell 1x XLF 20-Nov-2026 50 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 57.0,
+        "strike_formatted": "57",
+        "option_type": "Call",
+        "delta": 0.17,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x XLF 20-Nov-2026 57 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 55.0,
-        "strike_formatted": "55",
+        "strike": 58.0,
+        "strike_formatted": "58",
         "option_type": "Call",
-        "delta": 0.367,
+        "delta": 0.105,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x XLF 20-Nov-2026 55 Call"
+        "summary": "Buy 1x XLF 20-Nov-2026 58 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -60,80 +72,80 @@
     "margin_required": 2.0,
     "stop_loss_price": 51.86,
     "take_profit_price": 55.06,
-    "net_delta": -0.132,
-    "net_theta": 0.001,
-    "probability_of_profit": 24.4,
+    "net_delta": -0.018,
+    "net_theta": 0.004,
+    "probability_of_profit": 0.0,
     "var_95": 1.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 42.77,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 43.2,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 43.62,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 44.05,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 44.48,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 44.91,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 45.33,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 45.76,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 46.19,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 46.62,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 47.04,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 47.47,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 47.9,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 48.33,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 48.76,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 49.18,
-        "pnl": -2.0
+        "pnl": -2.82
       },
       {
         "price": 49.61,
-        "pnl": -2.0
+        "pnl": -2.39
       },
       {
         "price": 50.04,
@@ -157,59 +169,59 @@
       },
       {
         "price": 52.18,
-        "pnl": -1.82
+        "pnl": -2.0
       },
       {
         "price": 52.6,
-        "pnl": -1.4
+        "pnl": -2.0
       },
       {
         "price": 53.03,
-        "pnl": -1.03
+        "pnl": -2.0
       },
       {
         "price": 53.46,
-        "pnl": -1.46
+        "pnl": -2.0
       },
       {
         "price": 53.89,
-        "pnl": -1.89
+        "pnl": -2.0
       },
       {
         "price": 54.32,
-        "pnl": -2.32
+        "pnl": -2.0
       },
       {
         "price": 54.74,
-        "pnl": -2.74
+        "pnl": -2.0
       },
       {
         "price": 55.17,
-        "pnl": -3.0
+        "pnl": -2.0
       },
       {
         "price": 55.6,
-        "pnl": -3.0
+        "pnl": -2.0
       },
       {
         "price": 56.03,
-        "pnl": -3.0
+        "pnl": -2.0
       },
       {
         "price": 56.45,
-        "pnl": -3.0
+        "pnl": -2.0
       },
       {
         "price": 56.88,
-        "pnl": -3.0
+        "pnl": -2.0
       },
       {
         "price": 57.31,
-        "pnl": -3.0
+        "pnl": -2.31
       },
       {
         "price": 57.74,
-        "pnl": -3.0
+        "pnl": -2.74
       },
       {
         "price": 58.16,
@@ -273,9 +285,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.714,
+      "win_probability": 0.744,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2426,
+      "half_kelly_fraction": 0.2696,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

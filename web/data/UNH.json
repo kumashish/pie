@@ -8,262 +8,262 @@
   "fit_score": 30.0,
   "confidence_grade": "C",
   "confidence_percentage": 30.0,
-  "vix": 16.01,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.92,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (32.0) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (54.2% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 365.0,
-        "strike_formatted": "365",
-        "option_type": "Put",
-        "delta": -0.439,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x UNH 20-Nov-2026 365 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 350.0,
-        "strike_formatted": "350",
-        "option_type": "Put",
-        "delta": -0.193,
+        "strike": 375.0,
+        "strike_formatted": "375",
+        "option_type": "Call",
+        "delta": 0.378,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x UNH 20-Nov-2026 350 Put"
+        "summary": "Sell 1x UNH 20-Nov-2026 375 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 385.0,
+        "strike_formatted": "385",
+        "option_type": "Call",
+        "delta": 0.223,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x UNH 20-Nov-2026 385 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 6.0,
-    "stop_loss_price": 372.5,
-    "take_profit_price": 350.0,
-    "net_delta": -0.246,
-    "net_theta": -0.013,
-    "probability_of_profit": 46.8,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 15.0,
+    "stop_loss_price": 354.24,
+    "take_profit_price": 376.16,
+    "net_delta": -0.155,
+    "net_theta": 0.025,
+    "probability_of_profit": 0.0,
+    "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 292.16,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 295.08,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 298.0,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 300.92,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 303.85,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 306.77,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 309.69,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 312.61,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 315.53,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 318.45,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 321.38,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 324.3,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 327.22,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 330.14,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 333.06,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 335.98,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 338.91,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 341.83,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 344.75,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 347.67,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 350.59,
-        "pnl": 8.41
+        "pnl": -15.0
       },
       {
         "price": 353.51,
-        "pnl": 5.49
+        "pnl": -15.0
       },
       {
         "price": 356.44,
-        "pnl": 2.56
+        "pnl": -15.0
       },
       {
         "price": 359.36,
-        "pnl": -0.36
+        "pnl": -15.0
       },
       {
         "price": 362.28,
-        "pnl": -3.28
+        "pnl": -15.0
       },
       {
         "price": 365.2,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 368.12,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 371.04,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 373.96,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 376.89,
-        "pnl": -6.0
+        "pnl": -16.89
       },
       {
         "price": 379.81,
-        "pnl": -6.0
+        "pnl": -19.81
       },
       {
         "price": 382.73,
-        "pnl": -6.0
+        "pnl": -22.73
       },
       {
         "price": 385.65,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 388.57,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 391.49,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 394.42,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 397.34,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 400.26,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 403.18,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 406.1,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 409.02,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 411.95,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 414.87,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 417.79,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 420.71,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 423.63,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 426.55,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 429.48,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 432.4,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 435.32,
-        "pnl": -6.0
+        "pnl": -25.0
       },
       {
         "price": 438.24,
-        "pnl": -6.0
+        "pnl": -25.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.688,
+      "win_probability": 0.69,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2192,
+      "half_kelly_fraction": 0.221,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,6 +360,13 @@
   ],
   "news": [
     {
+      "title": "How Much Downside Is Left In CVS Health Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-downside-left-cvs-health-082424575.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
       "title": "Raymond James Updates Healthcare Top Picks for October",
       "publisher": "Investing.com",
       "link": "https://finance.yahoo.com/healthcare/articles/raymond-james-updates-healthcare-top-202647622.html",
@@ -393,13 +400,6 @@
       "link": "https://finance.yahoo.com/healthcare/articles/sector-healthcare-stocks-fall-afternoon-200040277.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "Sector Update: Healthcare",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/healthcare/articles/sector-healthcare-193125185.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

@@ -8,50 +8,62 @@
   "fit_score": 47.5,
   "confidence_grade": "C",
   "confidence_percentage": 47.5,
-  "vix": 16.01,
-  "strategy_type": "butterfly",
-  "strategy_display": "Butterfly",
-  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "vix": 15.92,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (72.5% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "recommendation_reason": "Best fit strategy (82.2% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 100.0,
-        "strike_formatted": "100",
-        "option_type": "Call",
-        "delta": 0.644,
+        "strike": 90.0,
+        "strike_formatted": "90",
+        "option_type": "Put",
+        "delta": -0.015,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x DIS 20-Nov-2026 100 Call"
+        "summary": "Buy 1x DIS 20-Nov-2026 90 Put"
       },
       {
         "action": "Sell",
-        "quantity": 2,
-        "strike": 100.0,
-        "strike_formatted": "100",
-        "option_type": "Call",
-        "delta": 0.644,
+        "quantity": 1,
+        "strike": 95.0,
+        "strike_formatted": "95",
+        "option_type": "Put",
+        "delta": -0.106,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Sell 2x DIS 20-Nov-2026 100 Call"
+        "summary": "Sell 1x DIS 20-Nov-2026 95 Put"
       },
       {
-        "action": "Buy",
+        "action": "Sell",
         "quantity": 1,
         "strike": 105.0,
         "strike_formatted": "105",
         "option_type": "Call",
-        "delta": 0.322,
+        "delta": 0.321,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x DIS 20-Nov-2026 105 Call"
+        "summary": "Sell 1x DIS 20-Nov-2026 105 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 110.0,
+        "strike_formatted": "110",
+        "option_type": "Call",
+        "delta": 0.103,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x DIS 20-Nov-2026 110 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -60,8 +72,8 @@
     "margin_required": 5.0,
     "stop_loss_price": 98.29,
     "take_profit_price": 104.37,
-    "net_delta": -0.322,
-    "net_theta": 0.005,
+    "net_delta": -0.127,
+    "net_theta": 0.022,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -69,75 +81,75 @@
     "payoff_points": [
       {
         "price": 81.06,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 81.87,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 82.69,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 83.5,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 84.31,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 85.12,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 85.93,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 86.74,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 87.55,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 88.36,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 89.17,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 89.98,
-        "pnl": -5.0
+        "pnl": -10.0
       },
       {
         "price": 90.79,
-        "pnl": -5.0
+        "pnl": -9.21
       },
       {
         "price": 91.6,
-        "pnl": -5.0
+        "pnl": -8.4
       },
       {
         "price": 92.41,
-        "pnl": -5.0
+        "pnl": -7.59
       },
       {
         "price": 93.22,
-        "pnl": -5.0
+        "pnl": -6.78
       },
       {
         "price": 94.03,
-        "pnl": -5.0
+        "pnl": -5.97
       },
       {
         "price": 94.84,
-        "pnl": -5.0
+        "pnl": -5.16
       },
       {
         "price": 95.66,
@@ -165,51 +177,51 @@
       },
       {
         "price": 100.52,
-        "pnl": -5.52
+        "pnl": -5.0
       },
       {
         "price": 101.33,
-        "pnl": -6.33
+        "pnl": -5.0
       },
       {
         "price": 102.14,
-        "pnl": -7.14
+        "pnl": -5.0
       },
       {
         "price": 102.95,
-        "pnl": -7.95
+        "pnl": -5.0
       },
       {
         "price": 103.76,
-        "pnl": -8.76
+        "pnl": -5.0
       },
       {
         "price": 104.57,
-        "pnl": -9.57
+        "pnl": -5.0
       },
       {
         "price": 105.38,
-        "pnl": -10.0
+        "pnl": -5.38
       },
       {
         "price": 106.19,
-        "pnl": -10.0
+        "pnl": -6.19
       },
       {
         "price": 107.0,
-        "pnl": -10.0
+        "pnl": -7.0
       },
       {
         "price": 107.82,
-        "pnl": -10.0
+        "pnl": -7.82
       },
       {
         "price": 108.63,
-        "pnl": -10.0
+        "pnl": -8.63
       },
       {
         "price": 109.44,
-        "pnl": -10.0
+        "pnl": -9.44
       },
       {
         "price": 110.25,
@@ -273,9 +285,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.754,
+      "win_probability": 0.788,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2786,
+      "half_kelly_fraction": 0.3092,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

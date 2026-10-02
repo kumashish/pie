@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
   "vix": 14.46,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (24.8) is oversold (< 35) [Synthetic PCR: 1.40]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (76.5% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1750.0,
-        "strike_formatted": "1750",
-        "option_type": "Put",
-        "delta": -0.509,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Buy 1x BAJAJFINSV.NS 24-Nov-2026 1750 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1700.0,
-        "strike_formatted": "1700",
-        "option_type": "Put",
-        "delta": -0.307,
+        "strike": 1800.0,
+        "strike_formatted": "1800",
+        "option_type": "Call",
+        "delta": 0.297,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 53,
-        "summary": "Sell 1x BAJAJFINSV.NS 24-Nov-2026 1700 Put"
+        "summary": "Sell 1x BAJAJFINSV.NS 24-Nov-2026 1800 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1850.0,
+        "strike_formatted": "1850",
+        "option_type": "Call",
+        "delta": 0.151,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x BAJAJFINSV.NS 24-Nov-2026 1850 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1767.25,
-    "take_profit_price": 1700.0,
-    "net_delta": -0.202,
-    "net_theta": 0.008,
-    "probability_of_profit": 53.5,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1680.62,
+    "take_profit_price": 1784.58,
+    "net_delta": -0.146,
+    "net_theta": 0.134,
+    "probability_of_profit": 0.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 1386.08,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1399.94,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1413.8,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1427.66,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1441.52,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1455.38,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1469.24,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1483.11,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1496.97,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1510.83,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1524.69,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1538.55,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1552.41,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1566.27,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1580.13,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1593.99,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1607.85,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1621.71,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1635.57,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1649.44,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1663.3,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1677.16,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1691.02,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1704.88,
-        "pnl": 25.12
+        "pnl": -50.0
       },
       {
         "price": 1718.74,
-        "pnl": 11.26
+        "pnl": -50.0
       },
       {
         "price": 1732.6,
-        "pnl": -2.6
+        "pnl": -50.0
       },
       {
         "price": 1746.46,
-        "pnl": -16.46
+        "pnl": -50.0
       },
       {
         "price": 1760.32,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1774.18,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1788.04,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1801.9,
-        "pnl": -20.0
+        "pnl": -51.9
       },
       {
         "price": 1815.76,
-        "pnl": -20.0
+        "pnl": -65.76
       },
       {
         "price": 1829.63,
-        "pnl": -20.0
+        "pnl": -79.63
       },
       {
         "price": 1843.49,
-        "pnl": -20.0
+        "pnl": -93.49
       },
       {
         "price": 1857.35,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1871.21,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1885.07,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1898.93,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1912.79,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1926.65,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1940.51,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1954.37,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1968.23,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1982.09,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1995.96,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2009.82,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2023.68,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2037.54,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2051.4,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2065.26,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2079.12,
-        "pnl": -20.0
+        "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.757,
+      "win_probability": 0.768,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2813,
+      "half_kelly_fraction": 0.2912,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -367,10 +367,31 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Top Losers - F&O Market, All Futures & Options, Index Futures, Index Options, Stock Futures, Stock Options",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYWhaLWRPS0stbTNsZVY1bWw1Mng0QU5ScVc2NW5pX2cyaUdrMkdSSVFlZmpVUTQ0b1lMYVpycXZ1MVFMdzBUeHk1dGhBbWh4TjVWaWpVckZNdmlPRE1SOG1USUFEbTFZX2Z0UVBtRmNBdGJPdmFnSU9acXBjSjlpVnlR?oc=5",
-      "published_at": "Sat, 28 Apr 2012",
+      "title": "Bajaj Finserv Share Price Today 1 Oct 2026: Live NSE/BSE Rates, Technical Analysis and Expert Forecasts",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVThCdDBESmcxZDRQejc0Rk5xRk9HYWEza19PaDVybGJFa3Z6c2o3Tk1lb05MdFhsR01zeXpfRDZOeGpWdFhaZ2Z6X2EzNERZckFHSy13YkpxRkpMdDN6cmVaMUo1OHFhdjR5TF82QS1HQXVBQThja0RaY3FFQmVlVFB2YXhUT2hYb2VNMWZaNEpBNGhuMWoyTHRB?oc=5",
+      "published_at": "Thu, 07 Jul 2022",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q1 Results 2026 - Find Bajaj Finserv Q1 Earnings Result | BAJAJFINSV Q1 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPd2VHWmF2aXVOQzVGUVYxYmNpN1hFNGVUQm1JeUw5YkZvQ0N1dDhPS2dYbG5BeXMxcFZjUFByUERGQU1pZXVSeDBGSzZkWldqWmdRaC1yajg5Y2JKazE3UE5xLXNXNXRHNE1DTnpNSTM0c2RlQUg4Z2dWUmpSV253S1pUSk8?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q3 Results 2026 - Find Bajaj Finserv Q3 Earnings Result | BAJAJFINSV Q3 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm90bWxnUDlBSTNLMlVDM3F2Z3Y3WHAwN0Y2OXVpbHU0dzUwS01uM2g0MjBlRGJCY0s5V0V4Mm5ZS3MtakNQRXdqZHBad2lIOTFIQWxFakRfd09od0d2bnVvZVNwVXlweGxPU2NLYkEtaHR1enpDWl9nMVF5NjBsWi1WTlM?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q4 Results 2026 - Find Bajaj Finserv Q4 Earnings Result | BAJAJFINSV Q4 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTU8zTFFCQjJmcF95bVkzVU5YT1lNaFZNQXRCUlJwcjZTQmJYX3NDdmdzeFV1NnkzQ0d0VWhySU1DZ1JBbExuQWFpbktUODFCWHRER2V1bkRpMHpVZXViT0dURGJXaDBRdUdPX0FmcEhDZnVqWXVydTlJQkVzV1lYX0VVNkc?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
       "sentiment": "neutral"
     },
     {
@@ -378,27 +399,6 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pVXB4bEtpRDh1d2VjRjBySUdwbnpMbkRBT0tEaVBpcEttTURqa21SNlNjcjRFOE1fVVJVd0tVeVVETVlCZ2FvNHBiVE1hYXR2dWtuZlRhOVhIUUNYQk9yc1dPTXEzeFI3UDREa3dsalRNWTB0b2hJ?oc=5",
       "published_at": "Sun, 17 Jun 2018",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Finserv Ltd.",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQk1fMm4wSXFQNHFjeWdVNV9VbEFIdW9QcE9RSXR4dkt4cFRJbVVmbTRfMTNBR2dTYVgzWHhkM2k1VTJhaklVeGVzdnRUWTU3T3RwZ250bnE1WXlnVU00UlJGdkkzZkcwRThjT0FUSEJkOE5JV1UtY0luWkQ0NWktVXdWc01MZnRBdHoxNUlqU3Zidw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Finserv Share Price Today, Bajaj Finserv Stock Price Live NSE/BSE Updates",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQ0xpaF9nN05yM1IwVk9KSEdxclJ2TDVpb2tPTEphaE40QW9ENWE2LWNRWlBMb1RHU2Jqc2xnZ3dacTZKTi1PcUpQUzJPTzZibFZWcjFsWnpVUGhWNkFNTW4xV292dzF1QXlXbUlBVmNwQmJfYkJDNGdxSmFGcUpoVHdXU0pST3Mt?oc=5",
-      "published_at": "Thu, 23 Mar 2017",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Finserv | Splits > Finance - Investments > Dividends declared by Bajaj Finserv - BSE: 532978, NSE: BAJAJFINSV",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pZWgwQUNrME9QeGc4X0k4ZFM3UURmLWUySTdmcDFIVmhLYU45ZHhXSU1iSnA3cUhSVnFlQkM4dW9HbmpWUW4tdTc4bzA1VXI3LXRVekJla2Vyc3N6dTZOSHkzYllldzltTmJEU01VeF9VYUw0eWNN?oc=5",
-      "published_at": "Fri, 15 Nov 2024",
       "sentiment": "neutral"
     }
   ]

@@ -8,12 +8,12 @@
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 16.0,
+  "vix": 15.93,
   "strategy_type": "put_debit_spread",
   "strategy_display": "Put Debit Spread",
   "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (65.1% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (58.9% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -35,7 +35,7 @@
         "strike": 340.0,
         "strike_formatted": "340",
         "option_type": "Put",
-        "delta": -0.201,
+        "delta": -0.2,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
@@ -48,8 +48,8 @@
     "margin_required": 6.0,
     "stop_loss_price": 361.19,
     "take_profit_price": 340.0,
-    "net_delta": -0.259,
-    "net_theta": -0.012,
+    "net_delta": -0.26,
+    "net_theta": -0.011,
     "probability_of_profit": 48.8,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.728,
+      "win_probability": 0.706,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2552,
+      "half_kelly_fraction": 0.2354,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,16 +360,16 @@
   ],
   "news": [
     {
-      "title": "Nasdaq, S&P 500, Dow Futures Rise Ahead Of Jobs Report: NKE, META, RKLB, MRNA, SLS, TSLA Stocks In Focus",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-dow-futures-083141649.html",
+      "title": "Dow Jones Futures Rise, Oil Prices Fall With Tesla, Jobs Report Due; Micron In Buy Area",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/f6c899dd-7f15-3879-b266-51980008982d/dow-jones-futures-rise%2C-oil.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Dow Jones Futures Rise, Oil Prices Fall With Tesla, Jobs Report Due; Micron In Buy Area",
-      "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/f6c899dd-7f15-3879-b266-51980008982d/dow-jones-futures-rise%2C-oil.html",
+      "title": "Nasdaq, S&P 500, Dow Futures Rise Ahead Of Jobs Report: NKE, META, RKLB, MRNA, SLS, TSLA Stocks In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-dow-futures-083141649.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },

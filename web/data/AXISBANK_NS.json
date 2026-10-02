@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 22.5,
   "vix": 14.46,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (62.7% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (61.1% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1200.0,
-        "strike_formatted": "1200",
-        "option_type": "Put",
-        "delta": -0.339,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Buy 1x AXISBANK.NS 24-Nov-2026 1200 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
-        "option_type": "Put",
-        "delta": -0.117,
+        "strike": 1250.0,
+        "strike_formatted": "1250",
+        "option_type": "Call",
+        "delta": 0.373,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 53,
-        "summary": "Sell 1x AXISBANK.NS 24-Nov-2026 1150 Put"
+        "summary": "Sell 1x AXISBANK.NS 24-Nov-2026 1250 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1300.0,
+        "strike_formatted": "1300",
+        "option_type": "Call",
+        "delta": 0.15,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x AXISBANK.NS 24-Nov-2026 1300 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1241.44,
-    "take_profit_price": 1150.0,
-    "net_delta": -0.222,
-    "net_theta": -0.069,
-    "probability_of_profit": 36.4,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1180.59,
+    "take_profit_price": 1253.61,
+    "net_delta": -0.223,
+    "net_theta": 0.127,
+    "probability_of_profit": 0.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 973.68,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 983.42,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 993.15,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1002.89,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1012.63,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1022.36,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1032.1,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1041.84,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1051.57,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1061.31,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1071.05,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1080.78,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1090.52,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1100.26,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1110.0,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1119.73,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1129.47,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1139.21,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1148.94,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1158.68,
-        "pnl": 21.32
+        "pnl": -50.0
       },
       {
         "price": 1168.42,
-        "pnl": 11.58
+        "pnl": -50.0
       },
       {
         "price": 1178.15,
-        "pnl": 1.85
+        "pnl": -50.0
       },
       {
         "price": 1187.89,
-        "pnl": -7.89
+        "pnl": -50.0
       },
       {
         "price": 1197.63,
-        "pnl": -17.63
+        "pnl": -50.0
       },
       {
         "price": 1207.36,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1217.1,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1226.84,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1236.57,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1246.31,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1256.05,
-        "pnl": -20.0
+        "pnl": -56.05
       },
       {
         "price": 1265.78,
-        "pnl": -20.0
+        "pnl": -65.78
       },
       {
         "price": 1275.52,
-        "pnl": -20.0
+        "pnl": -75.52
       },
       {
         "price": 1285.26,
-        "pnl": -20.0
+        "pnl": -85.26
       },
       {
         "price": 1294.99,
-        "pnl": -20.0
+        "pnl": -94.99
       },
       {
         "price": 1304.73,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1314.47,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1324.2,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1333.94,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1343.68,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1353.42,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1363.15,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1372.89,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1382.63,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1392.36,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1402.1,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1411.84,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1421.57,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1431.31,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1441.05,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1450.78,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1460.52,
-        "pnl": -20.0
+        "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.719,
+      "win_probability": 0.714,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2471,
+      "half_kelly_fraction": 0.2426,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

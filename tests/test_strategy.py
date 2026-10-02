@@ -25,17 +25,17 @@ def analysis(regime: MarketRegime, confidence: float = 1.0) -> TrendAnalysis:
     )
 
 
-def test_bullish_regime_recommends_call_debit_spread() -> None:
+def test_bullish_regime_recommends_credit_spread() -> None:
     recommendation = select_strategy(analysis(MarketRegime.BULL))
 
-    assert recommendation.strategy is StrategyType.CALL_DEBIT_SPREAD
+    assert recommendation.strategy is StrategyType.CREDIT_SPREAD
     assert recommendation.actionable is True
 
 
-def test_bearish_regime_recommends_put_debit_spread() -> None:
+def test_bearish_regime_recommends_credit_spread() -> None:
     recommendation = select_strategy(analysis(MarketRegime.BEAR))
 
-    assert recommendation.strategy is StrategyType.PUT_DEBIT_SPREAD
+    assert recommendation.strategy is StrategyType.CREDIT_SPREAD
     assert recommendation.actionable is True
 
 

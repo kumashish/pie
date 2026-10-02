@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 27.5,
   "vix": 14.46,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (56.9% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (54.3% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 940.0,
-        "strike_formatted": "940",
-        "option_type": "Put",
-        "delta": -0.423,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Buy 1x HINDALCO.NS 24-Nov-2026 940 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 900.0,
-        "strike_formatted": "900",
-        "option_type": "Put",
-        "delta": -0.163,
+        "strike": 970.0,
+        "strike_formatted": "970",
+        "option_type": "Call",
+        "delta": 0.354,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 53,
-        "summary": "Sell 1x HINDALCO.NS 24-Nov-2026 900 Put"
+        "summary": "Sell 1x HINDALCO.NS 24-Nov-2026 970 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 995.0,
+        "strike_formatted": "995",
+        "option_type": "Call",
+        "delta": 0.201,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x HINDALCO.NS 24-Nov-2026 995 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 16.0,
-    "stop_loss_price": 960.69,
-    "take_profit_price": 900.0,
-    "net_delta": -0.26,
-    "net_theta": -0.036,
-    "probability_of_profit": 45.0,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 40.0,
+    "stop_loss_price": 913.59,
+    "take_profit_price": 970.11,
+    "net_delta": -0.153,
+    "net_theta": 0.063,
+    "probability_of_profit": 0.0,
+    "var_95": 25.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 753.48,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 761.01,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 768.55,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 776.08,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 783.62,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 791.15,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 798.69,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 806.22,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 813.76,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 821.29,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 828.83,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 836.36,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 843.9,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 851.43,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 858.97,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 866.5,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 874.04,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 881.57,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 889.11,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 896.64,
-        "pnl": 24.0
+        "pnl": -40.0
       },
       {
         "price": 904.18,
-        "pnl": 19.82
+        "pnl": -40.0
       },
       {
         "price": 911.71,
-        "pnl": 12.29
+        "pnl": -40.0
       },
       {
         "price": 919.25,
-        "pnl": 4.75
+        "pnl": -40.0
       },
       {
         "price": 926.78,
-        "pnl": -2.78
+        "pnl": -40.0
       },
       {
         "price": 934.32,
-        "pnl": -10.32
+        "pnl": -40.0
       },
       {
         "price": 941.85,
-        "pnl": -16.0
+        "pnl": -40.0
       },
       {
         "price": 949.38,
-        "pnl": -16.0
+        "pnl": -40.0
       },
       {
         "price": 956.92,
-        "pnl": -16.0
+        "pnl": -40.0
       },
       {
         "price": 964.45,
-        "pnl": -16.0
+        "pnl": -40.0
       },
       {
         "price": 971.99,
-        "pnl": -16.0
+        "pnl": -41.99
       },
       {
         "price": 979.52,
-        "pnl": -16.0
+        "pnl": -49.52
       },
       {
         "price": 987.06,
-        "pnl": -16.0
+        "pnl": -57.06
       },
       {
         "price": 994.59,
-        "pnl": -16.0
+        "pnl": -64.59
       },
       {
         "price": 1002.13,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1009.66,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1017.2,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1024.73,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1032.27,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1039.8,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1047.34,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1054.87,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1062.41,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1069.94,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1077.48,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1085.01,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1092.55,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1100.08,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1107.62,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1115.15,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1122.69,
-        "pnl": -16.0
+        "pnl": -65.0
       },
       {
         "price": 1130.22,
-        "pnl": -16.0
+        "pnl": -65.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.699,
+      "win_probability": 0.69,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2291,
+      "half_kelly_fraction": 0.221,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -362,7 +362,7 @@
     {
       "title": "Hindalco drops proposed $125m acquisition of US-based AluChem",
       "publisher": "ET Manufacturing",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdUFIcS1lcF9Ba202QlhCMnU5bm1qdUhuRnV6dXRsV09pV0tyVkctaXp5eEhUdEhSVTBMV2tsb1ZFUVJBVUVVbDJUaWtYdGNDeENJUVoyYkxVc3A1NFctVWo2Y2ZFeUxOR1FQbnVMbnJGazUxMk1Tc1dfVGpUQV80RmZ0UTFkaGtSVGhxSTRKRDFpMmRTbUpPNTZuQzk4am1ITzVid0NHbVFIZUJCUEFvdm9QMklyN0VtQ2pzd2VjaE9oY2ZNOFhpRHZkZkQxX1RfUzNLNzgyUdIB1wFBVV95cUxQdUFIcS1lcF9Ba202QlhCMnU5bm1qdUhuRnV6dXRsV09pV0tyVkctaXp5eEhUdEhSVTBMV2tsb1ZFUVJBVUVVbDJUaWtYdGNDeENJUVoyYkxVc3A1NFctVWo2Y2ZFeUxOR1FQbnVMbnJGazUxMk1Tc1dfVGpUQV80RmZ0UTFkaGtSVGhxSTRKRDFpMmRTbUpPNTZuQzk4am1ITzVid0NHbVFIZUJCUEFvdm9QMklyN0VtQ2pzd2VjaE9oY2ZNOFhpRHZkZkQxX1RfUzNLNzgyUQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVk02RTFwZ2dEZXRrdFBoT2lJeGhSRmN1X1YzRTVTbXFxSVdTNjNIb0RDMDllQVJMaHBONTl5bDRLSGw2TlZ6cTNoQlo3N2VaYWJhV2Iyc0gwcEdjU2owMXZyM2puOU9LZmdJYjBQdVdpeTBnZXRuc1RaZDJQMmNueVFsZmpNeUY2ZkZkTG0zV1lxejFpbzFLUFEtTWtrLTBHTHluZWdrZFJmZ3g5ZjF1MjRWa2psQW8yNElCdjA0UFBmRTBfYnUya3ppVTZGQ0V3dlHSAdcBQVVfeXFMUHVBSHEtZXBfQWttNkJYQjJ1OW5tanVIbkZ1enV0bFdPaVdLclZHLWl6eXhIVHRIUlUwTFdrbG9WRVFSQVVFVWwyVGlrWHRjQ3hDSVFaMmJMVXNwNTRXLVVqNmNmRXlMTkdRUG51TG5yRms1MTJNU3NXX1RqVEFfNEZmdFExZGhrUlRocUk0SkQxaTJkU21KTzU2bkM5OGptSE81YndDR21RSGVCQlBBb3ZvUDJJcjdFbUNqc3dlY2hPaGNmTThYaUR2ZGZEMV9UX1MzSzc4MlE?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bearish"
     },
@@ -381,6 +381,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUS1xc1pOaTZxRFYxYnhTMnBBUm1QSkY2V1BrWnlmZTBCeDNmSjFlaVYtUXBZeHhmazU5WkpMdG1USVktRVduMUpHb0FxdnJsS0xPbEg5cFdYQnRlY044YVJfV1ZZMDJ0TTB4WVBsdV9XRVpJNjVoLU9wOWZFNW5iSHcwVmJIRVdrSHc1azFqVQ?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "534",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
@@ -392,13 +399,6 @@
       "publisher": "bfsi.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaVlhUW1LcDE0YVJrbFAtcWRKT1B6eDY0MEpOVkJhRk83UmxoaWhNTnZOcWhwYmlpOHpBUUZMT05Ja1VoaDJZVjJtamVVUi1pS2djQ3hIeXB4a1BERDhkRDBRaGd1ZTFVMTIxR2hQdzhKaVUtZFpEUmhLdTVCMGd0UzJLNUpwZVFCdlFwRWhOOVJBTm5nTGRvbHlfUEYwMnE5ZFVWSDZGNWxGb2JJV1dNUVhFbW1fU283OUZfMm1iUjXSAcYBQVVfeXFMTVVEMmNLamRfLV9kSDBvOURCZGZlaHNCYmxQYTdxZTR4a2VDdDZwRnVQc25nN0JpVlEzaDd2NzhjU00zSF9kSkhMaGFiRUg3Qm1UNHRXZjZPS0ZvS2Q2VUVtSTlPYTZpNzU4MVRvQk5PeGtBckpfcFdNZTRXaUtRZU0zLTR6anozbkg0SnBKaFI2cUIyOUgxb3BkNzd0OWwyT3NXWnprd3FsZjgzQV85UWUtbGEzQ2M4ZXNPT0VfUmY2c05YNFFB?oc=5",
       "published_at": "Mon, 28 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Market wrap: Cipla, ONGC, HDFC Life, Bajaj Finance top gainers and losers on Nifty and Sensex on Thursday",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfbW40THR1cC1GMlNUMDJkR0pQWU5jaFB4eXNkSWZ4M0k0eGp1bVUtYXdFWFdJcXd5TVFrNEpjZ2dWM3g4cXBiZENkZnFiVkNoU1lpaE5RcmhDWGJ6MDhkTkxtU0g0dWEwbmc?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }
   ]

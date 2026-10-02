@@ -8,26 +8,26 @@
   "fit_score": 32.5,
   "confidence_grade": "C",
   "confidence_percentage": 32.5,
-  "vix": 16.0,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.93,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (53.5% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (53.6% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 190.0,
-        "strike_formatted": "190",
+        "strike": 175.0,
+        "strike_formatted": "175",
         "option_type": "Put",
-        "delta": -0.468,
+        "delta": -0.068,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x COIN 20-Nov-2026 190 Put"
+        "summary": "Buy 1x COIN 20-Nov-2026 175 Put"
       },
       {
         "action": "Sell",
@@ -35,235 +35,259 @@
         "strike": 180.0,
         "strike_formatted": "180",
         "option_type": "Put",
-        "delta": -0.158,
+        "delta": -0.157,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 49,
         "summary": "Sell 1x COIN 20-Nov-2026 180 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 200.0,
+        "strike_formatted": "200",
+        "option_type": "Call",
+        "delta": 0.212,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x COIN 20-Nov-2026 200 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 205.0,
+        "strike_formatted": "205",
+        "option_type": "Call",
+        "delta": 0.111,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x COIN 20-Nov-2026 205 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 4.0,
-    "stop_loss_price": 193.08,
-    "take_profit_price": 180.0,
-    "net_delta": -0.31,
-    "net_theta": -0.009,
-    "probability_of_profit": 49.6,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 183.61,
+    "take_profit_price": 194.97,
+    "net_delta": -0.012,
+    "net_theta": 0.024,
+    "probability_of_profit": 0.0,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 151.43,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 152.95,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 154.46,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 155.97,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 157.49,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 159.0,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 160.52,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 162.03,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 163.55,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 165.06,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 166.58,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 168.09,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 169.6,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 171.12,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 172.63,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 174.15,
-        "pnl": 6.0
+        "pnl": -15.0
       },
       {
         "price": 175.66,
-        "pnl": 6.0
+        "pnl": -14.34
       },
       {
         "price": 177.18,
-        "pnl": 6.0
+        "pnl": -12.82
       },
       {
         "price": 178.69,
-        "pnl": 6.0
+        "pnl": -11.31
       },
       {
         "price": 180.2,
-        "pnl": 5.8
+        "pnl": -10.0
       },
       {
         "price": 181.72,
-        "pnl": 4.28
+        "pnl": -10.0
       },
       {
         "price": 183.23,
-        "pnl": 2.77
+        "pnl": -10.0
       },
       {
         "price": 184.75,
-        "pnl": 1.25
+        "pnl": -10.0
       },
       {
         "price": 186.26,
-        "pnl": -0.26
+        "pnl": -10.0
       },
       {
         "price": 187.78,
-        "pnl": -1.78
+        "pnl": -10.0
       },
       {
         "price": 189.29,
-        "pnl": -3.29
+        "pnl": -10.0
       },
       {
         "price": 190.8,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 192.32,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 193.83,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 195.35,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 196.86,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 198.38,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 199.89,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 201.4,
-        "pnl": -4.0
+        "pnl": -11.4
       },
       {
         "price": 202.92,
-        "pnl": -4.0
+        "pnl": -12.92
       },
       {
         "price": 204.43,
-        "pnl": -4.0
+        "pnl": -14.43
       },
       {
         "price": 205.95,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 207.46,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 208.98,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 210.49,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 212.0,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 213.52,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 215.03,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 216.55,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 218.06,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 219.58,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 221.09,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 222.61,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 224.12,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 225.63,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 227.15,
-        "pnl": -4.0
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.687,
+      "win_probability": 0.688,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2183,
+      "half_kelly_fraction": 0.2192,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

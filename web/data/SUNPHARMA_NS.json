@@ -9,261 +9,285 @@
   "confidence_grade": "C",
   "confidence_percentage": 32.5,
   "vix": 14.46,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (54.1% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (56.7% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1800.0,
-        "strike_formatted": "1800",
+        "strike": 1650.0,
+        "strike_formatted": "1650",
         "option_type": "Put",
-        "delta": -0.433,
+        "delta": -0.04,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 53,
-        "summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1800 Put"
+        "summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1650 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1750.0,
-        "strike_formatted": "1750",
+        "strike": 1700.0,
+        "strike_formatted": "1700",
         "option_type": "Put",
-        "delta": -0.248,
+        "delta": -0.114,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 53,
-        "summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1750 Put"
+        "summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1700 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1900.0,
+        "strike_formatted": "1900",
+        "option_type": "Call",
+        "delta": 0.208,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1900 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1950.0,
+        "strike_formatted": "1950",
+        "option_type": "Call",
+        "delta": 0.1,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 53,
+        "summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1950 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1837.02,
-    "take_profit_price": 1750.0,
-    "net_delta": -0.185,
-    "net_theta": -0.024,
-    "probability_of_profit": 46.1,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1746.97,
+    "take_profit_price": 1855.03,
+    "net_delta": -0.034,
+    "net_theta": 0.21,
+    "probability_of_profit": 0.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 1440.8,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1455.21,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1469.62,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1484.02,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1498.43,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1512.84,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1527.25,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1541.66,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1556.06,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1570.47,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1584.88,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1599.29,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1613.7,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1628.1,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1642.51,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1656.92,
-        "pnl": 30.0
+        "pnl": -93.08
       },
       {
         "price": 1671.33,
-        "pnl": 30.0
+        "pnl": -78.67
       },
       {
         "price": 1685.74,
-        "pnl": 30.0
+        "pnl": -64.26
       },
       {
         "price": 1700.14,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1714.55,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1728.96,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1743.37,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1757.78,
-        "pnl": 22.22
+        "pnl": -50.0
       },
       {
         "price": 1772.18,
-        "pnl": 7.82
+        "pnl": -50.0
       },
       {
         "price": 1786.59,
-        "pnl": -6.59
+        "pnl": -50.0
       },
       {
         "price": 1801.0,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1815.41,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1829.82,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1844.22,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1858.63,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1873.04,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1887.45,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1901.86,
-        "pnl": -20.0
+        "pnl": -51.86
       },
       {
         "price": 1916.26,
-        "pnl": -20.0
+        "pnl": -66.26
       },
       {
         "price": 1930.67,
-        "pnl": -20.0
+        "pnl": -80.67
       },
       {
         "price": 1945.08,
-        "pnl": -20.0
+        "pnl": -95.08
       },
       {
         "price": 1959.49,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1973.9,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1988.3,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2002.71,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2017.12,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2031.53,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2045.94,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2060.34,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2074.75,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2089.16,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2103.57,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2117.98,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2132.38,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2146.79,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 2161.2,
-        "pnl": -20.0
+        "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.689,
+      "win_probability": 0.698,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2201,
+      "half_kelly_fraction": 0.2282,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,25 +384,46 @@
   ],
   "news": [
     {
-      "title": "SUNPHARMA Quarterly Earnings, Breakout Signals & Options Volatility Update",
-      "publisher": "Moneycontrol / Economic Times",
-      "link": "https://www.moneycontrol.com/us-markets/stockpricequote/sunpharma",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Institutional Position Flow & Volatility Surface Breakdown for SUNPHARMA",
-      "publisher": "Economic Times Markets",
-      "link": "https://www.moneycontrol.com/us-markets/stockpricequote/sunpharma",
-      "published_at": "1h ago",
+      "title": "Sun Pharma steps into PCSK9 arena with LIB Therapeutics\u2019 monthly-shot",
+      "publisher": "ETPharma.com",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlhsVE1DYXF2U1BGb3ZLM3RBaWY1bUt3VkF0dkdkUnRHdGg0aTNJRjNTRjNVNGpkVkpvWjNoaTVwMUlKVnBnVnB3c1ZvbzhHRFVjVUk0ZDRreElLQm5HU2RRZFJ4UWI1RmNtRV9jWmNKaU1wT0tXazJ5NnRyLTU0TUoxcTBlamlfTE1xajJoYV9VU0dyd21XN1dMcTF4Wmg4aGVheTRucTlXWmJ3SUFzWmgyVHRrYkp0bU9LWjdSYWY2RDNoQ25xWjFTWEZ0aEJfTEZRTmhTRmNoQlN4VExjU9IB5gFBVV95cUxNaEdHQTRzZGs5NzNjR3ljMm81WU1SSjhzSFMxX0xIem9yTjdHZjZTdFo0SUNmYWJselBHTWNwUWZSQmRWal9udF9pQi16cVVxRkpoMmxOT1hXLVdNNTZBRFhWZXk5RGNHbGpqU3BfenEzVEN3OXprc095S1BkYmJBRGctbUlxbHdTNXo1ejl1QU1FRUdWS2plZndlLW96RmJ6d3RnQy1HR2xaZ1NxRUdvNTVPcjFRek1BQnJtVENVNGg4VWdCbUZ4YnZLRXE0SHJFN3NCVk42azBVZy02aGw3OWxJSFpLZw?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Macro Trend Analysis & Key Technical Support/Resistance Levels for SUNPHARMA",
-      "publisher": "Moneycontrol Pro",
-      "link": "https://www.moneycontrol.com/us-markets/stockpricequote/sunpharma",
-      "published_at": "3h ago",
+      "title": "Lilly widens lead over Sun Pharma in anti-baldness contest with paediatric approval",
+      "publisher": "ETPharma.com",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQMkxGWmpMMjJaM1JmaEVVQTRhN0lnTlFmN05iUmNFOUdKWGVqMXRwdTBoLXZrc1JGOVZrUlBmWGd4OG5DZHZMZ2t4bVQ3cUt6RXlmamdTeDNJWFNITzVDY1Y2SGxzYWh6al9UakhIM0cxYzVyUGgyX1AxOWVreUx0bUFfNTZhSXhFeklydi1xaF9vaTEwQ2xzY1hrTU1pUXhDSm5lMG9ZLW10S3M5Qm1ha0loZ0FhZmFGR2lKYi1qdmk4WU05dElSTV90dDlKcTdEV0huZU1sQXdRczVGVFd1T0pSeml4UG9NaTZPejFpWWdqaTlsVmJTOU83NU43REnSAYQCQVVfeXFMT1dab3N4eTJSQkNTSXczZEx2SkNLNzNQdzNFekdDTXB1SlZ6cUhHaWVCQzc5Zldjb0xKelpScUNKaGZndVRBWF9WSXFjWTdiYVJNTDhVQjhPb3NhMkpOTXdXSU53U0piVFZVaEFHdEI3TV9ZenduRGtwM1JMcE0tOHp3Yi15Tlp6eDNUbWR4MWM0TDdNS0NhUG9oRzhXV0xJOEJyV3g1cFliR1EwdjB3cmtaN1dfX0lmNEE3Nk1MczBIbmowRHo5Z1ZpZG1HTG9pZkhrYW5FQlM0WS1lWV9jVHJ4VldjVGZwOTFqX2pXSkFSMXpoUUw5U3I4RzZObDZqYTFWelM?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sun Pharma\u2019s Leqselvi sustains hair regrowth for over two years in long-term study",
+      "publisher": "ETPharma.com",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUDJSVDVWTnpjSG5udDN2QWhGV01CekV5S1RfZjN3NFRwOEt2Mmo4aVdWZFk4T3BJLWRiZHl4TlpvcHZrYl9LNUdLNlFuaTJQX2ZkeXhmSG1OellXSUt1Q1VTVVJ5dzBaTjZTbWppakY0UXlWTXFiMEJISEdzdXZvMFo3dFlzbGh3SUFqRzJraEJqR2NyaDRtWWdVaTVtM2VxX3JDNzRRNGRFT3BCVWluNTRidnZ1SF9uRGVOZm9JU2czUzhtdTFEamxnUjRjNExxMXVTN0VLSm1LTEVraGJOYl82eGZxMUg3ZW5oRHpUb0ZKckMydFFhZ9IB_gFBVV95cUxQN3Y5NmZhNEFtQU1IQmZ4aGk4TDZPaW1sMEdodnJLQnd2WmtwN3RMTFY5SF9VRElaVGUzUS1BVjI0UzBxU0NEbF93NXp0cHNfNm9KcFQ2WlJ6Nm4tSnhUa3JyQ2xJeWYteFFiSjN6TUgtSnhLMHBvcmZ1b3JsWmxhTXgtaEhPamRjZVBxVDNBYkpwaHFoUUxGRmloeS1CTW91RTJhOU1mbnhlVURwbjlIdkg1ZnNKLWtDNm45OWJyNnFKQVEySTMwNlpiLUFra25Sc01mY0ppZ1Z3cXpXUHk4bmRHUjFnMl9DY29GTC04X3plR3h0anhLc3ZLbjZnZw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
+    },
+    {
+      "title": "Sun Pharma plans \u20b910,000 crore bond sale to refinance Organon acquisition loan: Report",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWGhmTmJBUzdOUTFIc3UyNVpJU0swNEE0R3lwcU4zNGV4QVp6MFM2aEFwV0IxT3VEYUdfVU8yR09RMk5nYUxHaUgzaGJSbk9Xa3FUQ215NXNsc1ltcGhlVmw5bVpnZmhfZDRPQUN3MTZ3dG9LdkdJczJDVjZHVVM3SjMzREpOaEljTFNCOHFnVU5RVXpQbmczN3M4V0hSc2l2MW9NNDVRcXJWbTV1d2lUa09Wcjg1TzdQODIxdjhpdFdrdnVvZlZFNlNjUHRZSnY4NUgxdUVoeHNTX2VCOUxQd9IB5gFBVV95cUxPSjdpY09mVC1wNThpM003bV9hdU5UbHYta1E4NWhNMk1hcmhwbWRoc3hkc1FSWnB5Yk5HMHVMcE9pZ3hJcDhhZW9BX0pGRTlmRDRPQWxzZUMxMTBvcjJfc2hlWi1MVXpxOGJ1cHp2MDQtcElJeGEtNUtJRXY3OEFkZzdHT0FMZzI3UDJicEtGMnhVWUE5bVdyeThaRVhrSDN0dERsYjNmSzR4bFZLaUUyOFdCbWVCRzk2SU51bzBqN21OT2ljMDVCTWV1TnVnaWs5NktSd2tzNFhjZkVjeXJhWjlxejZEdw?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sun Pharma recalls topical anesthetic, anti-fungal cream in US",
+      "publisher": "ETPharma.com",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOelhmcFd6S3Z0LUQ2TUI3dGVOMmNZeGtNZzBNN3ducjl6R0tEQy1IQ3hPVmhBMTE4Z3N4MXRfVUVYV1FiQzZka0lXRmZkbFp1bHRUa003TG0xQWhLNG9MSlVnd1M1RzRoWmFnaEM1c2Y3WHkxSkkxOHg4YXlpNWt1bGpfYlNlUnBGd2NEV0xkWGVDWVpQYkhUOGw3NjU5Tk1jRUFjeUFUVXJjVjNlV2p6eTYxdXdfR2gwTXBKMl92NFhNZTZ3NVdMS3p4WWEtZGNtNkHSAdcBQVVfeXFMTjBocHBpUzUyUzRHX2R1SWl0QXNTdk5nczEtUkpjNUlpdGxtYXhmbTFRZ3ZfQ0ladnU0cHkxM3p3VWk0ZFpyU3lnZjR1a3lmVnA2UnpxSlNicTdrTnpFMjF0WnpabDVZeGxNQ2wxYTN3TlZrVy1rQ3E3UmFVWThHWnFLaFh4a1g5RnNoSE5WbjBPVExxdW0wcmVpQVFiNGZNeFVsVXJSZWNoLUFtNEdDaUhzSUpFM3FIbllUcUs2dWlRWW1XMlgyY2NuNWxBNU9mZU1OXzJLZU0?oc=5",
+      "published_at": "Sat, 26 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sun Pharma, Aurobindo Pharma, other stocks in focus as Trump exempts India from 100% tariffs on some speci",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQVWlXelVob0FaYkpwcmRjbUgzNDd0Tm85aW9xV1BDd2RYUS01a2t3QUVWel8wbjlfaWdoYS1DRWxnbFF3STg1bTZmSlE0bE1DNVJNZzZvWFVoOWxPZTNkSS1nby1yZXpfZVJOdW9IZmc0RUxXLTkwRDZFRElXX05CUEtOSjlLdFowdjJQQlljMmNxaFg3OTlHMnh4N2JpQlJlRkZHRnNkeU5SQUUzOUliMWFZV3d6ZHdXTDFyLWFyUDJPMDJjNk1IS2J1MTYwaHJPQ1o2TlhQVWZPbGk1NW5VUG9fODhfWml1RVlCOWlhQ2k2Um14ZTdPSzJtRUxiR0U2RXN1V185U2JWbFRRSG1NWU5TVEt4Mjh5VDVXTXRVamI4SWfSAZwCQVVfeXFMTnFXMldVak1BVkFldU9wdzVnX0MyWWU0XzQzdVI5ZTY0OWFYVTBDb3FkbkUyRm5BdFZ6V0FLVVI1SWc5SGRMbVBVSmkxMEo0M3AycThscXVkdTlHMWxxaU9XSHVXc0ZqaHJrWklYOWE5OW1OY0ZlMV84MFFXNWduUEtYdmYzRVhEb3RWbWpER2tyUUY4cUJ3aE5QV0JrbG9DY29ZakJ5Nm9rclJWVkRzblhTeGNsUUJXRVVicVlsZnhtaXlTd3JuSlkyN1BBbU5XMXdNcnI2VFNsWlk3STRmSk5fTzBGVC12NzV2ekRpUUtRWXMwN181czZpWUpRRXhEd0JJSk5aRkVIcTZ0T3A1Yl8yVTdfMEktYTlrZnc?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
     }
   ]
 }
