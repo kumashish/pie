@@ -271,8 +271,36 @@ def generate_readme_snapshot(
         )
 
     output_sections.append("\n### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies")
-    output_sections.append(header)
+    
+    us_high = []
+    in_high = []
     for data in table3_high_conviction:
+        sym_upper = str(data.get("symbol") or "").upper()
+        if sym_upper.endswith(".NS") or sym_upper.endswith(".BO") or sym_upper.startswith("^NSE") or sym_upper.startswith("^BSE"):
+            in_high.append(data)
+        else:
+            us_high.append(data)
+
+    output_sections.append("#### 🇺🇸 U.S. Stocks & ETFs")
+    output_sections.append(header)
+    for data in us_high:
+        updated_time = format_ist_time(data["last_updated"])
+        market = str(data.get("market") or data.get("symbol") or "")
+        stype = str(data.get("strategy_type") or "")
+        strat_name = get_strategy_display_name(stype)
+        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
+        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
+        signal_raw = str(data.get("signal") or "Hold")
+        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+
+        output_sections.append(
+            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
+        )
+
+    output_sections.append("\n#### 🇮🇳 Indian Equities")
+    output_sections.append(header)
+    for data in in_high:
         updated_time = format_ist_time(data["last_updated"])
         market = str(data.get("market") or data.get("symbol") or "")
         stype = str(data.get("strategy_type") or "")
