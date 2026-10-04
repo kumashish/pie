@@ -20,18 +20,6 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 750.0,
-        "strike_formatted": "750",
-        "option_type": "Call",
-        "delta": 0.346,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 47,
-        "summary": "Sell 1x META 20-Nov-2026 750 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
         "strike": 770.0,
         "strike_formatted": "770",
         "option_type": "Call",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x META 20-Nov-2026 770 Call"
+        "summary": "Sell 1x META 20-Nov-2026 770 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 795.0,
+        "strike_formatted": "795",
+        "option_type": "Call",
+        "delta": 0.073,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Buy 1x META 20-Nov-2026 795 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 30.0,
     "stop_loss_price": 706.24,
     "take_profit_price": 749.92,
-    "net_delta": -0.155,
-    "net_theta": 0.056,
+    "net_delta": -0.118,
+    "net_theta": 0.068,
     "probability_of_profit": 0.0,
-    "var_95": 20.0,
+    "var_95": 25.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -173,91 +173,91 @@
       },
       {
         "price": 751.38,
-        "pnl": -31.38
+        "pnl": -30.0
       },
       {
         "price": 757.2,
-        "pnl": -37.2
+        "pnl": -30.0
       },
       {
         "price": 763.03,
-        "pnl": -43.03
+        "pnl": -30.0
       },
       {
         "price": 768.85,
-        "pnl": -48.85
+        "pnl": -30.0
       },
       {
         "price": 774.68,
-        "pnl": -50.0
+        "pnl": -34.68
       },
       {
         "price": 780.5,
-        "pnl": -50.0
+        "pnl": -40.5
       },
       {
         "price": 786.33,
-        "pnl": -50.0
+        "pnl": -46.33
       },
       {
         "price": 792.15,
-        "pnl": -50.0
+        "pnl": -52.15
       },
       {
         "price": 797.98,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 803.8,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 809.62,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 815.45,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 821.27,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 827.1,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 832.92,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 838.75,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 844.57,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 850.4,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 856.22,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 862.05,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 867.87,
-        "pnl": -50.0
+        "pnl": -55.0
       },
       {
         "price": 873.7,
-        "pnl": -50.0
+        "pnl": -55.0
       }
     ],
     "kelly_sizing": {

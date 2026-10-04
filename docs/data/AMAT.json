@@ -13,21 +13,21 @@
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (97.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 495.0,
-        "strike_formatted": "495",
+        "strike": 490.0,
+        "strike_formatted": "490",
         "option_type": "Put",
-        "delta": -0.042,
+        "delta": -0.028,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x AMAT 20-Nov-2026 495 Put"
+        "summary": "Buy 1x AMAT 20-Nov-2026 490 Put"
       },
       {
         "action": "Sell",
@@ -56,14 +56,14 @@
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 585.0,
-        "strike_formatted": "585",
+        "strike": 590.0,
+        "strike_formatted": "590",
         "option_type": "Call",
-        "delta": 0.095,
+        "delta": 0.071,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x AMAT 20-Nov-2026 585 Call"
+        "summary": "Buy 1x AMAT 20-Nov-2026 590 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -72,72 +72,72 @@
     "margin_required": 20.0,
     "stop_loss_price": 523.84,
     "take_profit_price": 556.24,
-    "net_delta": -0.03,
-    "net_theta": 0.071,
+    "net_delta": -0.04,
+    "net_theta": 0.09,
     "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "var_95": 20.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 432.03,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 436.35,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 440.67,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 444.99,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 449.31,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 453.63,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 457.95,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 462.27,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 466.59,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 470.91,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 475.24,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 479.56,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 483.88,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 488.2,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 492.52,
-        "pnl": -35.0
+        "pnl": -37.48
       },
       {
         "price": 496.84,
@@ -225,69 +225,69 @@
       },
       {
         "price": 587.56,
-        "pnl": -35.0
+        "pnl": -37.56
       },
       {
         "price": 591.88,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 596.2,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 600.52,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 604.84,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 609.17,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 613.49,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 617.81,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 622.13,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 626.45,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 630.77,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 635.09,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 639.41,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 643.73,
-        "pnl": -35.0
+        "pnl": -40.0
       },
       {
         "price": 648.05,
-        "pnl": -35.0
+        "pnl": -40.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.839,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3551,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

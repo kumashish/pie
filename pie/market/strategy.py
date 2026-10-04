@@ -5,6 +5,7 @@ from enum import StrEnum
 from pydantic import Field
 
 from pie.core.models import DomainModel
+from pie.market.trend.matrix import evaluate_regime_confluence
 from pie.market.trend.models import MarketRegime, TrendAnalysis
 
 MINIMUM_CONFIDENCE = 0.75
@@ -57,9 +58,20 @@ class StrategyFitScore(DomainModel):
 
 
 def score_all_strategies(
-    analysis: TrendAnalysis, iv_rank: float = 50.0, benchmark_regime: str | None = None
+    analysis: TrendAnalysis,
+    iv_rank: float = 50.0,
+    benchmark_regime: str | None = None,
+    vix: float | None = None,
+    vix_change_20d: float | None = None,
 ) -> dict[StrategyType, StrategyFitScore]:
     """Calculate a 0-100% confidence/suitability score for every candidate strategy."""
+    confluence = evaluate_regime_confluence(
+        analysis=analysis,
+        benchmark_regime=benchmark_regime,
+        vix=vix,
+        vix_change_20d=vix_change_20d,
+    )
+
     trend_val = analysis.trend_score.value
     confidence_mult = analysis.confidence.value
 
@@ -103,15 +115,13 @@ def score_all_strategies(
     rs_bull_bonus = 3.0 if (rsi is not None and 50.0 <= rsi <= 65.0 and trend_val >= 7.5) else 0.0
     rs_bear_bonus = 3.0 if (rsi is not None and 35.0 <= rsi <= 50.0 and trend_val <= 2.5) else 0.0
 
-    # Benchmark Confluence Penalty (Prevent counter-market directional trades)
-    bm_bull_penalty = 0.0
-    bm_bear_penalty = 0.0
-    if benchmark_regime:
-        bm_norm = benchmark_regime.lower()
-        if bm_norm in {"bear", "strong_bear"}:
-            bm_bull_penalty = 15.0  # Penalize bullish strategies when index is bearish
-        elif bm_norm in {"bull", "strong_bull"}:
-            bm_bear_penalty = 15.0  # Penalize bearish strategies when index is bullish
+    # Confluence Matrix Penalties
+    bm_bull_penalty = confluence.bm_bull_penalty
+    bm_bear_penalty = confluence.bm_bear_penalty
+    ema200_bull_pen = confluence.ema200_bull_penalty
+    ema200_bear_pen = confluence.ema200_bear_penalty
+    ema20_bull_pen = confluence.ema20_bull_penalty
+    ema20_bear_pen = confluence.ema20_bear_penalty
 
     # Price vs EMA Confirmation Filter (only penalize if price actively breaks EMA20)
     ema_bull_confirm = 5.0 if (last_price is not None and ema20 is not None and last_price >= ema20) else (-10.0 if (last_price is not None and ema20 is not None and last_price < ema20) else 0.0)
@@ -159,46 +169,50 @@ def score_all_strategies(
     # Upfront Credit Collection Preference (+25.0 pts boost for net credit strategies, -25.0 pts penalty for net debit spreads)
     credit_preference_bonus = 25.0
     debit_spread_penalty = 25.0
+    credit_structure_bonus = 15.0  # Enhanced score bonus for defined-risk 30-60 DTE credit structures
+    naked_trade_penalty = 20.0     # Penalty for naked options or unhedged trades to manage tail risk
 
     # 1. Call Debit Spread: Bullish Trend or Oversold Dip Bounce (Net Debit)
-    cds_score = (bullishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - debit_spread_penalty
+    cds_score = (bullishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen - debit_spread_penalty
     raw_scores[StrategyType.CALL_DEBIT_SPREAD] = (
         (cds_score / 1.20) * confidence_mult,
         "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
     )
 
     # 2. Put Debit Spread: Bearish Trend or Overbought Exhaustion Fade (Net Debit)
-    pds_score = (bearishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - debit_spread_penalty
+    pds_score = (bearishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen - debit_spread_penalty
     raw_scores[StrategyType.PUT_DEBIT_SPREAD] = (
         (pds_score / 1.20) * confidence_mult,
         "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
     )
 
-    # 3. Jade Lizard: Bullish & High Vol Expansion (Net Credit)
-    jl_score = (bullishness * 0.50) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + credit_preference_bonus - earnings_penalty
+    # 3. Jade Lizard: Bullish & High Vol Expansion (Net Credit, Defined Risk Upside)
+    jl_score = (bullishness * 0.50) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + credit_preference_bonus + credit_structure_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.JADE_LIZARD] = (
         (jl_score / 1.20) * confidence_mult,
         "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
     )
 
-    # 4. Credit Spread (Bull Put / Bear Call): Preferred Upfront Credit Collection Strategy (Net Credit)
-    cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus - earnings_penalty
+    # 4. Credit Spread (Bull Put / Bear Call): Preferred Upfront Credit Collection Strategy (Net Credit, Defined Risk)
+    cs_directional_pen = (bm_bull_penalty + ema200_bull_pen + ema20_bull_pen) if trend_val >= 5.0 else (bm_bear_penalty + ema200_bear_pen + ema20_bear_pen)
+    cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus + credit_structure_bonus - earnings_penalty - cs_directional_pen
     raw_scores[StrategyType.CREDIT_SPREAD] = (
         (cs_score / 1.15) * confidence_mult,
         "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
     )
 
-    # 5. Naked Put: Bullish & High IV Rank / Oversold Dip Bounce (Net Credit)
-    np_score = (bullishness * 0.45) + (iv_premium * 0.45) + rsi_bull_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus + oversold_fade_bonus + credit_preference_bonus - earnings_penalty
+    # 5. Naked Put: Bullish & High IV Rank / Oversold Dip Bounce (Net Credit, Unhedged)
+    np_score = (bullishness * 0.45) + (iv_premium * 0.45) + rsi_bull_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus + oversold_fade_bonus + credit_preference_bonus - naked_trade_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.NAKED_PUT] = (
         (np_score / 1.20) * confidence_mult,
         "Bullish support with upfront credit collection favors Naked Put selling.",
     )
 
     range_confidence_mult = max(0.90, confidence_mult) if (analysis.regime == MarketRegime.NEUTRAL or 4.0 <= trend_val <= 6.5) else confidence_mult
+    vix_panic_boost = 35.0 if confluence.is_vix_spiking else 0.0
 
-    # 6. Iron Condor: Neutral / Range-Bound Theta Harvesting Strategy (Net Credit)
-    ic_score = (neutrality * 0.85) + (iv_premium * 0.35) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + theta_harvest_bonus + credit_preference_bonus - earnings_penalty
+    # 6. Iron Condor: Neutral / Range-Bound Theta Harvesting Strategy (Net Credit, Defined Risk)
+    ic_score = (neutrality * 0.85) + (iv_premium * 0.35) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + theta_harvest_bonus + credit_preference_bonus + credit_structure_bonus + vix_panic_boost - earnings_penalty
     raw_scores[StrategyType.IRON_CONDOR] = (
         (ic_score / 1.20) * range_confidence_mult,
         "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
@@ -212,28 +226,28 @@ def score_all_strategies(
     )
 
     # 8. Cash Swing Long: Bullish Equity Swing Trade
-    csl_score = (bullishness * 0.65) + support_bonus + weekly_bull_bonus + adx_boost - alpha_lag_penalty
+    csl_score = (bullishness * 0.65) + support_bonus + weekly_bull_bonus + adx_boost - alpha_lag_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.CASH_SWING_LONG] = (
         (csl_score / 1.20) * confidence_mult,
         "Cash Equity Swing Long: Strong momentum above EMA20 support.",
     )
 
     # 9. Cash Swing Short: Bearish Equity Swing Trade
-    css_score = (bearishness * 0.65) + resistance_bonus + weekly_bear_bonus + adx_boost
+    css_score = (bearishness * 0.65) + resistance_bonus + weekly_bear_bonus + adx_boost - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen
     raw_scores[StrategyType.CASH_SWING_SHORT] = (
         (css_score / 1.20) * confidence_mult,
         "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
     )
 
     # 8. Poor Man's Covered Call: Strong Bullish & Low IV
-    pmcc_score = (bullishness * 0.60) + (iv_discount * 0.15) + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus - earnings_penalty
+    pmcc_score = (bullishness * 0.60) + (iv_discount * 0.15) + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.POOR_MANS_COVERED_CALL] = (
         (pmcc_score / 1.20) * confidence_mult,
         "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
     )
 
     # 9. Iron Butterfly: Neutral & High IV (IV Rank >= 50)
-    ib_score = (neutrality * 0.70) + (iv_premium * 0.20) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus - earnings_penalty
+    ib_score = (neutrality * 0.70) + (iv_premium * 0.20) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + vix_panic_boost - earnings_penalty
     raw_scores[StrategyType.IRON_BUTTERFLY] = (
         (ib_score / 1.20) * range_confidence_mult,
         "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
@@ -246,22 +260,22 @@ def score_all_strategies(
         "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
     )
 
-    # 11. Naked Call: Strong Bearish & High IV (IV Rank >= 60)
-    nc_score = (bearishness * 0.40) + (iv_premium * 0.50) + rsi_bear_bonus
+    # 11. Naked Call: Strong Bearish & High IV (IV Rank >= 60, Unhedged)
+    nc_score = (bearishness * 0.40) + (iv_premium * 0.50) + rsi_bear_bonus - naked_trade_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen
     raw_scores[StrategyType.NAKED_CALL] = (
         (nc_score / 1.20) * confidence_mult,
         "Strong bearish resistance with elevated IV favors Naked Call selling.",
     )
 
-    # 12. Short Strangle: Neutral & Very High IV (IV Rank >= 65)
-    ss_score = (neutrality * 0.35) + (iv_premium * 0.55) + neutral_adx_bonus
+    # 12. Short Strangle: Neutral & Very High IV (IV Rank >= 65, Unhedged)
+    ss_score = (neutrality * 0.35) + (iv_premium * 0.55) + neutral_adx_bonus - naked_trade_penalty
     raw_scores[StrategyType.SHORT_STRANGLE] = (
         (ss_score / 1.20) * confidence_mult,
         "Range-bound market with peak IV rank favors Short Strangle premium selling.",
     )
 
     # 13. Collar: Strong Bullish & Protective Put Overlay
-    collar_score = (bullishness * 0.50) + (iv_premium * 0.30) + bb_upper_bonus
+    collar_score = (bullishness * 0.50) + (iv_premium * 0.30) + bb_upper_bonus - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.COLLAR] = (
         (collar_score / 1.20) * confidence_mult,
         "Bullish trend with high spot price favors Collar protective put overlay.",
@@ -286,17 +300,29 @@ def score_all_strategies(
         + support_bonus
         - rsi_collapse_penalty
         - earnings_penalty
+        - bm_bull_penalty
+        - ema200_bull_pen
+        - ema20_bull_pen
     )
     raw_scores[StrategyType.TRADECRAFT_PUT] = (
         (sma200_score / 1.20) * confidence_mult,
         "Stock touched 200 SMA support with weekly bull alignment — sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
     )
 
-    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT}
+    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.CREDIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT}
     bearish_types = {StrategyType.PUT_DEBIT_SPREAD, StrategyType.NAKED_CALL}
 
     results: dict[StrategyType, StrategyFitScore] = {}
     for stype, (score_val, rationale) in raw_scores.items():
+        if stype.value in confluence.disqualified_strategies:
+            results[stype] = StrategyFitScore(
+                strategy=stype,
+                score=0.0,
+                grade="F (Unsuited)",
+                rationale="Disqualified: VIX Spiking / Volatility Expansion Panic (VIX > 28 or 20-day VIX change >= +20%).",
+            )
+            continue
+
         # Require multi-timeframe alignment for top tier (> 90.0)
         if score_val > 90.0:
             if stype in bullish_types and not weekly_bullish:
@@ -316,7 +342,11 @@ def score_all_strategies(
 
 
 def select_strategy(
-    analysis: TrendAnalysis, iv_rank: float | None = None, benchmark_regime: str | None = None
+    analysis: TrendAnalysis,
+    iv_rank: float | None = None,
+    benchmark_regime: str | None = None,
+    vix: float | None = None,
+    vix_change_20d: float | None = None,
 ) -> StrategyRecommendation:
     """Select the option strategy that achieves the highest fit score."""
     if analysis.confidence.value < MINIMUM_CONFIDENCE:
@@ -327,8 +357,36 @@ def select_strategy(
         )
 
     iv = iv_rank if iv_rank is not None else 50.0
-    all_scores = score_all_strategies(analysis, iv, benchmark_regime=benchmark_regime)
+    all_scores = score_all_strategies(
+        analysis, iv, benchmark_regime=benchmark_regime, vix=vix, vix_change_20d=vix_change_20d
+    )
     fit_map = {stype.value: fit.score for stype, fit in all_scores.items()}
+
+    confluence = evaluate_regime_confluence(
+        analysis=analysis, benchmark_regime=benchmark_regime, vix=vix, vix_change_20d=vix_change_20d
+    )
+
+    if confluence.is_vix_spiking:
+        ic_fit = all_scores.get(StrategyType.IRON_CONDOR)
+        ib_fit = all_scores.get(StrategyType.IRON_BUTTERFLY)
+        best_neutral = ic_fit if (ic_fit and ib_fit and ic_fit.score >= ib_fit.score) else (ic_fit or ib_fit)
+        if best_neutral and best_neutral.score >= 40.0:
+            return StrategyRecommendation(
+                strategy=best_neutral.strategy,
+                actionable=True,
+                rationale=f"VIX Spiking / Volatility Expansion Panic detected (VIX > 28 or 20D change >= +20%). Mandated NEUTRAL {best_neutral.strategy.value.replace('_', ' ').title()} strategy ({best_neutral.score}% fit).",
+                limitations=(
+                    "Disqualified directional debit spreads due to extreme market volatility expansion.",
+                    "This is an advisory signal, not an execution instruction.",
+                ),
+                fit_scores=fit_map,
+            )
+        return StrategyRecommendation(
+            strategy=StrategyType.NO_TRADE,
+            actionable=False,
+            rationale="VIX Spiking / Volatility Expansion Panic detected (VIX > 28 or 20D VIX change >= +20%). Mandated CASH HOLDING (No Trade) due to high market volatility risk.",
+            fit_scores=fit_map,
+        )
 
     if analysis.regime == MarketRegime.NEUTRAL and iv_rank is None:
         return StrategyRecommendation(
@@ -351,12 +409,15 @@ def select_strategy(
     # Mean Reversion Wait Guardrail: Delay entry if momentum is overextended
     rsi = analysis.indicator_values.get("RSI(14)")
     synth_pcr = analysis.indicator_values.get("Synthetic PCR")
-    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT}
+    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.CREDIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT}
     bearish_types = {StrategyType.PUT_DEBIT_SPREAD, StrategyType.NAKED_CALL}
 
     pcr_str = f" [Synthetic PCR: {synth_pcr:.2f}]" if synth_pcr is not None else ""
 
-    if rsi is not None and rsi > 65.0 and best_strategy in bullish_types:
+    is_bullish_rec = (best_strategy in bullish_types) or (best_strategy == StrategyType.CREDIT_SPREAD and analysis.trend_score.value >= 5.0)
+    is_bearish_rec = (best_strategy in bearish_types) or (best_strategy == StrategyType.CREDIT_SPREAD and analysis.trend_score.value < 5.0)
+
+    if rsi is not None and rsi > 65.0 and is_bullish_rec:
         return StrategyRecommendation(
             strategy=best_strategy,
             actionable=False,
@@ -367,7 +428,7 @@ def select_strategy(
             ),
             fit_scores=fit_map,
         )
-    elif rsi is not None and rsi < 35.0 and best_strategy in bearish_types:
+    elif rsi is not None and rsi < 35.0 and is_bearish_rec:
         return StrategyRecommendation(
             strategy=best_strategy,
             actionable=False,
@@ -384,6 +445,10 @@ def select_strategy(
         actionable=True,
         rationale=f"Best fit strategy ({best_fit.score}% fit - Grade {best_fit.grade}): {best_fit.rationale}",
         limitations=(
+            "Strict 30-60 DTE target window enforced for optimal theta/gamma balance.",
+            "Mandatory 21 DTE (or <= 14 DTE) Gamma Risk Expiry Guardrail to avoid pin risk and gamma explosions.",
+            "Dynamic Stop-Loss: Exit if loss exceeds 100% credit received (1:1 risk limit) or if spot breaches short strike / EMA20 boundary.",
+            "Take-Profit: Manage winner at 50% max profit realization target.",
             "Validate estimated strikes and expiry against live option-chain liquidity.",
             "This is an advisory signal, not an execution instruction.",
         ),

@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (85.4% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (29.8) is oversold (< 35) [Synthetic PCR: 1.42]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 970.0,
-        "strike_formatted": "970",
-        "option_type": "Call",
-        "delta": 0.372,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 970 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 995.0,
         "strike_formatted": "995",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 995 Call"
+        "summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 995 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1020.0,
+        "strike_formatted": "1020",
+        "option_type": "Call",
+        "delta": 0.104,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 1020 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 40.0,
     "stop_loss_price": 916.65,
     "take_profit_price": 973.35,
-    "net_delta": -0.159,
-    "net_theta": 0.064,
+    "net_delta": -0.109,
+    "net_theta": 0.068,
     "probability_of_profit": 0.0,
     "var_95": 25.0,
     "vol_skew_25d": 0.0,
@@ -173,27 +173,27 @@
       },
       {
         "price": 975.24,
-        "pnl": -45.24
+        "pnl": -40.0
       },
       {
         "price": 982.8,
-        "pnl": -52.8
+        "pnl": -40.0
       },
       {
         "price": 990.36,
-        "pnl": -60.36
+        "pnl": -40.0
       },
       {
         "price": 997.92,
-        "pnl": -65.0
+        "pnl": -42.92
       },
       {
         "price": 1005.48,
-        "pnl": -65.0
+        "pnl": -50.48
       },
       {
         "price": 1013.04,
-        "pnl": -65.0
+        "pnl": -58.04
       },
       {
         "price": 1020.6,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.799,
+      "win_probability": 0.844,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3191,
+      "half_kelly_fraction": 0.3596,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

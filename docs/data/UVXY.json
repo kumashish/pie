@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 17.0,
-        "strike_formatted": "17",
-        "option_type": "Call",
-        "delta": 0.545,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 47,
-        "summary": "Sell 1x UVXY 20-Nov-2026 17 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 18.0,
         "strike_formatted": "18",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x UVXY 20-Nov-2026 18 Call"
+        "summary": "Sell 1x UVXY 20-Nov-2026 18 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 19.0,
+        "strike_formatted": "19",
+        "option_type": "Call",
+        "delta": 0.028,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Buy 1x UVXY 20-Nov-2026 19 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 1.0,
     "stop_loss_price": 16.46,
     "take_profit_price": 17.48,
-    "net_delta": -0.368,
+    "net_delta": -0.149,
     "net_theta": 0.002,
     "probability_of_profit": 0.0,
-    "var_95": 1.0,
+    "var_95": 0.65,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -161,59 +161,59 @@
       },
       {
         "price": 17.11,
-        "pnl": -1.11
+        "pnl": -1.0
       },
       {
         "price": 17.24,
-        "pnl": -1.24
+        "pnl": -1.0
       },
       {
         "price": 17.38,
-        "pnl": -1.38
+        "pnl": -1.0
       },
       {
         "price": 17.51,
-        "pnl": -1.51
+        "pnl": -1.0
       },
       {
         "price": 17.65,
-        "pnl": -1.65
+        "pnl": -1.0
       },
       {
         "price": 17.78,
-        "pnl": -1.78
+        "pnl": -1.0
       },
       {
         "price": 17.92,
-        "pnl": -1.92
+        "pnl": -1.0
       },
       {
         "price": 18.06,
-        "pnl": -2.0
+        "pnl": -1.06
       },
       {
         "price": 18.19,
-        "pnl": -2.0
+        "pnl": -1.19
       },
       {
         "price": 18.33,
-        "pnl": -2.0
+        "pnl": -1.33
       },
       {
         "price": 18.46,
-        "pnl": -2.0
+        "pnl": -1.46
       },
       {
         "price": 18.6,
-        "pnl": -2.0
+        "pnl": -1.6
       },
       {
         "price": 18.73,
-        "pnl": -2.0
+        "pnl": -1.73
       },
       {
         "price": 18.87,
-        "pnl": -2.0
+        "pnl": -1.87
       },
       {
         "price": 19.01,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

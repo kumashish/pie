@@ -71,15 +71,18 @@ def evaluate_exit_condition(
     previous_strategy: str,
     estimated_trade: Optional[EstimatedTrade] = None,
     current_time: Optional[datetime] = None,
+    ema20: Optional[float] = None,
+    unrealized_pnl: Optional[float] = None,
+    net_credit: Optional[float] = None,
 ) -> tuple[bool, str]:
-    """Evaluate whether an active trade should be closed or rolled.
+    """Evaluate whether an active trade should be closed or rolled under Loss Elimination Guardrails.
 
     Returns:
         (should_exit: bool, reason_display: str)
     """
     dte = calculate_dte(expiration, current_time)
 
-    # 1. DTE Risk Gates:
+    # 1. Gamma Risk Expiry Guardrail: Mandate exiting all option spreads at <= 21 DTE (or <= 14 DTE)
     if dte <= 10:
         return True, ExitReason.DTE_EXPIRATION.value
     if dte <= 14:
@@ -87,36 +90,73 @@ def evaluate_exit_condition(
     if dte <= 21:
         return True, ExitReason.FIRST_REVIEW.value
 
-    # 2. Regime Shift Rule:
-    # If strategy was Call Debit Spread / Bullish but regime switched to Bear/Strong Bear (score < 4.5)
-    # If strategy was Put Debit Spread / Bearish but regime switched to Bull/Strong Bull (score > 5.5)
+    # 2. Dynamic Stop-Loss Rule: 1:1 Credit Loss Limit (Loss exceeds 100% of credit received)
+    if unrealized_pnl is not None and net_credit is not None and net_credit > 0:
+        if unrealized_pnl <= -net_credit:
+            return True, ExitReason.STOP_LOSS.value
+
+    # 3. Dynamic Take-Profit Rule: 50% Max Profit Target
+    if unrealized_pnl is not None and net_credit is not None and net_credit > 0:
+        if unrealized_pnl >= 0.50 * net_credit:
+            return True, ExitReason.TAKE_PROFIT.value
+
+    # 4. Short Strike / EMA20 Boundary Breach Rule
     strat_clean = previous_strategy.lower().replace("_", " ")
     regime_clean = current_regime.lower().replace("_", " ")
 
+    is_bullish = any(b in strat_clean for b in ("bull", "credit spread", "credit", "call debit", "naked put", "jade lizard", "tradecraft"))
+    is_bearish = any(b in strat_clean for b in ("bear", "put debit", "naked call"))
+
+    if is_bullish and ema20 is not None and spot_price < ema20:
+        return True, ExitReason.STOP_LOSS.value
+
+    if is_bearish and ema20 is not None and spot_price > ema20:
+        return True, ExitReason.STOP_LOSS.value
+
+    # 5. Regime Shift Rule:
     if "call debit" in strat_clean and ("bear" in regime_clean or current_score < 4.5):
         return True, ExitReason.REGIME_SHIFT.value
 
     if "put debit" in strat_clean and ("bull" in regime_clean or current_score > 5.5):
         return True, ExitReason.REGIME_SHIFT.value
 
-    # 3. Target Profit / Stop Loss evaluation based on trade legs
-    if estimated_trade is not None and len(estimated_trade.legs) >= 2:
-        long_leg = estimated_trade.legs[0]
-        short_leg = estimated_trade.legs[1]
+    # 6. Target Profit / Stop Loss evaluation based on trade legs
+    if estimated_trade is not None and len(estimated_trade.legs) >= 1:
+        strat_name = (
+            estimated_trade.strategy.value
+            if hasattr(estimated_trade.strategy, "value")
+            else str(estimated_trade.strategy)
+        ).lower()
 
-        # For Call Debit Spread: Target profit is near short strike
-        if long_leg.right.value == "call" and spot_price >= short_leg.strike:
-            return True, ExitReason.TAKE_PROFIT.value
+        # Debit Spreads Target Profit: short strike reached/exceeded
+        if len(estimated_trade.legs) >= 2:
+            long_leg = estimated_trade.legs[0]
+            short_leg = estimated_trade.legs[1]
 
-        # For Put Debit Spread: Target profit is near short strike
-        if long_leg.right.value == "put" and spot_price <= short_leg.strike:
-            return True, ExitReason.TAKE_PROFIT.value
+            # For Call Debit Spread: Target profit is near or above short strike
+            if long_leg.right.value == "call" and spot_price >= short_leg.strike:
+                return True, ExitReason.TAKE_PROFIT.value
 
-        # Stop loss check if spot price drops > 2x leg width away from long strike
-        width = abs(short_leg.strike - long_leg.strike)
-        if long_leg.right.value == "call" and spot_price < (long_leg.strike - width):
-            return True, ExitReason.STOP_LOSS.value
-        if long_leg.right.value == "put" and spot_price > (long_leg.strike + width):
-            return True, ExitReason.STOP_LOSS.value
+            # For Put Debit Spread: Target profit is near or below short strike
+            if long_leg.right.value == "put" and spot_price <= short_leg.strike:
+                return True, ExitReason.TAKE_PROFIT.value
+
+        # Short leg breach check for Credit / Short strategies
+        if "debit" not in strat_name:
+            for leg in estimated_trade.legs:
+                if leg.action.lower() in ("sell", "short"):
+                    if leg.right.value == "put" and spot_price < leg.strike:
+                        return True, ExitReason.STOP_LOSS.value
+                    if leg.right.value == "call" and spot_price > leg.strike:
+                        return True, ExitReason.STOP_LOSS.value
+
+        if len(estimated_trade.legs) >= 2:
+            long_leg = estimated_trade.legs[0]
+            short_leg = estimated_trade.legs[1]
+            width = abs(short_leg.strike - long_leg.strike)
+            if long_leg.right.value == "call" and spot_price < (long_leg.strike - width):
+                return True, ExitReason.STOP_LOSS.value
+            if long_leg.right.value == "put" and spot_price > (long_leg.strike + width):
+                return True, ExitReason.STOP_LOSS.value
 
     return False, ExitReason.NONE.value

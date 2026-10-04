@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (21.6) is oversold (< 35) [Synthetic PCR: 1.54]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 11500.0,
-        "strike_formatted": "11500",
-        "option_type": "Call",
-        "delta": 0.489,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x MARUTI.NS 24-Nov-2026 11500 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 12000.0,
         "strike_formatted": "12000",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x MARUTI.NS 24-Nov-2026 12000 Call"
+        "summary": "Sell 1x MARUTI.NS 24-Nov-2026 12000 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 12500.0,
+        "strike_formatted": "12500",
+        "option_type": "Call",
+        "delta": 0.058,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x MARUTI.NS 24-Nov-2026 12500 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 500.0,
     "stop_loss_price": 11044.42,
     "take_profit_price": 11727.58,
-    "net_delta": -0.282,
-    "net_theta": 1.097,
+    "net_delta": -0.149,
+    "net_theta": 1.25,
     "probability_of_profit": 0.0,
     "var_95": 500.0,
     "vol_skew_25d": 0.0,
@@ -165,47 +165,47 @@
       },
       {
         "price": 11568.18,
-        "pnl": -568.18
+        "pnl": -500.0
       },
       {
         "price": 11659.26,
-        "pnl": -659.26
+        "pnl": -500.0
       },
       {
         "price": 11750.35,
-        "pnl": -750.35
+        "pnl": -500.0
       },
       {
         "price": 11841.44,
-        "pnl": -841.44
+        "pnl": -500.0
       },
       {
         "price": 11932.53,
-        "pnl": -932.53
+        "pnl": -500.0
       },
       {
         "price": 12023.62,
-        "pnl": -1000.0
+        "pnl": -523.62
       },
       {
         "price": 12114.7,
-        "pnl": -1000.0
+        "pnl": -614.7
       },
       {
         "price": 12205.79,
-        "pnl": -1000.0
+        "pnl": -705.79
       },
       {
         "price": 12296.88,
-        "pnl": -1000.0
+        "pnl": -796.88
       },
       {
         "price": 12387.97,
-        "pnl": -1000.0
+        "pnl": -887.97
       },
       {
         "price": 12479.06,
-        "pnl": -1000.0
+        "pnl": -979.06
       },
       {
         "price": 12570.14,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

@@ -13,33 +13,33 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (68.8) is overbought (> 65) [Synthetic PCR: 0.65]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 205.0,
-        "strike_formatted": "205",
-        "option_type": "Call",
-        "delta": 0.374,
+        "strike": 190.0,
+        "strike_formatted": "190",
+        "option_type": "Put",
+        "delta": -0.144,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Sell 1x XLK 20-Nov-2026 205 Call"
+        "summary": "Sell 1x XLK 20-Nov-2026 190 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 210.0,
-        "strike_formatted": "210",
-        "option_type": "Call",
-        "delta": 0.223,
+        "strike": 185.0,
+        "strike_formatted": "185",
+        "option_type": "Put",
+        "delta": -0.061,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x XLK 20-Nov-2026 210 Call"
+        "summary": "Buy 1x XLK 20-Nov-2026 185 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 10.0,
     "stop_loss_price": 193.82,
     "take_profit_price": 205.8,
-    "net_delta": -0.151,
-    "net_theta": 0.013,
+    "net_delta": 0.083,
+    "net_theta": 0.01,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -57,79 +57,79 @@
     "payoff_points": [
       {
         "price": 159.85,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 161.45,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 163.04,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 164.64,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 166.24,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 167.84,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 169.44,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 171.04,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 172.64,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 174.23,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 175.83,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 177.43,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 179.03,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 180.63,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 182.23,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 183.83,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 185.42,
-        "pnl": -10.0
+        "pnl": -14.58
       },
       {
         "price": 187.02,
-        "pnl": -10.0
+        "pnl": -12.98
       },
       {
         "price": 188.62,
-        "pnl": -10.0
+        "pnl": -11.38
       },
       {
         "price": 190.22,
@@ -173,91 +173,91 @@
       },
       {
         "price": 206.2,
-        "pnl": -11.2
+        "pnl": -10.0
       },
       {
         "price": 207.8,
-        "pnl": -12.8
+        "pnl": -10.0
       },
       {
         "price": 209.4,
-        "pnl": -14.4
+        "pnl": -10.0
       },
       {
         "price": 211.0,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 212.6,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 214.2,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 215.79,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 217.39,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 218.99,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 220.59,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 222.19,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 223.79,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 225.39,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 226.98,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 228.58,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 230.18,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 231.78,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 233.38,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 234.98,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 236.58,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 238.17,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 239.77,
-        "pnl": -15.0
+        "pnl": -10.0
       }
     ],
     "kelly_sizing": {

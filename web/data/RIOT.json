@@ -13,12 +13,24 @@
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (93.4% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
+        "quantity": 1,
+        "strike": 16.0,
+        "strike_formatted": "16",
+        "option_type": "Put",
+        "delta": -0.0,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Buy 1x RIOT 20-Nov-2026 16 Put"
+      },
+      {
+        "action": "Sell",
         "quantity": 1,
         "strike": 18.0,
         "strike_formatted": "18",
@@ -27,43 +39,31 @@
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x RIOT 20-Nov-2026 18 Put"
+        "summary": "Sell 1x RIOT 20-Nov-2026 18 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 19.0,
-        "strike_formatted": "19",
-        "option_type": "Put",
-        "delta": -0.203,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 47,
-        "summary": "Sell 1x RIOT 20-Nov-2026 19 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 21.0,
-        "strike_formatted": "21",
+        "strike": 22.0,
+        "strike_formatted": "22",
         "option_type": "Call",
-        "delta": 0.161,
+        "delta": 0.033,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Sell 1x RIOT 20-Nov-2026 21 Call"
+        "summary": "Sell 1x RIOT 20-Nov-2026 22 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 21.0,
-        "strike_formatted": "21",
+        "strike": 24.0,
+        "strike_formatted": "24",
         "option_type": "Call",
-        "delta": 0.161,
+        "delta": 0.0,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x RIOT 20-Nov-2026 21 Call"
+        "summary": "Buy 1x RIOT 20-Nov-2026 24 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -72,96 +72,96 @@
     "margin_required": 1.0,
     "stop_loss_price": 19.14,
     "take_profit_price": 20.32,
-    "net_delta": 0.168,
+    "net_delta": 0.002,
     "net_theta": 0.002,
     "probability_of_profit": 0.0,
-    "var_95": 0.9,
+    "var_95": 0.14,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 15.78,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 15.94,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 16.1,
-        "pnl": -2.0
+        "pnl": -2.9
       },
       {
         "price": 16.26,
-        "pnl": -2.0
+        "pnl": -2.74
       },
       {
         "price": 16.42,
-        "pnl": -2.0
+        "pnl": -2.58
       },
       {
         "price": 16.57,
-        "pnl": -2.0
+        "pnl": -2.43
       },
       {
         "price": 16.73,
-        "pnl": -2.0
+        "pnl": -2.27
       },
       {
         "price": 16.89,
-        "pnl": -2.0
+        "pnl": -2.11
       },
       {
         "price": 17.05,
-        "pnl": -2.0
+        "pnl": -1.95
       },
       {
         "price": 17.2,
-        "pnl": -2.0
+        "pnl": -1.8
       },
       {
         "price": 17.36,
-        "pnl": -2.0
+        "pnl": -1.64
       },
       {
         "price": 17.52,
-        "pnl": -2.0
+        "pnl": -1.48
       },
       {
         "price": 17.68,
-        "pnl": -2.0
+        "pnl": -1.32
       },
       {
         "price": 17.84,
-        "pnl": -2.0
+        "pnl": -1.16
       },
       {
         "price": 17.99,
-        "pnl": -2.0
+        "pnl": -1.01
       },
       {
         "price": 18.15,
-        "pnl": -1.85
+        "pnl": -1.0
       },
       {
         "price": 18.31,
-        "pnl": -1.69
+        "pnl": -1.0
       },
       {
         "price": 18.47,
-        "pnl": -1.53
+        "pnl": -1.0
       },
       {
         "price": 18.63,
-        "pnl": -1.37
+        "pnl": -1.0
       },
       {
         "price": 18.78,
-        "pnl": -1.22
+        "pnl": -1.0
       },
       {
         "price": 18.94,
-        "pnl": -1.06
+        "pnl": -1.0
       },
       {
         "price": 19.1,
@@ -241,53 +241,53 @@
       },
       {
         "price": 22.1,
-        "pnl": -1.0
+        "pnl": -1.1
       },
       {
         "price": 22.26,
-        "pnl": -1.0
+        "pnl": -1.26
       },
       {
         "price": 22.41,
-        "pnl": -1.0
+        "pnl": -1.41
       },
       {
         "price": 22.57,
-        "pnl": -1.0
+        "pnl": -1.57
       },
       {
         "price": 22.73,
-        "pnl": -1.0
+        "pnl": -1.73
       },
       {
         "price": 22.89,
-        "pnl": -1.0
+        "pnl": -1.89
       },
       {
         "price": 23.04,
-        "pnl": -1.0
+        "pnl": -2.04
       },
       {
         "price": 23.2,
-        "pnl": -1.0
+        "pnl": -2.2
       },
       {
         "price": 23.36,
-        "pnl": -1.0
+        "pnl": -2.36
       },
       {
         "price": 23.52,
-        "pnl": -1.0
+        "pnl": -2.52
       },
       {
         "price": 23.68,
-        "pnl": -1.0
+        "pnl": -2.68
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.827,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3443,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

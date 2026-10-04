@@ -13,7 +13,7 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (85.9% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -32,14 +32,14 @@
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1250.0,
-        "strike_formatted": "1250",
+        "strike": 1300.0,
+        "strike_formatted": "1300",
         "option_type": "Call",
-        "delta": 0.307,
+        "delta": 0.109,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1250 Call"
+        "summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1300 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 50.0,
     "stop_loss_price": 1170.01,
     "take_profit_price": 1242.39,
-    "net_delta": 0.0,
-    "net_theta": 0.0,
+    "net_delta": -0.198,
+    "net_theta": 0.137,
     "probability_of_profit": 0.0,
-    "var_95": 0.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -177,93 +177,93 @@
       },
       {
         "price": 1254.45,
-        "pnl": -50.0
+        "pnl": -54.45
       },
       {
         "price": 1264.1,
-        "pnl": -50.0
+        "pnl": -64.1
       },
       {
         "price": 1273.75,
-        "pnl": -50.0
+        "pnl": -73.75
       },
       {
         "price": 1283.4,
-        "pnl": -50.0
+        "pnl": -83.4
       },
       {
         "price": 1293.05,
-        "pnl": -50.0
+        "pnl": -93.05
       },
       {
         "price": 1302.7,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1312.35,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1322.0,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1331.64,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1341.29,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1350.94,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1360.59,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1370.24,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1379.89,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1389.54,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1399.19,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1408.84,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1418.49,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1428.14,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1437.79,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 1447.44,
-        "pnl": -50.0
+        "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.801,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3209,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

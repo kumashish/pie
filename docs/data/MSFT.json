@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 530.0,
-        "strike_formatted": "530",
+        "strike": 550.0,
+        "strike_formatted": "550",
         "option_type": "Call",
-        "delta": 0.386,
+        "delta": 0.168,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Sell 1x MSFT 20-Nov-2026 530 Call"
+        "summary": "Sell 1x MSFT 20-Nov-2026 550 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 545.0,
-        "strike_formatted": "545",
+        "strike": 560.0,
+        "strike_formatted": "560",
         "option_type": "Call",
-        "delta": 0.213,
+        "delta": 0.098,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x MSFT 20-Nov-2026 545 Call"
+        "summary": "Buy 1x MSFT 20-Nov-2026 560 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 20.0,
     "stop_loss_price": 502.0,
     "take_profit_price": 533.06,
-    "net_delta": -0.173,
-    "net_theta": 0.04,
+    "net_delta": -0.07,
+    "net_theta": 0.028,
     "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -173,91 +173,91 @@
       },
       {
         "price": 534.09,
-        "pnl": -24.09
+        "pnl": -20.0
       },
       {
         "price": 538.23,
-        "pnl": -28.23
+        "pnl": -20.0
       },
       {
         "price": 542.37,
-        "pnl": -32.37
+        "pnl": -20.0
       },
       {
         "price": 546.51,
-        "pnl": -35.0
+        "pnl": -20.0
       },
       {
         "price": 550.65,
-        "pnl": -35.0
+        "pnl": -20.65
       },
       {
         "price": 554.79,
-        "pnl": -35.0
+        "pnl": -24.79
       },
       {
         "price": 558.93,
-        "pnl": -35.0
+        "pnl": -28.93
       },
       {
         "price": 563.07,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 567.21,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 571.35,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 575.49,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 579.63,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 583.77,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 587.91,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 592.05,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 596.19,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 600.33,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 604.48,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 608.62,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 612.76,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 616.9,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 621.04,
-        "pnl": -35.0
+        "pnl": -30.0
       }
     ],
     "kelly_sizing": {
@@ -360,6 +360,13 @@
   ],
   "news": [
     {
+      "title": "How Record Free Cash Flow and Payouts At Endeavour Mining (TSX:EDV) Have Changed Its Investment Story",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/record-free-cash-flow-payouts-120621945.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Can Take Two Interactive Software (TTWO) Still Look Undervalued On Its New Xbox Deal?",
       "publisher": "Simply Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/two-interactive-software-ttwo-still-070820545.html",
@@ -384,13 +391,6 @@
       "title": "3 British AI Healthcare Stocks With Revenue Up To \u00a361 Billion",
       "publisher": "Simply Wall St.",
       "link": "https://finance.yahoo.com/healthcare/articles/3-british-ai-healthcare-stocks-190839279.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bessent says rising Treasury yields reflect global trend, not cause for alarm",
-      "publisher": "Investing.com",
-      "link": "https://finance.yahoo.com/economy/policy/articles/bessent-says-rising-treasury-yields-171938909.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

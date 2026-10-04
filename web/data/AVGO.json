@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (84.1% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (97.2% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 365.0,
-        "strike_formatted": "365",
-        "option_type": "Call",
-        "delta": 0.362,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 47,
-        "summary": "Sell 1x AVGO 20-Nov-2026 365 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 375.0,
         "strike_formatted": "375",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x AVGO 20-Nov-2026 375 Call"
+        "summary": "Sell 1x AVGO 20-Nov-2026 375 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 385.0,
+        "strike_formatted": "385",
+        "option_type": "Call",
+        "delta": 0.093,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Buy 1x AVGO 20-Nov-2026 385 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,7 +48,7 @@
     "margin_required": 15.0,
     "stop_loss_price": 344.49,
     "take_profit_price": 365.79,
-    "net_delta": -0.163,
+    "net_delta": -0.106,
     "net_theta": 0.028,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
@@ -173,31 +173,31 @@
       },
       {
         "price": 366.5,
-        "pnl": -16.5
+        "pnl": -15.0
       },
       {
         "price": 369.35,
-        "pnl": -19.35
+        "pnl": -15.0
       },
       {
         "price": 372.19,
-        "pnl": -22.19
+        "pnl": -15.0
       },
       {
         "price": 375.03,
-        "pnl": -25.0
+        "pnl": -15.03
       },
       {
         "price": 377.87,
-        "pnl": -25.0
+        "pnl": -17.87
       },
       {
         "price": 380.71,
-        "pnl": -25.0
+        "pnl": -20.71
       },
       {
         "price": 383.55,
-        "pnl": -25.0
+        "pnl": -23.55
       },
       {
         "price": 386.39,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.794,
+      "win_probability": 0.84,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3146,
+      "half_kelly_fraction": 0.356,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,6 +360,13 @@
   ],
   "news": [
     {
+      "title": "What a $10,000 Investment Split Between Nvidia and Broadcom Could Be Worth by 2030",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/10-000-investment-split-between-124500781.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Broadcom vs. Micron: Which Semiconductor Stock Is the Better AI Buy over the Next 3 Years?",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/technology/ai/articles/broadcom-vs-micron-semiconductor-stock-095900865.html",
@@ -391,13 +398,6 @@
       "title": "If You'd Invested $1,000 in Broadcom's 2009 IPO, Here's How Much You'd Have Today",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/markets/stocks/articles/youd-invested-1-000-broadcoms-103500401.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Prediction: This AI Chip Stock Will Be the Biggest Winner of 2027 (Hint: It\u2019s Not Nvidia, AMD, or Broadcom)",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-ai-chip-stock-biggest-094001664.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

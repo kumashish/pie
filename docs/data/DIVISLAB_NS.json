@@ -20,18 +20,6 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 9500.0,
-        "strike_formatted": "9500",
-        "option_type": "Call",
-        "delta": 0.367,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 9500 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
         "strike": 9700.0,
         "strike_formatted": "9700",
         "option_type": "Call",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 9700 Call"
+        "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 9700 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 9900.0,
+        "strike_formatted": "9900",
+        "option_type": "Call",
+        "delta": 0.135,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 9900 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 400.0,
     "stop_loss_price": 8971.53,
     "take_profit_price": 9526.47,
-    "net_delta": -0.133,
-    "net_theta": 0.503,
+    "net_delta": -0.099,
+    "net_theta": 0.56,
     "probability_of_profit": 0.0,
     "var_95": 200.0,
     "vol_skew_25d": 0.0,
@@ -173,23 +173,23 @@
       },
       {
         "price": 9544.97,
-        "pnl": -444.97
+        "pnl": -400.0
       },
       {
         "price": 9618.96,
-        "pnl": -518.96
+        "pnl": -400.0
       },
       {
         "price": 9692.95,
-        "pnl": -592.95
+        "pnl": -400.0
       },
       {
         "price": 9766.94,
-        "pnl": -600.0
+        "pnl": -466.94
       },
       {
         "price": 9840.94,
-        "pnl": -600.0
+        "pnl": -540.94
       },
       {
         "price": 9914.93,

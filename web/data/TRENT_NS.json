@@ -13,33 +13,33 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (24.4) is oversold (< 35) [Synthetic PCR: 1.46]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 2650.0,
-        "strike_formatted": "2650",
+        "strike": 2750.0,
+        "strike_formatted": "2750",
         "option_type": "Call",
-        "delta": 0.367,
+        "delta": 0.153,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Sell 1x TRENT.NS 24-Nov-2026 2650 Call"
+        "summary": "Sell 1x TRENT.NS 24-Nov-2026 2750 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 2700.0,
-        "strike_formatted": "2700",
+        "strike": 2800.0,
+        "strike_formatted": "2800",
         "option_type": "Call",
-        "delta": 0.247,
+        "delta": 0.087,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x TRENT.NS 24-Nov-2026 2700 Call"
+        "summary": "Buy 1x TRENT.NS 24-Nov-2026 2800 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 100.0,
     "stop_loss_price": 2502.6,
     "take_profit_price": 2657.4,
-    "net_delta": -0.12,
-    "net_theta": 0.124,
+    "net_delta": -0.066,
+    "net_theta": 0.128,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -173,31 +173,31 @@
       },
       {
         "price": 2662.56,
-        "pnl": -112.56
+        "pnl": -100.0
       },
       {
         "price": 2683.2,
-        "pnl": -133.2
+        "pnl": -100.0
       },
       {
         "price": 2703.84,
-        "pnl": -150.0
+        "pnl": -100.0
       },
       {
         "price": 2724.48,
-        "pnl": -150.0
+        "pnl": -100.0
       },
       {
         "price": 2745.12,
-        "pnl": -150.0
+        "pnl": -100.0
       },
       {
         "price": 2765.76,
-        "pnl": -150.0
+        "pnl": -115.76
       },
       {
         "price": 2786.4,
-        "pnl": -150.0
+        "pnl": -136.4
       },
       {
         "price": 2807.04,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

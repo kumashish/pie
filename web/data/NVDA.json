@@ -13,33 +13,33 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (99.6% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 240.0,
-        "strike_formatted": "240",
+        "strike": 250.0,
+        "strike_formatted": "250",
         "option_type": "Call",
-        "delta": 0.374,
+        "delta": 0.144,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Sell 1x NVDA 20-Nov-2026 240 Call"
+        "summary": "Sell 1x NVDA 20-Nov-2026 250 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 245.0,
-        "strike_formatted": "245",
+        "strike": 255.0,
+        "strike_formatted": "255",
         "option_type": "Call",
-        "delta": 0.243,
+        "delta": 0.077,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x NVDA 20-Nov-2026 245 Call"
+        "summary": "Buy 1x NVDA 20-Nov-2026 255 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,7 +48,7 @@
     "margin_required": 10.0,
     "stop_loss_price": 226.93,
     "take_profit_price": 240.97,
-    "net_delta": -0.131,
+    "net_delta": -0.067,
     "net_theta": 0.013,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -173,35 +173,35 @@
       },
       {
         "price": 241.44,
-        "pnl": -11.44
+        "pnl": -10.0
       },
       {
         "price": 243.31,
-        "pnl": -13.31
+        "pnl": -10.0
       },
       {
         "price": 245.18,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 247.05,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 248.92,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 250.79,
-        "pnl": -15.0
+        "pnl": -10.79
       },
       {
         "price": 252.67,
-        "pnl": -15.0
+        "pnl": -12.67
       },
       {
         "price": 254.54,
-        "pnl": -15.0
+        "pnl": -14.54
       },
       {
         "price": 256.41,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.849,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3641,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,44 +360,44 @@
   ],
   "news": [
     {
-      "title": "Why This Oil Giant Keeps Betting on Countries Everyone Else Avoids",
+      "title": "What a $10,000 Investment Split Between Nvidia and Broadcom Could Be Worth by 2030",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/energy/articles/why-oil-giant-keeps-betting-113500694.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/10-000-investment-split-between-124500781.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "SpaceX Isn't Rocket Lab's Biggest Threat Now -- Blue Origin Is",
+      "title": "Michael Burry Thinks the AI Bubble Will Burst Sooner Than Later, Including Big Drops in Micron and Nebius by Mid-2027",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-isnt-rocket-labs-biggest-112700631.html",
+      "link": "https://finance.yahoo.com/markets/options/articles/michael-burry-thinks-ai-bubble-123700812.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Dow Jones Futures: Nasdaq Hits High As Nvidia, SpaceX, Bloom Energy Flash Buy Signals, But Note These Risks",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/b98e0c13-f78a-3e19-ad93-12d5a340e701/dow-jones-futures%3A-nasdaq.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Warren Buffett's Farewell Letter Contains the Only 4 Words Investors Need to Build a $10 Million Portfolio",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/warren-buffetts-farewell-letter-contains-122200536.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Comfort Systems USA Is a $1,600 Stock Almost Nobody Owns. Here's Why It Keeps Crushing the Market.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/comfort-systems-usa-1-600-112200442.html",
+      "title": "How Record Free Cash Flow and Payouts At Endeavour Mining (TSX:EDV) Have Changed Its Investment Story",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/record-free-cash-flow-payouts-120621945.html",
       "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
     },
     {
-      "title": "Wall Street Thought Artificial Intelligence (AI) Would Decimate Software Stocks, but This One Has Tripled From Its 52-Week Low",
+      "title": "These Two Asset Classes Were the Only Winners in September",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/technology/ai/articles/wall-street-thought-artificial-intelligence-111700861.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Robinhood Is Building Something Wall Street Has Never Seen Before",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/robinhood-building-something-wall-street-110500704.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "We're Witnessing the Stock Market Do Something for Only the 6th Time in 98 Years, and History Couldn't Be Clearer What's Next for Stocks",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/were-witnessing-stock-market-something-105602052.html",
+      "link": "https://finance.yahoo.com/markets/commodities/articles/two-asset-classes-were-only-120500398.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (31.3) is oversold (< 35) [Synthetic PCR: 1.40]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 3800.0,
-        "strike_formatted": "3800",
-        "option_type": "Call",
-        "delta": 0.356,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x LT.NS 24-Nov-2026 3800 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 3900.0,
         "strike_formatted": "3900",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x LT.NS 24-Nov-2026 3900 Call"
+        "summary": "Sell 1x LT.NS 24-Nov-2026 3900 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 3950.0,
+        "strike_formatted": "3950",
+        "option_type": "Call",
+        "delta": 0.139,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x LT.NS 24-Nov-2026 3950 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 150.0,
     "stop_loss_price": 3582.6,
     "take_profit_price": 3804.2,
-    "net_delta": -0.159,
-    "net_theta": 0.262,
+    "net_delta": -0.058,
+    "net_theta": 0.14,
     "probability_of_profit": 0.0,
-    "var_95": 100.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -173,91 +173,91 @@
       },
       {
         "price": 3811.59,
-        "pnl": -161.59
+        "pnl": -150.0
       },
       {
         "price": 3841.14,
-        "pnl": -191.14
+        "pnl": -150.0
       },
       {
         "price": 3870.68,
-        "pnl": -220.68
+        "pnl": -150.0
       },
       {
         "price": 3900.23,
-        "pnl": -250.0
+        "pnl": -150.23
       },
       {
         "price": 3929.78,
-        "pnl": -250.0
+        "pnl": -179.78
       },
       {
         "price": 3959.32,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 3988.87,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4018.42,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4047.97,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4077.51,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4107.06,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4136.61,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4166.16,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4195.7,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4225.25,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4254.8,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4284.34,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4313.89,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4343.44,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4372.99,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4402.53,
-        "pnl": -250.0
+        "pnl": -200.0
       },
       {
         "price": 4432.08,
-        "pnl": -250.0
+        "pnl": -200.0
       }
     ],
     "kelly_sizing": {

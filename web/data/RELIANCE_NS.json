@@ -13,7 +13,7 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (27.9) is oversold (< 35) [Synthetic PCR: 1.40]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -381,6 +381,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "India hikes deepwater gas price ceiling to $9.89 for difficult fields; Reliance-BP\u2019s KG-D6 to benefit",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPaXNpQlM2MVBoUzRYb0dLTWw2N0Z3UHRQZGtBY21oWFNqd2FBMkFOa2ZJYmNCM3Q4d2dmalhRbkhlMEhOVldIMjB5NkxzSlNRbU9MQUZPalVyTENsWUEwclo1S3QwQWd3WFNrREJEUUxuWlFhR0lmaWFfV09qcVZ6ZkI1OUFSM05zMlA4eWVPaExyN3Z0M2Uyd2lrcnFRNVY2Z0M3TGlLWnlOYkdWWlR0a0k2YzF3V240Ui1ITWNqSTF1ekVPYl9sZFI0WEE4WFZOdGZPazY2SnB6WFdwYjZvd1BjWkk0c1pxLXow0gHwAUFVX3lxTE9BYU93ZTUwTlJrYzdLWXluZnktTXNwci0zSkFnTXpGRTJVNlczbldLQ0xWR1ZMNlVMLTVGdm9vcDBjWEhMVndoYzM4cldfdHg0LXJrNkVpLW1JZi1sbTdEbWZVVXoyRnFESnNrQTMxeGRJSkVuQ3U1c19Pbk9NTDR0am9Dbkc1c2Y0bVlUMkNpRDNyRzZ5eHVRUzdGdVNqSjNyZWhFMUhLYzNyQUpXbVhzcWNjMTBiZ1QzbC1ObkhweUVBSVVZOWYySDI0bW9sem5sMm5QeHRHUE5RdzhBVWY4RlRoQlF5LXdCVVAyUmdsOA?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "NCLAT disposes of ADAVL appeal against IIHL over 'Reliance' brand",
       "publisher": "ETLegalWorld.com",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORngxbXhacnRlTlFIZmlxRFBGNFZiY0VNZnNKQWl1elRlZjRjdllMZXRHOUJXT0NxSGpMLWtYZFliN1V0ZXZxQ3pETjFjU1A3Qnh6MFk0RnFnM1U2QW9SVFVEWEhTeWVoQ0pwX3dtQ3dBNUJnMExJTHJDTnYxNGtXQm9KN1FfRkpESC1QYXpoQ2N0ejMyQlROc1BheEh0THpkNFNYNDVKV2dWTF9rWXkzblU4cDdod25pM2VoaXBYS2ZLM0hRRFplXy10Zkg2LW1XU2fSAdIBQVVfeXFMTkZ4MW14WnJ0ZU5RSGZpcURQRjRWYmNFTWZzSkFpdXpUZWY0Y3ZZTGV0RzlCV09DcUhqTC1rWGRZYjdVdGV2cUN6RE4xY1NQN0J4ejBZNEZxZzNVNkFvUlRVRFhIU3llaENKcF93bUN3QTVCZzBMSUxyQ052MTRrV0JvSjdRX0ZKREgtUGF6aENjdHozMkJUTnNQYXhIdEx6ZDRTWDQ1SldnVkxfa1l5M25VOHA3aHduaTNlaGlwWEtmSzNIUURaZV8tdGZINi1tV1Nn?oc=5",
@@ -393,13 +400,6 @@
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPN2RBWWZzX011T3o3TVBfQ19VQll5V0NXc08wdmR0d2M0ekpUbXE0cjR4TFA1VjBaX0l1eGx1NGI3aGRWaXdNOVJpY050Z0tMY2ExRnRFb09kdjctdmVmLVFmaEwzWWJ1RjllUXpWbkJuY19mUjE4TklKQ0pEdmlpQlh3NnUxSG41bTVaOWFuRE5iQUdHWmhydmQtNFBMNlJ0SU82Mk1id19uekppV2xWcC1LZ3dub2o5WTJGckVMdlIyVkI5T3ItTDVCQ0R0bERPVTV1dTFqUFB6RGxq0gHiAUFVX3lxTFBXOVlCdDc0ZUlwQXdMQl9YZTRjaFZjby1RTjRZRzBkSzNkUWRKakJwU3pLXzNNRTJ1eVd0N0tCSlVaRGpBNUlNcFktX2c5UVBSa0M4YnFTbEljaDVveE5SY2VYdWJtM1NKVDNzNjA4Rkk4dHhmY2hlb0JGN0VuOVo1VzdQTnl5VUlqam1oTEpCYkROWExnZTIzY2RUVzdQUGlKem9RTGZjZG4wYnB0SVdPcHdMbnR1ZGI2ZHZuTDdFNlhCa2ZYa081cDY2RHc5a0VTVllZNWppcG5XMllnWFRFMHc?oc=5",
       "published_at": "Wed, 30 Sep 2026",
       "sentiment": "bullish"
-    },
-    {
-      "title": "SBI leads demand, snaps up 40% of Reliance Industries\u2019 \u20b913,000 crore bond issue",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMk1Ta3Fkb083Q2hxdUdrOUI2dzZ6SFhZZXRKeU5YV3FHc3NMMjlfRXhMTkJFUTQ1WGJhdk5QV2dtSDJSWEpYT2hEY2pYa3hoT3pmTTN2a1lLSGZtaC1oVmlSU25ickhMX3FwZUpLbWlYbFhCUFJhdWNKdldaSXJIckpaSHZNNGlESXpUVDZxMjJtSm1Cc2o4MG9iNUU1WTQ3QmF5R2p0WGRIaFk5WTBUcWFvQi1OVG5qYTZaSV90NGNjeVUwSEduX3hnVFM1elVk0gHWAUFVX3lxTE8xTjhmZVAwLVRkN0xzNlNSa2VfUmFienBTcnRFVE5YTUxsaFZUUTN4QjhuaThudjQyUUZvdlNnOGdtdzRlRk1HM2tDQ19lRGV6QUIwMTRHaDhZOTJ0OXkyYV9XOWxzNkRGSUNhNHJpZjAzTllYdEJLcTFuejdrdFlBaHpkVWRzOGxHLTRTOHgwOWFGS3ZDUmxuME42VTZDT3BOdmgzSU9KWjBLNzFoM2ZIVHZkV0djU0ktbmV0OXhsRC03WDNKbnd6UUxYVGVtWU0yTmNGWUE?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "neutral"
     }
   ]
 }

@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (24.4) is oversold (< 35) [Synthetic PCR: 1.45]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 73900.0,
-        "strike_formatted": "73900",
-        "option_type": "Call",
-        "delta": 0.362,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 47,
-        "summary": "Sell 1x ^BSESN 20-Nov-2026 73900 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 75900.0,
         "strike_formatted": "75900",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x ^BSESN 20-Nov-2026 75900 Call"
+        "summary": "Sell 1x ^BSESN 20-Nov-2026 75900 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 76600.0,
+        "strike_formatted": "76600",
+        "option_type": "Call",
+        "delta": 0.157,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Buy 1x ^BSESN 20-Nov-2026 76600 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 3000.0,
     "stop_loss_price": 69752.41,
     "take_profit_price": 74066.99,
-    "net_delta": -0.161,
-    "net_theta": 5.479,
+    "net_delta": -0.044,
+    "net_theta": 2.098,
     "probability_of_profit": 0.0,
-    "var_95": 2000.0,
+    "var_95": 700.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -173,97 +173,97 @@
       },
       {
         "price": 74210.81,
-        "pnl": -3310.81
+        "pnl": -3000.0
       },
       {
         "price": 74786.09,
-        "pnl": -3886.09
+        "pnl": -3000.0
       },
       {
         "price": 75361.37,
-        "pnl": -4461.37
+        "pnl": -3000.0
       },
       {
         "price": 75936.65,
-        "pnl": -5000.0
+        "pnl": -3036.65
       },
       {
         "price": 76511.92,
-        "pnl": -5000.0
+        "pnl": -3611.92
       },
       {
         "price": 77087.2,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 77662.48,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 78237.76,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 78813.03,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 79388.31,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 79963.59,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 80538.87,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 81114.15,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 81689.42,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 82264.7,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 82839.98,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 83415.26,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 83990.53,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 84565.81,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 85141.09,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 85716.37,
-        "pnl": -5000.0
+        "pnl": -3700.0
       },
       {
         "price": 86291.64,
-        "pnl": -5000.0
+        "pnl": -3700.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

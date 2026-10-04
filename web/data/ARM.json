@@ -13,33 +13,33 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (92.8% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 315.0,
-        "strike_formatted": "315",
+        "strike": 335.0,
+        "strike_formatted": "335",
         "option_type": "Call",
-        "delta": 0.384,
+        "delta": 0.079,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Sell 1x ARM 20-Nov-2026 315 Call"
+        "summary": "Sell 1x ARM 20-Nov-2026 335 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 325.0,
-        "strike_formatted": "325",
+        "strike": 355.0,
+        "strike_formatted": "355",
         "option_type": "Call",
-        "delta": 0.194,
+        "delta": 0.007,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Buy 1x ARM 20-Nov-2026 325 Call"
+        "summary": "Buy 1x ARM 20-Nov-2026 355 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 15.0,
     "stop_loss_price": 298.27,
     "take_profit_price": 316.71,
-    "net_delta": -0.19,
-    "net_theta": 0.027,
+    "net_delta": -0.072,
+    "net_theta": 0.026,
     "probability_of_profit": 0.0,
-    "var_95": 10.0,
+    "var_95": 2.94,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -173,97 +173,97 @@
       },
       {
         "price": 317.33,
-        "pnl": -17.33
+        "pnl": -15.0
       },
       {
         "price": 319.79,
-        "pnl": -19.79
+        "pnl": -15.0
       },
       {
         "price": 322.25,
-        "pnl": -22.25
+        "pnl": -15.0
       },
       {
         "price": 324.71,
-        "pnl": -24.71
+        "pnl": -15.0
       },
       {
         "price": 327.17,
-        "pnl": -25.0
+        "pnl": -15.0
       },
       {
         "price": 329.63,
-        "pnl": -25.0
+        "pnl": -15.0
       },
       {
         "price": 332.09,
-        "pnl": -25.0
+        "pnl": -15.0
       },
       {
         "price": 334.55,
-        "pnl": -25.0
+        "pnl": -15.0
       },
       {
         "price": 337.01,
-        "pnl": -25.0
+        "pnl": -17.01
       },
       {
         "price": 339.47,
-        "pnl": -25.0
+        "pnl": -19.47
       },
       {
         "price": 341.93,
-        "pnl": -25.0
+        "pnl": -21.93
       },
       {
         "price": 344.39,
-        "pnl": -25.0
+        "pnl": -24.39
       },
       {
         "price": 346.85,
-        "pnl": -25.0
+        "pnl": -26.85
       },
       {
         "price": 349.31,
-        "pnl": -25.0
+        "pnl": -29.31
       },
       {
         "price": 351.77,
-        "pnl": -25.0
+        "pnl": -31.77
       },
       {
         "price": 354.23,
-        "pnl": -25.0
+        "pnl": -34.23
       },
       {
         "price": 356.69,
-        "pnl": -25.0
+        "pnl": -35.0
       },
       {
         "price": 359.15,
-        "pnl": -25.0
+        "pnl": -35.0
       },
       {
         "price": 361.61,
-        "pnl": -25.0
+        "pnl": -35.0
       },
       {
         "price": 364.07,
-        "pnl": -25.0
+        "pnl": -35.0
       },
       {
         "price": 366.53,
-        "pnl": -25.0
+        "pnl": -35.0
       },
       {
         "price": 368.99,
-        "pnl": -25.0
+        "pnl": -35.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.825,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3425,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

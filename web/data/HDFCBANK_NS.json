@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.3% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 740.0,
-        "strike_formatted": "740",
-        "option_type": "Call",
-        "delta": 0.375,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x HDFCBANK.NS 24-Nov-2026 740 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 760.0,
         "strike_formatted": "760",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x HDFCBANK.NS 24-Nov-2026 760 Call"
+        "summary": "Sell 1x HDFCBANK.NS 24-Nov-2026 760 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 775.0,
+        "strike_formatted": "775",
+        "option_type": "Call",
+        "delta": 0.12,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x HDFCBANK.NS 24-Nov-2026 775 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,10 +48,10 @@
     "margin_required": 30.0,
     "stop_loss_price": 699.56,
     "take_profit_price": 742.84,
-    "net_delta": -0.167,
-    "net_theta": 0.052,
+    "net_delta": -0.088,
+    "net_theta": 0.041,
     "probability_of_profit": 0.0,
-    "var_95": 20.0,
+    "var_95": 15.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -173,97 +173,97 @@
       },
       {
         "price": 744.28,
-        "pnl": -34.28
+        "pnl": -30.0
       },
       {
         "price": 750.05,
-        "pnl": -40.05
+        "pnl": -30.0
       },
       {
         "price": 755.82,
-        "pnl": -45.82
+        "pnl": -30.0
       },
       {
         "price": 761.59,
-        "pnl": -50.0
+        "pnl": -31.59
       },
       {
         "price": 767.36,
-        "pnl": -50.0
+        "pnl": -37.36
       },
       {
         "price": 773.13,
-        "pnl": -50.0
+        "pnl": -43.13
       },
       {
         "price": 778.9,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 784.67,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 790.44,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 796.2,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 801.97,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 807.74,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 813.51,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 819.28,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 825.05,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 830.82,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 836.59,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 842.36,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 848.13,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 853.9,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 859.67,
-        "pnl": -50.0
+        "pnl": -45.0
       },
       {
         "price": 865.44,
-        "pnl": -50.0
+        "pnl": -45.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.816,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3344,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -388,17 +388,17 @@
       "sentiment": "bullish"
     },
     {
-      "title": "HDFC Bank appoints Anup Baghchi as MD & CEO",
-      "publisher": "bfsi.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRUszU1pVcHlZN3RxdVU5Z0lnZmhFVzduYkozZG5YZlg3eDBvdERKV1ZMQ1lEdjJfa1hJeFFEbGpLZlhRLTVjczBIWXZFOUNJSF9oOXVqSDNmZnhJcGpvLVZtYmNLdThOek1CalJhZTU4dHVRb19ON0pCeW5GVGt6Rk5HQ1dHcHFselBweHdubFRBa2lxSTZFODQyYjlPZm9OYkJpNdIBqgFBVV95cUxOT2ZLZ0lVLVlNTUxIQ1FQOE5kZzZCdVZJR2o5VUFOcnR2aEJicFpnbkZBajlhaHdSNXRCc2UzS3NhTmNIMGdqLU1oeDhMQW5hb3pMd281N0JtR3JSakRFbXBEdmIyRzBVSC1la25RekVwTkhqYXVFT0xhUC02dGhxckJLSzA4am8tMWZoQUhlWkxZUzUyN254dzVuWGRMcHVEWXlGYlVzODVfdw?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "HDFC Bank shares: Will stock finally reward its investors after Anup Bagchi as new MD-CEO?",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPV0xUeHJRdDA4SmxHNDNsbEgwUU1PWk15SVdoeEZOOE1GcmRLaldHNF9QcG95SnJPMmotVkF5WHJiUHZBRTZsOFBHNVlxbU9SWmQ2bWRpZDdFRzBZenVTNHpwYzJDamRDb2p5bHhaR3NaZGt4OHFZcWw5MGtfTFlyeks1cmxHMFR5anNxUlJoa2FJMjVNSFlvTWhaa19FcFdYNzVCQ1pGaVQ3cllJLWFtc2xGNVR5TjV5dDYyMDN6V0VaY3VZaHVQUEZEUTI4TFNSVXVKRmxUWEdYX2ZvYmp2eURSNjJVTEFYdjhRY2FB0gHzAUFVX3lxTFB3aGQ5NEtTLWlnbkRhYWdyLTFVcndhaDBya2RNSXpFbW1rRWxSTWxCcmJROUpfdDBYWkRONUtCcnRRcUk3YmNOWUZoRU42TGN3MV8zRzFsVWQyRFNTYm1EejN2YU12UnByTDdmTTQybGEyQjdwenRoSm5ST3FyRUN1U1Q0MzlNQmxYTWdjbnZJSU5XeVZLN2tCMVYtTlgySXlVUHZSejhmcnRtUmFUQndDMjZOeGQtc1ZrT3EydjV5Zy04MVVFV2VNb3BlQTJ1SjBTanNIY0hRdm10YkpaQlFvY1FnVVFmRldvQTJPejdOLTVpaw?oc=5",
       "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HDFC Bank appoints Anup Baghchi as MD & CEO",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRUszU1pVcHlZN3RxdVU5Z0lnZmhFVzduYkozZG5YZlg3eDBvdERKV1ZMQ1lEdjJfa1hJeFFEbGpLZlhRLTVjczBIWXZFOUNJSF9oOXVqSDNmZnhJcGpvLVZtYmNLdThOek1CalJhZTU4dHVRb19ON0pCeW5GVGt6Rk5HQ1dHcHFselBweHdubFRBa2lxSTZFODQyYjlPZm9OYkJpNdIBqgFBVV95cUxOT2ZLZ0lVLVlNTUxIQ1FQOE5kZzZCdVZJR2o5VUFOcnR2aEJicFpnbkZBajlhaHdSNXRCc2UzS3NhTmNIMGdqLU1oeDhMQW5hb3pMd281N0JtR3JSakRFbXBEdmIyRzBVSC1la25RekVwTkhqYXVFT0xhUC02dGhxckJLSzA4am8tMWZoQUhlWkxZUzUyN254dzVuWGRMcHVEWXlGYlVzODVfdw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }
   ]

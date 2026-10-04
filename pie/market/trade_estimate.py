@@ -15,38 +15,40 @@ from pie.market.simulation import run_monte_carlo_simulation
 from pie.market.skew import calculate_volatility_skew
 from pie.market.strategy import StrategyRecommendation, StrategyType
 
-# Strategy DTE Framework Mapping
+# Strategy DTE Framework Mapping (Strict 30-60 DTE Target Windows)
 STRATEGY_DTE_CONFIGS = {
-    # 30-45 Days (Theta Decay Strategies)
-    StrategyType.COVERED_CALL: {"target": 37, "min": 30, "max": 45, "why": "Good theta decay while retaining upside"},
-    StrategyType.CASH_SECURED_PUT: {"target": 37, "min": 30, "max": 45, "why": "Best premium vs assignment risk"},
-    StrategyType.CREDIT_SPREAD: {"target": 37, "min": 30, "max": 45, "why": "Favorable theta with manageable gamma"},
-    StrategyType.IRON_CONDOR: {"target": 37, "min": 30, "max": 45, "why": "Time to benefit from premium decay"},
-    StrategyType.IRON_BUTTERFLY: {"target": 37, "min": 30, "max": 45, "why": "Time to benefit from premium decay"},
-    StrategyType.JADE_LIZARD: {"target": 37, "min": 30, "max": 45, "why": "Good premium without excessive gamma"},
-    StrategyType.BUTTERFLY: {"target": 37, "min": 30, "max": 45, "why": "Peak pin risk decay in range-bound regimes"},
+    # 30-60 Days Target Window across all Option Spread Strategies
+    StrategyType.COVERED_CALL: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for optimal theta decay while retaining upside"},
+    StrategyType.CASH_SECURED_PUT: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for best premium vs assignment risk"},
+    StrategyType.CREDIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for favorable theta with manageable gamma"},
+    StrategyType.IRON_CONDOR: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window to benefit from premium decay"},
+    StrategyType.IRON_BUTTERFLY: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for range-bound theta harvesting"},
+    StrategyType.JADE_LIZARD: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for net credit without excessive gamma"},
+    StrategyType.BUTTERFLY: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for peak pin risk decay"},
+    StrategyType.BROKEN_WING_BUTTERFLY: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for skewed butterfly entry"},
 
     # Spreads & Directional Overlays (30-60 Days)
-    StrategyType.CALL_DEBIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "Optimal theta decay vs upside capture"},
-    StrategyType.PUT_DEBIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "Optimal theta decay vs downside capture"},
+    StrategyType.CALL_DEBIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for optimal theta decay vs upside capture"},
+    StrategyType.PUT_DEBIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for optimal theta decay vs downside capture"},
     StrategyType.LONG_CALL: {"target": 90, "min": 60, "max": 180, "why": "Reduce theta decay drag"},
     StrategyType.LONG_PUT: {"target": 90, "min": 60, "max": 180, "why": "Reduce theta decay drag"},
-    StrategyType.NAKED_PUT: {"target": 37, "min": 30, "max": 45, "why": "Best premium vs assignment risk"},
-    StrategyType.NAKED_CALL: {"target": 37, "min": 30, "max": 45, "why": "Best premium vs assignment risk"},
+    StrategyType.NAKED_PUT: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for premium collection"},
+    StrategyType.NAKED_CALL: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for premium collection"},
+    StrategyType.SHORT_STRANGLE: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for high IV theta decay"},
 
-    # Calendars & Diagonals (Short 20-45 DTE, Long 45-90 DTE)
-    StrategyType.POOR_MANS_COVERED_CALL: {"target": 60, "min": 45, "max": 90, "why": "Exploits differing theta decay curves (Diagonals)"},
+    # Calendars & Diagonals (30-60 DTE short leg window)
+    StrategyType.POOR_MANS_COVERED_CALL: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for short call leg theta decay"},
 
     # LEAPS (1-2 Years)
     StrategyType.LEAPS: {"target": 540, "min": 365, "max": 730, "why": "Long-term directional exposure"},
 
-    # TradeCraft Put: 30-45 DTE monthly expiry
-    StrategyType.TRADECRAFT_PUT: {"target": 37, "min": 30, "max": 45, "why": "Optimal theta decay with 200 SMA bounce edge"},
+    # TradeCraft Put: 30-60 DTE monthly expiry
+    StrategyType.TRADECRAFT_PUT: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window with 200 SMA bounce edge"},
 }
 
-TARGET_DAYS_TO_EXPIRY = 37
+TARGET_DAYS_TO_EXPIRY = 45
 MINIMUM_DAYS_TO_EXPIRY = 30
-MAXIMUM_DAYS_TO_EXPIRY = 45
+MAXIMUM_DAYS_TO_EXPIRY = 60
 
 STRIKE_INCREMENTS = {
     "^NSEI": 50.0,
@@ -134,6 +136,9 @@ class EstimatedTrade(DomainModel):
     vol_skew_25d: float = 0.0
     backtest_sharpe: float = 1.85
     payoff_points: tuple[dict[str, float], ...] = ()
+    take_profit_rule: str = "50% Max Profit"
+    stop_loss_rule: str = "100% Credit Loss (1:1 Risk Limit) or EMA20 Breach"
+    target_dte_window: str = "30-60 DTE"
 
 
 def estimate_trade(
@@ -159,6 +164,13 @@ def estimate_trade(
     atm_strike = _round_to_increment(spot_price, increment)
     width = max(increment, _round_to_increment(expected_move * 0.75, increment))
 
+    # Standardized 15-20 Delta short leg selection (~1.5 - 2.0 ATR / ~1.0 expected move OTM)
+    short_dist = max(_round_to_increment(expected_move, increment), _round_to_increment(1.5 * atr14, increment)) if (atr14 is not None and atr14 > 0) else _round_to_increment(expected_move, increment)
+    short_dist = max(increment, short_dist)
+
+    # ATR-calibrated wing width to prevent over-leveraged wide wings
+    credit_wing_width = max(increment, _round_to_increment(atr14, increment)) if (atr14 is not None and atr14 > 0) else max(increment, _round_to_increment(expected_move * 0.5, increment))
+
     if recommendation.strategy == StrategyType.CALL_DEBIT_SPREAD:
         legs = (
             TradeLeg(action="buy", right=OptionRight.CALL, strike=atm_strike),
@@ -182,28 +194,28 @@ def estimate_trade(
         )
 
     elif recommendation.strategy == StrategyType.NAKED_PUT:
-        put_strike = _round_to_increment(spot_price - expected_move, increment)
+        put_strike = _round_to_increment(spot_price - short_dist, increment)
         legs = (TradeLeg(action="sell", right=OptionRight.PUT, strike=put_strike),)
         exit_strategy = (
             "Exit if short put strike is breached or if market regime turns Strong Bear.",
-            "Manage winner at 50% max profit.",
-            "Reassess or close at 21 days to expiry.",
+            "Manage winner at 50% max profit target.",
+            "Close or roll position at 21 days to expiry to eliminate tail risk and gamma squeezes.",
         )
 
     elif recommendation.strategy == StrategyType.NAKED_CALL:
-        call_strike = _round_to_increment(spot_price + expected_move, increment)
+        call_strike = _round_to_increment(spot_price + short_dist, increment)
         legs = (TradeLeg(action="sell", right=OptionRight.CALL, strike=call_strike),)
         exit_strategy = (
             "Exit if short call strike is breached or if market regime turns Strong Bull.",
-            "Manage winner at 50% max profit.",
-            "Reassess or close at 21 days to expiry.",
+            "Manage winner at 50% max profit target.",
+            "Close or roll position at 21 days to expiry to eliminate tail risk and gamma squeezes.",
         )
 
     elif recommendation.strategy == StrategyType.IRON_CONDOR:
-        p_long = _round_to_increment(spot_price - expected_move * 1.5, increment)
-        p_short = _round_to_increment(spot_price - expected_move * 1.0, increment)
-        c_short = _round_to_increment(spot_price + expected_move * 1.0, increment)
-        c_long = _round_to_increment(spot_price + expected_move * 1.5, increment)
+        p_short = _round_to_increment(spot_price - short_dist, increment)
+        p_long = _round_to_increment(p_short - credit_wing_width, increment)
+        c_short = _round_to_increment(spot_price + short_dist, increment)
+        c_long = _round_to_increment(c_short + credit_wing_width, increment)
         legs = (
             TradeLeg(action="buy", right=OptionRight.PUT, strike=p_long),
             TradeLeg(action="sell", right=OptionRight.PUT, strike=p_short),
@@ -211,8 +223,9 @@ def estimate_trade(
             TradeLeg(action="buy", right=OptionRight.CALL, strike=c_long),
         )
         exit_strategy = (
-            "Manage at 50% max profit or if underlying breaches either short strike.",
-            "Close or roll position at 21 days to expiry.",
+            "Manage winner at 50% max profit target.",
+            "Close or roll position at 21 days to expiry to eliminate tail risk and gamma squeezes.",
+            "Exit if underlying price breaches either short strike.",
         )
 
     elif recommendation.strategy == StrategyType.IRON_BUTTERFLY:
@@ -230,9 +243,9 @@ def estimate_trade(
         )
 
     elif recommendation.strategy == StrategyType.JADE_LIZARD:
-        p_short = _round_to_increment(spot_price - expected_move * 1.0, increment)
-        c_short = _round_to_increment(spot_price + expected_move * 0.75, increment)
-        c_long = _round_to_increment(spot_price + expected_move * 1.25, increment)
+        p_short = _round_to_increment(spot_price - short_dist, increment)
+        c_short = _round_to_increment(spot_price + short_dist, increment)
+        c_long = _round_to_increment(c_short + credit_wing_width, increment)
         legs = (
             TradeLeg(action="sell", right=OptionRight.PUT, strike=p_short),
             TradeLeg(action="sell", right=OptionRight.CALL, strike=c_short),
@@ -240,7 +253,8 @@ def estimate_trade(
         )
         exit_strategy = (
             "Ensure net premium collected exceeds call spread width to eliminate upside risk.",
-            "Manage at 50% max profit.",
+            "Manage winner at 50% max profit target.",
+            "Close or roll position at 21 days to expiry to eliminate tail risk and gamma squeezes.",
         )
 
     elif recommendation.strategy == StrategyType.BUTTERFLY:
@@ -284,8 +298,8 @@ def estimate_trade(
         )
 
     elif recommendation.strategy == StrategyType.SHORT_STRANGLE:
-        p_short = _round_to_increment(spot_price - expected_move * 1.0, increment)
-        c_short = _round_to_increment(spot_price + expected_move * 1.0, increment)
+        p_short = _round_to_increment(spot_price - short_dist, increment)
+        c_short = _round_to_increment(spot_price + short_dist, increment)
         legs = (
             TradeLeg(action="sell", right=OptionRight.PUT, strike=p_short),
             TradeLeg(action="sell", right=OptionRight.CALL, strike=c_short),
@@ -310,8 +324,8 @@ def estimate_trade(
         )
 
     elif recommendation.strategy == StrategyType.TRADECRAFT_PUT:
-        # Sell 20-delta OTM put: strike at spot - 1×expected_move (approx 20-delta)
-        put_strike = _round_to_increment(spot_price - expected_move, increment)
+        # Sell 20-delta OTM put: strike at spot - short_dist (approx 15-20 delta)
+        put_strike = _round_to_increment(spot_price - short_dist, increment)
         legs = (TradeLeg(action="sell", right=OptionRight.PUT, strike=put_strike),)
         exit_strategy = (
             "TradeCraft Put: Close at 50% max profit (premium decay).",
@@ -320,15 +334,25 @@ def estimate_trade(
         )
 
     else:  # StrategyType.CREDIT_SPREAD
-        c_short = _round_to_increment(spot_price + expected_move * 0.5, increment)
-        c_long = _round_to_increment(spot_price + expected_move * 1.0, increment)
-        legs = (
-            TradeLeg(action="sell", right=OptionRight.CALL, strike=c_short),
-            TradeLeg(action="buy", right=OptionRight.CALL, strike=c_long),
-        )
+        is_bearish = (ema20 is not None and ema50 is not None and ema20 < ema50) or ("bear" in recommendation.rationale.lower())
+        if is_bearish:
+            c_short = _round_to_increment(spot_price + short_dist, increment)
+            c_long = _round_to_increment(c_short + credit_wing_width, increment)
+            legs = (
+                TradeLeg(action="sell", right=OptionRight.CALL, strike=c_short),
+                TradeLeg(action="buy", right=OptionRight.CALL, strike=c_long),
+            )
+        else:
+            p_short = _round_to_increment(spot_price - short_dist, increment)
+            p_long = _round_to_increment(p_short - credit_wing_width, increment)
+            legs = (
+                TradeLeg(action="sell", right=OptionRight.PUT, strike=p_short),
+                TradeLeg(action="buy", right=OptionRight.PUT, strike=p_long),
+            )
         exit_strategy = (
-            "Manage at 50% max profit.",
-            "Close at 21 days to expiry.",
+            "Manage winner at 50% max profit target.",
+            "Close or roll position at 21 days to expiry to eliminate tail risk and gamma squeezes.",
+            "Exit if underlying price breaches short strike.",
         )
     fit_score = recommendation.fit_scores.get(recommendation.strategy.value, 80.0)
     kelly = calculate_kelly_sizing(fit_score, recommendation.strategy)

@@ -13,24 +13,12 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (92.2% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 1750.0,
-        "strike_formatted": "1750",
-        "option_type": "Call",
-        "delta": 0.442,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x SBILIFE.NS 24-Nov-2026 1750 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 1800.0,
         "strike_formatted": "1800",
@@ -39,7 +27,19 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Buy 1x SBILIFE.NS 24-Nov-2026 1800 Call"
+        "summary": "Sell 1x SBILIFE.NS 24-Nov-2026 1800 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1850.0,
+        "strike_formatted": "1850",
+        "option_type": "Call",
+        "delta": 0.12,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x SBILIFE.NS 24-Nov-2026 1850 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 50.0,
     "stop_loss_price": 1669.95,
     "take_profit_price": 1773.25,
-    "net_delta": -0.19,
-    "net_theta": 0.111,
+    "net_delta": -0.132,
+    "net_theta": 0.139,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -169,31 +169,31 @@
       },
       {
         "price": 1762.92,
-        "pnl": -62.92
+        "pnl": -50.0
       },
       {
         "price": 1776.69,
-        "pnl": -76.69
+        "pnl": -50.0
       },
       {
         "price": 1790.46,
-        "pnl": -90.46
+        "pnl": -50.0
       },
       {
         "price": 1804.24,
-        "pnl": -100.0
+        "pnl": -54.24
       },
       {
         "price": 1818.01,
-        "pnl": -100.0
+        "pnl": -68.01
       },
       {
         "price": 1831.78,
-        "pnl": -100.0
+        "pnl": -81.78
       },
       {
         "price": 1845.56,
-        "pnl": -100.0
+        "pnl": -95.56
       },
       {
         "price": 1859.33,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.823,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3407,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
