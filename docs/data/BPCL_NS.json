@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 12.5,
   "vix": 14.46,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (70.2% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (97.7% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 300.0,
-        "strike_formatted": "300",
-        "option_type": "Put",
-        "delta": -0.423,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Buy 1x BPCL.NS 24-Nov-2026 300 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 290.0,
-        "strike_formatted": "290",
-        "option_type": "Put",
-        "delta": -0.206,
+        "strike": 310.0,
+        "strike_formatted": "310",
+        "option_type": "Call",
+        "delta": 0.34,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Sell 1x BPCL.NS 24-Nov-2026 290 Put"
+        "summary": "Sell 1x BPCL.NS 24-Nov-2026 310 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 315.0,
+        "strike_formatted": "315",
+        "option_type": "Call",
+        "delta": 0.239,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x BPCL.NS 24-Nov-2026 315 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 4.0,
-    "stop_loss_price": 306.61,
-    "take_profit_price": 290.0,
-    "net_delta": -0.217,
-    "net_theta": -0.007,
-    "probability_of_profit": 45.0,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 291.58,
+    "take_profit_price": 309.62,
+    "net_delta": -0.101,
+    "net_theta": 0.013,
+    "probability_of_profit": 0.0,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 240.48,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 242.88,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 245.29,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 247.69,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 250.1,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 252.5,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 254.91,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 257.31,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 259.72,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 262.12,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 264.53,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 266.93,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 269.34,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 271.74,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 274.15,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 276.55,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 278.96,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 281.36,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 283.77,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 286.17,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 288.58,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 290.98,
-        "pnl": 5.02
+        "pnl": -10.0
       },
       {
         "price": 293.39,
-        "pnl": 2.61
+        "pnl": -10.0
       },
       {
         "price": 295.79,
-        "pnl": 0.21
+        "pnl": -10.0
       },
       {
         "price": 298.2,
-        "pnl": -2.2
+        "pnl": -10.0
       },
       {
         "price": 300.6,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 303.0,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 305.41,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 307.81,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 310.22,
-        "pnl": -4.0
+        "pnl": -10.22
       },
       {
         "price": 312.62,
-        "pnl": -4.0
+        "pnl": -12.62
       },
       {
         "price": 315.03,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 317.43,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 319.84,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 322.24,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 324.65,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 327.05,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 329.46,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 331.86,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 334.27,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 336.67,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 339.08,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 341.48,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 343.89,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 346.29,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 348.7,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 351.1,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 353.51,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 355.91,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 358.32,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 360.72,
-        "pnl": -4.0
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.746,
+      "win_probability": 0.842,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2714,
+      "half_kelly_fraction": 0.3578,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

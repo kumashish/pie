@@ -9,261 +9,261 @@
   "confidence_grade": "A",
   "confidence_percentage": 87.5,
   "vix": 14.46,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (68.9% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 9200.0,
-        "strike_formatted": "9200",
-        "option_type": "Call",
-        "delta": 0.6,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 9200 Call"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 9600.0,
-        "strike_formatted": "9600",
+        "strike": 9500.0,
+        "strike_formatted": "9500",
         "option_type": "Call",
-        "delta": 0.297,
+        "delta": 0.367,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 9600 Call"
+        "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 9500 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 9700.0,
+        "strike_formatted": "9700",
+        "option_type": "Call",
+        "delta": 0.234,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 9700 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 160.0,
-    "stop_loss_price": 9064.02,
-    "take_profit_price": 9600.0,
-    "net_delta": 0.303,
-    "net_theta": -0.558,
-    "probability_of_profit": 57.5,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 400.0,
+    "stop_loss_price": 8971.53,
+    "take_profit_price": 9526.47,
+    "net_delta": -0.133,
+    "net_theta": 0.503,
+    "probability_of_profit": 0.0,
+    "var_95": 200.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 7399.2,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7473.19,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7547.18,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7621.18,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7695.17,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7769.16,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7843.15,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7917.14,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 7991.14,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8065.13,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8139.12,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8213.11,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8287.1,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8361.1,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8435.09,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8509.08,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8583.07,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8657.06,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8731.06,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8805.05,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8879.04,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 8953.03,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 9027.02,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 9101.02,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 9175.01,
-        "pnl": -160.0
+        "pnl": -400.0
       },
       {
         "price": 9249.0,
-        "pnl": -111.0
+        "pnl": -400.0
       },
       {
         "price": 9322.99,
-        "pnl": -37.01
+        "pnl": -400.0
       },
       {
         "price": 9396.98,
-        "pnl": 36.98
+        "pnl": -400.0
       },
       {
         "price": 9470.98,
-        "pnl": 110.98
+        "pnl": -400.0
       },
       {
         "price": 9544.97,
-        "pnl": 184.97
+        "pnl": -444.97
       },
       {
         "price": 9618.96,
-        "pnl": 240.0
+        "pnl": -518.96
       },
       {
         "price": 9692.95,
-        "pnl": 240.0
+        "pnl": -592.95
       },
       {
         "price": 9766.94,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 9840.94,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 9914.93,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 9988.92,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10062.91,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10136.9,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10210.9,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10284.89,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10358.88,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10432.87,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10506.86,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10580.86,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10654.85,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10728.84,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10802.83,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10876.82,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 10950.82,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 11024.81,
-        "pnl": 240.0
+        "pnl": -600.0
       },
       {
         "price": 11098.8,
-        "pnl": 240.0
+        "pnl": -600.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.741,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2669,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

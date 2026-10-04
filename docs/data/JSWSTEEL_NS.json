@@ -9,40 +9,28 @@
   "confidence_grade": "C",
   "confidence_percentage": 32.5,
   "vix": 14.46,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (56.3% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (78.6% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1250.0,
+        "strike_formatted": "1250",
+        "option_type": "Call",
+        "delta": 0.461,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Sell 1x JSWSTEEL.NS 24-Nov-2026 1250 Call"
+      },
+      {
         "action": "Buy",
-        "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
-        "option_type": "Put",
-        "delta": -0.074,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Buy 1x JSWSTEEL.NS 24-Nov-2026 1150 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
-        "option_type": "Put",
-        "delta": -0.074,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x JSWSTEEL.NS 24-Nov-2026 1150 Put"
-      },
-      {
-        "action": "Sell",
         "quantity": 1,
         "strike": 1300.0,
         "strike_formatted": "1300",
@@ -51,19 +39,7 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 51,
-        "summary": "Sell 1x JSWSTEEL.NS 24-Nov-2026 1300 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1350.0,
-        "strike_formatted": "1350",
-        "option_type": "Call",
-        "delta": 0.064,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Buy 1x JSWSTEEL.NS 24-Nov-2026 1350 Call"
+        "summary": "Buy 1x JSWSTEEL.NS 24-Nov-2026 1300 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -72,8 +48,8 @@
     "margin_required": 50.0,
     "stop_loss_price": 1196.01,
     "take_profit_price": 1269.99,
-    "net_delta": -0.141,
-    "net_theta": 0.126,
+    "net_delta": -0.256,
+    "net_theta": 0.115,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -189,43 +165,43 @@
       },
       {
         "price": 1252.73,
-        "pnl": -50.0
+        "pnl": -52.73
       },
       {
         "price": 1262.59,
-        "pnl": -50.0
+        "pnl": -62.59
       },
       {
         "price": 1272.46,
-        "pnl": -50.0
+        "pnl": -72.46
       },
       {
         "price": 1282.32,
-        "pnl": -50.0
+        "pnl": -82.32
       },
       {
         "price": 1292.18,
-        "pnl": -50.0
+        "pnl": -92.18
       },
       {
         "price": 1302.05,
-        "pnl": -52.05
+        "pnl": -100.0
       },
       {
         "price": 1311.91,
-        "pnl": -61.91
+        "pnl": -100.0
       },
       {
         "price": 1321.78,
-        "pnl": -71.78
+        "pnl": -100.0
       },
       {
         "price": 1331.64,
-        "pnl": -81.64
+        "pnl": -100.0
       },
       {
         "price": 1341.5,
-        "pnl": -91.5
+        "pnl": -100.0
       },
       {
         "price": 1351.37,
@@ -285,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.697,
+      "win_probability": 0.775,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2273,
+      "half_kelly_fraction": 0.2975,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

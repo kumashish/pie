@@ -9,26 +9,14 @@
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
   "vix": 15.31,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (68.1% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (93.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1050.0,
-        "strike_formatted": "1050",
-        "option_type": "Call",
-        "delta": 0.716,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 47,
-        "summary": "Buy 1x MU 20-Nov-2026 1050 Call"
-      },
       {
         "action": "Sell",
         "quantity": 1,
@@ -40,230 +28,242 @@
         "expiration_display": "20-Nov-2026",
         "dte": 47,
         "summary": "Sell 1x MU 20-Nov-2026 1100 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1150.0,
+        "strike_formatted": "1150",
+        "option_type": "Call",
+        "delta": 0.139,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Buy 1x MU 20-Nov-2026 1150 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1053.39,
-    "take_profit_price": 1100.0,
-    "net_delta": 0.325,
-    "net_theta": -0.016,
-    "probability_of_profit": 69.2,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1042.64,
+    "take_profit_price": 1107.14,
+    "net_delta": -0.252,
+    "net_theta": 0.138,
+    "probability_of_profit": 0.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 859.91,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 868.51,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 877.11,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 885.71,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 894.31,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 902.91,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 911.51,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 920.11,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 928.7,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 937.3,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 945.9,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 954.5,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 963.1,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 971.7,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 980.3,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 988.9,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 997.5,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1006.1,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1014.7,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1023.3,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1031.89,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1040.49,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1049.09,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1057.69,
-        "pnl": -12.31
+        "pnl": -50.0
       },
       {
         "price": 1066.29,
-        "pnl": -3.71
+        "pnl": -50.0
       },
       {
         "price": 1074.89,
-        "pnl": 4.89
+        "pnl": -50.0
       },
       {
         "price": 1083.49,
-        "pnl": 13.49
+        "pnl": -50.0
       },
       {
         "price": 1092.09,
-        "pnl": 22.09
+        "pnl": -50.0
       },
       {
         "price": 1100.69,
-        "pnl": 30.0
+        "pnl": -50.69
       },
       {
         "price": 1109.29,
-        "pnl": 30.0
+        "pnl": -59.29
       },
       {
         "price": 1117.89,
-        "pnl": 30.0
+        "pnl": -67.89
       },
       {
         "price": 1126.48,
-        "pnl": 30.0
+        "pnl": -76.48
       },
       {
         "price": 1135.08,
-        "pnl": 30.0
+        "pnl": -85.08
       },
       {
         "price": 1143.68,
-        "pnl": 30.0
+        "pnl": -93.68
       },
       {
         "price": 1152.28,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1160.88,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1169.48,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1178.08,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1186.68,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1195.28,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1203.88,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1212.48,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1221.08,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1229.67,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1238.27,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1246.87,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1255.47,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1264.07,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1272.67,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1281.27,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1289.87,
-        "pnl": 30.0
+        "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.738,
+      "win_probability": 0.826,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2642,
+      "half_kelly_fraction": 0.3434,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0

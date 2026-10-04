@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 30.0,
   "vix": 15.31,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (54.2% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (80.4% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 11.0,
-        "strike_formatted": "11",
-        "option_type": "Put",
-        "delta": -0.301,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 47,
-        "summary": "Buy 1x MARA 20-Nov-2026 11 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 10.0,
-        "strike_formatted": "10",
-        "option_type": "Put",
-        "delta": -0.012,
+        "strike": 12.0,
+        "strike_formatted": "12",
+        "option_type": "Call",
+        "delta": 0.144,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 47,
-        "summary": "Sell 1x MARA 20-Nov-2026 10 Put"
+        "summary": "Sell 1x MARA 20-Nov-2026 12 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 12.0,
+        "strike_formatted": "12",
+        "option_type": "Call",
+        "delta": 0.144,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Buy 1x MARA 20-Nov-2026 12 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 0.4,
-    "stop_loss_price": 11.45,
-    "take_profit_price": 10.0,
-    "net_delta": -0.289,
-    "net_theta": -0.002,
-    "probability_of_profit": 32.8,
+    "roc_percentage": 65.0,
+    "margin_required": 1.0,
+    "stop_loss_price": 10.89,
+    "take_profit_price": 11.57,
+    "net_delta": 0.0,
+    "net_theta": 0.0,
+    "probability_of_profit": 0.0,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 8.98,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.07,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.16,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.25,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.34,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.43,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.52,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.61,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.7,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.79,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.88,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 9.97,
-        "pnl": 0.6
+        "pnl": -1.0
       },
       {
         "price": 10.06,
-        "pnl": 0.54
+        "pnl": -1.0
       },
       {
         "price": 10.15,
-        "pnl": 0.45
+        "pnl": -1.0
       },
       {
         "price": 10.24,
-        "pnl": 0.36
+        "pnl": -1.0
       },
       {
         "price": 10.33,
-        "pnl": 0.27
+        "pnl": -1.0
       },
       {
         "price": 10.42,
-        "pnl": 0.18
+        "pnl": -1.0
       },
       {
         "price": 10.51,
-        "pnl": 0.09
+        "pnl": -1.0
       },
       {
         "price": 10.6,
-        "pnl": 0.0
+        "pnl": -1.0
       },
       {
         "price": 10.69,
-        "pnl": -0.09
+        "pnl": -1.0
       },
       {
         "price": 10.78,
-        "pnl": -0.18
+        "pnl": -1.0
       },
       {
         "price": 10.87,
-        "pnl": -0.27
+        "pnl": -1.0
       },
       {
         "price": 10.96,
-        "pnl": -0.36
+        "pnl": -1.0
       },
       {
         "price": 11.05,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.14,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.23,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.32,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.41,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.5,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.59,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.68,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.77,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.86,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 11.95,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.04,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.13,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.22,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.31,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.4,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.49,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.58,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.67,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.76,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.85,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 12.94,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 13.03,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 13.12,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 13.21,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 13.3,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 13.39,
-        "pnl": -0.4
+        "pnl": -1.0
       },
       {
         "price": 13.48,
-        "pnl": -0.4
+        "pnl": -1.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.69,
+      "win_probability": 0.781,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.221,
+      "half_kelly_fraction": 0.3029,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
