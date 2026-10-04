@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentMarketFilter = "all";  // "all" | "us" | "india"
 
   // Cache version: bump this whenever the fit_score scale or data format changes
-  const LEADERBOARD_CACHE_VERSION = "v4"; // options/cash split
+  const LEADERBOARD_CACHE_VERSION = "v5"; // options/cash split & leg shorthand
   if (localStorage.getItem("pie_leaderboard_cache_v") !== LEADERBOARD_CACHE_VERSION) {
     localStorage.removeItem("pie_top5_us");
     localStorage.removeItem("pie_top5_india");
