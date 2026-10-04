@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 445.0,
-        "strike_formatted": "445",
+        "strike": 440.0,
+        "strike_formatted": "440",
         "option_type": "Call",
-        "delta": 0.162,
+        "delta": 0.215,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 445 Call"
+        "dte": 50,
+        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 440 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 455.0,
-        "strike_formatted": "455",
+        "strike": 450.0,
+        "strike_formatted": "450",
         "option_type": "Call",
-        "delta": 0.081,
+        "delta": 0.114,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 51,
-        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 455 Call"
+        "dte": 50,
+        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 450 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 15.0,
     "stop_loss_price": 405.8,
     "take_profit_price": 430.9,
-    "net_delta": -0.081,
-    "net_theta": 0.025,
+    "net_delta": -0.101,
+    "net_theta": 0.028,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
@@ -185,19 +185,19 @@
       },
       {
         "price": 441.78,
-        "pnl": -15.0
+        "pnl": -16.78
       },
       {
         "price": 445.12,
-        "pnl": -15.12
+        "pnl": -20.12
       },
       {
         "price": 448.47,
-        "pnl": -18.47
+        "pnl": -23.47
       },
       {
         "price": 451.82,
-        "pnl": -21.82
+        "pnl": -25.0
       },
       {
         "price": 455.16,
@@ -433,13 +433,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Price Action: Kotak Bank shares up 3% on MD, CEO appointment; IT stocks gain, autos slip",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWHRJMmUxbTVoZlliQVhtOThueXBDZkxid0J3bkJFZmo5R3dZWWFwVzdqc0psaThjMEpqQmRvTzhVbkRsVThjeEV2OHd0WTZLY0dOazlmNEdUSTVka0lmUmJqcmhnQVhoY0RHY0VSdmpHX0ZJRVdLcVVGSnZNbE5GOE9wSGYtenE4Tm9McFNrSlp4LXdLS3VKeVdVNEZ2RW9CckpFSUx4QWY5cG12RDZYSkV4QkxUVTdMdEFkeUloTlRHMEhtZ1FNdkp2M1F3aVJMRHd0LUlMc3ZKaHVPRDVvdjhR0gHnAUFVX3lxTE5OQVJDbDMzVmpueDlpZDdnUHRYajg5NG1RUnhyQUhhckdaLWlDbm1RV3NaVjRPVTBVTVZyeEcxUVpzMmRyeF83TThFMU9sSVo5bFd2R1RCWkw5WDRJT2hEWUE0dXZKbFhwODJBckx3VU9QeFJuaGdEYURfNGxmYjZ5ODdteWQ5UFgwN3RGWFdGUGJNWHhRbFdOYW5mSU44SjBQa2JEWndxQVhPc2ZZVWlhRUlFcFQtMnE2VUMzUlNmaEhXM1d4NDZuMGQzODlDX0tGUFNfVkFNbjQ5WUZxOE9UMjg0eHlRVQ?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Growth, deposits and faster decisions await new CEO Anup Saha at Kotak Bank",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbHBEUE00T2RIQmlPXzZCZ3dVcTYwclpqSzAwNVpyZ1UxZWZyUGxrRDlaMnhNOGlicDJYWWtIbWVzSHppMTJpNVJxel8yekpnTTU3eUFvMkxpRUZPMWE1SnJ4QjNLX2NQOUlld2dwOU5ralJOVC1kaXQ3TlczWGU4V21zaUY2NkJRTzhYcUxZeEFvYjl5N1JkVkY4Y3dGTU5NUDlMeWJBdlFtbFd1cm1JcHNKdURFWmJtUTZkREFhMC1ncXNUSGFJS3FGRlpfMEHSAdQBQVVfeXFMTzk3RXZnWmNubmFRSHl2azhTQmxvNkhpMDBWYmo4ZzU5Unk3UTJVZWJzY2VpanRWZUhrYVlsRDE0TFZJT056TGpfNEVmbVBmYTJGVlUwbU0xd3RzRVRwMVBNb0ZKZG5KTVgtTlcwNGhWMDdxSEplb2REWlpnZ1NuUUNHLWhNakQ2UFMwLWVIYmxUWFZaNlRNU3lYTEY0ZFpMVGxPaHhQSzZnZEttanF3N3ExNmI4amZ0aS1yOU5sX3dLSFF4SzJuRThLajRlMWV0eXFCTHU?oc=5",
@@ -447,9 +440,9 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Who is Anup Kumar Saha, the banker set to lead Kotak Mahindra Bank next?",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNnhHSUJ4X0JjelVHWVZEV1hFV2hKcW9XdlhFMWl0TGtUYi1Nb0R3eHFOV1ZDbVRBTWFwelUxSkxkcVRVUkpTLVNLclJOSUxld25ieE12WldITkpDcnVnU2hTSjJrd0JyaTBOb2tjZ0MwdXppMDR4YUV0amxVRjh4eDdmVVRWWmc5Qmh5Q29wTjlGT0ZZVy1zU21QOU92bUMtZ2dLUnlBd09PbGE2RlFBWHIwR01uVnZ6dHROdGs3blpOazBHc2fSAcsBQVVfeXFMTTBkOEsxYkFPOFAyWl9zQjFKU1RmU0pHMzcwZWNKblM0b2wzd2kyTzVVcWpVTU0tb2JDcEtUY09zbk9uUlllNnQwbGQ3UHlOWEJvZDFXYjhseVNjTzVjVlBkOFNNMmtUczVveXU2azhJR3FtNGJXRUcyX1VURUF1a0lCUnpYdmd4M2NURWdYV1k3WTJyd3M4d0d1LVNWamotZm5WSnFnUzVfelJGYU9hMnl0VjdDd3V1SVhfUXRQeWE1RVdySk5wbGZjVVk?oc=5",
+      "title": "Price Action: Kotak Bank shares up 3% on MD, CEO appointment; IT stocks gain, autos slip",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWHRJMmUxbTVoZlliQVhtOThueXBDZkxid0J3bkJFZmo5R3dZWWFwVzdqc0psaThjMEpqQmRvTzhVbkRsVThjeEV2OHd0WTZLY0dOazlmNEdUSTVka0lmUmJqcmhnQVhoY0RHY0VSdmpHX0ZJRVdLcVVGSnZNbE5GOE9wSGYtenE4Tm9McFNrSlp4LXdLS3VKeVdVNEZ2RW9CckpFSUx4QWY5cG12RDZYSkV4QkxUVTdMdEFkeUloTlRHMEhtZ1FNdkp2M1F3aVJMRHd0LUlMc3ZKaHVPRDVvdjhR0gHnAUFVX3lxTE5OQVJDbDMzVmpueDlpZDdnUHRYajg5NG1RUnhyQUhhckdaLWlDbm1RV3NaVjRPVTBVTVZyeEcxUVpzMmRyeF83TThFMU9sSVo5bFd2R1RCWkw5WDRJT2hEWUE0dXZKbFhwODJBckx3VU9QeFJuaGdEYURfNGxmYjZ5ODdteWQ5UFgwN3RGWFdGUGJNWHhRbFdOYW5mSU44SjBQa2JEWndxQVhPc2ZZVWlhRUlFcFQtMnE2VUMzUlNmaEhXM1d4NDZuMGQzODlDX0tGUFNfVkFNbjQ5WUZxOE9UMjg0eHlRVQ?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
@@ -458,6 +451,13 @@
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQbGJZZ2FvYmlMSUxYRlctRmtjUUQ2Q3lSMk9pOTRpOGhQT24xSzN0R1FyNGRjX3pJRjNoZV9JVlJPUUpzQ18yT1pwTFpkMEItX1ZZdzV3bkdHT1FkLTNybnJreEV2b3VjNFBGSVRTLThub3JkN3prdWl2aGlKYVRFVUFDQ3hsRUktbE1reUFUSGF2U1B1REtDQmVOWGhjLXUxVTV5SV9uNU5BZUpwcVhTR1VUeTctMnBUU3hfYU1nTlU4UGVoNXNadmhvZVhZd0tKNUtTdFllUGt2emVQTDlmSDU1V1gyVU1BUW02d2dlSWhzLVhwSTVZaFdLdG9pbE5IQ2lrStIBigJBVV95cUxOaGpyX2ZlT2xlS0FENWZBMkoxMnh4V3FJVFBLVTFhNkFHV2E2LUYxV1BfMUhUZzlBR0l3a2ZTQ0VJRk1tNHZ0aW9GcmcwTzdjdWZsNFlQdHJrQlVMNURzbHAtR01Da3Bjc1VuOXF0VVpjRFJwZlRkZElRakdxRjQzNE9VbkVyMEppYWwwR0doN093T3QxZTJqUzAweVF5dFFpdWd3SWdwVGd2ekJIQzZ4Uk4yRXM1dHQ1TlFldEZyd1Z1em04YnNmNDh6NDUteGFzbjB2ZDVQeGlQVkhvUDBEN1hCMnppT2NVVDRFWVh6ajA2WWJEV2IxVlFVRFc2MmlNWlNoMURyaFFPZw?oc=5",
       "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Who is Anup Kumar Saha, the banker set to lead Kotak Mahindra Bank next?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNnhHSUJ4X0JjelVHWVZEV1hFV2hKcW9XdlhFMWl0TGtUYi1Nb0R3eHFOV1ZDbVRBTWFwelUxSkxkcVRVUkpTLVNLclJOSUxld25ieE12WldITkpDcnVnU2hTSjJrd0JyaTBOb2tjZ0MwdXppMDR4YUV0amxVRjh4eDdmVVRWWmc5Qmh5Q29wTjlGT0ZZVy1zU21QOU92bUMtZ2dLUnlBd09PbGE2RlFBWHIwR01uVnZ6dHROdGs3blpOazBHc2fSAcsBQVVfeXFMTTBkOEsxYkFPOFAyWl9zQjFKU1RmU0pHMzcwZWNKblM0b2wzd2kyTzVVcWpVTU0tb2JDcEtUY09zbk9uUlllNnQwbGQ3UHlOWEJvZDFXYjhseVNjTzVjVlBkOFNNMmtUczVveXU2azhJR3FtNGJXRUcyX1VURUF1a0lCUnpYdmd4M2NURWdYV1k3WTJyd3M4d0d1LVNWamotZm5WSnFnUzVfelJGYU9hMnl0VjdDd3V1SVhfUXRQeWE1RVdySk5wbGZjVVk?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
     {

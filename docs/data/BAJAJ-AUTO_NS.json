@@ -23,10 +23,10 @@
         "strike": 10500.0,
         "strike_formatted": "10500",
         "option_type": "Call",
-        "delta": 0.254,
+        "delta": 0.25,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 51,
+        "dte": 50,
         "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 10500 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 11000.0,
         "strike_formatted": "11000",
         "option_type": "Call",
-        "delta": 0.064,
+        "delta": 0.062,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 51,
+        "dte": 50,
         "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 11000 Call"
       }
     ],
@@ -48,8 +48,8 @@
     "margin_required": 500.0,
     "stop_loss_price": 9743.65,
     "take_profit_price": 10346.35,
-    "net_delta": -0.19,
-    "net_theta": 1.291,
+    "net_delta": -0.188,
+    "net_theta": 1.308,
     "probability_of_profit": 0.0,
     "var_95": 500.0,
     "vol_skew_25d": 0.0,
@@ -424,6 +424,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Bajaj Auto\u2019s domestic sales fall 9% to 2.94 lakh units in September",
+      "publisher": "ET Auto",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRG96MzFXYW1jOHhfWFFLdmMtLU53QU1IMTc3Yno0ZFUxaHRLUjNubTVleU9iekF3VGwzT0N6VzM0dXBKcGh3SmtncXpEZDZSN0xyOVVscTFFZzVXbkdOWnZMREJnanRWaXBDdldvLUZkTWMydzhNQ056Y241TWlrZ20tVmFDQzhPQ292aHFlOTNjakk2U3NDbkVaOUFJNW1KYUhZbTRwQkxFVTUtVFB2OWF6cXZzaU5vVnptSkMxUmdYTXNSYVNsT2syb9IB0AFBVV95cUxPc19GZWNvT05JUHB2T2x6NnBvS0d4bzJkMm10S1cwV0N0QkpXMnZmS015ZGgyckE2Yi0wTEtFR1ZYdDA4WVNEcm56TUI5Q1VDWFdCYlplbUlmMUFKeVRValE1YlpGd203QnRFQl91TG9ONjdSMkFSZlZmNFprTnVraVBQWkxDd0lvTzlrZ3Naak9VWlllZ29rTENnT0w1WTF4NHBtbFZ4Z1JIRTZLSE1pMnZaUnFtYkFoaThfdHNvSFMwaDhES2VhUU9zNFU5OHhq?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
       "title": "Bajaj Auto, Hero MotoCorp, M&M tumble: Nifty Auto falls over 3% to lead sectoral loss \u2014 what\u2019s next for the sector?",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNbTBJa19JUHVlZEdwc3AyZ1IwZHlYYktlMlFLcGhCSE9hdUNURmJwOUVaR21SZHIzTkVnZnBPMFdZNE1qTlFHWUlJcjhxREZNRzcway1TQWhTRklDa1FIVXVKd2N3YXR2YUp0T1AxU0FKckZQbVNoeWtWR1ZTa2R5VW5ZOXRYNF9RZm5LbTMyUl9Pdzl5YmZKXzA0djd3TjJlWi1kS2xGbTNKR2l1RTdkYzl4UVNXMXltS1pxZ3g1V3hiUHRVYVR3VldwQXpkOTdmWlgwY1BjcmxkRG9wZkpwYlZtbjhOWUlZZVAycDlObTJ6QmhhWkRadjVha3J5NHhHT3NhWVJ5WVBwNThF0gGSAkFVX3lxTE5TZ0d6b1pqejZ5WGRlelowaGF4d0M5czNTZ3lBTkFKS0V2RlVXLXRPZV9sa201N19Ca1ZsbmZQanJnSmk1WmhMa2ZhcVNCbXBwM0FwV1U2ZzZMeE14WjFKVlA4bEh1Ynp4M3Vkb3BObk00b0hGcFdCWWZWOFliYTNWcnRPeVZ4SGJVM0ttX0R2bFJqZjFvS1E0Ym9jVF9xWjAyNl9TaEFfZWNOdnZnVEVxV0JROHhPSUVDcWpBcHRPLU5mRU9XQ0hkb3IwQld1R2VqMjZxd2FMWUtsMU1LQl80dGxLRmdOQk5QNnJialNNMGloYzV3M1dacXZQdmowUVIwQ01uWC1MZ3NoUFlmUWlIalE?oc=5",
@@ -443,13 +450,6 @@
       "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNMTBMdktTd2hPeWFIdjB5UXZYWm9SNTEwQnpXYnpoYXBNZXlRVjZDajZzMDNUVXNCNXNSSkRENTRkRlZ2U29CYjNYa2U0d0NfOTh3LTZNTjhiX2JucENGeU1pZmFFalVXVXFuQ3pwVTB2enlmYXNaaVEzWDFRSkRiX1FZM2x6TXRjck0xa1RSMzVUR1lsVXFrS1l4WVVhS0pVVWNNSjJldWRCQTNQR3ozcnNBVTNwMWY5YmVXaVFrM3R1aFZQVUcxRUVYN3R5OEh5dDlaMFJXOWkwUVI3TzJ3aVRVNnZ3bXExSUl0NkZKdzExbVR3dE55NHBRbEluQjZuaEE0U25SdnlyQzFnaVhodzBYTFLSAZoCQVVfeXFMTlFjc2hLSmlvdC1fUHJCRFhWZHBNcG1xNmxzdUN5X1NGZW9WSnJUZ2tzYjA5Q2NMVERwV2VCX0VYZy1nNmR3el95b2ZkZlFaQ1JDamZrbzJaMXNlZ0Z0NHdDZWVhbFVCeW1KbWs4VnM3VkcxVWo5aVY2WGhhYUE5S1NNeXNiU2M4UmQ1bDF6ZVBYRm8zdER2YUlOVmJWT3ZpSmVrOVA2dEV5eklRc1ZwSVJNMk1DdzhadHhrQ3BFQTVqVThMMWJCc0RmaHRKdXB5WWFENG1VQzVfdVhwa1lTaUxCdENBWEktR3Yzdi1OaG55VmVMSVR3TGdPVjdUTmNaOTQ4bWl0aHR6bGcxVzlkWnZKSU5lOTNidDVn?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bearish"
-    },
-    {
-      "title": "GST, PMI and UPI strengthen in September, but auto sales show pockets of weakness",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOOU9fS1N1YVBOVm1SZElxVi1XXzZuM21UWjF2bW96LVc5eGJITlRHdlBNZmJ1MnJrbzl0OV9CU3dGRzFXbVRfOXdNd3g0aE55aFlGaUpvYlJRb1BzSEp1NjZVQ0UyakYyQ1IxUDFQd1dNWGxQVnBWU0dtQzUwbFJ0UzJINWdFckl5VjBNbmZBTklFSUJON015Z0lyRnVLbXlPUEdKZUVBYm9pLWhjOHRrX1JYcTdrYjl0TFpoX2hXN3dSTGNNV3dKc0FsRm1lUjI5YmhsYWVTLXV1dWFn0gHiAUFVX3lxTE5JaERqSS1fUTBQWFE1ZjFDMDFhZ3p5RG9oTXdqN2J4RVdWZk9zWFJYQ2dfeWZhekNRTDRRN0NoTlg1WlI1TlFjbDV6Ri0xZWxCQzNvX1dmN29mSi1IQTFqRFV3VmszUmx1aFNaYjFwUWgtd2V3Y1hWUlNBNmlhUHFpWW0zMXVObjdqanI4UUNYaENVeGFXR29Xd1N1ZUptNGkyOGM3a0t4ME9qMTJUblI2LWJ2b20wcEFiTzZIOS1hcFR0cVRaRW9mRU4yNmZoQlZuVG5CUGYzRGo4YkdjTTM2OUE?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
     }
   ]
 }

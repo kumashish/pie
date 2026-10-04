@@ -183,6 +183,34 @@ def get_trade_profile(stype: str) -> str:
     return "Advisory | 30-45 DTE"
 
 
+def format_short_indian_strategy(strategy_str: str) -> str:
+    """Shorten strategy leg descriptions for Indian markets (NSE/BSE).
+    Example: 'Sell 1x DIVISLAB.NS 24-Nov-2026 9700 Call / Buy 1x DIVISLAB.NS 24-Nov-2026 9900 Call'
+    Converts to: 'S1x-Nov-9700CE-B1x-Nov-9900-CE'
+    """
+    import re
+    if not strategy_str or "/" not in strategy_str:
+        return strategy_str
+
+    parts = strategy_str.split("/")
+    short_parts = []
+    for part in parts:
+        part = part.strip()
+        # Regex match: Action Qty Symbol Expiration Strike OptionType
+        match = re.search(r'(Sell|Buy)\s+(\d+x)\s+\S+\s+(?:\d+-)?([A-Za-z]+)-\d{4}\s+(\d+(?:\.\d+)?)\s+(Call|Put|CE|PE)', part, re.IGNORECASE)
+        if match:
+            action, qty, month, strike, opt_type = match.groups()
+            act_code = "S" if action.lower() == "sell" else "B"
+            type_code = "CE" if opt_type.lower() in {"call", "ce"} else "PE"
+            # Format integer strike if whole
+            strike_val = str(int(float(strike))) if float(strike).is_integer() else strike
+            short_parts.append(f"{act_code}{qty}-{month}-{strike_val}{type_code}")
+        else:
+            short_parts.append(part)
+
+    return "-".join(short_parts)
+
+
 def generate_readme_snapshot(
     market_data: list[dict],
     current_time: datetime | None = None,
@@ -261,7 +289,7 @@ def generate_readme_snapshot(
         stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
         fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
+        strategy = format_short_indian_strategy(str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / "))
         signal_raw = str(data.get("signal") or "Hold")
         since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
@@ -306,7 +334,7 @@ def generate_readme_snapshot(
         stype = str(data.get("strategy_type") or "")
         strat_name = get_strategy_display_name(stype)
         fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
+        strategy = format_short_indian_strategy(str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / "))
         signal_raw = str(data.get("signal") or "Hold")
         since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
         signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
