@@ -13,7 +13,7 @@
   "strategy_display": "Put Debit Spread",
   "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (77.5% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (70.2% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 300.0,
         "strike_formatted": "300",
         "option_type": "Put",
-        "delta": -0.422,
+        "delta": -0.423,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x BPCL.NS 24-Nov-2026 300 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 290.0,
         "strike_formatted": "290",
         "option_type": "Put",
-        "delta": -0.209,
+        "delta": -0.206,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x BPCL.NS 24-Nov-2026 290 Put"
       }
     ],
@@ -48,7 +48,7 @@
     "margin_required": 4.0,
     "stop_loss_price": 306.61,
     "take_profit_price": 290.0,
-    "net_delta": -0.213,
+    "net_delta": -0.217,
     "net_theta": -0.007,
     "probability_of_profit": 45.0,
     "var_95": 0.0,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.771,
+      "win_probability": 0.746,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2939,
+      "half_kelly_fraction": 0.2714,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,9 +360,16 @@
   ],
   "news": [
     {
+      "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOUUVCLURiLWRzMmNCZ1B2dWNRaDNCamgtMkMwZDlFQmZuYUdDY2hpbkhOdGpfQ1NrWmx4R1NRUmxDNWdYR29adEl6WjV2clAtRkFPcDJDNE1LZktFSVU0ZENESnk0T0dMVXdEWEFjRG5TQmZNYzEwZFNSaGowM19pU21pQjRKczdBeXFMcFRZSk15VVNici12V0dlWnozSnBjaUYtcDl4M182R3lpRTFHMkJMZkV2eGV6Y3RjV0hmc1E0eUUxbHBGbWd0TG96cFpaOF9MLVh4YmE3ZmluMnZsY1dsSEhvUGotcllwNUF6QjBjTW9FRkVOaEVKQ29na0dpemJZWkVlN1dJc25XR0VNLXpB0gGXAkFVX3lxTE01cmdSNXNuWW5kVEhFY0RBVExHZENMb3c1Z3hEYmk4NFZ6alB2REE4WUEyVXZoaFRfRW5LdjB0ajZIOTBkRDdadnNUNVZhSjRkVUFnQlprTTM4X1M1XzFEclV5ZTkyWE14WEw0WGVJSjd0WkRmMGxsLVVGOWRJU1FrNVUyenpWUV9ubjFIQjMzaC1DSlBWeko0R0tGZVZBYUEyaWU0TGhtWnNkcFlNY3dVd25TeUFMcDEzbmpqVV9kbUJqMWRxRFpIQlRqUnJPY2hfT240VUlrYXJESlFPSXpZNFE4bjZnRVp1aVJydjM1UGRhSVo4ZjNuRDhwQU1NdFJyNnNRRURvOGxIYS1sbXZYRGxJRzdaaw?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Akasa Air and BPCL test 1 per cent SAF on Mumbai-Goa commercial flight",
       "publisher": "ET Sustainability",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTFc3Wmp5MUp5bDlVTmRKenM0bk1yeExtU0ZMbnp2aW9pQ2hDa1FKQ0tBZEpUY3AxZFFiOVJDZVlmS3Z5VnVzUVBEd2RvTHY1azZuSkppeFJrd2ZaSGZLdEZId2M2S1R4WTBIcnkzRVJuWUpScTd5SzZxM3hmanN6WThPeU1YXy1sOC1BbEVtNTVRQjRnQjdzNFFQcmZOTXRFUUliVU5qTlgyT1FxNGcwWThfVDFRdVhkb0dDV0pDM1dNWXRxYXZyWFNRZGN2QmJWQmlGWlNLbnUtNFNKcktZLU1ieUJvMk1NTlBCRld0bEpDQ2Zq0gH0AUFVX3lxTE9MVzdaankxSnlsOVVOZEp6czRuTXJ4TG1TRkxuenZpb2lDaENrUUpDS0FkSlRjcDFkUWI5UkNlWWZLdnlWdXNRUER3ZG9MdjVrNm5KSml4Umt3ZlpIZkt0Rkh3YzZLVHhZMEhyeTNFUm5ZSlJxN3lLNnEzeGZqc3pZOE95TVhfLWw4LUFsRW01NVFCNGdCN3M0UVByZk5NdEVRSWJVTmpOWDJPUXE0ZzBZOF9UMVF1WGRvR0NXSkMzV01ZdHFhdnJYU1FkY3ZCYlZCaUZaU0tudS00U0pyS1ktTWJ5Qm8yTU1OUEJGV3RsSkNDZmo?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZDZiU1ZxVy0yRXZkZ3hGTDhsUHJoSzFLalJVN3JBV0xJb0prWndQUTRjNlhfdkVCN3BMell3aVZ0U2hMV05UcFNnUGlYSk1kUG9FN0ZUMlN0MDhjRWl3NlRXQ09JczFTTFprdm1qU2pZM2FOYTJTNUFxR014dkg2NU9aZDJSV1ZSMkI2TldGMFpBWVZueWtVTll0ckJnMVBzMkJpREFHd1hnbDl0YTZEY3MxVFE0MVhIQWt4OXVQRTRFWVVmTDB5ZF9vOXQtS29uOUZrU01VbE5xTlBXZ0JSa3VLOHVHeGRvdnM0QVc0N1HSAfQBQVVfeXFMT0xXN1pqeTFKeWw5VU5kSnpzNG5NcnhMbVNGTG56dmlvaUNoQ2tRSkNLQWRKVGNwMWRRYjlSQ2VZZkt2eVZ1c1FQRHdkb0x2NWs2bkpKaXhSa3dmWkhmS3RGSHdjNktUeFkwSHJ5M0VSbllKUnE3eUs2cTN4Zmpzelk4T3lNWF8tbDgtQWxFbTU1UUI0Z0I3czRRUHJmTk10RVFJYlVOak5YMk9RcTRnMFk4X1QxUXVYZG9HQ1dKQzNXTVl0cWF2clhTUWRjdkJiVkJpRlpTS251LTRTSnJLWS1NYnlCbzJNTU5QQkZXdGxKQ0Nmag?oc=5",
       "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"
     },
@@ -374,18 +381,11 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Cheaper at pumps, costlier in bulk: Jio-bp, Nayara cap diesel sales; PSUs may follow: Report",
+      "title": "GAIL\u2019s Sanjay Kumar named next Petronet LNG CEO",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQMjR3Mk02VzZ6c0luMG1IbUs4UnJuUFFxMU9qcDFUMVdpQ3ZPdDg5RjNiMUVSSW9wSnhaV3k2VmRYcTRBcENSb3kwSk9KRUxYQ3N1Tmw2WllwTFBVUWV2RXR4NU9EbTdsdW9HQUxuZ3ZsUVFYVXRDYXpoS1JMeGlyaDBVVDAzQUktRnVWcEJTWEJwazVTNFdxc0QxTmdUejB3VWJOTUQ0MmF2d1dtQVV1TzMzQTZGSnRLM0RhVFNXWmNoME9xcUtmS1pwYzUyTVpncm9aNDk4YnJPRVBYdXpxM285eFhSVkVpZmtHUU4zMFN2V3ZUbXAzOEVWdzVvMVE3NTlucdIB_gFBVV95cUxPX2VWYzEzRTFhSXpQNm1FS215d045cmJ2NEhJNEVuUWl6QThfdF9iZGhvQTdZUFdrRXk2NHg2TlRPSXFlcWlza2dIMFNwb29jX051dXBQTllBN0VVcVM0bE1vakZBZmdEeHNCY1UzWE1uVEFCWVBtVmlwbkE1LVhSVkw3T25zYncxdkU2c21XRHBtRnVsMlNBS2hxOHc0R2F4cEl6YkVKckpEc1ppVjNqUmxEVllCOGlnSVJaREhWcUhROGFvQ0NucDljRFdQQmdFSDg3aUpITWlsMVpsRGNVNm5BMzRhVEo3V2lPdEladUhRLWZFbFR5ZmxVRkUzdw?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQT25kZzFacTlYZjdFcUdzeUV2bDlwOEtOMlhNZkZtN3pCQVJtS2VMM004NVZBVHpiU3F5RkNNNHZ2RTBjVmlSNjMwQ0FiV1E4MFJNZWo0RzFxSUFqclhTVnlub3Zxc2hJVU9mTkRBdGF3d2d1b0xVT09iU09rRDRJVF9VV3RjS0NOaWJMZlJtRndOTlR5MXpYUnloV09lYUp0aUZYQlFOX3d2Q0k5QU05WDA1THpUN0pES2JMWkhfQnpvYll4WnRJQ0I3NE5EQdIBxwFBVV95cUxQTERkaURfN2NWVGltWmw3TVVfa2JCMlRadzNTLUEtMGVZcHB0V1puOGRPN1hNSVg0X0JwTG9LdlFMazZSM05KNEZNczVPT0RsMHFjTjBaeDZ5eGh2TjRZNlpLZW9tZ1RlcUNtcUI2TXAxalc4dXJ1N1hza25WTlZmM2c5ZUZJUVRVX2pLYV9BOE54Vk1lWGJQWFd2NkxuekpLYWEwMVBPalZKWHBJR29yODBNXzh5YkhVZFBtc25pZFVBX0lYQWlz?oc=5",
+      "published_at": "Sat, 03 Oct 2026",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Live: Bank Nifty gains ahead of quarterly updates; Hospital stocks decline | Closing Bell",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOYlM2dXB3bndkdWo4NVlUbXdyaHI0MEVSZTIyR1V3ZEVuTzJvX1JmcHh2MVJ4bVh1YXNzeVd1YW5hc0V4cWFMNExCMmdtNXVZYWlGMUZ5MmxfT090TXRZYkZWczNxb20wUUxVb25rSGgtSURxWElpWENtbUhSZGF4TnVVXzMyaEZ0aGJlVFRTZ0MtVFF3WF95UHpjZVctbHBid0NHWDJYMW5jRHQyaGhGbkVzcElBenY3SDlZT2RlbDJaSmdqZmc0SFl6Zm9RUWV5RHQ4T0JRUmJsNDRiQzVSV0hlcmJWdzVo0gHuAUFVX3lxTE9vRGpLY0l4c2RZS09yMjJrejE0Z2VOWlBVLU5YTG12djlPSWpnZ01oRThGMDdNdmRkeHpfXzZsQWZkWlB0Nnp4N2E4dE1RQUFfR3lnM1FXcnhZVXFiY3k5X01uMkEtdWRwUVBiOFNVSWJ5a1h4WHA2bm9kTzdVRURDWjY4RFBBX0xSZ0ZSQXlENWVERVptem51bzNndHQ5Z2VEcWpZdXNPSVUxbDdhQXFwRDVBVnVfYk01bDAySU4yZ3NMa0lLNFpQVG9qSlBJc3ptOEZlMEYtal9GNHhJVGZyUndlZ2NQUWNwZnUyNGc?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "bullish"
     },
     {
       "title": "The financial risks you cannot see coming",
@@ -395,11 +395,11 @@
       "sentiment": "bearish"
     },
     {
-      "title": "Before chasing new investments, ask yourself these six questions",
+      "title": "Explained: 'Quick cash\u2019 \u2014 What are payday loans, when can you borrow this money? Risks, eligibility, documents required",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObkV4eU95M0R6MmhpNVgtNDBNZXFLczRmYkpiRE5Ea2tDSktiZEZ6cF9PTTFCTzkxY0s2OGJuRHhnYTNYaFNTcGJPam9XSXJBRU9EX1N0MENLV0ZOX1lDVFZTZnJ3UjJ6eFlJNGxpT1N6eFJ6dWwzQkxGYnF3ZkY0cGVkdHpoQUlVbnpyZjVZZUdOcmI4UkRDalM1UUsyYllNZWhNdlpRNXBzaU80Qzlxc09wZlVYd1hIRFdUR3FzSdIBxAFBVV95cUxOeXhiUVFsRUlmLUpyeXNYLWh1Rk51c0loQW83eXRPcVhPelptZjhra3pIcll0RU1fUzJpTDdqczZ6Q2l6ZTR4cjFBQWVFMzRmVERDNG16X29fUElnSl9LZGFiUTlmR2YtWWFWMU1DODFjTUtmTVhxdGQ5LUNDQnBkekdXV0hoeTF1UFZkMko5MHlxX3BQaFNzVXB6RmFRNUhaM1J6UFZ0RDVDRU5XUWtPZnEtQ08xSW1ObWMzc3hyWnhJcVpW?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPUVdGclFWa21NbmFvbk1DZU5fblFuOWJRdWtNamFrai1kUnNfYnFzcmtocnRINzlUbHF3RzRPS3hCMm5ETndaTUh0UTZQcVdfWFQ4Q2NOVU5CM2lzQUt6ZlpOYWRZNC1FclVlU052UFpUWWFDVXg1S0ZMalI5dFVKOUh3dTM1S0liam56YnVjejR1LXNFUHZTNHhja081T1p3Mjg2YnpKUzhid3o4UEh5aV84Z0cxX3AyWnFXS1JOVHNCQVMtR05ncWt2TUVCMWhsQlhRRGFKTHJteDB6Q19fWVh5dnFLMTZFV0M3dU16UXJtXy1heGIwaTQyd3ZEMWlDOEMzOFU0Y2tsd9IBjwJBVV95cUxNRWtxbGFlTjF1Q0Z2VUxWMzliRzVGZlF4OTdIMnFXTFVqX1F3NUdSVTJKdlBCVnBuaFBvUzQ0Q0V3U3NaQVZtcVZIanlzS21WOHNOX2pLVVc0bUtTZFY5b0dxcmZicWZBUXgzNEF2TERXRF9hOXlUY244OGh4eUxRTTI4X2ktc0RXeHdCRUJPdDlhVE9FNDZLSjlxZlBIblRpcVFBR0lyVmdiQmFXMXZ1Z1hKZm01X0ZpUlNuZHBNNnN5Y2N1M045M2xCcXhOVTBQUk03a1E1VkRUZWlNWjVyaGlKMEZzOTdOVHVJTWctVkV4S2YyX0EzaW9zd3loSzlBVGVoaW1na1kzNmxia2dB?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "bearish"
     }
   ]
 }

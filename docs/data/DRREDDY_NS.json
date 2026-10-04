@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 30.0,
   "vix": 14.46,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (60.0% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (57.1% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1200.0,
-        "strike_formatted": "1200",
-        "option_type": "Put",
-        "delta": -0.4,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1200 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
-        "option_type": "Put",
-        "delta": -0.153,
+        "strike": 1250.0,
+        "strike_formatted": "1250",
+        "option_type": "Call",
+        "delta": 0.307,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Sell 1x DRREDDY.NS 24-Nov-2026 1150 Put"
+        "dte": 51,
+        "summary": "Sell 1x DRREDDY.NS 24-Nov-2026 1250 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1250.0,
+        "strike_formatted": "1250",
+        "option_type": "Call",
+        "delta": 0.307,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1250 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1230.32,
-    "take_profit_price": 1150.0,
-    "net_delta": -0.247,
-    "net_theta": -0.051,
-    "probability_of_profit": 42.6,
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1170.01,
+    "take_profit_price": 1242.39,
+    "net_delta": 0.0,
+    "net_theta": 0.0,
+    "probability_of_profit": 0.0,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 964.96,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 974.61,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 984.26,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 993.91,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1003.56,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1013.21,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1022.86,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1032.51,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1042.16,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1051.81,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1061.46,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1071.11,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1080.76,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1090.4,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1100.05,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1109.7,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1119.35,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1129.0,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1138.65,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1148.3,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1157.95,
-        "pnl": 22.05
+        "pnl": -50.0
       },
       {
         "price": 1167.6,
-        "pnl": 12.4
+        "pnl": -50.0
       },
       {
         "price": 1177.25,
-        "pnl": 2.75
+        "pnl": -50.0
       },
       {
         "price": 1186.9,
-        "pnl": -6.9
+        "pnl": -50.0
       },
       {
         "price": 1196.55,
-        "pnl": -16.55
+        "pnl": -50.0
       },
       {
         "price": 1206.2,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1215.85,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1225.5,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1235.15,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1244.8,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1254.45,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1264.1,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1273.75,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1283.4,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1293.05,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1302.7,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1312.35,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1322.0,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1331.64,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1341.29,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1350.94,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1360.59,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1370.24,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1379.89,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1389.54,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1399.19,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1408.84,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1418.49,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1428.14,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1437.79,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1447.44,
-        "pnl": -20.0
+        "pnl": -50.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.71,
+      "win_probability": 0.7,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.239,
+      "half_kelly_fraction": 0.23,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -374,6 +374,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "FREE FLOAT MARKET",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vcFc0cm0wMUNpVU9odEdKUURlRHhyN2NVek5WdUNaUndhb0Jub1FZemkxSnhRR09vM3JyQVJxZWE4M2VidXNXakZaZXJfSDRTdGRCanlTLTBhaHlaZ3dDVHpCWTkyYm5oZ0cxVw?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Latest News | Latest Business News | BSE | IPO News",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA0STRQM0FEZTgxbm1DVVRvV2VvaS1iQ2xQWWxnZ09lY3ItRXlqSzN3cjJqVHFudEFsWUhTd2VJZVdJUDVCVjlQWHZ3?oc=5",
@@ -381,24 +388,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Taking Stock: Nifty ends below 22,750 amid expiry day volatility; Sensex sheds 242 pts",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWmdmOGdtdTk2TlN3R3dYNFgzMUI4Z3BEMmtBQjFaQW9LODA2NUh5WmZvQXRTRW5IVzFvZWlObjBFenpWbWx5UkxyZi1FMnlOcnNZd0Jab1h0cFNmekZnT25fRkhyR1RVclNubHZUYWI3ejRnQ3pMcDR6NjloN19LS1VhSndhWWp1R1NOd0RpMG1KWXNCYWdhajVFUU1odHJqaUhOYk53VHVkaWNtZEhzMHFMb3NkMEowamh5SkdkMWpFYkIybjk0cW1oOG9tRlRwamxoeTFvaldqZWEwS0ZuaEVhONIB6AFBVV95cUxPZTRGUDRkZzdPRUdlbW1EdjlOWW5QeWRVNVV1UmVkbWRoUTZ2WGZ1WEd1R3JhLURTc0VMTEtMUE5SRTZIYmV4cmRzUUotVE92Z0JpNnRSeFg2MzYzOHlzbzBha0R4V2gyOURzSkN6MXladXNJWHAtbmZFYXl2U2JzUVBycWJhM1dZMmo4MXpMeXR1MjlnQ0daRXNsTWNvSjNLUFp5MnNIRlhESmFrbExITHFycTVoYXNqRjY4aG45ZTY2Z28wbDdQWjVpQnpZNnRab1JmZjd6MTEtMHd3VlNQdUVKVFdlOXl0?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Moneycontrol Pro Panorama | A new era for portfolio managers",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdGRUaXJkdHRYUlhTRGxmMmlQWjllQ1QzV2dTakFnTk9HUXR4SnNfWFh4VDU5d1pmbGNSa2NKaXdMcy1Ua1FNTGdjR29jNEpHMV90QUNoU0lDTVBIY0lXSkpuREZMc0NTV2loWjRsTGJyVEVndUxzOFFMSUxaUlZ1Q0tvSWNwel9JRHZ5M2VOZFN2WlU2Mk15QnplTVp3eXgxb3o3d29vanAwMVp2UHpzOXEzU21ha1g1Zk5DZ01kSjLSAcYBQVVfeXFMT214RWNGQmlqRjlDYzJWcXdDQ1IwYWw1SnBrZ1l6TFlMcG5leUJRMF9XblRGY096VUZOUk9GY0pxMno5QlpqampnNDhtMHZYcDFCd1lMNGNfSUtYek5LeXcta29ZN2tidDdPcFpVWm9JMUU3Si1xbjJXZ191ZmRSamNHZjFDa2FNRVJsUU1vcFIxaURLcG5TTHZ4RGhGbms4NUhwSnp2NnNQYmlmTVJZUnVEb3ptY0Iyb01aNVhyQTBNSjBzVFdR?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Taking Stock: Sensex sheds 1,124 pts; Nifty ends below 22,800, sinks to 6-month low",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaFhnckpab0xJQWs2Q0lFM2ZfamY0ZklMM19qbWRQLTFXY053NHJjdkRkMWJIWUI5aU1OVl9YNEhRWGNCU0syb0RZcXUzRE1rbDBSZGE3WWVxZmJGN2poT0VJYl9VTThlQVZVYmcwS0tyal9kcFVkRmVpT0FRODZRdFZCTzE4bjhOVXctRTR0ODBvdC1DWGVEdVY3a185cEJQdUdxRmxXbFpJQlVUdHpYNlVXS3VIdmJXQl83VFgtRnNJRHJXX3BpZkhqN0hlOXFjZ1l5ekpJTdIB3AFBVV95cUxPYTNqWi1LYzdqcXJ2c2FtWEJGUVdUd3k1YXRDTnNWVWlyUFo3am13UmVSaHd1c1FqcDFHQ0pNSXlvaVZKYnVYWGZBRzJXOTgzdkdpbHVfWjlHbnBVV3Mwcnc5eE56S0hwaFlRREl0WVIwS0Q4WjRsOGMxVm1XUWQ5YnY0dzcxOUVPbUxrUFYzcEx2T0JPZ3Z6X2tkazNjRXc3ci04MHZGZnJUalk4c0M1OG1UZ1VDQ3E1UFJ5eVVaLXdqSWs3eWVnMnRPV2ZWcHE0YUw0cGVROG03aXV0?oc=5",
       "published_at": "Mon, 28 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Taking Stock: Nifty ends below 22,750 amid expiry day volatility; Sensex sheds 242 pts",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWmdmOGdtdTk2TlN3R3dYNFgzMUI4Z3BEMmtBQjFaQW9LODA2NUh5WmZvQXRTRW5IVzFvZWlObjBFenpWbWx5UkxyZi1FMnlOcnNZd0Jab1h0cFNmekZnT25fRkhyR1RVclNubHZUYWI3ejRnQ3pMcDR6NjloN19LS1VhSndhWWp1R1NOd0RpMG1KWXNCYWdhajVFUU1odHJqaUhOYk53VHVkaWNtZEhzMHFMb3NkMEowamh5SkdkMWpFYkIybjk0cW1oOG9tRlRwamxoeTFvaldqZWEwS0ZuaEVhONIB6AFBVV95cUxPZTRGUDRkZzdPRUdlbW1EdjlOWW5QeWRVNVV1UmVkbWRoUTZ2WGZ1WEd1R3JhLURTc0VMTEtMUE5SRTZIYmV4cmRzUUotVE92Z0JpNnRSeFg2MzYzOHlzbzBha0R4V2gyOURzSkN6MXladXNJWHAtbmZFYXl2U2JzUVBycWJhM1dZMmo4MXpMeXR1MjlnQ0daRXNsTWNvSjNLUFp5MnNIRlhESmFrbExITHFycTVoYXNqRjY4aG45ZTY2Z28wbDdQWjVpQnpZNnRab1JmZjd6MTEtMHd3VlNQdUVKVFdlOXl0?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"
     }
   ]

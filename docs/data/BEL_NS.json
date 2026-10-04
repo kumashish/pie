@@ -13,7 +13,7 @@
   "strategy_display": "Put Debit Spread",
   "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (76.7% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (69.8% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 385.0,
         "strike_formatted": "385",
         "option_type": "Put",
-        "delta": -0.472,
+        "delta": -0.474,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x BEL.NS 24-Nov-2026 385 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 370.0,
         "strike_formatted": "370",
         "option_type": "Put",
-        "delta": -0.215,
+        "delta": -0.212,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x BEL.NS 24-Nov-2026 370 Put"
       }
     ],
@@ -48,9 +48,9 @@
     "margin_required": 6.0,
     "stop_loss_price": 390.76,
     "take_profit_price": 370.0,
-    "net_delta": -0.257,
-    "net_theta": -0.007,
-    "probability_of_profit": 49.9,
+    "net_delta": -0.262,
+    "net_theta": -0.008,
+    "probability_of_profit": 50.1,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.768,
+      "win_probability": 0.744,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2912,
+      "half_kelly_fraction": 0.2696,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,24 +360,17 @@
   ],
   "news": [
     {
-      "title": "Personal Finance",
-      "publisher": "mmb.moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaWZCWWQtVVVSOFZlakI4T3o0S2kxWjlibDBIc0FqYTVXdEk5T1Z3MzFabmZWSUttXy1JRFppTFdpcmw5eEFVZzVYV1BHR2M3Y0xnSjlkaVEwck9pWFBHVXZLTmM3MXdUd0Jhb2docnRWa0NUZ012c0wteldGZ2tXUVROSEFQcU1pN0lXejhJMWw?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cochin Shipyard, Voltas, BEL, Tata Steel, Axis Bank, Vedanta Aluminium: Top stocks to buy | Target, SL by Ganesh Dongre",
+      "title": "Top 3 stocks to buy: HDFC Bank, Infosys, BEL by Ganesh Dongre | Target price, stop-loss for IT, defence and bank shares",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOUWVNMzNGS3VPelFWNUh5RGRTUzJHR0ozV1h3V0tXeHhKNGlROTZWLU1iRlMtd2FSNnIxUlBuUXFFdEJjNkp5bTMyQ3pkejN0LVA5VS1kT1VzdWNDeEZUTkQzUGdOMm5odU5Fck5XdHBaa0NFOExadVZhT0NkdDc1aHd5bzdQMWJ3aE51MHBxSUs2REJqU2tON1hhd2g4YllCR3E5ZzJ2QWVPclZ4dW50bWpCaG5IVWlaaWlDMkNkNXRTcDlvcE10bXZtQWQ0RzZkRlpYd2tvbnRsNE1MV1Z1NmRjVjFHbHNGQnNRLUVxUGw3ZC1jc1dVdDFfNEZhemQ1N1V1RENOOFpkWEd50gGSAkFVX3lxTE1FN2g5ZC1NdjBGb0RQNVU2aE5tbDd5YnRRamtpQ21wNHhYNEhGNWJvRk5RSGs4Wkh0SWJ4b3pEU05jZV9oN3BOaURBejJMQWlneTZIRXRaTFRsMF9QZUhkLVZBaDRSa3lKa24tR0NFd3hXamUyYUU1Q0lRMlNzRnRHLVFVRWZCS3BsS2lIQVNPdlV1dzItZmpzRnJFc2dqc2VxN194WTlRQ0g5aVUzQjdFeEZZVzZsejR1Nmd6ZmZQclowbElyUVpLWHNCai1HY3NJZ2F1eHcwUHI4TTFlc3FtUmMtMFZTQXBNMVBxdGVkblNQY2dfekFaaFNIcEhTRVpvc1ZucUYwYjZqT0RPQkR4N0E?oc=5",
-      "published_at": "Sun, 27 Sep 2026",
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZFRPaFpPdE10azc5REI5NUpOMmw3blB5aWJNRkg3Ni1yZ2tkb2REVW9KZjFuRDZBT0R2V3JYTk9WbkVsRmRxSVdtTVRpV2g5dlByVTg3VTlNVkEwTWFEdVBINWNnakphQUwtR2hra0VIVXZyWEdGX19yRXh2WmhmTDhMX194ZnNSV1JoQWtPZ3A0anZGUmNLZjdwb3JHcjdyYzByOWpOWmxseGdnSElYS0c2Z096YTBIdmFLWHM5RlRNWklZVW9tUUdhdzNHampQZU9RVnJFVmtMVEtxLV9jWFNfTEMxUWNkSDRMUXctZ08zX2dIV0pWLS1DOXAxczA2WXlxQVJ5YjUwX1hEbDEw0gGUAkFVX3lxTE5GVjlJbTd2cWpOcTlDb2hsMFJJdXhNNGRFUWwzUUVsSVd3SXRqYjQ5MmUxbFUtNVljemNmVmtaNnowYWNHYjhfOXhLN2ZPU3Vyd1UtY1hLUFAweU1nWVNlc1hTS28xaVdtVXBmekUzamt2NEx0MXdScHNBeVEzcTl0RXBiWHdWeVFuSDdxZHVCRmxBSjlYb0V5RW5fNVo3QVlEb0Z4M2FqWmVtVERDdnFYdS1rU2c2NWk5T1ZkT3JLQWhtWHZKcDFINnZuVFNjTnVYSFpkV1ZOU0F4bDlqa0lEOVNNRUc5YTFSRnd5aEpINXBtM1R3blJoWElkUkE1bVFBSjQ2eTl3TkRLMmF6VGUxQzY1Mg?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "Greed and Fear index: BEL, Adani Energy to Eternal | Chris Wood's Jefferies India portfolio has 22 stocks for long term",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxObS1aX0NDZy1Ld3ctQnlnemk1MDlwTFZ1ZXNhMDU1SnZROUgwV1lHdkFVTV9QZ05BVDFQZGNMblNTU0RxMEtoZDZ1NFdsTEVjb3VlNk0tTHU1Uzg3Tmx0V0JsalF1Sjh2eS1uRk5KS1NUSEduUG1QR2lFeFFvS0cyckJnbzFBN0FSN3J5UEN4cFotWW4yS0Z2dmZGcnk5TkxQejBka2x4SHh6ejdEMkVxaFVwWmZqdmpoNEQyUXF2ckFvZFlhd2hJUGpmT0VUdDVFMFhyNDdmTllGdU9sZGdfekhTVk1tejdHLVd2N3Jpc2ZueEhGalZlU1RrLUhXaWxjRGxYbTJSOVViYVR4N2w4Y1N30gGXAkFVX3lxTE5JZzZ4V2NiSFNObk8tQjVBaDFSVHZnLXZUTjctV3NVMlRSSXB6WldOWWQ0a0NkWU8wWV9VRklnYS1XdGZUQzVtTWw5amxMaWVPSGhDMFVHZ3dOdWtCZDBqbXBtVlhYQ2RxSWI3d1UxdjNpX0toUnZFa3MzUDQxcnlEU2lmbTR3ZWRDTHNicWQ5ZU01NjJFYkdEaHIxelIwalhZT0ZxQUoxaXEycTNfSXFYXzQ4LWsxXzdSVmNyV3JZd1FBXzQ4MFdvZDRGYlc1MEljYV90Y1hrMEx1OU9Ca1VIZEtUeWRvaFB6S2tLYWxxWmdJWnhYbjhSb1c0UVU3WDBuYmI1OEd2RWQ5UGl6UkZQY3lFQWVXcw?oc=5",
-      "published_at": "Sat, 26 Sep 2026",
+      "title": "Personal Finance",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaWZCWWQtVVVSOFZlakI4T3o0S2kxWjlibDBIc0FqYTVXdEk5T1Z3MzFabmZWSUttXy1JRFppTFdpcmw5eEFVZzVYV1BHR2M3Y0xnSjlkaVEwck9pWFBHVXZLTmM3MXdUd0Jhb2docnRWa0NUZ012c0wteldGZ2tXUVROSEFQcU1pN0lXejhJMWw?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
     },
     {
@@ -388,6 +381,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Akash missile system exported to Armenia, Tajikistan and Turkmenistan: Defence Secretary",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcnpmc1VZZGpudlQ5bEFKS0Zzc3ZwbXlnYWp0SGh3LUJIVEl6MTdES2dUZUV1OGxTWHBaVS0ydDNVZ0c1ZzVtamdZOEQ3aEVDX2xGNWNlaXlGUWpjWmgtQ3FqbzkzZndyamhLMW56TU5nckhZZjdIMzBSclpZMEJOZ21wSDlVcklhN3I4OW5NRlAxeFk5VTJsQWhjNDVZSm9QTjhnYS1qRkFPbENZeGtzR3FmVkh2dEhxcTRhREhSU3ZvcmRPMjk1NEVsalhoYmd0UU5j0gHYAUFVX3lxTE1LSkhFZUFWRU1EZHdNUGZsRmRmS0R4ZnhMTl9MNmVMZkxqWC1RUHdNVTB4V01SUG82T0JZUU8xem8xa3hrM0RWdlhKdzJ4Z3E2bVdNSGh1SV90aVBMb1B4QTU0aTNfeS1KUnRvbFRjYklfamRSNndiM3ZEaU9sbUdUSUVoUnljTml5NlV6TXJLWmZuVkI4Z0xBUFkzQVRYYjlPVUJpQUJyM2Fqa1Q0a0NEcVB5OVEtQjB4a0RTeDZEYlBld0hzNXM3NW1SaHJEVWlzaWVEQzZ4Ug?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Bondada Engineering commissions 221.7 MWp solar projects in Q2 FY27",
       "publisher": "ET EnergyWorld",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTDdtWnlHbU8yT0lZTWZIX3Q1eVNHSmpCVkxFdkpGdXhEaFlVaXJ4WXVRYk56VVJoSzRYVUs2Q3RqSjlzeWxNa0hSdHpRUDNSVHFfTDQwY0JfV21LSmFHeEs4UjJNV1JsVHFmamx4TUpFREFrblF2Y2JLeml4S2ZRUW9sUGVpalEtaDdDNXJCWHFiQUtLNFBNZWZEMzFBSTdDN1NPNHNpR1dpNllWV3doU3JyQkxlb2dOSk1TQVB5eWhwcmNyRzd1WC1GQTJjcVRsZFHSAdcBQVVfeXFMTjBmUFkwNDJrZ0pvcDQ2cUV0VEJ1RTJsa1RKbk55Ty1faE44OUNuRTJOVnZpWG5pSmRnYU5RTjl1bHVwSnVnM2dic05NaHh4YXFrREIxME93MTY3aktmS2F0MEFWZ3Q1MkNjV2toMzBTaFVCbWltVzhtaVlJN20xNFVPSGtVZ0REX09CY1VSX2pGNU01S2x0OEtoWFl6N0dGeHZESEZVYkp5OHpwUGVwNEZXZC1vSXlfWHllLTdncGtaN1NIUTM2ZzlCX0hLVkNHMU5XWkRuVDA?oc=5",
@@ -395,11 +395,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Akash missile system exported to Armenia, Tajikistan and Turkmenistan: Defence Secretary",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcnpmc1VZZGpudlQ5bEFKS0Zzc3ZwbXlnYWp0SGh3LUJIVEl6MTdES2dUZUV1OGxTWHBaVS0ydDNVZ0c1ZzVtamdZOEQ3aEVDX2xGNWNlaXlGUWpjWmgtQ3FqbzkzZndyamhLMW56TU5nckhZZjdIMzBSclpZMEJOZ21wSDlVcklhN3I4OW5NRlAxeFk5VTJsQWhjNDVZSm9QTjhnYS1qRkFPbENZeGtzR3FmVkh2dEhxcTRhREhSU3ZvcmRPMjk1NEVsalhoYmd0UU5j0gHYAUFVX3lxTE1LSkhFZUFWRU1EZHdNUGZsRmRmS0R4ZnhMTl9MNmVMZkxqWC1RUHdNVTB4V01SUG82T0JZUU8xem8xa3hrM0RWdlhKdzJ4Z3E2bVdNSGh1SV90aVBMb1B4QTU0aTNfeS1KUnRvbFRjYklfamRSNndiM3ZEaU9sbUdUSUVoUnljTml5NlV6TXJLWmZuVkI4Z0xBUFkzQVRYYjlPVUJpQUJyM2Fqa1Q0a0NEcVB5OVEtQjB4a0RTeDZEYlBld0hzNXM3NW1SaHJEVWlzaWVEQzZ4Ug?oc=5",
+      "title": "Shanti Inorganics Profit and Loss Reports | The Economic Times",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVzJaYVhsdm1GdmhWQ19wbkVPNFR3TFlHSC1hUzlWY2FEUU9pTDBoaGJCUDlIVWJEMHV5dmg0ZFRCaUczMWNzTkF3ak1ubVJKMjBFblowTUxwSmVoTVVJRjlwaW52czAwRWFscVVYSE1fMzlQTWFRXy1pVHA1Y1Y4S2FnN2FrWjctSUEtaXlsaVUtU0xMczVKRHdR?oc=5",
       "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
     }
   ]
 }

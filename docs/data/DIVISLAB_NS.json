@@ -13,7 +13,7 @@
   "strategy_display": "Call Debit Spread",
   "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (76.2% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (68.9% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 9200.0,
         "strike_formatted": "9200",
         "option_type": "Call",
-        "delta": 0.601,
+        "delta": 0.6,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 9200 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 9600.0,
         "strike_formatted": "9600",
         "option_type": "Call",
-        "delta": 0.303,
+        "delta": 0.297,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 9600 Call"
       }
     ],
@@ -48,8 +48,8 @@
     "margin_required": 160.0,
     "stop_loss_price": 9064.02,
     "take_profit_price": 9600.0,
-    "net_delta": 0.298,
-    "net_theta": -0.532,
+    "net_delta": 0.303,
+    "net_theta": -0.558,
     "probability_of_profit": 57.5,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.767,
+      "win_probability": 0.741,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2903,
+      "half_kelly_fraction": 0.2669,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -360,13 +360,6 @@
   ],
   "news": [
     {
-      "title": "DIVISLAB Stock Report - DIVISLAB Stock Insights, DIVISLAB Stock Analysis and details",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN3RjZ3I2RkRiYTM0enN1c2VnODJaQ09iSWVHb1Y2OUZkeDB2QWUzakNNZ0J6SjRZVHF3SmhQX0E0R2Z6dzc5TFRnM0pQcXRCelZOazY4b0VxcU9IdUU5Z2xGQm5PMWRJbzdiVXp4RjlkSm05cmg3bG9CVGdtSHFFTE5VM3h6bDRpanZBdXpFWkxsTjRv?oc=5",
-      "published_at": "Fri, 04 Jun 2021",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Divis Lab | Latest & Breaking News on Divis Lab | Photos, Videos, Breaking Stories and Articles on Divis Lab",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxTFFCenNRSDY5SG94U2puci1hYXp3ZDRsMUpzWW0yaXQ3Q196T3Q2THlUUXNndDB2dkJwSU9jazFVYkZGcnhQYXJOYkp1QkJBR2N0cDlVdDJIRVdvR3FMVGVjSQ?oc=5",
@@ -374,17 +367,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Divis Labs Share Price Today, Divis Labs Stock Price Live NSE/BSE Updates",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYUpmNzM4eTlZWWlpYVZSZm1XOV9tOXI1NndFYTlPdlpTTnBSNFhMaVlqVzF3QUhNZU1ia0hJd0NRUFZITWZyekZfTkl1dUpWSDZFWlR2LXkxWWxqOU5RelZaVmg5WHc4RlF5Ym0wb2ZJSDk4UnhaVlNDU1AxbkxhX1U1THFqWnJYbzhyYkFR?oc=5",
-      "published_at": "Sat, 14 Oct 2017",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Divis Laboratories Ltd.",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamN4b1EwYW5ndTA2M2hYVGJPcWhiY0JNbGttMmk5ZXk5R1h4Z2lFWlh5LWVIVENfZF9GekM0Tk1XV0w2Vl9XdEZKdnBFNFM4QWJKLWZVamxBNTBnMmluU2l2a01YbnBjQjdLU0R5ajJOTV91NzhJaU5DY3AycDBobFpMcjBaWGhXbDJabmVzUXd1eEk?oc=5",
       "published_at": "Tue, 19 Jul 2011",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Divis Labs Share Price Today, Divis Labs Stock Price Live NSE/BSE Updates",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYUpmNzM4eTlZWWlpYVZSZm1XOV9tOXI1NndFYTlPdlpTTnBSNFhMaVlqVzF3QUhNZU1ia0hJd0NRUFZITWZyekZfTkl1dUpWSDZFWlR2LXkxWWxqOU5RelZaVmg5WHc4RlF5Ym0wb2ZJSDk4UnhaVlNDU1AxbkxhX1U1THFqWnJYbzhyYkFR?oc=5",
+      "published_at": "Sat, 14 Oct 2017",
       "sentiment": "neutral"
     },
     {
@@ -399,6 +392,13 @@
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPS3V0TVJQODhEZzYwZTNXMllFcy1RTS01eEpRUHZoeDdfRThYWFR0RzFJV2psclRTamJfRjRmeGJBZ2dLUVc5VGpFSWtrR194VlpfMFlTQzNGVTk0RzBwdHJGZHY0TDFYVXhKdnlhTVpVSU5GeVhBcWRRTzc1NXhtNGYyS2NEd2FnX0x5TmdXTnJJMHNvWmo0?oc=5",
       "published_at": "Wed, 29 Mar 2017",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Divis Laboratories | AGM/EGM > Pharmaceuticals > Meetings of Divis Laboratories - BSE: 532488, NSE: DIVISLAB",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5sYVY5NkJxRW9aaWFmeVl6dVdJWlpWaFo4MVdldkNIM2JleUV0SmN4VXFUSGpKbmpScDd6YjVLVFJHUUxzQ1owa2ozOWZHZ1ZIN1VqNEpvM2dObjlZZV90MTVESDA2QnZBSGh4NVNLV2JiRlp0RUhseW5PcG1FUEU?oc=5",
+      "published_at": "Fri, 13 Dec 2019",
       "sentiment": "neutral"
     }
   ]

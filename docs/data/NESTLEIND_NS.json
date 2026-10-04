@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 37.5,
   "vix": 14.46,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (54.6% fit - Grade C (Moderate)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (62.7% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1300.0,
-        "strike_formatted": "1300",
-        "option_type": "Call",
-        "delta": 0.605,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Buy 1x NESTLEIND.NS 24-Nov-2026 1300 Call"
-      },
       {
         "action": "Sell",
         "quantity": 1,
         "strike": 1350.0,
         "strike_formatted": "1350",
         "option_type": "Call",
-        "delta": 0.338,
+        "delta": 0.333,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x NESTLEIND.NS 24-Nov-2026 1350 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1400.0,
+        "strike_formatted": "1400",
+        "option_type": "Call",
+        "delta": 0.134,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 51,
+        "summary": "Buy 1x NESTLEIND.NS 24-Nov-2026 1400 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1281.55,
-    "take_profit_price": 1350.0,
-    "net_delta": 0.267,
-    "net_theta": -0.058,
-    "probability_of_profit": 58.0,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1268.47,
+    "take_profit_price": 1346.93,
+    "net_delta": -0.199,
+    "net_theta": 0.136,
+    "probability_of_profit": 0.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 1046.16,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1056.62,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1067.08,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1077.54,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1088.01,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1098.47,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1108.93,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1119.39,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1129.85,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1140.31,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1150.78,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1161.24,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1171.7,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1182.16,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1192.62,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1203.08,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1213.55,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1224.01,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1234.47,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1244.93,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1255.39,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1265.85,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1276.32,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1286.78,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1297.24,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1307.7,
-        "pnl": -12.3
+        "pnl": -50.0
       },
       {
         "price": 1318.16,
-        "pnl": -1.84
+        "pnl": -50.0
       },
       {
         "price": 1328.62,
-        "pnl": 8.62
+        "pnl": -50.0
       },
       {
         "price": 1339.08,
-        "pnl": 19.08
+        "pnl": -50.0
       },
       {
         "price": 1349.55,
-        "pnl": 29.55
+        "pnl": -50.0
       },
       {
         "price": 1360.01,
-        "pnl": 30.0
+        "pnl": -60.01
       },
       {
         "price": 1370.47,
-        "pnl": 30.0
+        "pnl": -70.47
       },
       {
         "price": 1380.93,
-        "pnl": 30.0
+        "pnl": -80.93
       },
       {
         "price": 1391.39,
-        "pnl": 30.0
+        "pnl": -91.39
       },
       {
         "price": 1401.85,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1412.32,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1422.78,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1433.24,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1443.7,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1454.16,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1464.62,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1475.09,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1485.55,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1496.01,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1506.47,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1516.93,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1527.39,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1537.86,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1548.32,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1558.78,
-        "pnl": 30.0
+        "pnl": -100.0
       },
       {
         "price": 1569.24,
-        "pnl": 30.0
+        "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.691,
+      "win_probability": 0.719,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2219,
+      "half_kelly_fraction": 0.2471,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -391,14 +391,14 @@
       "title": "Nestle India Ltd.",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMGRMX3lhS2lZM29XODdBQ3I0R3V3b3dubzFqOGJXc1NjU2dDWnQyOVFmOFN6R19NM19ycDFxdmxla1hfTGtjZWtjdDJKQWk5ZVNMb2oyc25ySXVnUV9BazlYazNDMlRodlQwZ0RZOU1vbHJHR2FGdmZPZ1llYWcwaEtrRlRVY2x2U1FzQVYtYw?oc=5",
-      "published_at": "Wed, 29 Mar 2017",
+      "published_at": "Thu, 24 Sep 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Nestle India Ltd.",
+      "title": "nestle Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbU1ScVlRckNRaUVfUGNTSVhrOGFIZ0tSLXc5Zzh1c21mVi1CbV93b1VFUlJpMVNfcmJnVVJLd2tjQ1NIaXJwNTF4NEtfT1Z3Y05scFNZWEd4YWtUNmhXR0VSWV9FaHI5MW1Wa0RlWjdJT19tcS1ObFJ2ZE84aHUyVWVnbGNWVkd1?oc=5",
-      "published_at": "Fri, 23 Dec 2011",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByUzNPY0FyaUdHRXVOMC1SWW1EdkdWMzFDSnB0MzVFTmRFampobmliN1JKeWFFQlIyUVAwdFh2SkgyNGlCVW5IZk45M1ZjY0gxRWtwcEJ1ZTRwQ3ZoU3lLVGhuWnRWUjBFbExBdy10czdlaUpL?oc=5",
+      "published_at": "Sat, 06 Jan 2018",
       "sentiment": "neutral"
     }
   ]
