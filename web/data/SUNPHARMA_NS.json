@@ -276,7 +276,8 @@
       "score": 91.6,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1900 Call<br> Buy 1x SUNPHARMA.NS 24-Nov-2026 1950 Call"
     },
     {
       "strategy_type": "iron_condor",
@@ -284,7 +285,8 @@
       "score": 84.0,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1650 Put<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1700 Put<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1900 Call<br> Buy 1x SUNPHARMA.NS 24-Nov-2026 1950 Call"
     },
     {
       "strategy_type": "butterfly",
@@ -292,7 +294,8 @@
       "score": 52.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1750 Call<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1800 Call<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1800 Call<br> Buy 1x SUNPHARMA.NS 24-Nov-2026 1850 Call"
     },
     {
       "strategy_type": "jade_lizard",
@@ -300,7 +303,8 @@
       "score": 48.8,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1700 Put<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1900 Call<br> Buy 1x SUNPHARMA.NS 24-Nov-2026 1950 Call"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -308,7 +312,8 @@
       "score": 43.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle"
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1700 Put<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1800 Put<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1800 Call<br> Buy 1x SUNPHARMA.NS 24-Nov-2026 1900 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
@@ -316,7 +321,8 @@
       "score": 42.3,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1750 Call<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1800 Call<br> Sell 1x SUNPHARMA.NS 24-Nov-2026 1800 Call<br> Buy 1x SUNPHARMA.NS 24-Nov-2026 1900 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -324,7 +330,8 @@
       "score": 41.7,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
-      "trade_profile": "Advisory | 30-45 DTE"
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1700 Put"
     }
   ],
   "indicators": {
@@ -419,28 +426,28 @@
   "news": [
     {
       "title": "Sun Pharma\u2019s Leqselvi sustains hair regrowth for over two years in long-term study",
-      "publisher": "pharma.economictimes.indiatimes.com",
+      "publisher": "ETPharma.com",
       "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUDJSVDVWTnpjSG5udDN2QWhGV01CekV5S1RfZjN3NFRwOEt2Mmo4aVdWZFk4T3BJLWRiZHl4TlpvcHZrYl9LNUdLNlFuaTJQX2ZkeXhmSG1OellXSUt1Q1VTVVJ5dzBaTjZTbWppakY0UXlWTXFiMEJISEdzdXZvMFo3dFlzbGh3SUFqRzJraEJqR2NyaDRtWWdVaTVtM2VxX3JDNzRRNGRFT3BCVWluNTRidnZ1SF9uRGVOZm9JU2czUzhtdTFEamxnUjRjNExxMXVTN0VLSm1LTEVraGJOYl82eGZxMUg3ZW5oRHpUb0ZKckMydFFhZ9IB_gFBVV95cUxQN3Y5NmZhNEFtQU1IQmZ4aGk4TDZPaW1sMEdodnJLQnd2WmtwN3RMTFY5SF9VRElaVGUzUS1BVjI0UzBxU0NEbF93NXp0cHNfNm9KcFQ2WlJ6Nm4tSnhUa3JyQ2xJeWYteFFiSjN6TUgtSnhLMHBvcmZ1b3JsWmxhTXgtaEhPamRjZVBxVDNBYkpwaHFoUUxGRmloeS1CTW91RTJhOU1mbnhlVURwbjlIdkg1ZnNKLWtDNm45OWJyNnFKQVEySTMwNlpiLUFra25Sc01mY0ppZ1Z3cXpXUHk4bmRHUjFnMl9DY29GTC04X3plR3h0anhLc3ZLbjZnZw?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
     },
     {
       "title": "Sun Pharma steps into PCSK9 arena with LIB Therapeutics\u2019 monthly-shot",
-      "publisher": "pharma.economictimes.indiatimes.com",
+      "publisher": "ETPharma.com",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlhsVE1DYXF2U1BGb3ZLM3RBaWY1bUt3VkF0dkdkUnRHdGg0aTNJRjNTRjNVNGpkVkpvWjNoaTVwMUlKVnBnVnB3c1ZvbzhHRFVjVUk0ZDRreElLQm5HU2RRZFJ4UWI1RmNtRV9jWmNKaU1wT0tXazJ5NnRyLTU0TUoxcTBlamlfTE1xajJoYV9VU0dyd21XN1dMcTF4Wmg4aGVheTRucTlXWmJ3SUFzWmgyVHRrYkp0bU9LWjdSYWY2RDNoQ25xWjFTWEZ0aEJfTEZRTmhTRmNoQlN4VExjU9IB5gFBVV95cUxNaEdHQTRzZGs5NzNjR3ljMm81WU1SSjhzSFMxX0xIem9yTjdHZjZTdFo0SUNmYWJselBHTWNwUWZSQmRWal9udF9pQi16cVVxRkpoMmxOT1hXLVdNNTZBRFhWZXk5RGNHbGpqU3BfenEzVEN3OXprc095S1BkYmJBRGctbUlxbHdTNXo1ejl1QU1FRUdWS2plZndlLW96RmJ6d3RnQy1HR2xaZ1NxRUdvNTVPcjFRek1BQnJtVENVNGg4VWdCbUZ4YnZLRXE0SHJFN3NCVk42azBVZy02aGw3OWxJSFpLZw?oc=5",
       "published_at": "Mon, 28 Sep 2026",
       "sentiment": "neutral"
     },
     {
       "title": "Lilly widens lead over Sun Pharma in anti-baldness contest with paediatric approval",
-      "publisher": "pharma.economictimes.indiatimes.com",
+      "publisher": "ETPharma.com",
       "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQMkxGWmpMMjJaM1JmaEVVQTRhN0lnTlFmN05iUmNFOUdKWGVqMXRwdTBoLXZrc1JGOVZrUlBmWGd4OG5DZHZMZ2t4bVQ3cUt6RXlmamdTeDNJWFNITzVDY1Y2SGxzYWh6al9UakhIM0cxYzVyUGgyX1AxOWVreUx0bUFfNTZhSXhFeklydi1xaF9vaTEwQ2xzY1hrTU1pUXhDSm5lMG9ZLW10S3M5Qm1ha0loZ0FhZmFGR2lKYi1qdmk4WU05dElSTV90dDlKcTdEV0huZU1sQXdRczVGVFd1T0pSeml4UG9NaTZPejFpWWdqaTlsVmJTOU83NU43REnSAYQCQVVfeXFMT1dab3N4eTJSQkNTSXczZEx2SkNLNzNQdzNFekdDTXB1SlZ6cUhHaWVCQzc5Zldjb0xKelpScUNKaGZndVRBWF9WSXFjWTdiYVJNTDhVQjhPb3NhMkpOTXdXSU53U0piVFZVaEFHdEI3TV9ZenduRGtwM1JMcE0tOHp3Yi15Tlp6eDNUbWR4MWM0TDdNS0NhUG9oRzhXV0xJOEJyV3g1cFliR1EwdjB3cmtaN1dfX0lmNEE3Nk1MczBIbmowRHo5Z1ZpZG1HTG9pZkhrYW5FQlM0WS1lWV9jVHJ4VldjVGZwOTFqX2pXSkFSMXpoUUw5U3I4RzZObDZqYTFWelM?oc=5",
       "published_at": "Mon, 28 Sep 2026",
       "sentiment": "neutral"
     },
     {
       "title": "Sun Pharma plans $1 billion local debt sale for loan takeout, sources say",
-      "publisher": "pharma.economictimes.indiatimes.com",
+      "publisher": "ETPharma.com",
       "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMk9YalhuMXFNdHRndnVPYWJHSTZ0akJKN2Q1Mzd3LUduN1JNSFBlQmttc1l5UjdWLTZrbEhFZHBJbU5QTXAyc0F3cmg3bE1UX0gtcElTOXNVd0dibzZPODY1d1hvMDhmVmRfRzVwRXVpTmV3VS1JVGhZaXZOY2duNXFBdmtwdkNnb0ZVT3RCblg0Y1JNNXZ4S0l1U09BX1BERHZjTG1vWVY0YkFKMXpwUWdkNGwxbzZwRGswSW5mNjZ1ckJZMUVLdGxOY2ZsU0FoTVVsdW9senFDTmNsaDR30gHkAUFVX3lxTE5DbmttN3RtMXllRXVZSzREc2pXSVB1dzg1UE5uem1PMkNySHFCOTlvRVNhRnNoS2pwSTBqeW1EWWpvWEVPOEtzdjJuZWh0V09ZczJhZ0Q1VkF4LWJ4STdBX3VpeUg4SWhOMTBQdEJFdXFiTmp5ZmpreGVTandrQndSUWNiSHVWVVdEX1dhT2d0Unc2dGVCX2RMX1pSV0hkZTRKeHZpMUVIZEM1WU15SkR4SXo0QWdINlJ5NndpNklSWkxlQTJvVGNCTmtsdHloUVNyR3RidjNjQloxaWZMaFlfWWVXQg?oc=5",
       "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"

@@ -276,7 +276,8 @@
       "score": 90.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x ONGC.NS 24-Nov-2026 230 Call<br> Buy 1x ONGC.NS 24-Nov-2026 235 Call"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -284,7 +285,8 @@
       "score": 55.7,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE"
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x ONGC.NS 24-Nov-2026 222.4 Put"
     },
     {
       "strategy_type": "iron_condor",
@@ -292,7 +294,8 @@
       "score": 42.8,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x ONGC.NS 24-Nov-2026 205 Put<br> Sell 1x ONGC.NS 24-Nov-2026 210 Put<br> Sell 1x ONGC.NS 24-Nov-2026 230 Call<br> Buy 1x ONGC.NS 24-Nov-2026 235 Call"
     }
   ],
   "indicators": {
@@ -386,13 +389,6 @@
   ],
   "news": [
     {
-      "title": "Ongc videsh - Latest ongc videsh , Information & Updates - Government",
-      "publisher": "ET Government",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzUnVrODJyQVkzbTh0MGhoWmhNUFdxWjVGQmFtMTVhTkVNaTFXMVNLZGtUdTBZcXBKdGh2dlRHaHVTaHJ5d1VxOTlPWjZhMzI5dW54UktESmFGOHdwbGRuSlU2bnFJSF92NnhId0ZwbkpTLXJqNXc?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOUUVCLURiLWRzMmNCZ1B2dWNRaDNCamgtMkMwZDlFQmZuYUdDY2hpbkhOdGpfQ1NrWmx4R1NRUmxDNWdYR29adEl6WjV2clAtRkFPcDJDNE1LZktFSVU0ZENESnk0T0dMVXdEWEFjRG5TQmZNYzEwZFNSaGowM19pU21pQjRKczdBeXFMcFRZSk15VVNici12V0dlWnozSnBjaUYtcDl4M182R3lpRTFHMkJMZkV2eGV6Y3RjV0hmc1E0eUUxbHBGbWd0TG96cFpaOF9MLVh4YmE3ZmluMnZsY1dsSEhvUGotcllwNUF6QjBjTW9FRkVOaEVKQ29na0dpemJZWkVlN1dJc25XR0VNLXpB0gGXAkFVX3lxTE01cmdSNXNuWW5kVEhFY0RBVExHZENMb3c1Z3hEYmk4NFZ6alB2REE4WUEyVXZoaFRfRW5LdjB0ajZIOTBkRDdadnNUNVZhSjRkVUFnQlprTTM4X1M1XzFEclV5ZTkyWE14WEw0WGVJSjd0WkRmMGxsLVVGOWRJU1FrNVUyenpWUV9ubjFIQjMzaC1DSlBWeko0R0tGZVZBYUEyaWU0TGhtWnNkcFlNY3dVd25TeUFMcDEzbmpqVV9kbUJqMWRxRFpIQlRqUnJPY2hfT240VUlrYXJESlFPSXpZNFE4bjZnRVp1aVJydjM1UGRhSVo4ZjNuRDhwQU1NdFJyNnNRRURvOGxIYS1sbXZYRGxJRzdaaw?oc=5",
@@ -400,18 +396,25 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Govt raises deepwater gas price ceiling to $9.89 per MMBtu; APM gas cap at $7",
-      "publisher": "ET EnergyWorld",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOSWxsY3pfTEVVM3JBbVN5VWpkLTFaR1FXOVZTQ2E3RGJELVlkb1hOT2hsSEFOc1NnWEhtTTBzUXFRZ0JpN2w3aXhyY1ppMllsRUtlRERMX0gwMUU3V21wYXJmNHoyMFpWbVAwNjNzY3ZiM3F4blNWdnhCdEVFUUhWOGdTOVNsVFNXU0JfZFgxWExYYmd6V2RJNDJRTG9tR3g0cHNsdWRYRldNMGNJLTdYUzJfbUNwakd5cmpBOGp4OFRPOU1fR3R2NmZfSkRTNmNDZm5tWlJ6SXR0NkE3QWfSAeMBQVVfeXFMTTdMeDNpT3ZXTWctbjdORWFucE1CMDl5c3pjY1VYYnZWbE9XM0RpNnpZZTJZOFVGZ0pJeWM3d3c0aW9kTUxYRVdsMkRRV1JCUTBEdWJrQ1AtN2k0akhfclhfcjJXam1MS3Y2aDNrSU9RVjFMMUFuQy1SS0dRZ0I1enhCVmlKMzgtNldsNVFjendnS0NJdzQydmxpZ29UblFJREFJLTROY005N0xjM0lYNjNiMVVaaXI0eEFodGZOUFl5VGhXZDNxQ212ZzZmZk10N2pPcXh6SVJ4TlZTbWtKZGJwOEE?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Buy ONGC, Sell Oil India| Kotak raises FY27 oil price assumption to $90",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNaDI2MHRrYTJuUEtJTmhNMFlNR0p6Wk9qNzNOSXRtYjBYb3E0RExvLS1EY3FDSU5jc3dnenhtdUdGZjgyTDF1YjlaVng4cHVKc1dsWldoSnh4Smoyam1DWldYZFlFSXRhT19SaTJreElBdkVKdEY5LVEzdWxjY3hrVXVqWW4yOW5yVXdid1lVS2ppeHU2WktRV3RmbTFneWF6YjlUYy1zb0pONDVKWUpQQmFLejUwV2ZBdVdDZi1oLThfSmUzOFJ5cjIzRGlYLWNsbzNiaNIB2gFBVV95cUxOZHFJbVpnV1JZS1J4Ymlvcnd0cjZNWFpjT2JqSHlvbkNwbVk5LTZIOFBrSFpXTG1xNkd3UFNVYTN3YkF5Mk5YMW9rVE5SaUdTRmlRT1E5YXU3QzJSMWhHckRUTk1Ld2VTYUpHQ0JGNkhJcXJrX28tU1dBNlNVWjhWYURUdjNWT20xREl5QkphNjc1ZTFsZXdDeWk3S0R3YngxZFIxaWhpNnJ6Umd4MUREV0VnaTZiX2FBY2FxeHlLaE5IN0RkUUhlcVVNN0o1OWZBNlhjcVRYNnBLdw?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bullish"
+    },
+    {
+      "title": "Ongc videsh - Latest ongc videsh , Information & Updates - Government",
+      "publisher": "ET Government",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzUnVrODJyQVkzbTh0MGhoWmhNUFdxWjVGQmFtMTVhTkVNaTFXMVNLZGtUdTBZcXBKdGh2dlRHaHVTaHJ5d1VxOTlPWjZhMzI5dW54UktESmFGOHdwbGRuSlU2bnFJSF92NnhId0ZwbkpTLXJqNXc?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Govt raises deepwater gas price ceiling to $9.89 per MMBtu; APM gas cap at $7",
+      "publisher": "ET EnergyWorld",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOSWxsY3pfTEVVM3JBbVN5VWpkLTFaR1FXOVZTQ2E3RGJELVlkb1hOT2hsSEFOc1NnWEhtTTBzUXFRZ0JpN2w3aXhyY1ppMllsRUtlRERMX0gwMUU3V21wYXJmNHoyMFpWbVAwNjNzY3ZiM3F4blNWdnhCdEVFUUhWOGdTOVNsVFNXU0JfZFgxWExYYmd6V2RJNDJRTG9tR3g0cHNsdWRYRldNMGNJLTdYUzJfbUNwakd5cmpBOGp4OFRPOU1fR3R2NmZfSkRTNmNDZm5tWlJ6SXR0NkE3QWfSAeMBQVVfeXFMTTdMeDNpT3ZXTWctbjdORWFucE1CMDl5c3pjY1VYYnZWbE9XM0RpNnpZZTJZOFVGZ0pJeWM3d3c0aW9kTUxYRVdsMkRRV1JCUTBEdWJrQ1AtN2k0akhfclhfcjJXam1MS3Y2aDNrSU9RVjFMMUFuQy1SS0dRZ0I1enhCVmlKMzgtNldsNVFjendnS0NJdzQydmxpZ29UblFJREFJLTROY005N0xjM0lYNjNiMVVaaXI0eEFodGZOUFl5VGhXZDNxQ212ZzZmZk10N2pPcXh6SVJ4TlZTbWtKZGJwOEE?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
     },
     {
       "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",

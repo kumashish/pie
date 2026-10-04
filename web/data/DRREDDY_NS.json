@@ -276,7 +276,8 @@
       "score": 90.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x DRREDDY.NS 24-Nov-2026 1250 Call<br> Buy 1x DRREDDY.NS 24-Nov-2026 1300 Call"
     },
     {
       "strategy_type": "iron_condor",
@@ -284,7 +285,8 @@
       "score": 78.5,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1100 Put<br> Sell 1x DRREDDY.NS 24-Nov-2026 1150 Put<br> Sell 1x DRREDDY.NS 24-Nov-2026 1250 Call<br> Buy 1x DRREDDY.NS 24-Nov-2026 1300 Call"
     },
     {
       "strategy_type": "butterfly",
@@ -292,7 +294,8 @@
       "score": 48.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1150 Call<br> Sell 1x DRREDDY.NS 24-Nov-2026 1200 Call<br> Sell 1x DRREDDY.NS 24-Nov-2026 1200 Call<br> Buy 1x DRREDDY.NS 24-Nov-2026 1250 Call"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -300,7 +303,8 @@
       "score": 46.2,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE"
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x DRREDDY.NS 24-Nov-2026 1206.2 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -308,7 +312,8 @@
       "score": 41.9,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x DRREDDY.NS 24-Nov-2026 1150 Put<br> Sell 1x DRREDDY.NS 24-Nov-2026 1250 Call<br> Buy 1x DRREDDY.NS 24-Nov-2026 1300 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
@@ -316,7 +321,8 @@
       "score": 41.0,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1150 Call<br> Sell 1x DRREDDY.NS 24-Nov-2026 1200 Call<br> Sell 1x DRREDDY.NS 24-Nov-2026 1200 Call<br> Buy 1x DRREDDY.NS 24-Nov-2026 1250 Call"
     }
   ],
   "indicators": {

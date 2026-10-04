@@ -2,34 +2,34 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 05, 00:26 IST | 🟡 Credit Spread   | 7.5/10    | Sell 1x SPY 20-Nov-2026 810 Call /  Buy 1x SPY 20-Nov-2026 825 Call | Active (Today, 00:26)  |
-| QQQ       | Oct 05, 00:26 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x QQQ 20-Nov-2026 710 Put /  Buy 1x QQQ 20-Nov-2026 700 Put | Active (Today, 00:26)  |
+| SPY       | Oct 05, 00:33 IST | 🟡 Credit Spread   | 7.5/10    | Sell 1x SPY 20-Nov-2026 810 Call /  Buy 1x SPY 20-Nov-2026 825 Call | Active (Today, 00:33)  |
+| QQQ       | Oct 05, 00:33 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x QQQ 20-Nov-2026 710 Put /  Buy 1x QQQ 20-Nov-2026 700 Put | Active (Today, 00:33)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ^NSEMDCP50 | Oct 05, 00:27 IST | 🟡 Credit Spread   | 3.5/10    | S1x-Nov-17750CE-B1x-Nov-17950CE | Active (Today, 00:27)  |
-| ^NSEI     | Oct 05, 00:27 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-23600CE-B1x-Nov-23800CE | Active (Today, 00:27)  |
-| NIFTY_FIN_SERVICE.NS | Oct 05, 00:27 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-23250PE-B1x-Nov-22750PE | Active (Today, 00:27)  |
-| ^BSESN    | Oct 05, 00:27 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-75800CE-B1x-Nov-76500CE | Active (Today, 00:27)  |
-| ^NSEBANK  | Oct 05, 00:27 IST | 🟡 Credit Spread   | 1.0/10    | S1x-Nov-57400CE-B1x-Nov-58100CE | Active (Today, 00:27)  |
+| ^NSEMDCP50 | Oct 05, 00:34 IST | 🟡 Credit Spread   | 3.5/10    | S1x-Nov-17750CE-B1x-Nov-17950CE | Active (Today, 00:34)  |
+| ^NSEI     | Oct 05, 00:34 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-23600CE-B1x-Nov-23800CE | Active (Today, 00:34)  |
+| NIFTY_FIN_SERVICE.NS | Oct 05, 00:34 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-23250PE-B1x-Nov-22750PE | Active (Today, 00:34)  |
+| ^BSESN    | Oct 05, 00:34 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-75800CE-B1x-Nov-76500CE | Active (Today, 00:34)  |
+| ^NSEBANK  | Oct 05, 00:34 IST | 🟡 Credit Spread   | 1.0/10    | S1x-Nov-57400CE-B1x-Nov-58100CE | Active (Today, 00:34)  |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 #### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| META      | Oct 05, 00:26 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 770 Call /  Buy 1x META 20-Nov-2026 795 Call | Active (Today, 00:26)  |
-| NVDA      | Oct 05, 00:26 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x NVDA 20-Nov-2026 250 Call /  Buy 1x NVDA 20-Nov-2026 255 Call | Active (Today, 00:26)  |
-| MSFT      | Oct 05, 00:26 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSFT 20-Nov-2026 550 Call /  Buy 1x MSFT 20-Nov-2026 560 Call | Active (Today, 00:26)  |
-| MSTR      | Oct 05, 00:26 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSTR 20-Nov-2026 175 Call /  Buy 1x MSTR 20-Nov-2026 185 Call | Active (Today, 00:26)  |
-| SMCI      | Oct 05, 00:26 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x SMCI 20-Nov-2026 47 Call /  Buy 1x SMCI 20-Nov-2026 49 Call | Active (Today, 00:26)  |
-| AAPL      | Oct 05, 00:26 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x AAPL 20-Nov-2026 355 Call /  Buy 1x AAPL 20-Nov-2026 360 Call | Active (Today, 00:26)  |
+| META      | Oct 05, 00:34 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 770 Call /  Buy 1x META 20-Nov-2026 795 Call | Active (Today, 00:34)  |
+| NVDA      | Oct 05, 00:34 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x NVDA 20-Nov-2026 250 Call /  Buy 1x NVDA 20-Nov-2026 255 Call | Active (Today, 00:34)  |
+| MSFT      | Oct 05, 00:34 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSFT 20-Nov-2026 550 Call /  Buy 1x MSFT 20-Nov-2026 560 Call | Active (Today, 00:34)  |
+| MSTR      | Oct 05, 00:34 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSTR 20-Nov-2026 175 Call /  Buy 1x MSTR 20-Nov-2026 185 Call | Active (Today, 00:34)  |
+| SMCI      | Oct 05, 00:34 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x SMCI 20-Nov-2026 47 Call /  Buy 1x SMCI 20-Nov-2026 49 Call | Active (Today, 00:34)  |
+| AAPL      | Oct 05, 00:34 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x AAPL 20-Nov-2026 355 Call /  Buy 1x AAPL 20-Nov-2026 360 Call | Active (Today, 00:34)  |
 
 #### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| DIVISLAB.NS | Oct 05, 00:28 IST | 🟡 Credit Spread   | 8.8/10    | S1x-Nov-9700CE-B1x-Nov-9900CE | Active (Today, 00:28)  |
-| KOTAKBANK.NS | Oct 05, 00:27 IST | 🟡 Credit Spread   | 8.2/10    | S1x-Nov-440CE-B1x-Nov-450CE | Active (Today, 00:27)  |
+| DIVISLAB.NS | Oct 05, 00:35 IST | 🟡 Credit Spread   | 8.8/10    | S1x-Nov-9700CE-B1x-Nov-9900CE | Active (Today, 00:35)  |
+| KOTAKBANK.NS | Oct 05, 00:35 IST | 🟡 Credit Spread   | 8.2/10    | S1x-Nov-440CE-B1x-Nov-450CE | Active (Today, 00:35)  |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 

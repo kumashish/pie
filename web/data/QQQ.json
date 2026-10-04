@@ -276,7 +276,8 @@
       "score": 99.7,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 790 Call<br> Buy 1x QQQ 20-Nov-2026 800 Call"
     },
     {
       "strategy_type": "jade_lizard",
@@ -284,7 +285,8 @@
       "score": 76.9,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 710 Put<br> Sell 1x QQQ 20-Nov-2026 790 Call<br> Buy 1x QQQ 20-Nov-2026 800 Call"
     },
     {
       "strategy_type": "iron_condor",
@@ -292,7 +294,8 @@
       "score": 75.2,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 700 Put<br> Sell 1x QQQ 20-Nov-2026 710 Put<br> Sell 1x QQQ 20-Nov-2026 790 Call<br> Buy 1x QQQ 20-Nov-2026 800 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -300,7 +303,8 @@
       "score": 59.2,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE"
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 710 Call<br> Sell 1x QQQ 20-Nov-2026 770 Call"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -308,7 +312,8 @@
       "score": 47.6,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
-      "trade_profile": "Advisory | 30-45 DTE"
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 749.6 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -316,7 +321,8 @@
       "score": 45.8,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
-      "trade_profile": "Advisory | 30-45 DTE"
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 710 Put"
     },
     {
       "strategy_type": "butterfly",
@@ -324,7 +330,8 @@
       "score": 44.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 730 Call<br> Sell 1x QQQ 20-Nov-2026 750 Call<br> Sell 1x QQQ 20-Nov-2026 750 Call<br> Buy 1x QQQ 20-Nov-2026 770 Call"
     },
     {
       "strategy_type": "naked_put",
@@ -332,7 +339,8 @@
       "score": 42.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta"
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 710 Put"
     }
   ],
   "indicators": {

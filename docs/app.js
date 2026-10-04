@@ -641,6 +641,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
               </div>
               <div style="font-size: 12px; color: #cbd5e1; line-height: 1.4;">${item.rationale}</div>
+              ${item.legs_summary ? `<div style="font-size: 12px; font-weight: 700; color: var(--accent-cyan); font-family: monospace; background: rgba(0,0,0,0.3); padding: 4px 8px; border-radius: 4px; display: inline-block;">${item.legs_summary}</div>` : ''}
               <div style="font-size: 11px; color: #94a3b8; font-family: monospace;">Profile: ${item.trade_profile}</div>
             </div>
           `;

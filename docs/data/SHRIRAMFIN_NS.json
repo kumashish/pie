@@ -276,7 +276,8 @@
       "score": 98.4,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 995 Call<br> Buy 1x SHRIRAMFIN.NS 24-Nov-2026 1020 Call"
     },
     {
       "strategy_type": "iron_condor",
@@ -284,7 +285,8 @@
       "score": 93.4,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 870 Put<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 895 Put<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 995 Call<br> Buy 1x SHRIRAMFIN.NS 24-Nov-2026 1020 Call"
     },
     {
       "strategy_type": "butterfly",
@@ -292,7 +294,8 @@
       "score": 59.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 920 Call<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 945 Call<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 945 Call<br> Buy 1x SHRIRAMFIN.NS 24-Nov-2026 970 Call"
     },
     {
       "strategy_type": "jade_lizard",
@@ -300,7 +303,8 @@
       "score": 58.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 895 Put<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 995 Call<br> Buy 1x SHRIRAMFIN.NS 24-Nov-2026 1020 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
@@ -308,7 +312,8 @@
       "score": 51.7,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 920 Call<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 945 Call<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 945 Call<br> Buy 1x SHRIRAMFIN.NS 24-Nov-2026 995 Call"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -316,7 +321,8 @@
       "score": 49.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle"
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 895 Put<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 945 Put<br> Sell 1x SHRIRAMFIN.NS 24-Nov-2026 945 Call<br> Buy 1x SHRIRAMFIN.NS 24-Nov-2026 995 Call"
     },
     {
       "strategy_type": "naked_put",
@@ -324,7 +330,8 @@
       "score": 40.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta"
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 895 Put"
     }
   ],
   "indicators": {

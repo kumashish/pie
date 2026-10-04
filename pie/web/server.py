@@ -8,7 +8,7 @@ from typing import Any
 import urllib.parse
 
 from pie.market.indicators.engine import IndicatorEngine
-from pie.market.strategy import score_all_strategies, select_strategy
+from pie.market.strategy import StrategyRecommendation, score_all_strategies, select_strategy
 from pie.market.trade_estimate import estimate_trade
 from pie.market.trend.engine import TrendEngine
 from pie.market_data.csv_loader import save_market_data
@@ -16,7 +16,7 @@ from pie.market_data.snapshots import SnapshotBuilder
 from pie.providers.news import StockNewsProvider
 from pie.providers.search import TickerSearchProvider
 from pie.providers.yahoo import UrllibHTTPClient, YahooFinanceProvider
-from pie.reporting.readme_update import get_trade_profile
+from pie.reporting.readme_update import format_short_indian_strategy, get_trade_profile
 
 
 def _format_strike(strike: float) -> str:
@@ -276,6 +276,32 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
                 "grade": fit.grade,
                 "rationale": fit.rationale,
                 "trade_profile": get_trade_profile(stype),
+                "legs_summary": (
+                    lambda alt_rec: (
+                        lambda alt_trade: (
+                            format_short_indian_strategy(
+                                "<br> ".join([
+                                    f"{'Buy' if (leg.action.value if hasattr(leg.action, 'value') else str(leg.action)).upper() in {'BUY','LONG'} else 'Sell'} 1x {sym_upper} {alt_trade.expiration.strftime('%d-%b-%Y')} {_format_strike(leg.strike)} {'Call' if (leg.right.value if hasattr(leg.right, 'value') else str(leg.right)).upper() in {'CALL','CE','C'} else 'Put'}"
+                                    for leg in alt_trade.legs
+                                ])
+                            ) if (sym_upper.endswith(".NS") or sym_upper.endswith(".BO") or sym_upper.startswith("^NSE") or sym_upper.startswith("^BSE")) else "<br> ".join([
+                                f"{'Buy' if (leg.action.value if hasattr(leg.action, 'value') else str(leg.action)).upper() in {'BUY','LONG'} else 'Sell'} 1x {sym_upper} {alt_trade.expiration.strftime('%d-%b-%Y')} {_format_strike(leg.strike)} {'Call' if (leg.right.value if hasattr(leg.right, 'value') else str(leg.right)).upper() in {'CALL','CE','C'} else 'Put'}"
+                                for leg in alt_trade.legs
+                            ])
+                        ) if alt_trade else None
+                    )(
+                        estimate_trade(
+                            symbol=sym_upper,
+                            spot_price=float(snapshot.last_price),
+                            annualized_vix=annualized_vix,
+                            recommendation=alt_rec,
+                            vix_source="live",
+                            atr14=_atr14_val,
+                            ema20=_ema20_val,
+                            ema50=_ema50_val,
+                        )
+                    )
+                )(StrategyRecommendation(strategy=stype, actionable=True, rationale=fit.rationale)),
             }
             for stype, fit in sorted(
                 score_all_strategies(
