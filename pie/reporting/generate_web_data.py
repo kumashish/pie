@@ -1,6 +1,7 @@
 """Generate static JSON market analysis data for GitHub Pages web app deployment."""
 
 import json
+from datetime import UTC, datetime
 from pathlib import Path
 
 from pie.web.server import analyze_symbol
@@ -181,6 +182,46 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
     (output_dir / "index.json").write_text(index_content, encoding="utf-8")
     (docs_dir / "index.json").write_text(index_content, encoding="utf-8")
     print(f"Successfully generated {len(summary_index)} web data files!")
+
+    # Auto-update reports/market/snapshot.json and README.md
+    try:
+        snapshot_list = []
+        for symbol in POPULAR_SYMBOLS:
+            try:
+                data = analyze_symbol(symbol)
+                # Map strategy display for snapshot
+                leg_str = ""
+                if data.get("estimated_trade") and data["estimated_trade"].get("legs"):
+                    leg_summaries = [leg["summary"] for leg in data["estimated_trade"]["legs"]]
+                    leg_str = "<br> ".join(leg_summaries)
+
+                snapshot_list.append({
+                    "symbol": data["symbol"],
+                    "market": data["symbol"],
+                    "last_updated": datetime.now(UTC).isoformat(),
+                    "trend": f"🟢 {data['regime_display']}" if "bull" in data["regime"].lower() else (f"🔴 {data['regime_display']}" if "bear" in data["regime"].lower() else f"🟡 {data['regime_display']}"),
+                    "strategy": leg_str or data["strategy_display"],
+                    "strategy_type": data["strategy_type"],
+                    "fit_score": data["fit_score"],
+                    "signal": "Active" if data.get("is_high_score") else "New",
+                    "signal_since": datetime.now(UTC).isoformat(),
+                })
+            except Exception:
+                pass
+
+        snapshot_path = Path("reports/market/snapshot.json")
+        snapshot_path.parent.mkdir(parents=True, exist_ok=True)
+        snapshot_path.write_text(json.dumps(snapshot_list, indent=2), encoding="utf-8")
+
+        # Re-run README updater
+        from pie.reporting.readme_update import load_market_data_from_json, update_readme_snapshot
+        readme_file = Path("README.md")
+        if readme_file.exists():
+            market_rows = load_market_data_from_json(snapshot_path)
+            update_readme_snapshot(readme_file, market_rows)
+            print("Successfully updated README.md and reports/market/snapshot.json!")
+    except Exception as e:
+        print(f"[Warning] Failed to auto-update snapshot and README: {e}")
 
 
 if __name__ == "__main__":
