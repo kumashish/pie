@@ -1,307 +1,283 @@
 {
   "symbol": "WFC",
-  "last_price": 80.25,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 80.45,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 3.2,
-  "fit_score": 32.5,
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 32.5,
-  "vix": 15.93,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "confidence_percentage": 25.0,
+  "vix": 15.31,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (55.0% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (55.6% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 83.0,
+        "strike_formatted": "83",
+        "option_type": "Call",
+        "delta": 0.336,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Sell 1x WFC 20-Nov-2026 83 Call"
+      },
+      {
         "action": "Buy",
-        "quantity": 1,
-        "strike": 73.0,
-        "strike_formatted": "73",
-        "option_type": "Put",
-        "delta": -0.039,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x WFC 20-Nov-2026 73 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 76.0,
-        "strike_formatted": "76",
-        "option_type": "Put",
-        "delta": -0.141,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x WFC 20-Nov-2026 76 Put"
-      },
-      {
-        "action": "Sell",
         "quantity": 1,
         "strike": 85.0,
         "strike_formatted": "85",
         "option_type": "Call",
-        "delta": 0.2,
+        "delta": 0.196,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x WFC 20-Nov-2026 85 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 87.0,
-        "strike_formatted": "87",
-        "option_type": "Call",
-        "delta": 0.108,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x WFC 20-Nov-2026 87 Call"
+        "dte": 47,
+        "summary": "Buy 1x WFC 20-Nov-2026 85 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 4.0,
-    "stop_loss_price": 77.84,
-    "take_profit_price": 82.66,
-    "net_delta": 0.01,
-    "net_theta": 0.011,
+    "margin_required": 3.0,
+    "stop_loss_price": 78.04,
+    "take_profit_price": 82.86,
+    "net_delta": -0.14,
+    "net_theta": 0.006,
     "probability_of_profit": 0.0,
-    "var_95": 2.8,
+    "var_95": 2.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 64.2,
-        "pnl": -7.0
+        "price": 64.36,
+        "pnl": -3.0
       },
       {
-        "price": 64.84,
-        "pnl": -7.0
+        "price": 65.0,
+        "pnl": -3.0
       },
       {
-        "price": 65.48,
-        "pnl": -7.0
+        "price": 65.65,
+        "pnl": -3.0
       },
       {
-        "price": 66.13,
-        "pnl": -7.0
+        "price": 66.29,
+        "pnl": -3.0
       },
       {
-        "price": 66.77,
-        "pnl": -7.0
+        "price": 66.93,
+        "pnl": -3.0
       },
       {
-        "price": 67.41,
-        "pnl": -7.0
+        "price": 67.58,
+        "pnl": -3.0
       },
       {
-        "price": 68.05,
-        "pnl": -7.0
+        "price": 68.22,
+        "pnl": -3.0
       },
       {
-        "price": 68.69,
-        "pnl": -7.0
+        "price": 68.87,
+        "pnl": -3.0
       },
       {
-        "price": 69.34,
-        "pnl": -7.0
+        "price": 69.51,
+        "pnl": -3.0
       },
       {
-        "price": 69.98,
-        "pnl": -7.0
+        "price": 70.15,
+        "pnl": -3.0
       },
       {
-        "price": 70.62,
-        "pnl": -7.0
+        "price": 70.8,
+        "pnl": -3.0
       },
       {
-        "price": 71.26,
-        "pnl": -7.0
+        "price": 71.44,
+        "pnl": -3.0
       },
       {
-        "price": 71.9,
-        "pnl": -7.0
+        "price": 72.08,
+        "pnl": -3.0
       },
       {
-        "price": 72.55,
-        "pnl": -7.0
+        "price": 72.73,
+        "pnl": -3.0
       },
       {
-        "price": 73.19,
-        "pnl": -6.81
+        "price": 73.37,
+        "pnl": -3.0
       },
       {
-        "price": 73.83,
-        "pnl": -6.17
+        "price": 74.01,
+        "pnl": -3.0
       },
       {
-        "price": 74.47,
-        "pnl": -5.53
+        "price": 74.66,
+        "pnl": -3.0
       },
       {
-        "price": 75.11,
-        "pnl": -4.89
+        "price": 75.3,
+        "pnl": -3.0
       },
       {
-        "price": 75.76,
-        "pnl": -4.24
+        "price": 75.94,
+        "pnl": -3.0
       },
       {
-        "price": 76.4,
-        "pnl": -4.0
+        "price": 76.59,
+        "pnl": -3.0
       },
       {
-        "price": 77.04,
-        "pnl": -4.0
+        "price": 77.23,
+        "pnl": -3.0
       },
       {
-        "price": 77.68,
-        "pnl": -4.0
+        "price": 77.88,
+        "pnl": -3.0
       },
       {
-        "price": 78.32,
-        "pnl": -4.0
+        "price": 78.52,
+        "pnl": -3.0
       },
       {
-        "price": 78.97,
-        "pnl": -4.0
+        "price": 79.16,
+        "pnl": -3.0
       },
       {
-        "price": 79.61,
-        "pnl": -4.0
+        "price": 79.81,
+        "pnl": -3.0
       },
       {
-        "price": 80.25,
-        "pnl": -4.0
+        "price": 80.45,
+        "pnl": -3.0
       },
       {
-        "price": 80.89,
-        "pnl": -4.0
+        "price": 81.09,
+        "pnl": -3.0
       },
       {
-        "price": 81.53,
-        "pnl": -4.0
+        "price": 81.74,
+        "pnl": -3.0
       },
       {
-        "price": 82.18,
-        "pnl": -4.0
+        "price": 82.38,
+        "pnl": -3.0
       },
       {
-        "price": 82.82,
-        "pnl": -4.0
+        "price": 83.02,
+        "pnl": -3.02
       },
       {
-        "price": 83.46,
-        "pnl": -4.0
+        "price": 83.67,
+        "pnl": -3.67
       },
       {
-        "price": 84.1,
-        "pnl": -4.0
+        "price": 84.31,
+        "pnl": -4.31
       },
       {
-        "price": 84.74,
-        "pnl": -4.0
+        "price": 84.96,
+        "pnl": -4.96
       },
       {
-        "price": 85.39,
-        "pnl": -4.39
+        "price": 85.6,
+        "pnl": -5.0
       },
       {
-        "price": 86.03,
-        "pnl": -5.03
+        "price": 86.24,
+        "pnl": -5.0
       },
       {
-        "price": 86.67,
-        "pnl": -5.67
+        "price": 86.89,
+        "pnl": -5.0
       },
       {
-        "price": 87.31,
-        "pnl": -6.0
+        "price": 87.53,
+        "pnl": -5.0
       },
       {
-        "price": 87.95,
-        "pnl": -6.0
+        "price": 88.17,
+        "pnl": -5.0
       },
       {
-        "price": 88.6,
-        "pnl": -6.0
+        "price": 88.82,
+        "pnl": -5.0
       },
       {
-        "price": 89.24,
-        "pnl": -6.0
+        "price": 89.46,
+        "pnl": -5.0
       },
       {
-        "price": 89.88,
-        "pnl": -6.0
+        "price": 90.1,
+        "pnl": -5.0
       },
       {
-        "price": 90.52,
-        "pnl": -6.0
+        "price": 90.75,
+        "pnl": -5.0
       },
       {
-        "price": 91.16,
-        "pnl": -6.0
+        "price": 91.39,
+        "pnl": -5.0
       },
       {
-        "price": 91.81,
-        "pnl": -6.0
+        "price": 92.03,
+        "pnl": -5.0
       },
       {
-        "price": 92.45,
-        "pnl": -6.0
+        "price": 92.68,
+        "pnl": -5.0
       },
       {
-        "price": 93.09,
-        "pnl": -6.0
+        "price": 93.32,
+        "pnl": -5.0
       },
       {
-        "price": 93.73,
-        "pnl": -6.0
+        "price": 93.97,
+        "pnl": -5.0
       },
       {
-        "price": 94.37,
-        "pnl": -6.0
+        "price": 94.61,
+        "pnl": -5.0
       },
       {
-        "price": 95.02,
-        "pnl": -6.0
+        "price": 95.25,
+        "pnl": -5.0
       },
       {
-        "price": 95.66,
-        "pnl": -6.0
+        "price": 95.9,
+        "pnl": -5.0
       },
       {
-        "price": 96.3,
-        "pnl": -6.0
+        "price": 96.54,
+        "pnl": -5.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.693,
+      "win_probability": 0.695,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2237,
+      "half_kelly_fraction": 0.2255,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "84.11",
-    "EMA50": "85.26",
-    "EMA100": "84.86",
-    "EMA200": "83.90",
-    "RSI(14)": "32.58",
-    "ATR(14)": "1.93",
-    "ADX(14)": "23.07",
-    "BB(20,2)": "0.14"
+    "EMA20": "83.76",
+    "EMA50": "85.08",
+    "EMA100": "84.78",
+    "EMA200": "83.87",
+    "RSI(14)": "33.62",
+    "ATR(14)": "1.86",
+    "ADX(14)": "24.51",
+    "BB(20,2)": "0.19"
   },
   "rules": [
     {
@@ -312,14 +288,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -361,14 +337,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -384,44 +360,44 @@
   ],
   "news": [
     {
-      "title": "MSFT Stock Lands On Wells Fargo\u2019s Q4 \u2018Tactical Ideas List\u2019 \u2013 Analyst Sees A 41% Upside Potential",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/msft-stock-lands-wells-fargo-171306741.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Microsoft Stock Gets Flashy New Price Target From Wells Fargo",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stock-gets-flashy-price-170430954.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AppLovin Falls 3% as Wells Fargo Calls Pixel Install Spike a False Start; Trade Desk Sits Out the Selloff, Magnite Dips",
+      "title": "In 1959, A Vermont Gas Station Attendant Spent $2,380 On His First 39 Shares Of Stock. Over The Next 5 Decades, He Built A 95+ Stock Portfolio Of Blue Chip Dividend Payers. By 2014, Ronald Read\u2019s Portfolio Was Worth Nearly $8 Million",
       "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/applovin-falls-3-wells-fargo-160210854.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "WFC's Credit Rating Upgraded to 'A-' by S&P, Outlook Remains Stable",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wfcs-credit-rating-upgraded-p-154100981.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Microsoft Just Got a $725 Price Target as Wells Fargo Bets on Its AI Edge",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-just-got-725-price-152718229.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/1959-vermont-gas-station-attendant-165956484.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Netflix\u2019s Problem Isn\u2019t Subscribers, It\u2019s Losing the Attention War",
-      "publisher": "Barchart",
-      "link": "https://finance.yahoo.com/media-advertising/articles/netflix-problem-isn-t-subscribers-130002806.html",
+      "title": "Elon Musk Hints at Tesla-SpaceX Merger: \u201cWho Can Imagine What Action One Might Take\u201d",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-hints-tesla-spacex-131505937.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How to Create a Million-Dollar Stock Portfolio",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/create-million-dollar-stock-portfolio-214000884.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wells Fargo Adjusts ON Semiconductor Price Target to $100 From $85, Maintains Overweight Rating",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-adjusts-semiconductor-price-125231704.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPMorgan Adjusts Wells Fargo Price Target to $91.50 From $95.50, Maintains Neutral Rating",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-adjusts-wells-fargo-price-121525161.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 of Wall Street\u2019s Favorite Stocks to Keep an Eye On and 2 We Ignore",
+      "publisher": "StockStory",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/1-wall-street-favorite-stocks-114203654.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

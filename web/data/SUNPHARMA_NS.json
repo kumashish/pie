@@ -23,10 +23,10 @@
         "strike": 1650.0,
         "strike_formatted": "1650",
         "option_type": "Put",
-        "delta": -0.04,
+        "delta": -0.038,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1650 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 1700.0,
         "strike_formatted": "1700",
         "option_type": "Put",
-        "delta": -0.114,
+        "delta": -0.11,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1700 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 1900.0,
         "strike_formatted": "1900",
         "option_type": "Call",
-        "delta": 0.208,
+        "delta": 0.202,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1900 Call"
       },
       {
@@ -59,10 +59,10 @@
         "strike": 1950.0,
         "strike_formatted": "1950",
         "option_type": "Call",
-        "delta": 0.1,
+        "delta": 0.094,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1950 Call"
       }
     ],
@@ -72,8 +72,8 @@
     "margin_required": 50.0,
     "stop_loss_price": 1746.97,
     "take_profit_price": 1855.03,
-    "net_delta": -0.034,
-    "net_theta": 0.21,
+    "net_delta": -0.036,
+    "net_theta": 0.217,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -384,6 +384,13 @@
   ],
   "news": [
     {
+      "title": "Sun Pharma\u2019s Leqselvi sustains hair regrowth for over two years in long-term study",
+      "publisher": "ETPharma.com",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUDJSVDVWTnpjSG5udDN2QWhGV01CekV5S1RfZjN3NFRwOEt2Mmo4aVdWZFk4T3BJLWRiZHl4TlpvcHZrYl9LNUdLNlFuaTJQX2ZkeXhmSG1OellXSUt1Q1VTVVJ5dzBaTjZTbWppakY0UXlWTXFiMEJISEdzdXZvMFo3dFlzbGh3SUFqRzJraEJqR2NyaDRtWWdVaTVtM2VxX3JDNzRRNGRFT3BCVWluNTRidnZ1SF9uRGVOZm9JU2czUzhtdTFEamxnUjRjNExxMXVTN0VLSm1LTEVraGJOYl82eGZxMUg3ZW5oRHpUb0ZKckMydFFhZ9IB_gFBVV95cUxQN3Y5NmZhNEFtQU1IQmZ4aGk4TDZPaW1sMEdodnJLQnd2WmtwN3RMTFY5SF9VRElaVGUzUS1BVjI0UzBxU0NEbF93NXp0cHNfNm9KcFQ2WlJ6Nm4tSnhUa3JyQ2xJeWYteFFiSjN6TUgtSnhLMHBvcmZ1b3JsWmxhTXgtaEhPamRjZVBxVDNBYkpwaHFoUUxGRmloeS1CTW91RTJhOU1mbnhlVURwbjlIdkg1ZnNKLWtDNm45OWJyNnFKQVEySTMwNlpiLUFra25Sc01mY0ppZ1Z3cXpXUHk4bmRHUjFnMl9DY29GTC04X3plR3h0anhLc3ZLbjZnZw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Sun Pharma steps into PCSK9 arena with LIB Therapeutics\u2019 monthly-shot",
       "publisher": "ETPharma.com",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlhsVE1DYXF2U1BGb3ZLM3RBaWY1bUt3VkF0dkdkUnRHdGg0aTNJRjNTRjNVNGpkVkpvWjNoaTVwMUlKVnBnVnB3c1ZvbzhHRFVjVUk0ZDRreElLQm5HU2RRZFJ4UWI1RmNtRV9jWmNKaU1wT0tXazJ5NnRyLTU0TUoxcTBlamlfTE1xajJoYV9VU0dyd21XN1dMcTF4Wmg4aGVheTRucTlXWmJ3SUFzWmgyVHRrYkp0bU9LWjdSYWY2RDNoQ25xWjFTWEZ0aEJfTEZRTmhTRmNoQlN4VExjU9IB5gFBVV95cUxNaEdHQTRzZGs5NzNjR3ljMm81WU1SSjhzSFMxX0xIem9yTjdHZjZTdFo0SUNmYWJselBHTWNwUWZSQmRWal9udF9pQi16cVVxRkpoMmxOT1hXLVdNNTZBRFhWZXk5RGNHbGpqU3BfenEzVEN3OXprc095S1BkYmJBRGctbUlxbHdTNXo1ejl1QU1FRUdWS2plZndlLW96RmJ6d3RnQy1HR2xaZ1NxRUdvNTVPcjFRek1BQnJtVENVNGg4VWdCbUZ4YnZLRXE0SHJFN3NCVk42azBVZy02aGw3OWxJSFpLZw?oc=5",
@@ -398,32 +405,25 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Sun Pharma\u2019s Leqselvi sustains hair regrowth for over two years in long-term study",
+      "title": "Sun Pharma plans $1 billion local debt sale for loan takeout, sources say",
       "publisher": "ETPharma.com",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUDJSVDVWTnpjSG5udDN2QWhGV01CekV5S1RfZjN3NFRwOEt2Mmo4aVdWZFk4T3BJLWRiZHl4TlpvcHZrYl9LNUdLNlFuaTJQX2ZkeXhmSG1OellXSUt1Q1VTVVJ5dzBaTjZTbWppakY0UXlWTXFiMEJISEdzdXZvMFo3dFlzbGh3SUFqRzJraEJqR2NyaDRtWWdVaTVtM2VxX3JDNzRRNGRFT3BCVWluNTRidnZ1SF9uRGVOZm9JU2czUzhtdTFEamxnUjRjNExxMXVTN0VLSm1LTEVraGJOYl82eGZxMUg3ZW5oRHpUb0ZKckMydFFhZ9IB_gFBVV95cUxQN3Y5NmZhNEFtQU1IQmZ4aGk4TDZPaW1sMEdodnJLQnd2WmtwN3RMTFY5SF9VRElaVGUzUS1BVjI0UzBxU0NEbF93NXp0cHNfNm9KcFQ2WlJ6Nm4tSnhUa3JyQ2xJeWYteFFiSjN6TUgtSnhLMHBvcmZ1b3JsWmxhTXgtaEhPamRjZVBxVDNBYkpwaHFoUUxGRmloeS1CTW91RTJhOU1mbnhlVURwbjlIdkg1ZnNKLWtDNm45OWJyNnFKQVEySTMwNlpiLUFra25Sc01mY0ppZ1Z3cXpXUHk4bmRHUjFnMl9DY29GTC04X3plR3h0anhLc3ZLbjZnZw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMk9YalhuMXFNdHRndnVPYWJHSTZ0akJKN2Q1Mzd3LUduN1JNSFBlQmttc1l5UjdWLTZrbEhFZHBJbU5QTXAyc0F3cmg3bE1UX0gtcElTOXNVd0dibzZPODY1d1hvMDhmVmRfRzVwRXVpTmV3VS1JVGhZaXZOY2duNXFBdmtwdkNnb0ZVT3RCblg0Y1JNNXZ4S0l1U09BX1BERHZjTG1vWVY0YkFKMXpwUWdkNGwxbzZwRGswSW5mNjZ1ckJZMUVLdGxOY2ZsU0FoTVVsdW9senFDTmNsaDR30gHkAUFVX3lxTE5DbmttN3RtMXllRXVZSzREc2pXSVB1dzg1UE5uem1PMkNySHFCOTlvRVNhRnNoS2pwSTBqeW1EWWpvWEVPOEtzdjJuZWh0V09ZczJhZ0Q1VkF4LWJ4STdBX3VpeUg4SWhOMTBQdEJFdXFiTmp5ZmpreGVTandrQndSUWNiSHVWVVdEX1dhT2d0Unc2dGVCX2RMX1pSV0hkZTRKeHZpMUVIZEM1WU15SkR4SXo0QWdINlJ5NndpNklSWkxlQTJvVGNCTmtsdHloUVNyR3RidjNjQloxaWZMaFlfWWVXQg?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "534",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
       "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
     },
     {
-      "title": "Sun Pharma plans \u20b910,000 crore bond sale to refinance Organon acquisition loan: Report",
+      "title": "The financial risks you cannot see coming",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWGhmTmJBUzdOUTFIc3UyNVpJU0swNEE0R3lwcU4zNGV4QVp6MFM2aEFwV0IxT3VEYUdfVU8yR09RMk5nYUxHaUgzaGJSbk9Xa3FUQ215NXNsc1ltcGhlVmw5bVpnZmhfZDRPQUN3MTZ3dG9LdkdJczJDVjZHVVM3SjMzREpOaEljTFNCOHFnVU5RVXpQbmczN3M4V0hSc2l2MW9NNDVRcXJWbTV1d2lUa09Wcjg1TzdQODIxdjhpdFdrdnVvZlZFNlNjUHRZSnY4NUgxdUVoeHNTX2VCOUxQd9IB5gFBVV95cUxPSjdpY09mVC1wNThpM003bV9hdU5UbHYta1E4NWhNMk1hcmhwbWRoc3hkc1FSWnB5Yk5HMHVMcE9pZ3hJcDhhZW9BX0pGRTlmRDRPQWxzZUMxMTBvcjJfc2hlWi1MVXpxOGJ1cHp2MDQtcElJeGEtNUtJRXY3OEFkZzdHT0FMZzI3UDJicEtGMnhVWUE5bVdyeThaRVhrSDN0dERsYjNmSzR4bFZLaUUyOFdCbWVCRzk2SU51bzBqN21OT2ljMDVCTWV1TnVnaWs5NktSd2tzNFhjZkVjeXJhWjlxejZEdw?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sun Pharma recalls topical anesthetic, anti-fungal cream in US",
-      "publisher": "ETPharma.com",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOelhmcFd6S3Z0LUQ2TUI3dGVOMmNZeGtNZzBNN3ducjl6R0tEQy1IQ3hPVmhBMTE4Z3N4MXRfVUVYV1FiQzZka0lXRmZkbFp1bHRUa003TG0xQWhLNG9MSlVnd1M1RzRoWmFnaEM1c2Y3WHkxSkkxOHg4YXlpNWt1bGpfYlNlUnBGd2NEV0xkWGVDWVpQYkhUOGw3NjU5Tk1jRUFjeUFUVXJjVjNlV2p6eTYxdXdfR2gwTXBKMl92NFhNZTZ3NVdMS3p4WWEtZGNtNkHSAdcBQVVfeXFMTjBocHBpUzUyUzRHX2R1SWl0QXNTdk5nczEtUkpjNUlpdGxtYXhmbTFRZ3ZfQ0ladnU0cHkxM3p3VWk0ZFpyU3lnZjR1a3lmVnA2UnpxSlNicTdrTnpFMjF0WnpabDVZeGxNQ2wxYTN3TlZrVy1rQ3E3UmFVWThHWnFLaFh4a1g5RnNoSE5WbjBPVExxdW0wcmVpQVFiNGZNeFVsVXJSZWNoLUFtNEdDaUhzSUpFM3FIbllUcUs2dWlRWW1XMlgyY2NuNWxBNU9mZU1OXzJLZU0?oc=5",
-      "published_at": "Sat, 26 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sun Pharma, Aurobindo Pharma, other stocks in focus as Trump exempts India from 100% tariffs on some speci",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQVWlXelVob0FaYkpwcmRjbUgzNDd0Tm85aW9xV1BDd2RYUS01a2t3QUVWel8wbjlfaWdoYS1DRWxnbFF3STg1bTZmSlE0bE1DNVJNZzZvWFVoOWxPZTNkSS1nby1yZXpfZVJOdW9IZmc0RUxXLTkwRDZFRElXX05CUEtOSjlLdFowdjJQQlljMmNxaFg3OTlHMnh4N2JpQlJlRkZHRnNkeU5SQUUzOUliMWFZV3d6ZHdXTDFyLWFyUDJPMDJjNk1IS2J1MTYwaHJPQ1o2TlhQVWZPbGk1NW5VUG9fODhfWml1RVlCOWlhQ2k2Um14ZTdPSzJtRUxiR0U2RXN1V185U2JWbFRRSG1NWU5TVEt4Mjh5VDVXTXRVamI4SWfSAZwCQVVfeXFMTnFXMldVak1BVkFldU9wdzVnX0MyWWU0XzQzdVI5ZTY0OWFYVTBDb3FkbkUyRm5BdFZ6V0FLVVI1SWc5SGRMbVBVSmkxMEo0M3AycThscXVkdTlHMWxxaU9XSHVXc0ZqaHJrWklYOWE5OW1OY0ZlMV84MFFXNWduUEtYdmYzRVhEb3RWbWpER2tyUUY4cUJ3aE5QV0JrbG9DY29ZakJ5Nm9rclJWVkRzblhTeGNsUUJXRVVicVlsZnhtaXlTd3JuSlkyN1BBbU5XMXdNcnI2VFNsWlk3STRmSk5fTzBGVC12NzV2ekRpUUtRWXMwN181czZpWUpRRXhEd0JJSk5aRkVIcTZ0T3A1Yl8yVTdfMEktYTlrZnc?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVmNzd0k5b0R5SWdpMkhQTTQ1M0pMM1FaTkE2LU1RZGxGZXZ2SmNJSmplREhCMm5NQ1MzcktuczJpUUJDZHZwSWNMdC1aVjBreDBRaTBjbGdZY2U0YzhWU0g0VkcyVlo1OUxUNGt0dVUwZF9JR1NKX0JHTkhUNGV3QkVqV3hsc2RnVDRCeVI0OWJaeUNTbEZmQXptaGh1dGxUOWpZcTZGak9vajNubGRrdkt3Sk9XVjRNMVRtNEV2VDhxMzhfcXhWTEpPX3hPV1E2eTdiT3NuTG9qWC1peUtYd1gxVVE4WkJ6aVpuZnJZcG9MX2k2TlZ3dWhB0gH_AUFVX3lxTE12MVhGVUgwVGNLa2hMck51WUlEUzlCUlRwM0JVSDI3TUZSTmduWEVnU0dTTzJ6NFpZUUR6YVBTSTl1N2E0dUtKREtNeWdUQS03d2daREpjOE5ZRnNiZDRPMmxsVTFQZlpDMTdJSTZram9CaFctNXpaWkNmcjZGN1VIdGZCUVVhRk1hWk0tUmxOWW5ZOHIySFVqbTNnRXJKM0phT0w3WFZUUXNuVnFwOG43anA3cFZJdzNuU25tUGJXZkhhcndMQXYwOGY1US1KZWZjSzhlMmF4YjdPZDRsOGdiQlQ4c21lRXV2b1ZzeURLN3U3aW5pX0tmcHBBTG55bw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
     }
   ]
 }

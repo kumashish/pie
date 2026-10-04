@@ -23,10 +23,10 @@
         "strike": 11500.0,
         "strike_formatted": "11500",
         "option_type": "Call",
-        "delta": 0.491,
+        "delta": 0.489,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x MARUTI.NS 24-Nov-2026 11500 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 12000.0,
         "strike_formatted": "12000",
         "option_type": "Call",
-        "delta": 0.214,
+        "delta": 0.207,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x MARUTI.NS 24-Nov-2026 12000 Call"
       }
     ],
@@ -48,8 +48,8 @@
     "margin_required": 500.0,
     "stop_loss_price": 11044.42,
     "take_profit_price": 11727.58,
-    "net_delta": -0.277,
-    "net_theta": 1.049,
+    "net_delta": -0.282,
+    "net_theta": 1.097,
     "probability_of_profit": 0.0,
     "var_95": 500.0,
     "vol_skew_25d": 0.0,
@@ -360,6 +360,13 @@
   ],
   "news": [
     {
+      "title": "Automakers ramp up production, dealer stocks to meet festive demand",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZTY5c1VDRGVaYjFFS2dEUzlnd0Fick15d0lNSVBqNkZFdXhXeUdUYUJCcGpFTXR4U0dkdlBoamlPZEUzMGhrQVF1b0FtVFdyMWViN0pDUTc3ZXdVd29pOXFvY2o5MFBSVEJZMThXYXZ6Q083WjQzUGo4TF9WOHhuX29kVjRvWk9QZ25EWWRJUksxQ3lyLU5RUkpCcm0xNE5PcjJwZk5FR3d0V2YzMlk5NmI5N0E5b2pST0RZU3U0cHNxZnYwWEdr0gHMAUFVX3lxTE9lS2lKZ2RfOEd2TW9aRExwUkQySkVpbUpmUmw4ZWQ2MExOTDBfZVVRT2Utc29GRHo0QVhycXJoRW1xM0lpR1ZCa3NuRmVtZnNxa3g4ak9UWXpNSEp2NUJocVFzQTRIWTlPMVFPQ2x6TFdwOU9qUG85ZVZpbGt5dHBKNDljSy1va2RzTGhXT2ZKOEx4NmVzaHIyU3dvYU8zbGQ2ZzJkRVltaUpYRjhIX1NhWGhwQjNMcDRNRTJhQlZVTS12OWJMTnJvekxsag?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Bajaj Auto crashes 8%, auto stocks slide on weak September sales; Maruti, M&M among top losers,...",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNQl9WSzQ2LVJ3Um4zeVRCVmp2T0gwV2o1Q2g4TjNoT1U1cFJWendYbWZEWk1idXhPNTJQS2xCRzB0dHEwZ3FaVnBjYzJ3aGJaekxlbGFUVDg4VDU3ZGFOeHZBM1JmMmJzRUxMUGg3c0F1SHdKcTQ5cGtwNXVYdDdtRjNTRE9WNGc4ZkdfNTZaMENkWmw4TEduRTdyeEJNNWhvcnhacDBFYjFtMFhYTUg3V2JXamhrZnV3MGQ1bTBTdzJoekZPcncyU0VwM1BIOTFGd08yekRzMnB0bkpBN3dOeVZKUDljTTh0ei1wWE1LMEFUUmk0UVZDaFNUT1pCUdIBgwJBVV95cUxPRnY0NjdxQm5fdjVLRXhQWkQ0Y0JLTWRaZ0RaUWtxekpfMDlBaHZfYk1YQUMwLVFDNjBSRkwwT08wQXdxR190Vm1mT0d6MWVwLVNVRDBSeGxvLS1hQ2lMVUlKVjJUbFdBYmR2cUZnbDdCUVlSN0lXSVROY3dQWm5rSmRudUNidDNJSzJlREVTWXJLYnZwTURCS2xtdEhfSmkzc3d1eVpfR0JTM0NNWjFiSC1wSkJrTkVEYW03N3BMNXBhSjl5UVJXM3FhZE1TSXdBeFBLSFNGQWg2SG9Pblk5YlhaUDFMU1FjdWRkQzVyYnZ3a1ZPOVRhNTJWZ3RJSTQ1WEI4?oc=5",
@@ -369,7 +376,7 @@
     {
       "title": "Suzuki asks India suppliers to halt production one day a week as Maruti eyes 4 million cars",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZXFFWHpxLXFIMUpWZ210aVZaekZadWtPU015d2RnNmtfTE9XSGRRYzY1YkdsNkRqcThQdkM1dlV4WHpHX3U4bHJoRFV4V25UQ25uTlJQd3ZHa1U1cHZpOUoyWXdDNVFJOVhQVjRha3lId0ljS3drQjNxdTZDeEVqUWZ0YjFTcTlkdjgyeFcxRUtiQmN3M051azI2UDd3T2xzVExfWkZLN204Nl9UZmVzSHZvY0VkT20zLXFQR0tOX0Rka3BEajJvWXozV3lLRHNlQkw2M2lvb19KUVYzR2JuWFRn?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZXFFWHpxLXFIMUpWZ210aVZaekZadWtPU015d2RnNmtfTE9XSGRRYzY1YkdsNkRqcThQdkM1dlV4WHpHX3U4bHJoRFV4V25UQ25uTlJQd3ZHa1U1cHZpOUoyWXdDNVFJOVhQVjRha3lId0ljS3drQjNxdTZDeEVqUWZ0YjFTcTlkdjgyeFcxRUtiQmN3M051azI2UDd3T2xzVExfWkZLN204Nl9UZmVzSHZvY0VkT20zLXFQR0tOX0Rka3BEajJvWXozV3lLRHNlQkw2M2lvb19KUVYzR2JuWFRn0gHnAUFVX3lxTE9maU5Dc0NyclBVVHJfclZEUkx5cVRoaHNMcTlwRVRPdTl4XzBmaDdyUzVpUUZpYXM5Z2k5WkhHa2kyQXQ4SGxNSFI1WGp2MEltdzFBSml0WDRYQzNoc0FFLV9LM21PMXYwNWh0cUJoNmk2b0Q3akxCZWExT0lUdXdYSldxRF8xR05teGQzc2VEa3U2dXEyQ3VuSm9DNXNRd3ZjLW5FWHJCSmRnWDNVVFFqOUFhRXg4NHN2SmdSRy14S3BKdlJYTEpTUVdHaUptb3hua2pCeGpOY1huVWViV1BBV0NtbUcyNA?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "neutral"
     },
@@ -381,25 +388,18 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Maruti Suzuki appoints Sarada Prasana Nayak as head of production",
+      "publisher": "ET Manufacturing",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQU9SNzdyMXoyNkdtaE5mT002c042YXBwX215V0xXUVh2ejNadk5hYVBBX2RURkYzOGRiajdBcWJOTE9rN0VMb2wwR1ZKQ2szMm0wRndFMloxN05ZeFJ3Rl9XVFJfTEpOcWI3aUI0QlRobDByZHhNaDd6ekY5MVRVOXVQSHNTWkJfY20tQWQzc1NoenlPNlRHRzJvWkxSTHZuMXp3TmhyVXd6TFljcy0tUHlhd0dJdXN5R19DNzdQOW9KQXlyck9CZ2NMLUpoek90ckFXbUtYQUJQUdIB3wFBVV95cUxOOFk4ek9fb1V1SXBDU0Z0ZzF2MnJXcUhaUEs4MHo0M0Rya1ZweURZMjQ4akNUdEhVUndfWjBkTm4xYlpyM3M3ZU5scTlkWVUyQmU0RkREcHFtNlo4THMzODBqTmdXS0xlZ21BV0RVdTlOci1YZ3k2bXFRNHQwWUV5QnU3MDFjZm9YQWNvUzJqektlUmZ1aTVySkU0RDhJNDhJbWdpSWtzUEFGUHo3YW45em1ZQTQwZGdxcW9ZbVJJc2dJd1NvQ2xyS3B3YVE5WUlCd3Fvc1Uwb29FWmtoaTBr?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Maruti Suzuki September domestic sales jump 30% to 1.92 lakh units",
       "publisher": "ET Auto",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTmtFcjBaZHJ3UmlEQnk4VXRpeVg0dS01M3Y0MlZYODdIQVdIWFRRYS1jMUVhNlRnUW1DOVZPMVFUakVZaGNnbHlwM19lMEdDdWdrUGlmRTZwaW1hUkhQNk01bDJFX2pacWpwRVo5b2lqRllRNExwdEhvYzBYM0phYXZkSGdvY1BmMDRTcHl1OHFhNG45MDBpbmwwdnhidlFBdXVEU1J4b19fcGJyT0hUcy05dkJ6Ym0xR2E0VG5Fbks2MURNR0tFVVhkRdIB0AFBVV95cUxQWHIwNUFrTWlTWnJVVVFMQ3dWbkFuQ25KTlptR0k1NjFvTnlYa2F5TWlzdFVkalY3dDRQYmhwSkZ6Y091MzNTYTVoMjZzbEdPLUZRWUhyZ2dCMW9hUmxEa2FPeXdoaVJYdVBjUmlwdnlUWlFTcEFrLTRKVk55VnZVZXIyWXFnUGptUmhGeEMza2hMNkU2cXo0UUttcWF1WWVVRWtwTE0xR2dnYTNRVllLNW1FZTNoZUx3WHVoeFBmVy1ST08xVUgxTTN5amJMZFNN?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Maruti Suzuki appoints Sarada Prasana Nayak as head of production",
-      "publisher": "ET Manufacturing",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOOFk4ek9fb1V1SXBDU0Z0ZzF2MnJXcUhaUEs4MHo0M0Rya1ZweURZMjQ4akNUdEhVUndfWjBkTm4xYlpyM3M3ZU5scTlkWVUyQmU0RkREcHFtNlo4THMzODBqTmdXS0xlZ21BV0RVdTlOci1YZ3k2bXFRNHQwWUV5QnU3MDFjZm9YQWNvUzJqektlUmZ1aTVySkU0RDhJNDhJbWdpSWtzUEFGUHo3YW45em1ZQTQwZGdxcW9ZbVJJc2dJd1NvQ2xyS3B3YVE5WUlCd3Fvc1Uwb29FWmtoaTBr0gHfAUFVX3lxTE44WTh6T19vVXVJcENTRnRnMXYycldxSFpQSzgwejQzRHJrVnB5RFkyNDhqQ1R0SFVSd19aMGRObjFiWnIzczdlTmxxOWRZVTJCZTRGRERwcW02WjhMczM4MGpOZ1dLTGVnbUFXRFV1OU5yLVhneTZtcVE0dDBZRXlCdTcwMWNmb1hBY29TMmp6S2VSZnVpNXJKRTREOEk0OEltZ2lJa3NQQUZQejdhbjl6bVlBNDBkZ3Fxb1ltUklzZ0l3U29DbHJLcHdhUTlZSUJ3cW9zVTBvb0Vaa2hpMGs?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "\u201cMass Market Should Not Be Defined by a Price Point,\u201d Maruti Suzuki's Partho Banerjee",
-      "publisher": "ET BrandEquity",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQbTlFQ0xqNGl3Nk9XbXFha0wtUHBJRHRYYndra0JWOUVReTgzLVpSaVZwZVZ5WlpOZ2wzVXlENmJLcldFczBBendUNWY3eFR5a1YxN3RfNmI5eERqRm05VXljUUo2TncwVlBqY1l5c25NUVQtSzQtYjl5UzBobW5mNnBTSXlkSklpVW5Vamp4MG96UlBnbGw2dGtuVGFoWXA2aUM0MnNaSURudm4yRExtQjhCUUM1TE5lMGFJNzhJQnJRbXdLVDA5TjJUY3c5amtTRHJWdFhsSlRGWkxlSm0zamVoRkxqTjlqVjhn0gHwAUFVX3lxTE5uNENkaEJTRWJyOHNSU1VWSWEzVDF4alpQQXVEX016bUMxTDhMX1VWeGdfYnNGNEtmX3dXTkNpWmVJZjZmbkVSYVBaRWtVaEN2c1Z0V21UMHlqbjBuaDJocGhOdGxDV3NBdFFsNDFoeUpJOWF5V1huYktRWnlLUEtqVWI4Y2ktSGg0Zlc1RkJTRHhIdFZTTDBmRXBUSXpraU5uLXBOWVA3RVBWWGF5S0VMM0Yta1dva25WXzhkVTBPVkpqUGcwX1BfdG42WkhXYVZFUlFkM1UxTkVEeVRuZnhycEY0bGk2bHExTW9FSjkxdA?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
     }
   ]
 }

@@ -1,283 +1,283 @@
 {
   "symbol": "NVDA",
-  "last_price": 230.86,
-  "as_of": "2026-10-01 13:30:00",
-  "regime": "bull",
-  "regime_display": "Bull",
-  "trend_score": 7.8,
-  "fit_score": 77.5,
-  "confidence_grade": "B",
-  "confidence_percentage": 77.5,
-  "vix": 15.93,
+  "last_price": 233.95,
+  "as_of": "2026-10-02 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.5,
+  "fit_score": 85.0,
+  "confidence_grade": "A",
+  "confidence_percentage": 85.0,
+  "vix": 15.31,
   "strategy_type": "call_debit_spread",
   "strategy_display": "Call Debit Spread",
   "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (69.0% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (73.4% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 230.0,
-        "strike_formatted": "230",
+        "strike": 235.0,
+        "strike_formatted": "235",
         "option_type": "Call",
-        "delta": 0.582,
+        "delta": 0.525,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x NVDA 20-Nov-2026 230 Call"
+        "dte": 47,
+        "summary": "Buy 1x NVDA 20-Nov-2026 235 Call"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 240.0,
-        "strike_formatted": "240",
+        "strike": 245.0,
+        "strike_formatted": "245",
         "option_type": "Call",
-        "delta": 0.301,
+        "delta": 0.243,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x NVDA 20-Nov-2026 240 Call"
+        "dte": 47,
+        "summary": "Sell 1x NVDA 20-Nov-2026 245 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 150.0,
     "margin_required": 4.0,
-    "stop_loss_price": 226.24,
-    "take_profit_price": 240.0,
-    "net_delta": 0.281,
-    "net_theta": -0.014,
-    "probability_of_profit": 55.3,
+    "stop_loss_price": 229.27,
+    "take_profit_price": 245.0,
+    "net_delta": 0.282,
+    "net_theta": -0.021,
+    "probability_of_profit": 49.8,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 184.69,
+        "price": 187.16,
         "pnl": -4.0
       },
       {
-        "price": 186.53,
+        "price": 189.03,
         "pnl": -4.0
       },
       {
-        "price": 188.38,
+        "price": 190.9,
         "pnl": -4.0
       },
       {
-        "price": 190.23,
+        "price": 192.77,
         "pnl": -4.0
       },
       {
-        "price": 192.08,
+        "price": 194.65,
         "pnl": -4.0
       },
       {
-        "price": 193.92,
+        "price": 196.52,
         "pnl": -4.0
       },
       {
-        "price": 195.77,
+        "price": 198.39,
         "pnl": -4.0
       },
       {
-        "price": 197.62,
+        "price": 200.26,
         "pnl": -4.0
       },
       {
-        "price": 199.46,
+        "price": 202.13,
         "pnl": -4.0
       },
       {
-        "price": 201.31,
+        "price": 204.0,
         "pnl": -4.0
       },
       {
-        "price": 203.16,
+        "price": 205.88,
         "pnl": -4.0
       },
       {
-        "price": 205.0,
+        "price": 207.75,
         "pnl": -4.0
       },
       {
-        "price": 206.85,
+        "price": 209.62,
         "pnl": -4.0
       },
       {
-        "price": 208.7,
+        "price": 211.49,
         "pnl": -4.0
       },
       {
-        "price": 210.54,
+        "price": 213.36,
         "pnl": -4.0
       },
       {
-        "price": 212.39,
+        "price": 215.23,
         "pnl": -4.0
       },
       {
-        "price": 214.24,
+        "price": 217.11,
         "pnl": -4.0
       },
       {
-        "price": 216.08,
+        "price": 218.98,
         "pnl": -4.0
       },
       {
-        "price": 217.93,
+        "price": 220.85,
         "pnl": -4.0
       },
       {
-        "price": 219.78,
+        "price": 222.72,
         "pnl": -4.0
       },
       {
-        "price": 221.63,
+        "price": 224.59,
         "pnl": -4.0
       },
       {
-        "price": 223.47,
+        "price": 226.46,
         "pnl": -4.0
       },
       {
-        "price": 225.32,
+        "price": 228.34,
         "pnl": -4.0
       },
       {
-        "price": 227.17,
+        "price": 230.21,
         "pnl": -4.0
       },
       {
-        "price": 229.01,
+        "price": 232.08,
         "pnl": -4.0
       },
       {
-        "price": 230.86,
-        "pnl": -3.14
+        "price": 233.95,
+        "pnl": -4.0
       },
       {
-        "price": 232.71,
-        "pnl": -1.29
+        "price": 235.82,
+        "pnl": -3.18
       },
       {
-        "price": 234.55,
-        "pnl": 0.55
+        "price": 237.69,
+        "pnl": -1.31
       },
       {
-        "price": 236.4,
-        "pnl": 2.4
+        "price": 239.56,
+        "pnl": 0.56
       },
       {
-        "price": 238.25,
-        "pnl": 4.25
+        "price": 241.44,
+        "pnl": 2.44
       },
       {
-        "price": 240.09,
+        "price": 243.31,
+        "pnl": 4.31
+      },
+      {
+        "price": 245.18,
         "pnl": 6.0
       },
       {
-        "price": 241.94,
+        "price": 247.05,
         "pnl": 6.0
       },
       {
-        "price": 243.79,
+        "price": 248.92,
         "pnl": 6.0
       },
       {
-        "price": 245.64,
+        "price": 250.79,
         "pnl": 6.0
       },
       {
-        "price": 247.48,
+        "price": 252.67,
         "pnl": 6.0
       },
       {
-        "price": 249.33,
+        "price": 254.54,
         "pnl": 6.0
       },
       {
-        "price": 251.18,
+        "price": 256.41,
         "pnl": 6.0
       },
       {
-        "price": 253.02,
+        "price": 258.28,
         "pnl": 6.0
       },
       {
-        "price": 254.87,
+        "price": 260.15,
         "pnl": 6.0
       },
       {
-        "price": 256.72,
+        "price": 262.02,
         "pnl": 6.0
       },
       {
-        "price": 258.56,
+        "price": 263.9,
         "pnl": 6.0
       },
       {
-        "price": 260.41,
+        "price": 265.77,
         "pnl": 6.0
       },
       {
-        "price": 262.26,
+        "price": 267.64,
         "pnl": 6.0
       },
       {
-        "price": 264.1,
+        "price": 269.51,
         "pnl": 6.0
       },
       {
-        "price": 265.95,
+        "price": 271.38,
         "pnl": 6.0
       },
       {
-        "price": 267.8,
+        "price": 273.25,
         "pnl": 6.0
       },
       {
-        "price": 269.64,
+        "price": 275.13,
         "pnl": 6.0
       },
       {
-        "price": 271.49,
+        "price": 277.0,
         "pnl": 6.0
       },
       {
-        "price": 273.34,
+        "price": 278.87,
         "pnl": 6.0
       },
       {
-        "price": 275.19,
-        "pnl": 6.0
-      },
-      {
-        "price": 277.03,
+        "price": 280.74,
         "pnl": 6.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.741,
+      "win_probability": 0.757,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2669,
+      "half_kelly_fraction": 0.2813,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "223.95",
-    "EMA50": "218.87",
-    "EMA100": "212.65",
-    "EMA200": "201.99",
-    "RSI(14)": "60.10",
-    "ATR(14)": "5.82",
-    "ADX(14)": "14.79",
-    "BB(20,2)": "0.80"
+    "EMA20": "224.90",
+    "EMA50": "219.46",
+    "EMA100": "213.07",
+    "EMA200": "202.31",
+    "RSI(14)": "62.90",
+    "ATR(14)": "5.91",
+    "ADX(14)": "15.86",
+    "BB(20,2)": "0.90"
   },
   "rules": [
     {
@@ -309,7 +309,21 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -337,21 +351,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -360,44 +360,44 @@
   ],
   "news": [
     {
-      "title": "AMZN Inches Higher Premarket: Amazon Reportedly Seeks To Offload $8B Of Nvidia Chips To Investors",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/amzn-inches-higher-premarket-amazon-090604517.html",
+      "title": "Starlink Is Now SpaceX's Cash Machine. Can It Help the Stock Double?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/starlink-now-spacexs-cash-machine-103200497.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "History Says Stocks Typically Fall After a Fed Hike Cycle Begins -- Then Gain 6.8% Within a Year. Here's My Plan.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/history-says-stocks-typically-fall-102001654.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Costco's Underlying Sales Growth Has Slowed 3 Months in a Row. Its September Report Comes Oct. 7.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/costcos-underlying-sales-growth-slowed-101302150.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Why Micron Stock Soared in September",
+      "title": "If I Were Building a Portfolio From Scratch With $10,000, I'd Anchor It With This Rock-Solid Dividend Stock.",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-soared-september-090510132.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/were-building-portfolio-scratch-10-100500294.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "The Bond Market Is Repeating a Pattern Not Seen in Years. Here's What History Says Comes Next.",
+      "title": "Broadcom vs. Micron: Which Semiconductor Stock Is the Better AI Buy over the Next 3 Years?",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bond-market-repeating-pattern-not-090500631.html",
+      "link": "https://finance.yahoo.com/technology/ai/articles/broadcom-vs-micron-semiconductor-stock-095900865.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Amazon seeks to offload $8bn of Nvidia chips to investors",
-      "publisher": "Financial Times",
-      "link": "https://finance.yahoo.com/technology/ai/articles/amazon-seeks-offload-8bn-nvidia-040033576.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Got $1,000? 2 Growth Stocks Building the Software Backbone of Artificial Intelligence.",
+      "title": "Alphabet Reported Negative Free Cash Flow for the First Time Ever. Here's Why That Milestone Matters for Shareholders.",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/technology/ai/articles/got-1-000-2-growth-085000209.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "$1,000 Invested in Netflix (NFLX) at the Start of 2026 Is Worth This Much Today",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/1-000-invested-netflix-nflx-084900819.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-reported-negative-free-cash-095100273.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

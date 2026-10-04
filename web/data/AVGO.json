@@ -1,283 +1,283 @@
 {
   "symbol": "AVGO",
-  "last_price": 343.64,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 355.14,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
   "trend_score": 2.5,
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 15.93,
+  "vix": 15.31,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (56.3% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (55.6% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 355.0,
-        "strike_formatted": "355",
+        "strike": 365.0,
+        "strike_formatted": "365",
         "option_type": "Call",
-        "delta": 0.34,
+        "delta": 0.362,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x AVGO 20-Nov-2026 355 Call"
+        "dte": 47,
+        "summary": "Sell 1x AVGO 20-Nov-2026 365 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 365.0,
-        "strike_formatted": "365",
+        "strike": 375.0,
+        "strike_formatted": "375",
         "option_type": "Call",
-        "delta": 0.187,
+        "delta": 0.199,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x AVGO 20-Nov-2026 365 Call"
+        "dte": 47,
+        "summary": "Buy 1x AVGO 20-Nov-2026 375 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 333.33,
-    "take_profit_price": 353.95,
-    "net_delta": -0.153,
-    "net_theta": 0.026,
+    "stop_loss_price": 344.49,
+    "take_profit_price": 365.79,
+    "net_delta": -0.163,
+    "net_theta": 0.028,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 274.91,
+        "price": 284.11,
         "pnl": -15.0
       },
       {
-        "price": 277.66,
+        "price": 286.95,
         "pnl": -15.0
       },
       {
-        "price": 280.41,
+        "price": 289.79,
         "pnl": -15.0
       },
       {
-        "price": 283.16,
+        "price": 292.64,
         "pnl": -15.0
       },
       {
-        "price": 285.91,
+        "price": 295.48,
         "pnl": -15.0
       },
       {
-        "price": 288.66,
+        "price": 298.32,
         "pnl": -15.0
       },
       {
-        "price": 291.41,
+        "price": 301.16,
         "pnl": -15.0
       },
       {
-        "price": 294.16,
+        "price": 304.0,
         "pnl": -15.0
       },
       {
-        "price": 296.9,
+        "price": 306.84,
         "pnl": -15.0
       },
       {
-        "price": 299.65,
+        "price": 309.68,
         "pnl": -15.0
       },
       {
-        "price": 302.4,
+        "price": 312.52,
         "pnl": -15.0
       },
       {
-        "price": 305.15,
+        "price": 315.36,
         "pnl": -15.0
       },
       {
-        "price": 307.9,
+        "price": 318.21,
         "pnl": -15.0
       },
       {
-        "price": 310.65,
+        "price": 321.05,
         "pnl": -15.0
       },
       {
-        "price": 313.4,
+        "price": 323.89,
         "pnl": -15.0
       },
       {
-        "price": 316.15,
+        "price": 326.73,
         "pnl": -15.0
       },
       {
-        "price": 318.9,
+        "price": 329.57,
         "pnl": -15.0
       },
       {
-        "price": 321.65,
+        "price": 332.41,
         "pnl": -15.0
       },
       {
-        "price": 324.4,
+        "price": 335.25,
         "pnl": -15.0
       },
       {
-        "price": 327.15,
+        "price": 338.09,
         "pnl": -15.0
       },
       {
-        "price": 329.89,
+        "price": 340.93,
         "pnl": -15.0
       },
       {
-        "price": 332.64,
+        "price": 343.78,
         "pnl": -15.0
       },
       {
-        "price": 335.39,
+        "price": 346.62,
         "pnl": -15.0
       },
       {
-        "price": 338.14,
+        "price": 349.46,
         "pnl": -15.0
       },
       {
-        "price": 340.89,
+        "price": 352.3,
         "pnl": -15.0
       },
       {
-        "price": 343.64,
+        "price": 355.14,
         "pnl": -15.0
       },
       {
-        "price": 346.39,
+        "price": 357.98,
         "pnl": -15.0
       },
       {
-        "price": 349.14,
+        "price": 360.82,
         "pnl": -15.0
       },
       {
-        "price": 351.89,
+        "price": 363.66,
         "pnl": -15.0
       },
       {
-        "price": 354.64,
-        "pnl": -15.0
+        "price": 366.5,
+        "pnl": -16.5
       },
       {
-        "price": 357.39,
-        "pnl": -17.39
+        "price": 369.35,
+        "pnl": -19.35
       },
       {
-        "price": 360.13,
-        "pnl": -20.13
+        "price": 372.19,
+        "pnl": -22.19
       },
       {
-        "price": 362.88,
-        "pnl": -22.88
-      },
-      {
-        "price": 365.63,
+        "price": 375.03,
         "pnl": -25.0
       },
       {
-        "price": 368.38,
+        "price": 377.87,
         "pnl": -25.0
       },
       {
-        "price": 371.13,
+        "price": 380.71,
         "pnl": -25.0
       },
       {
-        "price": 373.88,
+        "price": 383.55,
         "pnl": -25.0
       },
       {
-        "price": 376.63,
+        "price": 386.39,
         "pnl": -25.0
       },
       {
-        "price": 379.38,
+        "price": 389.23,
         "pnl": -25.0
       },
       {
-        "price": 382.13,
+        "price": 392.07,
         "pnl": -25.0
       },
       {
-        "price": 384.88,
+        "price": 394.92,
         "pnl": -25.0
       },
       {
-        "price": 387.63,
+        "price": 397.76,
         "pnl": -25.0
       },
       {
-        "price": 390.38,
+        "price": 400.6,
         "pnl": -25.0
       },
       {
-        "price": 393.12,
+        "price": 403.44,
         "pnl": -25.0
       },
       {
-        "price": 395.87,
+        "price": 406.28,
         "pnl": -25.0
       },
       {
-        "price": 398.62,
+        "price": 409.12,
         "pnl": -25.0
       },
       {
-        "price": 401.37,
+        "price": 411.96,
         "pnl": -25.0
       },
       {
-        "price": 404.12,
+        "price": 414.8,
         "pnl": -25.0
       },
       {
-        "price": 406.87,
+        "price": 417.64,
         "pnl": -25.0
       },
       {
-        "price": 409.62,
+        "price": 420.49,
         "pnl": -25.0
       },
       {
-        "price": 412.37,
+        "price": 423.33,
+        "pnl": -25.0
+      },
+      {
+        "price": 426.17,
         "pnl": -25.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.697,
+      "win_probability": 0.695,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2273,
+      "half_kelly_fraction": 0.2255,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "355.97",
-    "EMA50": "367.65",
-    "EMA100": "373.59",
-    "EMA200": "363.77",
-    "RSI(14)": "39.55",
-    "ATR(14)": "10.66",
-    "ADX(14)": "21.62",
-    "BB(20,2)": "0.19"
+    "EMA20": "355.89",
+    "EMA50": "367.16",
+    "EMA100": "373.23",
+    "EMA200": "363.69",
+    "RSI(14)": "47.64",
+    "ATR(14)": "10.88",
+    "ADX(14)": "21.39",
+    "BB(20,2)": "0.53"
   },
   "rules": [
     {
@@ -288,7 +288,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -330,14 +337,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -360,44 +360,44 @@
   ],
   "news": [
     {
-      "title": "Market Chatter: Broadcom Lines Up $60 Billion War Chest to Fund AI-Chip Sales, Production",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-broadcom-lines-60-090420304.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Broadcom starts amassing $60 bln to fund chips for Anthropic- Bloomberg",
-      "publisher": "Investing.com",
-      "link": "https://finance.yahoo.com/technology/ai/articles/broadcom-starts-amassing-60-bln-050839573.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Broadcom Starts Amassing $60 Billion to Fund Chips for Anthropic",
-      "publisher": "Bloomberg",
-      "link": "https://finance.yahoo.com/technology/ai/articles/broadcom-starts-amassing-60-billion-041233805.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is Marvell Stock Ready For A Slowdown In AI Demand?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/marvell-stock-ready-slowdown-ai-193233235.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Anthropic and Broadcom Are Becoming More Intertwined. What It Means for Broadcom Stock.",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/ea49aba6-700c-36b3-aecb-a1ee3f6dbcd8/anthropic-and-broadcom-are.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Applied Materials vs. Broadcom: Which Semiconductor Stock Is a Better Buy in 2026?",
+      "title": "Broadcom vs. Micron: Which Semiconductor Stock Is the Better AI Buy over the Next 3 Years?",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-vs-broadcom-semiconductor-182942297.html",
+      "link": "https://finance.yahoo.com/technology/ai/articles/broadcom-vs-micron-semiconductor-stock-095900865.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Much of Marvell\u2019s Adjusted Profit Reaches Shareholders?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-marvell-adjusted-profit-reaches-024647978.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Should You Forget Palantir and Buy These 2 Artificial Intelligence (AI) Stocks Instead?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/technology/ai/articles/forget-palantir-buy-2-artificial-111900844.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "If You'd Invested $1,000 in Broadcom's 2009 IPO, Here's How Much You'd Have Today",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/youd-invested-1-000-broadcoms-103500401.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Prediction: This AI Chip Stock Will Be the Biggest Winner of 2027 (Hint: It\u2019s Not Nvidia, AMD, or Broadcom)",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-ai-chip-stock-biggest-094001664.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Broadcom\u2019s $42 Billion Loan to Anthropic Turns the Chipmaker Into Its Customer\u2019s Bank",
+      "publisher": "Forkast News",
+      "link": "https://finance.yahoo.com/technology/ai/articles/broadcom-42-billion-loan-anthropic-073843155.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

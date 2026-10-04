@@ -1,33 +1,33 @@
 {
   "symbol": "QQQ",
-  "last_price": 742.03,
-  "as_of": "2026-10-01 13:30:00",
-  "regime": "strong_bull",
-  "regime_display": "Strong Bull",
-  "trend_score": 8.0,
-  "fit_score": 80.0,
-  "confidence_grade": "A",
-  "confidence_percentage": 80.0,
-  "vix": 15.93,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "last_price": 749.58,
+  "as_of": "2026-10-02 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.2,
+  "fit_score": 72.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 72.5,
+  "vix": 15.31,
+  "strategy_type": "poor_mans_covered_call",
+  "strategy_display": "Poor Mans Covered Call",
+  "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (70.0% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (65.4) is overbought (> 65) [Synthetic PCR: 0.71]. Wait for a pullback toward EMA20 support before entering Poor Mans Covered Call.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 740.0,
-        "strike_formatted": "740",
+        "strike": 710.0,
+        "strike_formatted": "710",
         "option_type": "Call",
-        "delta": 0.576,
+        "delta": 0.871,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x QQQ 20-Nov-2026 740 Call"
+        "dte": 47,
+        "summary": "Buy 1x QQQ 20-Nov-2026 710 Call"
       },
       {
         "action": "Sell",
@@ -35,249 +35,249 @@
         "strike": 770.0,
         "strike_formatted": "770",
         "option_type": "Call",
-        "delta": 0.312,
+        "delta": 0.365,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
+        "dte": 47,
         "summary": "Sell 1x QQQ 20-Nov-2026 770 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 12.0,
-    "stop_loss_price": 727.19,
-    "take_profit_price": 770.0,
-    "net_delta": 0.264,
-    "net_theta": -0.042,
-    "probability_of_profit": 54.7,
+    "roc_percentage": 65.0,
+    "margin_required": 30.0,
+    "stop_loss_price": 727.09,
+    "take_profit_price": 772.07,
+    "net_delta": 0.506,
+    "net_theta": 0.026,
+    "probability_of_profit": 85.7,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 593.62,
-        "pnl": -12.0
+        "price": 599.66,
+        "pnl": -30.0
       },
       {
-        "price": 599.56,
-        "pnl": -12.0
+        "price": 605.66,
+        "pnl": -30.0
       },
       {
-        "price": 605.5,
-        "pnl": -12.0
+        "price": 611.66,
+        "pnl": -30.0
       },
       {
-        "price": 611.43,
-        "pnl": -12.0
+        "price": 617.65,
+        "pnl": -30.0
       },
       {
-        "price": 617.37,
-        "pnl": -12.0
+        "price": 623.65,
+        "pnl": -30.0
       },
       {
-        "price": 623.31,
-        "pnl": -12.0
+        "price": 629.65,
+        "pnl": -30.0
       },
       {
-        "price": 629.24,
-        "pnl": -12.0
+        "price": 635.64,
+        "pnl": -30.0
       },
       {
-        "price": 635.18,
-        "pnl": -12.0
+        "price": 641.64,
+        "pnl": -30.0
       },
       {
-        "price": 641.11,
-        "pnl": -12.0
+        "price": 647.64,
+        "pnl": -30.0
       },
       {
-        "price": 647.05,
-        "pnl": -12.0
+        "price": 653.63,
+        "pnl": -30.0
       },
       {
-        "price": 652.99,
-        "pnl": -12.0
+        "price": 659.63,
+        "pnl": -30.0
       },
       {
-        "price": 658.92,
-        "pnl": -12.0
+        "price": 665.63,
+        "pnl": -30.0
       },
       {
-        "price": 664.86,
-        "pnl": -12.0
+        "price": 671.62,
+        "pnl": -30.0
       },
       {
-        "price": 670.8,
-        "pnl": -12.0
+        "price": 677.62,
+        "pnl": -30.0
       },
       {
-        "price": 676.73,
-        "pnl": -12.0
+        "price": 683.62,
+        "pnl": -30.0
       },
       {
-        "price": 682.67,
-        "pnl": -12.0
+        "price": 689.61,
+        "pnl": -30.0
       },
       {
-        "price": 688.6,
-        "pnl": -12.0
+        "price": 695.61,
+        "pnl": -30.0
       },
       {
-        "price": 694.54,
-        "pnl": -12.0
+        "price": 701.61,
+        "pnl": -30.0
       },
       {
-        "price": 700.48,
-        "pnl": -12.0
+        "price": 707.6,
+        "pnl": -30.0
       },
       {
-        "price": 706.41,
-        "pnl": -12.0
+        "price": 713.6,
+        "pnl": -26.4
       },
       {
-        "price": 712.35,
-        "pnl": -12.0
+        "price": 719.6,
+        "pnl": -20.4
       },
       {
-        "price": 718.29,
-        "pnl": -12.0
+        "price": 725.59,
+        "pnl": -14.41
       },
       {
-        "price": 724.22,
-        "pnl": -12.0
+        "price": 731.59,
+        "pnl": -8.41
       },
       {
-        "price": 730.16,
-        "pnl": -12.0
+        "price": 737.59,
+        "pnl": -2.41
       },
       {
-        "price": 736.09,
-        "pnl": -12.0
+        "price": 743.58,
+        "pnl": 3.58
       },
       {
-        "price": 742.03,
-        "pnl": -9.97
+        "price": 749.58,
+        "pnl": 9.58
       },
       {
-        "price": 747.97,
-        "pnl": -4.03
+        "price": 755.58,
+        "pnl": 15.58
       },
       {
-        "price": 753.9,
-        "pnl": 1.9
+        "price": 761.57,
+        "pnl": 21.57
       },
       {
-        "price": 759.84,
-        "pnl": 7.84
+        "price": 767.57,
+        "pnl": 27.57
       },
       {
-        "price": 765.77,
-        "pnl": 13.77
+        "price": 773.57,
+        "pnl": 30.0
       },
       {
-        "price": 771.71,
-        "pnl": 18.0
+        "price": 779.56,
+        "pnl": 30.0
       },
       {
-        "price": 777.65,
-        "pnl": 18.0
+        "price": 785.56,
+        "pnl": 30.0
       },
       {
-        "price": 783.58,
-        "pnl": 18.0
+        "price": 791.56,
+        "pnl": 30.0
       },
       {
-        "price": 789.52,
-        "pnl": 18.0
+        "price": 797.55,
+        "pnl": 30.0
       },
       {
-        "price": 795.46,
-        "pnl": 18.0
+        "price": 803.55,
+        "pnl": 30.0
       },
       {
-        "price": 801.39,
-        "pnl": 18.0
+        "price": 809.55,
+        "pnl": 30.0
       },
       {
-        "price": 807.33,
-        "pnl": 18.0
+        "price": 815.54,
+        "pnl": 30.0
       },
       {
-        "price": 813.26,
-        "pnl": 18.0
+        "price": 821.54,
+        "pnl": 30.0
       },
       {
-        "price": 819.2,
-        "pnl": 18.0
+        "price": 827.54,
+        "pnl": 30.0
       },
       {
-        "price": 825.14,
-        "pnl": 18.0
+        "price": 833.53,
+        "pnl": 30.0
       },
       {
-        "price": 831.07,
-        "pnl": 18.0
+        "price": 839.53,
+        "pnl": 30.0
       },
       {
-        "price": 837.01,
-        "pnl": 18.0
+        "price": 845.53,
+        "pnl": 30.0
       },
       {
-        "price": 842.95,
-        "pnl": 18.0
+        "price": 851.52,
+        "pnl": 30.0
       },
       {
-        "price": 848.88,
-        "pnl": 18.0
+        "price": 857.52,
+        "pnl": 30.0
       },
       {
-        "price": 854.82,
-        "pnl": 18.0
+        "price": 863.52,
+        "pnl": 30.0
       },
       {
-        "price": 860.75,
-        "pnl": 18.0
+        "price": 869.51,
+        "pnl": 30.0
       },
       {
-        "price": 866.69,
-        "pnl": 18.0
+        "price": 875.51,
+        "pnl": 30.0
       },
       {
-        "price": 872.63,
-        "pnl": 18.0
+        "price": 881.51,
+        "pnl": 30.0
       },
       {
-        "price": 878.56,
-        "pnl": 18.0
+        "price": 887.5,
+        "pnl": 30.0
       },
       {
-        "price": 884.5,
-        "pnl": 18.0
+        "price": 893.5,
+        "pnl": 30.0
       },
       {
-        "price": 890.44,
-        "pnl": 18.0
+        "price": 899.5,
+        "pnl": 30.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.745,
+      "win_probability": 0.707,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2705,
+      "half_kelly_fraction": 0.2363,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "729.80",
-    "EMA50": "720.24",
-    "EMA100": "705.77",
-    "EMA200": "675.06",
-    "RSI(14)": "61.47",
-    "ATR(14)": "9.23",
-    "ADX(14)": "13.19",
-    "BB(20,2)": "0.77"
+    "EMA20": "731.69",
+    "EMA50": "721.39",
+    "EMA100": "706.63",
+    "EMA200": "675.81",
+    "RSI(14)": "65.40",
+    "ATR(14)": "9.47",
+    "ADX(14)": "13.80",
+    "BB(20,2)": "0.85"
   },
   "rules": [
     {
@@ -302,14 +302,21 @@
       "explanation": "Condition met"
     },
     {
-      "name": "RSI between 50 and 65",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -330,6 +337,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
@@ -337,21 +351,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -360,46 +360,46 @@
   ],
   "news": [
     {
-      "title": "Stocktwits Passport Portfolio: QQQ Holds Up Better Than SPY, DIA And Asian Stocks Amid Bond Market Rout This Week",
+      "title": "Nearly All of QQQI\u2019s Yield Was Return of Capital, Not Income. Here Is What That Does to Your Cost Basis",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/options/articles/nearly-qqqi-yield-return-capital-220320300.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is the AI Bull Market About to Crash? This Risk Indicator Is Saying Yes",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bull-market-crash-risk-144443575.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "S&P 500, Nasdaq, Dow End Week Higher As Weak Jobs Report Cools Rate Hike Bets \u2014 NVDA, BA, SPCX, RIVN, APLD In Focus",
       "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stocktwits-passport-portfolio-qqq-holds-061913514.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ETF Inflows Top Last Year's Record With a Quarter to Spare",
-      "publisher": "etf.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/etf-inflows-top-last-years-043228801.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-dow-end-222859024.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Uptober is Here: 5 Reasons for Optimism",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/uptober-5-reasons-optimism-191500442.html",
+      "title": "How Much Do You Need Invested to Double the Average Social Security Check With Dividends?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-invested-double-average-social-203354227.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Alphabet Slips After Gemini 4 Argon Launch as Tech Sector Rises; Microsoft Holds Steady, Amazon Dips",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/alphabet-slips-gemini-4-argon-175148352.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Atlassian Climbs 6% as Beaten-Down Software Names Bounce; HubSpot and Monday.com Gain 4%",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/atlassian-climbs-6-beaten-down-174127200.html",
+      "title": "U.S. Jobs Report Sends Fresh Warning on Labor Market",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/economy/articles/u-jobs-report-sends-fresh-200224382.html",
       "published_at": "Today",
       "sentiment": "bearish"
     },
     {
-      "title": "Exchange-Traded Funds Mixed, US Equities Fall After Midday",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/articles/exchange-traded-funds-mixed-us-171345834.html",
+      "title": "I Sold NVIDIA, Google and Microsoft Over a $2 Trillion AI Gap. Was I Wrong?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sold-nvidia-google-microsoft-over-190531978.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "neutral"
     }
   ]
 }

@@ -1,19 +1,19 @@
 {
   "symbol": "XLK",
-  "last_price": 197.81,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 199.81,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
   "trend_score": 7.5,
   "fit_score": 75.0,
   "confidence_grade": "B",
   "confidence_percentage": 75.0,
-  "vix": 15.93,
+  "vix": 15.31,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (60.5% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (72.3% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 205.0,
         "strike_formatted": "205",
         "option_type": "Call",
-        "delta": 0.32,
+        "delta": 0.374,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
+        "dte": 47,
         "summary": "Sell 1x XLK 20-Nov-2026 205 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 210.0,
         "strike_formatted": "210",
         "option_type": "Call",
-        "delta": 0.189,
+        "delta": 0.223,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
+        "dte": 47,
         "summary": "Buy 1x XLK 20-Nov-2026 210 Call"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 191.88,
-    "take_profit_price": 203.74,
-    "net_delta": -0.131,
+    "stop_loss_price": 193.82,
+    "take_profit_price": 205.8,
+    "net_delta": -0.151,
     "net_theta": 0.013,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,228 +56,228 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 158.25,
+        "price": 159.85,
         "pnl": -10.0
       },
       {
-        "price": 159.83,
+        "price": 161.45,
         "pnl": -10.0
       },
       {
-        "price": 161.41,
+        "price": 163.04,
         "pnl": -10.0
       },
       {
-        "price": 163.0,
+        "price": 164.64,
         "pnl": -10.0
       },
       {
-        "price": 164.58,
+        "price": 166.24,
         "pnl": -10.0
       },
       {
-        "price": 166.16,
+        "price": 167.84,
         "pnl": -10.0
       },
       {
-        "price": 167.74,
+        "price": 169.44,
         "pnl": -10.0
       },
       {
-        "price": 169.33,
+        "price": 171.04,
         "pnl": -10.0
       },
       {
-        "price": 170.91,
+        "price": 172.64,
         "pnl": -10.0
       },
       {
-        "price": 172.49,
+        "price": 174.23,
         "pnl": -10.0
       },
       {
-        "price": 174.07,
+        "price": 175.83,
         "pnl": -10.0
       },
       {
-        "price": 175.66,
+        "price": 177.43,
         "pnl": -10.0
       },
       {
-        "price": 177.24,
+        "price": 179.03,
         "pnl": -10.0
       },
       {
-        "price": 178.82,
+        "price": 180.63,
         "pnl": -10.0
       },
       {
-        "price": 180.4,
+        "price": 182.23,
         "pnl": -10.0
       },
       {
-        "price": 181.99,
+        "price": 183.83,
         "pnl": -10.0
       },
       {
-        "price": 183.57,
+        "price": 185.42,
         "pnl": -10.0
       },
       {
-        "price": 185.15,
+        "price": 187.02,
         "pnl": -10.0
       },
       {
-        "price": 186.73,
+        "price": 188.62,
         "pnl": -10.0
       },
       {
-        "price": 188.32,
+        "price": 190.22,
         "pnl": -10.0
       },
       {
-        "price": 189.9,
+        "price": 191.82,
         "pnl": -10.0
       },
       {
-        "price": 191.48,
+        "price": 193.42,
         "pnl": -10.0
       },
       {
-        "price": 193.06,
+        "price": 195.01,
         "pnl": -10.0
       },
       {
-        "price": 194.65,
+        "price": 196.61,
         "pnl": -10.0
       },
       {
-        "price": 196.23,
+        "price": 198.21,
         "pnl": -10.0
       },
       {
-        "price": 197.81,
+        "price": 199.81,
         "pnl": -10.0
       },
       {
-        "price": 199.39,
+        "price": 201.41,
         "pnl": -10.0
       },
       {
-        "price": 200.97,
+        "price": 203.01,
         "pnl": -10.0
       },
       {
-        "price": 202.56,
+        "price": 204.61,
         "pnl": -10.0
       },
       {
-        "price": 204.14,
-        "pnl": -10.0
+        "price": 206.2,
+        "pnl": -11.2
       },
       {
-        "price": 205.72,
-        "pnl": -10.72
+        "price": 207.8,
+        "pnl": -12.8
       },
       {
-        "price": 207.3,
-        "pnl": -12.3
+        "price": 209.4,
+        "pnl": -14.4
       },
       {
-        "price": 208.89,
-        "pnl": -13.89
-      },
-      {
-        "price": 210.47,
+        "price": 211.0,
         "pnl": -15.0
       },
       {
-        "price": 212.05,
+        "price": 212.6,
         "pnl": -15.0
       },
       {
-        "price": 213.63,
+        "price": 214.2,
         "pnl": -15.0
       },
       {
-        "price": 215.22,
+        "price": 215.79,
         "pnl": -15.0
       },
       {
-        "price": 216.8,
+        "price": 217.39,
         "pnl": -15.0
       },
       {
-        "price": 218.38,
+        "price": 218.99,
         "pnl": -15.0
       },
       {
-        "price": 219.96,
+        "price": 220.59,
         "pnl": -15.0
       },
       {
-        "price": 221.55,
+        "price": 222.19,
         "pnl": -15.0
       },
       {
-        "price": 223.13,
+        "price": 223.79,
         "pnl": -15.0
       },
       {
-        "price": 224.71,
+        "price": 225.39,
         "pnl": -15.0
       },
       {
-        "price": 226.29,
+        "price": 226.98,
         "pnl": -15.0
       },
       {
-        "price": 227.88,
+        "price": 228.58,
         "pnl": -15.0
       },
       {
-        "price": 229.46,
+        "price": 230.18,
         "pnl": -15.0
       },
       {
-        "price": 231.04,
+        "price": 231.78,
         "pnl": -15.0
       },
       {
-        "price": 232.62,
+        "price": 233.38,
         "pnl": -15.0
       },
       {
-        "price": 234.21,
+        "price": 234.98,
         "pnl": -15.0
       },
       {
-        "price": 235.79,
+        "price": 236.58,
         "pnl": -15.0
       },
       {
-        "price": 237.37,
+        "price": 238.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 239.77,
         "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.712,
+      "win_probability": 0.753,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2408,
+      "half_kelly_fraction": 0.2777,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "191.65",
-    "EMA50": "187.29",
-    "EMA100": "180.80",
-    "EMA200": "168.84",
-    "RSI(14)": "66.11",
-    "ATR(14)": "3.17",
-    "ADX(14)": "15.35",
-    "BB(20,2)": "0.87"
+    "EMA20": "192.43",
+    "EMA50": "187.79",
+    "EMA100": "181.17",
+    "EMA200": "169.15",
+    "RSI(14)": "68.81",
+    "ATR(14)": "3.20",
+    "ADX(14)": "16.55",
+    "BB(20,2)": "0.91"
   },
   "rules": [
     {
@@ -362,44 +362,44 @@
     {
       "title": "Sector Update: Tech Stocks Gain Late Afternoon",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-afternoon-195143826.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-afternoon-195210313.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
       "title": "Sector Update: Tech",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-192610550.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-193022187.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Alphabet Slips After Gemini 4 Argon Launch as Tech Sector Rises; Microsoft Holds Steady, Amazon Dips",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/alphabet-slips-gemini-4-argon-175148352.html",
+      "title": "Sector Update: Tech Stocks Gain Friday Afternoon",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-friday-174821071.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Exchange-Traded Funds Rise as US Equities Advance After Midday",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-171324140.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Sector Update: Tech Stocks Gain Thursday Afternoon",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-thursday-174233543.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Exchange-Traded Funds Mixed, US Equities Fall After Midday",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/articles/exchange-traded-funds-mixed-us-171345834.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
       "title": "Sector Update: Tech",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-170240637.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-170703016.html",
       "published_at": "Today",
       "sentiment": "neutral"
+    },
+    {
+      "title": "Tech stocks jump after jobs report miss, Treasury yields ease: AlphaCheck",
+      "publisher": "Yahoo Finance",
+      "link": "https://finance.yahoo.com/markets/article/tech-stocks-jump-after-jobs-report-miss-treasury-yields-ease-alphacheck-134916934.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
     }
   ]
 }

@@ -1,307 +1,295 @@
 {
   "symbol": "AMZN",
-  "last_price": 248.23,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 251.52,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 4.8,
-  "fit_score": 47.5,
+  "trend_score": 4.5,
+  "fit_score": 45.0,
   "confidence_grade": "C",
-  "confidence_percentage": 47.5,
-  "vix": 15.93,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "confidence_percentage": 45.0,
+  "vix": 15.31,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (82.7% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (86.3% fit - Grade A (Optimal)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 225.0,
-        "strike_formatted": "225",
-        "option_type": "Put",
-        "delta": -0.034,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x AMZN 20-Nov-2026 225 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 235.0,
-        "strike_formatted": "235",
-        "option_type": "Put",
-        "delta": -0.14,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x AMZN 20-Nov-2026 235 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 265.0,
-        "strike_formatted": "265",
+        "strike": 245.0,
+        "strike_formatted": "245",
         "option_type": "Call",
-        "delta": 0.165,
+        "delta": 0.733,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x AMZN 20-Nov-2026 265 Call"
+        "dte": 47,
+        "summary": "Buy 1x AMZN 20-Nov-2026 245 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 2,
+        "strike": 250.0,
+        "strike_formatted": "250",
+        "option_type": "Call",
+        "delta": 0.601,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Sell 2x AMZN 20-Nov-2026 250 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 270.0,
-        "strike_formatted": "270",
+        "strike": 260.0,
+        "strike_formatted": "260",
         "option_type": "Call",
-        "delta": 0.097,
+        "delta": 0.323,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x AMZN 20-Nov-2026 270 Call"
+        "dte": 47,
+        "summary": "Buy 1x AMZN 20-Nov-2026 260 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 240.78,
-    "take_profit_price": 255.68,
-    "net_delta": 0.038,
-    "net_theta": 0.031,
-    "probability_of_profit": 0.0,
-    "var_95": 8.59,
+    "stop_loss_price": 243.97,
+    "take_profit_price": 259.07,
+    "net_delta": -0.146,
+    "net_theta": 0.016,
+    "probability_of_profit": 27.6,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 198.58,
-        "pnl": -20.0
-      },
-      {
-        "price": 200.57,
-        "pnl": -20.0
-      },
-      {
-        "price": 202.56,
-        "pnl": -20.0
-      },
-      {
-        "price": 204.54,
-        "pnl": -20.0
-      },
-      {
-        "price": 206.53,
-        "pnl": -20.0
-      },
-      {
-        "price": 208.51,
-        "pnl": -20.0
-      },
-      {
-        "price": 210.5,
-        "pnl": -20.0
-      },
-      {
-        "price": 212.48,
-        "pnl": -20.0
-      },
-      {
-        "price": 214.47,
-        "pnl": -20.0
-      },
-      {
-        "price": 216.46,
-        "pnl": -20.0
-      },
-      {
-        "price": 218.44,
-        "pnl": -20.0
-      },
-      {
-        "price": 220.43,
-        "pnl": -20.0
-      },
-      {
-        "price": 222.41,
-        "pnl": -20.0
-      },
-      {
-        "price": 224.4,
-        "pnl": -20.0
-      },
-      {
-        "price": 226.39,
-        "pnl": -18.61
-      },
-      {
-        "price": 228.37,
-        "pnl": -16.63
-      },
-      {
-        "price": 230.36,
-        "pnl": -14.64
-      },
-      {
-        "price": 232.34,
-        "pnl": -12.66
-      },
-      {
-        "price": 234.33,
-        "pnl": -10.67
-      },
-      {
-        "price": 236.31,
+        "price": 201.22,
         "pnl": -10.0
       },
       {
-        "price": 238.3,
+        "price": 203.23,
         "pnl": -10.0
       },
       {
-        "price": 240.29,
+        "price": 205.24,
         "pnl": -10.0
       },
       {
-        "price": 242.27,
+        "price": 207.25,
         "pnl": -10.0
       },
       {
-        "price": 244.26,
+        "price": 209.26,
         "pnl": -10.0
       },
       {
-        "price": 246.24,
+        "price": 211.28,
         "pnl": -10.0
       },
       {
-        "price": 248.23,
+        "price": 213.29,
         "pnl": -10.0
       },
       {
-        "price": 250.22,
+        "price": 215.3,
         "pnl": -10.0
       },
       {
-        "price": 252.2,
+        "price": 217.31,
         "pnl": -10.0
       },
       {
-        "price": 254.19,
+        "price": 219.33,
         "pnl": -10.0
       },
       {
-        "price": 256.17,
+        "price": 221.34,
         "pnl": -10.0
       },
       {
-        "price": 258.16,
+        "price": 223.35,
         "pnl": -10.0
       },
       {
-        "price": 260.15,
+        "price": 225.36,
         "pnl": -10.0
       },
       {
-        "price": 262.13,
+        "price": 227.37,
         "pnl": -10.0
       },
       {
-        "price": 264.12,
+        "price": 229.39,
         "pnl": -10.0
       },
       {
-        "price": 266.1,
-        "pnl": -11.1
+        "price": 231.4,
+        "pnl": -10.0
       },
       {
-        "price": 268.09,
-        "pnl": -13.09
+        "price": 233.41,
+        "pnl": -10.0
       },
       {
-        "price": 270.07,
+        "price": 235.42,
+        "pnl": -10.0
+      },
+      {
+        "price": 237.43,
+        "pnl": -10.0
+      },
+      {
+        "price": 239.45,
+        "pnl": -10.0
+      },
+      {
+        "price": 241.46,
+        "pnl": -10.0
+      },
+      {
+        "price": 243.47,
+        "pnl": -10.0
+      },
+      {
+        "price": 245.48,
+        "pnl": -9.52
+      },
+      {
+        "price": 247.5,
+        "pnl": -7.5
+      },
+      {
+        "price": 249.51,
+        "pnl": -5.49
+      },
+      {
+        "price": 251.52,
+        "pnl": -6.52
+      },
+      {
+        "price": 253.53,
+        "pnl": -8.53
+      },
+      {
+        "price": 255.54,
+        "pnl": -10.54
+      },
+      {
+        "price": 257.56,
+        "pnl": -12.56
+      },
+      {
+        "price": 259.57,
+        "pnl": -14.57
+      },
+      {
+        "price": 261.58,
         "pnl": -15.0
       },
       {
-        "price": 272.06,
+        "price": 263.59,
         "pnl": -15.0
       },
       {
-        "price": 274.05,
+        "price": 265.61,
         "pnl": -15.0
       },
       {
-        "price": 276.03,
+        "price": 267.62,
         "pnl": -15.0
       },
       {
-        "price": 278.02,
+        "price": 269.63,
         "pnl": -15.0
       },
       {
-        "price": 280.0,
+        "price": 271.64,
         "pnl": -15.0
       },
       {
-        "price": 281.99,
+        "price": 273.65,
         "pnl": -15.0
       },
       {
-        "price": 283.98,
+        "price": 275.67,
         "pnl": -15.0
       },
       {
-        "price": 285.96,
+        "price": 277.68,
         "pnl": -15.0
       },
       {
-        "price": 287.95,
+        "price": 279.69,
         "pnl": -15.0
       },
       {
-        "price": 289.93,
+        "price": 281.7,
         "pnl": -15.0
       },
       {
-        "price": 291.92,
+        "price": 283.71,
         "pnl": -15.0
       },
       {
-        "price": 293.9,
+        "price": 285.73,
         "pnl": -15.0
       },
       {
-        "price": 295.89,
+        "price": 287.74,
         "pnl": -15.0
       },
       {
-        "price": 297.88,
+        "price": 289.75,
+        "pnl": -15.0
+      },
+      {
+        "price": 291.76,
+        "pnl": -15.0
+      },
+      {
+        "price": 293.78,
+        "pnl": -15.0
+      },
+      {
+        "price": 295.79,
+        "pnl": -15.0
+      },
+      {
+        "price": 297.8,
+        "pnl": -15.0
+      },
+      {
+        "price": 299.81,
+        "pnl": -15.0
+      },
+      {
+        "price": 301.82,
         "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.789,
+      "win_probability": 0.802,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3101,
+      "half_kelly_fraction": 0.3218,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "251.78",
-    "EMA50": "253.48",
-    "EMA100": "250.88",
-    "EMA200": "243.74",
-    "RSI(14)": "44.20",
-    "ATR(14)": "5.66",
-    "ADX(14)": "9.08",
-    "BB(20,2)": "0.28"
+    "EMA20": "251.76",
+    "EMA50": "253.40",
+    "EMA100": "250.89",
+    "EMA200": "243.82",
+    "RSI(14)": "48.56",
+    "ATR(14)": "5.63",
+    "ADX(14)": "8.88",
+    "BB(20,2)": "0.49"
   },
   "rules": [
     {
@@ -319,7 +307,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -361,7 +349,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -384,44 +372,44 @@
   ],
   "news": [
     {
-      "title": "AMZN Inches Higher Premarket: Amazon Reportedly Seeks To Offload $8B Of Nvidia Chips To Investors",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/amzn-inches-higher-premarket-amazon-090604517.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Market Chatter: Broadcom Lines Up $60 Billion War Chest to Fund AI-Chip Sales, Production",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-broadcom-lines-60-090420304.html",
+      "title": "Constellation Energy (CEG) Could Be 26% Below Fair Value As Amazon Deal Lands",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-ceg-could-26-100635667.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Delta CEO Ignored Elon Musk\u2019s Warning That \u201cIt Will Get Much Worse.\u201d Now Musk Predicts Ed Bastian Will \u201cLose His Job\u201d As United And American Race To Try And Poach Delta\u2019s Premium Customers",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/delta-ceo-ignored-elon-musk-085644421.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Amazon seeks to offload $8bn of Nvidia chips to investors",
-      "publisher": "Financial Times",
-      "link": "https://finance.yahoo.com/technology/ai/articles/amazon-seeks-offload-8bn-nvidia-040033576.html",
+      "title": "How Much Revenue Visibility Does Microsoft\u2019s Backlog Really Provide?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-revenue-visibility-does-microsoft-023534508.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Should You Buy eBay Stock For Its Cash?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/buy-ebay-stock-cash-084756800.html",
+      "title": "Nvidia (NVDA) Is At The Center Of An $8 Billion AI Financing Shift",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-center-8-billion-230622829.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "What Is Driving The Move In Synopsys Stock?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/driving-move-synopsys-stock-084755316.html",
+      "title": "ASML Holding vs. Qualcomm: What Revenue Trends Tell Investors About These Semiconductor Industry Giants",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/asml-holding-vs-qualcomm-revenue-225232100.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Meta's Muse AI: Good or Bad for E-Commerce? Shopify and Amazon Are Taking Opposite Approaches.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/technology/ai/articles/metas-muse-ai-good-bad-225000015.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
+      "publisher": "TechCrunch",
+      "link": "https://finance.yahoo.com/technology/articles/amazon-responds-data-center-backlash-184357944.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

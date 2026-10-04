@@ -1,45 +1,33 @@
 {
   "symbol": "VTI",
-  "last_price": 375.18,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 377.99,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 6.2,
-  "fit_score": 62.5,
+  "trend_score": 7.5,
+  "fit_score": 75.0,
   "confidence_grade": "B",
-  "confidence_percentage": 62.5,
-  "vix": 15.93,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "confidence_percentage": 75.0,
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (67.7% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (64.1% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 340.0,
-        "strike_formatted": "340",
-        "option_type": "Put",
-        "delta": -0.034,
+        "strike": 380.0,
+        "strike_formatted": "380",
+        "option_type": "Call",
+        "delta": 0.519,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x VTI 20-Nov-2026 340 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 355.0,
-        "strike_formatted": "355",
-        "option_type": "Put",
-        "delta": -0.138,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x VTI 20-Nov-2026 355 Put"
+        "dte": 47,
+        "summary": "Buy 1x VTI 20-Nov-2026 380 Call"
       },
       {
         "action": "Sell",
@@ -47,261 +35,249 @@
         "strike": 395.0,
         "strike_formatted": "395",
         "option_type": "Call",
-        "delta": 0.23,
+        "delta": 0.256,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
+        "dte": 47,
         "summary": "Sell 1x VTI 20-Nov-2026 395 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 410.0,
-        "strike_formatted": "410",
-        "option_type": "Call",
-        "delta": 0.084,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x VTI 20-Nov-2026 410 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 15.0,
-    "stop_loss_price": 363.92,
-    "take_profit_price": 386.44,
-    "net_delta": -0.042,
-    "net_theta": 0.067,
-    "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "roc_percentage": 150.0,
+    "margin_required": 6.0,
+    "stop_loss_price": 370.43,
+    "take_profit_price": 395.0,
+    "net_delta": 0.263,
+    "net_theta": -0.03,
+    "probability_of_profit": 49.2,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 300.14,
-        "pnl": -30.0
+        "price": 302.39,
+        "pnl": -6.0
       },
       {
-        "price": 303.15,
-        "pnl": -30.0
+        "price": 305.42,
+        "pnl": -6.0
       },
       {
-        "price": 306.15,
-        "pnl": -30.0
+        "price": 308.44,
+        "pnl": -6.0
       },
       {
-        "price": 309.15,
-        "pnl": -30.0
+        "price": 311.46,
+        "pnl": -6.0
       },
       {
-        "price": 312.15,
-        "pnl": -30.0
+        "price": 314.49,
+        "pnl": -6.0
       },
       {
-        "price": 315.15,
-        "pnl": -30.0
+        "price": 317.51,
+        "pnl": -6.0
       },
       {
-        "price": 318.15,
-        "pnl": -30.0
+        "price": 320.54,
+        "pnl": -6.0
       },
       {
-        "price": 321.15,
-        "pnl": -30.0
+        "price": 323.56,
+        "pnl": -6.0
       },
       {
-        "price": 324.16,
-        "pnl": -30.0
+        "price": 326.58,
+        "pnl": -6.0
       },
       {
-        "price": 327.16,
-        "pnl": -30.0
+        "price": 329.61,
+        "pnl": -6.0
       },
       {
-        "price": 330.16,
-        "pnl": -30.0
+        "price": 332.63,
+        "pnl": -6.0
       },
       {
-        "price": 333.16,
-        "pnl": -30.0
+        "price": 335.66,
+        "pnl": -6.0
       },
       {
-        "price": 336.16,
-        "pnl": -30.0
+        "price": 338.68,
+        "pnl": -6.0
       },
       {
-        "price": 339.16,
-        "pnl": -30.0
+        "price": 341.7,
+        "pnl": -6.0
       },
       {
-        "price": 342.16,
-        "pnl": -27.84
+        "price": 344.73,
+        "pnl": -6.0
       },
       {
-        "price": 345.17,
-        "pnl": -24.83
+        "price": 347.75,
+        "pnl": -6.0
       },
       {
-        "price": 348.17,
-        "pnl": -21.83
+        "price": 350.77,
+        "pnl": -6.0
       },
       {
-        "price": 351.17,
-        "pnl": -18.83
+        "price": 353.8,
+        "pnl": -6.0
       },
       {
-        "price": 354.17,
-        "pnl": -15.83
+        "price": 356.82,
+        "pnl": -6.0
       },
       {
-        "price": 357.17,
-        "pnl": -15.0
+        "price": 359.85,
+        "pnl": -6.0
       },
       {
-        "price": 360.17,
-        "pnl": -15.0
+        "price": 362.87,
+        "pnl": -6.0
       },
       {
-        "price": 363.17,
-        "pnl": -15.0
+        "price": 365.89,
+        "pnl": -6.0
       },
       {
-        "price": 366.18,
-        "pnl": -15.0
+        "price": 368.92,
+        "pnl": -6.0
       },
       {
-        "price": 369.18,
-        "pnl": -15.0
+        "price": 371.94,
+        "pnl": -6.0
       },
       {
-        "price": 372.18,
-        "pnl": -15.0
+        "price": 374.97,
+        "pnl": -6.0
       },
       {
-        "price": 375.18,
-        "pnl": -15.0
+        "price": 377.99,
+        "pnl": -6.0
       },
       {
-        "price": 378.18,
-        "pnl": -15.0
+        "price": 381.01,
+        "pnl": -4.99
       },
       {
-        "price": 381.18,
-        "pnl": -15.0
+        "price": 384.04,
+        "pnl": -1.96
       },
       {
-        "price": 384.18,
-        "pnl": -15.0
+        "price": 387.06,
+        "pnl": 1.06
       },
       {
-        "price": 387.19,
-        "pnl": -15.0
+        "price": 390.09,
+        "pnl": 4.09
       },
       {
-        "price": 390.19,
-        "pnl": -15.0
+        "price": 393.11,
+        "pnl": 7.11
       },
       {
-        "price": 393.19,
-        "pnl": -15.0
+        "price": 396.13,
+        "pnl": 9.0
       },
       {
-        "price": 396.19,
-        "pnl": -16.19
+        "price": 399.16,
+        "pnl": 9.0
       },
       {
-        "price": 399.19,
-        "pnl": -19.19
+        "price": 402.18,
+        "pnl": 9.0
       },
       {
-        "price": 402.19,
-        "pnl": -22.19
+        "price": 405.21,
+        "pnl": 9.0
       },
       {
-        "price": 405.19,
-        "pnl": -25.19
+        "price": 408.23,
+        "pnl": 9.0
       },
       {
-        "price": 408.2,
-        "pnl": -28.2
+        "price": 411.25,
+        "pnl": 9.0
       },
       {
-        "price": 411.2,
-        "pnl": -30.0
+        "price": 414.28,
+        "pnl": 9.0
       },
       {
-        "price": 414.2,
-        "pnl": -30.0
+        "price": 417.3,
+        "pnl": 9.0
       },
       {
-        "price": 417.2,
-        "pnl": -30.0
+        "price": 420.32,
+        "pnl": 9.0
       },
       {
-        "price": 420.2,
-        "pnl": -30.0
+        "price": 423.35,
+        "pnl": 9.0
       },
       {
-        "price": 423.2,
-        "pnl": -30.0
+        "price": 426.37,
+        "pnl": 9.0
       },
       {
-        "price": 426.2,
-        "pnl": -30.0
+        "price": 429.4,
+        "pnl": 9.0
       },
       {
-        "price": 429.21,
-        "pnl": -30.0
+        "price": 432.42,
+        "pnl": 9.0
       },
       {
-        "price": 432.21,
-        "pnl": -30.0
+        "price": 435.44,
+        "pnl": 9.0
       },
       {
-        "price": 435.21,
-        "pnl": -30.0
+        "price": 438.47,
+        "pnl": 9.0
       },
       {
-        "price": 438.21,
-        "pnl": -30.0
+        "price": 441.49,
+        "pnl": 9.0
       },
       {
-        "price": 441.21,
-        "pnl": -30.0
+        "price": 444.52,
+        "pnl": 9.0
       },
       {
-        "price": 444.21,
-        "pnl": -30.0
+        "price": 447.54,
+        "pnl": 9.0
       },
       {
-        "price": 447.21,
-        "pnl": -30.0
+        "price": 450.56,
+        "pnl": 9.0
       },
       {
-        "price": 450.22,
-        "pnl": -30.0
+        "price": 453.59,
+        "pnl": 9.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.737,
+      "win_probability": 0.724,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2633,
+      "half_kelly_fraction": 0.2516,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "376.63",
-    "EMA50": "375.18",
-    "EMA100": "369.41",
-    "EMA200": "357.11",
-    "RSI(14)": "47.18",
-    "ATR(14)": "3.34",
-    "ADX(14)": "13.31",
-    "BB(20,2)": "0.38"
+    "EMA20": "376.76",
+    "EMA50": "375.29",
+    "EMA100": "369.58",
+    "EMA200": "357.32",
+    "RSI(14)": "52.58",
+    "ATR(14)": "3.42",
+    "ADX(14)": "12.59",
+    "BB(20,2)": "0.64"
   },
   "rules": [
     {
@@ -326,7 +302,28 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -340,13 +337,6 @@
       "explanation": "Condition met"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
@@ -354,21 +344,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,

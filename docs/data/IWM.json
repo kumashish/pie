@@ -1,287 +1,263 @@
 {
   "symbol": "IWM",
-  "last_price": 279.02,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 281.52,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 6.5,
-  "fit_score": 65.0,
+  "trend_score": 6.8,
+  "fit_score": 67.5,
   "confidence_grade": "B",
-  "confidence_percentage": 65.0,
-  "vix": 15.93,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "confidence_percentage": 67.5,
+  "vix": 15.31,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (53.1% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (53.2% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 290.0,
+        "strike_formatted": "290",
+        "option_type": "Call",
+        "delta": 0.346,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 47,
+        "summary": "Sell 1x IWM 20-Nov-2026 290 Call"
+      },
+      {
         "action": "Buy",
-        "quantity": 1,
-        "strike": 255.0,
-        "strike_formatted": "255",
-        "option_type": "Put",
-        "delta": -0.046,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x IWM 20-Nov-2026 255 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 265.0,
-        "strike_formatted": "265",
-        "option_type": "Put",
-        "delta": -0.152,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x IWM 20-Nov-2026 265 Put"
-      },
-      {
-        "action": "Sell",
         "quantity": 1,
         "strike": 295.0,
         "strike_formatted": "295",
         "option_type": "Call",
-        "delta": 0.209,
+        "delta": 0.24,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x IWM 20-Nov-2026 295 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 305.0,
-        "strike_formatted": "305",
-        "option_type": "Call",
-        "delta": 0.084,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x IWM 20-Nov-2026 305 Call"
+        "dte": 47,
+        "summary": "Buy 1x IWM 20-Nov-2026 295 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 270.65,
-    "take_profit_price": 287.39,
-    "net_delta": -0.019,
-    "net_theta": 0.045,
+    "stop_loss_price": 273.07,
+    "take_profit_price": 289.97,
+    "net_delta": -0.106,
+    "net_theta": 0.014,
     "probability_of_profit": 0.0,
-    "var_95": 10.0,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 223.22,
-        "pnl": -20.0
-      },
-      {
-        "price": 225.45,
-        "pnl": -20.0
-      },
-      {
-        "price": 227.68,
-        "pnl": -20.0
-      },
-      {
-        "price": 229.91,
-        "pnl": -20.0
-      },
-      {
-        "price": 232.14,
-        "pnl": -20.0
-      },
-      {
-        "price": 234.38,
-        "pnl": -20.0
-      },
-      {
-        "price": 236.61,
-        "pnl": -20.0
-      },
-      {
-        "price": 238.84,
-        "pnl": -20.0
-      },
-      {
-        "price": 241.07,
-        "pnl": -20.0
-      },
-      {
-        "price": 243.31,
-        "pnl": -20.0
-      },
-      {
-        "price": 245.54,
-        "pnl": -20.0
-      },
-      {
-        "price": 247.77,
-        "pnl": -20.0
-      },
-      {
-        "price": 250.0,
-        "pnl": -20.0
-      },
-      {
-        "price": 252.23,
-        "pnl": -20.0
-      },
-      {
-        "price": 254.47,
-        "pnl": -20.0
-      },
-      {
-        "price": 256.7,
-        "pnl": -18.3
-      },
-      {
-        "price": 258.93,
-        "pnl": -16.07
-      },
-      {
-        "price": 261.16,
-        "pnl": -13.84
-      },
-      {
-        "price": 263.39,
-        "pnl": -11.61
-      },
-      {
-        "price": 265.63,
+        "price": 225.22,
         "pnl": -10.0
       },
       {
-        "price": 267.86,
+        "price": 227.47,
         "pnl": -10.0
       },
       {
-        "price": 270.09,
+        "price": 229.72,
         "pnl": -10.0
       },
       {
-        "price": 272.32,
+        "price": 231.97,
         "pnl": -10.0
       },
       {
-        "price": 274.56,
+        "price": 234.22,
         "pnl": -10.0
       },
       {
-        "price": 276.79,
+        "price": 236.48,
         "pnl": -10.0
       },
       {
-        "price": 279.02,
+        "price": 238.73,
         "pnl": -10.0
       },
       {
-        "price": 281.25,
+        "price": 240.98,
         "pnl": -10.0
       },
       {
-        "price": 283.48,
+        "price": 243.23,
         "pnl": -10.0
       },
       {
-        "price": 285.72,
+        "price": 245.49,
         "pnl": -10.0
       },
       {
-        "price": 287.95,
+        "price": 247.74,
         "pnl": -10.0
       },
       {
-        "price": 290.18,
+        "price": 249.99,
         "pnl": -10.0
       },
       {
-        "price": 292.41,
+        "price": 252.24,
         "pnl": -10.0
       },
       {
-        "price": 294.65,
+        "price": 254.49,
         "pnl": -10.0
       },
       {
-        "price": 296.88,
-        "pnl": -11.88
+        "price": 256.75,
+        "pnl": -10.0
       },
       {
-        "price": 299.11,
-        "pnl": -14.11
+        "price": 259.0,
+        "pnl": -10.0
       },
       {
-        "price": 301.34,
-        "pnl": -16.34
+        "price": 261.25,
+        "pnl": -10.0
       },
       {
-        "price": 303.57,
-        "pnl": -18.57
+        "price": 263.5,
+        "pnl": -10.0
       },
       {
-        "price": 305.81,
-        "pnl": -20.0
+        "price": 265.75,
+        "pnl": -10.0
       },
       {
-        "price": 308.04,
-        "pnl": -20.0
+        "price": 268.01,
+        "pnl": -10.0
       },
       {
-        "price": 310.27,
-        "pnl": -20.0
+        "price": 270.26,
+        "pnl": -10.0
       },
       {
-        "price": 312.5,
-        "pnl": -20.0
+        "price": 272.51,
+        "pnl": -10.0
       },
       {
-        "price": 314.73,
-        "pnl": -20.0
+        "price": 274.76,
+        "pnl": -10.0
       },
       {
-        "price": 316.97,
-        "pnl": -20.0
+        "price": 277.02,
+        "pnl": -10.0
       },
       {
-        "price": 319.2,
-        "pnl": -20.0
+        "price": 279.27,
+        "pnl": -10.0
       },
       {
-        "price": 321.43,
-        "pnl": -20.0
+        "price": 281.52,
+        "pnl": -10.0
       },
       {
-        "price": 323.66,
-        "pnl": -20.0
+        "price": 283.77,
+        "pnl": -10.0
       },
       {
-        "price": 325.9,
-        "pnl": -20.0
+        "price": 286.02,
+        "pnl": -10.0
       },
       {
-        "price": 328.13,
-        "pnl": -20.0
+        "price": 288.28,
+        "pnl": -10.0
       },
       {
-        "price": 330.36,
-        "pnl": -20.0
+        "price": 290.53,
+        "pnl": -10.53
       },
       {
-        "price": 332.59,
-        "pnl": -20.0
+        "price": 292.78,
+        "pnl": -12.78
       },
       {
-        "price": 334.82,
-        "pnl": -20.0
+        "price": 295.03,
+        "pnl": -15.0
+      },
+      {
+        "price": 297.29,
+        "pnl": -15.0
+      },
+      {
+        "price": 299.54,
+        "pnl": -15.0
+      },
+      {
+        "price": 301.79,
+        "pnl": -15.0
+      },
+      {
+        "price": 304.04,
+        "pnl": -15.0
+      },
+      {
+        "price": 306.29,
+        "pnl": -15.0
+      },
+      {
+        "price": 308.55,
+        "pnl": -15.0
+      },
+      {
+        "price": 310.8,
+        "pnl": -15.0
+      },
+      {
+        "price": 313.05,
+        "pnl": -15.0
+      },
+      {
+        "price": 315.3,
+        "pnl": -15.0
+      },
+      {
+        "price": 317.55,
+        "pnl": -15.0
+      },
+      {
+        "price": 319.81,
+        "pnl": -15.0
+      },
+      {
+        "price": 322.06,
+        "pnl": -15.0
+      },
+      {
+        "price": 324.31,
+        "pnl": -15.0
+      },
+      {
+        "price": 326.56,
+        "pnl": -15.0
+      },
+      {
+        "price": 328.82,
+        "pnl": -15.0
+      },
+      {
+        "price": 331.07,
+        "pnl": -15.0
+      },
+      {
+        "price": 333.32,
+        "pnl": -15.0
+      },
+      {
+        "price": 335.57,
+        "pnl": -15.0
+      },
+      {
+        "price": 337.82,
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
@@ -294,14 +270,14 @@
     }
   },
   "indicators": {
-    "EMA20": "285.01",
-    "EMA50": "289.42",
-    "EMA100": "287.22",
-    "EMA200": "276.63",
-    "RSI(14)": "32.92",
-    "ATR(14)": "3.56",
-    "ADX(14)": "37.95",
-    "BB(20,2)": "0.19"
+    "EMA20": "284.68",
+    "EMA50": "289.11",
+    "EMA100": "287.10",
+    "EMA200": "276.67",
+    "RSI(14)": "39.57",
+    "ATR(14)": "3.63",
+    "ADX(14)": "37.74",
+    "BB(20,2)": "0.33"
   },
   "rules": [
     {
@@ -340,6 +316,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
@@ -368,13 +351,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -383,6 +359,20 @@
     }
   ],
   "news": [
+    {
+      "title": "The stock market is anything but normal right now \u2014 and these charts show it",
+      "publisher": "MarketWatch",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-anything-normal-now-114800310.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IWM Has Trailed the S&P 500 for a Decade While Carrying More Risk: The Small-Cap Premium That Never Fully Arrived",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/iwm-trailed-p-500-decade-113317679.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
     {
       "title": "Forget IWM: This Screened Small-Cap Fund Beat It Year to Date, Over One Year and Over Five Years",
       "publisher": "24/7 Wall St.",
@@ -410,20 +400,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-falls-4-index-155927741.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "Jennison\u2019s PJSM Arrives With a Bold Promise and Almost No Track Record to Back It Up",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/portfolio-fit-pjsm-150053922.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "5 Leveraged ETF Areas of Last Week",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/5-leveraged-etf-areas-last-130000107.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

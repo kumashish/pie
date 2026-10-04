@@ -1,295 +1,283 @@
 {
   "symbol": "SPY",
-  "last_price": 763.99,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 769.64,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 6.5,
-  "fit_score": 65.0,
+  "trend_score": 7.5,
+  "fit_score": 75.0,
   "confidence_grade": "B",
-  "confidence_percentage": 65.0,
-  "vix": 15.93,
-  "strategy_type": "butterfly",
-  "strategy_display": "Butterfly",
-  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "confidence_percentage": 75.0,
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (66.1% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "recommendation_reason": "Best fit strategy (65.6% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 740.0,
-        "strike_formatted": "740",
+        "strike": 770.0,
+        "strike_formatted": "770",
         "option_type": "Call",
-        "delta": 0.755,
+        "delta": 0.554,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x SPY 20-Nov-2026 740 Call"
+        "dte": 47,
+        "summary": "Buy 1x SPY 20-Nov-2026 770 Call"
       },
       {
         "action": "Sell",
-        "quantity": 2,
-        "strike": 765.0,
-        "strike_formatted": "765",
-        "option_type": "Call",
-        "delta": 0.548,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 2x SPY 20-Nov-2026 765 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
-        "strike": 785.0,
-        "strike_formatted": "785",
+        "strike": 800.0,
+        "strike_formatted": "800",
         "option_type": "Call",
-        "delta": 0.374,
+        "delta": 0.288,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x SPY 20-Nov-2026 785 Call"
+        "dte": 47,
+        "summary": "Sell 1x SPY 20-Nov-2026 800 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 35.0,
-    "stop_loss_price": 741.07,
-    "take_profit_price": 786.91,
-    "net_delta": 0.033,
-    "net_theta": 0.043,
-    "probability_of_profit": 73.1,
+    "roc_percentage": 150.0,
+    "margin_required": 12.0,
+    "stop_loss_price": 754.25,
+    "take_profit_price": 800.0,
+    "net_delta": 0.266,
+    "net_theta": -0.051,
+    "probability_of_profit": 52.7,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 611.19,
-        "pnl": -35.0
+        "price": 615.71,
+        "pnl": -12.0
       },
       {
-        "price": 617.3,
-        "pnl": -35.0
+        "price": 621.87,
+        "pnl": -12.0
       },
       {
-        "price": 623.42,
-        "pnl": -35.0
+        "price": 628.03,
+        "pnl": -12.0
       },
       {
-        "price": 629.53,
-        "pnl": -35.0
+        "price": 634.18,
+        "pnl": -12.0
       },
       {
-        "price": 635.64,
-        "pnl": -35.0
+        "price": 640.34,
+        "pnl": -12.0
       },
       {
-        "price": 641.75,
-        "pnl": -35.0
+        "price": 646.5,
+        "pnl": -12.0
       },
       {
-        "price": 647.86,
-        "pnl": -35.0
+        "price": 652.65,
+        "pnl": -12.0
       },
       {
-        "price": 653.98,
-        "pnl": -35.0
+        "price": 658.81,
+        "pnl": -12.0
       },
       {
-        "price": 660.09,
-        "pnl": -35.0
+        "price": 664.97,
+        "pnl": -12.0
       },
       {
-        "price": 666.2,
-        "pnl": -35.0
+        "price": 671.13,
+        "pnl": -12.0
       },
       {
-        "price": 672.31,
-        "pnl": -35.0
+        "price": 677.28,
+        "pnl": -12.0
       },
       {
-        "price": 678.42,
-        "pnl": -35.0
+        "price": 683.44,
+        "pnl": -12.0
       },
       {
-        "price": 684.54,
-        "pnl": -35.0
+        "price": 689.6,
+        "pnl": -12.0
       },
       {
-        "price": 690.65,
-        "pnl": -35.0
+        "price": 695.75,
+        "pnl": -12.0
       },
       {
-        "price": 696.76,
-        "pnl": -35.0
+        "price": 701.91,
+        "pnl": -12.0
       },
       {
-        "price": 702.87,
-        "pnl": -35.0
+        "price": 708.07,
+        "pnl": -12.0
       },
       {
-        "price": 708.98,
-        "pnl": -35.0
+        "price": 714.23,
+        "pnl": -12.0
       },
       {
-        "price": 715.09,
-        "pnl": -35.0
+        "price": 720.38,
+        "pnl": -12.0
       },
       {
-        "price": 721.21,
-        "pnl": -35.0
+        "price": 726.54,
+        "pnl": -12.0
       },
       {
-        "price": 727.32,
-        "pnl": -35.0
+        "price": 732.7,
+        "pnl": -12.0
       },
       {
-        "price": 733.43,
-        "pnl": -35.0
+        "price": 738.85,
+        "pnl": -12.0
       },
       {
-        "price": 739.54,
-        "pnl": -35.0
+        "price": 745.01,
+        "pnl": -12.0
       },
       {
-        "price": 745.65,
-        "pnl": -29.35
+        "price": 751.17,
+        "pnl": -12.0
       },
       {
-        "price": 751.77,
-        "pnl": -23.23
+        "price": 757.33,
+        "pnl": -12.0
       },
       {
-        "price": 757.88,
-        "pnl": -17.12
+        "price": 763.48,
+        "pnl": -12.0
       },
       {
-        "price": 763.99,
-        "pnl": -11.01
+        "price": 769.64,
+        "pnl": -12.0
       },
       {
-        "price": 770.1,
-        "pnl": -15.1
+        "price": 775.8,
+        "pnl": -6.2
       },
       {
-        "price": 776.21,
-        "pnl": -21.21
+        "price": 781.95,
+        "pnl": -0.05
       },
       {
-        "price": 782.33,
-        "pnl": -27.33
+        "price": 788.11,
+        "pnl": 6.11
       },
       {
-        "price": 788.44,
-        "pnl": -30.0
+        "price": 794.27,
+        "pnl": 12.27
       },
       {
-        "price": 794.55,
-        "pnl": -30.0
+        "price": 800.43,
+        "pnl": 18.0
       },
       {
-        "price": 800.66,
-        "pnl": -30.0
+        "price": 806.58,
+        "pnl": 18.0
       },
       {
-        "price": 806.77,
-        "pnl": -30.0
+        "price": 812.74,
+        "pnl": 18.0
       },
       {
-        "price": 812.89,
-        "pnl": -30.0
+        "price": 818.9,
+        "pnl": 18.0
       },
       {
-        "price": 819.0,
-        "pnl": -30.0
+        "price": 825.05,
+        "pnl": 18.0
       },
       {
-        "price": 825.11,
-        "pnl": -30.0
+        "price": 831.21,
+        "pnl": 18.0
       },
       {
-        "price": 831.22,
-        "pnl": -30.0
+        "price": 837.37,
+        "pnl": 18.0
       },
       {
-        "price": 837.33,
-        "pnl": -30.0
+        "price": 843.53,
+        "pnl": 18.0
       },
       {
-        "price": 843.44,
-        "pnl": -30.0
+        "price": 849.68,
+        "pnl": 18.0
       },
       {
-        "price": 849.56,
-        "pnl": -30.0
+        "price": 855.84,
+        "pnl": 18.0
       },
       {
-        "price": 855.67,
-        "pnl": -30.0
+        "price": 862.0,
+        "pnl": 18.0
       },
       {
-        "price": 861.78,
-        "pnl": -30.0
+        "price": 868.15,
+        "pnl": 18.0
       },
       {
-        "price": 867.89,
-        "pnl": -30.0
+        "price": 874.31,
+        "pnl": 18.0
       },
       {
-        "price": 874.0,
-        "pnl": -30.0
+        "price": 880.47,
+        "pnl": 18.0
       },
       {
-        "price": 880.12,
-        "pnl": -30.0
+        "price": 886.63,
+        "pnl": 18.0
       },
       {
-        "price": 886.23,
-        "pnl": -30.0
+        "price": 892.78,
+        "pnl": 18.0
       },
       {
-        "price": 892.34,
-        "pnl": -30.0
+        "price": 898.94,
+        "pnl": 18.0
       },
       {
-        "price": 898.45,
-        "pnl": -30.0
+        "price": 905.1,
+        "pnl": 18.0
       },
       {
-        "price": 904.56,
-        "pnl": -30.0
+        "price": 911.25,
+        "pnl": 18.0
       },
       {
-        "price": 910.68,
-        "pnl": -30.0
+        "price": 917.41,
+        "pnl": 18.0
       },
       {
-        "price": 916.79,
-        "pnl": -30.0
+        "price": 923.57,
+        "pnl": 18.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.731,
+      "win_probability": 0.73,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2579,
+      "half_kelly_fraction": 0.257,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "763.14",
-    "EMA50": "714.19",
-    "EMA100": "620.61",
-    "EMA200": "525.97",
-    "RSI(14)": "51.98",
-    "ATR(14)": "17.07",
-    "ADX(14)": "4.34",
-    "BB(20,2)": "0.45"
+    "EMA20": "763.76",
+    "EMA50": "716.36",
+    "EMA100": "623.56",
+    "EMA200": "528.40",
+    "RSI(14)": "53.41",
+    "ATR(14)": "16.47",
+    "ADX(14)": "4.40",
+    "BB(20,2)": "0.73"
   },
   "rules": [
     {
@@ -321,6 +309,27 @@
       "explanation": "Condition met"
     },
     {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
       "score": 1.0,
@@ -329,27 +338,6 @@
     },
     {
       "name": "ADX above 30",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -372,46 +360,46 @@
   ],
   "news": [
     {
-      "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
-      "publisher": "Benzinga Prediction Markets",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-p-500-open-054725536.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "ETF Inflows Top Last Year's Record With a Quarter to Spare",
-      "publisher": "etf.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/etf-inflows-top-last-years-043228801.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "The Hidden Cost of Owning Every Stock: $167,050 of a $500,000 VTI Position Sits in Its Top Ten Names",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/hidden-cost-owning-every-stock-003342923.html",
+      "title": "Michael Saylor Says Strategy's STRC Is Now Steadier Than The S&P 500's Biggest Tracker: \u2018A Milestone For Digital Credit\u2019",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/michael-saylor-says-strategys-strc-174624982.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "S&P 500, Nasdaq, Dow Futures Inch Higher As Investors Cheer Cooling Yields \u2014 GOOGL, MU, MAT, NVDA In Focus",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-dow-futures-232759547.html",
+      "title": "Is the AI Bull Market About to Crash? This Risk Indicator Is Saying Yes",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ai-bull-market-crash-risk-144443575.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Tesla Is Down 20% in 2026. These Two Other EV Makers Are Doing Even Worse.",
+      "title": "Wall Street Expects S&P 500 Profit Growth to Collapse From 35% to 15% in 2027",
       "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-down-20-2026-two-191317192.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-expects-p-500-130844687.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "bullish"
     },
     {
-      "title": "Snap Is Down 32% in 2026: Overlooked Bargain or Toxic Stock?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/snap-down-32-2026-overlooked-190217529.html",
+      "title": "S&P 500, Nasdaq, Dow End Week Higher As Weak Jobs Report Cools Rate Hike Bets \u2014 NVDA, BA, SPCX, RIVN, APLD In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-dow-end-222859024.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "bullish"
+    },
+    {
+      "title": "3 Option Income ETFs That Pay You 12 Times a Year. Here\u2019s How the Monthly Check Is Generated",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/options/articles/3-option-income-etfs-pay-203331155.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Much Does a 58-Year-Old Need Invested to Replace a $160,000 Salary With Dividends?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-does-58-old-invested-193956064.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

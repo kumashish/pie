@@ -1,45 +1,45 @@
 {
   "symbol": "DIA",
-  "last_price": 508.62,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 511.1,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 4.8,
-  "fit_score": 47.5,
+  "trend_score": 5.8,
+  "fit_score": 57.5,
   "confidence_grade": "C",
-  "confidence_percentage": 47.5,
-  "vix": 15.93,
+  "confidence_percentage": 57.5,
+  "vix": 15.31,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (80.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (71.0% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 465.0,
-        "strike_formatted": "465",
+        "strike": 470.0,
+        "strike_formatted": "470",
         "option_type": "Put",
-        "delta": -0.046,
+        "delta": -0.047,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x DIA 20-Nov-2026 465 Put"
+        "dte": 47,
+        "summary": "Buy 1x DIA 20-Nov-2026 470 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 480.0,
-        "strike_formatted": "480",
+        "strike": 485.0,
+        "strike_formatted": "485",
         "option_type": "Put",
-        "delta": -0.128,
+        "delta": -0.136,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x DIA 20-Nov-2026 480 Put"
+        "dte": 47,
+        "summary": "Sell 1x DIA 20-Nov-2026 485 Put"
       },
       {
         "action": "Sell",
@@ -47,10 +47,10 @@
         "strike": 540.0,
         "strike_formatted": "540",
         "option_type": "Call",
-        "delta": 0.189,
+        "delta": 0.196,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
+        "dte": 47,
         "summary": "Sell 1x DIA 20-Nov-2026 540 Call"
       },
       {
@@ -62,7 +62,7 @@
         "delta": 0.088,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
+        "dte": 47,
         "summary": "Buy 1x DIA 20-Nov-2026 555 Call"
       }
     ],
@@ -70,238 +70,238 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 493.36,
-    "take_profit_price": 523.88,
+    "stop_loss_price": 495.77,
+    "take_profit_price": 526.43,
     "net_delta": -0.019,
-    "net_theta": 0.068,
+    "net_theta": 0.071,
     "probability_of_profit": 0.0,
     "var_95": 15.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 406.9,
+        "price": 408.88,
         "pnl": -35.0
       },
       {
-        "price": 410.96,
+        "price": 412.97,
         "pnl": -35.0
       },
       {
-        "price": 415.03,
+        "price": 417.06,
         "pnl": -35.0
       },
       {
-        "price": 419.1,
+        "price": 421.15,
         "pnl": -35.0
       },
       {
-        "price": 423.17,
+        "price": 425.24,
         "pnl": -35.0
       },
       {
-        "price": 427.24,
+        "price": 429.32,
         "pnl": -35.0
       },
       {
-        "price": 431.31,
+        "price": 433.41,
         "pnl": -35.0
       },
       {
-        "price": 435.38,
+        "price": 437.5,
         "pnl": -35.0
       },
       {
-        "price": 439.45,
+        "price": 441.59,
         "pnl": -35.0
       },
       {
-        "price": 443.52,
+        "price": 445.68,
         "pnl": -35.0
       },
       {
-        "price": 447.59,
+        "price": 449.77,
         "pnl": -35.0
       },
       {
-        "price": 451.65,
+        "price": 453.86,
         "pnl": -35.0
       },
       {
-        "price": 455.72,
+        "price": 457.95,
         "pnl": -35.0
       },
       {
-        "price": 459.79,
+        "price": 462.03,
         "pnl": -35.0
       },
       {
-        "price": 463.86,
+        "price": 466.12,
         "pnl": -35.0
       },
       {
-        "price": 467.93,
-        "pnl": -32.07
+        "price": 470.21,
+        "pnl": -34.79
       },
       {
-        "price": 472.0,
-        "pnl": -28.0
+        "price": 474.3,
+        "pnl": -30.7
       },
       {
-        "price": 476.07,
-        "pnl": -23.93
+        "price": 478.39,
+        "pnl": -26.61
       },
       {
-        "price": 480.14,
+        "price": 482.48,
+        "pnl": -22.52
+      },
+      {
+        "price": 486.57,
         "pnl": -20.0
       },
       {
-        "price": 484.21,
+        "price": 490.66,
         "pnl": -20.0
       },
       {
-        "price": 488.28,
+        "price": 494.74,
         "pnl": -20.0
       },
       {
-        "price": 492.34,
+        "price": 498.83,
         "pnl": -20.0
       },
       {
-        "price": 496.41,
+        "price": 502.92,
         "pnl": -20.0
       },
       {
-        "price": 500.48,
+        "price": 507.01,
         "pnl": -20.0
       },
       {
-        "price": 504.55,
+        "price": 511.1,
         "pnl": -20.0
       },
       {
-        "price": 508.62,
+        "price": 515.19,
         "pnl": -20.0
       },
       {
-        "price": 512.69,
+        "price": 519.28,
         "pnl": -20.0
       },
       {
-        "price": 516.76,
+        "price": 523.37,
         "pnl": -20.0
       },
       {
-        "price": 520.83,
+        "price": 527.46,
         "pnl": -20.0
       },
       {
-        "price": 524.9,
+        "price": 531.54,
         "pnl": -20.0
       },
       {
-        "price": 528.96,
+        "price": 535.63,
         "pnl": -20.0
       },
       {
-        "price": 533.03,
+        "price": 539.72,
         "pnl": -20.0
       },
       {
-        "price": 537.1,
-        "pnl": -20.0
+        "price": 543.81,
+        "pnl": -23.81
       },
       {
-        "price": 541.17,
-        "pnl": -21.17
+        "price": 547.9,
+        "pnl": -27.9
       },
       {
-        "price": 545.24,
-        "pnl": -25.24
+        "price": 551.99,
+        "pnl": -31.99
       },
       {
-        "price": 549.31,
-        "pnl": -29.31
-      },
-      {
-        "price": 553.38,
-        "pnl": -33.38
-      },
-      {
-        "price": 557.45,
+        "price": 556.08,
         "pnl": -35.0
       },
       {
-        "price": 561.52,
+        "price": 560.17,
         "pnl": -35.0
       },
       {
-        "price": 565.59,
+        "price": 564.25,
         "pnl": -35.0
       },
       {
-        "price": 569.65,
+        "price": 568.34,
         "pnl": -35.0
       },
       {
-        "price": 573.72,
+        "price": 572.43,
         "pnl": -35.0
       },
       {
-        "price": 577.79,
+        "price": 576.52,
         "pnl": -35.0
       },
       {
-        "price": 581.86,
+        "price": 580.61,
         "pnl": -35.0
       },
       {
-        "price": 585.93,
+        "price": 584.7,
         "pnl": -35.0
       },
       {
-        "price": 590.0,
+        "price": 588.79,
         "pnl": -35.0
       },
       {
-        "price": 594.07,
+        "price": 592.88,
         "pnl": -35.0
       },
       {
-        "price": 598.14,
+        "price": 596.96,
         "pnl": -35.0
       },
       {
-        "price": 602.21,
+        "price": 601.05,
         "pnl": -35.0
       },
       {
-        "price": 606.28,
+        "price": 605.14,
         "pnl": -35.0
       },
       {
-        "price": 610.34,
+        "price": 609.23,
+        "pnl": -35.0
+      },
+      {
+        "price": 613.32,
         "pnl": -35.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.78,
+      "win_probability": 0.748,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.302,
+      "half_kelly_fraction": 0.2732,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "518.23",
-    "EMA50": "521.98",
-    "EMA100": "517.13",
-    "EMA200": "503.43",
-    "RSI(14)": "35.18",
-    "ATR(14)": "5.04",
-    "ADX(14)": "22.95",
-    "BB(20,2)": "0.14"
+    "EMA20": "517.55",
+    "EMA50": "521.56",
+    "EMA100": "517.01",
+    "EMA200": "503.50",
+    "RSI(14)": "39.06",
+    "ATR(14)": "5.00",
+    "ADX(14)": "23.41",
+    "BB(20,2)": "0.23"
   },
   "rules": [
     {
@@ -313,6 +313,27 @@
     },
     {
       "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -354,27 +375,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -383,6 +383,13 @@
     }
   ],
   "news": [
+    {
+      "title": "S&P 500, Nasdaq, Dow End Week Higher As Weak Jobs Report Cools Rate Hike Bets \u2014 NVDA, BA, SPCX, RIVN, APLD In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-dow-end-222859024.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
     {
       "title": "S&P 500, Dow End Lower As Investors Shrug Off Cooler-Than-Expected Inflation Data \u2014 MGM, SPCX, AAPL, TSM In Focus",
       "publisher": "Stocktwits",
@@ -417,13 +424,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-nasdaq-drop-230758863.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "S&P 500, Dow, Nasdaq End Week Higher On Chipmaker Strength, Easing Oil Amid Signs Of Easing US-Iran Conflict \u2014 META, COST, MSFT, CRWD, SKHY In Focus",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-nasdaq-end-225148025.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }

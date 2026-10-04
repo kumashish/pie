@@ -1,283 +1,283 @@
 {
   "symbol": "MU",
-  "last_price": 1097.39,
-  "as_of": "2026-10-01 13:30:00",
-  "regime": "strong_bull",
-  "regime_display": "Strong Bull",
-  "trend_score": 8.8,
-  "fit_score": 87.5,
-  "confidence_grade": "A",
-  "confidence_percentage": 87.5,
-  "vix": 15.93,
+  "last_price": 1074.89,
+  "as_of": "2026-10-02 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.8,
+  "fit_score": 77.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 77.5,
+  "vix": 15.31,
   "strategy_type": "call_debit_spread",
   "strategy_display": "Call Debit Spread",
   "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (74.2% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (68.1% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1100.0,
-        "strike_formatted": "1100",
+        "strike": 1050.0,
+        "strike_formatted": "1050",
         "option_type": "Call",
-        "delta": 0.541,
+        "delta": 0.716,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x MU 20-Nov-2026 1100 Call"
+        "dte": 47,
+        "summary": "Buy 1x MU 20-Nov-2026 1050 Call"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
+        "strike": 1100.0,
+        "strike_formatted": "1100",
         "option_type": "Call",
-        "delta": 0.255,
+        "delta": 0.391,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x MU 20-Nov-2026 1150 Call"
+        "dte": 47,
+        "summary": "Sell 1x MU 20-Nov-2026 1100 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 150.0,
     "margin_required": 20.0,
-    "stop_loss_price": 1075.44,
-    "take_profit_price": 1150.0,
-    "net_delta": 0.286,
-    "net_theta": -0.09,
-    "probability_of_profit": 51.3,
+    "stop_loss_price": 1053.39,
+    "take_profit_price": 1100.0,
+    "net_delta": 0.325,
+    "net_theta": -0.016,
+    "probability_of_profit": 69.2,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 877.91,
+        "price": 859.91,
         "pnl": -20.0
       },
       {
-        "price": 886.69,
+        "price": 868.51,
         "pnl": -20.0
       },
       {
-        "price": 895.47,
+        "price": 877.11,
         "pnl": -20.0
       },
       {
-        "price": 904.25,
+        "price": 885.71,
         "pnl": -20.0
       },
       {
-        "price": 913.03,
+        "price": 894.31,
         "pnl": -20.0
       },
       {
-        "price": 921.81,
+        "price": 902.91,
         "pnl": -20.0
       },
       {
-        "price": 930.59,
+        "price": 911.51,
         "pnl": -20.0
       },
       {
-        "price": 939.37,
+        "price": 920.11,
         "pnl": -20.0
       },
       {
-        "price": 948.14,
+        "price": 928.7,
         "pnl": -20.0
       },
       {
-        "price": 956.92,
+        "price": 937.3,
         "pnl": -20.0
       },
       {
-        "price": 965.7,
+        "price": 945.9,
         "pnl": -20.0
       },
       {
-        "price": 974.48,
+        "price": 954.5,
         "pnl": -20.0
       },
       {
-        "price": 983.26,
+        "price": 963.1,
         "pnl": -20.0
       },
       {
-        "price": 992.04,
+        "price": 971.7,
         "pnl": -20.0
       },
       {
-        "price": 1000.82,
+        "price": 980.3,
         "pnl": -20.0
       },
       {
-        "price": 1009.6,
+        "price": 988.9,
         "pnl": -20.0
       },
       {
-        "price": 1018.38,
+        "price": 997.5,
         "pnl": -20.0
       },
       {
-        "price": 1027.16,
+        "price": 1006.1,
         "pnl": -20.0
       },
       {
-        "price": 1035.94,
+        "price": 1014.7,
         "pnl": -20.0
       },
       {
-        "price": 1044.72,
+        "price": 1023.3,
         "pnl": -20.0
       },
       {
-        "price": 1053.49,
+        "price": 1031.89,
         "pnl": -20.0
       },
       {
-        "price": 1062.27,
+        "price": 1040.49,
         "pnl": -20.0
       },
       {
-        "price": 1071.05,
+        "price": 1049.09,
         "pnl": -20.0
       },
       {
-        "price": 1079.83,
-        "pnl": -20.0
+        "price": 1057.69,
+        "pnl": -12.31
       },
       {
-        "price": 1088.61,
-        "pnl": -20.0
+        "price": 1066.29,
+        "pnl": -3.71
       },
       {
-        "price": 1097.39,
-        "pnl": -20.0
+        "price": 1074.89,
+        "pnl": 4.89
       },
       {
-        "price": 1106.17,
-        "pnl": -13.83
+        "price": 1083.49,
+        "pnl": 13.49
       },
       {
-        "price": 1114.95,
-        "pnl": -5.05
+        "price": 1092.09,
+        "pnl": 22.09
       },
       {
-        "price": 1123.73,
-        "pnl": 3.73
-      },
-      {
-        "price": 1132.51,
-        "pnl": 12.51
-      },
-      {
-        "price": 1141.29,
-        "pnl": 21.29
-      },
-      {
-        "price": 1150.06,
+        "price": 1100.69,
         "pnl": 30.0
       },
       {
-        "price": 1158.84,
+        "price": 1109.29,
         "pnl": 30.0
       },
       {
-        "price": 1167.62,
+        "price": 1117.89,
         "pnl": 30.0
       },
       {
-        "price": 1176.4,
+        "price": 1126.48,
         "pnl": 30.0
       },
       {
-        "price": 1185.18,
+        "price": 1135.08,
         "pnl": 30.0
       },
       {
-        "price": 1193.96,
+        "price": 1143.68,
         "pnl": 30.0
       },
       {
-        "price": 1202.74,
+        "price": 1152.28,
         "pnl": 30.0
       },
       {
-        "price": 1211.52,
+        "price": 1160.88,
         "pnl": 30.0
       },
       {
-        "price": 1220.3,
+        "price": 1169.48,
         "pnl": 30.0
       },
       {
-        "price": 1229.08,
+        "price": 1178.08,
         "pnl": 30.0
       },
       {
-        "price": 1237.86,
+        "price": 1186.68,
         "pnl": 30.0
       },
       {
-        "price": 1246.64,
+        "price": 1195.28,
         "pnl": 30.0
       },
       {
-        "price": 1255.41,
+        "price": 1203.88,
         "pnl": 30.0
       },
       {
-        "price": 1264.19,
+        "price": 1212.48,
         "pnl": 30.0
       },
       {
-        "price": 1272.97,
+        "price": 1221.08,
         "pnl": 30.0
       },
       {
-        "price": 1281.75,
+        "price": 1229.67,
         "pnl": 30.0
       },
       {
-        "price": 1290.53,
+        "price": 1238.27,
         "pnl": 30.0
       },
       {
-        "price": 1299.31,
+        "price": 1246.87,
         "pnl": 30.0
       },
       {
-        "price": 1308.09,
+        "price": 1255.47,
         "pnl": 30.0
       },
       {
-        "price": 1316.87,
+        "price": 1264.07,
+        "pnl": 30.0
+      },
+      {
+        "price": 1272.67,
+        "pnl": 30.0
+      },
+      {
+        "price": 1281.27,
+        "pnl": 30.0
+      },
+      {
+        "price": 1289.87,
         "pnl": 30.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.76,
+      "win_probability": 0.738,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.284,
+      "half_kelly_fraction": 0.2642,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "1027.60",
-    "EMA50": "977.80",
-    "EMA100": "893.81",
-    "EMA200": "727.16",
-    "RSI(14)": "63.52",
-    "ATR(14)": "47.29",
-    "ADX(14)": "15.69",
-    "BB(20,2)": "0.84"
+    "EMA20": "1032.10",
+    "EMA50": "981.60",
+    "EMA100": "897.39",
+    "EMA200": "730.62",
+    "RSI(14)": "59.26",
+    "ATR(14)": "46.48",
+    "ADX(14)": "15.08",
+    "BB(20,2)": "0.72"
   },
   "rules": [
     {
@@ -309,13 +309,6 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
@@ -323,7 +316,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -351,7 +344,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -360,44 +360,44 @@
   ],
   "news": [
     {
-      "title": "Why Micron Stock Soared in September",
+      "title": "Broadcom vs. Micron: Which Semiconductor Stock Is the Better AI Buy over the Next 3 Years?",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-soared-september-090510132.html",
+      "link": "https://finance.yahoo.com/technology/ai/articles/broadcom-vs-micron-semiconductor-stock-095900865.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Dow Jones Futures Rise, Oil Prices Fall With Tesla, Jobs Report Due; Micron In Buy Area",
-      "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/f6c899dd-7f15-3879-b266-51980008982d/dow-jones-futures-rise%2C-oil.html",
+      "title": "Amylyx Pharmaceuticals And 2 More Quality Growth Stocks",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/amylyx-pharmaceuticals-2-more-quality-070939376.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "U.S. Futures Rise Ahead of Payrolls as Bond-Market Volatility Remains in Focus: Dow Jones, S&P, Nasdaq, Wall Street",
-      "publisher": "InvestorsHub",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/u-futures-rise-ahead-payrolls-090017229.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Micron Plans to Put Its Excess Cash Into Buybacks. Here's How Much of the Stock That Could Retire.",
+      "title": "Micron Technology vs. Qualcomm: What Revenue Trends Tell Investors About These Tech Companies",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-plans-put-excess-cash-080601895.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-vs-qualcomm-revenue-054012853.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Micron\u2019s Stock Is Cheap. Why Investors Are Still Gun-Shy.",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/e4112145-889b-397f-8af8-5f6d41ed9777/micron%E2%80%99s-stock-is-cheap.-why.html",
+      "title": "3 No-Brainer Stocks to Buy If Data Center Expenditures Hit $3 Trillion by 2030",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-no-brainer-stocks-buy-012000729.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Stock Market News for Oct 2, 2026",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-2-071400258.html",
+      "title": "A chipmaker's boom is quietly raising the price of your electronics",
+      "publisher": "TheStreet",
+      "link": "https://finance.yahoo.com/technology/ai/articles/chipmakers-boom-quietly-raising-price-211700867.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "CompX (CIX) Has $52 Million in Cash. Why That Alone Doesn\u2019t Make It Cheap",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/compx-cix-52-million-cash-192755971.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

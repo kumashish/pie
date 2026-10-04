@@ -23,10 +23,10 @@
         "strike": 2100.0,
         "strike_formatted": "2100",
         "option_type": "Put",
-        "delta": -0.523,
+        "delta": -0.526,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x TCS.NS 24-Nov-2026 2100 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 2000.0,
         "strike_formatted": "2000",
         "option_type": "Put",
-        "delta": -0.204,
+        "delta": -0.201,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Sell 1x TCS.NS 24-Nov-2026 2000 Put"
       }
     ],
@@ -48,9 +48,9 @@
     "margin_required": 40.0,
     "stop_loss_price": 2116.5,
     "take_profit_price": 2000.0,
-    "net_delta": -0.319,
-    "net_theta": -0.028,
-    "probability_of_profit": 54.9,
+    "net_delta": -0.325,
+    "net_theta": -0.031,
+    "probability_of_profit": 55.1,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
@@ -360,11 +360,25 @@
   ],
   "news": [
     {
+      "title": "The week ahead in numbers: RBI policy, TCS Q2 results, Nobel prizes",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbFlhLVlFVmRpZDNNcUNuelZjeEJCYWVaZzlEeXlINW80RUFqR1pWcF9JSzkxT0lVWDYwelFLRFQ0VjhTODdZWDFOWWVSUzk4d1JvVkdHcFpFNG1zdEdqOEZ5QkJ1NjJnNUY3RDh2ZTdvN3BvSmF1bFNEMktfcXNaNGh2QUR1SzUwLUhUdS1iR0lZaFNYZGtWZ2NCbGM5SDhQRU5Ob1NBUFJueHl5aUZTckQ4VULSAboBQVVfeXFMTnFqWFVyakI1a3lmNng3TnlrbmFIZDdRUmY3c0U1UFM0dV93blBHUFBQVDlDazM4SlhjNTM5Mnhad3RZRllxOEt1ZEx5RURIM1ZkRGFkRVBaSDltNXRtdlZxakNkZ3dPS21YblpnYzNhZWlyaG95bjZCSXhtMDJqS3RTa0lnNV9sSjNOZnl3X3N6Zng3MGlhcDF4X25fbkhWa2pfNjdORjdpSU1icjhqdVN0UkdSRWg3cUVB?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "TCS to take over Best Buy\u2019s India GCC, turn it into AI capability centre",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNenNCTWNEN3lIOWtydTZib2dHaVgyM2xQZnZIdlFHVXFaQ3J2MldrMHVtYUpMZzdTOUdVeThJeER6aGVpQ2FjaU1WN1hYTkVNMEFoclgyZ0MyQjFRcTc5TXRoSTVnNWZDTHpMblJSc3pOVkd6VVlucmVLczNxczVxTW1Tb2E5S09xT0xKVVJOb2pObUNtNjVPdDI4MHBWa2d4UmJITzFHcXJOU2x4aHVsSzBWQk1WVGhqS2lnZlBrYVJjdUszemp3SDltQks3eEVyMVBuTThJYWEzMHlsYVVNbUhhMFhzQdIB6wFBVV95cUxNaTg3blNCN1ZsSDg0QnowUFJENWxFQ01WTTA0bkMtYWxQX05yU1Rqam9XOFUyZkE5djFJNC1CYXh1cC14ajFjdk95Z19wSUJodG1IM0xJZGtCOUFFRmxOQVdFYzJDalFpVWJHem9nTGkzNVJNZXBpa0F0NFJPazRLaEFfOGJMVVZXU0tTR3pKbXRhNWM2d3RMclZMZy1ROUpBakJhbkJoLXNnOWVHTm9sQXZGUF8xYjUwNzVTaEZyb0JSeUF5dWk3SWVLUzRkUVRaM3p4MHlYcl9OZGV3TDJST3dQZU5UY0loZzJv?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
+    },
+    {
+      "title": "TCS, Infosys, Wipro shares ahead of Q2 results: Explained | What Accenture's strong earnings mean for Indian IT stocks",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPQ1NnVU5Mb1F1NlQ5d3FVSi1xMTJnMFJlYVNiVDlCRXlDRzRvQkJZZ3MybzhRdU56VWJpVjllUTNESTBFUngwRVlzY1VROUxuV1NDS2czbnpLcFFDLWhvelNmRmVVWTRJbUxfN19Zbll4SGxoR29oUkEtV01fM3ZIMWZyR2hKbWVnSXk4bzRPQTE2THBxRTNhTmkyNkVrckg5ajZsanBjd3dUVGp0bjA5OXNSbEcwWC1FcWlhSWtXMEliWjc2VFZWdUhCTWdObUthQVNpT2hCQVRWZVRSeGVJbUdOdU5aM1p6cFdTS3JRNllNSnp6ejExZGxlV3hXeUhWRm5IY1lpYXQzR2JyRGNv0gGUAkFVX3lxTFBFcjQzVzdKWVdkVFpHb2RrejFxOWJta3VJZ1laVDVRWmtKZFptMEhuaEJNYnZRM2ZZMzhlSFVuaThpZEJIME5hamxXNThWWEpVbkR1LXVuYUxpUE10R2ppVi04aXdzUjV5RWRjOFdneFdWenpUVFJfcjRqRFFCLTF5WDhnYUxyRnVDWnFROVh5emtPMXZ5TUNFU2hMTEpaZ1FINktNWmt5alhsTVdLaXViT0JvZUhVZ2xkSmNPSkY5NERaVmRheE5RWDZDM0xUbFl0XzAwMlEyeXpXYTNvSFpkdkZPOU52MEdjTUFBTGwxWGNETWljcXNmaFluNG5qbDFNbUgta2hrMzhGVlJZcEZvd1NnYw?oc=5",
+      "published_at": "Sat, 03 Oct 2026",
+      "sentiment": "neutral"
     },
     {
       "title": "'Stop trolling TCS': EY techie earning over Rs 50 lakh says Tata offered 25% hike",
@@ -374,31 +388,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Rahul Gandhi asks who ordered TCS to change Form 6, whether firm was pressured",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNTjdnNzNGNERfc3J1YktSb1pCZmdLNlVfNU1lVmllV3NXM1JVYTcwQWFVWFA1ZGxyc0xfLWZ3dGFNRVNPV1o4enpYTDdBajdQa3FlNEk1QnEzN1JacV9tSzVDdTBOTEswakZKV3FkRnR3b18zUTFtb2VBOW1oeExlLUFYcC1Hbkctc01pUzZBY09DSjlCaWdibnQ1UFBYQm9jYmpVejI5UG5Va0RmdnhyenZuSzJMTlpYeG9oYjFhbXJLU2hTcGFzTjZEcHFEemc3X0lXSy1pZFJpdlhuMnFCcUtiODRIX1ZVdFlScl9aTWxsYTBPYlZvctIB8gFBVV95cUxQakpWRjVlRFM4WTRSbjIzcHBZOEE2QXhhdjhhZXZGNzRYaTU4WGdlVDRjc0FSQzlfeEtNZEFsUE8xaU1TdWdBX0I5aVhxY3JkN080SWpld1NjM3otWGY3ZHRoQ3lkbXptTVhOUEtfckFQVjZOUjZVWXlVbWFxWTU4TUo2VUYtWEM5azNaamhCdGx5bnhQTFUzMlVPOHltY0kzaDBYZkQ4SWFYdS1CWXY3Q19admV3dkROYzJ3TG5hVkJWZE05RXExTTNKM3oxNF95dkdPMXI3WE9GNlNfV0gtTzVtU0x6Njhoc2NLREFNeEFpZw?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "TCS to take over Best Buy's India GCC under multiyear deal",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNejQzNzBvWEJqS1kzNHhtYkUwUU9pMzAzRXFJemhrOXhEUWVDcHByZVVDaXVaNlplaHZwRUlNMkstMFIzblhYS0VtZUl5b2xVazNUS2Q0S1RxQnBUcV9WMmdZWkdadVZ5UE9iQlY1bHZNQVc1WW1JN0xQSFdBcjVsN1ZndjhzdU84REZ6YUhhdmxxSXRiblQ0VDNrS3pXeU5UUlEtcEN4a3o3a0hvYWtoRjZuaDNmdEptT1VxZ3l5TkotdlVsaXBicm1PTdIBxAFBVV95cUxNQWxGcmwzT1ZhN25yR1ctTVo3bnphUjNZelRMdVo1VDBNMEVuc2dSaGFHXzRFbWxyX0tGRGRTa1JHUG5rREc4U1BHS3JvaGJHTWFVbWF4VG9SNnFJU0lXUEZhMXlZNG1lbHVBZjRHZFluWWVNbDVVYXdzMDNJQk5rNzJIMW50c2U2S1NqOWd0eThHZkZNRnpncFQycUlfV3dXNDNLVG1TM0piQW1ST1RoblFLaHhjNjJBa0duMFFlMzVWUzZG?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Jefferies is bearish TCS, Wipro, 6 other IT stocks ahead of Q2 results. How many do you own?",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNVjB4OHZ1NzFNOTlWV1JuR0dGRV9jWkZIUXhFNEVGTEY4c01zRGNYRG4wQ3U1VzhYN1U5bmxRRVBnNmQzT0t0Y0pEVXExaTFKMG1tSnN1RWtlTndESHBXSzFhWm1acUFITTByQkpNSDc0QUNUTDJnUW9veWd3Qy1TR1I4QXJKdmh1VGNncWNQSW9vWlRaMzhOaGs3R3NUaTdpVDFLTnlTanBiWTRFUHZfdmRTNmlmMXUzX1VMNlNYMjU5LV9VYWxCRlY1Y181eHJTX3ByM2o2STJmQWd2aHdnUEFHT2hHenlxNEc5dURYdUZPLXlwQWh3WUVHLTFHdw?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bearish"
-    },
-    {
       "title": "TCS is buying into GCCs. What does it mean for India\u2019s captive model?",
       "publisher": "ET GCC",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR3FERG5YTzlTR0kzNkNPNXR2REZrbUtRTTNKVEhURkZyQThnZnIzMG8yclRTNXhuNkdlNTFCS3BCMEhCN3BEa2w3WDBQbWNWZUgyZjBkb0s5LVA5NVFNN0FfbDVTRHFiaWx6V3dxcnJuUFl1WjUyU0dSRVo4Rk1ISnoyMnpsUGhnQ2JYN3Jhd216dzRLbzMxRjRJVU44TzJYNnYyMG9YVjQ3V2t1UE03dFBhcHNrbjluSVBHdUdFNVpkM3lLQkdjT0NKbUZZazhBMk83ZdIB2gFBVV95cUxPMGduT3p4MnRaLXNkc0R5MUpOTFZGTGdpaWpSNWR2OTBkME1pWFFQMTV2VHF1MHNvWUVXWk9ySTJJSE1SaDNEb1JUQ1c5U2xETERjT3dqWEw1YWM5NjBjNWlyNHdPS2FlREpMQ0l3NEZ5eUhlLUI4RzVGRGprWnA1aFNPZ3VuUXNiR1Nac1hlOGpLdm5ZTmpKWWZqNFM5RWplOVNIMzYyNmVSYlQ5Y3BHTERIOE82TmFhY3RlRERJQkxQUWFHODRhM2V6S0c1SmFoaTgwczJSeDJPUQ?oc=5",
       "published_at": "Fri, 25 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "TCS, Wipro, Infosys, HCL Tech: Why experts see IT stocks' price jump on Monday \u2014 What's giving the boost?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOTklPbVFwNlh5dk96T0FiLUpOMU1IMHBKTkd1WFBzcnZTUVdLdTRBU2FOU1FhREx3dGpWM3E1a3BUcms4RXZSajFaaWw0bnRJdUVqV3FTTEIydjN2V0xpTVFYdXcxZVNsSGtvNWROcGJWWS1SMlZVVGZBWDQ5RHpMRlo4ZlZHLVhZMFltdm9LOXFud1FBYzRDTmZ6bFFTYllzMEdiem4xSUJoVWI3U1hvQkRPRXF1Vl9QZ1lVbG9mN0RuREZqOTlMXzBSdW1UelhlWjQyc2w3b2NwZlRXZGRkWXpvS1ZmMERmQXo0UlMyb3BnTUk1a2FqTlFB0gH_AUFVX3lxTE1lSnNNYVY0QlNLVXRTTm1zbV9lNEk4SnZDaUdzTW9IUlhfRGRJVGpYTTJaYmtiQ3J6ZkVKYU1YTm9xZWlyYkVMc2pJakFXNUJiNHNLVEZDTWkxUWYxOFkxeXkwRTVPU1luTDdQdGR1dWQ4MFljUldablB5d05YM2NCS19xdTdGMnVMczJGaVZyb3YxMG16Z2tJLUh1VWVSSkNNTEVTZm1VM2xibFZQYzVEYUxZdngxNWcxSHI0dlgxVXVIMFh1dnNPb19sMFB1RTJpZ3BmWG8xV05tbk5mN0d6Wm9RMXZ3ekJ2S2tkRkdVT3RicHg0VFhhLW1FeV9Naw?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bullish"
     }
   ]

@@ -1,283 +1,283 @@
 {
   "symbol": "AMD",
-  "last_price": 615.73,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 633.91,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
   "trend_score": 6.8,
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 15.93,
+  "vix": 15.31,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (56.4% fit - Grade C (Moderate)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (68.2% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 635.0,
-        "strike_formatted": "635",
+        "strike": 650.0,
+        "strike_formatted": "650",
         "option_type": "Call",
-        "delta": 0.351,
+        "delta": 0.378,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x AMD 20-Nov-2026 635 Call"
+        "dte": 47,
+        "summary": "Sell 1x AMD 20-Nov-2026 650 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 650.0,
-        "strike_formatted": "650",
+        "strike": 670.0,
+        "strike_formatted": "670",
         "option_type": "Call",
-        "delta": 0.217,
+        "delta": 0.194,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x AMD 20-Nov-2026 650 Call"
+        "dte": 47,
+        "summary": "Buy 1x AMD 20-Nov-2026 670 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 25.0,
-    "stop_loss_price": 597.26,
-    "take_profit_price": 634.2,
-    "net_delta": -0.134,
-    "net_theta": 0.039,
+    "stop_loss_price": 614.89,
+    "take_profit_price": 652.93,
+    "net_delta": -0.184,
+    "net_theta": 0.054,
     "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "var_95": 20.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 492.58,
+        "price": 507.13,
         "pnl": -25.0
       },
       {
-        "price": 497.51,
+        "price": 512.2,
         "pnl": -25.0
       },
       {
-        "price": 502.44,
+        "price": 517.27,
         "pnl": -25.0
       },
       {
-        "price": 507.36,
+        "price": 522.34,
         "pnl": -25.0
       },
       {
-        "price": 512.29,
+        "price": 527.41,
         "pnl": -25.0
       },
       {
-        "price": 517.21,
+        "price": 532.48,
         "pnl": -25.0
       },
       {
-        "price": 522.14,
+        "price": 537.56,
         "pnl": -25.0
       },
       {
-        "price": 527.06,
+        "price": 542.63,
         "pnl": -25.0
       },
       {
-        "price": 531.99,
+        "price": 547.7,
         "pnl": -25.0
       },
       {
-        "price": 536.92,
+        "price": 552.77,
         "pnl": -25.0
       },
       {
-        "price": 541.84,
+        "price": 557.84,
         "pnl": -25.0
       },
       {
-        "price": 546.77,
+        "price": 562.91,
         "pnl": -25.0
       },
       {
-        "price": 551.69,
+        "price": 567.98,
         "pnl": -25.0
       },
       {
-        "price": 556.62,
+        "price": 573.05,
         "pnl": -25.0
       },
       {
-        "price": 561.55,
+        "price": 578.13,
         "pnl": -25.0
       },
       {
-        "price": 566.47,
+        "price": 583.2,
         "pnl": -25.0
       },
       {
-        "price": 571.4,
+        "price": 588.27,
         "pnl": -25.0
       },
       {
-        "price": 576.32,
+        "price": 593.34,
         "pnl": -25.0
       },
       {
-        "price": 581.25,
+        "price": 598.41,
         "pnl": -25.0
       },
       {
-        "price": 586.17,
+        "price": 603.48,
         "pnl": -25.0
       },
       {
-        "price": 591.1,
+        "price": 608.55,
         "pnl": -25.0
       },
       {
-        "price": 596.03,
+        "price": 613.62,
         "pnl": -25.0
       },
       {
-        "price": 600.95,
+        "price": 618.7,
         "pnl": -25.0
       },
       {
-        "price": 605.88,
+        "price": 623.77,
         "pnl": -25.0
       },
       {
-        "price": 610.8,
+        "price": 628.84,
         "pnl": -25.0
       },
       {
-        "price": 615.73,
+        "price": 633.91,
         "pnl": -25.0
       },
       {
-        "price": 620.66,
+        "price": 638.98,
         "pnl": -25.0
       },
       {
-        "price": 625.58,
+        "price": 644.05,
         "pnl": -25.0
       },
       {
-        "price": 630.51,
+        "price": 649.12,
         "pnl": -25.0
       },
       {
-        "price": 635.43,
-        "pnl": -25.43
+        "price": 654.2,
+        "pnl": -29.2
       },
       {
-        "price": 640.36,
-        "pnl": -30.36
+        "price": 659.27,
+        "pnl": -34.27
       },
       {
-        "price": 645.29,
-        "pnl": -35.29
+        "price": 664.34,
+        "pnl": -39.34
       },
       {
-        "price": 650.21,
-        "pnl": -40.0
+        "price": 669.41,
+        "pnl": -44.41
       },
       {
-        "price": 655.14,
-        "pnl": -40.0
+        "price": 674.48,
+        "pnl": -45.0
       },
       {
-        "price": 660.06,
-        "pnl": -40.0
+        "price": 679.55,
+        "pnl": -45.0
       },
       {
-        "price": 664.99,
-        "pnl": -40.0
+        "price": 684.62,
+        "pnl": -45.0
       },
       {
-        "price": 669.91,
-        "pnl": -40.0
+        "price": 689.69,
+        "pnl": -45.0
       },
       {
-        "price": 674.84,
-        "pnl": -40.0
+        "price": 694.77,
+        "pnl": -45.0
       },
       {
-        "price": 679.77,
-        "pnl": -40.0
+        "price": 699.84,
+        "pnl": -45.0
       },
       {
-        "price": 684.69,
-        "pnl": -40.0
+        "price": 704.91,
+        "pnl": -45.0
       },
       {
-        "price": 689.62,
-        "pnl": -40.0
+        "price": 709.98,
+        "pnl": -45.0
       },
       {
-        "price": 694.54,
-        "pnl": -40.0
+        "price": 715.05,
+        "pnl": -45.0
       },
       {
-        "price": 699.47,
-        "pnl": -40.0
+        "price": 720.12,
+        "pnl": -45.0
       },
       {
-        "price": 704.4,
-        "pnl": -40.0
+        "price": 725.19,
+        "pnl": -45.0
       },
       {
-        "price": 709.32,
-        "pnl": -40.0
+        "price": 730.26,
+        "pnl": -45.0
       },
       {
-        "price": 714.25,
-        "pnl": -40.0
+        "price": 735.34,
+        "pnl": -45.0
       },
       {
-        "price": 719.17,
-        "pnl": -40.0
+        "price": 740.41,
+        "pnl": -45.0
       },
       {
-        "price": 724.1,
-        "pnl": -40.0
+        "price": 745.48,
+        "pnl": -45.0
       },
       {
-        "price": 729.02,
-        "pnl": -40.0
+        "price": 750.55,
+        "pnl": -45.0
       },
       {
-        "price": 733.95,
-        "pnl": -40.0
+        "price": 755.62,
+        "pnl": -45.0
       },
       {
-        "price": 738.88,
-        "pnl": -40.0
+        "price": 760.69,
+        "pnl": -45.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.697,
+      "win_probability": 0.739,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2273,
+      "half_kelly_fraction": 0.2651,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "570.28",
-    "EMA50": "529.58",
-    "EMA100": "484.02",
-    "EMA200": "406.20",
-    "RSI(14)": "66.96",
-    "ATR(14)": "23.78",
-    "ADX(14)": "25.13",
-    "BB(20,2)": "0.74"
+    "EMA20": "576.34",
+    "EMA50": "533.67",
+    "EMA100": "486.99",
+    "EMA200": "408.47",
+    "RSI(14)": "70.07",
+    "ATR(14)": "24.21",
+    "ADX(14)": "25.83",
+    "BB(20,2)": "0.80"
   },
   "rules": [
     {
@@ -360,46 +360,46 @@
   ],
   "news": [
     {
-      "title": "AMD Stocks Slip as $8.2 Billion World Labs Deal Adds Dilution",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-slip-8-2-235728683.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The 25-Year Stock Market Supercycle: Why The Biggest Acceleration Phase Is Still Ahead",
-      "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/c5d34bcb-5870-3b94-b2d4-a3752e22a167/the-25-year-stock-market.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "HPE stock closes at record high on growing networking orders, $1.2 billion AMD Helios order",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/stocks/article/hpe-stock-closes-at-record-high-on-growing-networking-orders-12-billion-amd-helios-order-211204477.html",
+      "title": "Is Advanced Micro Devices (AMD) Still a Buy After Its 180% Plus Rally?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/technology/ai/articles/advanced-micro-devices-amd-still-004250845.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Buy Micron Stock After AI Memory Demand Fuels Record Q4 Results?",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/buy-micron-stock-ai-memory-194600314.html",
+      "title": "Jim Cramer Views Intel (INTC) As A Winning Turnaround Amid CPU Demand Growth",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-views-intel-intc-201026810.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Is Marvell Stock Ready For A Slowdown In AI Demand?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/marvell-stock-ready-slowdown-ai-193233235.html",
+      "title": "Can AMD\u2019s CPU Business Fund Its AI Chip Ambitions?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/technology/ai/articles/amd-cpu-business-fund-ai-152236804.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "neutral"
     },
     {
-      "title": "Applied Materials vs. AMD: Which AI Semiconductor Stock Is a Better Buy in 2026?",
+      "title": "Prediction: This AI Chip Stock Will Be the Biggest Winner of 2027 (Hint: It\u2019s Not Nvidia, AMD, or Broadcom)",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-vs-amd-ai-192801178.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-ai-chip-stock-biggest-094001664.html",
       "published_at": "Today",
       "sentiment": "neutral"
+    },
+    {
+      "title": "Intel Was Worth About 28 Times as Much as AMD 10 Years Ago. Now AMD Is Worth About 60% More.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/intel-worth-28-times-much-093201957.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why AMD Stock Jumped 30% in September",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-amd-stock-jumped-30-005002040.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
     }
   ]
 }

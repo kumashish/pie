@@ -1,292 +1,285 @@
 {
   "symbol": "NFLX",
-  "last_price": 67.85,
-  "as_of": "2026-10-01 13:30:00",
+  "last_price": 67.06,
+  "as_of": "2026-10-02 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "trend_score": 1.2,
+  "fit_score": 12.5,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 15.93,
+  "confidence_percentage": 12.5,
+  "vix": 15.31,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (64.5% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (79.1% fit - Grade B (Good)): Directional trend with high-probability premium collection edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 70.0,
-        "strike_formatted": "70",
+        "strike": 69.0,
+        "strike_formatted": "69",
         "option_type": "Call",
-        "delta": 0.348,
+        "delta": 0.354,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x NFLX 20-Nov-2026 70 Call"
+        "dte": 47,
+        "summary": "Sell 1x NFLX 20-Nov-2026 69 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 72.0,
-        "strike_formatted": "72",
+        "strike": 71.0,
+        "strike_formatted": "71",
         "option_type": "Call",
-        "delta": 0.191,
+        "delta": 0.186,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x NFLX 20-Nov-2026 72 Call"
+        "dte": 47,
+        "summary": "Buy 1x NFLX 20-Nov-2026 71 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 3.0,
-    "stop_loss_price": 65.81,
-    "take_profit_price": 69.89,
-    "net_delta": -0.157,
-    "net_theta": 0.005,
+    "stop_loss_price": 65.05,
+    "take_profit_price": 69.07,
+    "net_delta": -0.168,
+    "net_theta": 0.006,
     "probability_of_profit": 0.0,
     "var_95": 2.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 54.28,
+        "price": 53.65,
         "pnl": -3.0
       },
       {
-        "price": 54.82,
+        "price": 54.18,
         "pnl": -3.0
       },
       {
-        "price": 55.37,
+        "price": 54.72,
         "pnl": -3.0
       },
       {
-        "price": 55.91,
+        "price": 55.26,
         "pnl": -3.0
       },
       {
-        "price": 56.45,
+        "price": 55.79,
         "pnl": -3.0
       },
       {
-        "price": 56.99,
+        "price": 56.33,
         "pnl": -3.0
       },
       {
-        "price": 57.54,
+        "price": 56.87,
         "pnl": -3.0
       },
       {
-        "price": 58.08,
+        "price": 57.4,
         "pnl": -3.0
       },
       {
-        "price": 58.62,
+        "price": 57.94,
         "pnl": -3.0
       },
       {
-        "price": 59.17,
+        "price": 58.48,
         "pnl": -3.0
       },
       {
-        "price": 59.71,
+        "price": 59.01,
         "pnl": -3.0
       },
       {
-        "price": 60.25,
+        "price": 59.55,
         "pnl": -3.0
       },
       {
-        "price": 60.79,
+        "price": 60.09,
         "pnl": -3.0
       },
       {
-        "price": 61.34,
+        "price": 60.62,
         "pnl": -3.0
       },
       {
-        "price": 61.88,
+        "price": 61.16,
         "pnl": -3.0
       },
       {
-        "price": 62.42,
+        "price": 61.7,
         "pnl": -3.0
       },
       {
-        "price": 62.96,
+        "price": 62.23,
         "pnl": -3.0
       },
       {
-        "price": 63.51,
+        "price": 62.77,
         "pnl": -3.0
       },
       {
-        "price": 64.05,
+        "price": 63.3,
         "pnl": -3.0
       },
       {
-        "price": 64.59,
+        "price": 63.84,
         "pnl": -3.0
       },
       {
-        "price": 65.14,
+        "price": 64.38,
         "pnl": -3.0
       },
       {
-        "price": 65.68,
+        "price": 64.91,
         "pnl": -3.0
       },
       {
-        "price": 66.22,
+        "price": 65.45,
         "pnl": -3.0
       },
       {
-        "price": 66.76,
+        "price": 65.99,
         "pnl": -3.0
       },
       {
-        "price": 67.31,
+        "price": 66.52,
         "pnl": -3.0
       },
       {
-        "price": 67.85,
+        "price": 67.06,
         "pnl": -3.0
       },
       {
-        "price": 68.39,
+        "price": 67.6,
         "pnl": -3.0
       },
       {
-        "price": 68.94,
+        "price": 68.13,
         "pnl": -3.0
       },
       {
-        "price": 69.48,
+        "price": 68.67,
         "pnl": -3.0
       },
       {
-        "price": 70.02,
-        "pnl": -3.02
+        "price": 69.21,
+        "pnl": -3.21
       },
       {
-        "price": 70.56,
-        "pnl": -3.56
+        "price": 69.74,
+        "pnl": -3.74
       },
       {
-        "price": 71.11,
-        "pnl": -4.11
+        "price": 70.28,
+        "pnl": -4.28
       },
       {
-        "price": 71.65,
-        "pnl": -4.65
+        "price": 70.82,
+        "pnl": -4.82
       },
       {
-        "price": 72.19,
+        "price": 71.35,
         "pnl": -5.0
       },
       {
-        "price": 72.74,
+        "price": 71.89,
         "pnl": -5.0
       },
       {
-        "price": 73.28,
+        "price": 72.42,
         "pnl": -5.0
       },
       {
-        "price": 73.82,
+        "price": 72.96,
         "pnl": -5.0
       },
       {
-        "price": 74.36,
+        "price": 73.5,
         "pnl": -5.0
       },
       {
-        "price": 74.91,
+        "price": 74.03,
         "pnl": -5.0
       },
       {
-        "price": 75.45,
+        "price": 74.57,
         "pnl": -5.0
       },
       {
-        "price": 75.99,
+        "price": 75.11,
         "pnl": -5.0
       },
       {
-        "price": 76.53,
+        "price": 75.64,
         "pnl": -5.0
       },
       {
-        "price": 77.08,
+        "price": 76.18,
         "pnl": -5.0
       },
       {
-        "price": 77.62,
+        "price": 76.72,
         "pnl": -5.0
       },
       {
-        "price": 78.16,
+        "price": 77.25,
         "pnl": -5.0
       },
       {
-        "price": 78.71,
+        "price": 77.79,
         "pnl": -5.0
       },
       {
-        "price": 79.25,
+        "price": 78.33,
         "pnl": -5.0
       },
       {
-        "price": 79.79,
+        "price": 78.86,
         "pnl": -5.0
       },
       {
-        "price": 80.33,
+        "price": 79.4,
         "pnl": -5.0
       },
       {
-        "price": 80.88,
+        "price": 79.94,
         "pnl": -5.0
       },
       {
-        "price": 81.42,
+        "price": 80.47,
         "pnl": -5.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.726,
+      "win_probability": 0.777,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2534,
+      "half_kelly_fraction": 0.2993,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "indicators": {
-    "EMA20": "73.23",
-    "EMA50": "75.49",
-    "EMA100": "78.60",
-    "EMA200": "84.60",
-    "RSI(14)": "32.45",
-    "ATR(14)": "2.04",
-    "ADX(14)": "24.17",
-    "BB(20,2)": "0.10"
+    "EMA20": "72.64",
+    "EMA50": "75.16",
+    "EMA100": "78.37",
+    "EMA200": "84.43",
+    "RSI(14)": "31.06",
+    "ATR(14)": "1.98",
+    "ADX(14)": "25.84",
+    "BB(20,2)": "0.08"
   },
   "rules": [
-    {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
     {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
@@ -337,6 +330,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
@@ -360,44 +360,44 @@
   ],
   "news": [
     {
-      "title": "$1,000 Invested in Netflix (NFLX) at the Start of 2026 Is Worth This Much Today",
+      "title": "YouTube's Lead Over Netflix in TV Viewing Keeps Growing. Is Netflix Stock a Sell?",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/1-000-invested-netflix-nflx-084900819.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/youtubes-lead-over-netflix-tv-235802914.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Does A Postal Service Backup Plan Materially Alter Amazon's Cash Outlook?",
+      "title": "Netflix Stock Lost Nearly 50% of Its Value in a Year. Will It Keep Falling?",
+      "publisher": "BeInCrypto",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/netflix-stock-lost-nearly-50-235352765.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Ignore the Netflix Funk",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/3f0c6812-efea-39cf-abfb-520550a286e4/ignore-the-netflix-funk.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disney Could be Making Big Changes to its TV Business. Why It\u2019s Necessary.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/0cd5b385-11fd-3c85-aa72-996971f98b56/disney-could-be-making-big.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Should You Buy Netflix On The Dip?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/buy-netflix-dip-154749772.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why You Should Think About Netflix Differently Now",
       "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/does-postal-backup-plan-materially-075550891.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dow, S&P 500, Nasdaq Futures Rise Ahead Of Key Jobs Report: NKE, NFLX, BABA, XRPN Stocks In Focus",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-023711014.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Why Netflix Lost 14% in September",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-netflix-lost-14-september-010501904.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NFLX Stock On Track For Fifth Week Of Declines: Analyst Raises Concerns Over Growth After Co-CEO\u2019s Remarks",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nflx-stock-track-fifth-week-010028117.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Netflix (NFLX) Is Pushing Further Into Live Programming And Cloud Gaming",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/media-advertising/articles/netflix-nflx-pushing-further-live-001057016.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-think-netflix-differently-now-145800394.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

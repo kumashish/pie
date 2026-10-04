@@ -20,14 +20,14 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 970.0,
-        "strike_formatted": "970",
+        "strike": 965.0,
+        "strike_formatted": "965",
         "option_type": "Call",
-        "delta": 0.354,
+        "delta": 0.385,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
-        "summary": "Sell 1x HINDALCO.NS 24-Nov-2026 970 Call"
+        "dte": 51,
+        "summary": "Sell 1x HINDALCO.NS 24-Nov-2026 965 Call"
       },
       {
         "action": "Buy",
@@ -35,10 +35,10 @@
         "strike": 995.0,
         "strike_formatted": "995",
         "option_type": "Call",
-        "delta": 0.201,
+        "delta": 0.195,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 53,
+        "dte": 51,
         "summary": "Buy 1x HINDALCO.NS 24-Nov-2026 995 Call"
       }
     ],
@@ -48,10 +48,10 @@
     "margin_required": 40.0,
     "stop_loss_price": 913.59,
     "take_profit_price": 970.11,
-    "net_delta": -0.153,
-    "net_theta": 0.063,
+    "net_delta": -0.19,
+    "net_theta": 0.077,
     "probability_of_profit": 0.0,
-    "var_95": 25.0,
+    "var_95": 30.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -173,91 +173,91 @@
       },
       {
         "price": 971.99,
-        "pnl": -41.99
+        "pnl": -46.99
       },
       {
         "price": 979.52,
-        "pnl": -49.52
+        "pnl": -54.52
       },
       {
         "price": 987.06,
-        "pnl": -57.06
+        "pnl": -62.06
       },
       {
         "price": 994.59,
-        "pnl": -64.59
+        "pnl": -69.59
       },
       {
         "price": 1002.13,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1009.66,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1017.2,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1024.73,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1032.27,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1039.8,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1047.34,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1054.87,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1062.41,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1069.94,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1077.48,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1085.01,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1092.55,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1100.08,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1107.62,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1115.15,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1122.69,
-        "pnl": -65.0
+        "pnl": -70.0
       },
       {
         "price": 1130.22,
-        "pnl": -65.0
+        "pnl": -70.0
       }
     ],
     "kelly_sizing": {
@@ -360,11 +360,25 @@
   ],
   "news": [
     {
+      "title": "Hindalco calls off AluChem acquisition amid prolonged closing delays",
+      "publisher": "ET Manufacturing",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNalZYbVZiT0xZajlUV0pxOFdZeWl2WDNvdlFGLXc1eFFJOVJGMUZiTXMtdTFVQkJ0YklqNzVXLVRkcUpOWnpuUFhreFB6T3ZzWkNqMXRKM244b0tOZEp0TDZHbjRvckpwaW5hb2U2bkJEc1VwTkw0eHlFVVlrLUVuWWhGT09RNjRxaDExU0pxY3JUbmNXVjR4TmRDSjZNUkNIN1M0T1dHSW1aQWdsNmJuWGlCam5TbEh3OGlqQzJoa2dldm1xaDVuQVFVckFpWk1qa0lWcVJObXV0MjjSAeABQVVfeXFMT2otRTViS1dhRlBoZzJ2VXdUSU1IbF85UHluTzloTFdrY0hCdHlsZUxhU1pJNVlpU3R0LURuV2xTX1N1S2ZvT2lOU1dDSC1LRUxkcXhZUFVsM0pCczJVbXNqTXVibEhScVBTV1M0VFpPenpGNnAzc3ByM2tTNzhzc1Y2UjRIS0lPNUFER0ZHc2JmUExuRDFhUU52UGwyUFVSYjJ4MTU4X3F0cW1yU2ljLTJxeGdQb3ZPZGstY2JCdG1Qb0pwTjNRQzQycHFiWkZwX19nT19YMGRVZVhPcGdrR2Q?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Hindalco drops proposed $125m acquisition of US-based AluChem",
       "publisher": "ET Manufacturing",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVk02RTFwZ2dEZXRrdFBoT2lJeGhSRmN1X1YzRTVTbXFxSVdTNjNIb0RDMDllQVJMaHBONTl5bDRLSGw2TlZ6cTNoQlo3N2VaYWJhV2Iyc0gwcEdjU2owMXZyM2puOU9LZmdJYjBQdVdpeTBnZXRuc1RaZDJQMmNueVFsZmpNeUY2ZkZkTG0zV1lxejFpbzFLUFEtTWtrLTBHTHluZWdrZFJmZ3g5ZjF1MjRWa2psQW8yNElCdjA0UFBmRTBfYnUya3ppVTZGQ0V3dlHSAdcBQVVfeXFMUHVBSHEtZXBfQWttNkJYQjJ1OW5tanVIbkZ1enV0bFdPaVdLclZHLWl6eXhIVHRIUlUwTFdrbG9WRVFSQVVFVWwyVGlrWHRjQ3hDSVFaMmJMVXNwNTRXLVVqNmNmRXlMTkdRUG51TG5yRms1MTJNU3NXX1RqVEFfNEZmdFExZGhrUlRocUk0SkQxaTJkU21KTzU2bkM5OGptSE81YndDR21RSGVCQlBBb3ZvUDJJcjdFbUNqc3dlY2hPaGNmTThYaUR2ZGZEMV9UX1MzSzc4MlE?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bearish"
+    },
+    {
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ackhVUTAyWHZWNklGZlgyOEdGV24wbjFmNWlNRVVoWlBNWXJsamVfdUpqd29MeDNqNDhjQ2JWdnNENkZRVGZVMUdEMmlnaGptN2wxSDdITFRjS0p0bWQwdnROS3ZkM1NMam5uTi05WnVoUQ?oc=5",
+      "published_at": "Sat, 03 Oct 2026",
+      "sentiment": "neutral"
     },
     {
       "title": "Explained: Vedanta, Hindustan Zinc, Hindalco to Nalco - Why metal stocks are falling today",
@@ -374,32 +388,18 @@
       "sentiment": "bearish"
     },
     {
-      "title": "",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORkd5dnFLdFVENFI2c1ZsMC1xYW11NjZDTU5iT0RKQTlTZHdaNVVsQkJTenlYNEdNejlWZG1UaEl2Tm1MU2pVZThhRG9UZTgzaU5ObWxabS1sT1prb3VuTExmSk9wamxVZ2h3M3ZiT05PWmlqd1VvRlRsUWRpOGRJWFNERG9zb0MtS05QYUtnVQ?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUS1xc1pOaTZxRFYxYnhTMnBBUm1QSkY2V1BrWnlmZTBCeDNmSjFlaVYtUXBZeHhmazU5WkpMdG1USVktRVduMUpHb0FxdnJsS0xPbEg5cFdYQnRlY044YVJfV1ZZMDJ0TTB4WVBsdV9XRVpJNjVoLU9wOWZFNW5iSHcwVmJIRVdrSHc1azFqVQ?oc=5",
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbGMyb0dTb0l3RUQ3UUs4d25IZGs0QTcxXzhRN0VaSUcyMGFjTHF6M1BXVkJNNUFDbHNiMnBjRjdIcUVQSnFuaXZtYzU2U0ItbDRZVFNRRnBpWEltV3BfclE5SlZuVjhhSzZkSHJJTExNTVhsaXo4aU1aMjdzQ1E0bEVYNA?oc=5",
       "published_at": "Mon, 28 Sep 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "534",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
+      "title": "The financial risks you cannot see coming",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVmNzd0k5b0R5SWdpMkhQTTQ1M0pMM1FaTkE2LU1RZGxGZXZ2SmNJSmplREhCMm5NQ1MzcktuczJpUUJDZHZwSWNMdC1aVjBreDBRaTBjbGdZY2U0YzhWU0g0VkcyVlo1OUxUNGt0dVUwZF9JR1NKX0JHTkhUNGV3QkVqV3hsc2RnVDRCeVI0OWJaeUNTbEZmQXptaGh1dGxUOWpZcTZGak9vajNubGRrdkt3Sk9XVjRNMVRtNEV2VDhxMzhfcXhWTEpPX3hPV1E2eTdiT3NuTG9qWC1peUtYd1gxVVE4WkJ6aVpuZnJZcG9MX2k2TlZ3dWhB0gH_AUFVX3lxTE12MVhGVUgwVGNLa2hMck51WUlEUzlCUlRwM0JVSDI3TUZSTmduWEVnU0dTTzJ6NFpZUUR6YVBTSTl1N2E0dUtKREtNeWdUQS03d2daREpjOE5ZRnNiZDRPMmxsVTFQZlpDMTdJSTZram9CaFctNXpaWkNmcjZGN1VIdGZCUVVhRk1hWk0tUmxOWW5ZOHIySFVqbTNnRXJKM0phT0w3WFZUUXNuVnFwOG43anA3cFZJdzNuU25tUGJXZkhhcndMQXYwOGY1US1KZWZjSzhlMmF4YjdPZDRsOGdiQlQ4c21lRXV2b1ZzeURLN3U3aW5pX0tmcHBBTG55bw?oc=5",
       "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sensex, Nifty open lower as global headwinds weigh on sentiment",
-      "publisher": "bfsi.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaVlhUW1LcDE0YVJrbFAtcWRKT1B6eDY0MEpOVkJhRk83UmxoaWhNTnZOcWhwYmlpOHpBUUZMT05Ja1VoaDJZVjJtamVVUi1pS2djQ3hIeXB4a1BERDhkRDBRaGd1ZTFVMTIxR2hQdzhKaVUtZFpEUmhLdTVCMGd0UzJLNUpwZVFCdlFwRWhOOVJBTm5nTGRvbHlfUEYwMnE5ZFVWSDZGNWxGb2JJV1dNUVhFbW1fU283OUZfMm1iUjXSAcYBQVVfeXFMTVVEMmNLamRfLV9kSDBvOURCZGZlaHNCYmxQYTdxZTR4a2VDdDZwRnVQc25nN0JpVlEzaDd2NzhjU00zSF9kSkhMaGFiRUg3Qm1UNHRXZjZPS0ZvS2Q2VUVtSTlPYTZpNzU4MVRvQk5PeGtBckpfcFdNZTRXaUtRZU0zLTR6anozbkg0SnBKaFI2cUIyOUgxb3BkNzd0OWwyT3NXWnprd3FsZjgzQV85UWUtbGEzQ2M4ZXNPT0VfUmY2c05YNFFB?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
-      "sentiment": "neutral"
+      "sentiment": "bearish"
     }
   ]
 }
