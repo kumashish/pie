@@ -619,6 +619,37 @@ document.addEventListener("DOMContentLoaded", () => {
       resRulesTbody.innerHTML = "<tr><td colspan='3'>No rule evaluations available.</td></tr>";
     }
 
+    // Render Ranked Strategies List
+    const resRankedContainer = document.getElementById("res-ranked-strategies-container");
+    if (resRankedContainer) {
+      if (data.ranked_strategies && data.ranked_strategies.length > 0) {
+        resRankedContainer.innerHTML = data.ranked_strategies.map((item, idx) => {
+          const isTop = idx === 0;
+          const badgeBg = isTop ? 'rgba(0, 229, 255, 0.2)' : 'rgba(255, 255, 255, 0.05)';
+          const badgeBorder = isTop ? '1px solid var(--accent-cyan)' : '1px solid rgba(255, 255, 255, 0.1)';
+          const rankLabel = isTop ? '🥇 Primary Choice' : `#${idx + 1} Alternative`;
+          return `
+            <div style="background: ${badgeBg}; border: ${badgeBorder}; border-radius: 8px; padding: 12px 16px; display: flex; flex-direction: column; gap: 6px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 11px; font-weight: 800; color: ${isTop ? 'var(--accent-cyan)' : '#94a3b8'}; uppercase; letter-spacing: 0.5px;">${rankLabel}</span>
+                  <strong style="font-size: 15px; color: #f8fafc;">${item.strategy_display}</strong>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 14px; font-weight: 800; color: ${item.score >= 80 ? '#10b981' : (item.score >= 60 ? '#f59e0b' : '#64748b')};">${(item.score / 10.0).toFixed(1)}/10</span>
+                  <span style="font-size: 11px; color: #94a3b8; background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">${item.grade}</span>
+                </div>
+              </div>
+              <div style="font-size: 12px; color: #cbd5e1; line-height: 1.4;">${item.rationale}</div>
+              <div style="font-size: 11px; color: #94a3b8; font-family: monospace;">Profile: ${item.trade_profile}</div>
+            </div>
+          `;
+        }).join("");
+      } else {
+        resRankedContainer.innerHTML = `<p style="font-size: 13px; color: #94a3b8;">Primary Recommendation: <strong>${data.strategy_display}</strong> (${(data.fit_score / 10.0).toFixed(1)}/10)</p>`;
+      }
+    }
+
     // Render Summary Rationale
     if (resSummaryText) {
       const reason = data.recommendation_reason || `Market Analysis completed for ${data.symbol}. Strategy fit score is ${(data.fit_score / 10.0).toFixed(1)} / 10 in a ${data.regime_display} market regime.`;

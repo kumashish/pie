@@ -268,6 +268,26 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
                 "max_risk_amount": trade_est.kelly_sizing.max_risk_amount,
             } if trade_est and trade_est.kelly_sizing else None,
         } if trade_est else None,
+        "ranked_strategies": [
+            {
+                "strategy_type": stype,
+                "strategy_display": stype.replace("_", " ").title(),
+                "score": fit.score,
+                "grade": fit.grade,
+                "rationale": fit.rationale,
+                "trade_profile": get_trade_profile(stype),
+            }
+            for stype, fit in sorted(
+                score_all_strategies(
+                    trend_analysis,
+                    iv_rank=min(100.0, max(0.0, ((annualized_vix - 12.0) / 18.0) * 100.0)),
+                    vix=annualized_vix
+                ).items(),
+                key=lambda item: item[1].score,
+                reverse=True
+            )
+            if fit.score >= 40.0
+        ],
         "indicators": indicator_summary,
         "rules": rules_eval,
         "news": [
