@@ -269,6 +269,32 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 50.3,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 44.7,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE"
+    }
+  ],
   "indicators": {
     "EMA20": "3859.28",
     "EMA50": "3923.76",
@@ -362,7 +388,7 @@
     {
       "title": "Lt Gen Akhilesh Kumar takes charge as general officer commanding of 1 Corps",
       "publisher": "ET Manufacturing",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPd3FrbGJ2aUZHamxhSWRfQXoxOEVoTTJTblpRZVBYWnJhYXdfZEVPX3NxRUpPZnFXeGV5Nm9lRlVyZW5feVBJdGRxQ1c4SVE1Z092NTEzZ29rYmZtVmlWZ0VCekx6U3RGWGhhVnRYc0h0b2lRWWF6aXFlOTI3NDhuX2Y5Q083YTdVMVcxRTVpRHhjNEQ0NlFCaWFLZnI0SzR6Rk5YX1dPNGZERkhBTV9mYTRfZk1DLXpjSlUxQzVfMFcwVUdhNm9TeWJLZC1SV3U3bXg4M0NjcGRFcVhVYkFxQmhJWnF0WFR2aFRJQ0Rjc1DSAfYBQVVfeXFMUEdycm1ueEpNRE9PelhrLWF2elZIUzBzeGlCQnk5V2FKTmR1eUZvR1Fhay1OOS1ZSW9zWEdjcElMMHlubzRCci0tMXlxNUdSMVdYMlRQUkxFS1hKd2QxSjlqbll6UnI4R0xKNllVVDNHSjZORkdfdmtmSnZNeFNPLVA3a2p0Q1lISVhVN3J2Sk1ZWDhESXozUFplR1MyNDh1OXVya01lTlB2SnZ6NFFESkRkd2tmUXhJelA2aTNwNWo4cDV5eTliVlRqTndJTi1nbHItTUp1Z1ByckR0MVYza09vd1lNUTZ6RkRBY0RFcEdXcGo4U3hB?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQR3JybW54Sk1ET096WGstYXZ6VkhTMHN4aUJCeTlXYUpOZHV5Rm9HUWFrLU45LVlJb3NYR2NwSUwweW5vNEJyLS0xeXE1R1IxV1gyVFBSTEVLWEp3ZDFKOWpuWXpScjhHTEo2WVVUM0dKNk5GR192a2ZKdk14U08tUDdranRDWUhJWFU3cnZKTVlYOERJejNQWmVHUzI0OHU5dXJrTWVOUHZKdno0UURKRGR3a2ZReEl6UDZpM3A1ajhwNXl5OWJWVGpOd0lOLWdsci1NSnVnUHJyRHQxVjNrT293WU1RNnpGREFjREVwR1dwajhTeEHSAfYBQVVfeXFMUEdycm1ueEpNRE9PelhrLWF2elZIUzBzeGlCQnk5V2FKTmR1eUZvR1Fhay1OOS1ZSW9zWEdjcElMMHlubzRCci0tMXlxNUdSMVdYMlRQUkxFS1hKd2QxSjlqbll6UnI4R0xKNllVVDNHSjZORkdfdmtmSnZNeFNPLVA3a2p0Q1lISVhVN3J2Sk1ZWDhESXozUFplR1MyNDh1OXVya01lTlB2SnZ6NFFESkRkd2tmUXhJelA2aTNwNWo4cDV5eTliVlRqTndJTi1nbHItTUp1Z1ByckR0MVYza09vd1lNUTZ6RkRBY0RFcEdXcGo4U3hB?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "neutral"
     },

@@ -269,6 +269,56 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 84.3,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 53.1,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 52.2,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 44.6,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 43.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle"
+    }
+  ],
   "indicators": {
     "EMA20": "11249.58",
     "EMA50": "11299.75",
@@ -367,25 +417,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Bajaj Auto September total sales up 5 per cent to 5,38,443 units",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPbjY5SzJwaHF3U2R4aG92TDR5SzZYZEdPUVg5TXVhQVFIUnFZUGh2OENsclo5Q0tsQjBXVndiMEZDeUJoZ3FNN3lJb0U1NjJMallJQ2xRNnY0cWYwcmZpbFplc2ZPbTNpMjl4NTJOMVc1djMzRE0wZTR2SlUwZndqWEZvbjk1cHRuQVpjVm1Oc0w3c1l6Z1RYR0JaMU9JTnREdUxLR1VyX0pTbFAtRW93dEdMWEJIeFNUaVRZWHY2UG9HZk5aaThUcWZoM1RPRTlIcWhoSmhsZXAyTUtrOVdSTWNBcTQyYlFoVGlyMVJVTkhQeVRuWnVNR3Zxb9IB9AFBVV95cUxOS0dINUROdThYN3Z2eElpVkY3dFVFeFV3TzVIT0N4X0VUMUhfS18yY2hhcElTMFBMTHRzWVI4MmJHU1A5S2hENFVvVTF2YkFHbUhreEdkT19hZFNzU1ZLOTktQ1phZm1jbGxldmdsOVZjOFFVMTBlZzhaSXZ5ZFE4S0lYcGk5am1QU3p0RXRXUng2azFZWlBFZThTTV9Zc0RWeXhLVmtvb1R2TVF6OWZwX2lpSlR5LVM0RVZJNVhZN1NRd0Zoczg2eFM4UHBMUDdKSjkxTUtEeGlXZ2xzSjFpbDRhNnZuZVRiUWs0ZUt6SEhmM0hQ?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Bajaj Auto, other auto stocks skid up to 8% as September sales weigh on sentiment",
       "publisher": "ET Auto",
       "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORF9jeWNlSjU4V0hWVU5qa0UySXM1MVRqMGlXSmhyWEdWVDBCRmxnTFl0U1hTdHNRS19FbHRqNjNYeFp5dXpHV0tTcVhpWTZ1ZVY2UWxvc0lGSkVUbkJGbC1GS2JyZGxWRVdMa2FSdGtjZ2tDeUVZaDA5S2tZNjYyQ19iTWZPamU4Q1ZadnNGYnd5cDR3QV9tSGZManJjcHhLS2wzT2MwSV9CNUhQTVlXN3FhTXRqcXAzMDhtZl9qSDdYQjd1YXN5WlBJV280eHpfSU5TX09iRlJHbVlXV1HSAeMBQVVfeXFMT2RDQ2Y1UjhwSjF1YXEtN1hSSjU5eEZaZ1NIRnNGMEdVMi0wMDh5UmN6a1pGRWxSTEEtX1Y5U0hwQkJaNTJuemFkRHFOOVU2ZFNxOEhqRVBLUUNXV0x1aXZkWHBHU2ZvUlN0WlJmUWZ3anRNTlFiRk9Ldi1Mc0NOU2ZDaFFjNjlsZXpBalBnR2pGZDVLYm9MWnE2el9NbmJvcDF1a21nZTdWX0todjNtTVBIdGx6NlFaczJfdTFZc01rVEZGSzVCWDZ3Ylc5bC0wVk9YdDdxMzNIQXVaV3pCcFhlTFE?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Auto\u2019s domestic sales fall 9% to 2.94 lakh units in September",
-      "publisher": "ET Auto",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRG96MzFXYW1jOHhfWFFLdmMtLU53QU1IMTc3Yno0ZFUxaHRLUjNubTVleU9iekF3VGwzT0N6VzM0dXBKcGh3SmtncXpEZDZSN0xyOVVscTFFZzVXbkdOWnZMREJnanRWaXBDdldvLUZkTWMydzhNQ056Y241TWlrZ20tVmFDQzhPQ292aHFlOTNjakk2U3NDbkVaOUFJNW1KYUhZbTRwQkxFVTUtVFB2OWF6cXZzaU5vVnptSkMxUmdYTXNSYVNsT2syb9IB0AFBVV95cUxPc19GZWNvT05JUHB2T2x6NnBvS0d4bzJkMm10S1cwV0N0QkpXMnZmS015ZGgyckE2Yi0wTEtFR1ZYdDA4WVNEcm56TUI5Q1VDWFdCYlplbUlmMUFKeVRValE1YlpGd203QnRFQl91TG9ONjdSMkFSZlZmNFprTnVraVBQWkxDd0lvTzlrZ3Naak9VWlllZ29rTENnT0w1WTF4NHBtbFZ4Z1JIRTZLSE1pMnZaUnFtYkFoaThfdHNvSFMwaDhES2VhUU9zNFU5OHhq?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bearish"
     },
     {
       "title": "Bajaj Auto, Hero MotoCorp, M&M tumble: Nifty Auto falls over 3% to lead sectoral loss \u2014 what\u2019s next for the sector?",
@@ -398,6 +434,20 @@
       "title": "India auto sales gain momentum in September but tractors lag: Jefferies",
       "publisher": "ET Manufacturing",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMEdGaEJBN2ZkUXl4dWswNDN5SEdwUGxMamw1NlNwUTJXUWxaV3dGWV8yUDFjWGllRS1UeDNGRElYLWZ0c2lEVkdzeTZvZ0J0Tk9vRktVcnFWcVZreGt1em9EMi1XbU42NVVyQmlSYnBSNzNwWHhJRGJlWEUtaF8teE9FQVFOaWVlZjdFeUpOXzljZEZKRldzVnRDbUExZEdzMm5rS1BUVWZmeTl6b3N3MU9SWWVhTlh3NW96TVRjemdGY1IwRWh2aEU4X1htY3EwdE1SMlZZdXBTbnR4bUJjYtIB5gFBVV95cUxQZ3YtT0w3R2hvOWEyN3l6TFBFYkI5R3BuVTBsSDJpTGdNVU1XTkV1MnBwYjRPMV82N2ItWjlaQnF3bm43NThhd0lZYWNNTXVibmRZTzlZZzRwdUV5T2NIOThZbkdlUzEzV0FjdmUyZi1uZXpqVGp3Q0l4eElIdkhDX0duY1F5VWFPTjhiYU9MalBsUE8xUWpMemRQTldxNXoySVRFTmpSMGJFUU5qLTFKeTZ4RFBKMzhFb0s4b2Nqc19leXJZT1ZMTkdJUXRodDE3SU4weWRhX0gtNHA2dnRfMVQ2NkVuZw?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Auto shares crash 8% on weak sales data, down 18% in 1 month: Will Dussehra-Diwali drive rebound? Expert decodes",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNMTBMdktTd2hPeWFIdjB5UXZYWm9SNTEwQnpXYnpoYXBNZXlRVjZDajZzMDNUVXNCNXNSSkRENTRkRlZ2U29CYjNYa2U0d0NfOTh3LTZNTjhiX2JucENGeU1pZmFFalVXVXFuQ3pwVTB2enlmYXNaaVEzWDFRSkRiX1FZM2x6TXRjck0xa1RSMzVUR1lsVXFrS1l4WVVhS0pVVWNNSjJldWRCQTNQR3ozcnNBVTNwMWY5YmVXaVFrM3R1aFZQVUcxRUVYN3R5OEh5dDlaMFJXOWkwUVI3TzJ3aVRVNnZ3bXExSUl0NkZKdzExbVR3dE55NHBRbEluQjZuaEE0U25SdnlyQzFnaVhodzBYTFLSAZoCQVVfeXFMTlFjc2hLSmlvdC1fUHJCRFhWZHBNcG1xNmxzdUN5X1NGZW9WSnJUZ2tzYjA5Q2NMVERwV2VCX0VYZy1nNmR3el95b2ZkZlFaQ1JDamZrbzJaMXNlZ0Z0NHdDZWVhbFVCeW1KbWs4VnM3VkcxVWo5aVY2WGhhYUE5S1NNeXNiU2M4UmQ1bDF6ZVBYRm8zdER2YUlOVmJWT3ZpSmVrOVA2dEV5eklRc1ZwSVJNMk1DdzhadHhrQ3BFQTVqVThMMWJCc0RmaHRKdXB5WWFENG1VQzVfdVhwa1lTaUxCdENBWEktR3Yzdi1OaG55VmVMSVR3TGdPVjdUTmNaOTQ4bWl0aHR6bGcxVzlkWnZKSU5lOTNidDVn?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "GST, PMI and UPI strengthen in September, but auto sales show pockets of weakness",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOOU9fS1N1YVBOVm1SZElxVi1XXzZuM21UWjF2bW96LVc5eGJITlRHdlBNZmJ1MnJrbzl0OV9CU3dGRzFXbVRfOXdNd3g0aE55aFlGaUpvYlJRb1BzSEp1NjZVQ0UyakYyQ1IxUDFQd1dNWGxQVnBWU0dtQzUwbFJ0UzJINWdFckl5VjBNbmZBTklFSUJON015Z0lyRnVLbXlPUEdKZUVBYm9pLWhjOHRrX1JYcTdrYjl0TFpoX2hXN3dSTGNNV3dKc0FsRm1lUjI5YmhsYWVTLXV1dWFn0gHiAUFVX3lxTE5JaERqSS1fUTBQWFE1ZjFDMDFhZ3p5RG9oTXdqN2J4RVdWZk9zWFJYQ2dfeWZhekNRTDRRN0NoTlg1WlI1TlFjbDV6Ri0xZWxCQzNvX1dmN29mSi1IQTFqRFV3VmszUmx1aFNaYjFwUWgtd2V3Y1hWUlNBNmlhUHFpWW0zMXVObjdqanI4UUNYaENVeGFXR29Xd1N1ZUptNGkyOGM3a0t4ME9qMTJUblI2LWJ2b20wcEFiTzZIOS1hcFR0cVRaRW9mRU4yNmZoQlZuVG5CUGYzRGo4YkdjTTM2OUE?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }

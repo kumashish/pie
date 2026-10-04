@@ -2,19 +2,34 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| SPY       | Oct 04, 20:30 IST | 🟡 Credit Spread   | 7.5/10    | Sell 1x SPY 20-Nov-2026 810 Call /  Buy 1x SPY 20-Nov-2026 825 Call | Active (Today, 20:30)  |
+| QQQ       | Oct 04, 20:30 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x QQQ 20-Nov-2026 710 Put /  Buy 1x QQQ 20-Nov-2026 700 Put | Active (Today, 20:30)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| ^NSEMDCP50 | Oct 04, 20:31 IST | 🟡 Credit Spread   | 3.5/10    | Sell 1x ^NSEMDCP50 24-Nov-2026 17750 Call /  Buy 1x ^NSEMDCP50 24-Nov-2026 17950 Call | Active (Today, 20:31)  |
+| ^NSEI     | Oct 04, 20:30 IST | 🟡 Credit Spread   | 2.0/10    | Sell 1x ^NSEI 24-Nov-2026 23600 Call /  Buy 1x ^NSEI 24-Nov-2026 23800 Call | Active (Today, 20:30)  |
+| NIFTY_FIN_SERVICE.NS | Oct 04, 20:30 IST | 🟡 Credit Spread   | 2.0/10    | Sell 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 23200 Put /  Buy 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 22700 Put | Active (Today, 20:30)  |
+| ^BSESN    | Oct 04, 20:31 IST | 🟡 Credit Spread   | 2.0/10    | Sell 1x ^BSESN 20-Nov-2026 75900 Call /  Buy 1x ^BSESN 20-Nov-2026 76600 Call | Active (Today, 20:31)  |
+| ^NSEBANK  | Oct 04, 20:30 IST | 🟡 Credit Spread   | 1.0/10    | Sell 1x ^NSEBANK 24-Nov-2026 57400 Call /  Buy 1x ^NSEBANK 24-Nov-2026 58100 Call | Active (Today, 20:30)  |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 #### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| META      | Oct 04, 20:30 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 770 Call /  Buy 1x META 20-Nov-2026 795 Call | Active (Today, 20:30)  |
+| NVDA      | Oct 04, 20:30 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x NVDA 20-Nov-2026 250 Call /  Buy 1x NVDA 20-Nov-2026 255 Call | Active (Today, 20:30)  |
+| MSFT      | Oct 04, 20:30 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSFT 20-Nov-2026 550 Call /  Buy 1x MSFT 20-Nov-2026 560 Call | Active (Today, 20:30)  |
+| MSTR      | Oct 04, 20:30 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSTR 20-Nov-2026 175 Call /  Buy 1x MSTR 20-Nov-2026 185 Call | Active (Today, 20:30)  |
+| SMCI      | Oct 04, 20:30 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x SMCI 20-Nov-2026 47 Call /  Buy 1x SMCI 20-Nov-2026 49 Call | Active (Today, 20:30)  |
+| AAPL      | Oct 04, 20:30 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x AAPL 20-Nov-2026 355 Call /  Buy 1x AAPL 20-Nov-2026 360 Call | Active (Today, 20:30)  |
 
 #### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| DIVISLAB.NS | Oct 04, 20:31 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x DIVISLAB.NS 24-Nov-2026 9700 Call /  Buy 1x DIVISLAB.NS 24-Nov-2026 9900 Call | Active (Today, 20:31)  |
+| KOTAKBANK.NS | Oct 04, 20:31 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x KOTAKBANK.NS 24-Nov-2026 445 Call /  Buy 1x KOTAKBANK.NS 24-Nov-2026 455 Call | Active (Today, 20:31)  |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
@@ -22,7 +37,7 @@
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 0 | 0 | 0 | N/A | N/A | N/A | N/A |
+| 102 | 102 | 0 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)

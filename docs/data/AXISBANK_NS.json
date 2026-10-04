@@ -269,6 +269,48 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 63.0,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 50.0,
+      "grade": "C (Moderate)",
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 42.0,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 40.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+    }
+  ],
   "indicators": {
     "EMA20": "1232.37",
     "EMA50": "1248.00",

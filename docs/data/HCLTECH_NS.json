@@ -269,6 +269,40 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 90.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 56.3,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 54.4,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 43.0,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    }
+  ],
   "indicators": {
     "EMA20": "1256.16",
     "EMA50": "1264.59",
@@ -388,17 +422,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Stocks to Watch Today: Honasa Consumer, HCL Tech, Varmora Granito, Ellenbarrie, NCC, Vikram Solar, Prasol...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPcFBLS3lueUJHQzZNelRid3czYkRWZTB3Rk1lQnQ0WlhJN0EyZTdKanlaOEJnNTRGVWt3ZnlVbmotcmJ3cFl5MElLbHZsVW1FSTkwUEx5T2FwWGpnWG1NLUkxN1dYNENqWmVydkEtdFprZXUxcXRHNTM5cG1GN21leG9UT1JybWw1X241d3ZyOF9nTkwweU1tMGo2SkM2cUJaS0xFaWlUemc0Qy1BdWJ1OFpzNGp4OFU5aHk0UjJhV2pNbFhMdkVuZGRPcGhLRmp0VmVqYmNIVzF1S0YzSXJfMHlTMzZ4bXVIemJQc2I5ZzZiaFRNVmJpdDZQTlc3NnZSYXdLdTFpQXBmZ0lLRl9QaGljMm54aFM3YUFnWGtDSEZUNTlRNTcxblA4YU4tYTFTSjlaOFpiX0XSAb4CQVVfeXFMUElva2JJcDZlN3E0cGpTR1I1X3hLT1Z2UHFtelUxTzVhR1RpRTkySnk4UGN5TkREbV9aM3VxT0htVk41Vk1DQ1ZDRTg3bXdod0lrUUZ2Q3RhOXVqOU0wT0psQV8zdTgzR3pDNkpxbDNNcUFndWFROVZ1dnY1dFRRbzR0YWNUTXhCY3NpWmpERHBZS21zOEthYXNrMVM2YmxQbm5ZOHRDUG02TVVMVUg2OFpBdndBZF9xdjBUUm5xamdVR1hCMENXbGNzWlNwR01NR2RYZnoyeGpkZEpadWptRUJIcXFOX2RvZzdmejBueVdYb3lHb084MVgtbHZuaUVEZVBMVUFpQUZjVlVKZXVkblBHNjNGZk5LLTlnOE15ZjNZR3Jpbm5rQU8zYmdnOHVlczhrLV80Wk4wN2F2MGln?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
+      "title": "84% wealth management firms see need to redesign operating models for AI",
+      "publisher": "ET CIO",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZ3M0VU1WQWZtZlRHSFd1VExyaXotX1F0YUpfTy1oWEIyZXJ5RGNiMjJ1cTJuTXNfVzZRWTJmZnh4TGwwZXlVMWV0eUhUdk5QTXhMWlZTd1Q1a1o4U3NuUGYxV3JyaGlkRDZjNmVnLWFMNFllbEx4MVlWUW9ORnhLcEttdXVMcXVBUnMxckkzTWNNZmFFeEFGM2xjbFBJVUNZdXk2bDNBamhoem02LUxDV1NsV29sNWkwejZldWVpYVFZbnR1dzJYR3lfMUNINkQtLXlJYldJVklKakI5dHREV0dTU1RQZ9IB6wFBVV95cUxOd3h5TXFFa1c3ZlgzMzJ1T1NoWlNoT2JKbEMwSlUza1g4ZWt6bHhDeFY3dk5VeExmSWtZVExQZjVfYVdoV2NNUXltSk9La3pBN1MwSGpQaGZLS1lfVlVaS0V2ZWpETFA5RHRiOGM5MXQ2UEVHTVR0Zkx6NGVERm9ZUG1SWWo1YmxFTDdGQnZ2a01neHlkX1dMay1WYjJxSE90OHhnM1h0NENBa1FKMzl0d2hYaDQtb0ExRzI0U3gwenNRejF0bklmQ2VNblVRMUNMalhzTmdBX3NkYkdoYXJ0NkZ1V0dDbThRejBR?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "84% wealth management firms see need to redesign operating models for AI",
-      "publisher": "cio.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZ3M0VU1WQWZtZlRHSFd1VExyaXotX1F0YUpfTy1oWEIyZXJ5RGNiMjJ1cTJuTXNfVzZRWTJmZnh4TGwwZXlVMWV0eUhUdk5QTXhMWlZTd1Q1a1o4U3NuUGYxV3JyaGlkRDZjNmVnLWFMNFllbEx4MVlWUW9ORnhLcEttdXVMcXVBUnMxckkzTWNNZmFFeEFGM2xjbFBJVUNZdXk2bDNBamhoem02LUxDV1NsV29sNWkwejZldWVpYVFZbnR1dzJYR3lfMUNINkQtLXlJYldJVklKakI5dHREV0dTU1RQZ9IB6wFBVV95cUxOd3h5TXFFa1c3ZlgzMzJ1T1NoWlNoT2JKbEMwSlUza1g4ZWt6bHhDeFY3dk5VeExmSWtZVExQZjVfYVdoV2NNUXltSk9La3pBN1MwSGpQaGZLS1lfVlVaS0V2ZWpETFA5RHRiOGM5MXQ2UEVHTVR0Zkx6NGVERm9ZUG1SWWo1YmxFTDdGQnZ2a01neHlkX1dMay1WYjJxSE90OHhnM1h0NENBa1FKMzl0d2hYaDQtb0ExRzI0U3gwenNRejF0bklmQ2VNblVRMUNMalhzTmdBX3NkYkdoYXJ0NkZ1V0dDbThRejBR?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
+      "title": "Daily Morning Newsletter",
+      "publisher": "ET CIO",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZzB5ZlRTZnJ6dGo5UXB0dEU3aDBKWi0ydXZEX1ZqOTdDaHBlTFI1ZkF2SkI0cm8wUmRMZzV4d3pWWkJIcERUQkNYS0dGZ1pkRk5tV1BSOTNvMlA2bWozY3pSWVA2dW95UlhKeWk5WEJFWV9aZ0VySnIyVDBqNjlXbzd4YnpDZHBfWjVaWjdB?oc=5",
+      "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"
     }
   ]

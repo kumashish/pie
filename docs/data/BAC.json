@@ -269,6 +269,40 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 75.7,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 51.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 43.2,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    }
+  ],
   "indicators": {
     "EMA20": "57.30",
     "EMA50": "59.01",
@@ -360,6 +394,13 @@
   ],
   "news": [
     {
+      "title": "BAC vs. USB: Which Bank Stock Offers the Superior Dividend Income for Retirees?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/bac-vs-usb-bank-stock-134502262.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Bank of America resets Micron stock forecast as AI \u2018memory tax\u2019 rises",
       "publisher": "TheStreet",
       "link": "https://finance.yahoo.com/technology/ai/articles/bank-america-resets-micron-stock-140700203.html",
@@ -391,13 +432,6 @@
       "title": "Bank Stocks Are Lagging the S&P 500 by the Most Since 1990",
       "publisher": "24/7 Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/bank-stocks-lagging-p-500-173802855.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dive Deposits: BofA, Barclays show their populist side",
-      "publisher": "Banking Dive",
-      "link": "https://finance.yahoo.com/economy/policy/articles/dive-deposits-bofa-barclays-show-161730778.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

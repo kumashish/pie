@@ -269,6 +269,40 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 90.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 55.2,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 53.5,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 41.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM"
+    }
+  ],
   "indicators": {
     "EMA20": "4975.75",
     "EMA50": "5141.63",
@@ -360,10 +394,24 @@
   ],
   "news": [
     {
+      "title": "Daily Morning Newsletter",
+      "publisher": "ETRetail.com",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTHJwcUhJc1Q2RHZONTBOYkNxMnNnRWFTQUZSS3NvR1FYMlZtak9LQm9yaVFrMGVRVFJVeGYweG5XWkRPMTVwbkJhdEdWc0I1WER3c19pZk9PNjROM0l2QUNKU3lOT3VtdnliOHN3aFhwNFlQbGZ0WlZfMDBEMjdNSGxOaDJrNmxQNjI5LWtpMWR3dw?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Nomura picks Marico, Tata Consumer, ITC; flags 2QFY27 margin pressure from commodity costs",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYm9oQ2RwVXIzVnpDMnpwRmkxN1lhNThYX0pNV0dXNmNWYmxjYVRwM05hemg2MWJzenNNVC1NS3NadWdPTnlqSVEyMDdPZ1B5MlhzRms0dkFDR0JkQlpfQmhKemdXMVJqSldHVXBVUEU5NDBKRGYxa3BuemJuOGZQNkNQQXdyVmYxZTBZc0dfUHUzal9RSU1vdWtTWFlGNnJlcUZ4TUdyZ2hrRm5QM2U5QjBONElPQ2tCTTRiOFMzNDF6QjN0M182UDVUem41RU80UklvOEc2VVdwempQRzlDaHQ1M0FBQdIB6wFBVV95cUxOdWV0UVJMdkF1ZFNaMUVLaWpBSzFrVVZEelVvWm1KYXQ1RS0xZjkwZjFqbVhPNnNZZ0RMd09wUHMyblVvd0FEV05fVGpQY3RKSlhIV1h1bGl6Smt6UVVnbzk5WTlMNlRBaEdHZ3B1UUVJd0pKNU1sNUVuNWprS0FwV3FfbjlCUFlJSUplb2pGZWJINjVPOW9FQ0dqb1d2WV9iczhLb0otZGNXRUJvMUlxeFJKU0dYd2tBVkl6Q0I3OTZpZjIwNGFwQXZIanRsZktkYTJ6R1BHSUo4UFZEQmRzS3FVR211RVY1SGVN?oc=5",
       "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Employers may soon be able to claim ITC on GST paid for employee insurance cover",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPazVVd3hGTnRnbXRtWXRWMVNTRkpyR3BOQWJZcUxscWdiNklDbFFZYmtpX1FiaXpScHJNOGxOMmZ3ZTEtWmpWbjVhUkQtLUFsanFRXzlqaGtMSFlNWGdVQ2MzaDUyV1hSdno3UUFXeTVZaHJpRnBqb09SRDA5Vk9WNVdRcUVwUlFDT1VDZ29vZl9TM28wLTAwQmNqdmlrTzBmNV83emh6NzFpcEFzTzMtT2l2UkhUTjd2dm50Zm9JUS05aDNqRzE5VlM4WUo3WHFsOE9iQ0Z5ekF2RW5HZ2M3RkxZY1RIaENvREVwMHQzVHB0T3dEQWfSAe8BQVVfeXFMT2NkNzl0VHdlRVI4X1pCblBlcVhBWVFTMVFWd3ZuMWZmZEhRV2xTQUJuWWRiNGlmWTRyTEMxaWlIbmZVMzg5dEVNYXVVSFRfZmdKLUI1Q1A2RXNUcUk2TmtjNnVyVnZENnFGaHlsbWhOWXh2TVdTUm9odFFqQ3FqTm1uRTRVU0hxTHhucEkzcGE3WTBOVVRSdkdSekRkeXZkd1hCMjg4bzVjTUh1ZmtHNjhnQXp6dlNvZmV1X1RJUnB1Wk4zTXVaYmhJd1hseUhwNjY0NDE2aEVFQ1g2YTM5cXBjcG5UYXdjWVFnZTJaeWc?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
       "sentiment": "neutral"
     },
     {
@@ -385,20 +433,6 @@
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPUVdGclFWa21NbmFvbk1DZU5fblFuOWJRdWtNamFrai1kUnNfYnFzcmtocnRINzlUbHF3RzRPS3hCMm5ETndaTUh0UTZQcVdfWFQ4Q2NOVU5CM2lzQUt6ZlpOYWRZNC1FclVlU052UFpUWWFDVXg1S0ZMalI5dFVKOUh3dTM1S0liam56YnVjejR1LXNFUHZTNHhja081T1p3Mjg2YnpKUzhid3o4UEh5aV84Z0cxX3AyWnFXS1JOVHNCQVMtR05ncWt2TUVCMWhsQlhRRGFKTHJteDB6Q19fWVh5dnFLMTZFV0M3dU16UXJtXy1heGIwaTQyd3ZEMWlDOEMzOFU0Y2tsd9IBjwJBVV95cUxNRWtxbGFlTjF1Q0Z2VUxWMzliRzVGZlF4OTdIMnFXTFVqX1F3NUdSVTJKdlBCVnBuaFBvUzQ0Q0V3U3NaQVZtcVZIanlzS21WOHNOX2pLVVc0bUtTZFY5b0dxcmZicWZBUXgzNEF2TERXRF9hOXlUY244OGh4eUxRTTI4X2ktc0RXeHdCRUJPdDlhVE9FNDZLSjlxZlBIblRpcVFBR0lyVmdiQmFXMXZ1Z1hKZm01X0ZpUlNuZHBNNnN5Y2N1M045M2xCcXhOVTBQUk03a1E1VkRUZWlNWjVyaGlKMEZzOTdOVHVJTWctVkV4S2YyX0EzaW9zd3loSzlBVGVoaW1na1kzNmxia2dB?oc=5",
       "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Nifty 50 correction: why fund managers see more value in large caps now",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdmtsTUtkQVNVVWRxLVZyQ1lLRzVWcVNQd0wwRG1VTVd3VDdQek1tZmZoei04RnQxV0tRR3NMNmNWWTBCQzRNZFNnVE5EVUhMNEowczR3WXdqYXFtVGNRZmdvOGo2TDVUcGt3Sk01TS02OGF4Z3pWOVBFSzRTX2VJUDhwZmJGdkk2T09XNW1nN0Rnc3R1dmpZYzExTGN2R1lJa2FsMi1paHpNTE9MVmM3aXhYSklhRDlZT2d1emJFN3VxcWVrU2VJRtIBzgFBVV95cUxONGFjZHphdkNjaTllbFJJVnJuaXI1NklUN1U2VktvMWIwTE1MblI4WGVhd2VGa0NuOGJNVHY3VkE3ZGhuZWRTN3lHZDJKcFAwaWc2aWJDTUw1Rm5EUWp0RzlUbk5YMVVzWDVXVEJOcW1Sd21vQ0NmTnZ6aE1YanFLWUg4QlRlT2JBVXhlY1RManVXYV9jTU5XXzFKMzJ4ZUFSbHEtbUxzYWlQYUdaWmtfczhmcHgzV2pQQl9Xd2thMEZ4cXdrdzFaMGY0TFhwZw?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ICICI Pru AMC\u2019s S Naren on contrarian investing, AI risks and navigating a volatile market",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOOHFuenB6alU0TFBTeUc4ak91TEstZFBxUWlmclRUQWFPWUhVMm0xLWkxSFpxREdSNFE3cExISm9vbnRxbnBPdXdHSlB2NUtpZjBHcVhfT1dvQ0xCTXdidDB0S3FzSW9sbkJPbFJKdHJFQkdxSV9JQ0RJaklfSXBiRC0zNmVKR0M3QU1xcXNja29mWFFPdWJuMVl0Q2wxRnR1QmE2S2pnTzJWeWV1cVJHLWNiTjVsS1dQZ0I0SXo4QkxrWmpjN1ZDM0JjWnViVzdvXzVIVjZVWGE3UlF1XzBoajFxTzVHOGN5d0MzcHk1Si0wWkY5NnlUMjFral9Ma3dCeGxNcDNUajZLek1D0gGSAkFVX3lxTE0wUElmelh0Ujlacm5uWElhczBRNFZPOFhiNTJEMGlqbUtnRVlPT3hBNlFkNWhSWmROdzkwSk91bm5CWkVkVzhGUDBDMk5qMWhmb3lRdE50OVZPNDRtU2JqUWhzVC1NdXQxVHBmbEVUU0JlUzV2UDJxdEJ0N3gxb2NZam1ucU5GRGEzdGt0SFVrMUtFZDN5WjNjc09EQ1BiLTVkSl9naFFfdkZKSmRBNnktWlFpcVQ2NlZ6U0dLZkRSd0ZLSmY0WkhNYzdFeGlDUWg0OC1PSXhWZFVPUE1FQTRmS19fYUtQcWM1RVZzdGQ3MWJJTFlmbG8yS1NiRWpzSlpyNXhnS1h0YVh0WEZzSElydWc?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bearish"
     }
   ]

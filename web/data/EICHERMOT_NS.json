@@ -269,6 +269,48 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 80.1,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 53.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 48.0,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 44.6,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    }
+  ],
   "indicators": {
     "EMA20": "7422.68",
     "EMA50": "7578.67",
@@ -367,13 +409,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Stock Research Report for Eicher Motors Ltd",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaWt1UnJPYVE5U0czQ2t3a3FrUzFad0xUTm4wZkUxRmktRTl2elgxQWFWRDZLVVZxd1JKLW1xSnN3RVV1c1dIajVLR1BFNnJITXFxV0dpbWEwSGRadFVTZVB4MHRMRkh6bU5sZm9QSU9ZZGxBQzgyQVgyU1B5SGdSR0RmS01aZnBXd2VCUmlxWQ?oc=5",
-      "published_at": "Wed, 02 Jun 2021",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Eicher Motors Share Price Today 1 Oct 2026: Live NSE/BSE Rates, Technical Analysis and Expert Forecasts",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaXNJckhaR0QzcWFjZnYwQXpaVkQ2SU9RcW5CalU4NDJxQ0FqQXRndUdzdE5rb3ZRZE1ZUmU0cXFpLUZ1dkFzVDRWOWtxelR5d0w5WjRnSXZtUElaYllYWFVLaFVLbXZndE1pdmZmUlFyQUxTZHUtclNrdHd5Zm1meDhvUk1nMHNQNU4wMDF4Vk0xeEZENjZmd3Rn?oc=5",
@@ -399,6 +434,13 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1wU0t3bWZVaFhfdlpRU1VCVVBCWjdFVk9NNnNJVjF1RFR6bXI0aVBrLWdvOHFuR0dwQW9KRlJ5RUYwSmNzZmJ6RXk3elUxQUY2VE1admppU2Flbjc4LW9DTHZoVjlDU0haaEZ5azg3Z040NjZvcV9XeWh4bEpTVGs?oc=5",
       "published_at": "Sat, 16 Nov 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eicher Motors | AGM/EGM > Auto - LCVs & HCVs > Meetings of Eicher Motors - BSE: 505200, NSE: EICHERMOT",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OWXprcGdHZGRzQ3V6WDFFZWFSakFHY3ZTTXl3WWJROTVpOXlwYm9ja19uODdjWmhuQjBLc0xadVFDa216dE9CWlFUYXVkUy1HNEVnNnpvcy1tdVUxbTI4RUJOSXRxaWRhMTBqMUJnd2RQXzd3QUE?oc=5",
+      "published_at": "Fri, 17 Jan 2025",
       "sentiment": "neutral"
     }
   ]

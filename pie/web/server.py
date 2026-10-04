@@ -8,7 +8,7 @@ from typing import Any
 import urllib.parse
 
 from pie.market.indicators.engine import IndicatorEngine
-from pie.market.strategy import select_strategy
+from pie.market.strategy import score_all_strategies, select_strategy
 from pie.market.trade_estimate import estimate_trade
 from pie.market.trend.engine import TrendEngine
 from pie.market_data.csv_loader import save_market_data

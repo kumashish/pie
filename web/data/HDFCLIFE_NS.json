@@ -269,6 +269,32 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 90.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 55.0,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 54.4,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE"
+    }
+  ],
   "indicators": {
     "EMA20": "536.61",
     "EMA50": "544.24",
@@ -369,13 +395,6 @@
     {
       "title": "HDFC LIFE INSURANCE CLAIM",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTUtlRk02OC1xUExYYVZpRldMd1hYRnNlZVNyTVo5MFUyUS1LZ0hyeTRMVkJJOEdCUVU2UVZJWURNX1RvZ1Uwb0RiREpBUTcwZ1liWVlLWjVfWVZaOGg0RWh6eFJFM25UcDBTU1NuZFY0Mm5rMjFfQVBqTTlZTEdnOTRYMA?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "HDFC LIFE INSURANCE CLAIM",
-      "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbGctRFpGU0VxNEQ1d0stTk1QLVlXYk1XNWwySmZNN2FWWWFXNDZyZlRLUTFKeUhLNU10anc5RzJiWXZVcGhzMXRWQ0VXdDJPcnZvcGpCeUtaMEdLNElRblFxRzJoZ2dpS3J6UEhlaG5NcFpwRFJ5RVZmVlZsX3ZsSWlR?oc=5",
       "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"
@@ -388,16 +407,23 @@
       "sentiment": "neutral"
     },
     {
-      "title": "SBI Life, HDFC Life, ICICI Prudential: Should you invest in insurance stocks amid IRDAI new reforms? Experts suggestion",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQZ0h0MHZlZWZfWkVDZDJtRHpvc2sxbTJPeWNTTFRHcTZUcHU1VC1ma1k0eGdERElMc256bVVhc0tqdnJJM0xJV0FVZmFTVE5kMjREM0dzSERIakRVNi1iQllTLUJxVlZoQXZ1RFhWdFRHQ1NBdWJpdnB1bXVyNXc5SmVXNDV6X3JFMjFSRXNpOW51TFZTMElkWlllazg1Q1dOcTlsaDBORTBaQ182bGVNcC1vT2ltRDJVWEpCdURVN3NQSmpUeC12SjgwY2wwUm9KTVZ4RXhjVzVWOEFtTldxT3Zwa3RyWGtoajJpY0NNYTgzc1RHcFlOQlJwalNweHVzc3lLVzNYbEdGWFFNNERvYmJERdIBmAJBVV95cUxQcnJTMkw0dWwyQUJVcjZnM3d6a2dRZzJKSGtpRXJFQkUtLU1sX3BnM2lsVlJ1U1FRSWZUcmRTTDh1aUxqSXZRODRaSE9wRWRDcEx5MkJxMjc2cHFHX1JsTU93VmJ5WnFxNGtJbXg4MXUwUkNTaW9sYmlDcXZFbjRSN2ZaSkR3VHZONEJKOGttWXF6dHpPWUJuVi1ubTFfNHJOZVJZWDdWQmh4RmpySk5uMU1IM2o4ZmRXU1hFd0VRd01yUmRLUkVvaUVrNDBVSVYzU0JENTczTVRZU2JpZmRwRF9FdTVOVUY1LUo2ZlVvY0FDdkN4YkZfNVFxd24zVXRsaWhKb2ZLWkpSeTQ5ZFAxT2JwMDZ1YWpo?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "534",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Mubadala sells over 3% stake in Cube Highways Trust for \u20b9689 cr",
+      "publisher": "ET Infra",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRTU2YXo5OVVmTXdGRjJGRERMd0dyTDVYNlBVQXpkdmhzdTFoQ3d2OTFkUWh5M0E3Q0NmMnFleDFiSG1WR042U3I3ZG92QVpvWlY0UkJMS19DTDRSczUweWNBdklCZGREVmU1WmgtQjkyTlBhUUZveWpPQ0xwdk5LMzIzVXk3UXFYa0c0N2ZxQmtSZkNkZXd2NDVhZ2RrNzFmVU1nQUg4b2VZT2Q4Um9VYXBvQk9GQ0ppWC0zTkQ3cmZKeTNWcVE4MEZUOFh6NFXSAdQBQVVfeXFMTlI0eWtTMmstUjBhNTJjUmNNZllDTndOVTMzODliZHdxRGZBS1FFU0Vnc21NTU9GQlYyRUF0MFVPNEQySWtjVkFhYWxFYzgwLVF1TkVKVDdVMkhzWjVpbFljZnFXOEpmc0Z3RUszVnk5V0oyTmx3Ni1iSzJKZFBabGVSZFF2RzJyLTFXY0dZZFAyaUVFMk5sZW5CelhpNHVNOFIxcm15RldNRVdDeklLUEdCdzRyTWRVRk1nWTFNTG5kT0ZZM0dJSzZaNFMtZFVGS0Ntemc?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Insurers mull seeking mutual fund-style expense limits from IRDAI",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lYVpnUHowRDBqMEJUVGpMVUxzNmpXdjZ1WlMwMHlVbldaS0p5bU9GOExjZVlEbndnMk1vNVVHdzI1Z3UteDliUnVOVVpOSEVrMUlpQnpqMkNYRW8yaUZ2eWRKNmFHcF9XbU85QS0yY3l5YlJU?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }

@@ -269,6 +269,40 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 94.7,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 71.2,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 47.8,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 40.7,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    }
+  ],
   "indicators": {
     "EMA20": "1009.59",
     "EMA50": "1029.10",
@@ -360,17 +394,24 @@
   ],
   "news": [
     {
-      "title": "Bajaj Finance Q4 Results 2026 - Find Bajaj Finance Q4 Earnings Result | BAJFINANCE Q4 results",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQS0dLNWFvS0hfaWNfS3FwRThHUVlVS3d4akNneHRDOS1SMnJheG9Bc0NCdTZ3RUtGenVzcjR2NlFtZThmZFNUOFl6V1JIcG5xRzhvV09wUjdRZm9JYkhPdC04NXRHbk9VclJRb01iczR2ODk0YlJQX1ZETl9jbk5Qdk5KTVU?oc=5",
-      "published_at": "Fri, 21 Jul 2023",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Bajaj Finance Share Price Today, Bajaj Finance Stock Price Live NSE/BSE Updates",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUUUwc3kzMDUwODBNME1GLTNZMXdPc1FET285ODlNMGpQMl9wWWdfRFdMa3ZieFpxSzBORmZsY3Y1Q0p2UXptcVZHLVlfQmdwQTdQcURPSkwtYXp5akZVOUQ2dlRiUjlIRUI2SFhZMjF2UFhNaEV1eFdoNXI3MlR4YzFnMjhWWnVt?oc=5",
       "published_at": "Thu, 23 Mar 2017",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finance Ltd.",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcmNXWFN0UWtIS2c3ckVGTkEtRjlxelFTdjI0UjdwUF9SSDF6cjlrRUgxTTNLRHdYMW0zVzI5czJOb2RDdHB2OXZjX1cxNlQwZUp4YlE3VkVHUzNCUWNibTZ5TGwyS0xGZnVpVGhxVm9jaE9tQTZPMW83Q0o4LUtrVnViTlQtbHc?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finance Q4 Results 2026 - Find Bajaj Finance Q4 Earnings Result | BAJFINANCE Q4 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQS0dLNWFvS0hfaWNfS3FwRThHUVlVS3d4akNneHRDOS1SMnJheG9Bc0NCdTZ3RUtGenVzcjR2NlFtZThmZFNUOFl6V1JIcG5xRzhvV09wUjdRZm9JYkhPdC04NXRHbk9VclJRb01iczR2ODk0YlJQX1ZETl9jbk5Qdk5KTVU?oc=5",
+      "published_at": "Fri, 21 Jul 2023",
       "sentiment": "neutral"
     },
     {
@@ -385,13 +426,6 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93SUd6ZndKV242Z09VRVlQR213cE0zUVZucnQyOGl0SU14aHJ3T0xudmhJMURZMnlxYUMxd29lZUdWVnliblR4RUJhME8xbTdTNzFDOVhDY1ZkbFBiRDhTZ19iY0FPSjlVb0ZOb3g4T3cxdFJkVnJkRzdUOE1JZw?oc=5",
       "published_at": "Fri, 05 Jan 2018",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Finance Ltd.",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcmNXWFN0UWtIS2c3ckVGTkEtRjlxelFTdjI0UjdwUF9SSDF6cjlrRUgxTTNLRHdYMW0zVzI5czJOb2RDdHB2OXZjX1cxNlQwZUp4YlE3VkVHUzNCUWNibTZ5TGwyS0xGZnVpVGhxVm9jaE9tQTZPMW83Q0o4LUtrVnViTlQtbHc?oc=5",
-      "published_at": "Sat, 03 Oct 2026",
       "sentiment": "neutral"
     },
     {

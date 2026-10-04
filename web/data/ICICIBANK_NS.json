@@ -293,6 +293,64 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 97.8,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 83.6,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 62.6,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 60.3,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 54.0,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 53.5,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 40.7,
+      "grade": "C (Moderate)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE"
+    }
+  ],
   "indicators": {
     "EMA20": "1348.68",
     "EMA50": "1375.16",
@@ -384,6 +442,13 @@
   ],
   "news": [
     {
+      "title": "ICICI Bank to decide on Bagchi's successor at ICICI Life in 2-3 days",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaFQ2NXJFeWJ6RDl2cEY1YUl3MHYtRi1XYVFPX2hDckpTTlQxbGxQcjNIeUNyV0lTRGwtUXRheHVTRkdtTFVsNXB4cTdGVEZBSFZIUlBrUFM3R3F6Q1lLUEg5MEUyeUdQYmFvUmtENVFCMDZVaWs3cVpuTGI2LVFlMUFzOFpyc2tzcTBxT3NURTUxSlRmRVlwMmJhalVlTXhVYlhES2d3NEQyS2FkNFFSSFJtOWxEd0NwNjNSX2F6cVVNT0ViTWfSAcsBQVVfeXFMUFN3TjQ2M1ZRUWd1TU9QYlZRUkcwMUhiYS11STNTRVZ5ekZYek1EMzBKUHNjRzVCMWlkZGRlcVZwVzBycjRnSFBoS29VQ2FLSkx5NTJLUVpVU0RhWVNxNjNoeUdZelZZRmFGbDZoTmRaVUdKcGhZa2VmblFJbFhvMHI2RklqcUJNNEZfNFpMWFdxbkRtSWRtbGNMRll2c3A0RDQtV1huRGdfVWhjY3hUY1Z4MmdQc01vS1d2aGx5YW1jZ2hXUkhjM2loNHM?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "ICICI Bank: The CEO Factory",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeDdzSmtteWd2MTBoQzhVRXdwdUtBaXk3MGoxdjRHWTl5YmtZa0xUQ0w0NTl3VVFfRGtHMExkbWZjNnlkcjU3X1ZaMWdYREVqNzlzTWJqUlRZR2hpYnFqZldlUWhYLU1XQlhpY0xHTzQyZms4NmJOVzE0b2N3TUVLSFdfNVJySUU3czB2TnB30gGTAUFVX3lxTE9XMm9uRWlUT2RTRTl4ZGYwOUNSMHd3MG5iMkRiLUFWQ25Hc09MUENUOTNGYmgtdFJlVGlVcl9wWGpJS1ZxU01UYkJzZ2xGbDBsaFByRENBT280WVFXVElUempidk9MYzIzczM1Wm1yTExlT0dnVnA5eUNaOUx5YTFWb0U2RDZsWnFUYXFGTUNBTTBJdw?oc=5",
@@ -391,9 +456,9 @@
       "sentiment": "neutral"
     },
     {
-      "title": "ICICI Bank to decide on Bagchi's successor at ICICI Life in 2-3 days",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaFQ2NXJFeWJ6RDl2cEY1YUl3MHYtRi1XYVFPX2hDckpTTlQxbGxQcjNIeUNyV0lTRGwtUXRheHVTRkdtTFVsNXB4cTdGVEZBSFZIUlBrUFM3R3F6Q1lLUEg5MEUyeUdQYmFvUmtENVFCMDZVaWs3cVpuTGI2LVFlMUFzOFpyc2tzcTBxT3NURTUxSlRmRVlwMmJhalVlTXhVYlhES2d3NEQyS2FkNFFSSFJtOWxEd0NwNjNSX2F6cVVNT0ViTWfSAcsBQVVfeXFMUFN3TjQ2M1ZRUWd1TU9QYlZRUkcwMUhiYS11STNTRVZ5ekZYek1EMzBKUHNjRzVCMWlkZGRlcVZwVzBycjRnSFBoS29VQ2FLSkx5NTJLUVpVU0RhWVNxNjNoeUdZelZZRmFGbDZoTmRaVUdKcGhZa2VmblFJbFhvMHI2RklqcUJNNEZfNFpMWFdxbkRtSWRtbGNMRll2c3A0RDQtV1huRGdfVWhjY3hUY1Z4MmdQc01vS1d2aGx5YW1jZ2hXUkhjM2loNHM?oc=5",
+      "title": "ICICI Bank gets show cause notice over Rs 229 cr GST demand",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2NJQ01YN1BvVnM0dnpWSmE0eFRhS2hTTHpVRkI0OEFVZmp3YnFtNUJEOTJBc2pyNlFGOHU4dzhGbWo1N0ZnRmFiVXBfYXhBTEZlUkpLWmZrVXdYM3NuRE8yVmJqNVNFYTBiM0oyUE9HNDNDYmdPdkFWbDNFNmdTX0Zxd2xMX0VWUUhZbTExdmtvOXQ3WHJ0XzR2SjVKdWFRM0YxSm9kT1R3WDBoN1JkUy1DWmszXzBzdnd0YXIwbmsyUdIBxwFBVV95cUxNREF5by1CV2I5ems3Wk1iT2oxdnpNZmI0VFVZRmFSeklQQ3NlRi02M2JRZ1FkV2JpV2VJN3o4OVdlb0dsdHZZcG5oaHFKZVRPenJLQ01ZQXZpSUJEc0lES3BCU2NUNEtOSS02RGd2dXFsdjJIMjhMYzdnN3VRVm9NTWNrZ0hlMlJmVWpwU1N6amhRcm5yR1VJMEQ0UE40el85aFB6cHlwb2hRc1JIVUktNzFnVnFhdnotU1ZZVUtzNTdPRXdLWThB?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
@@ -402,13 +467,6 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT2ZqMFJkU1dwTFpseHBNSkk0aEJQQkN0OVdGY21qUnU5R0lFd2F1aHU5ZGhueGZoZTdqUXB3Q0QwNmhlZ3c5OEdRZmNGcHQycVZWR2NvLVF3N2ZyRnc2YTU0ZXJlS0NJMXhoTXhmZ2hud3M2STV6YTF5Ri0zb2djRFg5d1RRemtYT3RtR3ljZmwzdVhvc1VaZEdadnRfWDgtcW1ocE0xcnVxZ2lHOGZkcTdBOFpkajdSb1RiODVFV2VYTmdHMFBrVVdZNmZTOVZiaXhQadIB2gFBVV95cUxQMUNXZ3dfYVlxV0hTRHlLN3Jfd1ZQSHVMNUdwLWJ5ZENWMzdDNW9TQ0xIdUloUnNNdVpDLUR4UDJRako3SGxPMUZtV3hlZzYwQXBVMVFFdkNJb0hqc3NRN3gzejVnLVNhVHUyVldsRTZQelF3dFhISTlQSW1WYTgxYThzbkRRZ0pTNDRab05va2lvLVU5VENGMjhEZldQREktLWdNbnZkZGZ2RkllNkF6M2pzOTBQZ3lleW0zVk1pWjlKa3V0OTJMdXRMaTBfMHMzRW03SDZmaUxfZw?oc=5",
       "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ICICI Bank gets show cause notice over Rs 229 cr GST demand",
-      "publisher": "bfsi.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2NJQ01YN1BvVnM0dnpWSmE0eFRhS2hTTHpVRkI0OEFVZmp3YnFtNUJEOTJBc2pyNlFGOHU4dzhGbWo1N0ZnRmFiVXBfYXhBTEZlUkpLWmZrVXdYM3NuRE8yVmJqNVNFYTBiM0oyUE9HNDNDYmdPdkFWbDNFNmdTX0Zxd2xMX0VWUUhZbTExdmtvOXQ3WHJ0XzR2SjVKdWFRM0YxSm9kT1R3WDBoN1JkUy1DWmszXzBzdnd0YXIwbmsyUdIBxwFBVV95cUxNREF5by1CV2I5ems3Wk1iT2oxdnpNZmI0VFVZRmFSeklQQ3NlRi02M2JRZ1FkV2JpV2VJN3o4OVdlb0dsdHZZcG5oaHFKZVRPenJLQ01ZQXZpSUJEc0lES3BCU2NUNEtOSS02RGd2dXFsdjJIMjhMYzdnN3VRVm9NTWNrZ0hlMlJmVWpwU1N6amhRcm5yR1VJMEQ0UE40el85aFB6cHlwb2hRc1JIVUktNzFnVnFhdnotU1ZZVUtzNTdPRXdLWThB?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
     {

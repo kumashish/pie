@@ -269,6 +269,40 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 90.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 53.0,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 51.0,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 41.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM"
+    }
+  ],
   "indicators": {
     "EMA20": "2143.88",
     "EMA50": "2213.83",
@@ -367,18 +401,18 @@
       "sentiment": "neutral"
     },
     {
+      "title": "TCS, Tech Mahindra, Coforge, Mphasis: IT stocks picks and investment ideas after Accenture results ahead of Q2 earnings",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQVjhOa243eUJhVHlVWTg3U3AwSXhtQUJXVEEzVTdhQ2NqT1hGbXFWVzNteUlLTndnNHpyUDFXQW9zR2lxVUwtaFZ6NTg4czB3clFfR1R1cVhaRUxPbUpfVEM0UEt1ZWZ1WXhPb2Fud1BUdXhIOTQ5b2ZaNkxfSnVYRXV6Y09ZSWc5RDVBSDNKUzJSRy04Wlp1ZWZmc0Q0Tm5uY2VhZ0h4SktGbFRkSENCZklXWEhIQldPWmFDdkMwdDBUbXF1YmZhTlVSeElMaXhvRmZoS3diNHJNLVBxZ3lEdC12VWE5c2lkM3UyWGsxdmR0UVc2NlVBeVJteXZSUVA0ZVY0eTFSYkJuQ2NtcjVKRVYyQdIBmAJBVV95cUxPdUI5TjFRRE01RlRZbU90NTEyVmVPSk1FTnU2eEQ5ZUN5UUJwaVV6T1ZjMWw5bVo2aDVhTlRVd01QMnptMzFHZGxoWGcyUzBQa3dvQzI2Yld2Zi05MFpjLWxkZnZHanpIcXpHZW1sWmI5SnN0Z3lNZ3lXWUJFeGpwM2NpNU9oVHVTUmxnQXJ3NnZMU2liNmVxU1hjeHRUdC05UHJlREJyaW9BTlp0ODNSd19jUUpFc18yTjNfbHBoMFJLUEt2TlBBdi1nNW01LWhJdlNOUFdJdm80WjVLcWk3SExHajNhQk1MSnJhdW5KdVljX3hIakwtZlVZUHZBV1hqTlJaelhwNFRFMUZWNnFQc2gwMzlNcm9B?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "TCS to take over Best Buy\u2019s India GCC, turn it into AI capability centre",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNenNCTWNEN3lIOWtydTZib2dHaVgyM2xQZnZIdlFHVXFaQ3J2MldrMHVtYUpMZzdTOUdVeThJeER6aGVpQ2FjaU1WN1hYTkVNMEFoclgyZ0MyQjFRcTc5TXRoSTVnNWZDTHpMblJSc3pOVkd6VVlucmVLczNxczVxTW1Tb2E5S09xT0xKVVJOb2pObUNtNjVPdDI4MHBWa2d4UmJITzFHcXJOU2x4aHVsSzBWQk1WVGhqS2lnZlBrYVJjdUszemp3SDltQks3eEVyMVBuTThJYWEzMHlsYVVNbUhhMFhzQdIB6wFBVV95cUxNaTg3blNCN1ZsSDg0QnowUFJENWxFQ01WTTA0bkMtYWxQX05yU1Rqam9XOFUyZkE5djFJNC1CYXh1cC14ajFjdk95Z19wSUJodG1IM0xJZGtCOUFFRmxOQVdFYzJDalFpVWJHem9nTGkzNVJNZXBpa0F0NFJPazRLaEFfOGJMVVZXU0tTR3pKbXRhNWM2d3RMclZMZy1ROUpBakJhbkJoLXNnOWVHTm9sQXZGUF8xYjUwNzVTaEZyb0JSeUF5dWk3SWVLUzRkUVRaM3p4MHlYcl9OZGV3TDJST3dQZU5UY0loZzJv?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
-    },
-    {
-      "title": "TCS, Infosys, Wipro shares ahead of Q2 results: Explained | What Accenture's strong earnings mean for Indian IT stocks",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPQ1NnVU5Mb1F1NlQ5d3FVSi1xMTJnMFJlYVNiVDlCRXlDRzRvQkJZZ3MybzhRdU56VWJpVjllUTNESTBFUngwRVlzY1VROUxuV1NDS2czbnpLcFFDLWhvelNmRmVVWTRJbUxfN19Zbll4SGxoR29oUkEtV01fM3ZIMWZyR2hKbWVnSXk4bzRPQTE2THBxRTNhTmkyNkVrckg5ajZsanBjd3dUVGp0bjA5OXNSbEcwWC1FcWlhSWtXMEliWjc2VFZWdUhCTWdObUthQVNpT2hCQVRWZVRSeGVJbUdOdU5aM1p6cFdTS3JRNllNSnp6ejExZGxlV3hXeUhWRm5IY1lpYXQzR2JyRGNv0gGUAkFVX3lxTFBFcjQzVzdKWVdkVFpHb2RrejFxOWJta3VJZ1laVDVRWmtKZFptMEhuaEJNYnZRM2ZZMzhlSFVuaThpZEJIME5hamxXNThWWEpVbkR1LXVuYUxpUE10R2ppVi04aXdzUjV5RWRjOFdneFdWenpUVFJfcjRqRFFCLTF5WDhnYUxyRnVDWnFROVh5emtPMXZ5TUNFU2hMTEpaZ1FINktNWmt5alhsTVdLaXViT0JvZUhVZ2xkSmNPSkY5NERaVmRheE5RWDZDM0xUbFl0XzAwMlEyeXpXYTNvSFpkdkZPOU52MEdjTUFBTGwxWGNETWljcXNmaFluNG5qbDFNbUgta2hrMzhGVlJZcEZvd1NnYw?oc=5",
-      "published_at": "Sat, 03 Oct 2026",
-      "sentiment": "neutral"
     },
     {
       "title": "'Stop trolling TCS': EY techie earning over Rs 50 lakh says Tata offered 25% hike",
@@ -395,11 +429,11 @@
       "sentiment": "bullish"
     },
     {
-      "title": "TCS, Wipro, Infosys, HCL Tech: Why experts see IT stocks' price jump on Monday \u2014 What's giving the boost?",
+      "title": "TCS, Infosys, Wipro shares ahead of Q2 results: Explained | What Accenture's strong earnings mean for Indian IT stocks",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOTklPbVFwNlh5dk96T0FiLUpOMU1IMHBKTkd1WFBzcnZTUVdLdTRBU2FOU1FhREx3dGpWM3E1a3BUcms4RXZSajFaaWw0bnRJdUVqV3FTTEIydjN2V0xpTVFYdXcxZVNsSGtvNWROcGJWWS1SMlZVVGZBWDQ5RHpMRlo4ZlZHLVhZMFltdm9LOXFud1FBYzRDTmZ6bFFTYllzMEdiem4xSUJoVWI3U1hvQkRPRXF1Vl9QZ1lVbG9mN0RuREZqOTlMXzBSdW1UelhlWjQyc2w3b2NwZlRXZGRkWXpvS1ZmMERmQXo0UlMyb3BnTUk1a2FqTlFB0gH_AUFVX3lxTE1lSnNNYVY0QlNLVXRTTm1zbV9lNEk4SnZDaUdzTW9IUlhfRGRJVGpYTTJaYmtiQ3J6ZkVKYU1YTm9xZWlyYkVMc2pJakFXNUJiNHNLVEZDTWkxUWYxOFkxeXkwRTVPU1luTDdQdGR1dWQ4MFljUldablB5d05YM2NCS19xdTdGMnVMczJGaVZyb3YxMG16Z2tJLUh1VWVSSkNNTEVTZm1VM2xibFZQYzVEYUxZdngxNWcxSHI0dlgxVXVIMFh1dnNPb19sMFB1RTJpZ3BmWG8xV05tbk5mN0d6Wm9RMXZ3ekJ2S2tkRkdVT3RicHg0VFhhLW1FeV9Naw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "bullish"
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPQ1NnVU5Mb1F1NlQ5d3FVSi1xMTJnMFJlYVNiVDlCRXlDRzRvQkJZZ3MybzhRdU56VWJpVjllUTNESTBFUngwRVlzY1VROUxuV1NDS2czbnpLcFFDLWhvelNmRmVVWTRJbUxfN19Zbll4SGxoR29oUkEtV01fM3ZIMWZyR2hKbWVnSXk4bzRPQTE2THBxRTNhTmkyNkVrckg5ajZsanBjd3dUVGp0bjA5OXNSbEcwWC1FcWlhSWtXMEliWjc2VFZWdUhCTWdObUthQVNpT2hCQVRWZVRSeGVJbUdOdU5aM1p6cFdTS3JRNllNSnp6ejExZGxlV3hXeUhWRm5IY1lpYXQzR2JyRGNv0gGUAkFVX3lxTFBFcjQzVzdKWVdkVFpHb2RrejFxOWJta3VJZ1laVDVRWmtKZFptMEhuaEJNYnZRM2ZZMzhlSFVuaThpZEJIME5hamxXNThWWEpVbkR1LXVuYUxpUE10R2ppVi04aXdzUjV5RWRjOFdneFdWenpUVFJfcjRqRFFCLTF5WDhnYUxyRnVDWnFROVh5emtPMXZ5TUNFU2hMTEpaZ1FINktNWmt5alhsTVdLaXViT0JvZUhVZ2xkSmNPSkY5NERaVmRheE5RWDZDM0xUbFl0XzAwMlEyeXpXYTNvSFpkdkZPOU52MEdjTUFBTGwxWGNETWljcXNmaFluNG5qbDFNbUgta2hrMzhGVlJZcEZvd1NnYw?oc=5",
+      "published_at": "Sat, 03 Oct 2026",
+      "sentiment": "neutral"
     }
   ]
 }

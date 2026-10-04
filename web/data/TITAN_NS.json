@@ -269,6 +269,72 @@
       "max_risk_amount": 5000.0
     }
   },
+  "ranked_strategies": [
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 88.7,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 65.2,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 55.9,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 47.0,
+      "grade": "C (Moderate)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 47.0,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target"
+    },
+    {
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 46.8,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 46.8,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle"
+    }
+  ],
   "indicators": {
     "EMA20": "4834.24",
     "EMA50": "4847.72",
@@ -388,18 +454,18 @@
       "sentiment": "neutral"
     },
     {
-      "title": "South Korea vs Indonesia Live Ball by Ball Commentary, Match Score and Highlights | INA 110/1 (15.0 ovrs, Balage Dilruksha (C) (W) 73*, Daham Madampage 18*) - Match Ended",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdlppRnhqRHM2VHAyYlctTmVuNklFZHhJVWEyZEVnd0tXOG1FQUpCRklCTXJucXBydHF2T21OZWJibVRZT0ZadkdRWHQtMkFlb0ZtWUlXYUVTSllnZGVMY05FdHdUblFtM3QyWG5YaUthMjR6b2F3NjJpNU1zU1Zma0hNcU90dkxfSzRqc3V5OW9YZ0lldF9SYXI3MzVjZHdfdjAxdDFHMkg1YnFGRElGYlFVckFxUkwxdGtRS0ZBc3VDelNwRUpvS3BHUy0?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
       "title": "Netlist seeks US import ban on Micron chips used in Google, Nvidia AI computing",
       "publisher": "electronics.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQc1hvSGVnYURBUThfUnZQX213VVBObGVwR1BzQU12V004eHI4RmcyQUdQcUJzY3A3X19IMkxhbVJ1RkVObWFDbkRueDc5YTI1cWtKZkxRS0VESVZNT0RVbWtrbHBWZUR3X2Q0ajhuNWE1UFZtYXZEVVNTSTlVQnJ3cWtmQVIyUmpkOEo2akVpUGVQcC1hQl9XMURZb2dKS0g4YXQtb0laVDBYbWZiWFpjclpjV2RZN0xySE5VUkxiakhrNHQ1RzRHd19KR2dQSUR3NTVmLTJTTFBwd2dZbExDX2lwWE9ibGxBOFY3dQ?oc=5",
       "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
+    },
+    {
+      "title": "Lhuan-dre Pretorius rewrites T20 history, breaks Chris Gayle\u2019s record with unbeaten 188",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUm96SWlfbVhfN1Q3OFlEejVjRWJHUEY4cmJEd1hlanpYVDY4RDhRcDc0ZUIzYUE0ZzhORHhOWmRzN01mZTJHaGJHWVQ5RXdySVBDSlY0cE1iREw5V1VBalh4SkcxNVFaMmZiZ2lsdzZ4a1A1N3o0WVNnZUFVaGlva0J4SmFSNGVoczBwWWpfMmtDeGVPdlRUZW1QMml3akRPNUhKa2pjdEpKS1ZGVTNCempQQWI2c2tpemxsM3RVelBCRWlDSEQ5b1ltS19oOFNPMkQwZXpsdFJYMDNrZl9LbHUtNFFVSWfSAewBQVVfeXFMUFo4VFFOdWFFcDk0bzlUcjZJQmhNclpuNnh2RDZEQnQ0NWFfRXI3UElpQmNrUlJaZ19Ua05YSTdPNUpFS09YS2gwSkluSWtYMl9UOHZla3VnOVJNdlFFMEpEekFzOWNaOHFqWWVSalFnWHlLZ2xJX0xYTzVma1RtYXQxUm01Yk5BQndYX2o1U29aTWp1bWVwQ2dJZ20xU1J1RThycG93a1h4TW4zbEFRSy1CUmxQUTItZDVMeGNZSm45UklLXzlOT094SlFKVjYwelJDSGRWUGtOeGlYalFhbXpUTkNqZG1uZjhJSWE?oc=5",
+      "published_at": "Sat, 03 Oct 2026",
+      "sentiment": "bullish"
     }
   ]
 }
