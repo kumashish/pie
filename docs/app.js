@@ -768,6 +768,8 @@ document.addEventListener("DOMContentLoaded", () => {
             fit_score: item.fit_score,
             regime_display: item.regime_display,
             strategy_display: item.strategy_display,
+            legs_summary: item.legs_summary || "",
+            ranked_strategies: item.ranked_strategies || [],
             trade_profile: item.trade_profile || "Defined Risk | 30-45 DTE",
             trade_category: item.trade_category || "options",
             market: isIndia ? "india" : "us",
@@ -875,6 +877,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <span class="score-label">/10.0 (${item.regime_display})</span>
             </div>
             <div class="top-card-strategy">${item.strategy_display}</div>
+            ${item.legs_summary ? `<div class="top-card-shorthand" style="font-size: 11px; font-weight: 700; color: var(--accent-cyan); font-family: monospace; margin: 4px 0; background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${item.legs_summary}</div>` : ''}
             <div class="top-card-leg">${item.trade_profile}</div>
           </div>
           <button class="top-card-btn" onclick="window.analyzeFromCard('${item.symbol}')">

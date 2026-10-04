@@ -142,6 +142,14 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
             # Add entry to master index
             # Determine if this signal is a high‑score (fit_score >= 8)
             is_high = data.get("fit_score", 0) >= 8
+            leg_summary_str = ""
+            if data.get("estimated_trade") and data["estimated_trade"].get("legs"):
+                raw_legs = [leg["summary"] for leg in data["estimated_trade"]["legs"]]
+                leg_summary_str = "<br> ".join(raw_legs)
+                if symbol.endswith(".NS") or symbol.endswith(".BO") or symbol.startswith("^NSE") or symbol.startswith("^BSE"):
+                    from pie.reporting.readme_update import format_short_indian_strategy
+                    leg_summary_str = format_short_indian_strategy(leg_summary_str)
+
             summary_index.append({
                 "symbol": data["symbol"],
                 "file_key": safe_name,
@@ -151,6 +159,8 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
                 "fit_score": data["fit_score"],
                 "strategy_display": data["strategy_display"],
                 "trade_profile": data["trade_profile"],
+                "legs_summary": leg_summary_str,
+                "ranked_strategies": data.get("ranked_strategies", []),
                 "trade_category": data.get("trade_category", "options"),
                 "cash_trade_setup": data.get("cash_trade_setup"),
                 "as_of": data["as_of"],
