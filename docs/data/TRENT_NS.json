@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x TRENT.NS 24-Nov-2026 2750 Call<br> Buy 1x TRENT.NS 24-Nov-2026 2800 Call"
+      "legs_summary": "S1x-Nov-2750CE-B1x-Nov-2800CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x TRENT.NS 24-Nov-2026 2400 Put<br> Sell 1x TRENT.NS 24-Nov-2026 2450 Put<br> Sell 1x TRENT.NS 24-Nov-2026 2750 Call<br> Buy 1x TRENT.NS 24-Nov-2026 2800 Call"
+      "legs_summary": "B1x-Nov-2400PE-S1x-Nov-2450PE-S1x-Nov-2750CE-B1x-Nov-2800CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x TRENT.NS 24-Nov-2026 2580 Put"
+      "legs_summary": "S1x-Nov-2580PE"
     }
   ],
   "indicators": {
@@ -403,13 +403,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Nifty indices rejig goes live today: Which stocks will see biggest inflows and outflows?",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5MM2Nqek1VZy1ZR1BMTnNPbXVuN1ZmSkxGeXZTNkxXS3Q1TWJkd09xaVpNZWdpdzluZVBGaUNsZTQtek9aUWx3ZWpRVGpxV24zMzlDai14WXppbS01UnU3eXhwS3o4Y2xBYXdPRVBPc2l1UQ?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Hyundai Motor India IPO: Top factors behind 89% GMP crash",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5iN25nSEJiQjRYY01INDBEbFR3V3BRRExGUzJTWDFjc0xsSUZ3TDE2VUhnOTY3Vkp3VUV3SFpwcmtOSnowVHZObEI2VF9Tb0ZGNmh1ajFtWU9SY3VyMUYwMWJYbkRPNWh2N1RiY3Zmd3E?oc=5",
@@ -428,6 +421,13 @@
       "publisher": "bfsi.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTWhpOWg1cVZwZkJkQnNaQVpsbW5uaDJTX20zMDd1NUVGeklTU2c2bW9uMkx5OURHWU1BZ0d6aC1KYWVRV3JBRXpXMWF5bW1FMVI3Z19tb3Y3UmhRRGlHV2RBVGZQbk5FZXdpRmxEdUFjOHpSUlBRZGp0QTMwS3RRTVI1dVQzY0JsbFNfRll0Wm5KMF9sMmEzMnR3MXpYeDlUU2FsYUlNYWE2WHh1OWRqenFRc1A2Mkw2X3lEQ2NjX0dQMHZIZmpNVC1rRDVYYlgtY205S9IB2gFBVV95cUxQMkxYaFB0M1RVVGMyRDRVcmhqdmxJZnIwbXNiWEY2amJrdGlhRGFpRXNPT0lKeUpMZjNtTnBoT01ldFVZVjdNeVhvMVdPaGVMSFp4bGliR2JXZGYwOEZLZmxTa0xtSGNlZE45ckl4bGlNMVJFT1dIcXJJNXlfYU50OXlUTzBndFN3Q1lEQTVMMEx6Z3JPcllNRGlhRG1jUmpmUF81aExGTEZCMGI3TVJjZXZVTFpidGZzQ0pET2NDdUdIcU1fdkFzM0RfeGZHTzhPRlVhWlBySnltdw?oc=5",
       "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvRDFwc3dlUnU0bWdRSDV1VVU0aWJXM3A0aGxUY3U3NDRTbDd2Q3B1X2x4NFFucWNLMGhCd3V3XzA4X2FEU1ZYb2JFby1XeXJzZFRNTDFid1V3b1NOVVRHdGhYQ2s4VVNpeXNraWd4MEk?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }
   ]

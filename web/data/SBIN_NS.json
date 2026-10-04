@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x SBIN.NS 24-Nov-2026 1005 Call<br> Buy 1x SBIN.NS 24-Nov-2026 1020 Call"
+      "legs_summary": "S1x-Nov-1005CE-B1x-Nov-1020CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x SBIN.NS 24-Nov-2026 890 Put<br> Sell 1x SBIN.NS 24-Nov-2026 905 Put<br> Sell 1x SBIN.NS 24-Nov-2026 1005 Call<br> Buy 1x SBIN.NS 24-Nov-2026 1020 Call"
+      "legs_summary": "B1x-Nov-890PE-S1x-Nov-905PE-S1x-Nov-1005CE-B1x-Nov-1020CE"
     },
     {
       "strategy_type": "jade_lizard",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x SBIN.NS 24-Nov-2026 905 Put<br> Sell 1x SBIN.NS 24-Nov-2026 1005 Call<br> Buy 1x SBIN.NS 24-Nov-2026 1020 Call"
+      "legs_summary": "S1x-Nov-905PE-S1x-Nov-1005CE-B1x-Nov-1020CE"
     },
     {
       "strategy_type": "butterfly",
@@ -304,7 +304,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x SBIN.NS 24-Nov-2026 930 Call<br> Sell 1x SBIN.NS 24-Nov-2026 955 Call<br> Sell 1x SBIN.NS 24-Nov-2026 955 Call<br> Buy 1x SBIN.NS 24-Nov-2026 980 Call"
+      "legs_summary": "B1x-Nov-930CE-S1x-Nov-955CE-S1x-Nov-955CE-B1x-Nov-980CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
@@ -313,7 +313,7 @@
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x SBIN.NS 24-Nov-2026 930 Call<br> Sell 1x SBIN.NS 24-Nov-2026 955 Call<br> Sell 1x SBIN.NS 24-Nov-2026 955 Call<br> Buy 1x SBIN.NS 24-Nov-2026 1005 Call"
+      "legs_summary": "B1x-Nov-930CE-S1x-Nov-955CE-S1x-Nov-955CE-B1x-Nov-1005CE"
     }
   ],
   "indicators": {

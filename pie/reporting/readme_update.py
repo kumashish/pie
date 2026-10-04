@@ -186,13 +186,18 @@ def get_trade_profile(stype: str) -> str:
 def format_short_indian_strategy(strategy_str: str) -> str:
     """Shorten strategy leg descriptions for Indian markets (NSE/BSE).
     Example: 'Sell 1x DIVISLAB.NS 24-Nov-2026 9700 Call / Buy 1x DIVISLAB.NS 24-Nov-2026 9900 Call'
-    Converts to: 'S1x-Nov-9700CE-B1x-Nov-9900-CE'
+    Converts to: 'S1x-Nov-9700CE-B1x-Nov-9900CE'
     """
     import re
-    if not strategy_str or "/" not in strategy_str:
+    if not strategy_str:
         return strategy_str
 
-    parts = strategy_str.split("/")
+    # Normalize separators (convert <br> to /)
+    raw_clean = strategy_str.replace("<br>", " / ").replace("<br/>", " / ")
+    if "/" not in raw_clean and not re.search(r'(Sell|Buy)\s+\d+x', raw_clean, re.IGNORECASE):
+        return strategy_str
+
+    parts = raw_clean.split("/")
     short_parts = []
     for part in parts:
         part = part.strip()

@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x ^NSEBANK 24-Nov-2026 57400 Call<br> Buy 1x ^NSEBANK 24-Nov-2026 58100 Call"
+      "legs_summary": "S1x-Nov-57400CE-B1x-Nov-58100CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -286,7 +286,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x ^NSEBANK 24-Nov-2026 54450.8 Put"
+      "legs_summary": "S1x-Nov-54450.8PE"
     },
     {
       "strategy_type": "iron_condor",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x ^NSEBANK 24-Nov-2026 50900 Put<br> Sell 1x ^NSEBANK 24-Nov-2026 51600 Put<br> Sell 1x ^NSEBANK 24-Nov-2026 57400 Call<br> Buy 1x ^NSEBANK 24-Nov-2026 58100 Call"
+      "legs_summary": "B1x-Nov-50900PE-S1x-Nov-51600PE-S1x-Nov-57400CE-B1x-Nov-58100CE"
     }
   ],
   "indicators": {

@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x HEROMOTOCO.NS 24-Nov-2026 5500 Call<br> Buy 1x HEROMOTOCO.NS 24-Nov-2026 5600 Call"
+      "legs_summary": "S1x-Nov-5500CE-B1x-Nov-5600CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x HEROMOTOCO.NS 24-Nov-2026 4800 Put<br> Sell 1x HEROMOTOCO.NS 24-Nov-2026 4900 Put<br> Sell 1x HEROMOTOCO.NS 24-Nov-2026 5500 Call<br> Buy 1x HEROMOTOCO.NS 24-Nov-2026 5600 Call"
+      "legs_summary": "B1x-Nov-4800PE-S1x-Nov-4900PE-S1x-Nov-5500CE-B1x-Nov-5600CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x HEROMOTOCO.NS 24-Nov-2026 4900 Put"
+      "legs_summary": "S1x-Nov-4900PE"
     },
     {
       "strategy_type": "jade_lizard",
@@ -304,7 +304,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x HEROMOTOCO.NS 24-Nov-2026 4900 Put<br> Sell 1x HEROMOTOCO.NS 24-Nov-2026 5500 Call<br> Buy 1x HEROMOTOCO.NS 24-Nov-2026 5600 Call"
+      "legs_summary": "S1x-Nov-4900PE-S1x-Nov-5500CE-B1x-Nov-5600CE"
     },
     {
       "strategy_type": "butterfly",
@@ -313,7 +313,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x HEROMOTOCO.NS 24-Nov-2026 5000 Call<br> Sell 1x HEROMOTOCO.NS 24-Nov-2026 5200 Call<br> Sell 1x HEROMOTOCO.NS 24-Nov-2026 5200 Call<br> Buy 1x HEROMOTOCO.NS 24-Nov-2026 5300 Call"
+      "legs_summary": "B1x-Nov-5000CE-S1x-Nov-5200CE-S1x-Nov-5200CE-B1x-Nov-5300CE"
     }
   ],
   "indicators": {

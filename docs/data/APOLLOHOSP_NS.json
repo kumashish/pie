@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 8500 Call<br> Buy 1x APOLLOHOSP.NS 24-Nov-2026 8700 Call"
+      "legs_summary": "S1x-Nov-8500CE-B1x-Nov-8700CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 7500 Put<br> Sell 1x APOLLOHOSP.NS 24-Nov-2026 7700 Put<br> Sell 1x APOLLOHOSP.NS 24-Nov-2026 8500 Call<br> Buy 1x APOLLOHOSP.NS 24-Nov-2026 8700 Call"
+      "legs_summary": "B1x-Nov-7500PE-S1x-Nov-7700PE-S1x-Nov-8500CE-B1x-Nov-8700CE"
     },
     {
       "strategy_type": "jade_lizard",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 7700 Put<br> Sell 1x APOLLOHOSP.NS 24-Nov-2026 8500 Call<br> Buy 1x APOLLOHOSP.NS 24-Nov-2026 8700 Call"
+      "legs_summary": "S1x-Nov-7700PE-S1x-Nov-8500CE-B1x-Nov-8700CE"
     },
     {
       "strategy_type": "butterfly",
@@ -304,7 +304,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 7900 Call<br> Sell 1x APOLLOHOSP.NS 24-Nov-2026 8100 Call<br> Sell 1x APOLLOHOSP.NS 24-Nov-2026 8100 Call<br> Buy 1x APOLLOHOSP.NS 24-Nov-2026 8400 Call"
+      "legs_summary": "B1x-Nov-7900CE-S1x-Nov-8100CE-S1x-Nov-8100CE-B1x-Nov-8400CE"
     }
   ],
   "indicators": {
@@ -419,13 +419,6 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Apollo Hosp performs 8 spine surgeries using 'Mazor Robotics'",
-      "publisher": "ET HealthWorld",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSTFDNmdGUS1XN2dZekNzRG1ob3kyMXJYSi1idHlySDRyWk1WS1JSTVBxTHJrRTBxWFNGQlZVYXZ1OTFpcWJyektLd1pjN3I3NTI0c0l3dlFxZDNqdUwtZDgwTDUyX0FrbUNPZmtkdV9GV0ZGajh2NmV1QVR2RG5NTEVGdk83aHhhRVE2TnNFOVRjeFAyVWdEc0hLSkRXWVAwNnRXMlgwaVVZdVJ4UzZiRXRJR09NNnhtbGxRVU9TT1lJcmYzSEHSAcsBQVVfeXFMTjQzNkpfSF9PcTg4QU9uYmx3bWRTVzZfdGVEeU9ibjZDOFlrU0RZSGdvQjc3dER2M0h4MFI2dXBjX0FnVUhadERPMmlfWHM3LVQtSVkwN2JNbmEzVFJJeFRYMXpWMUNuU3kyN2lGcEZDWS1hUHJ5SFZGd1dsLUliY2hkM0ZJUDJPbjRhQ0NFSkJLa2lyTjdWMTc5Uk1uS3dJc2ctTzVyT0JiY0dtNmhzekVUeW56d2hrVUV3aUVVRUNBci15dm0xZVYzZVk?oc=5",
-      "published_at": "Wed, 24 Aug 2016",
-      "sentiment": "bullish"
-    },
-    {
       "title": "Apollo Hospitals Enterprises",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUzR2UlNicHQ4dWVrdVMyTWhRR05uY1RMRHlqaXFMMkgwWDYyOTNNSHlid1dCSTBTd0JKcGtXLU5RclZZVkZOalFCQUlWZ3hoRml1SnNqNEl5WDhwS0hfemFlZzc1dHhya3VNMVE5cDdWdE5zd3ZBRG5jRGdUWEZIaWFfcHJFS05jODVlaFMxMHUxV0k?oc=5",
@@ -437,6 +430,13 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVnc2eXFjekxpeU1QNktrb1l3SHNVQXRKUVBOTms5blJEVjZaOWVQTmtLNWZjWkRELXEzZFVXWXg4TjlRcUJtNFo2djJMYy1tZzNMZElqUGdVelVzdEhIak5lbU1NM0VuYTBaQ0hlTWoxaDlsXzE2c3phck05aTBlR2NOa2ZLOV9M?oc=5",
       "published_at": "Thu, 14 Nov 2024",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Apollo Hospitals Enterprises Ltd.",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMmF5VHUzN3NGUXJGRVllZmRpWVctVkl3NGpyS3RYa3o0T2ZMNHlnb1pMa3N2QzY3SUphWkczT0NWOEd6UklYUmtPWEtwN2JfcEVtTDhoNDRVSmVDVjA1cHdmVXdrTDlMSGlISElnekpSeFJ4cmdGdGd4Y2dIUmhRaUJCNDBLS1RF?oc=5",
+      "published_at": "Sun, 24 Jul 2011",
       "sentiment": "bullish"
     }
   ]

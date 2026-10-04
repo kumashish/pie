@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x TCS.NS 24-Nov-2026 2200 Call<br> Buy 1x TCS.NS 24-Nov-2026 2250 Call"
+      "legs_summary": "S1x-Nov-2200CE-B1x-Nov-2250CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -286,7 +286,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x TCS.NS 24-Nov-2026 2075 Put"
+      "legs_summary": "S1x-Nov-2075PE"
     },
     {
       "strategy_type": "iron_condor",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x TCS.NS 24-Nov-2026 1950 Put<br> Sell 1x TCS.NS 24-Nov-2026 2000 Put<br> Sell 1x TCS.NS 24-Nov-2026 2200 Call<br> Buy 1x TCS.NS 24-Nov-2026 2250 Call"
+      "legs_summary": "B1x-Nov-1950PE-S1x-Nov-2000PE-S1x-Nov-2200CE-B1x-Nov-2250CE"
     },
     {
       "strategy_type": "put_debit_spread",
@@ -304,7 +304,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x TCS.NS 24-Nov-2026 2100 Put<br> Sell 1x TCS.NS 24-Nov-2026 2000 Put"
+      "legs_summary": "B1x-Nov-2100PE-S1x-Nov-2000PE"
     }
   ],
   "indicators": {

@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x INFY.NS 24-Nov-2026 1100 Call<br> Buy 1x INFY.NS 24-Nov-2026 1150 Call"
+      "legs_summary": "S1x-Nov-1100CE-B1x-Nov-1150CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x INFY.NS 24-Nov-2026 950 Put<br> Sell 1x INFY.NS 24-Nov-2026 1000 Put<br> Sell 1x INFY.NS 24-Nov-2026 1100 Call<br> Buy 1x INFY.NS 24-Nov-2026 1150 Call"
+      "legs_summary": "B1x-Nov-950PE-S1x-Nov-1000PE-S1x-Nov-1100CE-B1x-Nov-1150CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x INFY.NS 24-Nov-2026 1035 Put"
+      "legs_summary": "S1x-Nov-1035PE"
     }
   ],
   "indicators": {

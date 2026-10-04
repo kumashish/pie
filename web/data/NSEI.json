@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x ^NSEI 24-Nov-2026 23600 Call<br> Buy 1x ^NSEI 24-Nov-2026 23800 Call"
+      "legs_summary": "S1x-Nov-23600CE-B1x-Nov-23800CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x ^NSEI 24-Nov-2026 21000 Put<br> Sell 1x ^NSEI 24-Nov-2026 21200 Put<br> Sell 1x ^NSEI 24-Nov-2026 23600 Call<br> Buy 1x ^NSEI 24-Nov-2026 23800 Call"
+      "legs_summary": "B1x-Nov-21000PE-S1x-Nov-21200PE-S1x-Nov-23600CE-B1x-Nov-23800CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x ^NSEI 24-Nov-2026 22421.9 Put"
+      "legs_summary": "S1x-Nov-22421.9PE"
     }
   ],
   "indicators": {

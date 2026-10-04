@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x ULTRACEMCO.NS 24-Nov-2026 11000 Call<br> Buy 1x ULTRACEMCO.NS 24-Nov-2026 11500 Call"
+      "legs_summary": "S1x-Nov-11000CE-B1x-Nov-11500CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -286,7 +286,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x ULTRACEMCO.NS 24-Nov-2026 10710 Put"
+      "legs_summary": "S1x-Nov-10710PE"
     },
     {
       "strategy_type": "put_debit_spread",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x ULTRACEMCO.NS 24-Nov-2026 10500 Put<br> Sell 1x ULTRACEMCO.NS 24-Nov-2026 10000 Put"
+      "legs_summary": "B1x-Nov-10500PE-S1x-Nov-10000PE"
     }
   ],
   "indicators": {

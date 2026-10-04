@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x HCLTECH.NS 24-Nov-2026 1300 Call<br> Buy 1x HCLTECH.NS 24-Nov-2026 1350 Call"
+      "legs_summary": "S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x HCLTECH.NS 24-Nov-2026 1150 Put<br> Sell 1x HCLTECH.NS 24-Nov-2026 1200 Put<br> Sell 1x HCLTECH.NS 24-Nov-2026 1300 Call<br> Buy 1x HCLTECH.NS 24-Nov-2026 1350 Call"
+      "legs_summary": "B1x-Nov-1150PE-S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x HCLTECH.NS 24-Nov-2026 1243.1 Put"
+      "legs_summary": "S1x-Nov-1243.1PE"
     },
     {
       "strategy_type": "butterfly",
@@ -304,7 +304,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x HCLTECH.NS 24-Nov-2026 1200 Call<br> Sell 1x HCLTECH.NS 24-Nov-2026 1250 Call<br> Sell 1x HCLTECH.NS 24-Nov-2026 1250 Call<br> Buy 1x HCLTECH.NS 24-Nov-2026 1300 Call"
+      "legs_summary": "B1x-Nov-1200CE-S1x-Nov-1250CE-S1x-Nov-1250CE-B1x-Nov-1300CE"
     }
   ],
   "indicators": {

@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x SBILIFE.NS 24-Nov-2026 1800 Call<br> Buy 1x SBILIFE.NS 24-Nov-2026 1850 Call"
+      "legs_summary": "S1x-Nov-1800CE-B1x-Nov-1850CE"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x SBILIFE.NS 24-Nov-2026 1550 Put<br> Sell 1x SBILIFE.NS 24-Nov-2026 1600 Put<br> Sell 1x SBILIFE.NS 24-Nov-2026 1800 Call<br> Buy 1x SBILIFE.NS 24-Nov-2026 1850 Call"
+      "legs_summary": "B1x-Nov-1550PE-S1x-Nov-1600PE-S1x-Nov-1800CE-B1x-Nov-1850CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x SBILIFE.NS 24-Nov-2026 1721.6 Put"
+      "legs_summary": "S1x-Nov-1721.6PE"
     }
   ],
   "indicators": {
@@ -417,17 +417,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Stocks in news: TCS, ICICI Bank, Hindustan Copper and Piramal Finance",
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xUkJiSGEzQmxia2JEb01qaV94Y3hNWS1QeFR0eTB2SHQ1Uzhoa1duYk5YTE9QRWdIS0tTcTJ6NkdVeVZtZEJfVEdnS0JPbUFjalctZHVjQTkwRHdRelZYZUVjUlFKWE0?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5sLUd0dE92OVd4Y1lYMk9WbnhUd184Q2VpNXNWOER1alI4MzlMWHc5bXp3eDFUTVFEMjktYmxhTllSaGVrTk13R0lOeUNRbXFMSGNmdTJhZ19NaUNhMUw5TXBhc3lraTY1QnI2aTY5cVVzODZBdk1n?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Taking Stock: Sensex, Nifty end flat amid volatility; metal, pharma stocks drag",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNlFuRkRRZUhlRVJyZnBmVEdDeTdqdk5ENjRJX2ItNnhSUjdVRHdLUnN4UERueWt1M3I2TER3dm8zcU85QlN4Y2ZTNGdNcnpEeFhWbWx4WlBQOWVKdHdzcmpSS0oydktFczVQa2hvRGRrOThnTmpIQ3pwcFpTQXViZThZT29FT042UWx6LVlpNk0zZ1RuaDhWZlZXZ2wzbDhKSjN4RzJsWFIzZGZ0UGxFTFJXMllWWFFDYkZRUFhlc2tsRVQ3cVJIZ25GUFo2N0hHVzM1aHRsd9IB3AFBVV95cUxNTG1lRURYT0VLVEplb2p5emQyMDB3d3BhZUM4b1ZJZk10NEo0c195N2ZEc09rQUJsUXNjRmNMaFBoNGc3bVV3M2R1ZWNSZDRPMEJuWENZdkVlT2RUVEhGWVA3VEdLQnRtSUc0RmNWMzF0MlY2cVhjMEF1d0VSc3FCbXdwb1A1Q0hfOTZ1cndBbThOZ282N0ZKRWZhWTUtOFE4WTZRdU9xcEotMmxXczBkZjRsVmlHdW1KZmM1TFIyZzE5VFpHNVVTODNybUstU0oxSVhwOUhUMnVEZWhh?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
+      "title": "Stocks in news: TCS, ICICI Bank, Hindustan Copper and Piramal Finance",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xUkJiSGEzQmxia2JEb01qaV94Y3hNWS1QeFR0eTB2SHQ1Uzhoa1duYk5YTE9QRWdIS0tTcTJ6NkdVeVZtZEJfVEdnS0JPbUFjalctZHVjQTkwRHdRelZYZUVjUlFKWE0?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }
   ]
