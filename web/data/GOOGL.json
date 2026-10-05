@@ -8,7 +8,7 @@
   "fit_score": 50.0,
   "confidence_grade": "C",
   "confidence_percentage": 50.0,
-  "vix": 16.24,
+  "vix": 16.23,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -333,7 +333,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 61.2,
+      "score": 61.1,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 52.9,
+      "score": 53.0,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -366,7 +366,8 @@
     "RSI(14)": "49.97",
     "ATR(14)": "9.00",
     "ADX(14)": "13.38",
-    "BB(20,2)": "0.54"
+    "BB(20,2)": "0.54",
+    "P_SHAPE(20)": "33.34"
   },
   "rules": [
     {
@@ -449,6 +450,27 @@
   ],
   "news": [
     {
+      "title": "Is Panasonic (TSE:6752) Using Its Canada TV Comeback To Quietly Reposition Its Global Brand?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/panasonic-tse-6752-using-canada-090616242.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Cash-Producing Stock to Consider Right Now and 2 That Underwhelm",
+      "publisher": "StockStory",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/1-cash-producing-stock-consider-085100702.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Supabase raises $150m and buys Turso for agentic workloads",
+      "publisher": "Verdict",
+      "link": "https://finance.yahoo.com/technology/ai/articles/supabase-raises-150m-buys-turso-083958845.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Prediction: Alphabet's Profit Growth Carries It to $5 Trillion Before 2028",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-alphabets-profit-growth-carries-075701761.html",
@@ -466,27 +488,6 @@
       "title": "3 Great AI Stocks To Watch In October 2026",
       "publisher": "Simply Wall St.",
       "link": "https://finance.yahoo.com/technology/ai/articles/3-great-ai-stocks-watch-020606838.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Silicon Valley Investor David Sacks Torched Bill Gates Over His Claim That AI Could Kill a Billion People",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/silicon-valley-investor-david-sacks-014223131.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "SPCX Stock Climbs Overnight: Musk Teases SpaceXSI After Trump\u2019s SI Push \u2014 Analyst Calls Shares \u2018Unusually Cheap\u2019",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-climbs-overnight-musk-012550126.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Spending on AI Is Becoming Almost Impossible for Businesses to Budget",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/517b0e8d-b3ce-30a9-bdaf-3aedfef6c07a/spending-on-ai-is-becoming.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

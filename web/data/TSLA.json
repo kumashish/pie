@@ -8,7 +8,7 @@
   "fit_score": 55.0,
   "confidence_grade": "C",
   "confidence_percentage": 55.0,
-  "vix": 16.24,
+  "vix": 16.23,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 49.6,
+      "score": 49.7,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -357,7 +357,8 @@
     "RSI(14)": "54.99",
     "ATR(14)": "12.44",
     "ADX(14)": "17.76",
-    "BB(20,2)": "0.66"
+    "BB(20,2)": "0.66",
+    "P_SHAPE(20)": "43.55"
   },
   "rules": [
     {
@@ -440,6 +441,20 @@
   ],
   "news": [
     {
+      "title": "Tesla And 2 Other Founder Led Stocks To Own",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-2-other-founder-led-090814917.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq, S&P 500, Dow Futures Steady Ahead Of Fed Minutes This Week: TSLA, SPCX, CBRS, QCOM, PTC, IBRX Stocks In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-dow-futures-085240343.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Michael Saylor Proves Bitcoin Is Tame With a Chart Where His Own Stock Hits 94%",
       "publisher": "BeInCrypto",
       "link": "https://finance.yahoo.com/markets/crypto/articles/michael-saylor-proves-bitcoin-tame-064412496.html",
@@ -461,25 +476,11 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Top 3 Founder Run Stocks To Watch In October 2026",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/top-3-founder-run-stocks-030951119.html",
+      "title": "Tesla Stock Is Down 15% This Year. Is the $396 Street Target Within Reach?",
+      "publisher": "TIKR",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-down-15-396-033934161.html",
       "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dan Ives Explains Why 2027 Could Be Tesla's Golden Year with Robotaxis and Optimus",
-      "publisher": "BeInCrypto",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/dan-ives-explains-why-2027-005343769.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tesla Is on Pace for Its First Annual Delivery Increase Since 2023. Is the Stock a Buy?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-pace-first-annual-delivery-003402095.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bearish"
     }
   ]
 }

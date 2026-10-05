@@ -8,7 +8,7 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 16.24,
+  "vix": 16.22,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 1100.0,
         "strike_formatted": "1100",
         "option_type": "Call",
-        "delta": 0.397,
+        "delta": 0.396,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 1150.0,
         "strike_formatted": "1150",
         "option_type": "Call",
-        "delta": 0.151,
+        "delta": 0.15,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -49,7 +49,7 @@
     "stop_loss_price": 1042.64,
     "take_profit_price": 1107.14,
     "net_delta": -0.246,
-    "net_theta": 0.137,
+    "net_theta": 0.136,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -282,7 +282,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 84.4,
+      "score": 87.7,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 64.0,
+      "score": 63.9,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 40.1,
+      "score": 43.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -351,7 +351,8 @@
     "RSI(14)": "59.26",
     "ATR(14)": "46.48",
     "ADX(14)": "15.08",
-    "BB(20,2)": "0.72"
+    "BB(20,2)": "0.72",
+    "P_SHAPE(20)": "62.75"
   },
   "rules": [
     {
@@ -434,6 +435,13 @@
   ],
   "news": [
     {
+      "title": "Nvidia Partner Hon Hai Beats Sales Estimates Due to AI Frenzy",
+      "publisher": "Bloomberg",
+      "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-partner-hon-hai-beats-074315755.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Micron (MU) Posts 87% Gross Margins, Yet Trades at 6 Times Earnings. Is the Cycle Different?",
       "publisher": "Insider Monkey",
       "link": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-posts-87-gross-061642765.html",
@@ -465,13 +473,6 @@
       "title": "Micron Growth Is Surging and the Stock Looks Dirt Cheap. But Is the Stock a Buy?",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/markets/stocks/articles/micron-growth-surging-stock-looks-002000595.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "How to Start Investing in 2026: The Growth Stock I'm Buying Before Year-End",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/start-investing-2026-growth-stock-182200699.html",
       "published_at": "Today",
       "sentiment": "bullish"
     }

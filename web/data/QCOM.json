@@ -8,7 +8,7 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 16.24,
+  "vix": 16.22,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -49,9 +49,9 @@
     "stop_loss_price": 179.32,
     "take_profit_price": 190.42,
     "net_delta": -0.091,
-    "net_theta": 0.019,
+    "net_theta": 0.018,
     "probability_of_profit": 0.0,
-    "var_95": 4.02,
+    "var_95": 4.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -309,7 +309,7 @@
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 55.3,
+      "score": 55.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 46.4,
+      "score": 46.3,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
@@ -351,7 +351,8 @@
     "RSI(14)": "52.39",
     "ATR(14)": "8.35",
     "ADX(14)": "16.77",
-    "BB(20,2)": "0.49"
+    "BB(20,2)": "0.49",
+    "P_SHAPE(20)": "43.81"
   },
   "rules": [
     {
@@ -434,6 +435,13 @@
   ],
   "news": [
     {
+      "title": "Nasdaq, S&P 500, Dow Futures Steady Ahead Of Fed Minutes This Week: TSLA, SPCX, CBRS, QCOM, PTC, IBRX Stocks In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-dow-futures-085240343.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "QCOM Gains Overnight After Patent Deal With China\u2019s Huawei Covering AI Chip Tech",
       "publisher": "Stocktwits",
       "link": "https://finance.yahoo.com/technology/ai/articles/qcom-gains-overnight-patent-deal-074054209.html",
@@ -455,23 +463,16 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Qualcomm Licenses Patents on Huawei\u2019s LogicFolding Chip Tech",
+      "publisher": "Bloomberg",
+      "link": "https://finance.yahoo.com/technology/ai/articles/qualcomm-licenses-patents-huawei-logicfolding-060003829.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "3 Semiconductor Stocks With Fortress Balance Sheets and Proven Dividend Raises",
       "publisher": "24/7 Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/3-semiconductor-stocks-fortress-balance-124552288.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Here\u2019s the Dividend ETF I\u2019d Invest $100 a Month Into Starting in October",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/dividend-etf-d-invest-100-113020055.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Micron Technology vs. Qualcomm: What Revenue Trends Tell Investors About These Tech Companies",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-vs-qualcomm-revenue-054012853.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

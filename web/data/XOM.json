@@ -8,7 +8,7 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 16.24,
+  "vix": 16.22,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -282,7 +282,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 81.8,
+      "score": 81.7,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -309,7 +309,7 @@
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 55.3,
+      "score": 55.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
@@ -342,7 +342,8 @@
     "RSI(14)": "54.96",
     "ATR(14)": "3.53",
     "ADX(14)": "13.04",
-    "BB(20,2)": "0.62"
+    "BB(20,2)": "0.62",
+    "P_SHAPE(20)": "47.09"
   },
   "rules": [
     {
@@ -425,6 +426,13 @@
   ],
   "news": [
     {
+      "title": "1 Cash-Producing Stock Worth Your Attention and 2 Facing Challenges",
+      "publisher": "StockStory",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/1-cash-producing-stock-worth-082700902.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "What is Exxon Mobil\u2019s (XOM) Economic Moat, and is it Widening or Narrowing?",
       "publisher": "Insider Monkey",
       "link": "https://finance.yahoo.com/energy/articles/exxon-mobil-xom-economic-moat-202458679.html",
@@ -458,13 +466,6 @@
       "link": "https://finance.yahoo.com/m/784b4cb9-3104-3c92-97c3-ecc999b18e8e/the-g-7-oil-bailout-is.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "4 Big Oil Dividends Ranked by What Matters When Crude Falls",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/energy/articles/4-big-oil-dividends-ranked-161508453.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
     }
   ]
 }

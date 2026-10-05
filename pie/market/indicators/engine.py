@@ -10,6 +10,7 @@ from pie.market.indicators.atr import ATR
 from pie.market.indicators.base import Indicator, IndicatorResult
 from pie.market.indicators.bollinger import BollingerBands
 from pie.market.indicators.ema import EMA
+from pie.market.indicators.p_shape import PShapeProfile
 from pie.market.indicators.rsi import RSI
 
 DEFAULT_INDICATORS: tuple[Indicator, ...] = (
@@ -21,6 +22,7 @@ DEFAULT_INDICATORS: tuple[Indicator, ...] = (
     ATR(14),
     ADX(14),
     BollingerBands(20, 2.0),
+    PShapeProfile(20),
 )
 
 
@@ -65,6 +67,8 @@ class IndicatorEngine:
                     indicators.append(ADX(period))
                 case "bollinger":
                     indicators.append(BollingerBands(period))
+                case "p_shape":
+                    indicators.append(PShapeProfile(period))
                 case _:
                     msg = f"Unsupported indicator '{indicator_type}'."
                     raise ValueError(msg)

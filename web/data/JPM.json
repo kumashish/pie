@@ -8,7 +8,7 @@
   "fit_score": 45.0,
   "confidence_grade": "C",
   "confidence_percentage": 45.0,
-  "vix": 16.23,
+  "vix": 16.22,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 305.0,
         "strike_formatted": "305",
         "option_type": "Put",
-        "delta": -0.052,
+        "delta": -0.051,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -59,7 +59,7 @@
         "strike": 355.0,
         "strike_formatted": "355",
         "option_type": "Call",
-        "delta": 0.158,
+        "delta": 0.157,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 83.9,
+      "score": 86.1,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -324,7 +324,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 60.6,
+      "score": 62.7,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -357,7 +357,8 @@
     "RSI(14)": "34.48",
     "ATR(14)": "6.46",
     "ADX(14)": "24.04",
-    "BB(20,2)": "0.14"
+    "BB(20,2)": "0.14",
+    "P_SHAPE(20)": "58.03"
   },
   "rules": [
     {

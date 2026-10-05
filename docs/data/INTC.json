@@ -8,7 +8,7 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 16.24,
+  "vix": 16.23,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -51,7 +51,7 @@
     "net_delta": -0.066,
     "net_theta": 0.009,
     "probability_of_profit": 0.0,
-    "var_95": 1.69,
+    "var_95": 1.68,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -282,7 +282,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 84.3,
+      "score": 86.2,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 40.1,
+      "score": 42.0,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -351,7 +351,8 @@
     "RSI(14)": "60.64",
     "ATR(14)": "6.14",
     "ADX(14)": "25.09",
-    "BB(20,2)": "0.68"
+    "BB(20,2)": "0.68",
+    "P_SHAPE(20)": "57.23"
   },
   "rules": [
     {

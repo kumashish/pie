@@ -8,12 +8,12 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 16.25,
+  "vix": 16.23,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (94.9% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (94.8% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 295.0,
         "strike_formatted": "295",
         "option_type": "Call",
-        "delta": 0.251,
+        "delta": 0.25,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 300.0,
         "strike_formatted": "300",
         "option_type": "Call",
-        "delta": 0.168,
+        "delta": 0.167,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -273,7 +273,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 94.9,
+      "score": 94.8,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 69.6,
+      "score": 69.5,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -342,7 +342,8 @@
     "RSI(14)": "39.57",
     "ATR(14)": "3.63",
     "ADX(14)": "37.74",
-    "BB(20,2)": "0.33"
+    "BB(20,2)": "0.33",
+    "P_SHAPE(20)": "42.45"
   },
   "rules": [
     {

@@ -8,7 +8,7 @@
   "fit_score": 82.5,
   "confidence_grade": "A",
   "confidence_percentage": 82.5,
-  "vix": 16.25,
+  "vix": 16.23,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -35,7 +35,7 @@
         "strike": 360.0,
         "strike_formatted": "360",
         "option_type": "Call",
-        "delta": 0.12,
+        "delta": 0.119,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -48,7 +48,7 @@
     "margin_required": 15.0,
     "stop_loss_price": 323.68,
     "take_profit_price": 343.7,
-    "net_delta": -0.055,
+    "net_delta": -0.056,
     "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -282,7 +282,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 83.0,
+      "score": 88.3,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 60.8,
+      "score": 60.9,
       "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -300,7 +300,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 57.2,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -332,6 +332,15 @@
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
       "legs_summary": "Sell 1x AAPL 20-Nov-2026 315 Put"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 43.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AAPL 20-Nov-2026 335 Call<br> Sell 1x AAPL 20-Nov-2026 350 Call"
     }
   ],
   "indicators": {
@@ -342,7 +351,8 @@
     "RSI(14)": "54.72",
     "ATR(14)": "7.03",
     "ADX(14)": "17.13",
-    "BB(20,2)": "0.56"
+    "BB(20,2)": "0.56",
+    "P_SHAPE(20)": "69.83"
   },
   "rules": [
     {

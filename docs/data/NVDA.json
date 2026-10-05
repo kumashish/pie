@@ -8,7 +8,7 @@
   "fit_score": 85.0,
   "confidence_grade": "A",
   "confidence_percentage": 85.0,
-  "vix": 16.24,
+  "vix": 16.23,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 250.0,
         "strike_formatted": "250",
         "option_type": "Call",
-        "delta": 0.156,
+        "delta": 0.155,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 255.0,
         "strike_formatted": "255",
         "option_type": "Call",
-        "delta": 0.088,
+        "delta": 0.087,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -282,7 +282,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 89.6,
+      "score": 90.6,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 44.8,
+      "score": 45.8,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -360,7 +360,8 @@
     "RSI(14)": "62.90",
     "ATR(14)": "5.91",
     "ADX(14)": "15.86",
-    "BB(20,2)": "0.90"
+    "BB(20,2)": "0.90",
+    "P_SHAPE(20)": "53.53"
   },
   "rules": [
     {
@@ -443,46 +444,46 @@
   ],
   "news": [
     {
-      "title": "My 3 Favorite Dividend Stocks to Buy in October",
+      "title": "Got $10,000 to Invest in October? These Stocks Could Generate Over $634 in Annual Income.",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-favorite-dividend-stocks-buy-080600512.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/got-10-000-invest-october-090400813.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Prediction: Alphabet's Profit Growth Carries It to $5 Trillion Before 2028",
+      "title": "IBM Stock Fell 22% in the Third Quarter. History Says It's Usually Higher a Year Later.",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-alphabets-profit-growth-carries-075701761.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ibm-stock-fell-22-third-085801349.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Nebius Has $40 Billion of Customer Commitments. Most of It Comes From 2 Customers.",
+      "title": "The S&P 500 Has Never Been Lower 12 Months After a Midterm Election. Not Once in 19 Tries. Here's Whether 2026 Could Finally Break That Streak.",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nebius-40-billion-customer-commitments-073201031.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-never-lower-12-084601981.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "SpaceX Earnings: 3 Numbers Long-Term Investors Should Watch",
+      "title": "10 Wall Street Analysts Think Argenx Stock Is Headed to At Least $1,200 -- Is the Stock a Buy Now?",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-earnings-3-numbers-long-072000703.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/10-wall-street-analysts-think-084600973.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Michael Saylor Proves Bitcoin Is Tame With a Chart Where His Own Stock Hits 94%",
-      "publisher": "BeInCrypto",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/michael-saylor-proves-bitcoin-tame-064412496.html",
+      "title": "4 Major Winners From an Anthropic IPO",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/technology/ai/articles/4-major-winners-anthropic-ipo-084500221.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Cathie Wood\u2019s ARKG Is Crushing Her Other ETFs: 2 Biotech Bets Have Surged Nearly 6X This Year",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/healthcare/articles/cathie-wood-arkg-crushing-her-064411709.html",
+      "title": "President Donald Trump's Proposed $5,000 \"Trump Dividend\" Could Epically Backfire for 2 Key Reasons",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/economy/policy/articles/president-donald-trumps-proposed-5-082601212.html",
       "published_at": "Today",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
     }
   ]
 }

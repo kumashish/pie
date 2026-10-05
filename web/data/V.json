@@ -8,7 +8,7 @@
   "fit_score": 55.0,
   "confidence_grade": "C",
   "confidence_percentage": 55.0,
-  "vix": 16.23,
+  "vix": 16.22,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -35,7 +35,7 @@
         "strike": 340.0,
         "strike_formatted": "340",
         "option_type": "Put",
-        "delta": -0.123,
+        "delta": -0.122,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -72,8 +72,8 @@
     "margin_required": 15.0,
     "stop_loss_price": 349.84,
     "take_profit_price": 371.48,
-    "net_delta": -0.016,
-    "net_theta": 0.026,
+    "net_delta": -0.017,
+    "net_theta": 0.027,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 88.3,
+      "score": 88.2,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 55.3,
+      "score": 55.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
@@ -375,7 +375,8 @@
     "RSI(14)": "41.24",
     "ATR(14)": "5.73",
     "ADX(14)": "16.77",
-    "BB(20,2)": "0.15"
+    "BB(20,2)": "0.15",
+    "P_SHAPE(20)": "49.83"
   },
   "rules": [
     {

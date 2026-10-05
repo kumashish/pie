@@ -145,6 +145,12 @@ def score_all_strategies(
     vol_compression_bonus = 4.0 if iv_rank <= 50.0 else -4.0
     vol_expansion_bonus = 4.0 if iv_rank > 55.0 else -2.0
 
+    # Module 9b: P-Shape Price Profile & 2nd-Leg Breakout Confluence
+    p_shape_val = analysis.indicator_values.get("P_SHAPE(20)")
+    p_shape_bonus = 0.0
+    if p_shape_val is not None:
+        p_shape_bonus = min(8.0, max(0.0, ((p_shape_val - 50.0) / 25.0) * 8.0))
+
     # Module 10: Counter-Trend / Mean-Reversion Reversal Module (Fade Extremes)
     overbought_fade_bonus = 15.0 if (rsi is not None and rsi >= 68.0) else 0.0
     oversold_fade_bonus = 15.0 if (rsi is not None and rsi <= 32.0) else 0.0
@@ -173,7 +179,7 @@ def score_all_strategies(
     naked_trade_penalty = 20.0     # Penalty for naked options or unhedged trades to manage tail risk
 
     # 1. Call Debit Spread: Bullish Trend or Oversold Dip Bounce (Net Debit)
-    cds_score = (bullishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen - debit_spread_penalty
+    cds_score = (bullishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm + p_shape_bonus - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen - debit_spread_penalty
     raw_scores[StrategyType.CALL_DEBIT_SPREAD] = (
         (cds_score / 1.20) * confidence_mult,
         "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
@@ -187,7 +193,7 @@ def score_all_strategies(
     )
 
     # 3. Jade Lizard: Bullish & High Vol Expansion (Net Credit, Defined Risk Upside)
-    jl_score = (bullishness * 0.50) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + credit_preference_bonus + credit_structure_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
+    jl_score = (bullishness * 0.50) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.JADE_LIZARD] = (
         (jl_score / 1.20) * confidence_mult,
         "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
@@ -195,7 +201,7 @@ def score_all_strategies(
 
     # 4. Credit Spread (Bull Put / Bear Call): Preferred Upfront Credit Collection Strategy (Net Credit, Defined Risk)
     cs_directional_pen = (bm_bull_penalty + ema200_bull_pen + ema20_bull_pen) if trend_val >= 5.0 else (bm_bear_penalty + ema200_bear_pen + ema20_bear_pen)
-    cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus + credit_structure_bonus - earnings_penalty - cs_directional_pen
+    cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - cs_directional_pen
     raw_scores[StrategyType.CREDIT_SPREAD] = (
         (cs_score / 1.15) * confidence_mult,
         "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",

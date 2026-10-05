@@ -8,12 +8,12 @@
   "fit_score": 40.0,
   "confidence_grade": "C",
   "confidence_percentage": 40.0,
-  "vix": 16.24,
+  "vix": 16.22,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (91.4% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (91.3% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -73,7 +73,7 @@
     "stop_loss_price": 360.74,
     "take_profit_price": 383.06,
     "net_delta": -0.044,
-    "net_theta": 0.05,
+    "net_theta": 0.049,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 91.4,
+      "score": 91.3,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 88.4,
+      "score": 88.3,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -366,7 +366,8 @@
     "RSI(14)": "40.39",
     "ATR(14)": "8.61",
     "ADX(14)": "33.43",
-    "BB(20,2)": "0.32"
+    "BB(20,2)": "0.32",
+    "P_SHAPE(20)": "31.73"
   },
   "rules": [
     {

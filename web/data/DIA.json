@@ -8,7 +8,7 @@
   "fit_score": 57.5,
   "confidence_grade": "C",
   "confidence_percentage": 57.5,
-  "vix": 16.25,
+  "vix": 16.23,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 475.0,
         "strike_formatted": "475",
         "option_type": "Put",
-        "delta": -0.08,
+        "delta": -0.079,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -59,7 +59,7 @@
         "strike": 545.0,
         "strike_formatted": "545",
         "option_type": "Call",
-        "delta": 0.165,
+        "delta": 0.164,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -73,7 +73,7 @@
     "stop_loss_price": 495.77,
     "take_profit_price": 526.43,
     "net_delta": -0.012,
-    "net_theta": 0.025,
+    "net_theta": 0.026,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -315,7 +315,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 63.8,
+      "score": 63.7,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -375,7 +375,8 @@
     "RSI(14)": "39.06",
     "ATR(14)": "5.00",
     "ADX(14)": "23.41",
-    "BB(20,2)": "0.23"
+    "BB(20,2)": "0.23",
+    "P_SHAPE(20)": "41.13"
   },
   "rules": [
     {

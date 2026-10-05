@@ -4,6 +4,7 @@ import polars as pl
 import pytest
 
 from pie.market.indicators import ADX, ATR, EMA, RSI, IndicatorEngine
+from pie.market.indicators.p_shape import PShapeProfile
 
 
 def ohlcv(rows: int = 30, *, close_values: list[float] | None = None) -> pl.DataFrame:
@@ -55,6 +56,23 @@ def test_adx_handles_constant_prices_without_division_by_zero() -> None:
     assert result.value == 0.0
 
 
+def test_p_shape_profile_detects_upper_consolidation() -> None:
+    # 5 initial low tail bars, followed by 15 upper consolidation bars
+    closes = [100.0, 101.0, 102.0, 103.0, 104.0] + [118.0, 119.0, 120.0] * 5
+    df = pl.DataFrame(
+        {
+            "open": closes,
+            "high": [c + 0.5 for c in closes],
+            "low": [c - 0.5 for c in closes],
+            "close": closes,
+        }
+    )
+    result = PShapeProfile(20).calculate(df)
+    assert result.valid is True
+    assert result.metadata["is_p_shape"] is True
+    assert result.metadata["p_score"] > 60.0
+
+
 @pytest.mark.parametrize(
     "data", [pl.DataFrame(), ohlcv(rows=2), ohlcv().with_columns(pl.lit(None).alias("close"))]
 )
@@ -67,11 +85,11 @@ def test_indicators_return_invalid_results_for_invalid_data(data: pl.DataFrame) 
 
 
 def test_engine_calculates_configured_indicators() -> None:
-    engine = IndicatorEngine.from_config([{"ema": {"period": 3}}, {"rsi": {"period": 3}}])
+    engine = IndicatorEngine.from_config([{"ema": {"period": 3}}, {"rsi": {"period": 3}}, {"p_shape": {"period": 5}}])
 
     results = engine.calculate(ohlcv())
 
-    assert set(results) == {"EMA3", "RSI(3)"}
+    assert set(results) == {"EMA3", "RSI(3)", "P_SHAPE(5)"}
     assert all(result.valid for result in results.values())
     assert math.isfinite(results["EMA3"].value or 0.0)
 

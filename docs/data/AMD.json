@@ -8,7 +8,7 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 16.24,
+  "vix": 16.23,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -51,7 +51,7 @@
     "net_delta": 0.103,
     "net_theta": 0.048,
     "probability_of_profit": 0.0,
-    "var_95": 21.34,
+    "var_95": 21.31,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -280,6 +280,15 @@
       "legs_summary": "Sell 1x AMD 20-Nov-2026 670 Call<br> Buy 1x AMD 20-Nov-2026 695 Call"
     },
     {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 78.1,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 600 Put<br> Sell 1x AMD 20-Nov-2026 670 Call<br> Buy 1x AMD 20-Nov-2026 695 Call"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
       "score": 78.1,
@@ -287,15 +296,6 @@
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x AMD 20-Nov-2026 575 Put<br> Sell 1x AMD 20-Nov-2026 600 Put<br> Sell 1x AMD 20-Nov-2026 670 Call<br> Buy 1x AMD 20-Nov-2026 695 Call"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 76.2,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 600 Put<br> Sell 1x AMD 20-Nov-2026 670 Call<br> Buy 1x AMD 20-Nov-2026 695 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -351,7 +351,8 @@
     "RSI(14)": "70.07",
     "ATR(14)": "24.21",
     "ADX(14)": "25.83",
-    "BB(20,2)": "0.80"
+    "BB(20,2)": "0.80",
+    "P_SHAPE(20)": "57.15"
   },
   "rules": [
     {

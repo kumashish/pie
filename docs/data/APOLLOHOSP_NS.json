@@ -1,6 +1,6 @@
 {
   "symbol": "APOLLOHOSP.NS",
-  "last_price": 8042.0,
+  "last_price": 7990.0,
   "as_of": "2026-10-05 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,12 +8,12 @@
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 14.78,
+  "vix": 14.9,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (27.9) is oversold (< 35) [Synthetic PCR: 1.46]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (27.0) is oversold (< 35) [Synthetic PCR: 1.48]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 8400.0,
         "strike_formatted": "8400",
         "option_type": "Call",
-        "delta": 0.26,
+        "delta": 0.225,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
@@ -35,7 +35,7 @@
         "strike": 8600.0,
         "strike_formatted": "8600",
         "option_type": "Call",
-        "delta": 0.141,
+        "delta": 0.119,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 300.0,
-    "stop_loss_price": 7800.74,
-    "take_profit_price": 8283.26,
-    "net_delta": -0.119,
-    "net_theta": 0.566,
+    "stop_loss_price": 7750.3,
+    "take_profit_price": 8229.7,
+    "net_delta": -0.106,
+    "net_theta": 0.56,
     "probability_of_profit": 0.0,
     "var_95": 200.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 6433.6,
+        "price": 6392.0,
         "pnl": -300.0
       },
       {
-        "price": 6497.94,
+        "price": 6455.92,
         "pnl": -300.0
       },
       {
-        "price": 6562.27,
+        "price": 6519.84,
         "pnl": -300.0
       },
       {
-        "price": 6626.61,
+        "price": 6583.76,
         "pnl": -300.0
       },
       {
-        "price": 6690.94,
+        "price": 6647.68,
         "pnl": -300.0
       },
       {
-        "price": 6755.28,
+        "price": 6711.6,
         "pnl": -300.0
       },
       {
-        "price": 6819.62,
+        "price": 6775.52,
         "pnl": -300.0
       },
       {
-        "price": 6883.95,
+        "price": 6839.44,
         "pnl": -300.0
       },
       {
-        "price": 6948.29,
+        "price": 6903.36,
         "pnl": -300.0
       },
       {
-        "price": 7012.62,
+        "price": 6967.28,
         "pnl": -300.0
       },
       {
-        "price": 7076.96,
+        "price": 7031.2,
         "pnl": -300.0
       },
       {
-        "price": 7141.3,
+        "price": 7095.12,
         "pnl": -300.0
       },
       {
-        "price": 7205.63,
+        "price": 7159.04,
         "pnl": -300.0
       },
       {
-        "price": 7269.97,
+        "price": 7222.96,
         "pnl": -300.0
       },
       {
-        "price": 7334.3,
+        "price": 7286.88,
         "pnl": -300.0
       },
       {
-        "price": 7398.64,
+        "price": 7350.8,
         "pnl": -300.0
       },
       {
-        "price": 7462.98,
+        "price": 7414.72,
         "pnl": -300.0
       },
       {
-        "price": 7527.31,
+        "price": 7478.64,
         "pnl": -300.0
       },
       {
-        "price": 7591.65,
+        "price": 7542.56,
         "pnl": -300.0
       },
       {
-        "price": 7655.98,
+        "price": 7606.48,
         "pnl": -300.0
       },
       {
-        "price": 7720.32,
+        "price": 7670.4,
         "pnl": -300.0
       },
       {
-        "price": 7784.66,
+        "price": 7734.32,
         "pnl": -300.0
       },
       {
-        "price": 7848.99,
+        "price": 7798.24,
         "pnl": -300.0
       },
       {
-        "price": 7913.33,
+        "price": 7862.16,
         "pnl": -300.0
       },
       {
-        "price": 7977.66,
+        "price": 7926.08,
         "pnl": -300.0
       },
       {
-        "price": 8042.0,
+        "price": 7990.0,
         "pnl": -300.0
       },
       {
-        "price": 8106.34,
+        "price": 8053.92,
         "pnl": -300.0
       },
       {
-        "price": 8170.67,
+        "price": 8117.84,
         "pnl": -300.0
       },
       {
-        "price": 8235.01,
+        "price": 8181.76,
         "pnl": -300.0
       },
       {
-        "price": 8299.34,
+        "price": 8245.68,
         "pnl": -300.0
       },
       {
-        "price": 8363.68,
+        "price": 8309.6,
         "pnl": -300.0
       },
       {
-        "price": 8428.02,
-        "pnl": -328.02
+        "price": 8373.52,
+        "pnl": -300.0
       },
       {
-        "price": 8492.35,
-        "pnl": -392.35
+        "price": 8437.44,
+        "pnl": -337.44
       },
       {
-        "price": 8556.69,
-        "pnl": -456.69
+        "price": 8501.36,
+        "pnl": -401.36
       },
       {
-        "price": 8621.02,
+        "price": 8565.28,
+        "pnl": -465.28
+      },
+      {
+        "price": 8629.2,
         "pnl": -500.0
       },
       {
-        "price": 8685.36,
+        "price": 8693.12,
         "pnl": -500.0
       },
       {
-        "price": 8749.7,
+        "price": 8757.04,
         "pnl": -500.0
       },
       {
-        "price": 8814.03,
+        "price": 8820.96,
         "pnl": -500.0
       },
       {
-        "price": 8878.37,
+        "price": 8884.88,
         "pnl": -500.0
       },
       {
-        "price": 8942.7,
+        "price": 8948.8,
         "pnl": -500.0
       },
       {
-        "price": 9007.04,
+        "price": 9012.72,
         "pnl": -500.0
       },
       {
-        "price": 9071.38,
+        "price": 9076.64,
         "pnl": -500.0
       },
       {
-        "price": 9135.71,
+        "price": 9140.56,
         "pnl": -500.0
       },
       {
-        "price": 9200.05,
+        "price": 9204.48,
         "pnl": -500.0
       },
       {
-        "price": 9264.38,
+        "price": 9268.4,
         "pnl": -500.0
       },
       {
-        "price": 9328.72,
+        "price": 9332.32,
         "pnl": -500.0
       },
       {
-        "price": 9393.06,
+        "price": 9396.24,
         "pnl": -500.0
       },
       {
-        "price": 9457.39,
+        "price": 9460.16,
         "pnl": -500.0
       },
       {
-        "price": 9521.73,
+        "price": 9524.08,
         "pnl": -500.0
       },
       {
-        "price": 9586.06,
-        "pnl": -500.0
-      },
-      {
-        "price": 9650.4,
+        "price": 9588.0,
         "pnl": -500.0
       }
     ],
@@ -291,7 +291,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 42.5,
+      "score": 49.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -299,14 +299,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "8645.10",
-    "EMA50": "8707.41",
-    "EMA100": "8563.87",
-    "EMA200": "8234.96",
-    "RSI(14)": "27.93",
+    "EMA20": "8640.14",
+    "EMA50": "8705.37",
+    "EMA100": "8562.84",
+    "EMA200": "8234.45",
+    "RSI(14)": "27.03",
     "ATR(14)": "196.19",
     "ADX(14)": "21.82",
-    "BB(20,2)": "-0.11"
+    "BB(20,2)": "-0.14",
+    "P_SHAPE(20)": "79.66"
   },
   "rules": [
     {

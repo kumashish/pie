@@ -8,7 +8,7 @@
   "fit_score": 17.5,
   "confidence_grade": "C",
   "confidence_percentage": 17.5,
-  "vix": 16.24,
+  "vix": 16.22,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -35,7 +35,7 @@
         "strike": 37.0,
         "strike_formatted": "37",
         "option_type": "Call",
-        "delta": 0.082,
+        "delta": 0.081,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -48,7 +48,7 @@
     "margin_required": 1.0,
     "stop_loss_price": 32.85,
     "take_profit_price": 34.89,
-    "net_delta": -0.097,
+    "net_delta": -0.098,
     "net_theta": 0.002,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
@@ -291,7 +291,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 50.9,
+      "score": 50.8,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,8 @@
     "RSI(14)": "28.21",
     "ATR(14)": "1.15",
     "ADX(14)": "28.30",
-    "BB(20,2)": "-0.09"
+    "BB(20,2)": "-0.09",
+    "P_SHAPE(20)": "68.24"
   },
   "rules": [
     {
@@ -389,6 +390,20 @@
   ],
   "news": [
     {
+      "title": "NKE Stock Heads For Its Worst Year Ever: Nike\u2019s 45% Plunge Tests Investor Patience As China And Core Brands Weaken",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nke-stock-heads-worst-ever-083742682.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "European Indexes Fall as Political Pressures Weigh",
+      "publisher": "The Wall Street Journal",
+      "link": "https://finance.yahoo.com/m/6ac21380-f062-3133-8e21-782cb406b937/european-indexes-fall-as.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
       "title": "Company News for Oct 5, 2026",
       "publisher": "Zacks",
       "link": "https://finance.yahoo.com/markets/stocks/articles/company-news-oct-5-2026-060700896.html",
@@ -410,23 +425,9 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Taiwan Stocks Rise Amid Better Sentiment",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/6ac21380-f062-3133-8e21-782cb406b937/taiwan-stocks-rise-amid.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
       "title": "Nike's Earnings Are a Disaster. Run -- Don't Walk -- Away From This Stock.",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/markets/stocks/articles/nikes-earnings-disaster-run-dont-232700322.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Top Picks With At Least 4% Dividend Yield",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-top-picks-least-4-220743480.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

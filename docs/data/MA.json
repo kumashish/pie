@@ -8,7 +8,7 @@
   "fit_score": 55.0,
   "confidence_grade": "C",
   "confidence_percentage": 55.0,
-  "vix": 16.23,
+  "vix": 16.22,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 88.3,
+      "score": 88.2,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 55.3,
+      "score": 55.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
@@ -375,7 +375,8 @@
     "RSI(14)": "38.87",
     "ATR(14)": "9.28",
     "ADX(14)": "20.00",
-    "BB(20,2)": "0.09"
+    "BB(20,2)": "0.09",
+    "P_SHAPE(20)": "46.11"
   },
   "rules": [
     {
@@ -458,6 +459,13 @@
   ],
   "news": [
     {
+      "title": "Mastercard\u2019s Probability Score Shifts the Agent Commerce Question From Identity to Trust",
+      "publisher": "Forkast News",
+      "link": "https://finance.yahoo.com/technology/ai/articles/mastercard-probability-score-shifts-agent-083853573.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Visa Enters October About 6% Below Its High. Here\u2019s What Britain\u2019s New Payment Rails Mean for the Stock Through 2030",
       "publisher": "TIKR",
       "link": "https://finance.yahoo.com/markets/stocks/articles/visa-enters-october-6-below-153237956.html",
@@ -489,13 +497,6 @@
       "title": "Mastercard Stocks Edge Up as AI Targets Supplier Payments",
       "publisher": "GuruFocus.com",
       "link": "https://finance.yahoo.com/markets/stocks/articles/mastercard-stocks-edge-ai-targets-195344061.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Mastercard Expands Agentic Commerce With New Trust Services",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/technology/ai/articles/mastercard-expands-agentic-commerce-trust-121500843.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

@@ -8,7 +8,7 @@
   "fit_score": 45.0,
   "confidence_grade": "C",
   "confidence_percentage": 45.0,
-  "vix": 16.24,
+  "vix": 16.23,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 230.0,
         "strike_formatted": "230",
         "option_type": "Put",
-        "delta": -0.046,
+        "delta": -0.045,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -72,7 +72,7 @@
     "margin_required": 10.0,
     "stop_loss_price": 243.97,
     "take_profit_price": 259.07,
-    "net_delta": -0.036,
+    "net_delta": -0.035,
     "net_theta": 0.025,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -324,7 +324,7 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 66.7,
+      "score": 66.6,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -351,7 +351,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 48.2,
+      "score": 48.3,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -366,7 +366,8 @@
     "RSI(14)": "48.56",
     "ATR(14)": "5.63",
     "ADX(14)": "8.88",
-    "BB(20,2)": "0.49"
+    "BB(20,2)": "0.49",
+    "P_SHAPE(20)": "40.46"
   },
   "rules": [
     {
@@ -449,6 +450,13 @@
   ],
   "news": [
     {
+      "title": "Where Will Amazon Stock Be in 5 Years as AWS, Advertising, and AI Converge?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/where-amazon-stock-5-years-082200093.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "VST Vs CEG: Which Nuclear Power Fleet Stock Is A Better Bet?",
       "publisher": "Stocktwits",
       "link": "https://finance.yahoo.com/energy/articles/vst-vs-ceg-nuclear-power-075728216.html",
@@ -480,13 +488,6 @@
       "title": "MU, HPE, AMZN, META, SPCX: Why Retail Traders Couldn\u2019t Take Their Eyes Off These Stocks Last Week",
       "publisher": "Stocktwits",
       "link": "https://finance.yahoo.com/markets/stocks/articles/mu-hpe-amzn-meta-spcx-015451718.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Could Investing $5,000 in SpaceX Help Make You a Millionaire?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/could-investing-5-000-spacex-015000588.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

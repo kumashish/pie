@@ -8,7 +8,7 @@
   "fit_score": 87.5,
   "confidence_grade": "A",
   "confidence_percentage": 87.5,
-  "vix": 16.24,
+  "vix": 16.23,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -49,7 +49,7 @@
     "stop_loss_price": 706.24,
     "take_profit_price": 749.92,
     "net_delta": -0.119,
-    "net_theta": 0.07,
+    "net_theta": 0.071,
     "probability_of_profit": 0.0,
     "var_95": 25.0,
     "vol_skew_25d": 0.0,
@@ -282,7 +282,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 90.5,
+      "score": 92.0,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -309,7 +309,7 @@
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 52.7,
+      "score": 52.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
@@ -318,7 +318,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 47.9,
+      "score": 49.5,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -351,7 +351,8 @@
     "RSI(14)": "61.49",
     "ATR(14)": "25.41",
     "ADX(14)": "39.63",
-    "BB(20,2)": "0.67"
+    "BB(20,2)": "0.67",
+    "P_SHAPE(20)": "55.77"
   },
   "rules": [
     {
@@ -433,6 +434,13 @@
     }
   ],
   "news": [
+    {
+      "title": "Tesla And 2 Other Founder Led Stocks To Own",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-2-other-founder-led-090814917.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
     {
       "title": "Nebius Has $40 Billion of Customer Commitments. Most of It Comes From 2 Customers.",
       "publisher": "Motley Fool",
