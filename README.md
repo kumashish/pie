@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 05, 00:45 IST | 🟡 Credit Spread   | 7.5/10    | Sell 1x SPY 20-Nov-2026 810 Call /  Buy 1x SPY 20-Nov-2026 825 Call | Active (Today, 00:45)  |
-| QQQ       | Oct 05, 00:45 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x QQQ 20-Nov-2026 710 Put /  Buy 1x QQQ 20-Nov-2026 700 Put | Active (Today, 00:45)  |
+| SPY       | Oct 05, 11:29 IST | 🟡 Credit Spread   | 10.0/10   | Sell SPY 20-Nov-2026 810 Call /  Buy SPY 20-Nov-2026 815 Call | ⚠️ Stop Loss (Yesterday, 18:18) |
+| QQQ       | Oct 05, 11:29 IST | 🟡 Credit Spread   | 10.0/10   | Sell QQQ 20-Nov-2026 710 Put /  Buy QQQ 20-Nov-2026 700 Put | ⚠️ Stop Loss (Today, 11:29) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -19,9 +19,9 @@
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | META      | Oct 05, 00:46 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 770 Call /  Buy 1x META 20-Nov-2026 795 Call | Active (Today, 00:46)  |
-| NVDA      | Oct 05, 00:45 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x NVDA 20-Nov-2026 250 Call /  Buy 1x NVDA 20-Nov-2026 255 Call | Active (Today, 00:45)  |
 | MSFT      | Oct 05, 00:46 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSFT 20-Nov-2026 550 Call /  Buy 1x MSFT 20-Nov-2026 560 Call | Active (Today, 00:46)  |
 | MSTR      | Oct 05, 00:46 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSTR 20-Nov-2026 175 Call /  Buy 1x MSTR 20-Nov-2026 185 Call | Active (Today, 00:46)  |
+| NVDA      | Oct 05, 00:45 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x NVDA 20-Nov-2026 250 Call /  Buy 1x NVDA 20-Nov-2026 255 Call | Active (Today, 00:45)  |
 | SMCI      | Oct 05, 00:46 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x SMCI 20-Nov-2026 47 Call /  Buy 1x SMCI 20-Nov-2026 49 Call | Active (Today, 00:46)  |
 | AAPL      | Oct 05, 00:46 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x AAPL 20-Nov-2026 355 Call /  Buy 1x AAPL 20-Nov-2026 360 Call | Active (Today, 00:46)  |
 
