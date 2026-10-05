@@ -1,6 +1,6 @@
 {
   "symbol": "SBIN.NS",
-  "last_price": 962.0,
+  "last_price": 962.3,
   "as_of": "2026-10-05 03:45:00",
   "regime": "neutral",
   "regime_display": "Neutral",
@@ -8,7 +8,7 @@
   "fit_score": 40.0,
   "confidence_grade": "C",
   "confidence_percentage": 40.0,
-  "vix": 14.69,
+  "vix": 14.75,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -20,267 +20,267 @@
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 895.0,
-        "strike_formatted": "895",
+        "strike": 890.0,
+        "strike_formatted": "890",
         "option_type": "Put",
-        "delta": -0.069,
+        "delta": -0.057,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x SBIN.NS 24-Nov-2026 895 Put"
+        "summary": "Buy 1x SBIN.NS 24-Nov-2026 890 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 910.0,
-        "strike_formatted": "910",
+        "strike": 905.0,
+        "strike_formatted": "905",
         "option_type": "Put",
-        "delta": -0.12,
+        "delta": -0.101,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x SBIN.NS 24-Nov-2026 910 Put"
+        "summary": "Sell 1x SBIN.NS 24-Nov-2026 905 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1010.0,
-        "strike_formatted": "1010",
+        "strike": 1015.0,
+        "strike_formatted": "1015",
         "option_type": "Call",
-        "delta": 0.229,
+        "delta": 0.205,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x SBIN.NS 24-Nov-2026 1010 Call"
+        "summary": "Sell 1x SBIN.NS 24-Nov-2026 1015 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1025.0,
-        "strike_formatted": "1025",
+        "strike": 1030.0,
+        "strike_formatted": "1030",
         "option_type": "Call",
-        "delta": 0.155,
+        "delta": 0.137,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x SBIN.NS 24-Nov-2026 1025 Call"
+        "summary": "Buy 1x SBIN.NS 24-Nov-2026 1030 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 40.0,
-    "stop_loss_price": 933.14,
-    "take_profit_price": 990.86,
-    "net_delta": -0.023,
-    "net_theta": 0.071,
+    "stop_loss_price": 933.43,
+    "take_profit_price": 991.17,
+    "net_delta": -0.024,
+    "net_theta": 0.07,
     "probability_of_profit": 0.0,
     "var_95": 15.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 769.6,
+        "price": 769.84,
         "pnl": -55.0
       },
       {
-        "price": 777.3,
+        "price": 777.54,
         "pnl": -55.0
       },
       {
-        "price": 784.99,
+        "price": 785.24,
         "pnl": -55.0
       },
       {
-        "price": 792.69,
+        "price": 792.94,
         "pnl": -55.0
       },
       {
-        "price": 800.38,
+        "price": 800.63,
         "pnl": -55.0
       },
       {
-        "price": 808.08,
+        "price": 808.33,
         "pnl": -55.0
       },
       {
-        "price": 815.78,
+        "price": 816.03,
         "pnl": -55.0
       },
       {
-        "price": 823.47,
+        "price": 823.73,
         "pnl": -55.0
       },
       {
-        "price": 831.17,
+        "price": 831.43,
         "pnl": -55.0
       },
       {
-        "price": 838.86,
+        "price": 839.13,
         "pnl": -55.0
       },
       {
-        "price": 846.56,
+        "price": 846.82,
         "pnl": -55.0
       },
       {
-        "price": 854.26,
+        "price": 854.52,
         "pnl": -55.0
       },
       {
-        "price": 861.95,
+        "price": 862.22,
         "pnl": -55.0
       },
       {
-        "price": 869.65,
+        "price": 869.92,
         "pnl": -55.0
       },
       {
-        "price": 877.34,
+        "price": 877.62,
         "pnl": -55.0
       },
       {
-        "price": 885.04,
+        "price": 885.32,
         "pnl": -55.0
       },
       {
-        "price": 892.74,
-        "pnl": -55.0
+        "price": 893.01,
+        "pnl": -51.99
       },
       {
-        "price": 900.43,
-        "pnl": -49.57
+        "price": 900.71,
+        "pnl": -44.29
       },
       {
-        "price": 908.13,
-        "pnl": -41.87
-      },
-      {
-        "price": 915.82,
+        "price": 908.41,
         "pnl": -40.0
       },
       {
-        "price": 923.52,
+        "price": 916.11,
         "pnl": -40.0
       },
       {
-        "price": 931.22,
+        "price": 923.81,
         "pnl": -40.0
       },
       {
-        "price": 938.91,
+        "price": 931.51,
         "pnl": -40.0
       },
       {
-        "price": 946.61,
+        "price": 939.2,
         "pnl": -40.0
       },
       {
-        "price": 954.3,
+        "price": 946.9,
         "pnl": -40.0
       },
       {
-        "price": 962.0,
+        "price": 954.6,
         "pnl": -40.0
       },
       {
-        "price": 969.7,
+        "price": 962.3,
         "pnl": -40.0
       },
       {
-        "price": 977.39,
+        "price": 970.0,
         "pnl": -40.0
       },
       {
-        "price": 985.09,
+        "price": 977.7,
         "pnl": -40.0
       },
       {
-        "price": 992.78,
+        "price": 985.4,
         "pnl": -40.0
       },
       {
-        "price": 1000.48,
+        "price": 993.09,
         "pnl": -40.0
       },
       {
-        "price": 1008.18,
+        "price": 1000.79,
         "pnl": -40.0
       },
       {
-        "price": 1015.87,
-        "pnl": -45.87
+        "price": 1008.49,
+        "pnl": -40.0
       },
       {
-        "price": 1023.57,
-        "pnl": -53.57
+        "price": 1016.19,
+        "pnl": -41.19
       },
       {
-        "price": 1031.26,
+        "price": 1023.89,
+        "pnl": -48.89
+      },
+      {
+        "price": 1031.59,
         "pnl": -55.0
       },
       {
-        "price": 1038.96,
+        "price": 1039.28,
         "pnl": -55.0
       },
       {
-        "price": 1046.66,
+        "price": 1046.98,
         "pnl": -55.0
       },
       {
-        "price": 1054.35,
+        "price": 1054.68,
         "pnl": -55.0
       },
       {
-        "price": 1062.05,
+        "price": 1062.38,
         "pnl": -55.0
       },
       {
-        "price": 1069.74,
+        "price": 1070.08,
         "pnl": -55.0
       },
       {
-        "price": 1077.44,
+        "price": 1077.78,
         "pnl": -55.0
       },
       {
-        "price": 1085.14,
+        "price": 1085.47,
         "pnl": -55.0
       },
       {
-        "price": 1092.83,
+        "price": 1093.17,
         "pnl": -55.0
       },
       {
-        "price": 1100.53,
+        "price": 1100.87,
         "pnl": -55.0
       },
       {
-        "price": 1108.22,
+        "price": 1108.57,
         "pnl": -55.0
       },
       {
-        "price": 1115.92,
+        "price": 1116.27,
         "pnl": -55.0
       },
       {
-        "price": 1123.62,
+        "price": 1123.97,
         "pnl": -55.0
       },
       {
-        "price": 1131.31,
+        "price": 1131.66,
         "pnl": -55.0
       },
       {
-        "price": 1139.01,
+        "price": 1139.36,
         "pnl": -55.0
       },
       {
-        "price": 1146.7,
+        "price": 1147.06,
         "pnl": -55.0
       },
       {
-        "price": 1154.4,
+        "price": 1154.76,
         "pnl": -55.0
       }
     ],
@@ -301,7 +301,7 @@
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-895PE-S1x-Nov-910PE-S1x-Nov-1010CE-B1x-Nov-1025CE"
+      "legs_summary": "B1x-Nov-890PE-S1x-Nov-905PE-S1x-Nov-1015CE-B1x-Nov-1030CE"
     },
     {
       "strategy_type": "credit_spread",
@@ -310,7 +310,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1010CE-B1x-Nov-1025CE"
+      "legs_summary": "S1x-Nov-1015CE-B1x-Nov-1030CE"
     },
     {
       "strategy_type": "jade_lizard",
@@ -319,12 +319,12 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-910PE-S1x-Nov-1010CE-B1x-Nov-1025CE"
+      "legs_summary": "S1x-Nov-905PE-S1x-Nov-1015CE-B1x-Nov-1030CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 55.0,
+      "score": 54.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -333,7 +333,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 48.6,
+      "score": 48.4,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -355,18 +355,18 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-910PE"
+      "legs_summary": "S1x-Nov-905PE"
     }
   ],
   "indicators": {
-    "EMA20": "985.60",
-    "EMA50": "1008.19",
+    "EMA20": "985.63",
+    "EMA50": "1008.21",
     "EMA100": "1018.84",
     "EMA200": "1008.04",
-    "RSI(14)": "36.50",
+    "RSI(14)": "36.65",
     "ATR(14)": "16.36",
     "ADX(14)": "38.23",
-    "BB(20,2)": "0.17"
+    "BB(20,2)": "0.18"
   },
   "rules": [
     {

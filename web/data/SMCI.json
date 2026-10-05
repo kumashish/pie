@@ -8,7 +8,7 @@
   "fit_score": 85.0,
   "confidence_grade": "A",
   "confidence_percentage": 85.0,
-  "vix": 16.27,
+  "vix": 16.24,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -309,19 +309,10 @@
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 52.2,
+      "score": 52.1,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x SMCI 20-Nov-2026 41 Put"
-    },
-    {
-      "strategy_type": "tradecraft_put",
-      "strategy_display": "Tradecraft Put",
-      "score": 47.0,
-      "grade": "C (Moderate)",
-      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
-      "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x SMCI 20-Nov-2026 41 Put"
     },
     {
@@ -332,6 +323,15 @@
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x SMCI 20-Nov-2026 39 Put<br> Sell 1x SMCI 20-Nov-2026 41 Put<br> Sell 1x SMCI 20-Nov-2026 47 Call<br> Buy 1x SMCI 20-Nov-2026 49 Call"
+    },
+    {
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 46.9,
+      "grade": "C (Moderate)",
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x SMCI 20-Nov-2026 41 Put"
     },
     {
       "strategy_type": "call_debit_spread",

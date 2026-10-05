@@ -1,6 +1,6 @@
 {
   "symbol": "TITAN.NS",
-  "last_price": 4568.1,
+  "last_price": 4578.7,
   "as_of": "2026-10-05 03:45:00",
   "regime": "neutral",
   "regime_display": "Neutral",
@@ -8,262 +8,286 @@
   "fit_score": 57.5,
   "confidence_grade": "C",
   "confidence_percentage": 57.5,
-  "vix": 14.69,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 14.77,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (98.5% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (97.6% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
+        "action": "Buy",
         "quantity": 1,
-        "strike": 4800.0,
-        "strike_formatted": "4800",
-        "option_type": "Call",
-        "delta": 0.224,
+        "strike": 4250.0,
+        "strike_formatted": "4250",
+        "option_type": "Put",
+        "delta": -0.065,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4800 Call"
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4250 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 4350.0,
+        "strike_formatted": "4350",
+        "option_type": "Put",
+        "delta": -0.138,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 50,
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4350 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 4850.0,
+        "strike_formatted": "4850",
+        "option_type": "Call",
+        "delta": 0.184,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 50,
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4850 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 4900.0,
-        "strike_formatted": "4900",
+        "strike": 4950.0,
+        "strike_formatted": "4950",
         "option_type": "Call",
-        "delta": 0.128,
+        "delta": 0.101,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4900 Call"
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4950 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 200.0,
-    "stop_loss_price": 4431.06,
-    "take_profit_price": 4705.14,
-    "net_delta": -0.096,
-    "net_theta": 0.283,
+    "stop_loss_price": 4441.34,
+    "take_profit_price": 4716.06,
+    "net_delta": -0.01,
+    "net_theta": 0.46,
     "probability_of_profit": 0.0,
     "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 3654.48,
-        "pnl": -200.0
-      },
-      {
-        "price": 3691.02,
-        "pnl": -200.0
-      },
-      {
-        "price": 3727.57,
-        "pnl": -200.0
-      },
-      {
-        "price": 3764.11,
-        "pnl": -200.0
-      },
-      {
-        "price": 3800.66,
-        "pnl": -200.0
-      },
-      {
-        "price": 3837.2,
-        "pnl": -200.0
-      },
-      {
-        "price": 3873.75,
-        "pnl": -200.0
-      },
-      {
-        "price": 3910.29,
-        "pnl": -200.0
-      },
-      {
-        "price": 3946.84,
-        "pnl": -200.0
-      },
-      {
-        "price": 3983.38,
-        "pnl": -200.0
-      },
-      {
-        "price": 4019.93,
-        "pnl": -200.0
-      },
-      {
-        "price": 4056.47,
-        "pnl": -200.0
-      },
-      {
-        "price": 4093.02,
-        "pnl": -200.0
-      },
-      {
-        "price": 4129.56,
-        "pnl": -200.0
-      },
-      {
-        "price": 4166.11,
-        "pnl": -200.0
-      },
-      {
-        "price": 4202.65,
-        "pnl": -200.0
-      },
-      {
-        "price": 4239.2,
-        "pnl": -200.0
-      },
-      {
-        "price": 4275.74,
-        "pnl": -200.0
-      },
-      {
-        "price": 4312.29,
-        "pnl": -200.0
-      },
-      {
-        "price": 4348.83,
-        "pnl": -200.0
-      },
-      {
-        "price": 4385.38,
-        "pnl": -200.0
-      },
-      {
-        "price": 4421.92,
-        "pnl": -200.0
-      },
-      {
-        "price": 4458.47,
-        "pnl": -200.0
-      },
-      {
-        "price": 4495.01,
-        "pnl": -200.0
-      },
-      {
-        "price": 4531.56,
-        "pnl": -200.0
-      },
-      {
-        "price": 4568.1,
-        "pnl": -200.0
-      },
-      {
-        "price": 4604.64,
-        "pnl": -200.0
-      },
-      {
-        "price": 4641.19,
-        "pnl": -200.0
-      },
-      {
-        "price": 4677.73,
-        "pnl": -200.0
-      },
-      {
-        "price": 4714.28,
-        "pnl": -200.0
-      },
-      {
-        "price": 4750.82,
-        "pnl": -200.0
-      },
-      {
-        "price": 4787.37,
-        "pnl": -200.0
-      },
-      {
-        "price": 4823.91,
-        "pnl": -223.91
-      },
-      {
-        "price": 4860.46,
-        "pnl": -260.46
-      },
-      {
-        "price": 4897.0,
-        "pnl": -297.0
-      },
-      {
-        "price": 4933.55,
+        "price": 3662.96,
         "pnl": -300.0
       },
       {
-        "price": 4970.09,
+        "price": 3699.59,
         "pnl": -300.0
       },
       {
-        "price": 5006.64,
+        "price": 3736.22,
         "pnl": -300.0
       },
       {
-        "price": 5043.18,
+        "price": 3772.85,
         "pnl": -300.0
       },
       {
-        "price": 5079.73,
+        "price": 3809.48,
         "pnl": -300.0
       },
       {
-        "price": 5116.27,
+        "price": 3846.11,
         "pnl": -300.0
       },
       {
-        "price": 5152.82,
+        "price": 3882.74,
         "pnl": -300.0
       },
       {
-        "price": 5189.36,
+        "price": 3919.37,
         "pnl": -300.0
       },
       {
-        "price": 5225.91,
+        "price": 3956.0,
         "pnl": -300.0
       },
       {
-        "price": 5262.45,
+        "price": 3992.63,
         "pnl": -300.0
       },
       {
-        "price": 5299.0,
+        "price": 4029.26,
         "pnl": -300.0
       },
       {
-        "price": 5335.54,
+        "price": 4065.89,
         "pnl": -300.0
       },
       {
-        "price": 5372.09,
+        "price": 4102.52,
         "pnl": -300.0
       },
       {
-        "price": 5408.63,
+        "price": 4139.14,
         "pnl": -300.0
       },
       {
-        "price": 5445.18,
+        "price": 4175.77,
         "pnl": -300.0
       },
       {
-        "price": 5481.72,
+        "price": 4212.4,
+        "pnl": -300.0
+      },
+      {
+        "price": 4249.03,
+        "pnl": -300.0
+      },
+      {
+        "price": 4285.66,
+        "pnl": -264.34
+      },
+      {
+        "price": 4322.29,
+        "pnl": -227.71
+      },
+      {
+        "price": 4358.92,
+        "pnl": -200.0
+      },
+      {
+        "price": 4395.55,
+        "pnl": -200.0
+      },
+      {
+        "price": 4432.18,
+        "pnl": -200.0
+      },
+      {
+        "price": 4468.81,
+        "pnl": -200.0
+      },
+      {
+        "price": 4505.44,
+        "pnl": -200.0
+      },
+      {
+        "price": 4542.07,
+        "pnl": -200.0
+      },
+      {
+        "price": 4578.7,
+        "pnl": -200.0
+      },
+      {
+        "price": 4615.33,
+        "pnl": -200.0
+      },
+      {
+        "price": 4651.96,
+        "pnl": -200.0
+      },
+      {
+        "price": 4688.59,
+        "pnl": -200.0
+      },
+      {
+        "price": 4725.22,
+        "pnl": -200.0
+      },
+      {
+        "price": 4761.85,
+        "pnl": -200.0
+      },
+      {
+        "price": 4798.48,
+        "pnl": -200.0
+      },
+      {
+        "price": 4835.11,
+        "pnl": -200.0
+      },
+      {
+        "price": 4871.74,
+        "pnl": -221.74
+      },
+      {
+        "price": 4908.37,
+        "pnl": -258.37
+      },
+      {
+        "price": 4945.0,
+        "pnl": -295.0
+      },
+      {
+        "price": 4981.63,
+        "pnl": -300.0
+      },
+      {
+        "price": 5018.26,
+        "pnl": -300.0
+      },
+      {
+        "price": 5054.89,
+        "pnl": -300.0
+      },
+      {
+        "price": 5091.51,
+        "pnl": -300.0
+      },
+      {
+        "price": 5128.14,
+        "pnl": -300.0
+      },
+      {
+        "price": 5164.77,
+        "pnl": -300.0
+      },
+      {
+        "price": 5201.4,
+        "pnl": -300.0
+      },
+      {
+        "price": 5238.03,
+        "pnl": -300.0
+      },
+      {
+        "price": 5274.66,
+        "pnl": -300.0
+      },
+      {
+        "price": 5311.29,
+        "pnl": -300.0
+      },
+      {
+        "price": 5347.92,
+        "pnl": -300.0
+      },
+      {
+        "price": 5384.55,
+        "pnl": -300.0
+      },
+      {
+        "price": 5421.18,
+        "pnl": -300.0
+      },
+      {
+        "price": 5457.81,
+        "pnl": -300.0
+      },
+      {
+        "price": 5494.44,
         "pnl": -300.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.845,
+      "win_probability": 0.842,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3605,
+      "half_kelly_fraction": 0.3578,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,22 +295,22 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 98.5,
-      "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-4800CE-B1x-Nov-4900CE"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
       "score": 97.6,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4200PE-S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
+      "legs_summary": "B1x-Nov-4250PE-S1x-Nov-4350PE-S1x-Nov-4850CE-B1x-Nov-4950CE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 85.5,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-4850CE-B1x-Nov-4950CE"
     },
     {
       "strategy_type": "jade_lizard",
@@ -295,16 +319,16 @@
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
+      "legs_summary": "S1x-Nov-4350PE-S1x-Nov-4850CE-B1x-Nov-4950CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 62.8,
+      "score": 62.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4550CE-S1x-Nov-4550CE-B1x-Nov-4700CE"
+      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4600CE-S1x-Nov-4600CE-B1x-Nov-4700CE"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -313,45 +337,36 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-4300PE-S1x-Nov-4550PE-S1x-Nov-4550CE-B1x-Nov-4800CE"
+      "legs_summary": "B1x-Nov-4350PE-S1x-Nov-4600PE-S1x-Nov-4600CE-B1x-Nov-4850CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 50.9,
+      "score": 50.6,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4550CE-S1x-Nov-4550CE-B1x-Nov-4800CE"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 44.9,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "S1x-Nov-4300PE"
+      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4600CE-S1x-Nov-4600CE-B1x-Nov-4850CE"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 44.2,
+      "score": 44.1,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-4300CE-S1x-Nov-4700CE"
+      "legs_summary": "B1x-Nov-4350CE-S1x-Nov-4700CE"
     }
   ],
   "indicators": {
-    "EMA20": "4808.90",
-    "EMA50": "4836.76",
-    "EMA100": "4703.10",
-    "EMA200": "4453.73",
-    "RSI(14)": "31.41",
+    "EMA20": "4809.91",
+    "EMA50": "4837.17",
+    "EMA100": "4703.31",
+    "EMA200": "4453.84",
+    "RSI(14)": "32.32",
     "ATR(14)": "91.52",
     "ADX(14)": "35.67",
-    "BB(20,2)": "0.04"
+    "BB(20,2)": "0.06"
   },
   "rules": [
     {
