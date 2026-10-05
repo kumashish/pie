@@ -1,262 +1,262 @@
 {
   "symbol": "BRITANNIA.NS",
-  "last_price": 4778.0,
-  "as_of": "2026-10-01 03:45:00",
+  "last_price": 4762.2,
+  "as_of": "2026-10-05 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 2.0,
-  "fit_score": 20.0,
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 20.0,
-  "vix": 14.46,
+  "confidence_percentage": 25.0,
+  "vix": 14.7,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (26.7) is oversold (< 35) [Synthetic PCR: 1.45]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (25.9) is oversold (< 35) [Synthetic PCR: 1.44]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 5050.0,
-        "strike_formatted": "5050",
+        "strike": 5000.0,
+        "strike_formatted": "5000",
         "option_type": "Call",
-        "delta": 0.189,
+        "delta": 0.229,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 5050 Call"
+        "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 5000 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 5150.0,
-        "strike_formatted": "5150",
+        "strike": 5100.0,
+        "strike_formatted": "5100",
         "option_type": "Call",
-        "delta": 0.106,
+        "delta": 0.134,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x BRITANNIA.NS 24-Nov-2026 5150 Call"
+        "summary": "Buy 1x BRITANNIA.NS 24-Nov-2026 5100 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 200.0,
-    "stop_loss_price": 4634.66,
-    "take_profit_price": 4921.34,
-    "net_delta": -0.083,
-    "net_theta": 0.276,
+    "stop_loss_price": 4619.33,
+    "take_profit_price": 4905.07,
+    "net_delta": -0.095,
+    "net_theta": 0.284,
     "probability_of_profit": 0.0,
     "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 3822.4,
+        "price": 3809.76,
         "pnl": -200.0
       },
       {
-        "price": 3860.62,
+        "price": 3847.86,
         "pnl": -200.0
       },
       {
-        "price": 3898.85,
+        "price": 3885.96,
         "pnl": -200.0
       },
       {
-        "price": 3937.07,
+        "price": 3924.05,
         "pnl": -200.0
       },
       {
-        "price": 3975.3,
+        "price": 3962.15,
         "pnl": -200.0
       },
       {
-        "price": 4013.52,
+        "price": 4000.25,
         "pnl": -200.0
       },
       {
-        "price": 4051.74,
+        "price": 4038.35,
         "pnl": -200.0
       },
       {
-        "price": 4089.97,
+        "price": 4076.44,
         "pnl": -200.0
       },
       {
-        "price": 4128.19,
+        "price": 4114.54,
         "pnl": -200.0
       },
       {
-        "price": 4166.42,
+        "price": 4152.64,
         "pnl": -200.0
       },
       {
-        "price": 4204.64,
+        "price": 4190.74,
         "pnl": -200.0
       },
       {
-        "price": 4242.86,
+        "price": 4228.83,
         "pnl": -200.0
       },
       {
-        "price": 4281.09,
+        "price": 4266.93,
         "pnl": -200.0
       },
       {
-        "price": 4319.31,
+        "price": 4305.03,
         "pnl": -200.0
       },
       {
-        "price": 4357.54,
+        "price": 4343.13,
         "pnl": -200.0
       },
       {
-        "price": 4395.76,
+        "price": 4381.22,
         "pnl": -200.0
       },
       {
-        "price": 4433.98,
+        "price": 4419.32,
         "pnl": -200.0
       },
       {
-        "price": 4472.21,
+        "price": 4457.42,
         "pnl": -200.0
       },
       {
-        "price": 4510.43,
+        "price": 4495.52,
         "pnl": -200.0
       },
       {
-        "price": 4548.66,
+        "price": 4533.61,
         "pnl": -200.0
       },
       {
-        "price": 4586.88,
+        "price": 4571.71,
         "pnl": -200.0
       },
       {
-        "price": 4625.1,
+        "price": 4609.81,
         "pnl": -200.0
       },
       {
-        "price": 4663.33,
+        "price": 4647.91,
         "pnl": -200.0
       },
       {
-        "price": 4701.55,
+        "price": 4686.0,
         "pnl": -200.0
       },
       {
-        "price": 4739.78,
+        "price": 4724.1,
         "pnl": -200.0
       },
       {
-        "price": 4778.0,
+        "price": 4762.2,
         "pnl": -200.0
       },
       {
-        "price": 4816.22,
+        "price": 4800.3,
         "pnl": -200.0
       },
       {
-        "price": 4854.45,
+        "price": 4838.4,
         "pnl": -200.0
       },
       {
-        "price": 4892.67,
+        "price": 4876.49,
         "pnl": -200.0
       },
       {
-        "price": 4930.9,
+        "price": 4914.59,
         "pnl": -200.0
       },
       {
-        "price": 4969.12,
+        "price": 4952.69,
         "pnl": -200.0
       },
       {
-        "price": 5007.34,
+        "price": 4990.79,
         "pnl": -200.0
       },
       {
-        "price": 5045.57,
-        "pnl": -200.0
+        "price": 5028.88,
+        "pnl": -228.88
       },
       {
-        "price": 5083.79,
-        "pnl": -233.79
+        "price": 5066.98,
+        "pnl": -266.98
       },
       {
-        "price": 5122.02,
-        "pnl": -272.02
-      },
-      {
-        "price": 5160.24,
+        "price": 5105.08,
         "pnl": -300.0
       },
       {
-        "price": 5198.46,
+        "price": 5143.18,
         "pnl": -300.0
       },
       {
-        "price": 5236.69,
+        "price": 5181.27,
         "pnl": -300.0
       },
       {
-        "price": 5274.91,
+        "price": 5219.37,
         "pnl": -300.0
       },
       {
-        "price": 5313.14,
+        "price": 5257.47,
         "pnl": -300.0
       },
       {
-        "price": 5351.36,
+        "price": 5295.57,
         "pnl": -300.0
       },
       {
-        "price": 5389.58,
+        "price": 5333.66,
         "pnl": -300.0
       },
       {
-        "price": 5427.81,
+        "price": 5371.76,
         "pnl": -300.0
       },
       {
-        "price": 5466.03,
+        "price": 5409.86,
         "pnl": -300.0
       },
       {
-        "price": 5504.26,
+        "price": 5447.96,
         "pnl": -300.0
       },
       {
-        "price": 5542.48,
+        "price": 5486.05,
         "pnl": -300.0
       },
       {
-        "price": 5580.7,
+        "price": 5524.15,
         "pnl": -300.0
       },
       {
-        "price": 5618.93,
+        "price": 5562.25,
         "pnl": -300.0
       },
       {
-        "price": 5657.15,
+        "price": 5600.35,
         "pnl": -300.0
       },
       {
-        "price": 5695.38,
+        "price": 5638.45,
         "pnl": -300.0
       },
       {
-        "price": 5733.6,
+        "price": 5676.54,
+        "pnl": -300.0
+      },
+      {
+        "price": 5714.64,
         "pnl": -300.0
       }
     ],
@@ -277,45 +277,36 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-5050CE-B1x-Nov-5150CE"
-    },
-    {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 55.2,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-4778PE"
+      "legs_summary": "S1x-Nov-5000CE-B1x-Nov-5100CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 53.5,
-      "grade": "C (Moderate)",
+      "score": 62.4,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4450PE-S1x-Nov-4550PE-S1x-Nov-5050CE-B1x-Nov-5150CE"
+      "legs_summary": "B1x-Nov-4400PE-S1x-Nov-4500PE-S1x-Nov-5000CE-B1x-Nov-5100CE"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 41.0,
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 52.8,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-4800PE-S1x-Nov-4600PE"
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-4762.2PE"
     }
   ],
   "indicators": {
-    "EMA20": "4975.75",
-    "EMA50": "5141.63",
-    "EMA100": "5279.79",
-    "EMA200": "5429.72",
-    "RSI(14)": "26.65",
-    "ATR(14)": "83.33",
-    "ADX(14)": "47.18",
-    "BB(20,2)": "-0.03"
+    "EMA20": "4955.41",
+    "EMA50": "5126.75",
+    "EMA100": "5269.54",
+    "EMA200": "5423.08",
+    "RSI(14)": "25.89",
+    "ATR(14)": "82.18",
+    "ADX(14)": "48.50",
+    "BB(20,2)": "-0.01"
   },
   "rules": [
     {
@@ -327,6 +318,20 @@
     },
     {
       "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -368,20 +373,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -399,7 +390,7 @@
   "news": [
     {
       "title": "Daily Morning Newsletter",
-      "publisher": "ETRetail.com",
+      "publisher": "ET Retail",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTHJwcUhJc1Q2RHZONTBOYkNxMnNnRWFTQUZSS3NvR1FYMlZtak9LQm9yaVFrMGVRVFJVeGYweG5XWkRPMTVwbkJhdEdWc0I1WER3c19pZk9PNjROM0l2QUNKU3lOT3VtdnliOHN3aFhwNFlQbGZ0WlZfMDBEMjdNSGxOaDJrNmxQNjI5LWtpMWR3dw?oc=5",
       "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
@@ -412,32 +403,32 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Employers may soon be able to claim ITC on GST paid for employee insurance cover",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPazVVd3hGTnRnbXRtWXRWMVNTRkpyR3BOQWJZcUxscWdiNklDbFFZYmtpX1FiaXpScHJNOGxOMmZ3ZTEtWmpWbjVhUkQtLUFsanFRXzlqaGtMSFlNWGdVQ2MzaDUyV1hSdno3UUFXeTVZaHJpRnBqb09SRDA5Vk9WNVdRcUVwUlFDT1VDZ29vZl9TM28wLTAwQmNqdmlrTzBmNV83emh6NzFpcEFzTzMtT2l2UkhUTjd2dm50Zm9JUS05aDNqRzE5VlM4WUo3WHFsOE9iQ0Z5ekF2RW5HZ2M3RkxZY1RIaENvREVwMHQzVHB0T3dEQWfSAe8BQVVfeXFMT2NkNzl0VHdlRVI4X1pCblBlcVhBWVFTMVFWd3ZuMWZmZEhRV2xTQUJuWWRiNGlmWTRyTEMxaWlIbmZVMzg5dEVNYXVVSFRfZmdKLUI1Q1A2RXNUcUk2TmtjNnVyVnZENnFGaHlsbWhOWXh2TVdTUm9odFFqQ3FqTm1uRTRVU0hxTHhucEkzcGE3WTBOVVRSdkdSekRkeXZkd1hCMjg4bzVjTUh1ZmtHNjhnQXp6dlNvZmV1X1RJUnB1Wk4zTXVaYmhJd1hseUhwNjY0NDE2aEVFQ1g2YTM5cXBjcG5UYXdjWVFnZTJaeWc?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Indian Navy Sailor held for leaking classified defence data to female Pakistani operative",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQVmVrc2JvV1J0MUxyZ0s0WUhYbWpWNWxDNlYwMDhxRS12THpSVzlsLTdGdy10ZHMwWmNYVENVVFJVdzM1RXBVZFJoU28tQXZjM3hBblRfQVpqcWJlM3E5U0FzOVRmXzFJUlY4VlFaN3h1VmlCMDBkMExRV01CUGgwZzFpSkt6OGxPbDdNVWhLc0drSmEzaUVFc0cxNFFmZlZsSWFEem5ZTzdBUWV1bXVtTTFWLUQtR2U0VHpGS1pVR0ZPeTZwcWFqMHhBcF84RXk0T1k0Mm5wN04yUHZaTjFJcDVWb3J4UHJ5STdWMlRka0JfWHZGckhCVdIB8gFBVV95cUxNbFN6VERLUVh2YUJPNWFIcGY5YTlXeHlSVDhGcTN5ZktzeXpob294dEY4SWh1b0MzUFBCd3AycGhvUVBLeGlkbGFhTG1tRk5VSXNfYU1RR0s3SThKQU1BcnJubl81TVpxbUFQYW9zX3JkWlZndzFLRFhfMzY0T3dnc1pMMThWdW85QVQzVGEtUzFCdkNJM2ZvdFI5VTNDaVgweDVtZDdRUEtQVVFXeGxleWppcFI4Wkxab1hKLXNkM1I5WTlwa3pvbUIzUG1vN2plcm1jZDE4aTFELUQydU9hWWRjUXBBWUE1dGFUUTVpSGpWQQ?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Explained: 'Quick cash\u2019 \u2014 What are payday loans, when can you borrow this money? Risks, eligibility, documents required",
+      "title": "One mutual fund for large-, mid-, small- and micro-cap exposure: How Nifty Total Market Index schemes fare on returns",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPUVdGclFWa21NbmFvbk1DZU5fblFuOWJRdWtNamFrai1kUnNfYnFzcmtocnRINzlUbHF3RzRPS3hCMm5ETndaTUh0UTZQcVdfWFQ4Q2NOVU5CM2lzQUt6ZlpOYWRZNC1FclVlU052UFpUWWFDVXg1S0ZMalI5dFVKOUh3dTM1S0liam56YnVjejR1LXNFUHZTNHhja081T1p3Mjg2YnpKUzhid3o4UEh5aV84Z0cxX3AyWnFXS1JOVHNCQVMtR05ncWt2TUVCMWhsQlhRRGFKTHJteDB6Q19fWVh5dnFLMTZFV0M3dU16UXJtXy1heGIwaTQyd3ZEMWlDOEMzOFU0Y2tsd9IBjwJBVV95cUxNRWtxbGFlTjF1Q0Z2VUxWMzliRzVGZlF4OTdIMnFXTFVqX1F3NUdSVTJKdlBCVnBuaFBvUzQ0Q0V3U3NaQVZtcVZIanlzS21WOHNOX2pLVVc0bUtTZFY5b0dxcmZicWZBUXgzNEF2TERXRF9hOXlUY244OGh4eUxRTTI4X2ktc0RXeHdCRUJPdDlhVE9FNDZLSjlxZlBIblRpcVFBR0lyVmdiQmFXMXZ1Z1hKZm01X0ZpUlNuZHBNNnN5Y2N1M045M2xCcXhOVTBQUk03a1E1VkRUZWlNWjVyaGlKMEZzOTdOVHVJTWctVkV4S2YyX0EzaW9zd3loSzlBVGVoaW1na1kzNmxia2dB?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Nifty 50 correction: why fund managers see more value in large caps now",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdmtsTUtkQVNVVWRxLVZyQ1lLRzVWcVNQd0wwRG1VTVd3VDdQek1tZmZoei04RnQxV0tRR3NMNmNWWTBCQzRNZFNnVE5EVUhMNEowczR3WXdqYXFtVGNRZmdvOGo2TDVUcGt3Sk01TS02OGF4Z3pWOVBFSzRTX2VJUDhwZmJGdkk2T09XNW1nN0Rnc3R1dmpZYzExTGN2R1lJa2FsMi1paHpNTE9MVmM3aXhYSklhRDlZT2d1emJFN3VxcWVrU2VJRtIBzgFBVV95cUxONGFjZHphdkNjaTllbFJJVnJuaXI1NklUN1U2VktvMWIwTE1MblI4WGVhd2VGa0NuOGJNVHY3VkE3ZGhuZWRTN3lHZDJKcFAwaWc2aWJDTUw1Rm5EUWp0RzlUbk5YMVVzWDVXVEJOcW1Sd21vQ0NmTnZ6aE1YanFLWUg4QlRlT2JBVXhlY1RManVXYV9jTU5XXzFKMzJ4ZUFSbHEtbUxzYWlQYUdaWmtfczhmcHgzV2pQQl9Xd2thMEZ4cXdrdzFaMGY0TFhwZw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYlJ6THRCcXRJQnBHbHRMMW9MOGpWQnRwUU5oV1dwT2xxWmdNQUdaWG9UZVZuVkc0cTNWOWVVUFJxck9FTWNuSThNVzg2bjZlSE5WLXduM0NRNk5BbW1PNmk4YTNldnZvRXJpNmNKYWxGNWtEVl93LXh5RGpzVDhHbVZDSkFHSXZjZmJjampodF9KUHNpYVhFVVJyU3Vwc05ad296TXFwZ3o1RDZ3RHRkQnd6OTQ0N0FUaTBBeHFuSkJ1bzJ5cGJWZ3VuVzVwcFd0SC1HUlI5NE1ob09yUlRQaUw5VkdWR3UyNFF4eUdFYmd5ZE1KSkVmZVJfNnNtbWVCZmVIb1lla25ZMVXSAZACQVVfeXFMT1dGakFEeXpVRTJTRHFtVkxlVHBFaU5vUE5hZkNaRlUxZTMtRWVqOVJvWnJIRXlPc3o2ZzFCT1BFbWVGSnEzYS1TR05fQU9HU0RJR0dWNUg3cEpBTjNocHE1bllYV1JkS3NNdWNXdFFNOVFTc01MNlBJYzQ5eU1xdFJHbm5jTDVkdzZkWWpEQVlkcU9KYTBaeHpBaVYtTVRTMFRPM2k2YkNxQy1HLU9EZGlsSGpSSktwM0FNOHV6Z2ZGUU9CNmZWRzRWUFBuTjlZb0Nwa2t3a2dDZThNYU90THpFWlVSX0JhZGxFUTFSQUZwTzRiUnFUbU5tVWEzY3dwUG9fbnBDSGUxZ3R4ZHVnc18?oc=5",
       "published_at": "Sun, 04 Oct 2026",
       "sentiment": "neutral"
+    },
+    {
+      "title": "Nifty\u2019s ailing warhorse HDFC Bank gets an all-rounder CEO. Can Anup Bagchi make the elephant dance?",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPTjB5UGpmc0hOVWtscDdZZnRVRFZRWW5tR1dub3hkXzE3R014cERsblI3Y2U4RFpjcjFDV0gxdUhvejZfWi1kSUpQbmVnNVpkVkQwVE5GMmFaOU1HM18zZ1NJelhpNG1LcmRZNEZyVVd0UzhWaVVjdzBFU0dyNTVnVm9oRkNHNk0zaHN3dElMYmEzWl9idDNMUnBGSU1GcmI4MzFYOFpqaThMeWRLQVNKMGRKXzJQN3d2QnZONlp4OHZrVzhnV2ZnN0lQSDFPaXFZOU40SFRGMjVWTmpwYXR1cWFvcy12M2N6ZE5vSUduRnBQbWxnS0d1Nm5ucmprVzg5SE16UkV0VjRxLXfSAYQCQVVfeXFMT1pOdFk2R000d3pUMWVaLWVka2dKd2VuUmJSaU1ObnFoLVRfWmlsTXItbk9xcE1BR09tME5vcVB6TnlnQ1RDRmZkNEdfclEyQkNUaGtXUEhERi0xUEtjdVBteTBQWmhXU0pMRUw0cmtJWG91SjU1d2I3cXMzNzFnWkxrdmJ6NEh4T1JRTm5LZENYT2J6MjQ2RVczSzBSb2NrR0NNSm5PQ0NZajlNMjloMVdVT1lLUFk3UnowcndwZkRSRHZjbEJ6N1l4X25PNEdGbnVlcTBvZ1h1ZEU4dWF3ZllWMjNic1hqeVktRGNyQTBPNlRvd042YmpLeG5LeDJjbFEtQUE?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "German Green Steel shares to list today. Check GMP ahead of debut",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQaEpQWFdiYmZJNUxGWWszN3hBM1JsWXBIWFllUG9feVNCancxeFhQMk1KemRZalVXT0RFVkkxV0o2LWQyTHpSQ2kyYTRGUnUzVVViQVQ5bFFpSUVnaS16eWdEemh6alkzYmhaWEcyZnAtUnRXTXZUNzBtWkhkTVUxWGpjQTV0dlVNWDhMOTczNGEtd0NoZ2hmdzBPMWZmbGwxTFhZUm94UFc5N2xHNnNQYS00RWdhZUowdlFsd18tQlloaG8tTi1OSWt4a1NseVB4bVJaYzlEU0p3YWNXVVQzM9IB2gFBVV95cUxPQjdUd041V0RTR3ZySW5KMU4wd1FveUswYVZJV2s4TnJDdm5jYkpINGdfYnpvZ3ptbjRiWnFTMlpXandpejlOZ1k5Y1FPNk9HRjNyMnFScFRrNXoxS1RNNV9vNGxMZHpCb0RLYVFLLW1yeTllaWxyUjdjdkdDVVFNY0F4Y2xvS0NlbXNncTJ0cVI4enROaE1iTzBIeENNeVMwTWJ1U1dkbTFFbnIwXzdFVDZxWl9ZTjBTbDJ5Qll6SUU1UjNQeGFKU0pBckJCMERXZzUyTGNiOXVvZw?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Japan's 30-year bond yields hit record high ahead of PM's remarks",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQVMzUS1YYTE1OURFQlM4UTh3Z2hTd3BtazBpNUgwdXJWZ090RWlpTm53R3pYR29ocmJSeTEyOGJ2V0VBcFd1c1FKMkM1RkRtNHNCcy1QQW9veUF3QklrZnA2Q1FESXZ2ZTBZYUFDOGpTaTFXcDV6QVlINmk5VF8wNXFLZm51cFNFdGQ0cHRZT2hxZUh1V0oyNWM2ZlY3RU9QRHFzbDYwM1Q1Vkc4bU5pN0tfN0x4Vy03Tkh3c2JGYWdreWdUcWNzZEpNNnk3RjU1RXZhb2ZJY9IB0AFBVV95cUxOQkdCVm5sNzVqeGFNaTVmSi10ZHNJMFFpaWQwQjN5XzdDNDdCNjNHajl6TEg3WlZqXzcwYnZmbTFUNndmMUFHbHdQVkJwbW1mRnEzYjRjTjk4Rmx1bkMyaERydm5FQm5JSUo1TWFKZVptSS00b1g4VWxjbHczVVAtTG9JUFJZWXNfRXRMYmNNejM3dFNlazBsV2FGWUpIMHUwU0VTQnVLUGJaNmFCeGluMjlBUVlnVTkxa3QtR0NTcVJWNXZSNTczQ0lhUmpDckJv?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "bullish"
     }
   ]
 }

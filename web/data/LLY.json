@@ -8,7 +8,7 @@
   "fit_score": 42.5,
   "confidence_grade": "C",
   "confidence_percentage": 42.5,
-  "vix": 15.31,
+  "vix": 16.27,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 1050.0,
         "strike_formatted": "1050",
         "option_type": "Put",
-        "delta": -0.044,
+        "delta": -0.054,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 1100.0,
         "strike_formatted": "1100",
         "option_type": "Put",
-        "delta": -0.199,
+        "delta": -0.212,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -47,7 +47,7 @@
         "strike": 1200.0,
         "strike_formatted": "1200",
         "option_type": "Call",
-        "delta": 0.225,
+        "delta": 0.24,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -59,7 +59,7 @@
         "strike": 1250.0,
         "strike_formatted": "1250",
         "option_type": "Call",
-        "delta": 0.066,
+        "delta": 0.079,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -72,8 +72,8 @@
     "margin_required": 50.0,
     "stop_loss_price": 1108.56,
     "take_profit_price": 1177.14,
-    "net_delta": -0.004,
-    "net_theta": 0.24,
+    "net_delta": -0.003,
+    "net_theta": 0.246,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 84.2,
+      "score": 85.9,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,16 +315,16 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 68.0,
+      "score": 66.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x LLY 20-Nov-2026 1100 Call<br> Sell 1x LLY 20-Nov-2026 1150 Call<br> Sell 1x LLY 20-Nov-2026 1150 Call<br> Buy 1x LLY 20-Nov-2026 1150 Call"
+      "legs_summary": "Buy 1x LLY 20-Nov-2026 1100 Call<br> Sell 1x LLY 20-Nov-2026 1150 Call<br> Sell 1x LLY 20-Nov-2026 1150 Call<br> Buy 1x LLY 20-Nov-2026 1200 Call"
     },
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 60.1,
+      "score": 60.9,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -333,7 +333,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 57.1,
+      "score": 58.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 50.0,
+      "score": 51.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
@@ -351,7 +351,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 48.9,
+      "score": 45.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -449,6 +449,20 @@
   ],
   "news": [
     {
+      "title": "Stocktwits Pharma Pulse: Roche Faces FDA Decision, Gene-Therapy Stocks Step Into Focus \u2014 The Week\u2019s Biotech Watchlist",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/healthcare/articles/stocktwits-pharma-pulse-roche-faces-030933727.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eli Lilly\u2019s Valuation Has Changed. Here\u2019s What Investors Need to Know",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/healthcare/articles/eli-lilly-valuation-changed-investors-230243758.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Forget Zepbound: Eli Lilly's Next Weight-Loss Drug Could Be Its Biggest Blockbuster Yet",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/healthcare/articles/forget-zepbound-eli-lillys-next-133501121.html",
@@ -473,20 +487,6 @@
       "title": "3 Income Stocks Under $30 That Yield More Than the 10-Year Treasury Note",
       "publisher": "MarketBeat",
       "link": "https://finance.yahoo.com/markets/stocks/articles/3-income-stocks-under-30-144500299.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Eli Lilly\u2019s Foundayo delivers diabetes surprise in late-stage study",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/healthcare/articles/eli-lilly-foundayo-delivers-diabetes-223300456.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Woman, 38, Inherits $1.4M And Finds Her Mom's Advisor Charges 1.25% \u2014 Her Brother Says Firing Him Would Be 'Disrespectful'",
-      "publisher": "Benzinga",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/woman-38-inherits-1-4m-203008317.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

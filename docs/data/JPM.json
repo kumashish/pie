@@ -8,7 +8,7 @@
   "fit_score": 45.0,
   "confidence_grade": "C",
   "confidence_percentage": 45.0,
-  "vix": 15.31,
+  "vix": 16.27,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 305.0,
         "strike_formatted": "305",
         "option_type": "Put",
-        "delta": -0.042,
+        "delta": -0.052,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 310.0,
         "strike_formatted": "310",
         "option_type": "Put",
-        "delta": -0.077,
+        "delta": -0.089,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -47,7 +47,7 @@
         "strike": 350.0,
         "strike_formatted": "350",
         "option_type": "Call",
-        "delta": 0.21,
+        "delta": 0.225,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -59,7 +59,7 @@
         "strike": 355.0,
         "strike_formatted": "355",
         "option_type": "Call",
-        "delta": 0.143,
+        "delta": 0.158,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -72,8 +72,8 @@
     "margin_required": 15.0,
     "stop_loss_price": 322.41,
     "take_profit_price": 342.35,
-    "net_delta": -0.032,
-    "net_theta": 0.024,
+    "net_delta": -0.03,
+    "net_theta": 0.025,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 82.4,
+      "score": 84.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,34 +315,34 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 67.3,
+      "score": 65.9,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x JPM 20-Nov-2026 325 Call<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Buy 1x JPM 20-Nov-2026 340 Call"
     },
     {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 59.4,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 330 Put<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Buy 1x JPM 20-Nov-2026 350 Call"
-    },
-    {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 59.2,
-      "grade": "C (Moderate)",
+      "score": 60.7,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x JPM 20-Nov-2026 310 Put<br> Sell 1x JPM 20-Nov-2026 350 Call<br> Buy 1x JPM 20-Nov-2026 355 Call"
     },
     {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 60.1,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 330 Put<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Buy 1x JPM 20-Nov-2026 350 Call"
+    },
+    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 51.3,
+      "score": 48.1,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -440,6 +440,20 @@
   ],
   "news": [
     {
+      "title": "JPMorgan Chase Has One of Banking\u2019s Best Moats. Here\u2019s What the Stock is Worth",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-one-banking-best-225831042.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Daqo New Energy (DQ) Stock Sees Fair Value Cut After Split Analyst Calls",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/daqo-energy-dq-stock-sees-210731785.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "American Airlines (AAL) Stock Fair Value Edges Lower As Analysts Reassess Fuel Costs",
       "publisher": "Simply Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/american-airlines-aal-stock-fair-010913993.html",
@@ -466,20 +480,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-warns-q3-earnings-083141660.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "Why So Many Wealthy Retirees Hoard Their Nest Eggs",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/1adf0020-b628-37ba-b341-be2f857ec2f5/why-so-many-wealthy-retirees.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Financial Services Roundup: Market Talk",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/3a964a9c-0d70-3b25-8b75-60ab94550964/financial-services-roundup%3A.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

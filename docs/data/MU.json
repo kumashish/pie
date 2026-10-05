@@ -8,7 +8,7 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 15.31,
+  "vix": 16.27,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 1100.0,
         "strike_formatted": "1100",
         "option_type": "Call",
-        "delta": 0.389,
+        "delta": 0.397,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 1150.0,
         "strike_formatted": "1150",
         "option_type": "Call",
-        "delta": 0.136,
+        "delta": 0.151,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -48,8 +48,8 @@
     "margin_required": 50.0,
     "stop_loss_price": 1042.64,
     "take_profit_price": 1107.14,
-    "net_delta": -0.253,
-    "net_theta": 0.141,
+    "net_delta": -0.246,
+    "net_theta": 0.136,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -282,29 +282,29 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 82.9,
+      "score": 84.4,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put<br> Sell 1x MU 20-Nov-2026 1100 Call<br> Buy 1x MU 20-Nov-2026 1150 Call"
     },
     {
-      "strategy_type": "poor_mans_covered_call",
-      "strategy_display": "Poor Mans Covered Call",
-      "score": 63.1,
-      "grade": "B (Good)",
-      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x MU 20-Nov-2026 1000 Call<br> Sell 1x MU 20-Nov-2026 1100 Call"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 62.7,
+      "score": 64.0,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x MU 20-Nov-2026 950 Put<br> Sell 1x MU 20-Nov-2026 1000 Put<br> Sell 1x MU 20-Nov-2026 1100 Call<br> Buy 1x MU 20-Nov-2026 1150 Call"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 61.7,
+      "grade": "B (Good)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "Buy 1x MU 20-Nov-2026 1000 Call<br> Sell 1x MU 20-Nov-2026 1100 Call"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -318,7 +318,7 @@
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 46.6,
+      "score": 48.4,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
@@ -327,7 +327,7 @@
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 45.8,
+      "score": 47.0,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 40.8,
+      "score": 40.1,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -434,46 +434,46 @@
   ],
   "news": [
     {
+      "title": "Micron (MU) Posts 87% Gross Margins, Yet Trades at 6 Times Earnings. Is the Cycle Different?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-posts-87-gross-061642765.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocktwits Tech Watch: AI Investors Shift Focus To Applied Digital Earnings, Microsoft Event, SF Tech Week",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/technology/ai/articles/stocktwits-tech-watch-ai-investors-054646008.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Micron (MU): Can A Company Earning This Much Really Trade This Cheap?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-company-earning-much-043648111.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "MU, HPE, AMZN, META, SPCX: Why Retail Traders Couldn\u2019t Take Their Eyes Off These Stocks Last Week",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mu-hpe-amzn-meta-spcx-015451718.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Micron Growth Is Surging and the Stock Looks Dirt Cheap. But Is the Stock a Buy?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-growth-surging-stock-looks-002000595.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "How to Start Investing in 2026: The Growth Stock I'm Buying Before Year-End",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/markets/stocks/articles/start-investing-2026-growth-stock-182200699.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "You Can Do Better Than Tesla. Buy Micron Instead.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/better-tesla-buy-micron-instead-175000673.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 High Growth Stocks To Own In October 2026",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-high-growth-stocks-own-170730198.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Investors Had a Tepid Reaction to Micron's Latest Earnings Report. An Overlooked Headwind May Explain Why.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/investors-had-tepid-reaction-microns-163954099.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jordi Visser Says Crypto Is At Its 'Micron Moment,' Sees Token Volumes Going 'Through The Roof'",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/jordi-visser-says-crypto-micron-163035188.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is It Too Late to Buy Micron Technology Stock After Its 12-Month Gain of 500%?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/too-buy-micron-technology-stock-144900854.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

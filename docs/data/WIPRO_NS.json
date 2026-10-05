@@ -1,262 +1,262 @@
 {
   "symbol": "WIPRO.NS",
-  "last_price": 159.35,
-  "as_of": "2026-10-01 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.2,
-  "fit_score": 12.5,
+  "last_price": 162.54,
+  "as_of": "2026-10-05 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.2,
+  "fit_score": 22.5,
   "confidence_grade": "C",
-  "confidence_percentage": 12.5,
-  "vix": 14.46,
+  "confidence_percentage": 22.5,
+  "vix": 14.7,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (32.0) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 170.0,
-        "strike_formatted": "170",
+        "strike": 175.0,
+        "strike_formatted": "175",
         "option_type": "Call",
-        "delta": 0.146,
+        "delta": 0.114,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x WIPRO.NS 24-Nov-2026 170 Call"
+        "summary": "Sell 1x WIPRO.NS 24-Nov-2026 175 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 175.0,
-        "strike_formatted": "175",
+        "strike": 180.0,
+        "strike_formatted": "180",
         "option_type": "Call",
-        "delta": 0.055,
+        "delta": 0.043,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x WIPRO.NS 24-Nov-2026 175 Call"
+        "summary": "Buy 1x WIPRO.NS 24-Nov-2026 180 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 154.57,
-    "take_profit_price": 164.13,
-    "net_delta": -0.091,
-    "net_theta": 0.012,
+    "stop_loss_price": 157.66,
+    "take_profit_price": 167.42,
+    "net_delta": -0.071,
+    "net_theta": 0.011,
     "probability_of_profit": 0.0,
-    "var_95": 4.81,
+    "var_95": 3.57,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
-      {
-        "price": 127.48,
-        "pnl": -5.0
-      },
-      {
-        "price": 128.75,
-        "pnl": -5.0
-      },
       {
         "price": 130.03,
         "pnl": -5.0
       },
       {
-        "price": 131.3,
+        "price": 131.33,
         "pnl": -5.0
       },
       {
-        "price": 132.58,
+        "price": 132.63,
         "pnl": -5.0
       },
       {
-        "price": 133.85,
+        "price": 133.93,
         "pnl": -5.0
       },
       {
-        "price": 135.13,
+        "price": 135.23,
         "pnl": -5.0
       },
       {
-        "price": 136.4,
+        "price": 136.53,
         "pnl": -5.0
       },
       {
-        "price": 137.68,
+        "price": 137.83,
         "pnl": -5.0
       },
       {
-        "price": 138.95,
+        "price": 139.13,
         "pnl": -5.0
       },
       {
-        "price": 140.23,
+        "price": 140.43,
         "pnl": -5.0
       },
       {
-        "price": 141.5,
+        "price": 141.73,
         "pnl": -5.0
       },
       {
-        "price": 142.78,
+        "price": 143.04,
         "pnl": -5.0
       },
       {
-        "price": 144.05,
+        "price": 144.34,
         "pnl": -5.0
       },
       {
-        "price": 145.33,
+        "price": 145.64,
         "pnl": -5.0
       },
       {
-        "price": 146.6,
+        "price": 146.94,
         "pnl": -5.0
       },
       {
-        "price": 147.88,
+        "price": 148.24,
         "pnl": -5.0
       },
       {
-        "price": 149.15,
+        "price": 149.54,
         "pnl": -5.0
       },
       {
-        "price": 150.43,
+        "price": 150.84,
         "pnl": -5.0
       },
       {
-        "price": 151.7,
+        "price": 152.14,
         "pnl": -5.0
       },
       {
-        "price": 152.98,
+        "price": 153.44,
         "pnl": -5.0
       },
       {
-        "price": 154.25,
+        "price": 154.74,
         "pnl": -5.0
       },
       {
-        "price": 155.53,
+        "price": 156.04,
         "pnl": -5.0
       },
       {
-        "price": 156.8,
+        "price": 157.34,
         "pnl": -5.0
       },
       {
-        "price": 158.08,
+        "price": 158.64,
         "pnl": -5.0
       },
       {
-        "price": 159.35,
+        "price": 159.94,
         "pnl": -5.0
       },
       {
-        "price": 160.62,
+        "price": 161.24,
         "pnl": -5.0
       },
       {
-        "price": 161.9,
+        "price": 162.54,
         "pnl": -5.0
       },
       {
-        "price": 163.17,
+        "price": 163.84,
         "pnl": -5.0
       },
       {
-        "price": 164.45,
+        "price": 165.14,
         "pnl": -5.0
       },
       {
-        "price": 165.72,
+        "price": 166.44,
         "pnl": -5.0
       },
       {
-        "price": 167.0,
+        "price": 167.74,
         "pnl": -5.0
       },
       {
-        "price": 168.27,
+        "price": 169.04,
         "pnl": -5.0
       },
       {
-        "price": 169.55,
+        "price": 170.34,
         "pnl": -5.0
       },
       {
-        "price": 170.82,
-        "pnl": -5.82
+        "price": 171.64,
+        "pnl": -5.0
       },
       {
-        "price": 172.1,
-        "pnl": -7.1
+        "price": 172.94,
+        "pnl": -5.0
       },
       {
-        "price": 173.37,
-        "pnl": -8.37
+        "price": 174.24,
+        "pnl": -5.0
       },
       {
-        "price": 174.65,
-        "pnl": -9.65
+        "price": 175.54,
+        "pnl": -5.54
       },
       {
-        "price": 175.92,
+        "price": 176.84,
+        "pnl": -6.84
+      },
+      {
+        "price": 178.14,
+        "pnl": -8.14
+      },
+      {
+        "price": 179.44,
+        "pnl": -9.44
+      },
+      {
+        "price": 180.74,
         "pnl": -10.0
       },
       {
-        "price": 177.2,
+        "price": 182.04,
         "pnl": -10.0
       },
       {
-        "price": 178.47,
+        "price": 183.35,
         "pnl": -10.0
       },
       {
-        "price": 179.75,
+        "price": 184.65,
         "pnl": -10.0
       },
       {
-        "price": 181.02,
+        "price": 185.95,
         "pnl": -10.0
       },
       {
-        "price": 182.3,
+        "price": 187.25,
         "pnl": -10.0
       },
       {
-        "price": 183.57,
+        "price": 188.55,
         "pnl": -10.0
       },
       {
-        "price": 184.85,
+        "price": 189.85,
         "pnl": -10.0
       },
       {
-        "price": 186.12,
+        "price": 191.15,
         "pnl": -10.0
       },
       {
-        "price": 187.4,
+        "price": 192.45,
         "pnl": -10.0
       },
       {
-        "price": 188.67,
+        "price": 193.75,
         "pnl": -10.0
       },
       {
-        "price": 189.95,
-        "pnl": -10.0
-      },
-      {
-        "price": 191.22,
+        "price": 195.05,
         "pnl": -10.0
       }
     ],
@@ -277,36 +277,36 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-170CE-B1x-Nov-175CE"
-    },
-    {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 55.7,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-159.4PE"
+      "legs_summary": "S1x-Nov-175CE-B1x-Nov-180CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 41.8,
-      "grade": "C (Moderate)",
+      "score": 61.0,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-145PE-S1x-Nov-150PE-S1x-Nov-170CE-B1x-Nov-175CE"
+      "legs_summary": "B1x-Nov-150PE-S1x-Nov-155PE-S1x-Nov-175CE-B1x-Nov-180CE"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 50.3,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-162.5PE"
     }
   ],
   "indicators": {
-    "EMA20": "165.88",
-    "EMA50": "172.57",
-    "EMA100": "180.83",
-    "EMA200": "196.63",
-    "RSI(14)": "32.05",
-    "ATR(14)": "3.59",
-    "ADX(14)": "24.62",
-    "BB(20,2)": "0.15"
+    "EMA20": "165.56",
+    "EMA50": "172.17",
+    "EMA100": "180.47",
+    "EMA200": "196.29",
+    "RSI(14)": "40.07",
+    "ATR(14)": "3.68",
+    "ADX(14)": "24.41",
+    "BB(20,2)": "0.34"
   },
   "rules": [
     {
@@ -317,7 +317,21 @@
       "explanation": "Condition met"
     },
     {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -366,20 +380,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -389,18 +389,18 @@
   ],
   "news": [
     {
+      "title": "TCS, Wipro, Infosys, HCL, Tech Mahindra shares: Accenture Q4 strong show impact on Indian IT stocks decoded by experts",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQSXdPOFhMMGY4XzFKdTBfOWhuanpOSXpZaHlZZDJWT3hNU3Eya0pFOTJmenV3RHpHR2tjYjg0LXNPbmxfNFpNdXAzd1AzUkhFblYydDF6UjA3MDR5LWdGVTJ1UzNOdVZuZjk0UWVYWGlKaHEzem41djkyaE1mTWlrRG9ma2Z2NDZ1TXZsc1hBQWkzUGQ3NWxlYmd2R2VnemRCb29FUFMwbzhuQWp3cFhEN3pXWkZ3Q2xQVXF4aFpNOFNlbnp4M09pcTJKNDJqU1I0eWJlalNZWl8tR3hReTRPXzRidVhrRDBpaFNVRTJGWldoazBxUnhXTzR1SkszX3JKSEhRS2lZSkRlZjhXd3FlRtIBlgJBVV95cUxNcTJpaTQwWnp1dVZWSjNiT2dURHJEbDA4dFJJQS1hRHo1R1BFeFl3XzlYbERVbGJGTEpWdWFBbWxqS2Q4cGthYTBPUEpwc0dPTzVMNEFPdGNDd0pMZjAxY3dxQkptU1NrMERJSFZhX3ZYVjNmbUhIN0RITzNXTUhoOHU5UW1PdXVvcEEtR2VIaU01TnhGQXVTblI4VE4yVXBCemtjNlpqLTdZUXBRZExMNXhZZ0d4dl9RTGl2bEQxVUNUWFl3RjhUaWo5Mlg2VmhJajUzUVIzTlRBQWtENUYyR1ZnaThsS0dwYmg0Q1dTdVpXYzZRMjJqRFctZTEzUmM4Y1FXWms2ajlpcDFURDhSQlVoQmlXQQ?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Wipro gives benchwarmers a 6-month paid breather",
       "publisher": "ETHRWorld.com",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZlcxWGFpVktkcTg5akdISFVuM1BIMEhDeU5yMzk2UXd1bENFdTZjTW1ZQ2VSREF0SmQxdGhhRnRTWDBWTkFQMTJxUzFDRndJd3poUldrMlQ2Vl9iNW5HRkpSOVBBSnF2OG1udHp4Rnk4bDV1NHdLV1QtbDFXbTBVeFZDQ2U1WU9jYlYtTTNDT3kxRjZnRV8tMkNzemZ2bE5EM0xJVzE4dXBRVUQzdmpfMm530gG3AUFVX3lxTE8tQkxLbVdpTC1Md2Jwb3ZaSk0xTG5LV1I1cllBb2ZXV0J4eUI2UzlkYjFhaFFoYWtkWm1VY0dZLTVIcC1DNXZfRTNfQTF6S3J3WHBWWG1ramFhaXhOSk5ndlIwZFotY1RCaVl4UkZGZWZHU1RMb2h4QnlPeGFCZWxUczAwRzFxSDI5bHh0cnlpZTJiMlZydzc0ZUt5Y1h6Yk00UmFETG1VODBoQWxSS01QaS1lQ0dFMA?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Infosys, Wipro ADRs soar up to 8% as strong Accenture earnings forecast lifts mood",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOaS1CMW85UnQySjQxUUZDZ1RCM3JLaUFBN1NxYmZsNXhNWGU2YkEzai01b2JNNzN4UzZXNEEyT3JORFpZVkRpWEhvdGI2cHltcW9talZ0NXlwSGlVaXQxX29pVkZPTFhiekppck5RNmdwSGs1Sk04LWUtLUdRb1JORDRmS0MtVmRVNTlPRTI5MHJJaUNSMjFaWDRXYUpOc21mbENYQ1pDRWRLSWt6aVpWcFcxajdDdzZvUmtIWHdhdU84SkxZWGVWQ1o5eV96bnE5ZGc3cU1WTE9YTGg5Rm90YjA3OXV6RHh1cWRvMHdLOXA1VGZiYjlpddIBhAJBVV95cUxNX2dTdHY4WHNfV0FxNFFaWGZUc1hnRURzRC11bE1sbFFMUm5YYTJiTXk1N2MxSzBkd29MVEllbXh4UFlJbWxVNWZtVmtmTjJvVVQ3bldwMEV3dll1Q0VBSnJxSFUwNDdOVnF0ZXpxQlN3aTFHY1VSZGxEdUNpVjZQX2Y1YnZGc05iMTRCdDVnTDZYVENKa2hYQkIyWV96a21lQTIzVS1jd2phOHFpNDdUZHRlVkk2WDhVaWFneG42VG95WnlnZTFmQTA1RXlkYm1NRVN2WkpQWmNNWk12R2tNLXVyVWhHX2tfckprLTdCampSa29oUThQRDF3VGhyaTBWenk2MA?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bullish"
     },
     {
       "title": "TCS, Infosys, Wipro shares ahead of Q2 results: Explained | What Accenture's strong earnings mean for Indian IT stocks",
@@ -424,11 +424,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOUUVCLURiLWRzMmNCZ1B2dWNRaDNCamgtMkMwZDlFQmZuYUdDY2hpbkhOdGpfQ1NrWmx4R1NRUmxDNWdYR29adEl6WjV2clAtRkFPcDJDNE1LZktFSVU0ZENESnk0T0dMVXdEWEFjRG5TQmZNYzEwZFNSaGowM19pU21pQjRKczdBeXFMcFRZSk15VVNici12V0dlWnozSnBjaUYtcDl4M182R3lpRTFHMkJMZkV2eGV6Y3RjV0hmc1E0eUUxbHBGbWd0TG96cFpaOF9MLVh4YmE3ZmluMnZsY1dsSEhvUGotcllwNUF6QjBjTW9FRkVOaEVKQ29na0dpemJZWkVlN1dJc25XR0VNLXpB0gGXAkFVX3lxTE01cmdSNXNuWW5kVEhFY0RBVExHZENMb3c1Z3hEYmk4NFZ6alB2REE4WUEyVXZoaFRfRW5LdjB0ajZIOTBkRDdadnNUNVZhSjRkVUFnQlprTTM4X1M1XzFEclV5ZTkyWE14WEw0WGVJSjd0WkRmMGxsLVVGOWRJU1FrNVUyenpWUV9ubjFIQjMzaC1DSlBWeko0R0tGZVZBYUEyaWU0TGhtWnNkcFlNY3dVd25TeUFMcDEzbmpqVV9kbUJqMWRxRFpIQlRqUnJPY2hfT240VUlrYXJESlFPSXpZNFE4bjZnRVp1aVJydjM1UGRhSVo4ZjNuRDhwQU1NdFJyNnNRRURvOGxIYS1sbXZYRGxJRzdaaw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "bullish"
+      "title": "WIPRO LATEST NEWS",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aSG03U1puU0gyendDNnRFSnRGSDNzcUFSY05hWndnODZzSWF2bkpTVWdGVmlfeHFXX0tLbElmVER1MGtiT0xFbXh1eS1JeG9OUWRUUXRaVHVFRnNUdmRLVGVrNGFubVBpWUpLUg?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
     }
   ]
 }

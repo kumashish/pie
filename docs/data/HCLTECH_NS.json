@@ -1,14 +1,14 @@
 {
   "symbol": "HCLTECH.NS",
-  "last_price": 1243.1,
-  "as_of": "2026-10-01 03:45:00",
+  "last_price": 1207.1,
+  "as_of": "2026-10-05 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.5,
-  "fit_score": 15.0,
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 15.0,
-  "vix": 14.46,
+  "confidence_percentage": 17.5,
+  "vix": 14.71,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1300.0,
-        "strike_formatted": "1300",
+        "strike": 1250.0,
+        "strike_formatted": "1250",
         "option_type": "Call",
-        "delta": 0.248,
+        "delta": 0.313,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x HCLTECH.NS 24-Nov-2026 1300 Call"
+        "summary": "Sell 1x HCLTECH.NS 24-Nov-2026 1250 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1350.0,
-        "strike_formatted": "1350",
+        "strike": 1300.0,
+        "strike_formatted": "1300",
         "option_type": "Call",
-        "delta": 0.083,
+        "delta": 0.113,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x HCLTECH.NS 24-Nov-2026 1350 Call"
+        "summary": "Buy 1x HCLTECH.NS 24-Nov-2026 1300 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1205.81,
-    "take_profit_price": 1280.39,
-    "net_delta": -0.165,
-    "net_theta": 0.136,
+    "stop_loss_price": 1170.89,
+    "take_profit_price": 1243.31,
+    "net_delta": -0.2,
+    "net_theta": 0.138,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 994.48,
+        "price": 965.68,
         "pnl": -50.0
       },
       {
-        "price": 1004.42,
+        "price": 975.34,
         "pnl": -50.0
       },
       {
-        "price": 1014.37,
+        "price": 984.99,
         "pnl": -50.0
       },
       {
-        "price": 1024.31,
+        "price": 994.65,
         "pnl": -50.0
       },
       {
-        "price": 1034.26,
+        "price": 1004.31,
         "pnl": -50.0
       },
       {
-        "price": 1044.2,
+        "price": 1013.96,
         "pnl": -50.0
       },
       {
-        "price": 1054.15,
+        "price": 1023.62,
         "pnl": -50.0
       },
       {
-        "price": 1064.09,
+        "price": 1033.28,
         "pnl": -50.0
       },
       {
-        "price": 1074.04,
+        "price": 1042.93,
         "pnl": -50.0
       },
       {
-        "price": 1083.98,
+        "price": 1052.59,
         "pnl": -50.0
       },
       {
-        "price": 1093.93,
+        "price": 1062.25,
         "pnl": -50.0
       },
       {
-        "price": 1103.87,
+        "price": 1071.9,
         "pnl": -50.0
       },
       {
-        "price": 1113.82,
+        "price": 1081.56,
         "pnl": -50.0
       },
       {
-        "price": 1123.76,
+        "price": 1091.22,
         "pnl": -50.0
       },
       {
-        "price": 1133.71,
+        "price": 1100.88,
         "pnl": -50.0
       },
       {
-        "price": 1143.65,
+        "price": 1110.53,
         "pnl": -50.0
       },
       {
-        "price": 1153.6,
+        "price": 1120.19,
         "pnl": -50.0
       },
       {
-        "price": 1163.54,
+        "price": 1129.85,
         "pnl": -50.0
       },
       {
-        "price": 1173.49,
+        "price": 1139.5,
         "pnl": -50.0
       },
       {
-        "price": 1183.43,
+        "price": 1149.16,
         "pnl": -50.0
       },
       {
-        "price": 1193.38,
+        "price": 1158.82,
         "pnl": -50.0
       },
       {
-        "price": 1203.32,
+        "price": 1168.47,
         "pnl": -50.0
       },
       {
-        "price": 1213.27,
+        "price": 1178.13,
         "pnl": -50.0
       },
       {
-        "price": 1223.21,
+        "price": 1187.79,
         "pnl": -50.0
       },
       {
-        "price": 1233.16,
+        "price": 1197.44,
         "pnl": -50.0
       },
       {
-        "price": 1243.1,
+        "price": 1207.1,
         "pnl": -50.0
       },
       {
-        "price": 1253.04,
+        "price": 1216.76,
         "pnl": -50.0
       },
       {
-        "price": 1262.99,
+        "price": 1226.41,
         "pnl": -50.0
       },
       {
-        "price": 1272.93,
+        "price": 1236.07,
         "pnl": -50.0
       },
       {
-        "price": 1282.88,
+        "price": 1245.73,
         "pnl": -50.0
       },
       {
-        "price": 1292.82,
-        "pnl": -50.0
+        "price": 1255.38,
+        "pnl": -55.38
       },
       {
-        "price": 1302.77,
-        "pnl": -52.77
+        "price": 1265.04,
+        "pnl": -65.04
       },
       {
-        "price": 1312.71,
-        "pnl": -62.71
+        "price": 1274.7,
+        "pnl": -74.7
       },
       {
-        "price": 1322.66,
-        "pnl": -72.66
+        "price": 1284.35,
+        "pnl": -84.35
       },
       {
-        "price": 1332.6,
-        "pnl": -82.6
+        "price": 1294.01,
+        "pnl": -94.01
       },
       {
-        "price": 1342.55,
-        "pnl": -92.55
-      },
-      {
-        "price": 1352.49,
+        "price": 1303.67,
         "pnl": -100.0
       },
       {
-        "price": 1362.44,
+        "price": 1313.32,
         "pnl": -100.0
       },
       {
-        "price": 1372.38,
+        "price": 1322.98,
         "pnl": -100.0
       },
       {
-        "price": 1382.33,
+        "price": 1332.64,
         "pnl": -100.0
       },
       {
-        "price": 1392.27,
+        "price": 1342.3,
         "pnl": -100.0
       },
       {
-        "price": 1402.22,
+        "price": 1351.95,
         "pnl": -100.0
       },
       {
-        "price": 1412.16,
+        "price": 1361.61,
         "pnl": -100.0
       },
       {
-        "price": 1422.11,
+        "price": 1371.27,
         "pnl": -100.0
       },
       {
-        "price": 1432.05,
+        "price": 1380.92,
         "pnl": -100.0
       },
       {
-        "price": 1442.0,
+        "price": 1390.58,
         "pnl": -100.0
       },
       {
-        "price": 1451.94,
+        "price": 1400.24,
         "pnl": -100.0
       },
       {
-        "price": 1461.89,
+        "price": 1409.89,
         "pnl": -100.0
       },
       {
-        "price": 1471.83,
+        "price": 1419.55,
         "pnl": -100.0
       },
       {
-        "price": 1481.78,
+        "price": 1429.21,
         "pnl": -100.0
       },
       {
-        "price": 1491.72,
+        "price": 1438.86,
+        "pnl": -100.0
+      },
+      {
+        "price": 1448.52,
         "pnl": -100.0
       }
     ],
@@ -277,49 +277,49 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1300CE-B1x-Nov-1350CE"
+      "legs_summary": "S1x-Nov-1250CE-B1x-Nov-1300CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 56.3,
+      "score": 57.4,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1150PE-S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
+      "legs_summary": "B1x-Nov-1100PE-S1x-Nov-1150PE-S1x-Nov-1250CE-B1x-Nov-1300CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 54.4,
+      "score": 53.0,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1243.1PE"
+      "legs_summary": "S1x-Nov-1207.1PE"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 43.0,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 41.3,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1200CE-S1x-Nov-1250CE-S1x-Nov-1250CE-B1x-Nov-1300CE"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-1200PE-S1x-Nov-1150PE"
     }
   ],
   "indicators": {
-    "EMA20": "1256.16",
-    "EMA50": "1264.59",
-    "EMA100": "1273.11",
-    "EMA200": "1329.24",
-    "RSI(14)": "45.53",
-    "ATR(14)": "33.43",
-    "ADX(14)": "11.48",
-    "BB(20,2)": "0.45"
+    "EMA20": "1251.49",
+    "EMA50": "1262.34",
+    "EMA100": "1271.81",
+    "EMA200": "1328.02",
+    "RSI(14)": "38.71",
+    "ATR(14)": "34.55",
+    "ADX(14)": "12.20",
+    "BB(20,2)": "0.13"
   },
   "rules": [
     {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -375,14 +375,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -400,7 +400,7 @@
     {
       "title": "Hcltech+acquisition",
       "publisher": "electronics.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBBQl9RVW5haGhFdVRzVE1kVzlfdWpWaTFfYXFnaDJOOHRMUFdJSFd4Tm81RWlIS2VLUjFfT3VHTVBOaGdhUlZtRXpTRVhpSDZLUnRQMnVZX0d3VzVQeTctdzViUWNWNDBWYXdjVGYwZXNzWDR0cjZnVGNrdS0?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Ob0lMYnZha2ZTTHhLOWIyNTRtUDlnVTJkLXNabGJFbS1UUU9UVTZiWGJueDRDcjVpSDhGaGJ2UjQwdFg1Q19Ta0NMallUc3hheGtVNTdXTkRKdm9NOXcwTkhoZG12Y2wxVzJFUU4zaDQ4dzF0NkVxaGVMMA?oc=5",
       "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"
     },
@@ -419,17 +419,17 @@
       "sentiment": "bearish"
     },
     {
-      "title": "HCLTech to acquire Croatia-based Robotiq.ai for \u20ac9 million to boost agentic AI capabilities",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNN2s4T2Z0My1kSTRLa2JuMld4Sm9qTDdZX292cXVRanc2emxkckpiSlYzb3NLLUw3clBBYnozUldycllaMGMtN0ZkZ1NaNjc4UkdKVWlxSlFCb2lrOGZiSEwtVHZRNjh2eEsxemM5VmdBbWFpZDlhOXVGV3NUNFJFcFBtTk4ydlQ4UG52OThMVEhONXJzMUNLU1N6amNHdzM4cUZxNGUyOUR2SkNKX182NzNVb3pKUlJFeFE1TndLNTlMX3FlWFFNQV96NGc1Qjl0bUxlNUFad0VKanhKdFA3U0VFZ21mSVRRYk1rX3h6YW8yMklHTHB3Z0J2TFloWEnSAYQCQVVfeXFMTjZocEUtdE42enBoS0RLZ1UyTWlYc1pKRE53cGtsZ1F0WTV1c0dEUmJxRHp5LWsyVWQzOHYySXVlUFpmdHJ0T2J2MldpMHFuUDB2S0I5bXJBVUh5YmctNXFNbmhteC1aYmRHWm9OZncya3JPVzFkTWRISENLbHI5RkE1YUw3WVlkbjd4MDBtM0wxamJsTEItaVRqZ1Foc2NmS2NULWpNWWNpb2VjRjBuSWJvQ2swd05uSnZYYi1OUDRrTXJnd2tQNlg1Q0ZDcm13LWRPMVQzcG1VVTQ1UEhZUERzTDVxOXM0UWlsdTdIZ1M3eDE1TG1DdThHemFIZG1lTDdfWW8?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "India\u2019s top IT firms brace for another slow quarter as client spending remains weak: Analysts",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNcWVhMEVod0tla0JJUC00Q1p2NnhQNFVxQXE0YjZiQllWUnNUX0FER1ZxS2FhOWpWcGxndDN2MWZMSDNKQmN6a0hoNjVTNEV6U1dfNThyOWF6VEFkY2JTSDZpNlBJUjdJRXNKYjdfTXdaWVlkdWY3NTRhRkoxMGNCWEJrdlpMLVpzSldGWHdQeFFtS2NNckF0N3AtMVo4MjFsMDlYTU1jZGNvcllJUU5xWjltbVhxNXVGUThkUnpkc2xwTV9iT0tFaVlMb1pzOVVJYTB3a19Sd1F5MWI2MW5YTFBaellCZWR5Ml9PaUd1eUJYXzdEQmtR0gH8AUFVX3lxTE1oQVpRMGd1NDdWQWd4NExDdl81X3ZTOW9zNUtZdjBMQ2JFRW5QSmdkNHZRbGdkWEZjUTJVVmlDazRVNG1raWdZN3J2YnhWQktLYUNobUY1LWI0LVRmOVJsX0hUZWZUYWJJTDRQZFdZWXJFMjAwbE1WTlpkS2o0azRPc0xqcGRsaER2cHlLWEtoYUFnc09NMDc0ZnF6NjItMlh3MEZBaHJhWTNyemZFY2VZb1RQajJvOEpmeWllTU51azQySjJYWldyLXE3b1lwME5mYm40SlM0QXhJOXpuSWZqYkItS0dGYTlCZklfazNBMG5qWXdwTjdJYUhYNg?oc=5",
       "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HCLTech to acquire Croatia-based Robotiq.ai for \u20ac9 million to boost agentic AI capabilities",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNN2s4T2Z0My1kSTRLa2JuMld4Sm9qTDdZX292cXVRanc2emxkckpiSlYzb3NLLUw3clBBYnozUldycllaMGMtN0ZkZ1NaNjc4UkdKVWlxSlFCb2lrOGZiSEwtVHZRNjh2eEsxemM5VmdBbWFpZDlhOXVGV3NUNFJFcFBtTk4ydlQ4UG52OThMVEhONXJzMUNLU1N6amNHdzM4cUZxNGUyOUR2SkNKX182NzNVb3pKUlJFeFE1TndLNTlMX3FlWFFNQV96NGc1Qjl0bUxlNUFad0VKanhKdFA3U0VFZ21mSVRRYk1rX3h6YW8yMklHTHB3Z0J2TFloWEnSAYQCQVVfeXFMTjZocEUtdE42enBoS0RLZ1UyTWlYc1pKRE53cGtsZ1F0WTV1c0dEUmJxRHp5LWsyVWQzOHYySXVlUFpmdHJ0T2J2MldpMHFuUDB2S0I5bXJBVUh5YmctNXFNbmhteC1aYmRHWm9OZncya3JPVzFkTWRISENLbHI5RkE1YUw3WVlkbjd4MDBtM0wxamJsTEItaVRqZ1Foc2NmS2NULWpNWWNpb2VjRjBuSWJvQ2swd05uSnZYYi1OUDRrTXJnd2tQNlg1Q0ZDcm13LWRPMVQzcG1VVTQ1UEhZUERzTDVxOXM0UWlsdTdIZ1M3eDE1TG1DdThHemFIZG1lTDdfWW8?oc=5",
+      "published_at": "Mon, 28 Sep 2026",
       "sentiment": "neutral"
     },
     {

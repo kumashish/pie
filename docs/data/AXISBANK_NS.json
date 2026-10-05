@@ -1,14 +1,14 @@
 {
   "symbol": "AXISBANK.NS",
-  "last_price": 1217.1,
-  "as_of": "2026-10-01 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "last_price": 1232.9,
+  "as_of": "2026-10-05 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.2,
+  "fit_score": 12.5,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 14.46,
+  "confidence_percentage": 12.5,
+  "vix": 14.7,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1250.0,
-        "strike_formatted": "1250",
+        "strike": 1300.0,
+        "strike_formatted": "1300",
         "option_type": "Call",
-        "delta": 0.366,
+        "delta": 0.206,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x AXISBANK.NS 24-Nov-2026 1250 Call"
+        "summary": "Sell 1x AXISBANK.NS 24-Nov-2026 1300 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1300.0,
-        "strike_formatted": "1300",
+        "strike": 1350.0,
+        "strike_formatted": "1350",
         "option_type": "Call",
-        "delta": 0.141,
+        "delta": 0.065,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x AXISBANK.NS 24-Nov-2026 1300 Call"
+        "summary": "Buy 1x AXISBANK.NS 24-Nov-2026 1350 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1180.59,
-    "take_profit_price": 1253.61,
-    "net_delta": -0.225,
-    "net_theta": 0.136,
+    "stop_loss_price": 1195.91,
+    "take_profit_price": 1269.89,
+    "net_delta": -0.141,
+    "net_theta": 0.129,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 973.68,
+        "price": 986.32,
         "pnl": -50.0
       },
       {
-        "price": 983.42,
+        "price": 996.18,
         "pnl": -50.0
       },
       {
-        "price": 993.15,
+        "price": 1006.05,
         "pnl": -50.0
       },
       {
-        "price": 1002.89,
+        "price": 1015.91,
         "pnl": -50.0
       },
       {
-        "price": 1012.63,
+        "price": 1025.77,
         "pnl": -50.0
       },
       {
-        "price": 1022.36,
+        "price": 1035.64,
         "pnl": -50.0
       },
       {
-        "price": 1032.1,
+        "price": 1045.5,
         "pnl": -50.0
       },
       {
-        "price": 1041.84,
+        "price": 1055.36,
         "pnl": -50.0
       },
       {
-        "price": 1051.57,
+        "price": 1065.23,
         "pnl": -50.0
       },
       {
-        "price": 1061.31,
+        "price": 1075.09,
         "pnl": -50.0
       },
       {
-        "price": 1071.05,
+        "price": 1084.95,
         "pnl": -50.0
       },
       {
-        "price": 1080.78,
+        "price": 1094.82,
         "pnl": -50.0
       },
       {
-        "price": 1090.52,
+        "price": 1104.68,
         "pnl": -50.0
       },
       {
-        "price": 1100.26,
+        "price": 1114.54,
         "pnl": -50.0
       },
       {
-        "price": 1110.0,
+        "price": 1124.4,
         "pnl": -50.0
       },
       {
-        "price": 1119.73,
+        "price": 1134.27,
         "pnl": -50.0
       },
       {
-        "price": 1129.47,
+        "price": 1144.13,
         "pnl": -50.0
       },
       {
-        "price": 1139.21,
+        "price": 1153.99,
         "pnl": -50.0
       },
       {
-        "price": 1148.94,
+        "price": 1163.86,
         "pnl": -50.0
       },
       {
-        "price": 1158.68,
+        "price": 1173.72,
         "pnl": -50.0
       },
       {
-        "price": 1168.42,
+        "price": 1183.58,
         "pnl": -50.0
       },
       {
-        "price": 1178.15,
+        "price": 1193.45,
         "pnl": -50.0
       },
       {
-        "price": 1187.89,
+        "price": 1203.31,
         "pnl": -50.0
       },
       {
-        "price": 1197.63,
+        "price": 1213.17,
         "pnl": -50.0
       },
       {
-        "price": 1207.36,
+        "price": 1223.04,
         "pnl": -50.0
       },
       {
-        "price": 1217.1,
+        "price": 1232.9,
         "pnl": -50.0
       },
       {
-        "price": 1226.84,
+        "price": 1242.76,
         "pnl": -50.0
       },
       {
-        "price": 1236.57,
+        "price": 1252.63,
         "pnl": -50.0
       },
       {
-        "price": 1246.31,
+        "price": 1262.49,
         "pnl": -50.0
       },
       {
-        "price": 1256.05,
-        "pnl": -56.05
+        "price": 1272.35,
+        "pnl": -50.0
       },
       {
-        "price": 1265.78,
-        "pnl": -65.78
+        "price": 1282.22,
+        "pnl": -50.0
       },
       {
-        "price": 1275.52,
-        "pnl": -75.52
+        "price": 1292.08,
+        "pnl": -50.0
       },
       {
-        "price": 1285.26,
-        "pnl": -85.26
+        "price": 1301.94,
+        "pnl": -51.94
       },
       {
-        "price": 1294.99,
-        "pnl": -94.99
+        "price": 1311.81,
+        "pnl": -61.81
       },
       {
-        "price": 1304.73,
+        "price": 1321.67,
+        "pnl": -71.67
+      },
+      {
+        "price": 1331.53,
+        "pnl": -81.53
+      },
+      {
+        "price": 1341.4,
+        "pnl": -91.4
+      },
+      {
+        "price": 1351.26,
         "pnl": -100.0
       },
       {
-        "price": 1314.47,
+        "price": 1361.12,
         "pnl": -100.0
       },
       {
-        "price": 1324.2,
+        "price": 1370.98,
         "pnl": -100.0
       },
       {
-        "price": 1333.94,
+        "price": 1380.85,
         "pnl": -100.0
       },
       {
-        "price": 1343.68,
+        "price": 1390.71,
         "pnl": -100.0
       },
       {
-        "price": 1353.42,
+        "price": 1400.57,
         "pnl": -100.0
       },
       {
-        "price": 1363.15,
+        "price": 1410.44,
         "pnl": -100.0
       },
       {
-        "price": 1372.89,
+        "price": 1420.3,
         "pnl": -100.0
       },
       {
-        "price": 1382.63,
+        "price": 1430.16,
         "pnl": -100.0
       },
       {
-        "price": 1392.36,
+        "price": 1440.03,
         "pnl": -100.0
       },
       {
-        "price": 1402.1,
+        "price": 1449.89,
         "pnl": -100.0
       },
       {
-        "price": 1411.84,
+        "price": 1459.75,
         "pnl": -100.0
       },
       {
-        "price": 1421.57,
+        "price": 1469.62,
         "pnl": -100.0
       },
       {
-        "price": 1431.31,
-        "pnl": -100.0
-      },
-      {
-        "price": 1441.05,
-        "pnl": -100.0
-      },
-      {
-        "price": 1450.78,
-        "pnl": -100.0
-      },
-      {
-        "price": 1460.52,
+        "price": 1479.48,
         "pnl": -100.0
       }
     ],
@@ -277,16 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1250CE-B1x-Nov-1300CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 63.0,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1100PE-S1x-Nov-1150PE-S1x-Nov-1250CE-B1x-Nov-1300CE"
+      "legs_summary": "S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -295,36 +286,36 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1150PE"
+      "legs_summary": "S1x-Nov-1200PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 48.9,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-1150PE-S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 42.0,
+      "score": 47.4,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1217.1PE"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 40.4,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-1150PE-S1x-Nov-1250CE-B1x-Nov-1300CE"
+      "legs_summary": "S1x-Nov-1232.9PE"
     }
   ],
   "indicators": {
-    "EMA20": "1232.37",
-    "EMA50": "1248.00",
-    "EMA100": "1262.54",
-    "EMA200": "1261.16",
-    "RSI(14)": "44.52",
-    "ATR(14)": "25.10",
+    "EMA20": "1232.42",
+    "EMA50": "1247.41",
+    "EMA100": "1261.95",
+    "EMA200": "1260.88",
+    "RSI(14)": "49.06",
+    "ATR(14)": "24.68",
     "ADX(14)": "27.63",
-    "BB(20,2)": "0.26"
+    "BB(20,2)": "0.48"
   },
   "rules": [
     {
@@ -335,21 +326,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -398,6 +375,20 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -435,10 +426,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Why Indian banks are ahead on AI | Axis Bank x BCG",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcFNHSkZydGdGMVBrNkVTV0FEVFAxNnNaYXhvSlVvLXZQbmFKMTY2UDlaSHFQeXRZQlhXZVozOXB5NWo4OU9XSlk5c2d6MnF6c0JrNG55eHFyeHozeUhrQ2R2dFBYWnZFRFhzak95Qk9LYWhmeVdMVms2LTJwUzA4T3d6VkNsT1ZHQ2xtMUdtY2lPd2Z2amFSQ1p4Y25aaWRYdlHSAacBQVVfeXFMTk9Xb2NlelhJVGFqeFhTR3NBLTBqcVRkSVFRYW5MR0k1LXh2aTZrYlhqQWNFVlo5UGRZUEJzNERvRlhqc3JrVzFwZjdVQlR4MW1nV3FGWlVHeExyZWJkak95T3VZSnJ3enZVTWQtLWxBTnl5LTdoZ1hNeVBSQTJNQkFGQjVRZ014VElQQm1na3BGMXplbVlBT0EtUHRUeGR5eFlsNmFxZW8?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
+      "title": "Axis Bank targets doubling data centre lending to meet India's AI demand",
+      "publisher": "ET Datacenters",
+      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQRzRaYWhhTEhtYmY3VWc0Vkl0OXRONk1NbHRmcnQ1OG5DLWpPSUswR3BaT2w1dGFFanh4RHVCSFI3OV84VzdkUjFUU3NSOTF1M25sUkZFRFUzVzZCcXpnMzVid2dTTkNLb1pNQkdER3JCQnotV0RKUnZ5QUJNbnRiWkxPYTh5NFdLblBuWmhIM21WUFdEX2c3c29rYUVsRGVHRl85T29tekd6MzJRdC1GZFowZXY2ZlE0d09CYjdHeWZRcFpDMk1VNTBrZURMeXhnaGpPeUFuVTZXbjFqd2tvbzFBQ1M3T1VIZy1lN2ZBV0piYVNycEZxSE44dHF2YkpseDhOajFmZGlTQ0VTQVF0dnZDZ3V5QzBnVlVTQlJn0gHsAUFVX3lxTE5fLVMwZU1FdTFEX2ZkQTFVTFNCRlJodEpFMUROZ2MxSTJ0YkllcUVVbFpfalpfcHB5WEdMU2puMlRKcDkyaUZPSFozYkhnbERILV9qTHBHZDFNbnJ5U2drY0ZJM3RTTml2U1hvSXlaZGt5VjR2WmU3RGZxSXFlQnNXV3hISUJxQlRtenBoNGJTa3VJVU1maTZ3by1yRU51Z1hKR21RS2c3SzdQWGxQeVNwbXlYMHMtekpQUlJQVWFQQjFLTGg3RXlsZU1WeFprTWdyTUtPSXp6Nm9RNW5rcVRaRkZOSTRhdXY5bmVp?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
       "sentiment": "neutral"
     },
     {

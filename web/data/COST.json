@@ -8,7 +8,7 @@
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 15.31,
+  "vix": 16.27,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 970.0,
-        "strike_formatted": "970",
+        "strike": 975.0,
+        "strike_formatted": "975",
         "option_type": "Call",
-        "delta": 0.207,
+        "delta": 0.196,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
-        "summary": "Sell 1x COST 20-Nov-2026 970 Call"
+        "summary": "Sell 1x COST 20-Nov-2026 975 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 985.0,
-        "strike_formatted": "985",
+        "strike": 990.0,
+        "strike_formatted": "990",
         "option_type": "Call",
-        "delta": 0.136,
+        "delta": 0.131,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
-        "summary": "Buy 1x COST 20-Nov-2026 985 Call"
+        "summary": "Buy 1x COST 20-Nov-2026 990 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 40.0,
     "stop_loss_price": 893.03,
     "take_profit_price": 948.27,
-    "net_delta": -0.071,
-    "net_theta": 0.046,
+    "net_delta": -0.065,
+    "net_theta": 0.045,
     "probability_of_profit": 0.0,
     "var_95": 15.0,
     "vol_skew_25d": 0.0,
@@ -185,15 +185,15 @@
       },
       {
         "price": 972.21,
-        "pnl": -42.21
+        "pnl": -40.0
       },
       {
         "price": 979.57,
-        "pnl": -49.57
+        "pnl": -44.57
       },
       {
         "price": 986.94,
-        "pnl": -55.0
+        "pnl": -51.94
       },
       {
         "price": 994.3,
@@ -277,16 +277,16 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x COST 20-Nov-2026 970 Call<br> Buy 1x COST 20-Nov-2026 985 Call"
+      "legs_summary": "Sell 1x COST 20-Nov-2026 975 Call<br> Buy 1x COST 20-Nov-2026 990 Call"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 70.7,
+      "score": 72.1,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 855 Put<br> Sell 1x COST 20-Nov-2026 870 Put<br> Sell 1x COST 20-Nov-2026 970 Call<br> Buy 1x COST 20-Nov-2026 985 Call"
+      "legs_summary": "Buy 1x COST 20-Nov-2026 850 Put<br> Sell 1x COST 20-Nov-2026 865 Put<br> Sell 1x COST 20-Nov-2026 975 Call<br> Buy 1x COST 20-Nov-2026 990 Call"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -298,13 +298,13 @@
       "legs_summary": "Sell 1x COST 20-Nov-2026 920.7 Put"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 40.6,
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 40.3,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 895 Call<br> Sell 1x COST 20-Nov-2026 920 Call<br> Sell 1x COST 20-Nov-2026 920 Call<br> Buy 1x COST 20-Nov-2026 945 Call"
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x COST 20-Nov-2026 865 Put<br> Sell 1x COST 20-Nov-2026 975 Call<br> Buy 1x COST 20-Nov-2026 990 Call"
     }
   ],
   "indicators": {
@@ -398,6 +398,13 @@
   ],
   "news": [
     {
+      "title": "Split $7,500 Evenly Across These 3 Dividend Stocks and Ignore Them Until 2046",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/split-7-500-evenly-across-192100736.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Costco (COST) Keeps Delivering, but What Is the Price Tag Assuming?",
       "publisher": "Insider Monkey",
       "link": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-keeps-delivering-price-174351158.html",
@@ -412,7 +419,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Kroger and Publix have a Costco problem they can't fix",
+      "title": "Costco beats Aldi, Kroger, and Publix where shoppers care most",
       "publisher": "TheStreet",
       "link": "https://finance.yahoo.com/markets/stocks/articles/kroger-publix-costco-problem-cant-141700329.html",
       "published_at": "Today",
@@ -429,13 +436,6 @@
       "title": "Alaska woman's 20-hour boat ride to Costco saves her community hundreds on groceries priced nearly double",
       "publisher": "Moneywise",
       "link": "https://finance.yahoo.com/small-business/articles/alaska-womans-20-hour-boat-094500761.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Costco (COST) Stock May Be 17% Overvalued Following Digital Sales News",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-stock-may-17-220639270.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

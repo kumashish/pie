@@ -1,262 +1,262 @@
 {
   "symbol": "APOLLOHOSP.NS",
-  "last_price": 8133.5,
-  "as_of": "2026-10-01 03:45:00",
+  "last_price": 8044.5,
+  "as_of": "2026-10-05 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
   "trend_score": 2.5,
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 14.46,
+  "vix": 14.7,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (29.7) is oversold (< 35) [Synthetic PCR: 1.47]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (28.0) is oversold (< 35) [Synthetic PCR: 1.46]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 8500.0,
-        "strike_formatted": "8500",
+        "strike": 8400.0,
+        "strike_formatted": "8400",
         "option_type": "Call",
-        "delta": 0.252,
+        "delta": 0.261,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 8500 Call"
+        "summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 8400 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 8700.0,
-        "strike_formatted": "8700",
+        "strike": 8600.0,
+        "strike_formatted": "8600",
         "option_type": "Call",
-        "delta": 0.135,
+        "delta": 0.141,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 8700 Call"
+        "summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 8600 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 300.0,
-    "stop_loss_price": 7889.49,
-    "take_profit_price": 8377.51,
-    "net_delta": -0.117,
-    "net_theta": 0.569,
+    "stop_loss_price": 7803.16,
+    "take_profit_price": 8285.84,
+    "net_delta": -0.12,
+    "net_theta": 0.567,
     "probability_of_profit": 0.0,
     "var_95": 200.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 6506.8,
+        "price": 6435.6,
         "pnl": -300.0
       },
       {
-        "price": 6571.87,
+        "price": 6499.96,
         "pnl": -300.0
       },
       {
-        "price": 6636.94,
+        "price": 6564.31,
         "pnl": -300.0
       },
       {
-        "price": 6702.0,
+        "price": 6628.67,
         "pnl": -300.0
       },
       {
-        "price": 6767.07,
+        "price": 6693.02,
         "pnl": -300.0
       },
       {
-        "price": 6832.14,
+        "price": 6757.38,
         "pnl": -300.0
       },
       {
-        "price": 6897.21,
+        "price": 6821.74,
         "pnl": -300.0
       },
       {
-        "price": 6962.28,
+        "price": 6886.09,
         "pnl": -300.0
       },
       {
-        "price": 7027.34,
+        "price": 6950.45,
         "pnl": -300.0
       },
       {
-        "price": 7092.41,
+        "price": 7014.8,
         "pnl": -300.0
       },
       {
-        "price": 7157.48,
+        "price": 7079.16,
         "pnl": -300.0
       },
       {
-        "price": 7222.55,
+        "price": 7143.52,
         "pnl": -300.0
       },
       {
-        "price": 7287.62,
+        "price": 7207.87,
         "pnl": -300.0
       },
       {
-        "price": 7352.68,
+        "price": 7272.23,
         "pnl": -300.0
       },
       {
-        "price": 7417.75,
+        "price": 7336.58,
         "pnl": -300.0
       },
       {
-        "price": 7482.82,
+        "price": 7400.94,
         "pnl": -300.0
       },
       {
-        "price": 7547.89,
+        "price": 7465.3,
         "pnl": -300.0
       },
       {
-        "price": 7612.96,
+        "price": 7529.65,
         "pnl": -300.0
       },
       {
-        "price": 7678.02,
+        "price": 7594.01,
         "pnl": -300.0
       },
       {
-        "price": 7743.09,
+        "price": 7658.36,
         "pnl": -300.0
       },
       {
-        "price": 7808.16,
+        "price": 7722.72,
         "pnl": -300.0
       },
       {
-        "price": 7873.23,
+        "price": 7787.08,
         "pnl": -300.0
       },
       {
-        "price": 7938.3,
+        "price": 7851.43,
         "pnl": -300.0
       },
       {
-        "price": 8003.36,
+        "price": 7915.79,
         "pnl": -300.0
       },
       {
-        "price": 8068.43,
+        "price": 7980.14,
         "pnl": -300.0
       },
       {
-        "price": 8133.5,
+        "price": 8044.5,
         "pnl": -300.0
       },
       {
-        "price": 8198.57,
+        "price": 8108.86,
         "pnl": -300.0
       },
       {
-        "price": 8263.64,
+        "price": 8173.21,
         "pnl": -300.0
       },
       {
-        "price": 8328.7,
+        "price": 8237.57,
         "pnl": -300.0
       },
       {
-        "price": 8393.77,
+        "price": 8301.92,
         "pnl": -300.0
       },
       {
-        "price": 8458.84,
+        "price": 8366.28,
         "pnl": -300.0
       },
       {
-        "price": 8523.91,
-        "pnl": -323.91
+        "price": 8430.64,
+        "pnl": -330.64
       },
       {
-        "price": 8588.98,
-        "pnl": -388.98
+        "price": 8494.99,
+        "pnl": -394.99
       },
       {
-        "price": 8654.04,
-        "pnl": -454.04
+        "price": 8559.35,
+        "pnl": -459.35
       },
       {
-        "price": 8719.11,
+        "price": 8623.7,
         "pnl": -500.0
       },
       {
-        "price": 8784.18,
+        "price": 8688.06,
         "pnl": -500.0
       },
       {
-        "price": 8849.25,
+        "price": 8752.42,
         "pnl": -500.0
       },
       {
-        "price": 8914.32,
+        "price": 8816.77,
         "pnl": -500.0
       },
       {
-        "price": 8979.38,
+        "price": 8881.13,
         "pnl": -500.0
       },
       {
-        "price": 9044.45,
+        "price": 8945.48,
         "pnl": -500.0
       },
       {
-        "price": 9109.52,
+        "price": 9009.84,
         "pnl": -500.0
       },
       {
-        "price": 9174.59,
+        "price": 9074.2,
         "pnl": -500.0
       },
       {
-        "price": 9239.66,
+        "price": 9138.55,
         "pnl": -500.0
       },
       {
-        "price": 9304.72,
+        "price": 9202.91,
         "pnl": -500.0
       },
       {
-        "price": 9369.79,
+        "price": 9267.26,
         "pnl": -500.0
       },
       {
-        "price": 9434.86,
+        "price": 9331.62,
         "pnl": -500.0
       },
       {
-        "price": 9499.93,
+        "price": 9395.98,
         "pnl": -500.0
       },
       {
-        "price": 9565.0,
+        "price": 9460.33,
         "pnl": -500.0
       },
       {
-        "price": 9630.06,
+        "price": 9524.69,
         "pnl": -500.0
       },
       {
-        "price": 9695.13,
+        "price": 9589.04,
         "pnl": -500.0
       },
       {
-        "price": 9760.2,
+        "price": 9653.4,
         "pnl": -500.0
       }
     ],
@@ -277,16 +277,16 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-8500CE-B1x-Nov-8700CE"
+      "legs_summary": "S1x-Nov-8400CE-B1x-Nov-8600CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 69.6,
+      "score": 68.8,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-7500PE-S1x-Nov-7700PE-S1x-Nov-8500CE-B1x-Nov-8700CE"
+      "legs_summary": "B1x-Nov-7400PE-S1x-Nov-7600PE-S1x-Nov-8400CE-B1x-Nov-8600CE"
     },
     {
       "strategy_type": "jade_lizard",
@@ -295,27 +295,18 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-7700PE-S1x-Nov-8500CE-B1x-Nov-8700CE"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 40.6,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-7900CE-S1x-Nov-8100CE-S1x-Nov-8100CE-B1x-Nov-8400CE"
+      "legs_summary": "S1x-Nov-7600PE-S1x-Nov-8400CE-B1x-Nov-8600CE"
     }
   ],
   "indicators": {
-    "EMA20": "8708.58",
-    "EMA50": "8734.56",
-    "EMA100": "8574.41",
-    "EMA200": "8236.90",
-    "RSI(14)": "29.66",
-    "ATR(14)": "191.82",
-    "ADX(14)": "19.14",
-    "BB(20,2)": "-0.17"
+    "EMA20": "8645.33",
+    "EMA50": "8707.50",
+    "EMA100": "8563.92",
+    "EMA200": "8234.99",
+    "RSI(14)": "27.97",
+    "ATR(14)": "196.19",
+    "ADX(14)": "21.82",
+    "BB(20,2)": "-0.11"
   },
   "rules": [
     {
@@ -398,6 +389,13 @@
   ],
   "news": [
     {
+      "title": "Stock Market: Stock Market Today | Stock Market Live News Update",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rN1l6YVVCd3lGQ3B3azRWVUY0NmJpdFJDaTZUc2RGcXlmbklqQ2FSdlpKNWtPb1hFaEdQSzJ3YXhWeGUzU21iRk1hRDRNMjFROVdFRjRyRFZUYnFS?oc=5",
+      "published_at": "Sun, 09 Jan 2011",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Stock Research Report for Apollo Hospitals Enterprise Limited",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaGR3UVdwOUFVMjluMVFJbVI4NTlBT0hwOU5XN3N2YW44MnpoNHNZUzJCT2xqaVZ1WHZWdFRVTGZMQXQwTm41WEZ6bmFlU3JrNDFPa1EwYTQ4SlpSTm5oekJWcVVOTVozbjJDRjhEU09ETjNac21fbk1PUGJwaGJpV2w5ZnRTOU1tUUVsbXRUS1VjOTdhUHRjeG96S0ZscTBuNnln?oc=5",
@@ -430,13 +428,6 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVnc2eXFjekxpeU1QNktrb1l3SHNVQXRKUVBOTms5blJEVjZaOWVQTmtLNWZjWkRELXEzZFVXWXg4TjlRcUJtNFo2djJMYy1tZzNMZElqUGdVelVzdEhIak5lbU1NM0VuYTBaQ0hlTWoxaDlsXzE2c3phck05aTBlR2NOa2ZLOV9M?oc=5",
       "published_at": "Thu, 14 Nov 2024",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Apollo Hospitals Enterprises Ltd.",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMmF5VHUzN3NGUXJGRVllZmRpWVctVkl3NGpyS3RYa3o0T2ZMNHlnb1pMa3N2QzY3SUphWkczT0NWOEd6UklYUmtPWEtwN2JfcEVtTDhoNDRVSmVDVjA1cHdmVXdrTDlMSGlISElnekpSeFJ4cmdGdGd4Y2dIUmhRaUJCNDBLS1RF?oc=5",
-      "published_at": "Sun, 24 Jul 2011",
       "sentiment": "bullish"
     }
   ]

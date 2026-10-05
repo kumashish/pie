@@ -8,7 +8,7 @@
   "fit_score": 12.5,
   "confidence_grade": "C",
   "confidence_percentage": 12.5,
-  "vix": 15.31,
+  "vix": 16.27,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 235.0,
-        "strike_formatted": "235",
+        "strike": 240.0,
+        "strike_formatted": "240",
         "option_type": "Call",
-        "delta": 0.197,
+        "delta": 0.123,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
-        "summary": "Sell 1x IBM 20-Nov-2026 235 Call"
+        "summary": "Sell 1x IBM 20-Nov-2026 240 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 240.0,
-        "strike_formatted": "240",
+        "strike": 245.0,
+        "strike_formatted": "245",
         "option_type": "Call",
-        "delta": 0.108,
+        "delta": 0.064,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
-        "summary": "Buy 1x IBM 20-Nov-2026 240 Call"
+        "summary": "Buy 1x IBM 20-Nov-2026 245 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 10.0,
     "stop_loss_price": 215.96,
     "take_profit_price": 229.32,
-    "net_delta": -0.089,
-    "net_theta": 0.014,
+    "net_delta": -0.059,
+    "net_theta": 0.012,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -185,27 +185,27 @@
       },
       {
         "price": 235.11,
-        "pnl": -10.11
+        "pnl": -10.0
       },
       {
         "price": 236.89,
-        "pnl": -11.89
+        "pnl": -10.0
       },
       {
         "price": 238.67,
-        "pnl": -13.67
+        "pnl": -10.0
       },
       {
         "price": 240.45,
-        "pnl": -15.0
+        "pnl": -10.45
       },
       {
         "price": 242.23,
-        "pnl": -15.0
+        "pnl": -12.23
       },
       {
         "price": 244.01,
-        "pnl": -15.0
+        "pnl": -14.01
       },
       {
         "price": 245.79,
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x IBM 20-Nov-2026 235 Call<br> Buy 1x IBM 20-Nov-2026 240 Call"
+      "legs_summary": "Sell 1x IBM 20-Nov-2026 240 Call<br> Buy 1x IBM 20-Nov-2026 245 Call"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -291,16 +291,16 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 44.4,
+      "score": 45.8,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 215 Put<br> Sell 1x IBM 20-Nov-2026 235 Call<br> Buy 1x IBM 20-Nov-2026 240 Call"
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 205 Put<br> Sell 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 240 Call<br> Buy 1x IBM 20-Nov-2026 245 Call"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 41.4,
+      "score": 40.7,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -398,6 +398,13 @@
   ],
   "news": [
     {
+      "title": "Egan-Jones Maps Where AI Disruption Hits First: Services, Venture Capital, Housing",
+      "publisher": "BeInCrypto",
+      "link": "https://finance.yahoo.com/technology/ai/articles/egan-jones-maps-where-ai-025406253.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "More than 6 out of 10 CFOs expand into AI, tech strategy: IBM",
       "publisher": "CFO Dive",
       "link": "https://finance.yahoo.com/technology/ai/articles/more-6-10-cfos-expand-200511727.html",
@@ -431,13 +438,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/ibm-ibm-stock-could-18-150653600.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "Should You Trim Or Add To Your Dell Position Now?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/trim-add-dell-position-now-131837637.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

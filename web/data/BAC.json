@@ -8,7 +8,7 @@
   "fit_score": 32.5,
   "confidence_grade": "C",
   "confidence_percentage": 32.5,
-  "vix": 15.31,
+  "vix": 16.27,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 57.0,
         "strike_formatted": "57",
         "option_type": "Call",
-        "delta": 0.174,
+        "delta": 0.19,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 58.0,
         "strike_formatted": "58",
         "option_type": "Call",
-        "delta": 0.104,
+        "delta": 0.119,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -48,7 +48,7 @@
     "margin_required": 2.0,
     "stop_loss_price": 52.14,
     "take_profit_price": 55.36,
-    "net_delta": -0.07,
+    "net_delta": -0.071,
     "net_theta": 0.003,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
@@ -282,7 +282,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 75.7,
+      "score": 77.0,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 51.3,
+      "score": 52.9,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -300,7 +300,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 43.2,
+      "score": 41.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -398,6 +398,13 @@
   ],
   "news": [
     {
+      "title": "27-year-old chip stock gets a rare win as rival bidder steps in",
+      "publisher": "TheStreet",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/27-old-chip-stock-gets-013700125.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Walmart's CEO tells BofA where his retail chain is headed next",
       "publisher": "TheStreet",
       "link": "https://finance.yahoo.com/markets/stocks/articles/walmarts-ceo-tells-bofa-where-171700224.html",
@@ -429,13 +436,6 @@
       "title": "Fed\u2019s Hammack says there is time to weigh next rate move",
       "publisher": "Investing.com",
       "link": "https://finance.yahoo.com/economy/policy/articles/fed-hammack-says-time-weigh-050141967.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "BofA splits software into winners and losers as AI agents arrive",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/technology/ai/articles/bofa-splits-software-winners-losers-221700834.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

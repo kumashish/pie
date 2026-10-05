@@ -1,182 +1,174 @@
 {
   "symbol": "POWERGRID.NS",
-  "last_price": 254.55,
-  "as_of": "2026-10-01 03:45:00",
+  "last_price": 258.5,
+  "as_of": "2026-10-05 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "trend_score": 1.5,
+  "fit_score": 15.0,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 14.46,
+  "confidence_percentage": 15.0,
+  "vix": 14.7,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (34.6) is oversold (< 35) [Synthetic PCR: 1.42]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 270.0,
-        "strike_formatted": "270",
+        "strike": 275.0,
+        "strike_formatted": "275",
         "option_type": "Call",
-        "delta": 0.172,
+        "delta": 0.163,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x POWERGRID.NS 24-Nov-2026 270 Call"
+        "summary": "Sell 1x POWERGRID.NS 24-Nov-2026 275 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 275.0,
-        "strike_formatted": "275",
+        "strike": 280.0,
+        "strike_formatted": "280",
         "option_type": "Call",
-        "delta": 0.099,
+        "delta": 0.094,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x POWERGRID.NS 24-Nov-2026 275 Call"
+        "summary": "Buy 1x POWERGRID.NS 24-Nov-2026 280 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 246.91,
-    "take_profit_price": 262.19,
-    "net_delta": -0.073,
-    "net_theta": 0.014,
+    "stop_loss_price": 250.75,
+    "take_profit_price": 266.25,
+    "net_delta": -0.069,
+    "net_theta": 0.013,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 203.64,
+        "price": 206.8,
         "pnl": -10.0
       },
       {
-        "price": 205.68,
+        "price": 208.87,
         "pnl": -10.0
       },
       {
-        "price": 207.71,
+        "price": 210.94,
         "pnl": -10.0
       },
       {
-        "price": 209.75,
+        "price": 213.0,
         "pnl": -10.0
       },
       {
-        "price": 211.79,
+        "price": 215.07,
         "pnl": -10.0
       },
       {
-        "price": 213.82,
+        "price": 217.14,
         "pnl": -10.0
       },
       {
-        "price": 215.86,
+        "price": 219.21,
         "pnl": -10.0
       },
       {
-        "price": 217.89,
+        "price": 221.28,
         "pnl": -10.0
       },
       {
-        "price": 219.93,
+        "price": 223.34,
         "pnl": -10.0
       },
       {
-        "price": 221.97,
+        "price": 225.41,
         "pnl": -10.0
       },
       {
-        "price": 224.0,
+        "price": 227.48,
         "pnl": -10.0
       },
       {
-        "price": 226.04,
+        "price": 229.55,
         "pnl": -10.0
       },
       {
-        "price": 228.08,
+        "price": 231.62,
         "pnl": -10.0
       },
       {
-        "price": 230.11,
+        "price": 233.68,
         "pnl": -10.0
       },
       {
-        "price": 232.15,
+        "price": 235.75,
         "pnl": -10.0
       },
       {
-        "price": 234.19,
+        "price": 237.82,
         "pnl": -10.0
       },
       {
-        "price": 236.22,
+        "price": 239.89,
         "pnl": -10.0
       },
       {
-        "price": 238.26,
+        "price": 241.96,
         "pnl": -10.0
       },
       {
-        "price": 240.3,
+        "price": 244.02,
         "pnl": -10.0
       },
       {
-        "price": 242.33,
+        "price": 246.09,
         "pnl": -10.0
       },
       {
-        "price": 244.37,
+        "price": 248.16,
         "pnl": -10.0
       },
       {
-        "price": 246.4,
+        "price": 250.23,
         "pnl": -10.0
       },
       {
-        "price": 248.44,
+        "price": 252.3,
         "pnl": -10.0
       },
       {
-        "price": 250.48,
+        "price": 254.36,
         "pnl": -10.0
       },
       {
-        "price": 252.51,
+        "price": 256.43,
         "pnl": -10.0
       },
       {
-        "price": 254.55,
+        "price": 258.5,
         "pnl": -10.0
       },
       {
-        "price": 256.59,
+        "price": 260.57,
         "pnl": -10.0
       },
       {
-        "price": 258.62,
+        "price": 262.64,
         "pnl": -10.0
       },
       {
-        "price": 260.66,
-        "pnl": -10.0
-      },
-      {
-        "price": 262.7,
-        "pnl": -10.0
-      },
-      {
-        "price": 264.73,
+        "price": 264.7,
         "pnl": -10.0
       },
       {
@@ -184,79 +176,87 @@
         "pnl": -10.0
       },
       {
-        "price": 268.8,
+        "price": 268.84,
         "pnl": -10.0
       },
       {
-        "price": 270.84,
-        "pnl": -10.84
+        "price": 270.91,
+        "pnl": -10.0
       },
       {
-        "price": 272.88,
-        "pnl": -12.88
+        "price": 272.98,
+        "pnl": -10.0
       },
       {
-        "price": 274.91,
-        "pnl": -14.91
+        "price": 275.04,
+        "pnl": -10.04
       },
       {
-        "price": 276.95,
+        "price": 277.11,
+        "pnl": -12.11
+      },
+      {
+        "price": 279.18,
+        "pnl": -14.18
+      },
+      {
+        "price": 281.25,
         "pnl": -15.0
       },
       {
-        "price": 278.99,
+        "price": 283.32,
         "pnl": -15.0
       },
       {
-        "price": 281.02,
+        "price": 285.38,
         "pnl": -15.0
       },
       {
-        "price": 283.06,
+        "price": 287.45,
         "pnl": -15.0
       },
       {
-        "price": 285.1,
+        "price": 289.52,
         "pnl": -15.0
       },
       {
-        "price": 287.13,
+        "price": 291.59,
         "pnl": -15.0
       },
       {
-        "price": 289.17,
+        "price": 293.66,
         "pnl": -15.0
       },
       {
-        "price": 291.21,
+        "price": 295.72,
         "pnl": -15.0
       },
       {
-        "price": 293.24,
+        "price": 297.79,
         "pnl": -15.0
       },
       {
-        "price": 295.28,
+        "price": 299.86,
         "pnl": -15.0
       },
       {
-        "price": 297.31,
+        "price": 301.93,
         "pnl": -15.0
       },
       {
-        "price": 299.35,
+        "price": 304.0,
         "pnl": -15.0
       },
       {
-        "price": 301.39,
+        "price": 306.06,
         "pnl": -15.0
       },
       {
-        "price": 303.42,
+        "price": 308.13,
         "pnl": -15.0
       },
       {
-        "price": 305.46,
+        "price": 310.2,
         "pnl": -15.0
       }
     ],
@@ -277,36 +277,45 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-270CE-B1x-Nov-275CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 53.3,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-235PE-S1x-Nov-240PE-S1x-Nov-270CE-B1x-Nov-275CE"
+      "legs_summary": "S1x-Nov-275CE-B1x-Nov-280CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 53.0,
+      "score": 54.4,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-254.6PE"
+      "legs_summary": "S1x-Nov-258.5PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 48.7,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-240PE-S1x-Nov-245PE-S1x-Nov-275CE-B1x-Nov-280CE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 41.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-260PE-S1x-Nov-250PE"
     }
   ],
   "indicators": {
-    "EMA20": "264.83",
-    "EMA50": "270.04",
-    "EMA100": "276.66",
-    "EMA200": "282.19",
-    "RSI(14)": "34.65",
-    "ATR(14)": "5.16",
-    "ADX(14)": "14.50",
-    "BB(20,2)": "-0.17"
+    "EMA20": "264.23",
+    "EMA50": "269.59",
+    "EMA100": "276.30",
+    "EMA200": "281.95",
+    "RSI(14)": "40.91",
+    "ATR(14)": "5.14",
+    "ADX(14)": "15.64",
+    "BB(20,2)": "0.12"
   },
   "rules": [
     {
@@ -317,7 +326,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -366,14 +382,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -403,10 +412,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Top stocks in focus today: Investors must watch Power Grid, Cupid, SAIL shares on Monday, 28 Sept | Triggers",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPVUR2M1hadGRkYk4zYkR0Nm95c1ZfelNSdm1lN1Jpem5iME9naHF3RTYzUzkya3d6eGs0SnZSM0pYNXlyaEpLWXNCR0RhcTMzT1RzMkxybm1oS3RhWjVnNXQwcTZMT2JRODFxV25nTTB4MGpWLVJoWnRNOHhGRXlCVXZreHVpd1h6Vzg2SFBxd0lwZHlKTVNTUkwtZ0JhSmxNZmdVMzBVMWYzUHI5VkJvNXdKbFprN3FZSG5Xa29SVWNMX0VqM0Jvd3BFVmc0R3k5T2tvc1prMzkyUFBFdU0zczhacjJ4V1J4QXE3aE1jYy1pcGRpT1ZFbDN2c2ZleTdjdnfSAYcCQVVfeXFMTUxPcWFzQXU2RlQwY1NXZ1d4eS1SM2pNLTR1bmZYSm0wUHZzNmQyOFB5T3VrS3dXMHctNE8zRkQzcEVRc2V2cEVWTWZXNXBScU5VcVVzR094NEpZcVg0RGI5VkRSZnVRT0VSZ1hLOWd0MGZNeS1nX21iNHNYWU1XZEszWUlCSnVXU2ItdVhYYXE0eU1QVUhSZml6ZHlZbUxmRjhQRUpjUV9TRjlOS0Q2VVUxM0N6aVBySU9aSTlBTlJlWDBfalVsT3RleC1PY25sYktJUVRGcTFDcEFDT1RGZVRLeEVORGdmRjBybzk1eF9DV2FhNC13MVZwN09USU9pRVh6OFpac00?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
+      "title": "India's \u20b91.86 trillion grid plan: Motilal Oswal puts Power Grid, Adani Energy, Torrent and 3 more stocks in focus",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaDhKcEpVdjlmZDFtMG1tYXpjSHBoWk9aZS0ySE1lWHU3anNNQ2JOTlhVZnhYeDVYc1hzRm1RX1BmbHM3cl9td3ZmVzVoZHJHVm9MM2l6UGQ2bEc4SlQ5cTBTZkJCSmJvRy1XbXI0WWFNQWtSdlRrbnB5Q3Iya1RWa2hoczVYWlVEdlBXRk1CTjU0MWp5eWpvS3hYOEZKTUpZcUFHRXFyd3BVVEtGbTZJM2R5bWhNV1FSbzBqYkl1UWFSOUNKWFVzLU1qMUxxLWJjTG5yRTczc2tfUUR6akoxeTRWb2hWb2E1Q1N2VmgzekZLS3FWMUhCSENGb09XdUlsM2hqTzhSY1RTclpsX092ag?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     },
     {

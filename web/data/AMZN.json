@@ -8,7 +8,7 @@
   "fit_score": 45.0,
   "confidence_grade": "C",
   "confidence_percentage": 45.0,
-  "vix": 15.31,
+  "vix": 16.28,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 230.0,
         "strike_formatted": "230",
         "option_type": "Put",
-        "delta": -0.037,
+        "delta": -0.046,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -35,7 +35,7 @@
         "strike": 235.0,
         "strike_formatted": "235",
         "option_type": "Put",
-        "delta": -0.082,
+        "delta": -0.095,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -47,7 +47,7 @@
         "strike": 265.0,
         "strike_formatted": "265",
         "option_type": "Call",
-        "delta": 0.207,
+        "delta": 0.222,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -59,7 +59,7 @@
         "strike": 270.0,
         "strike_formatted": "270",
         "option_type": "Call",
-        "delta": 0.123,
+        "delta": 0.138,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 46,
@@ -72,7 +72,7 @@
     "margin_required": 10.0,
     "stop_loss_price": 243.97,
     "take_profit_price": 259.07,
-    "net_delta": -0.039,
+    "net_delta": -0.035,
     "net_theta": 0.024,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -306,7 +306,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 86.3,
+      "score": 85.0,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -315,7 +315,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 82.4,
+      "score": 84.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -324,38 +324,38 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 65.9,
+      "score": 66.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 240 Put<br> Sell 1x AMZN 20-Nov-2026 250 Put<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 235 Put<br> Sell 1x AMZN 20-Nov-2026 250 Put<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 59.2,
-      "grade": "C (Moderate)",
+      "score": 60.7,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x AMZN 20-Nov-2026 235 Put<br> Sell 1x AMZN 20-Nov-2026 265 Call<br> Buy 1x AMZN 20-Nov-2026 270 Call"
     },
     {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 51.3,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 245 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
-    },
-    {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 50.0,
+      "score": 51.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x AMZN 20-Nov-2026 235 Put"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 48.1,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 245 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
     }
   ],
   "indicators": {
@@ -449,44 +449,44 @@
   ],
   "news": [
     {
-      "title": "Pay Me While I Wait: 3 Turnaround Stocks That Keep Paying Investors Through the Rebuild",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/pay-while-wait-3-turnaround-161527309.html",
+      "title": "VST Vs CEG: Which Nuclear Power Fleet Stock Is A Better Bet?",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/energy/articles/vst-vs-ceg-nuclear-power-075728216.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Amazon AWS CEO reveals surprising risk to AI stocks and U.S. economy",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/technology/ai/articles/amazon-aws-ceo-reveals-surprising-160300511.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Jim Cramer Says He May Quit Amazon for the Rival That Jumped 24% in a Month",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-may-quit-155825392.html",
+      "title": "QCOM Gains Overnight After Patent Deal With China\u2019s Huawei Covering AI Chip Tech",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/technology/ai/articles/qcom-gains-overnight-patent-deal-074054209.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "AI Is Burning Through More Money Than Any Technology Boom in History \u2014 Now Comes the Hard Part",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/ai-burning-more-money-technology-155319144.html",
+      "title": "FDX Stock Reverses 4 Weeks Of Losses: Ross Gerber Lauds FedEx's Fleet Electrification, Wants Amazon To Follow Suit",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/fdx-stock-reverses-4-weeks-073921834.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Michael Saylor Proves Bitcoin Is Tame With a Chart Where His Own Stock Hits 94%",
+      "publisher": "BeInCrypto",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/michael-saylor-proves-bitcoin-tame-064412496.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Amazon Wants to Move $8 Billion in Nvidia Chips Off Its Books. Is AI\u2019s Financing Model Starting to Change?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/amazon-wants-move-8-billion-153829499.html",
+      "title": "MU, HPE, AMZN, META, SPCX: Why Retail Traders Couldn\u2019t Take Their Eyes Off These Stocks Last Week",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mu-hpe-amzn-meta-spcx-015451718.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Amazon Is Spending Another $1 Billion on AI Data Centers \u2014 But This Time, It\u2019s Not Buying a Single GPU",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/amazon-spending-another-1-billion-151634754.html",
+      "title": "Could Investing $5,000 in SpaceX Help Make You a Millionaire?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/could-investing-5-000-spacex-015000588.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

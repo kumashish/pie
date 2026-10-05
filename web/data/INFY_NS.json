@@ -1,14 +1,14 @@
 {
   "symbol": "INFY.NS",
-  "last_price": 1035.0,
-  "as_of": "2026-10-01 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "last_price": 1018.9,
+  "as_of": "2026-10-05 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.5,
+  "fit_score": 15.0,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 14.46,
+  "confidence_percentage": 15.0,
+  "vix": 14.69,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1100.0,
-        "strike_formatted": "1100",
+        "strike": 1050.0,
+        "strike_formatted": "1050",
         "option_type": "Call",
-        "delta": 0.163,
+        "delta": 0.345,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Sell 1x INFY.NS 24-Nov-2026 1100 Call"
+        "summary": "Sell 1x INFY.NS 24-Nov-2026 1050 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
+        "strike": 1100.0,
+        "strike_formatted": "1100",
         "option_type": "Call",
-        "delta": 0.035,
+        "delta": 0.105,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 50,
-        "summary": "Buy 1x INFY.NS 24-Nov-2026 1150 Call"
+        "summary": "Buy 1x INFY.NS 24-Nov-2026 1100 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1003.95,
-    "take_profit_price": 1066.05,
-    "net_delta": -0.128,
-    "net_theta": 0.112,
+    "stop_loss_price": 988.33,
+    "take_profit_price": 1049.47,
+    "net_delta": -0.24,
+    "net_theta": 0.136,
     "probability_of_profit": 0.0,
-    "var_95": 35.44,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 828.0,
+        "price": 815.12,
         "pnl": -50.0
       },
       {
-        "price": 836.28,
+        "price": 823.27,
         "pnl": -50.0
       },
       {
-        "price": 844.56,
+        "price": 831.42,
         "pnl": -50.0
       },
       {
-        "price": 852.84,
+        "price": 839.57,
         "pnl": -50.0
       },
       {
-        "price": 861.12,
+        "price": 847.72,
         "pnl": -50.0
       },
       {
-        "price": 869.4,
+        "price": 855.88,
         "pnl": -50.0
       },
       {
-        "price": 877.68,
+        "price": 864.03,
         "pnl": -50.0
       },
       {
-        "price": 885.96,
+        "price": 872.18,
         "pnl": -50.0
       },
       {
-        "price": 894.24,
+        "price": 880.33,
         "pnl": -50.0
       },
       {
-        "price": 902.52,
+        "price": 888.48,
         "pnl": -50.0
       },
       {
-        "price": 910.8,
+        "price": 896.63,
         "pnl": -50.0
       },
       {
-        "price": 919.08,
+        "price": 904.78,
         "pnl": -50.0
       },
       {
-        "price": 927.36,
+        "price": 912.93,
         "pnl": -50.0
       },
       {
-        "price": 935.64,
+        "price": 921.09,
         "pnl": -50.0
       },
       {
-        "price": 943.92,
+        "price": 929.24,
         "pnl": -50.0
       },
       {
-        "price": 952.2,
+        "price": 937.39,
         "pnl": -50.0
       },
       {
-        "price": 960.48,
+        "price": 945.54,
         "pnl": -50.0
       },
       {
-        "price": 968.76,
+        "price": 953.69,
         "pnl": -50.0
       },
       {
-        "price": 977.04,
+        "price": 961.84,
         "pnl": -50.0
       },
       {
-        "price": 985.32,
+        "price": 969.99,
         "pnl": -50.0
       },
       {
-        "price": 993.6,
+        "price": 978.14,
         "pnl": -50.0
       },
       {
-        "price": 1001.88,
+        "price": 986.3,
         "pnl": -50.0
       },
       {
-        "price": 1010.16,
+        "price": 994.45,
         "pnl": -50.0
       },
       {
-        "price": 1018.44,
+        "price": 1002.6,
         "pnl": -50.0
       },
       {
-        "price": 1026.72,
+        "price": 1010.75,
         "pnl": -50.0
       },
       {
-        "price": 1035.0,
+        "price": 1018.9,
         "pnl": -50.0
       },
       {
-        "price": 1043.28,
+        "price": 1027.05,
         "pnl": -50.0
       },
       {
-        "price": 1051.56,
+        "price": 1035.2,
         "pnl": -50.0
       },
       {
-        "price": 1059.84,
+        "price": 1043.35,
         "pnl": -50.0
       },
       {
-        "price": 1068.12,
-        "pnl": -50.0
+        "price": 1051.5,
+        "pnl": -51.5
       },
       {
-        "price": 1076.4,
-        "pnl": -50.0
+        "price": 1059.66,
+        "pnl": -59.66
       },
       {
-        "price": 1084.68,
-        "pnl": -50.0
+        "price": 1067.81,
+        "pnl": -67.81
       },
       {
-        "price": 1092.96,
-        "pnl": -50.0
+        "price": 1075.96,
+        "pnl": -75.96
       },
       {
-        "price": 1101.24,
-        "pnl": -51.24
+        "price": 1084.11,
+        "pnl": -84.11
       },
       {
-        "price": 1109.52,
-        "pnl": -59.52
+        "price": 1092.26,
+        "pnl": -92.26
       },
       {
-        "price": 1117.8,
-        "pnl": -67.8
-      },
-      {
-        "price": 1126.08,
-        "pnl": -76.08
-      },
-      {
-        "price": 1134.36,
-        "pnl": -84.36
-      },
-      {
-        "price": 1142.64,
-        "pnl": -92.64
-      },
-      {
-        "price": 1150.92,
+        "price": 1100.41,
         "pnl": -100.0
       },
       {
-        "price": 1159.2,
+        "price": 1108.56,
         "pnl": -100.0
       },
       {
-        "price": 1167.48,
+        "price": 1116.71,
         "pnl": -100.0
       },
       {
-        "price": 1175.76,
+        "price": 1124.87,
         "pnl": -100.0
       },
       {
-        "price": 1184.04,
+        "price": 1133.02,
         "pnl": -100.0
       },
       {
-        "price": 1192.32,
+        "price": 1141.17,
         "pnl": -100.0
       },
       {
-        "price": 1200.6,
+        "price": 1149.32,
         "pnl": -100.0
       },
       {
-        "price": 1208.88,
+        "price": 1157.47,
         "pnl": -100.0
       },
       {
-        "price": 1217.16,
+        "price": 1165.62,
         "pnl": -100.0
       },
       {
-        "price": 1225.44,
+        "price": 1173.77,
         "pnl": -100.0
       },
       {
-        "price": 1233.72,
+        "price": 1181.92,
         "pnl": -100.0
       },
       {
-        "price": 1242.0,
+        "price": 1190.08,
+        "pnl": -100.0
+      },
+      {
+        "price": 1198.23,
+        "pnl": -100.0
+      },
+      {
+        "price": 1206.38,
+        "pnl": -100.0
+      },
+      {
+        "price": 1214.53,
+        "pnl": -100.0
+      },
+      {
+        "price": 1222.68,
         "pnl": -100.0
       }
     ],
@@ -277,36 +277,36 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1100CE-B1x-Nov-1150CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 63.2,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-950PE-S1x-Nov-1000PE-S1x-Nov-1100CE-B1x-Nov-1150CE"
+      "legs_summary": "S1x-Nov-1050CE-B1x-Nov-1100CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 50.3,
+      "score": 54.4,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1035PE"
+      "legs_summary": "S1x-Nov-1018.9PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 48.3,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-900PE-S1x-Nov-950PE-S1x-Nov-1050CE-B1x-Nov-1100CE"
     }
   ],
   "indicators": {
-    "EMA20": "1043.69",
-    "EMA50": "1079.68",
-    "EMA100": "1125.60",
-    "EMA200": "1223.73",
-    "RSI(14)": "44.86",
-    "ATR(14)": "27.14",
-    "ADX(14)": "22.98",
-    "BB(20,2)": "0.45"
+    "EMA20": "1041.33",
+    "EMA50": "1077.29",
+    "EMA100": "1123.48",
+    "EMA200": "1221.69",
+    "RSI(14)": "41.48",
+    "ATR(14)": "28.22",
+    "ADX(14)": "21.88",
+    "BB(20,2)": "0.33"
   },
   "rules": [
     {
@@ -325,13 +325,6 @@
     },
     {
       "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -380,6 +373,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -389,6 +389,13 @@
   ],
   "news": [
     {
+      "title": "Top 5 IT stocks to buy today: TCS, Infosys, Mphasis, Coforge, Persistent Systems | Experts' view; Nifty FPI 150 heatmap",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPLW4yMFdvQS1tQ2VUcE9abUxlY3BXRUc4TThyQXpFTFloRmxhOExwM1NaeXNHZmpzTGxyMUU2TFBoekNtWkZPc0Rvb2p1RG1oaVVVQ1VTU1ZzSUdSQlhncE5kZ1ljZm83cmVhNEtJdXk2UGtJRzdzaVYxTmhfMUpTRU1vSE0yS3VlU3Y3aFczdXA4bE5vZnlQTXBfc1pmVkF3X1ZoX3RMZGh5ZXZTaldZUE9XNDVma3kzRV9nWFJUcDBIZmo2YXBFWjh3cG8wUzVKSXN2RUJfVklYWUs1WTRXUlR6T01XRVdXaFptNnFON2xtUGN5YXlxdFgzSkRGQ1phUV9MQUxzdlDSAY4CQVVfeXFMTmhtUnh0TlJ1dlFLQ3g1WGFXdUZHbG0tSDdLSHBYcEQzeTljOGI5ckw2amhiMU9ObXc2V3d5TWhoU3dOamN6X2tVY0tyamt3S05oemxpWGo0ZG11S0JnOGhvYmhJWHB2ZU1NdWgycTNHbGVqU19MVEJRMjk5amVMVkExS2JCUk1oQzNJYVAzYk1tSTVJNXB1eVVoX2Q3WnlmbW5GbWxCaEdiZWdrazA0QmF5Mk5kNFlLR2lsdmtxOGVZcEFBX3FRbFJ2M0MzcGJVWllKTTVWcEtmM2tjbTcyYVpJNmF0N0psNURlQl9EOUctMm9jT2t0S0NkVXJfREp3ek5tOUN1X3hweS1hY2ZR?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
       "title": "TCS, Infosys, Wipro shares ahead of Q2 results: Explained | What Accenture's strong earnings mean for Indian IT stocks",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPQ1NnVU5Mb1F1NlQ5d3FVSi1xMTJnMFJlYVNiVDlCRXlDRzRvQkJZZ3MybzhRdU56VWJpVjllUTNESTBFUngwRVlzY1VROUxuV1NDS2czbnpLcFFDLWhvelNmRmVVWTRJbUxfN19Zbll4SGxoR29oUkEtV01fM3ZIMWZyR2hKbWVnSXk4bzRPQTE2THBxRTNhTmkyNkVrckg5ajZsanBjd3dUVGp0bjA5OXNSbEcwWC1FcWlhSWtXMEliWjc2VFZWdUhCTWdObUthQVNpT2hCQVRWZVRSeGVJbUdOdU5aM1p6cFdTS3JRNllNSnp6ejExZGxlV3hXeUhWRm5IY1lpYXQzR2JyRGNv0gGUAkFVX3lxTFBFcjQzVzdKWVdkVFpHb2RrejFxOWJta3VJZ1laVDVRWmtKZFptMEhuaEJNYnZRM2ZZMzhlSFVuaThpZEJIME5hamxXNThWWEpVbkR1LXVuYUxpUE10R2ppVi04aXdzUjV5RWRjOFdneFdWenpUVFJfcjRqRFFCLTF5WDhnYUxyRnVDWnFROVh5emtPMXZ5TUNFU2hMTEpaZ1FINktNWmt5alhsTVdLaXViT0JvZUhVZ2xkSmNPSkY5NERaVmRheE5RWDZDM0xUbFl0XzAwMlEyeXpXYTNvSFpkdkZPOU52MEdjTUFBTGwxWGNETWljcXNmaFluNG5qbDFNbUgta2hrMzhGVlJZcEZvd1NnYw?oc=5",
@@ -396,11 +403,18 @@
       "sentiment": "neutral"
     },
     {
-      "title": "IT shares buck trend amid market crash; Mphasis, Coforge, Infosys rise up to 5%",
+      "title": "Trade Spotlight: How should you trade Capillary Technologies, Cyient, JSW Infrastructure, Infosys,...",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWmhQMXhKSFFZeWVvMUZGbllES2RlX1N0a2dPdnRnM2h0WUdhcHpkOUt2TVl4QlhuRFA1WmdqRnNOakJhejZQaWV5NE1fY3cxeXRQZUpfbjFmU056aGlNVGY3M25IMDFkc2h5akt5SFlXbGhHdW9OdFBMMnlocXFHbDhXSjJxUHlyLS1OeHFxb1NjYmtNZGtrbDhOZVJXYktDaXZOUGFoQVViT09XaEpkQTdJdW5WOE00RFI2YVBzTDBoMlpTNlVLaVU5LXFpT3FwZFQ5SXV6a9IB3AFBVV95cUxOSUl4QUZYbjVEcTRCYXFrZGVBa1VaNEpyTmkzbGU4TGdIeDRLQWpvZnAyZ2xLRnB3c0JUX3lrT0hqMHM4SXlZUHZxOTFjWm1lVEp6UHh4SmVYVDNWVC1TTHNURVNUdldBNm1Gb2JzaHpkZGpOTHc4aGEzMXhLaVp4cU1Ea3RsVU1USGJOV29NSm5WZ3RpS0h0ZVpGNmMyX3FRanRRMTl2US0tS1hQMkJMd1pkeEMybUVuS1JjTEpEX1Zzb1BSTHB5SHM2dk84LWpoODRpelNHZ0VBck4t?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bullish"
+      "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNTGlXZ0VJa3NFR0ZrVnpjSHRaVHoyMGRoQ2Z3TGlIdE84eV9QQlJiWTcwNnZ4YmExX3pnZWdoYnJZcG1HTVYyTHoya2c2QUdBLVBwaXZ0ejZ2cGYzRlA4aWJLeGpPcHVnWDlPakJfUUg5QzFCZVh0bWltU3c5aFVFNEVXMkVZeU5WYjk5WnhnZmoyNUNwSGhMeHlVazFnallQMUphRTRKVUcyTS1xbm1HSUJqZ2hGVnU1Q05QUkVyS3BnSGVuYWNnbmNyQjBULV9BVXdqY1hDM1pfX3piWHoyYllsMW1LdExDaTFab2hyalRVWWYyMExpRmowLUh3U3pWOHc0Z1R5SU9xSi1hMmVfUklzZ1p4MVVpdURhWDF5U2FQR25zdjRCS9IBrgJBVV95cUxPaXlCalhlLVJRZ0pfUy1PeHJkcncwdkFUdzVRTHdhSHg4N2ZtTVk4d2NDYXdLUEZ2Qi0wdWdLcG5YcHo2SFI0SndnVExxQy1Jb1dTaWJuTnJ4R2VJUS1STzktWmt3MjdVcHpTMzV2X1IzNHVkc0wxel9oMTc3aTB2c1hCQTBoV0RpX3VQUjVlbGd6VUstQnhBeFJEWVV3SkRtUWZBZHV2eTBNNF9VTGdGVXBrVFNDeHRSTmhIdFAtSFpoM0x6djE1U2taSzVpVXZMY1hhMmVrUEUzRXV6MHRxTWVsTzdnSGx2Umk3ZmtwcGg5bTJJVE5oNDVnNUtyT0VJVWl4VXRJM1YzT2ljc2FOYmI3bDJWRnJpSllEaGJmYmwxN2p2OTh0ZEZMQng1UQ?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top stocks to watch and why today: Ola, HDFC Bank, Nykaa, Infosys shares in focus on Monday, 5 Oct | Full list",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQUnVjaTZTc21QN3lSUk5YY3c5NGdPMGhYTnEtUGhCN3NFaFhuMkpBcXlNU0JFaERKVXh5MWtEbkFvQVB6U09GSEZUZEtpbi1WMHdZbjV6UEtaU2wwd0E0UzVCOUdKVl9qYUZxdFZKczVMMzdxRm5sTDVLWDE1SllHRGJYR2tSdFJiOHVyNXBBWmNLTG1PbzFhV29rNEtkUmRLRG11aEY1RENPdVByVDgtTUFqWEhneEJxbHVXMVZ2UnNoQlVLU2FjSzJYdWpVektKcFgwRG5ycHlNM0JhYXVlQzRuTi1IQ0ZtSzVPV0ZvSTd2ZEdBdlB0VlFSTjMzYW8weVRN0gGIAkFVX3lxTE9IWnNXenh4ME9xVXlTUXF4cElGODJ3dDg0V21MZzdmN2lPaW9UbTh6SWZWRHNxc0tiSG9rWHpKTkpxMHpmM1BfS2N5UGRjYzdFdXJnQlhETGQ0X2JDbmpMT25lWDJKRTIyRUdqdXRONWhrZnlGUGdtQWFacUgzRjg2dmFvT1doYjU2c0JBZE5XNkRkRWdfRklnZzJKVHUwbWctTFRsM0VlRnJ2c2VmWENhNTJlV0EyT0t5ZXBUR1h0YlNqVlRkZll5bUF6cTdxYkRFMW1kczI0dEJJNnBURWkyU0x4dy1jYUxMTzRoLUdxMktpN0dJYnpMVHZhNVhXaG1wUm9ZYTJ2MA?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
     },
     {
       "title": "Infosys shares hit 6-year low intraday; here's how you should trade",
@@ -410,25 +424,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "IT Q2 results 2026 date and time: TCS, Infosys, HCL Tech FY 2027 earnings announcement schedule",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPc1pjUlBJZXlVclpqWjhyaVgwVjZXWFU4UEZOWEtOb3JBNU1YM0J0Z1FDc2U2NTZmSGJKTTB5YlJEMU5xdjMzX3JGcDRRbWVDd0s5MmFUX0ZmR1IzeGRqSjVQT0tETzVfak1Uemh1RDk1R0hBdFpYMHBPdnYzTWRsNGMtblh2SVI1emxfMGx1LU1Edmc2VVBPQzJDd2tiYXg4MzJqV2xNS0ZWZzZpcFFOZi1SQVZuQWtqbFJnUnluRmw1Vjk2dzlJcTQ0THJCQnlielZMZGRnSUdxWFBJMWtsSDc4bjRvdHRvM2NjYVB4Q0N3NFpf0gH6AUFVX3lxTFBpOFI2M1lKNjBLUG9kZEJGNHU1WnozRmpTRThnMTdoT2VJdG81RjYyTjZXQnNUcTRieUgzY18tSWNtWnRUT0M3TUtNM0JOU1ZCdXNlamdyUGp0YUJKMXcxb1JYSXNjX1NlY3dFMy0wdlNOUk9hNkxBR3dSUGQ4WmtpeDhkTkhRM01ianZxX2owSDhQT192LUVwai0xcEt2UmxsRFdQNVl5NDJqUTdKcDQ4UUpIWkphSU5WQzNSLXdOdURtaG1XX21SNE1aRTV4eGk0QTdIZ24xOTItZm1JREM4Wnh2cGs0SE40N2dlRXJqRXBuWEN2RDNUQ0E?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Infosys' nearly 1 lakh employees to move into specialist roles as AI reshapes tech industry",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTFI0dVNQZDY2bWp0Y2dhajBIcVpkU3VQQzltWlNQanBXdjR6N3RGX2E0WEpSWG4tYmd2QTBRWDc3QTZTcXlNc1ZJLTBzTVR3cnAyZTUzMHlQSFVtbTMtYkdHVGpuUmNUM3h3Q3otVVl3c1prb0xfOWJEQ3ZMcFI4N191Zkc2cDhIaGM2empLM21IU3ctS19iZFhSY2EzNEtkT0ZVY29pb29SS1hPdjcyOHo3Y3hFV2VNd09MU044cHhRNHdQemdkMUhyRC1tTEZ5SzZab28ySlJiQWo3d1E3UFNlV0_SAeoBQVVfeXFMTnhCcDVaSzdvSEViX3owUmdhZmtGbzg0RDhTSXVXZjBUU21Cbnl3TGhJVDFDSmxxcXpEeGpRM1FmQkVHSGlXekN3T0NXM20zY1hscnZtSUEwRmdsR3QyYW5nT3MwbHdmMW1pRzB1M2F2akloVUVLQVZsejFIZ1lnN1lpS2NIN21OS1NKM0Y0Zm9laVNUVDI5djkzYS1JR3Q1LUdBRlAySGluV1Qtd0FWY3RNeXlPTHZ3WTRHRUszUEd6amY3Ujlqb05Ld19OemtUQ0JaODc0ZGxnU2U5Rkk5UC1BdlkwLWhGc2dB?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "10 Nifty 50 stocks, including Infosys and TCS, posted double-digit losses in September as market sell-off deepens",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOZ2pRUlZFVk1hekJBMXdMQ3JCUGFTdDBjWnJoLVVxUWhuT2pTVDBJVjZrUkNSQ3RCcm1TdDFNcnBHYnVfUnZRQ04wWUlfY0o2VEZ2RXFHNkRiQlFuMG0xYmlXSGhOZkhzVGoxZFQ1YjZTMHluWThSMWRPQnEzY20wS3pGQVV4eGRuZUZBQm1SRGhPLWtLWVBtbXJTLW5iVUlLc3ZCOUZ0RFFUTlJKTk1TRWU2b3lwdm9KTVdtYUpjM0U4YktpN21QajlMSlBkV29zQnF5eE1JVDAya0VPeGVxNXBTMlhSVzhoTVZwWmh1NGZSTXBldGJaekxUWlBBcXZ2UjV1YmVSY1F3Z1NHMHfSAZMCQVVfeXFMUENnQ0pmeC1zOHlsZmtlV0FTZzNodFhnTWVaVmxkQVcxTDVsQ2lQQkFHWmExV1A4VnJxdnRCWUQwMTFLbWJLMExGTjJNbVJoS05wSk9oU1BfbzVjTVdPX2ZEMUhuYjA1ZktQX0JPLWJLa0RlOVFVYXV2RW1LTzUwMkRhUlRiajBXNWZxdUNwSS1zREIwZllzYWIwMGYtWTRnSERySGxhQnd2Z200eVkzamZMU3FHdUcyYjhsYndBeFVuNzZOekE3X2xjVmFRMkYtYl92MlpqN1Z0T2dDdkRpRXJib3NJM1p2SFVocVZrN25JMDVJekJGSkhlNE1MbVVnTU1tN2FXTGJaTWNIM1NYd05fUFE?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "bearish"
+      "title": "IT shares buck trend amid market crash; Mphasis, Coforge, Infosys rise up to 5%",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWmhQMXhKSFFZeWVvMUZGbllES2RlX1N0a2dPdnRnM2h0WUdhcHpkOUt2TVl4QlhuRFA1WmdqRnNOakJhejZQaWV5NE1fY3cxeXRQZUpfbjFmU056aGlNVGY3M25IMDFkc2h5akt5SFlXbGhHdW9OdFBMMnlocXFHbDhXSjJxUHlyLS1OeHFxb1NjYmtNZGtrbDhOZVJXYktDaXZOUGFoQVViT09XaEpkQTdJdW5WOE00RFI2YVBzTDBoMlpTNlVLaVU5LXFpT3FwZFQ5SXV6a9IB3AFBVV95cUxOSUl4QUZYbjVEcTRCYXFrZGVBa1VaNEpyTmkzbGU4TGdIeDRLQWpvZnAyZ2xLRnB3c0JUX3lrT0hqMHM4SXlZUHZxOTFjWm1lVEp6UHh4SmVYVDNWVC1TTHNURVNUdldBNm1Gb2JzaHpkZGpOTHc4aGEzMXhLaVp4cU1Ea3RsVU1USGJOV29NSm5WZ3RpS0h0ZVpGNmMyX3FRanRRMTl2US0tS1hQMkJMd1pkeEMybUVuS1JjTEpEX1Zzb1BSTHB5SHM2dk84LWpoODRpelNHZ0VBck4t?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "bullish"
     }
   ]
 }
