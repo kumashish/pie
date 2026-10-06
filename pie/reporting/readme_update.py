@@ -178,6 +178,10 @@ def get_trade_profile(stype: str) -> str:
         return "Debit | 60-180 DTE | 60 Delta"
     if clean in {"poor mans covered call", "poor_mans_covered_call"}:
         return "Diagonal | Long 60-90 / Short 20-30 DTE"
+    if clean in {"wheel"}:
+        return "Credit | 30-45 DTE | 15-20 Delta Put"
+    if clean in {"ratio put spread", "ratio_put_spread"}:
+        return "Credit | 30-45 DTE | 1x2 Ratio Put"
     if clean in {"leaps"}:
         return "Debit | 1-2 Yrs | 80 Delta"
     return "Advisory | 30-45 DTE"

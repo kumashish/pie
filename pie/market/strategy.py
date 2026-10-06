@@ -36,6 +36,8 @@ class StrategyType(StrEnum):
     CASH_SWING_LONG = "cash_swing_long"
     CASH_SWING_SHORT = "cash_swing_short"
     TRADECRAFT_PUT = "tradecraft_put"
+    WHEEL = "wheel"
+    RATIO_PUT_SPREAD = "ratio_put_spread"
 
 
 class StrategyRecommendation(DomainModel):
@@ -256,6 +258,20 @@ def score_all_strategies(
     raw_scores[StrategyType.IRON_BUTTERFLY] = (
         (ib_score / 1.20) * range_confidence_mult,
         "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+    )
+
+    # 10. The Wheel Strategy: Bullish / Neutral Cash-Secured Put Income Loop
+    wheel_score = (bullishness * 0.55) + (iv_premium * 0.35) + support_bonus + weekly_bull_bonus + credit_preference_bonus + backtest_edge_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen
+    raw_scores[StrategyType.WHEEL] = (
+        (wheel_score / 1.15) * confidence_mult,
+        "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+    )
+
+    # 11. Ratio Put Spread (1x2 Net Credit): Bullish Consolidation / Moderate Dip Payout Zone
+    ratio_score = (bullishness * 0.50) + (iv_premium * 0.30) + adx_boost + support_bonus + weekly_bull_bonus + p_shape_bonus + credit_preference_bonus + credit_structure_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen
+    raw_scores[StrategyType.RATIO_PUT_SPREAD] = (
+        (ratio_score / 1.15) * confidence_mult,
+        "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
     )
 
     # 10. Broken Wing Butterfly: Slight Skew & Low IV

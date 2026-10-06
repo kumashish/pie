@@ -289,6 +289,15 @@
       "legs_summary": "S1x-Nov-9000PE-S1x-Nov-10000CE-B1x-Nov-10200CE"
     },
     {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 84.6,
+      "grade": "A (Optimal)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "B1x-Nov-9600PE-S1x-Nov-9000PE-S1x-Nov-9000PE"
+    },
+    {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
       "score": 80.6,
@@ -296,6 +305,15 @@
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "B1x-Nov-9600CE-S1x-Nov-10000CE"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 76.1,
+      "grade": "B (Good)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "S1x-Nov-9000PE"
     },
     {
       "strategy_type": "poor_mans_covered_call",

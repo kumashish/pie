@@ -1,6 +1,6 @@
 {
   "symbol": "MSFT",
-  "last_price": 529.93,
+  "last_price": 531.57,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,12 +8,12 @@
   "fit_score": 70.0,
   "confidence_grade": "B",
   "confidence_percentage": 70.0,
-  "vix": 15.37,
+  "vix": 15.42,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (68.2) is overbought (> 65) [Synthetic PCR: 0.60]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (68.8) is overbought (> 65) [Synthetic PCR: 0.58]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 500.0,
         "strike_formatted": "500",
         "option_type": "Put",
-        "delta": -0.112,
+        "delta": -0.102,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 490.0,
         "strike_formatted": "490",
         "option_type": "Put",
-        "delta": -0.056,
+        "delta": -0.05,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 514.03,
-    "take_profit_price": 545.83,
-    "net_delta": 0.056,
+    "stop_loss_price": 515.62,
+    "take_profit_price": 547.52,
+    "net_delta": 0.052,
     "net_theta": 0.02,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 423.94,
+        "price": 425.26,
         "pnl": -30.0
       },
       {
-        "price": 428.18,
+        "price": 429.51,
         "pnl": -30.0
       },
       {
-        "price": 432.42,
+        "price": 433.76,
         "pnl": -30.0
       },
       {
-        "price": 436.66,
+        "price": 438.02,
         "pnl": -30.0
       },
       {
-        "price": 440.9,
+        "price": 442.27,
         "pnl": -30.0
       },
       {
-        "price": 445.14,
+        "price": 446.52,
         "pnl": -30.0
       },
       {
-        "price": 449.38,
+        "price": 450.77,
         "pnl": -30.0
       },
       {
-        "price": 453.62,
+        "price": 455.03,
         "pnl": -30.0
       },
       {
-        "price": 457.86,
+        "price": 459.28,
         "pnl": -30.0
       },
       {
-        "price": 462.1,
+        "price": 463.53,
         "pnl": -30.0
       },
       {
-        "price": 466.34,
+        "price": 467.78,
         "pnl": -30.0
       },
       {
-        "price": 470.58,
+        "price": 472.04,
         "pnl": -30.0
       },
       {
-        "price": 474.82,
+        "price": 476.29,
         "pnl": -30.0
       },
       {
-        "price": 479.06,
+        "price": 480.54,
         "pnl": -30.0
       },
       {
-        "price": 483.3,
+        "price": 484.79,
         "pnl": -30.0
       },
       {
-        "price": 487.54,
+        "price": 489.05,
         "pnl": -30.0
       },
       {
-        "price": 491.78,
-        "pnl": -28.22
+        "price": 493.3,
+        "pnl": -26.7
       },
       {
-        "price": 496.01,
-        "pnl": -23.99
+        "price": 497.55,
+        "pnl": -22.45
       },
       {
-        "price": 500.25,
+        "price": 501.8,
         "pnl": -20.0
       },
       {
-        "price": 504.49,
+        "price": 506.06,
         "pnl": -20.0
       },
       {
-        "price": 508.73,
+        "price": 510.31,
         "pnl": -20.0
       },
       {
-        "price": 512.97,
+        "price": 514.56,
         "pnl": -20.0
       },
       {
-        "price": 517.21,
+        "price": 518.81,
         "pnl": -20.0
       },
       {
-        "price": 521.45,
+        "price": 523.07,
         "pnl": -20.0
       },
       {
-        "price": 525.69,
+        "price": 527.32,
         "pnl": -20.0
       },
       {
-        "price": 529.93,
+        "price": 531.57,
         "pnl": -20.0
       },
       {
-        "price": 534.17,
+        "price": 535.82,
         "pnl": -20.0
       },
       {
-        "price": 538.41,
+        "price": 540.08,
         "pnl": -20.0
       },
       {
-        "price": 542.65,
+        "price": 544.33,
         "pnl": -20.0
       },
       {
-        "price": 546.89,
+        "price": 548.58,
         "pnl": -20.0
       },
       {
-        "price": 551.13,
+        "price": 552.83,
         "pnl": -20.0
       },
       {
-        "price": 555.37,
+        "price": 557.09,
         "pnl": -20.0
       },
       {
-        "price": 559.61,
+        "price": 561.34,
         "pnl": -20.0
       },
       {
-        "price": 563.85,
+        "price": 565.59,
         "pnl": -20.0
       },
       {
-        "price": 568.08,
+        "price": 569.85,
         "pnl": -20.0
       },
       {
-        "price": 572.32,
+        "price": 574.1,
         "pnl": -20.0
       },
       {
-        "price": 576.56,
+        "price": 578.35,
         "pnl": -20.0
       },
       {
-        "price": 580.8,
+        "price": 582.6,
         "pnl": -20.0
       },
       {
-        "price": 585.04,
+        "price": 586.86,
         "pnl": -20.0
       },
       {
-        "price": 589.28,
+        "price": 591.11,
         "pnl": -20.0
       },
       {
-        "price": 593.52,
+        "price": 595.36,
         "pnl": -20.0
       },
       {
-        "price": 597.76,
+        "price": 599.61,
         "pnl": -20.0
       },
       {
-        "price": 602.0,
+        "price": 603.87,
         "pnl": -20.0
       },
       {
-        "price": 606.24,
+        "price": 608.12,
         "pnl": -20.0
       },
       {
-        "price": 610.48,
+        "price": 612.37,
         "pnl": -20.0
       },
       {
-        "price": 614.72,
+        "price": 616.62,
         "pnl": -20.0
       },
       {
-        "price": 618.96,
+        "price": 620.88,
         "pnl": -20.0
       },
       {
-        "price": 623.2,
+        "price": 625.13,
         "pnl": -20.0
       },
       {
-        "price": 627.44,
+        "price": 629.38,
         "pnl": -20.0
       },
       {
-        "price": 631.68,
+        "price": 633.63,
         "pnl": -20.0
       },
       {
-        "price": 635.92,
+        "price": 637.89,
         "pnl": -20.0
       }
     ],
@@ -289,6 +289,15 @@
       "legs_summary": "Sell 1x MSFT 20-Nov-2026 500 Put<br> Sell 1x MSFT 20-Nov-2026 560 Call<br> Buy 1x MSFT 20-Nov-2026 570 Call"
     },
     {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 75.9,
+      "grade": "B (Good)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 530 Put<br> Sell 1x MSFT 20-Nov-2026 500 Put<br> Sell 1x MSFT 20-Nov-2026 500 Put"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
       "score": 71.2,
@@ -298,9 +307,18 @@
       "legs_summary": "Buy 1x MSFT 20-Nov-2026 490 Put<br> Sell 1x MSFT 20-Nov-2026 500 Put<br> Sell 1x MSFT 20-Nov-2026 560 Call<br> Buy 1x MSFT 20-Nov-2026 570 Call"
     },
     {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 66.5,
+      "grade": "B (Good)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x MSFT 20-Nov-2026 500 Put"
+    },
+    {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 62.1,
+      "score": 62.0,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -309,11 +327,11 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 57.8,
+      "score": 57.7,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 500 Call<br> Sell 1x MSFT 20-Nov-2026 545 Call"
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 505 Call<br> Sell 1x MSFT 20-Nov-2026 545 Call"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -322,7 +340,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 529.9 Call"
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 531.6 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -344,15 +362,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "507.77",
-    "EMA50": "486.75",
-    "EMA100": "463.48",
-    "EMA200": "451.14",
-    "RSI(14)": "68.19",
+    "EMA20": "507.93",
+    "EMA50": "486.81",
+    "EMA100": "463.51",
+    "EMA200": "451.16",
+    "RSI(14)": "68.83",
     "ATR(14)": "11.46",
     "ADX(14)": "39.08",
-    "BB(20,2)": "1.05",
-    "P_SHAPE(20)": "35.18"
+    "BB(20,2)": "1.08",
+    "P_SHAPE(20)": "35.25"
   },
   "rules": [
     {
@@ -435,6 +453,13 @@
   ],
   "news": [
     {
+      "title": "S&P 500 hovers near record highs as Treasury yields ease: AlphaCheck",
+      "publisher": "Yahoo Finance",
+      "link": "https://finance.yahoo.com/markets/article/sp-500-hovers-near-record-highs-as-treasury-yields-ease-alphacheck-134008813.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "S&P 500 set to open near record highs as Treasury yields cool, oil slips",
       "publisher": "Reuters",
       "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-yields-102708822.html",
@@ -466,13 +491,6 @@
       "title": "SkyeConnex Appoints Former Microsoft CVP Brad Anderson to Its Board of Directors",
       "publisher": "CNW Group",
       "link": "https://finance.yahoo.com/technology/articles/skyeconnex-appoints-former-microsoft-cvp-130000693.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tenable Appoints Industry Veteran Charlie Bell to Board of Directors",
-      "publisher": "GlobeNewswire",
-      "link": "https://finance.yahoo.com/technology/ai/articles/tenable-appoints-industry-veteran-charlie-130000951.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

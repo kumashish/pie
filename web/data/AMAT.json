@@ -1,19 +1,19 @@
 {
   "symbol": "AMAT",
-  "last_price": 537.41,
+  "last_price": 532.8,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 6.8,
-  "fit_score": 67.5,
+  "trend_score": 6.5,
+  "fit_score": 65.0,
   "confidence_grade": "B",
-  "confidence_percentage": 67.5,
-  "vix": 15.38,
+  "confidence_percentage": 65.0,
+  "vix": 15.37,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (67.3) is overbought (> 65) [Synthetic PCR: 0.68]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (65.2) is overbought (> 65) [Synthetic PCR: 0.71]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 505.0,
         "strike_formatted": "505",
         "option_type": "Put",
-        "delta": -0.098,
+        "delta": -0.128,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 485.0,
         "strike_formatted": "485",
         "option_type": "Put",
-        "delta": -0.021,
+        "delta": -0.03,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,224 +46,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 521.28,
-    "take_profit_price": 553.53,
-    "net_delta": 0.077,
-    "net_theta": 0.034,
+    "stop_loss_price": 516.82,
+    "take_profit_price": 548.79,
+    "net_delta": 0.098,
+    "net_theta": 0.038,
     "probability_of_profit": 0.0,
-    "var_95": 11.42,
+    "var_95": 15.61,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 429.93,
+        "price": 426.24,
         "pnl": -40.0
       },
       {
-        "price": 434.22,
+        "price": 430.51,
         "pnl": -40.0
       },
       {
-        "price": 438.52,
+        "price": 434.77,
         "pnl": -40.0
       },
       {
-        "price": 442.82,
+        "price": 439.03,
         "pnl": -40.0
       },
       {
-        "price": 447.12,
+        "price": 443.29,
         "pnl": -40.0
       },
       {
-        "price": 451.42,
+        "price": 447.56,
         "pnl": -40.0
       },
       {
-        "price": 455.72,
+        "price": 451.82,
         "pnl": -40.0
       },
       {
-        "price": 460.02,
+        "price": 456.08,
         "pnl": -40.0
       },
       {
-        "price": 464.32,
+        "price": 460.34,
         "pnl": -40.0
       },
       {
-        "price": 468.62,
+        "price": 464.61,
         "pnl": -40.0
       },
       {
-        "price": 472.92,
+        "price": 468.87,
         "pnl": -40.0
       },
       {
-        "price": 477.22,
+        "price": 473.13,
         "pnl": -40.0
       },
       {
-        "price": 481.52,
+        "price": 477.39,
         "pnl": -40.0
       },
       {
-        "price": 485.82,
-        "pnl": -39.18
+        "price": 481.66,
+        "pnl": -40.0
       },
       {
-        "price": 490.12,
-        "pnl": -34.88
+        "price": 485.92,
+        "pnl": -39.08
       },
       {
-        "price": 494.41,
-        "pnl": -30.59
+        "price": 490.18,
+        "pnl": -34.82
+      },
+      {
+        "price": 494.44,
+        "pnl": -30.56
       },
       {
         "price": 498.71,
         "pnl": -26.29
       },
       {
-        "price": 503.01,
-        "pnl": -21.99
+        "price": 502.97,
+        "pnl": -22.03
       },
       {
-        "price": 507.31,
+        "price": 507.23,
         "pnl": -20.0
       },
       {
-        "price": 511.61,
+        "price": 511.49,
         "pnl": -20.0
       },
       {
-        "price": 515.91,
+        "price": 515.76,
         "pnl": -20.0
       },
       {
-        "price": 520.21,
+        "price": 520.02,
         "pnl": -20.0
       },
       {
-        "price": 524.51,
+        "price": 524.28,
         "pnl": -20.0
       },
       {
-        "price": 528.81,
+        "price": 528.54,
         "pnl": -20.0
       },
       {
-        "price": 533.11,
+        "price": 532.8,
         "pnl": -20.0
       },
       {
-        "price": 537.41,
+        "price": 537.07,
         "pnl": -20.0
       },
       {
-        "price": 541.71,
+        "price": 541.33,
         "pnl": -20.0
       },
       {
-        "price": 546.01,
+        "price": 545.59,
         "pnl": -20.0
       },
       {
-        "price": 550.3,
+        "price": 549.85,
         "pnl": -20.0
       },
       {
-        "price": 554.6,
+        "price": 554.12,
         "pnl": -20.0
       },
       {
-        "price": 558.9,
+        "price": 558.38,
         "pnl": -20.0
       },
       {
-        "price": 563.2,
+        "price": 562.64,
         "pnl": -20.0
       },
       {
-        "price": 567.5,
+        "price": 566.9,
         "pnl": -20.0
       },
       {
-        "price": 571.8,
+        "price": 571.17,
         "pnl": -20.0
       },
       {
-        "price": 576.1,
+        "price": 575.43,
         "pnl": -20.0
       },
       {
-        "price": 580.4,
+        "price": 579.69,
         "pnl": -20.0
       },
       {
-        "price": 584.7,
+        "price": 583.95,
         "pnl": -20.0
       },
       {
-        "price": 589.0,
+        "price": 588.22,
         "pnl": -20.0
       },
       {
-        "price": 593.3,
+        "price": 592.48,
         "pnl": -20.0
       },
       {
-        "price": 597.6,
+        "price": 596.74,
         "pnl": -20.0
       },
       {
-        "price": 601.9,
+        "price": 601.0,
         "pnl": -20.0
       },
       {
-        "price": 606.19,
+        "price": 605.27,
         "pnl": -20.0
       },
       {
-        "price": 610.49,
+        "price": 609.53,
         "pnl": -20.0
       },
       {
-        "price": 614.79,
+        "price": 613.79,
         "pnl": -20.0
       },
       {
-        "price": 619.09,
+        "price": 618.05,
         "pnl": -20.0
       },
       {
-        "price": 623.39,
+        "price": 622.32,
         "pnl": -20.0
       },
       {
-        "price": 627.69,
+        "price": 626.58,
         "pnl": -20.0
       },
       {
-        "price": 631.99,
+        "price": 630.84,
         "pnl": -20.0
       },
       {
-        "price": 636.29,
+        "price": 635.1,
         "pnl": -20.0
       },
       {
-        "price": 640.59,
-        "pnl": -20.0
-      },
-      {
-        "price": 644.89,
+        "price": 639.37,
         "pnl": -20.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.836,
+      "win_probability": 0.829,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3524,
+      "half_kelly_fraction": 0.3461,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,7 +273,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 96.0,
+      "score": 94.1,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -282,7 +282,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 82.3,
+      "score": 86.8,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -291,16 +291,34 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 74.8,
+      "score": 73.8,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put<br> Sell 1x AMAT 20-Nov-2026 565 Call<br> Buy 1x AMAT 20-Nov-2026 585 Call"
     },
     {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 71.7,
+      "grade": "B (Good)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 535 Put<br> Sell 1x AMAT 20-Nov-2026 505 Put<br> Sell 1x AMAT 20-Nov-2026 505 Put"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 64.1,
+      "grade": "B (Good)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put"
+    },
+    {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 56.6,
+      "score": 55.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -309,20 +327,20 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 56.6,
+      "score": 55.3,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 510 Call<br> Sell 1x AMAT 20-Nov-2026 550 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 505 Call<br> Sell 1x AMAT 20-Nov-2026 545 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 49.7,
+      "score": 53.4,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 525 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 550 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 520 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 545 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -334,43 +352,43 @@
       "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put"
     },
     {
-      "strategy_type": "cash_swing_long",
-      "strategy_display": "Cash Swing Long",
-      "score": 44.9,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 537.4 Call"
-    },
-    {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 41.9,
+      "score": 45.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 510 Put<br> Sell 1x AMAT 20-Nov-2026 535 Put<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 565 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 505 Put<br> Sell 1x AMAT 20-Nov-2026 535 Put<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 560 Call"
     },
     {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 40.3,
+      "strategy_type": "cash_swing_long",
+      "strategy_display": "Cash Swing Long",
+      "score": 43.5,
       "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put"
+      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 532.8 Call"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 41.7,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 520 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 560 Call"
     }
   ],
   "indicators": {
-    "EMA20": "494.77",
-    "EMA50": "492.58",
-    "EMA100": "482.68",
-    "EMA200": "432.66",
-    "RSI(14)": "67.28",
-    "ATR(14)": "18.51",
-    "ADX(14)": "21.18",
-    "BB(20,2)": "0.87",
-    "P_SHAPE(20)": "46.17"
+    "EMA20": "494.33",
+    "EMA50": "492.40",
+    "EMA100": "482.59",
+    "EMA200": "432.61",
+    "RSI(14)": "65.19",
+    "ATR(14)": "18.68",
+    "ADX(14)": "21.02",
+    "BB(20,2)": "0.84",
+    "P_SHAPE(20)": "46.11"
   },
   "rules": [
     {
@@ -396,13 +414,6 @@
     },
     {
       "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -444,6 +455,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -452,6 +470,13 @@
     }
   ],
   "news": [
+    {
+      "title": "Applied Materials, Intel to Collaborate on Chipmaking Innovation",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/ai/articles/applied-materials-intel-collaborate-chipmaking-133357934.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
     {
       "title": "Applied Materials and Intel Collaborate to Accelerate Chipmaking Innovations for AI-Driven Computing",
       "publisher": "GlobeNewswire",
@@ -486,13 +511,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-stocks-fall-goldman-191858298.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "Semiconductor Stocks Rebound. The Case for Buying Micron and STMicroelectronics.",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/22a6ae71-c936-3878-9159-fcf28d0cb12c/semiconductor-stocks-rebound..html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

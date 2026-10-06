@@ -333,6 +333,31 @@ def estimate_trade(
             "Roll down and out if tested within 21 DTE.",
         )
 
+    elif recommendation.strategy == StrategyType.WHEEL:
+        # Step 1 of The Wheel: Cash-Secured Put at 15-20 Delta
+        put_strike = _round_to_increment(spot_price - short_dist, increment)
+        legs = (TradeLeg(action="sell", right=OptionRight.PUT, strike=put_strike),)
+        exit_strategy = (
+            "The Wheel (Phase 1): Close at 50% max profit target.",
+            "If assigned at expiration, take delivery of shares and transition to Phase 2 (Covered Call selling).",
+            "Manage or roll at 21 DTE.",
+        )
+
+    elif recommendation.strategy == StrategyType.RATIO_PUT_SPREAD:
+        # 1x2 Ratio Put Spread: Buy 1x ATM Put + Sell 2x OTM Puts (Net Credit)
+        p_buy = atm_strike
+        p_sell = _round_to_increment(spot_price - short_dist, increment)
+        legs = (
+            TradeLeg(action="buy", right=OptionRight.PUT, strike=p_buy),
+            TradeLeg(action="sell", right=OptionRight.PUT, strike=p_sell),
+            TradeLeg(action="sell", right=OptionRight.PUT, strike=p_sell),
+        )
+        exit_strategy = (
+            "Ratio Put Spread (1x2 Net Credit): Manage winner at 50% max profit.",
+            "Maximum PnL expansion occurs if price pins near the short put strike at expiration.",
+            "Exit or roll at 21 DTE to avoid tail assignment risk.",
+        )
+
     else:  # StrategyType.CREDIT_SPREAD
         is_bearish = ("bearish" in recommendation.rationale.lower()) or (ema20 is not None and ema50 is not None and ema20 < ema50 and "bullish" not in recommendation.rationale.lower())
         if is_bearish:

@@ -289,6 +289,15 @@
       "legs_summary": "B1x-Nov-9000PE-S1x-Nov-9500PE-S1x-Nov-10500CE-B1x-Nov-11000CE"
     },
     {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 58.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "B1x-Nov-10000PE-S1x-Nov-9500PE-S1x-Nov-9500PE"
+    },
+    {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
       "score": 56.9,
@@ -332,6 +341,15 @@
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "B1x-Nov-10000CE-S1x-Nov-10000CE-S1x-Nov-10000CE-B1x-Nov-10500CE"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 40.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "S1x-Nov-9500PE"
     }
   ],
   "indicators": {

@@ -1,6 +1,6 @@
 {
   "symbol": "JPM",
-  "last_price": 332.37,
+  "last_price": 332.73,
   "as_of": "2026-10-06 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
@@ -8,7 +8,7 @@
   "fit_score": 42.5,
   "confidence_grade": "C",
   "confidence_percentage": 42.5,
-  "vix": 15.38,
+  "vix": 15.37,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -20,267 +20,267 @@
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 305.0,
-        "strike_formatted": "305",
-        "option_type": "Put",
-        "delta": -0.042,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x JPM 20-Nov-2026 305 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
         "strike": 310.0,
         "strike_formatted": "310",
         "option_type": "Put",
-        "delta": -0.076,
+        "delta": -0.073,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x JPM 20-Nov-2026 310 Put"
+        "summary": "Buy 1x JPM 20-Nov-2026 310 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 350.0,
-        "strike_formatted": "350",
-        "option_type": "Call",
-        "delta": 0.207,
+        "strike": 315.0,
+        "strike_formatted": "315",
+        "option_type": "Put",
+        "delta": -0.124,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x JPM 20-Nov-2026 350 Call"
+        "summary": "Sell 1x JPM 20-Nov-2026 315 Put"
       },
       {
-        "action": "Buy",
+        "action": "Sell",
         "quantity": 1,
         "strike": 355.0,
         "strike_formatted": "355",
         "option_type": "Call",
-        "delta": 0.14,
+        "delta": 0.145,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x JPM 20-Nov-2026 355 Call"
+        "summary": "Sell 1x JPM 20-Nov-2026 355 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 360.0,
+        "strike_formatted": "360",
+        "option_type": "Call",
+        "delta": 0.094,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x JPM 20-Nov-2026 360 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 322.4,
-    "take_profit_price": 342.34,
-    "net_delta": -0.033,
-    "net_theta": 0.024,
+    "stop_loss_price": 322.75,
+    "take_profit_price": 342.71,
+    "net_delta": 0.0,
+    "net_theta": 0.025,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 265.9,
+        "price": 266.18,
         "pnl": -20.0
       },
       {
-        "price": 268.55,
+        "price": 268.85,
         "pnl": -20.0
       },
       {
-        "price": 271.21,
+        "price": 271.51,
         "pnl": -20.0
       },
       {
-        "price": 273.87,
+        "price": 274.17,
         "pnl": -20.0
       },
       {
-        "price": 276.53,
+        "price": 276.83,
         "pnl": -20.0
       },
       {
-        "price": 279.19,
+        "price": 279.49,
         "pnl": -20.0
       },
       {
-        "price": 281.85,
+        "price": 282.16,
         "pnl": -20.0
       },
       {
-        "price": 284.51,
+        "price": 284.82,
         "pnl": -20.0
       },
       {
-        "price": 287.17,
+        "price": 287.48,
         "pnl": -20.0
       },
       {
-        "price": 289.83,
+        "price": 290.14,
         "pnl": -20.0
       },
       {
-        "price": 292.49,
+        "price": 292.8,
         "pnl": -20.0
       },
       {
-        "price": 295.14,
+        "price": 295.46,
         "pnl": -20.0
       },
       {
-        "price": 297.8,
+        "price": 298.13,
         "pnl": -20.0
       },
       {
-        "price": 300.46,
+        "price": 300.79,
         "pnl": -20.0
       },
       {
-        "price": 303.12,
+        "price": 303.45,
         "pnl": -20.0
       },
       {
-        "price": 305.78,
-        "pnl": -19.22
+        "price": 306.11,
+        "pnl": -20.0
       },
       {
-        "price": 308.44,
-        "pnl": -16.56
+        "price": 308.77,
+        "pnl": -20.0
       },
       {
-        "price": 311.1,
+        "price": 311.44,
+        "pnl": -18.56
+      },
+      {
+        "price": 314.1,
+        "pnl": -15.9
+      },
+      {
+        "price": 316.76,
         "pnl": -15.0
       },
       {
-        "price": 313.76,
+        "price": 319.42,
         "pnl": -15.0
       },
       {
-        "price": 316.42,
+        "price": 322.08,
         "pnl": -15.0
       },
       {
-        "price": 319.08,
+        "price": 324.74,
         "pnl": -15.0
       },
       {
-        "price": 321.73,
+        "price": 327.41,
         "pnl": -15.0
       },
       {
-        "price": 324.39,
+        "price": 330.07,
         "pnl": -15.0
       },
       {
-        "price": 327.05,
+        "price": 332.73,
         "pnl": -15.0
       },
       {
-        "price": 329.71,
+        "price": 335.39,
         "pnl": -15.0
       },
       {
-        "price": 332.37,
+        "price": 338.05,
         "pnl": -15.0
       },
       {
-        "price": 335.03,
+        "price": 340.72,
         "pnl": -15.0
       },
       {
-        "price": 337.69,
+        "price": 343.38,
         "pnl": -15.0
       },
       {
-        "price": 340.35,
+        "price": 346.04,
         "pnl": -15.0
       },
       {
-        "price": 343.01,
+        "price": 348.7,
         "pnl": -15.0
       },
       {
-        "price": 345.66,
+        "price": 351.36,
         "pnl": -15.0
       },
       {
-        "price": 348.32,
+        "price": 354.02,
         "pnl": -15.0
       },
       {
-        "price": 350.98,
-        "pnl": -15.98
+        "price": 356.69,
+        "pnl": -16.69
       },
       {
-        "price": 353.64,
-        "pnl": -18.64
+        "price": 359.35,
+        "pnl": -19.35
       },
       {
-        "price": 356.3,
+        "price": 362.01,
         "pnl": -20.0
       },
       {
-        "price": 358.96,
+        "price": 364.67,
         "pnl": -20.0
       },
       {
-        "price": 361.62,
+        "price": 367.33,
         "pnl": -20.0
       },
       {
-        "price": 364.28,
+        "price": 370.0,
         "pnl": -20.0
       },
       {
-        "price": 366.94,
+        "price": 372.66,
         "pnl": -20.0
       },
       {
-        "price": 369.6,
+        "price": 375.32,
         "pnl": -20.0
       },
       {
-        "price": 372.25,
+        "price": 377.98,
         "pnl": -20.0
       },
       {
-        "price": 374.91,
+        "price": 380.64,
         "pnl": -20.0
       },
       {
-        "price": 377.57,
+        "price": 383.3,
         "pnl": -20.0
       },
       {
-        "price": 380.23,
+        "price": 385.97,
         "pnl": -20.0
       },
       {
-        "price": 382.89,
+        "price": 388.63,
         "pnl": -20.0
       },
       {
-        "price": 385.55,
+        "price": 391.29,
         "pnl": -20.0
       },
       {
-        "price": 388.21,
+        "price": 393.95,
         "pnl": -20.0
       },
       {
-        "price": 390.87,
+        "price": 396.61,
         "pnl": -20.0
       },
       {
-        "price": 393.53,
-        "pnl": -20.0
-      },
-      {
-        "price": 396.19,
-        "pnl": -20.0
-      },
-      {
-        "price": 398.84,
+        "price": 399.28,
         "pnl": -20.0
       }
     ],
@@ -301,7 +301,7 @@
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x JPM 20-Nov-2026 305 Put<br> Sell 1x JPM 20-Nov-2026 310 Put<br> Sell 1x JPM 20-Nov-2026 350 Call<br> Buy 1x JPM 20-Nov-2026 355 Call"
+      "legs_summary": "Buy 1x JPM 20-Nov-2026 310 Put<br> Sell 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 355 Call<br> Buy 1x JPM 20-Nov-2026 360 Call"
     },
     {
       "strategy_type": "credit_spread",
@@ -310,7 +310,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x JPM 20-Nov-2026 350 Call<br> Buy 1x JPM 20-Nov-2026 355 Call"
+      "legs_summary": "Sell 1x JPM 20-Nov-2026 355 Call<br> Buy 1x JPM 20-Nov-2026 360 Call"
     },
     {
       "strategy_type": "butterfly",
@@ -319,7 +319,16 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x JPM 20-Nov-2026 325 Call<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Buy 1x JPM 20-Nov-2026 340 Call"
+      "legs_summary": "Buy 1x JPM 20-Nov-2026 325 Call<br> Sell 1x JPM 20-Nov-2026 335 Call<br> Sell 1x JPM 20-Nov-2026 335 Call<br> Buy 1x JPM 20-Nov-2026 340 Call"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 59.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x JPM 20-Nov-2026 335 Put<br> Sell 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 315 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -328,7 +337,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x JPM 20-Nov-2026 310 Put<br> Sell 1x JPM 20-Nov-2026 350 Call<br> Buy 1x JPM 20-Nov-2026 355 Call"
+      "legs_summary": "Sell 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 355 Call<br> Buy 1x JPM 20-Nov-2026 360 Call"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -337,7 +346,16 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 330 Put<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Buy 1x JPM 20-Nov-2026 350 Call"
+      "legs_summary": "Buy 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 335 Put<br> Sell 1x JPM 20-Nov-2026 335 Call<br> Buy 1x JPM 20-Nov-2026 350 Call"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 50.2,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x JPM 20-Nov-2026 315 Put"
     },
     {
       "strategy_type": "broken_wing_butterfly",
@@ -346,19 +364,37 @@
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x JPM 20-Nov-2026 325 Call<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Buy 1x JPM 20-Nov-2026 350 Call"
+      "legs_summary": "Buy 1x JPM 20-Nov-2026 325 Call<br> Sell 1x JPM 20-Nov-2026 335 Call<br> Sell 1x JPM 20-Nov-2026 335 Call<br> Buy 1x JPM 20-Nov-2026 350 Call"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 43.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x JPM 20-Nov-2026 335 Put<br> Sell 1x JPM 20-Nov-2026 320 Put"
+    },
+    {
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 41.7,
+      "grade": "C (Moderate)",
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x JPM 20-Nov-2026 315 Put"
     }
   ],
   "indicators": {
-    "EMA20": "340.94",
-    "EMA50": "344.45",
-    "EMA100": "338.25",
+    "EMA20": "340.98",
+    "EMA50": "344.47",
+    "EMA100": "338.26",
     "EMA200": "325.40",
-    "RSI(14)": "34.47",
-    "ATR(14)": "5.88",
+    "RSI(14)": "35.09",
+    "ATR(14)": "5.90",
     "ADX(14)": "26.25",
-    "BB(20,2)": "0.20",
-    "P_SHAPE(20)": "51.98"
+    "BB(20,2)": "0.21",
+    "P_SHAPE(20)": "52.00"
   },
   "rules": [
     {

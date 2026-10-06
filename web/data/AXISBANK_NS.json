@@ -298,6 +298,15 @@
       "legs_summary": "S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 59.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1200PE-S1x-Nov-1200PE"
+    },
+    {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
       "score": 58.9,
@@ -341,6 +350,15 @@
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
       "legs_summary": "B1x-Nov-1200PE-S1x-Nov-1250PE-S1x-Nov-1250CE-B1x-Nov-1300CE"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 45.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "S1x-Nov-1200PE"
     },
     {
       "strategy_type": "put_debit_spread",

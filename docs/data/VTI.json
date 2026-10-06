@@ -1,6 +1,6 @@
 {
   "symbol": "VTI",
-  "last_price": 382.41,
+  "last_price": 382.67,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,7 +8,7 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 15.36,
+  "vix": 15.42,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,35 +20,35 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 360.0,
-        "strike_formatted": "360",
+        "strike": 365.0,
+        "strike_formatted": "365",
         "option_type": "Put",
-        "delta": -0.104,
+        "delta": -0.155,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x VTI 20-Nov-2026 360 Put"
+        "summary": "Sell 1x VTI 20-Nov-2026 365 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 355.0,
-        "strike_formatted": "355",
+        "strike": 360.0,
+        "strike_formatted": "360",
         "option_type": "Put",
-        "delta": -0.064,
+        "delta": -0.102,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x VTI 20-Nov-2026 355 Put"
+        "summary": "Buy 1x VTI 20-Nov-2026 360 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 370.94,
-    "take_profit_price": 393.88,
-    "net_delta": 0.04,
+    "stop_loss_price": 371.19,
+    "take_profit_price": 394.15,
+    "net_delta": 0.053,
     "net_theta": 0.011,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 305.93,
+        "price": 306.14,
         "pnl": -20.0
       },
       {
-        "price": 308.99,
+        "price": 309.2,
         "pnl": -20.0
       },
       {
-        "price": 312.05,
+        "price": 312.26,
         "pnl": -20.0
       },
       {
-        "price": 315.11,
+        "price": 315.32,
         "pnl": -20.0
       },
       {
-        "price": 318.17,
+        "price": 318.38,
         "pnl": -20.0
       },
       {
-        "price": 321.22,
+        "price": 321.44,
         "pnl": -20.0
       },
       {
-        "price": 324.28,
+        "price": 324.5,
         "pnl": -20.0
       },
       {
-        "price": 327.34,
+        "price": 327.57,
         "pnl": -20.0
       },
       {
-        "price": 330.4,
+        "price": 330.63,
         "pnl": -20.0
       },
       {
-        "price": 333.46,
+        "price": 333.69,
         "pnl": -20.0
       },
       {
-        "price": 336.52,
+        "price": 336.75,
         "pnl": -20.0
       },
       {
-        "price": 339.58,
+        "price": 339.81,
         "pnl": -20.0
       },
       {
-        "price": 342.64,
+        "price": 342.87,
         "pnl": -20.0
       },
       {
-        "price": 345.7,
+        "price": 345.93,
         "pnl": -20.0
       },
       {
-        "price": 348.76,
+        "price": 349.0,
         "pnl": -20.0
       },
       {
-        "price": 351.82,
+        "price": 352.06,
         "pnl": -20.0
       },
       {
-        "price": 354.88,
+        "price": 355.12,
         "pnl": -20.0
       },
       {
-        "price": 357.94,
-        "pnl": -17.06
+        "price": 358.18,
+        "pnl": -20.0
       },
       {
-        "price": 361.0,
+        "price": 361.24,
+        "pnl": -18.76
+      },
+      {
+        "price": 364.3,
+        "pnl": -15.7
+      },
+      {
+        "price": 367.36,
         "pnl": -15.0
       },
       {
-        "price": 364.05,
+        "price": 370.42,
         "pnl": -15.0
       },
       {
-        "price": 367.11,
+        "price": 373.49,
         "pnl": -15.0
       },
       {
-        "price": 370.17,
+        "price": 376.55,
         "pnl": -15.0
       },
       {
-        "price": 373.23,
+        "price": 379.61,
         "pnl": -15.0
       },
       {
-        "price": 376.29,
+        "price": 382.67,
         "pnl": -15.0
       },
       {
-        "price": 379.35,
+        "price": 385.73,
         "pnl": -15.0
       },
       {
-        "price": 382.41,
+        "price": 388.79,
         "pnl": -15.0
       },
       {
-        "price": 385.47,
+        "price": 391.85,
         "pnl": -15.0
       },
       {
-        "price": 388.53,
+        "price": 394.92,
         "pnl": -15.0
       },
       {
-        "price": 391.59,
+        "price": 397.98,
         "pnl": -15.0
       },
       {
-        "price": 394.65,
+        "price": 401.04,
         "pnl": -15.0
       },
       {
-        "price": 397.71,
+        "price": 404.1,
         "pnl": -15.0
       },
       {
-        "price": 400.77,
+        "price": 407.16,
         "pnl": -15.0
       },
       {
-        "price": 403.83,
+        "price": 410.22,
         "pnl": -15.0
       },
       {
-        "price": 406.88,
+        "price": 413.28,
         "pnl": -15.0
       },
       {
-        "price": 409.94,
+        "price": 416.34,
         "pnl": -15.0
       },
       {
-        "price": 413.0,
+        "price": 419.41,
         "pnl": -15.0
       },
       {
-        "price": 416.06,
+        "price": 422.47,
         "pnl": -15.0
       },
       {
-        "price": 419.12,
+        "price": 425.53,
         "pnl": -15.0
       },
       {
-        "price": 422.18,
+        "price": 428.59,
         "pnl": -15.0
       },
       {
-        "price": 425.24,
+        "price": 431.65,
         "pnl": -15.0
       },
       {
-        "price": 428.3,
+        "price": 434.71,
         "pnl": -15.0
       },
       {
-        "price": 431.36,
+        "price": 437.77,
         "pnl": -15.0
       },
       {
-        "price": 434.42,
+        "price": 440.84,
         "pnl": -15.0
       },
       {
-        "price": 437.48,
+        "price": 443.9,
         "pnl": -15.0
       },
       {
-        "price": 440.54,
+        "price": 446.96,
         "pnl": -15.0
       },
       {
-        "price": 443.6,
+        "price": 450.02,
         "pnl": -15.0
       },
       {
-        "price": 446.66,
+        "price": 453.08,
         "pnl": -15.0
       },
       {
-        "price": 449.71,
+        "price": 456.14,
         "pnl": -15.0
       },
       {
-        "price": 452.77,
-        "pnl": -15.0
-      },
-      {
-        "price": 455.83,
-        "pnl": -15.0
-      },
-      {
-        "price": 458.89,
+        "price": 459.2,
         "pnl": -15.0
       }
     ],
@@ -277,16 +277,25 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x VTI 20-Nov-2026 360 Put<br> Buy 1x VTI 20-Nov-2026 355 Put"
+      "legs_summary": "Sell 1x VTI 20-Nov-2026 365 Put<br> Buy 1x VTI 20-Nov-2026 360 Put"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 86.0,
+      "score": 86.1,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x VTI 20-Nov-2026 360 Put<br> Sell 1x VTI 20-Nov-2026 400 Call<br> Buy 1x VTI 20-Nov-2026 405 Call"
+      "legs_summary": "Sell 1x VTI 20-Nov-2026 365 Put<br> Sell 1x VTI 20-Nov-2026 405 Call<br> Buy 1x VTI 20-Nov-2026 410 Call"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 79.0,
+      "grade": "B (Good)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x VTI 20-Nov-2026 385 Put<br> Sell 1x VTI 20-Nov-2026 365 Put<br> Sell 1x VTI 20-Nov-2026 365 Put"
     },
     {
       "strategy_type": "call_debit_spread",
@@ -295,7 +304,16 @@
       "grade": "B (Good)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x VTI 20-Nov-2026 380 Call<br> Sell 1x VTI 20-Nov-2026 395 Call"
+      "legs_summary": "Buy 1x VTI 20-Nov-2026 385 Call<br> Sell 1x VTI 20-Nov-2026 400 Call"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 70.1,
+      "grade": "B (Good)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x VTI 20-Nov-2026 365 Put"
     },
     {
       "strategy_type": "iron_condor",
@@ -304,7 +322,7 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x VTI 20-Nov-2026 355 Put<br> Sell 1x VTI 20-Nov-2026 360 Put<br> Sell 1x VTI 20-Nov-2026 400 Call<br> Buy 1x VTI 20-Nov-2026 405 Call"
+      "legs_summary": "Buy 1x VTI 20-Nov-2026 360 Put<br> Sell 1x VTI 20-Nov-2026 365 Put<br> Sell 1x VTI 20-Nov-2026 405 Call<br> Buy 1x VTI 20-Nov-2026 410 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -322,16 +340,16 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x VTI 20-Nov-2026 382.4 Call"
+      "legs_summary": "Buy 1x VTI 20-Nov-2026 382.7 Call"
     },
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 46.8,
+      "score": 46.9,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x VTI 20-Nov-2026 360 Put"
+      "legs_summary": "Sell 1x VTI 20-Nov-2026 365 Put"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -340,19 +358,19 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x VTI 20-Nov-2026 360 Put"
+      "legs_summary": "Sell 1x VTI 20-Nov-2026 365 Put"
     }
   ],
   "indicators": {
-    "EMA20": "377.63",
-    "EMA50": "375.77",
+    "EMA20": "377.66",
+    "EMA50": "375.78",
     "EMA100": "370.05",
     "EMA200": "357.80",
-    "RSI(14)": "59.77",
-    "ATR(14)": "3.32",
-    "ADX(14)": "11.69",
-    "BB(20,2)": "0.96",
-    "P_SHAPE(20)": "56.96"
+    "RSI(14)": "60.14",
+    "ATR(14)": "3.33",
+    "ADX(14)": "11.73",
+    "BB(20,2)": "0.98",
+    "P_SHAPE(20)": "56.71"
   },
   "rules": [
     {

@@ -1,6 +1,6 @@
 {
   "symbol": "QQQ",
-  "last_price": 760.08,
+  "last_price": 760.58,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,12 +8,12 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 15.36,
+  "vix": 15.42,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (70.1) is overbought (> 65) [Synthetic PCR: 0.64]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (70.3) is overbought (> 65) [Synthetic PCR: 0.64]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 720.0,
         "strike_formatted": "720",
         "option_type": "Put",
-        "delta": -0.126,
+        "delta": -0.124,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 710.0,
         "strike_formatted": "710",
         "option_type": "Put",
-        "delta": -0.08,
+        "delta": -0.079,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 30.0,
-    "stop_loss_price": 737.28,
-    "take_profit_price": 782.88,
-    "net_delta": 0.046,
+    "stop_loss_price": 737.76,
+    "take_profit_price": 783.39,
+    "net_delta": 0.045,
     "net_theta": 0.022,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 608.06,
+        "price": 608.46,
         "pnl": -40.0
       },
       {
-        "price": 614.14,
+        "price": 614.54,
         "pnl": -40.0
       },
       {
-        "price": 620.23,
+        "price": 620.63,
         "pnl": -40.0
       },
       {
-        "price": 626.31,
+        "price": 626.71,
         "pnl": -40.0
       },
       {
-        "price": 632.39,
+        "price": 632.8,
         "pnl": -40.0
       },
       {
-        "price": 638.47,
+        "price": 638.88,
         "pnl": -40.0
       },
       {
-        "price": 644.55,
+        "price": 644.97,
         "pnl": -40.0
       },
       {
-        "price": 650.63,
+        "price": 651.05,
         "pnl": -40.0
       },
       {
-        "price": 656.71,
+        "price": 657.14,
         "pnl": -40.0
       },
       {
-        "price": 662.79,
+        "price": 663.22,
         "pnl": -40.0
       },
       {
-        "price": 668.87,
+        "price": 669.31,
         "pnl": -40.0
       },
       {
-        "price": 674.95,
+        "price": 675.39,
         "pnl": -40.0
       },
       {
-        "price": 681.03,
+        "price": 681.48,
         "pnl": -40.0
       },
       {
-        "price": 687.11,
+        "price": 687.56,
         "pnl": -40.0
       },
       {
-        "price": 693.19,
+        "price": 693.64,
         "pnl": -40.0
       },
       {
-        "price": 699.27,
+        "price": 699.73,
         "pnl": -40.0
       },
       {
-        "price": 705.35,
+        "price": 705.81,
         "pnl": -40.0
       },
       {
-        "price": 711.43,
-        "pnl": -38.57
+        "price": 711.9,
+        "pnl": -38.1
       },
       {
-        "price": 717.52,
-        "pnl": -32.48
+        "price": 717.98,
+        "pnl": -32.02
       },
       {
-        "price": 723.6,
+        "price": 724.07,
         "pnl": -30.0
       },
       {
-        "price": 729.68,
+        "price": 730.15,
         "pnl": -30.0
       },
       {
-        "price": 735.76,
+        "price": 736.24,
         "pnl": -30.0
       },
       {
-        "price": 741.84,
+        "price": 742.32,
         "pnl": -30.0
       },
       {
-        "price": 747.92,
+        "price": 748.41,
         "pnl": -30.0
       },
       {
-        "price": 754.0,
+        "price": 754.49,
         "pnl": -30.0
       },
       {
-        "price": 760.08,
+        "price": 760.58,
         "pnl": -30.0
       },
       {
-        "price": 766.16,
+        "price": 766.66,
         "pnl": -30.0
       },
       {
-        "price": 772.24,
+        "price": 772.74,
         "pnl": -30.0
       },
       {
-        "price": 778.32,
+        "price": 778.83,
         "pnl": -30.0
       },
       {
-        "price": 784.4,
+        "price": 784.91,
         "pnl": -30.0
       },
       {
-        "price": 790.48,
+        "price": 791.0,
         "pnl": -30.0
       },
       {
-        "price": 796.56,
+        "price": 797.08,
         "pnl": -30.0
       },
       {
-        "price": 802.64,
+        "price": 803.17,
         "pnl": -30.0
       },
       {
-        "price": 808.73,
+        "price": 809.25,
         "pnl": -30.0
       },
       {
-        "price": 814.81,
+        "price": 815.34,
         "pnl": -30.0
       },
       {
-        "price": 820.89,
+        "price": 821.42,
         "pnl": -30.0
       },
       {
-        "price": 826.97,
+        "price": 827.51,
         "pnl": -30.0
       },
       {
-        "price": 833.05,
+        "price": 833.59,
         "pnl": -30.0
       },
       {
-        "price": 839.13,
+        "price": 839.67,
         "pnl": -30.0
       },
       {
-        "price": 845.21,
+        "price": 845.76,
         "pnl": -30.0
       },
       {
-        "price": 851.29,
+        "price": 851.84,
         "pnl": -30.0
       },
       {
-        "price": 857.37,
+        "price": 857.93,
         "pnl": -30.0
       },
       {
-        "price": 863.45,
+        "price": 864.01,
         "pnl": -30.0
       },
       {
-        "price": 869.53,
+        "price": 870.1,
         "pnl": -30.0
       },
       {
-        "price": 875.61,
+        "price": 876.18,
         "pnl": -30.0
       },
       {
-        "price": 881.69,
+        "price": 882.27,
         "pnl": -30.0
       },
       {
-        "price": 887.77,
+        "price": 888.35,
         "pnl": -30.0
       },
       {
-        "price": 893.85,
+        "price": 894.44,
         "pnl": -30.0
       },
       {
-        "price": 899.93,
+        "price": 900.52,
         "pnl": -30.0
       },
       {
-        "price": 906.02,
+        "price": 906.61,
         "pnl": -30.0
       },
       {
-        "price": 912.1,
+        "price": 912.69,
         "pnl": -30.0
       }
     ],
@@ -298,6 +298,24 @@
       "legs_summary": "Sell 1x QQQ 20-Nov-2026 720 Put<br> Sell 1x QQQ 20-Nov-2026 800 Call<br> Buy 1x QQQ 20-Nov-2026 810 Call"
     },
     {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 74.4,
+      "grade": "B (Good)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 760 Put<br> Sell 1x QQQ 20-Nov-2026 720 Put<br> Sell 1x QQQ 20-Nov-2026 720 Put"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 65.3,
+      "grade": "B (Good)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 720 Put"
+    },
+    {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
       "score": 58.1,
@@ -309,7 +327,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 56.6,
+      "score": 56.5,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -340,7 +358,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 760.1 Call"
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 760.6 Call"
     },
     {
       "strategy_type": "naked_put",
@@ -353,15 +371,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "736.50",
-    "EMA50": "724.22",
-    "EMA100": "708.65",
+    "EMA20": "736.55",
+    "EMA50": "724.24",
+    "EMA100": "708.66",
     "EMA200": "677.44",
-    "RSI(14)": "70.10",
+    "RSI(14)": "70.30",
     "ATR(14)": "9.07",
     "ADX(14)": "15.61",
     "BB(20,2)": "0.90",
-    "P_SHAPE(20)": "55.57"
+    "P_SHAPE(20)": "55.58"
   },
   "rules": [
     {
