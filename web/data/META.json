@@ -8,256 +8,256 @@
   "fit_score": 87.5,
   "confidence_grade": "A",
   "confidence_percentage": 87.5,
-  "vix": 15.31,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.29,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 740.0,
-        "strike_formatted": "740",
-        "option_type": "Call",
-        "delta": 0.575,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x META 20-Nov-2026 740 Call"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 770.0,
-        "strike_formatted": "770",
-        "option_type": "Call",
-        "delta": 0.291,
+        "strike": 700.0,
+        "strike_formatted": "700",
+        "option_type": "Put",
+        "delta": -0.11,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x META 20-Nov-2026 770 Call"
+        "summary": "Sell 1x META 20-Nov-2026 700 Put"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 675.0,
+        "strike_formatted": "675",
+        "option_type": "Put",
+        "delta": -0.029,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x META 20-Nov-2026 675 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 12.0,
-    "stop_loss_price": 727.06,
-    "take_profit_price": 770.0,
-    "net_delta": 0.284,
-    "net_theta": -0.048,
-    "probability_of_profit": 54.8,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 30.0,
+    "stop_loss_price": 719.64,
+    "take_profit_price": 764.16,
+    "net_delta": 0.081,
+    "net_theta": 0.046,
+    "probability_of_profit": 0.0,
+    "var_95": 18.23,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 593.52,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 599.46,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 605.39,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 611.33,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 617.26,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 623.2,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 629.13,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 635.07,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 641.0,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 646.94,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 652.87,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 658.81,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 664.74,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 670.68,
-        "pnl": -12.0
+        "pnl": -55.0
       },
       {
         "price": 676.61,
-        "pnl": -12.0
+        "pnl": -53.39
       },
       {
         "price": 682.55,
-        "pnl": -12.0
+        "pnl": -47.45
       },
       {
         "price": 688.48,
-        "pnl": -12.0
+        "pnl": -41.52
       },
       {
         "price": 694.42,
-        "pnl": -12.0
+        "pnl": -35.58
       },
       {
         "price": 700.35,
-        "pnl": -12.0
+        "pnl": -30.0
       },
       {
         "price": 706.29,
-        "pnl": -12.0
+        "pnl": -30.0
       },
       {
         "price": 712.22,
-        "pnl": -12.0
+        "pnl": -30.0
       },
       {
         "price": 718.16,
-        "pnl": -12.0
+        "pnl": -30.0
       },
       {
         "price": 724.09,
-        "pnl": -12.0
+        "pnl": -30.0
       },
       {
         "price": 730.03,
-        "pnl": -12.0
+        "pnl": -30.0
       },
       {
         "price": 735.96,
-        "pnl": -12.0
+        "pnl": -30.0
       },
       {
         "price": 741.9,
-        "pnl": -10.1
+        "pnl": -30.0
       },
       {
         "price": 747.84,
-        "pnl": -4.16
+        "pnl": -30.0
       },
       {
         "price": 753.77,
-        "pnl": 1.77
+        "pnl": -30.0
       },
       {
         "price": 759.71,
-        "pnl": 7.71
+        "pnl": -30.0
       },
       {
         "price": 765.64,
-        "pnl": 13.64
+        "pnl": -30.0
       },
       {
         "price": 771.58,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 777.51,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 783.45,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 789.38,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 795.32,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 801.25,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 807.19,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 813.12,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 819.06,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 824.99,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 830.93,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 836.86,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 842.8,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 848.73,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 854.67,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 860.6,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 866.54,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 872.47,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 878.41,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 884.34,
-        "pnl": 18.0
+        "pnl": -30.0
       },
       {
         "price": 890.28,
-        "pnl": 18.0
+        "pnl": -30.0
       }
     ],
     "kelly_sizing": {
@@ -271,18 +271,9 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 100.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x META 20-Nov-2026 740 Call<br> Sell 1x META 20-Nov-2026 770 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 86.5,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -291,11 +282,20 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 72.2,
-      "grade": "B (Good)",
+      "score": 93.1,
+      "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x META 20-Nov-2026 700 Put<br> Sell 1x META 20-Nov-2026 780 Call<br> Buy 1x META 20-Nov-2026 805 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 80.8,
+      "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x META 20-Nov-2026 740 Call<br> Sell 1x META 20-Nov-2026 770 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -316,13 +316,13 @@
       "legs_summary": "Buy 1x META 20-Nov-2026 741.9 Call"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 53.4,
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 51.7,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x META 20-Nov-2026 740 Put<br> Sell 1x META 20-Nov-2026 710 Put"
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "Sell 1x META 20-Nov-2026 700 Put"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -332,6 +332,15 @@
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x META 20-Nov-2026 700 Put"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 40.8,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x META 20-Nov-2026 675 Put<br> Sell 1x META 20-Nov-2026 700 Put<br> Sell 1x META 20-Nov-2026 780 Call<br> Buy 1x META 20-Nov-2026 805 Call"
     }
   ],
   "indicators": {
@@ -426,6 +435,20 @@
   ],
   "news": [
     {
+      "title": "Virtuix to Highlight Growth Across Consumer, Defense, and AI-Driven Simulation at 2026 Maxim Growth Summit",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/virtuix-highlight-growth-across-consumer-131700868.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "S&P 500 set to open near record highs as Treasury yields cool, oil slips",
+      "publisher": "Reuters",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-yields-102708822.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "New Canadian Research Estimates Dull Media Costs Advertisers More Than $1.5 Billion Annually",
       "publisher": "GlobeNewswire",
       "link": "https://finance.yahoo.com/media-advertising/articles/canadian-research-estimates-dull-media-130000581.html",
@@ -450,20 +473,6 @@
       "title": "Cybersecurity stocks hit new highs as AI agents spark 'biggest risk today': Chart of the Day",
       "publisher": "Yahoo Finance",
       "link": "https://finance.yahoo.com/markets/stocks/article/cybersecurity-stocks-hit-new-highs-as-ai-agents-spark-biggest-risk-today-chart-of-the-day-115446641.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "\u2018Too much risk:\u2019 Pimco\u2019s Bill Gross says you shouldn\u2019t own bonds now \u2014 aside from one key Treasury play",
-      "publisher": "Moneywise",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/too-much-risk-pimco-bill-114500754.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Constellation Energy Stock Jumps. What a Google Nuclear Deal Will Do for It.",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/9d58fbaf-d0ab-35eb-867d-fd10533b1dda/constellation-energy-stock.html",
       "published_at": "Today",
       "sentiment": "bullish"
     }

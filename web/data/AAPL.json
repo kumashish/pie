@@ -8,256 +8,256 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 15.31,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.29,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 335.0,
-        "strike_formatted": "335",
-        "option_type": "Call",
-        "delta": 0.51,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x AAPL 20-Nov-2026 335 Call"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 350.0,
-        "strike_formatted": "350",
-        "option_type": "Call",
-        "delta": 0.215,
+        "strike": 315.0,
+        "strike_formatted": "315",
+        "option_type": "Put",
+        "delta": -0.121,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x AAPL 20-Nov-2026 350 Call"
+        "summary": "Sell 1x AAPL 20-Nov-2026 315 Put"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 310.0,
+        "strike_formatted": "310",
+        "option_type": "Put",
+        "delta": -0.071,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x AAPL 20-Nov-2026 310 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 6.0,
-    "stop_loss_price": 326.23,
-    "take_profit_price": 350.0,
-    "net_delta": 0.295,
-    "net_theta": -0.034,
-    "probability_of_profit": 48.3,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 15.0,
+    "stop_loss_price": 322.9,
+    "take_profit_price": 342.88,
+    "net_delta": 0.05,
+    "net_theta": 0.01,
+    "probability_of_profit": 0.0,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 266.31,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 268.98,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 271.64,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 274.3,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 276.96,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 279.63,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 282.29,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 284.95,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 287.62,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 290.28,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 292.94,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 295.61,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 298.27,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 300.93,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 303.6,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 306.26,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 308.92,
-        "pnl": -6.0
+        "pnl": -20.0
       },
       {
         "price": 311.59,
-        "pnl": -6.0
+        "pnl": -18.41
       },
       {
         "price": 314.25,
-        "pnl": -6.0
+        "pnl": -15.75
       },
       {
         "price": 316.91,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 319.57,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 322.24,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 324.9,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 327.56,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 330.23,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 332.89,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 335.55,
-        "pnl": -5.45
+        "pnl": -15.0
       },
       {
         "price": 338.22,
-        "pnl": -2.78
+        "pnl": -15.0
       },
       {
         "price": 340.88,
-        "pnl": -0.12
+        "pnl": -15.0
       },
       {
         "price": 343.54,
-        "pnl": 2.54
+        "pnl": -15.0
       },
       {
         "price": 346.21,
-        "pnl": 5.21
+        "pnl": -15.0
       },
       {
         "price": 348.87,
-        "pnl": 7.87
+        "pnl": -15.0
       },
       {
         "price": 351.53,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 354.19,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 356.86,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 359.52,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 362.18,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 364.85,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 367.51,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 370.17,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 372.84,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 375.5,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 378.16,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 380.83,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 383.49,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 386.15,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 388.82,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 391.48,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 394.14,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 396.8,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 399.47,
-        "pnl": 9.0
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
@@ -271,19 +271,10 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 100.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AAPL 20-Nov-2026 335 Call<br> Sell 1x AAPL 20-Nov-2026 350 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 79.2,
-      "grade": "B (Good)",
+      "score": 100.0,
+      "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x AAPL 20-Nov-2026 315 Put<br> Buy 1x AAPL 20-Nov-2026 310 Put"
@@ -291,11 +282,29 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 64.0,
-      "grade": "B (Good)",
+      "score": 84.8,
+      "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x AAPL 20-Nov-2026 315 Put<br> Sell 1x AAPL 20-Nov-2026 355 Call<br> Buy 1x AAPL 20-Nov-2026 360 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 70.0,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AAPL 20-Nov-2026 335 Call<br> Sell 1x AAPL 20-Nov-2026 350 Call"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 65.7,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x AAPL 20-Nov-2026 310 Put<br> Sell 1x AAPL 20-Nov-2026 315 Put<br> Sell 1x AAPL 20-Nov-2026 355 Call<br> Buy 1x AAPL 20-Nov-2026 360 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -316,15 +325,6 @@
       "legs_summary": "Sell 1x AAPL 20-Nov-2026 315 Put"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 51.7,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AAPL 20-Nov-2026 335 Put<br> Sell 1x AAPL 20-Nov-2026 320 Put"
-    },
-    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
       "score": 50.3,
@@ -336,20 +336,20 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 48.8,
+      "score": 48.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x AAPL 20-Nov-2026 325 Call<br> Sell 1x AAPL 20-Nov-2026 335 Call<br> Sell 1x AAPL 20-Nov-2026 335 Call<br> Buy 1x AAPL 20-Nov-2026 340 Call"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 44.8,
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 45.1,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x AAPL 20-Nov-2026 310 Put<br> Sell 1x AAPL 20-Nov-2026 315 Put<br> Sell 1x AAPL 20-Nov-2026 355 Call<br> Buy 1x AAPL 20-Nov-2026 360 Call"
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "Sell 1x AAPL 20-Nov-2026 315 Put"
     }
   ],
   "indicators": {
@@ -444,6 +444,13 @@
   ],
   "news": [
     {
+      "title": "S&P 500 set to open near record highs as Treasury yields cool, oil slips",
+      "publisher": "Reuters",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-yields-102708822.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Apple Turned $10,000 Into Nearly $129,000. Can It Do It Again?",
       "publisher": "24/7 Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/apple-turned-10-000-nearly-130001471.html",
@@ -477,13 +484,6 @@
       "link": "https://finance.yahoo.com/technology/ai/articles/railtown-ai-launches-native-swift-120000437.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Tech Powers S&P 500 Close to Records",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/553c7702-d0bb-3afa-83ba-7d2d02f9088b/tech-powers-s%26p-500-close-to.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }

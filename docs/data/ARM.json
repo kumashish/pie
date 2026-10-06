@@ -8,256 +8,256 @@
   "fit_score": 72.5,
   "confidence_grade": "B",
   "confidence_percentage": 72.5,
-  "vix": 15.31,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.29,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 305.0,
-        "strike_formatted": "305",
-        "option_type": "Call",
-        "delta": 0.505,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x ARM 20-Nov-2026 305 Call"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 315.0,
-        "strike_formatted": "315",
-        "option_type": "Call",
-        "delta": 0.279,
+        "strike": 275.0,
+        "strike_formatted": "275",
+        "option_type": "Put",
+        "delta": -0.026,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x ARM 20-Nov-2026 315 Call"
+        "summary": "Sell 1x ARM 20-Nov-2026 275 Put"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 255.0,
+        "strike_formatted": "255",
+        "option_type": "Put",
+        "delta": -0.0,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x ARM 20-Nov-2026 255 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 4.0,
-    "stop_loss_price": 296.84,
-    "take_profit_price": 315.0,
-    "net_delta": 0.226,
-    "net_theta": -0.02,
-    "probability_of_profit": 47.8,
+    "roc_percentage": 65.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 293.81,
+    "take_profit_price": 311.99,
+    "net_delta": 0.026,
+    "net_theta": 0.01,
+    "probability_of_profit": 0.0,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 242.32,
-        "pnl": -4.0
+        "pnl": -30.0
       },
       {
         "price": 244.74,
-        "pnl": -4.0
+        "pnl": -30.0
       },
       {
         "price": 247.17,
-        "pnl": -4.0
+        "pnl": -30.0
       },
       {
         "price": 249.59,
-        "pnl": -4.0
+        "pnl": -30.0
       },
       {
         "price": 252.01,
-        "pnl": -4.0
+        "pnl": -30.0
       },
       {
         "price": 254.44,
-        "pnl": -4.0
+        "pnl": -30.0
       },
       {
         "price": 256.86,
-        "pnl": -4.0
+        "pnl": -28.14
       },
       {
         "price": 259.28,
-        "pnl": -4.0
+        "pnl": -25.72
       },
       {
         "price": 261.71,
-        "pnl": -4.0
+        "pnl": -23.29
       },
       {
         "price": 264.13,
-        "pnl": -4.0
+        "pnl": -20.87
       },
       {
         "price": 266.55,
-        "pnl": -4.0
+        "pnl": -18.45
       },
       {
         "price": 268.98,
-        "pnl": -4.0
+        "pnl": -16.02
       },
       {
         "price": 271.4,
-        "pnl": -4.0
+        "pnl": -13.6
       },
       {
         "price": 273.82,
-        "pnl": -4.0
+        "pnl": -11.18
       },
       {
         "price": 276.24,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 278.67,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 281.09,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 283.51,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 285.94,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 288.36,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 290.78,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 293.21,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 295.63,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 298.05,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 300.48,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 302.9,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 305.32,
-        "pnl": -3.68
+        "pnl": -10.0
       },
       {
         "price": 307.75,
-        "pnl": -1.25
+        "pnl": -10.0
       },
       {
         "price": 310.17,
-        "pnl": 1.17
+        "pnl": -10.0
       },
       {
         "price": 312.59,
-        "pnl": 3.59
+        "pnl": -10.0
       },
       {
         "price": 315.02,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 317.44,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 319.86,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 322.29,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 324.71,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 327.13,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 329.56,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 331.98,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 334.4,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 336.82,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 339.25,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 341.67,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 344.09,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 346.52,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 348.94,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 351.36,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 353.79,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 356.21,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 358.63,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 361.06,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 363.48,
-        "pnl": 6.0
+        "pnl": -10.0
       }
     ],
     "kelly_sizing": {
@@ -271,22 +271,40 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 100.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x ARM 20-Nov-2026 305 Call<br> Sell 1x ARM 20-Nov-2026 315 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 70.4,
-      "grade": "B (Good)",
+      "score": 100.0,
+      "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x ARM 20-Nov-2026 275 Put<br> Buy 1x ARM 20-Nov-2026 255 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 76.8,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x ARM 20-Nov-2026 275 Put<br> Sell 1x ARM 20-Nov-2026 335 Call<br> Buy 1x ARM 20-Nov-2026 355 Call"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 71.3,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x ARM 20-Nov-2026 255 Put<br> Sell 1x ARM 20-Nov-2026 275 Put<br> Sell 1x ARM 20-Nov-2026 335 Call<br> Buy 1x ARM 20-Nov-2026 355 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 62.0,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x ARM 20-Nov-2026 305 Call<br> Sell 1x ARM 20-Nov-2026 315 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -296,24 +314,6 @@
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x ARM 20-Nov-2026 285 Call<br> Sell 1x ARM 20-Nov-2026 310 Call"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 56.0,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x ARM 20-Nov-2026 275 Put<br> Sell 1x ARM 20-Nov-2026 335 Call<br> Buy 1x ARM 20-Nov-2026 355 Call"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 50.4,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x ARM 20-Nov-2026 255 Put<br> Sell 1x ARM 20-Nov-2026 275 Put<br> Sell 1x ARM 20-Nov-2026 335 Call<br> Buy 1x ARM 20-Nov-2026 355 Call"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -334,13 +334,13 @@
       "legs_summary": "Sell 1x ARM 20-Nov-2026 275 Put"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 44.8,
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 44.1,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x ARM 20-Nov-2026 305 Put<br> Sell 1x ARM 20-Nov-2026 295 Put"
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "Sell 1x ARM 20-Nov-2026 275 Put"
     },
     {
       "strategy_type": "butterfly",

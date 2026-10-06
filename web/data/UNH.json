@@ -8,262 +8,262 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 15.31,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.29,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (88.9% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (92.2% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 380.0,
-        "strike_formatted": "380",
-        "option_type": "Call",
-        "delta": 0.529,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x UNH 20-Nov-2026 380 Call"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 395.0,
-        "strike_formatted": "395",
+        "strike": 400.0,
+        "strike_formatted": "400",
         "option_type": "Call",
-        "delta": 0.258,
+        "delta": 0.188,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x UNH 20-Nov-2026 395 Call"
+        "summary": "Sell 1x UNH 20-Nov-2026 400 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 410.0,
+        "strike_formatted": "410",
+        "option_type": "Call",
+        "delta": 0.09,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x UNH 20-Nov-2026 410 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 6.0,
-    "stop_loss_price": 371.01,
-    "take_profit_price": 395.0,
-    "net_delta": 0.271,
-    "net_theta": -0.03,
-    "probability_of_profit": 50.2,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 15.0,
+    "stop_loss_price": 367.22,
+    "take_profit_price": 389.94,
+    "net_delta": -0.098,
+    "net_theta": 0.029,
+    "probability_of_profit": 0.0,
+    "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 302.86,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 305.89,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 308.92,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 311.95,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 314.98,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 318.01,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 321.04,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 324.06,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 327.09,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 330.12,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 333.15,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 336.18,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 339.21,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 342.24,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 345.26,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 348.29,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 351.32,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 354.35,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 357.38,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 360.41,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 363.44,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 366.47,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 369.49,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 372.52,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 375.55,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 378.58,
-        "pnl": -6.0
+        "pnl": -15.0
       },
       {
         "price": 381.61,
-        "pnl": -4.39
+        "pnl": -15.0
       },
       {
         "price": 384.64,
-        "pnl": -1.36
+        "pnl": -15.0
       },
       {
         "price": 387.67,
-        "pnl": 1.67
+        "pnl": -15.0
       },
       {
         "price": 390.69,
-        "pnl": 4.69
+        "pnl": -15.0
       },
       {
         "price": 393.72,
-        "pnl": 7.72
+        "pnl": -15.0
       },
       {
         "price": 396.75,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 399.78,
-        "pnl": 9.0
+        "pnl": -15.0
       },
       {
         "price": 402.81,
-        "pnl": 9.0
+        "pnl": -17.81
       },
       {
         "price": 405.84,
-        "pnl": 9.0
+        "pnl": -20.84
       },
       {
         "price": 408.87,
-        "pnl": 9.0
+        "pnl": -23.87
       },
       {
         "price": 411.9,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 414.92,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 417.95,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 420.98,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 424.01,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 427.04,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 430.07,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 433.1,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 436.12,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 439.15,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 442.18,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 445.21,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 448.24,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 451.27,
-        "pnl": 9.0
+        "pnl": -25.0
       },
       {
         "price": 454.3,
-        "pnl": 9.0
+        "pnl": -25.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.811,
+      "win_probability": 0.823,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3299,
+      "half_kelly_fraction": 0.3407,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,19 +271,10 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 88.9,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x UNH 20-Nov-2026 380 Call<br> Sell 1x UNH 20-Nov-2026 395 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 61.6,
-      "grade": "B (Good)",
+      "score": 92.2,
+      "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x UNH 20-Nov-2026 400 Call<br> Buy 1x UNH 20-Nov-2026 410 Call"
@@ -291,20 +282,29 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 58.6,
-      "grade": "C (Moderate)",
+      "score": 79.5,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x UNH 20-Nov-2026 350 Put<br> Sell 1x UNH 20-Nov-2026 360 Put<br> Sell 1x UNH 20-Nov-2026 400 Call<br> Buy 1x UNH 20-Nov-2026 410 Call"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 54.8,
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 67.3,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x UNH 20-Nov-2026 360 Put<br> Sell 1x UNH 20-Nov-2026 400 Call<br> Buy 1x UNH 20-Nov-2026 410 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 51.7,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x UNH 20-Nov-2026 380 Put<br> Sell 1x UNH 20-Nov-2026 365 Put"
+      "legs_summary": "Buy 1x UNH 20-Nov-2026 380 Call<br> Sell 1x UNH 20-Nov-2026 395 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -318,7 +318,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 48.6,
+      "score": 48.7,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -332,15 +332,6 @@
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x UNH 20-Nov-2026 370 Call<br> Sell 1x UNH 20-Nov-2026 380 Call<br> Sell 1x UNH 20-Nov-2026 380 Call<br> Buy 1x UNH 20-Nov-2026 390 Call"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 46.4,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x UNH 20-Nov-2026 360 Put<br> Sell 1x UNH 20-Nov-2026 400 Call<br> Buy 1x UNH 20-Nov-2026 410 Call"
     },
     {
       "strategy_type": "cash_swing_long",

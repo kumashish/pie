@@ -8,256 +8,256 @@
   "fit_score": 72.5,
   "confidence_grade": "B",
   "confidence_percentage": 72.5,
-  "vix": 15.31,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.29,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 190.0,
-        "strike_formatted": "190",
-        "option_type": "Call",
-        "delta": 0.533,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x PLTR 20-Nov-2026 190 Call"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 200.0,
-        "strike_formatted": "200",
-        "option_type": "Call",
-        "delta": 0.192,
+        "strike": 180.0,
+        "strike_formatted": "180",
+        "option_type": "Put",
+        "delta": -0.138,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x PLTR 20-Nov-2026 200 Call"
+        "summary": "Sell 1x PLTR 20-Nov-2026 180 Put"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 175.0,
+        "strike_formatted": "175",
+        "option_type": "Put",
+        "delta": -0.053,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x PLTR 20-Nov-2026 175 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 4.0,
-    "stop_loss_price": 185.61,
-    "take_profit_price": 200.0,
-    "net_delta": 0.341,
-    "net_theta": -0.022,
-    "probability_of_profit": 50.8,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 183.72,
+    "take_profit_price": 195.08,
+    "net_delta": 0.085,
+    "net_theta": 0.01,
+    "probability_of_profit": 0.0,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 151.52,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 153.04,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 154.55,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 156.07,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 157.58,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 159.1,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 160.61,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 162.13,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 163.64,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 165.16,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 166.67,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 168.19,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 169.7,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 171.22,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 172.73,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 174.25,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 175.76,
-        "pnl": -4.0
+        "pnl": -14.24
       },
       {
         "price": 177.28,
-        "pnl": -4.0
+        "pnl": -12.72
       },
       {
         "price": 178.79,
-        "pnl": -4.0
+        "pnl": -11.21
       },
       {
         "price": 180.31,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 181.82,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 183.34,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 184.85,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 186.37,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 187.88,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 189.4,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 190.92,
-        "pnl": -3.08
+        "pnl": -10.0
       },
       {
         "price": 192.43,
-        "pnl": -1.57
+        "pnl": -10.0
       },
       {
         "price": 193.95,
-        "pnl": -0.05
+        "pnl": -10.0
       },
       {
         "price": 195.46,
-        "pnl": 1.46
+        "pnl": -10.0
       },
       {
         "price": 196.98,
-        "pnl": 2.98
+        "pnl": -10.0
       },
       {
         "price": 198.49,
-        "pnl": 4.49
+        "pnl": -10.0
       },
       {
         "price": 200.01,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 201.52,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 203.04,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 204.55,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 206.07,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 207.58,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 209.1,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 210.61,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 212.13,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 213.64,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 215.16,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 216.67,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 218.19,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 219.7,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 221.22,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 222.73,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 224.25,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 225.76,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 227.28,
-        "pnl": 6.0
+        "pnl": -10.0
       }
     ],
     "kelly_sizing": {
@@ -271,22 +271,40 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 100.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x PLTR 20-Nov-2026 190 Call<br> Sell 1x PLTR 20-Nov-2026 200 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 74.0,
-      "grade": "B (Good)",
+      "score": 100.0,
+      "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x PLTR 20-Nov-2026 180 Put<br> Buy 1x PLTR 20-Nov-2026 175 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 81.3,
+      "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x PLTR 20-Nov-2026 180 Put<br> Sell 1x PLTR 20-Nov-2026 200 Call<br> Buy 1x PLTR 20-Nov-2026 205 Call"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 67.6,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x PLTR 20-Nov-2026 175 Put<br> Sell 1x PLTR 20-Nov-2026 180 Put<br> Sell 1x PLTR 20-Nov-2026 200 Call<br> Buy 1x PLTR 20-Nov-2026 205 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 66.5,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x PLTR 20-Nov-2026 190 Call<br> Sell 1x PLTR 20-Nov-2026 200 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -298,15 +316,6 @@
       "legs_summary": "Buy 1x PLTR 20-Nov-2026 180 Call<br> Sell 1x PLTR 20-Nov-2026 195 Call"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 60.5,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x PLTR 20-Nov-2026 180 Put<br> Sell 1x PLTR 20-Nov-2026 200 Call<br> Buy 1x PLTR 20-Nov-2026 205 Call"
-    },
-    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
       "score": 47.6,
@@ -314,15 +323,6 @@
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Buy 1x PLTR 20-Nov-2026 189.4 Call"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 46.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x PLTR 20-Nov-2026 175 Put<br> Sell 1x PLTR 20-Nov-2026 180 Put<br> Sell 1x PLTR 20-Nov-2026 200 Call<br> Buy 1x PLTR 20-Nov-2026 205 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -334,13 +334,13 @@
       "legs_summary": "Sell 1x PLTR 20-Nov-2026 180 Put"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 44.8,
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 45.5,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x PLTR 20-Nov-2026 190 Put<br> Sell 1x PLTR 20-Nov-2026 180 Put"
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "Sell 1x PLTR 20-Nov-2026 180 Put"
     }
   ],
   "indicators": {

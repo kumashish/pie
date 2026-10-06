@@ -8,12 +8,12 @@
   "fit_score": 47.5,
   "confidence_grade": "C",
   "confidence_percentage": 47.5,
-  "vix": 15.31,
+  "vix": 15.29,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (88.3% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -35,7 +35,7 @@
         "strike": 510.0,
         "strike_formatted": "510",
         "option_type": "Put",
-        "delta": -0.1,
+        "delta": -0.099,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 590.0,
         "strike_formatted": "590",
         "option_type": "Call",
-        "delta": 0.077,
+        "delta": 0.076,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -72,7 +72,7 @@
     "margin_required": 20.0,
     "stop_loss_price": 526.01,
     "take_profit_price": 558.55,
-    "net_delta": -0.06,
+    "net_delta": -0.062,
     "net_theta": 0.092,
     "probability_of_profit": 0.0,
     "var_95": 20.0,
@@ -285,9 +285,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.809,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3281,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,47 +297,38 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 88.3,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x AMAT 20-Nov-2026 490 Put<br> Sell 1x AMAT 20-Nov-2026 510 Put<br> Sell 1x AMAT 20-Nov-2026 570 Call<br> Buy 1x AMAT 20-Nov-2026 590 Call"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 82.1,
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 95.4,
       "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 560 Call"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 80.6,
-      "grade": "A (Optimal)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 540 Put<br> Sell 1x AMAT 20-Nov-2026 520 Put"
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x AMAT 20-Nov-2026 570 Call<br> Buy 1x AMAT 20-Nov-2026 590 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 72.0,
+      "score": 72.1,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x AMAT 20-Nov-2026 530 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 555 Call"
     },
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 66.5,
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 65.4,
       "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x AMAT 20-Nov-2026 570 Call<br> Buy 1x AMAT 20-Nov-2026 590 Call"
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x AMAT 20-Nov-2026 510 Put<br> Sell 1x AMAT 20-Nov-2026 570 Call<br> Buy 1x AMAT 20-Nov-2026 590 Call"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -351,29 +342,38 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 53.6,
+      "score": 53.7,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x AMAT 20-Nov-2026 530 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 570 Call"
     },
     {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 47.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 560 Call"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 46.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 540 Put<br> Sell 1x AMAT 20-Nov-2026 520 Put"
+    },
+    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 46.2,
+      "score": 46.3,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x AMAT 20-Nov-2026 515 Call<br> Sell 1x AMAT 20-Nov-2026 555 Call"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 44.6,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x AMAT 20-Nov-2026 510 Put<br> Sell 1x AMAT 20-Nov-2026 570 Call<br> Buy 1x AMAT 20-Nov-2026 590 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -477,6 +477,20 @@
   ],
   "news": [
     {
+      "title": "Applied Materials and Intel Collaborate to Accelerate Chipmaking Innovations for AI-Driven Computing",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/applied-materials-intel-collaborate-accelerate-130000109.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Investors Heavily Search Applied Materials, Inc. (AMAT): Here is What You Need to Know",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-applied-materials-120005340.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Applied Materials Insider Sold Shares Worth $394,807, According to a Recent SEC Filing",
       "publisher": "MT Newswires",
       "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-insider-sold-shares-220209248.html",
@@ -501,20 +515,6 @@
       "title": "Semiconductor Stocks Rebound. The Case for Buying Micron and STMicroelectronics.",
       "publisher": "Barrons.com",
       "link": "https://finance.yahoo.com/m/22a6ae71-c936-3878-9159-fcf28d0cb12c/semiconductor-stocks-rebound..html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "SKB and KCB Partners Acquire Trellis West Campus in Hillsboro",
-      "publisher": "PR Newswire",
-      "link": "https://finance.yahoo.com/real-estate/articles/skb-kcb-partners-acquire-trellis-171400221.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "3 Chip Stocks Set for an Earnings Boost, and 3 to Avoid",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/b4cb9dbf-224e-359c-adc4-2425b870aa5a/3-chip-stocks-set-for-an.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

@@ -8,262 +8,262 @@
   "fit_score": 30.0,
   "confidence_grade": "C",
   "confidence_percentage": 30.0,
-  "vix": 15.31,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.29,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (29.8) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (29.8) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 190.0,
-        "strike_formatted": "190",
-        "option_type": "Put",
-        "delta": -0.436,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x MS 20-Nov-2026 190 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 180.0,
-        "strike_formatted": "180",
-        "option_type": "Put",
-        "delta": -0.122,
+        "strike": 200.0,
+        "strike_formatted": "200",
+        "option_type": "Call",
+        "delta": 0.213,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x MS 20-Nov-2026 180 Put"
+        "summary": "Sell 1x MS 20-Nov-2026 200 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 205.0,
+        "strike_formatted": "205",
+        "option_type": "Call",
+        "delta": 0.105,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x MS 20-Nov-2026 205 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 4.0,
-    "stop_loss_price": 193.99,
-    "take_profit_price": 180.0,
-    "net_delta": -0.314,
-    "net_theta": -0.013,
-    "probability_of_profit": 46.3,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 184.48,
+    "take_profit_price": 195.9,
+    "net_delta": -0.108,
+    "net_theta": 0.015,
+    "probability_of_profit": 0.0,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 152.15,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 153.67,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 155.2,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 156.72,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 158.24,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 159.76,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 161.28,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 162.8,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 164.32,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 165.85,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 167.37,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 168.89,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 170.41,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 171.93,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 173.45,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 174.97,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 176.5,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 178.02,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 179.54,
-        "pnl": 6.0
+        "pnl": -10.0
       },
       {
         "price": 181.06,
-        "pnl": 4.94
+        "pnl": -10.0
       },
       {
         "price": 182.58,
-        "pnl": 3.42
+        "pnl": -10.0
       },
       {
         "price": 184.1,
-        "pnl": 1.9
+        "pnl": -10.0
       },
       {
         "price": 185.63,
-        "pnl": 0.37
+        "pnl": -10.0
       },
       {
         "price": 187.15,
-        "pnl": -1.15
+        "pnl": -10.0
       },
       {
         "price": 188.67,
-        "pnl": -2.67
+        "pnl": -10.0
       },
       {
         "price": 190.19,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 191.71,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 193.23,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 194.75,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 196.28,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 197.8,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 199.32,
-        "pnl": -4.0
+        "pnl": -10.0
       },
       {
         "price": 200.84,
-        "pnl": -4.0
+        "pnl": -10.84
       },
       {
         "price": 202.36,
-        "pnl": -4.0
+        "pnl": -12.36
       },
       {
         "price": 203.88,
-        "pnl": -4.0
+        "pnl": -13.88
       },
       {
         "price": 205.41,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 206.93,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 208.45,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 209.97,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 211.49,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 213.01,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 214.53,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 216.06,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 217.58,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 219.1,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 220.62,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 222.14,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 223.66,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 225.18,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 226.71,
-        "pnl": -4.0
+        "pnl": -15.0
       },
       {
         "price": 228.23,
-        "pnl": -4.0
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.804,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3236,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,40 +271,49 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 86.8,
-      "grade": "A (Optimal)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MS 20-Nov-2026 190 Put<br> Sell 1x MS 20-Nov-2026 180 Put"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 77.3,
-      "grade": "B (Good)",
+      "score": 100.0,
+      "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x MS 20-Nov-2026 200 Call<br> Buy 1x MS 20-Nov-2026 205 Call"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 73.8,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MS 20-Nov-2026 190 Call<br> Sell 1x MS 20-Nov-2026 200 Call"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 50.4,
-      "grade": "C (Moderate)",
+      "score": 71.2,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x MS 20-Nov-2026 175 Put<br> Sell 1x MS 20-Nov-2026 180 Put<br> Sell 1x MS 20-Nov-2026 200 Call<br> Buy 1x MS 20-Nov-2026 205 Call"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 49.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MS 20-Nov-2026 190 Put<br> Sell 1x MS 20-Nov-2026 180 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 48.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x MS 20-Nov-2026 180 Put<br> Sell 1x MS 20-Nov-2026 200 Call<br> Buy 1x MS 20-Nov-2026 205 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 45.2,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MS 20-Nov-2026 190 Call<br> Sell 1x MS 20-Nov-2026 200 Call"
     }
   ],
   "indicators": {

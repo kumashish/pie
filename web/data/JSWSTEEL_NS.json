@@ -13,7 +13,7 @@
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (93.7% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -285,9 +285,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.828,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3452,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 93.7,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -313,22 +313,13 @@
       "legs_summary": "B1x-Nov-1250CE-S1x-Nov-1250CE-S1x-Nov-1250CE-B1x-Nov-1300CE"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 82.7,
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 82.4,
       "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-1250CE-S1x-Nov-1300CE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 73.3,
-      "grade": "B (Good)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1200PE"
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -340,6 +331,15 @@
       "legs_summary": "B1x-Nov-1200PE-S1x-Nov-1250PE-S1x-Nov-1250CE-B1x-Nov-1300CE"
     },
     {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 61.2,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
+    },
+    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
       "score": 59.1,
@@ -347,15 +347,6 @@
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "B1x-Nov-1250CE-S1x-Nov-1250CE-S1x-Nov-1250CE-B1x-Nov-1300CE"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 53.5,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -376,13 +367,13 @@
       "legs_summary": "B1x-Nov-1200CE-S1x-Nov-1300CE"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 40.4,
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 44.3,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-1250CE-S1x-Nov-1300CE"
     }
   ],
   "indicators": {
@@ -505,17 +496,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "IPO mutual funds: How do fund managers buy and sell shares at pre- and post-listing stages? Experts explain",
-      "publisher": "livemint.com",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONnFtYksxazRqd0haejYyM3VQNXdLZC0wWjl0MXBxTTI1aUtaMldUaUpEMDlKdC0zQnFsVzd3eFZubkZWQ09xcEgyTXpBY1N1cWZoWlpzT1c0S0trNEJyZzZGa1BSTS13MWM2TVl1WVFlcXIzdm5ueE9zRnVjLTBIZmk2WWMzOGs4aHlRbWE3OThCMl9feXp1eFZTTHVvVUpKY3VXenZTUlBpQ2VIdHNPXzVqVkpDRDg0QmxLaThnUlJtMV9JYkFZVWl1cnRheFZGUUxXcnlHZ3R2N2Jud3RFN0tpWGxEdWJiZnNjVHA1ME9mU0dJQWRSdkdma2FmUmZxd1HSAYcCQVVfeXFMUE5oZW9mYm1Lak14MnF4dUhIX2NodmRNN1liODV2azEtcU9mQTRhVEVXNlBsOTYtM3ZqRlBmQVhHMXpzSVZac1RveWEzVHhIN2lGRjgwYVU1el9ib3h3OWV0bkQweFZPQnM1T2UwZWY5TUdQeVpIdFhPTUh3LTdKTUdoeWZPWV81bHVYTEpGcThXd3BRejl4ZXdETW9tV3EwZC13eFRiS0VyVU1tTVpfcXZzeW16amRLVTBQaXBidjk1eHFoMHRZM1FmYzJMdFhvTnA3WW9BVVZBZVBBaEZOZXhYTm5GZjIxelRaSUszNjBfSWprcFA4YlZlNWExejZVZzBhNGZzbVE?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
       "title": "Mutual fund SIP returns: India averaged 8.4% over rolling 5-year periods; how did it compare with global markets?",
       "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZUpaa2QwbkRWaVVCMk1ST0N2TkcydjZ2eFZCSGZiUVQ1aDFCX0ZaTkozNWZMNEdnMEF1VDVlbU5HV3F2WDJzUWhzWEI1U2p3cE8xRWs5RWFwbkpKNU45bmhzNUdXNWhnSTFST2szWXd5RzdMSW9BZ3lVdUExNTFDZ3hCbTc1WjJxaVV6X2xkdlc4VkVjVlpnZXJrQmtsSk9weWZGZFlYZ0t1Z2ZvMWo0UlJLeElhRm1lWmxxVkNvQXlxRTIzYTYtSzh4azdxc0xfZlBSTjJqMWl5bVJvWVpfRGJFWWx2OXpRNFBETk9ucUh4U2ViWUVHal9YNlpPWWpUbHdDb3JsYnPSAY4CQVVfeXFMTzQxUUdWVjg2VVlHOHdoTWViajVOdHZjdHR2WDhnYkRPYXVaU1ZkQ0xDZG1qbzF3MzJTS1VoajRNbTRmZ2o0M1NtMDUtejBQc3BVbnlxWEx4Q0MxSkVLcF9KdG5nLXJxWnlzeS13Q2JjZ2lRcmxWakRsLUtITHRjWmRaVzYxQjNURE9xYWpxNEhnQkFWLWZqNkVDQkZFQV96X0Jmc1MxLUlKb2pjb3R1bk9JY1djblJLVjdKSktSZVQ2S25oZGtoZ2JFeWsxNzhGQlkzUk1DQ2lEd1JCT0NlcTBfRVAyX05UWHlSbDZGQmRzYktOaWJFRHpia0FBVUJjTXBXdEVtckR5TGtYRUtR?oc=5",
       "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "One mutual fund for large-, mid-, small- and micro-cap exposure: How Nifty Total Market Index schemes fare on returns",
+      "publisher": "livemint.com",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYlJ6THRCcXRJQnBHbHRMMW9MOGpWQnRwUU5oV1dwT2xxWmdNQUdaWG9UZVZuVkc0cTNWOWVVUFJxck9FTWNuSThNVzg2bjZlSE5WLXduM0NRNk5BbW1PNmk4YTNldnZvRXJpNmNKYWxGNWtEVl93LXh5RGpzVDhHbVZDSkFHSXZjZmJjampodF9KUHNpYVhFVVJyU3Vwc05ad296TXFwZ3o1RDZ3RHRkQnd6OTQ0N0FUaTBBeHFuSkJ1bzJ5cGJWZ3VuVzVwcFd0SC1HUlI5NE1ob09yUlRQaUw5VkdWR3UyNFF4eUdFYmd5ZE1KSkVmZVJfNnNtbWVCZmVIb1lla25ZMVXSAZACQVVfeXFMT1dGakFEeXpVRTJTRHFtVkxlVHBFaU5vUE5hZkNaRlUxZTMtRWVqOVJvWnJIRXlPc3o2ZzFCT1BFbWVGSnEzYS1TR05fQU9HU0RJR0dWNUg3cEpBTjNocHE1bllYV1JkS3NNdWNXdFFNOVFTc01MNlBJYzQ5eU1xdFJHbm5jTDVkdzZkWWpEQVlkcU9KYTBaeHpBaVYtTVRTMFRPM2k2YkNxQy1HLU9EZGlsSGpSSktwM0FNOHV6Z2ZGUU9CNmZWRzRWUFBuTjlZb0Nwa2t3a2dDZThNYU90THpFWlVSX0JhZGxFUTFSQUZwTzRiUnFUbU5tVWEzY3dwUG9fbnBDSGUxZ3R4ZHVnc18?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
       "sentiment": "neutral"
     }
   ]

@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 22.5,
   "vix": 13.61,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 4900.0,
-        "strike_formatted": "4900",
-        "option_type": "Put",
-        "delta": -0.463,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x BRITANNIA.NS 24-Nov-2026 4900 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 4700.0,
-        "strike_formatted": "4700",
-        "option_type": "Put",
-        "delta": -0.176,
+        "strike": 5150.0,
+        "strike_formatted": "5150",
+        "option_type": "Call",
+        "delta": 0.183,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 4700 Put"
+        "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 5150 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 5250.0,
+        "strike_formatted": "5250",
+        "option_type": "Call",
+        "delta": 0.098,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x BRITANNIA.NS 24-Nov-2026 5250 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 80.0,
-    "stop_loss_price": 4981.48,
-    "take_profit_price": 4700.0,
-    "net_delta": -0.287,
-    "net_theta": -0.142,
-    "probability_of_profit": 48.8,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 200.0,
+    "stop_loss_price": 4737.29,
+    "take_profit_price": 5030.31,
+    "net_delta": -0.085,
+    "net_theta": 0.282,
+    "probability_of_profit": 0.0,
+    "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 3907.04,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 3946.11,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 3985.18,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4024.25,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4063.32,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4102.39,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4141.46,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4180.53,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4219.6,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4258.67,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4297.74,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4336.81,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4375.88,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4414.96,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4454.03,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4493.1,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4532.17,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4571.24,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4610.31,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4649.38,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4688.45,
-        "pnl": 120.0
+        "pnl": -200.0
       },
       {
         "price": 4727.52,
-        "pnl": 92.48
+        "pnl": -200.0
       },
       {
         "price": 4766.59,
-        "pnl": 53.41
+        "pnl": -200.0
       },
       {
         "price": 4805.66,
-        "pnl": 14.34
+        "pnl": -200.0
       },
       {
         "price": 4844.73,
-        "pnl": -24.73
+        "pnl": -200.0
       },
       {
         "price": 4883.8,
-        "pnl": -63.8
+        "pnl": -200.0
       },
       {
         "price": 4922.87,
-        "pnl": -80.0
+        "pnl": -200.0
       },
       {
         "price": 4961.94,
-        "pnl": -80.0
+        "pnl": -200.0
       },
       {
         "price": 5001.01,
-        "pnl": -80.0
+        "pnl": -200.0
       },
       {
         "price": 5040.08,
-        "pnl": -80.0
+        "pnl": -200.0
       },
       {
         "price": 5079.15,
-        "pnl": -80.0
+        "pnl": -200.0
       },
       {
         "price": 5118.22,
-        "pnl": -80.0
+        "pnl": -200.0
       },
       {
         "price": 5157.29,
-        "pnl": -80.0
+        "pnl": -207.29
       },
       {
         "price": 5196.36,
-        "pnl": -80.0
+        "pnl": -246.36
       },
       {
         "price": 5235.43,
-        "pnl": -80.0
+        "pnl": -285.43
       },
       {
         "price": 5274.5,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5313.57,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5352.64,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5391.71,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5430.79,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5469.86,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5508.93,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5548.0,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5587.07,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5626.14,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5665.21,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5704.28,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5743.35,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5782.42,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5821.49,
-        "pnl": -80.0
+        "pnl": -300.0
       },
       {
         "price": 5860.56,
-        "pnl": -80.0
+        "pnl": -300.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.815,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3335,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,22 +271,31 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 90.0,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-5150CE-B1x-Nov-5250CE"
+    },
+    {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 100.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "score": 70.3,
+      "grade": "B (Good)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "B1x-Nov-4900PE-S1x-Nov-4700PE"
     },
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 75.9,
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 61.0,
       "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-5150CE-B1x-Nov-5250CE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-4550PE-S1x-Nov-4650PE-S1x-Nov-5150CE-B1x-Nov-5250CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -296,24 +305,6 @@
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "S1x-Nov-4883.8PE"
-    },
-    {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 50.6,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-4900CE-S1x-Nov-5100CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 40.2,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4550PE-S1x-Nov-4650PE-S1x-Nov-5150CE-B1x-Nov-5250CE"
     }
   ],
   "indicators": {
@@ -429,13 +420,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "IPO mutual funds: How do fund managers buy and sell shares at pre- and post-listing stages? Experts explain",
-      "publisher": "livemint.com",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONnFtYksxazRqd0haejYyM3VQNXdLZC0wWjl0MXBxTTI1aUtaMldUaUpEMDlKdC0zQnFsVzd3eFZubkZWQ09xcEgyTXpBY1N1cWZoWlpzT1c0S0trNEJyZzZGa1BSTS13MWM2TVl1WVFlcXIzdm5ueE9zRnVjLTBIZmk2WWMzOGs4aHlRbWE3OThCMl9feXp1eFZTTHVvVUpKY3VXenZTUlBpQ2VIdHNPXzVqVkpDRDg0QmxLaThnUlJtMV9JYkFZVWl1cnRheFZGUUxXcnlHZ3R2N2Jud3RFN0tpWGxEdWJiZnNjVHA1ME9mU0dJQWRSdkdma2FmUmZxd1HSAYcCQVVfeXFMUE5oZW9mYm1Lak14MnF4dUhIX2NodmRNN1liODV2azEtcU9mQTRhVEVXNlBsOTYtM3ZqRlBmQVhHMXpzSVZac1RveWEzVHhIN2lGRjgwYVU1el9ib3h3OWV0bkQweFZPQnM1T2UwZWY5TUdQeVpIdFhPTUh3LTdKTUdoeWZPWV81bHVYTEpGcThXd3BRejl4ZXdETW9tV3EwZC13eFRiS0VyVU1tTVpfcXZzeW16amRLVTBQaXBidjk1eHFoMHRZM1FmYzJMdFhvTnA3WW9BVVZBZVBBaEZOZXhYTm5GZjIxelRaSUszNjBfSWprcFA4YlZlNWExejZVZzBhNGZzbVE?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
       "title": "Facing an NPS-related issue? Know how to raise a complaint through the PFRDA Pension Sahayak portal",
       "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPWFJHcTdfZDN0VjRRMy1jazVxTWxQeHcxVmNVanRMUVB5aWYxbS1zXzh2eURFYXZSY3NIMktvbkptZV91OG1aSC1WazNYUV9Fb3B6eFpGWHZZMzRCZXJXOTU4b250dmRra08tUUg4X1dndzRzdnc2a09ZQmdJZ1VKWF82eXhIQThHOHdlU2k3NU1DZWpxNDZ6MFBsR1d6NS1nMEJhYjNlYlJZQ0hCemFFVGEzdkloandlMWNZcGF5ZElRZGg1NXlEdFp0Nkd0cUdPWHA1OTFYeDhHQlFkdDNnSWg5ZFBkU3FVbDZDQklQb1dDZVNPOEVjVVBn0gH_AUFVX3lxTE84OVktS0d3WE9PNGNXV29vVVVCN3JoNmNsaWxSaWUwbDRpWFNjMnR2TTFKS2RsQzVtVG9ZUDhQQm44cGxueTlnWjFiWG5ja0I1RDI5Mk9DWG9fdUpKZHgya0JibUc4Nmo2TGh6TDlCcmNfdkN2aDE5QWo0WDVEOXNiTjVBT0dFSUJ2dHZ3NGluQXVfMHNzcHdrS21qYUZYQlhySXFTZ1lBcXIzSElSZmloeXptcjYwYndyVHZVQ1Q1SGViUzl4cjUzZFR1WDhmcjN2dUJZU2N3c0JVQm4xdV9IQ2pkOHB5a1lLV0V5ZUlVQy03dmtoNjQwV2hPZHk0RQ?oc=5",
@@ -447,6 +431,13 @@
       "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYlJ6THRCcXRJQnBHbHRMMW9MOGpWQnRwUU5oV1dwT2xxWmdNQUdaWG9UZVZuVkc0cTNWOWVVUFJxck9FTWNuSThNVzg2bjZlSE5WLXduM0NRNk5BbW1PNmk4YTNldnZvRXJpNmNKYWxGNWtEVl93LXh5RGpzVDhHbVZDSkFHSXZjZmJjampodF9KUHNpYVhFVVJyU3Vwc05ad296TXFwZ3o1RDZ3RHRkQnd6OTQ0N0FUaTBBeHFuSkJ1bzJ5cGJWZ3VuVzVwcFd0SC1HUlI5NE1ob09yUlRQaUw5VkdWR3UyNFF4eUdFYmd5ZE1KSkVmZVJfNnNtbWVCZmVIb1lla25ZMVXSAZACQVVfeXFMT1dGakFEeXpVRTJTRHFtVkxlVHBFaU5vUE5hZkNaRlUxZTMtRWVqOVJvWnJIRXlPc3o2ZzFCT1BFbWVGSnEzYS1TR05fQU9HU0RJR0dWNUg3cEpBTjNocHE1bllYV1JkS3NNdWNXdFFNOVFTc01MNlBJYzQ5eU1xdFJHbm5jTDVkdzZkWWpEQVlkcU9KYTBaeHpBaVYtTVRTMFRPM2k2YkNxQy1HLU9EZGlsSGpSSktwM0FNOHV6Z2ZGUU9CNmZWRzRWUFBuTjlZb0Nwa2t3a2dDZThNYU90THpFWlVSX0JhZGxFUTFSQUZwTzRiUnFUbU5tVWEzY3dwUG9fbnBDSGUxZ3R4ZHVnc18?oc=5",
       "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Viral video shows staff at New Delhi Sweet shop in Chhattisgarh washing utensils in toilet",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNczQtZjdEMGJWVGpYcFFOQ29aWk1HcWtja010clJGOTFpMS02NXhRLXBEcFBfNkE4QWxlckZHQjFfN2lla1hmVk1qNWFTalhobFhzMUZJYnhwQXZrR0hKeV8wUjZaTXl4WHdwYlhfT2lPOUJlUXhGVHJMOXV4YTRKWnRYZWxmMG5qSFpWMDJYZUpvRDliOUVFQ3dvTXpubmtjUDRJVExiM2N3THlsNUNHd0JFRmtKOTF2aHpYRGxxZFlWMW1LcVJnYUVSYmh2MlZBRFlkcElzNkNHUm9oTVhLcDBxRkRqcy0wTFJtRV9MX2UwVEROdDhDWEQ1SDVwOVnSAfgBQVVfeXFMTzFVWVlRNmFwZVBYTXV0Q282cjVITktnUExjUGtwdzQ0dEIyLUVaVV9OelRxb3p6WkZIM0VoOXJ3YmJwa1c5ODk4YXZLUDl6R1pXLUhfZzRuQ0lBLVJ1X3pCa2wwOE5vX3N1MTV5QVBQajAwbTR5ZDFxT0swWUNSczhrdnhReXNBRU5iRElWSnBsdEZqOWotTnJ2eGs4V3FJQzVIOE9VQzlieERBX0Nrbl90VFg5ZVd2Z2U4ZVdpVk9zQzFKYVhhdjVaOG5sbWpYcUFCbjdiaDc0UnIxRG4tVnJWdlJ5akdZUVdodlk0SlowOFRSSGVvNS0?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     }
   ]

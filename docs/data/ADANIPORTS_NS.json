@@ -9,255 +9,255 @@
   "confidence_grade": "A",
   "confidence_percentage": 80.0,
   "vix": 13.61,
-  "strategy_type": "call_debit_spread",
-  "strategy_display": "Call Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1800.0,
-        "strike_formatted": "1800",
-        "option_type": "Call",
-        "delta": 0.49,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x ADANIPORTS.NS 24-Nov-2026 1800 Call"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1850.0,
-        "strike_formatted": "1850",
-        "option_type": "Call",
-        "delta": 0.282,
+        "strike": 1700.0,
+        "strike_formatted": "1700",
+        "option_type": "Put",
+        "delta": -0.131,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x ADANIPORTS.NS 24-Nov-2026 1850 Call"
+        "summary": "Sell 1x ADANIPORTS.NS 24-Nov-2026 1700 Put"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1650.0,
+        "strike_formatted": "1650",
+        "option_type": "Put",
+        "delta": -0.043,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 49,
+        "summary": "Buy 1x ADANIPORTS.NS 24-Nov-2026 1650 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1747.73,
-    "take_profit_price": 1850.0,
-    "net_delta": 0.208,
-    "net_theta": -0.103,
-    "probability_of_profit": 46.5,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 50.0,
+    "stop_loss_price": 1729.9,
+    "take_profit_price": 1836.9,
+    "net_delta": 0.088,
+    "net_theta": 0.088,
+    "probability_of_profit": 0.0,
+    "var_95": 49.45,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 1426.72,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1440.99,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1455.25,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1469.52,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1483.79,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1498.06,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1512.32,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1526.59,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1540.86,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1555.12,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1569.39,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1583.66,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1597.93,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1612.19,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1626.46,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1640.73,
-        "pnl": -20.0
+        "pnl": -100.0
       },
       {
         "price": 1655.0,
-        "pnl": -20.0
+        "pnl": -95.0
       },
       {
         "price": 1669.26,
-        "pnl": -20.0
+        "pnl": -80.74
       },
       {
         "price": 1683.53,
-        "pnl": -20.0
+        "pnl": -66.47
       },
       {
         "price": 1697.8,
-        "pnl": -20.0
+        "pnl": -52.2
       },
       {
         "price": 1712.06,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1726.33,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1740.6,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1754.87,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1769.13,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1783.4,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1797.67,
-        "pnl": -20.0
+        "pnl": -50.0
       },
       {
         "price": 1811.93,
-        "pnl": -8.07
+        "pnl": -50.0
       },
       {
         "price": 1826.2,
-        "pnl": 6.2
+        "pnl": -50.0
       },
       {
         "price": 1840.47,
-        "pnl": 20.47
+        "pnl": -50.0
       },
       {
         "price": 1854.74,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1869.0,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1883.27,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1897.54,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1911.8,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1926.07,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1940.34,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1954.61,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1968.87,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1983.14,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 1997.41,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2011.68,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2025.94,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2040.21,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2054.48,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2068.74,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2083.01,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2097.28,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2111.55,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2125.81,
-        "pnl": 30.0
+        "pnl": -50.0
       },
       {
         "price": 2140.08,
-        "pnl": 30.0
+        "pnl": -50.0
       }
     ],
     "kelly_sizing": {
@@ -271,22 +271,40 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
       "score": 100.0,
       "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-1700PE-B1x-Nov-1650PE"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 82.1,
+      "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-1700PE-S1x-Nov-1900CE-B1x-Nov-1950CE"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 68.5,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "B1x-Nov-1800CE-S1x-Nov-1850CE"
     },
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 75.6,
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 64.4,
       "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1700PE-B1x-Nov-1650PE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-1650PE-S1x-Nov-1700PE-S1x-Nov-1900CE-B1x-Nov-1950CE"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -298,15 +316,6 @@
       "legs_summary": "B1x-Nov-1700CE-S1x-Nov-1850CE"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 61.2,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-1700PE-S1x-Nov-1900CE-B1x-Nov-1950CE"
-    },
-    {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
       "score": 54.2,
@@ -314,15 +323,6 @@
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "S1x-Nov-1700PE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 53.6,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-1800PE-S1x-Nov-1750PE"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -334,13 +334,13 @@
       "legs_summary": "B1x-Nov-1783.4CE"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 43.6,
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 46.1,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1650PE-S1x-Nov-1700PE-S1x-Nov-1900CE-B1x-Nov-1950CE"
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "S1x-Nov-1700PE"
     }
   ],
   "indicators": {
@@ -450,7 +450,7 @@
     },
     {
       "title": "Adani Ports doubles Colombo terminal capacity to 3.2 mn TEUs with $750 mn expansion",
-      "publisher": "ET Infra",
+      "publisher": "infra.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQLTdib19vMFVJd2ZUTnJDVlVNY0lJVmJKODRhOFJwcUdJWi14Rnpsa3BHQmFNTjRWMENkQmVQRjZydWRlQU5rR1NjRC10R2RZQVltZ0hDR2Jqcm1nSFlvZXVuc0pEWlRaVkFGYnhZVHI1NjdMcHQxSEo1d2NiZFA1cHJTM0o4UWdwYTFlRkx4TlAycFl0MmFveFlONlhNeW9iV3dxekljYVp1MWxaRWl4V0djNm5aT0Rtbm5qWWV3ZlhiRl9vMmsyZkM5aVlPdnR1bTJGQ3RTcE9RaEZzMHlhVVJ0a3dVczEtWF930gHwAUFVX3lxTE9VM3dHcEhZMjR4alpFTEhVaUgxaFZHdDFvM0NGaVhUZFBaWFE5VUtOY0NoQ0o4WkExemhXWm1McVU0VmNYU29hTXdtVlpiSWJsRjZ3RVJPaGxBMjNodWozMDAwaDlqclhtZ3QyMXZsN3dTUHY0VnhNS1VfWjBCd1BjQWdTZlpPX0ZJQm9WVGs4M0hGMDQ1T1A3eTllSkN1LV9KejNXam5laTR4bnY5NG1LSHFaYl9sTmxoSTNEN3NKVGhRdlJjYmdDZDZaZmNKZXpYQlU0Q0F6cEQ5OHhJT0h6clBTanlDMmRVRGxLMHdXTA?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"

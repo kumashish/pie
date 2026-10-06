@@ -13,7 +13,7 @@
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (88.6% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -285,9 +285,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.81,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.329,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,29 +297,20 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 88.6,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-2650PE-S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 82.7,
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 82.4,
       "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-2850CE-S1x-Nov-2950CE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 78.2,
-      "grade": "B (Good)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-2850PE-S1x-Nov-2750PE"
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-3000CE-B1x-Nov-3050CE"
     },
     {
       "strategy_type": "butterfly",
@@ -340,6 +331,15 @@
       "legs_summary": "B1x-Nov-2700PE-S1x-Nov-2850PE-S1x-Nov-2850CE-B1x-Nov-3000CE"
     },
     {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 61.2,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
+    },
+    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
       "score": 59.1,
@@ -347,15 +347,6 @@
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "B1x-Nov-2800CE-S1x-Nov-2850CE-S1x-Nov-2850CE-B1x-Nov-3000CE"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 53.5,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-3000CE-B1x-Nov-3050CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -376,13 +367,22 @@
       "legs_summary": "B1x-Nov-2700CE-S1x-Nov-2900CE"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 44.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-2850CE-S1x-Nov-2950CE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
       "score": 40.4,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-2850PE-S1x-Nov-2750PE"
     }
   ],
   "indicators": {
@@ -484,17 +484,24 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Dove Soft Ltd.",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTUpWUHFEVVk5cC1tM1dTVFpQcnNBSWRLRzZ3dnNXZURzV1Y1aGNTRFFCcnRQc3dIRG1PSDVVRmxUam9jaUFkbkFDT2o5QkRFemE1ci1oMDFaUDZWU2NQTDRnempNaEZhbzRBXzdlcGtyU3lGa3NvX2hXd1I2elp0ZnRtWHRROEJ4WFR3ckpB?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Max Estates sales bookings surge over 13-fold to Rs 2,100 crore in Q2",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOTlRqbGxLbkFHMW9GT0paTExEX1l5czB4dVZ4QXM3eDBmaXdaazFmT1BwS2Y2VE9pYXpxNWVPVjVHQ3hyMTdmcVdrX3JheDdjZG0tY29nbS1NVHpvZ1BQNHZzN1plRWFiRF8wZUVtZXB6M2xCXzY5ejVHcFA4T0sxX3NlMTExTHpEX2JnZnN3R00tSG1WRVc2ZzM0bGR4TFUtanRrbVo4MzZJdS1LMzlXMlQ1WTRuODBMeFZzZnpqVXF0VjJ4elRHUzhUdHFzYTB5U3pDYXFvZkV1emhQY0pvOEJyNzR3YzJBNWtYVzdMRm53bm5CSjk1TWpuRmtjRmVs0gH6AUFVX3lxTE5mM1ptR0htZjVGUXNIUERBdDFoUE12b2NuWEVEVnpaYlBMbU5Ga0RabUdZWUZFdGlhc1p4ZlMwVEJqNzFYbTE4SGNzTkpMY2pNYUdScFRQanhqcVVIZkxwUF96ajJVQmIxTmFZZzYweERWOE5kVUlJSWEycmpjeThfYzZOa2V3dzh1ak1aXzZrWi1odnBlXzlmM3JSU2Z1NG8yQ182QlpHaXMyRTI2Wi1NT19ONnMtTHgzclpOR0lCeVlBVWtlUWlvcUtHUHFZUTQtRnluM3Z4S0U5RG5TcnNSODJySWlhRjlvRHBZdmFiS3k4UlNLRnJkOXc?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Half Yearly Results, Half yearly Earnings for Shiprocket | The Economic Times",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeFZndkNuN1BmRUlfXzR4cnVkT2hQZnB1MGJ1Wm1mY3NNSE1yVVltZVhLTVlsa2VvYWlJWDlGNjRHYnBmV3dXUllYZzgzYXRCcnJFVjR2ak5XVzViTWJSbFdKYnVNM1lVT292cVkxUnAydmQ0X01WWFV5aEptdnNqY1JmaDNGbHRvbG14Sw?oc=5",
       "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "adani enterpris Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE44OWY0ZGtsUk1lcUxBMklVZVZvRkRaa2hwQ1R4Y0NKcl84VlEzdXNwQzVuVXo0aWllSzlOQWN5N014aHI1MHFmdlhocHVRX3diVkRMLU96NnRsd05FczVDQUNKckZJaExKMmpfMDdNS2tfMk95RUJwcm5IQXdsWTg?oc=5",
-      "published_at": "Fri, 05 Jan 2018",
       "sentiment": "neutral"
     },
     {
@@ -505,17 +512,10 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Adani Ent Share Price Today, Adani Ent Stock Price Live NSE/BSE Updates",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVjdYUVFQN3BnYTVBdGxoeTFRUk9qUUVXZWpMRTRDZ2JLVTNYazBoejZpRDgwZm9qTFdLd0ZVZ3hVR1ozeVJoRVU2SlBnMFNJQThsTG1JdmRpY1ZpQnExY0F0cnJVTUVtazk4bU9GZk5HellTVmtHMWRFWGlvS29wZk9PUk5LblhFSXdibg?oc=5",
-      "published_at": "Thu, 23 Mar 2017",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Adani Enterprises Ltd.",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOd2NYRXZtZnJ3RjY2cm0wQUNqOVhsN3hLUUZWSElrNnZIOGJVaWp0NHhWdGJzaWhETThXb25XR3FlanFzWjVGMTVvWEZGdzZ4dHFYamctNDFfSmhnOWhUc3c4T3Fma1JqR05DU0Zpa0Y0azlWTVFURmNSS2tfOVI0YkYtQjc2c0l1VU1lM0E3dHNBbW51?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
+      "title": "Adani Enterprises Q4 Results 2026 - Find Adani Enterprises Q4 Earnings Result | ADANIENT Q4 results",
+      "publisher": "livemint.com",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNm11a2pKRHk5UkNEd2lFMnJES3RfMWttSTBpQWZEanpObnFHSmFUbnhETHFpcDJFMENtdWREektzdllCb0lidldESDg5cXlsUmJoenY1dHI3RE1NaGdYQ2hRaXFkcTZQekVZR29ISkJNMUZqS2Z2dzV1S25hYVZ6LXBmbEZzX1MweUE?oc=5",
+      "published_at": "Mon, 24 Jul 2023",
       "sentiment": "bullish"
     }
   ]

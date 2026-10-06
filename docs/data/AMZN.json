@@ -8,12 +8,12 @@
   "fit_score": 52.5,
   "confidence_grade": "C",
   "confidence_percentage": 52.5,
-  "vix": 15.31,
+  "vix": 15.29,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (93.8% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -59,7 +59,7 @@
         "strike": 270.0,
         "strike_formatted": "270",
         "option_type": "Call",
-        "delta": 0.118,
+        "delta": 0.117,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -72,8 +72,8 @@
     "margin_required": 10.0,
     "stop_loss_price": 243.86,
     "take_profit_price": 258.94,
-    "net_delta": -0.038,
-    "net_theta": 0.024,
+    "net_delta": -0.039,
+    "net_theta": 0.025,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -285,9 +285,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.828,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3452,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 93.8,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -313,22 +313,13 @@
       "legs_summary": "Buy 1x AMZN 20-Nov-2026 245 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Buy 1x AMZN 20-Nov-2026 260 Call"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 76.4,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 260 Call"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 69.6,
-      "grade": "B (Good)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 250 Put<br> Sell 1x AMZN 20-Nov-2026 240 Put"
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 82.4,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x AMZN 20-Nov-2026 265 Call<br> Buy 1x AMZN 20-Nov-2026 270 Call"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -340,22 +331,22 @@
       "legs_summary": "Buy 1x AMZN 20-Nov-2026 240 Put<br> Sell 1x AMZN 20-Nov-2026 250 Put<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
     },
     {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 60.3,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x AMZN 20-Nov-2026 235 Put<br> Sell 1x AMZN 20-Nov-2026 265 Call<br> Buy 1x AMZN 20-Nov-2026 270 Call"
+    },
+    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 53.6,
+      "score": 53.7,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x AMZN 20-Nov-2026 245 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 250 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 53.5,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x AMZN 20-Nov-2026 265 Call<br> Buy 1x AMZN 20-Nov-2026 270 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -367,9 +358,18 @@
       "legs_summary": "Sell 1x AMZN 20-Nov-2026 235 Put"
     },
     {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 42.2,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 260 Call"
+    },
+    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 40.9,
+      "score": 41.0,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -475,9 +475,23 @@
       "sentiment": "neutral"
     },
     {
+      "title": "S&P 500 set to open near record highs as Treasury yields cool, oil slips",
+      "publisher": "Reuters",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-yields-102708822.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Synopsys (SNPS) Is Up 17.7% After New AI Chip-Design Alliances With OpenAI And Amazon",
       "publisher": "Simply Wall St.",
       "link": "https://finance.yahoo.com/technology/ai/articles/synopsys-snps-17-7-ai-130546514.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Pinterest names Amazon veteran James Dibbo as CFO",
+      "publisher": "Quartz",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/pinterest-names-amazon-veteran-james-130515719.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
@@ -494,20 +508,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/2-nasdaq-100-stocks-worth-125634414.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Redbook US Same-Store Sales Rise in Week Ended Oct. 3",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/economy/articles/redbook-us-same-store-sales-125511179.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Stocks Rise Pre-Bell After Nasdaq Reaches New Record High",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-rise-pre-bell-nasdaq-115604113.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }

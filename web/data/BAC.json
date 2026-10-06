@@ -8,262 +8,262 @@
   "fit_score": 35.0,
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
-  "vix": 15.31,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "vix": 15.29,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (24.6) is oversold (< 35) [Synthetic PCR: 1.37]. Wait for a bounce toward EMA20 resistance before entering Put Debit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (24.6) is oversold (< 35) [Synthetic PCR: 1.37]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 54.0,
-        "strike_formatted": "54",
-        "option_type": "Put",
-        "delta": -0.444,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x BAC 20-Nov-2026 54 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 52.0,
-        "strike_formatted": "52",
-        "option_type": "Put",
-        "delta": -0.199,
+        "strike": 57.0,
+        "strike_formatted": "57",
+        "option_type": "Call",
+        "delta": 0.193,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x BAC 20-Nov-2026 52 Put"
+        "summary": "Sell 1x BAC 20-Nov-2026 57 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 58.0,
+        "strike_formatted": "58",
+        "option_type": "Call",
+        "delta": 0.117,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x BAC 20-Nov-2026 58 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 0.8,
-    "stop_loss_price": 55.08,
-    "take_profit_price": 52.0,
-    "net_delta": -0.245,
-    "net_theta": -0.002,
-    "probability_of_profit": 47.1,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 2.0,
+    "stop_loss_price": 52.38,
+    "take_profit_price": 55.62,
+    "net_delta": -0.076,
+    "net_theta": 0.003,
+    "probability_of_profit": 0.0,
+    "var_95": 1.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 43.2,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 43.63,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 44.06,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 44.5,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 44.93,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 45.36,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 45.79,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 46.22,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 46.66,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 47.09,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 47.52,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 47.95,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 48.38,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 48.82,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 49.25,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 49.68,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 50.11,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 50.54,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 50.98,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 51.41,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 51.84,
-        "pnl": 1.2
+        "pnl": -2.0
       },
       {
         "price": 52.27,
-        "pnl": 0.93
+        "pnl": -2.0
       },
       {
         "price": 52.7,
-        "pnl": 0.5
+        "pnl": -2.0
       },
       {
         "price": 53.14,
-        "pnl": 0.06
+        "pnl": -2.0
       },
       {
         "price": 53.57,
-        "pnl": -0.37
+        "pnl": -2.0
       },
       {
         "price": 54.0,
-        "pnl": -0.8
+        "pnl": -2.0
       },
       {
         "price": 54.43,
-        "pnl": -0.8
+        "pnl": -2.0
       },
       {
         "price": 54.86,
-        "pnl": -0.8
+        "pnl": -2.0
       },
       {
         "price": 55.3,
-        "pnl": -0.8
+        "pnl": -2.0
       },
       {
         "price": 55.73,
-        "pnl": -0.8
+        "pnl": -2.0
       },
       {
         "price": 56.16,
-        "pnl": -0.8
+        "pnl": -2.0
       },
       {
         "price": 56.59,
-        "pnl": -0.8
+        "pnl": -2.0
       },
       {
         "price": 57.02,
-        "pnl": -0.8
+        "pnl": -2.02
       },
       {
         "price": 57.46,
-        "pnl": -0.8
+        "pnl": -2.46
       },
       {
         "price": 57.89,
-        "pnl": -0.8
+        "pnl": -2.89
       },
       {
         "price": 58.32,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 58.75,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 59.18,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 59.62,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 60.05,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 60.48,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 60.91,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 61.34,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 61.78,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 62.21,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 62.64,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 63.07,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 63.5,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 63.94,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 64.37,
-        "pnl": -0.8
+        "pnl": -3.0
       },
       {
         "price": 64.8,
-        "pnl": -0.8
+        "pnl": -3.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.797,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3173,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,28 +271,10 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 85.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x BAC 20-Nov-2026 54 Put<br> Sell 1x BAC 20-Nov-2026 52 Put"
-    },
-    {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 81.2,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x BAC 20-Nov-2026 54 Call<br> Sell 1x BAC 20-Nov-2026 56 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 75.6,
-      "grade": "B (Good)",
+      "score": 100.0,
+      "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x BAC 20-Nov-2026 57 Call<br> Buy 1x BAC 20-Nov-2026 58 Call"
@@ -300,11 +282,38 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 59.3,
-      "grade": "C (Moderate)",
+      "score": 80.1,
+      "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x BAC 20-Nov-2026 50 Put<br> Sell 1x BAC 20-Nov-2026 51 Put<br> Sell 1x BAC 20-Nov-2026 57 Call<br> Buy 1x BAC 20-Nov-2026 58 Call"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 53.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x BAC 20-Nov-2026 51 Put<br> Sell 1x BAC 20-Nov-2026 57 Call<br> Buy 1x BAC 20-Nov-2026 58 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 50.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x BAC 20-Nov-2026 54 Call<br> Sell 1x BAC 20-Nov-2026 56 Call"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 48.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x BAC 20-Nov-2026 54 Put<br> Sell 1x BAC 20-Nov-2026 52 Put"
     },
     {
       "strategy_type": "butterfly",
