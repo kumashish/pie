@@ -1,19 +1,19 @@
 {
   "symbol": "MS",
-  "last_price": 190.31,
-  "as_of": "2026-10-02 13:30:00",
-  "regime": "neutral",
-  "regime_display": "Neutral",
-  "trend_score": 4.2,
-  "fit_score": 42.5,
+  "last_price": 190.19,
+  "as_of": "2026-10-05 13:30:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.0,
+  "fit_score": 30.0,
   "confidence_grade": "C",
-  "confidence_percentage": 42.5,
-  "vix": 16.22,
+  "confidence_percentage": 30.0,
+  "vix": 15.52,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (29.9) is oversold (< 35) [Synthetic PCR: 1.33]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (29.8) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 200.0,
         "strike_formatted": "200",
         "option_type": "Call",
-        "delta": 0.234,
+        "delta": 0.217,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x MS 20-Nov-2026 200 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 205.0,
         "strike_formatted": "205",
         "option_type": "Call",
-        "delta": 0.124,
+        "delta": 0.108,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x MS 20-Nov-2026 205 Call"
       }
     ],
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 184.6,
-    "take_profit_price": 196.02,
-    "net_delta": -0.11,
-    "net_theta": 0.014,
+    "stop_loss_price": 184.48,
+    "take_profit_price": 195.9,
+    "net_delta": -0.109,
+    "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 152.25,
+        "price": 152.15,
         "pnl": -10.0
       },
       {
-        "price": 153.77,
+        "price": 153.67,
         "pnl": -10.0
       },
       {
-        "price": 155.29,
+        "price": 155.2,
         "pnl": -10.0
       },
       {
-        "price": 156.82,
+        "price": 156.72,
         "pnl": -10.0
       },
       {
-        "price": 158.34,
+        "price": 158.24,
         "pnl": -10.0
       },
       {
-        "price": 159.86,
+        "price": 159.76,
         "pnl": -10.0
       },
       {
-        "price": 161.38,
+        "price": 161.28,
         "pnl": -10.0
       },
       {
-        "price": 162.91,
+        "price": 162.8,
         "pnl": -10.0
       },
       {
-        "price": 164.43,
+        "price": 164.32,
         "pnl": -10.0
       },
       {
-        "price": 165.95,
+        "price": 165.85,
         "pnl": -10.0
       },
       {
-        "price": 167.47,
+        "price": 167.37,
         "pnl": -10.0
       },
       {
-        "price": 169.0,
+        "price": 168.89,
         "pnl": -10.0
       },
       {
-        "price": 170.52,
+        "price": 170.41,
         "pnl": -10.0
       },
       {
-        "price": 172.04,
+        "price": 171.93,
         "pnl": -10.0
       },
       {
-        "price": 173.56,
+        "price": 173.45,
         "pnl": -10.0
       },
       {
-        "price": 175.09,
+        "price": 174.97,
         "pnl": -10.0
       },
       {
-        "price": 176.61,
+        "price": 176.5,
         "pnl": -10.0
       },
       {
-        "price": 178.13,
+        "price": 178.02,
         "pnl": -10.0
       },
       {
-        "price": 179.65,
+        "price": 179.54,
         "pnl": -10.0
       },
       {
-        "price": 181.18,
+        "price": 181.06,
         "pnl": -10.0
       },
       {
-        "price": 182.7,
+        "price": 182.58,
         "pnl": -10.0
       },
       {
-        "price": 184.22,
+        "price": 184.1,
         "pnl": -10.0
       },
       {
-        "price": 185.74,
+        "price": 185.63,
         "pnl": -10.0
       },
       {
-        "price": 187.27,
+        "price": 187.15,
         "pnl": -10.0
       },
       {
-        "price": 188.79,
+        "price": 188.67,
         "pnl": -10.0
       },
       {
-        "price": 190.31,
+        "price": 190.19,
         "pnl": -10.0
       },
       {
-        "price": 191.83,
+        "price": 191.71,
         "pnl": -10.0
       },
       {
-        "price": 193.35,
+        "price": 193.23,
         "pnl": -10.0
       },
       {
-        "price": 194.88,
+        "price": 194.75,
         "pnl": -10.0
       },
       {
-        "price": 196.4,
+        "price": 196.28,
         "pnl": -10.0
       },
       {
-        "price": 197.92,
+        "price": 197.8,
         "pnl": -10.0
       },
       {
-        "price": 199.44,
+        "price": 199.32,
         "pnl": -10.0
       },
       {
-        "price": 200.97,
-        "pnl": -10.97
+        "price": 200.84,
+        "pnl": -10.84
       },
       {
-        "price": 202.49,
-        "pnl": -12.49
+        "price": 202.36,
+        "pnl": -12.36
       },
       {
-        "price": 204.01,
-        "pnl": -14.01
+        "price": 203.88,
+        "pnl": -13.88
       },
       {
-        "price": 205.53,
+        "price": 205.41,
         "pnl": -15.0
       },
       {
-        "price": 207.06,
+        "price": 206.93,
         "pnl": -15.0
       },
       {
-        "price": 208.58,
+        "price": 208.45,
         "pnl": -15.0
       },
       {
-        "price": 210.1,
+        "price": 209.97,
         "pnl": -15.0
       },
       {
-        "price": 211.62,
+        "price": 211.49,
         "pnl": -15.0
       },
       {
-        "price": 213.15,
+        "price": 213.01,
         "pnl": -15.0
       },
       {
-        "price": 214.67,
+        "price": 214.53,
         "pnl": -15.0
       },
       {
-        "price": 216.19,
+        "price": 216.06,
         "pnl": -15.0
       },
       {
-        "price": 217.71,
+        "price": 217.58,
         "pnl": -15.0
       },
       {
-        "price": 219.24,
+        "price": 219.1,
         "pnl": -15.0
       },
       {
-        "price": 220.76,
+        "price": 220.62,
         "pnl": -15.0
       },
       {
-        "price": 222.28,
+        "price": 222.14,
         "pnl": -15.0
       },
       {
-        "price": 223.8,
+        "price": 223.66,
         "pnl": -15.0
       },
       {
-        "price": 225.33,
+        "price": 225.18,
         "pnl": -15.0
       },
       {
-        "price": 226.85,
+        "price": 226.71,
         "pnl": -15.0
       },
       {
-        "price": 228.37,
+        "price": 228.23,
         "pnl": -15.0
       }
     ],
@@ -282,8 +282,8 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 94.6,
-      "grade": "A (Optimal)",
+      "score": 71.2,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x MS 20-Nov-2026 175 Put<br> Sell 1x MS 20-Nov-2026 180 Put<br> Sell 1x MS 20-Nov-2026 200 Call<br> Buy 1x MS 20-Nov-2026 205 Call"
@@ -291,59 +291,23 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 61.1,
-      "grade": "B (Good)",
+      "score": 48.3,
+      "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x MS 20-Nov-2026 180 Put<br> Sell 1x MS 20-Nov-2026 200 Call<br> Buy 1x MS 20-Nov-2026 205 Call"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 56.5,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x MS 20-Nov-2026 185 Call<br> Sell 1x MS 20-Nov-2026 190 Call<br> Sell 1x MS 20-Nov-2026 190 Call<br> Buy 1x MS 20-Nov-2026 195 Call"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 50.6,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x MS 20-Nov-2026 180 Put<br> Sell 1x MS 20-Nov-2026 190 Put<br> Sell 1x MS 20-Nov-2026 190 Call<br> Buy 1x MS 20-Nov-2026 200 Call"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 46.0,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x MS 20-Nov-2026 185 Call<br> Sell 1x MS 20-Nov-2026 190 Call<br> Sell 1x MS 20-Nov-2026 190 Call<br> Buy 1x MS 20-Nov-2026 200 Call"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 41.8,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x MS 20-Nov-2026 180 Put"
     }
   ],
   "indicators": {
-    "EMA20": "199.83",
-    "EMA50": "206.17",
-    "EMA100": "204.74",
-    "EMA200": "194.09",
-    "RSI(14)": "29.93",
-    "ATR(14)": "4.74",
-    "ADX(14)": "36.97",
-    "BB(20,2)": "0.18",
-    "P_SHAPE(20)": "54.11"
+    "EMA20": "198.91",
+    "EMA50": "205.54",
+    "EMA100": "204.45",
+    "EMA200": "194.06",
+    "RSI(14)": "29.81",
+    "ATR(14)": "4.66",
+    "ADX(14)": "37.80",
+    "BB(20,2)": "0.20",
+    "P_SHAPE(20)": "49.58"
   },
   "rules": [
     {
@@ -355,27 +319,6 @@
     },
     {
       "name": "ADX above 30",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -417,6 +360,27 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -426,39 +390,46 @@
   ],
   "news": [
     {
-      "title": "How Much Crypto Should You Own at Different Ages?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/much-crypto-own-different-ages-230018097.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "What is Morgan Stanley\u2019s (MS) Economic Moat, and is it Widening or Narrowing?",
-      "publisher": "Insider Monkey",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-ms-economic-moat-210650766.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Best CD rates today, Sunday, October 4, 2026: Multiple options for a 4.40% APY",
-      "publisher": "Yahoo Personal Finance",
-      "link": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-sunday-october-4-2026-multiple-options-for-a-440-apy-100000138.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Analyst warns Nike's best quarter this year may be behind it",
+      "title": "Bank of America sees Eaton heading for a big surprise",
       "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/analyst-warns-nikes-best-quarter-162656630.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-sees-eaton-heading-030700654.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Morgan Stanley doubles down on SpaceX stock verdict for investors",
+      "publisher": "TheStreet",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-doubles-down-spacex-003700447.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Caterpillar Stocks Rise as Morgan Stanley Bets on Industrial Rebound",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/caterpillar-stocks-rise-morgan-stanley-174317594.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "BofA Securities Adjusts Price Target on Morgan Stanley to $225 From $250",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/bofa-securities-adjusts-price-target-161955546.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Morgan Stanley Expects S&P 500 and Market Breadth Gap to Narrow",
-      "publisher": "InvestorsHub",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-expects-p-500-144356598.html",
+      "title": "Wells Fargo Stock Rises as Morgan Stanley Sees Margin Pressure Easing",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/3b74a68b-7bd1-359c-910c-288ec4d031cc/wells-fargo-stock-rises-as.html",
       "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
+    },
+    {
+      "title": "SpaceX shares rise as Morgan Stanley reiterates $300 target",
+      "publisher": "Proactive",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-shares-rise-morgan-stanley-151000360.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
     }
   ]
 }

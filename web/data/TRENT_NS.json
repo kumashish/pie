@@ -1,263 +1,263 @@
 {
   "symbol": "TRENT.NS",
-  "last_price": 2580.3,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "last_price": 2838.0,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.0,
+  "fit_score": 40.0,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 14.9,
+  "confidence_percentage": 40.0,
+  "vix": 14.6,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (24.5) is oversold (< 35) [Synthetic PCR: 1.44]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 2750.0,
-        "strike_formatted": "2750",
+        "strike": 3000.0,
+        "strike_formatted": "3000",
         "option_type": "Call",
-        "delta": 0.158,
+        "delta": 0.188,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Sell 1x TRENT.NS 24-Nov-2026 2750 Call"
+        "dte": 49,
+        "summary": "Sell 1x TRENT.NS 24-Nov-2026 3000 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 2800.0,
-        "strike_formatted": "2800",
+        "strike": 3100.0,
+        "strike_formatted": "3100",
         "option_type": "Call",
-        "delta": 0.092,
+        "delta": 0.067,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Buy 1x TRENT.NS 24-Nov-2026 2800 Call"
+        "dte": 49,
+        "summary": "Buy 1x TRENT.NS 24-Nov-2026 3100 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 100.0,
-    "stop_loss_price": 2502.89,
-    "take_profit_price": 2657.71,
-    "net_delta": -0.066,
-    "net_theta": 0.131,
+    "stop_loss_price": 2752.86,
+    "take_profit_price": 2923.14,
+    "net_delta": -0.121,
+    "net_theta": 0.262,
     "probability_of_profit": 0.0,
-    "var_95": 50.0,
+    "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 2064.24,
+        "price": 2270.4,
         "pnl": -100.0
       },
       {
-        "price": 2084.88,
+        "price": 2293.1,
         "pnl": -100.0
       },
       {
-        "price": 2105.52,
+        "price": 2315.81,
         "pnl": -100.0
       },
       {
-        "price": 2126.17,
+        "price": 2338.51,
         "pnl": -100.0
       },
       {
-        "price": 2146.81,
+        "price": 2361.22,
         "pnl": -100.0
       },
       {
-        "price": 2167.45,
+        "price": 2383.92,
         "pnl": -100.0
       },
       {
-        "price": 2188.09,
+        "price": 2406.62,
         "pnl": -100.0
       },
       {
-        "price": 2208.74,
+        "price": 2429.33,
         "pnl": -100.0
       },
       {
-        "price": 2229.38,
+        "price": 2452.03,
         "pnl": -100.0
       },
       {
-        "price": 2250.02,
+        "price": 2474.74,
         "pnl": -100.0
       },
       {
-        "price": 2270.66,
+        "price": 2497.44,
         "pnl": -100.0
       },
       {
-        "price": 2291.31,
+        "price": 2520.14,
         "pnl": -100.0
       },
       {
-        "price": 2311.95,
+        "price": 2542.85,
         "pnl": -100.0
       },
       {
-        "price": 2332.59,
+        "price": 2565.55,
         "pnl": -100.0
       },
       {
-        "price": 2353.23,
+        "price": 2588.26,
         "pnl": -100.0
       },
       {
-        "price": 2373.88,
+        "price": 2610.96,
         "pnl": -100.0
       },
       {
-        "price": 2394.52,
+        "price": 2633.66,
         "pnl": -100.0
       },
       {
-        "price": 2415.16,
+        "price": 2656.37,
         "pnl": -100.0
       },
       {
-        "price": 2435.8,
+        "price": 2679.07,
         "pnl": -100.0
       },
       {
-        "price": 2456.45,
+        "price": 2701.78,
         "pnl": -100.0
       },
       {
-        "price": 2477.09,
+        "price": 2724.48,
         "pnl": -100.0
       },
       {
-        "price": 2497.73,
+        "price": 2747.18,
         "pnl": -100.0
       },
       {
-        "price": 2518.37,
+        "price": 2769.89,
         "pnl": -100.0
       },
       {
-        "price": 2539.02,
+        "price": 2792.59,
         "pnl": -100.0
       },
       {
-        "price": 2559.66,
+        "price": 2815.3,
         "pnl": -100.0
       },
       {
-        "price": 2580.3,
+        "price": 2838.0,
         "pnl": -100.0
       },
       {
-        "price": 2600.94,
+        "price": 2860.7,
         "pnl": -100.0
       },
       {
-        "price": 2621.58,
+        "price": 2883.41,
         "pnl": -100.0
       },
       {
-        "price": 2642.23,
+        "price": 2906.11,
         "pnl": -100.0
       },
       {
-        "price": 2662.87,
+        "price": 2928.82,
         "pnl": -100.0
       },
       {
-        "price": 2683.51,
+        "price": 2951.52,
         "pnl": -100.0
       },
       {
-        "price": 2704.15,
+        "price": 2974.22,
         "pnl": -100.0
       },
       {
-        "price": 2724.8,
+        "price": 2996.93,
         "pnl": -100.0
       },
       {
-        "price": 2745.44,
-        "pnl": -100.0
+        "price": 3019.63,
+        "pnl": -119.63
       },
       {
-        "price": 2766.08,
-        "pnl": -116.08
+        "price": 3042.34,
+        "pnl": -142.34
       },
       {
-        "price": 2786.72,
-        "pnl": -136.72
+        "price": 3065.04,
+        "pnl": -165.04
       },
       {
-        "price": 2807.37,
-        "pnl": -150.0
+        "price": 3087.74,
+        "pnl": -187.74
       },
       {
-        "price": 2828.01,
-        "pnl": -150.0
+        "price": 3110.45,
+        "pnl": -200.0
       },
       {
-        "price": 2848.65,
-        "pnl": -150.0
+        "price": 3133.15,
+        "pnl": -200.0
       },
       {
-        "price": 2869.29,
-        "pnl": -150.0
+        "price": 3155.86,
+        "pnl": -200.0
       },
       {
-        "price": 2889.94,
-        "pnl": -150.0
+        "price": 3178.56,
+        "pnl": -200.0
       },
       {
-        "price": 2910.58,
-        "pnl": -150.0
+        "price": 3201.26,
+        "pnl": -200.0
       },
       {
-        "price": 2931.22,
-        "pnl": -150.0
+        "price": 3223.97,
+        "pnl": -200.0
       },
       {
-        "price": 2951.86,
-        "pnl": -150.0
+        "price": 3246.67,
+        "pnl": -200.0
       },
       {
-        "price": 2972.51,
-        "pnl": -150.0
+        "price": 3269.38,
+        "pnl": -200.0
       },
       {
-        "price": 2993.15,
-        "pnl": -150.0
+        "price": 3292.08,
+        "pnl": -200.0
       },
       {
-        "price": 3013.79,
-        "pnl": -150.0
+        "price": 3314.78,
+        "pnl": -200.0
       },
       {
-        "price": 3034.43,
-        "pnl": -150.0
+        "price": 3337.49,
+        "pnl": -200.0
       },
       {
-        "price": 3055.08,
-        "pnl": -150.0
+        "price": 3360.19,
+        "pnl": -200.0
       },
       {
-        "price": 3075.72,
-        "pnl": -150.0
+        "price": 3382.9,
+        "pnl": -200.0
       },
       {
-        "price": 3096.36,
-        "pnl": -150.0
+        "price": 3405.6,
+        "pnl": -200.0
       }
     ],
     "kelly_sizing": {
@@ -277,39 +277,82 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-2750CE-B1x-Nov-2800CE"
+      "legs_summary": "S1x-Nov-3000CE-B1x-Nov-3100CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 58.0,
-      "grade": "C (Moderate)",
+      "score": 89.0,
+      "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-2400PE-S1x-Nov-2450PE-S1x-Nov-2750CE-B1x-Nov-2800CE"
+      "legs_summary": "B1x-Nov-2600PE-S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3100CE"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 56.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3100CE"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 55.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-2750CE-S1x-Nov-2850CE-S1x-Nov-2850CE-B1x-Nov-2900CE"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 51.6,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-2750CE-S1x-Nov-2850CE-S1x-Nov-2850CE-B1x-Nov-3000CE"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 46.2,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-2700PE-S1x-Nov-2850PE-S1x-Nov-2850CE-B1x-Nov-3000CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 52.6,
+      "score": 42.2,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-2580.3PE"
+      "legs_summary": "S1x-Nov-2838PE"
     }
   ],
   "indicators": {
-    "EMA20": "2722.95",
-    "EMA50": "2817.84",
-    "EMA100": "2882.73",
-    "EMA200": "3149.03",
-    "RSI(14)": "24.46",
-    "ATR(14)": "57.48",
-    "ADX(14)": "41.11",
-    "BB(20,2)": "0.05",
-    "P_SHAPE(20)": "63.84"
+    "EMA20": "2710.43",
+    "EMA50": "2801.05",
+    "EMA100": "2870.20",
+    "EMA200": "3134.78",
+    "RSI(14)": "59.71",
+    "ATR(14)": "79.19",
+    "ADX(14)": "36.68",
+    "BB(20,2)": "0.82",
+    "P_SHAPE(20)": "57.53"
   },
   "rules": [
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "ADX above 30",
       "passed": true,
@@ -325,7 +368,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher lows",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -360,14 +410,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -379,56 +422,49 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
     {
-      "title": "TRENT RETAIL BUSINESS",
+      "title": "Stocks in news: Vedanta, Kotak Mahindra Bank, Marico, Axis Bank, Trent and Zydus Lifesciences",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3QVp6Rm01MVFmQWptbkZRd1FpZnFZdzFveTFDd1dQX25BZXViYmRfbUNvY21vYWd1MXBWQ2QxcVdGcmV2N2VROVFMb0p0M0tMNi12UFhNM1hMUmN1c1ZTT1k3SEoxekM3YkFwQnlqRHJlUQ?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPYzZIY0UyOG4zZzd6c3RaUjZERTBmblNwVkdiSWsxLW5TUUNsUkVQVUZQcW5NSmFQck9oY2Z2dVlqdlRZQnRVcERYYW5oeHVvRzdoazY5TWRBQ3BiWVhic240LU5IV21kd2ZkaTNpaTVNUC00aFVwRUM5VTF4MjN6eURUTVhNMEJvc2cwcWhxemZPWEdfUGVJdWZINzh6STZ1UzgzUVZkbmt1SVRhMGhPNU9UX1hjdUFxUGVMUVBZZy1lRXdWMmxuWU9LQ1hCTXRPcGFfdkVBOE13V09HY2ZmU2s4Zm9mSTJ5UUQwOS1WaVZJbzVMeHJYVG1vR2RoR3lo0gH6AUFVX3lxTE9KNHNRaTJPS2pRdi1SVFdXS2M3dEZIRXhqWWItVDFZLVpRWHJuNUlBR3BLYUdhNkdiRGN3cWFqZTVLVlBOQUJzUFVDNGZHb2VZWnlaelVXM3hJRmljZmR2d21HbTVSWGRObDdzTFhuMlZJdjMxU3dhSEhpRElCOFRWOW1rVnFlQ05wcnU3SnJXbDdUSm9qNzZsei1ha2tZRHlTX0xURkdnWWY1VmMySzF0TERVUTR2VXFEMk9mM29mT0dNOUIxNE5nczVZaDNuNGQySk5LMy02OEh1TnNCWm1ZMVpjY0hqUHJMZDc2VmlHUXpYeS03LWVldHc?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "New indicator for New India: 25 stocks whose numbers can reveal what is in store for the economy and the stock market",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1XTmpReG1RbktpMjZfcVFSNzdwbEw5VEZxdWRfRFJScVhLaTBzNTZzeWs0VUFScHItNTdxTzJtR2FyY3NjaFoyakh1N0dlaU83dXdKdHFEakNZdzJHSF9wMkxxQVhBN0pLSFc3SmRB?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     },
     {
       "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBaZWJrNVl3YTJJQUR1cWJvc2hVeVNpaTNXZWJMSnVEX3dxUlpfUHlwTWE0Y01UTlcwRVhCMzJ0SDgzdVd1eG5URVVZRUdqOEV1bDcxT0pkOWNjd2o2R1g2b0ZRb3JaY0ZuYjEzdVVR?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9hdEk3SC1NWVFfSWt0SWhXLUduY1BjVkJiVTBpTWRTTDBjNTJKenUxXzVlQmI1ekFlZnhtbGhBS1o4ZGI5emdnTGd6THJjZFV1bFFqNVo5WHJ3SUFJbmc1azZBUHBlS3NUUC1ZYWtrcnMzNnc?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Nifty indices rejig goes live today: Which stocks will see biggest inflows and outflows?",
+      "title": "Top stocks in focus tomorrow: Investors must watch Trent, Kotak Mahindra Bank, Vedanta shares on Tue, 6 Oct | Triggers",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNa2J3NnB5VHJuaXBqY25QQUhreDF5QWtXc3p6dXlTbF9nR3NJT2VrTVR2U2c4cFF0SDdPSmcxaTR1Zm51QVVmeVc1U2xxUGt0SDdWdDJlNjl1cllzYjA3VXlMMkdCSVNVdEhDeUROaERtTlk2R04tVXhZdm9ydktmVG9LT2JlSk0tb3Zod2VWVjM5ZmRHbnRlM3BkcTlmVGxJWENYdDZubEdBMjdwVnRJR1Izblo0ZTZwNXVMU0d6aFJPQWFUbWJTRFZ6a1JzUFltb1ZuaTB0XzJlaFh0M0FJeXpUb2g5RzBiSzM4WGZrM3I5UDRaVUNnV3ZaZkpCbzdnOVl6Y2x3ZDRDN2RZSjJCSmFxZjfSAZQCQVVfeXFMTWtidzZweVRybmlwamNuUEFIa3gxeUFrV3N6enV5U2xfZ0dzSU9la01UdlNnOHBRdEg3T0pnMWk0dWZudUFVZnlXNVNscVBrdEg3VnQyZTY5dXJZc2IwN1V5TDJHQklTVXRIQ3lETmhEbU5ZNkdOLVV4WXZvcnZLZlRvS09iZUpNLW92aHdlVlYzOWZkR250ZTNwZHE5ZlRsSVhDWHQ2bmxHQTI3cFZ0SUdSM25aNGU2cDV1TFNHemhST0FhVG1iU0RWemtSc1BZbW9WbmkwdF8yZWhYdDNBSXl6VG9oOUcwYkszOFhmazNyOVA0WlVDZ1d2WmZKQm83ZzlZemNsd2Q0QzdkWUoyQkphcWY3?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sensex falls 49 points, Nifty ends below 22,650 as market continues to bleed. What lies ahead?",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5MM2Nqek1VZy1ZR1BMTnNPbXVuN1ZmSkxGeXZTNkxXS3Q1TWJkd09xaVpNZWdpdzluZVBGaUNsZTQtek9aUWx3ZWpRVGpxV24zMzlDai14WXppbS01UnU3eXhwS3o4Y2xBYXdPRVBPc2l1UQ?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wSW9YR0lPbnBzeUFpei1xYzN1SVk4b0kxQ1ZvVW5pUTNhMGJWamsxcXkyVjJhbVhZbXpMY1d3ekREU0J4VnljVHpWc1E2X0YycjhzZzZzODVlaUV6OFg0SDRhTjE4aVBmNGZNYw?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "bearish"
     },
     {
-      "title": "Hyundai Motor India IPO: Top factors behind 89% GMP crash",
+      "title": "TRENT RETAIL BUSINESS",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5iN25nSEJiQjRYY01INDBEbFR3V3BRRExGUzJTWDFjc0xsSUZ3TDE2VUhnOTY3Vkp3VUV3SFpwcmtOSnowVHZObEI2VF9Tb0ZGNmh1ajFtWU9SY3VyMUYwMWJYbkRPNWh2N1RiY3Zmd3E?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3QVp6Rm01MVFmQWptbkZRd1FpZnFZdzFveTFDd1dQX25BZXViYmRfbUNvY21vYWd1MXBWQ2QxcVdGcmV2N2VROVFMb0p0M0tMNi12UFhNM1hMUmN1c1ZTT1k3SEoxekM3YkFwQnlqRHJlUQ?oc=5",
       "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "534",
-      "publisher": "mcpt.moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tata stocks slip after Trusts propose move to prevent holding company listing",
-      "publisher": "bfsi.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTWhpOWg1cVZwZkJkQnNaQVpsbW5uaDJTX20zMDd1NUVGeklTU2c2bW9uMkx5OURHWU1BZ0d6aC1KYWVRV3JBRXpXMWF5bW1FMVI3Z19tb3Y3UmhRRGlHV2RBVGZQbk5FZXdpRmxEdUFjOHpSUlBRZGp0QTMwS3RRTVI1dVQzY0JsbFNfRll0Wm5KMF9sMmEzMnR3MXpYeDlUU2FsYUlNYWE2WHh1OWRqenFRc1A2Mkw2X3lEQ2NjX0dQMHZIZmpNVC1rRDVYYlgtY205S9IB2gFBVV95cUxQMkxYaFB0M1RVVGMyRDRVcmhqdmxJZnIwbXNiWEY2amJrdGlhRGFpRXNPT0lKeUpMZjNtTnBoT01ldFVZVjdNeVhvMVdPaGVMSFp4bGliR2JXZGYwOEZLZmxTa0xtSGNlZE45ckl4bGlNMVJFT1dIcXJJNXlfYU50OXlUTzBndFN3Q1lEQTVMMEx6Z3JPcllNRGlhRG1jUmpmUF81aExGTEZCMGI3TVJjZXZVTFpidGZzQ0pET2NDdUdIcU1fdkFzM0RfeGZHTzhPRlVhWlBySnltdw?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"
     }
   ]

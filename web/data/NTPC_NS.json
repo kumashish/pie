@@ -1,14 +1,14 @@
 {
   "symbol": "NTPC.NS",
-  "last_price": 321.6,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 3.2,
-  "fit_score": 32.5,
+  "last_price": 321.15,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.5,
+  "fit_score": 15.0,
   "confidence_grade": "C",
-  "confidence_percentage": 32.5,
-  "vix": 14.9,
+  "confidence_percentage": 15.0,
+  "vix": 14.57,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,35 +20,35 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 340.0,
-        "strike_formatted": "340",
+        "strike": 335.0,
+        "strike_formatted": "335",
         "option_type": "Call",
-        "delta": 0.196,
+        "delta": 0.262,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Sell 1x NTPC.NS 24-Nov-2026 340 Call"
+        "dte": 49,
+        "summary": "Sell 1x NTPC.NS 24-Nov-2026 335 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 345.0,
-        "strike_formatted": "345",
+        "strike": 340.0,
+        "strike_formatted": "340",
         "option_type": "Call",
-        "delta": 0.131,
+        "delta": 0.18,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Buy 1x NTPC.NS 24-Nov-2026 345 Call"
+        "dte": 49,
+        "summary": "Buy 1x NTPC.NS 24-Nov-2026 340 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 311.95,
-    "take_profit_price": 331.25,
-    "net_delta": -0.065,
+    "stop_loss_price": 311.52,
+    "take_profit_price": 330.78,
+    "net_delta": -0.082,
     "net_theta": 0.014,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 257.28,
+        "price": 256.92,
         "pnl": -15.0
       },
       {
-        "price": 259.85,
+        "price": 259.49,
         "pnl": -15.0
       },
       {
-        "price": 262.43,
+        "price": 262.06,
         "pnl": -15.0
       },
       {
-        "price": 265.0,
+        "price": 264.63,
         "pnl": -15.0
       },
       {
-        "price": 267.57,
+        "price": 267.2,
         "pnl": -15.0
       },
       {
-        "price": 270.14,
+        "price": 269.77,
         "pnl": -15.0
       },
       {
-        "price": 272.72,
+        "price": 272.34,
         "pnl": -15.0
       },
       {
-        "price": 275.29,
+        "price": 274.9,
         "pnl": -15.0
       },
       {
-        "price": 277.86,
+        "price": 277.47,
         "pnl": -15.0
       },
       {
-        "price": 280.44,
+        "price": 280.04,
         "pnl": -15.0
       },
       {
-        "price": 283.01,
+        "price": 282.61,
         "pnl": -15.0
       },
       {
-        "price": 285.58,
+        "price": 285.18,
         "pnl": -15.0
       },
       {
-        "price": 288.15,
+        "price": 287.75,
         "pnl": -15.0
       },
       {
-        "price": 290.73,
+        "price": 290.32,
         "pnl": -15.0
       },
       {
-        "price": 293.3,
+        "price": 292.89,
         "pnl": -15.0
       },
       {
-        "price": 295.87,
+        "price": 295.46,
         "pnl": -15.0
       },
       {
-        "price": 298.44,
+        "price": 298.03,
         "pnl": -15.0
       },
       {
-        "price": 301.02,
+        "price": 300.6,
         "pnl": -15.0
       },
       {
-        "price": 303.59,
+        "price": 303.17,
         "pnl": -15.0
       },
       {
-        "price": 306.16,
+        "price": 305.73,
         "pnl": -15.0
       },
       {
-        "price": 308.74,
+        "price": 308.3,
         "pnl": -15.0
       },
       {
-        "price": 311.31,
+        "price": 310.87,
         "pnl": -15.0
       },
       {
-        "price": 313.88,
+        "price": 313.44,
         "pnl": -15.0
       },
       {
-        "price": 316.45,
+        "price": 316.01,
         "pnl": -15.0
       },
       {
-        "price": 319.03,
+        "price": 318.58,
         "pnl": -15.0
       },
       {
-        "price": 321.6,
+        "price": 321.15,
         "pnl": -15.0
       },
       {
-        "price": 324.17,
+        "price": 323.72,
         "pnl": -15.0
       },
       {
-        "price": 326.75,
+        "price": 326.29,
         "pnl": -15.0
       },
       {
-        "price": 329.32,
+        "price": 328.86,
         "pnl": -15.0
       },
       {
-        "price": 331.89,
+        "price": 331.43,
         "pnl": -15.0
       },
       {
-        "price": 334.46,
+        "price": 334.0,
         "pnl": -15.0
       },
       {
-        "price": 337.04,
-        "pnl": -15.0
+        "price": 336.57,
+        "pnl": -16.57
       },
       {
-        "price": 339.61,
-        "pnl": -15.0
+        "price": 339.13,
+        "pnl": -19.13
       },
       {
-        "price": 342.18,
-        "pnl": -17.18
-      },
-      {
-        "price": 344.76,
-        "pnl": -19.76
-      },
-      {
-        "price": 347.33,
+        "price": 341.7,
         "pnl": -20.0
       },
       {
-        "price": 349.9,
+        "price": 344.27,
         "pnl": -20.0
       },
       {
-        "price": 352.47,
+        "price": 346.84,
         "pnl": -20.0
       },
       {
-        "price": 355.05,
+        "price": 349.41,
         "pnl": -20.0
       },
       {
-        "price": 357.62,
+        "price": 351.98,
         "pnl": -20.0
       },
       {
-        "price": 360.19,
+        "price": 354.55,
         "pnl": -20.0
       },
       {
-        "price": 362.76,
+        "price": 357.12,
         "pnl": -20.0
       },
       {
-        "price": 365.34,
+        "price": 359.69,
         "pnl": -20.0
       },
       {
-        "price": 367.91,
+        "price": 362.26,
         "pnl": -20.0
       },
       {
-        "price": 370.48,
+        "price": 364.83,
         "pnl": -20.0
       },
       {
-        "price": 373.06,
+        "price": 367.4,
         "pnl": -20.0
       },
       {
-        "price": 375.63,
+        "price": 369.96,
         "pnl": -20.0
       },
       {
-        "price": 378.2,
+        "price": 372.53,
         "pnl": -20.0
       },
       {
-        "price": 380.77,
+        "price": 375.1,
         "pnl": -20.0
       },
       {
-        "price": 383.35,
+        "price": 377.67,
         "pnl": -20.0
       },
       {
-        "price": 385.92,
+        "price": 380.24,
+        "pnl": -20.0
+      },
+      {
+        "price": 382.81,
+        "pnl": -20.0
+      },
+      {
+        "price": 385.38,
         "pnl": -20.0
       }
     ],
@@ -277,96 +277,50 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-340CE-B1x-Nov-345CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 75.7,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-295PE-S1x-Nov-300PE-S1x-Nov-340CE-B1x-Nov-345CE"
+      "legs_summary": "S1x-Nov-335CE-B1x-Nov-340CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 46.4,
+      "score": 56.3,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-321.6PE"
+      "legs_summary": "S1x-Nov-321.1PE"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 45.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-320PE-S1x-Nov-305PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
       "score": 44.7,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-300PE-S1x-Nov-340CE-B1x-Nov-345CE"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 43.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-315CE-S1x-Nov-320CE-S1x-Nov-320CE-B1x-Nov-330CE"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 40.9,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-315CE-S1x-Nov-320CE-S1x-Nov-320CE-B1x-Nov-340CE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-300PE-S1x-Nov-305PE-S1x-Nov-335CE-B1x-Nov-340CE"
     }
   ],
   "indicators": {
-    "EMA20": "326.30",
-    "EMA50": "334.23",
-    "EMA100": "343.94",
-    "EMA200": "350.12",
-    "RSI(14)": "41.03",
-    "ATR(14)": "5.62",
-    "ADX(14)": "37.25",
-    "BB(20,2)": "0.22",
-    "P_SHAPE(20)": "60.34"
+    "EMA20": "325.42",
+    "EMA50": "333.25",
+    "EMA100": "343.06",
+    "EMA200": "349.56",
+    "RSI(14)": "40.58",
+    "ATR(14)": "5.15",
+    "ADX(14)": "39.29",
+    "BB(20,2)": "0.25",
+    "P_SHAPE(20)": "54.71"
   },
   "rules": [
     {
       "name": "ADX above 30",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -408,6 +362,34 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -418,17 +400,24 @@
   "news": [
     {
       "title": "NTPC appoints Surya Narayan Panigrahi as Executive Director (HR)",
-      "publisher": "ETHRWorld.com",
+      "publisher": "hr.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTmNEWkh4OE5PcmMtZVhCakQ5Z3hVaHFGTU85ZXFmSmowNXpUZjNfNU9XWFVLVDdadUFUZDhBbjFOTU1MdWt6VUZDMk5nMkRKM0NkanhQdzNpbjJkMFllNUIwV2pRT2NwRmFDQ2dCc0hZVFh1TGdmbGZKd2NvXzl0blNWRkpyaTBkbmJacnpQUWxaZ1diWTF3VjBwRW5ab1FHU2V3ME1xMjBoQkE1aWpiUEZWYXI0N0hkMnEzNmo1YnU2elRT0gHKAUFVX3lxTE9wc0ZrbG40TlZ0ejhwTnFscWY3M1Q5VFFZcUFhSFMwLUphaFQyc0ptRkZsQks4elJZRUFlbUVyQWhXQWNOWV8wOXBlYTBoWnpDTk5NRmhkd0FTNFZyS1NINnk3b2lXRU1yaWV2NTdjcWtIRUpCQmdFbnM5R2ZFNEFWMU12cGpRaFB5RWhGbFNrZ3htdGZDR0dHQllXMDc1MTNwaERvekZHWEdCNXhUa0F6VXc2SDBzV2tBX3UzUFUzM2tNR3J2S2Y4SWc?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bearish"
     },
     {
       "title": "NTPC power generation rises 13% to 117.9 billion units in Q2",
-      "publisher": "ET Government",
+      "publisher": "government.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmVfUHRIVHpqN0kydG5DOERhS2VESDFTNnYwWkVxVE92dkNCdGhBYk50WXlHNVpxQ2doclZaTUtWa0IxMXFzSzBLZHJiTTVDUTUyc1VHVEY4OTE2U3B3NDNTM0NEWklGc1BtcFUtUG5mUk1xbWZzSEpuRzM2Q21CVFB6NUNrMUxXcGpXbXk3N1ZZSDRTMUhwR3BRbWpHX1k0UmJKRlYxejJzU3kzMURkYlZBY0x3TlZwd29MTWdRMzBMWFpO0gHKAUFVX3lxTE84NGdteEFNWk1KbUF2SzVqZVRJR0FWSGVoWGI4QWN6OWNNcmpOLVhWb0RFZXBqTGZWWTFwZHJwNlBRSjVreE5YT1p1bG5OSmJod2VTZE8tNWUzTXhOOUR4SERCZTFIQWNzUWR6Y2xuZF9IekNWMDhwUzlZNXZ1R19FelFwcDJvMmlqT3hRTkdjVW5uU29KLThmb21oaTRJMHpIcG14V0xTYWoxMFhJbE9EMThJR1F0cHppNjNIQjNQVlJHV20yUlNtNnc?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
+    },
+    {
+      "title": "NTPC Stocks Live Updates: NTPC Closes at Rs 309.65 with 6-Month Beta of 0.8738",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPZkx2VU5ObHUtYlhXbnRIVEhmb250YTNrNjNxSUQwM3R4bVZHRkI1ZDExV3VQMllJQlZkTkFsejJLcm40SjZNVlJVMklBemFMZUN2eTlWdEZYRVBmeUVfekRxZWRkWjl2T1RJTXRzYjEwM3Q1ZkVVUjlJSi1uOTJHeGtBcTRISWFyaDZmdGdwTnk5RHhOUHRFRGc0OFpycVRoZ1FaR3VfSFhtcWRaS01sNm9WVWNRdzQwUU94QXJfa2dWcXRuQkR5WjkwMWF3bHhocTJRSFR1N0VQT1N2Z3NiZDgzRmdmT2dBRVM0c2JhSXRBSzRhNWR6N2J5Q2pPUjhNaFdISjBuWVpwTGE2R1ZIYkxHcU5aNDY0R0pTTGtvZk1FVC02aVBycTBXVEZnNVd60gGqAkFVX3lxTE9hR2hFUlpQT3NhZmJfTWdDbEVqa05Qa1ZTNDBrbnczMHg4aFpmdEFCczhHbEVvN3paX21hdDNkVjlPUl93RDlxWENUSHhMSVFmR0l0OGhaWmx3MVJtZmdFN0RSWXh0d2NJR2t3SkZhVXJiUE1LeEFuYW5TcjlLLTQ2V0V3UWFTckJaeXNKQ0RkMWJjWXVGMURDLTJmZFR2cDhXazNIT0RjbTYxS0N2YzNXY05sa1RqaklzMVlQMzVOdW84QVpndEtyRFB5RHdWODFEdU5XeDB5UjlaUDRaTzBaMWQ0YTdYT1lqRk00bHhkNl9ZLUFRT0xNWjZmWGF0NmUwQ3loSEtoQkdTRGQzb2Z2ajljaS0wUjUtUjFUU0UwQ2RKYUk0bUJGblE?oc=5",
+      "published_at": "Wed, 20 Dec 2023",
+      "sentiment": "neutral"
     },
     {
       "title": "Sumeet Bagadia's top 5 stocks to buy under \u20b9100 | Sagility, Ujjivan, NTPC Green, Bajaj HFL, JAYNECO; target, stoploss",
@@ -445,17 +434,10 @@
       "sentiment": "bearish"
     },
     {
-      "title": "L&T wins \u20b910,000-15,000 crore power transmission orders in India, Middle East",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQMXg0aFkyTG96bldBYmNaTlROdV9LOUdOOG0zSjYwQVB1Nm1DbGlKUzZvamJZVjhmQlRKeEtyRjhlNVhlS013bTJpa3Rtc3hzYlluYkpIa0lNRDU1N0JkY2ZzVG93bTlxeVNJTUk4VVI0elpBNFZQSHJUVmdmTEsxcnIyWmlzZW8zR1ZDZUJaZ2phQTZaRUxVVFpjcmpOdFdrb1NBb3ltTy1VOHpPSUlDYmhDRmE3Z3I1cGNVOUg4VkxiN0VUSWoyRGFhVGdtZFY5LVJIa0R4MEE5dktpTmpxaHhMMndlWDFLSEFBUDlR0gHnAUFVX3lxTE5kVGZEc1ZzTHRfalBxRklrS29HOGpOaXc0TWFSSlBYdFI4b2ZwY3lXZnRSRzd0OE1pNkx4bVd6R3MxSG5XMWVWOTUyMTUwTVk4VUcxeEg2RWhlMm9xdlpmZzViUjFXMXl5Rk5sY0JRbnJWQkxldDFoeklEZndnNm1NclotX2xScU5zNHhzemtsOTktY0tWYkZNbmNHLUMtc2N4Z3JLOEdFUzdteXdUQWtKUEIxSVM1N0ZNZ3YxclJEZV9YYzE1Ul9Gb0g3N0hBT1c0ZEkwdm56aHJKUHJHTERNRWw3M1Zjaw?oc=5",
+      "title": "",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX3dwVlFhM3pQYXhtcEVLeTBNQ0V3MHBPRHJIM3d5bW5hVDRZYVhkV2t0b29GdklvekJhaHF6cmM2T3pNTGNEbVRfNWVYWXpxaXdXVUJCR2tORXdoX3FUSTNXX2huc095d2NfbU5qMkRPMjdNSDN2OUFLTHJNOXZxNUNXUmJsLVB4Zno1aTVjOA?oc=5",
       "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "One mutual fund for large-, mid-, small- and micro-cap exposure: How Nifty Total Market Index schemes fare on returns",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYlJ6THRCcXRJQnBHbHRMMW9MOGpWQnRwUU5oV1dwT2xxWmdNQUdaWG9UZVZuVkc0cTNWOWVVUFJxck9FTWNuSThNVzg2bjZlSE5WLXduM0NRNk5BbW1PNmk4YTNldnZvRXJpNmNKYWxGNWtEVl93LXh5RGpzVDhHbVZDSkFHSXZjZmJjampodF9KUHNpYVhFVVJyU3Vwc05ad296TXFwZ3o1RDZ3RHRkQnd6OTQ0N0FUaTBBeHFuSkJ1bzJ5cGJWZ3VuVzVwcFd0SC1HUlI5NE1ob09yUlRQaUw5VkdWR3UyNFF4eUdFYmd5ZE1KSkVmZVJfNnNtbWVCZmVIb1lla25ZMVXSAZACQVVfeXFMT1dGakFEeXpVRTJTRHFtVkxlVHBFaU5vUE5hZkNaRlUxZTMtRWVqOVJvWnJIRXlPc3o2ZzFCT1BFbWVGSnEzYS1TR05fQU9HU0RJR0dWNUg3cEpBTjNocHE1bllYV1JkS3NNdWNXdFFNOVFTc01MNlBJYzQ5eU1xdFJHbm5jTDVkdzZkWWpEQVlkcU9KYTBaeHpBaVYtTVRTMFRPM2k2YkNxQy1HLU9EZGlsSGpSSktwM0FNOHV6Z2ZGUU9CNmZWRzRWUFBuTjlZb0Nwa2t3a2dDZThNYU90THpFWlVSX0JhZGxFUTFSQUZwTzRiUnFUbU5tVWEzY3dwUG9fbnBDSGUxZ3R4ZHVnc18?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
       "sentiment": "neutral"
     }
   ]

@@ -1,19 +1,19 @@
 {
   "symbol": "ICICIBANK.NS",
-  "last_price": 1333.0,
-  "as_of": "2026-10-05 03:45:00",
+  "last_price": 1332.0,
+  "as_of": "2026-10-06 03:38:38",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 4.5,
-  "fit_score": 45.0,
+  "trend_score": 4.0,
+  "fit_score": 40.0,
   "confidence_grade": "C",
-  "confidence_percentage": 45.0,
-  "vix": 14.89,
+  "confidence_percentage": 40.0,
+  "vix": 14.78,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (99.9% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (91.8% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 1250.0,
         "strike_formatted": "1250",
         "option_type": "Put",
-        "delta": -0.094,
+        "delta": -0.093,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x ICICIBANK.NS 24-Nov-2026 1250 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 1300.0,
         "strike_formatted": "1300",
         "option_type": "Put",
-        "delta": -0.272,
+        "delta": -0.274,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x ICICIBANK.NS 24-Nov-2026 1300 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 1400.0,
         "strike_formatted": "1400",
         "option_type": "Call",
-        "delta": 0.23,
+        "delta": 0.221,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x ICICIBANK.NS 24-Nov-2026 1400 Call"
       },
       {
@@ -59,10 +59,10 @@
         "strike": 1450.0,
         "strike_formatted": "1450",
         "option_type": "Call",
-        "delta": 0.085,
+        "delta": 0.078,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x ICICIBANK.NS 24-Nov-2026 1450 Call"
       }
     ],
@@ -70,224 +70,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1293.01,
-    "take_profit_price": 1372.99,
-    "net_delta": 0.033,
-    "net_theta": 0.222,
+    "stop_loss_price": 1292.04,
+    "take_profit_price": 1371.96,
+    "net_delta": 0.038,
+    "net_theta": 0.225,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1066.4,
+        "price": 1065.6,
         "pnl": -100.0
       },
       {
-        "price": 1077.06,
+        "price": 1076.26,
         "pnl": -100.0
       },
       {
-        "price": 1087.73,
+        "price": 1086.91,
         "pnl": -100.0
       },
       {
-        "price": 1098.39,
+        "price": 1097.57,
         "pnl": -100.0
       },
       {
-        "price": 1109.06,
+        "price": 1108.22,
         "pnl": -100.0
       },
       {
-        "price": 1119.72,
+        "price": 1118.88,
         "pnl": -100.0
       },
       {
-        "price": 1130.38,
+        "price": 1129.54,
         "pnl": -100.0
       },
       {
-        "price": 1141.05,
+        "price": 1140.19,
         "pnl": -100.0
       },
       {
-        "price": 1151.71,
+        "price": 1150.85,
         "pnl": -100.0
       },
       {
-        "price": 1162.38,
+        "price": 1161.5,
         "pnl": -100.0
       },
       {
-        "price": 1173.04,
+        "price": 1172.16,
         "pnl": -100.0
       },
       {
-        "price": 1183.7,
+        "price": 1182.82,
         "pnl": -100.0
       },
       {
-        "price": 1194.37,
+        "price": 1193.47,
         "pnl": -100.0
       },
       {
-        "price": 1205.03,
+        "price": 1204.13,
         "pnl": -100.0
       },
       {
-        "price": 1215.7,
+        "price": 1214.78,
         "pnl": -100.0
       },
       {
-        "price": 1226.36,
+        "price": 1225.44,
         "pnl": -100.0
       },
       {
-        "price": 1237.02,
+        "price": 1236.1,
         "pnl": -100.0
       },
       {
-        "price": 1247.69,
+        "price": 1246.75,
         "pnl": -100.0
       },
       {
-        "price": 1258.35,
-        "pnl": -91.65
+        "price": 1257.41,
+        "pnl": -92.59
       },
       {
-        "price": 1269.02,
-        "pnl": -80.98
+        "price": 1268.06,
+        "pnl": -81.94
       },
       {
-        "price": 1279.68,
-        "pnl": -70.32
+        "price": 1278.72,
+        "pnl": -71.28
       },
       {
-        "price": 1290.34,
-        "pnl": -59.66
+        "price": 1289.38,
+        "pnl": -60.62
       },
       {
-        "price": 1301.01,
+        "price": 1300.03,
         "pnl": -50.0
       },
       {
-        "price": 1311.67,
+        "price": 1310.69,
         "pnl": -50.0
       },
       {
-        "price": 1322.34,
+        "price": 1321.34,
         "pnl": -50.0
       },
       {
-        "price": 1333.0,
+        "price": 1332.0,
         "pnl": -50.0
       },
       {
-        "price": 1343.66,
+        "price": 1342.66,
         "pnl": -50.0
       },
       {
-        "price": 1354.33,
+        "price": 1353.31,
         "pnl": -50.0
       },
       {
-        "price": 1364.99,
+        "price": 1363.97,
         "pnl": -50.0
       },
       {
-        "price": 1375.66,
+        "price": 1374.62,
         "pnl": -50.0
       },
       {
-        "price": 1386.32,
+        "price": 1385.28,
         "pnl": -50.0
       },
       {
-        "price": 1396.98,
+        "price": 1395.94,
         "pnl": -50.0
       },
       {
-        "price": 1407.65,
-        "pnl": -57.65
+        "price": 1406.59,
+        "pnl": -56.59
       },
       {
-        "price": 1418.31,
-        "pnl": -68.31
+        "price": 1417.25,
+        "pnl": -67.25
       },
       {
-        "price": 1428.98,
-        "pnl": -78.98
+        "price": 1427.9,
+        "pnl": -77.9
       },
       {
-        "price": 1439.64,
-        "pnl": -89.64
+        "price": 1438.56,
+        "pnl": -88.56
       },
       {
-        "price": 1450.3,
+        "price": 1449.22,
+        "pnl": -99.22
+      },
+      {
+        "price": 1459.87,
         "pnl": -100.0
       },
       {
-        "price": 1460.97,
+        "price": 1470.53,
         "pnl": -100.0
       },
       {
-        "price": 1471.63,
+        "price": 1481.18,
         "pnl": -100.0
       },
       {
-        "price": 1482.3,
+        "price": 1491.84,
         "pnl": -100.0
       },
       {
-        "price": 1492.96,
+        "price": 1502.5,
         "pnl": -100.0
       },
       {
-        "price": 1503.62,
+        "price": 1513.15,
         "pnl": -100.0
       },
       {
-        "price": 1514.29,
+        "price": 1523.81,
         "pnl": -100.0
       },
       {
-        "price": 1524.95,
+        "price": 1534.46,
         "pnl": -100.0
       },
       {
-        "price": 1535.62,
+        "price": 1545.12,
         "pnl": -100.0
       },
       {
-        "price": 1546.28,
+        "price": 1555.78,
         "pnl": -100.0
       },
       {
-        "price": 1556.94,
+        "price": 1566.43,
         "pnl": -100.0
       },
       {
-        "price": 1567.61,
+        "price": 1577.09,
         "pnl": -100.0
       },
       {
-        "price": 1578.27,
+        "price": 1587.74,
         "pnl": -100.0
       },
       {
-        "price": 1588.94,
-        "pnl": -100.0
-      },
-      {
-        "price": 1599.6,
+        "price": 1598.4,
         "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.821,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3389,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 99.9,
+      "score": 91.8,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 83.5,
+      "score": 86.3,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,8 +315,8 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 64.1,
-      "grade": "B (Good)",
+      "score": 57.7,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "B1x-Nov-1300CE-S1x-Nov-1350CE-S1x-Nov-1350CE-B1x-Nov-1350CE"
@@ -324,29 +324,11 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 60.3,
-      "grade": "B (Good)",
+      "score": 55.2,
+      "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "S1x-Nov-1300PE-S1x-Nov-1400CE-B1x-Nov-1450CE"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 55.6,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1350PE-S1x-Nov-1350CE-B1x-Nov-1400CE"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 52.6,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1300CE-S1x-Nov-1350CE-S1x-Nov-1350CE-B1x-Nov-1400CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -358,25 +340,34 @@
       "legs_summary": "S1x-Nov-1300PE"
     },
     {
-      "strategy_type": "poor_mans_covered_call",
-      "strategy_display": "Poor Mans Covered Call",
-      "score": 40.2,
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 49.1,
       "grade": "C (Moderate)",
-      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-1250CE-S1x-Nov-1350CE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1350PE-S1x-Nov-1350CE-B1x-Nov-1400CE"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 48.3,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-1300CE-S1x-Nov-1350CE-S1x-Nov-1350CE-B1x-Nov-1400CE"
     }
   ],
   "indicators": {
-    "EMA20": "1347.19",
-    "EMA50": "1373.50",
-    "EMA100": "1371.89",
-    "EMA200": "1364.29",
-    "RSI(14)": "42.27",
-    "ATR(14)": "21.93",
-    "ADX(14)": "35.31",
-    "BB(20,2)": "0.38",
-    "P_SHAPE(20)": "42.46"
+    "EMA20": "1342.68",
+    "EMA50": "1369.50",
+    "EMA100": "1369.90",
+    "EMA200": "1363.43",
+    "RSI(14)": "42.49",
+    "ATR(14)": "19.27",
+    "ADX(14)": "31.03",
+    "BB(20,2)": "0.42",
+    "P_SHAPE(20)": "42.85"
   },
   "rules": [
     {
@@ -394,14 +385,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -443,7 +427,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -459,9 +450,16 @@
   ],
   "news": [
     {
+      "title": "ICICI Bank, SBI, Kotak Bank: Why Motilal Oswal picked these banking stocks; check CAGR, target price and...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPaGllSUNBcXVYY1IzQ2NpWUVHc2Y3YmFLTkJ5Mjg3UGlPYXMzd19OZXVNdW52Vmw2WFRHODcwNVBXa1RNZk9DZVFyb3hROS1MQ3czTGN3MFpTeGphMk02ZndHQUQxM0JkVlRnN1lkRlB6OXdLQ3k3aWVMTExCdVhiZ2NnSWZlenlVLUpBRUowNmhhUkU2M3d0OVlqdHpIcHJ4TFlteEdJQXpSZlI1eTNXcUVjWERjamFfTGgtREtCZkNuVUR5XzJlanBxVEsyOWpRMTlMd3dMdkFXLXdSYnBZY2c1Nm1rWXU5RElkYUJVSzBHaHdvUUtnQ1VzSXXSAYICQVVfeXFMT3NPU2Z6XzBxdTQzVi1rMGp5aUI5bXN0TGliT2FyNUU2dTczY1FrWndicFljMDBBZi1OMGEwOGpITDl1bDE2WlFyb2pMcG9vZGszS3pseUhROWRyNVZLUHE0N3RINVg4aFQ2MHFsN0VNbVZRd0N5ZGk0V3RsdFg5R0hMNlV2c0w5SEJiYkI3R0JnQ3l3UG9Wa3h2OXB2d1NKOGY1REZtMUJkQlpPSEF3LUFGVlZVNEE4OEZvWHpwQ19RUGFPVlpKRUhDdjk3WEZza3M0N3BpZUVna1oyWDhXdkZMaTZBQlQ3UE8xT3hleEV1SlhCOGxRR1dCSlpPbUVyaGR3?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "ICICI Bank to decide on Bagchi's successor at ICICI Life in 2-3 days",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaFQ2NXJFeWJ6RDl2cEY1YUl3MHYtRi1XYVFPX2hDckpTTlQxbGxQcjNIeUNyV0lTRGwtUXRheHVTRkdtTFVsNXB4cTdGVEZBSFZIUlBrUFM3R3F6Q1lLUEg5MEUyeUdQYmFvUmtENVFCMDZVaWs3cVpuTGI2LVFlMUFzOFpyc2tzcTBxT3NURTUxSlRmRVlwMmJhalVlTXhVYlhES2d3NEQyS2FkNFFSSFJtOWxEd0NwNjNSX2F6cVVNT0ViTWfSAcsBQVVfeXFMUFN3TjQ2M1ZRUWd1TU9QYlZRUkcwMUhiYS11STNTRVZ5ekZYek1EMzBKUHNjRzVCMWlkZGRlcVZwVzBycjRnSFBoS29VQ2FLSkx5NTJLUVpVU0RhWVNxNjNoeUdZelZZRmFGbDZoTmRaVUdKcGhZa2VmblFJbFhvMHI2RklqcUJNNEZfNFpMWFdxbkRtSWRtbGNMRll2c3A0RDQtV1huRGdfVWhjY3hUY1Z4MmdQc01vS1d2aGx5YW1jZ2hXUkhjM2loNHM?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaFQ2NXJFeWJ6RDl2cEY1YUl3MHYtRi1XYVFPX2hDckpTTlQxbGxQcjNIeUNyV0lTRGwtUXRheHVTRkdtTFVsNXB4cTdGVEZBSFZIUlBrUFM3R3F6Q1lLUEg5MEUyeUdQYmFvUmtENVFCMDZVaWs3cVpuTGI2LVFlMUFzOFpyc2tzcTBxT3NURTUxSlRmRVlwMmJhalVlTXhVYlhES2d3NEQyS2FkNFFSSFJtOWxEd0NwNjNSX2F6cVVNT0ViTWc?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
@@ -473,10 +471,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "ICICI Bank, SBI, Kotak Bank: Why Motilal Oswal picked these banking stocks; check CAGR, target price and...",
+      "title": "HDFC Bank appoints ICICI Bank veteran V.N. Srivatsan as Chief Compliance Officer",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPaGllSUNBcXVYY1IzQ2NpWUVHc2Y3YmFLTkJ5Mjg3UGlPYXMzd19OZXVNdW52Vmw2WFRHODcwNVBXa1RNZk9DZVFyb3hROS1MQ3czTGN3MFpTeGphMk02ZndHQUQxM0JkVlRnN1lkRlB6OXdLQ3k3aWVMTExCdVhiZ2NnSWZlenlVLUpBRUowNmhhUkU2M3d0OVlqdHpIcHJ4TFlteEdJQXpSZlI1eTNXcUVjWERjamFfTGgtREtCZkNuVUR5XzJlanBxVEsyOWpRMTlMd3dMdkFXLXdSYnBZY2c1Nm1rWXU5RElkYUJVSzBHaHdvUUtnQ1VzSXXSAYICQVVfeXFMT3NPU2Z6XzBxdTQzVi1rMGp5aUI5bXN0TGliT2FyNUU2dTczY1FrWndicFljMDBBZi1OMGEwOGpITDl1bDE2WlFyb2pMcG9vZGszS3pseUhROWRyNVZLUHE0N3RINVg4aFQ2MHFsN0VNbVZRd0N5ZGk0V3RsdFg5R0hMNlV2c0w5SEJiYkI3R0JnQ3l3UG9Wa3h2OXB2d1NKOGY1REZtMUJkQlpPSEF3LUFGVlZVNEE4OEZvWHpwQ19RUGFPVlpKRUhDdjk3WEZza3M0N3BpZUVna1oyWDhXdkZMaTZBQlQ3UE8xT3hleEV1SlhCOGxRR1dCSlpPbUVyaGR3?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT2ZqMFJkU1dwTFpseHBNSkk0aEJQQkN0OVdGY21qUnU5R0lFd2F1aHU5ZGhueGZoZTdqUXB3Q0QwNmhlZ3c5OEdRZmNGcHQycVZWR2NvLVF3N2ZyRnc2YTU0ZXJlS0NJMXhoTXhmZ2hud3M2STV6YTF5Ri0zb2djRFg5d1RRemtYT3RtR3ljZmwzdVhvc1VaZEdadnRfWDgtcW1ocE0xcnVxZ2lHOGZkcTdBOFpkajdSb1RiODVFV2VYTmdHMFBrVVdZNmZTOVZiaXhQadIB2gFBVV95cUxQMUNXZ3dfYVlxV0hTRHlLN3Jfd1ZQSHVMNUdwLWJ5ZENWMzdDNW9TQ0xIdUloUnNNdVpDLUR4UDJRako3SGxPMUZtV3hlZzYwQXBVMVFFdkNJb0hqc3NRN3gzejVnLVNhVHUyVldsRTZQelF3dFhISTlQSW1WYTgxYThzbkRRZ0pTNDRab05va2lvLVU5VENGMjhEZldQREktLWdNbnZkZGZ2RkllNkF6M2pzOTBQZ3lleW0zVk1pWjlKa3V0OTJMdXRMaTBfMHMzRW03SDZmaUxfZw?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
     },
     {
@@ -487,17 +485,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "HDFC Bank appoints ICICI Bank veteran V.N. Srivatsan as Chief Compliance Officer",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT2ZqMFJkU1dwTFpseHBNSkk0aEJQQkN0OVdGY21qUnU5R0lFd2F1aHU5ZGhueGZoZTdqUXB3Q0QwNmhlZ3c5OEdRZmNGcHQycVZWR2NvLVF3N2ZyRnc2YTU0ZXJlS0NJMXhoTXhmZ2hud3M2STV6YTF5Ri0zb2djRFg5d1RRemtYT3RtR3ljZmwzdVhvc1VaZEdadnRfWDgtcW1ocE0xcnVxZ2lHOGZkcTdBOFpkajdSb1RiODVFV2VYTmdHMFBrVVdZNmZTOVZiaXhQadIB2gFBVV95cUxQMUNXZ3dfYVlxV0hTRHlLN3Jfd1ZQSHVMNUdwLWJ5ZENWMzdDNW9TQ0xIdUloUnNNdVpDLUR4UDJRako3SGxPMUZtV3hlZzYwQXBVMVFFdkNJb0hqc3NRN3gzejVnLVNhVHUyVldsRTZQelF3dFhISTlQSW1WYTgxYThzbkRRZ0pTNDRab05va2lvLVU5VENGMjhEZldQREktLWdNbnZkZGZ2RkllNkF6M2pzOTBQZ3lleW0zVk1pWjlKa3V0OTJMdXRMaTBfMHMzRW03SDZmaUxfZw?oc=5",
+      "title": "Delhi HC directs ICICI Bank to reverse Rs 3.89 lakh transferred to wrong beneficiary",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWGFDdUU1VF80YVp2Wkh5R0ZiQ1JDSUV5V0FmOVpZWGV4QlREZTlGQ2ZuUEZmVDBnU2lKRnJYeURDNmoxazlqajhpNEhQYzhiaTdLTUU4N0I1a21MWGFVcC12UnpNeEFaOG1kV2xLWTllZ0ZpWlkyYV9maG5IcTcxMGpRSTd2OG5zcmhnYjFnWkh5b1MwRVhhZlRabVJTTEdXY2o0UVNIWlpseFZNVmpxRU5OQW04VnZTTUVaajRZd0x2VF9jdFpieU1QdEZQRkZjYWJIajFmbTRKOFpOOHfSAeMBQVVfeXFMT1BZb0FqSks2NHF3T3BrLS1PeUZseFZpOUFudWgzWFhCNDE0TkRkdnMxRWIzcHhXWWVDTW0tWHpxeFdOWmNWVE5Rbk04YkVET3FUTERJZWpKWGF4YjJWaExaeU92d1JrOVFkaTZEaEthRTBJdXdGcGduOEJTQUJmXzZfTEhWeTRQdDh6MGZrcG5JcExvQ3ZPTy1HcmdUS3RFUDdhYXVUdUVpYUNXWFZ1eUhGSDVLNGNERjdMbUxhTlNWMkFfNFNxR2taV3d1WGRDQXRiYzZ4WklfWW1Eak1Md2RnUkU?oc=5",
       "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "SBI, HDFC Bank, ICICI Bank, others closed for Gandhi Jayanti. Is October 3 also a bank holiday?",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPTDd2NWxtUG5MWV9wZVJSdmx5ai15TlVXel9ld190MnM2VkZ3ODMzUG1aT21wUnFxOUg0Sk9VeFFSdGNLUjREQXBLOTlYNE14TnVBUTBlVWRlbHBpVE5JS1JmcUVkMXZvSVdGSDdfa3ZFTmUtVmZfWUVJWFQ5dC1pRjNwWnhFYWR2U2l1eDUzXzdVSm1EekdfcE9CekJLajV0Mks3NTZfWk9RVzYxTk94Z3NmN2xZSTM2c014Y0VuaTJhTE9OUFhDeF9zVEM3X2JxbDlaeXR1REZLT1ZsWWlMSjBPazdGMWh6blFZUVZueVZ2UmcySkNuQkJsNjJ6Zw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
       "sentiment": "neutral"
     }
   ]

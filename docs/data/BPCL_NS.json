@@ -1,14 +1,14 @@
 {
   "symbol": "BPCL.NS",
-  "last_price": 296.35,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.0,
-  "fit_score": 20.0,
+  "last_price": 297.0,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 20.0,
-  "vix": 14.9,
+  "confidence_percentage": 17.5,
+  "vix": 14.57,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 310.0,
         "strike_formatted": "310",
         "option_type": "Call",
-        "delta": 0.253,
+        "delta": 0.258,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x BPCL.NS 24-Nov-2026 310 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 315.0,
         "strike_formatted": "315",
         "option_type": "Call",
-        "delta": 0.17,
+        "delta": 0.171,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x BPCL.NS 24-Nov-2026 315 Call"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 287.46,
-    "take_profit_price": 305.24,
-    "net_delta": -0.083,
+    "stop_loss_price": 288.09,
+    "take_profit_price": 305.91,
+    "net_delta": -0.087,
     "net_theta": 0.014,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 237.08,
+        "price": 237.6,
         "pnl": -10.0
       },
       {
-        "price": 239.45,
+        "price": 239.98,
         "pnl": -10.0
       },
       {
-        "price": 241.82,
+        "price": 242.35,
         "pnl": -10.0
       },
       {
-        "price": 244.19,
+        "price": 244.73,
         "pnl": -10.0
       },
       {
-        "price": 246.56,
+        "price": 247.1,
         "pnl": -10.0
       },
       {
-        "price": 248.93,
+        "price": 249.48,
         "pnl": -10.0
       },
       {
-        "price": 251.3,
+        "price": 251.86,
         "pnl": -10.0
       },
       {
-        "price": 253.68,
+        "price": 254.23,
         "pnl": -10.0
       },
       {
-        "price": 256.05,
+        "price": 256.61,
         "pnl": -10.0
       },
       {
-        "price": 258.42,
+        "price": 258.98,
         "pnl": -10.0
       },
       {
-        "price": 260.79,
+        "price": 261.36,
         "pnl": -10.0
       },
       {
-        "price": 263.16,
+        "price": 263.74,
         "pnl": -10.0
       },
       {
-        "price": 265.53,
+        "price": 266.11,
         "pnl": -10.0
       },
       {
-        "price": 267.9,
+        "price": 268.49,
         "pnl": -10.0
       },
       {
-        "price": 270.27,
+        "price": 270.86,
         "pnl": -10.0
       },
       {
-        "price": 272.64,
+        "price": 273.24,
         "pnl": -10.0
       },
       {
-        "price": 275.01,
+        "price": 275.62,
         "pnl": -10.0
       },
       {
-        "price": 277.38,
+        "price": 277.99,
         "pnl": -10.0
       },
       {
-        "price": 279.75,
+        "price": 280.37,
         "pnl": -10.0
       },
       {
-        "price": 282.13,
+        "price": 282.74,
         "pnl": -10.0
       },
       {
-        "price": 284.5,
+        "price": 285.12,
         "pnl": -10.0
       },
       {
-        "price": 286.87,
+        "price": 287.5,
         "pnl": -10.0
       },
       {
-        "price": 289.24,
+        "price": 289.87,
         "pnl": -10.0
       },
       {
-        "price": 291.61,
+        "price": 292.25,
         "pnl": -10.0
       },
       {
-        "price": 293.98,
+        "price": 294.62,
         "pnl": -10.0
       },
       {
-        "price": 296.35,
+        "price": 297.0,
         "pnl": -10.0
       },
       {
-        "price": 298.72,
+        "price": 299.38,
         "pnl": -10.0
       },
       {
-        "price": 301.09,
+        "price": 301.75,
         "pnl": -10.0
       },
       {
-        "price": 303.46,
+        "price": 304.13,
         "pnl": -10.0
       },
       {
-        "price": 305.83,
+        "price": 306.5,
         "pnl": -10.0
       },
       {
-        "price": 308.2,
+        "price": 308.88,
         "pnl": -10.0
       },
       {
-        "price": 310.57,
-        "pnl": -10.57
+        "price": 311.26,
+        "pnl": -11.26
       },
       {
-        "price": 312.95,
-        "pnl": -12.95
+        "price": 313.63,
+        "pnl": -13.63
       },
       {
-        "price": 315.32,
+        "price": 316.01,
         "pnl": -15.0
       },
       {
-        "price": 317.69,
+        "price": 318.38,
         "pnl": -15.0
       },
       {
-        "price": 320.06,
+        "price": 320.76,
         "pnl": -15.0
       },
       {
-        "price": 322.43,
+        "price": 323.14,
         "pnl": -15.0
       },
       {
-        "price": 324.8,
+        "price": 325.51,
         "pnl": -15.0
       },
       {
-        "price": 327.17,
+        "price": 327.89,
         "pnl": -15.0
       },
       {
-        "price": 329.54,
+        "price": 330.26,
         "pnl": -15.0
       },
       {
-        "price": 331.91,
+        "price": 332.64,
         "pnl": -15.0
       },
       {
-        "price": 334.28,
+        "price": 335.02,
         "pnl": -15.0
       },
       {
-        "price": 336.65,
+        "price": 337.39,
         "pnl": -15.0
       },
       {
-        "price": 339.02,
+        "price": 339.77,
         "pnl": -15.0
       },
       {
-        "price": 341.4,
+        "price": 342.14,
         "pnl": -15.0
       },
       {
-        "price": 343.77,
+        "price": 344.52,
         "pnl": -15.0
       },
       {
-        "price": 346.14,
+        "price": 346.9,
         "pnl": -15.0
       },
       {
-        "price": 348.51,
+        "price": 349.27,
         "pnl": -15.0
       },
       {
-        "price": 350.88,
+        "price": 351.65,
         "pnl": -15.0
       },
       {
-        "price": 353.25,
+        "price": 354.02,
         "pnl": -15.0
       },
       {
-        "price": 355.62,
+        "price": 356.4,
         "pnl": -15.0
       }
     ],
@@ -280,27 +280,27 @@
       "legs_summary": "S1x-Nov-310CE-B1x-Nov-315CE"
     },
     {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 53.4,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-297PE"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 58.0,
+      "score": 53.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-275PE-S1x-Nov-280PE-S1x-Nov-310CE-B1x-Nov-315CE"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 51.7,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-296.4PE"
-    },
-    {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 40.7,
+      "score": 44.5,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -308,19 +308,19 @@
     }
   ],
   "indicators": {
-    "EMA20": "306.38",
-    "EMA50": "309.59",
-    "EMA100": "311.92",
-    "EMA200": "317.02",
-    "RSI(14)": "37.39",
-    "ATR(14)": "7.33",
-    "ADX(14)": "28.83",
-    "BB(20,2)": "0.08",
-    "P_SHAPE(20)": "45.14"
+    "EMA20": "304.24",
+    "EMA50": "308.31",
+    "EMA100": "311.13",
+    "EMA200": "316.47",
+    "RSI(14)": "37.72",
+    "ATR(14)": "6.03",
+    "ADX(14)": "31.73",
+    "BB(20,2)": "0.18",
+    "P_SHAPE(20)": "38.04"
   },
   "rules": [
     {
-      "name": "ATR increasing",
+      "name": "ADX above 30",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -328,13 +328,6 @@
     },
     {
       "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -376,7 +369,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ADX above 30",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -384,6 +377,13 @@
     },
     {
       "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -399,8 +399,29 @@
   ],
   "news": [
     {
+      "title": "BPCL plans $3 billion bond sale to fund Brazil oil bet",
+      "publisher": "government.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbmVOQ3BJajhNTTZzZDIxYXp2TXhDT1lPZ3lFR1NYdGlJakp5Rm1IREljUmxQdmNJWno2MlZBRWtKOWhXOFdwSURzN3FTaGVKRjlWYnJLVXZhd1BvYi1RWXRxLUxMM3FaRHZMd1RibXhtV2k0SVF4RlFSNTNLbmZrYlZPcHI3Z09Sb3VZQmdaRVVqYVh2QzZhTVgzd2M0OWE2X1Z2MFVDZVh4VG1KZ051dkZsaHR0amhObC1IbNIBwgFBVV95cUxPZE1XR2FxRW9RQ3RPVkFnY0ZPYlUyWllVS0dVNXJIU28tQTA4aDgzT3QzN2lISGFDTkFHSWROeGNjeUNtejBSVjZTaUI2OF9vVXdScEpwb3NheHRqelN1clRsTTNiQ2E3aWZ4V3JDQVNRWno4Y09icjN2OXFXbUZINEZWR1V4X0g2Y19DcEFVS0ZfR0tkaTFZSE1RbU84dmV4NmlHV1Y0LVZPYzVVRG11SmhRcUVUb1poTGhyVnNzd3A2QQ?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "BPCL\u2019s Andhra mega refinery clears key environment hurdle",
+      "publisher": "Indiatimes",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeHBEQ09DXzBwZm9jUTYyWDNycGJBRXRtQjF2WmJEUGhacU9BMXpvSElFN29DLTBQT0ZjUVFhcEx3bFdaVFU3OXdjYW94THUxNHNXWl9BZVF5LU11S2lMV0plUDRSc1RraWFKeDBTeGFxbW9yMHprNXpFTmF2WS1teDVEcWJpVlJNX3MzTFJ0WUpZWnhEaFpBTnRJSHZEdU1Ed3B2eFc4d2xoaFdmVWwxeXFzX1BxUlY5b21hSjM0bW5qYXcxWGRfMXJsOFVReWNJbTRFTdIB2AFBVV95cUxOQzRoYmh5SVM5dEdxZk1VakRwN2RtMDRKOGRlbEtoYzBvMmt4R3NLT1VGbDFtcjZNcDB5MmdUNHVtSEh5N21ickJOdjAtbXdMQW5DRFNmTDhUbk1DUlotV2FEVS1KU1RybGhwNnNldndEU2ZybFkzUkFHTGtjRVlORVZEZExDeEwxM2pMZ0NoZzRNZjdVODBieW5rZTRhcEZSRl9yempBSnJaOWlwTm5URmxfdlVNdFo3MnlaeDlqREo1QWZveXV5c1NIUzdsU0dZUktZZnBXeXY?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "India\u2019s BPCL plans $3 billion bond sale to fund Brazil oil bet",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQc3p2VW1XRkJWVDFRYkVQcjdwZVNyaWwyQ20wSENTNUpCdVRRVlN0U0tIeDZfNDY1b1Bzbmc1dE5GNGhqUENBaklxTHQxNHdGeHJNMVg1OXE1bDhPNHMwRGdmdElXeDJBRFFnR1RDd2ZsbmIxQzJSWk5wakpsSmptbVVoaENIa2VaQUV6ZVhKc0NUU0dFNnhoM0drSzBmTVVZVG42ajUzRVVWczNJcExqRUxRb2JXR2dQZVZPaFNxeE9OeXEtXzl0VWtOUk1fTkRuclNj0gHMAUFVX3lxTE8yU3h2aWp0ZVMyeTlKWjFSajk2LXUyaGhlQUFJeVVycEhjb2VvbXNRRE9lQkZjSHd3d0YtZmNKNFJjcEFITVFoT3BiSkY1ZERTeHJhaUF2QkVobDgwazUzaHhzSFBUNXZLVEVzdFpGS3NYLTU5d0h6MHJBeUpfdmEtQ3dwc2VJbkpya0thWTMydUtKalBFdW9GVXNWb1Ftb2VwYWo1aDQ4TGZ1eE1hU0FFTUtLSzB4VzdxQ19fNXJkb1VuWGZwTmJlbW9YRg?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Akasa Air and BPCL test 1 per cent SAF on Mumbai-Goa commercial flight",
-      "publisher": "sustainability.economictimes.indiatimes.com",
+      "publisher": "ET Sustainability",
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZDZiU1ZxVy0yRXZkZ3hGTDhsUHJoSzFLalJVN3JBV0xJb0prWndQUTRjNlhfdkVCN3BMell3aVZ0U2hMV05UcFNnUGlYSk1kUG9FN0ZUMlN0MDhjRWl3NlRXQ09JczFTTFprdm1qU2pZM2FOYTJTNUFxR014dkg2NU9aZDJSV1ZSMkI2TldGMFpBWVZueWtVTll0ckJnMVBzMkJpREFHd1hnbDl0YTZEY3MxVFE0MVhIQWt4OXVQRTRFWVVmTDB5ZF9vOXQtS29uOUZrU01VbE5xTlBXZ0JSa3VLOHVHeGRvdnM0QVc0N1HSAfQBQVVfeXFMT0xXN1pqeTFKeWw5VU5kSnpzNG5NcnhMbVNGTG56dmlvaUNoQ2tRSkNLQWRKVGNwMWRRYjlSQ2VZZkt2eVZ1c1FQRHdkb0x2NWs2bkpKaXhSa3dmWkhmS3RGSHdjNktUeFkwSHJ5M0VSbllKUnE3eUs2cTN4Zmpzelk4T3lNWF8tbDgtQWxFbTU1UUI0Z0I3czRRUHJmTk10RVFJYlVOak5YMk9RcTRnMFk4X1QxUXVYZG9HQ1dKQzNXTVl0cWF2clhTUWRjdkJiVkJpRlpTS251LTRTSnJLWS1NYnlCbzJNTU5QQkZXdGxKQ0Nmag?oc=5",
       "published_at": "Tue, 29 Sep 2026",
       "sentiment": "neutral"
@@ -418,27 +439,6 @@
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNb0xKV3VOVlFINTAwTC1hdFJRa25XenR2V1h5Umdmd2VZSTlTaXZXN2JwVDQwbEFPb2NwRExyVmJza1VtWVNrM0ZfdFZJVlVZend0VVRwT2hETWxvVjA5eWtQdXdkUFNKRWIwZ3VaUXktS0dGckR4TzROUkp0ZER3eXZzRG55WUZNcTVMRFN6NVNxakE0U3RiVTNRYndtMC1adkpRUmZaUl9jWU1EdjhvMHF5OVdCUGR5MU92VVQ5SXAzVXM3U0tDMmtDb2NwM2tSNUduRHNJd2xfdlJMQkZkSNIB5gFBVV95cUxNTE44c3VMNzlEZUl0b1BHdEIyZTEtSjA1QlhMd2tjT0FGQk9WNDFkUy15Z3UxMnd1bVZ1cGszRkVOU1JuTkVQX2JoMTdYcDFTekR2UG04blN4VXl6Qk9UYktka0h1MGVJSDRoR0tjZE14SWdxUTV3djBwM2V1ZmtNemRRSGJsd2cyTld4ZVdEenMxQWJrY1FFelIycDA2NWpEUGJQSU5BOGxVc3FpMF82Tk9PdFpkYjRvUV9CME93R3MtYlc2U0Q0cEJYVHo5b3ZoRkM5cVNacFZYbDExdHJGWFVFZzNFUQ?oc=5",
       "published_at": "Wed, 30 Sep 2026",
       "sentiment": "bullish"
-    },
-    {
-      "title": "One mutual fund for large-, mid-, small- and micro-cap exposure: How Nifty Total Market Index schemes fare on returns",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYlJ6THRCcXRJQnBHbHRMMW9MOGpWQnRwUU5oV1dwT2xxWmdNQUdaWG9UZVZuVkc0cTNWOWVVUFJxck9FTWNuSThNVzg2bjZlSE5WLXduM0NRNk5BbW1PNmk4YTNldnZvRXJpNmNKYWxGNWtEVl93LXh5RGpzVDhHbVZDSkFHSXZjZmJjampodF9KUHNpYVhFVVJyU3Vwc05ad296TXFwZ3o1RDZ3RHRkQnd6OTQ0N0FUaTBBeHFuSkJ1bzJ5cGJWZ3VuVzVwcFd0SC1HUlI5NE1ob09yUlRQaUw5VkdWR3UyNFF4eUdFYmd5ZE1KSkVmZVJfNnNtbWVCZmVIb1lla25ZMVXSAZACQVVfeXFMT1dGakFEeXpVRTJTRHFtVkxlVHBFaU5vUE5hZkNaRlUxZTMtRWVqOVJvWnJIRXlPc3o2ZzFCT1BFbWVGSnEzYS1TR05fQU9HU0RJR0dWNUg3cEpBTjNocHE1bllYV1JkS3NNdWNXdFFNOVFTc01MNlBJYzQ5eU1xdFJHbm5jTDVkdzZkWWpEQVlkcU9KYTBaeHpBaVYtTVRTMFRPM2k2YkNxQy1HLU9EZGlsSGpSSktwM0FNOHV6Z2ZGUU9CNmZWRzRWUFBuTjlZb0Nwa2t3a2dDZThNYU90THpFWlVSX0JhZGxFUTFSQUZwTzRiUnFUbU5tVWEzY3dwUG9fbnBDSGUxZ3R4ZHVnc18?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The corporate insurance trap: Relying solely on your company\u2019s health cover is a bad idea; here\u2019s why",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNYmZ1dWhYYXpfcEk1VmZiUnBnRmhJQklRQmlleTNtV21RbTFfMTBnUkp2Ui0tOXc4WXdvaWlELTlRWENhWXB1YndkaWRlSnl5ZnBFcGlXV0dSY0Zha29qZFF4XzVxMTJXcXdXOHRNTlctdGVKS09kQlhLUDFUUWlRb0NNVGNCcnEtU01Za2F0X1oxVHRNZE84b2U3ZzZsMktsaFlHM3dFWENOand0OU5URE9jQmV6VnBuWlBmTGFmeWJpMEl2a3pXd0tHZ0lYN3ZRam45Qk85dkVxZ0VoeHRyRHZ5U3BuOE5VdEFnRmMzS0xLbHg5RFJUeGg1ONIBgAJBVV95cUxPRWpYbkdlWkFDUDBTcTh2Rkd6WEs2Y1B6Z2tNWHBSeFp0aVdvTHp6TkVuT2s2LWVjWUNqWlhIUTBOcW5LbXh6b1F4YXNTTld1eGJtMVVDX3hsMm4tdzhCMThBLVBRdGl3cE5RbmMzMHZQWGY4WERxNElSbF82Sjc3MzVQZW9lZm1LcmlsUGctLUl2d0w1bDVfVFQ4amZzeW9YaWdTTE1zU0I5ZHZSdDA1MmpKaUtXXzFxS3h6Sm9CRjB4dnBIVVdJOFFuZkNfd2FqS1VjVm9WZjRQUG1Fc0dvR2I5WHpHWHRSaVRlZG9QR2NpU21QcGhtRUtOdHdEdHBt?oc=5",
-      "published_at": "Sat, 03 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nifty 50 correction: why fund managers see more value in large caps now",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdmtsTUtkQVNVVWRxLVZyQ1lLRzVWcVNQd0wwRG1VTVd3VDdQek1tZmZoei04RnQxV0tRR3NMNmNWWTBCQzRNZFNnVE5EVUhMNEowczR3WXdqYXFtVGNRZmdvOGo2TDVUcGt3Sk01TS02OGF4Z3pWOVBFSzRTX2VJUDhwZmJGdkk2T09XNW1nN0Rnc3R1dmpZYzExTGN2R1lJa2FsMi1paHpNTE9MVmM3aXhYSklhRDlZT2d1emJFN3VxcWVrU2VJRtIBzgFBVV95cUxONGFjZHphdkNjaTllbFJJVnJuaXI1NklUN1U2VktvMWIwTE1MblI4WGVhd2VGa0NuOGJNVHY3VkE3ZGhuZWRTN3lHZDJKcFAwaWc2aWJDTUw1Rm5EUWp0RzlUbk5YMVVzWDVXVEJOcW1Sd21vQ0NmTnZ6aE1YanFLWUg4QlRlT2JBVXhlY1RManVXYV9jTU5XXzFKMzJ4ZUFSbHEtbUxzYWlQYUdaWmtfczhmcHgzV2pQQl9Xd2thMEZ4cXdrdzFaMGY0TFhwZw?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
     }
   ]
 }

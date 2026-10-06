@@ -1,14 +1,14 @@
 {
   "symbol": "SPY",
-  "last_price": 769.64,
-  "as_of": "2026-10-02 13:30:00",
-  "regime": "bull",
-  "regime_display": "Bull",
-  "trend_score": 7.5,
-  "fit_score": 75.0,
-  "confidence_grade": "B",
-  "confidence_percentage": 75.0,
-  "vix": 16.21,
+  "last_price": 774.83,
+  "as_of": "2026-10-05 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.2,
+  "fit_score": 82.5,
+  "confidence_grade": "A",
+  "confidence_percentage": 82.5,
+  "vix": 15.52,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 815.0,
         "strike_formatted": "815",
         "option_type": "Call",
-        "delta": 0.196,
+        "delta": 0.216,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x SPY 20-Nov-2026 815 Call"
       },
       {
@@ -35,229 +35,229 @@
         "strike": 830.0,
         "strike_formatted": "830",
         "option_type": "Call",
-        "delta": 0.12,
+        "delta": 0.131,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x SPY 20-Nov-2026 830 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 35.0,
-    "stop_loss_price": 746.55,
-    "take_profit_price": 792.73,
-    "net_delta": -0.076,
-    "net_theta": 0.044,
+    "margin_required": 30.0,
+    "stop_loss_price": 751.59,
+    "take_profit_price": 798.07,
+    "net_delta": -0.085,
+    "net_theta": 0.046,
     "probability_of_profit": 0.0,
     "var_95": 15.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 615.71,
-        "pnl": -35.0
+        "price": 619.86,
+        "pnl": -30.0
       },
       {
-        "price": 621.87,
-        "pnl": -35.0
+        "price": 626.06,
+        "pnl": -30.0
       },
       {
-        "price": 628.03,
-        "pnl": -35.0
+        "price": 632.26,
+        "pnl": -30.0
       },
       {
-        "price": 634.18,
-        "pnl": -35.0
+        "price": 638.46,
+        "pnl": -30.0
       },
       {
-        "price": 640.34,
-        "pnl": -35.0
+        "price": 644.66,
+        "pnl": -30.0
       },
       {
-        "price": 646.5,
-        "pnl": -35.0
+        "price": 650.86,
+        "pnl": -30.0
       },
       {
-        "price": 652.65,
-        "pnl": -35.0
+        "price": 657.06,
+        "pnl": -30.0
       },
       {
-        "price": 658.81,
-        "pnl": -35.0
+        "price": 663.25,
+        "pnl": -30.0
       },
       {
-        "price": 664.97,
-        "pnl": -35.0
+        "price": 669.45,
+        "pnl": -30.0
       },
       {
-        "price": 671.13,
-        "pnl": -35.0
+        "price": 675.65,
+        "pnl": -30.0
       },
       {
-        "price": 677.28,
-        "pnl": -35.0
+        "price": 681.85,
+        "pnl": -30.0
       },
       {
-        "price": 683.44,
-        "pnl": -35.0
+        "price": 688.05,
+        "pnl": -30.0
       },
       {
-        "price": 689.6,
-        "pnl": -35.0
+        "price": 694.25,
+        "pnl": -30.0
       },
       {
-        "price": 695.75,
-        "pnl": -35.0
+        "price": 700.45,
+        "pnl": -30.0
       },
       {
-        "price": 701.91,
-        "pnl": -35.0
+        "price": 706.64,
+        "pnl": -30.0
       },
       {
-        "price": 708.07,
-        "pnl": -35.0
+        "price": 712.84,
+        "pnl": -30.0
       },
       {
-        "price": 714.23,
-        "pnl": -35.0
+        "price": 719.04,
+        "pnl": -30.0
       },
       {
-        "price": 720.38,
-        "pnl": -35.0
+        "price": 725.24,
+        "pnl": -30.0
       },
       {
-        "price": 726.54,
-        "pnl": -35.0
+        "price": 731.44,
+        "pnl": -30.0
       },
       {
-        "price": 732.7,
-        "pnl": -35.0
+        "price": 737.64,
+        "pnl": -30.0
       },
       {
-        "price": 738.85,
-        "pnl": -35.0
+        "price": 743.84,
+        "pnl": -30.0
       },
       {
-        "price": 745.01,
-        "pnl": -35.0
+        "price": 750.04,
+        "pnl": -30.0
       },
       {
-        "price": 751.17,
-        "pnl": -35.0
+        "price": 756.23,
+        "pnl": -30.0
       },
       {
-        "price": 757.33,
-        "pnl": -35.0
+        "price": 762.43,
+        "pnl": -30.0
       },
       {
-        "price": 763.48,
-        "pnl": -35.0
+        "price": 768.63,
+        "pnl": -30.0
       },
       {
-        "price": 769.64,
-        "pnl": -35.0
+        "price": 774.83,
+        "pnl": -30.0
       },
       {
-        "price": 775.8,
-        "pnl": -35.0
+        "price": 781.03,
+        "pnl": -30.0
       },
       {
-        "price": 781.95,
-        "pnl": -35.0
+        "price": 787.23,
+        "pnl": -30.0
       },
       {
-        "price": 788.11,
-        "pnl": -35.0
+        "price": 793.43,
+        "pnl": -30.0
       },
       {
-        "price": 794.27,
-        "pnl": -35.0
+        "price": 799.62,
+        "pnl": -30.0
       },
       {
-        "price": 800.43,
-        "pnl": -35.0
+        "price": 805.82,
+        "pnl": -30.0
       },
       {
-        "price": 806.58,
-        "pnl": -35.0
+        "price": 812.02,
+        "pnl": -30.0
       },
       {
-        "price": 812.74,
-        "pnl": -35.0
+        "price": 818.22,
+        "pnl": -33.22
       },
       {
-        "price": 818.9,
-        "pnl": -38.9
+        "price": 824.42,
+        "pnl": -39.42
       },
       {
-        "price": 825.05,
-        "pnl": -45.05
+        "price": 830.62,
+        "pnl": -45.0
       },
       {
-        "price": 831.21,
-        "pnl": -50.0
+        "price": 836.82,
+        "pnl": -45.0
       },
       {
-        "price": 837.37,
-        "pnl": -50.0
+        "price": 843.02,
+        "pnl": -45.0
       },
       {
-        "price": 843.53,
-        "pnl": -50.0
+        "price": 849.21,
+        "pnl": -45.0
       },
       {
-        "price": 849.68,
-        "pnl": -50.0
+        "price": 855.41,
+        "pnl": -45.0
       },
       {
-        "price": 855.84,
-        "pnl": -50.0
+        "price": 861.61,
+        "pnl": -45.0
       },
       {
-        "price": 862.0,
-        "pnl": -50.0
+        "price": 867.81,
+        "pnl": -45.0
       },
       {
-        "price": 868.15,
-        "pnl": -50.0
+        "price": 874.01,
+        "pnl": -45.0
       },
       {
-        "price": 874.31,
-        "pnl": -50.0
+        "price": 880.21,
+        "pnl": -45.0
       },
       {
-        "price": 880.47,
-        "pnl": -50.0
+        "price": 886.41,
+        "pnl": -45.0
       },
       {
-        "price": 886.63,
-        "pnl": -50.0
+        "price": 892.6,
+        "pnl": -45.0
       },
       {
-        "price": 892.78,
-        "pnl": -50.0
+        "price": 898.8,
+        "pnl": -45.0
       },
       {
-        "price": 898.94,
-        "pnl": -50.0
+        "price": 905.0,
+        "pnl": -45.0
       },
       {
-        "price": 905.1,
-        "pnl": -50.0
+        "price": 911.2,
+        "pnl": -45.0
       },
       {
-        "price": 911.25,
-        "pnl": -50.0
+        "price": 917.4,
+        "pnl": -45.0
       },
       {
-        "price": 917.41,
-        "pnl": -50.0
+        "price": 923.6,
+        "pnl": -45.0
       },
       {
-        "price": 923.57,
-        "pnl": -50.0
+        "price": 929.8,
+        "pnl": -45.0
       }
     ],
     "kelly_sizing": {
@@ -282,77 +282,77 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 84.7,
+      "score": 86.7,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x SPY 20-Nov-2026 725 Put<br> Sell 1x SPY 20-Nov-2026 815 Call<br> Buy 1x SPY 20-Nov-2026 830 Call"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 68.1,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x SPY 20-Nov-2026 710 Put<br> Sell 1x SPY 20-Nov-2026 725 Put<br> Sell 1x SPY 20-Nov-2026 815 Call<br> Buy 1x SPY 20-Nov-2026 830 Call"
+      "legs_summary": "Sell 1x SPY 20-Nov-2026 735 Put<br> Sell 1x SPY 20-Nov-2026 815 Call<br> Buy 1x SPY 20-Nov-2026 830 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 59.1,
-      "grade": "C (Moderate)",
+      "score": 65.2,
+      "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x SPY 20-Nov-2026 725 Call<br> Sell 1x SPY 20-Nov-2026 790 Call"
+      "legs_summary": "Buy 1x SPY 20-Nov-2026 735 Call<br> Sell 1x SPY 20-Nov-2026 795 Call"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 55.2,
+      "score": 54.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x SPY 20-Nov-2026 725 Put"
+      "legs_summary": "Sell 1x SPY 20-Nov-2026 735 Put"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 53.3,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x SPY 20-Nov-2026 720 Put<br> Sell 1x SPY 20-Nov-2026 735 Put<br> Sell 1x SPY 20-Nov-2026 815 Call<br> Buy 1x SPY 20-Nov-2026 830 Call"
     },
     {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
-      "score": 49.0,
+      "score": 53.0,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x SPY 20-Nov-2026 769.6 Call"
+      "legs_summary": "Buy 1x SPY 20-Nov-2026 774.8 Call"
     },
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 45.7,
+      "score": 47.3,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x SPY 20-Nov-2026 725 Put"
+      "legs_summary": "Sell 1x SPY 20-Nov-2026 735 Put"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 40.8,
+      "score": 44.0,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x SPY 20-Nov-2026 770 Call<br> Sell 1x SPY 20-Nov-2026 805 Call"
+      "legs_summary": "Buy 1x SPY 20-Nov-2026 775 Call<br> Sell 1x SPY 20-Nov-2026 805 Call"
     }
   ],
   "indicators": {
-    "EMA20": "763.76",
-    "EMA50": "716.36",
-    "EMA100": "623.56",
-    "EMA200": "528.40",
-    "RSI(14)": "53.41",
-    "ATR(14)": "16.47",
-    "ADX(14)": "4.40",
-    "BB(20,2)": "0.73",
-    "P_SHAPE(20)": "60.85"
+    "EMA20": "764.82",
+    "EMA50": "718.66",
+    "EMA100": "626.56",
+    "EMA200": "530.85",
+    "RSI(14)": "54.74",
+    "ATR(14)": "15.79",
+    "ADX(14)": "4.61",
+    "BB(20,2)": "0.94",
+    "P_SHAPE(20)": "56.90"
   },
   "rules": [
     {
@@ -405,6 +405,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
       "score": 1.0,
@@ -424,57 +431,50 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
     {
-      "title": "Nasdaq, S&P 500, Dow Futures Steady Ahead Of Fed Minutes This Week: TSLA, SPCX, CBRS, QCOM, PTC, IBRX Stocks In Focus",
+      "title": "Nasdaq 100 Hits Record Highs As Investors Shrug Off Pressure From Soaring Yields \u2014 NVDA, SPCX, CRML, TSLA, QCOM In Focus",
       "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-dow-futures-085240343.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-100-hits-record-highs-220932490.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "A New ETF Is Betting the S&P 500 Hits 10,000 and Almost Nobody Is Buying It",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/options/articles/etf-betting-p-500-hits-211705837.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "JPMorgan Adds New Stocks to Its October Favorites List",
-      "publisher": "BeInCrypto",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-adds-stocks-october-favorites-060741127.html",
+      "title": "ETF League Tables: SPDR Sees Biggest Outflows",
+      "publisher": "etf.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/etf-league-tables-spdr-sees-210004904.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
-      "publisher": "Benzinga Prediction Markets",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-p-500-open-060347995.html",
+      "title": "Retiring With Half Your Wealth in One Stock? One Bad Quarter Can Reset Your Retirement Date. These 3 ETFs Spread the Risk",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/retiring-half-wealth-one-stock-203327193.html",
       "published_at": "Today",
       "sentiment": "bearish"
     },
     {
-      "title": "Stocktwits Retail Therapy: Consumer Stocks Face Heat But Carnival, Mattel And Stitch Fix Buck The Trend",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stocktwits-retail-therapy-consumer-stocks-052924276.html",
+      "title": "Moderna Surges 8% as Full Melanoma Readout Nears; BioNTech Ticks Up, Pfizer Slips",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/healthcare/articles/moderna-surges-8-full-melanoma-184702779.html",
       "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
     },
     {
-      "title": "International Markets Are Pulling Ahead Of US Stocks In 2026: These 4 ETFs Have Left SPY, QQQ, DIA In The Dust",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/international-markets-pulling-ahead-us-045634254.html",
+      "title": "Gorilla Slides 5% Despite Northland Buy Rating and $40 Price Target; Palantir Holds Flat, BigBear.ai Holdings Slips",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/gorilla-slides-5-despite-northland-181313333.html",
       "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocktwits Pharma Pulse: Roche Faces FDA Decision, Gene-Therapy Stocks Step Into Focus \u2014 The Week\u2019s Biotech Watchlist",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/healthcare/articles/stocktwits-pharma-pulse-roche-faces-030933727.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bearish"
     }
   ]
 }

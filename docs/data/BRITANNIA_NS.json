@@ -1,19 +1,19 @@
 {
   "symbol": "BRITANNIA.NS",
-  "last_price": 4750.1,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "last_price": 4769.5,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 14.9,
+  "confidence_percentage": 17.5,
+  "vix": 14.62,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (25.3) is oversold (< 35) [Synthetic PCR: 1.46]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (26.2) is oversold (< 35) [Synthetic PCR: 1.38]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,241 +23,241 @@
         "strike": 5000.0,
         "strike_formatted": "5000",
         "option_type": "Call",
-        "delta": 0.218,
+        "delta": 0.233,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 5000 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 5100.0,
-        "strike_formatted": "5100",
+        "strike": 5050.0,
+        "strike_formatted": "5050",
         "option_type": "Call",
-        "delta": 0.128,
+        "delta": 0.18,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Buy 1x BRITANNIA.NS 24-Nov-2026 5100 Call"
+        "dte": 49,
+        "summary": "Buy 1x BRITANNIA.NS 24-Nov-2026 5050 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 200.0,
-    "stop_loss_price": 4607.6,
-    "take_profit_price": 4892.6,
-    "net_delta": -0.09,
-    "net_theta": 0.282,
+    "stop_loss_price": 4626.41,
+    "take_profit_price": 4912.59,
+    "net_delta": -0.053,
+    "net_theta": 0.146,
     "probability_of_profit": 0.0,
-    "var_95": 100.0,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 3800.08,
+        "price": 3815.6,
         "pnl": -200.0
       },
       {
-        "price": 3838.08,
+        "price": 3853.76,
         "pnl": -200.0
       },
       {
-        "price": 3876.08,
+        "price": 3891.91,
         "pnl": -200.0
       },
       {
-        "price": 3914.08,
+        "price": 3930.07,
         "pnl": -200.0
       },
       {
-        "price": 3952.08,
+        "price": 3968.22,
         "pnl": -200.0
       },
       {
-        "price": 3990.08,
+        "price": 4006.38,
         "pnl": -200.0
       },
       {
-        "price": 4028.08,
+        "price": 4044.54,
         "pnl": -200.0
       },
       {
-        "price": 4066.09,
+        "price": 4082.69,
         "pnl": -200.0
       },
       {
-        "price": 4104.09,
+        "price": 4120.85,
         "pnl": -200.0
       },
       {
-        "price": 4142.09,
+        "price": 4159.0,
         "pnl": -200.0
       },
       {
-        "price": 4180.09,
+        "price": 4197.16,
         "pnl": -200.0
       },
       {
-        "price": 4218.09,
+        "price": 4235.32,
         "pnl": -200.0
       },
       {
-        "price": 4256.09,
+        "price": 4273.47,
         "pnl": -200.0
       },
       {
-        "price": 4294.09,
+        "price": 4311.63,
         "pnl": -200.0
       },
       {
-        "price": 4332.09,
+        "price": 4349.78,
         "pnl": -200.0
       },
       {
-        "price": 4370.09,
+        "price": 4387.94,
         "pnl": -200.0
       },
       {
-        "price": 4408.09,
+        "price": 4426.1,
         "pnl": -200.0
       },
       {
-        "price": 4446.09,
+        "price": 4464.25,
         "pnl": -200.0
       },
       {
-        "price": 4484.09,
+        "price": 4502.41,
         "pnl": -200.0
       },
       {
-        "price": 4522.1,
+        "price": 4540.56,
         "pnl": -200.0
       },
       {
-        "price": 4560.1,
+        "price": 4578.72,
         "pnl": -200.0
       },
       {
-        "price": 4598.1,
+        "price": 4616.88,
         "pnl": -200.0
       },
       {
-        "price": 4636.1,
+        "price": 4655.03,
         "pnl": -200.0
       },
       {
-        "price": 4674.1,
+        "price": 4693.19,
         "pnl": -200.0
       },
       {
-        "price": 4712.1,
+        "price": 4731.34,
         "pnl": -200.0
       },
       {
-        "price": 4750.1,
+        "price": 4769.5,
         "pnl": -200.0
       },
       {
-        "price": 4788.1,
+        "price": 4807.66,
         "pnl": -200.0
       },
       {
-        "price": 4826.1,
+        "price": 4845.81,
         "pnl": -200.0
       },
       {
-        "price": 4864.1,
+        "price": 4883.97,
         "pnl": -200.0
       },
       {
-        "price": 4902.1,
+        "price": 4922.12,
         "pnl": -200.0
       },
       {
-        "price": 4940.1,
+        "price": 4960.28,
         "pnl": -200.0
       },
       {
-        "price": 4978.1,
+        "price": 4998.44,
         "pnl": -200.0
       },
       {
-        "price": 5016.11,
-        "pnl": -216.11
+        "price": 5036.59,
+        "pnl": -236.59
       },
       {
-        "price": 5054.11,
-        "pnl": -254.11
+        "price": 5074.75,
+        "pnl": -250.0
       },
       {
-        "price": 5092.11,
-        "pnl": -292.11
+        "price": 5112.9,
+        "pnl": -250.0
       },
       {
-        "price": 5130.11,
-        "pnl": -300.0
+        "price": 5151.06,
+        "pnl": -250.0
       },
       {
-        "price": 5168.11,
-        "pnl": -300.0
+        "price": 5189.22,
+        "pnl": -250.0
       },
       {
-        "price": 5206.11,
-        "pnl": -300.0
+        "price": 5227.37,
+        "pnl": -250.0
       },
       {
-        "price": 5244.11,
-        "pnl": -300.0
+        "price": 5265.53,
+        "pnl": -250.0
       },
       {
-        "price": 5282.11,
-        "pnl": -300.0
+        "price": 5303.68,
+        "pnl": -250.0
       },
       {
-        "price": 5320.11,
-        "pnl": -300.0
+        "price": 5341.84,
+        "pnl": -250.0
       },
       {
-        "price": 5358.11,
-        "pnl": -300.0
+        "price": 5380.0,
+        "pnl": -250.0
       },
       {
-        "price": 5396.11,
-        "pnl": -300.0
+        "price": 5418.15,
+        "pnl": -250.0
       },
       {
-        "price": 5434.11,
-        "pnl": -300.0
+        "price": 5456.31,
+        "pnl": -250.0
       },
       {
-        "price": 5472.12,
-        "pnl": -300.0
+        "price": 5494.46,
+        "pnl": -250.0
       },
       {
-        "price": 5510.12,
-        "pnl": -300.0
+        "price": 5532.62,
+        "pnl": -250.0
       },
       {
-        "price": 5548.12,
-        "pnl": -300.0
+        "price": 5570.78,
+        "pnl": -250.0
       },
       {
-        "price": 5586.12,
-        "pnl": -300.0
+        "price": 5608.93,
+        "pnl": -250.0
       },
       {
-        "price": 5624.12,
-        "pnl": -300.0
+        "price": 5647.09,
+        "pnl": -250.0
       },
       {
-        "price": 5662.12,
-        "pnl": -300.0
+        "price": 5685.24,
+        "pnl": -250.0
       },
       {
-        "price": 5700.12,
-        "pnl": -300.0
+        "price": 5723.4,
+        "pnl": -250.0
       }
     ],
     "kelly_sizing": {
@@ -277,30 +277,30 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-5000CE-B1x-Nov-5100CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 58.0,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4400PE-S1x-Nov-4500PE-S1x-Nov-5000CE-B1x-Nov-5100CE"
+      "legs_summary": "S1x-Nov-5000CE-B1x-Nov-5050CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 54.2,
+      "score": 57.2,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-4750.1PE"
+      "legs_summary": "S1x-Nov-4769.5PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 49.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-4450PE-S1x-Nov-4500PE-S1x-Nov-5000CE-B1x-Nov-5050CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 40.2,
+      "score": 42.3,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -308,26 +308,19 @@
     }
   ],
   "indicators": {
-    "EMA20": "4954.26",
-    "EMA50": "5126.27",
-    "EMA100": "5269.30",
-    "EMA200": "5422.96",
-    "RSI(14)": "25.33",
-    "ATR(14)": "83.31",
-    "ADX(14)": "48.50",
-    "BB(20,2)": "-0.03",
-    "P_SHAPE(20)": "53.36"
+    "EMA20": "4908.39",
+    "EMA50": "5086.93",
+    "EMA100": "5240.73",
+    "EMA200": "5403.93",
+    "RSI(14)": "26.20",
+    "ATR(14)": "68.59",
+    "ADX(14)": "53.20",
+    "BB(20,2)": "0.14",
+    "P_SHAPE(20)": "44.79"
   },
   "rules": [
     {
       "name": "ADX above 30",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -376,6 +369,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
@@ -400,10 +400,24 @@
   "news": [
     {
       "title": "Daily Morning Newsletter",
-      "publisher": "ETRetail.com",
+      "publisher": "retail.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTHJwcUhJc1Q2RHZONTBOYkNxMnNnRWFTQUZSS3NvR1FYMlZtak9LQm9yaVFrMGVRVFJVeGYweG5XWkRPMTVwbkJhdEdWc0I1WER3c19pZk9PNjROM0l2QUNKU3lOT3VtdnliOHN3aFhwNFlQbGZ0WlZfMDBEMjdNSGxOaDJrNmxQNjI5LWtpMWR3dw?oc=5",
       "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
+    },
+    {
+      "title": "Hindustan Unilever, PB Fintech among 7 stocks that hit 52-week lows and slipped up to 47% in a month",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNZ1B4ZGFOSDRIMnNBRVU1eUlZZnlGcV92eEduRTYyRTZDMVpucmdmUGZ6VF9NYXFVZEVlTWN2MHVuUk1NaVRZUWgwUUoyY3dpNXRBTzF2YjYyZ25QRFVkLVVOem56eENkRFJqRDJoLXl5R0lPX0ZGU3JyNlE0ZWVIRHIwODdXZGsxQUxzd1FVUGJLOVhlSWV6QXRTc1F1YWdHRkxKSmVkV0s2a1FYUm9kSm5VRG1nN1FJWXp2QVZaWjhvODNGNGpjMm0yN3pDaDZWUE40Um15SzJTYVhiTEtuUGtmVnhRdjRfdkZCTEtYbTludTNrT3FVMWpScFVkcGJHMkxEeUVWbXZsbEk?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "IPO mutual funds: How do fund managers buy and sell shares at pre- and post-listing stages? Experts explain",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONnFtYksxazRqd0haejYyM3VQNXdLZC0wWjl0MXBxTTI1aUtaMldUaUpEMDlKdC0zQnFsVzd3eFZubkZWQ09xcEgyTXpBY1N1cWZoWlpzT1c0S0trNEJyZzZGa1BSTS13MWM2TVl1WVFlcXIzdm5ueE9zRnVjLTBIZmk2WWMzOGs4aHlRbWE3OThCMl9feXp1eFZTTHVvVUpKY3VXenZTUlBpQ2VIdHNPXzVqVkpDRDg0QmxLaThnUlJtMV9JYkFZVWl1cnRheFZGUUxXcnlHZ3R2N2Jud3RFN0tpWGxEdWJiZnNjVHA1ME9mU0dJQWRSdkdma2FmUmZxd1HSAYcCQVVfeXFMUE5oZW9mYm1Lak14MnF4dUhIX2NodmRNN1liODV2azEtcU9mQTRhVEVXNlBsOTYtM3ZqRlBmQVhHMXpzSVZac1RveWEzVHhIN2lGRjgwYVU1el9ib3h3OWV0bkQweFZPQnM1T2UwZWY5TUdQeVpIdFhPTUh3LTdKTUdoeWZPWV81bHVYTEpGcThXd3BRejl4ZXdETW9tV3EwZC13eFRiS0VyVU1tTVpfcXZzeW16amRLVTBQaXBidjk1eHFoMHRZM1FmYzJMdFhvTnA3WW9BVVZBZVBBaEZOZXhYTm5GZjIxelRaSUszNjBfSWprcFA4YlZlNWExejZVZzBhNGZzbVE?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "bullish"
     },
     {
       "title": "One mutual fund for large-, mid-, small- and micro-cap exposure: How Nifty Total Market Index schemes fare on returns",
@@ -413,32 +427,18 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Nifty\u2019s ailing warhorse HDFC Bank gets an all-rounder CEO. Can Anup Bagchi make the elephant dance?",
+      "title": "Indian bonds hold tight range ahead of RBI policy meeting",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPTjB5UGpmc0hOVWtscDdZZnRVRFZRWW5tR1dub3hkXzE3R014cERsblI3Y2U4RFpjcjFDV0gxdUhvejZfWi1kSUpQbmVnNVpkVkQwVE5GMmFaOU1HM18zZ1NJelhpNG1LcmRZNEZyVVd0UzhWaVVjdzBFU0dyNTVnVm9oRkNHNk0zaHN3dElMYmEzWl9idDNMUnBGSU1GcmI4MzFYOFpqaThMeWRLQVNKMGRKXzJQN3d2QnZONlp4OHZrVzhnV2ZnN0lQSDFPaXFZOU40SFRGMjVWTmpwYXR1cWFvcy12M2N6ZE5vSUduRnBQbWxnS0d1Nm5ucmprVzg5SE16UkV0VjRxLXfSAYQCQVVfeXFMT1pOdFk2R000d3pUMWVaLWVka2dKd2VuUmJSaU1ObnFoLVRfWmlsTXItbk9xcE1BR09tME5vcVB6TnlnQ1RDRmZkNEdfclEyQkNUaGtXUEhERi0xUEtjdVBteTBQWmhXU0pMRUw0cmtJWG91SjU1d2I3cXMzNzFnWkxrdmJ6NEh4T1JRTm5LZENYT2J6MjQ2RVczSzBSb2NrR0NNSm5PQ0NZajlNMjloMVdVT1lLUFk3UnowcndwZkRSRHZjbEJ6N1l4X25PNEdGbnVlcTBvZ1h1ZEU4dWF3ZllWMjNic1hqeVktRGNyQTBPNlRvd042YmpLeG5LeDJjbFEtQUE?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSjhsbVdyb1FuQ2tRY0xfbFZ5WlBKN1Bubm5tRi15b3RWVENlUFQtTjcyYzVGWEVBbW9tQTllVFd2T19FNV9PbUtoTzVRZUpRODgxT2M2ZXFjdFMzODJWenVRTnJ3ZUVmUXphMzc3M2ZXaTY3SXUtWEtRN2lPRzhxYzVLUEtDeTd1cWV0NXZsdnJhaUVwbDAwZl9rVWFxTXlvV2lJV1V1S1ZZTk9abTVnU2pHWnZyRHlrVER3S3k3SWRFMHNCMGVSOWE2QWdVZDjSAcgBQVVfeXFMUFRna0k5aXdVVHJDcm9SNUdwODc4R3lBT0lpTHZaTjFmcVBucU9PN2ZORmJuanZUdHBFZmdNYkpjbGlSbkRrMU0wUWc3ZzEteG1CcndMMkdzajlqYXFaQ3Zad1U1TjN3TWZnVUc3SVlabDM5VFozOWxkSy12LXpBM3d5bzV3QWJsNnFKTG9URVdRaHpfWU5OZUl5TGFvYjlHTlZBZUVqWTdLeFVxNWhpQVFfQnpTR251VEExWWZiak5Ub214a3BxekQ?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "German Green Steel shares to list today. Check GMP ahead of debut",
+      "title": "Silicon Valley companies discuss simpler GST, customs rules with CBIC",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQaEpQWFdiYmZJNUxGWWszN3hBM1JsWXBIWFllUG9feVNCancxeFhQMk1KemRZalVXT0RFVkkxV0o2LWQyTHpSQ2kyYTRGUnUzVVViQVQ5bFFpSUVnaS16eWdEemh6alkzYmhaWEcyZnAtUnRXTXZUNzBtWkhkTVUxWGpjQTV0dlVNWDhMOTczNGEtd0NoZ2hmdzBPMWZmbGwxTFhZUm94UFc5N2xHNnNQYS00RWdhZUowdlFsd18tQlloaG8tTi1OSWt4a1NseVB4bVJaYzlEU0p3YWNXVVQzM9IB2gFBVV95cUxPQjdUd041V0RTR3ZySW5KMU4wd1FveUswYVZJV2s4TnJDdm5jYkpINGdfYnpvZ3ptbjRiWnFTMlpXandpejlOZ1k5Y1FPNk9HRjNyMnFScFRrNXoxS1RNNV9vNGxMZHpCb0RLYVFLLW1yeTllaWxyUjdjdkdDVVFNY0F4Y2xvS0NlbXNncTJ0cVI4enROaE1iTzBIeENNeVMwTWJ1U1dkbTFFbnIwXzdFVDZxWl9ZTjBTbDJ5Qll6SUU1UjNQeGFKU0pBckJCMERXZzUyTGNiOXVvZw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRHhHbmc2Q3Uzc09KZng5a0RLMVB6NjlReHRlVFZ1MzZNUHVDNzlraE56ZDlUc2xudUMxLVdaUlRObl9vSHM0eXZQZFdOc0I2cERzU2JfYXY2WE1DcnZrLWZKb0ZCZnkwWGlhWnBlbW03MzA4YUdfbWRVWUJjUFd3amFSbkNxdkt2VnUxcUJwSHdHYnNucnNFWmlxa2pnQVJDTHlEYVJUVTVldWl5ZVFvLUFnYVB0MlFIMnVuVF9JSlVnUV9scnk3THZaTGRCd3M4N25yZ2RhMDRiZzN2NWtjZW5iUGZMY3FqRGt0RHhBTdIB6AFBVV95cUxPSmctclB0cmFxeXV3VkIyUkh6UEJheFpsUTRVb0VpUWt3WlA4emFCV3d1VjZ2VG84TFp4STczMzVGUkQzVm9lZWhYTHdUR1F0SXJZTXBHdk9zT01yNXJQWXdGeG1ZNmtxQnJNa0xjYzc3VmdVaEtqM2VOOWp6dEtuZ0RhWi04V0dwRDFHeWVfeWNaeW0wajdxYkRLbGREQ3JJbHU3dXE2Qy1WSGxNSktJZGlLYW14Y0RsUzR1U2p5bml6eUdJVHdhV05URnltS0FFVnpUNlRtNC1mdjlDNFBYUmF2QVFkMFh5?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Japan's 30-year bond yields hit record high ahead of PM's remarks",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQVMzUS1YYTE1OURFQlM4UTh3Z2hTd3BtazBpNUgwdXJWZ090RWlpTm53R3pYR29ocmJSeTEyOGJ2V0VBcFd1c1FKMkM1RkRtNHNCcy1QQW9veUF3QklrZnA2Q1FESXZ2ZTBZYUFDOGpTaTFXcDV6QVlINmk5VF8wNXFLZm51cFNFdGQ0cHRZT2hxZUh1V0oyNWM2ZlY3RU9QRHFzbDYwM1Q1Vkc4bU5pN0tfN0x4Vy03Tkh3c2JGYWdreWdUcWNzZEpNNnk3RjU1RXZhb2ZJY9IB0AFBVV95cUxOQkdCVm5sNzVqeGFNaTVmSi10ZHNJMFFpaWQwQjN5XzdDNDdCNjNHajl6TEg3WlZqXzcwYnZmbTFUNndmMUFHbHdQVkJwbW1mRnEzYjRjTjk4Rmx1bkMyaERydm5FQm5JSUo1TWFKZVptSS00b1g4VWxjbHczVVAtTG9JUFJZWXNfRXRMYmNNejM3dFNlazBsV2FGWUpIMHUwU0VTQnVLUGJaNmFCeGluMjlBUVlnVTkxa3QtR0NTcVJWNXZSNTczQ0lhUmpDckJv?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Global Market: Japan\u2019s Nikkei jumps 2.5% to 3-month high as AI stocks rally",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPTC05dVRfVkhVcE1BSGY4am5mOFBUZGNpSERqM1lzSXFyS1lJbVpMQnhBMkE5RUtQNlNubjMyZU9PWUtTNlNON2ZFOE5rd0VCUndHZ0JlMUJyU0xEVVQ4dlFmdmM3ZHQ3aWF1SUxDaUp2MTBIV21LTlF6VVkwSVRQZlJRSWp5RENORVhQYnkwdmJ5cFBxODBVaFZ4WHVYV0JubnF2VDFKUjl4Wml3a2tiN0tpdkFMcU1Ta1VVX0ZYUEd3a3lBVnJWOWZ2SkZHQ0lhXzlraTN1TEx1YU5zdmlFd0FXNDdJLUo3RV95d1FaONIB6AFBVV95cUxNSmdoVHJVNHZvTHpkZ3Vycm1KRFUzOXg1Y2xWdXh0ajZGMlpFeE5kOUY0blJmeHVCTm1nYTJmeU1ZQkhWNzVtWUFESTd2c1VtclpYUGZTZkVXVEpkczEtRWttaWR1cDB0OFo2czNwUi00akJrbjFNWjBKcmZUZFBQclhlM01DUUlzaXhJSmFXeUszdmVYb3BDNndUMUZWTl90U2FCZ3RvSUVOZnVpYi11Q3NpNnlCU0FMY2JZTnF0UndlVmdvUFVac3UyeWNZVlJNbGNjUGxYNHRPMzVKZkJHT2k3MHJPVHEx?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "bullish"
     }
   ]
 }

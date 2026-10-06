@@ -1,19 +1,19 @@
 {
   "symbol": "M&M.NS",
-  "last_price": 2850.1,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 3.0,
-  "fit_score": 30.0,
+  "last_price": 2846.4,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 30.0,
-  "vix": 14.9,
+  "confidence_percentage": 17.5,
+  "vix": 14.58,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (22.4) is oversold (< 35) [Synthetic PCR: 1.49]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (22.1) is oversold (< 35) [Synthetic PCR: 1.44]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 3000.0,
         "strike_formatted": "3000",
         "option_type": "Call",
-        "delta": 0.218,
+        "delta": 0.203,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x M&M.NS 24-Nov-2026 3000 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 3050.0,
         "strike_formatted": "3050",
         "option_type": "Call",
-        "delta": 0.141,
+        "delta": 0.127,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x M&M.NS 24-Nov-2026 3050 Call"
       }
     ],
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 100.0,
-    "stop_loss_price": 2764.6,
-    "take_profit_price": 2935.6,
-    "net_delta": -0.077,
-    "net_theta": 0.142,
+    "stop_loss_price": 2761.01,
+    "take_profit_price": 2931.79,
+    "net_delta": -0.076,
+    "net_theta": 0.144,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 2280.08,
+        "price": 2277.12,
         "pnl": -100.0
       },
       {
-        "price": 2302.88,
+        "price": 2299.89,
         "pnl": -100.0
       },
       {
-        "price": 2325.68,
+        "price": 2322.66,
         "pnl": -100.0
       },
       {
-        "price": 2348.48,
+        "price": 2345.43,
         "pnl": -100.0
       },
       {
-        "price": 2371.28,
+        "price": 2368.2,
         "pnl": -100.0
       },
       {
-        "price": 2394.08,
+        "price": 2390.98,
         "pnl": -100.0
       },
       {
-        "price": 2416.88,
+        "price": 2413.75,
         "pnl": -100.0
       },
       {
-        "price": 2439.69,
+        "price": 2436.52,
         "pnl": -100.0
       },
       {
-        "price": 2462.49,
+        "price": 2459.29,
         "pnl": -100.0
       },
       {
-        "price": 2485.29,
+        "price": 2482.06,
         "pnl": -100.0
       },
       {
-        "price": 2508.09,
+        "price": 2504.83,
         "pnl": -100.0
       },
       {
-        "price": 2530.89,
+        "price": 2527.6,
         "pnl": -100.0
       },
       {
-        "price": 2553.69,
+        "price": 2550.37,
         "pnl": -100.0
       },
       {
-        "price": 2576.49,
+        "price": 2573.15,
         "pnl": -100.0
       },
       {
-        "price": 2599.29,
+        "price": 2595.92,
         "pnl": -100.0
       },
       {
-        "price": 2622.09,
+        "price": 2618.69,
         "pnl": -100.0
       },
       {
-        "price": 2644.89,
+        "price": 2641.46,
         "pnl": -100.0
       },
       {
-        "price": 2667.69,
+        "price": 2664.23,
         "pnl": -100.0
       },
       {
-        "price": 2690.49,
+        "price": 2687.0,
         "pnl": -100.0
       },
       {
-        "price": 2713.3,
+        "price": 2709.77,
         "pnl": -100.0
       },
       {
-        "price": 2736.1,
+        "price": 2732.54,
         "pnl": -100.0
       },
       {
-        "price": 2758.9,
+        "price": 2755.32,
         "pnl": -100.0
       },
       {
-        "price": 2781.7,
+        "price": 2778.09,
         "pnl": -100.0
       },
       {
-        "price": 2804.5,
+        "price": 2800.86,
         "pnl": -100.0
       },
       {
-        "price": 2827.3,
+        "price": 2823.63,
         "pnl": -100.0
       },
       {
-        "price": 2850.1,
+        "price": 2846.4,
         "pnl": -100.0
       },
       {
-        "price": 2872.9,
+        "price": 2869.17,
         "pnl": -100.0
       },
       {
-        "price": 2895.7,
+        "price": 2891.94,
         "pnl": -100.0
       },
       {
-        "price": 2918.5,
+        "price": 2914.71,
         "pnl": -100.0
       },
       {
-        "price": 2941.3,
+        "price": 2937.48,
         "pnl": -100.0
       },
       {
-        "price": 2964.1,
+        "price": 2960.26,
         "pnl": -100.0
       },
       {
-        "price": 2986.9,
+        "price": 2983.03,
         "pnl": -100.0
       },
       {
-        "price": 3009.71,
-        "pnl": -109.71
+        "price": 3005.8,
+        "pnl": -105.8
       },
       {
-        "price": 3032.51,
-        "pnl": -132.51
+        "price": 3028.57,
+        "pnl": -128.57
       },
       {
-        "price": 3055.31,
+        "price": 3051.34,
         "pnl": -150.0
       },
       {
-        "price": 3078.11,
+        "price": 3074.11,
         "pnl": -150.0
       },
       {
-        "price": 3100.91,
+        "price": 3096.88,
         "pnl": -150.0
       },
       {
-        "price": 3123.71,
+        "price": 3119.65,
         "pnl": -150.0
       },
       {
-        "price": 3146.51,
+        "price": 3142.43,
         "pnl": -150.0
       },
       {
-        "price": 3169.31,
+        "price": 3165.2,
         "pnl": -150.0
       },
       {
-        "price": 3192.11,
+        "price": 3187.97,
         "pnl": -150.0
       },
       {
-        "price": 3214.91,
+        "price": 3210.74,
         "pnl": -150.0
       },
       {
-        "price": 3237.71,
+        "price": 3233.51,
         "pnl": -150.0
       },
       {
-        "price": 3260.51,
+        "price": 3256.28,
         "pnl": -150.0
       },
       {
-        "price": 3283.32,
+        "price": 3279.05,
         "pnl": -150.0
       },
       {
-        "price": 3306.12,
+        "price": 3301.82,
         "pnl": -150.0
       },
       {
-        "price": 3328.92,
+        "price": 3324.6,
         "pnl": -150.0
       },
       {
-        "price": 3351.72,
+        "price": 3347.37,
         "pnl": -150.0
       },
       {
-        "price": 3374.52,
+        "price": 3370.14,
         "pnl": -150.0
       },
       {
-        "price": 3397.32,
+        "price": 3392.91,
         "pnl": -150.0
       },
       {
-        "price": 3420.12,
+        "price": 3415.68,
         "pnl": -150.0
       }
     ],
@@ -280,52 +280,43 @@
       "legs_summary": "S1x-Nov-3000CE-B1x-Nov-3050CE"
     },
     {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 57.2,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-2846.4PE"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 71.2,
-      "grade": "B (Good)",
+      "score": 49.1,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-2650PE-S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 50.4,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 42.4,
       "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-2850.1PE"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 47.5,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 40.1,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-2750CE-S1x-Nov-2850CE-S1x-Nov-2850CE-B1x-Nov-2950CE"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-2850PE-S1x-Nov-2750PE"
     }
   ],
   "indicators": {
-    "EMA20": "3035.99",
-    "EMA50": "3139.30",
-    "EMA100": "3184.19",
-    "EMA200": "3225.84",
-    "RSI(14)": "22.44",
-    "ATR(14)": "63.54",
-    "ADX(14)": "56.33",
-    "BB(20,2)": "-0.03",
-    "P_SHAPE(20)": "68.87"
+    "EMA20": "2989.36",
+    "EMA50": "3107.34",
+    "EMA100": "3165.13",
+    "EMA200": "3214.94",
+    "RSI(14)": "22.11",
+    "ATR(14)": "52.66",
+    "ADX(14)": "61.21",
+    "BB(20,2)": "0.11",
+    "P_SHAPE(20)": "58.81"
   },
   "rules": [
     {
@@ -336,21 +327,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -392,7 +369,21 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -443,11 +434,11 @@
       "sentiment": "bearish"
     },
     {
-      "title": "Top stocks to buy for short term: M&M, Engineers India and 4 others by experts with target price, stop loss",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOVHBka2h1WUJKMzZxZ29zZ3JMbExGa21mejF0SDd3WWszdVluTmFTbTZYUGtUenlQVEQzUFA5TV9BdFFEaDhNU0MtelR4a0ZuVXZjQ1V2RzY0VGRGMXE1dFJFd1BKVEFXeFlDMTVCQld1NW1HSmV4dFg3WWlwMVczUnQtRDFwZmluaXhVTUJwbUdGWi1lM2lPbjN2T09nNHdvbzA3SDhwemVVSHZ1NW91a2VlcGhRbmpieFhuQTVzVkE1RmhrenRQdi1tWkduQUVSMWdiQjEwM0NUcklaQ1hYd3c2dDhSMzd6X1p0TDdCT0xHd0pnRkpwdVJHZkQ3VnRGSFA4YXVpLTR0TlXSAZACQVVfeXFMTTVqR1J2Nk1POFJ5N21vc1ZzQjFIcmZhOTkzY1czUm4xNUdZSUVSTEI1UXNWUXhPXzZrYXBlSGN5X2l1eFFZUmdZa1o3NHVvblAxaXp6aGpZYnlnRnEwVW5JZ3FXNWdKQm8xS2hGRVpWb1U1eWx4N21iOWVIdGtGdlBTMDRiMGxSNndSVFR0cjJxWlV4b2lCOENaTlNiVnlwYlFKUTV5cWU3ZXBXTXNmX2RwUDRhaFFOMXlqWGczYkxNdjVma1FVQWlndUVkbTNNTEFiMTd4UndiS21CNUNHUGpodXQxdFNZVG9pVVRnUDl1WWNOSEI1dmRmYkIyVjhna0xWMVpORUxnX3BTTmdOR0k?oc=5",
+      "title": "India New Issue-M&M Financial accepts bids for 3-year bonds, bankers say",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWVRXTk5rVV9TZjZvVGpPdU5ld0FhSjhBNVJYd05lRzNQYU9yMlpMZmFiRXBnNjhNVVNFODd3RGE2NGhrZnc2Tmo5S0ZXZ3lIdkEwR2NQYkJrZlB0ekdyQmRuR1YxZ0JBNFVsZTd2c3hST0xXWWlzSzViU1dBV2Nscnk3SlFlSzZOY0YxaTNLdEl4YWZMa19aWUlNWXVCQldEdVlJTTZDZDkxVTAxcjdINmljV3BocmtfdTdicWxDcVBLWkptZVhQSHc4N05BdXA0bTA1c3lWcTN5X0dPYk5J0gHkAUFVX3lxTE1SdXFielVLWWxJcTM0bEpGd29WeUpHcHppT1VYYzNIWkIzOVFzYjdyTU1mX0lVSUN4OVZheWUtU1dUSmoyNS1hclMwT2tmODl4V0lsMFBBTmg4dWRuM0dVM1dxWmlJZVAwMVlIY3k1MGktRlNPcTJIdGpGOGlDci1CVTBJa1NzUkxDX3MtMkZNWDJsVWFpU3ZrRm5VMnk0dzJ6bUZZQTRBbV85SEw5Nmp3QnNqcnNwNktDLTd6aEQwa0k4V2U4eXN5RzZlRnBienp4WXZ0SjRPQkNWUFJQR0RtcE5xbA?oc=5",
       "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
     }
   ]
 }

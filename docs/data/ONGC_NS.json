@@ -1,14 +1,14 @@
 {
   "symbol": "ONGC.NS",
-  "last_price": 224.99,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "last_price": 224.13,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 0.8,
+  "fit_score": 7.5,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 14.89,
+  "confidence_percentage": 7.5,
+  "vix": 14.57,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 235.0,
         "strike_formatted": "235",
         "option_type": "Call",
-        "delta": 0.262,
+        "delta": 0.231,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x ONGC.NS 24-Nov-2026 235 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 240.0,
         "strike_formatted": "240",
         "option_type": "Call",
-        "delta": 0.154,
+        "delta": 0.129,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x ONGC.NS 24-Nov-2026 240 Call"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 218.24,
-    "take_profit_price": 231.74,
-    "net_delta": -0.108,
+    "stop_loss_price": 217.41,
+    "take_profit_price": 230.85,
+    "net_delta": -0.102,
     "net_theta": 0.014,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 179.99,
+        "price": 179.3,
         "pnl": -10.0
       },
       {
-        "price": 181.79,
+        "price": 181.1,
         "pnl": -10.0
       },
       {
-        "price": 183.59,
+        "price": 182.89,
         "pnl": -10.0
       },
       {
-        "price": 185.39,
+        "price": 184.68,
         "pnl": -10.0
       },
       {
-        "price": 187.19,
+        "price": 186.48,
         "pnl": -10.0
       },
       {
-        "price": 188.99,
+        "price": 188.27,
         "pnl": -10.0
       },
       {
-        "price": 190.79,
+        "price": 190.06,
         "pnl": -10.0
       },
       {
-        "price": 192.59,
+        "price": 191.86,
         "pnl": -10.0
       },
       {
-        "price": 194.39,
+        "price": 193.65,
         "pnl": -10.0
       },
       {
-        "price": 196.19,
+        "price": 195.44,
         "pnl": -10.0
       },
       {
-        "price": 197.99,
+        "price": 197.23,
         "pnl": -10.0
       },
       {
-        "price": 199.79,
+        "price": 199.03,
         "pnl": -10.0
       },
       {
-        "price": 201.59,
+        "price": 200.82,
         "pnl": -10.0
       },
       {
-        "price": 203.39,
+        "price": 202.61,
         "pnl": -10.0
       },
       {
-        "price": 205.19,
+        "price": 204.41,
         "pnl": -10.0
       },
       {
-        "price": 206.99,
+        "price": 206.2,
         "pnl": -10.0
       },
       {
-        "price": 208.79,
+        "price": 207.99,
         "pnl": -10.0
       },
       {
-        "price": 210.59,
+        "price": 209.79,
         "pnl": -10.0
       },
       {
-        "price": 212.39,
+        "price": 211.58,
         "pnl": -10.0
       },
       {
-        "price": 214.19,
+        "price": 213.37,
         "pnl": -10.0
       },
       {
-        "price": 215.99,
+        "price": 215.16,
         "pnl": -10.0
       },
       {
-        "price": 217.79,
+        "price": 216.96,
         "pnl": -10.0
       },
       {
-        "price": 219.59,
+        "price": 218.75,
         "pnl": -10.0
       },
       {
-        "price": 221.39,
+        "price": 220.54,
         "pnl": -10.0
       },
       {
-        "price": 223.19,
+        "price": 222.34,
         "pnl": -10.0
       },
       {
-        "price": 224.99,
+        "price": 224.13,
         "pnl": -10.0
       },
       {
-        "price": 226.79,
+        "price": 225.92,
         "pnl": -10.0
       },
       {
-        "price": 228.59,
+        "price": 227.72,
         "pnl": -10.0
       },
       {
-        "price": 230.39,
+        "price": 229.51,
         "pnl": -10.0
       },
       {
-        "price": 232.19,
+        "price": 231.3,
         "pnl": -10.0
       },
       {
-        "price": 233.99,
+        "price": 233.1,
         "pnl": -10.0
       },
       {
-        "price": 235.79,
-        "pnl": -10.79
+        "price": 234.89,
+        "pnl": -10.0
       },
       {
-        "price": 237.59,
-        "pnl": -12.59
+        "price": 236.68,
+        "pnl": -11.68
       },
       {
-        "price": 239.39,
-        "pnl": -14.39
+        "price": 238.47,
+        "pnl": -13.47
       },
       {
-        "price": 241.19,
+        "price": 240.27,
         "pnl": -15.0
       },
       {
-        "price": 242.99,
+        "price": 242.06,
         "pnl": -15.0
       },
       {
-        "price": 244.79,
+        "price": 243.85,
         "pnl": -15.0
       },
       {
-        "price": 246.59,
+        "price": 245.65,
         "pnl": -15.0
       },
       {
-        "price": 248.39,
+        "price": 247.44,
         "pnl": -15.0
       },
       {
-        "price": 250.19,
+        "price": 249.23,
         "pnl": -15.0
       },
       {
-        "price": 251.99,
+        "price": 251.03,
         "pnl": -15.0
       },
       {
-        "price": 253.79,
+        "price": 252.82,
         "pnl": -15.0
       },
       {
-        "price": 255.59,
+        "price": 254.61,
         "pnl": -15.0
       },
       {
-        "price": 257.39,
+        "price": 256.4,
         "pnl": -15.0
       },
       {
-        "price": 259.19,
+        "price": 258.2,
         "pnl": -15.0
       },
       {
-        "price": 260.99,
+        "price": 259.99,
         "pnl": -15.0
       },
       {
-        "price": 262.79,
+        "price": 261.78,
         "pnl": -15.0
       },
       {
-        "price": 264.59,
+        "price": 263.58,
         "pnl": -15.0
       },
       {
-        "price": 266.39,
+        "price": 265.37,
         "pnl": -15.0
       },
       {
-        "price": 268.19,
+        "price": 267.16,
         "pnl": -15.0
       },
       {
-        "price": 269.99,
+        "price": 268.96,
         "pnl": -15.0
       }
     ],
@@ -280,27 +280,18 @@
       "legs_summary": "S1x-Nov-235CE-B1x-Nov-240CE"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 60.5,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-210PE-S1x-Nov-215PE-S1x-Nov-235CE-B1x-Nov-240CE"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 50.3,
+      "score": 58.4,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-225PE"
+      "legs_summary": "S1x-Nov-224.1PE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 40.1,
+      "score": 45.6,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -308,40 +299,19 @@
     }
   ],
   "indicators": {
-    "EMA20": "232.03",
-    "EMA50": "236.77",
-    "EMA100": "244.06",
-    "EMA200": "250.15",
-    "RSI(14)": "36.34",
-    "ATR(14)": "4.36",
-    "ADX(14)": "20.90",
-    "BB(20,2)": "0.05",
-    "P_SHAPE(20)": "57.04"
+    "EMA20": "229.92",
+    "EMA50": "235.31",
+    "EMA100": "242.88",
+    "EMA200": "249.37",
+    "RSI(14)": "35.49",
+    "ATR(14)": "3.61",
+    "ADX(14)": "19.13",
+    "BB(20,2)": "0.17",
+    "P_SHAPE(20)": "49.17"
   },
   "rules": [
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -390,6 +360,27 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -400,7 +391,7 @@
   "news": [
     {
       "title": "Ongc videsh - Latest ongc videsh , Information & Updates - Government",
-      "publisher": "ET Government",
+      "publisher": "government.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzUnVrODJyQVkzbTh0MGhoWmhNUFdxWjVGQmFtMTVhTkVNaTFXMVNLZGtUdTBZcXBKdGh2dlRHaHVTaHJ5d1VxOTlPWjZhMzI5dW54UktESmFGOHdwbGRuSlU2bnFJSF92NnhId0ZwbkpTLXJqNXc?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "neutral"
@@ -427,17 +418,17 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TeGlPU2RvVDhJTkNieHUzZzlrUkYxVDNEWm5WRi1fcl9HaVp2aVVpVHFCdWdoNWt0Z3NjTjZIckthbFdObUlYNnBtT0JuYmczUS1fNHlYMjk2MnB3NzNrREswR2VVWTU4Q0lfLUlnOE0?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
+      "title": "India hikes deepwater gas price ceiling to $9.89 for difficult fields; Reliance-BP\u2019s KG-D6 to benefit",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPaXNpQlM2MVBoUzRYb0dLTWw2N0Z3UHRQZGtBY21oWFNqd2FBMkFOa2ZJYmNCM3Q4d2dmalhRbkhlMEhOVldIMjB5NkxzSlNRbU9MQUZPalVyTENsWUEwclo1S3QwQWd3WFNrREJEUUxuWlFhR0lmaWFfV09qcVZ6ZkI1OUFSM05zMlA4eWVPaExyN3Z0M2Uyd2lrcnFRNVY2Z0M3TGlLWnlOYkdWWlR0a0k2YzF3V240Ui1ITWNqSTF1ekVPYl9sZFI0WEE4WFZOdGZPazY2SnB6WFdwYjZvd1BjWkk0c1pxLXow0gHwAUFVX3lxTE9BYU93ZTUwTlJrYzdLWXluZnktTXNwci0zSkFnTXpGRTJVNlczbldLQ0xWR1ZMNlVMLTVGdm9vcDBjWEhMVndoYzM4cldfdHg0LXJrNkVpLW1JZi1sbTdEbWZVVXoyRnFESnNrQTMxeGRJSkVuQ3U1c19Pbk9NTDR0am9Dbkc1c2Y0bVlUMkNpRDNyRzZ5eHVRUzdGdVNqSjNyZWhFMUhLYzNyQUpXbVhzcWNjMTBiZ1QzbC1ObkhweUVBSVVZOWYySDI0bW9sem5sMm5QeHRHUE5RdzhBVWY4RlRoQlF5LXdCVVAyUmdsOA?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Natural gas price ceiling raised to $9.89/MMBtu for difficult fields from October",
+      "title": "GAIL marketing director Sanjay Kumar named next CEO of Petronet LNG",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWDRzdS05bFZjUFFkeFc3VjdHOFp5Z1pYQ3owdUp5dENJUmxMS2NLbUp6TjdyRlg1OWd6Y1c2T2lfNFp3Mms5RnRnTTRIdlNuNXc2UjJ4RndzMjNuRjdMMEd1SE9DLWFwQURHRmtqTUs1eUptS0Z2TUVFWmVUS1lwLV9QcUZNUjFTRjVNS3VhR2Fja05pR0lHQkhEeWpXeEl5bDdQYTZLRHdVZEpMeUwxQUV6T3I5VU40OGgwdTJOVFE4ZG1acXpIbzlJTW9BWkXSAdQBQVVfeXFMUEJvbEJUUVpZV2s4cmNrb0F2SHVsbFFndmpqLUVrZjczNUVqcnFnb3hQMl9pVVNscERwQldQNDIyQXFuQ3F1a0hGdHRxRlFDWmlGWmJhTFQ0UXZBYkJoWTVVc2poWEt1M2JIRXh0eWtRT21pTWRQT3RsVWJIMWNpYzdadDNSa3JFUG1XQlBIZ3lvMjI1NXhWdENtY2tqN0RYSmloQkFGQkh4b1BmUHp1UDNBdmJLNktpQ1JxOHRjcHF3NVpCdUpDN1U2VHFwd2FpTmpsa0Y?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQakowQ2tvbG9jZmdFQlFxVDVuejlLWkg1cEw2d2VIRWhNOUF4eGFOYU5oMFN3Qlk2ZnR6UkdDYzJWTDFQc2V5SktSOG95TS1YMS1tYkhPcllnMm53ZkROTFZrTlF2cy11NGt5Slk4emNYcEZEOHJOMHl5M2NtNEFvS1ctaElnNVpZYURkLXV3ZlRrN05jZUVtWGxZS0lLZlY5X2gwMUpXY3JsV00xOU01TFFoQUxJQUprYWJlbzJ4MF9HQdIBxwFBVV95cUxNRWpWZ1NMRUg4LU1vdzFKRU1VbmxJNWgwSG9DZWZlYk1vTnlySnlKRV9uOFVmWTM0YjFXN2tOaC1FOHFhMHdFdVBpYldPWWJOa0EyOFl6MUVDZXpCbE55Vm5odnVaOFFwQTBJcWR5TW5hZHpJb0g4Rl8yNkVYczNRb2hKUk5iSEtxaFIzeTVROHRjVENTd1I5bm42RERjcUkzNVRjVWFoLWtISXB1TzZsMWdWZ1pydnVLR3IzWWZqSmphYThPV0ZN?oc=5",
+      "published_at": "Sat, 03 Oct 2026",
       "sentiment": "neutral"
     }
   ]

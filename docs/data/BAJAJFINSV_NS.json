@@ -1,19 +1,19 @@
 {
   "symbol": "BAJAJFINSV.NS",
-  "last_price": 1733.6,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 3.2,
-  "fit_score": 32.5,
+  "last_price": 1740.9,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.5,
+  "fit_score": 15.0,
   "confidence_grade": "C",
-  "confidence_percentage": 32.5,
-  "vix": 14.9,
+  "confidence_percentage": 15.0,
+  "vix": 14.58,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (25.1) is oversold (< 35) [Synthetic PCR: 1.38]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (29.1) is oversold (< 35) [Synthetic PCR: 1.31]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 1850.0,
         "strike_formatted": "1850",
         "option_type": "Call",
-        "delta": 0.152,
+        "delta": 0.162,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x BAJAJFINSV.NS 24-Nov-2026 1850 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 1900.0,
         "strike_formatted": "1900",
         "option_type": "Call",
-        "delta": 0.066,
+        "delta": 0.069,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x BAJAJFINSV.NS 24-Nov-2026 1900 Call"
       }
     ],
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1681.59,
-    "take_profit_price": 1785.61,
-    "net_delta": -0.086,
-    "net_theta": 0.123,
+    "stop_loss_price": 1688.67,
+    "take_profit_price": 1793.13,
+    "net_delta": -0.093,
+    "net_theta": 0.128,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1386.88,
+        "price": 1392.72,
         "pnl": -50.0
       },
       {
-        "price": 1400.75,
+        "price": 1406.65,
         "pnl": -50.0
       },
       {
-        "price": 1414.62,
+        "price": 1420.57,
         "pnl": -50.0
       },
       {
-        "price": 1428.49,
+        "price": 1434.5,
         "pnl": -50.0
       },
       {
-        "price": 1442.36,
+        "price": 1448.43,
         "pnl": -50.0
       },
       {
-        "price": 1456.22,
+        "price": 1462.36,
         "pnl": -50.0
       },
       {
-        "price": 1470.09,
+        "price": 1476.28,
         "pnl": -50.0
       },
       {
-        "price": 1483.96,
+        "price": 1490.21,
         "pnl": -50.0
       },
       {
-        "price": 1497.83,
+        "price": 1504.14,
         "pnl": -50.0
       },
       {
-        "price": 1511.7,
+        "price": 1518.06,
         "pnl": -50.0
       },
       {
-        "price": 1525.57,
+        "price": 1531.99,
         "pnl": -50.0
       },
       {
-        "price": 1539.44,
+        "price": 1545.92,
         "pnl": -50.0
       },
       {
-        "price": 1553.31,
+        "price": 1559.85,
         "pnl": -50.0
       },
       {
-        "price": 1567.17,
+        "price": 1573.77,
         "pnl": -50.0
       },
       {
-        "price": 1581.04,
+        "price": 1587.7,
         "pnl": -50.0
       },
       {
-        "price": 1594.91,
+        "price": 1601.63,
         "pnl": -50.0
       },
       {
-        "price": 1608.78,
+        "price": 1615.56,
         "pnl": -50.0
       },
       {
-        "price": 1622.65,
+        "price": 1629.48,
         "pnl": -50.0
       },
       {
-        "price": 1636.52,
+        "price": 1643.41,
         "pnl": -50.0
       },
       {
-        "price": 1650.39,
+        "price": 1657.34,
         "pnl": -50.0
       },
       {
-        "price": 1664.26,
+        "price": 1671.26,
         "pnl": -50.0
       },
       {
-        "price": 1678.12,
+        "price": 1685.19,
         "pnl": -50.0
       },
       {
-        "price": 1691.99,
+        "price": 1699.12,
         "pnl": -50.0
       },
       {
-        "price": 1705.86,
+        "price": 1713.05,
         "pnl": -50.0
       },
       {
-        "price": 1719.73,
+        "price": 1726.97,
         "pnl": -50.0
       },
       {
-        "price": 1733.6,
+        "price": 1740.9,
         "pnl": -50.0
       },
       {
-        "price": 1747.47,
+        "price": 1754.83,
         "pnl": -50.0
       },
       {
-        "price": 1761.34,
+        "price": 1768.75,
         "pnl": -50.0
       },
       {
-        "price": 1775.21,
+        "price": 1782.68,
         "pnl": -50.0
       },
       {
-        "price": 1789.08,
+        "price": 1796.61,
         "pnl": -50.0
       },
       {
-        "price": 1802.94,
+        "price": 1810.54,
         "pnl": -50.0
       },
       {
-        "price": 1816.81,
+        "price": 1824.46,
         "pnl": -50.0
       },
       {
-        "price": 1830.68,
+        "price": 1838.39,
         "pnl": -50.0
       },
       {
-        "price": 1844.55,
-        "pnl": -50.0
+        "price": 1852.32,
+        "pnl": -52.32
       },
       {
-        "price": 1858.42,
-        "pnl": -58.42
+        "price": 1866.24,
+        "pnl": -66.24
       },
       {
-        "price": 1872.29,
-        "pnl": -72.29
+        "price": 1880.17,
+        "pnl": -80.17
       },
       {
-        "price": 1886.16,
-        "pnl": -86.16
+        "price": 1894.1,
+        "pnl": -94.1
       },
       {
-        "price": 1900.03,
+        "price": 1908.03,
         "pnl": -100.0
       },
       {
-        "price": 1913.89,
+        "price": 1921.95,
         "pnl": -100.0
       },
       {
-        "price": 1927.76,
+        "price": 1935.88,
         "pnl": -100.0
       },
       {
-        "price": 1941.63,
+        "price": 1949.81,
         "pnl": -100.0
       },
       {
-        "price": 1955.5,
+        "price": 1963.74,
         "pnl": -100.0
       },
       {
-        "price": 1969.37,
+        "price": 1977.66,
         "pnl": -100.0
       },
       {
-        "price": 1983.24,
+        "price": 1991.59,
         "pnl": -100.0
       },
       {
-        "price": 1997.11,
+        "price": 2005.52,
         "pnl": -100.0
       },
       {
-        "price": 2010.98,
+        "price": 2019.44,
         "pnl": -100.0
       },
       {
-        "price": 2024.84,
+        "price": 2033.37,
         "pnl": -100.0
       },
       {
-        "price": 2038.71,
+        "price": 2047.3,
         "pnl": -100.0
       },
       {
-        "price": 2052.58,
+        "price": 2061.23,
         "pnl": -100.0
       },
       {
-        "price": 2066.45,
+        "price": 2075.15,
         "pnl": -100.0
       },
       {
-        "price": 2080.32,
+        "price": 2089.08,
         "pnl": -100.0
       }
     ],
@@ -280,93 +280,47 @@
       "legs_summary": "S1x-Nov-1850CE-B1x-Nov-1900CE"
     },
     {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 58.5,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-1740.9PE"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 75.7,
-      "grade": "B (Good)",
+      "score": 44.8,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-1600PE-S1x-Nov-1650PE-S1x-Nov-1850CE-B1x-Nov-1900CE"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 49.1,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 42.4,
       "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1733.6PE"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 44.6,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-1650PE-S1x-Nov-1850CE-B1x-Nov-1900CE"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 43.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1700CE-S1x-Nov-1750CE-S1x-Nov-1750CE-B1x-Nov-1800CE"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 40.9,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1700CE-S1x-Nov-1750CE-S1x-Nov-1750CE-B1x-Nov-1850CE"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-1750PE-S1x-Nov-1700PE"
     }
   ],
   "indicators": {
-    "EMA20": "1823.59",
-    "EMA50": "1878.71",
-    "EMA100": "1883.19",
-    "EMA200": "1890.66",
-    "RSI(14)": "25.10",
-    "ATR(14)": "35.72",
-    "ADX(14)": "52.25",
-    "BB(20,2)": "0.17",
-    "P_SHAPE(20)": "44.77"
+    "EMA20": "1803.80",
+    "EMA50": "1863.87",
+    "EMA100": "1875.29",
+    "EMA200": "1886.43",
+    "RSI(14)": "29.10",
+    "ATR(14)": "29.50",
+    "ADX(14)": "53.97",
+    "BB(20,2)": "0.26",
+    "P_SHAPE(20)": "43.60"
   },
   "rules": [
     {
       "name": "ADX above 30",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -408,6 +362,34 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -424,6 +406,27 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Bajaj Finserv Q1 Results 2026 - Find Bajaj Finserv Q1 Earnings Result | BAJAJFINSV Q1 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPd2VHWmF2aXVOQzVGUVYxYmNpN1hFNGVUQm1JeUw5YkZvQ0N1dDhPS2dYbG5BeXMxcFZjUFByUERGQU1pZXVSeDBGSzZkWldqWmdRaC1yajg5Y2JKazE3UE5xLXNXNXRHNE1DTnpNSTM0c2RlQUg4Z2dWUmpSV253S1pUSk8?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q3 Results 2026 - Find Bajaj Finserv Q3 Earnings Result | BAJAJFINSV Q3 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm90bWxnUDlBSTNLMlVDM3F2Z3Y3WHAwN0Y2OXVpbHU0dzUwS01uM2g0MjBlRGJCY0s5V0V4Mm5ZS3MtakNQRXdqZHBad2lIOTFIQWxFakRfd09od0d2bnVvZVNwVXlweGxPU2NLYkEtaHR1enpDWl9nMVF5NjBsWi1WTlM?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finserv Q4 Results 2026 - Find Bajaj Finserv Q4 Earnings Result | BAJAJFINSV Q4 results",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTU8zTFFCQjJmcF95bVkzVU5YT1lNaFZNQXRCUlJwcjZTQmJYX3NDdmdzeFV1NnkzQ0d0VWhySU1DZ1JBbExuQWFpbktUODFCWHRER2V1bkRpMHpVZXViT0dURGJXaDBRdUdPX0FmcEhDZnVqWXVydTlJQkVzV1lYX0VVNkc?oc=5",
+      "published_at": "Tue, 12 Mar 2024",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Bajaj Finserv Ltd.",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pVXB4bEtpRDh1d2VjRjBySUdwbnpMbkRBT0tEaVBpcEttTURqa21SNlNjcjRFOE1fVVJVd0tVeVVETVlCZ2FvNHBiVE1hYXR2dWtuZlRhOVhIUUNYQk9yc1dPTXEzeFI3UDREa3dsalRNWTB0b2hJ?oc=5",
@@ -431,31 +434,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Bajaj Finserv Ltd.",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQk1fMm4wSXFQNHFjeWdVNV9VbEFIdW9QcE9RSXR4dkt4cFRJbVVmbTRfMTNBR2dTYVgzWHhkM2k1VTJhaklVeGVzdnRUWTU3T3RwZ250bnE1WXlnVU00UlJGdkkzZkcwRThjT0FUSEJkOE5JV1UtY0luWkQ0NWktVXdWc01MZnRBdHoxNUlqU3Zidw?oc=5",
-      "published_at": "Sat, 23 Jul 2011",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Finserv Share Price Today, Bajaj Finserv Stock Price Live NSE/BSE Updates",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQ0xpaF9nN05yM1IwVk9KSEdxclJ2TDVpb2tPTEphaE40QW9ENWE2LWNRWlBMb1RHU2Jqc2xnZ3dacTZKTi1PcUpQUzJPTzZibFZWcjFsWnpVUGhWNkFNTW4xV292dzF1QXlXbUlBVmNwQmJfYkJDNGdxSmFGcUpoVHdXU0pST3Mt?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Bajaj Finserv | Splits > Finance - Investments > Dividends declared by Bajaj Finserv - BSE: 532978, NSE: BAJAJFINSV",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pZWgwQUNrME9QeGc4X0k4ZFM3UURmLWUySTdmcDFIVmhLYU45ZHhXSU1iSnA3cUhSVnFlQkM4dW9HbmpWUW4tdTc4bzA1VXI3LXRVekJla2Vyc3N6dTZOSHkzYllldzltTmJEU01VeF9VYUw0eWNN?oc=5",
       "published_at": "Fri, 15 Nov 2024",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Finserv",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5BV2U2M1kzZWJ5cXk3UWs2VUp2RnRjLTlLYzY0MmtTM0o4RnRRQ2pIeEVpbmRwTUJGcXZBeXdNOGpaMWtpUWVCQmMzUThBWTBBekZneV81NDFkVVA2alpWRXZobFdxWTNfSmFGSXRjMVRCbW9DQ1pJNkFiRQ?oc=5",
-      "published_at": "Thu, 14 Nov 2024",
       "sentiment": "neutral"
     }
   ]

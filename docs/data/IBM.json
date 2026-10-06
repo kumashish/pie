@@ -1,14 +1,14 @@
 {
   "symbol": "IBM",
-  "last_price": 222.64,
-  "as_of": "2026-10-02 13:30:00",
+  "last_price": 221.58,
+  "as_of": "2026-10-05 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.2,
-  "fit_score": 12.5,
+  "trend_score": 0.5,
+  "fit_score": 5.0,
   "confidence_grade": "C",
-  "confidence_percentage": 12.5,
-  "vix": 16.22,
+  "confidence_percentage": 5.0,
+  "vix": 15.52,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 240.0,
-        "strike_formatted": "240",
+        "strike": 230.0,
+        "strike_formatted": "230",
         "option_type": "Call",
-        "delta": 0.122,
+        "delta": 0.293,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
-        "summary": "Sell 1x IBM 20-Nov-2026 240 Call"
+        "dte": 45,
+        "summary": "Sell 1x IBM 20-Nov-2026 230 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 245.0,
-        "strike_formatted": "245",
+        "strike": 235.0,
+        "strike_formatted": "235",
         "option_type": "Call",
-        "delta": 0.064,
+        "delta": 0.174,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
-        "summary": "Buy 1x IBM 20-Nov-2026 245 Call"
+        "dte": 45,
+        "summary": "Buy 1x IBM 20-Nov-2026 235 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 215.96,
-    "take_profit_price": 229.32,
-    "net_delta": -0.058,
-    "net_theta": 0.013,
+    "stop_loss_price": 214.93,
+    "take_profit_price": 228.23,
+    "net_delta": -0.119,
+    "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 178.11,
+        "price": 177.26,
         "pnl": -10.0
       },
       {
-        "price": 179.89,
+        "price": 179.04,
         "pnl": -10.0
       },
       {
-        "price": 181.67,
+        "price": 180.81,
         "pnl": -10.0
       },
       {
-        "price": 183.46,
+        "price": 182.58,
         "pnl": -10.0
       },
       {
-        "price": 185.24,
+        "price": 184.35,
         "pnl": -10.0
       },
       {
-        "price": 187.02,
+        "price": 186.13,
         "pnl": -10.0
       },
       {
-        "price": 188.8,
+        "price": 187.9,
         "pnl": -10.0
       },
       {
-        "price": 190.58,
+        "price": 189.67,
         "pnl": -10.0
       },
       {
-        "price": 192.36,
+        "price": 191.45,
         "pnl": -10.0
       },
       {
-        "price": 194.14,
+        "price": 193.22,
         "pnl": -10.0
       },
       {
-        "price": 195.92,
+        "price": 194.99,
         "pnl": -10.0
       },
       {
-        "price": 197.7,
+        "price": 196.76,
         "pnl": -10.0
       },
       {
-        "price": 199.49,
+        "price": 198.54,
         "pnl": -10.0
       },
       {
-        "price": 201.27,
+        "price": 200.31,
         "pnl": -10.0
       },
       {
-        "price": 203.05,
+        "price": 202.08,
         "pnl": -10.0
       },
       {
-        "price": 204.83,
+        "price": 203.85,
         "pnl": -10.0
       },
       {
-        "price": 206.61,
+        "price": 205.63,
         "pnl": -10.0
       },
       {
-        "price": 208.39,
+        "price": 207.4,
         "pnl": -10.0
       },
       {
-        "price": 210.17,
+        "price": 209.17,
         "pnl": -10.0
       },
       {
-        "price": 211.95,
+        "price": 210.94,
         "pnl": -10.0
       },
       {
-        "price": 213.73,
+        "price": 212.72,
         "pnl": -10.0
       },
       {
-        "price": 215.52,
+        "price": 214.49,
         "pnl": -10.0
       },
       {
-        "price": 217.3,
+        "price": 216.26,
         "pnl": -10.0
       },
       {
-        "price": 219.08,
+        "price": 218.03,
         "pnl": -10.0
       },
       {
-        "price": 220.86,
+        "price": 219.81,
         "pnl": -10.0
       },
       {
-        "price": 222.64,
+        "price": 221.58,
         "pnl": -10.0
       },
       {
-        "price": 224.42,
+        "price": 223.35,
         "pnl": -10.0
       },
       {
-        "price": 226.2,
+        "price": 225.13,
         "pnl": -10.0
       },
       {
-        "price": 227.98,
+        "price": 226.9,
         "pnl": -10.0
       },
       {
-        "price": 229.76,
+        "price": 228.67,
         "pnl": -10.0
       },
       {
-        "price": 231.55,
-        "pnl": -10.0
+        "price": 230.44,
+        "pnl": -10.44
       },
       {
-        "price": 233.33,
-        "pnl": -10.0
+        "price": 232.22,
+        "pnl": -12.22
       },
       {
-        "price": 235.11,
-        "pnl": -10.0
+        "price": 233.99,
+        "pnl": -13.99
       },
       {
-        "price": 236.89,
-        "pnl": -10.0
-      },
-      {
-        "price": 238.67,
-        "pnl": -10.0
-      },
-      {
-        "price": 240.45,
-        "pnl": -10.45
-      },
-      {
-        "price": 242.23,
-        "pnl": -12.23
-      },
-      {
-        "price": 244.01,
-        "pnl": -14.01
-      },
-      {
-        "price": 245.79,
+        "price": 235.76,
         "pnl": -15.0
       },
       {
-        "price": 247.58,
+        "price": 237.53,
         "pnl": -15.0
       },
       {
-        "price": 249.36,
+        "price": 239.31,
         "pnl": -15.0
       },
       {
-        "price": 251.14,
+        "price": 241.08,
         "pnl": -15.0
       },
       {
-        "price": 252.92,
+        "price": 242.85,
         "pnl": -15.0
       },
       {
-        "price": 254.7,
+        "price": 244.62,
         "pnl": -15.0
       },
       {
-        "price": 256.48,
+        "price": 246.4,
         "pnl": -15.0
       },
       {
-        "price": 258.26,
+        "price": 248.17,
         "pnl": -15.0
       },
       {
-        "price": 260.04,
+        "price": 249.94,
         "pnl": -15.0
       },
       {
-        "price": 261.82,
+        "price": 251.71,
         "pnl": -15.0
       },
       {
-        "price": 263.61,
+        "price": 253.49,
         "pnl": -15.0
       },
       {
-        "price": 265.39,
+        "price": 255.26,
         "pnl": -15.0
       },
       {
-        "price": 267.17,
+        "price": 257.03,
+        "pnl": -15.0
+      },
+      {
+        "price": 258.81,
+        "pnl": -15.0
+      },
+      {
+        "price": 260.58,
+        "pnl": -15.0
+      },
+      {
+        "price": 262.35,
+        "pnl": -15.0
+      },
+      {
+        "price": 264.12,
+        "pnl": -15.0
+      },
+      {
+        "price": 265.9,
         "pnl": -15.0
       }
     ],
@@ -277,55 +277,48 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x IBM 20-Nov-2026 240 Call<br> Buy 1x IBM 20-Nov-2026 245 Call"
+      "legs_summary": "Sell 1x IBM 20-Nov-2026 230 Call<br> Buy 1x IBM 20-Nov-2026 235 Call"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 55.7,
+      "score": 59.8,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x IBM 20-Nov-2026 222.6 Put"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 45.7,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 205 Put<br> Sell 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 240 Call<br> Buy 1x IBM 20-Nov-2026 245 Call"
+      "legs_summary": "Sell 1x IBM 20-Nov-2026 221.6 Put"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 40.7,
+      "score": 44.0,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 225 Put<br> Sell 1x IBM 20-Nov-2026 215 Put"
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 220 Put<br> Sell 1x IBM 20-Nov-2026 210 Put"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 40.0,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 205 Put<br> Sell 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 230 Call<br> Buy 1x IBM 20-Nov-2026 235 Call"
     }
   ],
   "indicators": {
-    "EMA20": "229.21",
-    "EMA50": "234.50",
-    "EMA100": "241.41",
-    "EMA200": "249.85",
-    "RSI(14)": "41.47",
-    "ATR(14)": "6.85",
-    "ADX(14)": "13.86",
-    "BB(20,2)": "0.23",
-    "P_SHAPE(20)": "37.37"
+    "EMA20": "228.49",
+    "EMA50": "233.99",
+    "EMA100": "241.01",
+    "EMA200": "249.57",
+    "RSI(14)": "40.55",
+    "ATR(14)": "6.54",
+    "ADX(14)": "13.50",
+    "BB(20,2)": "0.22",
+    "P_SHAPE(20)": "35.57"
   },
   "rules": [
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
     {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
@@ -390,6 +383,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -399,46 +399,46 @@
   ],
   "news": [
     {
-      "title": "IBM Stock Fell 22% in the Third Quarter. History Says It's Usually Higher a Year Later.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/ibm-stock-fell-22-third-085801349.html",
+      "title": "ZS Stock Alert: What to Know as Zscaler Unveils Partnership With IBM",
+      "publisher": "Barchart",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/zs-stock-alert-know-zscaler-183620366.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nasdaq Hits Fresh Highs While Dow Slips and Small Caps Struggle for Direction",
+      "publisher": "CNW Group",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-hits-fresh-highs-while-182800216.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Egan-Jones Maps Where AI Disruption Hits First: Services, Venture Capital, Housing",
-      "publisher": "BeInCrypto",
-      "link": "https://finance.yahoo.com/technology/ai/articles/egan-jones-maps-where-ai-025406253.html",
+      "title": "Final Opportunity to Join More Than 155 Technology Leaders Tomorrow at HMG Strategy's 18th Annual Silicon Valley C-Level Technology Leadership Summit",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/articles/final-opportunity-join-more-155-153600882.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "More than 6 out of 10 CFOs expand into AI, tech strategy: IBM",
-      "publisher": "CFO Dive",
-      "link": "https://finance.yahoo.com/technology/ai/articles/more-6-10-cfos-expand-200511727.html",
+      "title": "How To Create Income From IBM Stock",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/options/articles/create-income-ibm-stock-142024972.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "IBM Stocks Fall 1.6% as Bob Moves Behind Customer Firewalls",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/ibm-stocks-fall-1-6-195445561.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "How This Quantum Stock Stands to Gain an Edge From AI and Supercomputing",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/f1cd6b4d-0b17-303c-8a1e-0ad295105751/how-this-quantum-stock-stands.html",
+      "title": "Zscaler to Collaborate With IBM, Red Hat on Security Solution for Private Applications",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/articles/zscaler-collaborate-ibm-red-hat-135420179.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Arrow Electronics, IBD Stock Of The Day, Breaks Out Amid Triple-Digit Earnings Growth",
-      "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/000ca663-c033-34f8-898b-24cbf291100e/arrow-electronics%2C-ibd-stock.html",
+      "title": "Secure Multiparty Computation (SMPC) Market Report 2026: Global Forecast to 2030 | Capitalize on Secure AI and Cloud Demand with Google, Microsoft, IBM, Zama, and Partisia Blockchain",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/secure-multiparty-computation-smpc-market-133800032.html",
       "published_at": "Today",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
     }
   ]
 }

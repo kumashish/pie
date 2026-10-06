@@ -1,263 +1,263 @@
 {
   "symbol": "BAJAJ-AUTO.NS",
-  "last_price": 9998.0,
-  "as_of": "2026-10-05 03:45:00",
+  "last_price": 10040.0,
+  "as_of": "2026-10-06 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 3.8,
-  "fit_score": 37.5,
+  "trend_score": 3.2,
+  "fit_score": 32.5,
   "confidence_grade": "C",
-  "confidence_percentage": 37.5,
-  "vix": 14.9,
+  "confidence_percentage": 32.5,
+  "vix": 14.53,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (20.9) is oversold (< 35) [Synthetic PCR: 1.54]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (22.5) is oversold (< 35) [Synthetic PCR: 1.45]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 10600.0,
-        "strike_formatted": "10600",
+        "strike": 10500.0,
+        "strike_formatted": "10500",
         "option_type": "Call",
-        "delta": 0.182,
+        "delta": 0.245,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 10600 Call"
+        "dte": 49,
+        "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 10500 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 10800.0,
-        "strike_formatted": "10800",
+        "strike": 11000.0,
+        "strike_formatted": "11000",
         "option_type": "Call",
-        "delta": 0.106,
+        "delta": 0.059,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 10800 Call"
+        "dte": 49,
+        "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 11000 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 400.0,
-    "stop_loss_price": 9698.06,
-    "take_profit_price": 10297.94,
-    "net_delta": -0.076,
-    "net_theta": 0.546,
+    "margin_required": 500.0,
+    "stop_loss_price": 9738.8,
+    "take_profit_price": 10341.2,
+    "net_delta": -0.186,
+    "net_theta": 1.323,
     "probability_of_profit": 0.0,
-    "var_95": 200.0,
+    "var_95": 500.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 7998.4,
-        "pnl": -400.0
+        "price": 8032.0,
+        "pnl": -500.0
       },
       {
-        "price": 8078.38,
-        "pnl": -400.0
+        "price": 8112.32,
+        "pnl": -500.0
       },
       {
-        "price": 8158.37,
-        "pnl": -400.0
+        "price": 8192.64,
+        "pnl": -500.0
       },
       {
-        "price": 8238.35,
-        "pnl": -400.0
+        "price": 8272.96,
+        "pnl": -500.0
       },
       {
-        "price": 8318.34,
-        "pnl": -400.0
+        "price": 8353.28,
+        "pnl": -500.0
       },
       {
-        "price": 8398.32,
-        "pnl": -400.0
+        "price": 8433.6,
+        "pnl": -500.0
       },
       {
-        "price": 8478.3,
-        "pnl": -400.0
+        "price": 8513.92,
+        "pnl": -500.0
       },
       {
-        "price": 8558.29,
-        "pnl": -400.0
+        "price": 8594.24,
+        "pnl": -500.0
       },
       {
-        "price": 8638.27,
-        "pnl": -400.0
+        "price": 8674.56,
+        "pnl": -500.0
       },
       {
-        "price": 8718.26,
-        "pnl": -400.0
+        "price": 8754.88,
+        "pnl": -500.0
       },
       {
-        "price": 8798.24,
-        "pnl": -400.0
+        "price": 8835.2,
+        "pnl": -500.0
       },
       {
-        "price": 8878.22,
-        "pnl": -400.0
+        "price": 8915.52,
+        "pnl": -500.0
       },
       {
-        "price": 8958.21,
-        "pnl": -400.0
+        "price": 8995.84,
+        "pnl": -500.0
       },
       {
-        "price": 9038.19,
-        "pnl": -400.0
+        "price": 9076.16,
+        "pnl": -500.0
       },
       {
-        "price": 9118.18,
-        "pnl": -400.0
+        "price": 9156.48,
+        "pnl": -500.0
       },
       {
-        "price": 9198.16,
-        "pnl": -400.0
+        "price": 9236.8,
+        "pnl": -500.0
       },
       {
-        "price": 9278.14,
-        "pnl": -400.0
+        "price": 9317.12,
+        "pnl": -500.0
       },
       {
-        "price": 9358.13,
-        "pnl": -400.0
+        "price": 9397.44,
+        "pnl": -500.0
       },
       {
-        "price": 9438.11,
-        "pnl": -400.0
+        "price": 9477.76,
+        "pnl": -500.0
       },
       {
-        "price": 9518.1,
-        "pnl": -400.0
+        "price": 9558.08,
+        "pnl": -500.0
       },
       {
-        "price": 9598.08,
-        "pnl": -400.0
+        "price": 9638.4,
+        "pnl": -500.0
       },
       {
-        "price": 9678.06,
-        "pnl": -400.0
+        "price": 9718.72,
+        "pnl": -500.0
       },
       {
-        "price": 9758.05,
-        "pnl": -400.0
+        "price": 9799.04,
+        "pnl": -500.0
       },
       {
-        "price": 9838.03,
-        "pnl": -400.0
+        "price": 9879.36,
+        "pnl": -500.0
       },
       {
-        "price": 9918.02,
-        "pnl": -400.0
+        "price": 9959.68,
+        "pnl": -500.0
       },
       {
-        "price": 9998.0,
-        "pnl": -400.0
+        "price": 10040.0,
+        "pnl": -500.0
       },
       {
-        "price": 10077.98,
-        "pnl": -400.0
+        "price": 10120.32,
+        "pnl": -500.0
       },
       {
-        "price": 10157.97,
-        "pnl": -400.0
+        "price": 10200.64,
+        "pnl": -500.0
       },
       {
-        "price": 10237.95,
-        "pnl": -400.0
+        "price": 10280.96,
+        "pnl": -500.0
       },
       {
-        "price": 10317.94,
-        "pnl": -400.0
+        "price": 10361.28,
+        "pnl": -500.0
       },
       {
-        "price": 10397.92,
-        "pnl": -400.0
+        "price": 10441.6,
+        "pnl": -500.0
       },
       {
-        "price": 10477.9,
-        "pnl": -400.0
+        "price": 10521.92,
+        "pnl": -521.92
       },
       {
-        "price": 10557.89,
-        "pnl": -400.0
+        "price": 10602.24,
+        "pnl": -602.24
       },
       {
-        "price": 10637.87,
-        "pnl": -437.87
+        "price": 10682.56,
+        "pnl": -682.56
       },
       {
-        "price": 10717.86,
-        "pnl": -517.86
+        "price": 10762.88,
+        "pnl": -762.88
       },
       {
-        "price": 10797.84,
-        "pnl": -597.84
+        "price": 10843.2,
+        "pnl": -843.2
       },
       {
-        "price": 10877.82,
-        "pnl": -600.0
+        "price": 10923.52,
+        "pnl": -923.52
       },
       {
-        "price": 10957.81,
-        "pnl": -600.0
+        "price": 11003.84,
+        "pnl": -1000.0
       },
       {
-        "price": 11037.79,
-        "pnl": -600.0
+        "price": 11084.16,
+        "pnl": -1000.0
       },
       {
-        "price": 11117.78,
-        "pnl": -600.0
+        "price": 11164.48,
+        "pnl": -1000.0
       },
       {
-        "price": 11197.76,
-        "pnl": -600.0
+        "price": 11244.8,
+        "pnl": -1000.0
       },
       {
-        "price": 11277.74,
-        "pnl": -600.0
+        "price": 11325.12,
+        "pnl": -1000.0
       },
       {
-        "price": 11357.73,
-        "pnl": -600.0
+        "price": 11405.44,
+        "pnl": -1000.0
       },
       {
-        "price": 11437.71,
-        "pnl": -600.0
+        "price": 11485.76,
+        "pnl": -1000.0
       },
       {
-        "price": 11517.7,
-        "pnl": -600.0
+        "price": 11566.08,
+        "pnl": -1000.0
       },
       {
-        "price": 11597.68,
-        "pnl": -600.0
+        "price": 11646.4,
+        "pnl": -1000.0
       },
       {
-        "price": 11677.66,
-        "pnl": -600.0
+        "price": 11726.72,
+        "pnl": -1000.0
       },
       {
-        "price": 11757.65,
-        "pnl": -600.0
+        "price": 11807.04,
+        "pnl": -1000.0
       },
       {
-        "price": 11837.63,
-        "pnl": -600.0
+        "price": 11887.36,
+        "pnl": -1000.0
       },
       {
-        "price": 11917.62,
-        "pnl": -600.0
+        "price": 11967.68,
+        "pnl": -1000.0
       },
       {
-        "price": 11997.6,
-        "pnl": -600.0
+        "price": 12048.0,
+        "pnl": -1000.0
       }
     ],
     "kelly_sizing": {
@@ -277,64 +277,55 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-10600CE-B1x-Nov-10800CE"
+      "legs_summary": "S1x-Nov-10500CE-B1x-Nov-11000CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 88.7,
-      "grade": "A (Optimal)",
+      "score": 75.7,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-9200PE-S1x-Nov-9400PE-S1x-Nov-10600CE-B1x-Nov-10800CE"
+      "legs_summary": "B1x-Nov-9000PE-S1x-Nov-9500PE-S1x-Nov-10500CE-B1x-Nov-11000CE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 62.4,
-      "grade": "B (Good)",
+      "score": 56.9,
+      "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-9400PE-S1x-Nov-10600CE-B1x-Nov-10800CE"
+      "legs_summary": "S1x-Nov-9500PE-S1x-Nov-10500CE-B1x-Nov-11000CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 55.2,
+      "score": 44.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-9700CE-S1x-Nov-10000CE-S1x-Nov-10000CE-B1x-Nov-10300CE"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 46.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-9400PE-S1x-Nov-10000PE-S1x-Nov-10000CE-B1x-Nov-10500CE"
+      "legs_summary": "B1x-Nov-10000CE-S1x-Nov-10000CE-S1x-Nov-10000CE-B1x-Nov-10500CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 45.5,
+      "score": 42.1,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-9700CE-S1x-Nov-10000CE-S1x-Nov-10000CE-B1x-Nov-10500CE"
+      "legs_summary": "B1x-Nov-10000CE-S1x-Nov-10000CE-S1x-Nov-10000CE-B1x-Nov-10500CE"
     }
   ],
   "indicators": {
-    "EMA20": "11130.38",
-    "EMA50": "11248.70",
-    "EMA100": "10946.16",
-    "EMA200": "10412.48",
-    "RSI(14)": "20.87",
-    "ATR(14)": "246.68",
-    "ADX(14)": "43.35",
-    "BB(20,2)": "-0.12",
-    "P_SHAPE(20)": "76.05"
+    "EMA20": "10931.20",
+    "EMA50": "11155.16",
+    "EMA100": "10910.32",
+    "EMA200": "10404.95",
+    "RSI(14)": "22.46",
+    "ATR(14)": "218.86",
+    "ADX(14)": "47.90",
+    "BB(20,2)": "0.06",
+    "P_SHAPE(20)": "66.42"
   },
   "rules": [
     {
@@ -352,14 +343,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -394,7 +378,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,

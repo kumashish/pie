@@ -1,14 +1,14 @@
 {
   "symbol": "DIA",
-  "last_price": 511.1,
-  "as_of": "2026-10-02 13:30:00",
+  "last_price": 512.11,
+  "as_of": "2026-10-05 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 5.8,
-  "fit_score": 57.5,
+  "trend_score": 4.8,
+  "fit_score": 47.5,
   "confidence_grade": "C",
-  "confidence_percentage": 57.5,
-  "vix": 16.21,
+  "confidence_percentage": 47.5,
+  "vix": 15.52,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,10 +23,10 @@
         "strike": 475.0,
         "strike_formatted": "475",
         "option_type": "Put",
-        "delta": -0.079,
+        "delta": -0.064,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x DIA 20-Nov-2026 475 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 480.0,
         "strike_formatted": "480",
         "option_type": "Put",
-        "delta": -0.109,
+        "delta": -0.092,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x DIA 20-Nov-2026 480 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 540.0,
         "strike_formatted": "540",
         "option_type": "Call",
-        "delta": 0.207,
+        "delta": 0.202,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x DIA 20-Nov-2026 540 Call"
       },
       {
@@ -59,10 +59,10 @@
         "strike": 545.0,
         "strike_formatted": "545",
         "option_type": "Call",
-        "delta": 0.164,
+        "delta": 0.158,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x DIA 20-Nov-2026 545 Call"
       }
     ],
@@ -70,9 +70,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 495.77,
-    "take_profit_price": 526.43,
-    "net_delta": -0.013,
+    "stop_loss_price": 496.75,
+    "take_profit_price": 527.47,
+    "net_delta": -0.016,
     "net_theta": 0.026,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -80,207 +80,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 408.88,
+        "price": 409.69,
         "pnl": -25.0
       },
       {
-        "price": 412.97,
+        "price": 413.78,
         "pnl": -25.0
       },
       {
-        "price": 417.06,
+        "price": 417.88,
         "pnl": -25.0
       },
       {
-        "price": 421.15,
+        "price": 421.98,
         "pnl": -25.0
       },
       {
-        "price": 425.24,
+        "price": 426.08,
         "pnl": -25.0
       },
       {
-        "price": 429.32,
+        "price": 430.17,
         "pnl": -25.0
       },
       {
-        "price": 433.41,
+        "price": 434.27,
         "pnl": -25.0
       },
       {
-        "price": 437.5,
+        "price": 438.37,
         "pnl": -25.0
       },
       {
-        "price": 441.59,
+        "price": 442.46,
         "pnl": -25.0
       },
       {
-        "price": 445.68,
+        "price": 446.56,
         "pnl": -25.0
       },
       {
-        "price": 449.77,
+        "price": 450.66,
         "pnl": -25.0
       },
       {
-        "price": 453.86,
+        "price": 454.75,
         "pnl": -25.0
       },
       {
-        "price": 457.95,
+        "price": 458.85,
         "pnl": -25.0
       },
       {
-        "price": 462.03,
+        "price": 462.95,
         "pnl": -25.0
       },
       {
-        "price": 466.12,
+        "price": 467.04,
         "pnl": -25.0
       },
       {
-        "price": 470.21,
+        "price": 471.14,
         "pnl": -25.0
       },
       {
-        "price": 474.3,
-        "pnl": -25.0
+        "price": 475.24,
+        "pnl": -24.76
       },
       {
-        "price": 478.39,
-        "pnl": -21.61
+        "price": 479.33,
+        "pnl": -20.67
       },
       {
-        "price": 482.48,
+        "price": 483.43,
         "pnl": -20.0
       },
       {
-        "price": 486.57,
+        "price": 487.53,
         "pnl": -20.0
       },
       {
-        "price": 490.66,
+        "price": 491.63,
         "pnl": -20.0
       },
       {
-        "price": 494.74,
+        "price": 495.72,
         "pnl": -20.0
       },
       {
-        "price": 498.83,
+        "price": 499.82,
         "pnl": -20.0
       },
       {
-        "price": 502.92,
+        "price": 503.92,
         "pnl": -20.0
       },
       {
-        "price": 507.01,
+        "price": 508.01,
         "pnl": -20.0
       },
       {
-        "price": 511.1,
+        "price": 512.11,
         "pnl": -20.0
       },
       {
-        "price": 515.19,
+        "price": 516.21,
         "pnl": -20.0
       },
       {
-        "price": 519.28,
+        "price": 520.3,
         "pnl": -20.0
       },
       {
-        "price": 523.37,
+        "price": 524.4,
         "pnl": -20.0
       },
       {
-        "price": 527.46,
+        "price": 528.5,
         "pnl": -20.0
       },
       {
-        "price": 531.54,
+        "price": 532.59,
         "pnl": -20.0
       },
       {
-        "price": 535.63,
+        "price": 536.69,
         "pnl": -20.0
       },
       {
-        "price": 539.72,
-        "pnl": -20.0
+        "price": 540.79,
+        "pnl": -20.79
       },
       {
-        "price": 543.81,
-        "pnl": -23.81
+        "price": 544.89,
+        "pnl": -24.89
       },
       {
-        "price": 547.9,
+        "price": 548.98,
         "pnl": -25.0
       },
       {
-        "price": 551.99,
+        "price": 553.08,
         "pnl": -25.0
       },
       {
-        "price": 556.08,
+        "price": 557.18,
         "pnl": -25.0
       },
       {
-        "price": 560.17,
+        "price": 561.27,
         "pnl": -25.0
       },
       {
-        "price": 564.25,
+        "price": 565.37,
         "pnl": -25.0
       },
       {
-        "price": 568.34,
+        "price": 569.47,
         "pnl": -25.0
       },
       {
-        "price": 572.43,
+        "price": 573.56,
         "pnl": -25.0
       },
       {
-        "price": 576.52,
+        "price": 577.66,
         "pnl": -25.0
       },
       {
-        "price": 580.61,
+        "price": 581.76,
         "pnl": -25.0
       },
       {
-        "price": 584.7,
+        "price": 585.85,
         "pnl": -25.0
       },
       {
-        "price": 588.79,
+        "price": 589.95,
         "pnl": -25.0
       },
       {
-        "price": 592.88,
+        "price": 594.05,
         "pnl": -25.0
       },
       {
-        "price": 596.96,
+        "price": 598.14,
         "pnl": -25.0
       },
       {
-        "price": 601.05,
+        "price": 602.24,
         "pnl": -25.0
       },
       {
-        "price": 605.14,
+        "price": 606.34,
         "pnl": -25.0
       },
       {
-        "price": 609.23,
+        "price": 610.44,
         "pnl": -25.0
       },
       {
-        "price": 613.32,
+        "price": 614.53,
         "pnl": -25.0
       }
     ],
@@ -306,77 +306,77 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 85.7,
+      "score": 82.4,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x DIA 20-Nov-2026 540 Call<br> Buy 1x DIA 20-Nov-2026 545 Call"
     },
     {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 71.1,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 500 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Buy 1x DIA 20-Nov-2026 525 Call"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 63.5,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 485 Put<br> Sell 1x DIA 20-Nov-2026 510 Put<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Buy 1x DIA 20-Nov-2026 540 Call"
+    },
+    {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 63.7,
+      "score": 61.2,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x DIA 20-Nov-2026 480 Put<br> Sell 1x DIA 20-Nov-2026 540 Call<br> Buy 1x DIA 20-Nov-2026 545 Call"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 62.5,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 495 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Buy 1x DIA 20-Nov-2026 525 Call"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 56.6,
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 52.9,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 480 Put<br> Sell 1x DIA 20-Nov-2026 510 Put<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Buy 1x DIA 20-Nov-2026 540 Call"
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 500 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Buy 1x DIA 20-Nov-2026 540 Call"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 51.1,
+      "score": 50.0,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x DIA 20-Nov-2026 480 Put"
     },
     {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 46.0,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 495 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Sell 1x DIA 20-Nov-2026 510 Call<br> Buy 1x DIA 20-Nov-2026 540 Call"
-    },
-    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 42.1,
+      "score": 41.8,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 480 Call<br> Sell 1x DIA 20-Nov-2026 525 Call"
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 485 Call<br> Sell 1x DIA 20-Nov-2026 525 Call"
     }
   ],
   "indicators": {
-    "EMA20": "517.55",
-    "EMA50": "521.56",
-    "EMA100": "517.01",
-    "EMA200": "503.50",
-    "RSI(14)": "39.06",
-    "ATR(14)": "5.00",
-    "ADX(14)": "23.41",
-    "BB(20,2)": "0.23",
-    "P_SHAPE(20)": "41.13"
+    "EMA20": "517.04",
+    "EMA50": "521.19",
+    "EMA100": "516.92",
+    "EMA200": "503.59",
+    "RSI(14)": "40.62",
+    "ATR(14)": "5.03",
+    "ADX(14)": "23.96",
+    "BB(20,2)": "0.28",
+    "P_SHAPE(20)": "47.41"
   },
   "rules": [
     {
@@ -402,20 +402,6 @@
     },
     {
       "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -450,6 +436,20 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -458,6 +458,20 @@
     }
   ],
   "news": [
+    {
+      "title": "Nasdaq 100 Hits Record Highs As Investors Shrug Off Pressure From Soaring Yields \u2014 NVDA, SPCX, CRML, TSLA, QCOM In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-100-hits-record-highs-220932490.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Financials Are 26.30% of DIA. No One Set That Target, Share Prices Did",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/financials-26-30-dia-no-220336471.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
     {
       "title": "International Markets Are Pulling Ahead Of US Stocks In 2026: These 4 ETFs Have Left SPY, QQQ, DIA In The Dust",
       "publisher": "Stocktwits",
@@ -483,20 +497,6 @@
       "title": "Pre-Markets Up on Excellent Data from PCE and ADP",
       "publisher": "Zacks",
       "link": "https://finance.yahoo.com/economy/articles/pre-markets-excellent-data-pce-131700684.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Pre-Markets Rebound Moderately After Monday's Selloff",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/pre-markets-rebound-moderately-mondays-133300914.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

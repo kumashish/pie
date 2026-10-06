@@ -1,19 +1,19 @@
 {
   "symbol": "XLK",
-  "last_price": 199.81,
-  "as_of": "2026-10-02 13:30:00",
+  "last_price": 200.93,
+  "as_of": "2026-10-05 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 7.5,
-  "fit_score": 75.0,
+  "trend_score": 6.5,
+  "fit_score": 65.0,
   "confidence_grade": "B",
-  "confidence_percentage": 75.0,
-  "vix": 16.21,
+  "confidence_percentage": 65.0,
+  "vix": 15.52,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (68.8) is overbought (> 65) [Synthetic PCR: 0.65]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (70.2) is overbought (> 65) [Synthetic PCR: 0.63]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 190.0,
         "strike_formatted": "190",
         "option_type": "Put",
-        "delta": -0.156,
+        "delta": -0.122,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x XLK 20-Nov-2026 190 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 185.0,
         "strike_formatted": "185",
         "option_type": "Put",
-        "delta": -0.07,
+        "delta": -0.049,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x XLK 20-Nov-2026 185 Put"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 193.82,
-    "take_profit_price": 205.8,
-    "net_delta": 0.086,
+    "stop_loss_price": 194.9,
+    "take_profit_price": 206.96,
+    "net_delta": 0.073,
     "net_theta": 0.01,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 159.85,
+        "price": 160.74,
         "pnl": -15.0
       },
       {
-        "price": 161.45,
+        "price": 162.35,
         "pnl": -15.0
       },
       {
-        "price": 163.04,
+        "price": 163.96,
         "pnl": -15.0
       },
       {
-        "price": 164.64,
+        "price": 165.57,
         "pnl": -15.0
       },
       {
-        "price": 166.24,
+        "price": 167.17,
         "pnl": -15.0
       },
       {
-        "price": 167.84,
+        "price": 168.78,
         "pnl": -15.0
       },
       {
-        "price": 169.44,
+        "price": 170.39,
         "pnl": -15.0
       },
       {
-        "price": 171.04,
+        "price": 172.0,
         "pnl": -15.0
       },
       {
-        "price": 172.64,
+        "price": 173.6,
         "pnl": -15.0
       },
       {
-        "price": 174.23,
+        "price": 175.21,
         "pnl": -15.0
       },
       {
-        "price": 175.83,
+        "price": 176.82,
         "pnl": -15.0
       },
       {
-        "price": 177.43,
+        "price": 178.43,
         "pnl": -15.0
       },
       {
-        "price": 179.03,
+        "price": 180.03,
         "pnl": -15.0
       },
       {
-        "price": 180.63,
+        "price": 181.64,
         "pnl": -15.0
       },
       {
-        "price": 182.23,
+        "price": 183.25,
         "pnl": -15.0
       },
       {
-        "price": 183.83,
+        "price": 184.86,
         "pnl": -15.0
       },
       {
-        "price": 185.42,
-        "pnl": -14.58
+        "price": 186.46,
+        "pnl": -13.54
       },
       {
-        "price": 187.02,
-        "pnl": -12.98
+        "price": 188.07,
+        "pnl": -11.93
       },
       {
-        "price": 188.62,
-        "pnl": -11.38
+        "price": 189.68,
+        "pnl": -10.32
       },
       {
-        "price": 190.22,
+        "price": 191.29,
         "pnl": -10.0
       },
       {
-        "price": 191.82,
+        "price": 192.89,
         "pnl": -10.0
       },
       {
-        "price": 193.42,
+        "price": 194.5,
         "pnl": -10.0
       },
       {
-        "price": 195.01,
+        "price": 196.11,
         "pnl": -10.0
       },
       {
-        "price": 196.61,
+        "price": 197.72,
         "pnl": -10.0
       },
       {
-        "price": 198.21,
+        "price": 199.32,
         "pnl": -10.0
       },
       {
-        "price": 199.81,
+        "price": 200.93,
         "pnl": -10.0
       },
       {
-        "price": 201.41,
+        "price": 202.54,
         "pnl": -10.0
       },
       {
-        "price": 203.01,
+        "price": 204.14,
         "pnl": -10.0
       },
       {
-        "price": 204.61,
+        "price": 205.75,
         "pnl": -10.0
       },
       {
-        "price": 206.2,
+        "price": 207.36,
         "pnl": -10.0
       },
       {
-        "price": 207.8,
+        "price": 208.97,
         "pnl": -10.0
       },
       {
-        "price": 209.4,
+        "price": 210.57,
         "pnl": -10.0
       },
       {
-        "price": 211.0,
+        "price": 212.18,
         "pnl": -10.0
       },
       {
-        "price": 212.6,
+        "price": 213.79,
         "pnl": -10.0
       },
       {
-        "price": 214.2,
+        "price": 215.4,
         "pnl": -10.0
       },
       {
-        "price": 215.79,
+        "price": 217.0,
         "pnl": -10.0
       },
       {
-        "price": 217.39,
+        "price": 218.61,
         "pnl": -10.0
       },
       {
-        "price": 218.99,
+        "price": 220.22,
         "pnl": -10.0
       },
       {
-        "price": 220.59,
+        "price": 221.83,
         "pnl": -10.0
       },
       {
-        "price": 222.19,
+        "price": 223.43,
         "pnl": -10.0
       },
       {
-        "price": 223.79,
+        "price": 225.04,
         "pnl": -10.0
       },
       {
-        "price": 225.39,
+        "price": 226.65,
         "pnl": -10.0
       },
       {
-        "price": 226.98,
+        "price": 228.26,
         "pnl": -10.0
       },
       {
-        "price": 228.58,
+        "price": 229.86,
         "pnl": -10.0
       },
       {
-        "price": 230.18,
+        "price": 231.47,
         "pnl": -10.0
       },
       {
-        "price": 231.78,
+        "price": 233.08,
         "pnl": -10.0
       },
       {
-        "price": 233.38,
+        "price": 234.69,
         "pnl": -10.0
       },
       {
-        "price": 234.98,
+        "price": 236.29,
         "pnl": -10.0
       },
       {
-        "price": 236.58,
+        "price": 237.9,
         "pnl": -10.0
       },
       {
-        "price": 238.17,
+        "price": 239.51,
         "pnl": -10.0
       },
       {
-        "price": 239.77,
+        "price": 241.12,
         "pnl": -10.0
       }
     ],
@@ -280,70 +280,88 @@
       "legs_summary": "Sell 1x XLK 20-Nov-2026 210 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
     },
     {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 83.5,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 185 Put<br> Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 210 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
+    },
+    {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 79.6,
+      "score": 75.2,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 210 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 67.4,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x XLK 20-Nov-2026 185 Put<br> Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 210 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
-    },
-    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 59.2,
+      "score": 55.1,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x XLK 20-Nov-2026 190 Call<br> Sell 1x XLK 20-Nov-2026 205 Call"
     },
     {
-      "strategy_type": "cash_swing_long",
-      "strategy_display": "Cash Swing Long",
-      "score": 49.0,
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 50.0,
       "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x XLK 20-Nov-2026 199.8 Call"
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 195 Call<br> Sell 1x XLK 20-Nov-2026 200 Call<br> Sell 1x XLK 20-Nov-2026 200 Call<br> Buy 1x XLK 20-Nov-2026 205 Call"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 46.9,
+      "score": 45.8,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put"
     },
     {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 44.7,
+      "strategy_type": "cash_swing_long",
+      "strategy_display": "Cash Swing Long",
+      "score": 43.5,
       "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put"
+      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 200.9 Call"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 42.4,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 200 Put<br> Sell 1x XLK 20-Nov-2026 200 Call<br> Buy 1x XLK 20-Nov-2026 210 Call"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 41.2,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 195 Call<br> Sell 1x XLK 20-Nov-2026 200 Call<br> Sell 1x XLK 20-Nov-2026 200 Call<br> Buy 1x XLK 20-Nov-2026 210 Call"
     }
   ],
   "indicators": {
-    "EMA20": "192.43",
-    "EMA50": "187.79",
-    "EMA100": "181.17",
-    "EMA200": "169.15",
-    "RSI(14)": "68.81",
-    "ATR(14)": "3.20",
-    "ADX(14)": "16.55",
+    "EMA20": "193.24",
+    "EMA50": "188.30",
+    "EMA100": "181.56",
+    "EMA200": "169.46",
+    "RSI(14)": "70.24",
+    "ATR(14)": "3.08",
+    "ADX(14)": "17.65",
     "BB(20,2)": "0.91",
-    "P_SHAPE(20)": "51.03"
+    "P_SHAPE(20)": "55.45"
   },
   "rules": [
     {
@@ -368,21 +386,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -422,48 +426,62 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
     {
-      "title": "Sector Update: Tech Stocks Gain Late Afternoon",
+      "title": "Sector Update: Tech Stocks Mixed Late Afternoon",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-afternoon-195210313.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-mixed-afternoon-194240806.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
       "title": "Sector Update: Tech",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-193022187.html",
+      "link": "https://finance.yahoo.com/technology/articles/sector-tech-191730287.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Sector Update: Tech Stocks Gain Friday Afternoon",
+      "title": "Sector Update: Tech Stocks Mixed Monday Afternoon",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-gain-friday-174821071.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-mixed-monday-173522926.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Exchange-Traded Funds Rise as US Equities Advance After Midday",
+      "title": "Exchange-Traded Funds Rise, US Equities Higher After Midday",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-171324140.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-171005649.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
       "title": "Sector Update: Tech",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-170703016.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-170109901.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Tech stocks jump after jobs report miss, Treasury yields ease: AlphaCheck",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/article/tech-stocks-jump-after-jobs-report-miss-treasury-yields-ease-alphacheck-134916934.html",
+      "title": "Microsoft Rises 2% as Melius Research Upgrades to Buy With $665 Target; Amazon and Alphabet Hold Steady",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-rises-2-melius-research-140234372.html",
       "published_at": "Today",
       "sentiment": "bullish"
     }

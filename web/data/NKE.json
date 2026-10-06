@@ -1,19 +1,19 @@
 {
   "symbol": "NKE",
-  "last_price": 33.87,
-  "as_of": "2026-10-02 13:30:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "last_price": 33.96,
+  "as_of": "2026-10-05 13:30:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.2,
+  "fit_score": 22.5,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 16.22,
+  "confidence_percentage": 22.5,
+  "vix": 15.52,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (28.2) is oversold (< 35) [Synthetic PCR: 1.45]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (29.1) is oversold (< 35) [Synthetic PCR: 1.42]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 36.0,
         "strike_formatted": "36",
         "option_type": "Call",
-        "delta": 0.179,
+        "delta": 0.176,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x NKE 20-Nov-2026 36 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 37.0,
         "strike_formatted": "37",
         "option_type": "Call",
-        "delta": 0.081,
+        "delta": 0.076,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x NKE 20-Nov-2026 37 Call"
       }
     ],
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1.0,
-    "stop_loss_price": 32.85,
-    "take_profit_price": 34.89,
-    "net_delta": -0.098,
-    "net_theta": 0.002,
+    "stop_loss_price": 32.94,
+    "take_profit_price": 34.98,
+    "net_delta": -0.1,
+    "net_theta": 0.003,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 27.1,
+        "price": 27.17,
         "pnl": -1.0
       },
       {
-        "price": 27.37,
+        "price": 27.44,
         "pnl": -1.0
       },
       {
-        "price": 27.64,
+        "price": 27.71,
         "pnl": -1.0
       },
       {
-        "price": 27.91,
+        "price": 27.98,
         "pnl": -1.0
       },
       {
-        "price": 28.18,
+        "price": 28.25,
         "pnl": -1.0
       },
       {
-        "price": 28.45,
+        "price": 28.53,
         "pnl": -1.0
       },
       {
-        "price": 28.72,
+        "price": 28.8,
         "pnl": -1.0
       },
       {
-        "price": 28.99,
+        "price": 29.07,
         "pnl": -1.0
       },
       {
-        "price": 29.26,
+        "price": 29.34,
         "pnl": -1.0
       },
       {
-        "price": 29.53,
+        "price": 29.61,
         "pnl": -1.0
       },
       {
-        "price": 29.81,
+        "price": 29.88,
         "pnl": -1.0
       },
       {
-        "price": 30.08,
+        "price": 30.16,
         "pnl": -1.0
       },
       {
-        "price": 30.35,
+        "price": 30.43,
         "pnl": -1.0
       },
       {
-        "price": 30.62,
+        "price": 30.7,
         "pnl": -1.0
       },
       {
-        "price": 30.89,
+        "price": 30.97,
         "pnl": -1.0
       },
       {
-        "price": 31.16,
+        "price": 31.24,
         "pnl": -1.0
       },
       {
-        "price": 31.43,
+        "price": 31.51,
         "pnl": -1.0
       },
       {
-        "price": 31.7,
+        "price": 31.79,
         "pnl": -1.0
       },
       {
-        "price": 31.97,
+        "price": 32.06,
         "pnl": -1.0
       },
       {
-        "price": 32.24,
+        "price": 32.33,
         "pnl": -1.0
       },
       {
-        "price": 32.52,
+        "price": 32.6,
         "pnl": -1.0
       },
       {
-        "price": 32.79,
+        "price": 32.87,
         "pnl": -1.0
       },
       {
-        "price": 33.06,
+        "price": 33.14,
         "pnl": -1.0
       },
       {
-        "price": 33.33,
+        "price": 33.42,
         "pnl": -1.0
       },
       {
-        "price": 33.6,
+        "price": 33.69,
         "pnl": -1.0
       },
       {
-        "price": 33.87,
+        "price": 33.96,
         "pnl": -1.0
       },
       {
-        "price": 34.14,
+        "price": 34.23,
         "pnl": -1.0
       },
       {
-        "price": 34.41,
+        "price": 34.5,
         "pnl": -1.0
       },
       {
-        "price": 34.68,
+        "price": 34.78,
         "pnl": -1.0
       },
       {
-        "price": 34.95,
+        "price": 35.05,
         "pnl": -1.0
       },
       {
-        "price": 35.22,
+        "price": 35.32,
         "pnl": -1.0
       },
       {
-        "price": 35.5,
+        "price": 35.59,
         "pnl": -1.0
       },
       {
-        "price": 35.77,
+        "price": 35.86,
         "pnl": -1.0
       },
       {
-        "price": 36.04,
-        "pnl": -1.04
+        "price": 36.13,
+        "pnl": -1.13
       },
       {
-        "price": 36.31,
-        "pnl": -1.31
+        "price": 36.41,
+        "pnl": -1.41
       },
       {
-        "price": 36.58,
-        "pnl": -1.58
+        "price": 36.68,
+        "pnl": -1.68
       },
       {
-        "price": 36.85,
-        "pnl": -1.85
+        "price": 36.95,
+        "pnl": -1.95
       },
       {
-        "price": 37.12,
+        "price": 37.22,
         "pnl": -2.0
       },
       {
-        "price": 37.39,
+        "price": 37.49,
         "pnl": -2.0
       },
       {
-        "price": 37.66,
+        "price": 37.76,
         "pnl": -2.0
       },
       {
-        "price": 37.93,
+        "price": 38.04,
         "pnl": -2.0
       },
       {
-        "price": 38.21,
+        "price": 38.31,
         "pnl": -2.0
       },
       {
-        "price": 38.48,
+        "price": 38.58,
         "pnl": -2.0
       },
       {
-        "price": 38.75,
+        "price": 38.85,
         "pnl": -2.0
       },
       {
-        "price": 39.02,
+        "price": 39.12,
         "pnl": -2.0
       },
       {
-        "price": 39.29,
+        "price": 39.39,
         "pnl": -2.0
       },
       {
-        "price": 39.56,
+        "price": 39.67,
         "pnl": -2.0
       },
       {
-        "price": 39.83,
+        "price": 39.94,
         "pnl": -2.0
       },
       {
-        "price": 40.1,
+        "price": 40.21,
         "pnl": -2.0
       },
       {
-        "price": 40.37,
+        "price": 40.48,
         "pnl": -2.0
       },
       {
-        "price": 40.64,
+        "price": 40.75,
         "pnl": -2.0
       }
     ],
@@ -280,38 +280,52 @@
       "legs_summary": "Sell 1x NKE 20-Nov-2026 36 Call<br> Buy 1x NKE 20-Nov-2026 37 Call"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 53.0,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x NKE 20-Nov-2026 33.9 Put"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 50.8,
+      "score": 58.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x NKE 20-Nov-2026 31 Put<br> Sell 1x NKE 20-Nov-2026 32 Put<br> Sell 1x NKE 20-Nov-2026 36 Call<br> Buy 1x NKE 20-Nov-2026 37 Call"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 50.3,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x NKE 20-Nov-2026 34.0 Put"
     }
   ],
   "indicators": {
-    "EMA20": "36.35",
-    "EMA50": "38.46",
-    "EMA100": "41.58",
-    "EMA200": "47.44",
-    "RSI(14)": "28.21",
-    "ATR(14)": "1.15",
-    "ADX(14)": "28.30",
-    "BB(20,2)": "-0.09",
-    "P_SHAPE(20)": "68.24"
+    "EMA20": "36.12",
+    "EMA50": "38.29",
+    "EMA100": "41.42",
+    "EMA200": "47.31",
+    "RSI(14)": "29.13",
+    "ATR(14)": "1.16",
+    "ADX(14)": "29.74",
+    "BB(20,2)": "-0.02",
+    "P_SHAPE(20)": "63.93"
   },
   "rules": [
     {
       "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -367,20 +381,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -390,44 +390,44 @@
   ],
   "news": [
     {
-      "title": "NKE Stock Heads For Its Worst Year Ever: Nike\u2019s 45% Plunge Tests Investor Patience As China And Core Brands Weaken",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nke-stock-heads-worst-ever-083742682.html",
+      "title": "How Are Investors Weighing Nike (NKE) Following The Q1 Print?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/investors-weighing-nike-nke-following-033145501.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "European Indexes Fall as Political Pressures Weigh",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/6ac21380-f062-3133-8e21-782cb406b937/european-indexes-fall-as.html",
+      "title": "Nike Is Down 47% But AI Agents Could Make Its Next Problem Worse",
+      "publisher": "BeInCrypto",
+      "link": "https://finance.yahoo.com/technology/ai/articles/nike-down-47-ai-agents-030718620.html",
       "published_at": "Today",
       "sentiment": "bearish"
     },
     {
-      "title": "Company News for Oct 5, 2026",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/company-news-oct-5-2026-060700896.html",
+      "title": "NIKE (NKE) Is Down 6.7% After Guiding For High-Single-Digit 2027 Revenue Decline - Has The Bull Case Changed?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nike-nke-down-6-7-020836969.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Review & Preview: Artificial Highs?",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/e58c053f-e869-304f-a891-acec3e7826f5/review-%26-preview%3A-artificial.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Sporting goods chain closes more stores nationwide",
+      "publisher": "TheStreet",
+      "link": "https://finance.yahoo.com/small-business/articles/sporting-goods-chain-closes-more-231700218.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Is Buying Nike Stock Now a Brilliant Move or a Disaster Waiting to Happen? Here's the Answer and What to Do Next.",
+      "title": "Could Disney End Up Being the Next Nike?",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/buying-nike-stock-now-brilliant-042000854.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Did NKE, NIO, APP Stocks Tumble To 52-Week Lows Last Week?",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-did-nke-nio-app-035534415.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nike's Earnings Are a Disaster. Run -- Don't Walk -- Away From This Stock.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nikes-earnings-disaster-run-dont-232700322.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/could-disney-end-being-next-221501655.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

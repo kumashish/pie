@@ -1,19 +1,19 @@
 {
   "symbol": "JPM",
   "last_price": 332.38,
-  "as_of": "2026-10-02 13:30:00",
+  "as_of": "2026-10-05 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 4.5,
-  "fit_score": 45.0,
+  "trend_score": 4.2,
+  "fit_score": 42.5,
   "confidence_grade": "C",
-  "confidence_percentage": 45.0,
-  "vix": 16.22,
+  "confidence_percentage": 42.5,
+  "vix": 15.52,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (98.9% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 305.0,
         "strike_formatted": "305",
         "option_type": "Put",
-        "delta": -0.051,
+        "delta": -0.043,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x JPM 20-Nov-2026 305 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 310.0,
         "strike_formatted": "310",
         "option_type": "Put",
-        "delta": -0.089,
+        "delta": -0.078,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x JPM 20-Nov-2026 310 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 350.0,
         "strike_formatted": "350",
         "option_type": "Call",
-        "delta": 0.224,
+        "delta": 0.21,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x JPM 20-Nov-2026 350 Call"
       },
       {
@@ -59,10 +59,10 @@
         "strike": 355.0,
         "strike_formatted": "355",
         "option_type": "Call",
-        "delta": 0.157,
+        "delta": 0.143,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x JPM 20-Nov-2026 355 Call"
       }
     ],
@@ -72,8 +72,8 @@
     "margin_required": 15.0,
     "stop_loss_price": 322.41,
     "take_profit_price": 342.35,
-    "net_delta": -0.029,
-    "net_theta": 0.024,
+    "net_delta": -0.032,
+    "net_theta": 0.025,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -285,9 +285,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.846,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3614,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 100.0,
+      "score": 98.9,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 86.1,
+      "score": 86.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,7 +315,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 66.0,
+      "score": 63.0,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -324,8 +324,8 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 62.7,
-      "grade": "B (Good)",
+      "score": 58.7,
+      "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x JPM 20-Nov-2026 310 Put<br> Sell 1x JPM 20-Nov-2026 350 Call<br> Buy 1x JPM 20-Nov-2026 355 Call"
@@ -333,8 +333,8 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 60.1,
-      "grade": "B (Good)",
+      "score": 55.4,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
       "legs_summary": "Buy 1x JPM 20-Nov-2026 315 Put<br> Sell 1x JPM 20-Nov-2026 330 Put<br> Sell 1x JPM 20-Nov-2026 330 Call<br> Buy 1x JPM 20-Nov-2026 350 Call"
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 48.3,
+      "score": 48.2,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -350,15 +350,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "342.84",
-    "EMA50": "345.46",
-    "EMA100": "338.49",
-    "EMA200": "325.26",
+    "EMA20": "341.84",
+    "EMA50": "344.95",
+    "EMA100": "338.37",
+    "EMA200": "325.33",
     "RSI(14)": "34.48",
-    "ATR(14)": "6.46",
-    "ADX(14)": "24.04",
-    "BB(20,2)": "0.14",
-    "P_SHAPE(20)": "58.03"
+    "ATR(14)": "6.22",
+    "ADX(14)": "25.19",
+    "BB(20,2)": "0.17",
+    "P_SHAPE(20)": "56.22"
   },
   "rules": [
     {
@@ -370,13 +370,6 @@
     },
     {
       "name": "EMA50 above EMA200",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -425,6 +418,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -441,46 +441,46 @@
   ],
   "news": [
     {
-      "title": "JPMorgan Chase Has One of Banking\u2019s Best Moats. Here\u2019s What the Stock is Worth",
-      "publisher": "Insider Monkey",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-one-banking-best-225831042.html",
+      "title": "Solana Debuts Institutional Settlement Standard With J.P. Morgan Input",
+      "publisher": "decrypt",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/solana-debuts-institutional-settlement-standard-020103318.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Daqo New Energy (DQ) Stock Sees Fair Value Cut After Split Analyst Calls",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/daqo-energy-dq-stock-sees-210731785.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "American Airlines (AAL) Stock Fair Value Edges Lower As Analysts Reassess Fuel Costs",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/american-airlines-aal-stock-fair-010913993.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Better Small-Cap ETF: State Street SPSM vs. JPMorgan BBSC",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/better-small-cap-etf-state-212824057.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Fed May Now Skip October Rate Hike \u2014 but December Is Still Very Much in Play",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/economy/policy/articles/fed-may-now-skip-october-124728673.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jim Cramer Warns Q3 \u2018Earnings Deluge\u2019 May Not Be As Strong As Previous Quarter \u2014 \u2018Much More Difficult Backdrop\u2019",
+      "title": "Here Are JPMorgan's Top Stock Picks That Could Benefit This Mid-Term Election Shake-Up",
       "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-warns-q3-earnings-083141660.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgans-top-stock-picks-could-222430779.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JPMorgan Dangles 11% Yield on Volta\u2019s $5 Billion AI Loan Sale",
+      "publisher": "Bloomberg",
+      "link": "https://finance.yahoo.com/technology/ai/articles/jpmorgan-dangles-11-yield-volta-200522405.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "American Express Stocks Stay Flat as JPMorgan Spots Value",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/american-express-stocks-stay-flat-200242352.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Thermo Fisher Stocks Rise as JPMorgan Adds October Favorite",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/thermo-fisher-stocks-rise-jpmorgan-194843768.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "BofA Securities Adjusts Price Target on JPMorgan Chase to $400 From $420",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/bofa-securities-adjusts-price-target-160612229.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

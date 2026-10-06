@@ -1,14 +1,14 @@
 {
   "symbol": "AMAT",
-  "last_price": 540.04,
-  "as_of": "2026-10-02 13:30:00",
+  "last_price": 542.28,
+  "as_of": "2026-10-05 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 5.2,
-  "fit_score": 52.5,
+  "trend_score": 4.8,
+  "fit_score": 47.5,
   "confidence_grade": "C",
-  "confidence_percentage": 52.5,
-  "vix": 16.22,
+  "confidence_percentage": 47.5,
+  "vix": 15.52,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,10 +23,10 @@
         "strike": 490.0,
         "strike_formatted": "490",
         "option_type": "Put",
-        "delta": -0.034,
+        "delta": -0.023,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x AMAT 20-Nov-2026 490 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 510.0,
         "strike_formatted": "510",
         "option_type": "Put",
-        "delta": -0.129,
+        "delta": -0.103,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x AMAT 20-Nov-2026 510 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 570.0,
         "strike_formatted": "570",
         "option_type": "Call",
-        "delta": 0.212,
+        "delta": 0.219,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x AMAT 20-Nov-2026 570 Call"
       },
       {
@@ -59,20 +59,20 @@
         "strike": 590.0,
         "strike_formatted": "590",
         "option_type": "Call",
-        "delta": 0.081,
+        "delta": 0.08,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x AMAT 20-Nov-2026 590 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 25.0,
-    "stop_loss_price": 523.84,
-    "take_profit_price": 556.24,
-    "net_delta": -0.036,
+    "margin_required": 20.0,
+    "stop_loss_price": 526.01,
+    "take_profit_price": 558.55,
+    "net_delta": -0.059,
     "net_theta": 0.094,
     "probability_of_profit": 0.0,
     "var_95": 20.0,
@@ -80,208 +80,208 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 432.03,
-        "pnl": -45.0
+        "price": 433.82,
+        "pnl": -40.0
       },
       {
-        "price": 436.35,
-        "pnl": -45.0
+        "price": 438.16,
+        "pnl": -40.0
       },
       {
-        "price": 440.67,
-        "pnl": -45.0
+        "price": 442.5,
+        "pnl": -40.0
       },
       {
-        "price": 444.99,
-        "pnl": -45.0
+        "price": 446.84,
+        "pnl": -40.0
       },
       {
-        "price": 449.31,
-        "pnl": -45.0
+        "price": 451.18,
+        "pnl": -40.0
       },
       {
-        "price": 453.63,
-        "pnl": -45.0
+        "price": 455.52,
+        "pnl": -40.0
       },
       {
-        "price": 457.95,
-        "pnl": -45.0
+        "price": 459.85,
+        "pnl": -40.0
       },
       {
-        "price": 462.27,
-        "pnl": -45.0
+        "price": 464.19,
+        "pnl": -40.0
       },
       {
-        "price": 466.59,
-        "pnl": -45.0
+        "price": 468.53,
+        "pnl": -40.0
       },
       {
-        "price": 470.91,
-        "pnl": -45.0
+        "price": 472.87,
+        "pnl": -40.0
       },
       {
-        "price": 475.24,
-        "pnl": -45.0
+        "price": 477.21,
+        "pnl": -40.0
       },
       {
-        "price": 479.56,
-        "pnl": -45.0
+        "price": 481.54,
+        "pnl": -40.0
       },
       {
-        "price": 483.88,
-        "pnl": -45.0
+        "price": 485.88,
+        "pnl": -40.0
       },
       {
-        "price": 488.2,
-        "pnl": -45.0
+        "price": 490.22,
+        "pnl": -39.78
       },
       {
-        "price": 492.52,
-        "pnl": -42.48
+        "price": 494.56,
+        "pnl": -35.44
       },
       {
-        "price": 496.84,
-        "pnl": -38.16
+        "price": 498.9,
+        "pnl": -31.1
       },
       {
-        "price": 501.16,
-        "pnl": -33.84
+        "price": 503.24,
+        "pnl": -26.76
       },
       {
-        "price": 505.48,
-        "pnl": -29.52
+        "price": 507.57,
+        "pnl": -22.43
       },
       {
-        "price": 509.8,
-        "pnl": -25.2
+        "price": 511.91,
+        "pnl": -20.0
       },
       {
-        "price": 514.12,
-        "pnl": -25.0
+        "price": 516.25,
+        "pnl": -20.0
       },
       {
-        "price": 518.44,
-        "pnl": -25.0
+        "price": 520.59,
+        "pnl": -20.0
       },
       {
-        "price": 522.76,
-        "pnl": -25.0
+        "price": 524.93,
+        "pnl": -20.0
       },
       {
-        "price": 527.08,
-        "pnl": -25.0
+        "price": 529.27,
+        "pnl": -20.0
       },
       {
-        "price": 531.4,
-        "pnl": -25.0
+        "price": 533.6,
+        "pnl": -20.0
       },
       {
-        "price": 535.72,
-        "pnl": -25.0
+        "price": 537.94,
+        "pnl": -20.0
       },
       {
-        "price": 540.04,
-        "pnl": -25.0
+        "price": 542.28,
+        "pnl": -20.0
       },
       {
-        "price": 544.36,
-        "pnl": -25.0
+        "price": 546.62,
+        "pnl": -20.0
       },
       {
-        "price": 548.68,
-        "pnl": -25.0
+        "price": 550.96,
+        "pnl": -20.0
       },
       {
-        "price": 553.0,
-        "pnl": -25.0
+        "price": 555.29,
+        "pnl": -20.0
       },
       {
-        "price": 557.32,
-        "pnl": -25.0
+        "price": 559.63,
+        "pnl": -20.0
       },
       {
-        "price": 561.64,
-        "pnl": -25.0
+        "price": 563.97,
+        "pnl": -20.0
       },
       {
-        "price": 565.96,
-        "pnl": -25.0
+        "price": 568.31,
+        "pnl": -20.0
       },
       {
-        "price": 570.28,
-        "pnl": -25.28
+        "price": 572.65,
+        "pnl": -22.65
       },
       {
-        "price": 574.6,
-        "pnl": -29.6
+        "price": 576.99,
+        "pnl": -26.99
       },
       {
-        "price": 578.92,
-        "pnl": -33.92
+        "price": 581.32,
+        "pnl": -31.32
       },
       {
-        "price": 583.24,
-        "pnl": -38.24
+        "price": 585.66,
+        "pnl": -35.66
       },
       {
-        "price": 587.56,
-        "pnl": -42.56
+        "price": 590.0,
+        "pnl": -40.0
       },
       {
-        "price": 591.88,
-        "pnl": -45.0
+        "price": 594.34,
+        "pnl": -40.0
       },
       {
-        "price": 596.2,
-        "pnl": -45.0
+        "price": 598.68,
+        "pnl": -40.0
       },
       {
-        "price": 600.52,
-        "pnl": -45.0
+        "price": 603.02,
+        "pnl": -40.0
       },
       {
-        "price": 604.84,
-        "pnl": -45.0
+        "price": 607.35,
+        "pnl": -40.0
       },
       {
-        "price": 609.17,
-        "pnl": -45.0
+        "price": 611.69,
+        "pnl": -40.0
       },
       {
-        "price": 613.49,
-        "pnl": -45.0
+        "price": 616.03,
+        "pnl": -40.0
       },
       {
-        "price": 617.81,
-        "pnl": -45.0
+        "price": 620.37,
+        "pnl": -40.0
       },
       {
-        "price": 622.13,
-        "pnl": -45.0
+        "price": 624.71,
+        "pnl": -40.0
       },
       {
-        "price": 626.45,
-        "pnl": -45.0
+        "price": 629.04,
+        "pnl": -40.0
       },
       {
-        "price": 630.77,
-        "pnl": -45.0
+        "price": 633.38,
+        "pnl": -40.0
       },
       {
-        "price": 635.09,
-        "pnl": -45.0
+        "price": 637.72,
+        "pnl": -40.0
       },
       {
-        "price": 639.41,
-        "pnl": -45.0
+        "price": 642.06,
+        "pnl": -40.0
       },
       {
-        "price": 643.73,
-        "pnl": -45.0
+        "price": 646.4,
+        "pnl": -40.0
       },
       {
-        "price": 648.05,
-        "pnl": -45.0
+        "price": 650.74,
+        "pnl": -40.0
       }
     ],
     "kelly_sizing": {
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 96.9,
+      "score": 95.4,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,16 +315,16 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 71.1,
+      "score": 71.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 525 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 555 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 530 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 555 Call"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 65.8,
+      "score": 65.4,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -333,34 +333,34 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 65.2,
+      "score": 64.1,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 510 Put<br> Sell 1x AMAT 20-Nov-2026 540 Put<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 570 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 515 Put<br> Sell 1x AMAT 20-Nov-2026 540 Put<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 570 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 50.6,
+      "score": 52.9,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 525 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 570 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 530 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Sell 1x AMAT 20-Nov-2026 540 Call<br> Buy 1x AMAT 20-Nov-2026 570 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 43.7,
+      "score": 45.9,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 510 Call<br> Sell 1x AMAT 20-Nov-2026 555 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 515 Call<br> Sell 1x AMAT 20-Nov-2026 555 Call"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 42.7,
+      "score": 41.7,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
@@ -368,15 +368,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "484.81",
-    "EMA50": "488.64",
-    "EMA100": "480.35",
-    "EMA200": "430.49",
-    "RSI(14)": "69.18",
-    "ATR(14)": "19.53",
-    "ADX(14)": "18.81",
-    "BB(20,2)": "1.00",
-    "P_SHAPE(20)": "39.93"
+    "EMA20": "490.28",
+    "EMA50": "490.75",
+    "EMA100": "481.58",
+    "EMA200": "431.60",
+    "RSI(14)": "69.64",
+    "ATR(14)": "19.01",
+    "ADX(14)": "20.03",
+    "BB(20,2)": "0.94",
+    "P_SHAPE(20)": "43.22"
   },
   "rules": [
     {
@@ -388,20 +388,6 @@
     },
     {
       "name": "EMA50 above EMA200",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -450,6 +436,20 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -459,44 +459,44 @@
   ],
   "news": [
     {
-      "title": "Reddit And 2 Other High Quality Stocks",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/reddit-2-other-high-quality-200937580.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Applied Materials (AMAT) Outpaces Stock Market Gains: What You Should Know",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-amat-outpaces-stock-204505897.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Bull of the Day: Onto Innovation (ONTO)",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bull-day-onto-innovation-onto-082000673.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Why Applied Materials (AMAT) Stock Is Up Today",
-      "publisher": "StockStory",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-applied-materials-amat-stock-214107274.html",
+      "title": "Applied Materials Insider Sold Shares Worth $394,807, According to a Recent SEC Filing",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-insider-sold-shares-220209248.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Applied Materials vs. AMD: Which AI Semiconductor Stock Is a Better Buy in 2026?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-vs-amd-ai-192801178.html",
+      "title": "A Tale of Two Markets: Megacaps Keep Climbing, But Rate Fears Hit Many Other Stocks",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/075e477f-4f83-3564-9f9b-536dc973cb7b/a-tale-of-two-markets%3A.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "ASML vs. Applied Digital: Which Is the Better Semiconductor Equipment Stock to Own for the Next 1 Year?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/asml-vs-applied-digital-better-192000964.html",
+      "title": "Applied Materials Stocks Fall as Goldman Anticipates Margin Reset",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-stocks-fall-goldman-191858298.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Semiconductor Stocks Rebound. The Case for Buying Micron and STMicroelectronics.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/22a6ae71-c936-3878-9159-fcf28d0cb12c/semiconductor-stocks-rebound..html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SKB and KCB Partners Acquire Trellis West Campus in Hillsboro",
+      "publisher": "PR Newswire",
+      "link": "https://finance.yahoo.com/real-estate/articles/skb-kcb-partners-acquire-trellis-171400221.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Chip Stocks Set for an Earnings Boost, and 3 to Avoid",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/b4cb9dbf-224e-359c-adc4-2425b870aa5a/3-chip-stocks-set-for-an.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

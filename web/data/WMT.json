@@ -1,14 +1,14 @@
 {
   "symbol": "WMT",
-  "last_price": 104.26,
-  "as_of": "2026-10-02 13:30:00",
+  "last_price": 105.07,
+  "as_of": "2026-10-05 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
   "trend_score": 1.0,
   "fit_score": 10.0,
   "confidence_grade": "C",
   "confidence_percentage": 10.0,
-  "vix": 16.22,
+  "vix": 15.52,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 110.0,
         "strike_formatted": "110",
         "option_type": "Call",
-        "delta": 0.214,
+        "delta": 0.242,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x WMT 20-Nov-2026 110 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 115.0,
         "strike_formatted": "115",
         "option_type": "Call",
-        "delta": 0.059,
+        "delta": 0.065,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x WMT 20-Nov-2026 115 Call"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 101.13,
-    "take_profit_price": 107.39,
-    "net_delta": -0.155,
+    "stop_loss_price": 101.92,
+    "take_profit_price": 108.22,
+    "net_delta": -0.177,
     "net_theta": 0.014,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,123 +56,119 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 83.41,
+        "price": 84.06,
         "pnl": -5.0
       },
       {
-        "price": 84.24,
+        "price": 84.9,
         "pnl": -5.0
       },
       {
-        "price": 85.08,
+        "price": 85.74,
         "pnl": -5.0
       },
       {
-        "price": 85.91,
+        "price": 86.58,
         "pnl": -5.0
       },
       {
-        "price": 86.74,
+        "price": 87.42,
         "pnl": -5.0
       },
       {
-        "price": 87.58,
+        "price": 88.26,
         "pnl": -5.0
       },
       {
-        "price": 88.41,
+        "price": 89.1,
         "pnl": -5.0
       },
       {
-        "price": 89.25,
+        "price": 89.94,
         "pnl": -5.0
       },
       {
-        "price": 90.08,
+        "price": 90.78,
         "pnl": -5.0
       },
       {
-        "price": 90.91,
+        "price": 91.62,
         "pnl": -5.0
       },
       {
-        "price": 91.75,
+        "price": 92.46,
         "pnl": -5.0
       },
       {
-        "price": 92.58,
+        "price": 93.3,
         "pnl": -5.0
       },
       {
-        "price": 93.42,
+        "price": 94.14,
         "pnl": -5.0
       },
       {
-        "price": 94.25,
+        "price": 94.98,
         "pnl": -5.0
       },
       {
-        "price": 95.09,
+        "price": 95.82,
         "pnl": -5.0
       },
       {
-        "price": 95.92,
+        "price": 96.66,
         "pnl": -5.0
       },
       {
-        "price": 96.75,
+        "price": 97.5,
         "pnl": -5.0
       },
       {
-        "price": 97.59,
+        "price": 98.35,
         "pnl": -5.0
       },
       {
-        "price": 98.42,
+        "price": 99.19,
         "pnl": -5.0
       },
       {
-        "price": 99.26,
+        "price": 100.03,
         "pnl": -5.0
       },
       {
-        "price": 100.09,
+        "price": 100.87,
         "pnl": -5.0
       },
       {
-        "price": 100.92,
+        "price": 101.71,
         "pnl": -5.0
       },
       {
-        "price": 101.76,
+        "price": 102.55,
         "pnl": -5.0
       },
       {
-        "price": 102.59,
+        "price": 103.39,
         "pnl": -5.0
       },
       {
-        "price": 103.43,
+        "price": 104.23,
         "pnl": -5.0
       },
       {
-        "price": 104.26,
+        "price": 105.07,
         "pnl": -5.0
       },
       {
-        "price": 105.09,
+        "price": 105.91,
         "pnl": -5.0
       },
       {
-        "price": 105.93,
+        "price": 106.75,
         "pnl": -5.0
       },
       {
-        "price": 106.76,
-        "pnl": -5.0
-      },
-      {
-        "price": 107.6,
+        "price": 107.59,
         "pnl": -5.0
       },
       {
@@ -180,83 +176,87 @@
         "pnl": -5.0
       },
       {
-        "price": 109.26,
+        "price": 109.27,
         "pnl": -5.0
       },
       {
-        "price": 110.1,
-        "pnl": -5.1
+        "price": 110.11,
+        "pnl": -5.11
       },
       {
-        "price": 110.93,
-        "pnl": -5.93
+        "price": 110.95,
+        "pnl": -5.95
       },
       {
-        "price": 111.77,
-        "pnl": -6.77
+        "price": 111.79,
+        "pnl": -6.79
       },
       {
-        "price": 112.6,
-        "pnl": -7.6
+        "price": 112.64,
+        "pnl": -7.64
       },
       {
-        "price": 113.43,
-        "pnl": -8.43
+        "price": 113.48,
+        "pnl": -8.48
       },
       {
-        "price": 114.27,
-        "pnl": -9.27
+        "price": 114.32,
+        "pnl": -9.32
       },
       {
-        "price": 115.1,
+        "price": 115.16,
         "pnl": -10.0
       },
       {
-        "price": 115.94,
+        "price": 116.0,
         "pnl": -10.0
       },
       {
-        "price": 116.77,
+        "price": 116.84,
         "pnl": -10.0
       },
       {
-        "price": 117.61,
+        "price": 117.68,
         "pnl": -10.0
       },
       {
-        "price": 118.44,
+        "price": 118.52,
         "pnl": -10.0
       },
       {
-        "price": 119.27,
+        "price": 119.36,
         "pnl": -10.0
       },
       {
-        "price": 120.11,
+        "price": 120.2,
         "pnl": -10.0
       },
       {
-        "price": 120.94,
+        "price": 121.04,
         "pnl": -10.0
       },
       {
-        "price": 121.78,
+        "price": 121.88,
         "pnl": -10.0
       },
       {
-        "price": 122.61,
+        "price": 122.72,
         "pnl": -10.0
       },
       {
-        "price": 123.44,
+        "price": 123.56,
         "pnl": -10.0
       },
       {
-        "price": 124.28,
+        "price": 124.4,
         "pnl": -10.0
       },
       {
-        "price": 125.11,
+        "price": 125.24,
+        "pnl": -10.0
+      },
+      {
+        "price": 126.08,
         "pnl": -10.0
       }
     ],
@@ -286,12 +286,12 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x WMT 20-Nov-2026 104.3 Put"
+      "legs_summary": "Sell 1x WMT 20-Nov-2026 105.1 Put"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 42.3,
+      "score": 41.4,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -300,7 +300,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 41.3,
+      "score": 40.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -308,26 +308,19 @@
     }
   ],
   "indicators": {
-    "EMA20": "106.92",
-    "EMA50": "108.99",
-    "EMA100": "112.14",
-    "EMA200": "113.14",
-    "RSI(14)": "40.08",
-    "ATR(14)": "2.17",
-    "ADX(14)": "10.88",
-    "BB(20,2)": "0.11",
-    "P_SHAPE(20)": "41.30"
+    "EMA20": "106.75",
+    "EMA50": "108.83",
+    "EMA100": "112.00",
+    "EMA200": "113.06",
+    "RSI(14)": "43.06",
+    "ATR(14)": "2.14",
+    "ADX(14)": "11.17",
+    "BB(20,2)": "0.24",
+    "P_SHAPE(20)": "41.33"
   },
   "rules": [
     {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -376,7 +369,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -399,44 +399,37 @@
   ],
   "news": [
     {
-      "title": "Walmart Yields Less Than 1%. The Surprising Reason Why Dividend Investors Should Own It Anyway.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/walmart-yields-less-1-surprising-035000978.html",
+      "title": "NYSE\u2019s Parent Just Filed to Tokenize 63 US Stocks on a Crypto-Native Exchange \u2014 And the SEC Already Gave It Permission",
+      "publisher": "Forkast News",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/nyse-parent-just-filed-tokenize-025259404.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Split $7,500 Evenly Across These 3 Dividend Stocks and Ignore Them Until 2046",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/split-7-500-evenly-across-192100736.html",
+      "title": "How Christina Zhu turned Sam\u2019s Club into Walmart\u2019s unlikely growth engine in China",
+      "publisher": "Fortune",
+      "link": "https://finance.yahoo.com/small-business/articles/christina-zhu-turned-sam-club-202232047.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Wall Street Might Be Wrong to Hate Consumer Stocks",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/7b616c2b-6313-3116-85df-0589ae75abc7/wall-street-might-be-wrong-to.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Walmart's CEO tells BofA where his retail chain is headed next",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/walmarts-ceo-tells-bofa-where-171700224.html",
+      "title": "Sector Update: Consumer Stocks Advance in Afternoon Trading",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-advance-afternoon-174356176.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Discount grocery chain makes big changes after 42 store closures",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/economy/articles/discount-grocery-chain-makes-big-193700497.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Better Dividend Stock: Walmart vs. Target",
-      "publisher": "TIKR",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/better-dividend-stock-walmart-vs-170733514.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Kraft Heinz vs. PepsiCo: Which Consumer Goods Stock Is a Better Buy in 2026?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/kraft-heinz-vs-pepsico-consumer-133001530.html",
+      "title": "ComEd Energizes State-of-the-Art Grocery Distribution Center in Illinois",
+      "publisher": "Business Wire",
+      "link": "https://finance.yahoo.com/energy/articles/comed-energizes-state-art-grocery-174000568.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

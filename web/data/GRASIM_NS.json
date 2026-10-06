@@ -1,19 +1,19 @@
 {
   "symbol": "GRASIM.NS",
-  "last_price": 2982.1,
-  "as_of": "2026-10-05 03:45:00",
+  "last_price": 2976.9,
+  "as_of": "2026-10-06 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 3.8,
-  "fit_score": 37.5,
+  "trend_score": 3.0,
+  "fit_score": 30.0,
   "confidence_grade": "C",
-  "confidence_percentage": 37.5,
-  "vix": 14.89,
+  "confidence_percentage": 30.0,
+  "vix": 14.57,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (30.6) is oversold (< 35) [Synthetic PCR: 1.39]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (30.7) is oversold (< 35) [Synthetic PCR: 1.35]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 3150.0,
         "strike_formatted": "3150",
         "option_type": "Call",
-        "delta": 0.2,
+        "delta": 0.182,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x GRASIM.NS 24-Nov-2026 3150 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 3200.0,
         "strike_formatted": "3200",
         "option_type": "Call",
-        "delta": 0.13,
+        "delta": 0.115,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x GRASIM.NS 24-Nov-2026 3200 Call"
       }
     ],
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 100.0,
-    "stop_loss_price": 2892.64,
-    "take_profit_price": 3071.56,
-    "net_delta": -0.07,
-    "net_theta": 0.14,
+    "stop_loss_price": 2887.59,
+    "take_profit_price": 3066.21,
+    "net_delta": -0.067,
+    "net_theta": 0.141,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 2385.68,
+        "price": 2381.52,
         "pnl": -100.0
       },
       {
-        "price": 2409.54,
+        "price": 2405.34,
         "pnl": -100.0
       },
       {
-        "price": 2433.39,
+        "price": 2429.15,
         "pnl": -100.0
       },
       {
-        "price": 2457.25,
+        "price": 2452.97,
         "pnl": -100.0
       },
       {
-        "price": 2481.11,
+        "price": 2476.78,
         "pnl": -100.0
       },
       {
-        "price": 2504.96,
+        "price": 2500.6,
         "pnl": -100.0
       },
       {
-        "price": 2528.82,
+        "price": 2524.41,
         "pnl": -100.0
       },
       {
-        "price": 2552.68,
+        "price": 2548.23,
         "pnl": -100.0
       },
       {
-        "price": 2576.53,
+        "price": 2572.04,
         "pnl": -100.0
       },
       {
-        "price": 2600.39,
+        "price": 2595.86,
         "pnl": -100.0
       },
       {
-        "price": 2624.25,
+        "price": 2619.67,
         "pnl": -100.0
       },
       {
-        "price": 2648.1,
+        "price": 2643.49,
         "pnl": -100.0
       },
       {
-        "price": 2671.96,
+        "price": 2667.3,
         "pnl": -100.0
       },
       {
-        "price": 2695.82,
+        "price": 2691.12,
         "pnl": -100.0
       },
       {
-        "price": 2719.68,
+        "price": 2714.93,
         "pnl": -100.0
       },
       {
-        "price": 2743.53,
+        "price": 2738.75,
         "pnl": -100.0
       },
       {
-        "price": 2767.39,
+        "price": 2762.56,
         "pnl": -100.0
       },
       {
-        "price": 2791.25,
+        "price": 2786.38,
         "pnl": -100.0
       },
       {
-        "price": 2815.1,
+        "price": 2810.19,
         "pnl": -100.0
       },
       {
-        "price": 2838.96,
+        "price": 2834.01,
         "pnl": -100.0
       },
       {
-        "price": 2862.82,
+        "price": 2857.82,
         "pnl": -100.0
       },
       {
-        "price": 2886.67,
+        "price": 2881.64,
         "pnl": -100.0
       },
       {
-        "price": 2910.53,
+        "price": 2905.45,
         "pnl": -100.0
       },
       {
-        "price": 2934.39,
+        "price": 2929.27,
         "pnl": -100.0
       },
       {
-        "price": 2958.24,
+        "price": 2953.08,
         "pnl": -100.0
       },
       {
-        "price": 2982.1,
+        "price": 2976.9,
         "pnl": -100.0
       },
       {
-        "price": 3005.96,
+        "price": 3000.72,
         "pnl": -100.0
       },
       {
-        "price": 3029.81,
+        "price": 3024.53,
         "pnl": -100.0
       },
       {
-        "price": 3053.67,
+        "price": 3048.35,
         "pnl": -100.0
       },
       {
-        "price": 3077.53,
+        "price": 3072.16,
         "pnl": -100.0
       },
       {
-        "price": 3101.38,
+        "price": 3095.98,
         "pnl": -100.0
       },
       {
-        "price": 3125.24,
+        "price": 3119.79,
         "pnl": -100.0
       },
       {
-        "price": 3149.1,
+        "price": 3143.61,
         "pnl": -100.0
       },
       {
-        "price": 3172.95,
-        "pnl": -122.95
+        "price": 3167.42,
+        "pnl": -117.42
       },
       {
-        "price": 3196.81,
-        "pnl": -146.81
+        "price": 3191.24,
+        "pnl": -141.24
       },
       {
-        "price": 3220.67,
+        "price": 3215.05,
         "pnl": -150.0
       },
       {
-        "price": 3244.52,
+        "price": 3238.87,
         "pnl": -150.0
       },
       {
-        "price": 3268.38,
+        "price": 3262.68,
         "pnl": -150.0
       },
       {
-        "price": 3292.24,
+        "price": 3286.5,
         "pnl": -150.0
       },
       {
-        "price": 3316.1,
+        "price": 3310.31,
         "pnl": -150.0
       },
       {
-        "price": 3339.95,
+        "price": 3334.13,
         "pnl": -150.0
       },
       {
-        "price": 3363.81,
+        "price": 3357.94,
         "pnl": -150.0
       },
       {
-        "price": 3387.67,
+        "price": 3381.76,
         "pnl": -150.0
       },
       {
-        "price": 3411.52,
+        "price": 3405.57,
         "pnl": -150.0
       },
       {
-        "price": 3435.38,
+        "price": 3429.39,
         "pnl": -150.0
       },
       {
-        "price": 3459.24,
+        "price": 3453.2,
         "pnl": -150.0
       },
       {
-        "price": 3483.09,
+        "price": 3477.02,
         "pnl": -150.0
       },
       {
-        "price": 3506.95,
+        "price": 3500.83,
         "pnl": -150.0
       },
       {
-        "price": 3530.81,
+        "price": 3524.65,
         "pnl": -150.0
       },
       {
-        "price": 3554.66,
+        "price": 3548.46,
         "pnl": -150.0
       },
       {
-        "price": 3578.52,
+        "price": 3572.28,
         "pnl": -150.0
       }
     ],
@@ -282,8 +282,8 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 88.7,
-      "grade": "A (Optimal)",
+      "score": 71.2,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-2800PE-S1x-Nov-2850PE-S1x-Nov-3150CE-B1x-Nov-3200CE"
@@ -291,7 +291,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 56.3,
+      "score": 49.0,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -300,41 +300,23 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 55.3,
+      "score": 40.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "B1x-Nov-2900CE-S1x-Nov-3000CE-S1x-Nov-3000CE-B1x-Nov-3050CE"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 46.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-2800PE-S1x-Nov-3000PE-S1x-Nov-3000CE-B1x-Nov-3150CE"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 45.6,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-2900CE-S1x-Nov-3000CE-S1x-Nov-3000CE-B1x-Nov-3150CE"
     }
   ],
   "indicators": {
-    "EMA20": "3150.96",
-    "EMA50": "3185.95",
-    "EMA100": "3137.37",
-    "EMA200": "3032.52",
-    "RSI(14)": "30.56",
-    "ATR(14)": "61.88",
-    "ADX(14)": "30.10",
-    "BB(20,2)": "0.01",
-    "P_SHAPE(20)": "62.74"
+    "EMA20": "3118.96",
+    "EMA50": "3169.69",
+    "EMA100": "3130.98",
+    "EMA200": "3031.37",
+    "RSI(14)": "30.68",
+    "ATR(14)": "54.89",
+    "ADX(14)": "34.23",
+    "BB(20,2)": "0.11",
+    "P_SHAPE(20)": "55.47"
   },
   "rules": [
     {
@@ -346,20 +328,6 @@
     },
     {
       "name": "ADX above 30",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -394,7 +362,21 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -424,9 +406,23 @@
       "sentiment": "neutral"
     },
     {
+      "title": "",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPd2JvNFNWMVFMLUJEXzhiZUVBdlp6WGJvcHFsb1JjdC1QWEhNcEpwX1kwMTlDVkxuQS1FajJOZFBBeVdiREl3S3BZZEY0cV9MOTRLaWF6VS1zLXhqQ2xGQzExSkRDZ1c3Tzdjc3g1ZS1rTVpnSmFHc0tRZFlpSy1uR2ItcDVzY21RaHFaelY3VQ?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX3dwVlFhM3pQYXhtcEVLeTBNQ0V3MHBPRHJIM3d5bW5hVDRZYVhkV2t0b29GdklvekJhaHF6cmM2T3pNTGNEbVRfNWVYWXpxaXdXVUJCR2tORXdoX3FUSTNXX2huc095d2NfbU5qMkRPMjdNSDN2OUFLTHJNOXZxNUNXUmJsLVB4Zno1aTVjOA?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Sensex jumps over 400 points, Nifty crosses 22,500 as markets snap 8-day losing streak",
-      "publisher": "cfo.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmR6dEhHaUNEdEpTYnZhRXJ2NDczUjFaOG1WWVZuTk82Nm1DcURCVG9oc0E2Z3RqX25uYzZMZUlieHpscHViYm93em1PX0dHelB0LWV3T2Z4cGZ5eVY4V3RrNnBHUDVTaFY3anZzWGhfc0Fya0pPOW1RcnRKVHZ2MTZJY2kxbzJ4T3FmZXpQQ1NKa29tZkQyWlBqd0ljT2dpOERhN19nSm9lVU9iSm9SRjVUX3RVV0FsSWoyT1ZZYXRJdUo3YVc5ZXZYTTRoYnVIUk1BOWE1dFJIV3RL0gHcAUFVX3lxTE1CZHp0SEdpQ0R0SlNidmFFcnY0NzNSMVo4bVZZVm5OTzY2bUNxREJUb2hzQTZndGpfbm5jNkxlSWJ4emxwdWJib3d6bU9fR0d6UHQtZXdPZnhwZnl5VjhXdGs2cEdQNVNoVjdqdnNYaF9zQXJrSk85bVFydEpUdnYxNkljaTFvMnhPcWZlelBDU0prb21mRDJaUGp3SWNPZ2k4RGE3X2dKb2VVT2JKb1JGNVRfdFVXQWxJajJPVllhdEl1SjdhVzlldlhNNGhidUhSTUE5YTV0UkhXdEs?oc=5",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWkZPYzBZcGxJUnllaVY5ck1aMVhSLTN5THQzcEI4SUdoMXJxTVBsOXBQVkRiZkhkOFVCRnJ1dW55QWtnSllaUjZaUTBTZzJwU1hZSXRtei1tUy1NNlBGdGVvSlVJUVY1SkRBZ0k0bUVsdHE0VENIeG4tNkJ3OEpqOFpmZjhya2Z2dE9UU2JGNGpCdzBUZTh0N1BEUEszX0VwTTlqaUxiTEp5UEE1S0lTOW5WdlhLVmlabnpRNnh1Ql9wc0tPdUFlSVlEMmJxQklDek5Rck5VRndZT0RzbFRacW5zU01jWkNHZy1jZlU3YU12d9IB9wFBVV95cUxQOExUMnp0dURaTUZZMjUyNk13UDQ3cjRpQ05DbnFjSlMwOFBPbHAwVHFydkRjVEltQTJ3T0M2UzRrVlZBY2xVNndZUlVtWjg0cVZwMFZTU3NVOFp6UTFJOUVTMndNNXUydEJCOVFFUHlrZ0dvcXZGa19sQVhIUEV4cExGc2xsalI0Nm14U3gzMVAwVEk5U0hoOTlseU5VU1ZYbUJCV2swQlhZMWhneWRCX1N4bXl0c000aFUwVWRPcVNSMVhRcFZtV3FZd29OdnFWV0pERUdveEFIQm5aRk1XZV90U0xQWEszZ3dHLWY2UEJuMHRZZGw0?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "bullish"
     },
@@ -438,25 +434,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "One mutual fund for large-, mid-, small- and micro-cap exposure: How Nifty Total Market Index schemes fare on returns",
+      "title": "IPO mutual funds: How do fund managers buy and sell shares at pre- and post-listing stages? Experts explain",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYlJ6THRCcXRJQnBHbHRMMW9MOGpWQnRwUU5oV1dwT2xxWmdNQUdaWG9UZVZuVkc0cTNWOWVVUFJxck9FTWNuSThNVzg2bjZlSE5WLXduM0NRNk5BbW1PNmk4YTNldnZvRXJpNmNKYWxGNWtEVl93LXh5RGpzVDhHbVZDSkFHSXZjZmJjampodF9KUHNpYVhFVVJyU3Vwc05ad296TXFwZ3o1RDZ3RHRkQnd6OTQ0N0FUaTBBeHFuSkJ1bzJ5cGJWZ3VuVzVwcFd0SC1HUlI5NE1ob09yUlRQaUw5VkdWR3UyNFF4eUdFYmd5ZE1KSkVmZVJfNnNtbWVCZmVIb1lla25ZMVXSAZACQVVfeXFMT1dGakFEeXpVRTJTRHFtVkxlVHBFaU5vUE5hZkNaRlUxZTMtRWVqOVJvWnJIRXlPc3o2ZzFCT1BFbWVGSnEzYS1TR05fQU9HU0RJR0dWNUg3cEpBTjNocHE1bllYV1JkS3NNdWNXdFFNOVFTc01MNlBJYzQ5eU1xdFJHbm5jTDVkdzZkWWpEQVlkcU9KYTBaeHpBaVYtTVRTMFRPM2k2YkNxQy1HLU9EZGlsSGpSSktwM0FNOHV6Z2ZGUU9CNmZWRzRWUFBuTjlZb0Nwa2t3a2dDZThNYU90THpFWlVSX0JhZGxFUTFSQUZwTzRiUnFUbU5tVWEzY3dwUG9fbnBDSGUxZ3R4ZHVnc18?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Swiggy 'cost for two' misleading? What Delhi consumer court's \u20b91 lakh order means for diners",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdGFkUjVxRFBNQWRyb2lpeUNkdGlad0Y2QW9lQ3pVbG56NXZDZk5LSFJZSmdhQW1rVGlZNl9WMGVPRTZCVHQta1ZCNldkR1VRdHZkeE9feWdrVVdXUzdNN1d5cENQMVlNUFVLUmVZcnNRZUozdGU0b2UtUC1KV1VlNE11NkpGaU5IQTRhQTRlTEY4bFZLb0JEa2Q1UjBvcjF5b0FoTUU4amlZRFh6azZwT1BZNW5kM2pnQ0J2WXNYejdweFRGcHItVi1nYmRjeVJZZ1ZkRE9JZDPSAd4BQVVfeXFMUEdNcmoxcjYyUEY1WjlBZjdYQm8wLTgxa3RJTnltY0RETVNtZHRvYWVKRFhiRTJfMkhsLXB6d3ZsVElOVDRRQ0E4ZnlkLUVWcE9sZGs1WThsdlhDNW5PYl9PQ01hUXpBUlQ4eE9SejRzRXhCeFgwQ1JGQXp6VHNYNExMUlN1cUh5RkgwU183WHp3akFJQnBuSXpXajZGQlF4VmVLb2pVUDVJeWlLUEwwejhWOW1CQy1LY3h0TmR2eFIyS193Z1VGX2J3aVNDblVTSmNIXy1HclVQNEl2WWRn?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nifty 50 correction: why fund managers see more value in large caps now",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdmtsTUtkQVNVVWRxLVZyQ1lLRzVWcVNQd0wwRG1VTVd3VDdQek1tZmZoei04RnQxV0tRR3NMNmNWWTBCQzRNZFNnVE5EVUhMNEowczR3WXdqYXFtVGNRZmdvOGo2TDVUcGt3Sk01TS02OGF4Z3pWOVBFSzRTX2VJUDhwZmJGdkk2T09XNW1nN0Rnc3R1dmpZYzExTGN2R1lJa2FsMi1paHpNTE9MVmM3aXhYSklhRDlZT2d1emJFN3VxcWVrU2VJRtIBzgFBVV95cUxONGFjZHphdkNjaTllbFJJVnJuaXI1NklUN1U2VktvMWIwTE1MblI4WGVhd2VGa0NuOGJNVHY3VkE3ZGhuZWRTN3lHZDJKcFAwaWc2aWJDTUw1Rm5EUWp0RzlUbk5YMVVzWDVXVEJOcW1Sd21vQ0NmTnZ6aE1YanFLWUg4QlRlT2JBVXhlY1RManVXYV9jTU5XXzFKMzJ4ZUFSbHEtbUxzYWlQYUdaWmtfczhmcHgzV2pQQl9Xd2thMEZ4cXdrdzFaMGY0TFhwZw?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONnFtYksxazRqd0haejYyM3VQNXdLZC0wWjl0MXBxTTI1aUtaMldUaUpEMDlKdC0zQnFsVzd3eFZubkZWQ09xcEgyTXpBY1N1cWZoWlpzT1c0S0trNEJyZzZGa1BSTS13MWM2TVl1WVFlcXIzdm5ueE9zRnVjLTBIZmk2WWMzOGs4aHlRbWE3OThCMl9feXp1eFZTTHVvVUpKY3VXenZTUlBpQ2VIdHNPXzVqVkpDRDg0QmxLaThnUlJtMV9JYkFZVWl1cnRheFZGUUxXcnlHZ3R2N2Jud3RFN0tpWGxEdWJiZnNjVHA1ME9mU0dJQWRSdkdma2FmUmZxd1HSAYcCQVVfeXFMUE5oZW9mYm1Lak14MnF4dUhIX2NodmRNN1liODV2azEtcU9mQTRhVEVXNlBsOTYtM3ZqRlBmQVhHMXpzSVZac1RveWEzVHhIN2lGRjgwYVU1el9ib3h3OWV0bkQweFZPQnM1T2UwZWY5TUdQeVpIdFhPTUh3LTdKTUdoeWZPWV81bHVYTEpGcThXd3BRejl4ZXdETW9tV3EwZC13eFRiS0VyVU1tTVpfcXZzeW16amRLVTBQaXBidjk1eHFoMHRZM1FmYzJMdFhvTnA3WW9BVVZBZVBBaEZOZXhYTm5GZjIxelRaSUszNjBfSWprcFA4YlZlNWExejZVZzBhNGZzbVE?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "bullish"
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "symbol": "VOO",
-  "last_price": 707.54,
-  "as_of": "2026-10-02 13:30:00",
-  "regime": "bull",
-  "regime_display": "Bull",
-  "trend_score": 7.5,
-  "fit_score": 75.0,
-  "confidence_grade": "B",
-  "confidence_percentage": 75.0,
-  "vix": 16.21,
+  "last_price": 712.32,
+  "as_of": "2026-10-05 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.2,
+  "fit_score": 82.5,
+  "confidence_grade": "A",
+  "confidence_percentage": 82.5,
+  "vix": 15.52,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 750.0,
         "strike_formatted": "750",
         "option_type": "Call",
-        "delta": 0.191,
+        "delta": 0.21,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Sell 1x VOO 20-Nov-2026 750 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 755.0,
         "strike_formatted": "755",
         "option_type": "Call",
-        "delta": 0.161,
+        "delta": 0.177,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
+        "dte": 45,
         "summary": "Buy 1x VOO 20-Nov-2026 755 Call"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 30.0,
-    "stop_loss_price": 686.31,
-    "take_profit_price": 728.77,
-    "net_delta": -0.03,
+    "stop_loss_price": 690.95,
+    "take_profit_price": 733.69,
+    "net_delta": -0.033,
     "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,199 +56,195 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 566.03,
+        "price": 569.86,
         "pnl": -30.0
       },
       {
-        "price": 571.69,
+        "price": 575.55,
         "pnl": -30.0
       },
       {
-        "price": 577.35,
+        "price": 581.25,
         "pnl": -30.0
       },
       {
-        "price": 583.01,
+        "price": 586.95,
         "pnl": -30.0
       },
       {
-        "price": 588.67,
+        "price": 592.65,
         "pnl": -30.0
       },
       {
-        "price": 594.33,
+        "price": 598.35,
         "pnl": -30.0
       },
       {
-        "price": 599.99,
+        "price": 604.05,
         "pnl": -30.0
       },
       {
-        "price": 605.65,
+        "price": 609.75,
         "pnl": -30.0
       },
       {
-        "price": 611.31,
+        "price": 615.44,
         "pnl": -30.0
       },
       {
-        "price": 616.97,
+        "price": 621.14,
         "pnl": -30.0
       },
       {
-        "price": 622.64,
+        "price": 626.84,
         "pnl": -30.0
       },
       {
-        "price": 628.3,
+        "price": 632.54,
         "pnl": -30.0
       },
       {
-        "price": 633.96,
+        "price": 638.24,
         "pnl": -30.0
       },
       {
-        "price": 639.62,
+        "price": 643.94,
         "pnl": -30.0
       },
       {
-        "price": 645.28,
+        "price": 649.64,
         "pnl": -30.0
       },
       {
-        "price": 650.94,
+        "price": 655.33,
         "pnl": -30.0
       },
       {
-        "price": 656.6,
+        "price": 661.03,
         "pnl": -30.0
       },
       {
-        "price": 662.26,
+        "price": 666.73,
         "pnl": -30.0
       },
       {
-        "price": 667.92,
+        "price": 672.43,
         "pnl": -30.0
       },
       {
-        "price": 673.58,
+        "price": 678.13,
         "pnl": -30.0
       },
       {
-        "price": 679.24,
+        "price": 683.83,
         "pnl": -30.0
       },
       {
-        "price": 684.9,
+        "price": 689.53,
         "pnl": -30.0
       },
       {
-        "price": 690.56,
+        "price": 695.22,
         "pnl": -30.0
       },
       {
-        "price": 696.22,
+        "price": 700.92,
         "pnl": -30.0
       },
       {
-        "price": 701.88,
+        "price": 706.62,
         "pnl": -30.0
       },
       {
-        "price": 707.54,
+        "price": 712.32,
         "pnl": -30.0
       },
       {
-        "price": 713.2,
+        "price": 718.02,
         "pnl": -30.0
       },
       {
-        "price": 718.86,
+        "price": 723.72,
         "pnl": -30.0
       },
       {
-        "price": 724.52,
+        "price": 729.42,
         "pnl": -30.0
       },
       {
-        "price": 730.18,
+        "price": 735.11,
         "pnl": -30.0
       },
       {
-        "price": 735.84,
+        "price": 740.81,
         "pnl": -30.0
       },
       {
-        "price": 741.5,
+        "price": 746.51,
         "pnl": -30.0
       },
       {
-        "price": 747.16,
-        "pnl": -30.0
+        "price": 752.21,
+        "pnl": -32.21
       },
       {
-        "price": 752.82,
-        "pnl": -32.82
-      },
-      {
-        "price": 758.48,
+        "price": 757.91,
         "pnl": -35.0
       },
       {
-        "price": 764.14,
+        "price": 763.61,
         "pnl": -35.0
       },
       {
-        "price": 769.8,
+        "price": 769.31,
         "pnl": -35.0
       },
       {
-        "price": 775.46,
+        "price": 775.0,
         "pnl": -35.0
       },
       {
-        "price": 781.12,
+        "price": 780.7,
         "pnl": -35.0
       },
       {
-        "price": 786.78,
+        "price": 786.4,
         "pnl": -35.0
       },
       {
-        "price": 792.44,
+        "price": 792.1,
         "pnl": -35.0
       },
       {
-        "price": 798.11,
+        "price": 797.8,
         "pnl": -35.0
       },
       {
-        "price": 803.77,
+        "price": 803.5,
         "pnl": -35.0
       },
       {
-        "price": 809.43,
+        "price": 809.2,
         "pnl": -35.0
       },
       {
-        "price": 815.09,
+        "price": 814.89,
         "pnl": -35.0
       },
       {
-        "price": 820.75,
+        "price": 820.59,
         "pnl": -35.0
       },
       {
-        "price": 826.41,
+        "price": 826.29,
         "pnl": -35.0
       },
       {
-        "price": 832.07,
+        "price": 831.99,
         "pnl": -35.0
       },
       {
-        "price": 837.73,
+        "price": 837.69,
         "pnl": -35.0
       },
       {
@@ -256,7 +252,11 @@
         "pnl": -35.0
       },
       {
-        "price": 849.05,
+        "price": 849.09,
+        "pnl": -35.0
+      },
+      {
+        "price": 854.78,
         "pnl": -35.0
       }
     ],
@@ -282,77 +282,77 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 82.7,
+      "score": 87.3,
       "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put<br> Sell 1x VOO 20-Nov-2026 750 Call<br> Buy 1x VOO 20-Nov-2026 755 Call"
     },
     {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 66.2,
+      "grade": "B (Good)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 675 Call<br> Sell 1x VOO 20-Nov-2026 730 Call"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 73.0,
-      "grade": "B (Good)",
+      "score": 57.4,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x VOO 20-Nov-2026 665 Put<br> Sell 1x VOO 20-Nov-2026 670 Put<br> Sell 1x VOO 20-Nov-2026 750 Call<br> Buy 1x VOO 20-Nov-2026 755 Call"
     },
     {
-      "strategy_type": "poor_mans_covered_call",
-      "strategy_display": "Poor Mans Covered Call",
-      "score": 58.7,
-      "grade": "C (Moderate)",
-      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 665 Call<br> Sell 1x VOO 20-Nov-2026 730 Call"
-    },
-    {
-      "strategy_type": "tradecraft_put",
-      "strategy_display": "Tradecraft Put",
-      "score": 55.2,
-      "grade": "C (Moderate)",
-      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put"
-    },
-    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
-      "score": 49.0,
+      "score": 53.0,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 707.5 Call"
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 712.3 Call"
     },
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 45.8,
+      "score": 48.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
       "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 40.4,
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 45.8,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 685 Call<br> Sell 1x VOO 20-Nov-2026 710 Call<br> Sell 1x VOO 20-Nov-2026 710 Call<br> Buy 1x VOO 20-Nov-2026 730 Call"
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 44.6,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 710 Call<br> Sell 1x VOO 20-Nov-2026 740 Call"
     }
   ],
   "indicators": {
-    "EMA20": "704.28",
-    "EMA50": "700.41",
-    "EMA100": "689.24",
-    "EMA200": "666.27",
-    "RSI(14)": "54.03",
-    "ATR(14)": "6.28",
-    "ADX(14)": "10.02",
-    "BB(20,2)": "0.69",
-    "P_SHAPE(20)": "55.01"
+    "EMA20": "705.05",
+    "EMA50": "700.88",
+    "EMA100": "689.70",
+    "EMA200": "666.73",
+    "RSI(14)": "58.26",
+    "ATR(14)": "6.29",
+    "ADX(14)": "9.93",
+    "BB(20,2)": "0.88",
+    "P_SHAPE(20)": "55.36"
   },
   "rules": [
     {
@@ -405,6 +405,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
       "score": 1.0,
@@ -424,57 +431,50 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
     {
-      "title": "Here's How Many Shares of VOO You'd Need for $500 in Monthly Dividends",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/heres-many-shares-voo-youd-173500825.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This Is the 1 Reason I'm Still Buying VTI Even With the Market Near All-Time Highs",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/1-reason-im-still-buying-134200709.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Why Pay to Own U.S. Stocks? This Zero-Fee ETF Is Beating the S&P 500",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-pay-own-u-stocks-095831295.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bloomberg\u2019s ETF Guru Watched $7 Billion Pour Into a Falling Treasury Fund, Then Warned Buyers to Walk Away",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/options/articles/bloomberg-etf-guru-watched-7-205146512.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Citadel\u2019s Strategist Says History Favors a Year-End Rally. Here\u2019s the Catch",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/citadel-strategist-says-history-favors-152516947.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "ETF Inflows Top Last Year's Record With a Quarter to Spare",
+      "title": "Worst Performing ETFs of 2026 So Far",
       "publisher": "etf.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/etf-inflows-top-last-years-043228801.html",
+      "link": "https://finance.yahoo.com/markets/options/articles/worst-performing-etfs-2026-far-233935711.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Financials Are 26.30% of DIA. No One Set That Target, Share Prices Did",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/financials-26-30-dia-no-220336471.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "SPYM Charges Less Than VOO for the Same S&P 500. Its Long-Term Record Tracks Four Different Indexes",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/spym-charges-less-voo-same-213324997.html",
       "published_at": "Today",
       "sentiment": "bullish"
+    },
+    {
+      "title": "\u2018I Could Build an Easy Case Against Meta:\u2019 USC Researcher Ranks Which Big Tech Giant Dies First",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/could-build-easy-case-against-145925723.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "If You Invest Just $50 per Month in the Stock Market, Here's What History Says It Could Be Worth in 20 Years",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/invest-just-50-per-month-133000241.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Meet the Low-Cost Vanguard ETF With 32.4% Invested in Nvidia, Broadcom, Micron, AMD, Intel, and Lam Research, While VOO Has Just 14.8%.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/meet-low-cost-vanguard-etf-105000091.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

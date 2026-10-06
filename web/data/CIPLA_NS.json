@@ -1,19 +1,19 @@
 {
   "symbol": "CIPLA.NS",
-  "last_price": 1333.8,
-  "as_of": "2026-10-05 03:45:00",
+  "last_price": 1329.8,
+  "as_of": "2026-10-06 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.0,
-  "fit_score": 10.0,
+  "trend_score": 0.8,
+  "fit_score": 7.5,
   "confidence_grade": "C",
-  "confidence_percentage": 10.0,
-  "vix": 14.89,
+  "confidence_percentage": 7.5,
+  "vix": 14.6,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (32.4) is oversold (< 35) [Synthetic PCR: 1.38]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (31.2) is oversold (< 35) [Synthetic PCR: 1.35]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 1400.0,
         "strike_formatted": "1400",
         "option_type": "Call",
-        "delta": 0.234,
+        "delta": 0.209,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x CIPLA.NS 24-Nov-2026 1400 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 1450.0,
         "strike_formatted": "1450",
         "option_type": "Call",
-        "delta": 0.086,
+        "delta": 0.071,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x CIPLA.NS 24-Nov-2026 1450 Call"
       }
     ],
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1293.79,
-    "take_profit_price": 1373.81,
-    "net_delta": -0.148,
-    "net_theta": 0.135,
+    "stop_loss_price": 1289.91,
+    "take_profit_price": 1369.69,
+    "net_delta": -0.138,
+    "net_theta": 0.134,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1067.04,
+        "price": 1063.84,
         "pnl": -50.0
       },
       {
-        "price": 1077.71,
+        "price": 1074.48,
         "pnl": -50.0
       },
       {
-        "price": 1088.38,
+        "price": 1085.12,
         "pnl": -50.0
       },
       {
-        "price": 1099.05,
+        "price": 1095.76,
         "pnl": -50.0
       },
       {
-        "price": 1109.72,
+        "price": 1106.39,
         "pnl": -50.0
       },
       {
-        "price": 1120.39,
+        "price": 1117.03,
         "pnl": -50.0
       },
       {
-        "price": 1131.06,
+        "price": 1127.67,
         "pnl": -50.0
       },
       {
-        "price": 1141.73,
+        "price": 1138.31,
         "pnl": -50.0
       },
       {
-        "price": 1152.4,
+        "price": 1148.95,
         "pnl": -50.0
       },
       {
-        "price": 1163.07,
+        "price": 1159.59,
         "pnl": -50.0
       },
       {
-        "price": 1173.74,
+        "price": 1170.22,
         "pnl": -50.0
       },
       {
-        "price": 1184.41,
+        "price": 1180.86,
         "pnl": -50.0
       },
       {
-        "price": 1195.08,
+        "price": 1191.5,
         "pnl": -50.0
       },
       {
-        "price": 1205.76,
+        "price": 1202.14,
         "pnl": -50.0
       },
       {
-        "price": 1216.43,
+        "price": 1212.78,
         "pnl": -50.0
       },
       {
-        "price": 1227.1,
+        "price": 1223.42,
         "pnl": -50.0
       },
       {
-        "price": 1237.77,
+        "price": 1234.05,
         "pnl": -50.0
       },
       {
-        "price": 1248.44,
+        "price": 1244.69,
         "pnl": -50.0
       },
       {
-        "price": 1259.11,
+        "price": 1255.33,
         "pnl": -50.0
       },
       {
-        "price": 1269.78,
+        "price": 1265.97,
         "pnl": -50.0
       },
       {
-        "price": 1280.45,
+        "price": 1276.61,
         "pnl": -50.0
       },
       {
-        "price": 1291.12,
+        "price": 1287.25,
         "pnl": -50.0
       },
       {
-        "price": 1301.79,
+        "price": 1297.88,
         "pnl": -50.0
       },
       {
-        "price": 1312.46,
+        "price": 1308.52,
         "pnl": -50.0
       },
       {
-        "price": 1323.13,
+        "price": 1319.16,
         "pnl": -50.0
       },
       {
-        "price": 1333.8,
+        "price": 1329.8,
         "pnl": -50.0
       },
       {
-        "price": 1344.47,
+        "price": 1340.44,
         "pnl": -50.0
       },
       {
-        "price": 1355.14,
+        "price": 1351.08,
         "pnl": -50.0
       },
       {
-        "price": 1365.81,
+        "price": 1361.72,
         "pnl": -50.0
       },
       {
-        "price": 1376.48,
+        "price": 1372.35,
         "pnl": -50.0
       },
       {
-        "price": 1387.15,
+        "price": 1382.99,
         "pnl": -50.0
       },
       {
-        "price": 1397.82,
+        "price": 1393.63,
         "pnl": -50.0
       },
       {
-        "price": 1408.49,
-        "pnl": -58.49
+        "price": 1404.27,
+        "pnl": -54.27
       },
       {
-        "price": 1419.16,
-        "pnl": -69.16
+        "price": 1414.91,
+        "pnl": -64.91
       },
       {
-        "price": 1429.83,
-        "pnl": -79.83
+        "price": 1425.55,
+        "pnl": -75.55
       },
       {
-        "price": 1440.5,
-        "pnl": -90.5
+        "price": 1436.18,
+        "pnl": -86.18
       },
       {
-        "price": 1451.17,
+        "price": 1446.82,
+        "pnl": -96.82
+      },
+      {
+        "price": 1457.46,
         "pnl": -100.0
       },
       {
-        "price": 1461.84,
+        "price": 1468.1,
         "pnl": -100.0
       },
       {
-        "price": 1472.52,
+        "price": 1478.74,
         "pnl": -100.0
       },
       {
-        "price": 1483.19,
+        "price": 1489.38,
         "pnl": -100.0
       },
       {
-        "price": 1493.86,
+        "price": 1500.01,
         "pnl": -100.0
       },
       {
-        "price": 1504.53,
+        "price": 1510.65,
         "pnl": -100.0
       },
       {
-        "price": 1515.2,
+        "price": 1521.29,
         "pnl": -100.0
       },
       {
-        "price": 1525.87,
+        "price": 1531.93,
         "pnl": -100.0
       },
       {
-        "price": 1536.54,
+        "price": 1542.57,
         "pnl": -100.0
       },
       {
-        "price": 1547.21,
+        "price": 1553.21,
         "pnl": -100.0
       },
       {
-        "price": 1557.88,
+        "price": 1563.84,
         "pnl": -100.0
       },
       {
-        "price": 1568.55,
+        "price": 1574.48,
         "pnl": -100.0
       },
       {
-        "price": 1579.22,
+        "price": 1585.12,
         "pnl": -100.0
       },
       {
-        "price": 1589.89,
-        "pnl": -100.0
-      },
-      {
-        "price": 1600.56,
+        "price": 1595.76,
         "pnl": -100.0
       }
     ],
@@ -282,36 +282,27 @@
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 57.1,
+      "score": 58.4,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1333.8PE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 41.9,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1300PE-S1x-Nov-1400CE-B1x-Nov-1450CE"
+      "legs_summary": "S1x-Nov-1329.8PE"
     }
   ],
   "indicators": {
-    "EMA20": "1376.71",
-    "EMA50": "1395.74",
-    "EMA100": "1398.55",
-    "EMA200": "1406.26",
-    "RSI(14)": "32.41",
-    "ATR(14)": "25.47",
-    "ADX(14)": "23.11",
-    "BB(20,2)": "-0.01",
-    "P_SHAPE(20)": "54.92"
+    "EMA20": "1366.20",
+    "EMA50": "1389.05",
+    "EMA100": "1394.96",
+    "EMA200": "1404.21",
+    "RSI(14)": "31.16",
+    "ATR(14)": "21.04",
+    "ADX(14)": "26.09",
+    "BB(20,2)": "0.09",
+    "P_SHAPE(20)": "45.30"
   },
   "rules": [
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -360,7 +351,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -390,10 +381,10 @@
   ],
   "news": [
     {
-      "title": "Maharashtra FDA cancels Cipla's Pune warehouse licences over drug violations",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPS1M5ZTBqVTJmOUNTOThpVmNPaDVIN2ZheDhZUnNHSEV4Yndjcm1oNjQzVEtvSW5RdWVLTmQzN05tMHNqLWZXbm1wUkFEdjZmclhkXzhxeG5XbjdiOGZiSE1qS0tQaWpYV3RjYzVyck1rQzYxY2x3RnNGX0czekd0UzhHMWM5R1hwcXNPY0x4RXctbFdKS011YWttemQ0MkFfRDl6dWVuc3NmOHhBTzlmMUNSYkxnTmRnWVhGYkxDbDNQSVFFM3BSTnI1YUotWGVtMTdFNE84TTlqWVpkX25najN3YzR1LTZ6TTNxei1XTTNVS2VpS0x3enZPOG1Od25DUmVtdlFSZ9IBgAJBVV95cUxOQ0NuS0NNVGZnb09VVlB5RkNEb1RzS2FDemdhTVE1azktZFI1dmZNbFJkSXg5UXMyUVdpVmFLMW1QMnJfMnc2V1BtX1NKWWZONWgzd3ExVml6Ym5JRFR3YkdHaGVmcGxvdTFYQVp1c3Y5dHgwekZZVXdHTlRPNTB1eFJPei1tN19YVy1IaDUzZWp2aklCXzI4TjlWRlhmdEV0eGRhMU9femZhVWhuV0ZZUzFUekJpaXhtTXZqYUQ1eENnRUhNdE9GSnpqMjYwUTlmb3p5M1lvNFpwTUJwejRhOXNEU3ppcFVpYUtXSHJlV1pocnZhSFFMQ3BySW5zM05m?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
+      "title": "Maharashtra FDA revokes Cipla warehouse licences after drug packaging and storage lapses",
+      "publisher": "supplychain.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZTNxR1JEM0hvUU5DQ2VyMjcxTlZTT1BIN1diY003QVNRQ01LU3BwWjE5MFBZNFA5c1NtckxOWFp2Z1JVYTZ2TmgwSWZVYnJnaEhVcDlaTUVJM1dIejFGNE5pN01ncnE3Q0ZBV29scXpkbDQ4TDh4UUc4ZmdVODB4YW11Qm5sbFNxeS0wOWVaMll2YkxRMzNCU1dBVXJfV2ZBUm9nU2I1eXBIdmFBRzhtR01vQnFrR1NLS1pPUTZUMWdjYTRxM1dOaVg0dEFTQnBYZ2pjY2U3QTF0dFFQUmJUSVZ0eHpPaDU2Zlh0YVhtdlliQ0IwbjRaV29jZ1JDUkJ1R0xCVEN5THTSAYwCQVVfeXFMTmhXUXRxV3R0QnBQZHA1Q0VoaUhnSWtDUU5nLXM2bEZ4U0pJX052QlRLNFdsT2hYczc1UFZEVkgzNHpiVXlwdThBTnl2VnZGZU5TOVpWLVJMZEFCY01ENWY0c25hRWpOOHBrMlctWHZHQkdyYlFzd3NnVnl3UktTdlotZGVPSUxhcF83Ul9UR1JfcnlUSm9aVXA4OGdfTnpLSGVvWHVZNjI4bldQbzRrU3g3NkRjV3BCcHNZdUpLRy1CRW90QkZUd002VE4wYllzb241X3lDVjg3a1JpSGx3anBmNzFkSDZtc1FQclRLN1VuSkhwRWZBVVgtemNiWGdCRm1iVkRXWDFWRmlwMg?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     },
     {
@@ -418,17 +409,17 @@
       "sentiment": "bearish"
     },
     {
+      "title": "Centre may seek legal view on licensing of sterile drugs",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTU9qQWh1dTR4Sm5IYWR0OElNbkhPcDZCblo4VERoUWVxc1oyUDNTWl9TMkVCM1JhLWx2ZW9DUUd3Wk5fSmZEYXgzZjhBaTNGUF9SYUdVSExlaW1PXzBMeGc3S1EwNm9HbXB6WDd3TFJQTlI0ajgxYzBhYS1fVnFCd2xDcF9jOHFDVGdhSGdnRTZnTnRuU3JqN2dGM18wVUhtckJVZmRJbjBLUWUxVDFpZWFBTkFGNEJxa2xDWmlpZ1JDd1NvTDllUG8tRzNVdnoySkhUM190cVE0Y3lLNW5jLU0tMTZaNlNObzUtaDJzTUN2em5SYkHSAe8BQVVfeXFMT0laRXJXd3NLdXl6cVpmMVRXdC1obGFWak8wNXd3UFV1NERoZ0N2WWhMOUpBc2tjSmlDQ0t0VDZxeHJ5THVoOXVMQlZRa1B0cGYtNzcteWo3V2YtcjZZalFnUjJ0OEYwdlYwanZVRGdXTzdZUE0yRXRjWEJfeHhIYkU2TmNTSzd0blFNVlg3Rm1wZDVNSWxzeUR1Y1hvTlFjaVJfQU9EbmVjT2RMSzBBbzlMTll3N3ZBX2ZQcVdJUzJhSmE0SGhsYWtiSk5UNGJsYXQyMFk1M0k0T1ppWVpBNkxhc1VCZF9JLTJ3eE1TaVk?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "One mutual fund for large-, mid-, small- and micro-cap exposure: How Nifty Total Market Index schemes fare on returns",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPYlJ6THRCcXRJQnBHbHRMMW9MOGpWQnRwUU5oV1dwT2xxWmdNQUdaWG9UZVZuVkc0cTNWOWVVUFJxck9FTWNuSThNVzg2bjZlSE5WLXduM0NRNk5BbW1PNmk4YTNldnZvRXJpNmNKYWxGNWtEVl93LXh5RGpzVDhHbVZDSkFHSXZjZmJjampodF9KUHNpYVhFVVJyU3Vwc05ad296TXFwZ3o1RDZ3RHRkQnd6OTQ0N0FUaTBBeHFuSkJ1bzJ5cGJWZ3VuVzVwcFd0SC1HUlI5NE1ob09yUlRQaUw5VkdWR3UyNFF4eUdFYmd5ZE1KSkVmZVJfNnNtbWVCZmVIb1lla25ZMVXSAZACQVVfeXFMT1dGakFEeXpVRTJTRHFtVkxlVHBFaU5vUE5hZkNaRlUxZTMtRWVqOVJvWnJIRXlPc3o2ZzFCT1BFbWVGSnEzYS1TR05fQU9HU0RJR0dWNUg3cEpBTjNocHE1bllYV1JkS3NNdWNXdFFNOVFTc01MNlBJYzQ5eU1xdFJHbm5jTDVkdzZkWWpEQVlkcU9KYTBaeHpBaVYtTVRTMFRPM2k2YkNxQy1HLU9EZGlsSGpSSktwM0FNOHV6Z2ZGUU9CNmZWRzRWUFBuTjlZb0Nwa2t3a2dDZThNYU90THpFWlVSX0JhZGxFUTFSQUZwTzRiUnFUbU5tVWEzY3dwUG9fbnBDSGUxZ3R4ZHVnc18?oc=5",
       "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The corporate insurance trap: Relying solely on your company\u2019s health cover is a bad idea; here\u2019s why",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNYmZ1dWhYYXpfcEk1VmZiUnBnRmhJQklRQmlleTNtV21RbTFfMTBnUkp2Ui0tOXc4WXdvaWlELTlRWENhWXB1YndkaWRlSnl5ZnBFcGlXV0dSY0Zha29qZFF4XzVxMTJXcXdXOHRNTlctdGVKS09kQlhLUDFUUWlRb0NNVGNCcnEtU01Za2F0X1oxVHRNZE84b2U3ZzZsMktsaFlHM3dFWENOand0OU5URE9jQmV6VnBuWlBmTGFmeWJpMEl2a3pXd0tHZ0lYN3ZRam45Qk85dkVxZ0VoeHRyRHZ5U3BuOE5VdEFnRmMzS0xLbHg5RFJUeGg1ONIBgAJBVV95cUxPRWpYbkdlWkFDUDBTcTh2Rkd6WEs2Y1B6Z2tNWHBSeFp0aVdvTHp6TkVuT2s2LWVjWUNqWlhIUTBOcW5LbXh6b1F4YXNTTld1eGJtMVVDX3hsMm4tdzhCMThBLVBRdGl3cE5RbmMzMHZQWGY4WERxNElSbF82Sjc3MzVQZW9lZm1LcmlsUGctLUl2d0w1bDVfVFQ4amZzeW9YaWdTTE1zU0I5ZHZSdDA1MmpKaUtXXzFxS3h6Sm9CRjB4dnBIVVdJOFFuZkNfd2FqS1VjVm9WZjRQUG1Fc0dvR2I5WHpHWHRSaVRlZG9QR2NpU21QcGhtRUtOdHdEdHBt?oc=5",
-      "published_at": "Sat, 03 Oct 2026",
       "sentiment": "neutral"
     }
   ]

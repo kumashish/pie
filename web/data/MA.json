@@ -1,293 +1,269 @@
 {
   "symbol": "MA",
-  "last_price": 552.26,
-  "as_of": "2026-10-02 13:30:00",
-  "regime": "neutral",
-  "regime_display": "Neutral",
-  "trend_score": 5.5,
-  "fit_score": 55.0,
-  "confidence_grade": "C",
-  "confidence_percentage": 55.0,
-  "vix": 16.22,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "last_price": 564.59,
+  "as_of": "2026-10-05 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.5,
+  "fit_score": 65.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 65.0,
+  "vix": 15.52,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (97.4% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 510.0,
-        "strike_formatted": "510",
-        "option_type": "Put",
-        "delta": -0.064,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 46,
-        "summary": "Buy 1x MA 20-Nov-2026 510 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 520.0,
-        "strike_formatted": "520",
-        "option_type": "Put",
-        "delta": -0.118,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 46,
-        "summary": "Sell 1x MA 20-Nov-2026 520 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 580.0,
-        "strike_formatted": "580",
+        "strike": 595.0,
+        "strike_formatted": "595",
         "option_type": "Call",
-        "delta": 0.238,
+        "delta": 0.205,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
-        "summary": "Sell 1x MA 20-Nov-2026 580 Call"
+        "dte": 45,
+        "summary": "Sell 1x MA 20-Nov-2026 595 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 590.0,
-        "strike_formatted": "590",
+        "strike": 605.0,
+        "strike_formatted": "605",
         "option_type": "Call",
-        "delta": 0.156,
+        "delta": 0.13,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 46,
-        "summary": "Buy 1x MA 20-Nov-2026 590 Call"
+        "dte": 45,
+        "summary": "Buy 1x MA 20-Nov-2026 605 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 25.0,
-    "stop_loss_price": 535.69,
-    "take_profit_price": 568.83,
-    "net_delta": -0.028,
-    "net_theta": 0.051,
+    "stop_loss_price": 547.65,
+    "take_profit_price": 581.53,
+    "net_delta": -0.075,
+    "net_theta": 0.031,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 441.81,
-        "pnl": -35.0
-      },
-      {
-        "price": 446.23,
-        "pnl": -35.0
-      },
-      {
-        "price": 450.64,
-        "pnl": -35.0
-      },
-      {
-        "price": 455.06,
-        "pnl": -35.0
-      },
-      {
-        "price": 459.48,
-        "pnl": -35.0
-      },
-      {
-        "price": 463.9,
-        "pnl": -35.0
-      },
-      {
-        "price": 468.32,
-        "pnl": -35.0
-      },
-      {
-        "price": 472.73,
-        "pnl": -35.0
-      },
-      {
-        "price": 477.15,
-        "pnl": -35.0
-      },
-      {
-        "price": 481.57,
-        "pnl": -35.0
-      },
-      {
-        "price": 485.99,
-        "pnl": -35.0
-      },
-      {
-        "price": 490.41,
-        "pnl": -35.0
-      },
-      {
-        "price": 494.82,
-        "pnl": -35.0
-      },
-      {
-        "price": 499.24,
-        "pnl": -35.0
-      },
-      {
-        "price": 503.66,
-        "pnl": -35.0
-      },
-      {
-        "price": 508.08,
-        "pnl": -35.0
-      },
-      {
-        "price": 512.5,
-        "pnl": -32.5
-      },
-      {
-        "price": 516.92,
-        "pnl": -28.08
-      },
-      {
-        "price": 521.33,
+        "price": 451.67,
         "pnl": -25.0
       },
       {
-        "price": 525.75,
+        "price": 456.19,
         "pnl": -25.0
       },
       {
-        "price": 530.17,
+        "price": 460.71,
         "pnl": -25.0
       },
       {
-        "price": 534.59,
+        "price": 465.22,
         "pnl": -25.0
       },
       {
-        "price": 539.01,
+        "price": 469.74,
         "pnl": -25.0
       },
       {
-        "price": 543.42,
+        "price": 474.26,
         "pnl": -25.0
       },
       {
-        "price": 547.84,
+        "price": 478.77,
         "pnl": -25.0
       },
       {
-        "price": 552.26,
+        "price": 483.29,
         "pnl": -25.0
       },
       {
-        "price": 556.68,
+        "price": 487.81,
         "pnl": -25.0
       },
       {
-        "price": 561.1,
+        "price": 492.32,
         "pnl": -25.0
       },
       {
-        "price": 565.51,
+        "price": 496.84,
         "pnl": -25.0
       },
       {
-        "price": 569.93,
+        "price": 501.36,
         "pnl": -25.0
       },
       {
-        "price": 574.35,
+        "price": 505.87,
         "pnl": -25.0
       },
       {
-        "price": 578.77,
+        "price": 510.39,
         "pnl": -25.0
       },
       {
-        "price": 583.19,
-        "pnl": -28.19
+        "price": 514.91,
+        "pnl": -25.0
       },
       {
-        "price": 587.6,
-        "pnl": -32.6
+        "price": 519.42,
+        "pnl": -25.0
       },
       {
-        "price": 592.02,
+        "price": 523.94,
+        "pnl": -25.0
+      },
+      {
+        "price": 528.46,
+        "pnl": -25.0
+      },
+      {
+        "price": 532.97,
+        "pnl": -25.0
+      },
+      {
+        "price": 537.49,
+        "pnl": -25.0
+      },
+      {
+        "price": 542.01,
+        "pnl": -25.0
+      },
+      {
+        "price": 546.52,
+        "pnl": -25.0
+      },
+      {
+        "price": 551.04,
+        "pnl": -25.0
+      },
+      {
+        "price": 555.56,
+        "pnl": -25.0
+      },
+      {
+        "price": 560.07,
+        "pnl": -25.0
+      },
+      {
+        "price": 564.59,
+        "pnl": -25.0
+      },
+      {
+        "price": 569.11,
+        "pnl": -25.0
+      },
+      {
+        "price": 573.62,
+        "pnl": -25.0
+      },
+      {
+        "price": 578.14,
+        "pnl": -25.0
+      },
+      {
+        "price": 582.66,
+        "pnl": -25.0
+      },
+      {
+        "price": 587.17,
+        "pnl": -25.0
+      },
+      {
+        "price": 591.69,
+        "pnl": -25.0
+      },
+      {
+        "price": 596.21,
+        "pnl": -26.21
+      },
+      {
+        "price": 600.72,
+        "pnl": -30.72
+      },
+      {
+        "price": 605.24,
         "pnl": -35.0
       },
       {
-        "price": 596.44,
+        "price": 609.76,
         "pnl": -35.0
       },
       {
-        "price": 600.86,
+        "price": 614.27,
         "pnl": -35.0
       },
       {
-        "price": 605.28,
+        "price": 618.79,
         "pnl": -35.0
       },
       {
-        "price": 609.7,
+        "price": 623.31,
         "pnl": -35.0
       },
       {
-        "price": 614.11,
+        "price": 627.82,
         "pnl": -35.0
       },
       {
-        "price": 618.53,
+        "price": 632.34,
         "pnl": -35.0
       },
       {
-        "price": 622.95,
+        "price": 636.86,
         "pnl": -35.0
       },
       {
-        "price": 627.37,
+        "price": 641.37,
         "pnl": -35.0
       },
       {
-        "price": 631.79,
+        "price": 645.89,
         "pnl": -35.0
       },
       {
-        "price": 636.2,
+        "price": 650.41,
         "pnl": -35.0
       },
       {
-        "price": 640.62,
+        "price": 654.92,
         "pnl": -35.0
       },
       {
-        "price": 645.04,
+        "price": 659.44,
         "pnl": -35.0
       },
       {
-        "price": 649.46,
+        "price": 663.96,
         "pnl": -35.0
       },
       {
-        "price": 653.88,
+        "price": 668.47,
         "pnl": -35.0
       },
       {
-        "price": 658.29,
+        "price": 672.99,
         "pnl": -35.0
       },
       {
-        "price": 662.71,
+        "price": 677.51,
         "pnl": -35.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.841,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3569,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -295,88 +271,97 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 100.0,
-      "grade": "A (Optimal)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x MA 20-Nov-2026 510 Put<br> Sell 1x MA 20-Nov-2026 520 Put<br> Sell 1x MA 20-Nov-2026 580 Call<br> Buy 1x MA 20-Nov-2026 590 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 88.2,
+      "score": 97.4,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x MA 20-Nov-2026 580 Call<br> Buy 1x MA 20-Nov-2026 590 Call"
+      "legs_summary": "Sell 1x MA 20-Nov-2026 595 Call<br> Buy 1x MA 20-Nov-2026 605 Call"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 67.1,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x MA 20-Nov-2026 535 Call<br> Sell 1x MA 20-Nov-2026 550 Call<br> Sell 1x MA 20-Nov-2026 550 Call<br> Buy 1x MA 20-Nov-2026 570 Call"
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 91.2,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x MA 20-Nov-2026 525 Put<br> Sell 1x MA 20-Nov-2026 535 Put<br> Sell 1x MA 20-Nov-2026 595 Call<br> Buy 1x MA 20-Nov-2026 605 Call"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 66.9,
+      "score": 72.8,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x MA 20-Nov-2026 520 Put<br> Sell 1x MA 20-Nov-2026 580 Call<br> Buy 1x MA 20-Nov-2026 590 Call"
+      "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put<br> Sell 1x MA 20-Nov-2026 595 Call<br> Buy 1x MA 20-Nov-2026 605 Call"
     },
     {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 61.2,
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 70.2,
       "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x MA 20-Nov-2026 520 Put<br> Sell 1x MA 20-Nov-2026 550 Put<br> Sell 1x MA 20-Nov-2026 550 Call<br> Buy 1x MA 20-Nov-2026 585 Call"
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x MA 20-Nov-2026 550 Call<br> Sell 1x MA 20-Nov-2026 565 Call<br> Sell 1x MA 20-Nov-2026 565 Call<br> Buy 1x MA 20-Nov-2026 580 Call"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 55.2,
+      "score": 54.2,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x MA 20-Nov-2026 520 Put"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 48.3,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x MA 20-Nov-2026 535 Call<br> Sell 1x MA 20-Nov-2026 550 Call<br> Sell 1x MA 20-Nov-2026 550 Call<br> Buy 1x MA 20-Nov-2026 585 Call"
+      "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 45.0,
+      "score": 51.1,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x MA 20-Nov-2026 520 Call<br> Sell 1x MA 20-Nov-2026 570 Call"
+      "legs_summary": "Buy 1x MA 20-Nov-2026 535 Call<br> Sell 1x MA 20-Nov-2026 580 Call"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 50.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x MA 20-Nov-2026 535 Put<br> Sell 1x MA 20-Nov-2026 565 Put<br> Sell 1x MA 20-Nov-2026 565 Call<br> Buy 1x MA 20-Nov-2026 595 Call"
+    },
+    {
+      "strategy_type": "cash_swing_long",
+      "strategy_display": "Cash Swing Long",
+      "score": 43.5,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x MA 20-Nov-2026 564.6 Call"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 41.2,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x MA 20-Nov-2026 550 Call<br> Sell 1x MA 20-Nov-2026 565 Call<br> Sell 1x MA 20-Nov-2026 565 Call<br> Buy 1x MA 20-Nov-2026 595 Call"
     }
   ],
   "indicators": {
-    "EMA20": "564.23",
-    "EMA50": "561.70",
-    "EMA100": "549.70",
-    "EMA200": "541.58",
-    "RSI(14)": "38.87",
-    "ATR(14)": "9.28",
-    "ADX(14)": "20.00",
-    "BB(20,2)": "0.09",
-    "P_SHAPE(20)": "46.11"
+    "EMA20": "564.27",
+    "EMA50": "561.82",
+    "EMA100": "550.00",
+    "EMA200": "541.80",
+    "RSI(14)": "49.46",
+    "ATR(14)": "9.67",
+    "ADX(14)": "19.36",
+    "BB(20,2)": "0.51",
+    "P_SHAPE(20)": "61.60"
   },
   "rules": [
     {
@@ -395,6 +380,27 @@
     },
     {
       "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -422,27 +428,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -459,44 +444,44 @@
   ],
   "news": [
     {
-      "title": "Mastercard\u2019s Probability Score Shifts the Agent Commerce Question From Identity to Trust",
-      "publisher": "Forkast News",
-      "link": "https://finance.yahoo.com/technology/ai/articles/mastercard-probability-score-shifts-agent-083853573.html",
+      "title": "IRS Risk Chief Gives an Uncomfortable AI Warning for Regulators",
+      "publisher": "BeInCrypto",
+      "link": "https://finance.yahoo.com/technology/ai/articles/irs-risk-chief-gives-uncomfortable-221803898.html",
       "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bearish"
     },
     {
-      "title": "Visa Enters October About 6% Below Its High. Here\u2019s What Britain\u2019s New Payment Rails Mean for the Stock Through 2030",
-      "publisher": "TIKR",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/visa-enters-october-6-below-153237956.html",
+      "title": "Mastercard Stocks Rise 1.8% as Open USD Lands Inside BVNK",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mastercard-stocks-rise-1-8-174441897.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Visa, Mastercard, Stripe, and Coinbase Commit $1 Billion to New Stablecoin: Is Open USD a Challenge to Tether, USDC, and RLUSD?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/visa-mastercard-stripe-coinbase-commit-150008513.html",
+      "title": "Visa is Betting on Stablecoins and AI: Why Should Investors Care?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/visa-betting-stablecoins-ai-why-154000710.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "SoFi\u2019s US$25 Billion Card Portfolio Shift To Bank-Issued Stablecoin Might Change The Case For Investing In SoFi Technologies (SOFI)",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sofi-us-25-billion-card-020850224.html",
+      "title": "EVTC vs. MA: Which Stock Is the Better Value Option?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/evtc-vs-ma-stock-better-144007993.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Quantum Discussion at UN Headquarters: How are Financial Systems Preparing?",
-      "publisher": "BeInCrypto",
-      "link": "https://finance.yahoo.com/technology/ai/articles/quantum-discussion-un-headquarters-financial-202802016.html",
+      "title": "Rezolve AI stock jumps on Mastercard reseller agreement",
+      "publisher": "Investing.com",
+      "link": "https://finance.yahoo.com/technology/ai/articles/rezolve-ai-stock-jumps-mastercard-143143410.html",
       "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
     },
     {
-      "title": "Mastercard Stocks Edge Up as AI Targets Supplier Payments",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/mastercard-stocks-edge-ai-targets-195344061.html",
+      "title": "What Could Lift Visa Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/could-lift-visa-stock-135305711.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

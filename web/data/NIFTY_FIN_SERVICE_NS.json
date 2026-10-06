@@ -1,263 +1,263 @@
 {
   "symbol": "NIFTY_FIN_SERVICE.NS",
-  "last_price": 24651.2,
-  "as_of": "2026-10-05 09:25:55",
+  "last_price": 24745.9,
+  "as_of": "2026-10-06 03:44:52",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
   "trend_score": 0.5,
   "fit_score": 5.0,
   "confidence_grade": "C",
   "confidence_percentage": 5.0,
-  "vix": 14.88,
+  "vix": 14.78,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (33.6) is oversold (< 35) [Synthetic PCR: 1.31]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 26000.0,
-        "strike_formatted": "26000",
+        "strike": 26100.0,
+        "strike_formatted": "26100",
         "option_type": "Call",
-        "delta": 0.207,
+        "delta": 0.202,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Sell 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26000 Call"
+        "dte": 49,
+        "summary": "Sell 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26100 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 26450.0,
-        "strike_formatted": "26450",
+        "strike": 26500.0,
+        "strike_formatted": "26500",
         "option_type": "Call",
-        "delta": 0.13,
+        "delta": 0.133,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
-        "summary": "Buy 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26450 Call"
+        "dte": 49,
+        "summary": "Buy 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26500 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1000.0,
-    "stop_loss_price": 23911.66,
-    "take_profit_price": 25390.74,
-    "net_delta": -0.077,
-    "net_theta": 1.266,
+    "stop_loss_price": 24003.52,
+    "take_profit_price": 25488.28,
+    "net_delta": -0.069,
+    "net_theta": 1.151,
     "probability_of_profit": 0.0,
-    "var_95": 450.0,
+    "var_95": 400.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 19720.96,
+        "price": 19796.72,
         "pnl": -1000.0
       },
       {
-        "price": 19918.17,
+        "price": 19994.69,
         "pnl": -1000.0
       },
       {
-        "price": 20115.38,
+        "price": 20192.65,
         "pnl": -1000.0
       },
       {
-        "price": 20312.59,
+        "price": 20390.62,
         "pnl": -1000.0
       },
       {
-        "price": 20509.8,
+        "price": 20588.59,
         "pnl": -1000.0
       },
       {
-        "price": 20707.01,
+        "price": 20786.56,
         "pnl": -1000.0
       },
       {
-        "price": 20904.22,
+        "price": 20984.52,
         "pnl": -1000.0
       },
       {
-        "price": 21101.43,
+        "price": 21182.49,
         "pnl": -1000.0
       },
       {
-        "price": 21298.64,
+        "price": 21380.46,
         "pnl": -1000.0
       },
       {
-        "price": 21495.85,
+        "price": 21578.43,
         "pnl": -1000.0
       },
       {
-        "price": 21693.06,
+        "price": 21776.39,
         "pnl": -1000.0
       },
       {
-        "price": 21890.26,
+        "price": 21974.36,
         "pnl": -1000.0
       },
       {
-        "price": 22087.47,
+        "price": 22172.33,
         "pnl": -1000.0
       },
       {
-        "price": 22284.68,
+        "price": 22370.29,
         "pnl": -1000.0
       },
       {
-        "price": 22481.89,
+        "price": 22568.26,
         "pnl": -1000.0
       },
       {
-        "price": 22679.1,
+        "price": 22766.23,
         "pnl": -1000.0
       },
       {
-        "price": 22876.31,
+        "price": 22964.2,
         "pnl": -1000.0
       },
       {
-        "price": 23073.52,
+        "price": 23162.16,
         "pnl": -1000.0
       },
       {
-        "price": 23270.73,
+        "price": 23360.13,
         "pnl": -1000.0
       },
       {
-        "price": 23467.94,
+        "price": 23558.1,
         "pnl": -1000.0
       },
       {
-        "price": 23665.15,
+        "price": 23756.06,
         "pnl": -1000.0
       },
       {
-        "price": 23862.36,
+        "price": 23954.03,
         "pnl": -1000.0
       },
       {
-        "price": 24059.57,
+        "price": 24152.0,
         "pnl": -1000.0
       },
       {
-        "price": 24256.78,
+        "price": 24349.97,
         "pnl": -1000.0
       },
       {
-        "price": 24453.99,
+        "price": 24547.93,
         "pnl": -1000.0
       },
       {
-        "price": 24651.2,
+        "price": 24745.9,
         "pnl": -1000.0
       },
       {
-        "price": 24848.41,
+        "price": 24943.87,
         "pnl": -1000.0
       },
       {
-        "price": 25045.62,
+        "price": 25141.83,
         "pnl": -1000.0
       },
       {
-        "price": 25242.83,
+        "price": 25339.8,
         "pnl": -1000.0
       },
       {
-        "price": 25440.04,
+        "price": 25537.77,
         "pnl": -1000.0
       },
       {
-        "price": 25637.25,
+        "price": 25735.74,
         "pnl": -1000.0
       },
       {
-        "price": 25834.46,
+        "price": 25933.7,
         "pnl": -1000.0
       },
       {
-        "price": 26031.67,
+        "price": 26131.67,
         "pnl": -1031.67
       },
       {
-        "price": 26228.88,
-        "pnl": -1228.88
+        "price": 26329.64,
+        "pnl": -1229.64
       },
       {
-        "price": 26426.09,
-        "pnl": -1426.09
+        "price": 26527.61,
+        "pnl": -1400.0
       },
       {
-        "price": 26623.3,
-        "pnl": -1450.0
+        "price": 26725.57,
+        "pnl": -1400.0
       },
       {
-        "price": 26820.5,
-        "pnl": -1450.0
+        "price": 26923.54,
+        "pnl": -1400.0
       },
       {
-        "price": 27017.71,
-        "pnl": -1450.0
+        "price": 27121.51,
+        "pnl": -1400.0
       },
       {
-        "price": 27214.92,
-        "pnl": -1450.0
+        "price": 27319.47,
+        "pnl": -1400.0
       },
       {
-        "price": 27412.13,
-        "pnl": -1450.0
+        "price": 27517.44,
+        "pnl": -1400.0
       },
       {
-        "price": 27609.34,
-        "pnl": -1450.0
+        "price": 27715.41,
+        "pnl": -1400.0
       },
       {
-        "price": 27806.55,
-        "pnl": -1450.0
+        "price": 27913.38,
+        "pnl": -1400.0
       },
       {
-        "price": 28003.76,
-        "pnl": -1450.0
+        "price": 28111.34,
+        "pnl": -1400.0
       },
       {
-        "price": 28200.97,
-        "pnl": -1450.0
+        "price": 28309.31,
+        "pnl": -1400.0
       },
       {
-        "price": 28398.18,
-        "pnl": -1450.0
+        "price": 28507.28,
+        "pnl": -1400.0
       },
       {
-        "price": 28595.39,
-        "pnl": -1450.0
+        "price": 28705.24,
+        "pnl": -1400.0
       },
       {
-        "price": 28792.6,
-        "pnl": -1450.0
+        "price": 28903.21,
+        "pnl": -1400.0
       },
       {
-        "price": 28989.81,
-        "pnl": -1450.0
+        "price": 29101.18,
+        "pnl": -1400.0
       },
       {
-        "price": 29187.02,
-        "pnl": -1450.0
+        "price": 29299.15,
+        "pnl": -1400.0
       },
       {
-        "price": 29384.23,
-        "pnl": -1450.0
+        "price": 29497.11,
+        "pnl": -1400.0
       },
       {
-        "price": 29581.44,
-        "pnl": -1450.0
+        "price": 29695.08,
+        "pnl": -1400.0
       }
     ],
     "kelly_sizing": {
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-26000CE-B1x-Nov-26450CE"
+      "legs_summary": "S1x-Nov-26100CE-B1x-Nov-26500CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -286,28 +286,37 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-24651.2PE"
+      "legs_summary": "S1x-Nov-24745.9PE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 45.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-24750PE-S1x-Nov-23750PE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 42.1,
+      "score": 41.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-22850PE-S1x-Nov-23300PE-S1x-Nov-26000CE-B1x-Nov-26450CE"
+      "legs_summary": "B1x-Nov-23000PE-S1x-Nov-23400PE-S1x-Nov-26100CE-B1x-Nov-26500CE"
     }
   ],
   "indicators": {
-    "EMA20": "25694.93",
-    "EMA50": "25963.10",
-    "EMA100": "26112.74",
-    "EMA200": "26228.06",
-    "RSI(14)": "33.60",
-    "ATR(14)": "465.01",
-    "ADX(14)": "22.30",
-    "BB(20,2)": "0.14",
-    "P_SHAPE(20)": "66.24"
+    "EMA20": "25522.77",
+    "EMA50": "25869.51",
+    "EMA100": "26059.14",
+    "EMA200": "26198.71",
+    "RSI(14)": "35.31",
+    "ATR(14)": "407.23",
+    "ADX(14)": "24.34",
+    "BB(20,2)": "0.23",
+    "P_SHAPE(20)": "58.65"
   },
   "rules": [
     {
@@ -390,25 +399,11 @@
   ],
   "news": [
     {
-      "title": "Stock Market: Stock Market Today | Stock Market Live News Update",
+      "title": "United Kingdom Kingdom Boe Financial Policy Committee Record | Historical Dates 1971-2026 Data| Moneycontrol",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rN1l6YVVCd3lGQ3B3azRWVUY0NmJpdFJDaTZUc2RGcXlmbklqQ2FSdlpKNWtPb1hFaEdQSzJ3YXhWeGUzU21iRk1hRDRNMjFROVdFRjRyRFZUYnFS?oc=5",
-      "published_at": "Sun, 09 Jan 2011",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "SENSEX >> BSE Sensex, Sensex Index, Live Sensex Index, Sensex Stocks",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PMW9WV2JHWFVRYndmUGNiYnpaNlk0VDVoNDU0YU9lbWlrVTJJcXFlUnFoaEVEQWMyczNENnJ0bnhXdVNYWTV6YmZLTktQSExoR25hVHVEWUgycWg4NEk5Y3h1eUNtMDNn?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "United Kingdom Kingdom Boe Mills Speech | Historical Dates 1971-2026 Data| Moneycontrol",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPczlHRk1oSk9GRHJZY1JCYV9ZR0ZBMEhRWTZZajNmR2ZFYzFGYjNjaENoMG1mQXNCeXVaeDNPTnZXVXR4akloV3BudVF3dG9fdEZkSHNDT3NzaG5BemYtcUE5b2lFRHMxNFp1M3FpYjl4dWgwZ2RPQ1lrNFBUdUNVbHhacGlIdTFTYXFrTVZPYw?oc=5",
-      "published_at": "Sat, 03 Oct 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd203RXhfVHMtdWdCUkhJTmhFN3dlSVRRSlVFemt3b25Ib3VuSFRraUUtdjhQeGNzTTNUc0NNazY3NGhySGdfNS1BV1UtN2tHc1dxU3FTQzA5eXVkc1N6ZTNoaUI0Tm92WF9NOEJncWZnZkR4bW9LS3ZGYVJOcWVQY1JCVkFZRjlfMWU0eHIxUEpGRzFOMm56TTdWV0NCZk50Z2JEOUZGbzZ3T00?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "bullish"
     },
     {
       "title": "Spain 2-Year Note Auction",
@@ -422,6 +417,20 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM3h5dWQ2LVR6NzhENW5oNG1CRExTQUI0MDBCMDhlOUIwcEN6djhtaUF3cUNFd0hVZ2ZhMUxpTnc5dkRfSXFrS0trRThnanh2VURnUEtwZHJZejBITW1XUWtBWmloZzN1Vk5QRnQ4eG0wd2NZVEpiVWgyWGFyQVlySlBXNEw3aFVyWE90VS1NZ05nNG1WcXlGNzYzaURCY19vcmVib2NJa05CLWlLVEpfWXlzVQ?oc=5",
       "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NIFTY AUTO Stock Price, Nifty Auto Market Indices, Nifty Auto Price, Stock Performance & Comparison",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE10SkdKa1pFaER3R0E1cGFPS3dDZUNTd0VpcFhybVhETU5DbTE3UVFqdV94YmoxRkhGN1lKcDYzUldkdUdjcVp5VGtKQVFkcEVhNDU0RW5XYmlFTmNnVG1aWVlJeGxIMkpETFNnS0thMA?oc=5",
+      "published_at": "Fri, 11 May 2018",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Indian Indices - Markets Terminal",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMEZaSm1McFN3d2VGZGUtVkJJZXUzZ29VelVRV0JaZDNEdTNfUjk5OUowbDZMRFZ4UnZPOENfN2VWSmtqX3pncENTVFlrS1VnNlhzQmI1RVQtanMxanlKeUYxaDBMN0Q1YkdOemRBWXVWSmlFMExUSVA1bXdiZnJ4NHlQaDJyUGh4S1RybEZwRWNkdGRMRzc1T2hjQVZMMG9yRURGSml0WDVYaDZTVEZiS0U0YTNZZw?oc=5",
+      "published_at": "Tue, 30 Jan 2024",
       "sentiment": "neutral"
     },
     {

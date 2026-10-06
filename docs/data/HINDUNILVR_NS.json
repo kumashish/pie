@@ -1,19 +1,19 @@
 {
   "symbol": "HINDUNILVR.NS",
-  "last_price": 1837.5,
-  "as_of": "2026-10-05 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "last_price": 1843.6,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.5,
+  "fit_score": 15.0,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 14.9,
+  "confidence_percentage": 15.0,
+  "vix": 14.62,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (29.6) is oversold (< 35) [Synthetic PCR: 1.42]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (31.5) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 1950.0,
         "strike_formatted": "1950",
         "option_type": "Call",
-        "delta": 0.177,
+        "delta": 0.185,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x HINDUNILVR.NS 24-Nov-2026 1950 Call"
       },
       {
@@ -35,229 +35,229 @@
         "strike": 2000.0,
         "strike_formatted": "2000",
         "option_type": "Call",
-        "delta": 0.083,
+        "delta": 0.086,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x HINDUNILVR.NS 24-Nov-2026 2000 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 100.0,
-    "stop_loss_price": 1782.38,
-    "take_profit_price": 1892.62,
-    "net_delta": -0.094,
-    "net_theta": 0.132,
+    "margin_required": 50.0,
+    "stop_loss_price": 1788.29,
+    "take_profit_price": 1898.91,
+    "net_delta": -0.099,
+    "net_theta": 0.136,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1470.0,
+        "price": 1474.88,
+        "pnl": -50.0
+      },
+      {
+        "price": 1489.63,
+        "pnl": -50.0
+      },
+      {
+        "price": 1504.38,
+        "pnl": -50.0
+      },
+      {
+        "price": 1519.13,
+        "pnl": -50.0
+      },
+      {
+        "price": 1533.88,
+        "pnl": -50.0
+      },
+      {
+        "price": 1548.62,
+        "pnl": -50.0
+      },
+      {
+        "price": 1563.37,
+        "pnl": -50.0
+      },
+      {
+        "price": 1578.12,
+        "pnl": -50.0
+      },
+      {
+        "price": 1592.87,
+        "pnl": -50.0
+      },
+      {
+        "price": 1607.62,
+        "pnl": -50.0
+      },
+      {
+        "price": 1622.37,
+        "pnl": -50.0
+      },
+      {
+        "price": 1637.12,
+        "pnl": -50.0
+      },
+      {
+        "price": 1651.87,
+        "pnl": -50.0
+      },
+      {
+        "price": 1666.61,
+        "pnl": -50.0
+      },
+      {
+        "price": 1681.36,
+        "pnl": -50.0
+      },
+      {
+        "price": 1696.11,
+        "pnl": -50.0
+      },
+      {
+        "price": 1710.86,
+        "pnl": -50.0
+      },
+      {
+        "price": 1725.61,
+        "pnl": -50.0
+      },
+      {
+        "price": 1740.36,
+        "pnl": -50.0
+      },
+      {
+        "price": 1755.11,
+        "pnl": -50.0
+      },
+      {
+        "price": 1769.86,
+        "pnl": -50.0
+      },
+      {
+        "price": 1784.6,
+        "pnl": -50.0
+      },
+      {
+        "price": 1799.35,
+        "pnl": -50.0
+      },
+      {
+        "price": 1814.1,
+        "pnl": -50.0
+      },
+      {
+        "price": 1828.85,
+        "pnl": -50.0
+      },
+      {
+        "price": 1843.6,
+        "pnl": -50.0
+      },
+      {
+        "price": 1858.35,
+        "pnl": -50.0
+      },
+      {
+        "price": 1873.1,
+        "pnl": -50.0
+      },
+      {
+        "price": 1887.85,
+        "pnl": -50.0
+      },
+      {
+        "price": 1902.6,
+        "pnl": -50.0
+      },
+      {
+        "price": 1917.34,
+        "pnl": -50.0
+      },
+      {
+        "price": 1932.09,
+        "pnl": -50.0
+      },
+      {
+        "price": 1946.84,
+        "pnl": -50.0
+      },
+      {
+        "price": 1961.59,
+        "pnl": -61.59
+      },
+      {
+        "price": 1976.34,
+        "pnl": -76.34
+      },
+      {
+        "price": 1991.09,
+        "pnl": -91.09
+      },
+      {
+        "price": 2005.84,
         "pnl": -100.0
       },
       {
-        "price": 1484.7,
+        "price": 2020.59,
         "pnl": -100.0
       },
       {
-        "price": 1499.4,
+        "price": 2035.33,
         "pnl": -100.0
       },
       {
-        "price": 1514.1,
+        "price": 2050.08,
         "pnl": -100.0
       },
       {
-        "price": 1528.8,
+        "price": 2064.83,
         "pnl": -100.0
       },
       {
-        "price": 1543.5,
+        "price": 2079.58,
         "pnl": -100.0
       },
       {
-        "price": 1558.2,
+        "price": 2094.33,
         "pnl": -100.0
       },
       {
-        "price": 1572.9,
+        "price": 2109.08,
         "pnl": -100.0
       },
       {
-        "price": 1587.6,
+        "price": 2123.83,
         "pnl": -100.0
       },
       {
-        "price": 1602.3,
+        "price": 2138.58,
         "pnl": -100.0
       },
       {
-        "price": 1617.0,
+        "price": 2153.32,
         "pnl": -100.0
       },
       {
-        "price": 1631.7,
+        "price": 2168.07,
         "pnl": -100.0
       },
       {
-        "price": 1646.4,
+        "price": 2182.82,
         "pnl": -100.0
       },
       {
-        "price": 1661.1,
+        "price": 2197.57,
         "pnl": -100.0
       },
       {
-        "price": 1675.8,
+        "price": 2212.32,
         "pnl": -100.0
-      },
-      {
-        "price": 1690.5,
-        "pnl": -100.0
-      },
-      {
-        "price": 1705.2,
-        "pnl": -100.0
-      },
-      {
-        "price": 1719.9,
-        "pnl": -100.0
-      },
-      {
-        "price": 1734.6,
-        "pnl": -100.0
-      },
-      {
-        "price": 1749.3,
-        "pnl": -100.0
-      },
-      {
-        "price": 1764.0,
-        "pnl": -100.0
-      },
-      {
-        "price": 1778.7,
-        "pnl": -100.0
-      },
-      {
-        "price": 1793.4,
-        "pnl": -100.0
-      },
-      {
-        "price": 1808.1,
-        "pnl": -100.0
-      },
-      {
-        "price": 1822.8,
-        "pnl": -100.0
-      },
-      {
-        "price": 1837.5,
-        "pnl": -100.0
-      },
-      {
-        "price": 1852.2,
-        "pnl": -100.0
-      },
-      {
-        "price": 1866.9,
-        "pnl": -100.0
-      },
-      {
-        "price": 1881.6,
-        "pnl": -100.0
-      },
-      {
-        "price": 1896.3,
-        "pnl": -100.0
-      },
-      {
-        "price": 1911.0,
-        "pnl": -100.0
-      },
-      {
-        "price": 1925.7,
-        "pnl": -100.0
-      },
-      {
-        "price": 1940.4,
-        "pnl": -100.0
-      },
-      {
-        "price": 1955.1,
-        "pnl": -105.1
-      },
-      {
-        "price": 1969.8,
-        "pnl": -119.8
-      },
-      {
-        "price": 1984.5,
-        "pnl": -134.5
-      },
-      {
-        "price": 1999.2,
-        "pnl": -149.2
-      },
-      {
-        "price": 2013.9,
-        "pnl": -150.0
-      },
-      {
-        "price": 2028.6,
-        "pnl": -150.0
-      },
-      {
-        "price": 2043.3,
-        "pnl": -150.0
-      },
-      {
-        "price": 2058.0,
-        "pnl": -150.0
-      },
-      {
-        "price": 2072.7,
-        "pnl": -150.0
-      },
-      {
-        "price": 2087.4,
-        "pnl": -150.0
-      },
-      {
-        "price": 2102.1,
-        "pnl": -150.0
-      },
-      {
-        "price": 2116.8,
-        "pnl": -150.0
-      },
-      {
-        "price": 2131.5,
-        "pnl": -150.0
-      },
-      {
-        "price": 2146.2,
-        "pnl": -150.0
-      },
-      {
-        "price": 2160.9,
-        "pnl": -150.0
-      },
-      {
-        "price": 2175.6,
-        "pnl": -150.0
-      },
-      {
-        "price": 2190.3,
-        "pnl": -150.0
-      },
-      {
-        "price": 2205.0,
-        "pnl": -150.0
       }
     ],
     "kelly_sizing": {
@@ -280,52 +280,47 @@
       "legs_summary": "S1x-Nov-1950CE-B1x-Nov-2000CE"
     },
     {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 56.0,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-1843.6PE"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 58.0,
+      "score": 44.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-1700PE-S1x-Nov-1750PE-S1x-Nov-1950CE-B1x-Nov-2000CE"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 51.5,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 40.7,
       "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1837.5PE"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-1850PE-S1x-Nov-1800PE"
     }
   ],
   "indicators": {
-    "EMA20": "1920.43",
-    "EMA50": "1987.75",
-    "EMA100": "2061.92",
-    "EMA200": "2158.61",
-    "RSI(14)": "29.60",
-    "ATR(14)": "30.66",
-    "ADX(14)": "35.63",
-    "BB(20,2)": "-0.04",
-    "P_SHAPE(20)": "70.64"
+    "EMA20": "1899.54",
+    "EMA50": "1971.01",
+    "EMA100": "2048.98",
+    "EMA200": "2149.19",
+    "RSI(14)": "31.55",
+    "ATR(14)": "25.94",
+    "ADX(14)": "38.00",
+    "BB(20,2)": "0.16",
+    "P_SHAPE(20)": "58.93"
   },
   "rules": [
     {
       "name": "ADX above 30",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -367,7 +362,21 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -421,7 +430,7 @@
       "title": "HUL Share Price Today, HUL Stock Price Live NSE/BSE Updates",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUE9mc0I1c2JSMFMwWXVtb1FMbi0ybkJWdkN2V1hvSzdiRTFsbzhGZHoyZTE2LW5BZDhrWmtMa09tQmRHaEJTeVZuNGdKMGZPN29ETDdYQVduVnZuZU1saTZXOE56dkM1M09wU3ZxMUZRR1pTQ0wweWZLcFhPQUtoZVJ0TWpWc0tvT0FIeEFIOA?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
+      "published_at": "Fri, 24 Mar 2017",
       "sentiment": "neutral"
     },
     {

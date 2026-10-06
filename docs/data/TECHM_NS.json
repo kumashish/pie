@@ -1,14 +1,14 @@
 {
   "symbol": "TECHM.NS",
-  "last_price": 1532.5,
-  "as_of": "2026-10-05 03:45:00",
+  "last_price": 1534.8,
+  "as_of": "2026-10-06 03:45:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 5.5,
-  "fit_score": 55.0,
+  "trend_score": 5.0,
+  "fit_score": 50.0,
   "confidence_grade": "C",
-  "confidence_percentage": 55.0,
-  "vix": 14.89,
+  "confidence_percentage": 50.0,
+  "vix": 14.61,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,10 +23,10 @@
         "strike": 1400.0,
         "strike_formatted": "1400",
         "option_type": "Put",
-        "delta": -0.037,
+        "delta": -0.031,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x TECHM.NS 24-Nov-2026 1400 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 1450.0,
         "strike_formatted": "1450",
         "option_type": "Put",
-        "delta": -0.124,
+        "delta": -0.112,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x TECHM.NS 24-Nov-2026 1450 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 1650.0,
         "strike_formatted": "1650",
         "option_type": "Call",
-        "delta": 0.117,
+        "delta": 0.115,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Sell 1x TECHM.NS 24-Nov-2026 1650 Call"
       },
       {
@@ -59,10 +59,10 @@
         "strike": 1700.0,
         "strike_formatted": "1700",
         "option_type": "Call",
-        "delta": 0.042,
+        "delta": 0.039,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 50,
+        "dte": 49,
         "summary": "Buy 1x TECHM.NS 24-Nov-2026 1700 Call"
       }
     ],
@@ -70,217 +70,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1486.52,
-    "take_profit_price": 1578.48,
-    "net_delta": 0.012,
-    "net_theta": 0.192,
+    "stop_loss_price": 1488.76,
+    "take_profit_price": 1580.84,
+    "net_delta": 0.005,
+    "net_theta": 0.191,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1226.0,
+        "price": 1227.84,
         "pnl": -100.0
       },
       {
-        "price": 1238.26,
+        "price": 1240.12,
         "pnl": -100.0
       },
       {
-        "price": 1250.52,
+        "price": 1252.4,
         "pnl": -100.0
       },
       {
-        "price": 1262.78,
+        "price": 1264.68,
         "pnl": -100.0
       },
       {
-        "price": 1275.04,
+        "price": 1276.95,
         "pnl": -100.0
       },
       {
-        "price": 1287.3,
+        "price": 1289.23,
         "pnl": -100.0
       },
       {
-        "price": 1299.56,
+        "price": 1301.51,
         "pnl": -100.0
       },
       {
-        "price": 1311.82,
+        "price": 1313.79,
         "pnl": -100.0
       },
       {
-        "price": 1324.08,
+        "price": 1326.07,
         "pnl": -100.0
       },
       {
-        "price": 1336.34,
+        "price": 1338.35,
         "pnl": -100.0
       },
       {
-        "price": 1348.6,
+        "price": 1350.62,
         "pnl": -100.0
       },
       {
-        "price": 1360.86,
+        "price": 1362.9,
         "pnl": -100.0
       },
       {
-        "price": 1373.12,
+        "price": 1375.18,
         "pnl": -100.0
       },
       {
-        "price": 1385.38,
+        "price": 1387.46,
         "pnl": -100.0
       },
       {
-        "price": 1397.64,
+        "price": 1399.74,
         "pnl": -100.0
       },
       {
-        "price": 1409.9,
-        "pnl": -90.1
+        "price": 1412.02,
+        "pnl": -87.98
       },
       {
-        "price": 1422.16,
-        "pnl": -77.84
+        "price": 1424.29,
+        "pnl": -75.71
       },
       {
-        "price": 1434.42,
-        "pnl": -65.58
+        "price": 1436.57,
+        "pnl": -63.43
       },
       {
-        "price": 1446.68,
-        "pnl": -53.32
+        "price": 1448.85,
+        "pnl": -51.15
       },
       {
-        "price": 1458.94,
+        "price": 1461.13,
         "pnl": -50.0
       },
       {
-        "price": 1471.2,
+        "price": 1473.41,
         "pnl": -50.0
       },
       {
-        "price": 1483.46,
+        "price": 1485.69,
         "pnl": -50.0
       },
       {
-        "price": 1495.72,
+        "price": 1497.96,
         "pnl": -50.0
       },
       {
-        "price": 1507.98,
+        "price": 1510.24,
         "pnl": -50.0
       },
       {
-        "price": 1520.24,
+        "price": 1522.52,
         "pnl": -50.0
       },
       {
-        "price": 1532.5,
+        "price": 1534.8,
         "pnl": -50.0
       },
       {
-        "price": 1544.76,
+        "price": 1547.08,
         "pnl": -50.0
       },
       {
-        "price": 1557.02,
+        "price": 1559.36,
         "pnl": -50.0
       },
       {
-        "price": 1569.28,
+        "price": 1571.64,
         "pnl": -50.0
       },
       {
-        "price": 1581.54,
+        "price": 1583.91,
         "pnl": -50.0
       },
       {
-        "price": 1593.8,
+        "price": 1596.19,
         "pnl": -50.0
       },
       {
-        "price": 1606.06,
+        "price": 1608.47,
         "pnl": -50.0
       },
       {
-        "price": 1618.32,
+        "price": 1620.75,
         "pnl": -50.0
       },
       {
-        "price": 1630.58,
+        "price": 1633.03,
         "pnl": -50.0
       },
       {
-        "price": 1642.84,
+        "price": 1645.31,
         "pnl": -50.0
       },
       {
-        "price": 1655.1,
-        "pnl": -55.1
+        "price": 1657.58,
+        "pnl": -57.58
       },
       {
-        "price": 1667.36,
-        "pnl": -67.36
+        "price": 1669.86,
+        "pnl": -69.86
       },
       {
-        "price": 1679.62,
-        "pnl": -79.62
+        "price": 1682.14,
+        "pnl": -82.14
       },
       {
-        "price": 1691.88,
-        "pnl": -91.88
+        "price": 1694.42,
+        "pnl": -94.42
       },
       {
-        "price": 1704.14,
+        "price": 1706.7,
         "pnl": -100.0
       },
       {
-        "price": 1716.4,
+        "price": 1718.98,
         "pnl": -100.0
       },
       {
-        "price": 1728.66,
+        "price": 1731.25,
         "pnl": -100.0
       },
       {
-        "price": 1740.92,
+        "price": 1743.53,
         "pnl": -100.0
       },
       {
-        "price": 1753.18,
+        "price": 1755.81,
         "pnl": -100.0
       },
       {
-        "price": 1765.44,
+        "price": 1768.09,
         "pnl": -100.0
       },
       {
-        "price": 1777.7,
+        "price": 1780.37,
         "pnl": -100.0
       },
       {
-        "price": 1789.96,
+        "price": 1792.65,
         "pnl": -100.0
       },
       {
-        "price": 1802.22,
+        "price": 1804.92,
         "pnl": -100.0
       },
       {
-        "price": 1814.48,
+        "price": 1817.2,
         "pnl": -100.0
       },
       {
-        "price": 1826.74,
+        "price": 1829.48,
         "pnl": -100.0
       },
       {
-        "price": 1839.0,
+        "price": 1841.76,
         "pnl": -100.0
       }
     ],
@@ -304,27 +304,27 @@
       "legs_summary": "B1x-Nov-1400PE-S1x-Nov-1450PE-S1x-Nov-1650CE-B1x-Nov-1700CE"
     },
     {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 80.1,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-1500CE-S1x-Nov-1550CE-S1x-Nov-1550CE-B1x-Nov-1600CE"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 82.4,
-      "grade": "A (Optimal)",
+      "score": 78.7,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-1650CE-B1x-Nov-1700CE"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 71.9,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1500CE-S1x-Nov-1550CE-S1x-Nov-1550CE-B1x-Nov-1550CE"
-    },
-    {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 63.5,
+      "score": 71.2,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -333,8 +333,8 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 61.2,
-      "grade": "B (Good)",
+      "score": 59.2,
+      "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "S1x-Nov-1450PE-S1x-Nov-1650CE-B1x-Nov-1700CE"
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 52.6,
+      "score": 58.2,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -360,23 +360,23 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 42.7,
+      "score": 40.5,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-1450CE-S1x-Nov-1550CE"
+      "legs_summary": "B1x-Nov-1450CE-S1x-Nov-1600CE"
     }
   ],
   "indicators": {
-    "EMA20": "1548.94",
-    "EMA50": "1556.26",
-    "EMA100": "1539.26",
-    "EMA200": "1524.73",
-    "RSI(14)": "44.01",
-    "ATR(14)": "38.79",
-    "ADX(14)": "10.22",
-    "BB(20,2)": "0.35",
-    "P_SHAPE(20)": "26.48"
+    "EMA20": "1545.49",
+    "EMA50": "1553.93",
+    "EMA100": "1539.05",
+    "EMA200": "1525.05",
+    "RSI(14)": "44.69",
+    "ATR(14)": "31.96",
+    "ADX(14)": "9.88",
+    "BB(20,2)": "0.37",
+    "P_SHAPE(20)": "24.10"
   },
   "rules": [
     {
@@ -394,13 +394,6 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
@@ -408,7 +401,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -443,6 +436,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
@@ -450,7 +450,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "20-Day Momentum Relative Strength",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -473,6 +473,20 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Tech Mahindra Share Price Today, Tech Mahindra Stock Price Live NSE/BSE Updates",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY2tZNElUU1A2a0g4dzl3ZkRPbklSeDAxWVlRLUUwOFVXLTZ0NHNSU3hGOTFTRVBaejlDSVZZZmN3N3hzUEVQLTdaRmxpazZKTTVHSE9pb25KV1l4Tm9wVmZCYWNGUzVwU0VIUHNITDlWMVlLd1luS1hiNE5ULUpjTVdNS2EyeHFD?oc=5",
+      "published_at": "Thu, 23 Mar 2017",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Merger enriches Tech Mahindra while Satyam fades into oblivion",
+      "publisher": "ET CIO",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNenZmYnFNNnY2RkFYUmlubTRMQUtVZWRIbWNFTFhJcnBqVnVuYmNBMjNCVjNKaDVQZEFXMm1hTzJmbXluVVhQSkFuaDFxRFQxZ0pEWVZSTDlHcjdjdnhjQXgxQTdrU1lUU0hITzJrTHFfQ0NLSGdybE02bHhsdnZhOU5LZUlQY1FnTkZFeEtCcVd6N0F0M1BMVTE5OUJHaW9KZkxnaGZwVW5iNDF5VEtzeWxRVVA1bnZPOE5LdF9VRTZlal82Z1NuV0ZpTG7SAdIBQVVfeXFMUE02MEk1SXltX3N6YVQ3bGJfWFFCR2I5MlVNYWlwcFhMRHBaUS1Vd2pTckJJd1pfMWN2WXZOZGtHdnRBdXlpUUxtYkFxeE1KcHlGbVF4U0VXLXcxeEllRTdkSk1oX1NYcTJMS1NpWFp4RzVpaDlyQzNLUlp5SHcwNUtmVWhlYnpDTlZxUVpJVGxKaEc1aE5yNlEzLTVUUlJvenRZcnl6VUpMNjN4Vl9OS0ZPYjJQbWtUcng0MndscTl2TE5VcnVGeFhFZjJaTHRVOFR3?oc=5",
+      "published_at": "Fri, 10 Apr 2015",
+      "sentiment": "neutral"
+    },
+    {
       "title": "TechM to train additional 10K employees in automation this year",
       "publisher": "ET Telecom",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaUhzWlZlV0wxWHBLUGt1RkZqd0ZNNUNLeTNuZTlxQ3dIeHFjMEhGMGxBYndPVmdvdDlrUGpQdjllbjItaWNMcGFMMGdOWlpqV1QtU0VaMGdjX0ZSTHRaUEpybHBlcHRmdDJQMldyZ2Rfem1ZcTdzRkppb09JQW54VERPamFXLTJHM1N1by1JTlFaTVR1cUtDWVY0WlhkbHBCd2llaUtKN21ieE91TjdPQ29JRy1qTm10dGF5NGhWQdIBxAFBVV95cUxPYnkxcTFLcHRXLWtUVEp4TXJWLTZlemU2dzdiOFNMVWc5UERjeW9LcE9LelZmOUF1Z0dXVnl6VEcya0NfQ0J2THMyUGJXb1p4QjhVVE1YVWlHdWVKbXhfOTFRMjVicVBTLTIydEFsbUNnbzV6MjhFUU1BRzExSHo2V092cVpXalhuRlFTaUNJYzR3YnZNak1zQ1hDZHpTZThpdEpnMHhjYXhCZ2VqSFF6RElER29nbHZtM1pTdzcyelJYSzZO?oc=5",
@@ -480,24 +494,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "IT firms like Google, Microsoft, Capgemini, TechM hire more women in technical roles",
-      "publisher": "ET Telecom",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWkxCZnBCMXZKc2ZRcjI2LU9WZFhjdkFLSkJFbloxOUl2aVVoYjY2RjlISTZNU05mSzlXTGY3Vzl2di1mbldBMmtfMkNUU0sxYkJBNzFQM29WWEEyOWZNSlp4VmFtZ1lDZmRKWEkybFVpV2hwSEM2djlOQ1c3NjIyTEU2ZDBFS2xZTEFSNWZyaGJqTWRFTVpLWmZHbzV1SUo4cWVoeGhhWVdwaG43SVpZYUZtUUpuN1VYM00yVFFCbnhoaVp4bFNXUUxCVVVKcWJvX0xrTWNZSzNTdVNQZVJoNU9KWdIB6AFBVV95cUxPYWFscU84NTlVLWNaRzN5aGFqWkpIb1J0SmhOWE1jOUZzSjJKb0FQZjVsQy1ON0ZldXl0THRNS3oyQ3VYSkIyOUxRRGFNNS1zRXo4SjBkZzRtcjhrZWV3STZJbE96bUtZSTVfdWpROVgwMnU5Z3BrN3pVa0NHd0ZJTVVPX1dsUjBlVlZKd0xGMmRGbnhrZVZ6aEJhdWRzX3dpR1g1SGtLbjc2OW1ZU1ZkU2lPeDlZM2VpVVV1NlJDWl9qU2lTUWpKLVBfaGJRME1yN1ZiNTBNcE8zUlBLTjl1WEhyc3Z3T29r?oc=5",
-      "published_at": "Tue, 16 Jun 2015",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Labour office notice to TechM over \u2018pay cuts\u2019",
-      "publisher": "ETHRWorld.com",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaFJRZDhpREpWUVNmOHl6WjRKdWthcEdHS2ZXSzNfcF9UV3VvMlFKX1ZnQjBiYlRJMGY0dFBkam95dmEwOXg3amVGQUtsT2NDdHAta1lWR194UUFNUUFDSlVBdWx4S0tFYkxsbnBVSmlwMVZ1dFI4S0w3MHJsWjVrYlRKOUJ4c1Q1UW9xM1VuUlBiSHRPYm1JRGxaaVVab1p1b1YtRG1wX2Zjd9IBrwFBVV95cUxPekc0aTNzb2FEUGxkOGNoMWptSExUZTcwOUd2MUZiaWJnc3U3UmxFUXNFb3NuNUdfb3BkdVBNOFI1a2poWWtvdkgyNzVMMWcyNWtlTmZlQ1I1OUFEaTdNR1AyZXB1aGxKaGdNZVhIRkFVTXd5VmNkOWw1T1cxTXhlcTBpeW5QejNuRkYwN0ludFRTR3YwaWh2bDlYSEZYOFFibUxzUmRoMmFYS3dpd3ln?oc=5",
-      "published_at": "Mon, 11 May 2020",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Wipro, TechM, Adani Enterprises, HDFC Bank biggest losers as Nifty sinks below 19,000",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdWZIOEZ6VmhTeGRGUVZMMG5KVkJ6ZC1ZRTVEbXhIVHlwRXlRQS1DeTNRMnRvN1hRQkJpOUEzVTBnTnQtd243LUs5dUp4TzA2X0pBMGhSOVJ4aE11VTRKRV9TTHdBeWotNnlTQk9zcTEzaUdtUGVMSTFEMFROREoyTzFvRzBQempoUGtFNVRBNGJsVU5aaTlhNmJFVUV1bjZYUUh0VGhFdmdIOGtnLWplOUM2dE92WXMzYXFlUkJIVDc3Z0U1bkphZUYtNHpPRHZpODk0YW1saGFKbWdpTzJF0gHkAUFVX3lxTE83bTlRU0k4QVJTSGNSLVBGX1JRTkdnc0JYdVIyNjB1VDIySmF0SWdrTzAtQTJoQ2hFV01mOVhkWkFoNk5MdWl0cnNYdWFEX0lWZGsxY2Y0RU1tRTZ6YVdQejN2Sm93SGp6MTR1XzNhSFpyN3h4VHpMcEU5OXZBWDg0bm9BT2stNDJKaUVhLUFvZ213aHBoWDhBLW10TU55cHpldkt6QXllTTNmMkxHVmdGT2RYRGJZWFN3OFRNOW52NHdGX2tMcjFnQ0lUOXVYeGJxUWhFeFVILTJZdS1scEZab0VaRg?oc=5",
-      "published_at": "Thu, 26 Oct 2023",
+      "title": "Day trading guide for 11th April: M&M, TechM, BPCL to Zomato \u2014 6 stocks to buy or sell on Tuesday",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQOHpkZTlReG5RMVo5akl3Y3pEUUpjc1N5YUdsbFRxd1ZTRlJPWUw1aFdqd25tWTVqZUhuTjkzWmVxMDllOWZublZpWXRHM2hNNk43dDJGNUhLdnhTQlpRcEZuSEQ1dm1lazlzdkFhcDFGY1pVV2JGZFNJNW55WmtaOWo4SHlmYnpyeWttY21hbHJPZ3N3bmNIWVBBWDdBVHhYOXBPUGFmc1Nydlh1S2FUQ1BZRS1raEg2UjZJemhEUjJ1VEZ1dkh2VkFrS2pseUVfNVNZTEFMaHoyTTY1OHBIQUxreVJDeExiSUFWSlhNRUhBTjV40gH6AUFVX3lxTE1GNWU1alY3cnRWS29XTXNBWDVZUmpfQ3VKSDZtM19ZUC1nZEJMbmE5T0VyQWlmUXVrcVAzTERtSmRQOEdPV2dHZXJkVXpDQ2NjV1IxU1FOZHMwU3Vpbkg5TUxzWks3dGZWdS14cW1FUFJQTHJmTWhFbUZjR0ZHU09XR19qUmR2NWZkdmFxOWp1blZtRTMwNkF6REZSV21Rbld5Rkk2SktvYUlBYWU3UlBpLW8xNV9sbGRGaHlCbFRWWEVNUXZwR1ZkTU9hWDNfdjd0WDNMQjlRTmZHQ2NBS0pIcnNlMy1FRVNwQnlZMW5yc2N0SHROY0dtUHc?oc=5",
+      "published_at": "Tue, 11 Apr 2023",
       "sentiment": "bullish"
     }
   ]
