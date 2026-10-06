@@ -1,14 +1,14 @@
 {
   "symbol": "SBILIFE.NS",
-  "last_price": 1715.0,
+  "last_price": 1750.0,
   "as_of": "2026-10-06 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.2,
-  "fit_score": 12.5,
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 12.5,
-  "vix": 14.59,
+  "confidence_percentage": 25.0,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1800.0,
-        "strike_formatted": "1800",
+        "strike": 1850.0,
+        "strike_formatted": "1850",
         "option_type": "Call",
-        "delta": 0.226,
+        "delta": 0.17,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x SBILIFE.NS 24-Nov-2026 1800 Call"
+        "summary": "Sell 1x SBILIFE.NS 24-Nov-2026 1850 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1850.0,
-        "strike_formatted": "1850",
+        "strike": 1900.0,
+        "strike_formatted": "1900",
         "option_type": "Call",
-        "delta": 0.103,
+        "delta": 0.068,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x SBILIFE.NS 24-Nov-2026 1850 Call"
+        "summary": "Buy 1x SBILIFE.NS 24-Nov-2026 1900 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1663.55,
-    "take_profit_price": 1766.45,
-    "net_delta": -0.123,
-    "net_theta": 0.142,
+    "stop_loss_price": 1697.5,
+    "take_profit_price": 1802.5,
+    "net_delta": -0.102,
+    "net_theta": 0.132,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1372.0,
+        "price": 1400.0,
         "pnl": -50.0
       },
       {
-        "price": 1385.72,
+        "price": 1414.0,
         "pnl": -50.0
       },
       {
-        "price": 1399.44,
+        "price": 1428.0,
         "pnl": -50.0
       },
       {
-        "price": 1413.16,
+        "price": 1442.0,
         "pnl": -50.0
       },
       {
-        "price": 1426.88,
+        "price": 1456.0,
         "pnl": -50.0
       },
       {
-        "price": 1440.6,
+        "price": 1470.0,
         "pnl": -50.0
       },
       {
-        "price": 1454.32,
+        "price": 1484.0,
         "pnl": -50.0
       },
       {
-        "price": 1468.04,
+        "price": 1498.0,
         "pnl": -50.0
       },
       {
-        "price": 1481.76,
+        "price": 1512.0,
         "pnl": -50.0
       },
       {
-        "price": 1495.48,
+        "price": 1526.0,
         "pnl": -50.0
       },
       {
-        "price": 1509.2,
+        "price": 1540.0,
         "pnl": -50.0
       },
       {
-        "price": 1522.92,
+        "price": 1554.0,
         "pnl": -50.0
       },
       {
-        "price": 1536.64,
+        "price": 1568.0,
         "pnl": -50.0
       },
       {
-        "price": 1550.36,
+        "price": 1582.0,
         "pnl": -50.0
       },
       {
-        "price": 1564.08,
+        "price": 1596.0,
         "pnl": -50.0
       },
       {
-        "price": 1577.8,
+        "price": 1610.0,
         "pnl": -50.0
       },
       {
-        "price": 1591.52,
+        "price": 1624.0,
         "pnl": -50.0
       },
       {
-        "price": 1605.24,
+        "price": 1638.0,
         "pnl": -50.0
       },
       {
-        "price": 1618.96,
+        "price": 1652.0,
         "pnl": -50.0
       },
       {
-        "price": 1632.68,
+        "price": 1666.0,
         "pnl": -50.0
       },
       {
-        "price": 1646.4,
+        "price": 1680.0,
         "pnl": -50.0
       },
       {
-        "price": 1660.12,
+        "price": 1694.0,
         "pnl": -50.0
       },
       {
-        "price": 1673.84,
+        "price": 1708.0,
         "pnl": -50.0
       },
       {
-        "price": 1687.56,
+        "price": 1722.0,
         "pnl": -50.0
       },
       {
-        "price": 1701.28,
+        "price": 1736.0,
         "pnl": -50.0
       },
       {
-        "price": 1715.0,
+        "price": 1750.0,
         "pnl": -50.0
       },
       {
-        "price": 1728.72,
+        "price": 1764.0,
         "pnl": -50.0
       },
       {
-        "price": 1742.44,
+        "price": 1778.0,
         "pnl": -50.0
       },
       {
-        "price": 1756.16,
+        "price": 1792.0,
         "pnl": -50.0
       },
       {
-        "price": 1769.88,
+        "price": 1806.0,
         "pnl": -50.0
       },
       {
-        "price": 1783.6,
+        "price": 1820.0,
         "pnl": -50.0
       },
       {
-        "price": 1797.32,
+        "price": 1834.0,
         "pnl": -50.0
       },
       {
-        "price": 1811.04,
-        "pnl": -61.04
+        "price": 1848.0,
+        "pnl": -50.0
       },
       {
-        "price": 1824.76,
-        "pnl": -74.76
+        "price": 1862.0,
+        "pnl": -62.0
       },
       {
-        "price": 1838.48,
-        "pnl": -88.48
+        "price": 1876.0,
+        "pnl": -76.0
       },
       {
-        "price": 1852.2,
+        "price": 1890.0,
+        "pnl": -90.0
+      },
+      {
+        "price": 1904.0,
         "pnl": -100.0
       },
       {
-        "price": 1865.92,
+        "price": 1918.0,
         "pnl": -100.0
       },
       {
-        "price": 1879.64,
+        "price": 1932.0,
         "pnl": -100.0
       },
       {
-        "price": 1893.36,
+        "price": 1946.0,
         "pnl": -100.0
       },
       {
-        "price": 1907.08,
+        "price": 1960.0,
         "pnl": -100.0
       },
       {
-        "price": 1920.8,
+        "price": 1974.0,
         "pnl": -100.0
       },
       {
-        "price": 1934.52,
+        "price": 1988.0,
         "pnl": -100.0
       },
       {
-        "price": 1948.24,
+        "price": 2002.0,
         "pnl": -100.0
       },
       {
-        "price": 1961.96,
+        "price": 2016.0,
         "pnl": -100.0
       },
       {
-        "price": 1975.68,
+        "price": 2030.0,
         "pnl": -100.0
       },
       {
-        "price": 1989.4,
-        "pnl": -100.0
-      },
-      {
-        "price": 2003.12,
-        "pnl": -100.0
-      },
-      {
-        "price": 2016.84,
-        "pnl": -100.0
-      },
-      {
-        "price": 2030.56,
-        "pnl": -100.0
-      },
-      {
-        "price": 2044.28,
+        "price": 2044.0,
         "pnl": -100.0
       },
       {
         "price": 2058.0,
+        "pnl": -100.0
+      },
+      {
+        "price": 2072.0,
+        "pnl": -100.0
+      },
+      {
+        "price": 2086.0,
+        "pnl": -100.0
+      },
+      {
+        "price": 2100.0,
         "pnl": -100.0
       }
     ],
@@ -277,39 +277,62 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1800CE-B1x-Nov-1850CE"
-    },
-    {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 55.7,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1715PE"
+      "legs_summary": "S1x-Nov-1850CE-B1x-Nov-1900CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 44.6,
-      "grade": "C (Moderate)",
+      "score": 68.3,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1550PE-S1x-Nov-1600PE-S1x-Nov-1800CE-B1x-Nov-1850CE"
+      "legs_summary": "B1x-Nov-1600PE-S1x-Nov-1650PE-S1x-Nov-1850CE-B1x-Nov-1900CE"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 49.0,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-1750PE"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 40.5,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-1700CE-S1x-Nov-1750CE-S1x-Nov-1750CE-B1x-Nov-1800CE"
     }
   ],
   "indicators": {
-    "EMA20": "1728.37",
-    "EMA50": "1755.07",
-    "EMA100": "1789.90",
-    "EMA200": "1822.43",
-    "RSI(14)": "45.65",
-    "ATR(14)": "34.95",
-    "ADX(14)": "26.86",
-    "BB(20,2)": "0.46",
-    "P_SHAPE(20)": "47.34"
+    "EMA20": "1730.98",
+    "EMA50": "1756.11",
+    "EMA100": "1790.42",
+    "EMA200": "1822.68",
+    "RSI(14)": "52.63",
+    "ATR(14)": "38.27",
+    "ADX(14)": "25.16",
+    "BB(20,2)": "0.73",
+    "P_SHAPE(20)": "49.72"
   },
   "rules": [
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "20-Day Momentum Relative Strength",
       "passed": true,
@@ -346,13 +369,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
@@ -361,13 +377,6 @@
     },
     {
       "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -390,6 +399,13 @@
   ],
   "news": [
     {
+      "title": "Up to 52% upside - Jindal SAW, SBI Life, ICICI Bank shares | 360 ONE's 21 biggest bets for investors - Check full list",
+      "publisher": "livemint.com",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPeEtuNXNGOHN6SXU5UE04SDFyOXMxS0FNVUFKQUhsbGNSNF9VWmJjNXBNT3Vlak5wV1c1NklrZmtSNEcyaUtlTlhIV0tqRkxMQ3ZwN2gxY2dKanp4R05KMTA0a2VydUdHRVFEYktUeDNTNmRhUUNVYnRnT2VWUG95Y0p6QmFXZnRnZnhhNVNPRHI5TFRScF9jOWZGMm1hYWFJb01kUlVGdEswT05MNXE0ZW9PSklRYlF6d3BBN21XTExTeGRPTWJHb0prZ2cyT0VlOEJzSnFBUk11dE5mdzZaajVXUEx5U2JzYnFsbmpyNDZvMXNDOHVKNzkyajBMX1Vza3hTU1dISUzSAY4CQVVfeXFMTXdNN3BwNWFsNHA2MkJ2Qy01YjBuQWhhWWRFbWlOeHFMX3haSU5yOW1oRG9MUU1oSXdUcnpnWGxySE5NQUZ3dzF5Z2RkdTRrQUQ0Nk5kWmhZWUFJMk9ES00zci1ZLWRVWExHM3lnYkdtWmN2bENTN2gyNDMyT1VrRDFDb216cVZWaWVBREd0THVmQWNNclN1dTZ1RFRSckY2Vjc1ZFhOc28yVjFlb3djVE1iYnJOZHd3MFRxc25FZWtKU2xlWm1ERDlfZHdHY1ZvUzB4U2ZtT1RqQ2pnanU3TklaS1pxYnptQVhqQWJ2MTdmeWQ4UTlCc3pPaG5uRzhLZXRRalNfWFRSZXJZdWJ3?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPd2JvNFNWMVFMLUJEXzhiZUVBdlp6WGJvcHFsb1JjdC1QWEhNcEpwX1kwMTlDVkxuQS1FajJOZFBBeVdiREl3S3BZZEY0cV9MOTRLaWF6VS1zLXhqQ2xGQzExSkRDZ1c3Tzdjc3g1ZS1rTVpnSmFHc0tRZFlpSy1uR2ItcDVzY21RaHFaelY3VQ?oc=5",
@@ -411,13 +427,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "FNO Increase in Open Interest and Price sort by Open Interest, Ascending Order",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbzhBRFNheGxrOGxDU0Y0dGxLRUJ6VDJIV0V1bHgwVjlVZVFmZzZaLUN4MkZUWkpZd2YxeWtaazFrUWtVVDNYMzlLX1lrdWhqMDJwcFhZc1ZFRU5RMDdKQmhCZzBTODlsQUVTNDFzclRVeExmVGlQY2gzWXJROENiaVVVSVVKM2VZQ0pIYjlrWVZUa0UtS0V6Y3g2YUswMGNiNUdUaDcxWGVzU3drNTdWSlBidVY?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "534",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
@@ -425,10 +434,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51RnVKaFpRN3VBYnZlU1ZfWjk1bG53YnoyYlVCNVlQanhNbHozYTYwLVhlWHdaV091N01ua2dVeGhFT2FrYy1SWk52UF80ZEZjbjJFUEJuQ2tTbDNGbXo1c1g5YXhPZw?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "title": "FNO Increase in Open Interest and Price sort by Open Interest, Ascending Order",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbzhBRFNheGxrOGxDU0Y0dGxLRUJ6VDJIV0V1bHgwVjlVZVFmZzZaLUN4MkZUWkpZd2YxeWtaazFrUWtVVDNYMzlLX1lrdWhqMDJwcFhZc1ZFRU5RMDdKQmhCZzBTODlsQUVTNDFzclRVeExmVGlQY2gzWXJROENiaVVVSVVKM2VZQ0pIYjlrWVZUa0UtS0V6Y3g2YUswMGNiNUdUaDcxWGVzU3drNTdWSlBidVY?oc=5",
+      "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
     }
   ]

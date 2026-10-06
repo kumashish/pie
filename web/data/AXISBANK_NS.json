@@ -1,19 +1,19 @@
 {
   "symbol": "AXISBANK.NS",
-  "last_price": 1237.3,
+  "last_price": 1248.0,
   "as_of": "2026-10-06 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.8,
+  "fit_score": 37.5,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 14.62,
+  "confidence_percentage": 37.5,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (98.5% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 1300.0,
         "strike_formatted": "1300",
         "option_type": "Call",
-        "delta": 0.22,
+        "delta": 0.255,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -35,7 +35,7 @@
         "strike": 1350.0,
         "strike_formatted": "1350",
         "option_type": "Call",
-        "delta": 0.07,
+        "delta": 0.078,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -46,224 +46,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1200.18,
-    "take_profit_price": 1274.42,
-    "net_delta": -0.15,
-    "net_theta": 0.135,
+    "stop_loss_price": 1210.56,
+    "take_profit_price": 1285.44,
+    "net_delta": -0.177,
+    "net_theta": 0.14,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 989.84,
+        "price": 998.4,
         "pnl": -50.0
       },
       {
-        "price": 999.74,
+        "price": 1008.38,
         "pnl": -50.0
       },
       {
-        "price": 1009.64,
+        "price": 1018.37,
         "pnl": -50.0
       },
       {
-        "price": 1019.54,
+        "price": 1028.35,
         "pnl": -50.0
       },
       {
-        "price": 1029.43,
+        "price": 1038.34,
         "pnl": -50.0
       },
       {
-        "price": 1039.33,
+        "price": 1048.32,
         "pnl": -50.0
       },
       {
-        "price": 1049.23,
+        "price": 1058.3,
         "pnl": -50.0
       },
       {
-        "price": 1059.13,
+        "price": 1068.29,
         "pnl": -50.0
       },
       {
-        "price": 1069.03,
+        "price": 1078.27,
         "pnl": -50.0
       },
       {
-        "price": 1078.93,
+        "price": 1088.26,
         "pnl": -50.0
       },
       {
-        "price": 1088.82,
+        "price": 1098.24,
         "pnl": -50.0
       },
       {
-        "price": 1098.72,
+        "price": 1108.22,
         "pnl": -50.0
       },
       {
-        "price": 1108.62,
+        "price": 1118.21,
         "pnl": -50.0
       },
       {
-        "price": 1118.52,
+        "price": 1128.19,
         "pnl": -50.0
       },
       {
-        "price": 1128.42,
+        "price": 1138.18,
         "pnl": -50.0
       },
       {
-        "price": 1138.32,
+        "price": 1148.16,
         "pnl": -50.0
       },
       {
-        "price": 1148.21,
+        "price": 1158.14,
         "pnl": -50.0
       },
       {
-        "price": 1158.11,
+        "price": 1168.13,
         "pnl": -50.0
       },
       {
-        "price": 1168.01,
+        "price": 1178.11,
         "pnl": -50.0
       },
       {
-        "price": 1177.91,
+        "price": 1188.1,
         "pnl": -50.0
       },
       {
-        "price": 1187.81,
+        "price": 1198.08,
         "pnl": -50.0
       },
       {
-        "price": 1197.71,
+        "price": 1208.06,
         "pnl": -50.0
       },
       {
-        "price": 1207.6,
+        "price": 1218.05,
         "pnl": -50.0
       },
       {
-        "price": 1217.5,
+        "price": 1228.03,
         "pnl": -50.0
       },
       {
-        "price": 1227.4,
+        "price": 1238.02,
         "pnl": -50.0
       },
       {
-        "price": 1237.3,
+        "price": 1248.0,
         "pnl": -50.0
       },
       {
-        "price": 1247.2,
+        "price": 1257.98,
         "pnl": -50.0
       },
       {
-        "price": 1257.1,
+        "price": 1267.97,
         "pnl": -50.0
       },
       {
-        "price": 1267.0,
+        "price": 1277.95,
         "pnl": -50.0
       },
       {
-        "price": 1276.89,
+        "price": 1287.94,
         "pnl": -50.0
       },
       {
-        "price": 1286.79,
+        "price": 1297.92,
         "pnl": -50.0
       },
       {
-        "price": 1296.69,
-        "pnl": -50.0
+        "price": 1307.9,
+        "pnl": -57.9
       },
       {
-        "price": 1306.59,
-        "pnl": -56.59
+        "price": 1317.89,
+        "pnl": -67.89
       },
       {
-        "price": 1316.49,
-        "pnl": -66.49
+        "price": 1327.87,
+        "pnl": -77.87
       },
       {
-        "price": 1326.39,
-        "pnl": -76.39
+        "price": 1337.86,
+        "pnl": -87.86
       },
       {
-        "price": 1336.28,
-        "pnl": -86.28
+        "price": 1347.84,
+        "pnl": -97.84
       },
       {
-        "price": 1346.18,
-        "pnl": -96.18
-      },
-      {
-        "price": 1356.08,
+        "price": 1357.82,
         "pnl": -100.0
       },
       {
-        "price": 1365.98,
+        "price": 1367.81,
         "pnl": -100.0
       },
       {
-        "price": 1375.88,
+        "price": 1377.79,
         "pnl": -100.0
       },
       {
-        "price": 1385.78,
+        "price": 1387.78,
         "pnl": -100.0
       },
       {
-        "price": 1395.67,
+        "price": 1397.76,
         "pnl": -100.0
       },
       {
-        "price": 1405.57,
+        "price": 1407.74,
         "pnl": -100.0
       },
       {
-        "price": 1415.47,
+        "price": 1417.73,
         "pnl": -100.0
       },
       {
-        "price": 1425.37,
+        "price": 1427.71,
         "pnl": -100.0
       },
       {
-        "price": 1435.27,
+        "price": 1437.7,
         "pnl": -100.0
       },
       {
-        "price": 1445.17,
+        "price": 1447.68,
         "pnl": -100.0
       },
       {
-        "price": 1455.06,
+        "price": 1457.66,
         "pnl": -100.0
       },
       {
-        "price": 1464.96,
+        "price": 1467.65,
         "pnl": -100.0
       },
       {
-        "price": 1474.86,
+        "price": 1477.63,
         "pnl": -100.0
       },
       {
-        "price": 1484.76,
+        "price": 1487.62,
+        "pnl": -100.0
+      },
+      {
+        "price": 1497.6,
         "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.815,
+      "win_probability": 0.845,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3335,
+      "half_kelly_fraction": 0.3605,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,7 +273,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 90.0,
+      "score": 98.5,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -282,32 +282,68 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 57.5,
-      "grade": "C (Moderate)",
+      "score": 90.6,
+      "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-1150PE-S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 53.0,
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 62.3,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-1200PE-S1x-Nov-1300CE-B1x-Nov-1350CE"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 58.9,
       "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-1200CE-S1x-Nov-1250CE-S1x-Nov-1250CE-B1x-Nov-1300CE"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 50.9,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-1200CE-S1x-Nov-1250CE-S1x-Nov-1250CE-B1x-Nov-1300CE"
+    },
+    {
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 50.0,
+      "grade": "C (Moderate)",
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1237.3PE"
+      "legs_summary": "S1x-Nov-1200PE"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 48.7,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-1200PE-S1x-Nov-1250PE-S1x-Nov-1250CE-B1x-Nov-1300CE"
     }
   ],
   "indicators": {
-    "EMA20": "1230.10",
-    "EMA50": "1244.60",
-    "EMA100": "1259.64",
-    "EMA200": "1259.73",
-    "RSI(14)": "51.22",
-    "ATR(14)": "21.92",
-    "ADX(14)": "23.71",
-    "BB(20,2)": "0.60",
-    "P_SHAPE(20)": "67.82"
+    "EMA20": "1231.11",
+    "EMA50": "1245.02",
+    "EMA100": "1259.85",
+    "EMA200": "1259.84",
+    "RSI(14)": "54.25",
+    "ATR(14)": "22.86",
+    "ADX(14)": "23.65",
+    "BB(20,2)": "0.74",
+    "P_SHAPE(20)": "68.08"
   },
   "rules": [
     {
@@ -318,7 +354,28 @@
       "explanation": "Condition met"
     },
     {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -360,28 +417,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -391,7 +427,7 @@
   "news": [
     {
       "title": "Apple Pay launches in India with Axis Bank as first card partner: Check where you can use it and how to make payments",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPcGtoWVNuX3RpX1VycnNrSEoyLXBtdTFoRHQ2cGpkLTRYUWgwRzZwakJfUUxNNkdBNGRhNTg0Zzh2WEVFNk1jNWN6UU1nUV9ELWkwM05VOHdpY3RIclFvSV9XMXZkTUhqYUdYTEhQUS10aGZYMTMxa1NybHhNVzk4RWpfT1BESmVKQW1XTTF0RFBFNlR6V09sdVZKcVVsbjJRLVBoU3JBQzFrNkpOZmJHWjEyZU5nS1hnWElrcjJLLUJDRks3UFhqN1BIU09fY1VzQV83SmhJNzdWb3hSSWliOXhTd3E3SV83VDRjSXpoZDVRckVkWngzb2FtNURuRzctRkYzOTI4TVVVVlJlUmFzRTNn0gGXAkFVX3lxTE5xRTlrZURyWDFxdURIRmJiR2UyekpwZWFuZG1ubWk1Vi02YTNlSUxIRHRyUmNsTTVTV3pjQ1V5MzM3YWhUUEwyWF9LRGVBVzN6UVFEUXRyVTVsRjZtbzRZaVdpWEdVLTRxc0JtbmlOUmpZbXlUU2hiZkdibUhRLUFOR2V6cXdpdnN5cTFDOWcwSzhsV3RmRjhyeFB5YWlDSUNpbXR0UW9iN3hoRnh3V2pCSDIxMWRnX1JzZ2l3Y3hpSVRXdjRPR2l6ZHRhRVdSTEhIZkJWYXpFQ2V4emU4ZGNVRnFqTzZTZmluSVY4ZUpRdHF2ZUZ1UUdONXc4LWRHQ1hJNDJFMzhoY2tPNkFCSjdwUzVEdVh2aw?oc=5",
       "published_at": "Wed, 30 Sep 2026",
       "sentiment": "neutral"
@@ -411,6 +447,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Axis Bank\u2019s Sanjeev Moghe resigns amid banking sector leadership churn",
+      "publisher": "livemint.com",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSWMxNzVSWlJsbHo5cWh1UnlDT0Y2Y3IyOEFaVHFqMHZOVm9yWTJmc3JVcm14TkJLZllZLUplSDlubTlXUE1Fd3pJNTVSSXpzaUNGSldmUy1tUEdnZnN6cnlWS0kzb0xGV05pWHlXRFJPdXQxUktvVEZCNDRGVUIzdEw5VVhMbXJBTy1QSUVvODd5RTkyVlJCSXkyZkIyZDZDSWxZYnpWS3ZUclRzV1l0ZTNvZGQ0SWcwX1FhMExjR0MwYkpOYTZMUVMya3bSAdIBQVVfeXFMTkhsNXNxLXlvLWpzaFh6N2VhTlBFaDBpRm9HYmNNSjBNcFlvOHRZWkR2RnNybHhoYzE5OFpCSjdral9kaFhYVG9LeHJYbWUtb1NBT2RVVGdYNFRGeGxqS1BuWFBrb0VYWGNOX0tNdWZGd1NmZEdiNTZWSG5BWHpyR3BfZEhsMWhiR0x6X3lOZFVIU28wRHhuR1dJaFVjYmw3cTVQclhrMEpINFF1bVZmQVhiekc4Um9VMnRjN2xFaHBMTDlSd1AxeVRLVDg3djRhYV93?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Apple Pay launches in India after years of global rollout, Axis Bank first partner",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUjdqbnltWndhSG4zcVBCZmFNWjFROWFuS3lvSGNiNmhKXzE5bUxFWnNRaDFkYnFmX1ZKLXdTUkVLM1pVcGZnSExLWEUxRE9WZ0pNVWxVYmJodXVnQ3ROZ0JCSTQyMXZoOGVwaGVMYXlTazlIX0V3WG05aVJRNFppQTVrWjJTaV8yYmttOFB3eUpWZkRCU2JsNGZDNUhDdzlZdDgwTGo0VzkzLXdnUVdQT3VYWXBEdmNQU051WGhFck90eFZUeDh5WExEODlhS3NwWEJjN3hBV3h2WE3SAeABQVVfeXFMT3l3LUFpbV90bzZIeXBRV2xRUDFTa2xyekNMWXdNZ04tVEg4M0pGX0QtVHl5VHVyd0U0emhTaS01a1ZTVmlSS1J4b0Z4YkxpRHVHS19hM0VZNk1MbWtGM1lINzcyTEEtbGN5ME4wbkF5dzR1NURDZ1dGcXktNWthZ3FsQlBpVTFoRVRkSmZ3MFZFT1JDMV9RS3JMT1FGSVdNamM2VF9rbm1fanAwc2NLMmlsMDNQWjhIa3hjQV81RmJfTE80ZGpESlBsaHltY2hPMElqQ2pYcXRZX2k1SGQwcmo?oc=5",
@@ -422,13 +465,6 @@
       "publisher": "ET Datacenters",
       "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQRzRaYWhhTEhtYmY3VWc0Vkl0OXRONk1NbHRmcnQ1OG5DLWpPSUswR3BaT2w1dGFFanh4RHVCSFI3OV84VzdkUjFUU3NSOTF1M25sUkZFRFUzVzZCcXpnMzVid2dTTkNLb1pNQkdER3JCQnotV0RKUnZ5QUJNbnRiWkxPYTh5NFdLblBuWmhIM21WUFdEX2c3c29rYUVsRGVHRl85T29tekd6MzJRdC1GZFowZXY2ZlE0d09CYjdHeWZRcFpDMk1VNTBrZURMeXhnaGpPeUFuVTZXbjFqd2tvbzFBQ1M3T1VIZy1lN2ZBV0piYVNycEZxSE44dHF2YkpseDhOajFmZGlTQ0VTQVF0dnZDZ3V5QzBnVlVTQlJn0gHsAUFVX3lxTE5fLVMwZU1FdTFEX2ZkQTFVTFNCRlJodEpFMUROZ2MxSTJ0YkllcUVVbFpfalpfcHB5WEdMU2puMlRKcDkyaUZPSFozYkhnbERILV9qTHBHZDFNbnJ5U2drY0ZJM3RTTml2U1hvSXlaZGt5VjR2WmU3RGZxSXFlQnNXV3hISUJxQlRtenBoNGJTa3VJVU1maTZ3by1yRU51Z1hKR21RS2c3SzdQWGxQeVNwbXlYMHMtekpQUlJQVWFQQjFLTGg3RXlsZU1WeFprTWdyTUtPSXp6Nm9RNW5rcVRaRkZOSTRhdXY5bmVp?oc=5",
       "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Apple Pay tie-up to make Axis Bank card a preferred payment choice, says CEO Amitabh Chaudhry",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQeVNtTzVTM0JXU01FR04yTGpkVXRfT25BZjM0a1c2NjBPSTdGeXpwWHJGMWM4V3RkNDVRaUI1NVo5ZjhaTkh1ODhhTEVKdWlpOXFBS1FwRUJhQkM5a3NsTmd2Rk5YNW5CamtBbGJYYVdiQ0dUV19Da1pBY0hEc0locnR2N0xOSlhvcVVzUFA4WXo0ekVaWFBGWWZoaFFNczNXeC1EbENSRkJpTjRlT2xGa3VZZ1RBMUQyTm9WOXdFc3RsdkV3QTZJbWp5YmViazQzN0FndVpWN0JwOWtndm5hYnhGem0yd9IB6wFBVV95cUxOeTFSOXppMTdyNVIzSUFob0FlbFlVbVkxSWVWTzQyQ3NJcmVPYS0xMUUxU0VtcFBQd0lCZGRpU1pOQUZjUHJpbS16X1R4ZXRHUjFxc2RrOXJJc01FaGtCSVIyRnBLaXZ5aVVmdTJTQVo5RXJIOVctYVRjWGppOUVuNHJVOXRrdEI4N0g4ZTB5cnNXbzlneHFfWU8yUWhmbTBJMUY0eUdRQ1BUS1d4bkFleFpseUE3cFZzTHR3TzRJbjk5TGgtelk2SHQ4bmNKaTVCZ2d0LVBBd3BlWkZTQ0REbnlISllBN0Q0Ykww?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }
   ]

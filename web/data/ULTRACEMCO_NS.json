@@ -1,14 +1,14 @@
 {
   "symbol": "ULTRACEMCO.NS",
-  "last_price": 10887.0,
+  "last_price": 10750.0,
   "as_of": "2026-10-06 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.8,
-  "fit_score": 7.5,
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 7.5,
-  "vix": 14.53,
+  "confidence_percentage": 17.5,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 11500.0,
-        "strike_formatted": "11500",
+        "strike": 11000.0,
+        "strike_formatted": "11000",
         "option_type": "Call",
-        "delta": 0.19,
+        "delta": 0.381,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x ULTRACEMCO.NS 24-Nov-2026 11500 Call"
+        "summary": "Sell 1x ULTRACEMCO.NS 24-Nov-2026 11000 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 12000.0,
-        "strike_formatted": "12000",
+        "strike": 11500.0,
+        "strike_formatted": "11500",
         "option_type": "Call",
-        "delta": 0.047,
+        "delta": 0.116,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x ULTRACEMCO.NS 24-Nov-2026 12000 Call"
+        "summary": "Buy 1x ULTRACEMCO.NS 24-Nov-2026 11500 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 500.0,
-    "stop_loss_price": 10560.39,
-    "take_profit_price": 11213.61,
-    "net_delta": -0.143,
-    "net_theta": 1.235,
+    "stop_loss_price": 10427.5,
+    "take_profit_price": 11072.5,
+    "net_delta": -0.265,
+    "net_theta": 1.39,
     "probability_of_profit": 0.0,
-    "var_95": 436.54,
+    "var_95": 500.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 8709.6,
+        "price": 8600.0,
         "pnl": -500.0
       },
       {
-        "price": 8796.7,
+        "price": 8686.0,
         "pnl": -500.0
       },
       {
-        "price": 8883.79,
+        "price": 8772.0,
         "pnl": -500.0
       },
       {
-        "price": 8970.89,
+        "price": 8858.0,
         "pnl": -500.0
       },
       {
-        "price": 9057.98,
+        "price": 8944.0,
         "pnl": -500.0
       },
       {
-        "price": 9145.08,
+        "price": 9030.0,
         "pnl": -500.0
       },
       {
-        "price": 9232.18,
+        "price": 9116.0,
         "pnl": -500.0
       },
       {
-        "price": 9319.27,
+        "price": 9202.0,
         "pnl": -500.0
       },
       {
-        "price": 9406.37,
+        "price": 9288.0,
         "pnl": -500.0
       },
       {
-        "price": 9493.46,
+        "price": 9374.0,
         "pnl": -500.0
       },
       {
-        "price": 9580.56,
+        "price": 9460.0,
         "pnl": -500.0
       },
       {
-        "price": 9667.66,
+        "price": 9546.0,
         "pnl": -500.0
       },
       {
-        "price": 9754.75,
+        "price": 9632.0,
         "pnl": -500.0
       },
       {
-        "price": 9841.85,
+        "price": 9718.0,
         "pnl": -500.0
       },
       {
-        "price": 9928.94,
+        "price": 9804.0,
         "pnl": -500.0
       },
       {
-        "price": 10016.04,
+        "price": 9890.0,
         "pnl": -500.0
       },
       {
-        "price": 10103.14,
+        "price": 9976.0,
         "pnl": -500.0
       },
       {
-        "price": 10190.23,
+        "price": 10062.0,
         "pnl": -500.0
       },
       {
-        "price": 10277.33,
+        "price": 10148.0,
         "pnl": -500.0
       },
       {
-        "price": 10364.42,
+        "price": 10234.0,
         "pnl": -500.0
       },
       {
-        "price": 10451.52,
+        "price": 10320.0,
         "pnl": -500.0
       },
       {
-        "price": 10538.62,
+        "price": 10406.0,
         "pnl": -500.0
       },
       {
-        "price": 10625.71,
+        "price": 10492.0,
         "pnl": -500.0
       },
       {
-        "price": 10712.81,
+        "price": 10578.0,
         "pnl": -500.0
       },
       {
-        "price": 10799.9,
+        "price": 10664.0,
         "pnl": -500.0
       },
       {
-        "price": 10887.0,
+        "price": 10750.0,
         "pnl": -500.0
       },
       {
-        "price": 10974.1,
+        "price": 10836.0,
         "pnl": -500.0
       },
       {
-        "price": 11061.19,
+        "price": 10922.0,
         "pnl": -500.0
       },
       {
-        "price": 11148.29,
-        "pnl": -500.0
+        "price": 11008.0,
+        "pnl": -508.0
       },
       {
-        "price": 11235.38,
-        "pnl": -500.0
+        "price": 11094.0,
+        "pnl": -594.0
       },
       {
-        "price": 11322.48,
-        "pnl": -500.0
+        "price": 11180.0,
+        "pnl": -680.0
       },
       {
-        "price": 11409.58,
-        "pnl": -500.0
+        "price": 11266.0,
+        "pnl": -766.0
       },
       {
-        "price": 11496.67,
-        "pnl": -500.0
+        "price": 11352.0,
+        "pnl": -852.0
       },
       {
-        "price": 11583.77,
-        "pnl": -583.77
+        "price": 11438.0,
+        "pnl": -938.0
       },
       {
-        "price": 11670.86,
-        "pnl": -670.86
-      },
-      {
-        "price": 11757.96,
-        "pnl": -757.96
-      },
-      {
-        "price": 11845.06,
-        "pnl": -845.06
-      },
-      {
-        "price": 11932.15,
-        "pnl": -932.15
-      },
-      {
-        "price": 12019.25,
+        "price": 11524.0,
         "pnl": -1000.0
       },
       {
-        "price": 12106.34,
+        "price": 11610.0,
         "pnl": -1000.0
       },
       {
-        "price": 12193.44,
+        "price": 11696.0,
         "pnl": -1000.0
       },
       {
-        "price": 12280.54,
+        "price": 11782.0,
         "pnl": -1000.0
       },
       {
-        "price": 12367.63,
+        "price": 11868.0,
         "pnl": -1000.0
       },
       {
-        "price": 12454.73,
+        "price": 11954.0,
         "pnl": -1000.0
       },
       {
-        "price": 12541.82,
+        "price": 12040.0,
         "pnl": -1000.0
       },
       {
-        "price": 12628.92,
+        "price": 12126.0,
         "pnl": -1000.0
       },
       {
-        "price": 12716.02,
+        "price": 12212.0,
         "pnl": -1000.0
       },
       {
-        "price": 12803.11,
+        "price": 12298.0,
         "pnl": -1000.0
       },
       {
-        "price": 12890.21,
+        "price": 12384.0,
         "pnl": -1000.0
       },
       {
-        "price": 12977.3,
+        "price": 12470.0,
         "pnl": -1000.0
       },
       {
-        "price": 13064.4,
+        "price": 12556.0,
+        "pnl": -1000.0
+      },
+      {
+        "price": 12642.0,
+        "pnl": -1000.0
+      },
+      {
+        "price": 12728.0,
+        "pnl": -1000.0
+      },
+      {
+        "price": 12814.0,
+        "pnl": -1000.0
+      },
+      {
+        "price": 12900.0,
         "pnl": -1000.0
       }
     ],
@@ -277,21 +277,30 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-11500CE-B1x-Nov-12000CE"
+      "legs_summary": "S1x-Nov-11000CE-B1x-Nov-11500CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 58.4,
+      "score": 53.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-10887PE"
+      "legs_summary": "S1x-Nov-10750PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 49.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-9500PE-S1x-Nov-10000PE-S1x-Nov-11000CE-B1x-Nov-11500CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 40.2,
+      "score": 44.1,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -299,17 +308,24 @@
     }
   ],
   "indicators": {
-    "EMA20": "11000.99",
-    "EMA50": "11229.23",
-    "EMA100": "11404.94",
-    "EMA200": "11570.02",
-    "RSI(14)": "44.29",
-    "ATR(14)": "177.97",
-    "ADX(14)": "29.56",
-    "BB(20,2)": "0.42",
-    "P_SHAPE(20)": "58.02"
+    "EMA20": "10982.87",
+    "EMA50": "11221.51",
+    "EMA100": "11400.99",
+    "EMA200": "11568.02",
+    "RSI(14)": "40.05",
+    "ATR(14)": "186.07",
+    "ADX(14)": "30.30",
+    "BB(20,2)": "0.21",
+    "P_SHAPE(20)": "56.33"
   },
   "rules": [
+    {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "Price making higher highs",
       "passed": true,
@@ -347,13 +363,6 @@
     },
     {
       "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -398,21 +407,21 @@
     },
     {
       "title": "UltraTech Cement Q3 Results 2026 - Find UltraTech Cement Q3 Earnings Result | ULTRACEMCO Q3 results",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZmlwUFFBXzB6RFU0bFRpV1VnSERFQ0xoOEJ3OGVDZ3dHM1FVUXB5U2c0bkhwbHc1VlBkcC1GUWw5RTlVSEJyaXNMeFF1YUQ2c3o3QVk3R09vaVQtSm5ZWmdYYTY2RC1xVzZsYUM2djBpQXhIWHdfdk5DaGl6MWlZMFVESlEtVjJ3?oc=5",
       "published_at": "Fri, 20 Oct 2023",
       "sentiment": "neutral"
     },
     {
       "title": "UltraTech Cement Q4 Results 2026 - Find UltraTech Cement Q4 Earnings Result | ULTRACEMCO Q4 results",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMm1wenpoSUszek15NTNVVHVrYlFodkZlNjM1MG5rYjdFcHRKN0xLRDNkNVh2dGtOMGstUFZFeVdsVVIza3FHR1lkazdfd1ZnOHJ4YWt6cFpleGdldEdncGJvY3h1UFRqN3FHdTBsS1RnYldRY3FEa0xKMmJDZFhUbkxjdU5CNmo0?oc=5",
       "published_at": "Fri, 20 Oct 2023",
       "sentiment": "neutral"
     },
     {
       "title": "UltraTech Cement Q2 Results 2026 - Find UltraTech Cement Q2 Earnings Result | ULTRACEMCO Q2 results",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWlk2bzRnVGJVZmNPTDkxTk02dl96ZmRTeGM3WUllUXFPaHREN25DRWxBa2Z4TGloUENvZlpWeWg2VkNxaGdJT3lWcGFtZFI3VmRlcG4tUjc5NXl5NlZFR0pBdXlxRHpDUHVNVjZhdzE0QmZBY1RjM0IzTjhXU18zdjh0Ni1fdGJo?oc=5",
       "published_at": "Fri, 20 Oct 2023",
       "sentiment": "neutral"

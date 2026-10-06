@@ -8,7 +8,7 @@
   "fit_score": 75.0,
   "confidence_grade": "B",
   "confidence_percentage": 75.0,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 66.0,
-        "strike_formatted": "66",
-        "option_type": "Call",
-        "delta": 0.28,
+        "strike": 60.0,
+        "strike_formatted": "60",
+        "option_type": "Put",
+        "delta": -0.119,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x XLE 20-Nov-2026 66 Call"
+        "summary": "Sell 1x XLE 20-Nov-2026 60 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 67.0,
-        "strike_formatted": "67",
-        "option_type": "Call",
-        "delta": 0.195,
+        "strike": 59.0,
+        "strike_formatted": "59",
+        "option_type": "Put",
+        "delta": -0.068,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x XLE 20-Nov-2026 67 Call"
+        "summary": "Buy 1x XLE 20-Nov-2026 59 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 3.0,
     "stop_loss_price": 61.55,
     "take_profit_price": 65.35,
-    "net_delta": -0.085,
-    "net_theta": 0.003,
+    "net_delta": 0.051,
+    "net_theta": 0.002,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
     "vol_skew_25d": 0.0,
@@ -57,79 +57,79 @@
     "payoff_points": [
       {
         "price": 50.76,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 51.27,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 51.78,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 52.28,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 52.79,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 53.3,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 53.81,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 54.31,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 54.82,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 55.33,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 55.84,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 56.34,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 56.85,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 57.36,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 57.87,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 58.37,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 58.88,
-        "pnl": -3.0
+        "pnl": -4.0
       },
       {
         "price": 59.39,
-        "pnl": -3.0
+        "pnl": -3.61
       },
       {
         "price": 59.9,
-        "pnl": -3.0
+        "pnl": -3.1
       },
       {
         "price": 60.4,
@@ -181,83 +181,83 @@
       },
       {
         "price": 66.5,
-        "pnl": -3.5
+        "pnl": -3.0
       },
       {
         "price": 67.0,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 67.51,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 68.02,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 68.53,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 69.03,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 69.54,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 70.05,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 70.56,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 71.06,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 71.57,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 72.08,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 72.59,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 73.09,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 73.6,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 74.11,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 74.62,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 75.12,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 75.63,
-        "pnl": -4.0
+        "pnl": -3.0
       },
       {
         "price": 76.14,
-        "pnl": -4.0
+        "pnl": -3.0
       }
     ],
     "kelly_sizing": {
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x XLE 20-Nov-2026 66 Call<br> Buy 1x XLE 20-Nov-2026 67 Call"
+      "legs_summary": "Sell 1x XLE 20-Nov-2026 60 Put<br> Buy 1x XLE 20-Nov-2026 59 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -300,7 +300,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 57.1,
+      "score": 57.4,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -318,7 +318,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 51.8,
+      "score": 52.1,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -435,6 +435,13 @@
   ],
   "news": [
     {
+      "title": "Stock Market News for Oct 6, 2026",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-6-054400913.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Sector Update: Energy Stocks Higher Late Afternoon",
       "publisher": "MT Newswires",
       "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-higher-afternoon-195553166.html",
@@ -468,13 +475,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-171005649.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Sector Update: Energy Stocks Decline Premarket Monday",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-decline-premarket-132923306.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
     }
   ]
 }

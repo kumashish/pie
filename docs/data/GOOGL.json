@@ -8,7 +8,7 @@
   "fit_score": 62.5,
   "confidence_grade": "B",
   "confidence_percentage": 62.5,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 315.0,
         "strike_formatted": "315",
         "option_type": "Put",
-        "delta": -0.03,
+        "delta": -0.028,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 325.0,
         "strike_formatted": "325",
         "option_type": "Put",
-        "delta": -0.094,
+        "delta": -0.092,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -47,7 +47,7 @@
         "strike": 365.0,
         "strike_formatted": "365",
         "option_type": "Call",
-        "delta": 0.207,
+        "delta": 0.204,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 375.0,
         "strike_formatted": "375",
         "option_type": "Call",
-        "delta": 0.095,
+        "delta": 0.092,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -324,7 +324,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 60.3,
+      "score": 60.6,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -351,7 +351,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 48.2,
+      "score": 48.5,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -360,7 +360,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 44.2,
+      "score": 44.9,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -459,46 +459,46 @@
   ],
   "news": [
     {
-      "title": "Microsoft ending support for a beloved best-seller on Oct. 13",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/technology/articles/microsoft-cutting-off-best-seller-231200013.html",
+      "title": "Latest News In Cloud AI - Applied Digital Expands Into Finland With AI Campus Development",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/latest-news-cloud-ai-applied-123732053.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Why Is CEG Stock Surging More Than 4% In Overnight Trading?",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-ceg-stock-surging-more-015412680.html",
+      "title": "Lovelace adds web pioneer R.V. Guha to its Strategic Advisory Board",
+      "publisher": "PR Newswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/lovelace-adds-pioneer-r-v-123000064.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "AI borrowing binge rattles US markets",
-      "publisher": "AFP",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/ai-borrowing-binge-rattles-us-011432895.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Wall Street tests lender appetite with $60 billion Broadcom-Anthropic deal - FT",
-      "publisher": "Investing.com",
-      "link": "https://finance.yahoo.com/technology/ai/articles/wall-street-tests-lender-appetite-214705266.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tech Stars\u2019 Market Cap Approaches $25 Trillion",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/6fc2b173-fedf-3487-898a-821e226ba334/tech-stars%E2%80%99-market-cap.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Update: Nasdaq Composite Reaches New High, 10-Year Yield Tops 5.3%",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-composite-reaches-high-10-203243452.html",
+      "title": "Google Nears $1 Billion Nuclear Deal to Power AI Growth",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/energy/articles/google-nears-1-billion-nuclear-120319876.html",
       "published_at": "Today",
       "sentiment": "bullish"
+    },
+    {
+      "title": "How Much Downside Is Left In Adobe Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-downside-left-adobe-stock-120248471.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Google Faces a $3.2 Billion Ad-Tech Damages Claim That Would Triple at Trial",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/media-advertising/articles/google-faces-3-2-billion-120040024.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Microsoft or Alphabet: If I Could Only Own 1 AI Giant Until Retirement, This Is It",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-alphabet-could-only-own-120024206.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

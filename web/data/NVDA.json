@@ -8,7 +8,7 @@
   "fit_score": 80.0,
   "confidence_grade": "A",
   "confidence_percentage": 80.0,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 225.0,
         "strike_formatted": "225",
         "option_type": "Put",
-        "delta": -0.107,
+        "delta": -0.105,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 220.0,
         "strike_formatted": "220",
         "option_type": "Put",
-        "delta": -0.049,
+        "delta": -0.047,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 255 Call<br> Buy 1x NVDA 20-Nov-2026 260 Call"
+      "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put<br> Buy 1x NVDA 20-Nov-2026 220 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 62.6,
+      "score": 62.9,
       "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -426,44 +426,44 @@
   ],
   "news": [
     {
-      "title": "Why Did NVDA, TSM, WBD Stocks Hit 52-Week Highs Today?",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-did-nvda-tsm-wbd-032828643.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Is Michael Burry Right About MercadoLibre?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-mercadolibre-032502109.html",
+      "title": "New Book Decipher & Deliver Offers an Operator's Transformation Playbook for CEOs, Boards and PE Sponsors",
+      "publisher": "PR Newswire",
+      "link": "https://finance.yahoo.com/small-business/articles/book-decipher-deliver-offers-operators-130000683.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "\u2018One Chip In The World Fueling AI Revolution:\u2019 Dan Ives Supports Nvidia Bull Case As Stock Hits Fresh High",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/one-chip-world-fueling-ai-031441938.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Here's How Many Shares of Apple You'd Need for $10,000 in Yearly Dividends",
+      "title": "The Only 2 Artificial Intelligence (AI) Stocks I'd Buy With $1,000 Today and Never Sell",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/heres-many-shares-apple-youd-030655372.html",
+      "link": "https://finance.yahoo.com/technology/ai/articles/only-2-artificial-intelligence-ai-125300853.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "The Bond Market Just Sent Investors a Warning. Here's the Mistake I'd Avoid Making With the S&P 500.",
+      "title": "ASML vs. Nvidia: Which AI Semiconductor Stock Is a Better Buy in 2026?",
       "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bond-market-just-sent-investors-030525059.html",
+      "link": "https://finance.yahoo.com/technology/ai/articles/asml-vs-nvidia-ai-semiconductor-125201914.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "neutral"
     },
     {
-      "title": "Prediction: Nvidia Will Hit a $10 Trillion Market Cap by the End of 2028",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidia-hit-10-trillion-030500718.html",
+      "title": "Boost Run Signs $525.6 Million AI Compute Agreement; Shares Rise Pre-Bell",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/ai/articles/boost-run-signs-525-6-124632538.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "The Fed\u2019s Rate Hike Isn\u2019t A Headwind For Nvidia For Several Reasons",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/fed-rate-hike-isn-t-124512107.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel\u2019s Biggest Opportunity\u00a0May Be Its\u00a0Comeback",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/intel-biggest-opportunity-may-comeback-124510178.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

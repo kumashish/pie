@@ -8,7 +8,7 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 15.52,
+  "vix": 15.34,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 400.0,
         "strike_formatted": "400",
         "option_type": "Call",
-        "delta": 0.192,
+        "delta": 0.189,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 410.0,
         "strike_formatted": "410",
         "option_type": "Call",
-        "delta": 0.093,
+        "delta": 0.09,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -49,7 +49,7 @@
     "stop_loss_price": 367.22,
     "take_profit_price": 389.94,
     "net_delta": -0.099,
-    "net_theta": 0.029,
+    "net_theta": 0.03,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
@@ -309,7 +309,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 48.3,
+      "score": 48.6,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -318,7 +318,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 46.7,
+      "score": 47.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -426,6 +426,13 @@
   ],
   "news": [
     {
+      "title": "Is UnitedHealth (UNH) a Good or Bad Investment at Today\u2019s Price?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/unitedhealth-unh-good-bad-investment-064727103.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Coca Cola Stock And 2 Defensive Dividend Names Investors Are Watching",
       "publisher": "Simply Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-stock-2-defensive-220832363.html",
@@ -457,13 +464,6 @@
       "title": "Texas AG Paxton Launches Investigation Into UnitedHealth Group",
       "publisher": "The Wall Street Journal",
       "link": "https://finance.yahoo.com/m/ac5c6095-e2cb-3b6c-a827-c9e703fbcb19/texas-ag-paxton-launches.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "UnitedHealth Group Faces Texas AG Investigation Over Coverage Practices",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/healthcare/articles/unitedhealth-group-faces-texas-ag-151301277.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

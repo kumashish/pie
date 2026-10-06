@@ -1,269 +1,269 @@
 {
   "symbol": "KOTAKBANK.NS",
-  "last_price": 427.45,
+  "last_price": 431.9,
   "as_of": "2026-10-06 03:45:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 7.5,
-  "fit_score": 75.0,
+  "trend_score": 7.2,
+  "fit_score": 72.5,
   "confidence_grade": "B",
-  "confidence_percentage": 75.0,
-  "vix": 14.54,
+  "confidence_percentage": 72.5,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (66.8) is overbought (> 65) [Synthetic PCR: 0.56]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 450.0,
-        "strike_formatted": "450",
-        "option_type": "Call",
-        "delta": 0.208,
+        "strike": 410.0,
+        "strike_formatted": "410",
+        "option_type": "Put",
+        "delta": -0.114,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 450 Call"
+        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 410 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 460.0,
-        "strike_formatted": "460",
-        "option_type": "Call",
-        "delta": 0.11,
+        "strike": 400.0,
+        "strike_formatted": "400",
+        "option_type": "Put",
+        "delta": -0.045,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 460 Call"
+        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 400 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 414.63,
-    "take_profit_price": 440.27,
-    "net_delta": -0.098,
-    "net_theta": 0.029,
+    "stop_loss_price": 418.94,
+    "take_profit_price": 444.86,
+    "net_delta": 0.069,
+    "net_theta": 0.018,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 341.96,
-        "pnl": -15.0
-      },
-      {
-        "price": 345.38,
-        "pnl": -15.0
-      },
-      {
-        "price": 348.8,
-        "pnl": -15.0
-      },
-      {
-        "price": 352.22,
-        "pnl": -15.0
-      },
-      {
-        "price": 355.64,
-        "pnl": -15.0
-      },
-      {
-        "price": 359.06,
-        "pnl": -15.0
-      },
-      {
-        "price": 362.48,
-        "pnl": -15.0
-      },
-      {
-        "price": 365.9,
-        "pnl": -15.0
-      },
-      {
-        "price": 369.32,
-        "pnl": -15.0
-      },
-      {
-        "price": 372.74,
-        "pnl": -15.0
-      },
-      {
-        "price": 376.16,
-        "pnl": -15.0
-      },
-      {
-        "price": 379.58,
-        "pnl": -15.0
-      },
-      {
-        "price": 383.0,
-        "pnl": -15.0
-      },
-      {
-        "price": 386.41,
-        "pnl": -15.0
-      },
-      {
-        "price": 389.83,
-        "pnl": -15.0
-      },
-      {
-        "price": 393.25,
-        "pnl": -15.0
-      },
-      {
-        "price": 396.67,
-        "pnl": -15.0
-      },
-      {
-        "price": 400.09,
-        "pnl": -15.0
-      },
-      {
-        "price": 403.51,
-        "pnl": -15.0
-      },
-      {
-        "price": 406.93,
-        "pnl": -15.0
-      },
-      {
-        "price": 410.35,
-        "pnl": -15.0
-      },
-      {
-        "price": 413.77,
-        "pnl": -15.0
-      },
-      {
-        "price": 417.19,
-        "pnl": -15.0
-      },
-      {
-        "price": 420.61,
-        "pnl": -15.0
-      },
-      {
-        "price": 424.03,
-        "pnl": -15.0
-      },
-      {
-        "price": 427.45,
-        "pnl": -15.0
-      },
-      {
-        "price": 430.87,
-        "pnl": -15.0
-      },
-      {
-        "price": 434.29,
-        "pnl": -15.0
-      },
-      {
-        "price": 437.71,
-        "pnl": -15.0
-      },
-      {
-        "price": 441.13,
-        "pnl": -15.0
-      },
-      {
-        "price": 444.55,
-        "pnl": -15.0
-      },
-      {
-        "price": 447.97,
-        "pnl": -15.0
-      },
-      {
-        "price": 451.39,
-        "pnl": -16.39
-      },
-      {
-        "price": 454.81,
-        "pnl": -19.81
-      },
-      {
-        "price": 458.23,
-        "pnl": -23.23
-      },
-      {
-        "price": 461.65,
+        "price": 345.52,
         "pnl": -25.0
       },
       {
-        "price": 465.07,
+        "price": 348.98,
         "pnl": -25.0
       },
       {
-        "price": 468.49,
+        "price": 352.43,
         "pnl": -25.0
       },
       {
-        "price": 471.9,
+        "price": 355.89,
         "pnl": -25.0
       },
       {
-        "price": 475.32,
+        "price": 359.34,
         "pnl": -25.0
       },
       {
-        "price": 478.74,
+        "price": 362.8,
         "pnl": -25.0
       },
       {
-        "price": 482.16,
+        "price": 366.25,
         "pnl": -25.0
       },
       {
-        "price": 485.58,
+        "price": 369.71,
         "pnl": -25.0
       },
       {
-        "price": 489.0,
+        "price": 373.16,
         "pnl": -25.0
       },
       {
-        "price": 492.42,
+        "price": 376.62,
         "pnl": -25.0
       },
       {
-        "price": 495.84,
+        "price": 380.07,
         "pnl": -25.0
       },
       {
-        "price": 499.26,
+        "price": 383.53,
         "pnl": -25.0
       },
       {
-        "price": 502.68,
+        "price": 386.98,
         "pnl": -25.0
       },
       {
-        "price": 506.1,
+        "price": 390.44,
         "pnl": -25.0
       },
       {
-        "price": 509.52,
+        "price": 393.89,
         "pnl": -25.0
       },
       {
-        "price": 512.94,
+        "price": 397.35,
         "pnl": -25.0
+      },
+      {
+        "price": 400.8,
+        "pnl": -24.2
+      },
+      {
+        "price": 404.26,
+        "pnl": -20.74
+      },
+      {
+        "price": 407.71,
+        "pnl": -17.29
+      },
+      {
+        "price": 411.17,
+        "pnl": -15.0
+      },
+      {
+        "price": 414.62,
+        "pnl": -15.0
+      },
+      {
+        "price": 418.08,
+        "pnl": -15.0
+      },
+      {
+        "price": 421.53,
+        "pnl": -15.0
+      },
+      {
+        "price": 424.99,
+        "pnl": -15.0
+      },
+      {
+        "price": 428.44,
+        "pnl": -15.0
+      },
+      {
+        "price": 431.9,
+        "pnl": -15.0
+      },
+      {
+        "price": 435.36,
+        "pnl": -15.0
+      },
+      {
+        "price": 438.81,
+        "pnl": -15.0
+      },
+      {
+        "price": 442.27,
+        "pnl": -15.0
+      },
+      {
+        "price": 445.72,
+        "pnl": -15.0
+      },
+      {
+        "price": 449.18,
+        "pnl": -15.0
+      },
+      {
+        "price": 452.63,
+        "pnl": -15.0
+      },
+      {
+        "price": 456.09,
+        "pnl": -15.0
+      },
+      {
+        "price": 459.54,
+        "pnl": -15.0
+      },
+      {
+        "price": 463.0,
+        "pnl": -15.0
+      },
+      {
+        "price": 466.45,
+        "pnl": -15.0
+      },
+      {
+        "price": 469.91,
+        "pnl": -15.0
+      },
+      {
+        "price": 473.36,
+        "pnl": -15.0
+      },
+      {
+        "price": 476.82,
+        "pnl": -15.0
+      },
+      {
+        "price": 480.27,
+        "pnl": -15.0
+      },
+      {
+        "price": 483.73,
+        "pnl": -15.0
+      },
+      {
+        "price": 487.18,
+        "pnl": -15.0
+      },
+      {
+        "price": 490.64,
+        "pnl": -15.0
+      },
+      {
+        "price": 494.09,
+        "pnl": -15.0
+      },
+      {
+        "price": 497.55,
+        "pnl": -15.0
+      },
+      {
+        "price": 501.0,
+        "pnl": -15.0
+      },
+      {
+        "price": 504.46,
+        "pnl": -15.0
+      },
+      {
+        "price": 507.91,
+        "pnl": -15.0
+      },
+      {
+        "price": 511.37,
+        "pnl": -15.0
+      },
+      {
+        "price": 514.82,
+        "pnl": -15.0
+      },
+      {
+        "price": 518.28,
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.849,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3641,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,56 +273,47 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 100.0,
+      "score": 99.7,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-450CE-B1x-Nov-460CE"
+      "legs_summary": "S1x-Nov-410PE-B1x-Nov-400PE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 84.3,
-      "grade": "A (Optimal)",
+      "score": 76.9,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-400PE-S1x-Nov-450CE-B1x-Nov-460CE"
+      "legs_summary": "S1x-Nov-410PE-S1x-Nov-450CE-B1x-Nov-460CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 67.7,
+      "score": 72.0,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-390PE-S1x-Nov-400PE-S1x-Nov-450CE-B1x-Nov-460CE"
+      "legs_summary": "B1x-Nov-400PE-S1x-Nov-410PE-S1x-Nov-450CE-B1x-Nov-460CE"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 65.4,
+      "score": 61.5,
       "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-405CE-S1x-Nov-440CE"
+      "legs_summary": "B1x-Nov-410CE-S1x-Nov-445CE"
     },
     {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
-      "score": 49.0,
+      "score": 47.6,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-427.5CE"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 47.0,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "S1x-Nov-400PE"
+      "legs_summary": "B1x-Nov-431.9CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -331,28 +322,46 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-400PE"
+      "legs_summary": "S1x-Nov-410PE"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 43.0,
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 43.5,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-425CE-S1x-Nov-440CE"
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-420CE-S1x-Nov-430CE-S1x-Nov-430CE-B1x-Nov-445CE"
+    },
+    {
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 42.2,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "S1x-Nov-410PE"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 40.4,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-420CE-S1x-Nov-430CE-S1x-Nov-430CE-B1x-Nov-455CE"
     }
   ],
   "indicators": {
-    "EMA20": "413.98",
-    "EMA50": "408.25",
-    "EMA100": "402.60",
-    "EMA200": "400.95",
-    "RSI(14)": "64.11",
-    "ATR(14)": "8.98",
-    "ADX(14)": "25.84",
-    "BB(20,2)": "1.06",
-    "P_SHAPE(20)": "36.61"
+    "EMA20": "414.38",
+    "EMA50": "408.41",
+    "EMA100": "402.68",
+    "EMA200": "400.99",
+    "RSI(14)": "66.76",
+    "ATR(14)": "9.48",
+    "ADX(14)": "26.35",
+    "BB(20,2)": "1.17",
+    "P_SHAPE(20)": "36.82"
   },
   "rules": [
     {
@@ -377,13 +386,6 @@
       "explanation": "Condition met"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
@@ -398,11 +400,25 @@
       "explanation": "Condition met"
     },
     {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
     },
     {
       "name": "ADX above 30",
@@ -413,13 +429,6 @@
     },
     {
       "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -442,6 +451,27 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Kotak Mahindra Bank\u2019s stock returns under Vaswani outpace HDFC Bank\u2019s under Jagdishan",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUW0yM2RBTTlJbHJBX3EtU0xDaHpTMWh1dXdYbWJiTkxxczVRcEVGQzJyeFc3SVJWMngzakNZTVN4c0EwUnRKUjlZa3pVMkNkOHktSjhGN0xzbnRmUzVhd3o1VXJDbmpzYVRBODQ0a0RIYThCUlprc1FtVjNwY3JxN2xVam9PTlh2UXBpalZsLTQxMjJHMGozNGNCdnVaTi16bTVmbHctS0U0U2hVZkk2aXVWXy1HVUtSd3dhTzJHeTBvUkFjaUtENWJMS3ZSMlI1ZjRNQmFGanFrWkJkZDJybGVB0gHnAUFVX3lxTE9RYmdrSEFNRU5CYVliMlU2SW8xRTUwMDFUb0YydGxiMlJHc3gwZ3NsSkVCMEk1b0FzQWdHakVHSUtTUnFudjlMc0FqMmlpVDVOQlhpUHZzXzFpNW9zbEtyQUZUT2ZreVQ2Yy00YkxVenFZaVhVMkoxcjRfUExDSTAxYXpfZTc3NTRwcXhJWG5USGVvcy1GSUdlbkNpTG96ODdSOFpGVVZkdjRVdjNmdnRSdTVvMms5QkJ0VnhxcVhwUDJsZjhKbWZVUC1VV0VtMDNidmxEeXdhNk9KR2IyQW0tcFo3MDA3UQ?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Live: Nifty above 22,700 on expiry day; Q2 update cheers Trent, Kotak Bank | Closing Bell",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSFFhWXZXYVRwMWpiakRYZmR4QXEwU1hMRDg0ZXN6Szhhbml1dlM2d01rc2FRdWxhT01DZHFLX2s3Um9yQkFtLW9jZF9SRm9FX0psY3k2Ti1nSjZibXBJdGc0UWZqNk4wSnlrMXNvRlU2SjBQNUNsdVY0UXk0SGJIS2pJOUhzUmY0V2d1WlJjRUNPeHRnUzZJb3lLZ3Q5cUtMX2ZkdjRyeW9tQmpSOEp4a2h5Q0R4VlRLN05jTVBnVlYwUXM3MUZaUUh0Q3ZOd2s0VlFnVk05V2c5MThrLWQ2Z2Yyc1NoNXFoNmNRZdIB8gFBVV95cUxPaEEtbHpZc3NYNWNUMEVNZTZic2tzaXVPa1o1VU5YdGkyQnBJVmxOcEcxVlZCaU9UZTBfcTAydkJEaTRnY0ctamZSRWtWblVhV2pDOThsOXp6RlM4VUZHNTYtam1xSFJZZTNfSnp2X050YzRXdXZHZk1sY0MwQl9rbHgxRlE1b3RGZnJoWEJHcjB0Z19FYWlxbW1BUzJFX3VCTV8yYmNiV21rMVhRckJNdXVhTFR1b0g1ZkMtd1RHWG8tUXVnZzBkVl8xLTVUcGFiRVVWak11MUxJR2lEWXZJa3QyVEdsU0lUcmRpaURfVHFkZw?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Price Action: Kotak Bank, IndusInd Bank rise on better monthly data; Trent surges 11% as Q2 revenue up 23%",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRlZrRWZIbklLS1JSOVN6ei14a1l4ekZIb2VGblNuNzFRQWFwc0VLWXppX1RSVFg2d2J3RklScmVQNHFvRVg0Ukt2RUxYZVBqZWY5QTNjcnVKN3VJUWdIUTFjYWRJWDl3cU9JVjhBdm5WVktWWTV1RnRkX3lRWUxac2t6WU5BemxBaGVfSjY2SVl1aUI1ZlpqTGRyV0MtU0huVmFlQlZyUzhUR0gwd200S0FHYUVseEg5Y1dDc2gzTGdnZEtUdmU3QzhibndVTWNjTGh5LXUzQXBObHpTbkV0RGVrVXJkemw1LWhRRlZha1l2RU00NXRaMU1B0gH_AUFVX3lxTE5SeFNOcllENjRSbTdwVVhiTzF4QW1fY2xqLURpNTJ3anQxREI1WE1KR0E3WU5jcjg0R3lHTWZtOFFnbEVTZ0NKOVAtOEtuRGdiMlMyU1hNYm1jSHBxZHRMZzZObDhTcjE5VFdKRC1leGlyMjBFdkRwTnVCekNzVC1rc0RhLW51c3hFTUhHOXpDNGJjUkpnSTZDX1Q4WUlKaW5iMlZOQVVmMlNYR28xLUhQOGRuU3Y5cVJ2R0hZSHg1bVhORnRDV3d4bnBhZUpzRGw2QTgyS2RfZUxGUVViXzZTYUhMZ2xzSGNkcFZVZk05cTZWVG92dFNZVXhqZVRTZw?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Four factors that likely helped Anup Saha get the top job at Kotak Mahindra Bank",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNT29LUzQ4eHpaTTNTNTlIZFhPaWw3SFZIZTdwbFNBejhTZVF5X3Y5aEY5ZE0xcVdTQTE2V1ZaVkxVdnVDV2Q4OVRyRG13NTNwLTNCTWp3clAtbjlxNGNrY2VXdE9MNGp2UzRLU0NJMGh6elFnbUQwMDVKbmtBYWZvRHVuUXZKTVJWWnc3eUpFb0pmUU5xdGRBd1IyOFBQMHpoYlFyMjNtY293VWdhalZSQTV3ekVxLWNnRXRNNWstMnZlLUs4ekg0Q0FuS1NJa2V3Zk5OOXhPaGgtazDSAeABQVVfeXFMT1Y4S1lNLXZDSGVHb1lvNUFEdV9RLXJKWDFVRXJtT2FidFZCR1JLd1E3M2JZOHY3Rlo3S00tZFdyRUtIM0U2Tmc1U2NJQnJ3d0hUaDBVcnI0NWtVaHhLSjFoTkFqQnptWmVULWcxd0w4S1ZqMEpITndIazN6RE1IRlp1QU5wd3FQOWxPMjFPME13NS0xTXhtNHJ0WkJ3bmJKTzF2Xzg1QVMydVZ4ZFdpU2ZIX1c1Szk5YkNFSXBzZnRrcTZ3eFRfM3ZKVkhuWjREWWpiSWE5ZlVOdUdxM0RpazI?oc=5",
@@ -452,27 +482,6 @@
       "title": "Price Action: Kotak Bank shares up 3% on MD, CEO appointment; IT stocks gain, autos slip",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWHRJMmUxbTVoZlliQVhtOThueXBDZkxid0J3bkJFZmo5R3dZWWFwVzdqc0psaThjMEpqQmRvTzhVbkRsVThjeEV2OHd0WTZLY0dOazlmNEdUSTVka0lmUmJqcmhnQVhoY0RHY0VSdmpHX0ZJRVdLcVVGSnZNbE5GOE9wSGYtenE4Tm9McFNrSlp4LXdLS3VKeVdVNEZ2RW9CckpFSUx4QWY5cG12RDZYSkV4QkxUVTdMdEFkeUloTlRHMEhtZ1FNdkp2M1F3aVJMRHd0LUlMc3ZKaHVPRDVvdjhR0gHnAUFVX3lxTE5OQVJDbDMzVmpueDlpZDdnUHRYajg5NG1RUnhyQUhhckdaLWlDbm1RV3NaVjRPVTBVTVZyeEcxUVpzMmRyeF83TThFMU9sSVo5bFd2R1RCWkw5WDRJT2hEWUE0dXZKbFhwODJBckx3VU9QeFJuaGdEYURfNGxmYjZ5ODdteWQ5UFgwN3RGWFdGUGJNWHhRbFdOYW5mSU44SjBQa2JEWndxQVhPc2ZZVWlhRUlFcFQtMnE2VUMzUlNmaEhXM1d4NDZuMGQzODlDX0tGUFNfVkFNbjQ5WUZxOE9UMjg0eHlRVQ?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Growth, deposits and faster decisions await new CEO Anup Saha at Kotak Bank",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbHBEUE00T2RIQmlPXzZCZ3dVcTYwclpqSzAwNVpyZ1UxZWZyUGxrRDlaMnhNOGlicDJYWWtIbWVzSHppMTJpNVJxel8yekpnTTU3eUFvMkxpRUZPMWE1SnJ4QjNLX2NQOUlld2dwOU5ralJOVC1kaXQ3TlczWGU4V21zaUY2NkJRTzhYcUxZeEFvYjl5N1JkVkY4Y3dGTU5NUDlMeWJBdlFtbFd1cm1JcHNKdURFWmJtUTZkREFhMC1ncXNUSGFJS3FGRlpfMEHSAdQBQVVfeXFMTzk3RXZnWmNubmFRSHl2azhTQmxvNkhpMDBWYmo4ZzU5Unk3UTJVZWJzY2VpanRWZUhrYVlsRDE0TFZJT056TGpfNEVmbVBmYTJGVlUwbU0xd3RzRVRwMVBNb0ZKZG5KTVgtTlcwNGhWMDdxSEplb2REWlpnZ1NuUUNHLWhNakQ2UFMwLWVIYmxUWFZaNlRNU3lYTEY0ZFpMVGxPaHhQSzZnZEttanF3N3ExNmI4amZ0aS1yOU5sX3dLSFF4SzJuRThLajRlMWV0eXFCTHU?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Kotak Mahindra Bank shares: How new MD-CEO Anup Saha's appointment can impact the stock - PL Capital decodes",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQbGJZZ2FvYmlMSUxYRlctRmtjUUQ2Q3lSMk9pOTRpOGhQT24xSzN0R1FyNGRjX3pJRjNoZV9JVlJPUUpzQ18yT1pwTFpkMEItX1ZZdzV3bkdHT1FkLTNybnJreEV2b3VjNFBGSVRTLThub3JkN3prdWl2aGlKYVRFVUFDQ3hsRUktbE1reUFUSGF2U1B1REtDQmVOWGhjLXUxVTV5SV9uNU5BZUpwcVhTR1VUeTctMnBUU3hfYU1nTlU4UGVoNXNadmhvZVhZd0tKNUtTdFllUGt2emVQTDlmSDU1V1gyVU1BUW02d2dlSWhzLVhwSTVZaFdLdG9pbE5IQ2lrStIBigJBVV95cUxOaGpyX2ZlT2xlS0FENWZBMkoxMnh4V3FJVFBLVTFhNkFHV2E2LUYxV1BfMUhUZzlBR0l3a2ZTQ0VJRk1tNHZ0aW9GcmcwTzdjdWZsNFlQdHJrQlVMNURzbHAtR01Da3Bjc1VuOXF0VVpjRFJwZlRkZElRakdxRjQzNE9VbkVyMEppYWwwR0doN093T3QxZTJqUzAweVF5dFFpdWd3SWdwVGd2ekJIQzZ4Uk4yRXM1dHQ1TlFldEZyd1Z1em04YnNmNDh6NDUteGFzbjB2ZDVQeGlQVkhvUDBEN1hCMnppT2NVVDRFWVh6ajA2WWJEV2IxVlFVRFc2MmlNWlNoMURyaFFPZw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Who is Anup Kumar Saha, the banker set to lead Kotak Mahindra Bank next?",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNnhHSUJ4X0JjelVHWVZEV1hFV2hKcW9XdlhFMWl0TGtUYi1Nb0R3eHFOV1ZDbVRBTWFwelUxSkxkcVRVUkpTLVNLclJOSUxld25ieE12WldITkpDcnVnU2hTSjJrd0JyaTBOb2tjZ0MwdXppMDR4YUV0amxVRjh4eDdmVVRWWmc5Qmh5Q29wTjlGT0ZZVy1zU21QOU92bUMtZ2dLUnlBd09PbGE2RlFBWHIwR01uVnZ6dHROdGs3blpOazBHc2fSAcsBQVVfeXFMTTBkOEsxYkFPOFAyWl9zQjFKU1RmU0pHMzcwZWNKblM0b2wzd2kyTzVVcWpVTU0tb2JDcEtUY09zbk9uUlllNnQwbGQ3UHlOWEJvZDFXYjhseVNjTzVjVlBkOFNNMmtUczVveXU2azhJR3FtNGJXRUcyX1VURUF1a0lCUnpYdmd4M2NURWdYV1k3WTJyd3M4d0d1LVNWamotZm5WSnFnUzVfelJGYU9hMnl0VjdDd3V1SVhfUXRQeWE1RVdySk5wbGZjVVk?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }

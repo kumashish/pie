@@ -8,7 +8,7 @@
   "fit_score": 40.0,
   "confidence_grade": "C",
   "confidence_percentage": 40.0,
-  "vix": 15.52,
+  "vix": 15.34,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 95.0,
         "strike_formatted": "95",
         "option_type": "Put",
-        "delta": -0.042,
+        "delta": -0.04,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 100.0,
         "strike_formatted": "100",
         "option_type": "Put",
-        "delta": -0.214,
+        "delta": -0.212,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -47,7 +47,7 @@
         "strike": 110.0,
         "strike_formatted": "110",
         "option_type": "Call",
-        "delta": 0.169,
+        "delta": 0.166,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 115.0,
         "strike_formatted": "115",
         "option_type": "Call",
-        "delta": 0.038,
+        "delta": 0.036,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -72,8 +72,8 @@
     "margin_required": 5.0,
     "stop_loss_price": 100.5,
     "take_profit_price": 106.72,
-    "net_delta": 0.041,
-    "net_theta": 0.022,
+    "net_delta": 0.042,
+    "net_theta": 0.023,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -310,12 +310,12 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x DIS 20-Nov-2026 110 Call<br> Buy 1x DIS 20-Nov-2026 115 Call"
+      "legs_summary": "Sell 1x DIS 20-Nov-2026 100 Put<br> Buy 1x DIS 20-Nov-2026 95 Put"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 63.3,
+      "score": 63.5,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 45.9,
+      "score": 46.5,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -441,44 +441,44 @@
   ],
   "news": [
     {
+      "title": "The Walt Disney Company\u2019s (DIS) Experiences and Streaming Moats Support Earnings Acceleration",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/walt-disney-company-dis-experiences-123843428.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disney Request to Block Early FCC License Review for ABC Stations to Be Heard by Judge",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/media-advertising/articles/disney-request-block-early-fcc-123659751.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disney\u2019s Top Lawyer Is a \u2018Pragmatist\u2019 Facing His Biggest Fight Yet",
+      "publisher": "The Wall Street Journal",
+      "link": "https://finance.yahoo.com/m/345bac92-fcab-34e2-989f-9908b2ea2676/disney%E2%80%99s-top-lawyer-is-a.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Paramount Will Be Risky After Warner Deal; Disney, Netflix Look Like Better Bets",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/f4afebd6-fc4a-33cc-9698-1135416ee8c4/paramount-will-be-risky-after.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Is Disney (DIS) a Good or Bad Investment at Today\u2019s Price?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/disney-dis-good-bad-investment-052004056.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Could Disney End Up Being the Next Nike?",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/markets/stocks/articles/could-disney-end-being-next-221501655.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sector Update: Consumer Stocks Mixed Premarket Monday",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-premarket-132259584.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sector Update: Consumer",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-125919378.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Disney Licenses Major Movie and Show Franchises to Netflix",
-      "publisher": "TIKR",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/disney-licenses-major-movie-show-125738425.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Disney Stock Watch as Planned Television Division Restructuring Threatens Hundreds of Jobs",
-      "publisher": "TIKR",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/disney-stock-watch-planned-television-123748964.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Raymond James Adjusts PT on Walt Disney to $119 From $120, Keeps Outperform Rating",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/raymond-james-adjusts-pt-walt-100239150.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

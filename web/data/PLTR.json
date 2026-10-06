@@ -8,7 +8,7 @@
   "fit_score": 72.5,
   "confidence_grade": "B",
   "confidence_percentage": 72.5,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 200.0,
-        "strike_formatted": "200",
-        "option_type": "Call",
-        "delta": 0.195,
+        "strike": 180.0,
+        "strike_formatted": "180",
+        "option_type": "Put",
+        "delta": -0.138,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x PLTR 20-Nov-2026 200 Call"
+        "summary": "Sell 1x PLTR 20-Nov-2026 180 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 205.0,
-        "strike_formatted": "205",
-        "option_type": "Call",
-        "delta": 0.095,
+        "strike": 175.0,
+        "strike_formatted": "175",
+        "option_type": "Put",
+        "delta": -0.054,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x PLTR 20-Nov-2026 205 Call"
+        "summary": "Buy 1x PLTR 20-Nov-2026 175 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 10.0,
     "stop_loss_price": 183.72,
     "take_profit_price": 195.08,
-    "net_delta": -0.1,
-    "net_theta": 0.015,
+    "net_delta": 0.084,
+    "net_theta": 0.01,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -57,79 +57,79 @@
     "payoff_points": [
       {
         "price": 151.52,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 153.04,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 154.55,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 156.07,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 157.58,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 159.1,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 160.61,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 162.13,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 163.64,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 165.16,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 166.67,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 168.19,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 169.7,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 171.22,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 172.73,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 174.25,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 175.76,
-        "pnl": -10.0
+        "pnl": -14.24
       },
       {
         "price": 177.28,
-        "pnl": -10.0
+        "pnl": -12.72
       },
       {
         "price": 178.79,
-        "pnl": -10.0
+        "pnl": -11.21
       },
       {
         "price": 180.31,
@@ -185,79 +185,79 @@
       },
       {
         "price": 200.01,
-        "pnl": -10.01
+        "pnl": -10.0
       },
       {
         "price": 201.52,
-        "pnl": -11.52
+        "pnl": -10.0
       },
       {
         "price": 203.04,
-        "pnl": -13.04
+        "pnl": -10.0
       },
       {
         "price": 204.55,
-        "pnl": -14.55
+        "pnl": -10.0
       },
       {
         "price": 206.07,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 207.58,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 209.1,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 210.61,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 212.13,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 213.64,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 215.16,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 216.67,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 218.19,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 219.7,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 221.22,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 222.73,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 224.25,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 225.76,
-        "pnl": -15.0
+        "pnl": -10.0
       },
       {
         "price": 227.28,
-        "pnl": -15.0
+        "pnl": -10.0
       }
     ],
     "kelly_sizing": {
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x PLTR 20-Nov-2026 200 Call<br> Buy 1x PLTR 20-Nov-2026 205 Call"
+      "legs_summary": "Sell 1x PLTR 20-Nov-2026 180 Put<br> Buy 1x PLTR 20-Nov-2026 175 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -300,7 +300,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 61.2,
+      "score": 61.5,
       "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -426,44 +426,44 @@
   ],
   "news": [
     {
-      "title": "Dan Ives Launches Another AI Fund Amid Conflict of Interest Questions",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/aba1f91e-cd1b-3862-be9c-12dd0dc1f14b/dan-ives-launches-another-ai.html",
+      "title": "Palantir Just Had Its Best Quarter in a Year, Up 60%",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-just-had-best-quarter-122141400.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Gorilla Slides 5% Despite Northland Buy Rating and $40 Price Target; Palantir Holds Flat, BigBear.ai Holdings Slips",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/gorilla-slides-5-despite-northland-181313333.html",
+      "title": "Surf Air Mobility Signs OperatorOS Contract with Clipper Aviation",
+      "publisher": "Business Wire",
+      "link": "https://finance.yahoo.com/technology/articles/surf-air-mobility-signs-operatoros-103000966.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nvidia, Palantir, and Alphabet Are Sending Shockwaves Through Wall Street With This $17.5 Billion Warning",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-palantir-alphabet-sending-shockwaves-092601938.html",
       "published_at": "Today",
       "sentiment": "bearish"
     },
     {
-      "title": "Palantir Stock Surges 42% in 3 Months: Is PLTR Worth Buying?",
+      "title": "The Overlooked AI Stock Poised to Outperform Nvidia and Palantir",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/overlooked-ai-stock-poised-outperform-075500133.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Palantir Technologies, BP and Quanta",
       "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-surges-42-3-171300350.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-palantir-051300673.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Arista Networks And 2 Top Founder Led Stocks To Watch",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/arista-networks-2-top-founder-160932358.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Will Palantir Technologies (PLTR) Beat Estimates Again in Its Next Earnings Report?",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-technologies-pltr-beat-estimates-151003144.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Zeta Global Sees Partnership, Athena Momentum, RBC Says",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/technology/ai/articles/zeta-global-sees-partnership-athena-145515681.html",
+      "title": "Dan Ives Launches Another AI Fund Amid Conflict of Interest Questions",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/aba1f91e-cd1b-3862-be9c-12dd0dc1f14b/dan-ives-launches-another-ai.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

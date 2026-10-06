@@ -1,53 +1,29 @@
 {
   "symbol": "ICICIBANK.NS",
-  "last_price": 1332.0,
-  "as_of": "2026-10-06 03:38:38",
-  "regime": "neutral",
-  "regime_display": "Neutral",
-  "trend_score": 4.0,
-  "fit_score": 40.0,
+  "last_price": 1342.8,
+  "as_of": "2026-10-06 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.5,
+  "fit_score": 35.0,
   "confidence_grade": "C",
-  "confidence_percentage": 40.0,
-  "vix": 14.78,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "confidence_percentage": 35.0,
+  "vix": 13.61,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (91.8% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (89.8% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1250.0,
-        "strike_formatted": "1250",
-        "option_type": "Put",
-        "delta": -0.093,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x ICICIBANK.NS 24-Nov-2026 1250 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 1300.0,
-        "strike_formatted": "1300",
-        "option_type": "Put",
-        "delta": -0.274,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x ICICIBANK.NS 24-Nov-2026 1300 Put"
-      },
       {
         "action": "Sell",
         "quantity": 1,
         "strike": 1400.0,
         "strike_formatted": "1400",
         "option_type": "Call",
-        "delta": 0.221,
+        "delta": 0.249,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -59,7 +35,7 @@
         "strike": 1450.0,
         "strike_formatted": "1450",
         "option_type": "Call",
-        "delta": 0.078,
+        "delta": 0.084,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -70,224 +46,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1292.04,
-    "take_profit_price": 1371.96,
-    "net_delta": 0.038,
-    "net_theta": 0.225,
+    "stop_loss_price": 1302.52,
+    "take_profit_price": 1383.08,
+    "net_delta": -0.165,
+    "net_theta": 0.141,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1065.6,
-        "pnl": -100.0
-      },
-      {
-        "price": 1076.26,
-        "pnl": -100.0
-      },
-      {
-        "price": 1086.91,
-        "pnl": -100.0
-      },
-      {
-        "price": 1097.57,
-        "pnl": -100.0
-      },
-      {
-        "price": 1108.22,
-        "pnl": -100.0
-      },
-      {
-        "price": 1118.88,
-        "pnl": -100.0
-      },
-      {
-        "price": 1129.54,
-        "pnl": -100.0
-      },
-      {
-        "price": 1140.19,
-        "pnl": -100.0
-      },
-      {
-        "price": 1150.85,
-        "pnl": -100.0
-      },
-      {
-        "price": 1161.5,
-        "pnl": -100.0
-      },
-      {
-        "price": 1172.16,
-        "pnl": -100.0
-      },
-      {
-        "price": 1182.82,
-        "pnl": -100.0
-      },
-      {
-        "price": 1193.47,
-        "pnl": -100.0
-      },
-      {
-        "price": 1204.13,
-        "pnl": -100.0
-      },
-      {
-        "price": 1214.78,
-        "pnl": -100.0
-      },
-      {
-        "price": 1225.44,
-        "pnl": -100.0
-      },
-      {
-        "price": 1236.1,
-        "pnl": -100.0
-      },
-      {
-        "price": 1246.75,
-        "pnl": -100.0
-      },
-      {
-        "price": 1257.41,
-        "pnl": -92.59
-      },
-      {
-        "price": 1268.06,
-        "pnl": -81.94
-      },
-      {
-        "price": 1278.72,
-        "pnl": -71.28
-      },
-      {
-        "price": 1289.38,
-        "pnl": -60.62
-      },
-      {
-        "price": 1300.03,
+        "price": 1074.24,
         "pnl": -50.0
       },
       {
-        "price": 1310.69,
+        "price": 1084.98,
         "pnl": -50.0
       },
       {
-        "price": 1321.34,
+        "price": 1095.72,
         "pnl": -50.0
       },
       {
-        "price": 1332.0,
+        "price": 1106.47,
         "pnl": -50.0
       },
       {
-        "price": 1342.66,
+        "price": 1117.21,
         "pnl": -50.0
       },
       {
-        "price": 1353.31,
+        "price": 1127.95,
         "pnl": -50.0
       },
       {
-        "price": 1363.97,
+        "price": 1138.69,
         "pnl": -50.0
       },
       {
-        "price": 1374.62,
+        "price": 1149.44,
         "pnl": -50.0
       },
       {
-        "price": 1385.28,
+        "price": 1160.18,
         "pnl": -50.0
       },
       {
-        "price": 1395.94,
+        "price": 1170.92,
         "pnl": -50.0
       },
       {
-        "price": 1406.59,
-        "pnl": -56.59
+        "price": 1181.66,
+        "pnl": -50.0
       },
       {
-        "price": 1417.25,
-        "pnl": -67.25
+        "price": 1192.41,
+        "pnl": -50.0
       },
       {
-        "price": 1427.9,
-        "pnl": -77.9
+        "price": 1203.15,
+        "pnl": -50.0
       },
       {
-        "price": 1438.56,
-        "pnl": -88.56
+        "price": 1213.89,
+        "pnl": -50.0
       },
       {
-        "price": 1449.22,
-        "pnl": -99.22
+        "price": 1224.63,
+        "pnl": -50.0
       },
       {
-        "price": 1459.87,
+        "price": 1235.38,
+        "pnl": -50.0
+      },
+      {
+        "price": 1246.12,
+        "pnl": -50.0
+      },
+      {
+        "price": 1256.86,
+        "pnl": -50.0
+      },
+      {
+        "price": 1267.6,
+        "pnl": -50.0
+      },
+      {
+        "price": 1278.35,
+        "pnl": -50.0
+      },
+      {
+        "price": 1289.09,
+        "pnl": -50.0
+      },
+      {
+        "price": 1299.83,
+        "pnl": -50.0
+      },
+      {
+        "price": 1310.57,
+        "pnl": -50.0
+      },
+      {
+        "price": 1321.32,
+        "pnl": -50.0
+      },
+      {
+        "price": 1332.06,
+        "pnl": -50.0
+      },
+      {
+        "price": 1342.8,
+        "pnl": -50.0
+      },
+      {
+        "price": 1353.54,
+        "pnl": -50.0
+      },
+      {
+        "price": 1364.28,
+        "pnl": -50.0
+      },
+      {
+        "price": 1375.03,
+        "pnl": -50.0
+      },
+      {
+        "price": 1385.77,
+        "pnl": -50.0
+      },
+      {
+        "price": 1396.51,
+        "pnl": -50.0
+      },
+      {
+        "price": 1407.25,
+        "pnl": -57.25
+      },
+      {
+        "price": 1418.0,
+        "pnl": -68.0
+      },
+      {
+        "price": 1428.74,
+        "pnl": -78.74
+      },
+      {
+        "price": 1439.48,
+        "pnl": -89.48
+      },
+      {
+        "price": 1450.22,
         "pnl": -100.0
       },
       {
-        "price": 1470.53,
+        "price": 1460.97,
         "pnl": -100.0
       },
       {
-        "price": 1481.18,
+        "price": 1471.71,
         "pnl": -100.0
       },
       {
-        "price": 1491.84,
+        "price": 1482.45,
         "pnl": -100.0
       },
       {
-        "price": 1502.5,
+        "price": 1493.19,
         "pnl": -100.0
       },
       {
-        "price": 1513.15,
+        "price": 1503.94,
         "pnl": -100.0
       },
       {
-        "price": 1523.81,
+        "price": 1514.68,
         "pnl": -100.0
       },
       {
-        "price": 1534.46,
+        "price": 1525.42,
         "pnl": -100.0
       },
       {
-        "price": 1545.12,
+        "price": 1536.16,
         "pnl": -100.0
       },
       {
-        "price": 1555.78,
+        "price": 1546.91,
         "pnl": -100.0
       },
       {
-        "price": 1566.43,
+        "price": 1557.65,
         "pnl": -100.0
       },
       {
-        "price": 1577.09,
+        "price": 1568.39,
         "pnl": -100.0
       },
       {
-        "price": 1587.74,
+        "price": 1579.13,
         "pnl": -100.0
       },
       {
-        "price": 1598.4,
+        "price": 1589.88,
+        "pnl": -100.0
+      },
+      {
+        "price": 1600.62,
+        "pnl": -100.0
+      },
+      {
+        "price": 1611.36,
         "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.821,
+      "win_probability": 0.814,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3389,
+      "half_kelly_fraction": 0.3326,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -295,36 +271,36 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 91.8,
-      "grade": "A (Optimal)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1300PE-S1x-Nov-1400CE-B1x-Nov-1450CE"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 86.3,
+      "score": 89.8,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-1400CE-B1x-Nov-1450CE"
     },
     {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 83.8,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1300PE-S1x-Nov-1400CE-B1x-Nov-1450CE"
+    },
+    {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 57.7,
+      "score": 52.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1300CE-S1x-Nov-1350CE-S1x-Nov-1350CE-B1x-Nov-1350CE"
+      "legs_summary": "B1x-Nov-1300CE-S1x-Nov-1350CE-S1x-Nov-1350CE-B1x-Nov-1400CE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 55.2,
+      "score": 51.4,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -340,34 +316,34 @@
       "legs_summary": "S1x-Nov-1300PE"
     },
     {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 49.1,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1350PE-S1x-Nov-1350CE-B1x-Nov-1400CE"
-    },
-    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 48.3,
+      "score": 47.4,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "B1x-Nov-1300CE-S1x-Nov-1350CE-S1x-Nov-1350CE-B1x-Nov-1400CE"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 42.6,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-1300PE-S1x-Nov-1350PE-S1x-Nov-1350CE-B1x-Nov-1400CE"
     }
   ],
   "indicators": {
-    "EMA20": "1342.68",
-    "EMA50": "1369.50",
-    "EMA100": "1369.90",
-    "EMA200": "1363.43",
-    "RSI(14)": "42.49",
-    "ATR(14)": "19.27",
-    "ADX(14)": "31.03",
-    "BB(20,2)": "0.42",
-    "P_SHAPE(20)": "42.85"
+    "EMA20": "1342.70",
+    "EMA50": "1368.45",
+    "EMA100": "1369.37",
+    "EMA200": "1363.22",
+    "RSI(14)": "46.63",
+    "ATR(14)": "19.01",
+    "ADX(14)": "29.19",
+    "BB(20,2)": "0.54",
+    "P_SHAPE(20)": "42.60"
   },
   "rules": [
     {
@@ -378,14 +354,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ADX above 30",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher lows",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -427,14 +403,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -466,7 +442,14 @@
     {
       "title": "ICICI Bank: The CEO Factory",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeDdzSmtteWd2MTBoQzhVRXdwdUtBaXk3MGoxdjRHWTl5YmtZa0xUQ0w0NTl3VVFfRGtHMExkbWZjNnlkcjU3X1ZaMWdYREVqNzlzTWJqUlRZR2hpYnFqZldlUWhYLU1XQlhpY0xHTzQyZms4NmJOVzE0b2N3TUVLSFdfNVJySUU3czB2TnB30gGTAUFVX3lxTE9XMm9uRWlUT2RTRTl4ZGYwOUNSMHd3MG5iMkRiLUFWQ25Hc09MUENUOTNGYmgtdFJlVGlVcl9wWGpJS1ZxU01UYkJzZ2xGbDBsaFByRENBT280WVFXVElUempidk9MYzIzczM1Wm1yTExlT0dnVnA5eUNaOUx5YTFWb0U2RDZsWnFUYXFGTUNBTTBJdw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeDdzSmtteWd2MTBoQzhVRXdwdUtBaXk3MGoxdjRHWTl5YmtZa0xUQ0w0NTl3VVFfRGtHMExkbWZjNnlkcjU3X1ZaMWdYREVqNzlzTWJqUlRZR2hpYnFqZldlUWhYLU1XQlhpY0xHTzQyZms4NmJOVzE0b2N3TUVLSFdfNVJySUU3czB2TnB3?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ICICI Bank gets show cause notice over Rs 229 cr GST demand",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2NJQ01YN1BvVnM0dnpWSmE0eFRhS2hTTHpVRkI0OEFVZmp3YnFtNUJEOTJBc2pyNlFGOHU4dzhGbWo1N0ZnRmFiVXBfYXhBTEZlUkpLWmZrVXdYM3NuRE8yVmJqNVNFYTBiM0oyUE9HNDNDYmdPdkFWbDNFNmdTX0Zxd2xMX0VWUUhZbTExdmtvOXQ3WHJ0XzR2SjVKdWFRM0YxSm9kT1R3WDBoN1JkUy1DWmszXzBzdnd0YXIwbmsyUdIBxwFBVV95cUxNREF5by1CV2I5ems3Wk1iT2oxdnpNZmI0VFVZRmFSeklQQ3NlRi02M2JRZ1FkV2JpV2VJN3o4OVdlb0dsdHZZcG5oaHFKZVRPenJLQ01ZQXZpSUJEc0lES3BCU2NUNEtOSS02RGd2dXFsdjJIMjhMYzdnN3VRVm9NTWNrZ0hlMlJmVWpwU1N6amhRcm5yR1VJMEQ0UE40el85aFB6cHlwb2hRc1JIVUktNzFnVnFhdnotU1ZZVUtzNTdPRXdLWThB?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
@@ -475,13 +458,6 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT2ZqMFJkU1dwTFpseHBNSkk0aEJQQkN0OVdGY21qUnU5R0lFd2F1aHU5ZGhueGZoZTdqUXB3Q0QwNmhlZ3c5OEdRZmNGcHQycVZWR2NvLVF3N2ZyRnc2YTU0ZXJlS0NJMXhoTXhmZ2hud3M2STV6YTF5Ri0zb2djRFg5d1RRemtYT3RtR3ljZmwzdVhvc1VaZEdadnRfWDgtcW1ocE0xcnVxZ2lHOGZkcTdBOFpkajdSb1RiODVFV2VYTmdHMFBrVVdZNmZTOVZiaXhQadIB2gFBVV95cUxQMUNXZ3dfYVlxV0hTRHlLN3Jfd1ZQSHVMNUdwLWJ5ZENWMzdDNW9TQ0xIdUloUnNNdVpDLUR4UDJRako3SGxPMUZtV3hlZzYwQXBVMVFFdkNJb0hqc3NRN3gzejVnLVNhVHUyVldsRTZQelF3dFhISTlQSW1WYTgxYThzbkRRZ0pTNDRab05va2lvLVU5VENGMjhEZldQREktLWdNbnZkZGZ2RkllNkF6M2pzOTBQZ3lleW0zVk1pWjlKa3V0OTJMdXRMaTBfMHMzRW03SDZmaUxfZw?oc=5",
       "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ICICI Bank gets show cause notice over Rs 229 cr GST demand",
-      "publisher": "bfsi.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2NJQ01YN1BvVnM0dnpWSmE0eFRhS2hTTHpVRkI0OEFVZmp3YnFtNUJEOTJBc2pyNlFGOHU4dzhGbWo1N0ZnRmFiVXBfYXhBTEZlUkpLWmZrVXdYM3NuRE8yVmJqNVNFYTBiM0oyUE9HNDNDYmdPdkFWbDNFNmdTX0Zxd2xMX0VWUUhZbTExdmtvOXQ3WHJ0XzR2SjVKdWFRM0YxSm9kT1R3WDBoN1JkUy1DWmszXzBzdnd0YXIwbmsyUdIBxwFBVV95cUxNREF5by1CV2I5ems3Wk1iT2oxdnpNZmI0VFVZRmFSeklQQ3NlRi02M2JRZ1FkV2JpV2VJN3o4OVdlb0dsdHZZcG5oaHFKZVRPenJLQ01ZQXZpSUJEc0lES3BCU2NUNEtOSS02RGd2dXFsdjJIMjhMYzdnN3VRVm9NTWNrZ0hlMlJmVWpwU1N6amhRcm5yR1VJMEQ0UE40el85aFB6cHlwb2hRc1JIVUktNzFnVnFhdnotU1ZZVUtzNTdPRXdLWThB?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     },
     {

@@ -8,7 +8,7 @@
   "fit_score": 52.5,
   "confidence_grade": "C",
   "confidence_percentage": 52.5,
-  "vix": 15.52,
+  "vix": 15.34,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 1050.0,
         "strike_formatted": "1050",
         "option_type": "Put",
-        "delta": -0.045,
+        "delta": -0.043,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 1100.0,
         "strike_formatted": "1100",
         "option_type": "Put",
-        "delta": -0.199,
+        "delta": -0.196,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -47,7 +47,7 @@
         "strike": 1200.0,
         "strike_formatted": "1200",
         "option_type": "Call",
-        "delta": 0.226,
+        "delta": 0.224,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 1250.0,
         "strike_formatted": "1250",
         "option_type": "Call",
-        "delta": 0.067,
+        "delta": 0.064,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -72,8 +72,8 @@
     "margin_required": 50.0,
     "stop_loss_price": 1108.83,
     "take_profit_price": 1177.41,
-    "net_delta": -0.005,
-    "net_theta": 0.246,
+    "net_delta": -0.007,
+    "net_theta": 0.245,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
@@ -315,7 +315,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 75.0,
+      "score": 75.2,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 52.9,
+      "score": 53.5,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -360,7 +360,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 40.5,
+      "score": 40.8,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -459,44 +459,44 @@
   ],
   "news": [
     {
-      "title": "Eli Lilly Has Been a Growth Beast, but This Is the Riskiest Part About Its Stock",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/healthcare/articles/eli-lilly-growth-beast-riskiest-204001101.html",
+      "title": "Becton Dickinson to Invest $19 Billion in U.S. in Exchange for Tariff Relief",
+      "publisher": "The Wall Street Journal",
+      "link": "https://finance.yahoo.com/economy/policy/articles/becton-dickinson-invest-19-billion-123500259.html",
       "published_at": "Today",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
     },
     {
-      "title": "Nasdaq Hits Fresh Highs While Dow Slips and Small Caps Struggle for Direction",
-      "publisher": "CNW Group",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-hits-fresh-highs-while-182800216.html",
+      "title": "Forbion raises $2.6 billion across two new biotech funds",
+      "publisher": "Quartz",
+      "link": "https://finance.yahoo.com/healthcare/articles/forbion-raises-2-6-billion-122914914.html",
       "published_at": "Today",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
     },
     {
-      "title": "Eli Lilly\u2019s Push Beyond Weight Loss Gets Another Boost \u2013 FDA Grants Cancer Drug Orphan Drug Status",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/healthcare/articles/eli-lilly-push-beyond-weight-175110095.html",
+      "title": "2 Cash-Producing Stocks for Long-Term Investors and 1 Facing Headwinds",
+      "publisher": "StockStory",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/2-cash-producing-stocks-long-113634635.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stocks Are Ignoring the Bond Market Warning at Their Peril",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/1f9f867e-3c13-31e9-bf39-13d25e1b3dd2/stocks-are-ignoring-the-bond.html",
       "published_at": "Today",
       "sentiment": "bearish"
     },
     {
-      "title": "Eli Lilly Scores FDA Win for Pancreatic Cancer Drug. How It\u2019s Moving Beyond GLP-1s.",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/fe08a5bd-46cb-34e9-a624-d6aca6572702/eli-lilly-scores-fda-win-for.html",
+      "title": "Lilly deepens ties with Gate Bioscience in $870m deal expansion",
+      "publisher": "Pharmaceutical Technology",
+      "link": "https://finance.yahoo.com/healthcare/articles/lilly-deepens-ties-gate-bioscience-113336979.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Type 2 Diabetes Market to Grow Significantly During the Forecast Period (2026\u20132036), with Rising Prevalence and Increasing Uptake of Next-Generation Therapies | DelveInsight",
-      "publisher": "GlobeNewswire",
-      "link": "https://finance.yahoo.com/healthcare/articles/type-2-diabetes-market-grow-170000037.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This Small-Cap Stock Announced a Deal With Eli Lilly. Then Its Shares Doubled",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/healthcare/articles/small-cap-stock-announced-deal-160502811.html",
+      "title": "insitro Designed Machine Learning Models for Small Molecule in vivo Pharmacokinetic Behavior Prediction Now Available in Lilly TuneLab",
+      "publisher": "Business Wire",
+      "link": "https://finance.yahoo.com/healthcare/articles/insitro-designed-machine-learning-models-110000805.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

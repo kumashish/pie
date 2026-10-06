@@ -8,7 +8,7 @@
   "fit_score": 35.0,
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
-  "vix": 15.52,
+  "vix": 15.33,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 57.0,
         "strike_formatted": "57",
         "option_type": "Call",
-        "delta": 0.197,
+        "delta": 0.194,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 58.0,
         "strike_formatted": "58",
         "option_type": "Call",
-        "delta": 0.121,
+        "delta": 0.118,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -300,7 +300,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 46.6,
+      "score": 46.8,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -309,7 +309,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 41.2,
+      "score": 41.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -408,6 +408,27 @@
   ],
   "news": [
     {
+      "title": "Autonomous Research Adjusts PT on Bank of America to $57 From $61, Keeps Neutral Rating",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/autonomous-research-adjusts-pt-bank-105439996.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why McCormick Stock Got Slammed Last Month",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-mccormick-stock-got-slammed-104412494.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wealthy boomers doubt their heirs will keep giving as $124 trillion changes hands, BofA finds. The data shows a different reality",
+      "publisher": "Fortune",
+      "link": "https://finance.yahoo.com/small-business/articles/wealthy-boomers-doubt-heirs-keep-070300233.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Bank of America sees Eaton heading for a big surprise",
       "publisher": "TheStreet",
       "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-sees-eaton-heading-030700654.html",
@@ -427,27 +448,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-just-upgraded-draftkings-185324157.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Corteva remains a 'buy' as innovation offsets pressure on legacy products, BofA says",
-      "publisher": "Proactive",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/corteva-remains-buy-innovation-offsets-175200867.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DraftKings upgraded to 'Buy' by BofA on prediction market opportunity",
-      "publisher": "Proactive",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/draftkings-upgraded-buy-bofa-prediction-170000451.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "BofA\u2019s Merrill Agrees to $39 Million Settlement Over Low Interest Rates on Retirement Accounts",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/7958e081-eaee-3f75-9755-ce160f319a0d/bofa%E2%80%99s-merrill-agrees-to-%2439.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

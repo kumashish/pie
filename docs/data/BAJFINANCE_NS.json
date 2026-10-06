@@ -1,6 +1,6 @@
 {
   "symbol": "BAJFINANCE.NS",
-  "last_price": 970.0,
+  "last_price": 963.1,
   "as_of": "2026-10-06 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,256 +8,256 @@
   "fit_score": 32.5,
   "confidence_grade": "C",
   "confidence_percentage": 32.5,
-  "vix": 14.66,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (93.9% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (94.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1020.0,
-        "strike_formatted": "1020",
+        "strike": 1015.0,
+        "strike_formatted": "1015",
         "option_type": "Call",
-        "delta": 0.217,
+        "delta": 0.186,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x BAJFINANCE.NS 24-Nov-2026 1020 Call"
+        "summary": "Sell 1x BAJFINANCE.NS 24-Nov-2026 1015 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1040.0,
-        "strike_formatted": "1040",
+        "strike": 1035.0,
+        "strike_formatted": "1035",
         "option_type": "Call",
-        "delta": 0.126,
+        "delta": 0.099,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x BAJFINANCE.NS 24-Nov-2026 1040 Call"
+        "summary": "Buy 1x BAJFINANCE.NS 24-Nov-2026 1035 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 40.0,
-    "stop_loss_price": 940.9,
-    "take_profit_price": 999.1,
-    "net_delta": -0.091,
-    "net_theta": 0.058,
+    "margin_required": 35.0,
+    "stop_loss_price": 934.21,
+    "take_profit_price": 991.99,
+    "net_delta": -0.087,
+    "net_theta": 0.057,
     "probability_of_profit": 0.0,
     "var_95": 20.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 776.0,
-        "pnl": -40.0
+        "price": 770.48,
+        "pnl": -35.0
       },
       {
-        "price": 783.76,
-        "pnl": -40.0
+        "price": 778.18,
+        "pnl": -35.0
       },
       {
-        "price": 791.52,
-        "pnl": -40.0
+        "price": 785.89,
+        "pnl": -35.0
       },
       {
-        "price": 799.28,
-        "pnl": -40.0
+        "price": 793.59,
+        "pnl": -35.0
       },
       {
-        "price": 807.04,
-        "pnl": -40.0
+        "price": 801.3,
+        "pnl": -35.0
       },
       {
-        "price": 814.8,
-        "pnl": -40.0
+        "price": 809.0,
+        "pnl": -35.0
       },
       {
-        "price": 822.56,
-        "pnl": -40.0
+        "price": 816.71,
+        "pnl": -35.0
       },
       {
-        "price": 830.32,
-        "pnl": -40.0
+        "price": 824.41,
+        "pnl": -35.0
       },
       {
-        "price": 838.08,
-        "pnl": -40.0
+        "price": 832.12,
+        "pnl": -35.0
       },
       {
-        "price": 845.84,
-        "pnl": -40.0
+        "price": 839.82,
+        "pnl": -35.0
       },
       {
-        "price": 853.6,
-        "pnl": -40.0
+        "price": 847.53,
+        "pnl": -35.0
       },
       {
-        "price": 861.36,
-        "pnl": -40.0
+        "price": 855.23,
+        "pnl": -35.0
       },
       {
-        "price": 869.12,
-        "pnl": -40.0
+        "price": 862.94,
+        "pnl": -35.0
       },
       {
-        "price": 876.88,
-        "pnl": -40.0
+        "price": 870.64,
+        "pnl": -35.0
       },
       {
-        "price": 884.64,
-        "pnl": -40.0
+        "price": 878.35,
+        "pnl": -35.0
       },
       {
-        "price": 892.4,
-        "pnl": -40.0
+        "price": 886.05,
+        "pnl": -35.0
       },
       {
-        "price": 900.16,
-        "pnl": -40.0
+        "price": 893.76,
+        "pnl": -35.0
       },
       {
-        "price": 907.92,
-        "pnl": -40.0
+        "price": 901.46,
+        "pnl": -35.0
       },
       {
-        "price": 915.68,
-        "pnl": -40.0
+        "price": 909.17,
+        "pnl": -35.0
       },
       {
-        "price": 923.44,
-        "pnl": -40.0
+        "price": 916.87,
+        "pnl": -35.0
       },
       {
-        "price": 931.2,
-        "pnl": -40.0
+        "price": 924.58,
+        "pnl": -35.0
       },
       {
-        "price": 938.96,
-        "pnl": -40.0
+        "price": 932.28,
+        "pnl": -35.0
       },
       {
-        "price": 946.72,
-        "pnl": -40.0
+        "price": 939.99,
+        "pnl": -35.0
       },
       {
-        "price": 954.48,
-        "pnl": -40.0
+        "price": 947.69,
+        "pnl": -35.0
       },
       {
-        "price": 962.24,
-        "pnl": -40.0
+        "price": 955.4,
+        "pnl": -35.0
       },
       {
-        "price": 970.0,
-        "pnl": -40.0
+        "price": 963.1,
+        "pnl": -35.0
       },
       {
-        "price": 977.76,
-        "pnl": -40.0
+        "price": 970.8,
+        "pnl": -35.0
       },
       {
-        "price": 985.52,
-        "pnl": -40.0
+        "price": 978.51,
+        "pnl": -35.0
       },
       {
-        "price": 993.28,
-        "pnl": -40.0
+        "price": 986.21,
+        "pnl": -35.0
       },
       {
-        "price": 1001.04,
-        "pnl": -40.0
+        "price": 993.92,
+        "pnl": -35.0
       },
       {
-        "price": 1008.8,
-        "pnl": -40.0
+        "price": 1001.62,
+        "pnl": -35.0
       },
       {
-        "price": 1016.56,
-        "pnl": -40.0
+        "price": 1009.33,
+        "pnl": -35.0
       },
       {
-        "price": 1024.32,
-        "pnl": -44.32
+        "price": 1017.03,
+        "pnl": -37.03
       },
       {
-        "price": 1032.08,
-        "pnl": -52.08
+        "price": 1024.74,
+        "pnl": -44.74
       },
       {
-        "price": 1039.84,
-        "pnl": -59.84
+        "price": 1032.44,
+        "pnl": -52.44
       },
       {
-        "price": 1047.6,
-        "pnl": -60.0
+        "price": 1040.15,
+        "pnl": -55.0
       },
       {
-        "price": 1055.36,
-        "pnl": -60.0
+        "price": 1047.85,
+        "pnl": -55.0
       },
       {
-        "price": 1063.12,
-        "pnl": -60.0
+        "price": 1055.56,
+        "pnl": -55.0
       },
       {
-        "price": 1070.88,
-        "pnl": -60.0
+        "price": 1063.26,
+        "pnl": -55.0
       },
       {
-        "price": 1078.64,
-        "pnl": -60.0
+        "price": 1070.97,
+        "pnl": -55.0
       },
       {
-        "price": 1086.4,
-        "pnl": -60.0
+        "price": 1078.67,
+        "pnl": -55.0
       },
       {
-        "price": 1094.16,
-        "pnl": -60.0
+        "price": 1086.38,
+        "pnl": -55.0
       },
       {
-        "price": 1101.92,
-        "pnl": -60.0
+        "price": 1094.08,
+        "pnl": -55.0
       },
       {
-        "price": 1109.68,
-        "pnl": -60.0
+        "price": 1101.79,
+        "pnl": -55.0
       },
       {
-        "price": 1117.44,
-        "pnl": -60.0
+        "price": 1109.49,
+        "pnl": -55.0
       },
       {
-        "price": 1125.2,
-        "pnl": -60.0
+        "price": 1117.2,
+        "pnl": -55.0
       },
       {
-        "price": 1132.96,
-        "pnl": -60.0
+        "price": 1124.9,
+        "pnl": -55.0
       },
       {
-        "price": 1140.72,
-        "pnl": -60.0
+        "price": 1132.61,
+        "pnl": -55.0
       },
       {
-        "price": 1148.48,
-        "pnl": -60.0
+        "price": 1140.31,
+        "pnl": -55.0
       },
       {
-        "price": 1156.24,
-        "pnl": -60.0
+        "price": 1148.02,
+        "pnl": -55.0
       },
       {
-        "price": 1164.0,
-        "pnl": -60.0
+        "price": 1155.72,
+        "pnl": -55.0
       }
     ],
     "kelly_sizing": {
@@ -273,68 +273,68 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 93.9,
+      "score": 94.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1020CE-B1x-Nov-1040CE"
+      "legs_summary": "S1x-Nov-1015CE-B1x-Nov-1035CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 76.2,
+      "score": 75.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-900PE-S1x-Nov-920PE-S1x-Nov-1020CE-B1x-Nov-1040CE"
+      "legs_summary": "B1x-Nov-895PE-S1x-Nov-915PE-S1x-Nov-1015CE-B1x-Nov-1035CE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 50.9,
+      "score": 51.0,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-920PE-S1x-Nov-1020CE-B1x-Nov-1040CE"
-    },
-    {
-      "strategy_type": "tradecraft_put",
-      "strategy_display": "Tradecraft Put",
-      "score": 50.0,
-      "grade": "C (Moderate)",
-      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-920PE"
+      "legs_summary": "S1x-Nov-915PE-S1x-Nov-1015CE-B1x-Nov-1035CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 44.6,
+      "score": 45.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-945CE-S1x-Nov-970CE-S1x-Nov-970CE-B1x-Nov-995CE"
+      "legs_summary": "B1x-Nov-940CE-S1x-Nov-965CE-S1x-Nov-965CE-B1x-Nov-985CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 41.6,
+      "score": 45.1,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-945CE-S1x-Nov-970CE-S1x-Nov-970CE-B1x-Nov-1020CE"
+      "legs_summary": "B1x-Nov-940CE-S1x-Nov-965CE-S1x-Nov-965CE-B1x-Nov-1010CE"
+    },
+    {
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 41.7,
+      "grade": "C (Moderate)",
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-915PE"
     }
   ],
   "indicators": {
-    "EMA20": "995.00",
-    "EMA50": "1019.61",
-    "EMA100": "1012.48",
-    "EMA200": "989.33",
-    "RSI(14)": "39.23",
-    "ATR(14)": "21.17",
-    "ADX(14)": "33.04",
-    "BB(20,2)": "0.28",
-    "P_SHAPE(20)": "55.80"
+    "EMA20": "994.34",
+    "EMA50": "1019.34",
+    "EMA100": "1012.34",
+    "EMA200": "989.27",
+    "RSI(14)": "37.76",
+    "ATR(14)": "21.99",
+    "ADX(14)": "33.64",
+    "BB(20,2)": "0.23",
+    "P_SHAPE(20)": "55.68"
   },
   "rules": [
     {
@@ -431,22 +431,15 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Bajaj Finance Ltd.",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcmNXWFN0UWtIS2c3ckVGTkEtRjlxelFTdjI0UjdwUF9SSDF6cjlrRUgxTTNLRHdYMW0zVzI5czJOb2RDdHB2OXZjX1cxNlQwZUp4YlE3VkVHUzNCUWNibTZ5TGwyS0xGZnVpVGhxVm9jaE9tQTZPMW83Q0o4LUtrVnViTlQtbHc?oc=5",
-      "published_at": "Tue, 29 Oct 2019",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Bajaj Finance Q4 Results 2026 - Find Bajaj Finance Q4 Earnings Result | BAJFINANCE Q4 results",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQS0dLNWFvS0hfaWNfS3FwRThHUVlVS3d4akNneHRDOS1SMnJheG9Bc0NCdTZ3RUtGenVzcjR2NlFtZThmZFNUOFl6V1JIcG5xRzhvV09wUjdRZm9JYkhPdC04NXRHbk9VclJRb01iczR2ODk0YlJQX1ZETl9jbk5Qdk5KTVU?oc=5",
       "published_at": "Fri, 21 Jul 2023",
       "sentiment": "neutral"
     },
     {
       "title": "Bajaj Finance Q1 Results 2026 - Find Bajaj Finance Q1 Earnings Result | BAJFINANCE Q1 results",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQmJOQUVQR3c4Y2xpWjM5NWx5dzB1V0Vta3RUQ012cWxfVDVOYUwtVFQwVnFzQ05HbUwyYkxkSmdEMGhrM19xRkZON1NBRzJBYUJIWGZpazd3SENqSlRINllnNW10MDdfbWZnUUVrdjhPS3o0Z3Zlb0F6eVZXYmVSRWpDVF8?oc=5",
       "published_at": "Mon, 24 Jul 2023",
       "sentiment": "neutral"
@@ -456,6 +449,13 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOHdkSUF5aUQ4TDhxQ3YwWHUxRWR1UHZ6NkNjWGxHamFCRU4tQ0FLVjJ6TVp5WmNJS0RTOWxwVFo2aC0xQk1EZnB2cUhGQzlZT0dpYTBaeVhMM3kwMU9SdmlMMk5ZRXRxamF1VmY2NGh0N1E3WU1xYXdnVGx0TldfSA?oc=5",
       "published_at": "Fri, 15 Nov 2024",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Finance Ltd.",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcmNXWFN0UWtIS2c3ckVGTkEtRjlxelFTdjI0UjdwUF9SSDF6cjlrRUgxTTNLRHdYMW0zVzI5czJOb2RDdHB2OXZjX1cxNlQwZUp4YlE3VkVHUzNCUWNibTZ5TGwyS0xGZnVpVGhxVm9jaE9tQTZPMW83Q0o4LUtrVnViTlQtbHc?oc=5",
+      "published_at": "Tue, 29 Oct 2019",
       "sentiment": "neutral"
     }
   ]

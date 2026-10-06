@@ -8,7 +8,7 @@
   "fit_score": 82.5,
   "confidence_grade": "A",
   "confidence_percentage": 82.5,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 750.0,
-        "strike_formatted": "750",
-        "option_type": "Call",
-        "delta": 0.21,
+        "strike": 670.0,
+        "strike_formatted": "670",
+        "option_type": "Put",
+        "delta": -0.1,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x VOO 20-Nov-2026 750 Call"
+        "summary": "Sell 1x VOO 20-Nov-2026 670 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 755.0,
-        "strike_formatted": "755",
-        "option_type": "Call",
-        "delta": 0.177,
+        "strike": 665.0,
+        "strike_formatted": "665",
+        "option_type": "Put",
+        "delta": -0.078,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x VOO 20-Nov-2026 755 Call"
+        "summary": "Buy 1x VOO 20-Nov-2026 665 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +48,8 @@
     "margin_required": 30.0,
     "stop_loss_price": 690.95,
     "take_profit_price": 733.69,
-    "net_delta": -0.033,
-    "net_theta": 0.015,
+    "net_delta": 0.022,
+    "net_theta": 0.011,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -57,75 +57,75 @@
     "payoff_points": [
       {
         "price": 569.86,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 575.55,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 581.25,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 586.95,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 592.65,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 598.35,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 604.05,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 609.75,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 615.44,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 621.14,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 626.84,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 632.54,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 638.24,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 643.94,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 649.64,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 655.33,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 661.03,
-        "pnl": -30.0
+        "pnl": -35.0
       },
       {
         "price": 666.73,
-        "pnl": -30.0
+        "pnl": -33.27
       },
       {
         "price": 672.43,
@@ -185,79 +185,79 @@
       },
       {
         "price": 752.21,
-        "pnl": -32.21
+        "pnl": -30.0
       },
       {
         "price": 757.91,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 763.61,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 769.31,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 775.0,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 780.7,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 786.4,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 792.1,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 797.8,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 803.5,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 809.2,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 814.89,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 820.59,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 826.29,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 831.99,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 837.69,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 843.39,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 849.09,
-        "pnl": -35.0
+        "pnl": -30.0
       },
       {
         "price": 854.78,
-        "pnl": -35.0
+        "pnl": -30.0
       }
     ],
     "kelly_sizing": {
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x VOO 20-Nov-2026 750 Call<br> Buy 1x VOO 20-Nov-2026 755 Call"
+      "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put<br> Buy 1x VOO 20-Nov-2026 665 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 66.2,
+      "score": 66.4,
       "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 44.6,
+      "score": 44.8,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -435,6 +435,27 @@
   ],
   "news": [
     {
+      "title": "Warren Buffett Says Buy This Vanguard Index Fund -- It Could Turn $400 Per Month Into $820,000",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-says-buy-vanguard-093201381.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is VOO Still the Best S&P 500 ETF You Can Own? Here's How It Stacks Up Against the Alternatives.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/voo-still-best-p-500-090400673.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Is Vanguard's Growth ETF a Buy at a Record High?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/vanguards-growth-etf-buy-record-054701355.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Worst Performing ETFs of 2026 So Far",
       "publisher": "etf.com",
       "link": "https://finance.yahoo.com/markets/options/articles/worst-performing-etfs-2026-far-233935711.html",
@@ -454,27 +475,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/spym-charges-less-voo-same-213324997.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "\u2018I Could Build an Easy Case Against Meta:\u2019 USC Researcher Ranks Which Big Tech Giant Dies First",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/could-build-easy-case-against-145925723.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "If You Invest Just $50 per Month in the Stock Market, Here's What History Says It Could Be Worth in 20 Years",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/invest-just-50-per-month-133000241.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Meet the Low-Cost Vanguard ETF With 32.4% Invested in Nvidia, Broadcom, Micron, AMD, Intel, and Lam Research, While VOO Has Just 14.8%.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/meet-low-cost-vanguard-etf-105000091.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

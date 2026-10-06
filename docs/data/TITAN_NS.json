@@ -1,287 +1,263 @@
 {
   "symbol": "TITAN.NS",
-  "last_price": 4577.8,
+  "last_price": 4550.0,
   "as_of": "2026-10-06 03:45:00",
-  "regime": "neutral",
-  "regime_display": "Neutral",
-  "trend_score": 5.0,
-  "fit_score": 50.0,
-  "confidence_grade": "C",
-  "confidence_percentage": 50.0,
-  "vix": 14.52,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.0,
+  "fit_score": 60.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 60.0,
+  "vix": 13.61,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 4250.0,
-        "strike_formatted": "4250",
-        "option_type": "Put",
-        "delta": -0.061,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4250 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 4350.0,
-        "strike_formatted": "4350",
-        "option_type": "Put",
-        "delta": -0.133,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4350 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 4850.0,
-        "strike_formatted": "4850",
+        "strike": 4800.0,
+        "strike_formatted": "4800",
         "option_type": "Call",
-        "delta": 0.175,
+        "delta": 0.181,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4850 Call"
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4800 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 4950.0,
-        "strike_formatted": "4950",
+        "strike": 4900.0,
+        "strike_formatted": "4900",
         "option_type": "Call",
-        "delta": 0.094,
+        "delta": 0.092,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4950 Call"
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4900 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 200.0,
-    "stop_loss_price": 4440.47,
-    "take_profit_price": 4715.13,
-    "net_delta": -0.009,
-    "net_theta": 0.464,
+    "margin_required": 150.0,
+    "stop_loss_price": 4413.5,
+    "take_profit_price": 4686.5,
+    "net_delta": -0.089,
+    "net_theta": 0.279,
     "probability_of_profit": 0.0,
     "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 3662.24,
-        "pnl": -300.0
+        "price": 3640.0,
+        "pnl": -150.0
       },
       {
-        "price": 3698.86,
-        "pnl": -300.0
+        "price": 3676.4,
+        "pnl": -150.0
       },
       {
-        "price": 3735.48,
-        "pnl": -300.0
+        "price": 3712.8,
+        "pnl": -150.0
       },
       {
-        "price": 3772.11,
-        "pnl": -300.0
+        "price": 3749.2,
+        "pnl": -150.0
       },
       {
-        "price": 3808.73,
-        "pnl": -300.0
+        "price": 3785.6,
+        "pnl": -150.0
       },
       {
-        "price": 3845.35,
-        "pnl": -300.0
+        "price": 3822.0,
+        "pnl": -150.0
       },
       {
-        "price": 3881.97,
-        "pnl": -300.0
+        "price": 3858.4,
+        "pnl": -150.0
       },
       {
-        "price": 3918.6,
-        "pnl": -300.0
+        "price": 3894.8,
+        "pnl": -150.0
       },
       {
-        "price": 3955.22,
-        "pnl": -300.0
+        "price": 3931.2,
+        "pnl": -150.0
       },
       {
-        "price": 3991.84,
-        "pnl": -300.0
+        "price": 3967.6,
+        "pnl": -150.0
       },
       {
-        "price": 4028.46,
-        "pnl": -300.0
+        "price": 4004.0,
+        "pnl": -150.0
       },
       {
-        "price": 4065.09,
-        "pnl": -300.0
+        "price": 4040.4,
+        "pnl": -150.0
       },
       {
-        "price": 4101.71,
-        "pnl": -300.0
+        "price": 4076.8,
+        "pnl": -150.0
       },
       {
-        "price": 4138.33,
-        "pnl": -300.0
+        "price": 4113.2,
+        "pnl": -150.0
       },
       {
-        "price": 4174.95,
-        "pnl": -300.0
+        "price": 4149.6,
+        "pnl": -150.0
       },
       {
-        "price": 4211.58,
-        "pnl": -300.0
+        "price": 4186.0,
+        "pnl": -150.0
       },
       {
-        "price": 4248.2,
-        "pnl": -300.0
+        "price": 4222.4,
+        "pnl": -150.0
       },
       {
-        "price": 4284.82,
-        "pnl": -265.18
+        "price": 4258.8,
+        "pnl": -150.0
       },
       {
-        "price": 4321.44,
-        "pnl": -228.56
+        "price": 4295.2,
+        "pnl": -150.0
       },
       {
-        "price": 4358.07,
-        "pnl": -200.0
+        "price": 4331.6,
+        "pnl": -150.0
       },
       {
-        "price": 4394.69,
-        "pnl": -200.0
+        "price": 4368.0,
+        "pnl": -150.0
       },
       {
-        "price": 4431.31,
-        "pnl": -200.0
+        "price": 4404.4,
+        "pnl": -150.0
       },
       {
-        "price": 4467.93,
-        "pnl": -200.0
+        "price": 4440.8,
+        "pnl": -150.0
       },
       {
-        "price": 4504.56,
-        "pnl": -200.0
+        "price": 4477.2,
+        "pnl": -150.0
       },
       {
-        "price": 4541.18,
-        "pnl": -200.0
+        "price": 4513.6,
+        "pnl": -150.0
       },
       {
-        "price": 4577.8,
-        "pnl": -200.0
+        "price": 4550.0,
+        "pnl": -150.0
       },
       {
-        "price": 4614.42,
-        "pnl": -200.0
+        "price": 4586.4,
+        "pnl": -150.0
       },
       {
-        "price": 4651.04,
-        "pnl": -200.0
+        "price": 4622.8,
+        "pnl": -150.0
       },
       {
-        "price": 4687.67,
-        "pnl": -200.0
+        "price": 4659.2,
+        "pnl": -150.0
       },
       {
-        "price": 4724.29,
-        "pnl": -200.0
+        "price": 4695.6,
+        "pnl": -150.0
       },
       {
-        "price": 4760.91,
-        "pnl": -200.0
+        "price": 4732.0,
+        "pnl": -150.0
       },
       {
-        "price": 4797.53,
-        "pnl": -200.0
+        "price": 4768.4,
+        "pnl": -150.0
       },
       {
-        "price": 4834.16,
-        "pnl": -200.0
+        "price": 4804.8,
+        "pnl": -154.8
       },
       {
-        "price": 4870.78,
-        "pnl": -220.78
+        "price": 4841.2,
+        "pnl": -191.2
       },
       {
-        "price": 4907.4,
-        "pnl": -257.4
+        "price": 4877.6,
+        "pnl": -227.6
       },
       {
-        "price": 4944.02,
-        "pnl": -294.02
+        "price": 4914.0,
+        "pnl": -250.0
       },
       {
-        "price": 4980.65,
-        "pnl": -300.0
+        "price": 4950.4,
+        "pnl": -250.0
       },
       {
-        "price": 5017.27,
-        "pnl": -300.0
+        "price": 4986.8,
+        "pnl": -250.0
       },
       {
-        "price": 5053.89,
-        "pnl": -300.0
+        "price": 5023.2,
+        "pnl": -250.0
       },
       {
-        "price": 5090.51,
-        "pnl": -300.0
+        "price": 5059.6,
+        "pnl": -250.0
       },
       {
-        "price": 5127.14,
-        "pnl": -300.0
+        "price": 5096.0,
+        "pnl": -250.0
       },
       {
-        "price": 5163.76,
-        "pnl": -300.0
+        "price": 5132.4,
+        "pnl": -250.0
       },
       {
-        "price": 5200.38,
-        "pnl": -300.0
+        "price": 5168.8,
+        "pnl": -250.0
       },
       {
-        "price": 5237.0,
-        "pnl": -300.0
+        "price": 5205.2,
+        "pnl": -250.0
       },
       {
-        "price": 5273.63,
-        "pnl": -300.0
+        "price": 5241.6,
+        "pnl": -250.0
       },
       {
-        "price": 5310.25,
-        "pnl": -300.0
+        "price": 5278.0,
+        "pnl": -250.0
       },
       {
-        "price": 5346.87,
-        "pnl": -300.0
+        "price": 5314.4,
+        "pnl": -250.0
       },
       {
-        "price": 5383.49,
-        "pnl": -300.0
+        "price": 5350.8,
+        "pnl": -250.0
       },
       {
-        "price": 5420.11,
-        "pnl": -300.0
+        "price": 5387.2,
+        "pnl": -250.0
       },
       {
-        "price": 5456.74,
-        "pnl": -300.0
+        "price": 5423.6,
+        "pnl": -250.0
       },
       {
-        "price": 5493.36,
-        "pnl": -300.0
+        "price": 5460.0,
+        "pnl": -250.0
       }
     ],
     "kelly_sizing": {
@@ -295,79 +271,88 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 100.0,
-      "grade": "A (Optimal)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4250PE-S1x-Nov-4350PE-S1x-Nov-4850CE-B1x-Nov-4950CE"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 82.9,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-4850CE-B1x-Nov-4950CE"
+      "legs_summary": "S1x-Nov-4800CE-B1x-Nov-4900CE"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 74.0,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4600CE-S1x-Nov-4600CE-B1x-Nov-4700CE"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 65.0,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-4350PE-S1x-Nov-4600PE-S1x-Nov-4600CE-B1x-Nov-4800CE"
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 93.1,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-4200PE-S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 63.2,
+      "score": 67.3,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-4350PE-S1x-Nov-4850CE-B1x-Nov-4950CE"
+      "legs_summary": "S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 60.7,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4550CE-S1x-Nov-4550CE-B1x-Nov-4650CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 58.5,
+      "score": 52.1,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4600CE-S1x-Nov-4600CE-B1x-Nov-4800CE"
+      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4550CE-S1x-Nov-4550CE-B1x-Nov-4800CE"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 50.4,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-4300PE-S1x-Nov-4550PE-S1x-Nov-4550CE-B1x-Nov-4800CE"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 40.7,
+      "score": 46.9,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-4350CE-S1x-Nov-4700CE"
+      "legs_summary": "B1x-Nov-4300CE-S1x-Nov-4650CE"
+    },
+    {
+      "strategy_type": "naked_put",
+      "strategy_display": "Naked Put",
+      "score": 45.8,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+      "legs_summary": "S1x-Nov-4300PE"
     }
   ],
   "indicators": {
-    "EMA20": "4745.62",
-    "EMA50": "4805.81",
-    "EMA100": "4694.91",
-    "EMA200": "4456.94",
-    "RSI(14)": "32.74",
-    "ATR(14)": "77.40",
-    "ADX(14)": "36.12",
-    "BB(20,2)": "0.20",
-    "P_SHAPE(20)": "60.17"
+    "EMA20": "4742.97",
+    "EMA50": "4804.72",
+    "EMA100": "4694.36",
+    "EMA200": "4456.66",
+    "RSI(14)": "31.39",
+    "ATR(14)": "80.03",
+    "ADX(14)": "36.37",
+    "BB(20,2)": "0.16",
+    "P_SHAPE(20)": "60.06"
   },
   "rules": [
     {
@@ -386,6 +371,20 @@
     },
     {
       "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -420,21 +419,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -458,28 +443,14 @@
     },
     {
       "title": "Titan, Kalyan Jewellers, PC Jeweller shares shine - Why jewellery stocks are glittering? Expert decodes rally",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPbjY4X19vbXZPcnNGSmxqd1AzMDJmM2kzOGhIcDFESmJ5YkZycmFWakZZd2FvRXZOcnhybDMwcFdJRGdpeExISlNQXzlncFlWX3BLMTVJVk9kVTEzdnZRUG9xTURRZXcyZXNldTFrRUhaTl9lSk45QjFaUTZqaUZpWFNXQmNrdHM1UmNJNzNkWHdtRmg0cHdfMVF6ejRiV01SZ3ZmUmxPLWVTRlhXZGlnSGc4eTlDUWVhWXpnT0gxOFhvYlVUeUlzcHZUbFJEa2FqY3VTcElJUmNSdGRrX2FUNFk3NFRROVlBLVNmSlZPQ2ZjY20taVRBOHZHSlhVVmoySmlCQtIBigJBVV95cUxOaWlkT2VvVHl6NjdKdjhobmNSSzhCOGhCWWcyRlN4bVVOZzRfUXhaa2dLb09fdXl6VXl1cEl1N3hCTmJLZFZ5MHRPRk5wX2h3NUJCRTRxMTNIWXQybFdDdGNrbDdjWWo5QVFuUFBCa2RNUHhwR2wweUg4eWpFcG1tYzBWalFEWEFueGxQWnZ2b2ZweDEteWtEMUFGOFZiUGl1bFNpV1R5TFZfWDJhZ2pVOExDdURPZndaRVJ4SzYtcnoyYk1CZk1LdTNKS1d4b3BTVlFtVEo2TmFZejI5SUlFbUdIRWRFbnF5MVJxQnlOTmowX25LX1drZjUxMGxuN0Nud2VRM2RVbE9vQQ?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "From TCS, Titan to Tata Tele - Tata Group stocks fall as Trusts plans move to prevent holdco listing | Details here",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOTTcwS2tEak9BRk9pYmJISmM3bGp6eHlrQmtxdTNrYTRmTmdfd01FOTF4S2NvcmxxWXVYaFRKVmNkbkxKOGRZUFJfWi1qNkh4Mm4yQ3RkamY2U2RhcTk3NktwZDlGQXdtaUJrcmYyQmtKM2dwel81Tl95V3FtUUE5SXZwQTJKTjZ5eEU3SlJyUkNialljMFBzeDZHSWVhQ2FBY0l6UU40SXRxTHphUjJHeldadmxyUGY4Q1lmTzh0dE1WbHpYZjV5a1pJbXA0NHVQNnFSdWgyWGpHQlg2bWRITGpaSzdhNG5LdHQxd2JhMEUxY1BsWVF5MlBLZElCQU1GTkRJdjNOcXZfLTlx0gGSAkFVX3lxTE9HdjhUb1JuMEkxVGdub0FGM0ZJUm9NdGEza0dpTnppLXM0QzVhdmtiWU5aVVNCR2E1V0pJT0VyeV9ScDZidVBEV1BpVUotcndxQkFnSXZfbjUxR3VzMl9FMFJ5bzZiU19LMXRpQ0tWRlFtc21xaUZWb2JKYlM4NGt6a3l4Yldzc3VsSG9ualBXSFhpTld2VjhkaklRRnNWTUVWd1d4c1d0MnZnRVNTUGZlcTl4d2xlc2J0N0xGWFJmSmV5UnIxQ1lYNWxOcWhrRDQ2bEZGLVMxdjRiSHpTQXk0Z1drWE5BeXlxazhlVnlIaHA3cTk2UkNqQ2tGWmVaY1g1eEIwZ242WjEzOFVCemYyMlE?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "This single stock made Rekha Jhunjhunwala richer by over \u20b91,000 crore in Q2FY27 so far - Should you buy it now?",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNU3JsYUF5bVpwbUtpTXhDbG1sWk10Q0JHTGxkeEl1bWdmRG4wWTB3RXl5dFJvVnlJbkNBa0h6b1drX0E2RzZ6dGNiWjkzMVZ2Y3JUSXA0VFB1cjVNQmZCbFRnenVqWC1BcGs0MzRkNlBVemVENjdObEdHbTZZclJRaFk3NzlORmExSnBKMlVuWDVjNGFqZkI4aVdscmgwNThhVXlzVDhiYWo1Y0p4OFYyRUhUSkZRRWdXekxsZEU1X1JHVlpNMFgxdHRhOFQ3UktXeUFVc0RTcHY3SXdZNXdKZTU2Q1g2eDM3eG1qY1JqUXFCcWNpaVY2V2JBNlotU1MwdWJ0VEkzck7SAY4CQVVfeXFMTW5jMWRrX3lxQU5FNEcyVFpFb2FHLWUyLWZqVVp3a1hUN216anRtN3MyZmVJR2p1cW41bkt4UGI4b21BUUx6YWpLeTlYVXB3LVJGVjFzOEZ3OThmREVZS1NMeGgzSTloYTRWY0NpN2doenk5cVhHTnNhWTBLU0pNZGxLdjBWSUZSaXBuRU5GVV9Qc0s2bFcyOEhMRnlKM3B4OUNLOFROOC1wWGhXQk9VRmJJREExSjkwTF9qdk5XY2JUaWs5NlFRMG01Z1RDbm94SHVUajBVVmJKM05KdWVjVEp3RGxPYnFFeTQyc1lXcjg1OE56LTNmN2lkS0hCaTFzaE9IRzdqTGVYM3FsbXJ3?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "bullish"
-    },
-    {
       "title": "How homegrown D2C challengers are forcing L\u2019Or\u00e9al to rewrite its India playbook",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOT0dwQUQ2OUItUkNQVmUtUjlLTjVrQm9SeWZ4VWpaT2s2UE42cEFaNGZWNEZPeXkxY1NVbk16R0dKeWpqWDNyS185c2xaalZmcVRrM1M4dGpXMElqM1R3U2dZTkZyb3I4d25wdEhkMHE1dUNDZ0VTel9TOWxyYktpc1hXLVR3QXV0WV9YUE93bjdGLXFpZDZSeWVPRUNYbzU4c1QyVm1PWE1SRHVsMFo0UkF30gG3AUFVX3lxTE5aQlZMb1FQT2RQeHlaSDlHc0pqM3pqajNoN0Yta2FiMDl6YVpGaXFfZFNUSzJQNWdxYzM4Q1M4b3BfaEFEMExyQnlMbmJueDNON0dlRzBsdjh1V0xBbmsxWklyMUpoRUxsQjhjUS1TSDk4NnBmNG5YbzhxOEFURjhJZnBYTTJISWJ4dkFscXlLWUcxdm1vZW9wR1NqUEkzWWhXN1JsOTRZNTJ6UFR1bGZnWW50MEp2Zw?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
@@ -490,6 +461,20 @@
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX3dwVlFhM3pQYXhtcEVLeTBNQ0V3MHBPRHJIM3d5bW5hVDRZYVhkV2t0b29GdklvekJhaHF6cmM2T3pNTGNEbVRfNWVYWXpxaXdXVUJCR2tORXdoX3FUSTNXX2huc095d2NfbU5qMkRPMjdNSDN2OUFLTHJNOXZxNUNXUmJsLVB4Zno1aTVjOA?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
+    },
+    {
+      "title": "Lamar Jackson injury: What happened to the Ravens star\u2019s ankle after early exit vs Titans?",
+      "publisher": "livemint.com",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOWW5KS3J6Z1FnOGg5eVhjY0xuVWVQOTZoTzVtTjVpdmpnQlphc3YzLS01MmJOOEo5ZzNTWnAwb2Q1Y3Rwbk5PbXBhdFRITFRnT2xnQnozOUFlandKWGVwcVR1RFppSWx3UW5sZHJadzVPZlZaenJhbDNBWlkxZmwzbUVpeW5LTHNfMW5WU2hxb3oxMzhHcXpNZG1xODVsV3A0Y0R6U2FiZWxwT05WdmJ4amxjYWZYVm9IMzAtV3dBSm0wQ0ZVbVJqaGxvVmdsUnZjMWFsM2Z4V0FhT1hSTUHSAeMBQVVfeXFMT2l3S1RPNlBqWWEyOUZtcklhLWthWlp2d0dDeGZTN3pSMUZPcHFRbEFpaWFySS1BYmlnTGcweWtaa2E4NnFxZFVNTXRUM2hfMWtaYkNKa0FYWUVXMGhDeE9GeVFzaURSck0xZEhYa1FSaUtOell5czZ2SUc1c2VGQUl3NFdXRC16U0lHWDlBUE1PemVIbHdreEU1UXI0TWIwczk0YU1uMXBJdzl1V2RDa284NWwyZ2ZTYVk5OUdWOU1RVmhhaTJOc01PaDdKTlpwUVY2RzF3SXlGZ3JKanlkWUlDVHM?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Lhuan-dre Pretorius breaks Chris Gayles record for highest individual T20 score with unbeaten 188",
+      "publisher": "livemint.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSmRCTXFVYjU1RS1wZVJfS2F3dWxrYlZiZ0JocWNRclZJdEY0MlBwU1R1NmdwOVBQYlJTWWNCUkticXY2ajd2azBRZGtxeGlhVi02dHlWeUtGQVE0TFZyeTIzWkEzbEtFdXlrQS1UVHkzOWNTT2QxVGRQb2RFZGtRZXBRVzdlanBQN1BPYW9oNjBEb2ZqbjVjYmcxelB1c0ZqbUxrQ0Vsd3RwMTNSVE9YaXhvLWlBcXNEZWd4UjdLTDM1NTNsXzRKZkFrQzQxLXJiUVhCbzdaUWNQNHMxdXQwUVd30gHnAUFVX3lxTE1RY0s2WkpyVlc0TlkzWlZXcWZzeFpUelFNRUs0OXBFRklDdF9NSVNNTHN5WnZoUGUteVRxcl9FLWZQRm5QWXdWT0tnOGhnZTVGQnNLcmFpTWliSDFKeERCTjFEMm5ZWDlKR3JtRDBUVUhINHlVeWx5c3BrTVczZHFMeTlwNDM0dGhoSUlVWVZzb1FGUXY3NTM4YmtHMDN3UFQxUG1DVEI1Vmh3Wi1SRDZIZWQ2T0ZHSE1KdHpZYnVURTNCWUFBdjFZRFRJVG44RDE2MWhxT3I0bklYSVc0SGFjaXhCRmZlbw?oc=5",
+      "published_at": "Sat, 03 Oct 2026",
+      "sentiment": "bullish"
     }
   ]
 }

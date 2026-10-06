@@ -8,7 +8,7 @@
   "fit_score": 52.5,
   "confidence_grade": "C",
   "confidence_percentage": 52.5,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 230.0,
         "strike_formatted": "230",
         "option_type": "Put",
-        "delta": -0.038,
+        "delta": -0.036,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 235.0,
         "strike_formatted": "235",
         "option_type": "Put",
-        "delta": -0.084,
+        "delta": -0.081,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -47,7 +47,7 @@
         "strike": 265.0,
         "strike_formatted": "265",
         "option_type": "Call",
-        "delta": 0.204,
+        "delta": 0.201,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 270.0,
         "strike_formatted": "270",
         "option_type": "Call",
-        "delta": 0.121,
+        "delta": 0.118,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -72,8 +72,8 @@
     "margin_required": 10.0,
     "stop_loss_price": 243.86,
     "take_profit_price": 258.94,
-    "net_delta": -0.037,
-    "net_theta": 0.025,
+    "net_delta": -0.038,
+    "net_theta": 0.024,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -306,7 +306,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 89.7,
+      "score": 89.9,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 52.9,
+      "score": 53.6,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -360,7 +360,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 40.6,
+      "score": 40.9,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -459,46 +459,46 @@
   ],
   "news": [
     {
-      "title": "NYSE\u2019s Parent Just Filed to Tokenize 63 US Stocks on a Crypto-Native Exchange \u2014 And the SEC Already Gave It Permission",
-      "publisher": "Forkast News",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/nyse-parent-just-filed-tokenize-025259404.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why Is CEG Stock Surging More Than 4% In Overnight Trading?",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-ceg-stock-surging-more-015412680.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "AI borrowing binge rattles US markets",
-      "publisher": "AFP",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/ai-borrowing-binge-rattles-us-011432895.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Amazon, LA Olympics Organizer Take Over 39-Acre Site Formerly Home To Forever 21",
-      "publisher": "Bisnow",
-      "link": "https://finance.yahoo.com/real-estate/articles/amazon-la-olympics-organizer-over-214226380.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Tech Stars\u2019 Market Cap Approaches $25 Trillion",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/6fc2b173-fedf-3487-898a-821e226ba334/tech-stars%E2%80%99-market-cap.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "This \"Magnificent Seven\" Stock Could Be Overdue for a Big Rally",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/magnificent-seven-stock-could-overdue-211502610.html",
+      "title": "Stocks Rise Pre-Bell After Nasdaq Reaches New Record High",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-rise-pre-bell-nasdaq-115604113.html",
       "published_at": "Today",
       "sentiment": "bullish"
+    },
+    {
+      "title": "A $1 Billion Reason Why Alphabet Stock is in Focus",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/technology/articles/1-billion-reason-why-alphabet-114549733.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "\u2018Too much risk:\u2019 Pimco\u2019s Bill Gross says you shouldn\u2019t own bonds now \u2014 aside from one key Treasury play",
+      "publisher": "Moneywise",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/too-much-risk-pimco-bill-114500754.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Constellation Energy Stock Jumps. What a Google Nuclear Deal Will Do for It.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/9d58fbaf-d0ab-35eb-867d-fd10533b1dda/constellation-energy-stock.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "MercadoLibre Fell 15% Over 12 Months: 50% Gains Coming in The Next 12 Says Wall Street Pro",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-fell-15-over-12-111559346.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Amazon Just Showed Its Cards And Pushed In All Its Chips",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-just-showed-cards-pushed-111523774.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

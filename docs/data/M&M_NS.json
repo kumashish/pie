@@ -1,19 +1,19 @@
 {
   "symbol": "M&M.NS",
-  "last_price": 2846.4,
+  "last_price": 2855.0,
   "as_of": "2026-10-06 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 14.58,
+  "confidence_percentage": 25.0,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (22.1) is oversold (< 35) [Synthetic PCR: 1.44]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (22.7) is oversold (< 35) [Synthetic PCR: 1.42]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 3000.0,
         "strike_formatted": "3000",
         "option_type": "Call",
-        "delta": 0.203,
+        "delta": 0.202,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -35,7 +35,7 @@
         "strike": 3050.0,
         "strike_formatted": "3050",
         "option_type": "Call",
-        "delta": 0.127,
+        "delta": 0.122,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 100.0,
-    "stop_loss_price": 2761.01,
-    "take_profit_price": 2931.79,
-    "net_delta": -0.076,
-    "net_theta": 0.144,
+    "stop_loss_price": 2769.35,
+    "take_profit_price": 2940.65,
+    "net_delta": -0.08,
+    "net_theta": 0.146,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 2277.12,
+        "price": 2284.0,
         "pnl": -100.0
       },
       {
-        "price": 2299.89,
+        "price": 2306.84,
         "pnl": -100.0
       },
       {
-        "price": 2322.66,
+        "price": 2329.68,
         "pnl": -100.0
       },
       {
-        "price": 2345.43,
+        "price": 2352.52,
         "pnl": -100.0
       },
       {
-        "price": 2368.2,
+        "price": 2375.36,
         "pnl": -100.0
       },
       {
-        "price": 2390.98,
+        "price": 2398.2,
         "pnl": -100.0
       },
       {
-        "price": 2413.75,
+        "price": 2421.04,
         "pnl": -100.0
       },
       {
-        "price": 2436.52,
+        "price": 2443.88,
         "pnl": -100.0
       },
       {
-        "price": 2459.29,
+        "price": 2466.72,
         "pnl": -100.0
       },
       {
-        "price": 2482.06,
+        "price": 2489.56,
         "pnl": -100.0
       },
       {
-        "price": 2504.83,
+        "price": 2512.4,
         "pnl": -100.0
       },
       {
-        "price": 2527.6,
+        "price": 2535.24,
         "pnl": -100.0
       },
       {
-        "price": 2550.37,
+        "price": 2558.08,
         "pnl": -100.0
       },
       {
-        "price": 2573.15,
+        "price": 2580.92,
         "pnl": -100.0
       },
       {
-        "price": 2595.92,
+        "price": 2603.76,
         "pnl": -100.0
       },
       {
-        "price": 2618.69,
+        "price": 2626.6,
         "pnl": -100.0
       },
       {
-        "price": 2641.46,
+        "price": 2649.44,
         "pnl": -100.0
       },
       {
-        "price": 2664.23,
+        "price": 2672.28,
         "pnl": -100.0
       },
       {
-        "price": 2687.0,
+        "price": 2695.12,
         "pnl": -100.0
       },
       {
-        "price": 2709.77,
+        "price": 2717.96,
         "pnl": -100.0
       },
       {
-        "price": 2732.54,
+        "price": 2740.8,
         "pnl": -100.0
       },
       {
-        "price": 2755.32,
+        "price": 2763.64,
         "pnl": -100.0
       },
       {
-        "price": 2778.09,
+        "price": 2786.48,
         "pnl": -100.0
       },
       {
-        "price": 2800.86,
+        "price": 2809.32,
         "pnl": -100.0
       },
       {
-        "price": 2823.63,
+        "price": 2832.16,
         "pnl": -100.0
       },
       {
-        "price": 2846.4,
+        "price": 2855.0,
         "pnl": -100.0
       },
       {
-        "price": 2869.17,
+        "price": 2877.84,
         "pnl": -100.0
       },
       {
-        "price": 2891.94,
+        "price": 2900.68,
         "pnl": -100.0
       },
       {
-        "price": 2914.71,
+        "price": 2923.52,
         "pnl": -100.0
       },
       {
-        "price": 2937.48,
+        "price": 2946.36,
         "pnl": -100.0
       },
       {
-        "price": 2960.26,
+        "price": 2969.2,
         "pnl": -100.0
       },
       {
-        "price": 2983.03,
+        "price": 2992.04,
         "pnl": -100.0
       },
       {
-        "price": 3005.8,
-        "pnl": -105.8
+        "price": 3014.88,
+        "pnl": -114.88
       },
       {
-        "price": 3028.57,
-        "pnl": -128.57
+        "price": 3037.72,
+        "pnl": -137.72
       },
       {
-        "price": 3051.34,
+        "price": 3060.56,
         "pnl": -150.0
       },
       {
-        "price": 3074.11,
+        "price": 3083.4,
         "pnl": -150.0
       },
       {
-        "price": 3096.88,
+        "price": 3106.24,
         "pnl": -150.0
       },
       {
-        "price": 3119.65,
+        "price": 3129.08,
         "pnl": -150.0
       },
       {
-        "price": 3142.43,
+        "price": 3151.92,
         "pnl": -150.0
       },
       {
-        "price": 3165.2,
+        "price": 3174.76,
         "pnl": -150.0
       },
       {
-        "price": 3187.97,
+        "price": 3197.6,
         "pnl": -150.0
       },
       {
-        "price": 3210.74,
+        "price": 3220.44,
         "pnl": -150.0
       },
       {
-        "price": 3233.51,
+        "price": 3243.28,
         "pnl": -150.0
       },
       {
-        "price": 3256.28,
+        "price": 3266.12,
         "pnl": -150.0
       },
       {
-        "price": 3279.05,
+        "price": 3288.96,
         "pnl": -150.0
       },
       {
-        "price": 3301.82,
+        "price": 3311.8,
         "pnl": -150.0
       },
       {
-        "price": 3324.6,
+        "price": 3334.64,
         "pnl": -150.0
       },
       {
-        "price": 3347.37,
+        "price": 3357.48,
         "pnl": -150.0
       },
       {
-        "price": 3370.14,
+        "price": 3380.32,
         "pnl": -150.0
       },
       {
-        "price": 3392.91,
+        "price": 3403.16,
         "pnl": -150.0
       },
       {
-        "price": 3415.68,
+        "price": 3426.0,
         "pnl": -150.0
       }
     ],
@@ -280,27 +280,36 @@
       "legs_summary": "S1x-Nov-3000CE-B1x-Nov-3050CE"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 57.2,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-2846.4PE"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 49.1,
-      "grade": "C (Moderate)",
+      "score": 62.4,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-2650PE-S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
     },
     {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 53.1,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-2855PE"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 40.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
+    },
+    {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 42.4,
+      "score": 40.6,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -308,15 +317,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "2989.36",
-    "EMA50": "3107.34",
-    "EMA100": "3165.13",
-    "EMA200": "3214.94",
-    "RSI(14)": "22.11",
-    "ATR(14)": "52.66",
-    "ADX(14)": "61.21",
-    "BB(20,2)": "0.11",
-    "P_SHAPE(20)": "58.81"
+    "EMA20": "2990.18",
+    "EMA50": "3107.68",
+    "EMA100": "3165.31",
+    "EMA200": "3215.03",
+    "RSI(14)": "22.65",
+    "ATR(14)": "53.71",
+    "ADX(14)": "60.86",
+    "BB(20,2)": "0.13",
+    "P_SHAPE(20)": "58.87"
   },
   "rules": [
     {
@@ -328,6 +337,13 @@
     },
     {
       "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -383,13 +399,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -420,15 +429,8 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Nomura retains 'Buy' on M&M, Hyundai India, Ather, TVS, Sona BLW as auto demand stays strong",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVjhFc1k5dzdCdHg3aFdhSTlKekdaUUVDdHJ6VHY3eTZhcE9icGlKVnZtVjZTcjRjaV8zOUlnNWJZTEFxYTRBaWNnUk81bmJFbEhZV2RtYVFEcnFZcGg3OEVJOVU5SXozaURMYlh2aGZtNzRDcW53RDdQRG5mN1h1WWJUQldxV0xiampQZFVoM2lRR0x3VHpsclNFaFQ0V05PaC1MSktfSjhySkc1c2tyZ3NHVU5xT0h4SzZEVkJnQUZNMU9FaV9EeUZlZnJINVVrU0FkczE2U0hBVUZfYTMwbDlFVTLSAeoBQVVfeXFMT1F2M1NoUHU5aXF4WFRudHJGNFRCYW92clJSaEZLLXNuS2RZeGl5ekRrVWJzalR3Yk5rTXNyeHYwRl9sTE1FSkgxNEJmSmlNemlka0xFUVdIOU5DZVFjaWFSRHVxbEJybzBJOUQ1WnkyMmdvNlFHcXozemJvQWdmVzgtMVpBYWxINm1HNVJ0YllWOU5seTdrWWNuU1BPdU1jdlJQM1NVa3J6Y3J3MjFwLWNieWV0d0hfMHpLN3pMUXNPS05salJFaHl4Z195ejNhMU9QNXJoTnN0NXh6aDl1TFBOcXQyQXVDNEZ3?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "bullish"
-    },
-    {
       "title": "Bajaj Auto, Hero MotoCorp, M&M tumble: Nifty Auto falls over 3% to lead sectoral loss \u2014 what\u2019s next for the sector?",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNbTBJa19JUHVlZEdwc3AyZ1IwZHlYYktlMlFLcGhCSE9hdUNURmJwOUVaR21SZHIzTkVnZnBPMFdZNE1qTlFHWUlJcjhxREZNRzcway1TQWhTRklDa1FIVXVKd2N3YXR2YUp0T1AxU0FKckZQbVNoeWtWR1ZTa2R5VW5ZOXRYNF9RZm5LbTMyUl9Pdzl5YmZKXzA0djd3TjJlWi1kS2xGbTNKR2l1RTdkYzl4UVNXMXltS1pxZ3g1V3hiUHRVYVR3VldwQXpkOTdmWlgwY1BjcmxkRG9wZkpwYlZtbjhOWUlZZVAycDlObTJ6QmhhWkRadjVha3J5NHhHT3NhWVJ5WVBwNThF0gGSAkFVX3lxTE5TZ0d6b1pqejZ5WGRlelowaGF4d0M5czNTZ3lBTkFKS0V2RlVXLXRPZV9sa201N19Ca1ZsbmZQanJnSmk1WmhMa2ZhcVNCbXBwM0FwV1U2ZzZMeE14WjFKVlA4bEh1Ynp4M3Vkb3BObk00b0hGcFdCWWZWOFliYTNWcnRPeVZ4SGJVM0ttX0R2bFJqZjFvS1E0Ym9jVF9xWjAyNl9TaEFfZWNOdnZnVEVxV0JROHhPSUVDcWpBcHRPLU5mRU9XQ0hkb3IwQld1R2VqMjZxd2FMWUtsMU1LQl80dGxLRmdOQk5QNnJialNNMGloYzV3M1dacXZQdmowUVIwQ01uWC1MZ3NoUFlmUWlIalE?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bearish"
@@ -438,6 +440,13 @@
       "publisher": "bfsi.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWVRXTk5rVV9TZjZvVGpPdU5ld0FhSjhBNVJYd05lRzNQYU9yMlpMZmFiRXBnNjhNVVNFODd3RGE2NGhrZnc2Tmo5S0ZXZ3lIdkEwR2NQYkJrZlB0ekdyQmRuR1YxZ0JBNFVsZTd2c3hST0xXWWlzSzViU1dBV2Nscnk3SlFlSzZOY0YxaTNLdEl4YWZMa19aWUlNWXVCQldEdVlJTTZDZDkxVTAxcjdINmljV3BocmtfdTdicWxDcVBLWkptZVhQSHc4N05BdXA0bTA1c3lWcTN5X0dPYk5J0gHkAUFVX3lxTE1SdXFielVLWWxJcTM0bEpGd29WeUpHcHppT1VYYzNIWkIzOVFzYjdyTU1mX0lVSUN4OVZheWUtU1dUSmoyNS1hclMwT2tmODl4V0lsMFBBTmg4dWRuM0dVM1dxWmlJZVAwMVlIY3k1MGktRlNPcTJIdGpGOGlDci1CVTBJa1NzUkxDX3MtMkZNWDJsVWFpU3ZrRm5VMnk0dzJ6bUZZQTRBbV85SEw5Nmp3QnNqcnNwNktDLTd6aEQwa0k4V2U4eXN5RzZlRnBienp4WXZ0SjRPQkNWUFJQR0RtcE5xbA?oc=5",
       "published_at": "Tue, 29 Sep 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Two-wheelers, commercial vehicles set to outperform passenger cars in FY27: Report",
+      "publisher": "ET Auto",
+      "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOcXV3Ym5fcUZXbFY4LVRUbXhYbm4wWWVyS3FlWktFZG92eUt0cE9FSm1Sd21iQWpEbGhtTEpzRi1mWW9RUFBvMHZPbUpZbVBRMElaQjJ1ZzVIVHRNUGM4VFdTbzZVdEZmMGswUzBTdm83bFJITnZzd2xyTzAya00xeVVnVXZrSUJCSnV2YXdFNE1oUTFhcVhDOUNTcG1FcDBydFRmSlVXOE5OTjRVTlh5TmtVcThYeWY2eU1UYW1TT3R4OGtTTTlMUDY0V3Nrb3JjUGd2ajFnZDVXenlpTDE5Yl9fUkRKXzF6dmJuelVpV1V6NDhEck1FeVNIQnUzWE4xU2gxREFRdERsWGZCamZDaEh5bV9PYUt3Q1RHUm9TSi1kVjZLNWRn0gHkAUFVX3lxTE9CR3JkTkQxY3lnbXNfVk1qOGhyMG5SaUg3YzlIQjBYWWRnV29wRzBucHZ5MXUxcEx1VmlCVlhjU3BIMGVxNmtSV3d3UU9XMS1QUUdtMHdjYl95cl9ZRDNLa2pzMWhNR3hCdExFZWxoOUFER1pBYnBhWUhfaEpRTmphd2hpallOSnFwcU12ckkxMWVtZjVsckxyVEEtMm5VcGVnaEJyQ3BxUVJlVGdOTUc4TEwtQ1F2VUJKa0kzYjZsLThxR3Y0QkhqdWEweDZXbi1kZ3JTb3o1cm16VS00V00zd1F1bA?oc=5",
+      "published_at": "Sun, 04 Oct 2026",
       "sentiment": "neutral"
     }
   ]

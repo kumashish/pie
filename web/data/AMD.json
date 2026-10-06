@@ -8,7 +8,7 @@
   "fit_score": 62.5,
   "confidence_grade": "B",
   "confidence_percentage": 62.5,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 595.0,
         "strike_formatted": "595",
         "option_type": "Put",
-        "delta": -0.107,
+        "delta": -0.105,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 570.0,
         "strike_formatted": "570",
         "option_type": "Put",
-        "delta": -0.021,
+        "delta": -0.02,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -48,10 +48,10 @@
     "margin_required": 25.0,
     "stop_loss_price": 612.8,
     "take_profit_price": 650.7,
-    "net_delta": 0.086,
-    "net_theta": 0.043,
+    "net_delta": 0.085,
+    "net_theta": 0.042,
     "probability_of_profit": 0.0,
-    "var_95": 15.26,
+    "var_95": 14.56,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 665 Call<br> Buy 1x AMD 20-Nov-2026 690 Call"
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 595 Put<br> Buy 1x AMD 20-Nov-2026 570 Put"
     },
     {
       "strategy_type": "iron_condor",
@@ -300,16 +300,16 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 53.4,
+      "score": 53.6,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 595 Call<br> Sell 1x AMD 20-Nov-2026 650 Call"
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 600 Call<br> Sell 1x AMD 20-Nov-2026 650 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 51.3,
+      "score": 51.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -325,22 +325,22 @@
       "legs_summary": "Sell 1x AMD 20-Nov-2026 595 Put"
     },
     {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 44.2,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 615 Call<br> Sell 1x AMD 20-Nov-2026 630 Call<br> Sell 1x AMD 20-Nov-2026 630 Call<br> Buy 1x AMD 20-Nov-2026 665 Call"
+    },
+    {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
       "score": 43.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 595 Put<br> Sell 1x AMD 20-Nov-2026 630 Put<br> Sell 1x AMD 20-Nov-2026 630 Call<br> Buy 1x AMD 20-Nov-2026 665 Call"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 43.5,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 615 Call<br> Sell 1x AMD 20-Nov-2026 630 Call<br> Sell 1x AMD 20-Nov-2026 630 Call<br> Buy 1x AMD 20-Nov-2026 665 Call"
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 600 Put<br> Sell 1x AMD 20-Nov-2026 630 Put<br> Sell 1x AMD 20-Nov-2026 630 Call<br> Buy 1x AMD 20-Nov-2026 665 Call"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -444,44 +444,44 @@
   ],
   "news": [
     {
-      "title": "Chip Stocks Pause After Two-Day Pop. AMD Stock Gets Price-Target Hikes.",
+      "title": "Sector Update: Tech",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/articles/sector-tech-125650427.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AMD CEO Lisa Su plans major AI chip supply ramp in 2027",
+      "publisher": "Quartz",
+      "link": "https://finance.yahoo.com/technology/ai/articles/amd-ceo-lisa-su-plans-124600671.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "The Fed\u2019s Rate Hike Isn\u2019t A Headwind For Nvidia For Several Reasons",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/fed-rate-hike-isn-t-124512107.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Intel\u2019s Biggest Opportunity\u00a0May Be Its\u00a0Comeback",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/intel-biggest-opportunity-may-comeback-124510178.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises Nearly 300 Points As Oil, Yields Fall; AMD, Nvidia, Tesla Shares Rally (Live Coverage)",
       "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/07d008da-b90c-37c0-a2e6-660f1e8e1c0d/chip-stocks-pause-after.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Advanced Micro Devices vs. Intel: Which Semiconductor Stock Is a Better Buy in 2026?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-vs-intel-203949284.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Are stocks expensive? This 30-year-low stat says otherwise.",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/article/are-stocks-expensive-this-30-year-low-stat-says-otherwise-200519109.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "TSMC stock hits all-time high after Elon Musk confirms early Terafab talks",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/stocks/article/tsmc-stock-hits-all-time-high-after-elon-musk-confirms-early-terafab-talks-162904771.html",
+      "link": "https://finance.yahoo.com/m/23879019-ae2b-39de-9232-cdfcba882196/stock-market-today%3A-dow-rises.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "BNP Paribas Revamps AMD Stock Target -- Sees 60% Upside on AI Boom",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bnp-paribas-revamps-amd-stock-191959150.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cathie Wood Just Sold $111 Million of AMD--and Loaded Up on Nvidia",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-just-sold-111-191759716.html",
+      "title": "Micron Stock Is Waiting On One Answer",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-waiting-one-answer-120301162.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

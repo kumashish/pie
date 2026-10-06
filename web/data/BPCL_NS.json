@@ -1,14 +1,14 @@
 {
   "symbol": "BPCL.NS",
-  "last_price": 297.0,
+  "last_price": 300.5,
   "as_of": "2026-10-06 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.0,
+  "fit_score": 30.0,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 14.57,
+  "confidence_percentage": 30.0,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,35 +20,35 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 310.0,
-        "strike_formatted": "310",
+        "strike": 315.0,
+        "strike_formatted": "315",
         "option_type": "Call",
-        "delta": 0.258,
+        "delta": 0.216,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x BPCL.NS 24-Nov-2026 310 Call"
+        "summary": "Sell 1x BPCL.NS 24-Nov-2026 315 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 315.0,
-        "strike_formatted": "315",
+        "strike": 320.0,
+        "strike_formatted": "320",
         "option_type": "Call",
-        "delta": 0.171,
+        "delta": 0.135,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x BPCL.NS 24-Nov-2026 315 Call"
+        "summary": "Buy 1x BPCL.NS 24-Nov-2026 320 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 288.09,
-    "take_profit_price": 305.91,
-    "net_delta": -0.087,
+    "stop_loss_price": 291.49,
+    "take_profit_price": 309.51,
+    "net_delta": -0.081,
     "net_theta": 0.014,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 237.6,
+        "price": 240.4,
         "pnl": -10.0
       },
       {
-        "price": 239.98,
+        "price": 242.8,
         "pnl": -10.0
       },
       {
-        "price": 242.35,
+        "price": 245.21,
         "pnl": -10.0
       },
       {
-        "price": 244.73,
+        "price": 247.61,
         "pnl": -10.0
       },
       {
-        "price": 247.1,
+        "price": 250.02,
         "pnl": -10.0
       },
       {
-        "price": 249.48,
+        "price": 252.42,
         "pnl": -10.0
       },
       {
-        "price": 251.86,
+        "price": 254.82,
         "pnl": -10.0
       },
       {
-        "price": 254.23,
+        "price": 257.23,
         "pnl": -10.0
       },
       {
-        "price": 256.61,
+        "price": 259.63,
         "pnl": -10.0
       },
       {
-        "price": 258.98,
+        "price": 262.04,
         "pnl": -10.0
       },
       {
-        "price": 261.36,
+        "price": 264.44,
         "pnl": -10.0
       },
       {
-        "price": 263.74,
+        "price": 266.84,
         "pnl": -10.0
       },
       {
-        "price": 266.11,
+        "price": 269.25,
         "pnl": -10.0
       },
       {
-        "price": 268.49,
+        "price": 271.65,
         "pnl": -10.0
       },
       {
-        "price": 270.86,
+        "price": 274.06,
         "pnl": -10.0
       },
       {
-        "price": 273.24,
+        "price": 276.46,
         "pnl": -10.0
       },
       {
-        "price": 275.62,
+        "price": 278.86,
         "pnl": -10.0
       },
       {
-        "price": 277.99,
+        "price": 281.27,
         "pnl": -10.0
       },
       {
-        "price": 280.37,
+        "price": 283.67,
         "pnl": -10.0
       },
       {
-        "price": 282.74,
+        "price": 286.08,
         "pnl": -10.0
       },
       {
-        "price": 285.12,
+        "price": 288.48,
         "pnl": -10.0
       },
       {
-        "price": 287.5,
+        "price": 290.88,
         "pnl": -10.0
       },
       {
-        "price": 289.87,
+        "price": 293.29,
         "pnl": -10.0
       },
       {
-        "price": 292.25,
+        "price": 295.69,
         "pnl": -10.0
       },
       {
-        "price": 294.62,
+        "price": 298.1,
         "pnl": -10.0
       },
       {
-        "price": 297.0,
+        "price": 300.5,
         "pnl": -10.0
       },
       {
-        "price": 299.38,
+        "price": 302.9,
         "pnl": -10.0
       },
       {
-        "price": 301.75,
+        "price": 305.31,
         "pnl": -10.0
       },
       {
-        "price": 304.13,
+        "price": 307.71,
         "pnl": -10.0
       },
       {
-        "price": 306.5,
+        "price": 310.12,
         "pnl": -10.0
       },
       {
-        "price": 308.88,
+        "price": 312.52,
         "pnl": -10.0
       },
       {
-        "price": 311.26,
-        "pnl": -11.26
+        "price": 314.92,
+        "pnl": -10.0
       },
       {
-        "price": 313.63,
-        "pnl": -13.63
+        "price": 317.33,
+        "pnl": -12.33
       },
       {
-        "price": 316.01,
+        "price": 319.73,
+        "pnl": -14.73
+      },
+      {
+        "price": 322.14,
         "pnl": -15.0
       },
       {
-        "price": 318.38,
+        "price": 324.54,
         "pnl": -15.0
       },
       {
-        "price": 320.76,
+        "price": 326.94,
         "pnl": -15.0
       },
       {
-        "price": 323.14,
+        "price": 329.35,
         "pnl": -15.0
       },
       {
-        "price": 325.51,
+        "price": 331.75,
         "pnl": -15.0
       },
       {
-        "price": 327.89,
+        "price": 334.16,
         "pnl": -15.0
       },
       {
-        "price": 330.26,
+        "price": 336.56,
         "pnl": -15.0
       },
       {
-        "price": 332.64,
+        "price": 338.96,
         "pnl": -15.0
       },
       {
-        "price": 335.02,
+        "price": 341.37,
         "pnl": -15.0
       },
       {
-        "price": 337.39,
+        "price": 343.77,
         "pnl": -15.0
       },
       {
-        "price": 339.77,
+        "price": 346.18,
         "pnl": -15.0
       },
       {
-        "price": 342.14,
+        "price": 348.58,
         "pnl": -15.0
       },
       {
-        "price": 344.52,
+        "price": 350.98,
         "pnl": -15.0
       },
       {
-        "price": 346.9,
+        "price": 353.39,
         "pnl": -15.0
       },
       {
-        "price": 349.27,
+        "price": 355.79,
         "pnl": -15.0
       },
       {
-        "price": 351.65,
+        "price": 358.2,
         "pnl": -15.0
       },
       {
-        "price": 354.02,
-        "pnl": -15.0
-      },
-      {
-        "price": 356.4,
+        "price": 360.6,
         "pnl": -15.0
       }
     ],
@@ -277,46 +277,55 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-310CE-B1x-Nov-315CE"
-    },
-    {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 53.4,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-297PE"
+      "legs_summary": "S1x-Nov-315CE-B1x-Nov-320CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 53.3,
-      "grade": "C (Moderate)",
+      "score": 76.6,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-275PE-S1x-Nov-280PE-S1x-Nov-310CE-B1x-Nov-315CE"
+      "legs_summary": "B1x-Nov-280PE-S1x-Nov-285PE-S1x-Nov-315CE-B1x-Nov-320CE"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 44.5,
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 47.3,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-295PE-S1x-Nov-285PE"
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-295CE-S1x-Nov-300CE-S1x-Nov-300CE-B1x-Nov-310CE"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 46.5,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-300.5PE"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 42.7,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-295CE-S1x-Nov-300CE-S1x-Nov-300CE-B1x-Nov-315CE"
     }
   ],
   "indicators": {
-    "EMA20": "304.24",
-    "EMA50": "308.31",
-    "EMA100": "311.13",
-    "EMA200": "316.47",
-    "RSI(14)": "37.72",
-    "ATR(14)": "6.03",
-    "ADX(14)": "31.73",
-    "BB(20,2)": "0.18",
-    "P_SHAPE(20)": "38.04"
+    "EMA20": "304.57",
+    "EMA50": "308.44",
+    "EMA100": "311.20",
+    "EMA200": "316.50",
+    "RSI(14)": "42.91",
+    "ATR(14)": "6.37",
+    "ADX(14)": "31.16",
+    "BB(20,2)": "0.32",
+    "P_SHAPE(20)": "38.33"
   },
   "rules": [
     {
@@ -327,7 +336,21 @@
       "explanation": "Condition met"
     },
     {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -369,21 +392,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -400,7 +409,7 @@
   "news": [
     {
       "title": "BPCL plans $3 billion bond sale to fund Brazil oil bet",
-      "publisher": "government.economictimes.indiatimes.com",
+      "publisher": "ET Government",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbmVOQ3BJajhNTTZzZDIxYXp2TXhDT1lPZ3lFR1NYdGlJakp5Rm1IREljUmxQdmNJWno2MlZBRWtKOWhXOFdwSURzN3FTaGVKRjlWYnJLVXZhd1BvYi1RWXRxLUxMM3FaRHZMd1RibXhtV2k0SVF4RlFSNTNLbmZrYlZPcHI3Z09Sb3VZQmdaRVVqYVh2QzZhTVgzd2M0OWE2X1Z2MFVDZVh4VG1KZ051dkZsaHR0amhObC1IbNIBwgFBVV95cUxPZE1XR2FxRW9RQ3RPVkFnY0ZPYlUyWllVS0dVNXJIU28tQTA4aDgzT3QzN2lISGFDTkFHSWROeGNjeUNtejBSVjZTaUI2OF9vVXdScEpwb3NheHRqelN1clRsTTNiQ2E3aWZ4V3JDQVNRWno4Y09icjN2OXFXbUZINEZWR1V4X0g2Y19DcEFVS0ZfR0tkaTFZSE1RbU84dmV4NmlHV1Y0LVZPYzVVRG11SmhRcUVUb1poTGhyVnNzd3A2QQ?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
@@ -420,25 +429,25 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Akasa Air and BPCL test 1 per cent SAF on Mumbai-Goa commercial flight",
-      "publisher": "ET Sustainability",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZDZiU1ZxVy0yRXZkZ3hGTDhsUHJoSzFLalJVN3JBV0xJb0prWndQUTRjNlhfdkVCN3BMell3aVZ0U2hMV05UcFNnUGlYSk1kUG9FN0ZUMlN0MDhjRWl3NlRXQ09JczFTTFprdm1qU2pZM2FOYTJTNUFxR014dkg2NU9aZDJSV1ZSMkI2TldGMFpBWVZueWtVTll0ckJnMVBzMkJpREFHd1hnbDl0YTZEY3MxVFE0MVhIQWt4OXVQRTRFWVVmTDB5ZF9vOXQtS29uOUZrU01VbE5xTlBXZ0JSa3VLOHVHeGRvdnM0QVc0N1HSAfQBQVVfeXFMT0xXN1pqeTFKeWw5VU5kSnpzNG5NcnhMbVNGTG56dmlvaUNoQ2tRSkNLQWRKVGNwMWRRYjlSQ2VZZkt2eVZ1c1FQRHdkb0x2NWs2bkpKaXhSa3dmWkhmS3RGSHdjNktUeFkwSHJ5M0VSbllKUnE3eUs2cTN4Zmpzelk4T3lNWF8tbDgtQWxFbTU1UUI0Z0I3czRRUHJmTk10RVFJYlVOak5YMk9RcTRnMFk4X1QxUXVYZG9HQ1dKQzNXTVl0cWF2clhTUWRjdkJiVkJpRlpTS251LTRTSnJLWS1NYnlCbzJNTU5QQkZXdGxKQ0Nmag?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOUUVCLURiLWRzMmNCZ1B2dWNRaDNCamgtMkMwZDlFQmZuYUdDY2hpbkhOdGpfQ1NrWmx4R1NRUmxDNWdYR29adEl6WjV2clAtRkFPcDJDNE1LZktFSVU0ZENESnk0T0dMVXdEWEFjRG5TQmZNYzEwZFNSaGowM19pU21pQjRKczdBeXFMcFRZSk15VVNici12V0dlWnozSnBjaUYtcDl4M182R3lpRTFHMkJMZkV2eGV6Y3RjV0hmc1E0eUUxbHBGbWd0TG96cFpaOF9MLVh4YmE3ZmluMnZsY1dsSEhvUGotcllwNUF6QjBjTW9FRkVOaEVKQ29na0dpemJZWkVlN1dJc25XR0VNLXpB0gGXAkFVX3lxTE01cmdSNXNuWW5kVEhFY0RBVExHZENMb3c1Z3hEYmk4NFZ6alB2REE4WUEyVXZoaFRfRW5LdjB0ajZIOTBkRDdadnNUNVZhSjRkVUFnQlprTTM4X1M1XzFEclV5ZTkyWE14WEw0WGVJSjd0WkRmMGxsLVVGOWRJU1FrNVUyenpWUV9ubjFIQjMzaC1DSlBWeko0R0tGZVZBYUEyaWU0TGhtWnNkcFlNY3dVd25TeUFMcDEzbmpqVV9kbUJqMWRxRFpIQlRqUnJPY2hfT240VUlrYXJESlFPSXpZNFE4bjZnRVp1aVJydjM1UGRhSVo4ZjNuRDhwQU1NdFJyNnNRRURvOGxIYS1sbXZYRGxJRzdaaw?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bullish"
     },
     {
       "title": "IOC, HPCL, BPCL shares rise - What is behind the rally in crude oil-linked stocks?",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNb0xKV3VOVlFINTAwTC1hdFJRa25XenR2V1h5Umdmd2VZSTlTaXZXN2JwVDQwbEFPb2NwRExyVmJza1VtWVNrM0ZfdFZJVlVZend0VVRwT2hETWxvVjA5eWtQdXdkUFNKRWIwZ3VaUXktS0dGckR4TzROUkp0ZER3eXZzRG55WUZNcTVMRFN6NVNxakE0U3RiVTNRYndtMC1adkpRUmZaUl9jWU1EdjhvMHF5OVdCUGR5MU92VVQ5SXAzVXM3U0tDMmtDb2NwM2tSNUduRHNJd2xfdlJMQkZkSNIB5gFBVV95cUxNTE44c3VMNzlEZUl0b1BHdEIyZTEtSjA1QlhMd2tjT0FGQk9WNDFkUy15Z3UxMnd1bVZ1cGszRkVOU1JuTkVQX2JoMTdYcDFTekR2UG04blN4VXl6Qk9UYktka0h1MGVJSDRoR0tjZE14SWdxUTV3djBwM2V1ZmtNemRRSGJsd2cyTld4ZVdEenMxQWJrY1FFelIycDA2NWpEUGJQSU5BOGxVc3FpMF82Tk9PdFpkYjRvUV9CME93R3MtYlc2U0Q0cEJYVHo5b3ZoRkM5cVNacFZYbDExdHJGWFVFZzNFUQ?oc=5",
       "published_at": "Wed, 30 Sep 2026",
       "sentiment": "bullish"
+    },
+    {
+      "title": "Rakesh Sharma",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVGZVYmRTX0lIWGYzV29QcEhUSEtZMkJtck5kY2NpYU1JYWVvQVB1Z0NJZnJhb2djRmNQOTVEemFkMUU4VXRTcWxYUno0X0JBbG9mM1pqS19oZFFHczEzX254X2ZQRU9FTGFSblg3TUVWNHc2TzVjNUswYy12YTJTX1BnRVhVWlU5NWc?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
     }
   ]
 }

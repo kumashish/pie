@@ -8,7 +8,7 @@
   "fit_score": 40.0,
   "confidence_grade": "C",
   "confidence_percentage": 40.0,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -35,7 +35,7 @@
         "strike": 175.0,
         "strike_formatted": "175",
         "option_type": "Put",
-        "delta": -0.07,
+        "delta": -0.067,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -47,7 +47,7 @@
         "strike": 205.0,
         "strike_formatted": "205",
         "option_type": "Call",
-        "delta": 0.077,
+        "delta": 0.074,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 215.0,
         "strike_formatted": "215",
         "option_type": "Call",
-        "delta": 0.011,
+        "delta": 0.01,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -72,10 +72,10 @@
     "margin_required": 10.0,
     "stop_loss_price": 182.57,
     "take_profit_price": 193.87,
-    "net_delta": -0.001,
-    "net_theta": 0.026,
+    "net_delta": -0.002,
+    "net_theta": 0.027,
     "probability_of_profit": 0.0,
-    "var_95": 5.2,
+    "var_95": 4.93,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
@@ -310,12 +310,12 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x COIN 20-Nov-2026 205 Call<br> Buy 1x COIN 20-Nov-2026 215 Call"
+      "legs_summary": "Sell 1x COIN 20-Nov-2026 175 Put<br> Buy 1x COIN 20-Nov-2026 165 Put"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 58.9,
+      "score": 59.2,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -342,7 +342,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 46.6,
+      "score": 47.2,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -441,6 +441,13 @@
   ],
   "news": [
     {
+      "title": "How Investors Are Reacting To Citigroup (C) Expanding Token Services And Instant Cross-Border Payments",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-citigroup-c-expanding-070819209.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Coinbase Global Insider Sold Shares Worth $3,900,122, According to a Recent SEC Filing",
       "publisher": "MT Newswires",
       "link": "https://finance.yahoo.com/markets/stocks/articles/coinbase-global-insider-sold-shares-214319097.html",
@@ -472,13 +479,6 @@
       "title": "Coinbase vs. Intercontinental: Which Exchange Stock Has an Edge?",
       "publisher": "Zacks",
       "link": "https://finance.yahoo.com/markets/stocks/articles/coinbase-vs-intercontinental-exchange-stock-174300840.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "CFTC proposes federal registration framework for leveraged retail crypto trades",
-      "publisher": "Investing.com",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/cftc-proposes-federal-registration-framework-171558228.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

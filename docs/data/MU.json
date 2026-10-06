@@ -8,7 +8,7 @@
   "fit_score": 72.5,
   "confidence_grade": "B",
   "confidence_percentage": 72.5,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1100.0,
-        "strike_formatted": "1100",
-        "option_type": "Call",
-        "delta": 0.319,
+        "strike": 1000.0,
+        "strike_formatted": "1000",
+        "option_type": "Put",
+        "delta": -0.098,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x MU 20-Nov-2026 1100 Call"
+        "summary": "Sell 1x MU 20-Nov-2026 1000 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
-        "option_type": "Call",
-        "delta": 0.099,
+        "strike": 950.0,
+        "strike_formatted": "950",
+        "option_type": "Put",
+        "delta": -0.012,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x MU 20-Nov-2026 1150 Call"
+        "summary": "Buy 1x MU 20-Nov-2026 950 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,84 +48,84 @@
     "margin_required": 50.0,
     "stop_loss_price": 1032.04,
     "take_profit_price": 1095.88,
-    "net_delta": -0.22,
-    "net_theta": 0.149,
+    "net_delta": 0.086,
+    "net_theta": 0.077,
     "probability_of_profit": 0.0,
-    "var_95": 50.0,
+    "var_95": 22.45,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 851.17,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 859.68,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 868.19,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 876.7,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 885.21,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 893.73,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 902.24,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 910.75,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 919.26,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 927.77,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 936.28,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 944.8,
-        "pnl": -50.0
+        "pnl": -100.0
       },
       {
         "price": 953.31,
-        "pnl": -50.0
+        "pnl": -96.69
       },
       {
         "price": 961.82,
-        "pnl": -50.0
+        "pnl": -88.18
       },
       {
         "price": 970.33,
-        "pnl": -50.0
+        "pnl": -79.67
       },
       {
         "price": 978.84,
-        "pnl": -50.0
+        "pnl": -71.16
       },
       {
         "price": 987.35,
-        "pnl": -50.0
+        "pnl": -62.65
       },
       {
         "price": 995.87,
-        "pnl": -50.0
+        "pnl": -54.13
       },
       {
         "price": 1004.38,
@@ -177,87 +177,87 @@
       },
       {
         "price": 1106.52,
-        "pnl": -56.52
+        "pnl": -50.0
       },
       {
         "price": 1115.03,
-        "pnl": -65.03
+        "pnl": -50.0
       },
       {
         "price": 1123.54,
-        "pnl": -73.54
+        "pnl": -50.0
       },
       {
         "price": 1132.05,
-        "pnl": -82.05
+        "pnl": -50.0
       },
       {
         "price": 1140.57,
-        "pnl": -90.57
+        "pnl": -50.0
       },
       {
         "price": 1149.08,
-        "pnl": -99.08
+        "pnl": -50.0
       },
       {
         "price": 1157.59,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1166.1,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1174.61,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1183.12,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1191.64,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1200.15,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1208.66,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1217.17,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1225.68,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1234.19,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1242.71,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1251.22,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1259.73,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1268.24,
-        "pnl": -100.0
+        "pnl": -50.0
       },
       {
         "price": 1276.75,
-        "pnl": -100.0
+        "pnl": -50.0
       }
     ],
     "kelly_sizing": {
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x MU 20-Nov-2026 1100 Call<br> Buy 1x MU 20-Nov-2026 1150 Call"
+      "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put<br> Buy 1x MU 20-Nov-2026 950 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -300,7 +300,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 58.9,
+      "score": 59.2,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 41.3,
+      "score": 41.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -435,39 +435,46 @@
   ],
   "news": [
     {
-      "title": "Micron (MU): AI Memory Boom Could Outlast Your Expectations",
-      "publisher": "Insider Monkey",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-ai-memory-boom-211707590.html",
+      "title": "Micron Technology, Netlist Settle Patent Dispute for $600 Million",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-netlist-settle-patent-124719265.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "A Tale of Two Markets: Megacaps Keep Climbing, But Rate Fears Hit Many Other Stocks",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/075e477f-4f83-3564-9f9b-536dc973cb7b/a-tale-of-two-markets%3A.html",
+      "title": "Becton Dickinson to Invest $19 Billion in U.S. in Exchange for Tariff Relief",
+      "publisher": "The Wall Street Journal",
+      "link": "https://finance.yahoo.com/economy/policy/articles/becton-dickinson-invest-19-billion-123500259.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Morgan Stanley revisits Micron stock price target amid stellar growth",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-revisits-micron-stock-191300212.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Nvidia, Intel, Micron, XP Inc., PTC, Vaxcyte, Western Digital, and More Stocks That Explain Today\u2019s Market",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/29d68e20-e649-3819-9021-a07b7ebc77c5/nvidia%2C-intel%2C-micron%2C-xp.html",
+      "title": "Micron Gets $2,000 Target as Memory Boom Continues",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-gets-2-000-target-120530874.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Nasdaq Eyes New Record Despite Rising Yields Thanks to the AI Trade",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/2f05fd70-fd40-3fe1-b49a-9bc9a3f9e6d3/nasdaq-eyes-new-record.html",
+      "title": "Micron Stock Is Waiting On One Answer",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-waiting-one-answer-120301162.html",
       "published_at": "Today",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Netlist and Micron Enter Patent License and Settlement Agreements",
+      "publisher": "PR Newswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/netlist-micron-enter-patent-license-120000503.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Micron Says a Chinese Rival Poached Its Engineers, Then Sued It With Its Own Technology",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-says-chinese-rival-poached-115053450.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

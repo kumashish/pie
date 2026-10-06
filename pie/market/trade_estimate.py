@@ -334,7 +334,7 @@ def estimate_trade(
         )
 
     else:  # StrategyType.CREDIT_SPREAD
-        is_bearish = (ema20 is not None and ema50 is not None and ema20 < ema50) or ("bear" in recommendation.rationale.lower())
+        is_bearish = ("bearish" in recommendation.rationale.lower()) or (ema20 is not None and ema50 is not None and ema20 < ema50 and "bullish" not in recommendation.rationale.lower())
         if is_bearish:
             c_short = _round_to_increment(spot_price + short_dist, increment)
             c_long = _round_to_increment(c_short + credit_wing_width, increment)

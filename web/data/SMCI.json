@@ -8,7 +8,7 @@
   "fit_score": 75.0,
   "confidence_grade": "B",
   "confidence_percentage": 75.0,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,26 +20,26 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 46.0,
-        "strike_formatted": "46",
-        "option_type": "Call",
-        "delta": 0.155,
+        "strike": 40.0,
+        "strike_formatted": "40",
+        "option_type": "Put",
+        "delta": -0.058,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x SMCI 20-Nov-2026 46 Call"
+        "summary": "Sell 1x SMCI 20-Nov-2026 40 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 48.0,
-        "strike_formatted": "48",
-        "option_type": "Call",
-        "delta": 0.036,
+        "strike": 38.0,
+        "strike_formatted": "38",
+        "option_type": "Put",
+        "delta": -0.006,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x SMCI 20-Nov-2026 48 Call"
+        "summary": "Buy 1x SMCI 20-Nov-2026 38 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,76 +48,76 @@
     "margin_required": 2.0,
     "stop_loss_price": 41.89,
     "take_profit_price": 44.49,
-    "net_delta": -0.119,
-    "net_theta": 0.005,
+    "net_delta": 0.052,
+    "net_theta": 0.003,
     "probability_of_profit": 0.0,
-    "var_95": 1.42,
+    "var_95": 0.32,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 34.55,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 34.9,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 35.24,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 35.59,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 35.93,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 36.28,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 36.63,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 36.97,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 37.32,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 37.66,
-        "pnl": -2.0
+        "pnl": -4.0
       },
       {
         "price": 38.01,
-        "pnl": -2.0
+        "pnl": -3.99
       },
       {
         "price": 38.35,
-        "pnl": -2.0
+        "pnl": -3.65
       },
       {
         "price": 38.7,
-        "pnl": -2.0
+        "pnl": -3.3
       },
       {
         "price": 39.04,
-        "pnl": -2.0
+        "pnl": -2.96
       },
       {
         "price": 39.39,
-        "pnl": -2.0
+        "pnl": -2.61
       },
       {
         "price": 39.73,
-        "pnl": -2.0
+        "pnl": -2.27
       },
       {
         "price": 40.08,
@@ -193,71 +193,71 @@
       },
       {
         "price": 46.3,
-        "pnl": -2.3
+        "pnl": -2.0
       },
       {
         "price": 46.65,
-        "pnl": -2.65
+        "pnl": -2.0
       },
       {
         "price": 46.99,
-        "pnl": -2.99
+        "pnl": -2.0
       },
       {
         "price": 47.34,
-        "pnl": -3.34
+        "pnl": -2.0
       },
       {
         "price": 47.68,
-        "pnl": -3.68
+        "pnl": -2.0
       },
       {
         "price": 48.03,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 48.37,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 48.72,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 49.06,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 49.41,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 49.75,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 50.1,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 50.45,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 50.79,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 51.14,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 51.48,
-        "pnl": -4.0
+        "pnl": -2.0
       },
       {
         "price": 51.83,
-        "pnl": -4.0
+        "pnl": -2.0
       }
     ],
     "kelly_sizing": {
@@ -277,7 +277,7 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x SMCI 20-Nov-2026 46 Call<br> Buy 1x SMCI 20-Nov-2026 48 Call"
+      "legs_summary": "Sell 1x SMCI 20-Nov-2026 40 Put<br> Buy 1x SMCI 20-Nov-2026 38 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 63.2,
+      "score": 63.5,
       "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -336,7 +336,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 44.0,
+      "score": 44.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -435,6 +435,34 @@
   ],
   "news": [
     {
+      "title": "Mizuho Adjusts Price Target on Super Micro Computer to $43 From $35, Maintains Neutral Rating",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mizuho-adjusts-price-target-super-121145839.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Super Micro Has a $60 Billion-Plus Backlog--So Why Is the Stock So Cheap?",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/super-micro-60-billion-plus-115350261.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Six Companies Just Grew 100% Or More \u2014 Four May Surprise You",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/e38e63c5-e4b8-308d-9678-bf7e0ddd3659/six-companies-just-grew-100%25.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Is Supermicro\u2019s NetApp AI Factory Alliance Quietly Redefining SMCI\u2019s Full-Stack Data Center Ambitions?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/supermicro-netapp-ai-factory-alliance-100702691.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Super Micro Looks Cheap at 12 Times Earnings, but Its $60 Billion Order Surge Has a Catch",
       "publisher": "GuruFocus.com",
       "link": "https://finance.yahoo.com/markets/stocks/articles/super-micro-looks-cheap-12-183458099.html",
@@ -447,34 +475,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/needs-true-buy-super-micro-132149560.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "NetApp (NTAP) Moves 5.2% Higher: Will This Strength Last?",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/netapp-ntap-moves-5-2-113300980.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Dow, S&P 500, Nasdaq Futures Rise After Soft Jobs Report As Markets Await Fed Minutes: IBRX, SMCI, VST, SOFI Stocks In Focus",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-031711832.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Super Micro Computer (SMCI) Climbed, What Is Behind The Fresh Attention?",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-smci-climbed-002042657.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "SMCI Stock Is Up 41% This Year. Hold or Take Profits?",
-      "publisher": "TIKR",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/smci-stock-41-hold-profits-095350879.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }

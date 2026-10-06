@@ -8,7 +8,7 @@
   "fit_score": 35.0,
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
-  "vix": 15.52,
+  "vix": 15.32,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 385.0,
         "strike_formatted": "385",
         "option_type": "Call",
-        "delta": 0.167,
+        "delta": 0.164,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 395.0,
         "strike_formatted": "395",
         "option_type": "Call",
-        "delta": 0.076,
+        "delta": 0.073,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -309,11 +309,20 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 49.4,
+      "score": 49.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x AVGO 20-Nov-2026 355 Call<br> Sell 1x AVGO 20-Nov-2026 365 Call<br> Sell 1x AVGO 20-Nov-2026 365 Call<br> Buy 1x AVGO 20-Nov-2026 370 Call"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 42.4,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x AVGO 20-Nov-2026 355 Call<br> Sell 1x AVGO 20-Nov-2026 365 Call<br> Sell 1x AVGO 20-Nov-2026 365 Call<br> Buy 1x AVGO 20-Nov-2026 380 Call"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -323,15 +332,6 @@
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
       "legs_summary": "Buy 1x AVGO 20-Nov-2026 345 Put<br> Sell 1x AVGO 20-Nov-2026 365 Put<br> Sell 1x AVGO 20-Nov-2026 365 Call<br> Buy 1x AVGO 20-Nov-2026 380 Call"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 41.8,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AVGO 20-Nov-2026 355 Call<br> Sell 1x AVGO 20-Nov-2026 365 Call<br> Sell 1x AVGO 20-Nov-2026 365 Call<br> Buy 1x AVGO 20-Nov-2026 380 Call"
     }
   ],
   "indicators": {
@@ -426,37 +426,44 @@
   ],
   "news": [
     {
-      "title": "Dow, S&P 500, Nasdaq Futures Edge Higher After Nasdaq Climbs To Record High: SPCX, USAR, CEG, NVAX Stocks In Focus",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-024536034.html",
+      "title": "The Fed\u2019s Rate Hike Isn\u2019t A Headwind For Nvidia For Several Reasons",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/fed-rate-hike-isn-t-124512107.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Morgan Stanley: Nvidia, Broadcom shielded from data-center power crunch",
+      "publisher": "Quartz",
+      "link": "https://finance.yahoo.com/technology/articles/morgan-stanley-nvidia-broadcom-shielded-120314954.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1 Profitable Stock to Target This Week and 2 We Ignore",
+      "publisher": "StockStory",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/1-profitable-stock-target-week-105634346.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Wall Street tests lender appetite with $60 billion Broadcom-Anthropic deal - FT",
-      "publisher": "Investing.com",
-      "link": "https://finance.yahoo.com/technology/ai/articles/wall-street-tests-lender-appetite-214705266.html",
+      "title": "Morning Bid: Le Pendulum",
+      "publisher": "Reuters",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/morning-bid-le-pendulum-104115165.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Cathie Wood Just Sold $111 Million of AMD--and Loaded Up on Nvidia",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-just-sold-111-191759716.html",
+      "title": "Nvidia vs. Broadcom: Which AI Chip Stock Is the Better Buy Now?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-vs-broadcom-ai-chip-100128431.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Nvidia, Broadcom May Be Surprisingly Safe From a 32-GW Hole in the AI Boom, Morgan Stanley Says",
-      "publisher": "Benzinga Prediction Markets",
-      "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-broadcom-may-surprisingly-safe-185153456.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Why It\u2019s Time to Load Up on Broadcom Stock Before It Touches $523",
-      "publisher": "Barchart",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-time-load-broadcom-stock-173628173.html",
+      "title": "Global Change and Configuration Management Market Report 2026; Change and Configuration Management Market Set to Reach $4.25 Billion by 2030 as Security and Automation Demand Accelerates",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/articles/global-change-configuration-management-market-081400401.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

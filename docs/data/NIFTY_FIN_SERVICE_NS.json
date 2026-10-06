@@ -1,14 +1,14 @@
 {
   "symbol": "NIFTY_FIN_SERVICE.NS",
-  "last_price": 24745.9,
-  "as_of": "2026-10-06 03:44:52",
+  "last_price": 24946.05,
+  "as_of": "2026-10-06 10:01:30",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.5,
-  "fit_score": 5.0,
+  "trend_score": 0.8,
+  "fit_score": 7.5,
   "confidence_grade": "C",
-  "confidence_percentage": 5.0,
-  "vix": 14.78,
+  "confidence_percentage": 7.5,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,244 +20,244 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 26100.0,
-        "strike_formatted": "26100",
+        "strike": 26200.0,
+        "strike_formatted": "26200",
         "option_type": "Call",
-        "delta": 0.202,
+        "delta": 0.205,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Sell 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26100 Call"
+        "summary": "Sell 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26200 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 26500.0,
-        "strike_formatted": "26500",
+        "strike": 26600.0,
+        "strike_formatted": "26600",
         "option_type": "Call",
-        "delta": 0.133,
+        "delta": 0.13,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26500 Call"
+        "summary": "Buy 1x NIFTY_FIN_SERVICE.NS 24-Nov-2026 26600 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 1000.0,
-    "stop_loss_price": 24003.52,
-    "take_profit_price": 25488.28,
-    "net_delta": -0.069,
-    "net_theta": 1.151,
+    "margin_required": 950.0,
+    "stop_loss_price": 24197.67,
+    "take_profit_price": 25694.43,
+    "net_delta": -0.075,
+    "net_theta": 1.174,
     "probability_of_profit": 0.0,
     "var_95": 400.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 19796.72,
-        "pnl": -1000.0
+        "price": 19956.84,
+        "pnl": -950.0
       },
       {
-        "price": 19994.69,
-        "pnl": -1000.0
+        "price": 20156.41,
+        "pnl": -950.0
       },
       {
-        "price": 20192.65,
-        "pnl": -1000.0
+        "price": 20355.98,
+        "pnl": -950.0
       },
       {
-        "price": 20390.62,
-        "pnl": -1000.0
+        "price": 20555.55,
+        "pnl": -950.0
       },
       {
-        "price": 20588.59,
-        "pnl": -1000.0
+        "price": 20755.11,
+        "pnl": -950.0
       },
       {
-        "price": 20786.56,
-        "pnl": -1000.0
+        "price": 20954.68,
+        "pnl": -950.0
       },
       {
-        "price": 20984.52,
-        "pnl": -1000.0
+        "price": 21154.25,
+        "pnl": -950.0
       },
       {
-        "price": 21182.49,
-        "pnl": -1000.0
+        "price": 21353.82,
+        "pnl": -950.0
       },
       {
-        "price": 21380.46,
-        "pnl": -1000.0
+        "price": 21553.39,
+        "pnl": -950.0
       },
       {
-        "price": 21578.43,
-        "pnl": -1000.0
+        "price": 21752.96,
+        "pnl": -950.0
       },
       {
-        "price": 21776.39,
-        "pnl": -1000.0
+        "price": 21952.52,
+        "pnl": -950.0
       },
       {
-        "price": 21974.36,
-        "pnl": -1000.0
+        "price": 22152.09,
+        "pnl": -950.0
       },
       {
-        "price": 22172.33,
-        "pnl": -1000.0
+        "price": 22351.66,
+        "pnl": -950.0
       },
       {
-        "price": 22370.29,
-        "pnl": -1000.0
+        "price": 22551.23,
+        "pnl": -950.0
       },
       {
-        "price": 22568.26,
-        "pnl": -1000.0
+        "price": 22750.8,
+        "pnl": -950.0
       },
       {
-        "price": 22766.23,
-        "pnl": -1000.0
+        "price": 22950.37,
+        "pnl": -950.0
       },
       {
-        "price": 22964.2,
-        "pnl": -1000.0
+        "price": 23149.94,
+        "pnl": -950.0
       },
       {
-        "price": 23162.16,
-        "pnl": -1000.0
+        "price": 23349.5,
+        "pnl": -950.0
       },
       {
-        "price": 23360.13,
-        "pnl": -1000.0
+        "price": 23549.07,
+        "pnl": -950.0
       },
       {
-        "price": 23558.1,
-        "pnl": -1000.0
+        "price": 23748.64,
+        "pnl": -950.0
       },
       {
-        "price": 23756.06,
-        "pnl": -1000.0
+        "price": 23948.21,
+        "pnl": -950.0
       },
       {
-        "price": 23954.03,
-        "pnl": -1000.0
+        "price": 24147.78,
+        "pnl": -950.0
       },
       {
-        "price": 24152.0,
-        "pnl": -1000.0
+        "price": 24347.35,
+        "pnl": -950.0
       },
       {
-        "price": 24349.97,
-        "pnl": -1000.0
+        "price": 24546.91,
+        "pnl": -950.0
       },
       {
-        "price": 24547.93,
-        "pnl": -1000.0
+        "price": 24746.48,
+        "pnl": -950.0
       },
       {
-        "price": 24745.9,
-        "pnl": -1000.0
+        "price": 24946.05,
+        "pnl": -950.0
       },
       {
-        "price": 24943.87,
-        "pnl": -1000.0
+        "price": 25145.62,
+        "pnl": -950.0
       },
       {
-        "price": 25141.83,
-        "pnl": -1000.0
+        "price": 25345.19,
+        "pnl": -950.0
       },
       {
-        "price": 25339.8,
-        "pnl": -1000.0
+        "price": 25544.76,
+        "pnl": -950.0
       },
       {
-        "price": 25537.77,
-        "pnl": -1000.0
+        "price": 25744.32,
+        "pnl": -950.0
       },
       {
-        "price": 25735.74,
-        "pnl": -1000.0
+        "price": 25943.89,
+        "pnl": -950.0
       },
       {
-        "price": 25933.7,
-        "pnl": -1000.0
+        "price": 26143.46,
+        "pnl": -950.0
       },
       {
-        "price": 26131.67,
-        "pnl": -1031.67
+        "price": 26343.03,
+        "pnl": -1093.03
       },
       {
-        "price": 26329.64,
-        "pnl": -1229.64
+        "price": 26542.6,
+        "pnl": -1292.6
       },
       {
-        "price": 26527.61,
-        "pnl": -1400.0
+        "price": 26742.17,
+        "pnl": -1350.0
       },
       {
-        "price": 26725.57,
-        "pnl": -1400.0
+        "price": 26941.73,
+        "pnl": -1350.0
       },
       {
-        "price": 26923.54,
-        "pnl": -1400.0
+        "price": 27141.3,
+        "pnl": -1350.0
       },
       {
-        "price": 27121.51,
-        "pnl": -1400.0
+        "price": 27340.87,
+        "pnl": -1350.0
       },
       {
-        "price": 27319.47,
-        "pnl": -1400.0
+        "price": 27540.44,
+        "pnl": -1350.0
       },
       {
-        "price": 27517.44,
-        "pnl": -1400.0
+        "price": 27740.01,
+        "pnl": -1350.0
       },
       {
-        "price": 27715.41,
-        "pnl": -1400.0
+        "price": 27939.58,
+        "pnl": -1350.0
       },
       {
-        "price": 27913.38,
-        "pnl": -1400.0
+        "price": 28139.15,
+        "pnl": -1350.0
       },
       {
-        "price": 28111.34,
-        "pnl": -1400.0
+        "price": 28338.71,
+        "pnl": -1350.0
       },
       {
-        "price": 28309.31,
-        "pnl": -1400.0
+        "price": 28538.28,
+        "pnl": -1350.0
       },
       {
-        "price": 28507.28,
-        "pnl": -1400.0
+        "price": 28737.85,
+        "pnl": -1350.0
       },
       {
-        "price": 28705.24,
-        "pnl": -1400.0
+        "price": 28937.42,
+        "pnl": -1350.0
       },
       {
-        "price": 28903.21,
-        "pnl": -1400.0
+        "price": 29136.99,
+        "pnl": -1350.0
       },
       {
-        "price": 29101.18,
-        "pnl": -1400.0
+        "price": 29336.56,
+        "pnl": -1350.0
       },
       {
-        "price": 29299.15,
-        "pnl": -1400.0
+        "price": 29536.12,
+        "pnl": -1350.0
       },
       {
-        "price": 29497.11,
-        "pnl": -1400.0
+        "price": 29735.69,
+        "pnl": -1350.0
       },
       {
-        "price": 29695.08,
-        "pnl": -1400.0
+        "price": 29935.26,
+        "pnl": -1350.0
       }
     ],
     "kelly_sizing": {
@@ -277,48 +277,55 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-26100CE-B1x-Nov-26500CE"
+      "legs_summary": "S1x-Nov-26200CE-B1x-Nov-26600CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 59.8,
+      "score": 58.4,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-24745.9PE"
+      "legs_summary": "S1x-Nov-24946.1PE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 45.9,
+      "score": 43.9,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-24750PE-S1x-Nov-23750PE"
+      "legs_summary": "B1x-Nov-24950PE-S1x-Nov-24000PE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 41.6,
+      "score": 42.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-23000PE-S1x-Nov-23400PE-S1x-Nov-26100CE-B1x-Nov-26500CE"
+      "legs_summary": "B1x-Nov-23300PE-S1x-Nov-23700PE-S1x-Nov-26200CE-B1x-Nov-26600CE"
     }
   ],
   "indicators": {
-    "EMA20": "25522.77",
-    "EMA50": "25869.51",
-    "EMA100": "26059.14",
-    "EMA200": "26198.71",
-    "RSI(14)": "35.31",
-    "ATR(14)": "407.23",
-    "ADX(14)": "24.34",
-    "BB(20,2)": "0.23",
-    "P_SHAPE(20)": "58.65"
+    "EMA20": "25467.84",
+    "EMA50": "25833.29",
+    "EMA100": "26037.10",
+    "EMA200": "26186.25",
+    "RSI(14)": "39.14",
+    "ATR(14)": "395.59",
+    "ADX(14)": "24.56",
+    "BB(20,2)": "0.30",
+    "P_SHAPE(20)": "54.48"
   },
   "rules": [
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
@@ -369,13 +376,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
@@ -399,10 +399,17 @@
   ],
   "news": [
     {
+      "title": "Stock Market: Stock Market Today | Stock Market Live News Update",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rN1l6YVVCd3lGQ3B3azRWVUY0NmJpdFJDaTZUc2RGcXlmbklqQ2FSdlpKNWtPb1hFaEdQSzJ3YXhWeGUzU21iRk1hRDRNMjFROVdFRjRyRFZUYnFS?oc=5",
+      "published_at": "Sun, 09 Jan 2011",
+      "sentiment": "neutral"
+    },
+    {
       "title": "United Kingdom Kingdom Boe Financial Policy Committee Record | Historical Dates 1971-2026 Data| Moneycontrol",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd203RXhfVHMtdWdCUkhJTmhFN3dlSVRRSlVFemt3b25Ib3VuSFRraUUtdjhQeGNzTTNUc0NNazY3NGhySGdfNS1BV1UtN2tHc1dxU3FTQzA5eXVkc1N6ZTNoaUI0Tm92WF9NOEJncWZnZkR4bW9LS3ZGYVJOcWVQY1JCVkFZRjlfMWU0eHIxUEpGRzFOMm56TTdWV0NCZk50Z2JEOUZGbzZ3T00?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "bullish"
     },
     {
@@ -431,13 +438,6 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMEZaSm1McFN3d2VGZGUtVkJJZXUzZ29VelVRV0JaZDNEdTNfUjk5OUowbDZMRFZ4UnZPOENfN2VWSmtqX3pncENTVFlrS1VnNlhzQmI1RVQtanMxanlKeUYxaDBMN0Q1YkdOemRBWXVWSmlFMExUSVA1bXdiZnJ4NHlQaDJyUGh4S1RybEZwRWNkdGRMRzc1T2hjQVZMMG9yRURGSml0WDVYaDZTVEZiS0U0YTNZZw?oc=5",
       "published_at": "Tue, 30 Jan 2024",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "NIFTY FIN SERVICE Stock Price, Nifty FIN Service Market Indices, Nifty FIN Service Price, Stock Performance & Comparison",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBuWWxfNC1iS1FXbk1nWnJDQ0g1cW43VjhKU0NJNHBybnBiVUU3RG5hTFZOay0zRWI1Q3F1MlYxbGxpaWtoN2J5WG5JRkh0ZDhOQlVfNkRvc293SlRQZFZ3SDdzV204YjFObTMwTlhkdWMzLXVoTEExNQ?oc=5",
-      "published_at": "Fri, 11 May 2018",
       "sentiment": "neutral"
     }
   ]

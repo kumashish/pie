@@ -1,14 +1,14 @@
 {
   "symbol": "NTPC.NS",
-  "last_price": 321.15,
+  "last_price": 321.45,
   "as_of": "2026-10-06 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.5,
-  "fit_score": 15.0,
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.2,
+  "fit_score": 22.5,
   "confidence_grade": "C",
-  "confidence_percentage": 15.0,
-  "vix": 14.57,
+  "confidence_percentage": 22.5,
+  "vix": 13.61,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 335.0,
         "strike_formatted": "335",
         "option_type": "Call",
-        "delta": 0.262,
+        "delta": 0.252,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -35,7 +35,7 @@
         "strike": 340.0,
         "strike_formatted": "340",
         "option_type": "Call",
-        "delta": 0.18,
+        "delta": 0.167,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
@@ -45,219 +45,219 @@
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 15.0,
-    "stop_loss_price": 311.52,
-    "take_profit_price": 330.78,
-    "net_delta": -0.082,
-    "net_theta": 0.014,
+    "margin_required": 10.0,
+    "stop_loss_price": 311.81,
+    "take_profit_price": 331.09,
+    "net_delta": -0.085,
+    "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 256.92,
+        "price": 257.16,
+        "pnl": -10.0
+      },
+      {
+        "price": 259.73,
+        "pnl": -10.0
+      },
+      {
+        "price": 262.3,
+        "pnl": -10.0
+      },
+      {
+        "price": 264.87,
+        "pnl": -10.0
+      },
+      {
+        "price": 267.45,
+        "pnl": -10.0
+      },
+      {
+        "price": 270.02,
+        "pnl": -10.0
+      },
+      {
+        "price": 272.59,
+        "pnl": -10.0
+      },
+      {
+        "price": 275.16,
+        "pnl": -10.0
+      },
+      {
+        "price": 277.73,
+        "pnl": -10.0
+      },
+      {
+        "price": 280.3,
+        "pnl": -10.0
+      },
+      {
+        "price": 282.88,
+        "pnl": -10.0
+      },
+      {
+        "price": 285.45,
+        "pnl": -10.0
+      },
+      {
+        "price": 288.02,
+        "pnl": -10.0
+      },
+      {
+        "price": 290.59,
+        "pnl": -10.0
+      },
+      {
+        "price": 293.16,
+        "pnl": -10.0
+      },
+      {
+        "price": 295.73,
+        "pnl": -10.0
+      },
+      {
+        "price": 298.31,
+        "pnl": -10.0
+      },
+      {
+        "price": 300.88,
+        "pnl": -10.0
+      },
+      {
+        "price": 303.45,
+        "pnl": -10.0
+      },
+      {
+        "price": 306.02,
+        "pnl": -10.0
+      },
+      {
+        "price": 308.59,
+        "pnl": -10.0
+      },
+      {
+        "price": 311.16,
+        "pnl": -10.0
+      },
+      {
+        "price": 313.74,
+        "pnl": -10.0
+      },
+      {
+        "price": 316.31,
+        "pnl": -10.0
+      },
+      {
+        "price": 318.88,
+        "pnl": -10.0
+      },
+      {
+        "price": 321.45,
+        "pnl": -10.0
+      },
+      {
+        "price": 324.02,
+        "pnl": -10.0
+      },
+      {
+        "price": 326.59,
+        "pnl": -10.0
+      },
+      {
+        "price": 329.16,
+        "pnl": -10.0
+      },
+      {
+        "price": 331.74,
+        "pnl": -10.0
+      },
+      {
+        "price": 334.31,
+        "pnl": -10.0
+      },
+      {
+        "price": 336.88,
+        "pnl": -11.88
+      },
+      {
+        "price": 339.45,
+        "pnl": -14.45
+      },
+      {
+        "price": 342.02,
         "pnl": -15.0
       },
       {
-        "price": 259.49,
+        "price": 344.59,
         "pnl": -15.0
       },
       {
-        "price": 262.06,
+        "price": 347.17,
         "pnl": -15.0
       },
       {
-        "price": 264.63,
+        "price": 349.74,
         "pnl": -15.0
       },
       {
-        "price": 267.2,
+        "price": 352.31,
         "pnl": -15.0
       },
       {
-        "price": 269.77,
+        "price": 354.88,
         "pnl": -15.0
       },
       {
-        "price": 272.34,
+        "price": 357.45,
         "pnl": -15.0
       },
       {
-        "price": 274.9,
+        "price": 360.02,
         "pnl": -15.0
       },
       {
-        "price": 277.47,
+        "price": 362.6,
         "pnl": -15.0
       },
       {
-        "price": 280.04,
+        "price": 365.17,
         "pnl": -15.0
       },
       {
-        "price": 282.61,
+        "price": 367.74,
         "pnl": -15.0
       },
       {
-        "price": 285.18,
+        "price": 370.31,
         "pnl": -15.0
       },
       {
-        "price": 287.75,
+        "price": 372.88,
         "pnl": -15.0
       },
       {
-        "price": 290.32,
+        "price": 375.45,
         "pnl": -15.0
       },
       {
-        "price": 292.89,
+        "price": 378.03,
         "pnl": -15.0
       },
       {
-        "price": 295.46,
+        "price": 380.6,
         "pnl": -15.0
       },
       {
-        "price": 298.03,
+        "price": 383.17,
         "pnl": -15.0
       },
       {
-        "price": 300.6,
+        "price": 385.74,
         "pnl": -15.0
-      },
-      {
-        "price": 303.17,
-        "pnl": -15.0
-      },
-      {
-        "price": 305.73,
-        "pnl": -15.0
-      },
-      {
-        "price": 308.3,
-        "pnl": -15.0
-      },
-      {
-        "price": 310.87,
-        "pnl": -15.0
-      },
-      {
-        "price": 313.44,
-        "pnl": -15.0
-      },
-      {
-        "price": 316.01,
-        "pnl": -15.0
-      },
-      {
-        "price": 318.58,
-        "pnl": -15.0
-      },
-      {
-        "price": 321.15,
-        "pnl": -15.0
-      },
-      {
-        "price": 323.72,
-        "pnl": -15.0
-      },
-      {
-        "price": 326.29,
-        "pnl": -15.0
-      },
-      {
-        "price": 328.86,
-        "pnl": -15.0
-      },
-      {
-        "price": 331.43,
-        "pnl": -15.0
-      },
-      {
-        "price": 334.0,
-        "pnl": -15.0
-      },
-      {
-        "price": 336.57,
-        "pnl": -16.57
-      },
-      {
-        "price": 339.13,
-        "pnl": -19.13
-      },
-      {
-        "price": 341.7,
-        "pnl": -20.0
-      },
-      {
-        "price": 344.27,
-        "pnl": -20.0
-      },
-      {
-        "price": 346.84,
-        "pnl": -20.0
-      },
-      {
-        "price": 349.41,
-        "pnl": -20.0
-      },
-      {
-        "price": 351.98,
-        "pnl": -20.0
-      },
-      {
-        "price": 354.55,
-        "pnl": -20.0
-      },
-      {
-        "price": 357.12,
-        "pnl": -20.0
-      },
-      {
-        "price": 359.69,
-        "pnl": -20.0
-      },
-      {
-        "price": 362.26,
-        "pnl": -20.0
-      },
-      {
-        "price": 364.83,
-        "pnl": -20.0
-      },
-      {
-        "price": 367.4,
-        "pnl": -20.0
-      },
-      {
-        "price": 369.96,
-        "pnl": -20.0
-      },
-      {
-        "price": 372.53,
-        "pnl": -20.0
-      },
-      {
-        "price": 375.1,
-        "pnl": -20.0
-      },
-      {
-        "price": 377.67,
-        "pnl": -20.0
-      },
-      {
-        "price": 380.24,
-        "pnl": -20.0
-      },
-      {
-        "price": 382.81,
-        "pnl": -20.0
-      },
-      {
-        "price": 385.38,
-        "pnl": -20.0
       }
     ],
     "kelly_sizing": {
@@ -280,47 +280,61 @@
       "legs_summary": "S1x-Nov-335CE-B1x-Nov-340CE"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 56.3,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-321.1PE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 45.4,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-320PE-S1x-Nov-305PE"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 44.7,
+      "score": 58.2,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-300PE-S1x-Nov-305PE-S1x-Nov-335CE-B1x-Nov-340CE"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 52.3,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-321.5PE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 43.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-320PE-S1x-Nov-310PE"
     }
   ],
   "indicators": {
-    "EMA20": "325.42",
-    "EMA50": "333.25",
-    "EMA100": "343.06",
+    "EMA20": "325.47",
+    "EMA50": "333.27",
+    "EMA100": "343.07",
     "EMA200": "349.56",
-    "RSI(14)": "40.58",
-    "ATR(14)": "5.15",
-    "ADX(14)": "39.29",
-    "BB(20,2)": "0.25",
-    "P_SHAPE(20)": "54.71"
+    "RSI(14)": "40.91",
+    "ATR(14)": "5.27",
+    "ADX(14)": "39.42",
+    "BB(20,2)": "0.26",
+    "P_SHAPE(20)": "54.75"
   },
   "rules": [
     {
       "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -362,20 +376,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
@@ -400,14 +400,14 @@
   "news": [
     {
       "title": "NTPC appoints Surya Narayan Panigrahi as Executive Director (HR)",
-      "publisher": "hr.economictimes.indiatimes.com",
+      "publisher": "ETHRWorld.com",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTmNEWkh4OE5PcmMtZVhCakQ5Z3hVaHFGTU85ZXFmSmowNXpUZjNfNU9XWFVLVDdadUFUZDhBbjFOTU1MdWt6VUZDMk5nMkRKM0NkanhQdzNpbjJkMFllNUIwV2pRT2NwRmFDQ2dCc0hZVFh1TGdmbGZKd2NvXzl0blNWRkpyaTBkbmJacnpQUWxaZ1diWTF3VjBwRW5ab1FHU2V3ME1xMjBoQkE1aWpiUEZWYXI0N0hkMnEzNmo1YnU2elRT0gHKAUFVX3lxTE9wc0ZrbG40TlZ0ejhwTnFscWY3M1Q5VFFZcUFhSFMwLUphaFQyc0ptRkZsQks4elJZRUFlbUVyQWhXQWNOWV8wOXBlYTBoWnpDTk5NRmhkd0FTNFZyS1NINnk3b2lXRU1yaWV2NTdjcWtIRUpCQmdFbnM5R2ZFNEFWMU12cGpRaFB5RWhGbFNrZ3htdGZDR0dHQllXMDc1MTNwaERvekZHWEdCNXhUa0F6VXc2SDBzV2tBX3UzUFUzM2tNR3J2S2Y4SWc?oc=5",
       "published_at": "Fri, 02 Oct 2026",
       "sentiment": "bearish"
     },
     {
       "title": "NTPC power generation rises 13% to 117.9 billion units in Q2",
-      "publisher": "government.economictimes.indiatimes.com",
+      "publisher": "ET Government",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmVfUHRIVHpqN0kydG5DOERhS2VESDFTNnYwWkVxVE92dkNCdGhBYk50WXlHNVpxQ2doclZaTUtWa0IxMXFzSzBLZHJiTTVDUTUyc1VHVEY4OTE2U3B3NDNTM0NEWklGc1BtcFUtUG5mUk1xbWZzSEpuRzM2Q21CVFB6NUNrMUxXcGpXbXk3N1ZZSDRTMUhwR3BRbWpHX1k0UmJKRlYxejJzU3kzMURkYlZBY0x3TlZwd29MTWdRMzBMWFpO0gHKAUFVX3lxTE84NGdteEFNWk1KbUF2SzVqZVRJR0FWSGVoWGI4QWN6OWNNcmpOLVhWb0RFZXBqTGZWWTFwZHJwNlBRSjVreE5YT1p1bG5OSmJod2VTZE8tNWUzTXhOOUR4SERCZTFIQWNzUWR6Y2xuZF9IekNWMDhwUzlZNXZ1R19FelFwcDJvMmlqT3hRTkdjVW5uU29KLThmb21oaTRJMHpIcG14V0xTYWoxMFhJbE9EMThJR1F0cHppNjNIQjNQVlJHV20yUlNtNnc?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
@@ -421,14 +421,14 @@
     },
     {
       "title": "Sumeet Bagadia's top 5 stocks to buy under \u20b9100 | Sagility, Ujjivan, NTPC Green, Bajaj HFL, JAYNECO; target, stoploss",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOcFZHTkYyTEdvS1lzbDA5LTlIRHl0T2k4MElObGx2b1ZQaG1OZGMzZTFDZ3dBb3AwUDJfdmNITXpRTno3dmNxVFFGdUhySV8yZ0FhejlIUnhzbjV2ZGZsT0loVXFPalNOd2JZNnkyZE9OVGptc3d6MVFXOXdQYjBXUE9fZHd0U0NhNWsyYlZLSzRyaVg2SFNZTXhuU1UzbUpRa01MaWQ1dGRaQURhUl9KNVEwdjFuTm9icFZwYTJCdjZld1dDS3FFUmpwT1RHUXRlWUc3bGRLQzNJWDd0VEp3OFo3WjNCb0JpLVB5U1Jkdl81RVRZTTZXNVBhZ0hRZ1BTMlBpam1YWWdsMWY40gGSAkFVX3lxTFBJUFNoR3hnbVNZQlZpMVdKMlBONHhCWWRuXy1IbzJncjVpdnlPZV83UXVHU1laSmZNRWtqb2s0TVJVUDRod2tjbUxiQjA1ektoT1Jfd2FtbVFYVEFLeHJUT2tzbkxQMmhIZlJodzdtdlhteVltZHRMRHFFSWpuZmhlcTFTVzB0X1piVUZ4YVJ2WDRxMktzUHY1YnNkME1qSXYxWUNxTUpoc1RmZU5wcDE3TnYxS20wdjVyd3hIbjMxM2VDQURjeGNEdFJJZHdjYm56dXFYSWR2dERORFdNMU9Gci1mT1V6YzY5aVVJWVN4YThBbmdrbS0wbExtQ2hVNG1wNmpJZ28yb0I5M0c0R3lscmc?oc=5",
       "published_at": "Sat, 03 Oct 2026",
       "sentiment": "bullish"
     },
     {
       "title": "Power stocks fall despite \u20b91.86 lakh crore PM-DHARA scheme: Tata Power, Adani Power, NTPC, Power Grid in focus",
-      "publisher": "Livemint",
+      "publisher": "livemint.com",
       "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQd1lNLS1fZDN6UkM5Z09fbEx6VUR2Y2xZM0g1c2lNNFJfNEx3bl9TTUh2N1FZMk9rNmluTWNOLUdFeGpQYVJ6MlpsMFNtNzFWazNEa0xRaVFWY1dJUnNWRXJKVDlnUy1CVWVSclFjLVR0cEtYV1N3OWZVcDd4SExVU3l5Qy14SkxONGJST2JVWmdlXzlGNThzY19rbERVbEJ6M0pUV2NJSlNIZlllLVozTUhwcWZuZlN6bWU2RGl1T3kwTTA0VEtzZW13Zl9WS0p5bnJ0V2FNakRYRVU1aWxITldHY3NpWHlhdjZIaW5mWTViY2liWjFIMGNkZnJOMXM1cjAxWGhpMW1xQdIBjwJBVV95cUxNMUlqZkZWM0RoRVhuc3NCektKWDNQYTFieWRyVmZsYXNxVWRXOTBmMFZrdGR5bVRPWTJmdkw0Qkd3YmdCUEw0dkdJRm5QbGQ1bmljOGRtbkVodlZxcTNiQWFYajZ4aURFNndxeF9Jam1tTlJLdEJPc2ZRaW1QUnRWdE9xTHVSQTYyVTZmUGtlSWNQSnNDRzhsV040c01JQlhaWG5JNl9sZ19yY1lZLVJLSVVmWkYwdVlSTDBCYnEwU0dZdFlfTGV5TXZfWGQxWENDa1lNLWJnUVVjTDZBQk5Da0M5RGZiNmVwb0xwYlB1NmlOZFo1cVlWQ0h5ekVjc3dNbENva1BPSy1CU2hPTVgw?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bearish"
