@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 06, 09:13 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x SPY 20-Nov-2026 815 Call /  Buy 1x SPY 20-Nov-2026 830 Call | Active (Today, 09:13)  |
-| QQQ       | Oct 06, 09:13 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x QQQ 20-Nov-2026 715 Put /  Buy 1x QQQ 20-Nov-2026 705 Put | Active (Today, 09:13)  |
+| SPY       | Oct 06, 14:40 IST | 🟡 Credit Spread   | 10.0/10   | Sell SPY 20-Nov-2026 815 Call /  Buy SPY 20-Nov-2026 820 Call | ⚠️ Stop Loss (Oct 04, 18:18 IST) |
+| QQQ       | Oct 06, 14:40 IST | 🟡 Credit Spread   | 10.0/10   | Sell QQQ 20-Nov-2026 715 Put /  Buy QQQ 20-Nov-2026 705 Put | ⚠️ Stop Loss (Today, 03:35) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -20,9 +20,9 @@
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | META      | Oct 06, 09:14 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 780 Call /  Buy 1x META 20-Nov-2026 805 Call | Active (Today, 09:14)  |
 | MSFT      | Oct 06, 09:14 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSFT 20-Nov-2026 495 Put /  Buy 1x MSFT 20-Nov-2026 485 Put | Active (Today, 09:14)  |
-| VTI       | Oct 06, 09:13 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VTI 20-Nov-2026 400 Call /  Buy 1x VTI 20-Nov-2026 405 Call | Active (Today, 09:13)  |
-| VOO       | Oct 06, 09:13 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VOO 20-Nov-2026 750 Call /  Buy 1x VOO 20-Nov-2026 755 Call | Active (Today, 09:13)  |
 | V         | Oct 06, 09:14 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x V 20-Nov-2026 390 Call /  Buy 1x V 20-Nov-2026 395 Call | Active (Today, 09:14)  |
+| VOO       | Oct 06, 09:13 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VOO 20-Nov-2026 750 Call /  Buy 1x VOO 20-Nov-2026 755 Call | Active (Today, 09:13)  |
+| VTI       | Oct 06, 09:13 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VTI 20-Nov-2026 400 Call /  Buy 1x VTI 20-Nov-2026 405 Call | Active (Today, 09:13)  |
 | NVDA      | Oct 06, 09:14 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x NVDA 20-Nov-2026 225 Put /  Buy 1x NVDA 20-Nov-2026 220 Put | Active (Today, 09:14)  |
 
 #### 🇮🇳 Indian Equities
