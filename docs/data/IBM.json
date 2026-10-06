@@ -1,14 +1,14 @@
 {
   "symbol": "IBM",
-  "last_price": 221.58,
-  "as_of": "2026-10-05 13:30:00",
+  "last_price": 223.25,
+  "as_of": "2026-10-06 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.5,
-  "fit_score": 5.0,
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 5.0,
-  "vix": 15.29,
+  "confidence_percentage": 10.0,
+  "vix": 15.38,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 230.0,
-        "strike_formatted": "230",
+        "strike": 235.0,
+        "strike_formatted": "235",
         "option_type": "Call",
-        "delta": 0.29,
+        "delta": 0.209,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x IBM 20-Nov-2026 230 Call"
+        "summary": "Sell 1x IBM 20-Nov-2026 235 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 235.0,
-        "strike_formatted": "235",
+        "strike": 240.0,
+        "strike_formatted": "240",
         "option_type": "Call",
-        "delta": 0.17,
+        "delta": 0.115,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x IBM 20-Nov-2026 235 Call"
+        "summary": "Buy 1x IBM 20-Nov-2026 240 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 214.93,
-    "take_profit_price": 228.23,
-    "net_delta": -0.12,
-    "net_theta": 0.016,
+    "stop_loss_price": 216.56,
+    "take_profit_price": 229.95,
+    "net_delta": -0.094,
+    "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 177.26,
+        "price": 178.6,
         "pnl": -10.0
       },
       {
-        "price": 179.04,
+        "price": 180.39,
         "pnl": -10.0
       },
       {
-        "price": 180.81,
+        "price": 182.18,
         "pnl": -10.0
       },
       {
-        "price": 182.58,
+        "price": 183.96,
         "pnl": -10.0
       },
       {
-        "price": 184.35,
+        "price": 185.75,
         "pnl": -10.0
       },
       {
-        "price": 186.13,
+        "price": 187.53,
         "pnl": -10.0
       },
       {
-        "price": 187.9,
+        "price": 189.32,
         "pnl": -10.0
       },
       {
-        "price": 189.67,
+        "price": 191.11,
         "pnl": -10.0
       },
       {
-        "price": 191.45,
+        "price": 192.89,
         "pnl": -10.0
       },
       {
-        "price": 193.22,
+        "price": 194.68,
         "pnl": -10.0
       },
       {
-        "price": 194.99,
+        "price": 196.46,
         "pnl": -10.0
       },
       {
-        "price": 196.76,
+        "price": 198.25,
         "pnl": -10.0
       },
       {
-        "price": 198.54,
+        "price": 200.04,
         "pnl": -10.0
       },
       {
-        "price": 200.31,
+        "price": 201.82,
         "pnl": -10.0
       },
       {
-        "price": 202.08,
+        "price": 203.61,
         "pnl": -10.0
       },
       {
-        "price": 203.85,
+        "price": 205.39,
         "pnl": -10.0
       },
       {
-        "price": 205.63,
+        "price": 207.18,
         "pnl": -10.0
       },
       {
-        "price": 207.4,
+        "price": 208.97,
         "pnl": -10.0
       },
       {
-        "price": 209.17,
+        "price": 210.75,
         "pnl": -10.0
       },
       {
-        "price": 210.94,
+        "price": 212.54,
         "pnl": -10.0
       },
       {
-        "price": 212.72,
+        "price": 214.32,
         "pnl": -10.0
       },
       {
-        "price": 214.49,
+        "price": 216.11,
         "pnl": -10.0
       },
       {
-        "price": 216.26,
+        "price": 217.9,
         "pnl": -10.0
       },
       {
-        "price": 218.03,
+        "price": 219.68,
         "pnl": -10.0
       },
       {
-        "price": 219.81,
+        "price": 221.47,
         "pnl": -10.0
       },
       {
-        "price": 221.58,
+        "price": 223.25,
         "pnl": -10.0
       },
       {
-        "price": 223.35,
+        "price": 225.04,
         "pnl": -10.0
       },
       {
-        "price": 225.13,
+        "price": 226.83,
         "pnl": -10.0
       },
       {
-        "price": 226.9,
+        "price": 228.61,
         "pnl": -10.0
       },
       {
-        "price": 228.67,
+        "price": 230.4,
         "pnl": -10.0
       },
       {
-        "price": 230.44,
-        "pnl": -10.44
+        "price": 232.18,
+        "pnl": -10.0
       },
       {
-        "price": 232.22,
-        "pnl": -12.22
-      },
-      {
-        "price": 233.99,
-        "pnl": -13.99
+        "price": 233.97,
+        "pnl": -10.0
       },
       {
         "price": 235.76,
+        "pnl": -10.76
+      },
+      {
+        "price": 237.54,
+        "pnl": -12.54
+      },
+      {
+        "price": 239.33,
+        "pnl": -14.33
+      },
+      {
+        "price": 241.11,
         "pnl": -15.0
       },
       {
-        "price": 237.53,
+        "price": 242.9,
         "pnl": -15.0
       },
       {
-        "price": 239.31,
+        "price": 244.69,
         "pnl": -15.0
       },
       {
-        "price": 241.08,
+        "price": 246.47,
         "pnl": -15.0
       },
       {
-        "price": 242.85,
+        "price": 248.26,
         "pnl": -15.0
       },
       {
-        "price": 244.62,
+        "price": 250.04,
         "pnl": -15.0
       },
       {
-        "price": 246.4,
+        "price": 251.83,
         "pnl": -15.0
       },
       {
-        "price": 248.17,
+        "price": 253.62,
         "pnl": -15.0
       },
       {
-        "price": 249.94,
+        "price": 255.4,
         "pnl": -15.0
       },
       {
-        "price": 251.71,
+        "price": 257.19,
         "pnl": -15.0
       },
       {
-        "price": 253.49,
+        "price": 258.97,
         "pnl": -15.0
       },
       {
-        "price": 255.26,
+        "price": 260.76,
         "pnl": -15.0
       },
       {
-        "price": 257.03,
+        "price": 262.55,
         "pnl": -15.0
       },
       {
-        "price": 258.81,
+        "price": 264.33,
         "pnl": -15.0
       },
       {
-        "price": 260.58,
+        "price": 266.12,
         "pnl": -15.0
       },
       {
-        "price": 262.35,
-        "pnl": -15.0
-      },
-      {
-        "price": 264.12,
-        "pnl": -15.0
-      },
-      {
-        "price": 265.9,
+        "price": 267.9,
         "pnl": -15.0
       }
     ],
@@ -277,48 +277,62 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x IBM 20-Nov-2026 230 Call<br> Buy 1x IBM 20-Nov-2026 235 Call"
+      "legs_summary": "Sell 1x IBM 20-Nov-2026 235 Call<br> Buy 1x IBM 20-Nov-2026 240 Call"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 72.9,
+      "score": 69.3,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 220 Put<br> Sell 1x IBM 20-Nov-2026 210 Put"
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 225 Put<br> Sell 1x IBM 20-Nov-2026 215 Put"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 59.8,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x IBM 20-Nov-2026 221.6 Put"
+      "legs_summary": "Sell 1x IBM 20-Nov-2026 223.3 Put"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 40.0,
+      "score": 40.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 205 Put<br> Sell 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 230 Call<br> Buy 1x IBM 20-Nov-2026 235 Call"
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 215 Put<br> Sell 1x IBM 20-Nov-2026 235 Call<br> Buy 1x IBM 20-Nov-2026 240 Call"
     }
   ],
   "indicators": {
-    "EMA20": "228.49",
-    "EMA50": "233.99",
-    "EMA100": "241.01",
-    "EMA200": "249.57",
-    "RSI(14)": "40.55",
-    "ATR(14)": "6.54",
-    "ADX(14)": "13.50",
-    "BB(20,2)": "0.22",
-    "P_SHAPE(20)": "35.57"
+    "EMA20": "227.99",
+    "EMA50": "233.57",
+    "EMA100": "240.66",
+    "EMA200": "249.31",
+    "RSI(14)": "42.71",
+    "ATR(14)": "6.22",
+    "ADX(14)": "13.04",
+    "BB(20,2)": "0.29",
+    "P_SHAPE(20)": "34.04"
   },
   "rules": [
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
@@ -363,20 +377,6 @@
     },
     {
       "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,

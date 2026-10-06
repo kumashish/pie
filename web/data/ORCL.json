@@ -1,14 +1,14 @@
 {
   "symbol": "ORCL",
-  "last_price": 142.48,
-  "as_of": "2026-10-05 13:30:00",
+  "last_price": 145.68,
+  "as_of": "2026-10-06 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.0,
-  "fit_score": 10.0,
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 10.0,
-  "vix": 15.29,
+  "confidence_percentage": 17.5,
+  "vix": 15.38,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,243 +20,243 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 150.0,
-        "strike_formatted": "150",
+        "strike": 155.0,
+        "strike_formatted": "155",
         "option_type": "Call",
-        "delta": 0.207,
+        "delta": 0.157,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x ORCL 20-Nov-2026 150 Call"
+        "summary": "Sell 1x ORCL 20-Nov-2026 155 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 155.0,
-        "strike_formatted": "155",
+        "strike": 160.0,
+        "strike_formatted": "160",
         "option_type": "Call",
-        "delta": 0.077,
+        "delta": 0.055,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x ORCL 20-Nov-2026 155 Call"
+        "summary": "Buy 1x ORCL 20-Nov-2026 160 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 138.21,
-    "take_profit_price": 146.75,
-    "net_delta": -0.13,
-    "net_theta": 0.014,
+    "stop_loss_price": 141.31,
+    "take_profit_price": 150.05,
+    "net_delta": -0.102,
+    "net_theta": 0.013,
     "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "var_95": 4.83,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 113.98,
+        "price": 116.55,
         "pnl": -5.0
       },
       {
-        "price": 115.12,
+        "price": 117.71,
         "pnl": -5.0
       },
       {
-        "price": 116.26,
+        "price": 118.88,
         "pnl": -5.0
       },
       {
-        "price": 117.4,
+        "price": 120.04,
         "pnl": -5.0
       },
       {
-        "price": 118.54,
+        "price": 121.21,
         "pnl": -5.0
       },
       {
-        "price": 119.68,
+        "price": 122.37,
         "pnl": -5.0
       },
       {
-        "price": 120.82,
+        "price": 123.54,
         "pnl": -5.0
       },
       {
-        "price": 121.96,
+        "price": 124.7,
         "pnl": -5.0
       },
       {
-        "price": 123.1,
+        "price": 125.87,
         "pnl": -5.0
       },
       {
-        "price": 124.24,
+        "price": 127.04,
         "pnl": -5.0
       },
       {
-        "price": 125.38,
+        "price": 128.2,
         "pnl": -5.0
       },
       {
-        "price": 126.52,
+        "price": 129.37,
         "pnl": -5.0
       },
       {
-        "price": 127.66,
+        "price": 130.53,
         "pnl": -5.0
       },
       {
-        "price": 128.8,
+        "price": 131.7,
         "pnl": -5.0
       },
       {
-        "price": 129.94,
+        "price": 132.86,
         "pnl": -5.0
       },
       {
-        "price": 131.08,
+        "price": 134.03,
         "pnl": -5.0
       },
       {
-        "price": 132.22,
+        "price": 135.19,
         "pnl": -5.0
       },
       {
-        "price": 133.36,
+        "price": 136.36,
         "pnl": -5.0
       },
       {
-        "price": 134.5,
+        "price": 137.52,
         "pnl": -5.0
       },
       {
-        "price": 135.64,
+        "price": 138.69,
         "pnl": -5.0
       },
       {
-        "price": 136.78,
+        "price": 139.86,
         "pnl": -5.0
       },
       {
-        "price": 137.92,
+        "price": 141.02,
         "pnl": -5.0
       },
       {
-        "price": 139.06,
+        "price": 142.19,
         "pnl": -5.0
       },
       {
-        "price": 140.2,
+        "price": 143.35,
         "pnl": -5.0
       },
       {
-        "price": 141.34,
+        "price": 144.52,
         "pnl": -5.0
       },
       {
-        "price": 142.48,
+        "price": 145.68,
         "pnl": -5.0
       },
       {
-        "price": 143.62,
+        "price": 146.85,
         "pnl": -5.0
       },
       {
-        "price": 144.76,
+        "price": 148.01,
         "pnl": -5.0
       },
       {
-        "price": 145.9,
+        "price": 149.18,
         "pnl": -5.0
       },
       {
-        "price": 147.04,
+        "price": 150.34,
         "pnl": -5.0
       },
       {
-        "price": 148.18,
+        "price": 151.51,
         "pnl": -5.0
       },
       {
-        "price": 149.32,
+        "price": 152.68,
         "pnl": -5.0
       },
       {
-        "price": 150.46,
-        "pnl": -5.46
+        "price": 153.84,
+        "pnl": -5.0
       },
       {
-        "price": 151.6,
-        "pnl": -6.6
+        "price": 155.01,
+        "pnl": -5.01
       },
       {
-        "price": 152.74,
-        "pnl": -7.74
+        "price": 156.17,
+        "pnl": -6.17
       },
       {
-        "price": 153.88,
-        "pnl": -8.88
+        "price": 157.34,
+        "pnl": -7.34
       },
       {
-        "price": 155.02,
+        "price": 158.5,
+        "pnl": -8.5
+      },
+      {
+        "price": 159.67,
+        "pnl": -9.67
+      },
+      {
+        "price": 160.83,
         "pnl": -10.0
       },
       {
-        "price": 156.16,
+        "price": 162.0,
         "pnl": -10.0
       },
       {
-        "price": 157.3,
+        "price": 163.16,
         "pnl": -10.0
       },
       {
-        "price": 158.44,
+        "price": 164.33,
         "pnl": -10.0
       },
       {
-        "price": 159.58,
+        "price": 165.5,
         "pnl": -10.0
       },
       {
-        "price": 160.72,
+        "price": 166.66,
         "pnl": -10.0
       },
       {
-        "price": 161.86,
+        "price": 167.83,
         "pnl": -10.0
       },
       {
-        "price": 163.0,
+        "price": 168.99,
         "pnl": -10.0
       },
       {
-        "price": 164.14,
+        "price": 170.16,
         "pnl": -10.0
       },
       {
-        "price": 165.28,
+        "price": 171.32,
         "pnl": -10.0
       },
       {
-        "price": 166.42,
+        "price": 172.49,
         "pnl": -10.0
       },
       {
-        "price": 167.56,
+        "price": 173.65,
         "pnl": -10.0
       },
       {
-        "price": 168.7,
-        "pnl": -10.0
-      },
-      {
-        "price": 169.84,
-        "pnl": -10.0
-      },
-      {
-        "price": 170.98,
+        "price": 174.82,
         "pnl": -10.0
       }
     ],
@@ -277,50 +277,59 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x ORCL 20-Nov-2026 150 Call<br> Buy 1x ORCL 20-Nov-2026 155 Call"
+      "legs_summary": "Sell 1x ORCL 20-Nov-2026 155 Call<br> Buy 1x ORCL 20-Nov-2026 160 Call"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 66.0,
-      "grade": "B (Good)",
+      "score": 58.7,
+      "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x ORCL 20-Nov-2026 140 Put<br> Sell 1x ORCL 20-Nov-2026 135 Put"
-    },
-    {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 57.1,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x ORCL 20-Nov-2026 142.5 Put"
+      "legs_summary": "Buy 1x ORCL 20-Nov-2026 145 Put<br> Sell 1x ORCL 20-Nov-2026 140 Put"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 42.7,
+      "score": 56.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x ORCL 20-Nov-2026 125 Put<br> Sell 1x ORCL 20-Nov-2026 130 Put<br> Sell 1x ORCL 20-Nov-2026 150 Call<br> Buy 1x ORCL 20-Nov-2026 155 Call"
+      "legs_summary": "Buy 1x ORCL 20-Nov-2026 130 Put<br> Sell 1x ORCL 20-Nov-2026 135 Put<br> Sell 1x ORCL 20-Nov-2026 155 Call<br> Buy 1x ORCL 20-Nov-2026 160 Call"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 53.0,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x ORCL 20-Nov-2026 145.7 Put"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 41.2,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x ORCL 20-Nov-2026 140 Call<br> Sell 1x ORCL 20-Nov-2026 145 Call<br> Sell 1x ORCL 20-Nov-2026 145 Call<br> Buy 1x ORCL 20-Nov-2026 150 Call"
     }
   ],
   "indicators": {
-    "EMA20": "143.01",
-    "EMA50": "146.11",
-    "EMA100": "152.97",
-    "EMA200": "165.36",
-    "RSI(14)": "48.51",
-    "ATR(14)": "6.69",
+    "EMA20": "143.26",
+    "EMA50": "146.10",
+    "EMA100": "152.83",
+    "EMA200": "165.17",
+    "RSI(14)": "52.04",
+    "ATR(14)": "6.46",
     "ADX(14)": "11.47",
-    "BB(20,2)": "0.41",
-    "P_SHAPE(20)": "27.89"
+    "BB(20,2)": "0.55",
+    "P_SHAPE(20)": "31.81"
   },
   "rules": [
     {
-      "name": "Price making higher highs",
+      "name": "RSI between 50 and 65",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -362,13 +371,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
@@ -377,6 +379,13 @@
     },
     {
       "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -402,6 +411,13 @@
       "title": "The $110 Billion Paramount-Warner Merger Closes Today. What Shareholders Need to Know",
       "publisher": "24/7 Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/110-billion-paramount-warner-merger-131045915.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Ember AI Launches Strategic Partner Program and New Oracle Health Integration",
+      "publisher": "PR Newswire",
+      "link": "https://finance.yahoo.com/healthcare/articles/ember-ai-launches-strategic-partner-130000831.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
@@ -432,13 +448,6 @@
       "link": "https://finance.yahoo.com/technology/articles/uipath-test-cloud-now-available-123000721.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "How Much Downside Is Left In Adobe Stock?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/much-downside-left-adobe-stock-120248471.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
     }
   ]
 }

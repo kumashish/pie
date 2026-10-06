@@ -1,19 +1,19 @@
 {
   "symbol": "NVDA",
-  "last_price": 238.9,
-  "as_of": "2026-10-05 13:30:00",
-  "regime": "strong_bull",
-  "regime_display": "Strong Bull",
-  "trend_score": 8.0,
-  "fit_score": 80.0,
-  "confidence_grade": "A",
-  "confidence_percentage": 80.0,
-  "vix": 15.29,
+  "last_price": 241.4,
+  "as_of": "2026-10-06 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.8,
+  "fit_score": 67.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 67.5,
+  "vix": 15.37,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (66.9) is overbought (> 65) [Synthetic PCR: 0.62]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (68.7) is overbought (> 65) [Synthetic PCR: 0.61]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 225.0,
         "strike_formatted": "225",
         "option_type": "Put",
-        "delta": -0.104,
+        "delta": -0.074,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 220.0,
         "strike_formatted": "220",
         "option_type": "Put",
-        "delta": -0.047,
+        "delta": -0.031,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 231.73,
-    "take_profit_price": 246.07,
-    "net_delta": 0.057,
-    "net_theta": 0.01,
+    "stop_loss_price": 234.16,
+    "take_profit_price": 248.64,
+    "net_delta": 0.043,
+    "net_theta": 0.009,
     "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "var_95": 3.27,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 191.12,
+        "price": 193.12,
         "pnl": -15.0
       },
       {
-        "price": 193.03,
+        "price": 195.05,
         "pnl": -15.0
       },
       {
-        "price": 194.94,
+        "price": 196.98,
         "pnl": -15.0
       },
       {
-        "price": 196.85,
+        "price": 198.91,
         "pnl": -15.0
       },
       {
-        "price": 198.76,
+        "price": 200.84,
         "pnl": -15.0
       },
       {
-        "price": 200.68,
+        "price": 202.78,
         "pnl": -15.0
       },
       {
-        "price": 202.59,
+        "price": 204.71,
         "pnl": -15.0
       },
       {
-        "price": 204.5,
+        "price": 206.64,
         "pnl": -15.0
       },
       {
-        "price": 206.41,
+        "price": 208.57,
         "pnl": -15.0
       },
       {
-        "price": 208.32,
+        "price": 210.5,
         "pnl": -15.0
       },
       {
-        "price": 210.23,
+        "price": 212.43,
         "pnl": -15.0
       },
       {
-        "price": 212.14,
+        "price": 214.36,
         "pnl": -15.0
       },
       {
-        "price": 214.05,
+        "price": 216.29,
         "pnl": -15.0
       },
       {
-        "price": 215.97,
+        "price": 218.23,
         "pnl": -15.0
       },
       {
-        "price": 217.88,
-        "pnl": -15.0
+        "price": 220.16,
+        "pnl": -14.84
       },
       {
-        "price": 219.79,
-        "pnl": -15.0
+        "price": 222.09,
+        "pnl": -12.91
       },
       {
-        "price": 221.7,
-        "pnl": -13.3
+        "price": 224.02,
+        "pnl": -10.98
       },
       {
-        "price": 223.61,
-        "pnl": -11.39
-      },
-      {
-        "price": 225.52,
+        "price": 225.95,
         "pnl": -10.0
       },
       {
-        "price": 227.43,
+        "price": 227.88,
         "pnl": -10.0
       },
       {
-        "price": 229.34,
+        "price": 229.81,
         "pnl": -10.0
       },
       {
-        "price": 231.26,
+        "price": 231.74,
         "pnl": -10.0
       },
       {
-        "price": 233.17,
+        "price": 233.68,
         "pnl": -10.0
       },
       {
-        "price": 235.08,
+        "price": 235.61,
         "pnl": -10.0
       },
       {
-        "price": 236.99,
+        "price": 237.54,
         "pnl": -10.0
       },
       {
-        "price": 238.9,
+        "price": 239.47,
         "pnl": -10.0
       },
       {
-        "price": 240.81,
+        "price": 241.4,
         "pnl": -10.0
       },
       {
-        "price": 242.72,
+        "price": 243.33,
         "pnl": -10.0
       },
       {
-        "price": 244.63,
+        "price": 245.26,
         "pnl": -10.0
       },
       {
-        "price": 246.54,
+        "price": 247.19,
         "pnl": -10.0
       },
       {
-        "price": 248.46,
+        "price": 249.12,
         "pnl": -10.0
       },
       {
-        "price": 250.37,
+        "price": 251.06,
         "pnl": -10.0
       },
       {
-        "price": 252.28,
+        "price": 252.99,
         "pnl": -10.0
       },
       {
-        "price": 254.19,
+        "price": 254.92,
         "pnl": -10.0
       },
       {
-        "price": 256.1,
+        "price": 256.85,
         "pnl": -10.0
       },
       {
-        "price": 258.01,
+        "price": 258.78,
         "pnl": -10.0
       },
       {
-        "price": 259.92,
+        "price": 260.71,
         "pnl": -10.0
       },
       {
-        "price": 261.83,
+        "price": 262.64,
         "pnl": -10.0
       },
       {
-        "price": 263.75,
+        "price": 264.57,
         "pnl": -10.0
       },
       {
-        "price": 265.66,
+        "price": 266.51,
         "pnl": -10.0
       },
       {
-        "price": 267.57,
+        "price": 268.44,
         "pnl": -10.0
       },
       {
-        "price": 269.48,
+        "price": 270.37,
         "pnl": -10.0
       },
       {
-        "price": 271.39,
+        "price": 272.3,
         "pnl": -10.0
       },
       {
-        "price": 273.3,
+        "price": 274.23,
         "pnl": -10.0
       },
       {
-        "price": 275.21,
+        "price": 276.16,
         "pnl": -10.0
       },
       {
-        "price": 277.12,
+        "price": 278.09,
         "pnl": -10.0
       },
       {
-        "price": 279.04,
+        "price": 280.02,
         "pnl": -10.0
       },
       {
-        "price": 280.95,
+        "price": 281.96,
         "pnl": -10.0
       },
       {
-        "price": 282.86,
+        "price": 283.89,
         "pnl": -10.0
       },
       {
-        "price": 284.77,
+        "price": 285.82,
         "pnl": -10.0
       },
       {
-        "price": 286.68,
+        "price": 287.75,
+        "pnl": -10.0
+      },
+      {
+        "price": 289.68,
         "pnl": -10.0
       }
     ],
@@ -280,49 +280,49 @@
       "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put<br> Buy 1x NVDA 20-Nov-2026 220 Put"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 80.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put<br> Sell 1x NVDA 20-Nov-2026 255 Call<br> Buy 1x NVDA 20-Nov-2026 260 Call"
-    },
-    {
-      "strategy_type": "poor_mans_covered_call",
-      "strategy_display": "Poor Mans Covered Call",
-      "score": 62.9,
-      "grade": "B (Good)",
-      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x NVDA 20-Nov-2026 225 Call<br> Sell 1x NVDA 20-Nov-2026 245 Call"
-    },
-    {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 61.9,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x NVDA 20-Nov-2026 240 Call<br> Sell 1x NVDA 20-Nov-2026 250 Call"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 57.1,
-      "grade": "C (Moderate)",
+      "score": 78.8,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 220 Put<br> Sell 1x NVDA 20-Nov-2026 225 Put<br> Sell 1x NVDA 20-Nov-2026 255 Call<br> Buy 1x NVDA 20-Nov-2026 260 Call"
     },
     {
-      "strategy_type": "cash_swing_long",
-      "strategy_display": "Cash Swing Long",
-      "score": 51.7,
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 74.8,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put<br> Sell 1x NVDA 20-Nov-2026 255 Call<br> Buy 1x NVDA 20-Nov-2026 260 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 56.6,
       "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x NVDA 20-Nov-2026 238.9 Call"
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 240 Call<br> Sell 1x NVDA 20-Nov-2026 250 Call"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 56.6,
+      "grade": "C (Moderate)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 230 Call<br> Sell 1x NVDA 20-Nov-2026 250 Call"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 46.3,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 235 Call<br> Sell 1x NVDA 20-Nov-2026 240 Call<br> Sell 1x NVDA 20-Nov-2026 240 Call<br> Buy 1x NVDA 20-Nov-2026 250 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -334,9 +334,18 @@
       "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put"
     },
     {
+      "strategy_type": "cash_swing_long",
+      "strategy_display": "Cash Swing Long",
+      "score": 44.9,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 241.4 Call"
+    },
+    {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 45.0,
+      "score": 40.3,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
@@ -344,15 +353,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "226.23",
-    "EMA50": "220.23",
-    "EMA100": "213.58",
-    "EMA200": "202.67",
-    "RSI(14)": "66.90",
-    "ATR(14)": "5.93",
-    "ADX(14)": "17.11",
-    "BB(20,2)": "1.02",
-    "P_SHAPE(20)": "48.61"
+    "EMA20": "227.68",
+    "EMA50": "221.06",
+    "EMA100": "214.13",
+    "EMA200": "203.06",
+    "RSI(14)": "68.74",
+    "ATR(14)": "5.82",
+    "ADX(14)": "18.64",
+    "BB(20,2)": "1.01",
+    "P_SHAPE(20)": "41.66"
   },
   "rules": [
     {
@@ -377,13 +386,6 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
@@ -392,13 +394,6 @@
     },
     {
       "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -431,9 +426,37 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq climb after record-breaking rally",
+      "publisher": "Yahoo Finance",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-6-dow-sp-500-nasdaq-080526166.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Boost Run Soars 11% on $526 Million Sovereign AI Cloud Deal: \u201cAn Important Step\u201d",
+      "publisher": "TIKR",
+      "link": "https://finance.yahoo.com/technology/ai/articles/boost-run-soars-11-526-131937045.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
     {
       "title": "3 Overlooked Growth Stocks Powering Every AI Chip Nvidia and AMD Build",
       "publisher": "Motley Fool",
@@ -454,20 +477,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-yields-102708822.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Can Canopy Growth Survive Another 5 Years?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/canopy-growth-survive-another-5-130002685.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "New Book Decipher & Deliver Offers an Operator's Transformation Playbook for CEOs, Boards and PE Sponsors",
-      "publisher": "PR Newswire",
-      "link": "https://finance.yahoo.com/small-business/articles/book-decipher-deliver-offers-operators-130000683.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

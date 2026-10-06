@@ -95,9 +95,10 @@ def evaluate_exit_condition(
         if unrealized_pnl <= -net_credit:
             return True, ExitReason.STOP_LOSS.value
 
-    # 3. Dynamic Take-Profit Rule: 50% Max Profit Target
+    # 3. Dynamic Take-Profit Rule: 25% for Iron Butterfly, 50% Max Profit Target for others
     if unrealized_pnl is not None and net_credit is not None and net_credit > 0:
-        if unrealized_pnl >= 0.50 * net_credit:
+        tp_target = 0.25 if "iron_butterfly" in previous_strategy.lower() else 0.50
+        if unrealized_pnl >= tp_target * net_credit:
             return True, ExitReason.TAKE_PROFIT.value
 
     # 4. Short Strike / EMA20 Boundary Breach Rule

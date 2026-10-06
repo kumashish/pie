@@ -1,19 +1,19 @@
 {
   "symbol": "NFLX",
-  "last_price": 67.5,
-  "as_of": "2026-10-05 13:30:00",
+  "last_price": 67.73,
+  "as_of": "2026-10-06 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.5,
-  "fit_score": 5.0,
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 5.0,
-  "vix": 15.29,
+  "confidence_percentage": 10.0,
+  "vix": 15.37,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (32.8) is oversold (< 35) [Synthetic PCR: 1.31]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (33.7) is oversold (< 35) [Synthetic PCR: 1.29]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 72.0,
         "strike_formatted": "72",
         "option_type": "Call",
-        "delta": 0.144,
+        "delta": 0.161,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 74.0,
         "strike_formatted": "74",
         "option_type": "Call",
-        "delta": 0.058,
+        "delta": 0.067,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 3.0,
-    "stop_loss_price": 65.47,
-    "take_profit_price": 69.53,
-    "net_delta": -0.086,
+    "stop_loss_price": 65.7,
+    "take_profit_price": 69.76,
+    "net_delta": -0.094,
     "net_theta": 0.005,
     "probability_of_profit": 0.0,
     "var_95": 2.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 54.0,
+        "price": 54.18,
         "pnl": -3.0
       },
       {
-        "price": 54.54,
+        "price": 54.73,
         "pnl": -3.0
       },
       {
-        "price": 55.08,
+        "price": 55.27,
         "pnl": -3.0
       },
       {
-        "price": 55.62,
+        "price": 55.81,
         "pnl": -3.0
       },
       {
-        "price": 56.16,
+        "price": 56.35,
         "pnl": -3.0
       },
       {
-        "price": 56.7,
+        "price": 56.89,
         "pnl": -3.0
       },
       {
-        "price": 57.24,
+        "price": 57.43,
         "pnl": -3.0
       },
       {
-        "price": 57.78,
+        "price": 57.98,
         "pnl": -3.0
       },
       {
-        "price": 58.32,
+        "price": 58.52,
         "pnl": -3.0
       },
       {
-        "price": 58.86,
+        "price": 59.06,
         "pnl": -3.0
       },
       {
-        "price": 59.4,
+        "price": 59.6,
         "pnl": -3.0
       },
       {
-        "price": 59.94,
+        "price": 60.14,
         "pnl": -3.0
       },
       {
-        "price": 60.48,
+        "price": 60.69,
         "pnl": -3.0
       },
       {
-        "price": 61.02,
+        "price": 61.23,
         "pnl": -3.0
       },
       {
-        "price": 61.56,
+        "price": 61.77,
         "pnl": -3.0
       },
       {
-        "price": 62.1,
+        "price": 62.31,
         "pnl": -3.0
       },
       {
-        "price": 62.64,
+        "price": 62.85,
         "pnl": -3.0
       },
       {
-        "price": 63.18,
+        "price": 63.39,
         "pnl": -3.0
       },
       {
-        "price": 63.72,
+        "price": 63.94,
         "pnl": -3.0
       },
       {
-        "price": 64.26,
+        "price": 64.48,
         "pnl": -3.0
       },
       {
-        "price": 64.8,
+        "price": 65.02,
         "pnl": -3.0
       },
       {
-        "price": 65.34,
+        "price": 65.56,
         "pnl": -3.0
       },
       {
-        "price": 65.88,
+        "price": 66.1,
         "pnl": -3.0
       },
       {
-        "price": 66.42,
+        "price": 66.65,
         "pnl": -3.0
       },
       {
-        "price": 66.96,
+        "price": 67.19,
         "pnl": -3.0
       },
       {
-        "price": 67.5,
+        "price": 67.73,
         "pnl": -3.0
       },
       {
-        "price": 68.04,
+        "price": 68.27,
         "pnl": -3.0
       },
       {
-        "price": 68.58,
+        "price": 68.81,
         "pnl": -3.0
       },
       {
-        "price": 69.12,
+        "price": 69.36,
         "pnl": -3.0
       },
       {
-        "price": 69.66,
+        "price": 69.9,
         "pnl": -3.0
       },
       {
-        "price": 70.2,
+        "price": 70.44,
         "pnl": -3.0
       },
       {
-        "price": 70.74,
+        "price": 70.98,
         "pnl": -3.0
       },
       {
-        "price": 71.28,
+        "price": 71.52,
         "pnl": -3.0
       },
       {
-        "price": 71.82,
-        "pnl": -3.0
+        "price": 72.06,
+        "pnl": -3.06
       },
       {
-        "price": 72.36,
-        "pnl": -3.36
+        "price": 72.61,
+        "pnl": -3.61
       },
       {
-        "price": 72.9,
-        "pnl": -3.9
+        "price": 73.15,
+        "pnl": -4.15
       },
       {
-        "price": 73.44,
-        "pnl": -4.44
+        "price": 73.69,
+        "pnl": -4.69
       },
       {
-        "price": 73.98,
-        "pnl": -4.98
-      },
-      {
-        "price": 74.52,
+        "price": 74.23,
         "pnl": -5.0
       },
       {
-        "price": 75.06,
+        "price": 74.77,
         "pnl": -5.0
       },
       {
-        "price": 75.6,
+        "price": 75.32,
         "pnl": -5.0
       },
       {
-        "price": 76.14,
+        "price": 75.86,
         "pnl": -5.0
       },
       {
-        "price": 76.68,
+        "price": 76.4,
         "pnl": -5.0
       },
       {
-        "price": 77.22,
+        "price": 76.94,
         "pnl": -5.0
       },
       {
-        "price": 77.76,
+        "price": 77.48,
         "pnl": -5.0
       },
       {
-        "price": 78.3,
+        "price": 78.02,
         "pnl": -5.0
       },
       {
-        "price": 78.84,
+        "price": 78.57,
         "pnl": -5.0
       },
       {
-        "price": 79.38,
+        "price": 79.11,
         "pnl": -5.0
       },
       {
-        "price": 79.92,
+        "price": 79.65,
         "pnl": -5.0
       },
       {
-        "price": 80.46,
+        "price": 80.19,
         "pnl": -5.0
       },
       {
-        "price": 81.0,
+        "price": 80.73,
+        "pnl": -5.0
+      },
+      {
+        "price": 81.28,
         "pnl": -5.0
       }
     ],
@@ -282,7 +282,7 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 68.1,
+      "score": 66.0,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -291,25 +291,39 @@
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 59.8,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x NFLX 20-Nov-2026 67.5 Put"
+      "legs_summary": "Sell 1x NFLX 20-Nov-2026 67.7 Put"
     }
   ],
   "indicators": {
-    "EMA20": "72.15",
-    "EMA50": "74.86",
-    "EMA100": "78.15",
-    "EMA200": "84.26",
-    "RSI(14)": "32.79",
-    "ATR(14)": "1.91",
-    "ADX(14)": "27.44",
-    "BB(20,2)": "0.15",
-    "P_SHAPE(20)": "47.74"
+    "EMA20": "71.73",
+    "EMA50": "74.58",
+    "EMA100": "77.95",
+    "EMA200": "84.09",
+    "RSI(14)": "33.72",
+    "ATR(14)": "1.80",
+    "ADX(14)": "28.69",
+    "BB(20,2)": "0.19",
+    "P_SHAPE(20)": "43.49"
   },
   "rules": [
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
@@ -354,20 +368,6 @@
     },
     {
       "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,

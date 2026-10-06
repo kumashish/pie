@@ -439,6 +439,9 @@ def estimate_trade(
         vol_skew_25d=skew_res.skew_25_delta,
         backtest_sharpe=backtest_metrics.sharpe_ratio,
         payoff_points=payoff_pts,
+        take_profit_rule="25% Max Profit (Iron Fly Target)" if recommendation.strategy == StrategyType.IRON_BUTTERFLY else "50% Max Profit",
+        stop_loss_rule="100% Credit Loss (1:1 Risk Limit) or EMA20 Breach",
+        target_dte_window="35-45 DTE" if recommendation.strategy in (StrategyType.IRON_BUTTERFLY, StrategyType.IRON_CONDOR) else "30-60 DTE",
     )
 
 

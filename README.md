@@ -2,34 +2,29 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 06, 18:52 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x SPY 20-Nov-2026 735 Put /  Buy 1x SPY 20-Nov-2026 720 Put | Active (Today, 18:52)  |
-| QQQ       | Oct 06, 18:52 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x QQQ 20-Nov-2026 715 Put /  Buy 1x QQQ 20-Nov-2026 705 Put | Active (Today, 18:52)  |
+| SPY       | Oct 06, 19:05 IST | 🟡 Credit Spread   | 7.8/10    | Sell 1x SPY 20-Nov-2026 740 Put /  Buy 1x SPY 20-Nov-2026 725 Put | Active (Today, 19:05)  |
+| QQQ       | Oct 06, 19:05 IST | 🟡 Credit Spread   | 6.8/10    | Sell 1x QQQ 20-Nov-2026 720 Put /  Buy 1x QQQ 20-Nov-2026 710 Put | Active (Today, 19:05)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ^NSEMDCP50 | Oct 06, 18:53 IST | 🟡 Credit Spread   | 3.2/10    | S1x-Nov-17950CE-B1x-Nov-18150CE | Active (Today, 18:53)  |
-| ^NSEI     | Oct 06, 18:53 IST | 🟡 Credit Spread   | 2.2/10    | S1x-Nov-23900CE-B1x-Nov-24100CE | Active (Today, 18:53)  |
-| ^BSESN    | Oct 06, 18:53 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-77000CE-B1x-Nov-77700CE | Active (Today, 18:53)  |
-| ^NSEBANK  | Oct 06, 18:53 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-57800CE-B1x-Nov-58400CE | New                    |
-| NIFTY_FIN_SERVICE.NS | Oct 06, 18:53 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-26200CE-B1x-Nov-26600CE | New                    |
+| ^NSEMDCP50 | Oct 06, 19:06 IST | 🟡 Credit Spread   | 3.2/10    | S1x-Nov-17950CE-B1x-Nov-18150CE | Active (Today, 19:06)  |
+| ^NSEI     | Oct 06, 19:06 IST | 🟡 Credit Spread   | 2.2/10    | S1x-Nov-23900CE-B1x-Nov-24100CE | Active (Today, 19:06)  |
+| ^BSESN    | Oct 06, 19:06 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-77000CE-B1x-Nov-77700CE | Active (Today, 19:06)  |
+| ^NSEBANK  | Oct 06, 19:06 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-57800CE-B1x-Nov-58400CE | New                    |
+| NIFTY_FIN_SERVICE.NS | Oct 06, 19:06 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-26200CE-B1x-Nov-26600CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 #### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| META      | Oct 06, 18:52 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 700 Put /  Buy 1x META 20-Nov-2026 675 Put | Active (Today, 18:52)  |
-| MSFT      | Oct 06, 18:52 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSFT 20-Nov-2026 495 Put /  Buy 1x MSFT 20-Nov-2026 485 Put | Active (Today, 18:52)  |
-| VTI       | Oct 06, 18:52 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VTI 20-Nov-2026 360 Put /  Buy 1x VTI 20-Nov-2026 355 Put | Active (Today, 18:52)  |
-| VOO       | Oct 06, 18:52 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VOO 20-Nov-2026 670 Put /  Buy 1x VOO 20-Nov-2026 665 Put | Active (Today, 18:52)  |
-| V         | Oct 06, 18:53 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x V 20-Nov-2026 350 Put /  Buy 1x V 20-Nov-2026 345 Put | Active (Today, 18:53)  |
-| NVDA      | Oct 06, 18:52 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x NVDA 20-Nov-2026 225 Put /  Buy 1x NVDA 20-Nov-2026 220 Put | Active (Today, 18:52)  |
+| META      | Oct 06, 19:05 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 705 Put /  Buy 1x META 20-Nov-2026 680 Put | Active (Today, 19:05)  |
 
 #### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| DIVISLAB.NS | Oct 06, 18:54 IST | 🟡 Credit Spread   | 9.0/10    | S1x-Nov-9000PE-B1x-Nov-8800PE | Active (Today, 18:54)  |
-| ADANIPORTS.NS | Oct 06, 18:54 IST | 🟡 Credit Spread   | 8.0/10    | S1x-Nov-1700PE-B1x-Nov-1650PE | Active (Today, 18:54)  |
+| DIVISLAB.NS | Oct 06, 19:07 IST | 🟡 Credit Spread   | 9.0/10    | S1x-Nov-9000PE-B1x-Nov-8800PE | Active (Today, 19:07)  |
+| ADANIPORTS.NS | Oct 06, 19:07 IST | 🟡 Credit Spread   | 8.0/10    | S1x-Nov-1700PE-B1x-Nov-1650PE | Active (Today, 19:07)  |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
