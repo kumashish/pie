@@ -1,6 +1,6 @@
 {
   "symbol": "AMAT",
-  "last_price": 532.8,
+  "last_price": 533.62,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,12 +8,12 @@
   "fit_score": 65.0,
   "confidence_grade": "B",
   "confidence_percentage": 65.0,
-  "vix": 15.37,
+  "vix": 15.35,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (65.2) is overbought (> 65) [Synthetic PCR: 0.71]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (65.6) is overbought (> 65) [Synthetic PCR: 0.71]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 505.0,
         "strike_formatted": "505",
         "option_type": "Put",
-        "delta": -0.128,
+        "delta": -0.122,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 485.0,
         "strike_formatted": "485",
         "option_type": "Put",
-        "delta": -0.03,
+        "delta": -0.028,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 516.82,
-    "take_profit_price": 548.79,
-    "net_delta": 0.098,
+    "stop_loss_price": 517.61,
+    "take_profit_price": 549.63,
+    "net_delta": 0.094,
     "net_theta": 0.038,
     "probability_of_profit": 0.0,
-    "var_95": 15.61,
+    "var_95": 14.81,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 426.24,
+        "price": 426.9,
         "pnl": -40.0
       },
       {
-        "price": 430.51,
+        "price": 431.16,
         "pnl": -40.0
       },
       {
-        "price": 434.77,
+        "price": 435.43,
         "pnl": -40.0
       },
       {
-        "price": 439.03,
+        "price": 439.7,
         "pnl": -40.0
       },
       {
-        "price": 443.29,
+        "price": 443.97,
         "pnl": -40.0
       },
       {
-        "price": 447.56,
+        "price": 448.24,
         "pnl": -40.0
       },
       {
-        "price": 451.82,
+        "price": 452.51,
         "pnl": -40.0
       },
       {
-        "price": 456.08,
+        "price": 456.78,
         "pnl": -40.0
       },
       {
-        "price": 460.34,
+        "price": 461.05,
         "pnl": -40.0
       },
       {
-        "price": 464.61,
+        "price": 465.32,
         "pnl": -40.0
       },
       {
-        "price": 468.87,
+        "price": 469.59,
         "pnl": -40.0
       },
       {
-        "price": 473.13,
+        "price": 473.85,
         "pnl": -40.0
       },
       {
-        "price": 477.39,
+        "price": 478.12,
         "pnl": -40.0
       },
       {
-        "price": 481.66,
+        "price": 482.39,
         "pnl": -40.0
       },
       {
-        "price": 485.92,
-        "pnl": -39.08
+        "price": 486.66,
+        "pnl": -38.34
       },
       {
-        "price": 490.18,
-        "pnl": -34.82
+        "price": 490.93,
+        "pnl": -34.07
       },
       {
-        "price": 494.44,
-        "pnl": -30.56
+        "price": 495.2,
+        "pnl": -29.8
       },
       {
-        "price": 498.71,
-        "pnl": -26.29
+        "price": 499.47,
+        "pnl": -25.53
       },
       {
-        "price": 502.97,
-        "pnl": -22.03
+        "price": 503.74,
+        "pnl": -21.26
       },
       {
-        "price": 507.23,
+        "price": 508.01,
         "pnl": -20.0
       },
       {
-        "price": 511.49,
+        "price": 512.28,
         "pnl": -20.0
       },
       {
-        "price": 515.76,
+        "price": 516.54,
         "pnl": -20.0
       },
       {
-        "price": 520.02,
+        "price": 520.81,
         "pnl": -20.0
       },
       {
-        "price": 524.28,
+        "price": 525.08,
         "pnl": -20.0
       },
       {
-        "price": 528.54,
+        "price": 529.35,
         "pnl": -20.0
       },
       {
-        "price": 532.8,
+        "price": 533.62,
         "pnl": -20.0
       },
       {
-        "price": 537.07,
+        "price": 537.89,
         "pnl": -20.0
       },
       {
-        "price": 541.33,
+        "price": 542.16,
         "pnl": -20.0
       },
       {
-        "price": 545.59,
+        "price": 546.43,
         "pnl": -20.0
       },
       {
-        "price": 549.85,
+        "price": 550.7,
         "pnl": -20.0
       },
       {
-        "price": 554.12,
+        "price": 554.96,
         "pnl": -20.0
       },
       {
-        "price": 558.38,
+        "price": 559.23,
         "pnl": -20.0
       },
       {
-        "price": 562.64,
+        "price": 563.5,
         "pnl": -20.0
       },
       {
-        "price": 566.9,
+        "price": 567.77,
         "pnl": -20.0
       },
       {
-        "price": 571.17,
+        "price": 572.04,
         "pnl": -20.0
       },
       {
-        "price": 575.43,
+        "price": 576.31,
         "pnl": -20.0
       },
       {
-        "price": 579.69,
+        "price": 580.58,
         "pnl": -20.0
       },
       {
-        "price": 583.95,
+        "price": 584.85,
         "pnl": -20.0
       },
       {
-        "price": 588.22,
+        "price": 589.12,
         "pnl": -20.0
       },
       {
-        "price": 592.48,
+        "price": 593.39,
         "pnl": -20.0
       },
       {
-        "price": 596.74,
+        "price": 597.65,
         "pnl": -20.0
       },
       {
-        "price": 601.0,
+        "price": 601.92,
         "pnl": -20.0
       },
       {
-        "price": 605.27,
+        "price": 606.19,
         "pnl": -20.0
       },
       {
-        "price": 609.53,
+        "price": 610.46,
         "pnl": -20.0
       },
       {
-        "price": 613.79,
+        "price": 614.73,
         "pnl": -20.0
       },
       {
-        "price": 618.05,
+        "price": 619.0,
         "pnl": -20.0
       },
       {
-        "price": 622.32,
+        "price": 623.27,
         "pnl": -20.0
       },
       {
-        "price": 626.58,
+        "price": 627.54,
         "pnl": -20.0
       },
       {
-        "price": 630.84,
+        "price": 631.81,
         "pnl": -20.0
       },
       {
-        "price": 635.1,
+        "price": 636.08,
         "pnl": -20.0
       },
       {
-        "price": 639.37,
+        "price": 640.34,
         "pnl": -20.0
       }
     ],
@@ -331,16 +331,16 @@
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 505 Call<br> Sell 1x AMAT 20-Nov-2026 545 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 505 Call<br> Sell 1x AMAT 20-Nov-2026 550 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 53.4,
+      "score": 53.5,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 520 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 545 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 520 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 550 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -354,7 +354,7 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 45.6,
+      "score": 45.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -367,7 +367,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x AMAT 20-Nov-2026 532.8 Call"
+      "legs_summary": "Buy 1x AMAT 20-Nov-2026 533.6 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
@@ -380,15 +380,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "494.33",
-    "EMA50": "492.40",
-    "EMA100": "482.59",
-    "EMA200": "432.61",
-    "RSI(14)": "65.19",
-    "ATR(14)": "18.68",
-    "ADX(14)": "21.02",
-    "BB(20,2)": "0.84",
-    "P_SHAPE(20)": "46.11"
+    "EMA20": "494.41",
+    "EMA50": "492.43",
+    "EMA100": "482.61",
+    "EMA200": "432.62",
+    "RSI(14)": "65.55",
+    "ATR(14)": "18.86",
+    "ADX(14)": "20.86",
+    "BB(20,2)": "0.85",
+    "P_SHAPE(20)": "46.12"
   },
   "rules": [
     {
@@ -471,9 +471,30 @@
   ],
   "news": [
     {
+      "title": "Applied Materials (AMAT) Is Up 11.4% After New AI Chip Memory and Packaging Partnerships Announced",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/applied-materials-amat-11-4-140527495.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "3 Stocks to Buy From the Prospering Semiconductor Industry",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-buy-prospering-semiconductor-135000320.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Applied Materials, Intel to Collaborate on Chipmaking Innovation",
       "publisher": "MT Newswires",
       "link": "https://finance.yahoo.com/technology/ai/articles/applied-materials-intel-collaborate-chipmaking-133357934.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is the Options Market Predicting a Spike in Applied Materials Stock?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/options/articles/options-market-predicting-spike-applied-132700512.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
@@ -490,27 +511,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-applied-materials-120005340.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Applied Materials Insider Sold Shares Worth $394,807, According to a Recent SEC Filing",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-insider-sold-shares-220209248.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "A Tale of Two Markets: Megacaps Keep Climbing, But Rate Fears Hit Many Other Stocks",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/075e477f-4f83-3564-9f9b-536dc973cb7b/a-tale-of-two-markets%3A.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Applied Materials Stocks Fall as Goldman Anticipates Margin Reset",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-stocks-fall-goldman-191858298.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
     }
   ]
 }

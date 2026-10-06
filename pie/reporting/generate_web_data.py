@@ -139,8 +139,7 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
             (output_dir / f"{safe_name}.json").write_text(content, encoding="utf-8")
             (docs_dir / f"{safe_name}.json").write_text(content, encoding="utf-8")
 
-            # Add entry to master index
-            # Determine if this signal is a high‑score (fit_score >= 8)
+            # Add primary & candidate strategy entries to master index
             is_high = data.get("fit_score", 0) >= 8
             leg_summary_str = ""
             if data.get("estimated_trade") and data["estimated_trade"].get("legs"):

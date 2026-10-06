@@ -1,6 +1,6 @@
 {
   "symbol": "SOXX",
-  "last_price": 593.96,
+  "last_price": 594.8,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,12 +8,12 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 15.42,
+  "vix": 15.35,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (67.9) is overbought (> 65) [Synthetic PCR: 0.68]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (68.2) is overbought (> 65) [Synthetic PCR: 0.68]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 565.0,
         "strike_formatted": "565",
         "option_type": "Put",
-        "delta": -0.144,
+        "delta": -0.137,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 550.0,
         "strike_formatted": "550",
         "option_type": "Put",
-        "delta": -0.059,
+        "delta": -0.055,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 25.0,
-    "stop_loss_price": 576.14,
-    "take_profit_price": 611.77,
-    "net_delta": 0.085,
+    "stop_loss_price": 576.96,
+    "take_profit_price": 612.64,
+    "net_delta": 0.082,
     "net_theta": 0.032,
     "probability_of_profit": 0.0,
     "var_95": 15.0,
@@ -56,214 +56,214 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 475.16,
+        "price": 475.84,
         "pnl": -40.0
       },
       {
-        "price": 479.92,
+        "price": 480.6,
         "pnl": -40.0
       },
       {
-        "price": 484.67,
+        "price": 485.36,
         "pnl": -40.0
       },
       {
-        "price": 489.42,
+        "price": 490.12,
         "pnl": -40.0
       },
       {
-        "price": 494.17,
+        "price": 494.87,
         "pnl": -40.0
       },
       {
-        "price": 498.92,
+        "price": 499.63,
         "pnl": -40.0
       },
       {
-        "price": 503.67,
+        "price": 504.39,
         "pnl": -40.0
       },
       {
-        "price": 508.43,
+        "price": 509.15,
         "pnl": -40.0
       },
       {
-        "price": 513.18,
+        "price": 513.91,
         "pnl": -40.0
       },
       {
-        "price": 517.93,
+        "price": 518.67,
         "pnl": -40.0
       },
       {
-        "price": 522.68,
+        "price": 523.42,
         "pnl": -40.0
       },
       {
-        "price": 527.43,
+        "price": 528.18,
         "pnl": -40.0
       },
       {
-        "price": 532.18,
+        "price": 532.94,
         "pnl": -40.0
       },
       {
-        "price": 536.94,
+        "price": 537.7,
         "pnl": -40.0
       },
       {
-        "price": 541.69,
+        "price": 542.46,
         "pnl": -40.0
       },
       {
-        "price": 546.44,
+        "price": 547.22,
         "pnl": -40.0
       },
       {
-        "price": 551.19,
-        "pnl": -38.81
+        "price": 551.97,
+        "pnl": -38.03
       },
       {
-        "price": 555.94,
-        "pnl": -34.06
+        "price": 556.73,
+        "pnl": -33.27
       },
       {
-        "price": 560.69,
-        "pnl": -29.31
+        "price": 561.49,
+        "pnl": -28.51
       },
       {
-        "price": 565.45,
+        "price": 566.25,
         "pnl": -25.0
       },
       {
-        "price": 570.2,
+        "price": 571.01,
         "pnl": -25.0
       },
       {
-        "price": 574.95,
+        "price": 575.77,
         "pnl": -25.0
       },
       {
-        "price": 579.7,
+        "price": 580.52,
         "pnl": -25.0
       },
       {
-        "price": 584.45,
+        "price": 585.28,
         "pnl": -25.0
       },
       {
-        "price": 589.2,
+        "price": 590.04,
         "pnl": -25.0
       },
       {
-        "price": 593.96,
+        "price": 594.8,
         "pnl": -25.0
       },
       {
-        "price": 598.71,
+        "price": 599.56,
         "pnl": -25.0
       },
       {
-        "price": 603.46,
+        "price": 604.32,
         "pnl": -25.0
       },
       {
-        "price": 608.21,
+        "price": 609.08,
         "pnl": -25.0
       },
       {
-        "price": 612.96,
+        "price": 613.83,
         "pnl": -25.0
       },
       {
-        "price": 617.71,
+        "price": 618.59,
         "pnl": -25.0
       },
       {
-        "price": 622.46,
+        "price": 623.35,
         "pnl": -25.0
       },
       {
-        "price": 627.22,
+        "price": 628.11,
         "pnl": -25.0
       },
       {
-        "price": 631.97,
+        "price": 632.87,
         "pnl": -25.0
       },
       {
-        "price": 636.72,
+        "price": 637.63,
         "pnl": -25.0
       },
       {
-        "price": 641.47,
+        "price": 642.38,
         "pnl": -25.0
       },
       {
-        "price": 646.22,
+        "price": 647.14,
         "pnl": -25.0
       },
       {
-        "price": 650.97,
+        "price": 651.9,
         "pnl": -25.0
       },
       {
-        "price": 655.73,
+        "price": 656.66,
         "pnl": -25.0
       },
       {
-        "price": 660.48,
+        "price": 661.42,
         "pnl": -25.0
       },
       {
-        "price": 665.23,
+        "price": 666.18,
         "pnl": -25.0
       },
       {
-        "price": 669.98,
+        "price": 670.93,
         "pnl": -25.0
       },
       {
-        "price": 674.73,
+        "price": 675.69,
         "pnl": -25.0
       },
       {
-        "price": 679.48,
+        "price": 680.45,
         "pnl": -25.0
       },
       {
-        "price": 684.24,
+        "price": 685.21,
         "pnl": -25.0
       },
       {
-        "price": 688.99,
+        "price": 689.97,
         "pnl": -25.0
       },
       {
-        "price": 693.74,
+        "price": 694.73,
         "pnl": -25.0
       },
       {
-        "price": 698.49,
+        "price": 699.48,
         "pnl": -25.0
       },
       {
-        "price": 703.24,
+        "price": 704.24,
         "pnl": -25.0
       },
       {
-        "price": 707.99,
+        "price": 709.0,
         "pnl": -25.0
       },
       {
-        "price": 712.75,
+        "price": 713.76,
         "pnl": -25.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.847,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3623,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,7 +273,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 99.0,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -327,16 +327,16 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 56.5,
+      "score": 56.6,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x SOXX 20-Nov-2026 560 Call<br> Sell 1x SOXX 20-Nov-2026 610 Call"
+      "legs_summary": "Buy 1x SOXX 20-Nov-2026 565 Call<br> Sell 1x SOXX 20-Nov-2026 610 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 45.9,
+      "score": 46.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -358,7 +358,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x SOXX 20-Nov-2026 594.0 Call"
+      "legs_summary": "Buy 1x SOXX 20-Nov-2026 594.8 Call"
     },
     {
       "strategy_type": "naked_put",
@@ -371,15 +371,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "558.94",
-    "EMA50": "543.73",
-    "EMA100": "523.22",
-    "EMA200": "469.30",
-    "RSI(14)": "67.94",
-    "ATR(14)": "15.34",
-    "ADX(14)": "19.75",
-    "BB(20,2)": "0.84",
-    "P_SHAPE(20)": "60.84"
+    "EMA20": "559.02",
+    "EMA50": "543.76",
+    "EMA100": "523.24",
+    "EMA200": "469.31",
+    "RSI(14)": "68.16",
+    "ATR(14)": "15.41",
+    "ADX(14)": "19.79",
+    "BB(20,2)": "0.85",
+    "P_SHAPE(20)": "60.86"
   },
   "rules": [
     {
@@ -462,6 +462,13 @@
   ],
   "news": [
     {
+      "title": "Marvell Rallies 6% as Investor Day Presses the Custom AI Silicon Case; Broadcom Advances 4%",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/marvell-rallies-6-investor-day-144856167.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Sector Update: Tech Stocks Advance Premarket Tuesday",
       "publisher": "MT Newswires",
       "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-advance-premarket-131348356.html",
@@ -493,13 +500,6 @@
       "title": "Nasdaq 100 Hits Record Highs As Investors Shrug Off Pressure From Soaring Yields \u2014 NVDA, SPCX, CRML, TSLA, QCOM In Focus",
       "publisher": "Stocktwits",
       "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-100-hits-record-highs-220932490.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Taiwan Semiconductor Gains 2% to Record as Musk Confirms Early Terafab Talks; Broadcom Rises 2%, Qualcomm Pulls Back",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-gains-2-record-170239669.html",
       "published_at": "Today",
       "sentiment": "bullish"
     }

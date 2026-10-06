@@ -1,19 +1,19 @@
 {
   "symbol": "AMZN",
-  "last_price": 253.06,
+  "last_price": 255.28,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 6.0,
-  "fit_score": 60.0,
+  "trend_score": 6.2,
+  "fit_score": 62.5,
   "confidence_grade": "B",
-  "confidence_percentage": 60.0,
-  "vix": 15.42,
+  "confidence_percentage": 62.5,
+  "vix": 15.35,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (99.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (92.9% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 235.0,
         "strike_formatted": "235",
         "option_type": "Put",
-        "delta": -0.066,
+        "delta": -0.047,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 240.0,
         "strike_formatted": "240",
         "option_type": "Put",
-        "delta": -0.132,
+        "delta": -0.099,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -47,7 +47,7 @@
         "strike": 270.0,
         "strike_formatted": "270",
         "option_type": "Call",
-        "delta": 0.145,
+        "delta": 0.184,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 275.0,
         "strike_formatted": "275",
         "option_type": "Call",
-        "delta": 0.082,
+        "delta": 0.108,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -70,9 +70,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 245.46,
-    "take_profit_price": 260.65,
-    "net_delta": 0.003,
+    "stop_loss_price": 247.62,
+    "take_profit_price": 262.94,
+    "net_delta": -0.024,
     "net_theta": 0.025,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -80,214 +80,214 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 202.44,
+        "price": 204.22,
         "pnl": -15.0
       },
       {
-        "price": 204.47,
+        "price": 206.27,
         "pnl": -15.0
       },
       {
-        "price": 206.49,
+        "price": 208.31,
         "pnl": -15.0
       },
       {
-        "price": 208.52,
+        "price": 210.35,
         "pnl": -15.0
       },
       {
-        "price": 210.54,
+        "price": 212.39,
         "pnl": -15.0
       },
       {
-        "price": 212.57,
+        "price": 214.44,
         "pnl": -15.0
       },
       {
-        "price": 214.59,
+        "price": 216.48,
         "pnl": -15.0
       },
       {
-        "price": 216.62,
+        "price": 218.52,
         "pnl": -15.0
       },
       {
-        "price": 218.64,
+        "price": 220.56,
         "pnl": -15.0
       },
       {
-        "price": 220.66,
+        "price": 222.6,
         "pnl": -15.0
       },
       {
-        "price": 222.69,
+        "price": 224.65,
         "pnl": -15.0
       },
       {
-        "price": 224.71,
+        "price": 226.69,
         "pnl": -15.0
       },
       {
-        "price": 226.74,
+        "price": 228.73,
         "pnl": -15.0
       },
       {
-        "price": 228.76,
+        "price": 230.77,
         "pnl": -15.0
       },
       {
-        "price": 230.79,
+        "price": 232.82,
         "pnl": -15.0
       },
       {
-        "price": 232.81,
+        "price": 234.86,
         "pnl": -15.0
       },
       {
-        "price": 234.84,
-        "pnl": -15.0
+        "price": 236.9,
+        "pnl": -13.1
       },
       {
-        "price": 236.86,
-        "pnl": -13.14
+        "price": 238.94,
+        "pnl": -11.06
       },
       {
-        "price": 238.88,
-        "pnl": -11.12
-      },
-      {
-        "price": 240.91,
+        "price": 240.98,
         "pnl": -10.0
       },
       {
-        "price": 242.93,
+        "price": 243.03,
         "pnl": -10.0
       },
       {
-        "price": 244.96,
+        "price": 245.07,
         "pnl": -10.0
       },
       {
-        "price": 246.98,
+        "price": 247.11,
         "pnl": -10.0
       },
       {
-        "price": 249.01,
+        "price": 249.15,
         "pnl": -10.0
       },
       {
-        "price": 251.03,
+        "price": 251.2,
         "pnl": -10.0
       },
       {
-        "price": 253.06,
+        "price": 253.24,
         "pnl": -10.0
       },
       {
-        "price": 255.08,
+        "price": 255.28,
         "pnl": -10.0
       },
       {
-        "price": 257.11,
+        "price": 257.32,
         "pnl": -10.0
       },
       {
-        "price": 259.13,
+        "price": 259.36,
         "pnl": -10.0
       },
       {
-        "price": 261.15,
+        "price": 261.41,
         "pnl": -10.0
       },
       {
-        "price": 263.18,
+        "price": 263.45,
         "pnl": -10.0
       },
       {
-        "price": 265.2,
+        "price": 265.49,
         "pnl": -10.0
       },
       {
-        "price": 267.23,
+        "price": 267.53,
         "pnl": -10.0
       },
       {
-        "price": 269.25,
+        "price": 269.58,
         "pnl": -10.0
       },
       {
-        "price": 271.28,
-        "pnl": -11.28
+        "price": 271.62,
+        "pnl": -11.62
       },
       {
-        "price": 273.3,
-        "pnl": -13.3
+        "price": 273.66,
+        "pnl": -13.66
       },
       {
-        "price": 275.33,
+        "price": 275.7,
         "pnl": -15.0
       },
       {
-        "price": 277.35,
+        "price": 277.74,
         "pnl": -15.0
       },
       {
-        "price": 279.37,
+        "price": 279.79,
         "pnl": -15.0
       },
       {
-        "price": 281.4,
+        "price": 281.83,
         "pnl": -15.0
       },
       {
-        "price": 283.42,
+        "price": 283.87,
         "pnl": -15.0
       },
       {
-        "price": 285.45,
+        "price": 285.91,
         "pnl": -15.0
       },
       {
-        "price": 287.47,
+        "price": 287.96,
         "pnl": -15.0
       },
       {
-        "price": 289.5,
+        "price": 290.0,
         "pnl": -15.0
       },
       {
-        "price": 291.52,
+        "price": 292.04,
         "pnl": -15.0
       },
       {
-        "price": 293.55,
+        "price": 294.08,
         "pnl": -15.0
       },
       {
-        "price": 295.57,
+        "price": 296.12,
         "pnl": -15.0
       },
       {
-        "price": 297.59,
+        "price": 298.17,
         "pnl": -15.0
       },
       {
-        "price": 299.62,
+        "price": 300.21,
         "pnl": -15.0
       },
       {
-        "price": 301.64,
+        "price": 302.25,
         "pnl": -15.0
       },
       {
-        "price": 303.67,
+        "price": 304.29,
+        "pnl": -15.0
+      },
+      {
+        "price": 306.34,
         "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.847,
+      "win_probability": 0.825,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3623,
+      "half_kelly_fraction": 0.3425,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 99.0,
+      "score": 92.9,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 86.3,
+      "score": 88.9,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,7 +315,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 65.5,
+      "score": 69.4,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -324,7 +324,7 @@
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 65.2,
+      "score": 66.3,
       "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
@@ -333,29 +333,47 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 64.1,
-      "grade": "B (Good)",
+      "score": 58.8,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 245 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Buy 1x AMZN 20-Nov-2026 260 Call"
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Buy 1x AMZN 20-Nov-2026 260 Call"
     },
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 57.4,
+      "score": 58.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
       "legs_summary": "Sell 1x AMZN 20-Nov-2026 240 Put"
     },
     {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 54.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 255 Call<br> Sell 1x AMZN 20-Nov-2026 265 Call"
+    },
+    {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 56.3,
+      "score": 50.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 240 Put<br> Sell 1x AMZN 20-Nov-2026 255 Put<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 240 Put<br> Sell 1x AMZN 20-Nov-2026 255 Put<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Buy 1x AMZN 20-Nov-2026 270 Call"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 50.8,
+      "grade": "C (Moderate)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 240 Call<br> Sell 1x AMZN 20-Nov-2026 260 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -367,43 +385,25 @@
       "legs_summary": "Sell 1x AMZN 20-Nov-2026 240 Put"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 47.3,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 255 Call<br> Sell 1x AMZN 20-Nov-2026 265 Call"
-    },
-    {
-      "strategy_type": "poor_mans_covered_call",
-      "strategy_display": "Poor Mans Covered Call",
-      "score": 46.6,
-      "grade": "C (Moderate)",
-      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 240 Call<br> Sell 1x AMZN 20-Nov-2026 260 Call"
-    },
-    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 46.4,
+      "score": 45.0,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x AMZN 20-Nov-2026 245 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Buy 1x AMZN 20-Nov-2026 265 Call"
+      "legs_summary": "Buy 1x AMZN 20-Nov-2026 250 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Sell 1x AMZN 20-Nov-2026 255 Call<br> Buy 1x AMZN 20-Nov-2026 270 Call"
     }
   ],
   "indicators": {
-    "EMA20": "251.85",
-    "EMA50": "253.31",
-    "EMA100": "250.94",
-    "EMA200": "243.98",
-    "RSI(14)": "50.66",
-    "ATR(14)": "5.33",
-    "ADX(14)": "8.89",
-    "BB(20,2)": "0.64",
-    "P_SHAPE(20)": "42.88"
+    "EMA20": "252.06",
+    "EMA50": "253.40",
+    "EMA100": "250.99",
+    "EMA200": "244.01",
+    "RSI(14)": "53.38",
+    "ATR(14)": "5.48",
+    "ADX(14)": "9.14",
+    "BB(20,2)": "0.79",
+    "P_SHAPE(20)": "45.18"
   },
   "rules": [
     {
@@ -422,6 +422,13 @@
     },
     {
       "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -470,13 +477,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -486,39 +486,46 @@
   ],
   "news": [
     {
-      "title": "Google Nuke Deal Jolts Constellation Energy To Top Of S&P 500",
-      "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/b8ad6c80-0c60-3f76-895e-2990d333039f/google-nuke-deal-jolts.html",
+      "title": "Anthropic Plans to Spend $518 Billion on Cloud and Computing Power",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/technology/ai/articles/anthropic-plans-spend-518-billion-150100670.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Pinterest Names Former Amazon Finance Executive James Dibbo as CFO",
-      "publisher": "TIKR",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/pinterest-names-former-amazon-finance-132452014.html",
+      "title": "Alphabet Has the Biggest Upside in the Mag 7 Right Now: 64%",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-biggest-upside-mag-7-150009797.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "CrowdStrike Launches Fourth Cybersecurity Startup Accelerator With Amazon's AWS, NVIDIA",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/technology/articles/crowdstrike-launches-fourth-cybersecurity-startup-130636318.html",
+      "title": "CrowdStrike Advances 3% on Agentic Security Accelerator With Amazon and NVIDIA; Palo Alto Networks and Zscaler Gain 4%",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-advances-3-agentic-security-150000899.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "S&P 500 set to open near record highs as Treasury yields cool, oil slips",
-      "publisher": "Reuters",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-yields-102708822.html",
+      "title": "What Has Changed About Owning Amazon Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/changed-owning-amazon-stock-145529963.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is Amazon (AMZN) a Good AI Stock to Buy for Long-Term Investors?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-amzn-good-ai-stock-143534466.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Palantir Stock Bulls Not Worried About?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-bulls-not-worried-143418278.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Synopsys (SNPS) Is Up 17.7% After New AI Chip-Design Alliances With OpenAI And Amazon",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/synopsys-snps-17-7-ai-130546514.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

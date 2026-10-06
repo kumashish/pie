@@ -1,262 +1,262 @@
 {
   "symbol": "MSFT",
-  "last_price": 531.57,
+  "last_price": 532.98,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 7.0,
-  "fit_score": 70.0,
+  "trend_score": 7.8,
+  "fit_score": 77.5,
   "confidence_grade": "B",
-  "confidence_percentage": 70.0,
-  "vix": 15.42,
+  "confidence_percentage": 77.5,
+  "vix": 15.35,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (68.8) is overbought (> 65) [Synthetic PCR: 0.58]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (69.4) is overbought (> 65) [Synthetic PCR: 0.57]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 500.0,
-        "strike_formatted": "500",
+        "strike": 505.0,
+        "strike_formatted": "505",
         "option_type": "Put",
-        "delta": -0.102,
+        "delta": -0.127,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Sell 1x MSFT 20-Nov-2026 500 Put"
+        "summary": "Sell 1x MSFT 20-Nov-2026 505 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 490.0,
-        "strike_formatted": "490",
+        "strike": 495.0,
+        "strike_formatted": "495",
         "option_type": "Put",
-        "delta": -0.05,
+        "delta": -0.065,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x MSFT 20-Nov-2026 490 Put"
+        "summary": "Buy 1x MSFT 20-Nov-2026 495 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 515.62,
-    "take_profit_price": 547.52,
-    "net_delta": 0.052,
-    "net_theta": 0.02,
+    "stop_loss_price": 517.0,
+    "take_profit_price": 548.97,
+    "net_delta": 0.062,
+    "net_theta": 0.021,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 425.26,
+        "price": 426.39,
         "pnl": -30.0
       },
       {
-        "price": 429.51,
+        "price": 430.65,
         "pnl": -30.0
       },
       {
-        "price": 433.76,
+        "price": 434.92,
         "pnl": -30.0
       },
       {
-        "price": 438.02,
+        "price": 439.18,
         "pnl": -30.0
       },
       {
-        "price": 442.27,
+        "price": 443.44,
         "pnl": -30.0
       },
       {
-        "price": 446.52,
+        "price": 447.71,
         "pnl": -30.0
       },
       {
-        "price": 450.77,
+        "price": 451.97,
         "pnl": -30.0
       },
       {
-        "price": 455.03,
+        "price": 456.24,
         "pnl": -30.0
       },
       {
-        "price": 459.28,
+        "price": 460.5,
         "pnl": -30.0
       },
       {
-        "price": 463.53,
+        "price": 464.76,
         "pnl": -30.0
       },
       {
-        "price": 467.78,
+        "price": 469.03,
         "pnl": -30.0
       },
       {
-        "price": 472.04,
+        "price": 473.29,
         "pnl": -30.0
       },
       {
-        "price": 476.29,
+        "price": 477.55,
         "pnl": -30.0
       },
       {
-        "price": 480.54,
+        "price": 481.82,
         "pnl": -30.0
       },
       {
-        "price": 484.79,
+        "price": 486.08,
         "pnl": -30.0
       },
       {
-        "price": 489.05,
+        "price": 490.35,
         "pnl": -30.0
       },
       {
-        "price": 493.3,
-        "pnl": -26.7
+        "price": 494.61,
+        "pnl": -30.0
       },
       {
-        "price": 497.55,
-        "pnl": -22.45
+        "price": 498.87,
+        "pnl": -26.13
       },
       {
-        "price": 501.8,
+        "price": 503.14,
+        "pnl": -21.86
+      },
+      {
+        "price": 507.4,
         "pnl": -20.0
       },
       {
-        "price": 506.06,
+        "price": 511.67,
         "pnl": -20.0
       },
       {
-        "price": 510.31,
+        "price": 515.93,
         "pnl": -20.0
       },
       {
-        "price": 514.56,
+        "price": 520.19,
         "pnl": -20.0
       },
       {
-        "price": 518.81,
+        "price": 524.46,
         "pnl": -20.0
       },
       {
-        "price": 523.07,
+        "price": 528.72,
         "pnl": -20.0
       },
       {
-        "price": 527.32,
+        "price": 532.98,
         "pnl": -20.0
       },
       {
-        "price": 531.57,
+        "price": 537.25,
         "pnl": -20.0
       },
       {
-        "price": 535.82,
+        "price": 541.51,
         "pnl": -20.0
       },
       {
-        "price": 540.08,
+        "price": 545.78,
         "pnl": -20.0
       },
       {
-        "price": 544.33,
+        "price": 550.04,
         "pnl": -20.0
       },
       {
-        "price": 548.58,
+        "price": 554.3,
         "pnl": -20.0
       },
       {
-        "price": 552.83,
+        "price": 558.57,
         "pnl": -20.0
       },
       {
-        "price": 557.09,
+        "price": 562.83,
         "pnl": -20.0
       },
       {
-        "price": 561.34,
+        "price": 567.1,
         "pnl": -20.0
       },
       {
-        "price": 565.59,
+        "price": 571.36,
         "pnl": -20.0
       },
       {
-        "price": 569.85,
+        "price": 575.62,
         "pnl": -20.0
       },
       {
-        "price": 574.1,
+        "price": 579.89,
         "pnl": -20.0
       },
       {
-        "price": 578.35,
+        "price": 584.15,
         "pnl": -20.0
       },
       {
-        "price": 582.6,
+        "price": 588.42,
         "pnl": -20.0
       },
       {
-        "price": 586.86,
+        "price": 592.68,
         "pnl": -20.0
       },
       {
-        "price": 591.11,
+        "price": 596.94,
         "pnl": -20.0
       },
       {
-        "price": 595.36,
+        "price": 601.21,
         "pnl": -20.0
       },
       {
-        "price": 599.61,
+        "price": 605.47,
         "pnl": -20.0
       },
       {
-        "price": 603.87,
+        "price": 609.73,
         "pnl": -20.0
       },
       {
-        "price": 608.12,
+        "price": 614.0,
         "pnl": -20.0
       },
       {
-        "price": 612.37,
+        "price": 618.26,
         "pnl": -20.0
       },
       {
-        "price": 616.62,
+        "price": 622.53,
         "pnl": -20.0
       },
       {
-        "price": 620.88,
+        "price": 626.79,
         "pnl": -20.0
       },
       {
-        "price": 625.13,
+        "price": 631.05,
         "pnl": -20.0
       },
       {
-        "price": 629.38,
+        "price": 635.32,
         "pnl": -20.0
       },
       {
-        "price": 633.63,
-        "pnl": -20.0
-      },
-      {
-        "price": 637.89,
+        "price": 639.58,
         "pnl": -20.0
       }
     ],
@@ -277,70 +277,70 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x MSFT 20-Nov-2026 500 Put<br> Buy 1x MSFT 20-Nov-2026 490 Put"
+      "legs_summary": "Sell 1x MSFT 20-Nov-2026 505 Put<br> Buy 1x MSFT 20-Nov-2026 495 Put"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 77.7,
-      "grade": "B (Good)",
+      "score": 80.9,
+      "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x MSFT 20-Nov-2026 500 Put<br> Sell 1x MSFT 20-Nov-2026 560 Call<br> Buy 1x MSFT 20-Nov-2026 570 Call"
+      "legs_summary": "Sell 1x MSFT 20-Nov-2026 505 Put<br> Sell 1x MSFT 20-Nov-2026 565 Call<br> Buy 1x MSFT 20-Nov-2026 575 Call"
     },
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 75.9,
+      "score": 79.2,
       "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 530 Put<br> Sell 1x MSFT 20-Nov-2026 500 Put<br> Sell 1x MSFT 20-Nov-2026 500 Put"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 71.2,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 490 Put<br> Sell 1x MSFT 20-Nov-2026 500 Put<br> Sell 1x MSFT 20-Nov-2026 560 Call<br> Buy 1x MSFT 20-Nov-2026 570 Call"
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 535 Put<br> Sell 1x MSFT 20-Nov-2026 505 Put<br> Sell 1x MSFT 20-Nov-2026 505 Put"
     },
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 66.5,
+      "score": 70.1,
       "grade": "B (Good)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x MSFT 20-Nov-2026 500 Put"
+      "legs_summary": "Sell 1x MSFT 20-Nov-2026 505 Put"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 62.0,
+      "score": 65.2,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 530 Call<br> Sell 1x MSFT 20-Nov-2026 550 Call"
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 535 Call<br> Sell 1x MSFT 20-Nov-2026 555 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 57.7,
-      "grade": "C (Moderate)",
+      "score": 61.6,
+      "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x MSFT 20-Nov-2026 505 Call<br> Sell 1x MSFT 20-Nov-2026 545 Call"
     },
     {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 58.0,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 495 Put<br> Sell 1x MSFT 20-Nov-2026 505 Put<br> Sell 1x MSFT 20-Nov-2026 565 Call<br> Buy 1x MSFT 20-Nov-2026 575 Call"
+    },
+    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
-      "score": 48.1,
+      "score": 52.2,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 531.6 Call"
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 533.0 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -349,28 +349,28 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x MSFT 20-Nov-2026 500 Put"
+      "legs_summary": "Sell 1x MSFT 20-Nov-2026 505 Put"
     },
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 41.2,
+      "score": 44.1,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x MSFT 20-Nov-2026 500 Put"
+      "legs_summary": "Sell 1x MSFT 20-Nov-2026 505 Put"
     }
   ],
   "indicators": {
-    "EMA20": "507.93",
-    "EMA50": "486.81",
-    "EMA100": "463.51",
-    "EMA200": "451.16",
-    "RSI(14)": "68.83",
-    "ATR(14)": "11.46",
-    "ADX(14)": "39.08",
-    "BB(20,2)": "1.08",
-    "P_SHAPE(20)": "35.25"
+    "EMA20": "508.06",
+    "EMA50": "486.87",
+    "EMA100": "463.54",
+    "EMA200": "451.17",
+    "RSI(14)": "69.37",
+    "ATR(14)": "11.72",
+    "ADX(14)": "39.22",
+    "BB(20,2)": "1.10",
+    "P_SHAPE(20)": "33.21"
   },
   "rules": [
     {
@@ -402,6 +402,20 @@
       "explanation": "Condition met"
     },
     {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
@@ -417,20 +431,6 @@
     },
     {
       "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -453,46 +453,32 @@
   ],
   "news": [
     {
-      "title": "S&P 500 hovers near record highs as Treasury yields ease: AlphaCheck",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/article/sp-500-hovers-near-record-highs-as-treasury-yields-ease-alphacheck-134008813.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "S&P 500 set to open near record highs as Treasury yields cool, oil slips",
-      "publisher": "Reuters",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-yields-102708822.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Oku Digital Health Launches From Topcon Healthcare to Transform Eye Care Into Whole-Body Health",
-      "publisher": "GlobeNewswire",
-      "link": "https://finance.yahoo.com/healthcare/articles/oku-digital-health-launches-topcon-130500095.html",
+      "title": "Did IREN\u2019s Pivot From Bitcoin Mining to AI Cloud Deals Just Shift IREN's (IREN) Investment Narrative?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/technology/ai/articles/did-iren-pivot-bitcoin-mining-150655271.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Reco Joins Invitation-Only Microsoft for Startups Pegasus Program to Accelerate Enterprise Agent Security",
-      "publisher": "GlobeNewswire",
-      "link": "https://finance.yahoo.com/technology/ai/articles/reco-joins-invitation-only-microsoft-130300713.html",
+      "title": "Alphabet Has the Biggest Upside in the Mag 7 Right Now: 64%",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-biggest-upside-mag-7-150009797.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Are Palantir Stock Bulls Not Worried About?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-bulls-not-worried-143418278.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Euromonitor International Launches Next-Generation Passport",
-      "publisher": "Business Wire",
-      "link": "https://finance.yahoo.com/technology/ai/articles/euromonitor-international-launches-next-generation-130000424.html",
+      "title": "What Would It Take For Apple Stock To Move Higher?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/apple-stock-move-higher-142632682.html",
       "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "SkyeConnex Appoints Former Microsoft CVP Brad Anderson to Its Board of Directors",
-      "publisher": "CNW Group",
-      "link": "https://finance.yahoo.com/technology/articles/skyeconnex-appoints-former-microsoft-cvp-130000693.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
     }
   ]
 }

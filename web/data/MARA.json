@@ -1,6 +1,6 @@
 {
   "symbol": "MARA",
-  "last_price": 11.23,
+  "last_price": 11.12,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 22.5,
   "confidence_grade": "C",
   "confidence_percentage": 22.5,
-  "vix": 15.42,
+  "vix": 15.35,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,7 +23,7 @@
         "strike": 10.0,
         "strike_formatted": "10",
         "option_type": "Put",
-        "delta": -0.011,
+        "delta": -0.017,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,15 +46,19 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1.0,
-    "stop_loss_price": 10.89,
-    "take_profit_price": 11.57,
-    "net_delta": 0.011,
+    "stop_loss_price": 10.79,
+    "take_profit_price": 11.45,
+    "net_delta": 0.017,
     "net_theta": 0.0,
     "probability_of_profit": 0.0,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
+      {
+        "price": 8.9,
+        "pnl": -2.0
+      },
       {
         "price": 8.98,
         "pnl": -2.0
@@ -96,167 +100,163 @@
         "pnl": -1.21
       },
       {
-        "price": 9.88,
-        "pnl": -1.12
+        "price": 9.87,
+        "pnl": -1.13
       },
       {
-        "price": 9.97,
-        "pnl": -1.03
+        "price": 9.96,
+        "pnl": -1.04
       },
       {
-        "price": 10.06,
+        "price": 10.05,
         "pnl": -1.0
       },
       {
-        "price": 10.15,
+        "price": 10.14,
         "pnl": -1.0
       },
       {
-        "price": 10.24,
+        "price": 10.23,
         "pnl": -1.0
       },
       {
-        "price": 10.33,
+        "price": 10.32,
         "pnl": -1.0
       },
       {
-        "price": 10.42,
+        "price": 10.41,
         "pnl": -1.0
       },
       {
-        "price": 10.51,
+        "price": 10.5,
         "pnl": -1.0
       },
       {
-        "price": 10.6,
+        "price": 10.59,
         "pnl": -1.0
       },
       {
-        "price": 10.69,
+        "price": 10.68,
         "pnl": -1.0
       },
       {
-        "price": 10.78,
+        "price": 10.76,
         "pnl": -1.0
       },
       {
-        "price": 10.87,
+        "price": 10.85,
         "pnl": -1.0
       },
       {
-        "price": 10.96,
+        "price": 10.94,
         "pnl": -1.0
       },
       {
-        "price": 11.05,
+        "price": 11.03,
         "pnl": -1.0
       },
       {
-        "price": 11.14,
+        "price": 11.12,
         "pnl": -1.0
       },
       {
-        "price": 11.23,
+        "price": 11.21,
         "pnl": -1.0
       },
       {
-        "price": 11.32,
+        "price": 11.3,
         "pnl": -1.0
       },
       {
-        "price": 11.41,
+        "price": 11.39,
         "pnl": -1.0
       },
       {
-        "price": 11.5,
+        "price": 11.48,
         "pnl": -1.0
       },
       {
-        "price": 11.59,
+        "price": 11.56,
         "pnl": -1.0
       },
       {
-        "price": 11.68,
+        "price": 11.65,
         "pnl": -1.0
       },
       {
-        "price": 11.77,
+        "price": 11.74,
         "pnl": -1.0
       },
       {
-        "price": 11.86,
+        "price": 11.83,
         "pnl": -1.0
       },
       {
-        "price": 11.95,
+        "price": 11.92,
         "pnl": -1.0
       },
       {
-        "price": 12.04,
+        "price": 12.01,
         "pnl": -1.0
       },
       {
-        "price": 12.13,
+        "price": 12.1,
         "pnl": -1.0
       },
       {
-        "price": 12.22,
+        "price": 12.19,
         "pnl": -1.0
       },
       {
-        "price": 12.31,
+        "price": 12.28,
         "pnl": -1.0
       },
       {
-        "price": 12.4,
+        "price": 12.37,
         "pnl": -1.0
       },
       {
-        "price": 12.49,
+        "price": 12.45,
         "pnl": -1.0
       },
       {
-        "price": 12.58,
+        "price": 12.54,
         "pnl": -1.0
       },
       {
-        "price": 12.67,
+        "price": 12.63,
         "pnl": -1.0
       },
       {
-        "price": 12.76,
+        "price": 12.72,
         "pnl": -1.0
       },
       {
-        "price": 12.85,
+        "price": 12.81,
         "pnl": -1.0
       },
       {
-        "price": 12.94,
+        "price": 12.9,
         "pnl": -1.0
       },
       {
-        "price": 13.03,
+        "price": 12.99,
         "pnl": -1.0
       },
       {
-        "price": 13.12,
+        "price": 13.08,
         "pnl": -1.0
       },
       {
-        "price": 13.21,
+        "price": 13.17,
         "pnl": -1.0
       },
       {
-        "price": 13.3,
+        "price": 13.25,
         "pnl": -1.0
       },
       {
-        "price": 13.39,
-        "pnl": -1.0
-      },
-      {
-        "price": 13.48,
+        "price": 13.34,
         "pnl": -1.0
       }
     ],
@@ -282,7 +282,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 66.2,
+      "score": 65.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -291,8 +291,8 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 59.4,
-      "grade": "C (Moderate)",
+      "score": 60.2,
+      "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "Buy 1x MARA 20-Nov-2026 11 Put<br> Sell 1x MARA 20-Nov-2026 10 Put"
@@ -304,19 +304,19 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x MARA 20-Nov-2026 11.2 Put"
+      "legs_summary": "Sell 1x MARA 20-Nov-2026 11.1 Put"
     }
   ],
   "indicators": {
-    "EMA20": "11.75",
+    "EMA20": "11.74",
     "EMA50": "11.67",
     "EMA100": "11.70",
     "EMA200": "12.03",
-    "RSI(14)": "44.92",
-    "ATR(14)": "0.79",
+    "RSI(14)": "43.83",
+    "ATR(14)": "0.80",
     "ADX(14)": "17.08",
-    "BB(20,2)": "0.28",
-    "P_SHAPE(20)": "35.32"
+    "BB(20,2)": "0.25",
+    "P_SHAPE(20)": "35.25"
   },
   "rules": [
     {

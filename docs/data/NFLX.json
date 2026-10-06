@@ -1,6 +1,6 @@
 {
   "symbol": "NFLX",
-  "last_price": 67.7,
+  "last_price": 68.29,
   "as_of": "2026-10-06 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
@@ -8,12 +8,12 @@
   "fit_score": 10.0,
   "confidence_grade": "C",
   "confidence_percentage": 10.0,
-  "vix": 15.42,
+  "vix": 15.35,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (33.6) is oversold (< 35) [Synthetic PCR: 1.29]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 72.0,
         "strike_formatted": "72",
         "option_type": "Call",
-        "delta": 0.16,
+        "delta": 0.201,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 74.0,
         "strike_formatted": "74",
         "option_type": "Call",
-        "delta": 0.066,
+        "delta": 0.089,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,69 +46,65 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 3.0,
-    "stop_loss_price": 65.67,
-    "take_profit_price": 69.73,
-    "net_delta": -0.094,
-    "net_theta": 0.005,
+    "stop_loss_price": 66.25,
+    "take_profit_price": 70.34,
+    "net_delta": -0.112,
+    "net_theta": 0.006,
     "probability_of_profit": 0.0,
     "var_95": 2.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 54.16,
+        "price": 54.64,
         "pnl": -3.0
       },
       {
-        "price": 54.7,
+        "price": 55.18,
         "pnl": -3.0
       },
       {
-        "price": 55.24,
+        "price": 55.73,
         "pnl": -3.0
       },
       {
-        "price": 55.78,
+        "price": 56.28,
         "pnl": -3.0
       },
       {
-        "price": 56.33,
+        "price": 56.82,
         "pnl": -3.0
       },
       {
-        "price": 56.87,
+        "price": 57.37,
         "pnl": -3.0
       },
       {
-        "price": 57.41,
+        "price": 57.91,
         "pnl": -3.0
       },
       {
-        "price": 57.95,
+        "price": 58.46,
         "pnl": -3.0
       },
       {
-        "price": 58.49,
+        "price": 59.01,
         "pnl": -3.0
       },
       {
-        "price": 59.03,
+        "price": 59.55,
         "pnl": -3.0
       },
       {
-        "price": 59.58,
+        "price": 60.1,
         "pnl": -3.0
       },
       {
-        "price": 60.12,
+        "price": 60.65,
         "pnl": -3.0
       },
       {
-        "price": 60.66,
-        "pnl": -3.0
-      },
-      {
-        "price": 61.2,
+        "price": 61.19,
         "pnl": -3.0
       },
       {
@@ -116,7 +112,7 @@
         "pnl": -3.0
       },
       {
-        "price": 62.28,
+        "price": 62.29,
         "pnl": -3.0
       },
       {
@@ -124,139 +120,143 @@
         "pnl": -3.0
       },
       {
-        "price": 63.37,
+        "price": 63.38,
         "pnl": -3.0
       },
       {
-        "price": 63.91,
+        "price": 63.92,
         "pnl": -3.0
       },
       {
-        "price": 64.45,
+        "price": 64.47,
         "pnl": -3.0
       },
       {
-        "price": 64.99,
+        "price": 65.02,
         "pnl": -3.0
       },
       {
-        "price": 65.53,
+        "price": 65.56,
         "pnl": -3.0
       },
       {
-        "price": 66.08,
+        "price": 66.11,
         "pnl": -3.0
       },
       {
-        "price": 66.62,
+        "price": 66.66,
         "pnl": -3.0
       },
       {
-        "price": 67.16,
+        "price": 67.2,
         "pnl": -3.0
       },
       {
-        "price": 67.7,
+        "price": 67.75,
         "pnl": -3.0
       },
       {
-        "price": 68.24,
+        "price": 68.29,
         "pnl": -3.0
       },
       {
-        "price": 68.78,
+        "price": 68.84,
         "pnl": -3.0
       },
       {
-        "price": 69.32,
+        "price": 69.39,
         "pnl": -3.0
       },
       {
-        "price": 69.87,
+        "price": 69.93,
         "pnl": -3.0
       },
       {
-        "price": 70.41,
+        "price": 70.48,
         "pnl": -3.0
       },
       {
-        "price": 70.95,
+        "price": 71.03,
         "pnl": -3.0
       },
       {
-        "price": 71.49,
+        "price": 71.57,
         "pnl": -3.0
       },
       {
-        "price": 72.03,
-        "pnl": -3.03
+        "price": 72.12,
+        "pnl": -3.12
       },
       {
-        "price": 72.57,
-        "pnl": -3.57
+        "price": 72.67,
+        "pnl": -3.67
       },
       {
-        "price": 73.12,
-        "pnl": -4.12
+        "price": 73.21,
+        "pnl": -4.21
       },
       {
-        "price": 73.66,
-        "pnl": -4.66
+        "price": 73.76,
+        "pnl": -4.76
       },
       {
-        "price": 74.2,
+        "price": 74.3,
         "pnl": -5.0
       },
       {
-        "price": 74.74,
+        "price": 74.85,
         "pnl": -5.0
       },
       {
-        "price": 75.28,
+        "price": 75.4,
         "pnl": -5.0
       },
       {
-        "price": 75.82,
+        "price": 75.94,
         "pnl": -5.0
       },
       {
-        "price": 76.37,
+        "price": 76.49,
         "pnl": -5.0
       },
       {
-        "price": 76.91,
+        "price": 77.04,
         "pnl": -5.0
       },
       {
-        "price": 77.45,
+        "price": 77.58,
         "pnl": -5.0
       },
       {
-        "price": 77.99,
+        "price": 78.13,
         "pnl": -5.0
       },
       {
-        "price": 78.53,
+        "price": 78.68,
         "pnl": -5.0
       },
       {
-        "price": 79.07,
+        "price": 79.22,
         "pnl": -5.0
       },
       {
-        "price": 79.62,
+        "price": 79.77,
         "pnl": -5.0
       },
       {
-        "price": 80.16,
+        "price": 80.31,
         "pnl": -5.0
       },
       {
-        "price": 80.7,
+        "price": 80.86,
         "pnl": -5.0
       },
       {
-        "price": 81.24,
+        "price": 81.41,
+        "pnl": -5.0
+      },
+      {
+        "price": 81.95,
         "pnl": -5.0
       }
     ],
@@ -282,7 +282,7 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 66.0,
+      "score": 72.1,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -295,19 +295,19 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x NFLX 20-Nov-2026 67.7 Put"
+      "legs_summary": "Sell 1x NFLX 20-Nov-2026 68.3 Put"
     }
   ],
   "indicators": {
-    "EMA20": "71.73",
-    "EMA50": "74.58",
-    "EMA100": "77.95",
-    "EMA200": "84.09",
-    "RSI(14)": "33.60",
-    "ATR(14)": "1.81",
-    "ADX(14)": "28.61",
-    "BB(20,2)": "0.19",
-    "P_SHAPE(20)": "43.48"
+    "EMA20": "71.79",
+    "EMA50": "74.60",
+    "EMA100": "77.96",
+    "EMA200": "84.10",
+    "RSI(14)": "35.91",
+    "ATR(14)": "1.84",
+    "ADX(14)": "28.36",
+    "BB(20,2)": "0.23",
+    "P_SHAPE(20)": "43.57"
   },
   "rules": [
     {
@@ -390,6 +390,20 @@
   ],
   "news": [
     {
+      "title": "Are Rising Live Sports Costs a Margin Threat to Netflix Stockholders?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/media-advertising/articles/rising-live-sports-costs-margin-141200448.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "How Much Upside Is Left In Google Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-upside-left-google-stock-141038020.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Paramount-Warner Merger Closes: Why Disney and Netflix Are Better Stocks",
       "publisher": "Barrons.com",
       "link": "https://finance.yahoo.com/m/f4afebd6-fc4a-33cc-9698-1135416ee8c4/paramount-warner-merger.html",
@@ -414,13 +428,6 @@
       "title": "Disney Licenses Major Movie and Show Franchises to Netflix",
       "publisher": "TIKR",
       "link": "https://finance.yahoo.com/markets/stocks/articles/disney-licenses-major-movie-show-125738425.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "2 Cash-Producing Stocks Worth Investigating and 1 That Underwhelm",
-      "publisher": "StockStory",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-cash-producing-stocks-worth-091500304.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

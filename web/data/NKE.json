@@ -1,19 +1,19 @@
 {
   "symbol": "NKE",
-  "last_price": 33.74,
+  "last_price": 34.38,
   "as_of": "2026-10-06 13:30:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 15.37,
+  "confidence_percentage": 25.0,
+  "vix": 15.35,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (28.2) is oversold (< 35) [Synthetic PCR: 1.43]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (33.4) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 36.0,
         "strike_formatted": "36",
         "option_type": "Call",
-        "delta": 0.144,
+        "delta": 0.238,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 37.0,
         "strike_formatted": "37",
         "option_type": "Call",
-        "delta": 0.058,
+        "delta": 0.111,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,41 +46,33 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1.0,
-    "stop_loss_price": 32.72,
-    "take_profit_price": 34.75,
-    "net_delta": -0.086,
-    "net_theta": 0.002,
+    "stop_loss_price": 33.35,
+    "take_profit_price": 35.41,
+    "net_delta": -0.127,
+    "net_theta": 0.003,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 26.99,
+        "price": 27.5,
         "pnl": -1.0
       },
       {
-        "price": 27.26,
+        "price": 27.78,
         "pnl": -1.0
       },
       {
-        "price": 27.53,
+        "price": 28.05,
         "pnl": -1.0
       },
       {
-        "price": 27.8,
+        "price": 28.33,
         "pnl": -1.0
       },
       {
-        "price": 28.07,
-        "pnl": -1.0
-      },
-      {
-        "price": 28.34,
-        "pnl": -1.0
-      },
-      {
-        "price": 28.61,
+        "price": 28.6,
         "pnl": -1.0
       },
       {
@@ -92,171 +84,179 @@
         "pnl": -1.0
       },
       {
-        "price": 29.42,
+        "price": 29.43,
         "pnl": -1.0
       },
       {
-        "price": 29.69,
+        "price": 29.7,
         "pnl": -1.0
       },
       {
-        "price": 29.96,
+        "price": 29.98,
         "pnl": -1.0
       },
       {
-        "price": 30.23,
+        "price": 30.25,
         "pnl": -1.0
       },
       {
-        "price": 30.5,
+        "price": 30.53,
         "pnl": -1.0
       },
       {
-        "price": 30.77,
+        "price": 30.8,
         "pnl": -1.0
       },
       {
-        "price": 31.04,
+        "price": 31.08,
         "pnl": -1.0
       },
       {
-        "price": 31.31,
+        "price": 31.35,
         "pnl": -1.0
       },
       {
-        "price": 31.58,
+        "price": 31.63,
         "pnl": -1.0
       },
       {
-        "price": 31.85,
+        "price": 31.9,
         "pnl": -1.0
       },
       {
-        "price": 32.12,
+        "price": 32.18,
         "pnl": -1.0
       },
       {
-        "price": 32.39,
+        "price": 32.45,
         "pnl": -1.0
       },
       {
-        "price": 32.66,
+        "price": 32.73,
         "pnl": -1.0
       },
       {
-        "price": 32.93,
+        "price": 33.0,
         "pnl": -1.0
       },
       {
-        "price": 33.2,
+        "price": 33.28,
         "pnl": -1.0
       },
       {
-        "price": 33.47,
+        "price": 33.55,
         "pnl": -1.0
       },
       {
-        "price": 33.74,
+        "price": 33.83,
         "pnl": -1.0
       },
       {
-        "price": 34.0,
+        "price": 34.1,
         "pnl": -1.0
       },
       {
-        "price": 34.27,
+        "price": 34.38,
         "pnl": -1.0
       },
       {
-        "price": 34.54,
+        "price": 34.66,
         "pnl": -1.0
       },
       {
-        "price": 34.81,
+        "price": 34.93,
         "pnl": -1.0
       },
       {
-        "price": 35.08,
+        "price": 35.21,
         "pnl": -1.0
       },
       {
-        "price": 35.35,
+        "price": 35.48,
         "pnl": -1.0
       },
       {
-        "price": 35.62,
+        "price": 35.76,
         "pnl": -1.0
       },
       {
-        "price": 35.89,
-        "pnl": -1.0
+        "price": 36.03,
+        "pnl": -1.03
       },
       {
-        "price": 36.16,
-        "pnl": -1.16
+        "price": 36.31,
+        "pnl": -1.31
       },
       {
-        "price": 36.43,
-        "pnl": -1.43
+        "price": 36.58,
+        "pnl": -1.58
       },
       {
-        "price": 36.7,
-        "pnl": -1.7
+        "price": 36.86,
+        "pnl": -1.86
       },
       {
-        "price": 36.97,
-        "pnl": -1.97
-      },
-      {
-        "price": 37.24,
+        "price": 37.13,
         "pnl": -2.0
       },
       {
-        "price": 37.51,
+        "price": 37.41,
         "pnl": -2.0
       },
       {
-        "price": 37.78,
+        "price": 37.68,
         "pnl": -2.0
       },
       {
-        "price": 38.05,
+        "price": 37.96,
         "pnl": -2.0
       },
       {
-        "price": 38.32,
+        "price": 38.23,
         "pnl": -2.0
       },
       {
-        "price": 38.59,
+        "price": 38.51,
         "pnl": -2.0
       },
       {
-        "price": 38.86,
+        "price": 38.78,
         "pnl": -2.0
       },
       {
-        "price": 39.13,
+        "price": 39.06,
         "pnl": -2.0
       },
       {
-        "price": 39.4,
+        "price": 39.33,
         "pnl": -2.0
       },
       {
-        "price": 39.67,
+        "price": 39.61,
         "pnl": -2.0
       },
       {
-        "price": 39.94,
+        "price": 39.88,
         "pnl": -2.0
       },
       {
-        "price": 40.21,
+        "price": 40.16,
         "pnl": -2.0
       },
       {
-        "price": 40.48,
+        "price": 40.43,
+        "pnl": -2.0
+      },
+      {
+        "price": 40.71,
+        "pnl": -2.0
+      },
+      {
+        "price": 40.98,
+        "pnl": -2.0
+      },
+      {
+        "price": 41.26,
         "pnl": -2.0
       }
     ],
@@ -282,45 +282,77 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 65.6,
+      "score": 62.4,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "Buy 1x NKE 20-Nov-2026 34 Put<br> Sell 1x NKE 20-Nov-2026 33 Put"
     },
     {
-      "strategy_type": "cash_swing_short",
-      "strategy_display": "Cash Swing Short",
-      "score": 53.2,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x NKE 20-Nov-2026 33.7 Put"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 49.1,
-      "grade": "C (Moderate)",
+      "score": 62.4,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x NKE 20-Nov-2026 31 Put<br> Sell 1x NKE 20-Nov-2026 32 Put<br> Sell 1x NKE 20-Nov-2026 36 Call<br> Buy 1x NKE 20-Nov-2026 37 Call"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 49.1,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x NKE 20-Nov-2026 34.4 Put"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 41.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x NKE 20-Nov-2026 34 Put<br> Sell 1x NKE 20-Nov-2026 32 Put<br> Sell 1x NKE 20-Nov-2026 32 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 40.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x NKE 20-Nov-2026 32 Put<br> Sell 1x NKE 20-Nov-2026 36 Call<br> Buy 1x NKE 20-Nov-2026 37 Call"
     }
   ],
   "indicators": {
-    "EMA20": "35.89",
-    "EMA50": "38.11",
-    "EMA100": "41.27",
-    "EMA200": "47.17",
-    "RSI(14)": "28.16",
-    "ATR(14)": "1.11",
-    "ADX(14)": "31.08",
-    "BB(20,2)": "-0.02",
-    "P_SHAPE(20)": "76.06"
+    "EMA20": "35.95",
+    "EMA50": "38.13",
+    "EMA100": "41.29",
+    "EMA200": "47.18",
+    "RSI(14)": "33.41",
+    "ATR(14)": "1.15",
+    "ADX(14)": "30.51",
+    "BB(20,2)": "0.11",
+    "P_SHAPE(20)": "76.28"
   },
   "rules": [
     {
       "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -369,20 +401,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -399,6 +417,20 @@
   ],
   "news": [
     {
+      "title": "Nike downgraded, Home Depot initiated: Wall Street's top analyst calls",
+      "publisher": "The Fly",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nike-downgraded-home-depot-initiated-135003499.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "AMD, Nvidia, Nike, Corteva, Constellation Energy, Seagate, Nike, and More Stocks That Explain Today\u2019s Market",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/4dd12e57-7617-3012-b143-0d797d9fa46f/amd%2C-nvidia%2C-nike%2C-corteva%2C.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "NIKE Trades 28% Below Its Usual Earnings Multiple. Here\u2019s Why That Doesn\u2019t Make It Cheap Yet",
       "publisher": "Insider Monkey",
       "link": "https://finance.yahoo.com/markets/stocks/articles/nike-trades-28-below-usual-131208782.html",
@@ -413,32 +445,11 @@
       "sentiment": "bearish"
     },
     {
-      "title": "Here Are Tuesday\u2019s Top Wall Street Analyst Research Calls: Borg Warner, Boyd Gaming, JetBlue, Lattice Semiconductor, Lockheed Martin, Nike, Northrop Grumman, Procter & Gamble, SPX Technologies, and More",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tuesday-top-wall-street-analyst-115414945.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Premarket movers: Constellation, Zscaler rise while Nike falls",
-      "publisher": "Investing.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/premarket-movers-constellation-zscaler-rise-113959809.html",
+      "title": "NIKE's High P/E Valuation: Can Fundamentals Justify the Premium?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nikes-high-p-e-valuation-130500776.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Premarket Movers: OPCH, CEG Stocks Jump On Buyout Talks, Nuclear Deal \u2013 NKE Slides On \u2018Sell\u2019 Rating",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/premarket-movers-opch-ceg-stocks-111259372.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "A2Z Cust2Mate Completes Acquisition of In-Store Retail Media Business Hedia",
-      "publisher": "CNW Group",
-      "link": "https://finance.yahoo.com/media-advertising/articles/a2z-cust2mate-completes-acquisition-store-110000036.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

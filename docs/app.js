@@ -762,27 +762,57 @@ document.addEventListener("DOMContentLoaded", () => {
         for (const item of indexList) {
           const isIndia = isIndianSymbol(item.symbol);
           const isCash = (item.trade_category === "cash" && (item.strategy_display.includes("Cash") || item.strategy_display.includes("Swing")));
-          const entry = {
-            symbol: item.symbol,
-            last_price: item.last_price,
-            fit_score: item.fit_score,
-            regime_display: item.regime_display,
-            strategy_display: item.strategy_display,
-            legs_summary: item.legs_summary || "",
-            ranked_strategies: item.ranked_strategies || [],
-            trade_profile: item.trade_profile || "Defined Risk | 30-45 DTE",
-            trade_category: item.trade_category || "options",
-            market: isIndia ? "india" : "us",
-            as_of: item.as_of
-          };
+          
           if (isCash) {
-            (isIndia ? cashIndia : cashUS).push(entry);
+            cashIndia.push({
+              symbol: item.symbol,
+              last_price: item.last_price,
+              fit_score: item.fit_score,
+              regime_display: item.regime_display,
+              strategy_display: item.strategy_display,
+              legs_summary: item.legs_summary || "",
+              trade_profile: item.trade_profile || "Cash / Swing",
+              trade_category: "cash",
+              market: isIndia ? "india" : "us",
+              as_of: item.as_of
+            });
           } else {
-            (isIndia ? optionsIndia : optionsUS).push(entry);
+            // Expand all candidate strategies (Symbol x Strategy) into the global options ranking list
+            if (item.ranked_strategies && item.ranked_strategies.length > 0) {
+              for (const strat of item.ranked_strategies) {
+                const targetList = isIndia ? optionsIndia : optionsUS;
+                targetList.push({
+                  symbol: item.symbol,
+                  last_price: item.last_price,
+                  fit_score: strat.score,
+                  regime_display: item.regime_display,
+                  strategy_display: strat.strategy_display,
+                  legs_summary: strat.legs_summary || item.legs_summary || "",
+                  trade_profile: strat.trade_profile || item.trade_profile || "Defined Risk | 30-45 DTE",
+                  trade_category: "options",
+                  market: isIndia ? "india" : "us",
+                  as_of: item.as_of
+                });
+              }
+            } else {
+              const targetList = isIndia ? optionsIndia : optionsUS;
+              targetList.push({
+                symbol: item.symbol,
+                last_price: item.last_price,
+                fit_score: item.fit_score,
+                regime_display: item.regime_display,
+                strategy_display: item.strategy_display,
+                legs_summary: item.legs_summary || "",
+                trade_profile: item.trade_profile || "Defined Risk | 30-45 DTE",
+                trade_category: "options",
+                market: isIndia ? "india" : "us",
+                as_of: item.as_of
+              });
+            }
           }
         }
 
-        const sortAndSlice = list => list.sort((a, b) => b.fit_score - a.fit_score).slice(0, 6);
+        const sortAndSlice = list => list.sort((a, b) => b.fit_score - a.fit_score).slice(0, 30);
         optionsUS    = sortAndSlice(optionsUS);
         optionsIndia = sortAndSlice(optionsIndia);
         cashUS       = sortAndSlice(cashUS);

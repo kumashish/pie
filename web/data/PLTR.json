@@ -1,6 +1,6 @@
 {
   "symbol": "PLTR",
-  "last_price": 193.4,
+  "last_price": 193.13,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,12 +8,12 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 15.42,
+  "vix": 15.35,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (65.5) is overbought (> 65) [Synthetic PCR: 0.72]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (65.2) is overbought (> 65) [Synthetic PCR: 0.73]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 185.0,
         "strike_formatted": "185",
         "option_type": "Put",
-        "delta": -0.168,
+        "delta": -0.174,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 180.0,
         "strike_formatted": "180",
         "option_type": "Put",
-        "delta": -0.071,
+        "delta": -0.074,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 187.6,
-    "take_profit_price": 199.2,
-    "net_delta": 0.097,
+    "stop_loss_price": 187.34,
+    "take_profit_price": 198.93,
+    "net_delta": 0.1,
     "net_theta": 0.011,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 154.72,
+        "price": 154.51,
         "pnl": -15.0
       },
       {
-        "price": 156.27,
+        "price": 156.05,
         "pnl": -15.0
       },
       {
-        "price": 157.82,
+        "price": 157.6,
         "pnl": -15.0
       },
       {
-        "price": 159.36,
+        "price": 159.14,
         "pnl": -15.0
       },
       {
-        "price": 160.91,
+        "price": 160.69,
         "pnl": -15.0
       },
       {
-        "price": 162.46,
+        "price": 162.23,
         "pnl": -15.0
       },
       {
-        "price": 164.0,
+        "price": 163.78,
         "pnl": -15.0
       },
       {
-        "price": 165.55,
+        "price": 165.32,
         "pnl": -15.0
       },
       {
-        "price": 167.1,
+        "price": 166.87,
         "pnl": -15.0
       },
       {
-        "price": 168.65,
+        "price": 168.41,
         "pnl": -15.0
       },
       {
-        "price": 170.19,
+        "price": 169.96,
         "pnl": -15.0
       },
       {
-        "price": 171.74,
+        "price": 171.5,
         "pnl": -15.0
       },
       {
-        "price": 173.29,
+        "price": 173.05,
         "pnl": -15.0
       },
       {
-        "price": 174.84,
+        "price": 174.59,
         "pnl": -15.0
       },
       {
-        "price": 176.38,
+        "price": 176.14,
         "pnl": -15.0
       },
       {
-        "price": 177.93,
+        "price": 177.68,
         "pnl": -15.0
       },
       {
-        "price": 179.48,
+        "price": 179.23,
         "pnl": -15.0
       },
       {
-        "price": 181.02,
-        "pnl": -13.98
+        "price": 180.77,
+        "pnl": -14.23
       },
       {
-        "price": 182.57,
-        "pnl": -12.43
+        "price": 182.32,
+        "pnl": -12.68
       },
       {
-        "price": 184.12,
-        "pnl": -10.88
+        "price": 183.86,
+        "pnl": -11.14
       },
       {
-        "price": 185.67,
+        "price": 185.41,
         "pnl": -10.0
       },
       {
-        "price": 187.21,
+        "price": 186.95,
         "pnl": -10.0
       },
       {
-        "price": 188.76,
+        "price": 188.5,
         "pnl": -10.0
       },
       {
-        "price": 190.31,
+        "price": 190.04,
         "pnl": -10.0
       },
       {
-        "price": 191.85,
+        "price": 191.59,
         "pnl": -10.0
       },
       {
-        "price": 193.4,
+        "price": 193.13,
         "pnl": -10.0
       },
       {
-        "price": 194.95,
+        "price": 194.68,
         "pnl": -10.0
       },
       {
-        "price": 196.5,
+        "price": 196.23,
         "pnl": -10.0
       },
       {
-        "price": 198.04,
+        "price": 197.77,
         "pnl": -10.0
       },
       {
-        "price": 199.59,
+        "price": 199.32,
         "pnl": -10.0
       },
       {
-        "price": 201.14,
+        "price": 200.86,
         "pnl": -10.0
       },
       {
-        "price": 202.69,
+        "price": 202.41,
         "pnl": -10.0
       },
       {
-        "price": 204.23,
+        "price": 203.95,
         "pnl": -10.0
       },
       {
-        "price": 205.78,
+        "price": 205.5,
         "pnl": -10.0
       },
       {
-        "price": 207.33,
+        "price": 207.04,
         "pnl": -10.0
       },
       {
-        "price": 208.87,
+        "price": 208.59,
         "pnl": -10.0
       },
       {
-        "price": 210.42,
+        "price": 210.13,
         "pnl": -10.0
       },
       {
-        "price": 211.97,
+        "price": 211.68,
         "pnl": -10.0
       },
       {
-        "price": 213.52,
+        "price": 213.22,
         "pnl": -10.0
       },
       {
-        "price": 215.06,
+        "price": 214.77,
         "pnl": -10.0
       },
       {
-        "price": 216.61,
+        "price": 216.31,
         "pnl": -10.0
       },
       {
-        "price": 218.16,
+        "price": 217.86,
         "pnl": -10.0
       },
       {
-        "price": 219.7,
+        "price": 219.4,
         "pnl": -10.0
       },
       {
-        "price": 221.25,
+        "price": 220.95,
         "pnl": -10.0
       },
       {
-        "price": 222.8,
+        "price": 222.49,
         "pnl": -10.0
       },
       {
-        "price": 224.35,
+        "price": 224.04,
         "pnl": -10.0
       },
       {
-        "price": 225.89,
+        "price": 225.58,
         "pnl": -10.0
       },
       {
-        "price": 227.44,
+        "price": 227.13,
         "pnl": -10.0
       },
       {
-        "price": 228.99,
+        "price": 228.67,
         "pnl": -10.0
       },
       {
-        "price": 230.54,
+        "price": 230.22,
         "pnl": -10.0
       },
       {
-        "price": 232.08,
+        "price": 231.76,
         "pnl": -10.0
       }
     ],
@@ -282,7 +282,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 78.1,
+      "score": 78.0,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -318,7 +318,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 59.8,
+      "score": 59.9,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -327,7 +327,7 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 56.5,
+      "score": 56.6,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -349,12 +349,12 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x PLTR 20-Nov-2026 193.4 Call"
+      "legs_summary": "Buy 1x PLTR 20-Nov-2026 193.1 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 43.4,
+      "score": 43.5,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -371,15 +371,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "184.23",
-    "EMA50": "172.58",
-    "EMA100": "161.83",
+    "EMA20": "184.21",
+    "EMA50": "172.57",
+    "EMA100": "161.82",
     "EMA200": "154.52",
-    "RSI(14)": "65.46",
+    "RSI(14)": "65.23",
     "ATR(14)": "6.11",
     "ADX(14)": "28.81",
     "BB(20,2)": "0.81",
-    "P_SHAPE(20)": "62.22"
+    "P_SHAPE(20)": "62.20"
   },
   "rules": [
     {
@@ -462,6 +462,27 @@
   ],
   "news": [
     {
+      "title": "Michael Burry's Bearish View. The Market Is In 'Denial' About The End Of The AI Trade.",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/ddd75851-3a65-335c-b0cc-6e0cb5423104/michael-burry%27s-bearish-view..html",
+      "published_at": "Today",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "What Are Palantir Stock Bulls Not Worried About?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-bulls-not-worried-143418278.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Can Palantir (PLTR) Justify a Multiple that\u2019s 5 Times the Sector\u2019s?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-pltr-justify-multiple-5-142603719.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Palantir Just Had Its Best Quarter in a Year, Up 60%",
       "publisher": "24/7 Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-just-had-best-quarter-122141400.html",
@@ -481,27 +502,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-palantir-alphabet-sending-shockwaves-092601938.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "The Overlooked AI Stock Poised to Outperform Nvidia and Palantir",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/overlooked-ai-stock-poised-outperform-075500133.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "The Zacks Analyst Blog Highlights Palantir Technologies, BP and Quanta",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-palantir-051300673.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Dan Ives Launches Another AI Fund Amid Conflict of Interest Questions",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/aba1f91e-cd1b-3862-be9c-12dd0dc1f14b/dan-ives-launches-another-ai.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

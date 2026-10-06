@@ -1,6 +1,6 @@
 {
   "symbol": "TGT",
-  "last_price": 153.1,
+  "last_price": 154.32,
   "as_of": "2026-10-06 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
@@ -8,7 +8,7 @@
   "fit_score": 57.5,
   "confidence_grade": "C",
   "confidence_percentage": 57.5,
-  "vix": 15.37,
+  "vix": 15.35,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,7 +23,7 @@
         "strike": 140.0,
         "strike_formatted": "140",
         "option_type": "Put",
-        "delta": -0.036,
+        "delta": -0.026,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 145.0,
         "strike_formatted": "145",
         "option_type": "Put",
-        "delta": -0.125,
+        "delta": -0.097,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -47,7 +47,7 @@
         "strike": 165.0,
         "strike_formatted": "165",
         "option_type": "Call",
-        "delta": 0.106,
+        "delta": 0.135,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -59,7 +59,7 @@
         "strike": 170.0,
         "strike_formatted": "170",
         "option_type": "Call",
-        "delta": 0.036,
+        "delta": 0.049,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -70,117 +70,113 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 148.51,
-    "take_profit_price": 157.69,
-    "net_delta": 0.019,
-    "net_theta": 0.021,
+    "stop_loss_price": 149.69,
+    "take_profit_price": 158.94,
+    "net_delta": -0.015,
+    "net_theta": 0.022,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 122.48,
+        "price": 123.45,
         "pnl": -10.0
       },
       {
-        "price": 123.7,
+        "price": 124.69,
         "pnl": -10.0
       },
       {
-        "price": 124.93,
+        "price": 125.92,
         "pnl": -10.0
       },
       {
-        "price": 126.15,
+        "price": 127.16,
         "pnl": -10.0
       },
       {
-        "price": 127.38,
+        "price": 128.39,
         "pnl": -10.0
       },
       {
-        "price": 128.6,
+        "price": 129.62,
         "pnl": -10.0
       },
       {
-        "price": 129.83,
+        "price": 130.86,
         "pnl": -10.0
       },
       {
-        "price": 131.05,
+        "price": 132.09,
         "pnl": -10.0
       },
       {
-        "price": 132.28,
+        "price": 133.33,
         "pnl": -10.0
       },
       {
-        "price": 133.5,
+        "price": 134.56,
         "pnl": -10.0
       },
       {
-        "price": 134.73,
+        "price": 135.8,
         "pnl": -10.0
       },
       {
-        "price": 135.95,
+        "price": 137.03,
         "pnl": -10.0
       },
       {
-        "price": 137.18,
+        "price": 138.27,
         "pnl": -10.0
       },
       {
-        "price": 138.4,
+        "price": 139.5,
         "pnl": -10.0
       },
       {
-        "price": 139.63,
-        "pnl": -10.0
+        "price": 140.74,
+        "pnl": -9.26
       },
       {
-        "price": 140.85,
-        "pnl": -9.15
+        "price": 141.97,
+        "pnl": -8.03
       },
       {
-        "price": 142.08,
-        "pnl": -7.92
+        "price": 143.2,
+        "pnl": -6.8
       },
       {
-        "price": 143.3,
-        "pnl": -6.7
+        "price": 144.44,
+        "pnl": -5.56
       },
       {
-        "price": 144.53,
-        "pnl": -5.47
-      },
-      {
-        "price": 145.75,
+        "price": 145.67,
         "pnl": -5.0
       },
       {
-        "price": 146.98,
+        "price": 146.91,
         "pnl": -5.0
       },
       {
-        "price": 148.2,
+        "price": 148.14,
         "pnl": -5.0
       },
       {
-        "price": 149.43,
+        "price": 149.38,
         "pnl": -5.0
       },
       {
-        "price": 150.65,
+        "price": 150.61,
         "pnl": -5.0
       },
       {
-        "price": 151.88,
+        "price": 151.85,
         "pnl": -5.0
       },
       {
-        "price": 153.1,
+        "price": 153.08,
         "pnl": -5.0
       },
       {
@@ -192,95 +188,99 @@
         "pnl": -5.0
       },
       {
-        "price": 156.77,
+        "price": 156.78,
         "pnl": -5.0
       },
       {
-        "price": 158.0,
+        "price": 158.02,
         "pnl": -5.0
       },
       {
-        "price": 159.22,
+        "price": 159.25,
         "pnl": -5.0
       },
       {
-        "price": 160.45,
+        "price": 160.49,
         "pnl": -5.0
       },
       {
-        "price": 161.67,
+        "price": 161.72,
         "pnl": -5.0
       },
       {
-        "price": 162.9,
+        "price": 162.96,
         "pnl": -5.0
       },
       {
-        "price": 164.12,
+        "price": 164.19,
         "pnl": -5.0
       },
       {
-        "price": 165.35,
-        "pnl": -5.35
+        "price": 165.43,
+        "pnl": -5.43
       },
       {
-        "price": 166.57,
-        "pnl": -6.57
+        "price": 166.66,
+        "pnl": -6.66
       },
       {
-        "price": 167.8,
-        "pnl": -7.8
+        "price": 167.89,
+        "pnl": -7.89
       },
       {
-        "price": 169.02,
-        "pnl": -9.02
+        "price": 169.13,
+        "pnl": -9.13
       },
       {
-        "price": 170.25,
+        "price": 170.36,
         "pnl": -10.0
       },
       {
-        "price": 171.47,
+        "price": 171.6,
         "pnl": -10.0
       },
       {
-        "price": 172.7,
+        "price": 172.83,
         "pnl": -10.0
       },
       {
-        "price": 173.92,
+        "price": 174.07,
         "pnl": -10.0
       },
       {
-        "price": 175.15,
+        "price": 175.3,
         "pnl": -10.0
       },
       {
-        "price": 176.37,
+        "price": 176.54,
         "pnl": -10.0
       },
       {
-        "price": 177.6,
+        "price": 177.77,
         "pnl": -10.0
       },
       {
-        "price": 178.82,
+        "price": 179.01,
         "pnl": -10.0
       },
       {
-        "price": 180.05,
+        "price": 180.24,
         "pnl": -10.0
       },
       {
-        "price": 181.27,
+        "price": 181.47,
         "pnl": -10.0
       },
       {
-        "price": 182.5,
+        "price": 182.71,
         "pnl": -10.0
       },
       {
-        "price": 183.72,
+        "price": 183.94,
+        "pnl": -10.0
+      },
+      {
+        "price": 185.18,
         "pnl": -10.0
       }
     ],
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 88.6,
+      "score": 89.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,7 +315,7 @@
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 68.5,
+      "score": 68.9,
       "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
@@ -324,7 +324,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 66.5,
+      "score": 66.8,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -337,7 +337,7 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x TGT 20-Nov-2026 150 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Buy 1x TGT 20-Nov-2026 155 Call"
+      "legs_summary": "Buy 1x TGT 20-Nov-2026 150 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Buy 1x TGT 20-Nov-2026 160 Call"
     },
     {
       "strategy_type": "wheel",
@@ -364,21 +364,21 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x TGT 20-Nov-2026 145 Put<br> Sell 1x TGT 20-Nov-2026 155 Put<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Buy 1x TGT 20-Nov-2026 160 Call"
+      "legs_summary": "Buy 1x TGT 20-Nov-2026 145 Put<br> Sell 1x TGT 20-Nov-2026 155 Put<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Buy 1x TGT 20-Nov-2026 165 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 48.7,
+      "score": 48.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x TGT 20-Nov-2026 150 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Buy 1x TGT 20-Nov-2026 160 Call"
+      "legs_summary": "Buy 1x TGT 20-Nov-2026 150 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Sell 1x TGT 20-Nov-2026 155 Call<br> Buy 1x TGT 20-Nov-2026 165 Call"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 48.3,
+      "score": 48.7,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -391,19 +391,19 @@
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x TGT 20-Nov-2026 145 Call<br> Sell 1x TGT 20-Nov-2026 155 Call"
+      "legs_summary": "Buy 1x TGT 20-Nov-2026 145 Call<br> Sell 1x TGT 20-Nov-2026 160 Call"
     }
   ],
   "indicators": {
-    "EMA20": "156.62",
-    "EMA50": "153.71",
-    "EMA100": "145.62",
-    "EMA200": "134.00",
-    "RSI(14)": "41.91",
-    "ATR(14)": "3.72",
+    "EMA20": "156.73",
+    "EMA50": "153.76",
+    "EMA100": "145.65",
+    "EMA200": "134.01",
+    "RSI(14)": "44.88",
+    "ATR(14)": "3.75",
     "ADX(14)": "13.36",
-    "BB(20,2)": "0.03",
-    "P_SHAPE(20)": "50.22"
+    "BB(20,2)": "0.17",
+    "P_SHAPE(20)": "51.43"
   },
   "rules": [
     {
@@ -486,6 +486,20 @@
   ],
   "news": [
     {
+      "title": "Costco's Digital Sales Top $33 Billion: Can E-commerce Keep Scaling?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/costcos-digital-sales-top-33-130300187.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Walmart Connect Keep Powering WMT's Digital Profit Growth?",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/walmart-connect-keep-powering-wmts-125900924.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Beloved Home Brand Simply Shabby Chic Returns to Target",
       "publisher": "PR Newswire",
       "link": "https://finance.yahoo.com/media-advertising/articles/beloved-home-brand-simply-shabby-120000030.html",
@@ -512,20 +526,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/target-turnaround-seen-early-success-110000835.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Target Has a Growing Dividend and an Improving Business. Is the Stock a Bargain?",
-      "publisher": "Insider Monkey",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/target-growing-dividend-improving-business-221724060.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Target (TGT) Stock Slides as Market Rises: Facts to Know Before You Trade",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/target-tgt-stock-slides-market-204504106.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }
