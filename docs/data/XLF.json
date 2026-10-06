@@ -1,29 +1,53 @@
 {
   "symbol": "XLF",
-  "last_price": 54.17,
+  "last_price": 54.19,
   "as_of": "2026-10-06 13:30:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 3.5,
-  "fit_score": 35.0,
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 5.5,
+  "fit_score": 55.0,
   "confidence_grade": "C",
-  "confidence_percentage": 35.0,
-  "vix": 15.35,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "confidence_percentage": 55.0,
+  "vix": 15.34,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (91.6% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 50.0,
+        "strike_formatted": "50",
+        "option_type": "Put",
+        "delta": -0.051,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x XLF 20-Nov-2026 50 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 51.0,
+        "strike_formatted": "51",
+        "option_type": "Put",
+        "delta": -0.102,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x XLF 20-Nov-2026 51 Put"
+      },
       {
         "action": "Sell",
         "quantity": 1,
         "strike": 57.0,
         "strike_formatted": "57",
         "option_type": "Call",
-        "delta": 0.211,
+        "delta": 0.213,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +59,7 @@
         "strike": 58.0,
         "strike_formatted": "58",
         "option_type": "Call",
-        "delta": 0.13,
+        "delta": 0.132,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,224 +70,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 2.0,
-    "stop_loss_price": 52.55,
-    "take_profit_price": 55.8,
-    "net_delta": -0.081,
-    "net_theta": 0.003,
+    "stop_loss_price": 52.57,
+    "take_profit_price": 55.82,
+    "net_delta": -0.03,
+    "net_theta": 0.005,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 43.34,
-        "pnl": -2.0
-      },
-      {
-        "price": 43.77,
-        "pnl": -2.0
-      },
-      {
-        "price": 44.21,
-        "pnl": -2.0
-      },
-      {
-        "price": 44.64,
-        "pnl": -2.0
-      },
-      {
-        "price": 45.07,
-        "pnl": -2.0
-      },
-      {
-        "price": 45.51,
-        "pnl": -2.0
-      },
-      {
-        "price": 45.94,
-        "pnl": -2.0
-      },
-      {
-        "price": 46.37,
-        "pnl": -2.0
-      },
-      {
-        "price": 46.81,
-        "pnl": -2.0
-      },
-      {
-        "price": 47.24,
-        "pnl": -2.0
-      },
-      {
-        "price": 47.67,
-        "pnl": -2.0
-      },
-      {
-        "price": 48.11,
-        "pnl": -2.0
-      },
-      {
-        "price": 48.54,
-        "pnl": -2.0
-      },
-      {
-        "price": 48.97,
-        "pnl": -2.0
-      },
-      {
-        "price": 49.41,
-        "pnl": -2.0
-      },
-      {
-        "price": 49.84,
-        "pnl": -2.0
-      },
-      {
-        "price": 50.27,
-        "pnl": -2.0
-      },
-      {
-        "price": 50.71,
-        "pnl": -2.0
-      },
-      {
-        "price": 51.14,
-        "pnl": -2.0
-      },
-      {
-        "price": 51.57,
-        "pnl": -2.0
-      },
-      {
-        "price": 52.01,
-        "pnl": -2.0
-      },
-      {
-        "price": 52.44,
-        "pnl": -2.0
-      },
-      {
-        "price": 52.87,
-        "pnl": -2.0
-      },
-      {
-        "price": 53.31,
-        "pnl": -2.0
-      },
-      {
-        "price": 53.74,
-        "pnl": -2.0
-      },
-      {
-        "price": 54.17,
-        "pnl": -2.0
-      },
-      {
-        "price": 54.61,
-        "pnl": -2.0
-      },
-      {
-        "price": 55.04,
-        "pnl": -2.0
-      },
-      {
-        "price": 55.48,
-        "pnl": -2.0
-      },
-      {
-        "price": 55.91,
-        "pnl": -2.0
-      },
-      {
-        "price": 56.34,
-        "pnl": -2.0
-      },
-      {
-        "price": 56.78,
-        "pnl": -2.0
-      },
-      {
-        "price": 57.21,
-        "pnl": -2.21
-      },
-      {
-        "price": 57.64,
-        "pnl": -2.64
-      },
-      {
-        "price": 58.08,
+        "price": 43.36,
         "pnl": -3.0
       },
       {
-        "price": 58.51,
+        "price": 43.79,
         "pnl": -3.0
       },
       {
-        "price": 58.94,
+        "price": 44.22,
         "pnl": -3.0
       },
       {
-        "price": 59.38,
+        "price": 44.66,
         "pnl": -3.0
       },
       {
-        "price": 59.81,
+        "price": 45.09,
         "pnl": -3.0
       },
       {
-        "price": 60.24,
+        "price": 45.52,
         "pnl": -3.0
       },
       {
-        "price": 60.68,
+        "price": 45.96,
         "pnl": -3.0
       },
       {
-        "price": 61.11,
+        "price": 46.39,
         "pnl": -3.0
       },
       {
-        "price": 61.54,
+        "price": 46.82,
         "pnl": -3.0
       },
       {
-        "price": 61.98,
+        "price": 47.26,
         "pnl": -3.0
       },
       {
-        "price": 62.41,
+        "price": 47.69,
         "pnl": -3.0
       },
       {
-        "price": 62.84,
+        "price": 48.13,
         "pnl": -3.0
       },
       {
-        "price": 63.28,
+        "price": 48.56,
         "pnl": -3.0
       },
       {
-        "price": 63.71,
+        "price": 48.99,
         "pnl": -3.0
       },
       {
-        "price": 64.14,
+        "price": 49.43,
         "pnl": -3.0
       },
       {
-        "price": 64.58,
+        "price": 49.86,
         "pnl": -3.0
       },
       {
-        "price": 65.01,
+        "price": 50.29,
+        "pnl": -2.71
+      },
+      {
+        "price": 50.73,
+        "pnl": -2.27
+      },
+      {
+        "price": 51.16,
+        "pnl": -2.0
+      },
+      {
+        "price": 51.59,
+        "pnl": -2.0
+      },
+      {
+        "price": 52.03,
+        "pnl": -2.0
+      },
+      {
+        "price": 52.46,
+        "pnl": -2.0
+      },
+      {
+        "price": 52.89,
+        "pnl": -2.0
+      },
+      {
+        "price": 53.33,
+        "pnl": -2.0
+      },
+      {
+        "price": 53.76,
+        "pnl": -2.0
+      },
+      {
+        "price": 54.19,
+        "pnl": -2.0
+      },
+      {
+        "price": 54.63,
+        "pnl": -2.0
+      },
+      {
+        "price": 55.06,
+        "pnl": -2.0
+      },
+      {
+        "price": 55.5,
+        "pnl": -2.0
+      },
+      {
+        "price": 55.93,
+        "pnl": -2.0
+      },
+      {
+        "price": 56.36,
+        "pnl": -2.0
+      },
+      {
+        "price": 56.8,
+        "pnl": -2.0
+      },
+      {
+        "price": 57.23,
+        "pnl": -2.23
+      },
+      {
+        "price": 57.66,
+        "pnl": -2.66
+      },
+      {
+        "price": 58.1,
+        "pnl": -3.0
+      },
+      {
+        "price": 58.53,
+        "pnl": -3.0
+      },
+      {
+        "price": 58.96,
+        "pnl": -3.0
+      },
+      {
+        "price": 59.4,
+        "pnl": -3.0
+      },
+      {
+        "price": 59.83,
+        "pnl": -3.0
+      },
+      {
+        "price": 60.26,
+        "pnl": -3.0
+      },
+      {
+        "price": 60.7,
+        "pnl": -3.0
+      },
+      {
+        "price": 61.13,
+        "pnl": -3.0
+      },
+      {
+        "price": 61.57,
+        "pnl": -3.0
+      },
+      {
+        "price": 62.0,
+        "pnl": -3.0
+      },
+      {
+        "price": 62.43,
+        "pnl": -3.0
+      },
+      {
+        "price": 62.87,
+        "pnl": -3.0
+      },
+      {
+        "price": 63.3,
+        "pnl": -3.0
+      },
+      {
+        "price": 63.73,
+        "pnl": -3.0
+      },
+      {
+        "price": 64.17,
+        "pnl": -3.0
+      },
+      {
+        "price": 64.6,
+        "pnl": -3.0
+      },
+      {
+        "price": 65.03,
         "pnl": -3.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.821,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3389,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,28 +295,37 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 91.6,
-      "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 85.3,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x XLF 20-Nov-2026 50 Put<br> Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
     },
     {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 84.2,
+      "grade": "A (Optimal)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 66.6,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 56 Call"
+    },
+    {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 54.0,
-      "grade": "C (Moderate)",
+      "score": 64.9,
+      "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
       "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Put<br> Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 51 Put"
@@ -300,34 +333,16 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 52.6,
-      "grade": "C (Moderate)",
+      "score": 63.0,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 52.0,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 56 Call"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 49.4,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Put<br> Sell 1x XLF 20-Nov-2026 52 Put"
-    },
-    {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 44.1,
+      "score": 58.8,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -336,7 +351,7 @@
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 43.0,
+      "score": 55.0,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
@@ -345,11 +360,38 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 41.7,
+      "score": 51.2,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 57 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 47.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 56 Call"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 43.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Put<br> Sell 1x XLF 20-Nov-2026 52 Put"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 42.0,
+      "grade": "C (Moderate)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "Buy 1x XLF 20-Nov-2026 51 Call<br> Sell 1x XLF 20-Nov-2026 56 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -366,13 +408,20 @@
     "EMA50": "55.73",
     "EMA100": "55.23",
     "EMA200": "54.18",
-    "RSI(14)": "36.42",
+    "RSI(14)": "36.70",
     "ATR(14)": "0.68",
     "ADX(14)": "37.44",
     "BB(20,2)": "0.31",
-    "P_SHAPE(20)": "50.85"
+    "P_SHAPE(20)": "50.86"
   },
   "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "EMA50 above EMA200",
       "passed": true,
@@ -407,13 +456,6 @@
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
-    },
-    {
-      "name": "Price above EMA200",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
     },
     {
       "name": "EMA20 above EMA50",

@@ -1,6 +1,6 @@
 {
   "symbol": "AMD",
-  "last_price": 657.3,
+  "last_price": 656.45,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,12 +8,12 @@
   "fit_score": 72.5,
   "confidence_grade": "B",
   "confidence_percentage": 72.5,
-  "vix": 15.35,
+  "vix": 15.34,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (73.3) is overbought (> 65) [Synthetic PCR: 0.63]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (73.2) is overbought (> 65) [Synthetic PCR: 0.63]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 620.0,
         "strike_formatted": "620",
         "option_type": "Put",
-        "delta": -0.11,
+        "delta": -0.115,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 595.0,
         "strike_formatted": "595",
         "option_type": "Put",
-        "delta": -0.023,
+        "delta": -0.025,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 25.0,
-    "stop_loss_price": 637.58,
-    "take_profit_price": 677.02,
-    "net_delta": 0.087,
-    "net_theta": 0.044,
+    "stop_loss_price": 636.75,
+    "take_profit_price": 676.14,
+    "net_delta": 0.09,
+    "net_theta": 0.046,
     "probability_of_profit": 0.0,
-    "var_95": 16.19,
+    "var_95": 16.94,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 525.84,
+        "price": 525.16,
         "pnl": -50.0
       },
       {
-        "price": 531.1,
+        "price": 530.41,
         "pnl": -50.0
       },
       {
-        "price": 536.36,
+        "price": 535.66,
         "pnl": -50.0
       },
       {
-        "price": 541.62,
+        "price": 540.91,
         "pnl": -50.0
       },
       {
-        "price": 546.87,
+        "price": 546.16,
         "pnl": -50.0
       },
       {
-        "price": 552.13,
+        "price": 551.41,
         "pnl": -50.0
       },
       {
-        "price": 557.39,
+        "price": 556.67,
         "pnl": -50.0
       },
       {
-        "price": 562.65,
+        "price": 561.92,
         "pnl": -50.0
       },
       {
-        "price": 567.91,
+        "price": 567.17,
         "pnl": -50.0
       },
       {
-        "price": 573.17,
+        "price": 572.42,
         "pnl": -50.0
       },
       {
-        "price": 578.42,
+        "price": 577.67,
         "pnl": -50.0
       },
       {
-        "price": 583.68,
+        "price": 582.92,
         "pnl": -50.0
       },
       {
-        "price": 588.94,
+        "price": 588.17,
         "pnl": -50.0
       },
       {
-        "price": 594.2,
+        "price": 593.43,
         "pnl": -50.0
       },
       {
-        "price": 599.46,
-        "pnl": -45.54
+        "price": 598.68,
+        "pnl": -46.32
       },
       {
-        "price": 604.72,
-        "pnl": -40.28
+        "price": 603.93,
+        "pnl": -41.07
       },
       {
-        "price": 609.97,
-        "pnl": -35.03
+        "price": 609.18,
+        "pnl": -35.82
       },
       {
-        "price": 615.23,
-        "pnl": -29.77
+        "price": 614.43,
+        "pnl": -30.57
       },
       {
-        "price": 620.49,
+        "price": 619.68,
+        "pnl": -25.32
+      },
+      {
+        "price": 624.94,
         "pnl": -25.0
       },
       {
-        "price": 625.75,
+        "price": 630.19,
         "pnl": -25.0
       },
       {
-        "price": 631.01,
+        "price": 635.44,
         "pnl": -25.0
       },
       {
-        "price": 636.27,
+        "price": 640.69,
         "pnl": -25.0
       },
       {
-        "price": 641.52,
+        "price": 645.94,
         "pnl": -25.0
       },
       {
-        "price": 646.78,
+        "price": 651.19,
         "pnl": -25.0
       },
       {
-        "price": 652.04,
+        "price": 656.45,
         "pnl": -25.0
       },
       {
-        "price": 657.3,
+        "price": 661.7,
         "pnl": -25.0
       },
       {
-        "price": 662.56,
+        "price": 666.95,
         "pnl": -25.0
       },
       {
-        "price": 667.82,
+        "price": 672.2,
         "pnl": -25.0
       },
       {
-        "price": 673.08,
+        "price": 677.45,
         "pnl": -25.0
       },
       {
-        "price": 678.33,
+        "price": 682.7,
         "pnl": -25.0
       },
       {
-        "price": 683.59,
+        "price": 687.95,
         "pnl": -25.0
       },
       {
-        "price": 688.85,
+        "price": 693.21,
         "pnl": -25.0
       },
       {
-        "price": 694.11,
+        "price": 698.46,
         "pnl": -25.0
       },
       {
-        "price": 699.37,
+        "price": 703.71,
         "pnl": -25.0
       },
       {
-        "price": 704.63,
+        "price": 708.96,
         "pnl": -25.0
       },
       {
-        "price": 709.88,
+        "price": 714.21,
         "pnl": -25.0
       },
       {
-        "price": 715.14,
+        "price": 719.46,
         "pnl": -25.0
       },
       {
-        "price": 720.4,
+        "price": 724.72,
         "pnl": -25.0
       },
       {
-        "price": 725.66,
+        "price": 729.97,
         "pnl": -25.0
       },
       {
-        "price": 730.92,
+        "price": 735.22,
         "pnl": -25.0
       },
       {
-        "price": 736.18,
+        "price": 740.47,
         "pnl": -25.0
       },
       {
-        "price": 741.43,
+        "price": 745.72,
         "pnl": -25.0
       },
       {
-        "price": 746.69,
+        "price": 750.97,
         "pnl": -25.0
       },
       {
-        "price": 751.95,
+        "price": 756.22,
         "pnl": -25.0
       },
       {
-        "price": 757.21,
+        "price": 761.48,
         "pnl": -25.0
       },
       {
-        "price": 762.47,
+        "price": 766.73,
         "pnl": -25.0
       },
       {
-        "price": 767.73,
+        "price": 771.98,
         "pnl": -25.0
       },
       {
-        "price": 772.98,
+        "price": 777.23,
         "pnl": -25.0
       },
       {
-        "price": 778.24,
+        "price": 782.48,
         "pnl": -25.0
       },
       {
-        "price": 783.5,
-        "pnl": -25.0
-      },
-      {
-        "price": 788.76,
+        "price": 787.73,
         "pnl": -25.0
       }
     ],
@@ -340,7 +340,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 657.3 Call"
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 656.4 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -362,15 +362,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "588.83",
-    "EMA50": "542.21",
-    "EMA100": "493.18",
-    "EMA200": "413.14",
-    "RSI(14)": "73.29",
+    "EMA20": "588.74",
+    "EMA50": "542.18",
+    "EMA100": "493.16",
+    "EMA200": "413.13",
+    "RSI(14)": "73.17",
     "ATR(14)": "23.98",
     "ADX(14)": "26.86",
     "BB(20,2)": "0.84",
-    "P_SHAPE(20)": "60.77"
+    "P_SHAPE(20)": "60.76"
   },
   "rules": [
     {

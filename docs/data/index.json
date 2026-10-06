@@ -2,7 +2,7 @@
   {
     "symbol": "SPY",
     "file_key": "SPY",
-    "last_price": 781.26,
+    "last_price": 781.29,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 72.5,
@@ -118,7 +118,7 @@
   {
     "symbol": "QQQ",
     "file_key": "QQQ",
-    "last_price": 762.66,
+    "last_price": 762.53,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 67.5,
@@ -214,7 +214,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x QQQ 20-Nov-2026 762.7 Call"
+        "legs_summary": "Buy 1x QQQ 20-Nov-2026 762.5 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -234,7 +234,7 @@
   {
     "symbol": "IWM",
     "file_key": "IWM",
-    "last_price": 283.17,
+    "last_price": 283.13,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 55.0,
@@ -263,7 +263,7 @@
       {
         "strategy_type": "butterfly",
         "strategy_display": "Butterfly",
-        "score": 69.0,
+        "score": 68.9,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -308,7 +308,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 51.1,
+        "score": 51.2,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -350,7 +350,7 @@
   {
     "symbol": "DIA",
     "file_key": "DIA",
-    "last_price": 515.74,
+    "last_price": 515.75,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 45.0,
@@ -424,7 +424,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 51.1,
+        "score": 51.2,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -573,7 +573,7 @@
   {
     "symbol": "VOO",
     "file_key": "VOO",
-    "last_price": 718.16,
+    "last_price": 718.2,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 72.5,
@@ -602,7 +602,7 @@
       {
         "strategy_type": "ratio_put_spread",
         "strategy_display": "Ratio Put Spread",
-        "score": 76.2,
+        "score": 76.1,
         "grade": "B (Good)",
         "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
         "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
@@ -638,7 +638,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 62.6,
+        "score": 62.7,
         "grade": "B (Good)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -689,37 +689,46 @@
   {
     "symbol": "XLF",
     "file_key": "XLF",
-    "last_price": 54.17,
-    "regime": "bear",
-    "regime_display": "Bear",
-    "fit_score": 35.0,
-    "strategy_display": "Credit Spread",
-    "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-    "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call",
+    "last_price": 54.19,
+    "regime": "neutral",
+    "regime_display": "Neutral",
+    "fit_score": 55.0,
+    "strategy_display": "Iron Condor",
+    "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+    "legs_summary": "Buy 1x XLF 20-Nov-2026 50 Put<br> Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call",
     "ranked_strategies": [
-      {
-        "strategy_type": "credit_spread",
-        "strategy_display": "Credit Spread",
-        "score": 91.6,
-        "grade": "A (Optimal)",
-        "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-        "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-        "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
-      },
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 85.3,
+        "score": 100.0,
         "grade": "A (Optimal)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
         "legs_summary": "Buy 1x XLF 20-Nov-2026 50 Put<br> Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
       },
       {
+        "strategy_type": "credit_spread",
+        "strategy_display": "Credit Spread",
+        "score": 84.2,
+        "grade": "A (Optimal)",
+        "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+        "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+        "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
+      },
+      {
+        "strategy_type": "butterfly",
+        "strategy_display": "Butterfly",
+        "score": 66.6,
+        "grade": "B (Good)",
+        "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+        "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+        "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 56 Call"
+      },
+      {
         "strategy_type": "ratio_put_spread",
         "strategy_display": "Ratio Put Spread",
-        "score": 54.0,
-        "grade": "C (Moderate)",
+        "score": 64.9,
+        "grade": "B (Good)",
         "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
         "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
         "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Put<br> Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 51 Put"
@@ -727,34 +736,16 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 52.6,
-        "grade": "C (Moderate)",
+        "score": 63.0,
+        "grade": "B (Good)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
         "legs_summary": "Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
       },
       {
-        "strategy_type": "butterfly",
-        "strategy_display": "Butterfly",
-        "score": 52.0,
-        "grade": "C (Moderate)",
-        "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-        "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-        "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 56 Call"
-      },
-      {
-        "strategy_type": "put_debit_spread",
-        "strategy_display": "Put Debit Spread",
-        "score": 49.4,
-        "grade": "C (Moderate)",
-        "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-        "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-        "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Put<br> Sell 1x XLF 20-Nov-2026 52 Put"
-      },
-      {
         "strategy_type": "iron_butterfly",
         "strategy_display": "Iron Butterfly",
-        "score": 44.1,
+        "score": 58.8,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
         "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -763,7 +754,7 @@
       {
         "strategy_type": "wheel",
         "strategy_display": "Wheel",
-        "score": 43.0,
+        "score": 55.0,
         "grade": "C (Moderate)",
         "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
         "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
@@ -772,11 +763,38 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 41.7,
+        "score": 51.2,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
         "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 57 Call"
+      },
+      {
+        "strategy_type": "call_debit_spread",
+        "strategy_display": "Call Debit Spread",
+        "score": 47.4,
+        "grade": "C (Moderate)",
+        "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+        "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+        "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 56 Call"
+      },
+      {
+        "strategy_type": "put_debit_spread",
+        "strategy_display": "Put Debit Spread",
+        "score": 43.0,
+        "grade": "C (Moderate)",
+        "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+        "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+        "legs_summary": "Buy 1x XLF 20-Nov-2026 54 Put<br> Sell 1x XLF 20-Nov-2026 52 Put"
+      },
+      {
+        "strategy_type": "poor_mans_covered_call",
+        "strategy_display": "Poor Mans Covered Call",
+        "score": 42.0,
+        "grade": "C (Moderate)",
+        "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+        "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+        "legs_summary": "Buy 1x XLF 20-Nov-2026 51 Call<br> Sell 1x XLF 20-Nov-2026 56 Call"
       },
       {
         "strategy_type": "tradecraft_put",
@@ -930,7 +948,7 @@
   {
     "symbol": "XLK",
     "file_key": "XLK",
-    "last_price": 203.08,
+    "last_price": 203.04,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 67.5,
@@ -1026,7 +1044,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x XLK 20-Nov-2026 203.1 Call"
+        "legs_summary": "Buy 1x XLK 20-Nov-2026 203.0 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -1046,7 +1064,7 @@
   {
     "symbol": "SOXX",
     "file_key": "SOXX",
-    "last_price": 594.8,
+    "last_price": 594.3,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 67.5,
@@ -1115,7 +1133,7 @@
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-        "legs_summary": "Buy 1x SOXX 20-Nov-2026 565 Call<br> Sell 1x SOXX 20-Nov-2026 610 Call"
+        "legs_summary": "Buy 1x SOXX 20-Nov-2026 560 Call<br> Sell 1x SOXX 20-Nov-2026 610 Call"
       },
       {
         "strategy_type": "butterfly",
@@ -1142,7 +1160,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x SOXX 20-Nov-2026 594.8 Call"
+        "legs_summary": "Buy 1x SOXX 20-Nov-2026 594.3 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -1162,7 +1180,7 @@
   {
     "symbol": "NVDA",
     "file_key": "NVDA",
-    "last_price": 241.9,
+    "last_price": 241.8,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 67.5,
@@ -1258,7 +1276,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x NVDA 20-Nov-2026 241.9 Call"
+        "legs_summary": "Buy 1x NVDA 20-Nov-2026 241.8 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -1278,7 +1296,7 @@
   {
     "symbol": "AAPL",
     "file_key": "AAPL",
-    "last_price": 332.86,
+    "last_price": 333.15,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 72.5,
@@ -1307,7 +1325,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 80.4,
+        "score": 80.5,
         "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -1316,7 +1334,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 74.5,
+        "score": 74.8,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -1334,7 +1352,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 65.6,
+        "score": 65.7,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -1343,7 +1361,7 @@
       {
         "strategy_type": "butterfly",
         "strategy_display": "Butterfly",
-        "score": 56.1,
+        "score": 56.3,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -1352,7 +1370,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 56.0,
+        "score": 56.1,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -1374,12 +1392,12 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x AAPL 20-Nov-2026 332.9 Call"
+        "legs_summary": "Buy 1x AAPL 20-Nov-2026 333.2 Call"
       },
       {
         "strategy_type": "naked_put",
         "strategy_display": "Naked Put",
-        "score": 43.2,
+        "score": 43.3,
         "grade": "C (Moderate)",
         "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
         "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
@@ -1394,7 +1412,7 @@
   {
     "symbol": "MSFT",
     "file_key": "MSFT",
-    "last_price": 532.98,
+    "last_price": 532.91,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 77.5,
@@ -1472,7 +1490,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x MSFT 20-Nov-2026 533.0 Call"
+        "legs_summary": "Buy 1x MSFT 20-Nov-2026 532.9 Call"
       },
       {
         "strategy_type": "tradecraft_put",
@@ -1501,7 +1519,7 @@
   {
     "symbol": "AMZN",
     "file_key": "AMZN",
-    "last_price": 255.28,
+    "last_price": 255.22,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 62.5,
@@ -1530,7 +1548,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 69.4,
+        "score": 69.3,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -1584,7 +1602,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 50.8,
+        "score": 50.7,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -1617,7 +1635,7 @@
   {
     "symbol": "GOOGL",
     "file_key": "GOOGL",
-    "last_price": 348.26,
+    "last_price": 348.16,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 62.5,
@@ -1628,7 +1646,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 93.7,
+        "score": 93.8,
         "grade": "A (Optimal)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -1637,7 +1655,7 @@
       {
         "strategy_type": "credit_spread",
         "strategy_display": "Credit Spread",
-        "score": 89.1,
+        "score": 89.0,
         "grade": "A (Optimal)",
         "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
         "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -1646,7 +1664,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 68.2,
+        "score": 68.1,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -1682,7 +1700,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 53.4,
+        "score": 53.3,
         "grade": "C (Moderate)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -1691,7 +1709,7 @@
       {
         "strategy_type": "iron_butterfly",
         "strategy_display": "Iron Butterfly",
-        "score": 51.8,
+        "score": 51.9,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
         "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -1709,7 +1727,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 49.6,
+        "score": 49.5,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -1733,7 +1751,7 @@
   {
     "symbol": "META",
     "file_key": "META",
-    "last_price": 742.23,
+    "last_price": 741.98,
     "regime": "strong_bull",
     "regime_display": "Strong Bull",
     "fit_score": 87.5,
@@ -1802,7 +1820,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x META 20-Nov-2026 742.2 Call"
+        "legs_summary": "Buy 1x META 20-Nov-2026 742.0 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -1840,7 +1858,7 @@
   {
     "symbol": "TSLA",
     "file_key": "TSLA",
-    "last_price": 380.47,
+    "last_price": 380.05,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 62.5,
@@ -1869,7 +1887,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 63.0,
+        "score": 62.9,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -1878,7 +1896,7 @@
       {
         "strategy_type": "butterfly",
         "strategy_display": "Butterfly",
-        "score": 57.9,
+        "score": 58.0,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -1923,7 +1941,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 44.8,
+        "score": 44.7,
         "grade": "C (Moderate)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -1932,7 +1950,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 44.3,
+        "score": 44.2,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -1947,7 +1965,7 @@
   {
     "symbol": "AMD",
     "file_key": "AMD",
-    "last_price": 657.3,
+    "last_price": 656.45,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 72.5,
@@ -2025,7 +2043,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x AMD 20-Nov-2026 657.3 Call"
+        "legs_summary": "Buy 1x AMD 20-Nov-2026 656.4 Call"
       },
       {
         "strategy_type": "tradecraft_put",
@@ -2054,7 +2072,7 @@
   {
     "symbol": "NFLX",
     "file_key": "NFLX",
-    "last_price": 68.29,
+    "last_price": 68.36,
     "regime": "strong_bear",
     "regime_display": "Strong Bear",
     "fit_score": 10.0,
@@ -2074,7 +2092,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 72.1,
+        "score": 71.9,
         "grade": "B (Good)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -2087,7 +2105,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Sell 1x NFLX 20-Nov-2026 68.3 Put"
+        "legs_summary": "Sell 1x NFLX 20-Nov-2026 68.4 Put"
       }
     ],
     "trade_category": "options",
@@ -2098,7 +2116,7 @@
   {
     "symbol": "PLTR",
     "file_key": "PLTR",
-    "last_price": 193.13,
+    "last_price": 193.12,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 67.5,
@@ -2214,7 +2232,7 @@
   {
     "symbol": "INTC",
     "file_key": "INTC",
-    "last_price": 114.37,
+    "last_price": 114.35,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 75.0,
@@ -2234,7 +2252,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 81.0,
+        "score": 80.9,
         "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -2321,7 +2339,7 @@
   {
     "symbol": "COIN",
     "file_key": "COIN",
-    "last_price": 191.43,
+    "last_price": 191.46,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 42.5,
@@ -2419,7 +2437,7 @@
   {
     "symbol": "MSTR",
     "file_key": "MSTR",
-    "last_price": 168.07,
+    "last_price": 167.51,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 62.5,
@@ -2448,7 +2466,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 65.2,
+        "score": 65.1,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -2470,7 +2488,7 @@
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-        "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Buy 1x MSTR 20-Nov-2026 175 Call"
+        "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Buy 1x MSTR 20-Nov-2026 170 Call"
       },
       {
         "strategy_type": "wheel",
@@ -2484,7 +2502,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 49.5,
+        "score": 49.4,
         "grade": "C (Moderate)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -2511,11 +2529,11 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 41.5,
+        "score": 41.4,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-        "legs_summary": "Buy 1x MSTR 20-Nov-2026 160 Call<br> Sell 1x MSTR 20-Nov-2026 175 Call"
+        "legs_summary": "Buy 1x MSTR 20-Nov-2026 160 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call"
       }
     ],
     "trade_category": "options",
@@ -2526,7 +2544,7 @@
   {
     "symbol": "MARA",
     "file_key": "MARA",
-    "last_price": 11.12,
+    "last_price": 11.14,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 22.5,
@@ -2546,7 +2564,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 65.7,
+        "score": 65.8,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -2555,7 +2573,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 60.2,
+        "score": 60.1,
         "grade": "B (Good)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -2579,7 +2597,7 @@
   {
     "symbol": "RIOT",
     "file_key": "RIOT",
-    "last_price": 19.28,
+    "last_price": 19.36,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 20.0,
@@ -2608,7 +2626,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 54.6,
+        "score": 54.4,
         "grade": "C (Moderate)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -2632,7 +2650,7 @@
   {
     "symbol": "AVGO",
     "file_key": "AVGO",
-    "last_price": 377.98,
+    "last_price": 378.58,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 62.5,
@@ -2688,7 +2706,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 56.4,
+        "score": 56.5,
         "grade": "C (Moderate)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -2706,7 +2724,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 52.6,
+        "score": 52.7,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -2715,7 +2733,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 46.8,
+        "score": 46.9,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -2748,7 +2766,7 @@
   {
     "symbol": "ARM",
     "file_key": "ARM",
-    "last_price": 306.52,
+    "last_price": 305.72,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 75.0,
@@ -2768,7 +2786,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 80.8,
+        "score": 80.6,
         "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -2795,7 +2813,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 66.7,
+        "score": 66.8,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -2804,7 +2822,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 66.0,
+        "score": 65.8,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -2813,7 +2831,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 60.7,
+        "score": 60.6,
         "grade": "B (Good)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -2826,7 +2844,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x ARM 20-Nov-2026 306.5 Call"
+        "legs_summary": "Buy 1x ARM 20-Nov-2026 305.7 Call"
       },
       {
         "strategy_type": "tradecraft_put",
@@ -2840,7 +2858,7 @@
       {
         "strategy_type": "naked_put",
         "strategy_display": "Naked Put",
-        "score": 45.3,
+        "score": 45.2,
         "grade": "C (Moderate)",
         "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
         "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
@@ -2855,7 +2873,7 @@
   {
     "symbol": "SMCI",
     "file_key": "SMCI",
-    "last_price": 43.67,
+    "last_price": 43.77,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 77.5,
@@ -2893,7 +2911,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 73.2,
+        "score": 73.3,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -2911,7 +2929,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 65.0,
+        "score": 65.1,
         "grade": "B (Good)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -2933,7 +2951,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x SMCI 20-Nov-2026 43.7 Call"
+        "legs_summary": "Buy 1x SMCI 20-Nov-2026 43.8 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -2962,7 +2980,7 @@
   {
     "symbol": "SOXL",
     "file_key": "SOXL",
-    "last_price": 168.48,
+    "last_price": 168.12,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 67.5,
@@ -3058,7 +3076,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x SOXL 20-Nov-2026 168.5 Call"
+        "legs_summary": "Buy 1x SOXL 20-Nov-2026 168.1 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -3078,7 +3096,7 @@
   {
     "symbol": "QCOM",
     "file_key": "QCOM",
-    "last_price": 180.79,
+    "last_price": 180.66,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 62.5,
@@ -3170,7 +3188,7 @@
       {
         "strategy_type": "iron_butterfly",
         "strategy_display": "Iron Butterfly",
-        "score": 47.9,
+        "score": 47.8,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
         "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -3192,7 +3210,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x QCOM 20-Nov-2026 180.8 Call"
+        "legs_summary": "Buy 1x QCOM 20-Nov-2026 180.7 Call"
       }
     ],
     "trade_category": "options",
@@ -3203,7 +3221,7 @@
   {
     "symbol": "MU",
     "file_key": "MU",
-    "last_price": 1065.59,
+    "last_price": 1064.9,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 77.5,
@@ -3223,7 +3241,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 86.2,
+        "score": 86.1,
         "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -3241,7 +3259,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 71.4,
+        "score": 71.3,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -3259,7 +3277,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 63.8,
+        "score": 63.9,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -3281,7 +3299,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x MU 20-Nov-2026 1065.6 Call"
+        "legs_summary": "Buy 1x MU 20-Nov-2026 1064.9 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -3310,85 +3328,94 @@
   {
     "symbol": "AMAT",
     "file_key": "AMAT",
-    "last_price": 533.62,
+    "last_price": 531.55,
     "regime": "bull",
     "regime_display": "Bull",
-    "fit_score": 65.0,
+    "fit_score": 75.0,
     "strategy_display": "Credit Spread",
     "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-    "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put<br> Buy 1x AMAT 20-Nov-2026 485 Put",
+    "legs_summary": "Sell 1x AMAT 20-Nov-2026 500 Put<br> Buy 1x AMAT 20-Nov-2026 480 Put",
     "ranked_strategies": [
       {
         "strategy_type": "credit_spread",
         "strategy_display": "Credit Spread",
-        "score": 94.1,
+        "score": 100.0,
         "grade": "A (Optimal)",
         "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
         "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-        "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put<br> Buy 1x AMAT 20-Nov-2026 485 Put"
-      },
-      {
-        "strategy_type": "iron_condor",
-        "strategy_display": "Iron Condor",
-        "score": 86.8,
-        "grade": "A (Optimal)",
-        "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-        "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 485 Put<br> Sell 1x AMAT 20-Nov-2026 505 Put<br> Sell 1x AMAT 20-Nov-2026 565 Call<br> Buy 1x AMAT 20-Nov-2026 585 Call"
+        "legs_summary": "Sell 1x AMAT 20-Nov-2026 500 Put<br> Buy 1x AMAT 20-Nov-2026 480 Put"
       },
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 73.8,
-        "grade": "B (Good)",
+        "score": 84.5,
+        "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-        "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put<br> Sell 1x AMAT 20-Nov-2026 565 Call<br> Buy 1x AMAT 20-Nov-2026 585 Call"
+        "legs_summary": "Sell 1x AMAT 20-Nov-2026 500 Put<br> Sell 1x AMAT 20-Nov-2026 560 Call<br> Buy 1x AMAT 20-Nov-2026 580 Call"
       },
       {
         "strategy_type": "ratio_put_spread",
         "strategy_display": "Ratio Put Spread",
-        "score": 71.7,
+        "score": 76.1,
         "grade": "B (Good)",
         "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
         "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 535 Put<br> Sell 1x AMAT 20-Nov-2026 505 Put<br> Sell 1x AMAT 20-Nov-2026 505 Put"
-      },
-      {
-        "strategy_type": "wheel",
-        "strategy_display": "Wheel",
-        "score": 64.1,
-        "grade": "B (Good)",
-        "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
-        "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-        "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put"
+        "legs_summary": "Buy 1x AMAT 20-Nov-2026 530 Put<br> Sell 1x AMAT 20-Nov-2026 500 Put<br> Sell 1x AMAT 20-Nov-2026 500 Put"
       },
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 55.6,
-        "grade": "C (Moderate)",
+        "score": 69.7,
+        "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 555 Call"
+        "legs_summary": "Buy 1x AMAT 20-Nov-2026 530 Call<br> Sell 1x AMAT 20-Nov-2026 550 Call"
+      },
+      {
+        "strategy_type": "iron_condor",
+        "strategy_display": "Iron Condor",
+        "score": 69.1,
+        "grade": "B (Good)",
+        "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+        "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+        "legs_summary": "Buy 1x AMAT 20-Nov-2026 480 Put<br> Sell 1x AMAT 20-Nov-2026 500 Put<br> Sell 1x AMAT 20-Nov-2026 560 Call<br> Buy 1x AMAT 20-Nov-2026 580 Call"
+      },
+      {
+        "strategy_type": "wheel",
+        "strategy_display": "Wheel",
+        "score": 68.9,
+        "grade": "B (Good)",
+        "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+        "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+        "legs_summary": "Sell 1x AMAT 20-Nov-2026 500 Put"
       },
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 55.3,
-        "grade": "C (Moderate)",
+        "score": 64.4,
+        "grade": "B (Good)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 505 Call<br> Sell 1x AMAT 20-Nov-2026 550 Call"
+        "legs_summary": "Buy 1x AMAT 20-Nov-2026 505 Call<br> Sell 1x AMAT 20-Nov-2026 545 Call"
       },
       {
-        "strategy_type": "butterfly",
-        "strategy_display": "Butterfly",
-        "score": 53.5,
+        "strategy_type": "cash_swing_long",
+        "strategy_display": "Cash Swing Long",
+        "score": 49.0,
         "grade": "C (Moderate)",
-        "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-        "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 520 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 550 Call"
+        "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+        "trade_profile": "Advisory | 30-45 DTE",
+        "legs_summary": "Buy 1x AMAT 20-Nov-2026 531.5 Call"
+      },
+      {
+        "strategy_type": "naked_put",
+        "strategy_display": "Naked Put",
+        "score": 47.2,
+        "grade": "C (Moderate)",
+        "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
+        "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
+        "legs_summary": "Sell 1x AMAT 20-Nov-2026 500 Put"
       },
       {
         "strategy_type": "tradecraft_put",
@@ -3397,34 +3424,7 @@
         "grade": "C (Moderate)",
         "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Sell 1x AMAT 20-Nov-2026 505 Put"
-      },
-      {
-        "strategy_type": "iron_butterfly",
-        "strategy_display": "Iron Butterfly",
-        "score": 45.7,
-        "grade": "C (Moderate)",
-        "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-        "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 505 Put<br> Sell 1x AMAT 20-Nov-2026 535 Put<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 560 Call"
-      },
-      {
-        "strategy_type": "cash_swing_long",
-        "strategy_display": "Cash Swing Long",
-        "score": 43.5,
-        "grade": "C (Moderate)",
-        "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
-        "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 533.6 Call"
-      },
-      {
-        "strategy_type": "broken_wing_butterfly",
-        "strategy_display": "Broken Wing Butterfly",
-        "score": 41.7,
-        "grade": "C (Moderate)",
-        "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-        "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-        "legs_summary": "Buy 1x AMAT 20-Nov-2026 520 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Sell 1x AMAT 20-Nov-2026 535 Call<br> Buy 1x AMAT 20-Nov-2026 560 Call"
+        "legs_summary": "Sell 1x AMAT 20-Nov-2026 500 Put"
       }
     ],
     "trade_category": "options",
@@ -3435,7 +3435,7 @@
   {
     "symbol": "ORCL",
     "file_key": "ORCL",
-    "last_price": 144.96,
+    "last_price": 145.25,
     "regime": "strong_bear",
     "regime_display": "Strong Bear",
     "fit_score": 17.5,
@@ -3464,7 +3464,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 57.0,
+        "score": 56.9,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -3477,12 +3477,12 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Sell 1x ORCL 20-Nov-2026 145.0 Put"
+        "legs_summary": "Sell 1x ORCL 20-Nov-2026 145.2 Put"
       },
       {
         "strategy_type": "butterfly",
         "strategy_display": "Butterfly",
-        "score": 41.7,
+        "score": 41.6,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -3497,7 +3497,7 @@
   {
     "symbol": "IBM",
     "file_key": "IBM",
-    "last_price": 222.88,
+    "last_price": 223.14,
     "regime": "strong_bear",
     "regime_display": "Strong Bear",
     "fit_score": 10.0,
@@ -3517,7 +3517,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 69.6,
+        "score": 69.4,
         "grade": "B (Good)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -3530,12 +3530,12 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Sell 1x IBM 20-Nov-2026 222.9 Put"
+        "legs_summary": "Sell 1x IBM 20-Nov-2026 223.1 Put"
       },
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 40.5,
+        "score": 40.6,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -3550,7 +3550,7 @@
   {
     "symbol": "UVXY",
     "file_key": "UVXY",
-    "last_price": 16.29,
+    "last_price": 16.3,
     "regime": "strong_bear",
     "regime_display": "Strong Bear",
     "fit_score": 5.0,
@@ -3594,7 +3594,7 @@
   {
     "symbol": "JPM",
     "file_key": "JPM",
-    "last_price": 332.15,
+    "last_price": 332.27,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 45.0,
@@ -3668,7 +3668,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 51.1,
+        "score": 51.2,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -3692,7 +3692,7 @@
   {
     "symbol": "BAC",
     "file_key": "BAC",
-    "last_price": 54.12,
+    "last_price": 54.14,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 35.0,
@@ -3775,7 +3775,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 41.7,
+        "score": 41.8,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -3790,7 +3790,7 @@
   {
     "symbol": "WFC",
     "file_key": "WFC",
-    "last_price": 81.58,
+    "last_price": 81.62,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 22.5,
@@ -3810,7 +3810,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 60.3,
+        "score": 60.4,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -3819,7 +3819,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 52.3,
+        "score": 52.2,
         "grade": "C (Moderate)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -3861,7 +3861,7 @@
   {
     "symbol": "GS",
     "file_key": "GS",
-    "last_price": 900.89,
+    "last_price": 901.62,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 35.0,
@@ -3917,7 +3917,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 46.2,
+        "score": 46.1,
         "grade": "C (Moderate)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -3935,7 +3935,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 41.7,
+        "score": 41.8,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -3950,7 +3950,7 @@
   {
     "symbol": "MS",
     "file_key": "MS",
-    "last_price": 191.68,
+    "last_price": 191.82,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 35.0,
@@ -4024,7 +4024,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 41.7,
+        "score": 41.8,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -4039,7 +4039,7 @@
   {
     "symbol": "V",
     "file_key": "V",
-    "last_price": 370.78,
+    "last_price": 371.12,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 77.5,
@@ -4059,7 +4059,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 81.5,
+        "score": 81.8,
         "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -4086,7 +4086,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 67.5,
+        "score": 67.2,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -4095,7 +4095,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 66.6,
+        "score": 67.0,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -4104,7 +4104,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 61.1,
+        "score": 61.5,
         "grade": "B (Good)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -4126,12 +4126,12 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x V 20-Nov-2026 370.8 Call"
+        "legs_summary": "Buy 1x V 20-Nov-2026 371.1 Call"
       },
       {
         "strategy_type": "naked_put",
         "strategy_display": "Naked Put",
-        "score": 45.2,
+        "score": 45.3,
         "grade": "C (Moderate)",
         "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
         "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
@@ -4146,13 +4146,13 @@
   {
     "symbol": "MA",
     "file_key": "MA",
-    "last_price": 567.13,
+    "last_price": 567.76,
     "regime": "bull",
     "regime_display": "Bull",
-    "fit_score": 70.0,
+    "fit_score": 77.5,
     "strategy_display": "Credit Spread",
     "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-    "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put<br> Buy 1x MA 20-Nov-2026 525 Put",
+    "legs_summary": "Sell 1x MA 20-Nov-2026 540 Put<br> Buy 1x MA 20-Nov-2026 530 Put",
     "ranked_strategies": [
       {
         "strategy_type": "credit_spread",
@@ -4161,61 +4161,61 @@
         "grade": "A (Optimal)",
         "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
         "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-        "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put<br> Buy 1x MA 20-Nov-2026 525 Put"
-      },
-      {
-        "strategy_type": "iron_condor",
-        "strategy_display": "Iron Condor",
-        "score": 81.0,
-        "grade": "A (Optimal)",
-        "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-        "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-        "legs_summary": "Buy 1x MA 20-Nov-2026 525 Put<br> Sell 1x MA 20-Nov-2026 535 Put<br> Sell 1x MA 20-Nov-2026 595 Call<br> Buy 1x MA 20-Nov-2026 605 Call"
-      },
-      {
-        "strategy_type": "ratio_put_spread",
-        "strategy_display": "Ratio Put Spread",
-        "score": 77.1,
-        "grade": "B (Good)",
-        "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
-        "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-        "legs_summary": "Buy 1x MA 20-Nov-2026 565 Put<br> Sell 1x MA 20-Nov-2026 535 Put<br> Sell 1x MA 20-Nov-2026 535 Put"
+        "legs_summary": "Sell 1x MA 20-Nov-2026 540 Put<br> Buy 1x MA 20-Nov-2026 530 Put"
       },
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 76.6,
-        "grade": "B (Good)",
+        "score": 82.6,
+        "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-        "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put<br> Sell 1x MA 20-Nov-2026 595 Call<br> Buy 1x MA 20-Nov-2026 605 Call"
+        "legs_summary": "Sell 1x MA 20-Nov-2026 540 Put<br> Sell 1x MA 20-Nov-2026 600 Call<br> Buy 1x MA 20-Nov-2026 610 Call"
+      },
+      {
+        "strategy_type": "ratio_put_spread",
+        "strategy_display": "Ratio Put Spread",
+        "score": 80.4,
+        "grade": "A (Optimal)",
+        "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+        "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+        "legs_summary": "Buy 1x MA 20-Nov-2026 570 Put<br> Sell 1x MA 20-Nov-2026 540 Put<br> Sell 1x MA 20-Nov-2026 540 Put"
       },
       {
         "strategy_type": "wheel",
         "strategy_display": "Wheel",
-        "score": 66.5,
+        "score": 70.1,
         "grade": "B (Good)",
         "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
         "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-        "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put"
+        "legs_summary": "Sell 1x MA 20-Nov-2026 540 Put"
+      },
+      {
+        "strategy_type": "iron_condor",
+        "strategy_display": "Iron Condor",
+        "score": 67.4,
+        "grade": "B (Good)",
+        "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+        "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+        "legs_summary": "Buy 1x MA 20-Nov-2026 530 Put<br> Sell 1x MA 20-Nov-2026 540 Put<br> Sell 1x MA 20-Nov-2026 600 Call<br> Buy 1x MA 20-Nov-2026 610 Call"
       },
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 58.4,
-        "grade": "C (Moderate)",
+        "score": 64.5,
+        "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-        "legs_summary": "Buy 1x MA 20-Nov-2026 565 Call<br> Sell 1x MA 20-Nov-2026 590 Call"
+        "legs_summary": "Buy 1x MA 20-Nov-2026 570 Call<br> Sell 1x MA 20-Nov-2026 595 Call"
       },
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 55.6,
+        "score": 59.8,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-        "legs_summary": "Buy 1x MA 20-Nov-2026 535 Call<br> Sell 1x MA 20-Nov-2026 580 Call"
+        "legs_summary": "Buy 1x MA 20-Nov-2026 535 Call<br> Sell 1x MA 20-Nov-2026 585 Call"
       },
       {
         "strategy_type": "tradecraft_put",
@@ -4224,43 +4224,25 @@
         "grade": "C (Moderate)",
         "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put"
-      },
-      {
-        "strategy_type": "butterfly",
-        "strategy_display": "Butterfly",
-        "score": 49.3,
-        "grade": "C (Moderate)",
-        "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-        "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-        "legs_summary": "Buy 1x MA 20-Nov-2026 550 Call<br> Sell 1x MA 20-Nov-2026 565 Call<br> Sell 1x MA 20-Nov-2026 565 Call<br> Buy 1x MA 20-Nov-2026 580 Call"
+        "legs_summary": "Sell 1x MA 20-Nov-2026 540 Put"
       },
       {
         "strategy_type": "cash_swing_long",
         "strategy_display": "Cash Swing Long",
-        "score": 46.2,
+        "score": 50.3,
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x MA 20-Nov-2026 567.1 Call"
+        "legs_summary": "Buy 1x MA 20-Nov-2026 567.8 Call"
       },
       {
         "strategy_type": "naked_put",
         "strategy_display": "Naked Put",
-        "score": 41.6,
+        "score": 44.6,
         "grade": "C (Moderate)",
         "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
         "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-        "legs_summary": "Sell 1x MA 20-Nov-2026 535 Put"
-      },
-      {
-        "strategy_type": "iron_butterfly",
-        "strategy_display": "Iron Butterfly",
-        "score": 41.4,
-        "grade": "C (Moderate)",
-        "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-        "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-        "legs_summary": "Buy 1x MA 20-Nov-2026 535 Put<br> Sell 1x MA 20-Nov-2026 565 Put<br> Sell 1x MA 20-Nov-2026 565 Call<br> Buy 1x MA 20-Nov-2026 600 Call"
+        "legs_summary": "Sell 1x MA 20-Nov-2026 540 Put"
       }
     ],
     "trade_category": "options",
@@ -4271,7 +4253,7 @@
   {
     "symbol": "WMT",
     "file_key": "WMT",
-    "last_price": 106.45,
+    "last_price": 106.41,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 22.5,
@@ -4300,7 +4282,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 60.8,
+        "score": 60.9,
         "grade": "B (Good)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -4314,15 +4296,6 @@
         "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
         "trade_profile": "Advisory | 30-45 DTE",
         "legs_summary": "Sell 1x WMT 20-Nov-2026 106.4 Put"
-      },
-      {
-        "strategy_type": "butterfly",
-        "strategy_display": "Butterfly",
-        "score": 48.2,
-        "grade": "C (Moderate)",
-        "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-        "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-        "legs_summary": "Buy 1x WMT 20-Nov-2026 105 Call<br> Sell 1x WMT 20-Nov-2026 105 Call<br> Sell 1x WMT 20-Nov-2026 105 Call<br> Buy 1x WMT 20-Nov-2026 110 Call"
       }
     ],
     "trade_category": "options",
@@ -4333,7 +4306,7 @@
   {
     "symbol": "COST",
     "file_key": "COST",
-    "last_price": 930.5,
+    "last_price": 930.09,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 32.5,
@@ -4380,7 +4353,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 47.3,
+        "score": 47.2,
         "grade": "C (Moderate)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -4393,7 +4366,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Sell 1x COST 20-Nov-2026 930.5 Put"
+        "legs_summary": "Sell 1x COST 20-Nov-2026 930.1 Put"
       },
       {
         "strategy_type": "iron_butterfly",
@@ -4431,7 +4404,7 @@
   {
     "symbol": "TGT",
     "file_key": "TGT",
-    "last_price": 154.32,
+    "last_price": 154.25,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 57.5,
@@ -4532,7 +4505,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 47.4,
+        "score": 47.5,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -4547,7 +4520,7 @@
   {
     "symbol": "DIS",
     "file_key": "DIS",
-    "last_price": 103.94,
+    "last_price": 104.03,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 40.0,
@@ -4558,7 +4531,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 99.3,
+        "score": 99.5,
         "grade": "A (Optimal)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -4576,7 +4549,7 @@
       {
         "strategy_type": "butterfly",
         "strategy_display": "Butterfly",
-        "score": 64.5,
+        "score": 64.7,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -4585,7 +4558,7 @@
       {
         "strategy_type": "iron_butterfly",
         "strategy_display": "Iron Butterfly",
-        "score": 56.6,
+        "score": 56.8,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
         "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -4612,7 +4585,7 @@
       {
         "strategy_type": "put_debit_spread",
         "strategy_display": "Put Debit Spread",
-        "score": 47.5,
+        "score": 47.3,
         "grade": "C (Moderate)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -4621,7 +4594,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 46.4,
+        "score": 46.5,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -4645,7 +4618,7 @@
   {
     "symbol": "NKE",
     "file_key": "NKE",
-    "last_price": 34.38,
+    "last_price": 34.44,
     "regime": "bear",
     "regime_display": "Bear",
     "fit_score": 25.0,
@@ -4716,7 +4689,7 @@
   {
     "symbol": "UNH",
     "file_key": "UNH",
-    "last_price": 375.98,
+    "last_price": 376.32,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 55.0,
@@ -4745,7 +4718,7 @@
       {
         "strategy_type": "butterfly",
         "strategy_display": "Butterfly",
-        "score": 65.1,
+        "score": 65.4,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -4772,7 +4745,7 @@
       {
         "strategy_type": "iron_butterfly",
         "strategy_display": "Iron Butterfly",
-        "score": 57.3,
+        "score": 57.5,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
         "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -4790,7 +4763,7 @@
       {
         "strategy_type": "broken_wing_butterfly",
         "strategy_display": "Broken Wing Butterfly",
-        "score": 51.1,
+        "score": 51.2,
         "grade": "C (Moderate)",
         "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -4832,7 +4805,7 @@
   {
     "symbol": "LLY",
     "file_key": "LLY",
-    "last_price": 1160.03,
+    "last_price": 1161.75,
     "regime": "neutral",
     "regime_display": "Neutral",
     "fit_score": 57.5,
@@ -4861,7 +4834,7 @@
       {
         "strategy_type": "butterfly",
         "strategy_display": "Butterfly",
-        "score": 67.7,
+        "score": 67.4,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
         "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -4879,7 +4852,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 63.5,
+        "score": 63.8,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -4888,7 +4861,7 @@
       {
         "strategy_type": "iron_butterfly",
         "strategy_display": "Iron Butterfly",
-        "score": 59.9,
+        "score": 59.6,
         "grade": "C (Moderate)",
         "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
         "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -4924,7 +4897,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 45.4,
+        "score": 45.6,
         "grade": "C (Moderate)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -4933,7 +4906,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 44.5,
+        "score": 44.8,
         "grade": "C (Moderate)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -4948,7 +4921,7 @@
   {
     "symbol": "XOM",
     "file_key": "XOM",
-    "last_price": 164.68,
+    "last_price": 164.58,
     "regime": "bull",
     "regime_display": "Bull",
     "fit_score": 77.5,
@@ -4968,7 +4941,7 @@
       {
         "strategy_type": "jade_lizard",
         "strategy_display": "Jade Lizard",
-        "score": 81.5,
+        "score": 81.3,
         "grade": "A (Optimal)",
         "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
         "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -4995,7 +4968,7 @@
       {
         "strategy_type": "call_debit_spread",
         "strategy_display": "Call Debit Spread",
-        "score": 66.6,
+        "score": 66.5,
         "grade": "B (Good)",
         "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -5004,7 +4977,7 @@
       {
         "strategy_type": "iron_condor",
         "strategy_display": "Iron Condor",
-        "score": 63.8,
+        "score": 64.0,
         "grade": "B (Good)",
         "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
         "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -5013,7 +4986,7 @@
       {
         "strategy_type": "poor_mans_covered_call",
         "strategy_display": "Poor Mans Covered Call",
-        "score": 61.2,
+        "score": 61.1,
         "grade": "B (Good)",
         "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
         "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
@@ -5026,7 +4999,7 @@
         "grade": "C (Moderate)",
         "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
         "trade_profile": "Advisory | 30-45 DTE",
-        "legs_summary": "Buy 1x XOM 20-Nov-2026 164.7 Call"
+        "legs_summary": "Buy 1x XOM 20-Nov-2026 164.6 Call"
       },
       {
         "strategy_type": "naked_put",
@@ -5336,7 +5309,7 @@
         "grade": "B (Good)",
         "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
         "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-        "legs_summary": "B1x-Nov-73100PE-S1x-Nov-70100PE"
+        "legs_summary": "B1x-Nov-73100PE-S1x-Nov-70200PE"
       },
       {
         "strategy_type": "iron_condor",

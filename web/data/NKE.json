@@ -1,6 +1,6 @@
 {
   "symbol": "NKE",
-  "last_price": 34.38,
+  "last_price": 34.44,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,12 +8,12 @@
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 15.35,
+  "vix": 15.33,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (33.4) is oversold (< 35) [Synthetic PCR: 1.32]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (34.0) is oversold (< 35) [Synthetic PCR: 1.31]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 36.0,
         "strike_formatted": "36",
         "option_type": "Call",
-        "delta": 0.238,
+        "delta": 0.248,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -35,7 +35,7 @@
         "strike": 37.0,
         "strike_formatted": "37",
         "option_type": "Call",
-        "delta": 0.111,
+        "delta": 0.117,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1.0,
-    "stop_loss_price": 33.35,
-    "take_profit_price": 35.41,
-    "net_delta": -0.127,
+    "stop_loss_price": 33.41,
+    "take_profit_price": 35.47,
+    "net_delta": -0.131,
     "net_theta": 0.003,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 27.5,
+        "price": 27.55,
         "pnl": -1.0
       },
       {
-        "price": 27.78,
+        "price": 27.83,
         "pnl": -1.0
       },
       {
-        "price": 28.05,
+        "price": 28.1,
         "pnl": -1.0
       },
       {
-        "price": 28.33,
+        "price": 28.38,
         "pnl": -1.0
       },
       {
-        "price": 28.6,
+        "price": 28.65,
         "pnl": -1.0
       },
       {
-        "price": 28.88,
+        "price": 28.93,
         "pnl": -1.0
       },
       {
-        "price": 29.15,
+        "price": 29.2,
         "pnl": -1.0
       },
       {
-        "price": 29.43,
+        "price": 29.48,
         "pnl": -1.0
       },
       {
-        "price": 29.7,
+        "price": 29.76,
         "pnl": -1.0
       },
       {
-        "price": 29.98,
+        "price": 30.03,
         "pnl": -1.0
       },
       {
-        "price": 30.25,
+        "price": 30.31,
         "pnl": -1.0
       },
       {
-        "price": 30.53,
+        "price": 30.58,
         "pnl": -1.0
       },
       {
-        "price": 30.8,
+        "price": 30.86,
         "pnl": -1.0
       },
       {
-        "price": 31.08,
+        "price": 31.13,
         "pnl": -1.0
       },
       {
-        "price": 31.35,
+        "price": 31.41,
         "pnl": -1.0
       },
       {
-        "price": 31.63,
+        "price": 31.68,
         "pnl": -1.0
       },
       {
-        "price": 31.9,
+        "price": 31.96,
         "pnl": -1.0
       },
       {
-        "price": 32.18,
+        "price": 32.24,
         "pnl": -1.0
       },
       {
-        "price": 32.45,
+        "price": 32.51,
         "pnl": -1.0
       },
       {
-        "price": 32.73,
+        "price": 32.79,
         "pnl": -1.0
       },
       {
-        "price": 33.0,
+        "price": 33.06,
         "pnl": -1.0
       },
       {
-        "price": 33.28,
+        "price": 33.34,
         "pnl": -1.0
       },
       {
-        "price": 33.55,
+        "price": 33.61,
         "pnl": -1.0
       },
       {
-        "price": 33.83,
+        "price": 33.89,
         "pnl": -1.0
       },
       {
-        "price": 34.1,
+        "price": 34.16,
         "pnl": -1.0
       },
       {
-        "price": 34.38,
+        "price": 34.44,
         "pnl": -1.0
       },
       {
-        "price": 34.66,
+        "price": 34.72,
         "pnl": -1.0
       },
       {
-        "price": 34.93,
+        "price": 34.99,
         "pnl": -1.0
       },
       {
-        "price": 35.21,
+        "price": 35.27,
         "pnl": -1.0
       },
       {
-        "price": 35.48,
+        "price": 35.54,
         "pnl": -1.0
       },
       {
-        "price": 35.76,
+        "price": 35.82,
         "pnl": -1.0
       },
       {
-        "price": 36.03,
-        "pnl": -1.03
+        "price": 36.09,
+        "pnl": -1.09
       },
       {
-        "price": 36.31,
-        "pnl": -1.31
+        "price": 36.37,
+        "pnl": -1.37
       },
       {
-        "price": 36.58,
-        "pnl": -1.58
+        "price": 36.64,
+        "pnl": -1.64
       },
       {
-        "price": 36.86,
-        "pnl": -1.86
+        "price": 36.92,
+        "pnl": -1.92
       },
       {
-        "price": 37.13,
+        "price": 37.19,
         "pnl": -2.0
       },
       {
-        "price": 37.41,
+        "price": 37.47,
         "pnl": -2.0
       },
       {
-        "price": 37.68,
+        "price": 37.75,
         "pnl": -2.0
       },
       {
-        "price": 37.96,
+        "price": 38.02,
         "pnl": -2.0
       },
       {
-        "price": 38.23,
+        "price": 38.3,
         "pnl": -2.0
       },
       {
-        "price": 38.51,
+        "price": 38.57,
         "pnl": -2.0
       },
       {
-        "price": 38.78,
+        "price": 38.85,
         "pnl": -2.0
       },
       {
-        "price": 39.06,
+        "price": 39.12,
         "pnl": -2.0
       },
       {
-        "price": 39.33,
+        "price": 39.4,
         "pnl": -2.0
       },
       {
-        "price": 39.61,
+        "price": 39.67,
         "pnl": -2.0
       },
       {
-        "price": 39.88,
+        "price": 39.95,
         "pnl": -2.0
       },
       {
-        "price": 40.16,
+        "price": 40.23,
         "pnl": -2.0
       },
       {
-        "price": 40.43,
+        "price": 40.5,
         "pnl": -2.0
       },
       {
-        "price": 40.71,
+        "price": 40.78,
         "pnl": -2.0
       },
       {
-        "price": 40.98,
+        "price": 41.05,
         "pnl": -2.0
       },
       {
-        "price": 41.26,
+        "price": 41.33,
         "pnl": -2.0
       }
     ],
@@ -326,15 +326,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "35.95",
-    "EMA50": "38.13",
+    "EMA20": "35.96",
+    "EMA50": "38.14",
     "EMA100": "41.29",
     "EMA200": "47.18",
-    "RSI(14)": "33.41",
+    "RSI(14)": "33.97",
     "ATR(14)": "1.15",
     "ADX(14)": "30.51",
-    "BB(20,2)": "0.11",
-    "P_SHAPE(20)": "76.28"
+    "BB(20,2)": "0.12",
+    "P_SHAPE(20)": "76.30"
   },
   "rules": [
     {
