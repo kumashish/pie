@@ -172,43 +172,55 @@ def score_all_strategies(
 
     raw_scores: dict[StrategyType, tuple[float, str]] = {}
 
-    # Upfront Credit Collection Preference (+25.0 pts boost for net credit strategies, -25.0 pts penalty for net debit spreads)
-    credit_preference_bonus = 25.0
-    debit_spread_penalty = 25.0
-    credit_structure_bonus = 15.0  # Enhanced score bonus for defined-risk 30-60 DTE credit structures
-    naked_trade_penalty = 20.0     # Penalty for naked options or unhedged trades to manage tail risk
+    # Dynamic Option Premium Sizing (Low IV / Breakouts favor Debit Spreads; High IV favors Credit Spreads)
+    dynamic_debit_bonus = 0.0
+    dynamic_credit_bonus = 15.0
 
-    # 1. Call Debit Spread: Bullish Trend or Oversold Dip Bounce (Net Debit)
-    cds_score = (bullishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm + p_shape_bonus - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen - debit_spread_penalty
+    if iv_rank <= 35.0:
+        # Cheap options favor buying Debit Spreads for high leverage
+        dynamic_debit_bonus += 20.0
+        dynamic_credit_bonus -= 10.0
+    elif iv_rank >= 55.0:
+        # High IV Rank favors harvesting credit
+        dynamic_credit_bonus += 15.0
+
+    # Breakout momentum boost for Debit Spreads (P-shape 2nd leg launch or strong trend score >= 8.0)
+    p_shape_breakout_boost = 15.0 if (p_shape_val is not None and p_shape_val >= 60.0) or trend_val >= 8.0 else 0.0
+
+    credit_structure_bonus = 10.0  # Defined-risk 30-60 DTE credit structure bonus
+    naked_trade_penalty = 20.0     # Penalty for naked options or unhedged trades
+
+    # 1. Call Debit Spread: Bullish Trend, Low IV Compression, or P-Shape Breakout (Net Debit)
+    cds_score = (bullishness * 0.70) + (iv_discount * 0.30) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm + p_shape_bonus + dynamic_debit_bonus + p_shape_breakout_boost - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.CALL_DEBIT_SPREAD] = (
-        (cds_score / 1.20) * confidence_mult,
-        "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+        (cds_score / 1.15) * confidence_mult,
+        "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
     )
 
-    # 2. Put Debit Spread: Bearish Trend or Overbought Exhaustion Fade (Net Debit)
-    pds_score = (bearishness * 0.40) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen - debit_spread_penalty
+    # 2. Put Debit Spread: Bearish Trend, Low IV Compression, or Downside Breakdown (Net Debit)
+    pds_score = (bearishness * 0.70) + (iv_discount * 0.30) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm + dynamic_debit_bonus + p_shape_breakout_boost - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen
     raw_scores[StrategyType.PUT_DEBIT_SPREAD] = (
-        (pds_score / 1.20) * confidence_mult,
-        "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+        (pds_score / 1.15) * confidence_mult,
+        "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
     )
 
     # 3. Jade Lizard: Bullish & High Vol Expansion (Net Credit, Defined Risk Upside)
-    jl_score = (bullishness * 0.50) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
+    jl_score = (bullishness * 0.50) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + dynamic_credit_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.JADE_LIZARD] = (
         (jl_score / 1.20) * confidence_mult,
         "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
     )
 
-    # 4. Credit Spread (Bull Put / Bear Call): Preferred Upfront Credit Collection Strategy (Net Credit, Defined Risk)
+    # 4. Credit Spread (Bull Put / Bear Call): Upfront Credit Collection Strategy (Net Credit, Defined Risk)
     cs_directional_pen = (bm_bull_penalty + ema200_bull_pen + ema20_bull_pen) if trend_val >= 5.0 else (bm_bear_penalty + ema200_bear_pen + ema20_bear_pen)
-    cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - cs_directional_pen
+    cs_score = (directional * 0.70) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + dynamic_credit_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - cs_directional_pen
     raw_scores[StrategyType.CREDIT_SPREAD] = (
         (cs_score / 1.15) * confidence_mult,
         "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
     )
 
     # 5. Naked Put: Bullish & High IV Rank / Oversold Dip Bounce (Net Credit, Unhedged)
-    np_score = (bullishness * 0.45) + (iv_premium * 0.45) + rsi_bull_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus + oversold_fade_bonus + credit_preference_bonus - naked_trade_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
+    np_score = (bullishness * 0.45) + (iv_premium * 0.45) + rsi_bull_bonus + support_bonus + weekly_bull_bonus + backtest_edge_bonus + oversold_fade_bonus + dynamic_credit_bonus - naked_trade_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.NAKED_PUT] = (
         (np_score / 1.20) * confidence_mult,
         "Bullish support with upfront credit collection favors Naked Put selling.",
@@ -218,7 +230,7 @@ def score_all_strategies(
     vix_panic_boost = 35.0 if confluence.is_vix_spiking else 0.0
 
     # 6. Iron Condor: Neutral / Range-Bound Theta Harvesting Strategy (Net Credit, Defined Risk)
-    ic_score = (neutrality * 0.85) + (iv_premium * 0.35) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + theta_harvest_bonus + credit_preference_bonus + credit_structure_bonus + vix_panic_boost - earnings_penalty
+    ic_score = (neutrality * 0.85) + (iv_premium * 0.35) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + theta_harvest_bonus + dynamic_credit_bonus + credit_structure_bonus + vix_panic_boost - earnings_penalty
     raw_scores[StrategyType.IRON_CONDOR] = (
         (ic_score / 1.20) * range_confidence_mult,
         "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",

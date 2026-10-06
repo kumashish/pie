@@ -8,256 +8,256 @@
   "fit_score": 77.5,
   "confidence_grade": "B",
   "confidence_percentage": 77.5,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 105.0,
-        "strike_formatted": "105",
-        "option_type": "Put",
-        "delta": -0.021,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x INTC 20-Nov-2026 105 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 100.0,
-        "strike_formatted": "100",
-        "option_type": "Put",
-        "delta": -0.002,
+        "strike": 115.0,
+        "strike_formatted": "115",
+        "option_type": "Call",
+        "delta": 0.63,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x INTC 20-Nov-2026 100 Put"
+        "summary": "Buy 1x INTC 20-Nov-2026 115 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 120.0,
+        "strike_formatted": "120",
+        "option_type": "Call",
+        "delta": 0.323,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x INTC 20-Nov-2026 120 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 5.0,
-    "stop_loss_price": 112.7,
-    "take_profit_price": 119.68,
-    "net_delta": 0.019,
-    "net_theta": 0.003,
-    "probability_of_profit": 0.0,
+    "roc_percentage": 150.0,
+    "margin_required": 2.0,
+    "stop_loss_price": 113.87,
+    "take_profit_price": 120.0,
+    "net_delta": 0.307,
+    "net_theta": -0.006,
+    "probability_of_profit": 60.7,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 92.95,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 93.88,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 94.81,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 95.74,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 96.67,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 97.6,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 98.53,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 99.46,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 100.39,
-        "pnl": -9.61
+        "pnl": -2.0
       },
       {
         "price": 101.32,
-        "pnl": -8.68
+        "pnl": -2.0
       },
       {
         "price": 102.25,
-        "pnl": -7.75
+        "pnl": -2.0
       },
       {
         "price": 103.18,
-        "pnl": -6.82
+        "pnl": -2.0
       },
       {
         "price": 104.11,
-        "pnl": -5.89
+        "pnl": -2.0
       },
       {
         "price": 105.04,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 105.97,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 106.89,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 107.82,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 108.75,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 109.68,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 110.61,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 111.54,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 112.47,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 113.4,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 114.33,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 115.26,
-        "pnl": -5.0
+        "pnl": -1.74
       },
       {
         "price": 116.19,
-        "pnl": -5.0
+        "pnl": -0.81
       },
       {
         "price": 117.12,
-        "pnl": -5.0
+        "pnl": 0.12
       },
       {
         "price": 118.05,
-        "pnl": -5.0
+        "pnl": 1.05
       },
       {
         "price": 118.98,
-        "pnl": -5.0
+        "pnl": 1.98
       },
       {
         "price": 119.91,
-        "pnl": -5.0
+        "pnl": 2.91
       },
       {
         "price": 120.84,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 121.77,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 122.7,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 123.63,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 124.56,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 125.49,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 126.41,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 127.34,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 128.27,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 129.2,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 130.13,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 131.06,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 131.99,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 132.92,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 133.85,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 134.78,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 135.71,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 136.64,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 137.57,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 138.5,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 139.43,
-        "pnl": -5.0
+        "pnl": 3.0
       }
     ],
     "kelly_sizing": {
@@ -271,10 +271,19 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
       "score": 100.0,
       "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x INTC 20-Nov-2026 115 Call<br> Sell 1x INTC 20-Nov-2026 120 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 75.9,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x INTC 20-Nov-2026 105 Put<br> Buy 1x INTC 20-Nov-2026 100 Put"
@@ -282,20 +291,11 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 82.8,
-      "grade": "A (Optimal)",
+      "score": 61.9,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x INTC 20-Nov-2026 105 Put<br> Sell 1x INTC 20-Nov-2026 125 Call<br> Buy 1x INTC 20-Nov-2026 130 Call"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 62.1,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x INTC 20-Nov-2026 100 Put<br> Sell 1x INTC 20-Nov-2026 105 Put<br> Sell 1x INTC 20-Nov-2026 125 Call<br> Buy 1x INTC 20-Nov-2026 130 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -316,15 +316,6 @@
       "legs_summary": "Buy 1x INTC 20-Nov-2026 116.2 Call"
     },
     {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 45.9,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x INTC 20-Nov-2026 105 Put"
-    },
-    {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
       "score": 45.8,
@@ -334,13 +325,13 @@
       "legs_summary": "Sell 1x INTC 20-Nov-2026 105 Put"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 40.7,
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 41.2,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x INTC 20-Nov-2026 115 Call<br> Sell 1x INTC 20-Nov-2026 120 Call"
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x INTC 20-Nov-2026 100 Put<br> Sell 1x INTC 20-Nov-2026 105 Put<br> Sell 1x INTC 20-Nov-2026 125 Call<br> Buy 1x INTC 20-Nov-2026 130 Call"
     }
   ],
   "indicators": {
@@ -435,6 +426,20 @@
   ],
   "news": [
     {
+      "title": "Global ECM tops USD 1 trillion as AI-fueled megadeals reshape issuance",
+      "publisher": "PR Newswire",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/global-ecm-tops-usd-1-130000598.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Applied Materials and Intel Collaborate to Accelerate Chipmaking Innovations for AI-Driven Computing",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/applied-materials-intel-collaborate-accelerate-130000109.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Intel\u2019s Biggest Opportunity\u00a0May Be Its\u00a0Comeback",
       "publisher": "24/7 Wall St.",
       "link": "https://finance.yahoo.com/markets/stocks/articles/intel-biggest-opportunity-may-comeback-124510178.html",
@@ -461,20 +466,6 @@
       "link": "https://finance.yahoo.com/technology/ai/articles/amd-hits-1-trillion-market-113103902.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Mizuho Adjusts Price Target on Intel to $114 From $92, Keeps Neutral Rating",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/mizuho-adjusts-price-target-intel-110850000.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "INTC, AMD, MU, SNDK, SOXX: Chips, Memory Stocks Slip Premarket After Sharp October Rally",
-      "publisher": "Stocktwits",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/intc-amd-mu-sndk-soxx-091251918.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }

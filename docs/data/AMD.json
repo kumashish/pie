@@ -8,262 +8,262 @@
   "fit_score": 62.5,
   "confidence_grade": "B",
   "confidence_percentage": 62.5,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (69.2) is overbought (> 65) [Synthetic PCR: 0.70]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (69.2) is overbought (> 65) [Synthetic PCR: 0.70]. Wait for a pullback toward EMA20 support before entering Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 595.0,
-        "strike_formatted": "595",
-        "option_type": "Put",
-        "delta": -0.105,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x AMD 20-Nov-2026 595 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 570.0,
-        "strike_formatted": "570",
-        "option_type": "Put",
-        "delta": -0.02,
+        "strike": 630.0,
+        "strike_formatted": "630",
+        "option_type": "Call",
+        "delta": 0.577,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x AMD 20-Nov-2026 570 Put"
+        "summary": "Buy 1x AMD 20-Nov-2026 630 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 655.0,
+        "strike_formatted": "655",
+        "option_type": "Call",
+        "delta": 0.298,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x AMD 20-Nov-2026 655 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 25.0,
-    "stop_loss_price": 612.8,
-    "take_profit_price": 650.7,
-    "net_delta": 0.085,
-    "net_theta": 0.042,
-    "probability_of_profit": 0.0,
-    "var_95": 14.56,
+    "roc_percentage": 150.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 619.12,
+    "take_profit_price": 655.0,
+    "net_delta": 0.279,
+    "net_theta": -0.039,
+    "probability_of_profit": 55.0,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 505.4,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 510.45,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 515.51,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 520.56,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 525.62,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 530.67,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 535.72,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 540.78,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 545.83,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 550.89,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 555.94,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 560.99,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 566.05,
-        "pnl": -50.0
+        "pnl": -10.0
       },
       {
         "price": 571.1,
-        "pnl": -48.9
+        "pnl": -10.0
       },
       {
         "price": 576.16,
-        "pnl": -43.84
+        "pnl": -10.0
       },
       {
         "price": 581.21,
-        "pnl": -38.79
+        "pnl": -10.0
       },
       {
         "price": 586.26,
-        "pnl": -33.74
+        "pnl": -10.0
       },
       {
         "price": 591.32,
-        "pnl": -28.68
+        "pnl": -10.0
       },
       {
         "price": 596.37,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 601.43,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 606.48,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 611.53,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 616.59,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 621.64,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 626.7,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 631.75,
-        "pnl": -25.0
+        "pnl": -8.25
       },
       {
         "price": 636.8,
-        "pnl": -25.0
+        "pnl": -3.2
       },
       {
         "price": 641.86,
-        "pnl": -25.0
+        "pnl": 1.86
       },
       {
         "price": 646.91,
-        "pnl": -25.0
+        "pnl": 6.91
       },
       {
         "price": 651.97,
-        "pnl": -25.0
+        "pnl": 11.97
       },
       {
         "price": 657.02,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 662.07,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 667.13,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 672.18,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 677.24,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 682.29,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 687.34,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 692.4,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 697.45,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 702.51,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 707.56,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 712.61,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 717.67,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 722.72,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 727.78,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 732.83,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 737.88,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 742.94,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 747.99,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 753.05,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 758.1,
-        "pnl": -25.0
+        "pnl": 15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.85,
+      "win_probability": 0.824,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.365,
+      "half_kelly_fraction": 0.3416,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,40 +271,58 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 92.7,
+      "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 630 Call<br> Sell 1x AMD 20-Nov-2026 655 Call"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 100.0,
-      "grade": "A (Optimal)",
+      "score": 77.6,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x AMD 20-Nov-2026 595 Put<br> Buy 1x AMD 20-Nov-2026 570 Put"
     },
     {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 70.0,
+      "grade": "B (Good)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 630 Put<br> Sell 1x AMD 20-Nov-2026 605 Put"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 85.6,
-      "grade": "A (Optimal)",
+      "score": 64.8,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x AMD 20-Nov-2026 570 Put<br> Sell 1x AMD 20-Nov-2026 595 Put<br> Sell 1x AMD 20-Nov-2026 665 Call<br> Buy 1x AMD 20-Nov-2026 690 Call"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 74.3,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 595 Put<br> Sell 1x AMD 20-Nov-2026 665 Call<br> Buy 1x AMD 20-Nov-2026 690 Call"
-    },
-    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 53.6,
+      "score": 53.7,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x AMD 20-Nov-2026 600 Call<br> Sell 1x AMD 20-Nov-2026 650 Call"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 53.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 595 Put<br> Sell 1x AMD 20-Nov-2026 665 Call<br> Buy 1x AMD 20-Nov-2026 690 Call"
     },
     {
       "strategy_type": "butterfly",

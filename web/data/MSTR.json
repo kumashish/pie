@@ -8,256 +8,256 @@
   "fit_score": 70.0,
   "confidence_grade": "B",
   "confidence_percentage": 70.0,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 150.0,
-        "strike_formatted": "150",
-        "option_type": "Put",
-        "delta": -0.032,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x MSTR 20-Nov-2026 150 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 140.0,
-        "strike_formatted": "140",
-        "option_type": "Put",
-        "delta": -0.001,
+        "strike": 165.0,
+        "strike_formatted": "165",
+        "option_type": "Call",
+        "delta": 0.531,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x MSTR 20-Nov-2026 140 Put"
+        "summary": "Buy 1x MSTR 20-Nov-2026 165 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 170.0,
+        "strike_formatted": "170",
+        "option_type": "Call",
+        "delta": 0.316,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x MSTR 20-Nov-2026 170 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 5.0,
-    "stop_loss_price": 159.5,
-    "take_profit_price": 169.36,
-    "net_delta": 0.031,
-    "net_theta": 0.006,
-    "probability_of_profit": 0.0,
+    "roc_percentage": 150.0,
+    "margin_required": 2.0,
+    "stop_loss_price": 161.14,
+    "take_profit_price": 170.0,
+    "net_delta": 0.215,
+    "net_theta": -0.009,
+    "probability_of_profit": 50.5,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 131.54,
-        "pnl": -15.0
+        "pnl": -2.0
       },
       {
         "price": 132.86,
-        "pnl": -15.0
+        "pnl": -2.0
       },
       {
         "price": 134.17,
-        "pnl": -15.0
+        "pnl": -2.0
       },
       {
         "price": 135.49,
-        "pnl": -15.0
+        "pnl": -2.0
       },
       {
         "price": 136.81,
-        "pnl": -15.0
+        "pnl": -2.0
       },
       {
         "price": 138.12,
-        "pnl": -15.0
+        "pnl": -2.0
       },
       {
         "price": 139.44,
-        "pnl": -15.0
+        "pnl": -2.0
       },
       {
         "price": 140.75,
-        "pnl": -14.25
+        "pnl": -2.0
       },
       {
         "price": 142.07,
-        "pnl": -12.93
+        "pnl": -2.0
       },
       {
         "price": 143.38,
-        "pnl": -11.62
+        "pnl": -2.0
       },
       {
         "price": 144.7,
-        "pnl": -10.3
+        "pnl": -2.0
       },
       {
         "price": 146.01,
-        "pnl": -8.99
+        "pnl": -2.0
       },
       {
         "price": 147.33,
-        "pnl": -7.67
+        "pnl": -2.0
       },
       {
         "price": 148.64,
-        "pnl": -6.36
+        "pnl": -2.0
       },
       {
         "price": 149.96,
-        "pnl": -5.04
+        "pnl": -2.0
       },
       {
         "price": 151.28,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 152.59,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 153.91,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 155.22,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 156.54,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 157.85,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 159.17,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 160.48,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 161.8,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 163.11,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 164.43,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 165.75,
-        "pnl": -5.0
+        "pnl": -1.25
       },
       {
         "price": 167.06,
-        "pnl": -5.0
+        "pnl": 0.06
       },
       {
         "price": 168.38,
-        "pnl": -5.0
+        "pnl": 1.38
       },
       {
         "price": 169.69,
-        "pnl": -5.0
+        "pnl": 2.69
       },
       {
         "price": 171.01,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 172.32,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 173.64,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 174.95,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 176.27,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 177.58,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 178.9,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 180.22,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 181.53,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 182.85,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 184.16,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 185.48,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 186.79,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 188.11,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 189.42,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 190.74,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 192.05,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 193.37,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 194.69,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 196.0,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 197.32,
-        "pnl": -5.0
+        "pnl": 3.0
       }
     ],
     "kelly_sizing": {
@@ -271,19 +271,37 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
       "score": 90.0,
       "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 71.0,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x MSTR 20-Nov-2026 150 Put<br> Buy 1x MSTR 20-Nov-2026 140 Put"
     },
     {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 61.1,
+      "grade": "B (Good)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Put<br> Sell 1x MSTR 20-Nov-2026 160 Put"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 71.2,
-      "grade": "B (Good)",
+      "score": 50.4,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x MSTR 20-Nov-2026 140 Put<br> Sell 1x MSTR 20-Nov-2026 150 Put<br> Sell 1x MSTR 20-Nov-2026 180 Call<br> Buy 1x MSTR 20-Nov-2026 190 Call"
@@ -291,8 +309,8 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 70.8,
-      "grade": "B (Good)",
+      "score": 50.0,
+      "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x MSTR 20-Nov-2026 150 Put<br> Sell 1x MSTR 20-Nov-2026 180 Call<br> Buy 1x MSTR 20-Nov-2026 190 Call"
@@ -309,7 +327,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 41.3,
+      "score": 41.4,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",

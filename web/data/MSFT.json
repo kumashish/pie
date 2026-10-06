@@ -8,256 +8,256 @@
   "fit_score": 85.0,
   "confidence_grade": "A",
   "confidence_percentage": 85.0,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (66.2) is overbought (> 65) [Synthetic PCR: 0.62]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (66.2) is overbought (> 65) [Synthetic PCR: 0.62]. Wait for a pullback toward EMA20 support before entering Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 495.0,
-        "strike_formatted": "495",
-        "option_type": "Put",
-        "delta": -0.107,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x MSFT 20-Nov-2026 495 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 485.0,
-        "strike_formatted": "485",
-        "option_type": "Put",
-        "delta": -0.052,
+        "strike": 525.0,
+        "strike_formatted": "525",
+        "option_type": "Call",
+        "delta": 0.559,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x MSFT 20-Nov-2026 485 Put"
+        "summary": "Buy 1x MSFT 20-Nov-2026 525 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 545.0,
+        "strike_formatted": "545",
+        "option_type": "Call",
+        "delta": 0.292,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x MSFT 20-Nov-2026 545 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 509.42,
-    "take_profit_price": 540.94,
-    "net_delta": 0.055,
-    "net_theta": 0.02,
-    "probability_of_profit": 0.0,
-    "var_95": 10.0,
+    "roc_percentage": 150.0,
+    "margin_required": 8.0,
+    "stop_loss_price": 514.68,
+    "take_profit_price": 545.0,
+    "net_delta": 0.267,
+    "net_theta": -0.034,
+    "probability_of_profit": 53.2,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 420.14,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 424.35,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 428.55,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 432.75,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 436.95,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 441.15,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 445.35,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 449.55,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 453.76,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 457.96,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 462.16,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 466.36,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 470.56,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 474.76,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 478.96,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 483.17,
-        "pnl": -30.0
+        "pnl": -8.0
       },
       {
         "price": 487.37,
-        "pnl": -27.63
+        "pnl": -8.0
       },
       {
         "price": 491.57,
-        "pnl": -23.43
+        "pnl": -8.0
       },
       {
         "price": 495.77,
-        "pnl": -20.0
+        "pnl": -8.0
       },
       {
         "price": 499.97,
-        "pnl": -20.0
+        "pnl": -8.0
       },
       {
         "price": 504.17,
-        "pnl": -20.0
+        "pnl": -8.0
       },
       {
         "price": 508.37,
-        "pnl": -20.0
+        "pnl": -8.0
       },
       {
         "price": 512.58,
-        "pnl": -20.0
+        "pnl": -8.0
       },
       {
         "price": 516.78,
-        "pnl": -20.0
+        "pnl": -8.0
       },
       {
         "price": 520.98,
-        "pnl": -20.0
+        "pnl": -8.0
       },
       {
         "price": 525.18,
-        "pnl": -20.0
+        "pnl": -7.82
       },
       {
         "price": 529.38,
-        "pnl": -20.0
+        "pnl": -3.62
       },
       {
         "price": 533.58,
-        "pnl": -20.0
+        "pnl": 0.58
       },
       {
         "price": 537.78,
-        "pnl": -20.0
+        "pnl": 4.78
       },
       {
         "price": 541.99,
-        "pnl": -20.0
+        "pnl": 8.99
       },
       {
         "price": 546.19,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 550.39,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 554.59,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 558.79,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 562.99,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 567.19,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 571.4,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 575.6,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 579.8,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 584.0,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 588.2,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 592.4,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 596.6,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 600.81,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 605.01,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 609.21,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 613.41,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 617.61,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 621.81,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 626.01,
-        "pnl": -20.0
+        "pnl": 12.0
       },
       {
         "price": 630.22,
-        "pnl": -20.0
+        "pnl": 12.0
       }
     ],
     "kelly_sizing": {
@@ -271,22 +271,22 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
       "score": 100.0,
       "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 525 Call<br> Sell 1x MSFT 20-Nov-2026 545 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 77.8,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x MSFT 20-Nov-2026 495 Put<br> Buy 1x MSFT 20-Nov-2026 485 Put"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 83.7,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x MSFT 20-Nov-2026 495 Put<br> Sell 1x MSFT 20-Nov-2026 555 Call<br> Buy 1x MSFT 20-Nov-2026 565 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -298,6 +298,15 @@
       "legs_summary": "Buy 1x MSFT 20-Nov-2026 495 Call<br> Sell 1x MSFT 20-Nov-2026 540 Call"
     },
     {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 62.9,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x MSFT 20-Nov-2026 495 Put<br> Sell 1x MSFT 20-Nov-2026 555 Call<br> Buy 1x MSFT 20-Nov-2026 565 Call"
+    },
+    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
       "score": 56.0,
@@ -307,13 +316,13 @@
       "legs_summary": "Buy 1x MSFT 20-Nov-2026 525.2 Call"
     },
     {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 46.9,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 53.0,
       "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x MSFT 20-Nov-2026 495 Put"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MSFT 20-Nov-2026 525 Put<br> Sell 1x MSFT 20-Nov-2026 505 Put"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -323,24 +332,6 @@
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x MSFT 20-Nov-2026 495 Put"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 44.7,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 485 Put<br> Sell 1x MSFT 20-Nov-2026 495 Put<br> Sell 1x MSFT 20-Nov-2026 555 Call<br> Buy 1x MSFT 20-Nov-2026 565 Call"
-    },
-    {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 40.1,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MSFT 20-Nov-2026 525 Call<br> Sell 1x MSFT 20-Nov-2026 545 Call"
     }
   ],
   "indicators": {
@@ -435,6 +426,20 @@
   ],
   "news": [
     {
+      "title": "SkyeConnex Appoints Former Microsoft CVP Brad Anderson to Its Board of Directors",
+      "publisher": "CNW Group",
+      "link": "https://finance.yahoo.com/technology/articles/skyeconnex-appoints-former-microsoft-cvp-130000693.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tenable Appoints Industry Veteran Charlie Bell to Board of Directors",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/tenable-appoints-industry-veteran-charlie-130000951.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "The Only 2 Artificial Intelligence (AI) Stocks I'd Buy With $1,000 Today and Never Sell",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/technology/ai/articles/only-2-artificial-intelligence-ai-125300853.html",
@@ -461,20 +466,6 @@
       "link": "https://finance.yahoo.com/technology/ai/articles/lovelace-adds-pioneer-r-v-123000064.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Palantir Just Had Its Best Quarter in a Year, Up 60%",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-just-had-best-quarter-122141400.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Microsoft May Be Winning Enterprise AI, but When Does the Stock Catch Up?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-may-winning-enterprise-ai-120533745.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }

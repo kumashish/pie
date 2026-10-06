@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 20.0,
   "vix": 13.61,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 745.0,
-        "strike_formatted": "745",
-        "option_type": "Call",
-        "delta": 0.222,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x HDFCBANK.NS 24-Nov-2026 745 Call"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 760.0,
-        "strike_formatted": "760",
-        "option_type": "Call",
-        "delta": 0.122,
+        "strike": 710.0,
+        "strike_formatted": "710",
+        "option_type": "Put",
+        "delta": -0.421,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x HDFCBANK.NS 24-Nov-2026 760 Call"
+        "summary": "Buy 1x HDFCBANK.NS 24-Nov-2026 710 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 685.0,
+        "strike_formatted": "685",
+        "option_type": "Put",
+        "delta": -0.179,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x HDFCBANK.NS 24-Nov-2026 685 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 25.0,
-    "stop_loss_price": 690.11,
-    "take_profit_price": 732.79,
-    "net_delta": -0.1,
-    "net_theta": 0.044,
-    "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "roc_percentage": 150.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 725.68,
+    "take_profit_price": 685.0,
+    "net_delta": -0.242,
+    "net_theta": -0.022,
+    "probability_of_profit": 44.6,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 569.16,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 574.85,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 580.54,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 586.23,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 591.93,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 597.62,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 603.31,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 609.0,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 614.69,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 620.38,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 626.08,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 631.77,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 637.46,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 643.15,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 648.84,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 654.53,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 660.23,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 665.92,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 671.61,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 677.3,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 682.99,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 688.68,
-        "pnl": -25.0
+        "pnl": 11.32
       },
       {
         "price": 694.38,
-        "pnl": -25.0
+        "pnl": 5.62
       },
       {
         "price": 700.07,
-        "pnl": -25.0
+        "pnl": -0.07
       },
       {
         "price": 705.76,
-        "pnl": -25.0
+        "pnl": -5.76
       },
       {
         "price": 711.45,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 717.14,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 722.83,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 728.52,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 734.22,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 739.91,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 745.6,
-        "pnl": -25.6
+        "pnl": -10.0
       },
       {
         "price": 751.29,
-        "pnl": -31.29
+        "pnl": -10.0
       },
       {
         "price": 756.98,
-        "pnl": -36.98
+        "pnl": -10.0
       },
       {
         "price": 762.67,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 768.37,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 774.06,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 779.75,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 785.44,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 791.13,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 796.82,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 802.52,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 808.21,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 813.9,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 819.59,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 825.28,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 830.97,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 836.67,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 842.36,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 848.05,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 853.74,
-        "pnl": -40.0
+        "pnl": -10.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.815,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3335,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,22 +271,22 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-710PE-S1x-Nov-685PE"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 90.0,
-      "grade": "A (Optimal)",
+      "score": 74.5,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-745CE-B1x-Nov-760CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 63.0,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-660PE-S1x-Nov-675PE-S1x-Nov-745CE-B1x-Nov-760CE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -296,6 +296,24 @@
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "S1x-Nov-711.5PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 42.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-660PE-S1x-Nov-675PE-S1x-Nov-745CE-B1x-Nov-760CE"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 42.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-710CE-S1x-Nov-735CE"
     }
   ],
   "indicators": {

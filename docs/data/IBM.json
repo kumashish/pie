@@ -8,262 +8,262 @@
   "fit_score": 5.0,
   "confidence_grade": "C",
   "confidence_percentage": 5.0,
-  "vix": 15.33,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 230.0,
-        "strike_formatted": "230",
-        "option_type": "Call",
-        "delta": 0.291,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x IBM 20-Nov-2026 230 Call"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 235.0,
-        "strike_formatted": "235",
-        "option_type": "Call",
-        "delta": 0.171,
+        "strike": 220.0,
+        "strike_formatted": "220",
+        "option_type": "Put",
+        "delta": -0.392,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x IBM 20-Nov-2026 235 Call"
+        "summary": "Buy 1x IBM 20-Nov-2026 220 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 210.0,
+        "strike_formatted": "210",
+        "option_type": "Put",
+        "delta": -0.127,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x IBM 20-Nov-2026 210 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 10.0,
-    "stop_loss_price": 214.93,
-    "take_profit_price": 228.23,
-    "net_delta": -0.12,
-    "net_theta": 0.015,
-    "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 226.01,
+    "take_profit_price": 210.0,
+    "net_delta": -0.265,
+    "net_theta": -0.014,
+    "probability_of_profit": 41.7,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 177.26,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 179.04,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 180.81,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 182.58,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 184.35,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 186.13,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 187.9,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 189.67,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 191.45,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 193.22,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 194.99,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 196.76,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 198.54,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 200.31,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 202.08,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 203.85,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 205.63,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 207.4,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 209.17,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 210.94,
-        "pnl": -10.0
+        "pnl": 5.06
       },
       {
         "price": 212.72,
-        "pnl": -10.0
+        "pnl": 3.28
       },
       {
         "price": 214.49,
-        "pnl": -10.0
+        "pnl": 1.51
       },
       {
         "price": 216.26,
-        "pnl": -10.0
+        "pnl": -0.26
       },
       {
         "price": 218.03,
-        "pnl": -10.0
+        "pnl": -2.03
       },
       {
         "price": 219.81,
-        "pnl": -10.0
+        "pnl": -3.81
       },
       {
         "price": 221.58,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 223.35,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 225.13,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 226.9,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 228.67,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 230.44,
-        "pnl": -10.44
+        "pnl": -4.0
       },
       {
         "price": 232.22,
-        "pnl": -12.22
+        "pnl": -4.0
       },
       {
         "price": 233.99,
-        "pnl": -13.99
+        "pnl": -4.0
       },
       {
         "price": 235.76,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 237.53,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 239.31,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 241.08,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 242.85,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 244.62,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 246.4,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 248.17,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 249.94,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 251.71,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 253.49,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 255.26,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 257.03,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 258.81,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 260.58,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 262.35,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 264.12,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 265.9,
-        "pnl": -15.0
+        "pnl": -4.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.815,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3335,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,9 +271,18 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 220 Put<br> Sell 1x IBM 20-Nov-2026 210 Put"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 90.0,
+      "score": 82.2,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -287,24 +296,6 @@
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x IBM 20-Nov-2026 221.6 Put"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 44.1,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 220 Put<br> Sell 1x IBM 20-Nov-2026 210 Put"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 40.0,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 205 Put<br> Sell 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 230 Call<br> Buy 1x IBM 20-Nov-2026 235 Call"
     }
   ],
   "indicators": {
@@ -399,6 +390,20 @@
   ],
   "news": [
     {
+      "title": "Algorhythm Appoints New Independent Director",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/algorhythm-appoints-independent-director-130000805.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Did Accenture's Quarter Change For Its Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/did-accentures-quarter-change-stock-125405258.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Zapata Quantum Joins IBM Quantum Network to Accelerate Mission-Driven Quantum Application Development",
       "publisher": "GlobeNewswire",
       "link": "https://finance.yahoo.com/technology/ai/articles/zapata-quantum-joins-ibm-quantum-120000602.html",
@@ -416,20 +421,6 @@
       "title": "Commercial Quantum Computing Solutions Market Global Report 2026 | Capitalize on 33.2% CAGR as IBM, Google, Microsoft and IonQ Accelerate Cloud-Hybrid Adoption",
       "publisher": "GlobeNewswire",
       "link": "https://finance.yahoo.com/technology/articles/commercial-quantum-computing-solutions-market-113200904.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Automotive Quantum Computing Market Size, Share, Trends, and Forecast Report 2026 to 2030; Automotive Quantum Computing Market Poised to Reach $0.81 Billion by 2030",
-      "publisher": "GlobeNewswire",
-      "link": "https://finance.yahoo.com/technology/ai/articles/automotive-quantum-computing-market-size-081500111.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Global Change and Configuration Management Market Report 2026; Change and Configuration Management Market Set to Reach $4.25 Billion by 2030 as Security and Automation Demand Accelerates",
-      "publisher": "GlobeNewswire",
-      "link": "https://finance.yahoo.com/technology/articles/global-change-configuration-management-market-081400401.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

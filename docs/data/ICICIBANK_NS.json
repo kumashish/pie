@@ -9,261 +9,261 @@
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
   "vix": 13.61,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (89.8% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (81.1% fit - Grade A (Optimal)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 1400.0,
-        "strike_formatted": "1400",
-        "option_type": "Call",
-        "delta": 0.249,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x ICICIBANK.NS 24-Nov-2026 1400 Call"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1450.0,
-        "strike_formatted": "1450",
-        "option_type": "Call",
-        "delta": 0.084,
+        "strike": 1350.0,
+        "strike_formatted": "1350",
+        "option_type": "Put",
+        "delta": -0.479,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x ICICIBANK.NS 24-Nov-2026 1450 Call"
+        "summary": "Buy 1x ICICIBANK.NS 24-Nov-2026 1350 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1300.0,
+        "strike_formatted": "1300",
+        "option_type": "Put",
+        "delta": -0.209,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x ICICIBANK.NS 24-Nov-2026 1300 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 50.0,
-    "stop_loss_price": 1302.52,
-    "take_profit_price": 1383.08,
-    "net_delta": -0.165,
-    "net_theta": 0.141,
-    "probability_of_profit": 0.0,
-    "var_95": 50.0,
+    "roc_percentage": 150.0,
+    "margin_required": 20.0,
+    "stop_loss_price": 1369.66,
+    "take_profit_price": 1300.0,
+    "net_delta": -0.27,
+    "net_theta": -0.023,
+    "probability_of_profit": 50.5,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 1074.24,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1084.98,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1095.72,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1106.47,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1117.21,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1127.95,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1138.69,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1149.44,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1160.18,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1170.92,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1181.66,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1192.41,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1203.15,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1213.89,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1224.63,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1235.38,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1246.12,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1256.86,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1267.6,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1278.35,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1289.09,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1299.83,
-        "pnl": -50.0
+        "pnl": 30.0
       },
       {
         "price": 1310.57,
-        "pnl": -50.0
+        "pnl": 19.43
       },
       {
         "price": 1321.32,
-        "pnl": -50.0
+        "pnl": 8.68
       },
       {
         "price": 1332.06,
-        "pnl": -50.0
+        "pnl": -2.06
       },
       {
         "price": 1342.8,
-        "pnl": -50.0
+        "pnl": -12.8
       },
       {
         "price": 1353.54,
-        "pnl": -50.0
+        "pnl": -20.0
       },
       {
         "price": 1364.28,
-        "pnl": -50.0
+        "pnl": -20.0
       },
       {
         "price": 1375.03,
-        "pnl": -50.0
+        "pnl": -20.0
       },
       {
         "price": 1385.77,
-        "pnl": -50.0
+        "pnl": -20.0
       },
       {
         "price": 1396.51,
-        "pnl": -50.0
+        "pnl": -20.0
       },
       {
         "price": 1407.25,
-        "pnl": -57.25
+        "pnl": -20.0
       },
       {
         "price": 1418.0,
-        "pnl": -68.0
+        "pnl": -20.0
       },
       {
         "price": 1428.74,
-        "pnl": -78.74
+        "pnl": -20.0
       },
       {
         "price": 1439.48,
-        "pnl": -89.48
+        "pnl": -20.0
       },
       {
         "price": 1450.22,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1460.97,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1471.71,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1482.45,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1493.19,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1503.94,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1514.68,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1525.42,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1536.16,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1546.91,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1557.65,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1568.39,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1579.13,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1589.88,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1600.62,
-        "pnl": -100.0
+        "pnl": -20.0
       },
       {
         "price": 1611.36,
-        "pnl": -100.0
+        "pnl": -20.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.814,
+      "win_probability": 0.784,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3326,
+      "half_kelly_fraction": 0.3056,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,22 +271,40 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 89.8,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 81.1,
       "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1400CE-B1x-Nov-1450CE"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-1350PE-S1x-Nov-1300PE"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 68.2,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-1350CE-S1x-Nov-1400CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 83.8,
-      "grade": "A (Optimal)",
+      "score": 62.9,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-1250PE-S1x-Nov-1300PE-S1x-Nov-1400CE-B1x-Nov-1450CE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 59.6,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-1400CE-B1x-Nov-1450CE"
     },
     {
       "strategy_type": "butterfly",
@@ -296,15 +314,6 @@
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "B1x-Nov-1300CE-S1x-Nov-1350CE-S1x-Nov-1350CE-B1x-Nov-1400CE"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 51.4,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-1300PE-S1x-Nov-1400CE-B1x-Nov-1450CE"
     },
     {
       "strategy_type": "tradecraft_put",

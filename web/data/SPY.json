@@ -8,256 +8,256 @@
   "fit_score": 82.5,
   "confidence_grade": "A",
   "confidence_percentage": 82.5,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 735.0,
-        "strike_formatted": "735",
-        "option_type": "Put",
-        "delta": -0.131,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x SPY 20-Nov-2026 735 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 720.0,
-        "strike_formatted": "720",
-        "option_type": "Put",
-        "delta": -0.066,
+        "strike": 775.0,
+        "strike_formatted": "775",
+        "option_type": "Call",
+        "delta": 0.555,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x SPY 20-Nov-2026 720 Put"
+        "summary": "Buy 1x SPY 20-Nov-2026 775 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 805.0,
+        "strike_formatted": "805",
+        "option_type": "Call",
+        "delta": 0.285,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x SPY 20-Nov-2026 805 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 30.0,
-    "stop_loss_price": 751.59,
-    "take_profit_price": 798.07,
-    "net_delta": 0.065,
-    "net_theta": 0.032,
-    "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "roc_percentage": 150.0,
+    "margin_required": 12.0,
+    "stop_loss_price": 759.33,
+    "take_profit_price": 805.0,
+    "net_delta": 0.27,
+    "net_theta": -0.053,
+    "probability_of_profit": 52.7,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 619.86,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 626.06,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 632.26,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 638.46,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 644.66,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 650.86,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 657.06,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 663.25,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 669.45,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 675.65,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 681.85,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 688.05,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 694.25,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 700.45,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 706.64,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 712.84,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 719.04,
-        "pnl": -45.0
+        "pnl": -12.0
       },
       {
         "price": 725.24,
-        "pnl": -39.76
+        "pnl": -12.0
       },
       {
         "price": 731.44,
-        "pnl": -33.56
+        "pnl": -12.0
       },
       {
         "price": 737.64,
-        "pnl": -30.0
+        "pnl": -12.0
       },
       {
         "price": 743.84,
-        "pnl": -30.0
+        "pnl": -12.0
       },
       {
         "price": 750.04,
-        "pnl": -30.0
+        "pnl": -12.0
       },
       {
         "price": 756.23,
-        "pnl": -30.0
+        "pnl": -12.0
       },
       {
         "price": 762.43,
-        "pnl": -30.0
+        "pnl": -12.0
       },
       {
         "price": 768.63,
-        "pnl": -30.0
+        "pnl": -12.0
       },
       {
         "price": 774.83,
-        "pnl": -30.0
+        "pnl": -12.0
       },
       {
         "price": 781.03,
-        "pnl": -30.0
+        "pnl": -5.97
       },
       {
         "price": 787.23,
-        "pnl": -30.0
+        "pnl": 0.23
       },
       {
         "price": 793.43,
-        "pnl": -30.0
+        "pnl": 6.43
       },
       {
         "price": 799.62,
-        "pnl": -30.0
+        "pnl": 12.62
       },
       {
         "price": 805.82,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 812.02,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 818.22,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 824.42,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 830.62,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 836.82,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 843.02,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 849.21,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 855.41,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 861.61,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 867.81,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 874.01,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 880.21,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 886.41,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 892.6,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 898.8,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 905.0,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 911.2,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 917.4,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 923.6,
-        "pnl": -30.0
+        "pnl": 18.0
       },
       {
         "price": 929.8,
-        "pnl": -30.0
+        "pnl": 18.0
       }
     ],
     "kelly_sizing": {
@@ -271,10 +271,19 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
       "score": 100.0,
       "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x SPY 20-Nov-2026 775 Call<br> Sell 1x SPY 20-Nov-2026 805 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 77.9,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x SPY 20-Nov-2026 735 Put<br> Buy 1x SPY 20-Nov-2026 720 Put"
@@ -282,8 +291,8 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 86.7,
-      "grade": "A (Optimal)",
+      "score": 65.9,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x SPY 20-Nov-2026 735 Put<br> Sell 1x SPY 20-Nov-2026 815 Call<br> Buy 1x SPY 20-Nov-2026 830 Call"
@@ -307,15 +316,6 @@
       "legs_summary": "Sell 1x SPY 20-Nov-2026 735 Put"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 53.3,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x SPY 20-Nov-2026 720 Put<br> Sell 1x SPY 20-Nov-2026 735 Put<br> Sell 1x SPY 20-Nov-2026 815 Call<br> Buy 1x SPY 20-Nov-2026 830 Call"
-    },
-    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
       "score": 53.0,
@@ -325,22 +325,13 @@
       "legs_summary": "Buy 1x SPY 20-Nov-2026 774.8 Call"
     },
     {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 47.3,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 48.7,
       "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x SPY 20-Nov-2026 735 Put"
-    },
-    {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 44.2,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x SPY 20-Nov-2026 775 Call<br> Sell 1x SPY 20-Nov-2026 805 Call"
+      "legs_summary": "Buy 1x SPY 20-Nov-2026 775 Put<br> Sell 1x SPY 20-Nov-2026 745 Put"
     }
   ],
   "indicators": {

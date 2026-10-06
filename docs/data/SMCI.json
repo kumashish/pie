@@ -8,256 +8,256 @@
   "fit_score": 75.0,
   "confidence_grade": "B",
   "confidence_percentage": 75.0,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 40.0,
-        "strike_formatted": "40",
-        "option_type": "Put",
-        "delta": -0.058,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x SMCI 20-Nov-2026 40 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 38.0,
-        "strike_formatted": "38",
-        "option_type": "Put",
-        "delta": -0.006,
+        "strike": 43.0,
+        "strike_formatted": "43",
+        "option_type": "Call",
+        "delta": 0.588,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x SMCI 20-Nov-2026 38 Put"
+        "summary": "Buy 1x SMCI 20-Nov-2026 43 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 45.0,
+        "strike_formatted": "45",
+        "option_type": "Call",
+        "delta": 0.267,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x SMCI 20-Nov-2026 45 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 2.0,
-    "stop_loss_price": 41.89,
-    "take_profit_price": 44.49,
-    "net_delta": 0.052,
-    "net_theta": 0.003,
-    "probability_of_profit": 0.0,
-    "var_95": 0.32,
+    "roc_percentage": 150.0,
+    "margin_required": 0.8,
+    "stop_loss_price": 42.33,
+    "take_profit_price": 45.0,
+    "net_delta": 0.321,
+    "net_theta": -0.003,
+    "probability_of_profit": 56.2,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 34.55,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 34.9,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 35.24,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 35.59,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 35.93,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 36.28,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 36.63,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 36.97,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 37.32,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 37.66,
-        "pnl": -4.0
+        "pnl": -0.8
       },
       {
         "price": 38.01,
-        "pnl": -3.99
+        "pnl": -0.8
       },
       {
         "price": 38.35,
-        "pnl": -3.65
+        "pnl": -0.8
       },
       {
         "price": 38.7,
-        "pnl": -3.3
+        "pnl": -0.8
       },
       {
         "price": 39.04,
-        "pnl": -2.96
+        "pnl": -0.8
       },
       {
         "price": 39.39,
-        "pnl": -2.61
+        "pnl": -0.8
       },
       {
         "price": 39.73,
-        "pnl": -2.27
+        "pnl": -0.8
       },
       {
         "price": 40.08,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 40.43,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 40.77,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 41.12,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 41.46,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 41.81,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 42.15,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 42.5,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 42.84,
-        "pnl": -2.0
+        "pnl": -0.8
       },
       {
         "price": 43.19,
-        "pnl": -2.0
+        "pnl": -0.61
       },
       {
         "price": 43.54,
-        "pnl": -2.0
+        "pnl": -0.26
       },
       {
         "price": 43.88,
-        "pnl": -2.0
+        "pnl": 0.08
       },
       {
         "price": 44.23,
-        "pnl": -2.0
+        "pnl": 0.43
       },
       {
         "price": 44.57,
-        "pnl": -2.0
+        "pnl": 0.77
       },
       {
         "price": 44.92,
-        "pnl": -2.0
+        "pnl": 1.12
       },
       {
         "price": 45.26,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 45.61,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 45.95,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 46.3,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 46.65,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 46.99,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 47.34,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 47.68,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 48.03,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 48.37,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 48.72,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 49.06,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 49.41,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 49.75,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 50.1,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 50.45,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 50.79,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 51.14,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 51.48,
-        "pnl": -2.0
+        "pnl": 1.2
       },
       {
         "price": 51.83,
-        "pnl": -2.0
+        "pnl": 1.2
       }
     ],
     "kelly_sizing": {
@@ -271,10 +271,19 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
       "score": 100.0,
       "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x SMCI 20-Nov-2026 43 Call<br> Sell 1x SMCI 20-Nov-2026 45 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 75.9,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x SMCI 20-Nov-2026 40 Put<br> Buy 1x SMCI 20-Nov-2026 38 Put"
@@ -282,8 +291,8 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 86.1,
-      "grade": "A (Optimal)",
+      "score": 65.2,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "Sell 1x SMCI 20-Nov-2026 40 Put<br> Sell 1x SMCI 20-Nov-2026 46 Call<br> Buy 1x SMCI 20-Nov-2026 48 Call"
@@ -298,15 +307,6 @@
       "legs_summary": "Buy 1x SMCI 20-Nov-2026 41 Call<br> Sell 1x SMCI 20-Nov-2026 44 Call"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 63.1,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x SMCI 20-Nov-2026 38 Put<br> Sell 1x SMCI 20-Nov-2026 40 Put<br> Sell 1x SMCI 20-Nov-2026 46 Call<br> Buy 1x SMCI 20-Nov-2026 48 Call"
-    },
-    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
       "score": 49.0,
@@ -314,15 +314,6 @@
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Buy 1x SMCI 20-Nov-2026 43.2 Call"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 46.2,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x SMCI 20-Nov-2026 40 Put"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -334,13 +325,22 @@
       "legs_summary": "Sell 1x SMCI 20-Nov-2026 40 Put"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 44.2,
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 42.3,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x SMCI 20-Nov-2026 38 Put<br> Sell 1x SMCI 20-Nov-2026 40 Put<br> Sell 1x SMCI 20-Nov-2026 46 Call<br> Buy 1x SMCI 20-Nov-2026 48 Call"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 41.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x SMCI 20-Nov-2026 43 Call<br> Sell 1x SMCI 20-Nov-2026 45 Call"
+      "legs_summary": "Buy 1x SMCI 20-Nov-2026 43 Put<br> Sell 1x SMCI 20-Nov-2026 41 Put"
     }
   ],
   "indicators": {

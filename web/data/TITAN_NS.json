@@ -9,255 +9,255 @@
   "confidence_grade": "B",
   "confidence_percentage": 60.0,
   "vix": 13.61,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 4800.0,
-        "strike_formatted": "4800",
-        "option_type": "Call",
-        "delta": 0.181,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4800 Call"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 4900.0,
-        "strike_formatted": "4900",
+        "strike": 4550.0,
+        "strike_formatted": "4550",
         "option_type": "Call",
-        "delta": 0.092,
+        "delta": 0.563,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4900 Call"
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4550 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 4700.0,
+        "strike_formatted": "4700",
+        "option_type": "Call",
+        "delta": 0.312,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4700 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 150.0,
-    "stop_loss_price": 4413.5,
-    "take_profit_price": 4686.5,
-    "net_delta": -0.089,
-    "net_theta": 0.279,
-    "probability_of_profit": 0.0,
-    "var_95": 100.0,
+    "roc_percentage": 150.0,
+    "margin_required": 60.0,
+    "stop_loss_price": 4459.0,
+    "take_profit_price": 4700.0,
+    "net_delta": 0.251,
+    "net_theta": -0.241,
+    "probability_of_profit": 53.8,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 3640.0,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3676.4,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3712.8,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3749.2,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3785.6,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3822.0,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3858.4,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3894.8,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3931.2,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 3967.6,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4004.0,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4040.4,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4076.8,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4113.2,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4149.6,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4186.0,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4222.4,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4258.8,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4295.2,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4331.6,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4368.0,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4404.4,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4440.8,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4477.2,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4513.6,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4550.0,
-        "pnl": -150.0
+        "pnl": -60.0
       },
       {
         "price": 4586.4,
-        "pnl": -150.0
+        "pnl": -23.6
       },
       {
         "price": 4622.8,
-        "pnl": -150.0
+        "pnl": 12.8
       },
       {
         "price": 4659.2,
-        "pnl": -150.0
+        "pnl": 49.2
       },
       {
         "price": 4695.6,
-        "pnl": -150.0
+        "pnl": 85.6
       },
       {
         "price": 4732.0,
-        "pnl": -150.0
+        "pnl": 90.0
       },
       {
         "price": 4768.4,
-        "pnl": -150.0
+        "pnl": 90.0
       },
       {
         "price": 4804.8,
-        "pnl": -154.8
+        "pnl": 90.0
       },
       {
         "price": 4841.2,
-        "pnl": -191.2
+        "pnl": 90.0
       },
       {
         "price": 4877.6,
-        "pnl": -227.6
+        "pnl": 90.0
       },
       {
         "price": 4914.0,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 4950.4,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 4986.8,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5023.2,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5059.6,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5096.0,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5132.4,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5168.8,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5205.2,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5241.6,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5278.0,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5314.4,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5350.8,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5387.2,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5423.6,
-        "pnl": -250.0
+        "pnl": 90.0
       },
       {
         "price": 5460.0,
-        "pnl": -250.0
+        "pnl": 90.0
       }
     ],
     "kelly_sizing": {
@@ -271,10 +271,28 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
       "score": 100.0,
       "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-4550CE-S1x-Nov-4700CE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 86.3,
+      "grade": "A (Optimal)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-4550PE-S1x-Nov-4400PE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 73.7,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-4800CE-B1x-Nov-4900CE"
@@ -282,20 +300,11 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 93.1,
-      "grade": "A (Optimal)",
+      "score": 72.3,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-4200PE-S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 67.3,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
     },
     {
       "strategy_type": "butterfly",
@@ -334,13 +343,13 @@
       "legs_summary": "B1x-Nov-4300CE-S1x-Nov-4650CE"
     },
     {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 45.8,
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 46.5,
       "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "S1x-Nov-4300PE"
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
     }
   ],
   "indicators": {

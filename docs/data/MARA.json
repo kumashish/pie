@@ -8,15 +8,27 @@
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (98.0% fit - Grade A (Optimal)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 11.0,
+        "strike_formatted": "11",
+        "option_type": "Put",
+        "delta": -0.335,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Buy 1x MARA 20-Nov-2026 11 Put"
+      },
       {
         "action": "Sell",
         "quantity": 1,
@@ -28,242 +40,230 @@
         "expiration_display": "20-Nov-2026",
         "dte": 45,
         "summary": "Sell 1x MARA 20-Nov-2026 10 Put"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 9.0,
-        "strike_formatted": "9",
-        "option_type": "Put",
-        "delta": -0.0,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x MARA 20-Nov-2026 9 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 1.0,
-    "stop_loss_price": 10.83,
-    "take_profit_price": 11.51,
-    "net_delta": 0.014,
-    "net_theta": 0.0,
-    "probability_of_profit": 0.0,
+    "roc_percentage": 150.0,
+    "margin_required": 0.4,
+    "stop_loss_price": 11.39,
+    "take_profit_price": 10.0,
+    "net_delta": -0.321,
+    "net_theta": -0.002,
+    "probability_of_profit": 35.9,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 8.94,
-        "pnl": -2.0
+        "pnl": 0.6
       },
       {
         "price": 9.03,
-        "pnl": -1.97
+        "pnl": 0.6
       },
       {
         "price": 9.11,
-        "pnl": -1.89
+        "pnl": 0.6
       },
       {
         "price": 9.2,
-        "pnl": -1.8
+        "pnl": 0.6
       },
       {
         "price": 9.29,
-        "pnl": -1.71
+        "pnl": 0.6
       },
       {
         "price": 9.38,
-        "pnl": -1.62
+        "pnl": 0.6
       },
       {
         "price": 9.47,
-        "pnl": -1.53
+        "pnl": 0.6
       },
       {
         "price": 9.56,
-        "pnl": -1.44
+        "pnl": 0.6
       },
       {
         "price": 9.65,
-        "pnl": -1.35
+        "pnl": 0.6
       },
       {
         "price": 9.74,
-        "pnl": -1.26
+        "pnl": 0.6
       },
       {
         "price": 9.83,
-        "pnl": -1.17
+        "pnl": 0.6
       },
       {
         "price": 9.92,
-        "pnl": -1.08
+        "pnl": 0.6
       },
       {
         "price": 10.01,
-        "pnl": -1.0
+        "pnl": 0.59
       },
       {
         "price": 10.1,
-        "pnl": -1.0
+        "pnl": 0.5
       },
       {
         "price": 10.19,
-        "pnl": -1.0
+        "pnl": 0.41
       },
       {
         "price": 10.28,
-        "pnl": -1.0
+        "pnl": 0.32
       },
       {
         "price": 10.37,
-        "pnl": -1.0
+        "pnl": 0.23
       },
       {
         "price": 10.46,
-        "pnl": -1.0
+        "pnl": 0.14
       },
       {
         "price": 10.54,
-        "pnl": -1.0
+        "pnl": 0.06
       },
       {
         "price": 10.63,
-        "pnl": -1.0
+        "pnl": -0.03
       },
       {
         "price": 10.72,
-        "pnl": -1.0
+        "pnl": -0.12
       },
       {
         "price": 10.81,
-        "pnl": -1.0
+        "pnl": -0.21
       },
       {
         "price": 10.9,
-        "pnl": -1.0
+        "pnl": -0.3
       },
       {
         "price": 10.99,
-        "pnl": -1.0
+        "pnl": -0.39
       },
       {
         "price": 11.08,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.17,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.26,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.35,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.44,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.53,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.62,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.71,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.8,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.88,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 11.97,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.06,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.15,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.24,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.33,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.42,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.51,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.6,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.69,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.78,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.87,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 12.96,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 13.05,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 13.14,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 13.23,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 13.31,
-        "pnl": -1.0
+        "pnl": -0.4
       },
       {
         "price": 13.4,
-        "pnl": -1.0
+        "pnl": -0.4
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.815,
+      "win_probability": 0.843,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3335,
+      "half_kelly_fraction": 0.3587,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,10 +271,19 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 98.0,
+      "grade": "A (Optimal)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MARA 20-Nov-2026 11 Put<br> Sell 1x MARA 20-Nov-2026 10 Put"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 90.0,
-      "grade": "A (Optimal)",
+      "score": 65.7,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x MARA 20-Nov-2026 10 Put<br> Buy 1x MARA 20-Nov-2026 9 Put"
@@ -282,8 +291,8 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 69.8,
-      "grade": "B (Good)",
+      "score": 49.0,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x MARA 20-Nov-2026 9 Put<br> Sell 1x MARA 20-Nov-2026 10 Put<br> Sell 1x MARA 20-Nov-2026 12 Call<br> Buy 1x MARA 20-Nov-2026 13 Call"
@@ -296,6 +305,15 @@
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x MARA 20-Nov-2026 11.2 Put"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 41.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MARA 20-Nov-2026 11 Call<br> Sell 1x MARA 20-Nov-2026 12 Call"
     }
   ],
   "indicators": {

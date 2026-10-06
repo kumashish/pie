@@ -8,262 +8,262 @@
   "fit_score": 62.5,
   "confidence_grade": "B",
   "confidence_percentage": 62.5,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (66.7) is overbought (> 65) [Synthetic PCR: 0.69]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (66.7) is overbought (> 65) [Synthetic PCR: 0.69]. Wait for a pullback toward EMA20 support before entering Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 560.0,
-        "strike_formatted": "560",
-        "option_type": "Put",
-        "delta": -0.136,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x SOXX 20-Nov-2026 560 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 545.0,
-        "strike_formatted": "545",
-        "option_type": "Put",
-        "delta": -0.055,
+        "strike": 590.0,
+        "strike_formatted": "590",
+        "option_type": "Call",
+        "delta": 0.55,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x SOXX 20-Nov-2026 545 Put"
+        "summary": "Buy 1x SOXX 20-Nov-2026 590 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 615.0,
+        "strike_formatted": "615",
+        "option_type": "Call",
+        "delta": 0.259,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x SOXX 20-Nov-2026 615 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 25.0,
-    "stop_loss_price": 571.82,
-    "take_profit_price": 607.2,
-    "net_delta": 0.081,
-    "net_theta": 0.031,
-    "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "roc_percentage": 150.0,
+    "margin_required": 10.0,
+    "stop_loss_price": 577.72,
+    "take_profit_price": 615.0,
+    "net_delta": 0.291,
+    "net_theta": -0.048,
+    "probability_of_profit": 52.3,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 471.61,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 476.32,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 481.04,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 485.76,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 490.47,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 495.19,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 499.9,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 504.62,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 509.34,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 514.05,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 518.77,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 523.48,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 528.2,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 532.92,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 537.63,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 542.35,
-        "pnl": -40.0
+        "pnl": -10.0
       },
       {
         "price": 547.07,
-        "pnl": -37.93
+        "pnl": -10.0
       },
       {
         "price": 551.78,
-        "pnl": -33.22
+        "pnl": -10.0
       },
       {
         "price": 556.5,
-        "pnl": -28.5
+        "pnl": -10.0
       },
       {
         "price": 561.21,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 565.93,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 570.65,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 575.36,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 580.08,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 584.79,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 589.51,
-        "pnl": -25.0
+        "pnl": -10.0
       },
       {
         "price": 594.23,
-        "pnl": -25.0
+        "pnl": -5.77
       },
       {
         "price": 598.94,
-        "pnl": -25.0
+        "pnl": -1.06
       },
       {
         "price": 603.66,
-        "pnl": -25.0
+        "pnl": 3.66
       },
       {
         "price": 608.37,
-        "pnl": -25.0
+        "pnl": 8.37
       },
       {
         "price": 613.09,
-        "pnl": -25.0
+        "pnl": 13.09
       },
       {
         "price": 617.81,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 622.52,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 627.24,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 631.95,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 636.67,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 641.39,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 646.1,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 650.82,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 655.54,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 660.25,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 664.97,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 669.68,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 674.4,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 679.12,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 683.83,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 688.55,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 693.26,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 697.98,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 702.7,
-        "pnl": -25.0
+        "pnl": 15.0
       },
       {
         "price": 707.41,
-        "pnl": -25.0
+        "pnl": 15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.83,
+      "win_probability": 0.826,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.347,
+      "half_kelly_fraction": 0.3434,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,40 +271,58 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 94.4,
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 93.2,
       "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x SOXX 20-Nov-2026 560 Put<br> Buy 1x SOXX 20-Nov-2026 545 Put"
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x SOXX 20-Nov-2026 590 Call<br> Sell 1x SOXX 20-Nov-2026 615 Call"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 87.6,
-      "grade": "A (Optimal)",
+      "score": 66.8,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x SOXX 20-Nov-2026 545 Put<br> Sell 1x SOXX 20-Nov-2026 560 Put<br> Sell 1x SOXX 20-Nov-2026 620 Call<br> Buy 1x SOXX 20-Nov-2026 635 Call"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 74.7,
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 64.5,
       "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x SOXX 20-Nov-2026 560 Put<br> Sell 1x SOXX 20-Nov-2026 620 Call<br> Buy 1x SOXX 20-Nov-2026 635 Call"
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x SOXX 20-Nov-2026 560 Put<br> Buy 1x SOXX 20-Nov-2026 545 Put"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 56.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x SOXX 20-Nov-2026 590 Put<br> Sell 1x SOXX 20-Nov-2026 565 Put"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 54.1,
+      "score": 54.2,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x SOXX 20-Nov-2026 560 Call<br> Sell 1x SOXX 20-Nov-2026 605 Call"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 53.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x SOXX 20-Nov-2026 560 Put<br> Sell 1x SOXX 20-Nov-2026 620 Call<br> Buy 1x SOXX 20-Nov-2026 635 Call"
     },
     {
       "strategy_type": "butterfly",
@@ -444,6 +462,13 @@
   ],
   "news": [
     {
+      "title": "Sector Update: Tech",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/articles/sector-tech-125650427.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Options Traders Give Nvidia a 50% Chance of Hitting $6 Trillion This Month",
       "publisher": "24/7 Wall St.",
       "link": "https://finance.yahoo.com/markets/options/articles/options-traders-nvidia-50-chance-111538101.html",
@@ -475,13 +500,6 @@
       "title": "Sector Update: Tech Stocks Lean Lower Premarket Monday",
       "publisher": "MT Newswires",
       "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-lean-lower-131212263.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Sector Update: Tech",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-125940957.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

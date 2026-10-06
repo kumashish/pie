@@ -8,256 +8,256 @@
   "fit_score": 80.0,
   "confidence_grade": "A",
   "confidence_percentage": 80.0,
-  "vix": 15.32,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (66.9) is overbought (> 65) [Synthetic PCR: 0.62]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (66.9) is overbought (> 65) [Synthetic PCR: 0.62]. Wait for a pullback toward EMA20 support before entering Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 225.0,
-        "strike_formatted": "225",
-        "option_type": "Put",
-        "delta": -0.105,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x NVDA 20-Nov-2026 225 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 220.0,
-        "strike_formatted": "220",
-        "option_type": "Put",
-        "delta": -0.047,
+        "strike": 240.0,
+        "strike_formatted": "240",
+        "option_type": "Call",
+        "delta": 0.522,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x NVDA 20-Nov-2026 220 Put"
+        "summary": "Buy 1x NVDA 20-Nov-2026 240 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 250.0,
+        "strike_formatted": "250",
+        "option_type": "Call",
+        "delta": 0.241,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x NVDA 20-Nov-2026 250 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 10.0,
-    "stop_loss_price": 231.73,
-    "take_profit_price": 246.07,
-    "net_delta": 0.058,
-    "net_theta": 0.01,
-    "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 234.12,
+    "take_profit_price": 250.0,
+    "net_delta": 0.281,
+    "net_theta": -0.021,
+    "probability_of_profit": 49.5,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 191.12,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 193.03,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 194.94,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 196.85,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 198.76,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 200.68,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 202.59,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 204.5,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 206.41,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 208.32,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 210.23,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 212.14,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 214.05,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 215.97,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 217.88,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 219.79,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 221.7,
-        "pnl": -13.3
+        "pnl": -4.0
       },
       {
         "price": 223.61,
-        "pnl": -11.39
+        "pnl": -4.0
       },
       {
         "price": 225.52,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 227.43,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 229.34,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 231.26,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 233.17,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 235.08,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 236.99,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 238.9,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 240.81,
-        "pnl": -10.0
+        "pnl": -3.19
       },
       {
         "price": 242.72,
-        "pnl": -10.0
+        "pnl": -1.28
       },
       {
         "price": 244.63,
-        "pnl": -10.0
+        "pnl": 0.63
       },
       {
         "price": 246.54,
-        "pnl": -10.0
+        "pnl": 2.54
       },
       {
         "price": 248.46,
-        "pnl": -10.0
+        "pnl": 4.46
       },
       {
         "price": 250.37,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 252.28,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 254.19,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 256.1,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 258.01,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 259.92,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 261.83,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 263.75,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 265.66,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 267.57,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 269.48,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 271.39,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 273.3,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 275.21,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 277.12,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 279.04,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 280.95,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 282.86,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 284.77,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 286.68,
-        "pnl": -10.0
+        "pnl": 6.0
       }
     ],
     "kelly_sizing": {
@@ -271,22 +271,22 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
       "score": 100.0,
       "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 240 Call<br> Sell 1x NVDA 20-Nov-2026 250 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 73.0,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put<br> Buy 1x NVDA 20-Nov-2026 220 Put"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 80.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put<br> Sell 1x NVDA 20-Nov-2026 255 Call<br> Buy 1x NVDA 20-Nov-2026 260 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -298,13 +298,13 @@
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 225 Call<br> Sell 1x NVDA 20-Nov-2026 245 Call"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 57.1,
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 59.2,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x NVDA 20-Nov-2026 220 Put<br> Sell 1x NVDA 20-Nov-2026 225 Put<br> Sell 1x NVDA 20-Nov-2026 255 Call<br> Buy 1x NVDA 20-Nov-2026 260 Call"
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put<br> Sell 1x NVDA 20-Nov-2026 255 Call<br> Buy 1x NVDA 20-Nov-2026 260 Call"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -316,21 +316,21 @@
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 238.9 Call"
     },
     {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 48.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 240 Put<br> Sell 1x NVDA 20-Nov-2026 230 Put"
+    },
+    {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
       "score": 45.8,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 45.0,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
       "legs_summary": "Sell 1x NVDA 20-Nov-2026 225 Put"
     }
   ],
@@ -426,9 +426,30 @@
   ],
   "news": [
     {
+      "title": "CrowdStrike Launches Fourth Cybersecurity Startup Accelerator With Amazon's AWS, NVIDIA",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/technology/articles/crowdstrike-launches-fourth-cybersecurity-startup-130636318.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Can Canopy Growth Survive Another 5 Years?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/canopy-growth-survive-another-5-130002685.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "New Book Decipher & Deliver Offers an Operator's Transformation Playbook for CEOs, Boards and PE Sponsors",
       "publisher": "PR Newswire",
       "link": "https://finance.yahoo.com/small-business/articles/book-decipher-deliver-offers-operators-130000683.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "QuantumXLabs Reports Approximately 16.8x Acceleration Over CPU-Based Computing in Quantum-Enabled Analysis of More Than 7 Billion Gene Combinations Using Real-World Clinical Data",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/ai/articles/quantumxlabs-reports-approximately-16-8x-125500081.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
@@ -443,27 +464,6 @@
       "title": "ASML vs. Nvidia: Which AI Semiconductor Stock Is a Better Buy in 2026?",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/technology/ai/articles/asml-vs-nvidia-ai-semiconductor-125201914.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Boost Run Signs $525.6 Million AI Compute Agreement; Shares Rise Pre-Bell",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/technology/ai/articles/boost-run-signs-525-6-124632538.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "The Fed\u2019s Rate Hike Isn\u2019t A Headwind For Nvidia For Several Reasons",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/fed-rate-hike-isn-t-124512107.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Intel\u2019s Biggest Opportunity\u00a0May Be Its\u00a0Comeback",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/intel-biggest-opportunity-may-comeback-124510178.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

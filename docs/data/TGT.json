@@ -8,262 +8,262 @@
   "fit_score": 62.5,
   "confidence_grade": "B",
   "confidence_percentage": 62.5,
-  "vix": 15.34,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 15.31,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (92.3% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (86.7% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 145.0,
-        "strike_formatted": "145",
-        "option_type": "Put",
-        "delta": -0.128,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x TGT 20-Nov-2026 145 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 140.0,
-        "strike_formatted": "140",
-        "option_type": "Put",
-        "delta": -0.037,
+        "strike": 155.0,
+        "strike_formatted": "155",
+        "option_type": "Call",
+        "delta": 0.46,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 45,
-        "summary": "Buy 1x TGT 20-Nov-2026 140 Put"
+        "summary": "Buy 1x TGT 20-Nov-2026 155 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 160.0,
+        "strike_formatted": "160",
+        "option_type": "Call",
+        "delta": 0.245,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 45,
+        "summary": "Sell 1x TGT 20-Nov-2026 160 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 5.0,
-    "stop_loss_price": 148.4,
-    "take_profit_price": 157.58,
-    "net_delta": 0.091,
-    "net_theta": 0.009,
-    "probability_of_profit": 0.0,
-    "var_95": 4.45,
+    "roc_percentage": 150.0,
+    "margin_required": 2.0,
+    "stop_loss_price": 149.93,
+    "take_profit_price": 160.0,
+    "net_delta": 0.215,
+    "net_theta": -0.012,
+    "probability_of_profit": 43.6,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 122.39,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 123.62,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 124.84,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 126.06,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 127.29,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 128.51,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 129.74,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 130.96,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 132.18,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 133.41,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 134.63,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 135.86,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 137.08,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 138.3,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 139.53,
-        "pnl": -10.0
+        "pnl": -2.0
       },
       {
         "price": 140.75,
-        "pnl": -9.25
+        "pnl": -2.0
       },
       {
         "price": 141.97,
-        "pnl": -8.03
+        "pnl": -2.0
       },
       {
         "price": 143.2,
-        "pnl": -6.8
+        "pnl": -2.0
       },
       {
         "price": 144.42,
-        "pnl": -5.58
+        "pnl": -2.0
       },
       {
         "price": 145.65,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 146.87,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 148.09,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 149.32,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 150.54,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 151.77,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 152.99,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 154.21,
-        "pnl": -5.0
+        "pnl": -2.0
       },
       {
         "price": 155.44,
-        "pnl": -5.0
+        "pnl": -1.56
       },
       {
         "price": 156.66,
-        "pnl": -5.0
+        "pnl": -0.34
       },
       {
         "price": 157.89,
-        "pnl": -5.0
+        "pnl": 0.89
       },
       {
         "price": 159.11,
-        "pnl": -5.0
+        "pnl": 2.11
       },
       {
         "price": 160.33,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 161.56,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 162.78,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 164.01,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 165.23,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 166.45,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 167.68,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 168.9,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 170.12,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 171.35,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 172.57,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 173.8,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 175.02,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 176.24,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 177.47,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 178.69,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 179.92,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 181.14,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 182.36,
-        "pnl": -5.0
+        "pnl": 3.0
       },
       {
         "price": 183.59,
-        "pnl": -5.0
+        "pnl": 3.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.823,
+      "win_probability": 0.803,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3407,
+      "half_kelly_fraction": 0.3227,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,36 +271,45 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 92.3,
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 86.7,
       "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x TGT 20-Nov-2026 145 Put<br> Buy 1x TGT 20-Nov-2026 140 Put"
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x TGT 20-Nov-2026 155 Call<br> Sell 1x TGT 20-Nov-2026 160 Call"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 88.7,
-      "grade": "A (Optimal)",
+      "score": 67.9,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x TGT 20-Nov-2026 140 Put<br> Sell 1x TGT 20-Nov-2026 145 Put<br> Sell 1x TGT 20-Nov-2026 165 Call<br> Buy 1x TGT 20-Nov-2026 170 Call"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 68.5,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 63.7,
       "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x TGT 20-Nov-2026 145 Put<br> Sell 1x TGT 20-Nov-2026 165 Call<br> Buy 1x TGT 20-Nov-2026 170 Call"
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x TGT 20-Nov-2026 155 Put<br> Sell 1x TGT 20-Nov-2026 150 Put"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 62.4,
+      "grade": "B (Good)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x TGT 20-Nov-2026 145 Put<br> Buy 1x TGT 20-Nov-2026 140 Put"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 54.6,
+      "score": 54.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -318,11 +327,20 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 49.9,
+      "score": 50.0,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x TGT 20-Nov-2026 145 Call<br> Sell 1x TGT 20-Nov-2026 155 Call"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 47.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x TGT 20-Nov-2026 145 Put<br> Sell 1x TGT 20-Nov-2026 165 Call<br> Buy 1x TGT 20-Nov-2026 170 Call"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -336,7 +354,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 44.1,
+      "score": 44.2,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",

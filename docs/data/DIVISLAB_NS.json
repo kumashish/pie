@@ -9,255 +9,255 @@
   "confidence_grade": "A",
   "confidence_percentage": 90.0,
   "vix": 13.61,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 9000.0,
-        "strike_formatted": "9000",
-        "option_type": "Put",
-        "delta": -0.089,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 9000 Put"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 8800.0,
-        "strike_formatted": "8800",
-        "option_type": "Put",
-        "delta": -0.036,
+        "strike": 9600.0,
+        "strike_formatted": "9600",
+        "option_type": "Call",
+        "delta": 0.522,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 49,
-        "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 8800 Put"
+        "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 9600 Call"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 10000.0,
+        "strike_formatted": "10000",
+        "option_type": "Call",
+        "delta": 0.222,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 49,
+        "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 10000 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 400.0,
-    "stop_loss_price": 9263.5,
-    "take_profit_price": 9836.5,
-    "net_delta": 0.053,
-    "net_theta": 0.325,
-    "probability_of_profit": 0.0,
-    "var_95": 161.39,
+    "roc_percentage": 150.0,
+    "margin_required": 160.0,
+    "stop_loss_price": 9359.0,
+    "take_profit_price": 10000.0,
+    "net_delta": 0.3,
+    "net_theta": -0.86,
+    "probability_of_profit": 49.6,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 7640.0,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 7716.4,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 7792.8,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 7869.2,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 7945.6,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8022.0,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8098.4,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8174.8,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8251.2,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8327.6,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8404.0,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8480.4,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8556.8,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8633.2,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8709.6,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8786.0,
-        "pnl": -600.0
+        "pnl": -160.0
       },
       {
         "price": 8862.4,
-        "pnl": -537.6
+        "pnl": -160.0
       },
       {
         "price": 8938.8,
-        "pnl": -461.2
+        "pnl": -160.0
       },
       {
         "price": 9015.2,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9091.6,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9168.0,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9244.4,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9320.8,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9397.2,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9473.6,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9550.0,
-        "pnl": -400.0
+        "pnl": -160.0
       },
       {
         "price": 9626.4,
-        "pnl": -400.0
+        "pnl": -133.6
       },
       {
         "price": 9702.8,
-        "pnl": -400.0
+        "pnl": -57.2
       },
       {
         "price": 9779.2,
-        "pnl": -400.0
+        "pnl": 19.2
       },
       {
         "price": 9855.6,
-        "pnl": -400.0
+        "pnl": 95.6
       },
       {
         "price": 9932.0,
-        "pnl": -400.0
+        "pnl": 172.0
       },
       {
         "price": 10008.4,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10084.8,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10161.2,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10237.6,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10314.0,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10390.4,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10466.8,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10543.2,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10619.6,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10696.0,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10772.4,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10848.8,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 10925.2,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 11001.6,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 11078.0,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 11154.4,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 11230.8,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 11307.2,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 11383.6,
-        "pnl": -400.0
+        "pnl": 240.0
       },
       {
         "price": 11460.0,
-        "pnl": -400.0
+        "pnl": 240.0
       }
     ],
     "kelly_sizing": {
@@ -271,22 +271,22 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 100.0,
+      "grade": "A (Optimal)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Breakout Momentum favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-9600CE-S1x-Nov-10000CE"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 100.0,
+      "score": 84.5,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-9000PE-B1x-Nov-8800PE"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 91.7,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-9000PE-S1x-Nov-10000CE-B1x-Nov-10200CE"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -298,6 +298,15 @@
       "legs_summary": "B1x-Nov-9100CE-S1x-Nov-9800CE"
     },
     {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 70.9,
+      "grade": "B (Good)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-9000PE-S1x-Nov-10000CE-B1x-Nov-10200CE"
+    },
+    {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
       "score": 57.7,
@@ -307,22 +316,13 @@
       "legs_summary": "B1x-Nov-9550CE"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 52.3,
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 56.8,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Breakout Momentum favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-9600CE-S1x-Nov-10000CE"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 52.0,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "S1x-Nov-9000PE"
+      "legs_summary": "B1x-Nov-9600PE-S1x-Nov-9200PE"
     },
     {
       "strategy_type": "tradecraft_put",

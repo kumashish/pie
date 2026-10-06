@@ -2,34 +2,34 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 06, 18:33 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x SPY 20-Nov-2026 735 Put /  Buy 1x SPY 20-Nov-2026 720 Put | Active (Today, 18:33)  |
-| QQQ       | Oct 06, 18:33 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x QQQ 20-Nov-2026 715 Put /  Buy 1x QQQ 20-Nov-2026 705 Put | Active (Today, 18:33)  |
+| SPY       | Oct 06, 18:41 IST | 🟢 Call Debit Spread | 8.2/10    | Buy 1x SPY 20-Nov-2026 775 Call /  Sell 1x SPY 20-Nov-2026 805 Call | Active (Today, 18:41)  |
+| QQQ       | Oct 06, 18:41 IST | 🟢 Call Debit Spread | 7.2/10    | Buy 1x QQQ 20-Nov-2026 755 Call /  Sell 1x QQQ 20-Nov-2026 785 Call | Active (Today, 18:41)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ^NSEMDCP50 | Oct 06, 18:34 IST | 🟡 Credit Spread   | 3.2/10    | S1x-Nov-17950CE-B1x-Nov-18150CE | Active (Today, 18:34)  |
-| ^NSEI     | Oct 06, 18:34 IST | 🟡 Credit Spread   | 2.2/10    | S1x-Nov-23900CE-B1x-Nov-24100CE | Active (Today, 18:34)  |
-| ^BSESN    | Oct 06, 18:34 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-77000CE-B1x-Nov-77700CE | Active (Today, 18:34)  |
-| ^NSEBANK  | Oct 06, 18:34 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-57800CE-B1x-Nov-58400CE | New                    |
-| NIFTY_FIN_SERVICE.NS | Oct 06, 18:34 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-26200CE-B1x-Nov-26600CE | New                    |
+| ^NSEMDCP50 | Oct 06, 18:42 IST | 🔴 Put Debit Spread | 3.2/10    | B1x-Nov-17100PE-S1x-Nov-16450PE | Active (Today, 18:42)  |
+| ^NSEI     | Oct 06, 18:42 IST | 🔴 Put Debit Spread | 2.2/10    | B1x-Nov-22800PE-S1x-Nov-21900PE | Active (Today, 18:42)  |
+| ^BSESN    | Oct 06, 18:42 IST | 🔴 Put Debit Spread | 2.0/10    | B1x-Nov-73100PE-S1x-Nov-70200PE | Active (Today, 18:42)  |
+| ^NSEBANK  | Oct 06, 18:42 IST | 🔴 Put Debit Spread | 0.8/10    | B1x-Nov-55100PE-S1x-Nov-53000PE | New                    |
+| NIFTY_FIN_SERVICE.NS | Oct 06, 18:42 IST | 🔴 Put Debit Spread | 0.8/10    | B1x-Nov-24950PE-S1x-Nov-24000PE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 #### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| META      | Oct 06, 18:33 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 700 Put /  Buy 1x META 20-Nov-2026 675 Put | Active (Today, 18:33)  |
-| MSFT      | Oct 06, 18:33 IST | 🟡 Credit Spread   | 8.5/10    | Sell 1x MSFT 20-Nov-2026 495 Put /  Buy 1x MSFT 20-Nov-2026 485 Put | Active (Today, 18:33)  |
-| VTI       | Oct 06, 18:33 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VTI 20-Nov-2026 360 Put /  Buy 1x VTI 20-Nov-2026 355 Put | Active (Today, 18:33)  |
-| VOO       | Oct 06, 18:33 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x VOO 20-Nov-2026 670 Put /  Buy 1x VOO 20-Nov-2026 665 Put | Active (Today, 18:33)  |
-| V         | Oct 06, 18:34 IST | 🟡 Credit Spread   | 8.2/10    | Sell 1x V 20-Nov-2026 350 Put /  Buy 1x V 20-Nov-2026 345 Put | Active (Today, 18:34)  |
-| NVDA      | Oct 06, 18:33 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x NVDA 20-Nov-2026 225 Put /  Buy 1x NVDA 20-Nov-2026 220 Put | Active (Today, 18:33)  |
+| META      | Oct 06, 18:41 IST | 🟢 Call Debit Spread | 8.8/10    | Buy 1x META 20-Nov-2026 740 Call /  Sell 1x META 20-Nov-2026 770 Call | Active (Today, 18:41)  |
+| MSFT      | Oct 06, 18:41 IST | 🟢 Call Debit Spread | 8.5/10    | Buy 1x MSFT 20-Nov-2026 525 Call /  Sell 1x MSFT 20-Nov-2026 545 Call | Active (Today, 18:41)  |
+| VTI       | Oct 06, 18:41 IST | 🟢 Call Debit Spread | 8.2/10    | Buy 1x VTI 20-Nov-2026 380 Call /  Sell 1x VTI 20-Nov-2026 395 Call | Active (Today, 18:41)  |
+| VOO       | Oct 06, 18:41 IST | 🟢 Call Debit Spread | 8.2/10    | Buy 1x VOO 20-Nov-2026 710 Call /  Sell 1x VOO 20-Nov-2026 740 Call | Active (Today, 18:41)  |
+| V         | Oct 06, 18:42 IST | 🟢 Call Debit Spread | 8.2/10    | Buy 1x V 20-Nov-2026 370 Call /  Sell 1x V 20-Nov-2026 385 Call | Active (Today, 18:42)  |
+| NVDA      | Oct 06, 18:41 IST | 🟢 Call Debit Spread | 8.0/10    | Buy 1x NVDA 20-Nov-2026 240 Call /  Sell 1x NVDA 20-Nov-2026 250 Call | Active (Today, 18:41)  |
 
 #### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| DIVISLAB.NS | Oct 06, 18:36 IST | 🟡 Credit Spread   | 9.0/10    | S1x-Nov-9000PE-B1x-Nov-8800PE | Active (Today, 18:36)  |
-| ADANIPORTS.NS | Oct 06, 18:35 IST | 🟡 Credit Spread   | 8.0/10    | S1x-Nov-1700PE-B1x-Nov-1650PE | Active (Today, 18:35)  |
+| DIVISLAB.NS | Oct 06, 18:43 IST | 🟢 Call Debit Spread | 9.0/10    | B1x-Nov-9600CE-S1x-Nov-10000CE | Active (Today, 18:43)  |
+| ADANIPORTS.NS | Oct 06, 18:43 IST | 🟢 Call Debit Spread | 8.0/10    | B1x-Nov-1800CE-S1x-Nov-1850CE | Active (Today, 18:43)  |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
