@@ -62,66 +62,110 @@ def is_us_market_open(now_utc: datetime | None = None) -> bool:
 
 
 def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("docs/data")) -> None:
-    """Generate specialized README page: README_INDIA.md or README_US.md."""
+    """Generate specialized README page: README_INDIA.md or README_US.md with global cross-stock strategy inter-ranking."""
     now = datetime.now(UTC)
     symbols = INDIAN_SYMBOLS if market_type.lower() == "india" else US_SYMBOLS
     target_readme = Path("README_INDIA.md") if market_type.lower() == "india" else Path("README_US.md")
-    title = "🇮🇳 Indian Markets (NSE / BSE) Quantitative Trade Dashboard" if market_type.lower() == "india" else "🇺🇸 U.S. Markets (NYSE / NASDAQ) Quantitative Trade Dashboard"
+    title = "🇮🇳 Indian Markets (NSE / BSE) Quantitative Multi-Strategy Interleaved Leaderboard" if market_type.lower() == "india" else "🇺🇸 U.S. Markets (NYSE / NASDAQ) Quantitative Multi-Strategy Interleaved Leaderboard"
 
-    rows = []
+    # Expand all candidate strategies (Symbol x Strategy) for every symbol
+    all_candidate_entries = []
+
     for sym in symbols:
         file_key = sym.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(" ", "_")
         json_file = docs_dir / f"{file_key}.json"
         if json_file.exists():
             try:
                 data = json.loads(json_file.read_text(encoding="utf-8"))
-                rows.append(data)
+                price = data.get("last_price", 0.0)
+                regime = data.get("regime_display", "N/A")
+                ranked_strats = data.get("ranked_strategies", [])
+
+                if ranked_strats:
+                    for strat_item in ranked_strats:
+                        score_val = float(strat_item.get("score", 0.0))
+                        sdisplay = strat_item.get("strategy_display", "N/A")
+                        legs = strat_item.get("legs_summary", "") or data.get("legs_summary", "")
+
+                        if not legs and data.get("estimated_trade") and data["estimated_trade"].get("legs"):
+                            raw_legs = "<br> ".join([l["summary"] for l in data["estimated_trade"]["legs"]])
+                            legs = format_short_indian_strategy(raw_legs) if market_type.lower() == "india" else raw_legs.replace("<br>", " / ")
+                        elif legs and market_type.lower() == "india":
+                            legs = format_short_indian_strategy(legs)
+
+                        all_candidate_entries.append({
+                            "symbol": sym,
+                            "price": price,
+                            "regime": regime,
+                            "score": score_val,
+                            "strategy": sdisplay,
+                            "legs": legs,
+                            "grade": strat_item.get("grade", "N/A"),
+                            "rationale": strat_item.get("rationale", "")
+                        })
+                else:
+                    score_val = float(data.get("fit_score", 0.0))
+                    sdisplay = data.get("strategy_display", "N/A")
+                    legs = ""
+                    if data.get("estimated_trade") and data["estimated_trade"].get("legs"):
+                        raw_legs = "<br> ".join([l["summary"] for l in data["estimated_trade"]["legs"]])
+                        legs = format_short_indian_strategy(raw_legs) if market_type.lower() == "india" else raw_legs.replace("<br>", " / ")
+
+                    all_candidate_entries.append({
+                        "symbol": sym,
+                        "price": price,
+                        "regime": regime,
+                        "score": score_val,
+                        "strategy": sdisplay,
+                        "legs": legs,
+                        "grade": "N/A",
+                        "rationale": ""
+                    })
             except Exception:
                 pass
 
-    # Sort by fit_score descending
-    rows.sort(key=lambda x: x.get("fit_score", 0.0), reverse=True)
+    # Sort globally across all candidate strategies (Symbol x Strategy) in descending score order (0-100 scale)
+    all_candidate_entries.sort(key=lambda x: x["score"], reverse=True)
 
     content = f"""# {title}
 
 **Last Automated Run**: {format_ist_time(now)}
 
+> **Global Interleaved Ranking**: All candidate strategies across all target assets evaluated and ordered strictly by quantitative fit score on a **0–100% scale**.
+
 ---
 
-### 🏆 Top Quantitative {('Indian' if market_type.lower() == 'india' else 'U.S.')} Trade Recommendations
+### 🏆 Top Interleaved Multi-Strategy Opportunities (Ranked 1–30)
 
-| Symbol | Price | Market Regime | Score | Strategy | Structure / Leg Shorthand |
-| :--- | :--- | :--- | :---: | :--- | :--- |
+| Rank | Symbol | Price | Market Regime | Score / 100 | Strategy | Structure / Leg Shorthand | Grade |
+| :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |
 """
 
-    for item in rows[:25]:
-        sym = item.get("symbol", "")
-        price = item.get("last_price", 0.0)
+    for idx, item in enumerate(all_candidate_entries[:30], 1):
+        sym = item["symbol"]
+        price = item["price"]
         curr = "₹" if market_type.lower() == "india" else "$"
-        regime = item.get("regime_display", "N/A")
-        score = item.get("fit_score", 0.0)
-        strat = item.get("strategy_display", "N/A")
+        regime = item["regime"]
+        score = item["score"]
+        strat = item["strategy"]
+        leg_str = item["legs"]
+        grade = item["grade"]
 
-        leg_str = ""
-        if item.get("estimated_trade") and item["estimated_trade"].get("legs"):
-            raw = "<br> ".join([l["summary"] for l in item["estimated_trade"]["legs"]])
-            leg_str = format_short_indian_strategy(raw) if market_type.lower() == "india" else raw.replace("<br>", " / ")
-
-        content += f"| **{sym}** | {curr}{price:,.2f} | {regime} | **{score/10.0:.1f}/10** | {strat} | `{leg_str}` |\n"
+        content += f"| **#{idx}** | **{sym}** | {curr}{price:,.2f} | {regime} | **{score:.1f}%** | {strat} | `{leg_str}` | {grade} |\n"
 
     content += f"""
 ---
 
 ### 🛡️ Execution & Exit Guardrails
 - **Target DTE Window**: 30–60 DTE Target Expiration Cycle.
-- **Take Profit**: 50% max profit target for Spreads & Futures; 25% for Iron Flies & Jade Lizards.
+- **Take Profit**: 50% max profit target for Spreads, Ratio Puts & Futures; 25% for Iron Flies & Jade Lizards.
 - **21 DTE Review Gate**: Review trade at 21 DTE; close/roll if delta expands past 0.30.
 - **14 DTE Mandatory Exit**: Hard exit at 14 DTE to eliminate gamma pin risk.
 - **1:1 Stop Loss**: Close position if net loss equals 100% of initial credit collected.
 """
 
     target_readme.write_text(content, encoding="utf-8")
-    print(f"Successfully updated {target_readme}!")
+    print(f"Successfully updated {target_readme} with {len(all_candidate_entries)} unrolled candidate strategies!")
 
 
 def run_scheduled_pipeline() -> None:
