@@ -1,6 +1,6 @@
 # 🇺🇸 U.S. Markets (NYSE / NASDAQ) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 07, 12:36 IST
+**Last Automated Run**: Oct 07, 12:38 IST
 
 > **Global Interleaved Ranking**: All candidate strategies across all target assets evaluated and ordered strictly by quantitative fit score on a **0–100% scale**.
 
@@ -23,23 +23,23 @@
 | **#11** | **UNH** | $376.32 | Bull | **76.3%** | Iron Condor | `Buy 1x UNH 20-Nov-2026 345 Put /  Sell 1x UNH 20-Nov-2026 355 Put /  Sell 1x UNH 20-Nov-2026 395 Call /  Buy 1x UNH 20-Nov-2026 405 Call` | B (Good) |
 | **#12** | **TSLA** | $380.68 | Bull | **75.4%** | Iron Condor | `Buy 1x TSLA 20-Nov-2026 350 Put /  Sell 1x TSLA 20-Nov-2026 360 Put /  Sell 1x TSLA 20-Nov-2026 400 Call /  Buy 1x TSLA 20-Nov-2026 410 Call` | B (Good) |
 | **#13** | **META** | $738.88 | Strong Bull | **74.7%** | Credit Spread | `Sell 1x META 20-Nov-2026 700 Put /  Buy 1x META 20-Nov-2026 675 Put` | B (Good) |
-| **#14** | **UVXY** | $16.07 | Strong Bear | **73.4%** | Credit Spread | `Sell 1x UVXY 20-Nov-2026 17 Call /  Buy 1x UVXY 20-Nov-2026 18 Call` | B (Good) |
-| **#15** | **QCOM** | $181.03 | Bull | **73.3%** | Iron Condor | `Buy 1x QCOM 20-Nov-2026 160 Put /  Sell 1x QCOM 20-Nov-2026 170 Put /  Sell 1x QCOM 20-Nov-2026 190 Call /  Buy 1x QCOM 20-Nov-2026 200 Call` | B (Good) |
-| **#16** | **META** | $738.88 | Strong Bull | **71.9%** | Protected Future | `Buy 1x META 20-Nov-2026 738.9 Call /  Buy 1x META 20-Nov-2026 700 Put` | B (Good) |
-| **#17** | **IBM** | $221.29 | Strong Bear | **70.6%** | Credit Spread | `Sell 1x IBM 20-Nov-2026 230 Call /  Buy 1x IBM 20-Nov-2026 235 Call` | B (Good) |
-| **#18** | **DIA** | $514.56 | Neutral | **70.3%** | Butterfly | `Buy 1x DIA 20-Nov-2026 500 Call /  Sell 1x DIA 20-Nov-2026 515 Call /  Sell 1x DIA 20-Nov-2026 515 Call /  Buy 1x DIA 20-Nov-2026 530 Call` | B (Good) |
-| **#19** | **PLTR** | $192.07 | Bull | **69.4%** | Credit Spread | `Sell 1x PLTR 20-Nov-2026 180 Put /  Buy 1x PLTR 20-Nov-2026 175 Put` | B (Good) |
-| **#20** | **QQQ** | $759.66 | Bull | **69.1%** | Credit Spread | `Sell 1x QQQ 20-Nov-2026 720 Put /  Buy 1x QQQ 20-Nov-2026 710 Put` | B (Good) |
-| **#21** | **META** | $738.88 | Strong Bull | **69.1%** | Poor Mans Covered Call | `Buy 1x META 20-Nov-2026 700 Call /  Sell 1x META 20-Nov-2026 760 Call` | B (Good) |
-| **#22** | **SMCI** | $43.46 | Bull | **68.8%** | Credit Spread | `Sell 1x SMCI 20-Nov-2026 40 Put /  Buy 1x SMCI 20-Nov-2026 38 Put` | B (Good) |
-| **#23** | **MU** | $1,045.56 | Bull | **68.3%** | Credit Spread | `Sell 1x MU 20-Nov-2026 1000 Put /  Buy 1x MU 20-Nov-2026 950 Put` | B (Good) |
-| **#24** | **XLK** | $202.00 | Bull | **68.2%** | Credit Spread | `Sell 1x XLK 20-Nov-2026 190 Put /  Buy 1x XLK 20-Nov-2026 185 Put` | B (Good) |
-| **#25** | **AMAT** | $530.27 | Strong Bull | **68.2%** | Credit Spread | `Sell 1x AMAT 20-Nov-2026 500 Put /  Buy 1x AMAT 20-Nov-2026 480 Put` | B (Good) |
-| **#26** | **XLF** | $54.01 | Bear | **68.1%** | Iron Condor | `Buy 1x XLF 20-Nov-2026 50 Put /  Sell 1x XLF 20-Nov-2026 51 Put /  Sell 1x XLF 20-Nov-2026 57 Call /  Buy 1x XLF 20-Nov-2026 58 Call` | B (Good) |
-| **#27** | **MSTR** | $164.55 | Bull | **68.1%** | Iron Condor | `Buy 1x MSTR 20-Nov-2026 140 Put /  Sell 1x MSTR 20-Nov-2026 150 Put /  Sell 1x MSTR 20-Nov-2026 180 Call /  Buy 1x MSTR 20-Nov-2026 190 Call` | B (Good) |
-| **#28** | **META** | $738.88 | Strong Bull | **67.7%** | Ratio Put Spread | `Buy 1x META 20-Nov-2026 740 Put /  Sell 1x META 20-Nov-2026 700 Put /  Sell 1x META 20-Nov-2026 700 Put` | B (Good) |
-| **#29** | **AMZN** | $256.29 | Bull | **67.3%** | Iron Condor | `Buy 1x AMZN 20-Nov-2026 235 Put /  Sell 1x AMZN 20-Nov-2026 240 Put /  Sell 1x AMZN 20-Nov-2026 270 Call /  Buy 1x AMZN 20-Nov-2026 275 Call` | B (Good) |
-| **#30** | **AAPL** | $333.63 | Bull | **67.2%** | Credit Spread | `Sell 1x AAPL 20-Nov-2026 320 Put /  Buy 1x AAPL 20-Nov-2026 315 Put` | B (Good) |
+| **#14** | **QCOM** | $181.03 | Bull | **73.3%** | Iron Condor | `Buy 1x QCOM 20-Nov-2026 160 Put /  Sell 1x QCOM 20-Nov-2026 170 Put /  Sell 1x QCOM 20-Nov-2026 190 Call /  Buy 1x QCOM 20-Nov-2026 200 Call` | B (Good) |
+| **#15** | **META** | $738.88 | Strong Bull | **71.9%** | Protected Future | `Buy 1x META 20-Nov-2026 738.9 Call /  Buy 1x META 20-Nov-2026 700 Put` | B (Good) |
+| **#16** | **DIA** | $514.56 | Neutral | **70.3%** | Butterfly | `Buy 1x DIA 20-Nov-2026 500 Call /  Sell 1x DIA 20-Nov-2026 515 Call /  Sell 1x DIA 20-Nov-2026 515 Call /  Buy 1x DIA 20-Nov-2026 530 Call` | B (Good) |
+| **#17** | **PLTR** | $192.07 | Bull | **69.4%** | Credit Spread | `Sell 1x PLTR 20-Nov-2026 180 Put /  Buy 1x PLTR 20-Nov-2026 175 Put` | B (Good) |
+| **#18** | **QQQ** | $759.66 | Bull | **69.1%** | Credit Spread | `Sell 1x QQQ 20-Nov-2026 720 Put /  Buy 1x QQQ 20-Nov-2026 710 Put` | B (Good) |
+| **#19** | **META** | $738.88 | Strong Bull | **69.1%** | Poor Mans Covered Call | `Buy 1x META 20-Nov-2026 700 Call /  Sell 1x META 20-Nov-2026 760 Call` | B (Good) |
+| **#20** | **SMCI** | $43.46 | Bull | **68.8%** | Credit Spread | `Sell 1x SMCI 20-Nov-2026 40 Put /  Buy 1x SMCI 20-Nov-2026 38 Put` | B (Good) |
+| **#21** | **MU** | $1,045.56 | Bull | **68.3%** | Credit Spread | `Sell 1x MU 20-Nov-2026 1000 Put /  Buy 1x MU 20-Nov-2026 950 Put` | B (Good) |
+| **#22** | **XLK** | $202.00 | Bull | **68.2%** | Credit Spread | `Sell 1x XLK 20-Nov-2026 190 Put /  Buy 1x XLK 20-Nov-2026 185 Put` | B (Good) |
+| **#23** | **AMAT** | $530.27 | Strong Bull | **68.2%** | Credit Spread | `Sell 1x AMAT 20-Nov-2026 500 Put /  Buy 1x AMAT 20-Nov-2026 480 Put` | B (Good) |
+| **#24** | **XLF** | $54.01 | Bear | **68.1%** | Iron Condor | `Buy 1x XLF 20-Nov-2026 50 Put /  Sell 1x XLF 20-Nov-2026 51 Put /  Sell 1x XLF 20-Nov-2026 57 Call /  Buy 1x XLF 20-Nov-2026 58 Call` | B (Good) |
+| **#25** | **MSTR** | $164.55 | Bull | **68.1%** | Iron Condor | `Buy 1x MSTR 20-Nov-2026 140 Put /  Sell 1x MSTR 20-Nov-2026 150 Put /  Sell 1x MSTR 20-Nov-2026 180 Call /  Buy 1x MSTR 20-Nov-2026 190 Call` | B (Good) |
+| **#26** | **META** | $738.88 | Strong Bull | **67.7%** | Ratio Put Spread | `Buy 1x META 20-Nov-2026 740 Put /  Sell 1x META 20-Nov-2026 700 Put /  Sell 1x META 20-Nov-2026 700 Put` | B (Good) |
+| **#27** | **AMZN** | $256.29 | Bull | **67.3%** | Iron Condor | `Buy 1x AMZN 20-Nov-2026 235 Put /  Sell 1x AMZN 20-Nov-2026 240 Put /  Sell 1x AMZN 20-Nov-2026 270 Call /  Buy 1x AMZN 20-Nov-2026 275 Call` | B (Good) |
+| **#28** | **AAPL** | $333.63 | Bull | **67.2%** | Credit Spread | `Sell 1x AAPL 20-Nov-2026 320 Put /  Buy 1x AAPL 20-Nov-2026 315 Put` | B (Good) |
+| **#29** | **AMAT** | $530.27 | Strong Bull | **67.2%** | Poor Mans Covered Call | `Buy 1x AMAT 20-Nov-2026 505 Call /  Sell 1x AMAT 20-Nov-2026 545 Call` | B (Good) |
+| **#30** | **JPM** | $331.28 | Neutral | **67.1%** | Butterfly | `Buy 1x JPM 20-Nov-2026 325 Call /  Sell 1x JPM 20-Nov-2026 330 Call /  Sell 1x JPM 20-Nov-2026 330 Call /  Buy 1x JPM 20-Nov-2026 340 Call` | B (Good) |
 
 ---
 

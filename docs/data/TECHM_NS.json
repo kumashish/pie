@@ -8,7 +8,7 @@
   "fit_score": 20.0,
   "confidence_grade": "C",
   "confidence_percentage": 20.0,
-  "vix": 13.77,
+  "vix": 13.78,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -35,7 +35,7 @@
         "strike": 1600.0,
         "strike_formatted": "1600",
         "option_type": "Call",
-        "delta": 0.122,
+        "delta": 0.123,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
@@ -48,7 +48,7 @@
     "margin_required": 50.0,
     "stop_loss_price": 1453.06,
     "take_profit_price": 1542.94,
-    "net_delta": -0.177,
+    "net_delta": -0.176,
     "net_theta": 0.147,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
@@ -278,15 +278,6 @@
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-1550CE / B1x-Nov-1600CE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 47.0,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-1500PE / S1x-Nov-1450PE"
     },
     {
       "strategy_type": "iron_condor",

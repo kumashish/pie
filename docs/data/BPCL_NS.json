@@ -8,277 +8,268 @@
   "fit_score": 17.5,
   "confidence_grade": "C",
   "confidence_percentage": 17.5,
-  "vix": 13.76,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 13.77,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (66.8% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (59.9% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 310.0,
-        "strike_formatted": "310",
-        "option_type": "Call",
-        "delta": 0.225,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x BPCL.NS 24-Nov-2026 310 Call"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 315.0,
-        "strike_formatted": "315",
-        "option_type": "Call",
-        "delta": 0.141,
+        "strike": 295.0,
+        "strike_formatted": "295",
+        "option_type": "Put",
+        "delta": -0.406,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Buy 1x BPCL.NS 24-Nov-2026 315 Call"
+        "summary": "Buy 1x BPCL.NS 24-Nov-2026 295 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 285.0,
+        "strike_formatted": "285",
+        "option_type": "Put",
+        "delta": -0.177,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 48,
+        "summary": "Sell 1x BPCL.NS 24-Nov-2026 285 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 65.0,
-    "margin_required": 10.0,
-    "stop_loss_price": 287.31,
-    "take_profit_price": 305.09,
-    "net_delta": -0.084,
-    "net_theta": 0.015,
-    "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "roc_percentage": 150.0,
+    "margin_required": 4.0,
+    "stop_loss_price": 302.12,
+    "take_profit_price": 285.0,
+    "net_delta": -0.229,
+    "net_theta": -0.01,
+    "probability_of_profit": 43.0,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
         "price": 236.96,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 239.33,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 241.7,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 244.07,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 246.44,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 248.81,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 251.18,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 253.55,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 255.92,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 258.29,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 260.66,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 263.03,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 265.4,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 267.76,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 270.13,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 272.5,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 274.87,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 277.24,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 279.61,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 281.98,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 284.35,
-        "pnl": -10.0
+        "pnl": 6.0
       },
       {
         "price": 286.72,
-        "pnl": -10.0
+        "pnl": 4.28
       },
       {
         "price": 289.09,
-        "pnl": -10.0
+        "pnl": 1.91
       },
       {
         "price": 291.46,
-        "pnl": -10.0
+        "pnl": -0.46
       },
       {
         "price": 293.83,
-        "pnl": -10.0
+        "pnl": -2.83
       },
       {
         "price": 296.2,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 298.57,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 300.94,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 303.31,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 305.68,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 308.05,
-        "pnl": -10.0
+        "pnl": -4.0
       },
       {
         "price": 310.42,
-        "pnl": -10.42
+        "pnl": -4.0
       },
       {
         "price": 312.79,
-        "pnl": -12.79
+        "pnl": -4.0
       },
       {
         "price": 315.16,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 317.53,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 319.9,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 322.27,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 324.64,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 327.0,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 329.37,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 331.74,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 334.11,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 336.48,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 338.85,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 341.22,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 343.59,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 345.96,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 348.33,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 350.7,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 353.07,
-        "pnl": -15.0
+        "pnl": -4.0
       },
       {
         "price": 355.44,
-        "pnl": -15.0
+        "pnl": -4.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.734,
+      "win_probability": 0.71,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2606,
+      "half_kelly_fraction": 0.239,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "ranked_strategies": [
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 66.8,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-310CE / B1x-Nov-315CE"
-    },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
@@ -287,6 +278,15 @@
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "B1x-Nov-295PE / S1x-Nov-285PE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 56.7,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-310CE / B1x-Nov-315CE"
     },
     {
       "strategy_type": "cash_swing_short",
