@@ -149,7 +149,7 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
         curr = "₹" if market_type.lower() == "india" else "$"
         regime = item["regime"]
         score_out_of_10 = item["score"] / 10.0
-        score_str = f"{score_out_of_10:.2f}".rstrip('0').rstrip('.') if (score_out_of_10 * 100) % 10 != 0 else f"{score_out_of_10:.1f}"
+        score_str = f"{score_out_of_10:.1f}"
         strat = item["strategy"]
         leg_str = item["legs"]
         grade = item["grade"]
