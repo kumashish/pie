@@ -366,7 +366,7 @@ def score_all_strategies(
         elif stype in bearish_types and not weekly_bearish:
             score_val *= 0.85
 
-        final_score = round(min(98.0, max(0.0, score_val)), 1)
+        final_score = round(min(99.9, max(0.0, score_val)), 1)
         grade = "A (Optimal)" if final_score >= 80 else ("B (Good)" if final_score >= 60 else ("C (Moderate)" if final_score >= 40 else "F (Unsuited)"))
         results[stype] = StrategyFitScore(
             strategy=stype,
