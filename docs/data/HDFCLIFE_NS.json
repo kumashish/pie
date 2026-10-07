@@ -1,6 +1,6 @@
 {
   "symbol": "HDFCLIFE.NS",
-  "last_price": 545.55,
+  "last_price": 544.55,
   "as_of": "2026-10-07 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,12 +8,12 @@
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 13.78,
+  "vix": 13.79,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (54.7% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (55.0% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,7 +23,7 @@
         "strike": 505.0,
         "strike_formatted": "505",
         "option_type": "Put",
-        "delta": -0.044,
+        "delta": -0.048,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
@@ -35,7 +35,7 @@
         "strike": 520.0,
         "strike_formatted": "520",
         "option_type": "Put",
-        "delta": -0.132,
+        "delta": -0.14,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
@@ -47,7 +47,7 @@
         "strike": 570.0,
         "strike_formatted": "570",
         "option_type": "Call",
-        "delta": 0.236,
+        "delta": 0.225,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
@@ -59,7 +59,7 @@
         "strike": 585.0,
         "strike_formatted": "585",
         "option_type": "Call",
-        "delta": 0.107,
+        "delta": 0.101,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
@@ -70,224 +70,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 529.18,
-    "take_profit_price": 561.92,
-    "net_delta": -0.041,
-    "net_theta": 0.073,
+    "stop_loss_price": 528.21,
+    "take_profit_price": 560.89,
+    "net_delta": -0.032,
+    "net_theta": 0.071,
     "probability_of_profit": 0.0,
     "var_95": 15.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 436.44,
+        "price": 435.64,
         "pnl": -35.0
       },
       {
-        "price": 440.8,
+        "price": 440.0,
         "pnl": -35.0
       },
       {
-        "price": 445.17,
+        "price": 444.35,
         "pnl": -35.0
       },
       {
-        "price": 449.53,
+        "price": 448.71,
         "pnl": -35.0
       },
       {
-        "price": 453.9,
+        "price": 453.07,
         "pnl": -35.0
       },
       {
-        "price": 458.26,
+        "price": 457.42,
         "pnl": -35.0
       },
       {
-        "price": 462.63,
+        "price": 461.78,
         "pnl": -35.0
       },
       {
-        "price": 466.99,
+        "price": 466.13,
         "pnl": -35.0
       },
       {
-        "price": 471.36,
+        "price": 470.49,
         "pnl": -35.0
       },
       {
-        "price": 475.72,
+        "price": 474.85,
         "pnl": -35.0
       },
       {
-        "price": 480.08,
+        "price": 479.2,
         "pnl": -35.0
       },
       {
-        "price": 484.45,
+        "price": 483.56,
         "pnl": -35.0
       },
       {
-        "price": 488.81,
+        "price": 487.92,
         "pnl": -35.0
       },
       {
-        "price": 493.18,
+        "price": 492.27,
         "pnl": -35.0
       },
       {
-        "price": 497.54,
+        "price": 496.63,
         "pnl": -35.0
       },
       {
-        "price": 501.91,
+        "price": 500.99,
         "pnl": -35.0
       },
       {
-        "price": 506.27,
-        "pnl": -33.73
+        "price": 505.34,
+        "pnl": -34.66
       },
       {
-        "price": 510.63,
-        "pnl": -29.37
+        "price": 509.7,
+        "pnl": -30.3
       },
       {
-        "price": 515.0,
-        "pnl": -25.0
+        "price": 514.06,
+        "pnl": -25.94
       },
       {
-        "price": 519.36,
-        "pnl": -20.64
+        "price": 518.41,
+        "pnl": -21.59
       },
       {
-        "price": 523.73,
+        "price": 522.77,
         "pnl": -20.0
       },
       {
-        "price": 528.09,
+        "price": 527.12,
         "pnl": -20.0
       },
       {
-        "price": 532.46,
+        "price": 531.48,
         "pnl": -20.0
       },
       {
-        "price": 536.82,
+        "price": 535.84,
         "pnl": -20.0
       },
       {
-        "price": 541.19,
+        "price": 540.19,
         "pnl": -20.0
       },
       {
-        "price": 545.55,
+        "price": 544.55,
         "pnl": -20.0
       },
       {
-        "price": 549.91,
+        "price": 548.91,
         "pnl": -20.0
       },
       {
-        "price": 554.28,
+        "price": 553.26,
         "pnl": -20.0
       },
       {
-        "price": 558.64,
+        "price": 557.62,
         "pnl": -20.0
       },
       {
-        "price": 563.01,
+        "price": 561.98,
         "pnl": -20.0
       },
       {
-        "price": 567.37,
+        "price": 566.33,
         "pnl": -20.0
       },
       {
-        "price": 571.74,
-        "pnl": -21.74
+        "price": 570.69,
+        "pnl": -20.69
       },
       {
-        "price": 576.1,
-        "pnl": -26.1
+        "price": 575.04,
+        "pnl": -25.04
       },
       {
-        "price": 580.47,
-        "pnl": -30.47
+        "price": 579.4,
+        "pnl": -29.4
       },
       {
-        "price": 584.83,
-        "pnl": -34.83
+        "price": 583.76,
+        "pnl": -33.76
       },
       {
-        "price": 589.19,
+        "price": 588.11,
         "pnl": -35.0
       },
       {
-        "price": 593.56,
+        "price": 592.47,
         "pnl": -35.0
       },
       {
-        "price": 597.92,
+        "price": 596.83,
         "pnl": -35.0
       },
       {
-        "price": 602.29,
+        "price": 601.18,
         "pnl": -35.0
       },
       {
-        "price": 606.65,
+        "price": 605.54,
         "pnl": -35.0
       },
       {
-        "price": 611.02,
+        "price": 609.9,
         "pnl": -35.0
       },
       {
-        "price": 615.38,
+        "price": 614.25,
         "pnl": -35.0
       },
       {
-        "price": 619.74,
+        "price": 618.61,
         "pnl": -35.0
       },
       {
-        "price": 624.11,
+        "price": 622.97,
         "pnl": -35.0
       },
       {
-        "price": 628.47,
+        "price": 627.32,
         "pnl": -35.0
       },
       {
-        "price": 632.84,
+        "price": 631.68,
         "pnl": -35.0
       },
       {
-        "price": 637.2,
+        "price": 636.03,
         "pnl": -35.0
       },
       {
-        "price": 641.57,
+        "price": 640.39,
         "pnl": -35.0
       },
       {
-        "price": 645.93,
+        "price": 644.75,
         "pnl": -35.0
       },
       {
-        "price": 650.3,
+        "price": 649.1,
         "pnl": -35.0
       },
       {
-        "price": 654.66,
+        "price": 653.46,
         "pnl": -35.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.691,
+      "win_probability": 0.693,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2219,
+      "half_kelly_fraction": 0.2237,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 54.7,
+      "score": 55.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 53.8,
+      "score": 53.7,
       "grade": "C (Moderate)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -319,7 +319,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-545.5PE"
+      "legs_summary": "S1x-Nov-544.5PE"
     },
     {
       "strategy_type": "put_debit_spread",
@@ -333,7 +333,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 43.4,
+      "score": 43.6,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -341,15 +341,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "537.11",
-    "EMA50": "543.00",
-    "EMA100": "561.90",
-    "EMA200": "601.35",
-    "RSI(14)": "54.26",
+    "EMA20": "537.01",
+    "EMA50": "542.96",
+    "EMA100": "561.88",
+    "EMA200": "601.34",
+    "RSI(14)": "53.78",
     "ATR(14)": "13.60",
     "ADX(14)": "18.82",
-    "BB(20,2)": "0.65",
-    "P_SHAPE(20)": "43.80"
+    "BB(20,2)": "0.63",
+    "P_SHAPE(20)": "43.76"
   },
   "rules": [
     {

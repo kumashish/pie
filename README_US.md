@@ -1,6 +1,6 @@
 # 🇺🇸 U.S. Markets (NYSE / NASDAQ) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 07, 12:38 IST
+**Last Automated Run**: Oct 07, 12:48 IST
 
 > **Global Interleaved Ranking**: All candidate strategies across all target assets evaluated and ordered strictly by quantitative fit score on a **0–100% scale**.
 

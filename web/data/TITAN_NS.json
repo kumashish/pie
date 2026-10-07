@@ -1,6 +1,6 @@
 {
   "symbol": "TITAN.NS",
-  "last_price": 4376.5,
+  "last_price": 4374.4,
   "as_of": "2026-10-07 03:45:00",
   "regime": "neutral",
   "regime_display": "Neutral",
@@ -8,7 +8,7 @@
   "fit_score": 42.5,
   "confidence_grade": "C",
   "confidence_percentage": 42.5,
-  "vix": 13.8,
+  "vix": 13.79,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -20,267 +20,267 @@
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 4100.0,
-        "strike_formatted": "4100",
+        "strike": 4050.0,
+        "strike_formatted": "4050",
         "option_type": "Put",
-        "delta": -0.072,
+        "delta": -0.045,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4100 Put"
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4050 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 4200.0,
-        "strike_formatted": "4200",
+        "strike": 4150.0,
+        "strike_formatted": "4150",
         "option_type": "Put",
-        "delta": -0.164,
+        "delta": -0.113,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4200 Put"
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4150 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 4600.0,
-        "strike_formatted": "4600",
+        "strike": 4550.0,
+        "strike_formatted": "4550",
         "option_type": "Call",
-        "delta": 0.201,
+        "delta": 0.264,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4600 Call"
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4550 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 4700.0,
-        "strike_formatted": "4700",
+        "strike": 4650.0,
+        "strike_formatted": "4650",
         "option_type": "Call",
-        "delta": 0.102,
+        "delta": 0.143,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4700 Call"
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4650 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 150.0,
-    "stop_loss_price": 4245.2,
-    "take_profit_price": 4507.8,
-    "net_delta": -0.007,
-    "net_theta": 0.483,
+    "stop_loss_price": 4243.17,
+    "take_profit_price": 4505.63,
+    "net_delta": -0.053,
+    "net_theta": 0.48,
     "probability_of_profit": 0.0,
     "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 3501.2,
+        "price": 3499.52,
         "pnl": -250.0
       },
       {
-        "price": 3536.21,
+        "price": 3534.52,
         "pnl": -250.0
       },
       {
-        "price": 3571.22,
+        "price": 3569.51,
         "pnl": -250.0
       },
       {
-        "price": 3606.24,
+        "price": 3604.51,
         "pnl": -250.0
       },
       {
-        "price": 3641.25,
+        "price": 3639.5,
         "pnl": -250.0
       },
       {
-        "price": 3676.26,
+        "price": 3674.5,
         "pnl": -250.0
       },
       {
-        "price": 3711.27,
+        "price": 3709.49,
         "pnl": -250.0
       },
       {
-        "price": 3746.28,
+        "price": 3744.49,
         "pnl": -250.0
       },
       {
-        "price": 3781.3,
+        "price": 3779.48,
         "pnl": -250.0
       },
       {
-        "price": 3816.31,
+        "price": 3814.48,
         "pnl": -250.0
       },
       {
-        "price": 3851.32,
+        "price": 3849.47,
         "pnl": -250.0
       },
       {
-        "price": 3886.33,
+        "price": 3884.47,
         "pnl": -250.0
       },
       {
-        "price": 3921.34,
+        "price": 3919.46,
         "pnl": -250.0
       },
       {
-        "price": 3956.36,
+        "price": 3954.46,
         "pnl": -250.0
       },
       {
-        "price": 3991.37,
+        "price": 3989.45,
         "pnl": -250.0
       },
       {
-        "price": 4026.38,
+        "price": 4024.45,
         "pnl": -250.0
       },
       {
-        "price": 4061.39,
-        "pnl": -250.0
+        "price": 4059.44,
+        "pnl": -240.56
       },
       {
-        "price": 4096.4,
-        "pnl": -250.0
+        "price": 4094.44,
+        "pnl": -205.56
       },
       {
-        "price": 4131.42,
-        "pnl": -218.58
+        "price": 4129.43,
+        "pnl": -170.57
       },
       {
-        "price": 4166.43,
-        "pnl": -183.57
-      },
-      {
-        "price": 4201.44,
+        "price": 4164.43,
         "pnl": -150.0
       },
       {
-        "price": 4236.45,
+        "price": 4199.42,
         "pnl": -150.0
       },
       {
-        "price": 4271.46,
+        "price": 4234.42,
         "pnl": -150.0
       },
       {
-        "price": 4306.48,
+        "price": 4269.41,
         "pnl": -150.0
       },
       {
-        "price": 4341.49,
+        "price": 4304.41,
         "pnl": -150.0
       },
       {
-        "price": 4376.5,
+        "price": 4339.4,
         "pnl": -150.0
       },
       {
-        "price": 4411.51,
+        "price": 4374.4,
         "pnl": -150.0
       },
       {
-        "price": 4446.52,
+        "price": 4409.4,
         "pnl": -150.0
       },
       {
-        "price": 4481.54,
+        "price": 4444.39,
         "pnl": -150.0
       },
       {
-        "price": 4516.55,
+        "price": 4479.39,
         "pnl": -150.0
       },
       {
-        "price": 4551.56,
+        "price": 4514.38,
         "pnl": -150.0
       },
       {
-        "price": 4586.57,
+        "price": 4549.38,
         "pnl": -150.0
       },
       {
-        "price": 4621.58,
-        "pnl": -171.58
+        "price": 4584.37,
+        "pnl": -184.37
       },
       {
-        "price": 4656.6,
-        "pnl": -206.6
+        "price": 4619.37,
+        "pnl": -219.37
       },
       {
-        "price": 4691.61,
-        "pnl": -241.61
-      },
-      {
-        "price": 4726.62,
+        "price": 4654.36,
         "pnl": -250.0
       },
       {
-        "price": 4761.63,
+        "price": 4689.36,
         "pnl": -250.0
       },
       {
-        "price": 4796.64,
+        "price": 4724.35,
         "pnl": -250.0
       },
       {
-        "price": 4831.66,
+        "price": 4759.35,
         "pnl": -250.0
       },
       {
-        "price": 4866.67,
+        "price": 4794.34,
         "pnl": -250.0
       },
       {
-        "price": 4901.68,
+        "price": 4829.34,
         "pnl": -250.0
       },
       {
-        "price": 4936.69,
+        "price": 4864.33,
         "pnl": -250.0
       },
       {
-        "price": 4971.7,
+        "price": 4899.33,
         "pnl": -250.0
       },
       {
-        "price": 5006.72,
+        "price": 4934.32,
         "pnl": -250.0
       },
       {
-        "price": 5041.73,
+        "price": 4969.32,
         "pnl": -250.0
       },
       {
-        "price": 5076.74,
+        "price": 5004.31,
         "pnl": -250.0
       },
       {
-        "price": 5111.75,
+        "price": 5039.31,
         "pnl": -250.0
       },
       {
-        "price": 5146.76,
+        "price": 5074.3,
         "pnl": -250.0
       },
       {
-        "price": 5181.78,
+        "price": 5109.3,
         "pnl": -250.0
       },
       {
-        "price": 5216.79,
+        "price": 5144.29,
         "pnl": -250.0
       },
       {
-        "price": 5251.8,
+        "price": 5179.29,
+        "pnl": -250.0
+      },
+      {
+        "price": 5214.28,
+        "pnl": -250.0
+      },
+      {
+        "price": 5249.28,
         "pnl": -250.0
       }
     ],
@@ -301,7 +301,7 @@
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4100PE / S1x-Nov-4200PE / S1x-Nov-4600CE / B1x-Nov-4700CE"
+      "legs_summary": "B1x-Nov-4050PE / S1x-Nov-4150PE / S1x-Nov-4550CE / B1x-Nov-4650CE"
     },
     {
       "strategy_type": "credit_spread",
@@ -310,7 +310,7 @@
       "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-4600CE / B1x-Nov-4700CE"
+      "legs_summary": "S1x-Nov-4550CE / B1x-Nov-4650CE"
     },
     {
       "strategy_type": "butterfly",
@@ -319,7 +319,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4250CE / S1x-Nov-4400CE / S1x-Nov-4400CE / B1x-Nov-4500CE"
+      "legs_summary": "B1x-Nov-4250CE / S1x-Nov-4350CE / S1x-Nov-4350CE / B1x-Nov-4500CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
@@ -328,7 +328,7 @@
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4250CE / S1x-Nov-4400CE / S1x-Nov-4400CE / B1x-Nov-4600CE"
+      "legs_summary": "B1x-Nov-4250CE / S1x-Nov-4350CE / S1x-Nov-4350CE / B1x-Nov-4600CE"
     },
     {
       "strategy_type": "call_debit_spread",
@@ -337,7 +337,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-4400CE / S1x-Nov-4550CE"
+      "legs_summary": "B1x-Nov-4350CE / S1x-Nov-4500CE"
     },
     {
       "strategy_type": "iron_butterfly",
@@ -346,7 +346,7 @@
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-4150PE / S1x-Nov-4400PE / S1x-Nov-4400CE / B1x-Nov-4600CE"
+      "legs_summary": "B1x-Nov-4150PE / S1x-Nov-4350PE / S1x-Nov-4350CE / B1x-Nov-4600CE"
     },
     {
       "strategy_type": "ratio_put_spread",
@@ -355,7 +355,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "B1x-Nov-4400PE / S1x-Nov-4200PE / S1x-Nov-4200PE"
+      "legs_summary": "B1x-Nov-4350PE / S1x-Nov-4150PE / S1x-Nov-4150PE"
     },
     {
       "strategy_type": "protected_future",
@@ -364,7 +364,7 @@
       "grade": "C (Moderate)",
       "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-4376.5CE / B1x-Nov-4200PE"
+      "legs_summary": "B1x-Nov-4374.4CE / B1x-Nov-4150PE"
     },
     {
       "strategy_type": "covered_future",
@@ -373,18 +373,18 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-4376.5CE / S1x-Nov-4600CE"
+      "legs_summary": "B1x-Nov-4374.4CE / S1x-Nov-4550CE"
     }
   ],
   "indicators": {
-    "EMA20": "4708.07",
-    "EMA50": "4787.93",
-    "EMA100": "4688.06",
-    "EMA200": "4455.86",
-    "RSI(14)": "24.57",
+    "EMA20": "4707.87",
+    "EMA50": "4787.85",
+    "EMA100": "4688.02",
+    "EMA200": "4455.84",
+    "RSI(14)": "24.50",
     "ATR(14)": "89.63",
     "ADX(14)": "37.91",
-    "BB(20,2)": "-0.00",
+    "BB(20,2)": "-0.01",
     "P_SHAPE(20)": "65.46"
   },
   "rules": [
@@ -468,6 +468,13 @@
   ],
   "news": [
     {
+      "title": "Titan Company shares in focus after Q2 business update. What is Nomura saying?",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbU9fLUZ2dDJPVnY2a0ZaSkhpUXVyeG5RSVE5YmV3LUdzSEpkbTVtR2M4bjczWlJNNDBFek15OEx1c0h5Y1hueXJjN3VQMFNJMGtESmZ4RjFqUEkwOFp0c01vSkYwdHpvRGhwVF9qczd2eTRKaV9OTHdRSDdITEoxMnN5UUtoTl9weEt2WVBCWjVNTWFFVV9lUGVHWkdYa3BDM1FmeGxXZmctMmhIOUFSVjJucEIwOFRCWWluYV9tQWdQbFBBckh3REoxMEU5YklkUm41WVBwZG9pSlV0WlRVRThkRDR4czJucGlPeEpXUHc?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Titan stock crashes over 4% as Q2 jewellery growth misses some estimates; brokerages retain bullish calls",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOQzMxQnNOOVUwbUFTdC1WNFR3bTdGejlBMy12Vi1vcEtOeE03eVd6UlJyVTkzN3MxN1hzUFZ4ZHlWc21uaEo0elVJN05ITzIyNjhleEpkcHMwRzFBREtNc2tmS0drRlJVLVZXdGZsSUxISk43UGVVR2d2YURsSmdlNUpFcjhtSHk0TFRsY21kaHhiODRTeDE2LUMyVXJQWTR3R2RDQ1VsSjc5a3N3ZDZ0a0ttS1JZanJnVmNJMC1hZUlFazJOR2ZaNzFXdUh3X29FNlN5RHZaOHFwSDdhbEtXelM4SUc0ZDRTQ01zQmc3TG1nbGhGTkFFRE5RZDbSAYICQVVfeXFMUHZvcHI0RHZLekdtT0tZOHI5NV9OSzM4dkFYaHJJMUZaWElRNlZEYnFxd1NwM0VHT25JVVVXV2dDM2pmMzZRM0w4a09ONTNxQmdXVENpSlZsZ01id19wY2ZNZnVPUFBqMFpMdlczUU4wQWxteFdaeE83WXZyM0pmMkU3bnNvTEY5Y2pocGozU2JRdlMwbkRITTJZdzNibjNjc2l5NkkxTzZUZWpVU3hMYXIxUkswcGdnR3JYLW40X2FBYmNCNmxZdzdDWmljM3FyYXpsaTh6VFhCOC1kTjBUZFVIUHgzVlN0bmdnZ3c4dDVRSUFFSzFCX1ZneF8zZnNFYVN3?oc=5",
@@ -501,13 +508,6 @@
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVVVnU2k3T1lKeWpmQXdISnZkXzJPdFdqWUlpamFBMnZIWlpSUGRYamUtQURZM3ZxaHctZk43TnQ5eGp6U1lYd3RiWDJXNnlLUEJHN3VzXzBTaXQ2Qm50c2tRMk04bUxwV2ZtRDZDYmhSY1lFQTZhUlRrdWZkYUQ2Y3gzZTZPaUxyLVhna0dBVmw4cTlFcmpMbWQzTFRESDFBMTZycExlT3Z0SWtjODZLeW5GRjhpRm5OdDYzRXpzaThuUXdIMDNXbUlfZERyUdIB0wFBVV95cUxOOUhMd0haTTVpUFQyTVFMSDlaREJ1Sks2dU94c1ptY21Tem5xb3VBYjRBME9uSEYxbm1OVzVOeWJNaWN0YzZRcmJacDJtajVaY1JXX3gwUENHcm45MDlTUnZOLTJhelIzZFdVSHNDMlFJSFgzZ2xDYXgwSVpyWU16QXNHbXVlRVNzYmJUckZ3NHlvVmxPODd6SmtKSmc0QmRvMm5tV1JTMFRIc05VWFg4Q19fcUp6aExkcUN4MUN4RjhfS2Fia1R2RVhZU01vcDFrYUln?oc=5",
       "published_at": "Tue, 06 Oct 2026",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Titan Consumer business grows 25%, adds 78 stores in Q2",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUzdpVVFQcDR3c3VYNDQxeWg1T0doUlNBQ2xNNHgtMVRfSjVhXzFFOVR6Nlc5dFh5RVpwaVBKXzZJT290Rkx1aEVqTG5tSkw2Qk5HbDBpaS1kdEcxdnBCTEo2V3otMy1tZ0draVBiZ2E2Tzd2c1hHb3ZuUW5Jd1BVWFJGamJlUnhZQ3VLUXhBOUpfekdEUjRGeXZmeEpCc1dQUGJoeWZxTVQ4M1J2Q3podlBDMFozOWtuNFlEMWs4RTNEaS1IRlo3VXBZTnpSQ3lsQjBSNU9mRXFMQU8wemRIbHphZmdmemxLSHVyQVFpUnhLSGR2NnVGcTJBdXREQmhN0gH6AUFVX3lxTE9kTWdwU19BZmpLLUxiUk92dkJ4bGZsZ3l1QzhncXBqTnVsZkxlcXczVUdsS1RjVFVGNW5kaHV5QXlXa1hOOTJkamhYUUpBQjNocmtVaEotTFh5MjRiNW9JWGhmalVwR0k1N2Nfb2FBU3Q5WGVLZ2VYeGFIN3pMRlF2dWl5d2VNT1VZTmNWQmRIMnptRmR2MDAtT1VoYlB3bjNhT1NsV3gwaURNVGhZRXZGcFotOHl3dFNEakpIMnNoRzdhS01iYVdQblRZdmpBX2xTRlpLbG8yUTdQQUtXQzYtNzhrcTB4X0FoTjUtYmdENERFeGdjaTdtOHc?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "neutral"
     }
   ]
 }
