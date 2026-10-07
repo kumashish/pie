@@ -36,9 +36,8 @@
 | 102 | 102 | 0 | N/A | N/A | N/A | N/A |
 <!-- MARKET-SNAPSHOT-END -->
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Python](https://img.shields.io/badge/python-3.12-blue)
-![License](https://img.shields.io/badge/license-MIT-blue)
+[![🇮🇳 Indian Market Dashboard](https://img.shields.io/badge/Market-🇮🇳_India_NSE/BSE-orange?style=for-the-badge)](README_INDIA.md)
+[![🇺🇸 U.S. Market Dashboard](https://img.shields.io/badge/Market-🇺🇸_US_NYSE/NASDAQ-blue?style=for-the-badge)](README_US.md)
 
 # TradeCraft | Quantitative Stock & Options Engine
 
