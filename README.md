@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 07, 12:45 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x SPY 20-Nov-2026 740 Put /  Buy 1x SPY 20-Nov-2026 725 Put | Active (Today, 12:45)  |
-| QQQ       | Oct 07, 12:45 IST | 🟡 Credit Spread   | 6.8/10    | Sell 1x QQQ 20-Nov-2026 720 Put /  Buy 1x QQQ 20-Nov-2026 710 Put | Active (Today, 12:45)  |
+| QQQ       | Oct 07, 12:56 IST | 🟡 Credit Spread   | 7.3/10    | Sell QQQ 20-Nov-2026 720 Put /  Buy QQQ 20-Nov-2026 710 Put | ⚠️ Stop Loss (Yesterday, 21:35) |
+| SPY       | Oct 07, 12:56 IST | 🟡 Credit Spread   | 7.0/10    | Sell SPY 20-Nov-2026 740 Put /  Buy SPY 20-Nov-2026 735 Put | ⚠️ Stop Loss (Yesterday, 18:52) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
@@ -19,8 +19,8 @@
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
 | META      | Oct 07, 12:46 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 700 Put /  Buy 1x META 20-Nov-2026 675 Put | Active (Today, 12:46)  |
-| AMD       | Oct 07, 12:46 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x AMD 20-Nov-2026 615 Put /  Buy 1x AMD 20-Nov-2026 590 Put | Active (Today, 12:46)  |
 | AMAT      | Oct 07, 12:46 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x AMAT 20-Nov-2026 500 Put /  Buy 1x AMAT 20-Nov-2026 480 Put | Active (Today, 12:46)  |
+| AMD       | Oct 07, 12:46 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x AMD 20-Nov-2026 615 Put /  Buy 1x AMD 20-Nov-2026 590 Put | Active (Today, 12:46)  |
 
 #### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
