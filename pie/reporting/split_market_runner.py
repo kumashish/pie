@@ -133,13 +133,13 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
 
 **Last Automated Run**: {format_ist_time(now)}
 
-> **Global Interleaved Ranking**: All candidate strategies across all target assets evaluated and ordered strictly by quantitative fit score on a **0–100% scale**.
+> **Global Interleaved Ranking**: All candidate strategies across all target assets evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale**.
 
 ---
 
 ### 🏆 Top Interleaved Multi-Strategy Opportunities (Ranked 1–30)
 
-| Rank | Symbol | Price | Market Regime | Score / 100 | Strategy | Structure / Leg Shorthand | Grade |
+| Rank | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |
 """
 
@@ -148,12 +148,13 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
         price = item["price"]
         curr = "₹" if market_type.lower() == "india" else "$"
         regime = item["regime"]
-        score = item["score"]
+        score_out_of_10 = item["score"] / 10.0
+        score_str = f"{score_out_of_10:.2f}".rstrip('0').rstrip('.') if (score_out_of_10 * 100) % 10 != 0 else f"{score_out_of_10:.1f}"
         strat = item["strategy"]
         leg_str = item["legs"]
         grade = item["grade"]
 
-        content += f"| **#{idx}** | **{sym}** | {curr}{price:,.2f} | {regime} | **{score:.1f}%** | {strat} | `{leg_str}` | {grade} |\n"
+        content += f"| **#{idx}** | **{sym}** | {curr}{price:,.2f} | {regime} | **{score_str}** | {strat} | `{leg_str}` | {grade} |\n"
 
     content += f"""
 ---
