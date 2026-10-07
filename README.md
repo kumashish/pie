@@ -2,8 +2,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 07, 02:35 IST | 🟡 Credit Spread   | 10.0/10   | Sell SPY 20-Nov-2026 740 Put /  Buy SPY 20-Nov-2026 735 Put | ⚠️ Stop Loss (Yesterday, 18:52) |
-| QQQ       | Oct 07, 02:35 IST | 🟡 Credit Spread   | 10.0/10   | Sell QQQ 20-Nov-2026 720 Put /  Buy QQQ 20-Nov-2026 710 Put | ⚠️ Stop Loss (Yesterday, 21:35) |
+| SPY       | Oct 07, 06:22 IST | 🟡 Credit Spread   | 10.0/10   | Sell SPY 20-Nov-2026 740 Put /  Buy SPY 20-Nov-2026 735 Put | ⚠️ Stop Loss (Yesterday, 18:52) |
+| QQQ       | Oct 07, 06:22 IST | 🟡 Credit Spread   | 10.0/10   | Sell QQQ 20-Nov-2026 720 Put /  Buy QQQ 20-Nov-2026 710 Put | ⚠️ Stop Loss (Yesterday, 21:35) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
