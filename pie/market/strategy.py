@@ -176,29 +176,29 @@ def score_all_strategies(
 
     raw_scores: dict[StrategyType, tuple[float, str]] = {}
 
-    # Explicit Upfront Credit Collection Preference (+25.0 pts boost for net credit strategies)
-    credit_preference_bonus = 25.0
-    credit_structure_bonus = 15.0  # Enhanced score bonus for defined-risk 30-60 DTE credit structures
-    naked_trade_penalty = 20.0     # Penalty for naked options or unhedged trades to manage tail risk
+    # Explicit Upfront Credit Collection Preference (+12.0 pts boost for net credit strategies)
+    credit_preference_bonus = 12.0
+    credit_structure_bonus = 8.0   # Enhanced score bonus for defined-risk 30-60 DTE credit structures
+    naked_trade_penalty = 25.0     # Penalty for naked options or unhedged trades to manage tail risk
 
     # 1. Call Debit Spread: Bullish Trend or Oversold Dip Bounce (Net Debit)
     cds_score = (bullishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm + p_shape_bonus - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.CALL_DEBIT_SPREAD] = (
-        (cds_score / 1.20) * confidence_mult,
+        (cds_score / 1.45) * confidence_mult,
         "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
     )
 
     # 2. Put Debit Spread: Bearish Trend or Overbought Exhaustion Fade (Net Debit)
     pds_score = (bearishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen
     raw_scores[StrategyType.PUT_DEBIT_SPREAD] = (
-        (pds_score / 1.20) * confidence_mult,
+        (pds_score / 1.45) * confidence_mult,
         "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
     )
 
     # 3. Jade Lizard: Bullish & High Vol Expansion (Net Credit, Defined Risk Upside)
     jl_score = (bullishness * 0.50) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + backtest_edge_bonus + vol_expansion_bonus + theta_harvest_bonus + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
     raw_scores[StrategyType.JADE_LIZARD] = (
-        (jl_score / 1.20) * confidence_mult,
+        (jl_score / 1.50) * confidence_mult,
         "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
     )
 
@@ -206,7 +206,7 @@ def score_all_strategies(
     cs_directional_pen = (bm_bull_penalty + ema200_bull_pen + ema20_bull_pen) if trend_val >= 5.0 else (bm_bear_penalty + ema200_bear_pen + ema20_bear_pen)
     cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - cs_directional_pen
     raw_scores[StrategyType.CREDIT_SPREAD] = (
-        (cs_score / 1.35) * confidence_mult,
+        (cs_score / 1.55) * confidence_mult,
         "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
     )
 
@@ -360,14 +360,13 @@ def score_all_strategies(
             )
             continue
 
-        # Require multi-timeframe alignment for top tier (> 90.0)
-        if score_val > 90.0:
-            if stype in bullish_types and not weekly_bullish:
-                score_val = 90.0
-            elif stype in bearish_types and not weekly_bearish:
-                score_val = 90.0
+        # Multi-timeframe trend alignment penalty (if not aligned with weekly trend)
+        if stype in bullish_types and not weekly_bullish:
+            score_val *= 0.85
+        elif stype in bearish_types and not weekly_bearish:
+            score_val *= 0.85
 
-        final_score = round(min(100.0, max(0.0, score_val)), 1)
+        final_score = round(min(98.0, max(0.0, score_val)), 1)
         grade = "A (Optimal)" if final_score >= 80 else ("B (Good)" if final_score >= 60 else ("C (Moderate)" if final_score >= 40 else "F (Unsuited)"))
         results[stype] = StrategyFitScore(
             strategy=stype,

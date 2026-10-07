@@ -9,14 +9,26 @@
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
   "vix": 15.01,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (67.2) is overbought (> 65) [Synthetic PCR: 0.65]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Best fit strategy (62.2% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 225.0,
+        "strike_formatted": "225",
+        "option_type": "Put",
+        "delta": -0.094,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 44,
+        "summary": "Buy 1x NVDA 20-Nov-2026 225 Put"
+      },
       {
         "action": "Sell",
         "quantity": 1,
@@ -30,16 +42,28 @@
         "summary": "Sell 1x NVDA 20-Nov-2026 230 Put"
       },
       {
-        "action": "Buy",
+        "action": "Sell",
         "quantity": 1,
-        "strike": 225.0,
-        "strike_formatted": "225",
-        "option_type": "Put",
-        "delta": -0.094,
+        "strike": 250.0,
+        "strike_formatted": "250",
+        "option_type": "Call",
+        "delta": 0.241,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 44,
-        "summary": "Buy 1x NVDA 20-Nov-2026 225 Put"
+        "summary": "Sell 1x NVDA 20-Nov-2026 250 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 255.0,
+        "strike_formatted": "255",
+        "option_type": "Call",
+        "delta": 0.14,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 44,
+        "summary": "Buy 1x NVDA 20-Nov-2026 255 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -48,8 +72,8 @@
     "margin_required": 10.0,
     "stop_loss_price": 232.06,
     "take_profit_price": 246.42,
-    "net_delta": 0.091,
-    "net_theta": 0.011,
+    "net_delta": -0.01,
+    "net_theta": 0.027,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -181,89 +205,89 @@
       },
       {
         "price": 250.72,
-        "pnl": -10.0
+        "pnl": -10.72
       },
       {
         "price": 252.64,
-        "pnl": -10.0
+        "pnl": -12.64
       },
       {
         "price": 254.55,
-        "pnl": -10.0
+        "pnl": -14.55
       },
       {
         "price": 256.47,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 258.38,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 260.29,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 262.21,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 264.12,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 266.03,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 267.95,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 269.86,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 271.78,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 273.69,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 275.6,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 277.52,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 279.43,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 281.35,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 283.26,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 285.17,
-        "pnl": -10.0
+        "pnl": -15.0
       },
       {
         "price": 287.09,
-        "pnl": -10.0
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.786,
+      "win_probability": 0.718,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3074,
+      "half_kelly_fraction": 0.2462,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,58 +295,13 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 81.8,
-      "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 230 Put<br> Buy 1x NVDA 20-Nov-2026 225 Put"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 78.8,
+      "score": 62.2,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 225 Put<br> Sell 1x NVDA 20-Nov-2026 230 Put<br> Sell 1x NVDA 20-Nov-2026 250 Call<br> Buy 1x NVDA 20-Nov-2026 255 Call"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 74.8,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 230 Put<br> Sell 1x NVDA 20-Nov-2026 250 Call<br> Buy 1x NVDA 20-Nov-2026 255 Call"
-    },
-    {
-      "strategy_type": "ratio_put_spread",
-      "strategy_display": "Ratio Put Spread",
-      "score": 72.8,
-      "grade": "B (Good)",
-      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
-      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x NVDA 20-Nov-2026 240 Put<br> Sell 1x NVDA 20-Nov-2026 230 Put<br> Sell 1x NVDA 20-Nov-2026 230 Put"
-    },
-    {
-      "strategy_type": "covered_future",
-      "strategy_display": "Covered Future",
-      "score": 65.7,
-      "grade": "B (Good)",
-      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x NVDA 20-Nov-2026 239.2 Call<br> Sell 1x NVDA 20-Nov-2026 250 Call"
-    },
-    {
-      "strategy_type": "wheel",
-      "strategy_display": "Wheel",
-      "score": 65.3,
-      "grade": "B (Good)",
-      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 230 Put"
     },
     {
       "strategy_type": "protected_future",
@@ -334,6 +313,15 @@
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 239.2 Call<br> Buy 1x NVDA 20-Nov-2026 230 Put"
     },
     {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 58.3,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x NVDA 20-Nov-2026 230 Put<br> Buy 1x NVDA 20-Nov-2026 225 Put"
+    },
+    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
       "score": 57.1,
@@ -343,9 +331,36 @@
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 225 Call<br> Sell 1x NVDA 20-Nov-2026 245 Call"
     },
     {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 55.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 240 Put<br> Sell 1x NVDA 20-Nov-2026 230 Put<br> Sell 1x NVDA 20-Nov-2026 230 Put"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 54.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x NVDA 20-Nov-2026 239.2 Call<br> Sell 1x NVDA 20-Nov-2026 250 Call"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 54.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x NVDA 20-Nov-2026 230 Put"
+    },
+    {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 56.9,
+      "score": 47.1,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -359,6 +374,15 @@
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 235 Call<br> Sell 1x NVDA 20-Nov-2026 240 Call<br> Sell 1x NVDA 20-Nov-2026 240 Call<br> Buy 1x NVDA 20-Nov-2026 245 Call"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 46.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x NVDA 20-Nov-2026 230 Put<br> Sell 1x NVDA 20-Nov-2026 250 Call<br> Buy 1x NVDA 20-Nov-2026 255 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -386,15 +410,6 @@
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x NVDA 20-Nov-2026 235 Call<br> Sell 1x NVDA 20-Nov-2026 240 Call<br> Sell 1x NVDA 20-Nov-2026 240 Call<br> Buy 1x NVDA 20-Nov-2026 250 Call"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 40.3,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x NVDA 20-Nov-2026 230 Put"
     }
   ],
   "indicators": {

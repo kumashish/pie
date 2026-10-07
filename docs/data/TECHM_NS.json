@@ -1,6 +1,6 @@
 {
   "symbol": "TECHM.NS",
-  "last_price": 1497.3,
+  "last_price": 1498.0,
   "as_of": "2026-10-07 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,17 +8,29 @@
   "fit_score": 20.0,
   "confidence_grade": "C",
   "confidence_percentage": 20.0,
-  "vix": 13.83,
+  "vix": 13.77,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (85.9% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (61.9% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
+        "quantity": 1,
+        "strike": 1550.0,
+        "strike_formatted": "1550",
+        "option_type": "Call",
+        "delta": 0.299,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 48,
+        "summary": "Sell 1x TECHM.NS 24-Nov-2026 1550 Call"
+      },
+      {
+        "action": "Buy",
         "quantity": 1,
         "strike": 1600.0,
         "strike_formatted": "1600",
@@ -27,243 +39,231 @@
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Sell 1x TECHM.NS 24-Nov-2026 1600 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1650.0,
-        "strike_formatted": "1650",
-        "option_type": "Call",
-        "delta": 0.038,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x TECHM.NS 24-Nov-2026 1650 Call"
+        "summary": "Buy 1x TECHM.NS 24-Nov-2026 1600 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1452.38,
-    "take_profit_price": 1542.22,
-    "net_delta": -0.084,
-    "net_theta": 0.111,
+    "stop_loss_price": 1453.06,
+    "take_profit_price": 1542.94,
+    "net_delta": -0.177,
+    "net_theta": 0.147,
     "probability_of_profit": 0.0,
-    "var_95": 33.43,
+    "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1197.84,
+        "price": 1198.4,
         "pnl": -50.0
       },
       {
-        "price": 1209.82,
+        "price": 1210.38,
         "pnl": -50.0
       },
       {
-        "price": 1221.8,
+        "price": 1222.37,
         "pnl": -50.0
       },
       {
-        "price": 1233.78,
+        "price": 1234.35,
         "pnl": -50.0
       },
       {
-        "price": 1245.75,
+        "price": 1246.34,
         "pnl": -50.0
       },
       {
-        "price": 1257.73,
+        "price": 1258.32,
         "pnl": -50.0
       },
       {
-        "price": 1269.71,
+        "price": 1270.3,
         "pnl": -50.0
       },
       {
-        "price": 1281.69,
+        "price": 1282.29,
         "pnl": -50.0
       },
       {
-        "price": 1293.67,
+        "price": 1294.27,
         "pnl": -50.0
       },
       {
-        "price": 1305.65,
+        "price": 1306.26,
         "pnl": -50.0
       },
       {
-        "price": 1317.62,
+        "price": 1318.24,
         "pnl": -50.0
       },
       {
-        "price": 1329.6,
+        "price": 1330.22,
         "pnl": -50.0
       },
       {
-        "price": 1341.58,
+        "price": 1342.21,
         "pnl": -50.0
       },
       {
-        "price": 1353.56,
+        "price": 1354.19,
         "pnl": -50.0
       },
       {
-        "price": 1365.54,
+        "price": 1366.18,
         "pnl": -50.0
       },
       {
-        "price": 1377.52,
+        "price": 1378.16,
         "pnl": -50.0
       },
       {
-        "price": 1389.49,
+        "price": 1390.14,
         "pnl": -50.0
       },
       {
-        "price": 1401.47,
+        "price": 1402.13,
         "pnl": -50.0
       },
       {
-        "price": 1413.45,
+        "price": 1414.11,
         "pnl": -50.0
       },
       {
-        "price": 1425.43,
+        "price": 1426.1,
         "pnl": -50.0
       },
       {
-        "price": 1437.41,
+        "price": 1438.08,
         "pnl": -50.0
       },
       {
-        "price": 1449.39,
+        "price": 1450.06,
         "pnl": -50.0
       },
       {
-        "price": 1461.36,
+        "price": 1462.05,
         "pnl": -50.0
       },
       {
-        "price": 1473.34,
+        "price": 1474.03,
         "pnl": -50.0
       },
       {
-        "price": 1485.32,
+        "price": 1486.02,
         "pnl": -50.0
       },
       {
-        "price": 1497.3,
+        "price": 1498.0,
         "pnl": -50.0
       },
       {
-        "price": 1509.28,
+        "price": 1509.98,
         "pnl": -50.0
       },
       {
-        "price": 1521.26,
+        "price": 1521.97,
         "pnl": -50.0
       },
       {
-        "price": 1533.24,
+        "price": 1533.95,
         "pnl": -50.0
       },
       {
-        "price": 1545.21,
+        "price": 1545.94,
         "pnl": -50.0
       },
       {
-        "price": 1557.19,
-        "pnl": -50.0
+        "price": 1557.92,
+        "pnl": -57.92
       },
       {
-        "price": 1569.17,
-        "pnl": -50.0
+        "price": 1569.9,
+        "pnl": -69.9
       },
       {
-        "price": 1581.15,
-        "pnl": -50.0
+        "price": 1581.89,
+        "pnl": -81.89
       },
       {
-        "price": 1593.13,
-        "pnl": -50.0
+        "price": 1593.87,
+        "pnl": -93.87
       },
       {
-        "price": 1605.11,
-        "pnl": -55.11
-      },
-      {
-        "price": 1617.08,
-        "pnl": -67.08
-      },
-      {
-        "price": 1629.06,
-        "pnl": -79.06
-      },
-      {
-        "price": 1641.04,
-        "pnl": -91.04
-      },
-      {
-        "price": 1653.02,
+        "price": 1605.86,
         "pnl": -100.0
       },
       {
-        "price": 1665.0,
+        "price": 1617.84,
         "pnl": -100.0
       },
       {
-        "price": 1676.98,
+        "price": 1629.82,
         "pnl": -100.0
       },
       {
-        "price": 1688.95,
+        "price": 1641.81,
         "pnl": -100.0
       },
       {
-        "price": 1700.93,
+        "price": 1653.79,
         "pnl": -100.0
       },
       {
-        "price": 1712.91,
+        "price": 1665.78,
         "pnl": -100.0
       },
       {
-        "price": 1724.89,
+        "price": 1677.76,
         "pnl": -100.0
       },
       {
-        "price": 1736.87,
+        "price": 1689.74,
         "pnl": -100.0
       },
       {
-        "price": 1748.85,
+        "price": 1701.73,
         "pnl": -100.0
       },
       {
-        "price": 1760.82,
+        "price": 1713.71,
         "pnl": -100.0
       },
       {
-        "price": 1772.8,
+        "price": 1725.7,
         "pnl": -100.0
       },
       {
-        "price": 1784.78,
+        "price": 1737.68,
         "pnl": -100.0
       },
       {
-        "price": 1796.76,
+        "price": 1749.66,
+        "pnl": -100.0
+      },
+      {
+        "price": 1761.65,
+        "pnl": -100.0
+      },
+      {
+        "price": 1773.63,
+        "pnl": -100.0
+      },
+      {
+        "price": 1785.62,
+        "pnl": -100.0
+      },
+      {
+        "price": 1797.6,
         "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.801,
+      "win_probability": 0.717,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3209,
+      "half_kelly_fraction": 0.2453,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,29 +273,29 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 85.9,
-      "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1600CE / B1x-Nov-1650CE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
       "score": 61.9,
       "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1350PE / S1x-Nov-1400PE / S1x-Nov-1600CE / B1x-Nov-1650CE"
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-1550CE / B1x-Nov-1600CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 56.7,
+      "score": 47.0,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "B1x-Nov-1500PE / S1x-Nov-1450PE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 45.2,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-1400PE / S1x-Nov-1450PE / S1x-Nov-1550CE / B1x-Nov-1600CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -304,19 +304,19 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1400PE"
+      "legs_summary": "S1x-Nov-1450PE"
     }
   ],
   "indicators": {
-    "EMA20": "1538.29",
-    "EMA50": "1550.57",
-    "EMA100": "1537.64",
-    "EMA200": "1524.48",
-    "RSI(14)": "36.14",
+    "EMA20": "1538.35",
+    "EMA50": "1550.60",
+    "EMA100": "1537.65",
+    "EMA200": "1524.49",
+    "RSI(14)": "36.28",
     "ATR(14)": "33.48",
     "ADX(14)": "10.68",
-    "BB(20,2)": "-0.04",
-    "P_SHAPE(20)": "27.13"
+    "BB(20,2)": "-0.03",
+    "P_SHAPE(20)": "27.14"
   },
   "rules": [
     {

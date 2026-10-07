@@ -13,7 +13,7 @@
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (93.2% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (68.3% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.826,
+      "win_probability": 0.739,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3434,
+      "half_kelly_fraction": 0.2651,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,65 +273,20 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 93.2,
-      "grade": "A (Optimal)",
+      "score": 68.3,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put<br> Buy 1x MU 20-Nov-2026 950 Put"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 84.0,
-      "grade": "A (Optimal)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put<br> Sell 1x MU 20-Nov-2026 1100 Call<br> Buy 1x MU 20-Nov-2026 1150 Call"
-    },
-    {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 82.1,
-      "grade": "A (Optimal)",
+      "score": 64.7,
+      "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
       "legs_summary": "Buy 1x MU 20-Nov-2026 1050 Put<br> Sell 1x MU 20-Nov-2026 1000 Put<br> Sell 1x MU 20-Nov-2026 1000 Put"
-    },
-    {
-      "strategy_type": "covered_future",
-      "strategy_display": "Covered Future",
-      "score": 70.9,
-      "grade": "B (Good)",
-      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x MU 20-Nov-2026 1045.6 Call<br> Sell 1x MU 20-Nov-2026 1100 Call"
-    },
-    {
-      "strategy_type": "wheel",
-      "strategy_display": "Wheel",
-      "score": 70.1,
-      "grade": "B (Good)",
-      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put"
-    },
-    {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 69.5,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MU 20-Nov-2026 1050 Call<br> Sell 1x MU 20-Nov-2026 1100 Call"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 65.2,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x MU 20-Nov-2026 950 Put<br> Sell 1x MU 20-Nov-2026 1000 Put<br> Sell 1x MU 20-Nov-2026 1100 Call<br> Buy 1x MU 20-Nov-2026 1150 Call"
     },
     {
       "strategy_type": "protected_future",
@@ -352,6 +307,33 @@
       "legs_summary": "Buy 1x MU 20-Nov-2026 1000 Call<br> Sell 1x MU 20-Nov-2026 1050 Call"
     },
     {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 59.6,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x MU 20-Nov-2026 1045.6 Call<br> Sell 1x MU 20-Nov-2026 1100 Call"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 58.8,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 57.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MU 20-Nov-2026 1050 Call<br> Sell 1x MU 20-Nov-2026 1100 Call"
+    },
+    {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
       "score": 54.2,
@@ -359,6 +341,15 @@
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
       "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 53.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put<br> Sell 1x MU 20-Nov-2026 1100 Call<br> Buy 1x MU 20-Nov-2026 1150 Call"
     },
     {
       "strategy_type": "cash_swing_long",
@@ -379,13 +370,13 @@
       "legs_summary": "Buy 1x MU 20-Nov-2026 1000 Call<br> Sell 1x MU 20-Nov-2026 1050 Call<br> Sell 1x MU 20-Nov-2026 1050 Call<br> Buy 1x MU 20-Nov-2026 1050 Call"
     },
     {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 45.2,
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 48.5,
       "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x MU 20-Nov-2026 1000 Put"
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x MU 20-Nov-2026 950 Put<br> Sell 1x MU 20-Nov-2026 1000 Put<br> Sell 1x MU 20-Nov-2026 1100 Call<br> Buy 1x MU 20-Nov-2026 1150 Call"
     }
   ],
   "indicators": {

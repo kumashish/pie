@@ -261,9 +261,9 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.826,
+      "win_probability": 0.739,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3434,
+      "half_kelly_fraction": 0.2651,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,8 +273,8 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 93.1,
-      "grade": "A (Optimal)",
+      "score": 68.2,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put<br> Buy 1x XLK 20-Nov-2026 185 Put"
@@ -282,47 +282,11 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 78.7,
+      "score": 62.0,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x XLK 20-Nov-2026 185 Put<br> Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 210 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 75.1,
-      "grade": "B (Good)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 210 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
-    },
-    {
-      "strategy_type": "ratio_put_spread",
-      "strategy_display": "Ratio Put Spread",
-      "score": 73.1,
-      "grade": "B (Good)",
-      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
-      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x XLK 20-Nov-2026 200 Put<br> Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 190 Put"
-    },
-    {
-      "strategy_type": "covered_future",
-      "strategy_display": "Covered Future",
-      "score": 65.7,
-      "grade": "B (Good)",
-      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x XLK 20-Nov-2026 202 Call<br> Sell 1x XLK 20-Nov-2026 210 Call"
-    },
-    {
-      "strategy_type": "wheel",
-      "strategy_display": "Wheel",
-      "score": 65.3,
-      "grade": "B (Good)",
-      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put"
     },
     {
       "strategy_type": "protected_future",
@@ -334,15 +298,6 @@
       "legs_summary": "Buy 1x XLK 20-Nov-2026 202 Call<br> Buy 1x XLK 20-Nov-2026 190 Put"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 57.1,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x XLK 20-Nov-2026 200 Call<br> Sell 1x XLK 20-Nov-2026 210 Call"
-    },
-    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
       "score": 57.1,
@@ -350,6 +305,51 @@
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
       "legs_summary": "Buy 1x XLK 20-Nov-2026 190 Call<br> Sell 1x XLK 20-Nov-2026 205 Call"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 55.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 200 Put<br> Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 190 Put"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 54.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 202 Call<br> Sell 1x XLK 20-Nov-2026 210 Call"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 54.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 47.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x XLK 20-Nov-2026 200 Call<br> Sell 1x XLK 20-Nov-2026 210 Call"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 46.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put<br> Sell 1x XLK 20-Nov-2026 210 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
     },
     {
       "strategy_type": "butterfly",
@@ -386,15 +386,6 @@
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x XLK 20-Nov-2026 195 Call<br> Sell 1x XLK 20-Nov-2026 200 Call<br> Sell 1x XLK 20-Nov-2026 200 Call<br> Buy 1x XLK 20-Nov-2026 215 Call"
-    },
-    {
-      "strategy_type": "naked_put",
-      "strategy_display": "Naked Put",
-      "score": 40.3,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
-      "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x XLK 20-Nov-2026 190 Put"
     }
   ],
   "indicators": {
