@@ -217,7 +217,7 @@ def format_short_indian_strategy(strategy_str: str) -> str:
         else:
             short_parts.append(part)
 
-    return "-".join(short_parts)
+    return " / ".join(short_parts)
 
 
 def generate_readme_snapshot(

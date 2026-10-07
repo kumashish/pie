@@ -1,6 +1,6 @@
 {
   "symbol": "ADANIENT.NS",
-  "last_price": 2831.1,
+  "last_price": 2793.1,
   "as_of": "2026-10-07 03:45:00",
   "regime": "neutral",
   "regime_display": "Neutral",
@@ -8,279 +8,279 @@
   "fit_score": 40.0,
   "confidence_grade": "C",
   "confidence_percentage": 40.0,
-  "vix": 13.68,
+  "vix": 13.83,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (96.0% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (95.9% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
+        "strike": 2600.0,
+        "strike_formatted": "2600",
+        "option_type": "Put",
+        "delta": -0.056,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 48,
+        "summary": "Buy 1x ADANIENT.NS 24-Nov-2026 2600 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
         "strike": 2650.0,
         "strike_formatted": "2650",
         "option_type": "Put",
-        "delta": -0.068,
+        "delta": -0.114,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Buy 1x ADANIENT.NS 24-Nov-2026 2650 Put"
+        "summary": "Sell 1x ADANIENT.NS 24-Nov-2026 2650 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 2700.0,
-        "strike_formatted": "2700",
-        "option_type": "Put",
-        "delta": -0.133,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x ADANIENT.NS 24-Nov-2026 2700 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 3000.0,
-        "strike_formatted": "3000",
+        "strike": 2950.0,
+        "strike_formatted": "2950",
         "option_type": "Call",
-        "delta": 0.156,
+        "delta": 0.175,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Sell 1x ADANIENT.NS 24-Nov-2026 3000 Call"
+        "summary": "Sell 1x ADANIENT.NS 24-Nov-2026 2950 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 3050.0,
-        "strike_formatted": "3050",
+        "strike": 3000.0,
+        "strike_formatted": "3000",
         "option_type": "Call",
-        "delta": 0.089,
+        "delta": 0.102,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 48,
-        "summary": "Buy 1x ADANIENT.NS 24-Nov-2026 3050 Call"
+        "summary": "Buy 1x ADANIENT.NS 24-Nov-2026 3000 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 100.0,
-    "stop_loss_price": 2746.17,
-    "take_profit_price": 2916.03,
-    "net_delta": -0.002,
-    "net_theta": 0.235,
+    "stop_loss_price": 2709.31,
+    "take_profit_price": 2876.89,
+    "net_delta": -0.015,
+    "net_theta": 0.237,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 2264.88,
+        "price": 2234.48,
         "pnl": -150.0
       },
       {
-        "price": 2287.53,
+        "price": 2256.82,
         "pnl": -150.0
       },
       {
-        "price": 2310.18,
+        "price": 2279.17,
         "pnl": -150.0
       },
       {
-        "price": 2332.83,
+        "price": 2301.51,
         "pnl": -150.0
       },
       {
-        "price": 2355.48,
+        "price": 2323.86,
         "pnl": -150.0
       },
       {
-        "price": 2378.12,
+        "price": 2346.2,
         "pnl": -150.0
       },
       {
-        "price": 2400.77,
+        "price": 2368.55,
         "pnl": -150.0
       },
       {
-        "price": 2423.42,
+        "price": 2390.89,
         "pnl": -150.0
       },
       {
-        "price": 2446.07,
+        "price": 2413.24,
         "pnl": -150.0
       },
       {
-        "price": 2468.72,
+        "price": 2435.58,
         "pnl": -150.0
       },
       {
-        "price": 2491.37,
+        "price": 2457.93,
         "pnl": -150.0
       },
       {
-        "price": 2514.02,
+        "price": 2480.27,
         "pnl": -150.0
       },
       {
-        "price": 2536.67,
+        "price": 2502.62,
         "pnl": -150.0
       },
       {
-        "price": 2559.31,
+        "price": 2524.96,
         "pnl": -150.0
       },
       {
-        "price": 2581.96,
+        "price": 2547.31,
         "pnl": -150.0
       },
       {
-        "price": 2604.61,
+        "price": 2569.65,
         "pnl": -150.0
       },
       {
-        "price": 2627.26,
+        "price": 2592.0,
         "pnl": -150.0
       },
       {
-        "price": 2649.91,
-        "pnl": -150.0
+        "price": 2614.34,
+        "pnl": -135.66
       },
       {
-        "price": 2672.56,
-        "pnl": -127.44
+        "price": 2636.69,
+        "pnl": -113.31
       },
       {
-        "price": 2695.21,
-        "pnl": -104.79
-      },
-      {
-        "price": 2717.86,
+        "price": 2659.03,
         "pnl": -100.0
       },
       {
-        "price": 2740.5,
+        "price": 2681.38,
         "pnl": -100.0
       },
       {
-        "price": 2763.15,
+        "price": 2703.72,
         "pnl": -100.0
       },
       {
-        "price": 2785.8,
+        "price": 2726.07,
         "pnl": -100.0
       },
       {
-        "price": 2808.45,
+        "price": 2748.41,
         "pnl": -100.0
       },
       {
-        "price": 2831.1,
+        "price": 2770.76,
         "pnl": -100.0
       },
       {
-        "price": 2853.75,
+        "price": 2793.1,
         "pnl": -100.0
       },
       {
-        "price": 2876.4,
+        "price": 2815.44,
         "pnl": -100.0
       },
       {
-        "price": 2899.05,
+        "price": 2837.79,
         "pnl": -100.0
       },
       {
-        "price": 2921.7,
+        "price": 2860.13,
         "pnl": -100.0
       },
       {
-        "price": 2944.34,
+        "price": 2882.48,
         "pnl": -100.0
       },
       {
-        "price": 2966.99,
+        "price": 2904.82,
         "pnl": -100.0
       },
       {
-        "price": 2989.64,
+        "price": 2927.17,
         "pnl": -100.0
       },
       {
-        "price": 3012.29,
-        "pnl": -112.29
+        "price": 2949.51,
+        "pnl": -100.0
       },
       {
-        "price": 3034.94,
-        "pnl": -134.94
+        "price": 2971.86,
+        "pnl": -121.86
       },
       {
-        "price": 3057.59,
+        "price": 2994.2,
+        "pnl": -144.2
+      },
+      {
+        "price": 3016.55,
         "pnl": -150.0
       },
       {
-        "price": 3080.24,
+        "price": 3038.89,
         "pnl": -150.0
       },
       {
-        "price": 3102.89,
+        "price": 3061.24,
         "pnl": -150.0
       },
       {
-        "price": 3125.53,
+        "price": 3083.58,
         "pnl": -150.0
       },
       {
-        "price": 3148.18,
+        "price": 3105.93,
         "pnl": -150.0
       },
       {
-        "price": 3170.83,
+        "price": 3128.27,
         "pnl": -150.0
       },
       {
-        "price": 3193.48,
+        "price": 3150.62,
         "pnl": -150.0
       },
       {
-        "price": 3216.13,
+        "price": 3172.96,
         "pnl": -150.0
       },
       {
-        "price": 3238.78,
+        "price": 3195.31,
         "pnl": -150.0
       },
       {
-        "price": 3261.43,
+        "price": 3217.65,
         "pnl": -150.0
       },
       {
-        "price": 3284.08,
+        "price": 3240.0,
         "pnl": -150.0
       },
       {
-        "price": 3306.72,
+        "price": 3262.34,
         "pnl": -150.0
       },
       {
-        "price": 3329.37,
+        "price": 3284.69,
         "pnl": -150.0
       },
       {
-        "price": 3352.02,
+        "price": 3307.03,
         "pnl": -150.0
       },
       {
-        "price": 3374.67,
+        "price": 3329.38,
         "pnl": -150.0
       },
       {
-        "price": 3397.32,
+        "price": 3351.72,
         "pnl": -150.0
       }
     ],
@@ -297,29 +297,29 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 96.0,
+      "score": 95.9,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-2650PE-S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
+      "legs_summary": "B1x-Nov-2600PE / S1x-Nov-2650PE / S1x-Nov-2950CE / B1x-Nov-3000CE"
     },
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 86.1,
-      "grade": "A (Optimal)",
+      "score": 73.3,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-3000CE-B1x-Nov-3050CE"
+      "legs_summary": "S1x-Nov-2950CE / B1x-Nov-3000CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 63.4,
+      "score": 63.2,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-2750CE-S1x-Nov-2850CE-S1x-Nov-2850CE-B1x-Nov-2900CE"
+      "legs_summary": "B1x-Nov-2700CE / S1x-Nov-2800CE / S1x-Nov-2800CE / B1x-Nov-2850CE"
     },
     {
       "strategy_type": "ratio_put_spread",
@@ -328,7 +328,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "B1x-Nov-2850PE-S1x-Nov-2700PE-S1x-Nov-2700PE"
+      "legs_summary": "B1x-Nov-2800PE / S1x-Nov-2650PE / S1x-Nov-2650PE"
     },
     {
       "strategy_type": "jade_lizard",
@@ -337,25 +337,25 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-2700PE-S1x-Nov-3000CE-B1x-Nov-3050CE"
+      "legs_summary": "S1x-Nov-2650PE / S1x-Nov-2950CE / B1x-Nov-3000CE"
     },
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 53.3,
+      "score": 53.2,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-2700PE-S1x-Nov-2850PE-S1x-Nov-2850CE-B1x-Nov-2950CE"
+      "legs_summary": "B1x-Nov-2650PE / S1x-Nov-2800PE / S1x-Nov-2800CE / B1x-Nov-2950CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 51.9,
+      "score": 51.4,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-2750CE-S1x-Nov-2850CE-S1x-Nov-2850CE-B1x-Nov-2950CE"
+      "legs_summary": "B1x-Nov-2700CE / S1x-Nov-2800CE / S1x-Nov-2800CE / B1x-Nov-2950CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -364,7 +364,7 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-2700PE"
+      "legs_summary": "S1x-Nov-2650PE"
     },
     {
       "strategy_type": "wheel",
@@ -373,7 +373,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "S1x-Nov-2700PE"
+      "legs_summary": "S1x-Nov-2650PE"
     },
     {
       "strategy_type": "covered_future",
@@ -382,37 +382,37 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-2831.1CE-S1x-Nov-3000CE"
+      "legs_summary": "B1x-Nov-2793.1CE / S1x-Nov-2950CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 44.4,
+      "score": 45.0,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-2850PE-S1x-Nov-2750PE"
+      "legs_summary": "B1x-Nov-2800PE / S1x-Nov-2700PE"
     },
     {
       "strategy_type": "protected_future",
       "strategy_display": "Protected Future",
-      "score": 41.1,
+      "score": 40.8,
       "grade": "C (Moderate)",
       "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-2831.1CE-B1x-Nov-2700PE"
+      "legs_summary": "B1x-Nov-2793.1CE / B1x-Nov-2650PE"
     }
   ],
   "indicators": {
-    "EMA20": "2905.89",
-    "EMA50": "2947.20",
-    "EMA100": "2888.03",
-    "EMA200": "2739.46",
-    "RSI(14)": "41.75",
-    "ATR(14)": "71.13",
-    "ADX(14)": "19.74",
-    "BB(20,2)": "0.21",
-    "P_SHAPE(20)": "46.27"
+    "EMA20": "2902.27",
+    "EMA50": "2945.71",
+    "EMA100": "2887.28",
+    "EMA200": "2739.08",
+    "RSI(14)": "39.28",
+    "ATR(14)": "72.06",
+    "ADX(14)": "19.87",
+    "BB(20,2)": "0.11",
+    "P_SHAPE(20)": "46.03"
   },
   "rules": [
     {

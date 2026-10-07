@@ -304,15 +304,6 @@
       "legs_summary": "Buy 1x LLY 20-Nov-2026 1050 Put<br> Sell 1x LLY 20-Nov-2026 1100 Put<br> Sell 1x LLY 20-Nov-2026 1200 Call<br> Buy 1x LLY 20-Nov-2026 1250 Call"
     },
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 84.2,
-      "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x LLY 20-Nov-2026 1200 Call<br> Buy 1x LLY 20-Nov-2026 1250 Call"
-    },
-    {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
       "score": 81.2,
@@ -320,6 +311,15 @@
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
       "legs_summary": "Buy 1x LLY 20-Nov-2026 1150 Call<br> Sell 1x LLY 20-Nov-2026 1150 Call<br> Sell 1x LLY 20-Nov-2026 1150 Call<br> Buy 1x LLY 20-Nov-2026 1200 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 71.8,
+      "grade": "B (Good)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x LLY 20-Nov-2026 1200 Call<br> Buy 1x LLY 20-Nov-2026 1250 Call"
     },
     {
       "strategy_type": "ratio_put_spread",

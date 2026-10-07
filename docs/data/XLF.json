@@ -9,14 +9,38 @@
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
   "vix": 15.01,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (34.1) is oversold (< 35) [Synthetic PCR: 1.25]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Best fit strategy (84.8% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 50.0,
+        "strike_formatted": "50",
+        "option_type": "Put",
+        "delta": -0.052,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 44,
+        "summary": "Buy 1x XLF 20-Nov-2026 50 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 51.0,
+        "strike_formatted": "51",
+        "option_type": "Put",
+        "delta": -0.107,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 44,
+        "summary": "Sell 1x XLF 20-Nov-2026 51 Put"
+      },
       {
         "action": "Sell",
         "quantity": 1,
@@ -48,8 +72,8 @@
     "margin_required": 2.0,
     "stop_loss_price": 52.39,
     "take_profit_price": 55.63,
-    "net_delta": -0.076,
-    "net_theta": 0.003,
+    "net_delta": -0.021,
+    "net_theta": 0.005,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
     "vol_skew_25d": 0.0,
@@ -57,79 +81,79 @@
     "payoff_points": [
       {
         "price": 43.21,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 43.64,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 44.07,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 44.5,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 44.94,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 45.37,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 45.8,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 46.23,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 46.66,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 47.1,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 47.53,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 47.96,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 48.39,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 48.83,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 49.26,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 49.69,
-        "pnl": -2.0
+        "pnl": -3.0
       },
       {
         "price": 50.12,
-        "pnl": -2.0
+        "pnl": -2.88
       },
       {
         "price": 50.55,
-        "pnl": -2.0
+        "pnl": -2.45
       },
       {
         "price": 50.99,
-        "pnl": -2.0
+        "pnl": -2.01
       },
       {
         "price": 51.42,
@@ -261,24 +285,15 @@
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.821,
+      "win_probability": 0.797,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3389,
+      "half_kelly_fraction": 0.3173,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
     }
   },
   "ranked_strategies": [
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 91.6,
-      "grade": "A (Optimal)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
-    },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
@@ -287,6 +302,15 @@
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x XLF 20-Nov-2026 50 Put<br> Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 78.0,
+      "grade": "B (Good)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
     },
     {
       "strategy_type": "ratio_put_spread",
