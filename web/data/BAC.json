@@ -1,6 +1,6 @@
 {
   "symbol": "BAC",
-  "last_price": 54.14,
+  "last_price": 54.09,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,12 +8,12 @@
   "fit_score": 35.0,
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
-  "vix": 15.33,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (26.0) is oversold (< 35) [Synthetic PCR: 1.34]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (25.5) is oversold (< 35) [Synthetic PCR: 1.35]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 57.0,
         "strike_formatted": "57",
         "option_type": "Call",
-        "delta": 0.208,
+        "delta": 0.194,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x BAC 20-Nov-2026 57 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 58.0,
         "strike_formatted": "58",
         "option_type": "Call",
-        "delta": 0.128,
+        "delta": 0.116,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x BAC 20-Nov-2026 58 Call"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 2.0,
-    "stop_loss_price": 52.52,
-    "take_profit_price": 55.76,
-    "net_delta": -0.08,
+    "stop_loss_price": 52.47,
+    "take_profit_price": 55.71,
+    "net_delta": -0.078,
     "net_theta": 0.003,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 43.31,
+        "price": 43.27,
         "pnl": -2.0
       },
       {
-        "price": 43.75,
+        "price": 43.7,
         "pnl": -2.0
       },
       {
-        "price": 44.18,
+        "price": 44.14,
         "pnl": -2.0
       },
       {
-        "price": 44.61,
+        "price": 44.57,
         "pnl": -2.0
       },
       {
-        "price": 45.04,
+        "price": 45.0,
         "pnl": -2.0
       },
       {
-        "price": 45.48,
+        "price": 45.44,
         "pnl": -2.0
       },
       {
-        "price": 45.91,
+        "price": 45.87,
         "pnl": -2.0
       },
       {
-        "price": 46.34,
+        "price": 46.3,
         "pnl": -2.0
       },
       {
-        "price": 46.78,
+        "price": 46.73,
         "pnl": -2.0
       },
       {
-        "price": 47.21,
+        "price": 47.17,
         "pnl": -2.0
       },
       {
-        "price": 47.64,
+        "price": 47.6,
         "pnl": -2.0
       },
       {
-        "price": 48.08,
+        "price": 48.03,
         "pnl": -2.0
       },
       {
-        "price": 48.51,
+        "price": 48.46,
         "pnl": -2.0
       },
       {
-        "price": 48.94,
+        "price": 48.9,
         "pnl": -2.0
       },
       {
-        "price": 49.38,
+        "price": 49.33,
         "pnl": -2.0
       },
       {
-        "price": 49.81,
+        "price": 49.76,
         "pnl": -2.0
       },
       {
-        "price": 50.24,
+        "price": 50.2,
         "pnl": -2.0
       },
       {
-        "price": 50.68,
+        "price": 50.63,
         "pnl": -2.0
       },
       {
-        "price": 51.11,
+        "price": 51.06,
         "pnl": -2.0
       },
       {
-        "price": 51.54,
+        "price": 51.49,
         "pnl": -2.0
       },
       {
-        "price": 51.97,
+        "price": 51.93,
         "pnl": -2.0
       },
       {
-        "price": 52.41,
+        "price": 52.36,
         "pnl": -2.0
       },
       {
-        "price": 52.84,
+        "price": 52.79,
         "pnl": -2.0
       },
       {
-        "price": 53.27,
+        "price": 53.22,
         "pnl": -2.0
       },
       {
-        "price": 53.71,
+        "price": 53.66,
         "pnl": -2.0
       },
       {
-        "price": 54.14,
+        "price": 54.09,
         "pnl": -2.0
       },
       {
-        "price": 54.57,
+        "price": 54.52,
         "pnl": -2.0
       },
       {
-        "price": 55.01,
+        "price": 54.96,
         "pnl": -2.0
       },
       {
-        "price": 55.44,
+        "price": 55.39,
         "pnl": -2.0
       },
       {
-        "price": 55.87,
+        "price": 55.82,
         "pnl": -2.0
       },
       {
-        "price": 56.31,
+        "price": 56.25,
         "pnl": -2.0
       },
       {
-        "price": 56.74,
+        "price": 56.69,
         "pnl": -2.0
       },
       {
-        "price": 57.17,
-        "pnl": -2.17
+        "price": 57.12,
+        "pnl": -2.12
       },
       {
-        "price": 57.6,
-        "pnl": -2.6
+        "price": 57.55,
+        "pnl": -2.55
       },
       {
-        "price": 58.04,
+        "price": 57.98,
+        "pnl": -2.98
+      },
+      {
+        "price": 58.42,
         "pnl": -3.0
       },
       {
-        "price": 58.47,
+        "price": 58.85,
         "pnl": -3.0
       },
       {
-        "price": 58.9,
+        "price": 59.28,
         "pnl": -3.0
       },
       {
-        "price": 59.34,
+        "price": 59.72,
         "pnl": -3.0
       },
       {
-        "price": 59.77,
+        "price": 60.15,
         "pnl": -3.0
       },
       {
-        "price": 60.2,
+        "price": 60.58,
         "pnl": -3.0
       },
       {
-        "price": 60.64,
+        "price": 61.01,
         "pnl": -3.0
       },
       {
-        "price": 61.07,
+        "price": 61.45,
         "pnl": -3.0
       },
       {
-        "price": 61.5,
+        "price": 61.88,
         "pnl": -3.0
       },
       {
-        "price": 61.94,
+        "price": 62.31,
         "pnl": -3.0
       },
       {
-        "price": 62.37,
+        "price": 62.74,
         "pnl": -3.0
       },
       {
-        "price": 62.8,
+        "price": 63.18,
         "pnl": -3.0
       },
       {
-        "price": 63.24,
+        "price": 63.61,
         "pnl": -3.0
       },
       {
-        "price": 63.67,
+        "price": 64.04,
         "pnl": -3.0
       },
       {
-        "price": 64.1,
+        "price": 64.48,
         "pnl": -3.0
       },
       {
-        "price": 64.53,
-        "pnl": -3.0
-      },
-      {
-        "price": 64.97,
+        "price": 64.91,
         "pnl": -3.0
       }
     ],
@@ -309,7 +309,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 50.7,
+      "score": 50.9,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -318,7 +318,7 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 48.1,
+      "score": 48.3,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -327,11 +327,20 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 46.8,
+      "score": 47.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x BAC 20-Nov-2026 53 Call<br> Sell 1x BAC 20-Nov-2026 54 Call<br> Sell 1x BAC 20-Nov-2026 54 Call<br> Buy 1x BAC 20-Nov-2026 56 Call"
+      "legs_summary": "Buy 1x BAC 20-Nov-2026 53 Call<br> Sell 1x BAC 20-Nov-2026 54 Call<br> Sell 1x BAC 20-Nov-2026 54 Call<br> Buy 1x BAC 20-Nov-2026 55 Call"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 44.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x BAC 20-Nov-2026 54.1 Call<br> Sell 1x BAC 20-Nov-2026 57 Call"
     },
     {
       "strategy_type": "wheel",
@@ -345,7 +354,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 41.8,
+      "score": 42.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -357,11 +366,11 @@
     "EMA50": "58.63",
     "EMA100": "58.06",
     "EMA200": "55.88",
-    "RSI(14)": "25.95",
+    "RSI(14)": "25.46",
     "ATR(14)": "1.08",
-    "ADX(14)": "44.50",
+    "ADX(14)": "44.49",
     "BB(20,2)": "0.24",
-    "P_SHAPE(20)": "36.78"
+    "P_SHAPE(20)": "36.77"
   },
   "rules": [
     {
@@ -444,6 +453,34 @@
   ],
   "news": [
     {
+      "title": "Is A Tech Bubble Brewing? BofA Analysts Think So; Advises To Buy QQQ Options As A Hedge",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/options/articles/tech-bubble-brewing-bofa-analysts-212130638.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why C.H. Robinson Stock Was Sliding Again Today",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-c-h-robinson-stock-184016575.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wells Fargo vs Bank of America: Which Big Bank Dividend Is the Better Buy",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-vs-bank-america-174508660.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Diodes gets BofA buy rating as earnings growth seen outpacing analog peers",
+      "publisher": "Proactive",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/diodes-gets-bofa-buy-rating-162800491.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "As U.S. Cybercrime Losses Top $20 Billion, Bank of America Expands Fraud Education for Small Business Owners",
       "publisher": "PR Newswire",
       "link": "https://finance.yahoo.com/small-business/articles/u-cybercrime-losses-top-20-130000433.html",
@@ -456,34 +493,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/autonomous-research-adjusts-pt-bank-105439996.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "Why McCormick Stock Got Slammed Last Month",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-mccormick-stock-got-slammed-104412494.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Wealthy boomers doubt their heirs will keep giving as $124 trillion changes hands, BofA finds. The data shows a different reality",
-      "publisher": "Fortune",
-      "link": "https://finance.yahoo.com/small-business/articles/wealthy-boomers-doubt-heirs-keep-070300233.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bank of America sees Eaton heading for a big surprise",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-sees-eaton-heading-030700654.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Bank of America Stocks Rise although Jefferies Cuts Its Target",
-      "publisher": "GuruFocus.com",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-stocks-rise-although-191144751.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
     }
   ]
 }

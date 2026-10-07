@@ -1,14 +1,14 @@
 {
   "symbol": "ORCL",
-  "last_price": 145.25,
+  "last_price": 144.77,
   "as_of": "2026-10-06 13:30:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.8,
-  "fit_score": 17.5,
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.0,
+  "fit_score": 20.0,
   "confidence_grade": "C",
-  "confidence_percentage": 17.5,
-  "vix": 15.33,
+  "confidence_percentage": 20.0,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 155.0,
         "strike_formatted": "155",
         "option_type": "Call",
-        "delta": 0.143,
+        "delta": 0.121,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x ORCL 20-Nov-2026 155 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 160.0,
         "strike_formatted": "160",
         "option_type": "Call",
-        "delta": 0.049,
+        "delta": 0.038,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x ORCL 20-Nov-2026 160 Call"
       }
     ],
@@ -46,217 +46,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 140.89,
-    "take_profit_price": 149.61,
-    "net_delta": -0.094,
+    "stop_loss_price": 140.43,
+    "take_profit_price": 149.11,
+    "net_delta": -0.083,
     "net_theta": 0.012,
     "probability_of_profit": 0.0,
-    "var_95": 4.31,
+    "var_95": 3.34,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 116.2,
+        "price": 115.82,
         "pnl": -5.0
       },
       {
-        "price": 117.36,
+        "price": 116.97,
         "pnl": -5.0
       },
       {
-        "price": 118.52,
+        "price": 118.13,
         "pnl": -5.0
       },
       {
-        "price": 119.69,
+        "price": 119.29,
         "pnl": -5.0
       },
       {
-        "price": 120.85,
+        "price": 120.45,
         "pnl": -5.0
       },
       {
-        "price": 122.01,
+        "price": 121.61,
         "pnl": -5.0
       },
       {
-        "price": 123.17,
+        "price": 122.76,
         "pnl": -5.0
       },
       {
-        "price": 124.33,
+        "price": 123.92,
         "pnl": -5.0
       },
       {
-        "price": 125.5,
+        "price": 125.08,
         "pnl": -5.0
       },
       {
-        "price": 126.66,
+        "price": 126.24,
         "pnl": -5.0
       },
       {
-        "price": 127.82,
+        "price": 127.4,
         "pnl": -5.0
       },
       {
-        "price": 128.98,
+        "price": 128.56,
         "pnl": -5.0
       },
       {
-        "price": 130.14,
+        "price": 129.71,
         "pnl": -5.0
       },
       {
-        "price": 131.31,
+        "price": 130.87,
         "pnl": -5.0
       },
       {
-        "price": 132.47,
+        "price": 132.03,
         "pnl": -5.0
       },
       {
-        "price": 133.63,
+        "price": 133.19,
         "pnl": -5.0
       },
       {
-        "price": 134.79,
+        "price": 134.35,
         "pnl": -5.0
       },
       {
-        "price": 135.95,
+        "price": 135.5,
         "pnl": -5.0
       },
       {
-        "price": 137.12,
+        "price": 136.66,
         "pnl": -5.0
       },
       {
-        "price": 138.28,
+        "price": 137.82,
         "pnl": -5.0
       },
       {
-        "price": 139.44,
+        "price": 138.98,
         "pnl": -5.0
       },
       {
-        "price": 140.6,
+        "price": 140.14,
         "pnl": -5.0
       },
       {
-        "price": 141.76,
+        "price": 141.3,
         "pnl": -5.0
       },
       {
-        "price": 142.93,
+        "price": 142.45,
         "pnl": -5.0
       },
       {
-        "price": 144.09,
+        "price": 143.61,
         "pnl": -5.0
       },
       {
-        "price": 145.25,
+        "price": 144.77,
         "pnl": -5.0
       },
       {
-        "price": 146.41,
+        "price": 145.93,
         "pnl": -5.0
       },
       {
-        "price": 147.57,
+        "price": 147.09,
         "pnl": -5.0
       },
       {
-        "price": 148.74,
+        "price": 148.24,
         "pnl": -5.0
       },
       {
-        "price": 149.9,
+        "price": 149.4,
         "pnl": -5.0
       },
       {
-        "price": 151.06,
+        "price": 150.56,
         "pnl": -5.0
       },
       {
-        "price": 152.22,
+        "price": 151.72,
         "pnl": -5.0
       },
       {
-        "price": 153.38,
+        "price": 152.88,
         "pnl": -5.0
       },
       {
-        "price": 154.55,
+        "price": 154.04,
         "pnl": -5.0
       },
       {
-        "price": 155.71,
-        "pnl": -5.71
+        "price": 155.19,
+        "pnl": -5.19
       },
       {
-        "price": 156.87,
-        "pnl": -6.87
+        "price": 156.35,
+        "pnl": -6.35
       },
       {
-        "price": 158.03,
-        "pnl": -8.03
+        "price": 157.51,
+        "pnl": -7.51
       },
       {
-        "price": 159.19,
-        "pnl": -9.19
+        "price": 158.67,
+        "pnl": -8.67
       },
       {
-        "price": 160.36,
+        "price": 159.83,
+        "pnl": -9.83
+      },
+      {
+        "price": 160.98,
         "pnl": -10.0
       },
       {
-        "price": 161.52,
+        "price": 162.14,
         "pnl": -10.0
       },
       {
-        "price": 162.68,
+        "price": 163.3,
         "pnl": -10.0
       },
       {
-        "price": 163.84,
+        "price": 164.46,
         "pnl": -10.0
       },
       {
-        "price": 165.0,
+        "price": 165.62,
         "pnl": -10.0
       },
       {
-        "price": 166.17,
+        "price": 166.78,
         "pnl": -10.0
       },
       {
-        "price": 167.33,
+        "price": 167.93,
         "pnl": -10.0
       },
       {
-        "price": 168.49,
+        "price": 169.09,
         "pnl": -10.0
       },
       {
-        "price": 169.65,
+        "price": 170.25,
         "pnl": -10.0
       },
       {
-        "price": 170.81,
+        "price": 171.41,
         "pnl": -10.0
       },
       {
-        "price": 171.98,
+        "price": 172.57,
         "pnl": -10.0
       },
       {
-        "price": 173.14,
-        "pnl": -10.0
-      },
-      {
-        "price": 174.3,
+        "price": 173.72,
         "pnl": -10.0
       }
     ],
@@ -280,36 +280,36 @@
       "legs_summary": "Sell 1x ORCL 20-Nov-2026 155 Call<br> Buy 1x ORCL 20-Nov-2026 160 Call"
     },
     {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 61.6,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x ORCL 20-Nov-2026 130 Put<br> Sell 1x ORCL 20-Nov-2026 135 Put<br> Sell 1x ORCL 20-Nov-2026 155 Call<br> Buy 1x ORCL 20-Nov-2026 160 Call"
+    },
+    {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 58.7,
+      "score": 57.9,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "Buy 1x ORCL 20-Nov-2026 145 Put<br> Sell 1x ORCL 20-Nov-2026 140 Put"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 56.9,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x ORCL 20-Nov-2026 130 Put<br> Sell 1x ORCL 20-Nov-2026 135 Put<br> Sell 1x ORCL 20-Nov-2026 155 Call<br> Buy 1x ORCL 20-Nov-2026 160 Call"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 53.0,
+      "score": 51.7,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x ORCL 20-Nov-2026 145.2 Put"
+      "legs_summary": "Sell 1x ORCL 20-Nov-2026 144.8 Put"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 41.6,
+      "score": 45.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -317,19 +317,26 @@
     }
   ],
   "indicators": {
-    "EMA20": "143.22",
-    "EMA50": "146.08",
-    "EMA100": "152.82",
+    "EMA20": "143.17",
+    "EMA50": "146.06",
+    "EMA100": "152.81",
     "EMA200": "165.16",
-    "RSI(14)": "51.59",
-    "ATR(14)": "6.47",
-    "ADX(14)": "11.47",
-    "BB(20,2)": "0.53",
-    "P_SHAPE(20)": "31.79"
+    "RSI(14)": "51.08",
+    "ATR(14)": "6.53",
+    "ADX(14)": "11.51",
+    "BB(20,2)": "0.52",
+    "P_SHAPE(20)": "31.76"
   },
   "rules": [
     {
       "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -385,13 +392,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -408,44 +408,37 @@
   ],
   "news": [
     {
-      "title": "Paramount closes historic Warner Bros. merger to form Skydance",
-      "publisher": "TechCrunch",
-      "link": "https://finance.yahoo.com/media-advertising/articles/paramount-closes-historic-warner-bros-135732215.html",
+      "title": "Tony Blair tapped for Skydance role after $110bn Hollywood megadeal",
+      "publisher": "The Telegraph",
+      "link": "https://finance.yahoo.com/media-advertising/articles/tony-blair-tapped-skydance-role-001809555.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "The $110 Billion Paramount-Warner Merger Closes Today. What Shareholders Need to Know",
+      "title": "Nebius Rallies 9% on an Inference Deal While Its Earnings Multiple Sits Near 197x; CoreWeave Gains 4%, Oracle Advances 3%",
       "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/110-billion-paramount-warner-merger-131045915.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nebius-rallies-9-inference-deal-175729785.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Hybrid Information Technology (IT) Management Market Global Report 2026 | Capitalize on $114.84 Billion AIOps and Cloud Demand with Dell, Cisco, Oracle, ServiceNow and Datadog",
+      "publisher": "GlobeNewswire",
+      "link": "https://finance.yahoo.com/technology/articles/hybrid-information-technology-management-market-165100725.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Ember AI Launches Strategic Partner Program and New Oracle Health Integration",
-      "publisher": "PR Newswire",
-      "link": "https://finance.yahoo.com/healthcare/articles/ember-ai-launches-strategic-partner-130000831.html",
+      "title": "100,000 Reasons to Buy Oracle Stock",
+      "publisher": "Barchart",
+      "link": "https://finance.yahoo.com/technology/ai/articles/100-000-reasons-buy-oracle-153219425.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "New Global Survey Finds Majority of VMware Users Are Choosing Alternative Paths for Cost Control, Roadmap Flexibility and Better Support",
-      "publisher": "Business Wire",
-      "link": "https://finance.yahoo.com/technology/articles/global-survey-finds-majority-vmware-130000123.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Latest News In Cloud AI - Applied Digital Expands Into Finland With AI Campus Development",
-      "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/latest-news-cloud-ai-applied-123732053.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Is PTC Stock Increasing Your Market Risk?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/ptc-stock-increasing-market-risk-123019310.html",
+      "title": "Paramount-Warner Bros. transaction closes, creating a new Hollywood colossus",
+      "publisher": "LA Times",
+      "link": "https://finance.yahoo.com/media-advertising/articles/paramount-warner-bros-transaction-closes-143226884.html",
       "published_at": "Today",
       "sentiment": "bearish"
     }

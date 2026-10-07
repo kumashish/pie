@@ -1,6 +1,6 @@
 {
   "symbol": "GS",
-  "last_price": 901.62,
+  "last_price": 897.18,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,262 +8,262 @@
   "fit_score": 35.0,
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
-  "vix": 15.33,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (33.6) is oversold (< 35) [Synthetic PCR: 1.26]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (31.9) is oversold (< 35) [Synthetic PCR: 1.29]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 950.0,
-        "strike_formatted": "950",
+        "strike": 940.0,
+        "strike_formatted": "940",
         "option_type": "Call",
-        "delta": 0.203,
+        "delta": 0.226,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x GS 20-Nov-2026 950 Call"
+        "dte": 44,
+        "summary": "Sell 1x GS 20-Nov-2026 940 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 975.0,
-        "strike_formatted": "975",
+        "strike": 965.0,
+        "strike_formatted": "965",
         "option_type": "Call",
-        "delta": 0.095,
+        "delta": 0.104,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x GS 20-Nov-2026 975 Call"
+        "dte": 44,
+        "summary": "Buy 1x GS 20-Nov-2026 965 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 35.0,
-    "stop_loss_price": 874.57,
-    "take_profit_price": 928.67,
-    "net_delta": -0.108,
-    "net_theta": 0.075,
+    "stop_loss_price": 870.26,
+    "take_profit_price": 924.1,
+    "net_delta": -0.122,
+    "net_theta": 0.078,
     "probability_of_profit": 0.0,
     "var_95": 25.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 721.3,
+        "price": 717.74,
         "pnl": -35.0
       },
       {
-        "price": 728.51,
+        "price": 724.92,
         "pnl": -35.0
       },
       {
-        "price": 735.72,
+        "price": 732.1,
         "pnl": -35.0
       },
       {
-        "price": 742.93,
+        "price": 739.28,
         "pnl": -35.0
       },
       {
-        "price": 750.15,
+        "price": 746.45,
         "pnl": -35.0
       },
       {
-        "price": 757.36,
+        "price": 753.63,
         "pnl": -35.0
       },
       {
-        "price": 764.57,
+        "price": 760.81,
         "pnl": -35.0
       },
       {
-        "price": 771.79,
+        "price": 767.99,
         "pnl": -35.0
       },
       {
-        "price": 779.0,
+        "price": 775.16,
         "pnl": -35.0
       },
       {
-        "price": 786.21,
+        "price": 782.34,
         "pnl": -35.0
       },
       {
-        "price": 793.43,
+        "price": 789.52,
         "pnl": -35.0
       },
       {
-        "price": 800.64,
+        "price": 796.7,
         "pnl": -35.0
       },
       {
-        "price": 807.85,
+        "price": 803.87,
         "pnl": -35.0
       },
       {
-        "price": 815.06,
+        "price": 811.05,
         "pnl": -35.0
       },
       {
-        "price": 822.28,
+        "price": 818.23,
         "pnl": -35.0
       },
       {
-        "price": 829.49,
+        "price": 825.41,
         "pnl": -35.0
       },
       {
-        "price": 836.7,
+        "price": 832.58,
         "pnl": -35.0
       },
       {
-        "price": 843.92,
+        "price": 839.76,
         "pnl": -35.0
       },
       {
-        "price": 851.13,
+        "price": 846.94,
         "pnl": -35.0
       },
       {
-        "price": 858.34,
+        "price": 854.12,
         "pnl": -35.0
       },
       {
-        "price": 865.56,
+        "price": 861.29,
         "pnl": -35.0
       },
       {
-        "price": 872.77,
+        "price": 868.47,
         "pnl": -35.0
       },
       {
-        "price": 879.98,
+        "price": 875.65,
         "pnl": -35.0
       },
       {
-        "price": 887.19,
+        "price": 882.83,
         "pnl": -35.0
       },
       {
-        "price": 894.41,
+        "price": 890.0,
         "pnl": -35.0
       },
       {
-        "price": 901.62,
+        "price": 897.18,
         "pnl": -35.0
       },
       {
-        "price": 908.83,
+        "price": 904.36,
         "pnl": -35.0
       },
       {
-        "price": 916.05,
+        "price": 911.53,
         "pnl": -35.0
       },
       {
-        "price": 923.26,
+        "price": 918.71,
         "pnl": -35.0
       },
       {
-        "price": 930.47,
+        "price": 925.89,
         "pnl": -35.0
       },
       {
-        "price": 937.68,
+        "price": 933.07,
         "pnl": -35.0
       },
       {
-        "price": 944.9,
-        "pnl": -35.0
+        "price": 940.24,
+        "pnl": -35.24
       },
       {
-        "price": 952.11,
-        "pnl": -37.11
+        "price": 947.42,
+        "pnl": -42.42
       },
       {
-        "price": 959.32,
-        "pnl": -44.32
+        "price": 954.6,
+        "pnl": -49.6
       },
       {
-        "price": 966.54,
-        "pnl": -51.54
+        "price": 961.78,
+        "pnl": -56.78
       },
       {
-        "price": 973.75,
-        "pnl": -58.75
-      },
-      {
-        "price": 980.96,
+        "price": 968.95,
         "pnl": -60.0
       },
       {
-        "price": 988.18,
+        "price": 976.13,
         "pnl": -60.0
       },
       {
-        "price": 995.39,
+        "price": 983.31,
         "pnl": -60.0
       },
       {
-        "price": 1002.6,
+        "price": 990.49,
         "pnl": -60.0
       },
       {
-        "price": 1009.81,
+        "price": 997.66,
         "pnl": -60.0
       },
       {
-        "price": 1017.03,
+        "price": 1004.84,
         "pnl": -60.0
       },
       {
-        "price": 1024.24,
+        "price": 1012.02,
         "pnl": -60.0
       },
       {
-        "price": 1031.45,
+        "price": 1019.2,
         "pnl": -60.0
       },
       {
-        "price": 1038.67,
+        "price": 1026.37,
         "pnl": -60.0
       },
       {
-        "price": 1045.88,
+        "price": 1033.55,
         "pnl": -60.0
       },
       {
-        "price": 1053.09,
+        "price": 1040.73,
         "pnl": -60.0
       },
       {
-        "price": 1060.31,
+        "price": 1047.91,
         "pnl": -60.0
       },
       {
-        "price": 1067.52,
+        "price": 1055.08,
         "pnl": -60.0
       },
       {
-        "price": 1074.73,
+        "price": 1062.26,
         "pnl": -60.0
       },
       {
-        "price": 1081.94,
+        "price": 1069.44,
+        "pnl": -60.0
+      },
+      {
+        "price": 1076.62,
         "pnl": -60.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.819,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3371,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,11 +273,11 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 91.0,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x GS 20-Nov-2026 950 Call<br> Buy 1x GS 20-Nov-2026 975 Call"
+      "legs_summary": "Sell 1x GS 20-Nov-2026 940 Call<br> Buy 1x GS 20-Nov-2026 965 Call"
     },
     {
       "strategy_type": "iron_condor",
@@ -286,7 +286,7 @@
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x GS 20-Nov-2026 825 Put<br> Sell 1x GS 20-Nov-2026 850 Put<br> Sell 1x GS 20-Nov-2026 950 Call<br> Buy 1x GS 20-Nov-2026 975 Call"
+      "legs_summary": "Buy 1x GS 20-Nov-2026 825 Put<br> Sell 1x GS 20-Nov-2026 850 Put<br> Sell 1x GS 20-Nov-2026 940 Call<br> Buy 1x GS 20-Nov-2026 965 Call"
     },
     {
       "strategy_type": "ratio_put_spread",
@@ -295,7 +295,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x GS 20-Nov-2026 900 Put<br> Sell 1x GS 20-Nov-2026 850 Put<br> Sell 1x GS 20-Nov-2026 850 Put"
+      "legs_summary": "Buy 1x GS 20-Nov-2026 895 Put<br> Sell 1x GS 20-Nov-2026 850 Put<br> Sell 1x GS 20-Nov-2026 850 Put"
     },
     {
       "strategy_type": "jade_lizard",
@@ -304,25 +304,34 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x GS 20-Nov-2026 850 Put<br> Sell 1x GS 20-Nov-2026 950 Call<br> Buy 1x GS 20-Nov-2026 975 Call"
+      "legs_summary": "Sell 1x GS 20-Nov-2026 850 Put<br> Sell 1x GS 20-Nov-2026 940 Call<br> Buy 1x GS 20-Nov-2026 965 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 49.1,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x GS 20-Nov-2026 895 Call<br> Sell 1x GS 20-Nov-2026 930 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 46.8,
+      "score": 47.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x GS 20-Nov-2026 875 Call<br> Sell 1x GS 20-Nov-2026 900 Call<br> Sell 1x GS 20-Nov-2026 900 Call<br> Buy 1x GS 20-Nov-2026 925 Call"
+      "legs_summary": "Buy 1x GS 20-Nov-2026 875 Call<br> Sell 1x GS 20-Nov-2026 895 Call<br> Sell 1x GS 20-Nov-2026 895 Call<br> Buy 1x GS 20-Nov-2026 920 Call"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 46.1,
+      "score": 46.7,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x GS 20-Nov-2026 900 Put<br> Sell 1x GS 20-Nov-2026 865 Put"
+      "legs_summary": "Buy 1x GS 20-Nov-2026 895 Put<br> Sell 1x GS 20-Nov-2026 860 Put"
     },
     {
       "strategy_type": "wheel",
@@ -334,25 +343,34 @@
       "legs_summary": "Sell 1x GS 20-Nov-2026 850 Put"
     },
     {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 43.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x GS 20-Nov-2026 897.2 Call<br> Sell 1x GS 20-Nov-2026 940 Call"
+    },
+    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 41.8,
+      "score": 42.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x GS 20-Nov-2026 875 Call<br> Sell 1x GS 20-Nov-2026 900 Call<br> Sell 1x GS 20-Nov-2026 900 Call<br> Buy 1x GS 20-Nov-2026 950 Call"
+      "legs_summary": "Buy 1x GS 20-Nov-2026 875 Call<br> Sell 1x GS 20-Nov-2026 895 Call<br> Sell 1x GS 20-Nov-2026 895 Call<br> Buy 1x GS 20-Nov-2026 945 Call"
     }
   ],
   "indicators": {
-    "EMA20": "939.79",
-    "EMA50": "980.18",
-    "EMA100": "986.36",
-    "EMA200": "946.28",
-    "RSI(14)": "33.64",
+    "EMA20": "939.37",
+    "EMA50": "980.00",
+    "EMA100": "986.27",
+    "EMA200": "946.24",
+    "RSI(14)": "31.87",
     "ATR(14)": "22.72",
     "ADX(14)": "35.73",
-    "BB(20,2)": "0.25",
-    "P_SHAPE(20)": "35.87"
+    "BB(20,2)": "0.23",
+    "P_SHAPE(20)": "35.82"
   },
   "rules": [
     {
@@ -435,6 +453,27 @@
   ],
   "news": [
     {
+      "title": "Defense Tech Goes Public: REDLattice CEO Andy Boyd, Live at Nasdaq",
+      "publisher": "IPO-Edge.com",
+      "link": "https://finance.yahoo.com/technology/articles/defense-tech-goes-public-redlattice-195925017.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Wall St. Bonuses Head for a New Record. Bank Earnings Will Hint at How Much.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/1d20db44-0aa9-371f-9f28-e72838ca7223/wall-st.-bonuses-head-for-a.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "SpaceX Stock Rises Again. Goldman Sachs Hikes Price Target on AI Surge",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-rises-again-goldman-182636389.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Goldman Sachs Isn\u2019t Ready to Raise Its 14% to 16% ROE Target. Here\u2019s What That Means for the Stock Before October 13",
       "publisher": "TIKR",
       "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-isn-t-ready-144935611.html",
@@ -442,39 +481,18 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Goldman Sachs (GS) Earnings Expected to Grow: Should You Buy?",
+      "title": "Can Morgan Stanley's Integrated Model Drive Long-Term Earnings Growth?",
       "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-gs-earnings-expected-130004868.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanleys-integrated-model-drive-143000282.html",
       "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
     },
     {
-      "title": "BMO Capital Adjusts PT on Goldman Sachs to $970 From $1,150, Maintains Market Perform Rating",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bmo-capital-adjusts-pt-goldman-105516057.html",
+      "title": "Goldman Sachs Falls 20% From Record High and Enters Into Bears Market. How to Play GS Stock Here.",
+      "publisher": "Barchart",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-falls-20-record-132613342.html",
       "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Jefferies Adjusts Price Target on Goldman Sachs to $1,124 From $1,299, Maintains Buy Rating",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jefferies-adjusts-price-target-goldman-105511667.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "These Company Insiders Are Selling. Should You?",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/73ffc682-b7cd-38c4-b4ab-7f0f0d1bcb90/these-company-insiders-are.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Rising interest rates could trigger a harsh reality for America's ballooning debt pile, Goldman Sachs warns",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/economy/article/rising-interest-rates-could-trigger-a-harsh-reality-for-americas-ballooning-debt-pile-goldman-sachs-warns-095821632.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
+      "sentiment": "bullish"
     }
   ]
 }

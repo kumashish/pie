@@ -1,14 +1,14 @@
 {
   "symbol": "WMT",
-  "last_price": 106.41,
+  "last_price": 107.2,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "trend_score": 3.2,
+  "fit_score": 32.5,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 15.33,
+  "confidence_percentage": 32.5,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 110.0,
         "strike_formatted": "110",
         "option_type": "Call",
-        "delta": 0.317,
+        "delta": 0.362,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x WMT 20-Nov-2026 110 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 115.0,
         "strike_formatted": "115",
         "option_type": "Call",
-        "delta": 0.097,
+        "delta": 0.114,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x WMT 20-Nov-2026 115 Call"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 103.22,
-    "take_profit_price": 109.6,
-    "net_delta": -0.22,
+    "stop_loss_price": 103.98,
+    "take_profit_price": 110.42,
+    "net_delta": -0.248,
     "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,151 +56,147 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 85.13,
+        "price": 85.76,
         "pnl": -5.0
       },
       {
-        "price": 85.98,
+        "price": 86.62,
         "pnl": -5.0
       },
       {
-        "price": 86.83,
+        "price": 87.48,
         "pnl": -5.0
       },
       {
-        "price": 87.68,
+        "price": 88.33,
         "pnl": -5.0
       },
       {
-        "price": 88.53,
+        "price": 89.19,
         "pnl": -5.0
       },
       {
-        "price": 89.38,
+        "price": 90.05,
         "pnl": -5.0
       },
       {
-        "price": 90.24,
+        "price": 90.91,
         "pnl": -5.0
       },
       {
-        "price": 91.09,
+        "price": 91.76,
         "pnl": -5.0
       },
       {
-        "price": 91.94,
+        "price": 92.62,
         "pnl": -5.0
       },
       {
-        "price": 92.79,
+        "price": 93.48,
         "pnl": -5.0
       },
       {
-        "price": 93.64,
+        "price": 94.34,
         "pnl": -5.0
       },
       {
-        "price": 94.49,
+        "price": 95.19,
         "pnl": -5.0
       },
       {
-        "price": 95.34,
+        "price": 96.05,
         "pnl": -5.0
       },
       {
-        "price": 96.19,
+        "price": 96.91,
         "pnl": -5.0
       },
       {
-        "price": 97.05,
+        "price": 97.77,
         "pnl": -5.0
       },
       {
-        "price": 97.9,
+        "price": 98.62,
         "pnl": -5.0
       },
       {
-        "price": 98.75,
+        "price": 99.48,
         "pnl": -5.0
       },
       {
-        "price": 99.6,
+        "price": 100.34,
         "pnl": -5.0
       },
       {
-        "price": 100.45,
+        "price": 101.2,
         "pnl": -5.0
       },
       {
-        "price": 101.3,
+        "price": 102.05,
         "pnl": -5.0
       },
       {
-        "price": 102.15,
+        "price": 102.91,
         "pnl": -5.0
       },
       {
-        "price": 103.0,
+        "price": 103.77,
         "pnl": -5.0
       },
       {
-        "price": 103.86,
+        "price": 104.63,
         "pnl": -5.0
       },
       {
-        "price": 104.71,
+        "price": 105.48,
         "pnl": -5.0
       },
       {
-        "price": 105.56,
+        "price": 106.34,
         "pnl": -5.0
       },
       {
-        "price": 106.41,
+        "price": 107.2,
         "pnl": -5.0
       },
       {
-        "price": 107.26,
+        "price": 108.06,
         "pnl": -5.0
       },
       {
-        "price": 108.11,
+        "price": 108.92,
         "pnl": -5.0
       },
       {
-        "price": 108.96,
+        "price": 109.77,
         "pnl": -5.0
       },
       {
-        "price": 109.82,
-        "pnl": -5.0
+        "price": 110.63,
+        "pnl": -5.63
       },
       {
-        "price": 110.67,
-        "pnl": -5.67
+        "price": 111.49,
+        "pnl": -6.49
       },
       {
-        "price": 111.52,
-        "pnl": -6.52
+        "price": 112.35,
+        "pnl": -7.35
       },
       {
-        "price": 112.37,
-        "pnl": -7.37
+        "price": 113.2,
+        "pnl": -8.2
       },
       {
-        "price": 113.22,
-        "pnl": -8.22
-      },
-      {
-        "price": 114.07,
-        "pnl": -9.07
+        "price": 114.06,
+        "pnl": -9.06
       },
       {
         "price": 114.92,
         "pnl": -9.92
       },
       {
-        "price": 115.77,
+        "price": 115.78,
         "pnl": -10.0
       },
       {
@@ -208,55 +204,59 @@
         "pnl": -10.0
       },
       {
-        "price": 117.48,
+        "price": 117.49,
         "pnl": -10.0
       },
       {
-        "price": 118.33,
+        "price": 118.35,
         "pnl": -10.0
       },
       {
-        "price": 119.18,
+        "price": 119.21,
         "pnl": -10.0
       },
       {
-        "price": 120.03,
+        "price": 120.06,
         "pnl": -10.0
       },
       {
-        "price": 120.88,
+        "price": 120.92,
         "pnl": -10.0
       },
       {
-        "price": 121.73,
+        "price": 121.78,
         "pnl": -10.0
       },
       {
-        "price": 122.58,
+        "price": 122.64,
         "pnl": -10.0
       },
       {
-        "price": 123.44,
+        "price": 123.49,
         "pnl": -10.0
       },
       {
-        "price": 124.29,
+        "price": 124.35,
         "pnl": -10.0
       },
       {
-        "price": 125.14,
+        "price": 125.21,
         "pnl": -10.0
       },
       {
-        "price": 125.99,
+        "price": 126.07,
         "pnl": -10.0
       },
       {
-        "price": 126.84,
+        "price": 126.92,
         "pnl": -10.0
       },
       {
-        "price": 127.69,
+        "price": 127.78,
+        "pnl": -10.0
+      },
+      {
+        "price": 128.64,
         "pnl": -10.0
       }
     ],
@@ -282,17 +282,26 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 65.0,
-      "grade": "B (Good)",
+      "score": 83.6,
+      "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x WMT 20-Nov-2026 95 Put<br> Sell 1x WMT 20-Nov-2026 100 Put<br> Sell 1x WMT 20-Nov-2026 110 Call<br> Buy 1x WMT 20-Nov-2026 115 Call"
     },
     {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 64.1,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x WMT 20-Nov-2026 105 Call<br> Sell 1x WMT 20-Nov-2026 105 Call<br> Sell 1x WMT 20-Nov-2026 105 Call<br> Buy 1x WMT 20-Nov-2026 110 Call"
+    },
+    {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 60.9,
-      "grade": "B (Good)",
+      "score": 52.7,
+      "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "Buy 1x WMT 20-Nov-2026 105 Put<br> Sell 1x WMT 20-Nov-2026 100 Put"
@@ -300,25 +309,68 @@
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 50.3,
+      "score": 44.9,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x WMT 20-Nov-2026 106.4 Put"
+      "legs_summary": "Sell 1x WMT 20-Nov-2026 107.2 Put"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 43.3,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x WMT 20-Nov-2026 100 Put<br> Sell 1x WMT 20-Nov-2026 105 Put<br> Sell 1x WMT 20-Nov-2026 105 Call<br> Buy 1x WMT 20-Nov-2026 115 Call"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 41.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x WMT 20-Nov-2026 105 Put<br> Sell 1x WMT 20-Nov-2026 100 Put<br> Sell 1x WMT 20-Nov-2026 100 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 40.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x WMT 20-Nov-2026 100 Put<br> Sell 1x WMT 20-Nov-2026 110 Call<br> Buy 1x WMT 20-Nov-2026 115 Call"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 40.5,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x WMT 20-Nov-2026 105 Call<br> Sell 1x WMT 20-Nov-2026 105 Call<br> Sell 1x WMT 20-Nov-2026 105 Call<br> Buy 1x WMT 20-Nov-2026 115 Call"
     }
   ],
   "indicators": {
-    "EMA20": "106.72",
-    "EMA50": "108.74",
-    "EMA100": "111.89",
-    "EMA200": "112.99",
-    "RSI(14)": "47.69",
-    "ATR(14)": "2.13",
-    "ADX(14)": "10.67",
-    "BB(20,2)": "0.42",
-    "P_SHAPE(20)": "41.42"
+    "EMA20": "106.79",
+    "EMA50": "108.77",
+    "EMA100": "111.90",
+    "EMA200": "113.00",
+    "RSI(14)": "50.08",
+    "ATR(14)": "2.20",
+    "ADX(14)": "10.55",
+    "BB(20,2)": "0.52",
+    "P_SHAPE(20)": "41.62"
   },
   "rules": [
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "ATR increasing",
       "passed": true,
@@ -376,13 +428,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
@@ -399,44 +444,44 @@
   ],
   "news": [
     {
-      "title": "Costco's Digital Sales Top $33 Billion: Can E-commerce Keep Scaling?",
+      "title": "Walmart's biggest advantage over Amazon is under attack",
+      "publisher": "TheStreet",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-found-trick-makes-order-000300626.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Walmart (WMT) Exceeds Market Returns: Some Facts to Consider",
       "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/costcos-digital-sales-top-33-130300187.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/walmart-wmt-exceeds-market-returns-204503829.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Avia and Bimma Williams Bring Together Four Creative Voices for \"Collab Camp,\" Available Exclusively at Walmart",
-      "publisher": "Business Wire",
-      "link": "https://finance.yahoo.com/media-advertising/articles/avia-bimma-williams-bring-together-130000291.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ShipStation\u00ae Launches Ship with Walmart, Bringing Discounted Rates and Seller Protections Directly In the Platform",
-      "publisher": "Business Wire",
-      "link": "https://finance.yahoo.com/small-business/articles/shipstation-launches-ship-walmart-bringing-130000895.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Can Walmart Connect Keep Powering WMT's Digital Profit Growth?",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/walmart-connect-keep-powering-wmts-125900924.html",
+      "title": "Stock Market Today: Dow, S&P 500 Rally; Cathie Wood Buys This Stock Amid 56% Dive",
+      "publisher": "Investor's Business Daily",
+      "link": "https://finance.yahoo.com/m/23879019-ae2b-39de-9232-cdfcba882196/stock-market-today%3A-dow%2C-s%26p.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "What Propelled Northwest Arkansas (NWA) to be America's Best-Performing Economy?",
-      "publisher": "PR Newswire",
-      "link": "https://finance.yahoo.com/economy/articles/propelled-northwest-arkansas-nwa-americas-123800307.html",
+      "title": "Why Is Everyone Ignoring Home Depot Stock's High Cash Yield?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-everyone-ignoring-home-depot-184245810.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Which Retailers Do AI Agents Cite the Most? Yeah, you guessed it, Walmart and Costco.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/52a030b2-e081-33e3-8656-e0e62c0a19ca/which-retailers-do-ai-agents.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "BP highlighted as Zacks Bull and MasterCraft Boat Bear of the Day",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bp-highlighted-zacks-bull-mastercraft-113100959.html",
+      "title": "Update: Equity Markets Rise Intraday as Yields Fall",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/equity-markets-rise-intraday-yields-173611200.html",
       "published_at": "Today",
       "sentiment": "bullish"
     }

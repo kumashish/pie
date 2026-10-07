@@ -1,19 +1,19 @@
 {
   "symbol": "SUNPHARMA.NS",
-  "last_price": 1804.1,
-  "as_of": "2026-10-06 03:45:00",
+  "last_price": 1787.5,
+  "as_of": "2026-10-07 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 2.8,
-  "fit_score": 27.5,
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 27.5,
-  "vix": 13.61,
+  "confidence_percentage": 25.0,
+  "vix": 13.81,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (96.6% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (97.3% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 1900.0,
         "strike_formatted": "1900",
         "option_type": "Call",
-        "delta": 0.19,
+        "delta": 0.144,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Sell 1x SUNPHARMA.NS 24-Nov-2026 1900 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 1950.0,
         "strike_formatted": "1950",
         "option_type": "Call",
-        "delta": 0.081,
+        "delta": 0.057,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Buy 1x SUNPHARMA.NS 24-Nov-2026 1950 Call"
       }
     ],
@@ -46,224 +46,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1749.98,
-    "take_profit_price": 1858.22,
-    "net_delta": -0.109,
-    "net_theta": 0.137,
+    "stop_loss_price": 1733.88,
+    "take_profit_price": 1841.12,
+    "net_delta": -0.087,
+    "net_theta": 0.126,
     "probability_of_profit": 0.0,
-    "var_95": 50.0,
+    "var_95": 49.82,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1443.28,
+        "price": 1430.0,
         "pnl": -50.0
       },
       {
-        "price": 1457.71,
+        "price": 1444.3,
         "pnl": -50.0
       },
       {
-        "price": 1472.15,
+        "price": 1458.6,
         "pnl": -50.0
       },
       {
-        "price": 1486.58,
+        "price": 1472.9,
         "pnl": -50.0
       },
       {
-        "price": 1501.01,
+        "price": 1487.2,
         "pnl": -50.0
       },
       {
-        "price": 1515.44,
+        "price": 1501.5,
         "pnl": -50.0
       },
       {
-        "price": 1529.88,
+        "price": 1515.8,
         "pnl": -50.0
       },
       {
-        "price": 1544.31,
+        "price": 1530.1,
         "pnl": -50.0
       },
       {
-        "price": 1558.74,
+        "price": 1544.4,
         "pnl": -50.0
       },
       {
-        "price": 1573.18,
+        "price": 1558.7,
         "pnl": -50.0
       },
       {
-        "price": 1587.61,
+        "price": 1573.0,
         "pnl": -50.0
       },
       {
-        "price": 1602.04,
+        "price": 1587.3,
         "pnl": -50.0
       },
       {
-        "price": 1616.47,
+        "price": 1601.6,
         "pnl": -50.0
       },
       {
-        "price": 1630.91,
+        "price": 1615.9,
         "pnl": -50.0
       },
       {
-        "price": 1645.34,
+        "price": 1630.2,
         "pnl": -50.0
       },
       {
-        "price": 1659.77,
+        "price": 1644.5,
         "pnl": -50.0
       },
       {
-        "price": 1674.2,
+        "price": 1658.8,
         "pnl": -50.0
       },
       {
-        "price": 1688.64,
+        "price": 1673.1,
         "pnl": -50.0
       },
       {
-        "price": 1703.07,
+        "price": 1687.4,
         "pnl": -50.0
       },
       {
-        "price": 1717.5,
+        "price": 1701.7,
         "pnl": -50.0
       },
       {
-        "price": 1731.94,
+        "price": 1716.0,
         "pnl": -50.0
       },
       {
-        "price": 1746.37,
+        "price": 1730.3,
         "pnl": -50.0
       },
       {
-        "price": 1760.8,
+        "price": 1744.6,
         "pnl": -50.0
       },
       {
-        "price": 1775.23,
+        "price": 1758.9,
         "pnl": -50.0
       },
       {
-        "price": 1789.67,
+        "price": 1773.2,
         "pnl": -50.0
       },
       {
-        "price": 1804.1,
+        "price": 1787.5,
         "pnl": -50.0
       },
       {
-        "price": 1818.53,
+        "price": 1801.8,
         "pnl": -50.0
       },
       {
-        "price": 1832.97,
+        "price": 1816.1,
         "pnl": -50.0
       },
       {
-        "price": 1847.4,
+        "price": 1830.4,
         "pnl": -50.0
       },
       {
-        "price": 1861.83,
+        "price": 1844.7,
         "pnl": -50.0
       },
       {
-        "price": 1876.26,
+        "price": 1859.0,
         "pnl": -50.0
       },
       {
-        "price": 1890.7,
+        "price": 1873.3,
         "pnl": -50.0
       },
       {
-        "price": 1905.13,
-        "pnl": -55.13
+        "price": 1887.6,
+        "pnl": -50.0
       },
       {
-        "price": 1919.56,
-        "pnl": -69.56
+        "price": 1901.9,
+        "pnl": -51.9
       },
       {
-        "price": 1934.0,
-        "pnl": -84.0
+        "price": 1916.2,
+        "pnl": -66.2
       },
       {
-        "price": 1948.43,
-        "pnl": -98.43
+        "price": 1930.5,
+        "pnl": -80.5
       },
       {
-        "price": 1962.86,
+        "price": 1944.8,
+        "pnl": -94.8
+      },
+      {
+        "price": 1959.1,
         "pnl": -100.0
       },
       {
-        "price": 1977.29,
+        "price": 1973.4,
         "pnl": -100.0
       },
       {
-        "price": 1991.73,
+        "price": 1987.7,
         "pnl": -100.0
       },
       {
-        "price": 2006.16,
+        "price": 2002.0,
         "pnl": -100.0
       },
       {
-        "price": 2020.59,
+        "price": 2016.3,
         "pnl": -100.0
       },
       {
-        "price": 2035.02,
+        "price": 2030.6,
         "pnl": -100.0
       },
       {
-        "price": 2049.46,
+        "price": 2044.9,
         "pnl": -100.0
       },
       {
-        "price": 2063.89,
+        "price": 2059.2,
         "pnl": -100.0
       },
       {
-        "price": 2078.32,
+        "price": 2073.5,
         "pnl": -100.0
       },
       {
-        "price": 2092.76,
+        "price": 2087.8,
         "pnl": -100.0
       },
       {
-        "price": 2107.19,
+        "price": 2102.1,
         "pnl": -100.0
       },
       {
-        "price": 2121.62,
+        "price": 2116.4,
         "pnl": -100.0
       },
       {
-        "price": 2136.05,
+        "price": 2130.7,
         "pnl": -100.0
       },
       {
-        "price": 2150.49,
-        "pnl": -100.0
-      },
-      {
-        "price": 2164.92,
+        "price": 2145.0,
         "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.838,
+      "win_probability": 0.841,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3542,
+      "half_kelly_fraction": 0.3569,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,7 +273,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 96.6,
+      "score": 97.3,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -282,25 +282,16 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 70.3,
+      "score": 66.0,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-1650PE-S1x-Nov-1700PE-S1x-Nov-1900CE-B1x-Nov-1950CE"
     },
     {
-      "strategy_type": "tradecraft_put",
-      "strategy_display": "Tradecraft Put",
-      "score": 50.0,
-      "grade": "C (Moderate)",
-      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1700PE"
-    },
-    {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 49.7,
+      "score": 54.3,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -309,7 +300,7 @@
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 47.0,
+      "score": 43.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
@@ -318,41 +309,32 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 45.8,
+      "score": 42.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "S1x-Nov-1700PE-S1x-Nov-1900CE-B1x-Nov-1950CE"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 41.8,
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 41.7,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1750CE-S1x-Nov-1800CE-S1x-Nov-1800CE-B1x-Nov-1850CE"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 40.4,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1750CE-S1x-Nov-1800CE-S1x-Nov-1800CE-B1x-Nov-1900CE"
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-1700PE"
     }
   ],
   "indicators": {
-    "EMA20": "1834.96",
-    "EMA50": "1865.85",
-    "EMA100": "1862.04",
-    "EMA200": "1827.15",
-    "RSI(14)": "40.40",
-    "ATR(14)": "27.85",
-    "ADX(14)": "17.43",
-    "BB(20,2)": "0.23",
-    "P_SHAPE(20)": "54.73"
+    "EMA20": "1830.44",
+    "EMA50": "1862.78",
+    "EMA100": "1860.57",
+    "EMA200": "1826.76",
+    "RSI(14)": "37.56",
+    "ATR(14)": "27.34",
+    "ADX(14)": "17.17",
+    "BB(20,2)": "0.13",
+    "P_SHAPE(20)": "50.54"
   },
   "rules": [
     {
@@ -363,14 +345,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -412,7 +394,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -443,23 +425,23 @@
     },
     {
       "title": "Sun Pharma\u2019s Leqselvi sustains hair regrowth for over two years in long-term study",
-      "publisher": "pharma.economictimes.indiatimes.com",
+      "publisher": "ETPharma.com",
       "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUDJSVDVWTnpjSG5udDN2QWhGV01CekV5S1RfZjN3NFRwOEt2Mmo4aVdWZFk4T3BJLWRiZHl4TlpvcHZrYl9LNUdLNlFuaTJQX2ZkeXhmSG1OellXSUt1Q1VTVVJ5dzBaTjZTbWppakY0UXlWTXFiMEJISEdzdXZvMFo3dFlzbGh3SUFqRzJraEJqR2NyaDRtWWdVaTVtM2VxX3JDNzRRNGRFT3BCVWluNTRidnZ1SF9uRGVOZm9JU2czUzhtdTFEamxnUjRjNExxMXVTN0VLSm1LTEVraGJOYl82eGZxMUg3ZW5oRHpUb0ZKckMydFFhZ9IB_gFBVV95cUxQN3Y5NmZhNEFtQU1IQmZ4aGk4TDZPaW1sMEdodnJLQnd2WmtwN3RMTFY5SF9VRElaVGUzUS1BVjI0UzBxU0NEbF93NXp0cHNfNm9KcFQ2WlJ6Nm4tSnhUa3JyQ2xJeWYteFFiSjN6TUgtSnhLMHBvcmZ1b3JsWmxhTXgtaEhPamRjZVBxVDNBYkpwaHFoUUxGRmloeS1CTW91RTJhOU1mbnhlVURwbjlIdkg1ZnNKLWtDNm45OWJyNnFKQVEySTMwNlpiLUFra25Sc01mY0ppZ1Z3cXpXUHk4bmRHUjFnMl9DY29GTC04X3plR3h0anhLc3ZLbjZnZw?oc=5",
       "published_at": "Thu, 01 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "Sun Pharma plans \u20b910,000 crore bond sale to refinance Organon acquisition loan: Report",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWGhmTmJBUzdOUTFIc3UyNVpJU0swNEE0R3lwcU4zNGV4QVp6MFM2aEFwV0IxT3VEYUdfVU8yR09RMk5nYUxHaUgzaGJSbk9Xa3FUQ215NXNsc1ltcGhlVmw5bVpnZmhfZDRPQUN3MTZ3dG9LdkdJczJDVjZHVVM3SjMzREpOaEljTFNCOHFnVU5RVXpQbmczN3M4V0hSc2l2MW9NNDVRcXJWbTV1d2lUa09Wcjg1TzdQODIxdjhpdFdrdnVvZlZFNlNjUHRZSnY4NUgxdUVoeHNTX2VCOUxQd9IB5gFBVV95cUxPSjdpY09mVC1wNThpM003bV9hdU5UbHYta1E4NWhNMk1hcmhwbWRoc3hkc1FSWnB5Yk5HMHVMcE9pZ3hJcDhhZW9BX0pGRTlmRDRPQWxzZUMxMTBvcjJfc2hlWi1MVXpxOGJ1cHp2MDQtcElJeGEtNUtJRXY3OEFkZzdHT0FMZzI3UDJicEtGMnhVWUE5bVdyeThaRVhrSDN0dERsYjNmSzR4bFZLaUUyOFdCbWVCRzk2SU51bzBqN21OT2ljMDVCTWV1TnVnaWs5NktSd2tzNFhjZkVjeXJhWjlxejZEdw?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
+      "title": "Indian companies must invest in R&D, move from generics to innovation-led industry: Pharma leaders",
+      "publisher": "ETPharma.com",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQSzR1OGpEMWphTlM0MGJTNGxYcnVqMm13RlFpc0pKR0ZvMWstYnc3WlVjUVFiZDNFaHJaNmNHcW1ZQ0EycnRkSW11WlgwNHdsV3pxTmZfanlYSmtiQjJoYnY5VTZta0dwV2pVUkVQVFdTQWJyZFpSS05wRlg2dWFjYnFzaGtRVjJSWmVUcXZhLU54T1dkaHdOYktDUFZMVHRpc1I5NVFNdjRzYlBqTzFmekVSbmV1M3VfZDR1VXFMWFF5ZjFMM0JSWENoR3hnS3l3aTVPVDBGOGlZTW8zbmlMZ0ZEaUhTcnh6d2JjX3h4aHlLeEI3R2xib0l6Z3lVazjSAYQCQVVfeXFMTWQwazRwVHl2WGptTVh1VWNmV3hReW9xYnQ2cHFwY09NX1JsXzlwLTN4bTg0OXFITlBZcVUwWFdLMjZtakZnejdMSXgzMGltSmZ3RHZfSFFsZHJ1SVBvN2JZTkg5M2FLTlRWNndOZnpCQ1NFNlNKbm5GMXVOVUFCRFdRVGwwTjdtdnRfUUlDcHRRV09VVzk5SEtNcUd6aXZmR0t2aWZXWl9GUG9VZlRFZEIxUnB0VnBXaFd4LU9BcUxMLXpkdVZVNzZ1dHdOZ2dEZjM0cnBqYkkxaXpRREJnWlFwQ1BFNGNkTDdybVljckVZcjdPRTVWQnNUcHVraEk3OXZFbVM?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "534",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWDh5UFl2cDFiaGNFWk9GTG1WR3BGVXdVbzRfcUoyZ1A0T09KdkJRWUd1UWlQcTRCeWF1YXhFRHdmRUpzUEI2MUdDak96SUp0bzh2ektKZXUyTkdES0dESDgyaU5zcFJPWlFxakNjT2V5UnJkeFZJc2VpY0htWUNPNXZRWGMzWEdDRDU3UTdCOA?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
+      "title": "SPARC gets favourable ruling in \u20b927 cr tax credit case",
+      "publisher": "ETPharma.com",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZkktR0JDTzNTOXRHT216Uk1JWDV2cjhhMEJWcklZMUF3eVBxRUhGVUpKQy1Cd1o3VXA3R3Fmbk54TVhDSGYzdEF0ekdZWnRINDJ6NXh5VWY0NE5XdHNaQnU0LVhlMnptd0hIODVDai1xb3lMNlJpM2ZSdE41VE1EQmdaZ1hnNnVPMzk4d2prb3VUV0d5SkhFRTl0MWUxUWdiUmlzenNiaTRLSWh1OG9Nc21DUHk5WGs2UE9iUUxJQlY0b212aVZ30gHMAUFVX3lxTE94YksxdjhpWHZnRmo3a0ItdzJQaEtuME9sS3FfZTg1a2lYejlsRjFkbXBhaXJyZFpZSUsyR2VGWEtqYk9pUU5XWVczakctTVQ4bkxRRVNOSkFvZWZpMkJBTV9MSFpRSU1CMEdHZFFDLVd2c1ZJWHpwQjJpQnpHYXNjQ1A3bkNVY2lJR0NzQmJFUTNiQjRfVGtqdkFlaFA5VHdsVFNTd3lVSkVwTFhfYzBnTXREQ2djYXdPbVVNT3pYUlVUd0hneGtNTHFLeA?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     },
     {
@@ -470,10 +452,10 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Mutual fund SIP returns: India averaged 8.4% over rolling 5-year periods; how did it compare with global markets?",
+      "title": "Mid-cap and small-cap mutual funds have outperformed: Why should investors favour large-caps at this stage?",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZUpaa2QwbkRWaVVCMk1ST0N2TkcydjZ2eFZCSGZiUVQ1aDFCX0ZaTkozNWZMNEdnMEF1VDVlbU5HV3F2WDJzUWhzWEI1U2p3cE8xRWs5RWFwbkpKNU45bmhzNUdXNWhnSTFST2szWXd5RzdMSW9BZ3lVdUExNTFDZ3hCbTc1WjJxaVV6X2xkdlc4VkVjVlpnZXJrQmtsSk9weWZGZFlYZ0t1Z2ZvMWo0UlJLeElhRm1lWmxxVkNvQXlxRTIzYTYtSzh4azdxc0xfZlBSTjJqMWl5bVJvWVpfRGJFWWx2OXpRNFBETk9ucUh4U2ViWUVHal9YNlpPWWpUbHdDb3JsYnPSAY4CQVVfeXFMTzQxUUdWVjg2VVlHOHdoTWViajVOdHZjdHR2WDhnYkRPYXVaU1ZkQ0xDZG1qbzF3MzJTS1VoajRNbTRmZ2o0M1NtMDUtejBQc3BVbnlxWEx4Q0MxSkVLcF9KdG5nLXJxWnlzeS13Q2JjZ2lRcmxWakRsLUtITHRjWmRaVzYxQjNURE9xYWpxNEhnQkFWLWZqNkVDQkZFQV96X0Jmc1MxLUlKb2pjb3R1bk9JY1djblJLVjdKSktSZVQ2S25oZGtoZ2JFeWsxNzhGQlkzUk1DQ2lEd1JCT0NlcTBfRVAyX05UWHlSbDZGQmRzYktOaWJFRHpia0FBVUJjTXBXdEVtckR5TGtYRUtR?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOUWdpcjlWOHZMdHdqci1sMzFvLWcxaXk2NWd3M2lLMHdFdmtaeHZfa0JoWElrNm9oeGpSRThmS21fMm5JSE4tTzJhc29Jd29wa054NjhrUkZUVHhQcmJLQUthVXRtSnY2WnhWNkhQa1I3NjE2ZHczMWU5WG5JTWxzVXh5U1hXbldyQmtELU9Qd3JRSmQ0NW1kN0syZzVIS2J6dTlkYTBYU19hWkY3aXBvbHpGbkNkTGVkRXBtRHpXWTVEVUo3WFNuN2d5blVzUnNnaUJyUk83VE1YcEFiRlJpYm5vWFlUc1lUbFZGLVZuVXhNcGpkamRFdS03NTNiLVB2QVE?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     }
   ]

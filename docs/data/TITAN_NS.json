@@ -1,262 +1,262 @@
 {
   "symbol": "TITAN.NS",
-  "last_price": 4550.0,
-  "as_of": "2026-10-06 03:45:00",
-  "regime": "bull",
-  "regime_display": "Bull",
-  "trend_score": 6.0,
-  "fit_score": 60.0,
-  "confidence_grade": "B",
-  "confidence_percentage": 60.0,
-  "vix": 13.61,
+  "last_price": 4388.3,
+  "as_of": "2026-10-07 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.2,
+  "fit_score": 42.5,
+  "confidence_grade": "C",
+  "confidence_percentage": 42.5,
+  "vix": 13.8,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (100.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (24.9) is oversold (< 35) [Synthetic PCR: 1.45]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 4800.0,
-        "strike_formatted": "4800",
+        "strike": 4600.0,
+        "strike_formatted": "4600",
         "option_type": "Call",
-        "delta": 0.181,
+        "delta": 0.216,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4800 Call"
+        "dte": 48,
+        "summary": "Sell 1x TITAN.NS 24-Nov-2026 4600 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 4900.0,
-        "strike_formatted": "4900",
+        "strike": 4700.0,
+        "strike_formatted": "4700",
         "option_type": "Call",
-        "delta": 0.092,
+        "delta": 0.112,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4900 Call"
+        "dte": 48,
+        "summary": "Buy 1x TITAN.NS 24-Nov-2026 4700 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 150.0,
-    "stop_loss_price": 4413.5,
-    "take_profit_price": 4686.5,
-    "net_delta": -0.089,
-    "net_theta": 0.279,
+    "stop_loss_price": 4256.65,
+    "take_profit_price": 4519.95,
+    "net_delta": -0.104,
+    "net_theta": 0.295,
     "probability_of_profit": 0.0,
     "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 3640.0,
+        "price": 3510.64,
         "pnl": -150.0
       },
       {
-        "price": 3676.4,
+        "price": 3545.75,
         "pnl": -150.0
       },
       {
-        "price": 3712.8,
+        "price": 3580.85,
         "pnl": -150.0
       },
       {
-        "price": 3749.2,
+        "price": 3615.96,
         "pnl": -150.0
       },
       {
-        "price": 3785.6,
+        "price": 3651.07,
         "pnl": -150.0
       },
       {
-        "price": 3822.0,
+        "price": 3686.17,
         "pnl": -150.0
       },
       {
-        "price": 3858.4,
+        "price": 3721.28,
         "pnl": -150.0
       },
       {
-        "price": 3894.8,
+        "price": 3756.38,
         "pnl": -150.0
       },
       {
-        "price": 3931.2,
+        "price": 3791.49,
         "pnl": -150.0
       },
       {
-        "price": 3967.6,
+        "price": 3826.6,
         "pnl": -150.0
       },
       {
-        "price": 4004.0,
+        "price": 3861.7,
         "pnl": -150.0
       },
       {
-        "price": 4040.4,
+        "price": 3896.81,
         "pnl": -150.0
       },
       {
-        "price": 4076.8,
+        "price": 3931.92,
         "pnl": -150.0
       },
       {
-        "price": 4113.2,
+        "price": 3967.02,
         "pnl": -150.0
       },
       {
-        "price": 4149.6,
+        "price": 4002.13,
         "pnl": -150.0
       },
       {
-        "price": 4186.0,
+        "price": 4037.24,
         "pnl": -150.0
       },
       {
-        "price": 4222.4,
+        "price": 4072.34,
         "pnl": -150.0
       },
       {
-        "price": 4258.8,
+        "price": 4107.45,
         "pnl": -150.0
       },
       {
-        "price": 4295.2,
+        "price": 4142.56,
         "pnl": -150.0
       },
       {
-        "price": 4331.6,
+        "price": 4177.66,
         "pnl": -150.0
       },
       {
-        "price": 4368.0,
+        "price": 4212.77,
         "pnl": -150.0
       },
       {
-        "price": 4404.4,
+        "price": 4247.87,
         "pnl": -150.0
       },
       {
-        "price": 4440.8,
+        "price": 4282.98,
         "pnl": -150.0
       },
       {
-        "price": 4477.2,
+        "price": 4318.09,
         "pnl": -150.0
       },
       {
-        "price": 4513.6,
+        "price": 4353.19,
         "pnl": -150.0
       },
       {
-        "price": 4550.0,
+        "price": 4388.3,
         "pnl": -150.0
       },
       {
-        "price": 4586.4,
+        "price": 4423.41,
         "pnl": -150.0
       },
       {
-        "price": 4622.8,
+        "price": 4458.51,
         "pnl": -150.0
       },
       {
-        "price": 4659.2,
+        "price": 4493.62,
         "pnl": -150.0
       },
       {
-        "price": 4695.6,
+        "price": 4528.73,
         "pnl": -150.0
       },
       {
-        "price": 4732.0,
+        "price": 4563.83,
         "pnl": -150.0
       },
       {
-        "price": 4768.4,
+        "price": 4598.94,
         "pnl": -150.0
       },
       {
-        "price": 4804.8,
-        "pnl": -154.8
+        "price": 4634.04,
+        "pnl": -184.04
       },
       {
-        "price": 4841.2,
-        "pnl": -191.2
+        "price": 4669.15,
+        "pnl": -219.15
       },
       {
-        "price": 4877.6,
-        "pnl": -227.6
-      },
-      {
-        "price": 4914.0,
+        "price": 4704.26,
         "pnl": -250.0
       },
       {
-        "price": 4950.4,
+        "price": 4739.36,
         "pnl": -250.0
       },
       {
-        "price": 4986.8,
+        "price": 4774.47,
         "pnl": -250.0
       },
       {
-        "price": 5023.2,
+        "price": 4809.58,
         "pnl": -250.0
       },
       {
-        "price": 5059.6,
+        "price": 4844.68,
         "pnl": -250.0
       },
       {
-        "price": 5096.0,
+        "price": 4879.79,
         "pnl": -250.0
       },
       {
-        "price": 5132.4,
+        "price": 4914.9,
         "pnl": -250.0
       },
       {
-        "price": 5168.8,
+        "price": 4950.0,
         "pnl": -250.0
       },
       {
-        "price": 5205.2,
+        "price": 4985.11,
         "pnl": -250.0
       },
       {
-        "price": 5241.6,
+        "price": 5020.21,
         "pnl": -250.0
       },
       {
-        "price": 5278.0,
+        "price": 5055.32,
         "pnl": -250.0
       },
       {
-        "price": 5314.4,
+        "price": 5090.43,
         "pnl": -250.0
       },
       {
-        "price": 5350.8,
+        "price": 5125.53,
         "pnl": -250.0
       },
       {
-        "price": 5387.2,
+        "price": 5160.64,
         "pnl": -250.0
       },
       {
-        "price": 5423.6,
+        "price": 5195.75,
         "pnl": -250.0
       },
       {
-        "price": 5460.0,
+        "price": 5230.85,
+        "pnl": -250.0
+      },
+      {
+        "price": 5265.96,
         "pnl": -250.0
       }
     ],
@@ -277,118 +277,129 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-4800CE-B1x-Nov-4900CE"
+      "legs_summary": "S1x-Nov-4600CE-B1x-Nov-4700CE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 93.1,
+      "score": 93.4,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4200PE-S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
+      "legs_summary": "B1x-Nov-4100PE-S1x-Nov-4200PE-S1x-Nov-4600CE-B1x-Nov-4700CE"
     },
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 69.4,
+      "score": 64.7,
       "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "B1x-Nov-4550PE-S1x-Nov-4300PE-S1x-Nov-4300PE"
+      "legs_summary": "B1x-Nov-4400PE-S1x-Nov-4200PE-S1x-Nov-4200PE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 67.3,
+      "score": 62.9,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-4300PE-S1x-Nov-4800CE-B1x-Nov-4900CE"
+      "legs_summary": "S1x-Nov-4200PE-S1x-Nov-4600CE-B1x-Nov-4700CE"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 65.4,
+      "score": 60.8,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-4550CE-S1x-Nov-4700CE"
+      "legs_summary": "B1x-Nov-4400CE-S1x-Nov-4550CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 60.7,
-      "grade": "B (Good)",
+      "score": 59.9,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4550CE-S1x-Nov-4550CE-B1x-Nov-4650CE"
-    },
-    {
-      "strategy_type": "wheel",
-      "strategy_display": "Wheel",
-      "score": 57.4,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "S1x-Nov-4300PE"
+      "legs_summary": "B1x-Nov-4300CE-S1x-Nov-4400CE-S1x-Nov-4400CE-B1x-Nov-4500CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 52.1,
+      "score": 53.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4450CE-S1x-Nov-4550CE-S1x-Nov-4550CE-B1x-Nov-4800CE"
+      "legs_summary": "B1x-Nov-4300CE-S1x-Nov-4400CE-S1x-Nov-4400CE-B1x-Nov-4600CE"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 51.3,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-4388.3CE-S1x-Nov-4600CE"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 50.2,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "S1x-Nov-4200PE"
     },
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 50.4,
+      "score": 49.9,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-4300PE-S1x-Nov-4550PE-S1x-Nov-4550CE-B1x-Nov-4800CE"
+      "legs_summary": "B1x-Nov-4150PE-S1x-Nov-4400PE-S1x-Nov-4400CE-B1x-Nov-4600CE"
     },
     {
-      "strategy_type": "poor_mans_covered_call",
-      "strategy_display": "Poor Mans Covered Call",
-      "score": 46.9,
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 45.4,
       "grade": "C (Moderate)",
-      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-4300CE-S1x-Nov-4650CE"
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-4388.3CE-B1x-Nov-4200PE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 45.2,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-4400PE-S1x-Nov-4250PE"
     },
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 45.8,
+      "score": 40.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "S1x-Nov-4300PE"
+      "legs_summary": "S1x-Nov-4200PE"
     }
   ],
   "indicators": {
-    "EMA20": "4742.97",
-    "EMA50": "4804.72",
-    "EMA100": "4694.36",
-    "EMA200": "4456.66",
-    "RSI(14)": "31.39",
-    "ATR(14)": "80.03",
-    "ADX(14)": "36.37",
-    "BB(20,2)": "0.16",
-    "P_SHAPE(20)": "60.06"
+    "EMA20": "4709.20",
+    "EMA50": "4788.39",
+    "EMA100": "4688.30",
+    "EMA200": "4455.98",
+    "RSI(14)": "24.93",
+    "ATR(14)": "89.63",
+    "ADX(14)": "37.91",
+    "BB(20,2)": "0.01",
+    "P_SHAPE(20)": "65.50"
   },
   "rules": [
-    {
-      "name": "Price above EMA200",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
     {
       "name": "EMA50 above EMA200",
       "passed": true,
@@ -404,7 +415,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -425,6 +436,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "EMA20 above EMA50",
       "passed": false,
       "score": 0.0,
@@ -439,7 +457,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -462,6 +480,20 @@
   ],
   "news": [
     {
+      "title": "Titan stock crashes over 4% as Q2 jewellery growth misses some estimates; brokerages retain bullish calls",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOQzMxQnNOOVUwbUFTdC1WNFR3bTdGejlBMy12Vi1vcEtOeE03eVd6UlJyVTkzN3MxN1hzUFZ4ZHlWc21uaEo0elVJN05ITzIyNjhleEpkcHMwRzFBREtNc2tmS0drRlJVLVZXdGZsSUxISk43UGVVR2d2YURsSmdlNUpFcjhtSHk0TFRsY21kaHhiODRTeDE2LUMyVXJQWTR3R2RDQ1VsSjc5a3N3ZDZ0a0ttS1JZanJnVmNJMC1hZUlFazJOR2ZaNzFXdUh3X29FNlN5RHZaOHFwSDdhbEtXelM4SUc0ZDRTQ01zQmc3TG1nbGhGTkFFRE5RZDbSAYICQVVfeXFMUHZvcHI0RHZLekdtT0tZOHI5NV9OSzM4dkFYaHJJMUZaWElRNlZEYnFxd1NwM0VHT25JVVVXV2dDM2pmMzZRM0w4a09ONTNxQmdXVENpSlZsZ01id19wY2ZNZnVPUFBqMFpMdlczUU4wQWxteFdaeE83WXZyM0pmMkU3bnNvTEY5Y2pocGozU2JRdlMwbkRITTJZdzNibjNjc2l5NkkxTzZUZWpVU3hMYXIxUkswcGdnR3JYLW40X2FBYmNCNmxZdzdDWmljM3FyYXpsaTh6VFhCOC1kTjBUZFVIUHgzVlN0bmdnZ3c4dDVRSUFFSzFCX1ZneF8zZnNFYVN3?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Titan shares gain 2% on Q1 business update; consumer business grows 41% YoY",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1neVVGQ2Z4YmZDV2JCVjVYalcwSTgxaV9KQndCT3RsU2lGcUp3NnM4emtDQ3htMXRiSnI4bk84TVUxUW9wZ196eWZBcEhyc3ZOdnM4YnBGaXNSQ25faU1MQzhnaVRCSVE3LU40ME1la3c?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "Titan Q2FY27 update: Consumer businesses grow 25% YoY, jewellery up 21%",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSTg2TnVfbW9xekNWQkFZNWpKX29YX2dhV1Rwc01PMGVDVHE1T3RQdkRXREhkU2hRaDA5QzBGMUIyWGpSVnFWdVBScGpJamRxTzI2bXppTjl5UTJ6cFBfandzSEtNRF9YZUs2bWJ2YVhPdEdSd2NNYWhxZmN3allUTlJRRTBlN0JjaDF6eTU5dE1wei1fT0pwMERDdDZFaVh6OEtRbHc2blB2MlZYNFFWNzJldXZTSGN5TjFJWlhpMGJTc0t2VDBUMjA0aFNYZGQtRXBQeG8zZDVuajU0SVVGSnhsUmTSAd4BQVVfeXFMUHdkUE9QRG8xcjB1QXpNSktXM1JwSE5DZmFWSWlLZU0wT211Y3ZKbjh5cVVxNlE3LTZkS0NmVmpoUUd4QTdMUjlfOTFZVGNCRjEtT2RGajY1aDRJTWpaMGdpWm9FOTVYdjJFTVYyY0tReDkwNWZ3ckZwaXZBYWZMcjJXd2hzRU5mRFJNMlF3bV9Yd3NIS0ZVTzBOa0kxN2ltRi12YUZOZTd6eDZJVGpnVjk0T2tJZDNZLTZJcWkzbUlfczVJX2FUc0Q4WERndlNQMzBPRGdxTHZhdFZ3WDh3?oc=5",
@@ -469,38 +501,24 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Titan vs Radico vs RBA: Motilal Oswal picks top consumer stocks as input costs pressure margins",
+      "title": "Stocks to Watch Today: Titan, Kanohar Electricals, Glass Wall Systems, Arcil, Karamtara Engineering,...",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxORXpXR2VhdzFvclRFdHBYajB3ejdCbHZ5UmtqMkxnSmZfU2dUUThRZEtyQ1BsRjVYcDZHT3V6RW1FQlNGaGRYU3hDSDVuUnhPb1Z2ZkpIWDJNelF5WlR5QjFNMnpJcm9ISW11aW9pdlR5XzBoQ0lDUFhJQnZ1bmVBRnluZHg2MlJEMl90bzl2aV9XWno4Nk9wTXBYNHBfM1VUbHd2cHBiM01GdGNTS3hBd0V2clRmTUZKOVJvNG1pRFphc2hWVVlwRF9KckE4UFpYQUJzaWI3WjFORGk3UUYxSHhabEY5Y29KdzhVelMySdIB9AFBVV95cUxPbEpNYUtSeTJiVVp6NTNBbzY4Y19oZWFIU3pZTlI5WlVXNkxhVXJ6Q0ROVFNZdnljQWVBUTBKUF9hZlFjemRXcGd0LV9OQzdVNkt2US00TnBTQTlkY21OeGZhNzZlSjU3RHltNVZ6cW5BNGRibHV2MW41TXh4NTdiNnI3SGlEVFVhZ2NVa0piM1FpQU5nMW9RSjYyai1haE9uclh6a0FadkZveFhRVFVFc3lwalk2aEFtQ29TZFpBbGkxcXFUX1djTEVnVXhoV0NoTXNsaVFxcDZVTzVOV1RJODBqazB3UGw2SFFBWVV3OWFnaHhR?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Top stocks in focus tomorrow: Investors must watch Titan, Utkarsh SFB, HCL Tech shares on Wed, 7 Oct | Triggers",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNdHZ5akpvU0MwZTJVV3pJYm1WY0Y1eFpoZzVKQ3cwZDRqTkZ2Wlo0ZHQxQ3hPRmljMW53SGc1TjJfOWptamNGZXdacVpKVzMwT3pNaFJ2RUs5c3hXYjFrRl8yLTduVFZSbTZjcnlHbVpvclB1Qkh5SkxRTC1EbmpHLWd4b3dJaHpLVzBkMHZDQU5wLXltekctd0tnajJaaFkyOW5YOHlxU0lOUkN2Z1NvNXVxa1MzTURzU09DR29KbndJOFJRa0JsYThHVUZCX0tNeUtEOExTOGwtNUFsZWx5QnV4NzZsMGdKN3JPZU95aWZ1WFBYVGZabzRTZHFVR29kWWV1MGxR0gGLAkFVX3lxTE9sc25tY0d1djBfUDRQWGZyOVRiT254XzA4dVhMVHlIcFFTNk04U3FfUDBIZXVfQk9zNUVpeUtJZEtnS3VpUDFfTmZIcVc3dHFtY056TC0zb1RQVjVxVTNpVlo0YjZZekVtZ3NrS01IMFQ3ZC1tU3Rfb3ZoZGtka0hTaUo0UnVJOF8tZkR4X2FiNzNkQnJONFJTdzBxV005RWFaWGZmZVh4NnVoQTZHM3FIUnFsTlB3d0RCejZzNHRrOXY4ZU9OQTBhNkRhNHRRbW9MQ1R4NHhXTmplYm5oZXphZ3ZwUmo5U0x5R1JPbFF6dFpZS3ZZSmliWTJES2VWckZNZHJvb1F3cTdLRQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQMkNad3dTZmVQUW5oU3JsTUxTZ1JLZ21XZ25zQUk4aEprbnBidUVZeXNNaTBFX2plZFdIcnNXc0w4b2I5dU1NQUN1OXZvYVBnU3d5dWNEa0htWjRaclJTYnloZ3prNmdaSjdaZzN2eC1IM3BEUzFDdDhiQUNpZFdYZHAydE9pMzZBTVNnc1BGYm1PSEctUFZ0OWJiaUpZRVF2NzRBUlN1TGZqb1BxYVVPZlJ0YmFCQ0EtWGctb0xyaFFwcnRuTTRESWQyMU5MNUJ5SHppUThaVWx5WUh0bTNrdkFkTDBMTUVvWWplVXRxUlFVSWVPcWVxYkI5OE9kbWVIWkN1UnV3NnJZd0NOV3hZYWFWOVZIOWlXNTZJbDIzRExnbDVxdWFPeGtjU3hHUEhvaWJFZ01KclFJNE5GblpnaFBxQlAwQdIBywJBVV95cUxOTTFJODdsdGFmejBXVEpwR2Yxc3duU2hRck9tRWJaRTJ5R0gwaUtmbzRILTk3VDZVX2dodTFIQUxHVmkxVXFkRkxDTG9hVW5wZG16Q0Q0dUtiZ3BJLXFjM090djRya0FQaTlFY25pZXIwTVBFWDZXMENMVHRpN1BxV2FfaG8yblowbGpUVjkyYjJUXzhxbTUzZ19VX2EtV1Z1ajc1MDlJQmNWblFDUzVVN1BRdVlIOWNKZG5vS190SE50aHBKTUtHYlZFbkRqeDd3QVNIOXR6b3FOOFRmMV9mZy1INzQ4MDBkZXFxVnRfcUpaWXlHSE1BQmVCSkZ2NzNWdTBnTUNQVGdRdGNBaFFfOUN1NU5IRmFXSWhWdXRMYjBZSWUtbnBQX1NmUzVXb2Y5bXVmSW54UDExeDRkSTIxNTJTSG1oWlpvYzZJ?oc=5",
       "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Titan, Kalyan Jewellers, PC Jeweller shares shine - Why jewellery stocks are glittering? Expert decodes rally",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPbjY4X19vbXZPcnNGSmxqd1AzMDJmM2kzOGhIcDFESmJ5YkZycmFWakZZd2FvRXZOcnhybDMwcFdJRGdpeExISlNQXzlncFlWX3BLMTVJVk9kVTEzdnZRUG9xTURRZXcyZXNldTFrRUhaTl9lSk45QjFaUTZqaUZpWFNXQmNrdHM1UmNJNzNkWHdtRmg0cHdfMVF6ejRiV01SZ3ZmUmxPLWVTRlhXZGlnSGc4eTlDUWVhWXpnT0gxOFhvYlVUeUlzcHZUbFJEa2FqY3VTcElJUmNSdGRrX2FUNFk3NFRROVlBLVNmSlZPQ2ZjY20taVRBOHZHSlhVVmoySmlCQtIBigJBVV95cUxOaWlkT2VvVHl6NjdKdjhobmNSSzhCOGhCWWcyRlN4bVVOZzRfUXhaa2dLb09fdXl6VXl1cEl1N3hCTmJLZFZ5MHRPRk5wX2h3NUJCRTRxMTNIWXQybFdDdGNrbDdjWWo5QVFuUFBCa2RNUHhwR2wweUg4eWpFcG1tYzBWalFEWEFueGxQWnZ2b2ZweDEteWtEMUFGOFZiUGl1bFNpV1R5TFZfWDJhZ2pVOExDdURPZndaRVJ4SzYtcnoyYk1CZk1LdTNKS1d4b3BTVlFtVEo2TmFZejI5SUlFbUdIRWRFbnF5MVJxQnlOTmowX25LX1drZjUxMGxuN0Nud2VRM2RVbE9vQQ?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "title": "Indian jeweller Titan reports 25% growth in quarterly consumer business sales",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVVVnU2k3T1lKeWpmQXdISnZkXzJPdFdqWUlpamFBMnZIWlpSUGRYamUtQURZM3ZxaHctZk43TnQ5eGp6U1lYd3RiWDJXNnlLUEJHN3VzXzBTaXQ2Qm50c2tRMk04bUxwV2ZtRDZDYmhSY1lFQTZhUlRrdWZkYUQ2Y3gzZTZPaUxyLVhna0dBVmw4cTlFcmpMbWQzTFRESDFBMTZycExlT3Z0SWtjODZLeW5GRjhpRm5OdDYzRXpzaThuUXdIMDNXbUlfZERyUdIB0wFBVV95cUxOOUhMd0haTTVpUFQyTVFMSDlaREJ1Sks2dU94c1ptY21Tem5xb3VBYjRBME9uSEYxbm1OVzVOeWJNaWN0YzZRcmJacDJtajVaY1JXX3gwUENHcm45MDlTUnZOLTJhelIzZFdVSHNDMlFJSFgzZ2xDYXgwSVpyWU16QXNHbXVlRVNzYmJUckZ3NHlvVmxPODd6SmtKSmc0QmRvMm5tV1JTMFRIc05VWFg4Q19fcUp6aExkcUN4MUN4RjhfS2Fia1R2RVhZU01vcDFrYUln?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "How homegrown D2C challengers are forcing L\u2019Or\u00e9al to rewrite its India playbook",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOT0dwQUQ2OUItUkNQVmUtUjlLTjVrQm9SeWZ4VWpaT2s2UE42cEFaNGZWNEZPeXkxY1NVbk16R0dKeWpqWDNyS185c2xaalZmcVRrM1M4dGpXMElqM1R3U2dZTkZyb3I4d25wdEhkMHE1dUNDZ0VTel9TOWxyYktpc1hXLVR3QXV0WV9YUE93bjdGLXFpZDZSeWVPRUNYbzU4c1QyVm1PWE1SRHVsMFo0UkF30gG3AUFVX3lxTE5aQlZMb1FQT2RQeHlaSDlHc0pqM3pqajNoN0Yta2FiMDl6YVpGaXFfZFNUSzJQNWdxYzM4Q1M4b3BfaEFEMExyQnlMbmJueDNON0dlRzBsdjh1V0xBbmsxWklyMUpoRUxsQjhjUS1TSDk4NnBmNG5YbzhxOEFURjhJZnBYTTJISWJ4dkFscXlLWUcxdm1vZW9wR1NqUEkzWWhXN1JsOTRZNTJ6UFR1bGZnWW50MEp2Zw?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX3dwVlFhM3pQYXhtcEVLeTBNQ0V3MHBPRHJIM3d5bW5hVDRZYVhkV2t0b29GdklvekJhaHF6cmM2T3pNTGNEbVRfNWVYWXpxaXdXVUJCR2tORXdoX3FUSTNXX2huc095d2NfbU5qMkRPMjdNSDN2OUFLTHJNOXZxNUNXUmJsLVB4Zno1aTVjOA?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "title": "Titan Consumer business grows 25%, adds 78 stores in Q2",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUzdpVVFQcDR3c3VYNDQxeWg1T0doUlNBQ2xNNHgtMVRfSjVhXzFFOVR6Nlc5dFh5RVpwaVBKXzZJT290Rkx1aEVqTG5tSkw2Qk5HbDBpaS1kdEcxdnBCTEo2V3otMy1tZ0draVBiZ2E2Tzd2c1hHb3ZuUW5Jd1BVWFJGamJlUnhZQ3VLUXhBOUpfekdEUjRGeXZmeEpCc1dQUGJoeWZxTVQ4M1J2Q3podlBDMFozOWtuNFlEMWs4RTNEaS1IRlo3VXBZTnpSQ3lsQjBSNU9mRXFMQU8wemRIbHphZmdmemxLSHVyQVFpUnhLSGR2NnVGcTJBdXREQmhN0gH6AUFVX3lxTE9kTWdwU19BZmpLLUxiUk92dkJ4bGZsZ3l1QzhncXBqTnVsZkxlcXczVUdsS1RjVFVGNW5kaHV5QXlXa1hOOTJkamhYUUpBQjNocmtVaEotTFh5MjRiNW9JWGhmalVwR0k1N2Nfb2FBU3Q5WGVLZ2VYeGFIN3pMRlF2dWl5d2VNT1VZTmNWQmRIMnptRmR2MDAtT1VoYlB3bjNhT1NsV3gwaURNVGhZRXZGcFotOHl3dFNEakpIMnNoRzdhS01iYVdQblRZdmpBX2xTRlpLbG8yUTdQQUtXQzYtNzhrcTB4X0FoTjUtYmdENERFeGdjaTdtOHc?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     }
   ]

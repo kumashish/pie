@@ -38,6 +38,8 @@ class StrategyType(StrEnum):
     TRADECRAFT_PUT = "tradecraft_put"
     WHEEL = "wheel"
     RATIO_PUT_SPREAD = "ratio_put_spread"
+    COVERED_FUTURE = "covered_future"
+    PROTECTED_FUTURE = "protected_future"
 
 
 class StrategyRecommendation(DomainModel):
@@ -330,7 +332,21 @@ def score_all_strategies(
         "Stock touched 200 SMA support with weekly bull alignment — sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
     )
 
-    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.CREDIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT}
+    # 15. Covered Future (Long 1x Future + Sell 1x OTM Call): Bullish Trend + Premium Yield Overlay
+    cf_score = (bullishness * 0.60) + (iv_premium * 0.30) + adx_boost + support_bonus + weekly_bull_bonus + credit_preference_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
+    raw_scores[StrategyType.COVERED_FUTURE] = (
+        (cf_score / 1.15) * confidence_mult,
+        "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+    )
+
+    # 16. Protected Future (Long 1x Future + Buy 1x OTM Protective Put): Strong Bullish + Tail-Risk Hedge
+    pf_score = (bullishness * 0.65) + (iv_discount * 0.20) + adx_boost + support_bonus + weekly_bull_bonus - earnings_penalty - bm_bull_penalty - ema200_bull_pen
+    raw_scores[StrategyType.PROTECTED_FUTURE] = (
+        (pf_score / 1.15) * confidence_mult,
+        "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+    )
+
+    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.CREDIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT, StrategyType.COVERED_FUTURE, StrategyType.PROTECTED_FUTURE}
     bearish_types = {StrategyType.PUT_DEBIT_SPREAD, StrategyType.NAKED_CALL}
 
     results: dict[StrategyType, StrategyFitScore] = {}

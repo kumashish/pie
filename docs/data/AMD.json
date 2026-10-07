@@ -1,262 +1,262 @@
 {
   "symbol": "AMD",
-  "last_price": 656.45,
+  "last_price": 649.42,
   "as_of": "2026-10-06 13:30:00",
-  "regime": "bull",
-  "regime_display": "Bull",
-  "trend_score": 7.2,
-  "fit_score": 72.5,
-  "confidence_grade": "B",
-  "confidence_percentage": 72.5,
-  "vix": 15.34,
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.0,
+  "fit_score": 80.0,
+  "confidence_grade": "A",
+  "confidence_percentage": 80.0,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (73.2) is overbought (> 65) [Synthetic PCR: 0.63]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (72.2) is overbought (> 65) [Synthetic PCR: 0.65]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 620.0,
-        "strike_formatted": "620",
+        "strike": 615.0,
+        "strike_formatted": "615",
         "option_type": "Put",
-        "delta": -0.115,
+        "delta": -0.118,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x AMD 20-Nov-2026 620 Put"
+        "dte": 44,
+        "summary": "Sell 1x AMD 20-Nov-2026 615 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 595.0,
-        "strike_formatted": "595",
+        "strike": 590.0,
+        "strike_formatted": "590",
         "option_type": "Put",
-        "delta": -0.025,
+        "delta": -0.024,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x AMD 20-Nov-2026 595 Put"
+        "dte": 44,
+        "summary": "Buy 1x AMD 20-Nov-2026 590 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 25.0,
-    "stop_loss_price": 636.75,
-    "take_profit_price": 676.14,
-    "net_delta": 0.09,
+    "stop_loss_price": 629.94,
+    "take_profit_price": 668.9,
+    "net_delta": 0.094,
     "net_theta": 0.046,
     "probability_of_profit": 0.0,
-    "var_95": 16.94,
+    "var_95": 16.69,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 525.16,
+        "price": 519.54,
         "pnl": -50.0
       },
       {
-        "price": 530.41,
+        "price": 524.73,
         "pnl": -50.0
       },
       {
-        "price": 535.66,
+        "price": 529.93,
         "pnl": -50.0
       },
       {
-        "price": 540.91,
+        "price": 535.12,
         "pnl": -50.0
       },
       {
-        "price": 546.16,
+        "price": 540.32,
         "pnl": -50.0
       },
       {
-        "price": 551.41,
+        "price": 545.51,
         "pnl": -50.0
       },
       {
-        "price": 556.67,
+        "price": 550.71,
         "pnl": -50.0
       },
       {
-        "price": 561.92,
+        "price": 555.9,
         "pnl": -50.0
       },
       {
-        "price": 567.17,
+        "price": 561.1,
         "pnl": -50.0
       },
       {
-        "price": 572.42,
+        "price": 566.29,
         "pnl": -50.0
       },
       {
-        "price": 577.67,
+        "price": 571.49,
         "pnl": -50.0
       },
       {
-        "price": 582.92,
+        "price": 576.68,
         "pnl": -50.0
       },
       {
-        "price": 588.17,
+        "price": 581.88,
         "pnl": -50.0
       },
       {
-        "price": 593.43,
+        "price": 587.08,
         "pnl": -50.0
       },
       {
-        "price": 598.68,
-        "pnl": -46.32
+        "price": 592.27,
+        "pnl": -47.73
       },
       {
-        "price": 603.93,
-        "pnl": -41.07
+        "price": 597.47,
+        "pnl": -42.53
       },
       {
-        "price": 609.18,
-        "pnl": -35.82
+        "price": 602.66,
+        "pnl": -37.34
       },
       {
-        "price": 614.43,
-        "pnl": -30.57
+        "price": 607.86,
+        "pnl": -32.14
       },
       {
-        "price": 619.68,
-        "pnl": -25.32
+        "price": 613.05,
+        "pnl": -26.95
       },
       {
-        "price": 624.94,
+        "price": 618.25,
         "pnl": -25.0
       },
       {
-        "price": 630.19,
+        "price": 623.44,
         "pnl": -25.0
       },
       {
-        "price": 635.44,
+        "price": 628.64,
         "pnl": -25.0
       },
       {
-        "price": 640.69,
+        "price": 633.83,
         "pnl": -25.0
       },
       {
-        "price": 645.94,
+        "price": 639.03,
         "pnl": -25.0
       },
       {
-        "price": 651.19,
+        "price": 644.22,
         "pnl": -25.0
       },
       {
-        "price": 656.45,
+        "price": 649.42,
         "pnl": -25.0
       },
       {
-        "price": 661.7,
+        "price": 654.62,
         "pnl": -25.0
       },
       {
-        "price": 666.95,
+        "price": 659.81,
         "pnl": -25.0
       },
       {
-        "price": 672.2,
+        "price": 665.01,
         "pnl": -25.0
       },
       {
-        "price": 677.45,
+        "price": 670.2,
         "pnl": -25.0
       },
       {
-        "price": 682.7,
+        "price": 675.4,
         "pnl": -25.0
       },
       {
-        "price": 687.95,
+        "price": 680.59,
         "pnl": -25.0
       },
       {
-        "price": 693.21,
+        "price": 685.79,
         "pnl": -25.0
       },
       {
-        "price": 698.46,
+        "price": 690.98,
         "pnl": -25.0
       },
       {
-        "price": 703.71,
+        "price": 696.18,
         "pnl": -25.0
       },
       {
-        "price": 708.96,
+        "price": 701.37,
         "pnl": -25.0
       },
       {
-        "price": 714.21,
+        "price": 706.57,
         "pnl": -25.0
       },
       {
-        "price": 719.46,
+        "price": 711.76,
         "pnl": -25.0
       },
       {
-        "price": 724.72,
+        "price": 716.96,
         "pnl": -25.0
       },
       {
-        "price": 729.97,
+        "price": 722.16,
         "pnl": -25.0
       },
       {
-        "price": 735.22,
+        "price": 727.35,
         "pnl": -25.0
       },
       {
-        "price": 740.47,
+        "price": 732.55,
         "pnl": -25.0
       },
       {
-        "price": 745.72,
+        "price": 737.74,
         "pnl": -25.0
       },
       {
-        "price": 750.97,
+        "price": 742.94,
         "pnl": -25.0
       },
       {
-        "price": 756.22,
+        "price": 748.13,
         "pnl": -25.0
       },
       {
-        "price": 761.48,
+        "price": 753.33,
         "pnl": -25.0
       },
       {
-        "price": 766.73,
+        "price": 758.52,
         "pnl": -25.0
       },
       {
-        "price": 771.98,
+        "price": 763.72,
         "pnl": -25.0
       },
       {
-        "price": 777.23,
+        "price": 768.91,
         "pnl": -25.0
       },
       {
-        "price": 782.48,
+        "price": 774.11,
         "pnl": -25.0
       },
       {
-        "price": 787.73,
+        "price": 779.3,
         "pnl": -25.0
       }
     ],
@@ -277,70 +277,88 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 620 Put<br> Buy 1x AMD 20-Nov-2026 595 Put"
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 615 Put<br> Buy 1x AMD 20-Nov-2026 590 Put"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 79.7,
-      "grade": "B (Good)",
+      "score": 82.8,
+      "grade": "A (Optimal)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 620 Put<br> Sell 1x AMD 20-Nov-2026 690 Call<br> Buy 1x AMD 20-Nov-2026 715 Call"
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 615 Put<br> Sell 1x AMD 20-Nov-2026 685 Call<br> Buy 1x AMD 20-Nov-2026 710 Call"
     },
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 78.0,
-      "grade": "B (Good)",
+      "score": 81.2,
+      "grade": "A (Optimal)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 655 Put<br> Sell 1x AMD 20-Nov-2026 620 Put<br> Sell 1x AMD 20-Nov-2026 620 Put"
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 650 Put<br> Sell 1x AMD 20-Nov-2026 615 Put<br> Sell 1x AMD 20-Nov-2026 615 Put"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 67.7,
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 72.2,
       "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 595 Put<br> Sell 1x AMD 20-Nov-2026 620 Put<br> Sell 1x AMD 20-Nov-2026 690 Call<br> Buy 1x AMD 20-Nov-2026 715 Call"
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 649.4 Call<br> Sell 1x AMD 20-Nov-2026 685 Call"
     },
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 67.7,
+      "score": 71.3,
       "grade": "B (Good)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 620 Put"
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 615 Put"
+    },
+    {
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 65.5,
+      "grade": "B (Good)",
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 649.4 Call<br> Buy 1x AMD 20-Nov-2026 615 Put"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 61.6,
+      "score": 64.9,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 655 Call<br> Sell 1x AMD 20-Nov-2026 680 Call"
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 650 Call<br> Sell 1x AMD 20-Nov-2026 675 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 59.1,
-      "grade": "C (Moderate)",
+      "score": 63.3,
+      "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 620 Call<br> Sell 1x AMD 20-Nov-2026 675 Call"
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 615 Call<br> Sell 1x AMD 20-Nov-2026 665 Call"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 54.4,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 590 Put<br> Sell 1x AMD 20-Nov-2026 615 Put<br> Sell 1x AMD 20-Nov-2026 685 Call<br> Buy 1x AMD 20-Nov-2026 710 Call"
     },
     {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
-      "score": 47.6,
+      "score": 51.7,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x AMD 20-Nov-2026 656.4 Call"
+      "legs_summary": "Buy 1x AMD 20-Nov-2026 649.4 Call"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -349,28 +367,28 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 620 Put"
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 615 Put"
     },
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 42.2,
+      "score": 45.0,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "Sell 1x AMD 20-Nov-2026 620 Put"
+      "legs_summary": "Sell 1x AMD 20-Nov-2026 615 Put"
     }
   ],
   "indicators": {
-    "EMA20": "588.74",
-    "EMA50": "542.18",
-    "EMA100": "493.16",
-    "EMA200": "413.13",
-    "RSI(14)": "73.17",
+    "EMA20": "588.08",
+    "EMA50": "541.91",
+    "EMA100": "493.02",
+    "EMA200": "413.06",
+    "RSI(14)": "72.16",
     "ATR(14)": "23.98",
     "ADX(14)": "26.86",
-    "BB(20,2)": "0.84",
-    "P_SHAPE(20)": "60.76"
+    "BB(20,2)": "0.81",
+    "P_SHAPE(20)": "60.68"
   },
   "rules": [
     {
@@ -416,6 +434,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
@@ -442,36 +467,50 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
     {
-      "title": "Stock market today: S&P 500, Nasdaq touch all-time highs as stocks power higher, bond yields retreat",
+      "title": "As AI bubble fears circulate, remember the railroad bust of 1873",
       "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-6-dow-sp-500-nasdaq-080526166.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Stifel Raised Its AMD Target to $700 Before Q3. Here\u2019s Why the 2027 Outlook Could Matter More Than the Beat",
-      "publisher": "TIKR",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stifel-raised-amd-target-700-143726670.html",
+      "link": "https://finance.yahoo.com/markets/article/as-ai-bubble-fears-circulate-remember-the-railroad-bust-of-1873-165422026.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Stock Market Today: Dow Rises As Oil Firms Fall; Chip Players, Tesla Shares Rally (Live Coverage)",
-      "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/23879019-ae2b-39de-9232-cdfcba882196/stock-market-today%3A-dow-rises.html",
+      "title": "Why NVDA, AMD, CRWD Stocks Surged To 52-Week Highs Today",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-nvda-amd-crwd-stocks-041923946.html",
       "published_at": "Today",
       "sentiment": "bullish"
+    },
+    {
+      "title": "Dow, S&P 500, Nasdaq Futures Mixed After S&P 500, Nasdaq Notch Record Highs: SPCX, NLST, PENG, WDC Stocks In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-024015617.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Can Digital Realty Trust (DLR) Justify Its Valuation After The Blackfuel AI Deal?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/digital-realty-trust-dlr-justify-010901600.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "U.S. stock futures steady after tech rally lifts S&P 500, Nasdaq to records",
+      "publisher": "Investing.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-steady-tech-004454570.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "AMD (AMD) Could Issue 320 Million Shares at a Penny. Here is What Has to Happen First",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/amd-amd-could-issue-320-000812569.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

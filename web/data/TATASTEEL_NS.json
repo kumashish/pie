@@ -1,14 +1,14 @@
 {
   "symbol": "TATASTEEL.NS",
-  "last_price": 178.69,
-  "as_of": "2026-10-06 03:45:00",
+  "last_price": 177.26,
+  "as_of": "2026-10-07 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.8,
-  "fit_score": 7.5,
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 7.5,
-  "vix": 13.61,
+  "confidence_percentage": 10.0,
+  "vix": 13.76,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,135 +20,139 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 190.0,
-        "strike_formatted": "190",
+        "strike": 185.0,
+        "strike_formatted": "185",
         "option_type": "Call",
-        "delta": 0.142,
+        "delta": 0.242,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x TATASTEEL.NS 24-Nov-2026 190 Call"
+        "dte": 48,
+        "summary": "Sell 1x TATASTEEL.NS 24-Nov-2026 185 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 195.0,
-        "strike_formatted": "195",
+        "strike": 190.0,
+        "strike_formatted": "190",
         "option_type": "Call",
-        "delta": 0.056,
+        "delta": 0.109,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x TATASTEEL.NS 24-Nov-2026 195 Call"
+        "dte": 48,
+        "summary": "Buy 1x TATASTEEL.NS 24-Nov-2026 190 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 173.33,
-    "take_profit_price": 184.05,
-    "net_delta": -0.086,
-    "net_theta": 0.012,
+    "stop_loss_price": 171.94,
+    "take_profit_price": 182.58,
+    "net_delta": -0.133,
+    "net_theta": 0.014,
     "probability_of_profit": 0.0,
-    "var_95": 4.87,
+    "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 142.95,
+        "price": 141.81,
         "pnl": -5.0
       },
       {
-        "price": 144.38,
+        "price": 143.23,
         "pnl": -5.0
       },
       {
-        "price": 145.81,
+        "price": 144.64,
         "pnl": -5.0
       },
       {
-        "price": 147.24,
+        "price": 146.06,
         "pnl": -5.0
       },
       {
-        "price": 148.67,
+        "price": 147.48,
         "pnl": -5.0
       },
       {
-        "price": 150.1,
+        "price": 148.9,
         "pnl": -5.0
       },
       {
-        "price": 151.53,
+        "price": 150.32,
         "pnl": -5.0
       },
       {
-        "price": 152.96,
+        "price": 151.73,
         "pnl": -5.0
       },
       {
-        "price": 154.39,
+        "price": 153.15,
         "pnl": -5.0
       },
       {
-        "price": 155.82,
+        "price": 154.57,
         "pnl": -5.0
       },
       {
-        "price": 157.25,
+        "price": 155.99,
         "pnl": -5.0
       },
       {
-        "price": 158.68,
+        "price": 157.41,
         "pnl": -5.0
       },
       {
-        "price": 160.11,
+        "price": 158.82,
         "pnl": -5.0
       },
       {
-        "price": 161.54,
+        "price": 160.24,
         "pnl": -5.0
       },
       {
-        "price": 162.97,
+        "price": 161.66,
         "pnl": -5.0
       },
       {
-        "price": 164.39,
+        "price": 163.08,
         "pnl": -5.0
       },
       {
-        "price": 165.82,
+        "price": 164.5,
         "pnl": -5.0
       },
       {
-        "price": 167.25,
+        "price": 165.92,
         "pnl": -5.0
       },
       {
-        "price": 168.68,
+        "price": 167.33,
         "pnl": -5.0
       },
       {
-        "price": 170.11,
+        "price": 168.75,
         "pnl": -5.0
       },
       {
-        "price": 171.54,
+        "price": 170.17,
         "pnl": -5.0
       },
       {
-        "price": 172.97,
+        "price": 171.59,
         "pnl": -5.0
       },
       {
-        "price": 174.4,
+        "price": 173.01,
         "pnl": -5.0
       },
       {
-        "price": 175.83,
+        "price": 174.42,
+        "pnl": -5.0
+      },
+      {
+        "price": 175.84,
         "pnl": -5.0
       },
       {
@@ -156,107 +160,103 @@
         "pnl": -5.0
       },
       {
-        "price": 178.69,
+        "price": 178.68,
         "pnl": -5.0
       },
       {
-        "price": 180.12,
+        "price": 180.1,
         "pnl": -5.0
       },
       {
-        "price": 181.55,
+        "price": 181.51,
         "pnl": -5.0
       },
       {
-        "price": 182.98,
+        "price": 182.93,
         "pnl": -5.0
       },
       {
-        "price": 184.41,
+        "price": 184.35,
         "pnl": -5.0
       },
       {
-        "price": 185.84,
-        "pnl": -5.0
+        "price": 185.77,
+        "pnl": -5.77
       },
       {
-        "price": 187.27,
-        "pnl": -5.0
+        "price": 187.19,
+        "pnl": -7.19
       },
       {
-        "price": 188.7,
-        "pnl": -5.0
+        "price": 188.6,
+        "pnl": -8.6
       },
       {
-        "price": 190.13,
-        "pnl": -5.13
-      },
-      {
-        "price": 191.56,
-        "pnl": -6.56
-      },
-      {
-        "price": 192.99,
-        "pnl": -7.99
-      },
-      {
-        "price": 194.41,
-        "pnl": -9.41
-      },
-      {
-        "price": 195.84,
+        "price": 190.02,
         "pnl": -10.0
       },
       {
-        "price": 197.27,
+        "price": 191.44,
         "pnl": -10.0
       },
       {
-        "price": 198.7,
+        "price": 192.86,
         "pnl": -10.0
       },
       {
-        "price": 200.13,
+        "price": 194.28,
         "pnl": -10.0
       },
       {
-        "price": 201.56,
+        "price": 195.7,
         "pnl": -10.0
       },
       {
-        "price": 202.99,
+        "price": 197.11,
         "pnl": -10.0
       },
       {
-        "price": 204.42,
+        "price": 198.53,
         "pnl": -10.0
       },
       {
-        "price": 205.85,
+        "price": 199.95,
         "pnl": -10.0
       },
       {
-        "price": 207.28,
+        "price": 201.37,
         "pnl": -10.0
       },
       {
-        "price": 208.71,
+        "price": 202.79,
         "pnl": -10.0
       },
       {
-        "price": 210.14,
+        "price": 204.2,
         "pnl": -10.0
       },
       {
-        "price": 211.57,
+        "price": 205.62,
         "pnl": -10.0
       },
       {
-        "price": 213.0,
+        "price": 207.04,
         "pnl": -10.0
       },
       {
-        "price": 214.43,
+        "price": 208.46,
+        "pnl": -10.0
+      },
+      {
+        "price": 209.88,
+        "pnl": -10.0
+      },
+      {
+        "price": 211.29,
+        "pnl": -10.0
+      },
+      {
+        "price": 212.71,
         "pnl": -10.0
       }
     ],
@@ -277,59 +277,59 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-190CE-B1x-Nov-195CE"
+      "legs_summary": "S1x-Nov-185CE-B1x-Nov-190CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 65.3,
+      "score": 64.8,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-180PE-S1x-Nov-175PE"
+      "legs_summary": "B1x-Nov-175PE-S1x-Nov-170PE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 50.1,
+      "score": 48.8,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-178.7PE"
+      "legs_summary": "S1x-Nov-177.3PE"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 50.0,
+      "score": 41.7,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-170PE"
+      "legs_summary": "S1x-Nov-165PE"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 44.2,
+      "score": 40.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-165PE-S1x-Nov-170PE-S1x-Nov-190CE-B1x-Nov-195CE"
+      "legs_summary": "B1x-Nov-160PE-S1x-Nov-165PE-S1x-Nov-185CE-B1x-Nov-190CE"
     }
   ],
   "indicators": {
-    "EMA20": "183.02",
-    "EMA50": "185.62",
-    "EMA100": "188.80",
-    "EMA200": "188.21",
-    "RSI(14)": "39.49",
-    "ATR(14)": "4.04",
-    "ADX(14)": "14.79",
-    "BB(20,2)": "0.17",
-    "P_SHAPE(20)": "51.19"
+    "EMA20": "182.47",
+    "EMA50": "185.29",
+    "EMA100": "188.57",
+    "EMA200": "188.10",
+    "RSI(14)": "37.26",
+    "ATR(14)": "3.93",
+    "ADX(14)": "13.83",
+    "BB(20,2)": "0.13",
+    "P_SHAPE(20)": "47.00"
   },
   "rules": [
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -378,7 +378,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -422,20 +422,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Top stocks in focus today: Investors must watch Tata Steel, KSB, Power Mech, TCI shares on Wed, 30 Sept | Triggers",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPbXZ0VnNBTW9BdF9oUVF6M1M1bERrd0owZmZfNnNraUNBaEs2WXRmR3BqSWJOUGtscjFyTm9CSV9YYTdGZW9vU0hjdkZxRURLWWRseDFNR1ZoNnNZQXFSU01ic3pGVzgwRkhKaVdjbHhxeGxGM0VIWGZJbFVhNkgtcllZV1lUc0JpRWJmVUx0RFVocFduQUMxRjV4UGJsUDJZdU9lQVYxUWlNRnlPWlZaZFJLUmJpbkdDOGtqUW9oLUVJZW9VaWlHQldwZENNNkZZOWVqZUs5VnVoWnNVQnJmX1lpTklMMWVoRTc1YnYtZzhUUFFh0gH6AUFVX3lxTE14eWNVWWtVU1Jabkg3LURnNnJuSFpMQVFTczdoSkg5UU5aUEFBamkwbFJHaTRvQndWV1MyZm0tQUU1WFhCQnlORlB4aHNXMVdwbm1FS25OcnAtMm56OHNPSjh1N3pGMUs2a3k2czlJNDNXdmd6eWdOZmxRamNtVDd3ckpfVHZLYnhQbUxoeXpEbE5DaHFNN1lzZThnRVlaaWZnR0pEaFMtOGpENkVpcExTa0pLcHRVT3hscnZzNlBNVW1KTFJyQTl1U2lhVkFOa0pZSXg5bU1BMUhVMVJqVmF4b09mU0pVNzZsYzdkVmVyaXMzV19Ya2JpOXc?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Top stocks to watch today: KPI Green, Tata Steel, NLC, NALCO shares in focus on Wednesday, 30 September | Full list",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOcVRFMEFXX0FWTVJ0S3I0aWFWWm1iSmFZQVphTHUybTZEZDZ2U215V0p4dmxfdnVrSDJrVk1CX0dwSGJwWkNPVDJmYko3MEFBV2tsNElnQkdVM0xfYlFKcXpUbW1VeXBnc0ZTTURjb2dKT1FrYTJYS2hCOHlMQko2YXRmdHotQjhNZEpxRUJCRmpNU3owZ0VFQzNqZVcyUmdDX1RsQlNmQmVlT1hqOUdYQ3lEYWJnQnpqX2lrN0xmQktWd2F4dnZoZHdPVDZWZERyX0ljWFJ2eDlWUG0xMTNYVG85a19UVmhiOGkyLWlDTUx1d3VJQnFnU0ZnXzdhajMxVDNodXk4WS1LUdIBjwJBVV95cUxORk9YdldORXlpNlhHaF8wazVXdnU4ckpTV2xDUkhrNDlDaW0zU3prWmlYRXpUODNVMXBpSG5zd1hIMzRncl9PWUlzY3V0MHpKN1AyZzFETlZqU1drODFyRzF1d1pYdEw3dzhUYi13NkcwZEIxQjMyRnRNelhvNThoY0JEbXFXd3hMMlNxVllpMi1GRkZMblB6YUlLcEV3X3ZoMlNpTkswejgwOEd1V2hCRENkTE1SMVNLTGF0R0s0a2VGbVlpWmJvVzdwSVZ3MjJRc3FHVG5hVEtDckp1TE5xLUdaMTkzekRHNjlvT1J4NVpzX0RPbmhXS05sZHZ3LW9SQmliN2RJTnp1ZGVfYm84?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Tata Steel expanding NINL capacity to 5 MT per annum: CEO TV Narendran",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOU2VzNXhQQnVnb0xCSEV2a3lRdnNtWVVDOEstbnlYOFhITDUwTTNVd0VnaGdqS0xQVG1lY0g3UHZsbGxpVGkyemdYX1JCcTJqQmduN25BUGo3ZEdlZWJhbmx0dVJXUnZVaTVSd29Wbm5PblpCWk5aM0dCX0YtRGloQjFEeTdzSE5sZGc2THBVWk9oZ05OeElTSXgxa3N1LU83REdySGozbVQzTUZ4RHowUGtGdmhrak8yWk5FWWlmTUpWZWhlblRWeEF4M1prdzQyX3BjaDA1RmlkYTFjQ2ZJeDRDOXVsQ3pkMWNpamt5OFFubHNC0gHuAUFVX3lxTE9nMF9FLXN5a2FTcFNZYlI3b203a1pWYUxJd0hiWVpndEg4YVlkM19COEVkUjJ1a3VicXJIai1XZlRsc20xMXA0ZzNqVzR4b01YYm84ZnBJaHYwX1VMZENGaHd5SXBXdDdlY0tjc0JvNDZ5SFVGUWNSLVN4bExQWTBGWS1kcXpwbFFhRDBsSDBmRjNxcXZDQ2lNYVg0aXhaSnc2b19QdUpXN1VQaUdoT2Q1SGlXWlo0SnpUbTJkVjE0cHg0c29VaWRfazIzc25vTU1yQll2UFlVdnJQcDdqSDVkZFU0ZE1MeGR3b2xiX2c?oc=5",
@@ -446,6 +432,20 @@
       "title": "Personal Finance",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNTdvYUh3Q0RSNGowclpxRjJCa094enpIMmVwRHRRODRBTl9XekxWYkJWelg3Tm1rbGdXSE9PYUlpemNuSnl4UzN2ZFdmRWZqdzZqM3BJMUotWlV1Q0tXR042dXQyT2JSY1BCRTF0clpOaXFpeDhPa21jbEQ4TlVuYlQ0LUJIUXB0c19v?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Domestic steel demand to rise; in talks with the Netherlands government over steel production: Tata Steel",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQLTYwVjdnVmc1T2ZGVWxEeTRKekRmQXc0LUpDZVhjNTRQVTlFemhPT0pyM0hBa2pZZHRNSHZFRDQ1SjhkRDM2aGVtbnpwYjhmLXBCQnNVTDdCREdyUDBTUlBzYUFDUV9PZ3dWNzM4bklRR2VUVTNRWU5iWk1ONmJYZWEzOG82Y2RMMHdTOU1IT3o1Nkp3NXZNdnlOeHRjLVJfOHVZcjV0YXU0MHEyU2dwTEc3SGZubWVuVkotZjVnazEyX3hiRXdfOWQtNUZQUUw0ZDJNM2RHNkhsYzh1OUZfeXJuX1gwQW1MRmlMN1hOMUwtZmNiVUhhQWlkSzRwcEFmcVdGblJKZWJ3MElqWVo4eUxiTDhsLUQxT1VEOGFzTlA3VlJWMlhF0gGgAkFVX3lxTE1YYnp2Y1pWMC0yWVNXRGZ6UGFTQ1RmZ2lMeC1RUl9WcWRnZ3RNZ1BuWk9PaDQ4bTk5VS1DTVRPQkJ2NlVXeFlEcHlTT2NuNEdWcTZGeV9XZGFhT1RqREVoNzhma0xKWFhlR3lqbTlVem9pWE1hREViWXVJRF9yQUJvT1J6LVhZaG9xLUdBbFpIV2F3SjU5UGZLbDE4VTVLTWxJWU00WVE4UUQzX0p3RG01Z0dQNW1ZSENpUmpqQlQzX0lKeU52Xy1BUXB1UE10SGgzZ0xzblhMNzBxS0x6WXAzc09KSWJjWjA1U3Jlc2Q2Ymg1UDVrSzc5eW9keGIxYWU0R0lDM1Fzc1VJWG1XZFJnZ2dCUzdaUk05TTVERGYyNQ?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "A-One Steels shares list at 14% premium over IPO price on BSE",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KMFdqVU9kbkZrWGowMm4yOUk2UHhIUzA4SGpWRy02bU5XcXBVa1pKNXVucllJaVNFLUZWUzc0TXVlRThZR3RyTGJqNjhwdVlUT3ZXakVUOV9FM2UxeEk4bDdTd3lKcEs5N3V6ekZ5YlBDdGl3MDlr?oc=5",
       "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     }

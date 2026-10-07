@@ -1,14 +1,14 @@
 {
   "symbol": "COST",
-  "last_price": 930.09,
+  "last_price": 935.68,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 3.2,
-  "fit_score": 32.5,
+  "trend_score": 2.8,
+  "fit_score": 27.5,
   "confidence_grade": "C",
-  "confidence_percentage": 32.5,
-  "vix": 15.33,
+  "confidence_percentage": 27.5,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,244 +20,244 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 980.0,
-        "strike_formatted": "980",
+        "strike": 985.0,
+        "strike_formatted": "985",
         "option_type": "Call",
-        "delta": 0.203,
+        "delta": 0.199,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x COST 20-Nov-2026 980 Call"
+        "dte": 44,
+        "summary": "Sell 1x COST 20-Nov-2026 985 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 995.0,
-        "strike_formatted": "995",
+        "strike": 1000.0,
+        "strike_formatted": "1000",
         "option_type": "Call",
-        "delta": 0.133,
+        "delta": 0.128,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x COST 20-Nov-2026 995 Call"
+        "dte": 44,
+        "summary": "Buy 1x COST 20-Nov-2026 1000 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 40.0,
-    "stop_loss_price": 902.19,
-    "take_profit_price": 957.99,
-    "net_delta": -0.07,
-    "net_theta": 0.046,
+    "margin_required": 35.0,
+    "stop_loss_price": 907.61,
+    "take_profit_price": 963.75,
+    "net_delta": -0.071,
+    "net_theta": 0.048,
     "probability_of_profit": 0.0,
     "var_95": 15.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 744.07,
-        "pnl": -40.0
+        "price": 748.54,
+        "pnl": -35.0
       },
       {
-        "price": 751.51,
-        "pnl": -40.0
+        "price": 756.03,
+        "pnl": -35.0
       },
       {
-        "price": 758.95,
-        "pnl": -40.0
+        "price": 763.51,
+        "pnl": -35.0
       },
       {
-        "price": 766.39,
-        "pnl": -40.0
+        "price": 771.0,
+        "pnl": -35.0
       },
       {
-        "price": 773.83,
-        "pnl": -40.0
+        "price": 778.49,
+        "pnl": -35.0
       },
       {
-        "price": 781.28,
-        "pnl": -40.0
+        "price": 785.97,
+        "pnl": -35.0
       },
       {
-        "price": 788.72,
-        "pnl": -40.0
+        "price": 793.46,
+        "pnl": -35.0
       },
       {
-        "price": 796.16,
-        "pnl": -40.0
+        "price": 800.94,
+        "pnl": -35.0
       },
       {
-        "price": 803.6,
-        "pnl": -40.0
+        "price": 808.43,
+        "pnl": -35.0
       },
       {
-        "price": 811.04,
-        "pnl": -40.0
+        "price": 815.91,
+        "pnl": -35.0
       },
       {
-        "price": 818.48,
-        "pnl": -40.0
+        "price": 823.4,
+        "pnl": -35.0
       },
       {
-        "price": 825.92,
-        "pnl": -40.0
+        "price": 830.88,
+        "pnl": -35.0
       },
       {
-        "price": 833.36,
-        "pnl": -40.0
+        "price": 838.37,
+        "pnl": -35.0
       },
       {
-        "price": 840.8,
-        "pnl": -40.0
+        "price": 845.85,
+        "pnl": -35.0
       },
       {
-        "price": 848.24,
-        "pnl": -40.0
+        "price": 853.34,
+        "pnl": -35.0
       },
       {
-        "price": 855.68,
-        "pnl": -40.0
+        "price": 860.83,
+        "pnl": -35.0
       },
       {
-        "price": 863.12,
-        "pnl": -40.0
+        "price": 868.31,
+        "pnl": -35.0
       },
       {
-        "price": 870.56,
-        "pnl": -40.0
+        "price": 875.8,
+        "pnl": -35.0
       },
       {
-        "price": 878.0,
-        "pnl": -40.0
+        "price": 883.28,
+        "pnl": -35.0
       },
       {
-        "price": 885.45,
-        "pnl": -40.0
+        "price": 890.77,
+        "pnl": -35.0
       },
       {
-        "price": 892.89,
-        "pnl": -40.0
+        "price": 898.25,
+        "pnl": -35.0
       },
       {
-        "price": 900.33,
-        "pnl": -40.0
+        "price": 905.74,
+        "pnl": -35.0
       },
       {
-        "price": 907.77,
-        "pnl": -40.0
+        "price": 913.22,
+        "pnl": -35.0
       },
       {
-        "price": 915.21,
-        "pnl": -40.0
+        "price": 920.71,
+        "pnl": -35.0
       },
       {
-        "price": 922.65,
-        "pnl": -40.0
+        "price": 928.19,
+        "pnl": -35.0
       },
       {
-        "price": 930.09,
-        "pnl": -40.0
+        "price": 935.68,
+        "pnl": -35.0
       },
       {
-        "price": 937.53,
-        "pnl": -40.0
+        "price": 943.17,
+        "pnl": -35.0
       },
       {
-        "price": 944.97,
-        "pnl": -40.0
+        "price": 950.65,
+        "pnl": -35.0
       },
       {
-        "price": 952.41,
-        "pnl": -40.0
+        "price": 958.14,
+        "pnl": -35.0
       },
       {
-        "price": 959.85,
-        "pnl": -40.0
+        "price": 965.62,
+        "pnl": -35.0
       },
       {
-        "price": 967.29,
-        "pnl": -40.0
+        "price": 973.11,
+        "pnl": -35.0
       },
       {
-        "price": 974.73,
-        "pnl": -40.0
+        "price": 980.59,
+        "pnl": -35.0
       },
       {
-        "price": 982.18,
-        "pnl": -42.18
+        "price": 988.08,
+        "pnl": -38.08
       },
       {
-        "price": 989.62,
-        "pnl": -49.62
+        "price": 995.56,
+        "pnl": -45.56
       },
       {
-        "price": 997.06,
-        "pnl": -55.0
+        "price": 1003.05,
+        "pnl": -50.0
       },
       {
-        "price": 1004.5,
-        "pnl": -55.0
+        "price": 1010.53,
+        "pnl": -50.0
       },
       {
-        "price": 1011.94,
-        "pnl": -55.0
+        "price": 1018.02,
+        "pnl": -50.0
       },
       {
-        "price": 1019.38,
-        "pnl": -55.0
+        "price": 1025.51,
+        "pnl": -50.0
       },
       {
-        "price": 1026.82,
-        "pnl": -55.0
+        "price": 1032.99,
+        "pnl": -50.0
       },
       {
-        "price": 1034.26,
-        "pnl": -55.0
+        "price": 1040.48,
+        "pnl": -50.0
       },
       {
-        "price": 1041.7,
-        "pnl": -55.0
+        "price": 1047.96,
+        "pnl": -50.0
       },
       {
-        "price": 1049.14,
-        "pnl": -55.0
+        "price": 1055.45,
+        "pnl": -50.0
       },
       {
-        "price": 1056.58,
-        "pnl": -55.0
+        "price": 1062.93,
+        "pnl": -50.0
       },
       {
-        "price": 1064.02,
-        "pnl": -55.0
+        "price": 1070.42,
+        "pnl": -50.0
       },
       {
-        "price": 1071.46,
-        "pnl": -55.0
+        "price": 1077.9,
+        "pnl": -50.0
       },
       {
-        "price": 1078.9,
-        "pnl": -55.0
+        "price": 1085.39,
+        "pnl": -50.0
       },
       {
-        "price": 1086.35,
-        "pnl": -55.0
+        "price": 1092.87,
+        "pnl": -50.0
       },
       {
-        "price": 1093.79,
-        "pnl": -55.0
+        "price": 1100.36,
+        "pnl": -50.0
       },
       {
-        "price": 1101.23,
-        "pnl": -55.0
+        "price": 1107.85,
+        "pnl": -50.0
       },
       {
-        "price": 1108.67,
-        "pnl": -55.0
+        "price": 1115.33,
+        "pnl": -50.0
       },
       {
-        "price": 1116.11,
-        "pnl": -55.0
+        "price": 1122.82,
+        "pnl": -50.0
       }
     ],
     "kelly_sizing": {
@@ -277,91 +277,64 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x COST 20-Nov-2026 980 Call<br> Buy 1x COST 20-Nov-2026 995 Call"
+      "legs_summary": "Sell 1x COST 20-Nov-2026 985 Call<br> Buy 1x COST 20-Nov-2026 1000 Call"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 84.0,
-      "grade": "A (Optimal)",
+      "score": 75.2,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 865 Put<br> Sell 1x COST 20-Nov-2026 880 Put<br> Sell 1x COST 20-Nov-2026 980 Call<br> Buy 1x COST 20-Nov-2026 995 Call"
+      "legs_summary": "Buy 1x COST 20-Nov-2026 870 Put<br> Sell 1x COST 20-Nov-2026 885 Put<br> Sell 1x COST 20-Nov-2026 985 Call<br> Buy 1x COST 20-Nov-2026 1000 Call"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 52.5,
+      "score": 54.8,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 930 Put<br> Sell 1x COST 20-Nov-2026 890 Put"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 51.5,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 905 Call<br> Sell 1x COST 20-Nov-2026 930 Call<br> Sell 1x COST 20-Nov-2026 930 Call<br> Buy 1x COST 20-Nov-2026 955 Call"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 47.2,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x COST 20-Nov-2026 880 Put<br> Sell 1x COST 20-Nov-2026 980 Call<br> Buy 1x COST 20-Nov-2026 995 Call"
+      "legs_summary": "Buy 1x COST 20-Nov-2026 935 Put<br> Sell 1x COST 20-Nov-2026 900 Put"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 44.9,
+      "score": 47.6,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x COST 20-Nov-2026 930.1 Put"
+      "legs_summary": "Sell 1x COST 20-Nov-2026 935.7 Put"
     },
     {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 43.6,
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 44.7,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 880 Put<br> Sell 1x COST 20-Nov-2026 930 Put<br> Sell 1x COST 20-Nov-2026 930 Call<br> Buy 1x COST 20-Nov-2026 980 Call"
-    },
-    {
-      "strategy_type": "ratio_put_spread",
-      "strategy_display": "Ratio Put Spread",
-      "score": 42.3,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
-      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 930 Put<br> Sell 1x COST 20-Nov-2026 880 Put<br> Sell 1x COST 20-Nov-2026 880 Put"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 41.1,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x COST 20-Nov-2026 905 Call<br> Sell 1x COST 20-Nov-2026 930 Call<br> Sell 1x COST 20-Nov-2026 930 Call<br> Buy 1x COST 20-Nov-2026 980 Call"
+      "legs_summary": "Buy 1x COST 20-Nov-2026 910 Call<br> Sell 1x COST 20-Nov-2026 935 Call<br> Sell 1x COST 20-Nov-2026 935 Call<br> Buy 1x COST 20-Nov-2026 960 Call"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 42.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x COST 20-Nov-2026 885 Put<br> Sell 1x COST 20-Nov-2026 985 Call<br> Buy 1x COST 20-Nov-2026 1000 Call"
     }
   ],
   "indicators": {
-    "EMA20": "917.28",
-    "EMA50": "927.82",
-    "EMA100": "942.07",
-    "EMA200": "951.30",
-    "RSI(14)": "55.90",
-    "ATR(14)": "14.91",
-    "ADX(14)": "11.79",
-    "BB(20,2)": "0.94",
-    "P_SHAPE(20)": "53.67"
+    "EMA20": "917.82",
+    "EMA50": "928.03",
+    "EMA100": "942.18",
+    "EMA200": "951.36",
+    "RSI(14)": "58.26",
+    "ATR(14)": "15.49",
+    "ADX(14)": "12.27",
+    "BB(20,2)": "1.02",
+    "P_SHAPE(20)": "48.48"
   },
   "rules": [
     {
@@ -394,13 +367,6 @@
     },
     {
       "name": "20-Day Momentum Relative Strength",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -440,9 +406,44 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
+    {
+      "title": "Why Is Everyone Ignoring Home Depot Stock's High Cash Yield?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-everyone-ignoring-home-depot-184245810.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Which Retailers Do AI Agents Cite the Most? Yeah, you guessed it, Walmart and Costco.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/52a030b2-e081-33e3-8656-e0e62c0a19ca/which-retailers-do-ai-agents.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Costco's Cash Pile Keeps Building. Could a Special Dividend Come in the Final 3 Months of the Year?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/costcos-cash-pile-keeps-building-172700380.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Service Prices Just Hit a 4-Year High While Wage Growth Hit a 5-Year Low",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/economy/articles/prices-just-hit-4-high-152551587.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
     {
       "title": "Costco's Digital Sales Top $33 Billion: Can E-commerce Keep Scaling?",
       "publisher": "Zacks",
@@ -456,34 +457,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/walmart-connect-keep-powering-wmts-125900924.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Should You Invest $1,000 in Costco Stock in October?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/invest-1-000-costco-stock-095000729.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Costco Is Down 10% in 6 Months While the S&P 500 Is Up 17%. Is Costco Too Cheap to Pass Up Under $900 a Share?",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/costco-down-10-6-months-093500715.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "\u2018The Disadvantage Plan Is All About Denial\u2019: Clark Howard Slams Costco\u2019s Medicare Plans as Growth Slows to 3.8%",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/healthcare/articles/disadvantage-plan-denial-clark-howard-083630671.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Costco quietly made a big pricing change",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/economy/policy/articles/costco-quietly-made-big-pricing-033300650.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

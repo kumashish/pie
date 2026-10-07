@@ -1,6 +1,6 @@
 {
   "symbol": "MS",
-  "last_price": 191.82,
+  "last_price": 191.02,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,12 +8,12 @@
   "fit_score": 35.0,
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
-  "vix": 15.33,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (33.7) is oversold (< 35) [Synthetic PCR: 1.26]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (31.8) is oversold (< 35) [Synthetic PCR: 1.28]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 200.0,
         "strike_formatted": "200",
         "option_type": "Call",
-        "delta": 0.263,
+        "delta": 0.23,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x MS 20-Nov-2026 200 Call"
       },
       {
@@ -35,235 +35,235 @@
         "strike": 205.0,
         "strike_formatted": "205",
         "option_type": "Call",
-        "delta": 0.137,
+        "delta": 0.112,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x MS 20-Nov-2026 205 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 10.0,
-    "stop_loss_price": 186.07,
-    "take_profit_price": 197.57,
-    "net_delta": -0.126,
-    "net_theta": 0.015,
+    "margin_required": 5.0,
+    "stop_loss_price": 185.29,
+    "take_profit_price": 196.75,
+    "net_delta": -0.118,
+    "net_theta": 0.016,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 153.46,
+        "price": 152.82,
+        "pnl": -5.0
+      },
+      {
+        "price": 154.34,
+        "pnl": -5.0
+      },
+      {
+        "price": 155.87,
+        "pnl": -5.0
+      },
+      {
+        "price": 157.4,
+        "pnl": -5.0
+      },
+      {
+        "price": 158.93,
+        "pnl": -5.0
+      },
+      {
+        "price": 160.46,
+        "pnl": -5.0
+      },
+      {
+        "price": 161.98,
+        "pnl": -5.0
+      },
+      {
+        "price": 163.51,
+        "pnl": -5.0
+      },
+      {
+        "price": 165.04,
+        "pnl": -5.0
+      },
+      {
+        "price": 166.57,
+        "pnl": -5.0
+      },
+      {
+        "price": 168.1,
+        "pnl": -5.0
+      },
+      {
+        "price": 169.63,
+        "pnl": -5.0
+      },
+      {
+        "price": 171.15,
+        "pnl": -5.0
+      },
+      {
+        "price": 172.68,
+        "pnl": -5.0
+      },
+      {
+        "price": 174.21,
+        "pnl": -5.0
+      },
+      {
+        "price": 175.74,
+        "pnl": -5.0
+      },
+      {
+        "price": 177.27,
+        "pnl": -5.0
+      },
+      {
+        "price": 178.79,
+        "pnl": -5.0
+      },
+      {
+        "price": 180.32,
+        "pnl": -5.0
+      },
+      {
+        "price": 181.85,
+        "pnl": -5.0
+      },
+      {
+        "price": 183.38,
+        "pnl": -5.0
+      },
+      {
+        "price": 184.91,
+        "pnl": -5.0
+      },
+      {
+        "price": 186.44,
+        "pnl": -5.0
+      },
+      {
+        "price": 187.96,
+        "pnl": -5.0
+      },
+      {
+        "price": 189.49,
+        "pnl": -5.0
+      },
+      {
+        "price": 191.02,
+        "pnl": -5.0
+      },
+      {
+        "price": 192.55,
+        "pnl": -5.0
+      },
+      {
+        "price": 194.08,
+        "pnl": -5.0
+      },
+      {
+        "price": 195.6,
+        "pnl": -5.0
+      },
+      {
+        "price": 197.13,
+        "pnl": -5.0
+      },
+      {
+        "price": 198.66,
+        "pnl": -5.0
+      },
+      {
+        "price": 200.19,
+        "pnl": -5.19
+      },
+      {
+        "price": 201.72,
+        "pnl": -6.72
+      },
+      {
+        "price": 203.25,
+        "pnl": -8.25
+      },
+      {
+        "price": 204.77,
+        "pnl": -9.77
+      },
+      {
+        "price": 206.3,
         "pnl": -10.0
       },
       {
-        "price": 154.99,
+        "price": 207.83,
         "pnl": -10.0
       },
       {
-        "price": 156.53,
+        "price": 209.36,
         "pnl": -10.0
       },
       {
-        "price": 158.06,
+        "price": 210.89,
         "pnl": -10.0
       },
       {
-        "price": 159.59,
+        "price": 212.41,
         "pnl": -10.0
       },
       {
-        "price": 161.13,
+        "price": 213.94,
         "pnl": -10.0
       },
       {
-        "price": 162.66,
+        "price": 215.47,
         "pnl": -10.0
       },
       {
-        "price": 164.2,
+        "price": 217.0,
         "pnl": -10.0
       },
       {
-        "price": 165.73,
+        "price": 218.53,
         "pnl": -10.0
       },
       {
-        "price": 167.27,
+        "price": 220.06,
         "pnl": -10.0
       },
       {
-        "price": 168.8,
+        "price": 221.58,
         "pnl": -10.0
       },
       {
-        "price": 170.34,
+        "price": 223.11,
         "pnl": -10.0
       },
       {
-        "price": 171.87,
+        "price": 224.64,
         "pnl": -10.0
       },
       {
-        "price": 173.41,
+        "price": 226.17,
         "pnl": -10.0
       },
       {
-        "price": 174.94,
+        "price": 227.7,
         "pnl": -10.0
       },
       {
-        "price": 176.47,
+        "price": 229.22,
         "pnl": -10.0
-      },
-      {
-        "price": 178.01,
-        "pnl": -10.0
-      },
-      {
-        "price": 179.54,
-        "pnl": -10.0
-      },
-      {
-        "price": 181.08,
-        "pnl": -10.0
-      },
-      {
-        "price": 182.61,
-        "pnl": -10.0
-      },
-      {
-        "price": 184.15,
-        "pnl": -10.0
-      },
-      {
-        "price": 185.68,
-        "pnl": -10.0
-      },
-      {
-        "price": 187.22,
-        "pnl": -10.0
-      },
-      {
-        "price": 188.75,
-        "pnl": -10.0
-      },
-      {
-        "price": 190.29,
-        "pnl": -10.0
-      },
-      {
-        "price": 191.82,
-        "pnl": -10.0
-      },
-      {
-        "price": 193.35,
-        "pnl": -10.0
-      },
-      {
-        "price": 194.89,
-        "pnl": -10.0
-      },
-      {
-        "price": 196.42,
-        "pnl": -10.0
-      },
-      {
-        "price": 197.96,
-        "pnl": -10.0
-      },
-      {
-        "price": 199.49,
-        "pnl": -10.0
-      },
-      {
-        "price": 201.03,
-        "pnl": -11.03
-      },
-      {
-        "price": 202.56,
-        "pnl": -12.56
-      },
-      {
-        "price": 204.1,
-        "pnl": -14.1
-      },
-      {
-        "price": 205.63,
-        "pnl": -15.0
-      },
-      {
-        "price": 207.17,
-        "pnl": -15.0
-      },
-      {
-        "price": 208.7,
-        "pnl": -15.0
-      },
-      {
-        "price": 210.23,
-        "pnl": -15.0
-      },
-      {
-        "price": 211.77,
-        "pnl": -15.0
-      },
-      {
-        "price": 213.3,
-        "pnl": -15.0
-      },
-      {
-        "price": 214.84,
-        "pnl": -15.0
-      },
-      {
-        "price": 216.37,
-        "pnl": -15.0
-      },
-      {
-        "price": 217.91,
-        "pnl": -15.0
-      },
-      {
-        "price": 219.44,
-        "pnl": -15.0
-      },
-      {
-        "price": 220.98,
-        "pnl": -15.0
-      },
-      {
-        "price": 222.51,
-        "pnl": -15.0
-      },
-      {
-        "price": 224.05,
-        "pnl": -15.0
-      },
-      {
-        "price": 225.58,
-        "pnl": -15.0
-      },
-      {
-        "price": 227.11,
-        "pnl": -15.0
-      },
-      {
-        "price": 228.65,
-        "pnl": -15.0
-      },
-      {
-        "price": 230.18,
-        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.82,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.338,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,7 +273,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 91.5,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -282,7 +282,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 80.4,
+      "score": 80.1,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -307,9 +307,18 @@
       "legs_summary": "Sell 1x MS 20-Nov-2026 180 Put<br> Sell 1x MS 20-Nov-2026 200 Call<br> Buy 1x MS 20-Nov-2026 205 Call"
     },
     {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 49.6,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x MS 20-Nov-2026 190 Call<br> Sell 1x MS 20-Nov-2026 195 Call"
+    },
+    {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 47.1,
+      "score": 47.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -318,11 +327,20 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 46.3,
+      "score": 46.8,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MS 20-Nov-2026 190 Put<br> Sell 1x MS 20-Nov-2026 180 Put"
+      "legs_summary": "Buy 1x MS 20-Nov-2026 190 Put<br> Sell 1x MS 20-Nov-2026 185 Put"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 43.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x MS 20-Nov-2026 191.0 Call<br> Sell 1x MS 20-Nov-2026 200 Call"
     },
     {
       "strategy_type": "wheel",
@@ -336,7 +354,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 41.8,
+      "score": 42.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -344,15 +362,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "198.23",
-    "EMA50": "205.00",
-    "EMA100": "204.20",
+    "EMA20": "198.16",
+    "EMA50": "204.97",
+    "EMA100": "204.19",
     "EMA200": "194.03",
-    "RSI(14)": "33.69",
+    "RSI(14)": "31.84",
     "ATR(14)": "4.54",
     "ADX(14)": "37.89",
-    "BB(20,2)": "0.27",
-    "P_SHAPE(20)": "45.64"
+    "BB(20,2)": "0.25",
+    "P_SHAPE(20)": "45.59"
   },
   "rules": [
     {
@@ -435,44 +453,30 @@
   ],
   "news": [
     {
-      "title": "SpaceX jumps to highest close since June on bullish Morgan Stanley call",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/stocks/article/spacex-jumps-to-highest-close-since-june-on-bullish-morgan-stanley-call-150109145.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "SpaceX Gains 2% as Morgan Stanley Sees a Closing Window; AST SpaceMobile Surges 8%, Rocket Lab Rises 5%",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-gains-2-morgan-stanley-145341999.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "U.K. Treasury Picks Six Banks For Digital Bond Issuance",
-      "publisher": "CryptoProwl",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/u-k-treasury-picks-six-140700049.html",
+      "title": "Morgan Stanley Made Wells Fargo (WFC) a Top Pick With a $102 Target. The Stock Is Flat Over a Year",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-made-wells-fargo-002505406.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "60% of Wall Street\u2019s Ratings on S&P 500 Stocks Are Now Buys, the Most on Record",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/60-wall-street-ratings-p-134548040.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Synopsys is Hot Again But a Pattern Has Emerged",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/synopsys-hot-again-pattern-emerged-124504659.html",
+      "title": "Morgan Stanley reinstates this AI chipmaker as its top pick in semiconductors",
+      "publisher": "Investing.com",
+      "link": "https://finance.yahoo.com/technology/ai/articles/morgan-stanley-reinstates-ai-chipmaker-202517793.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Morgan Stanley: Nvidia, Broadcom shielded from data-center power crunch",
-      "publisher": "Quartz",
-      "link": "https://finance.yahoo.com/technology/articles/morgan-stanley-nvidia-broadcom-shielded-120314954.html",
+      "title": "Berkshire Bought $193 Million More Lennar. Abel Doesn\u2019t \u201cEnvision a Quick Recovery\u201d",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/real-estate/articles/berkshire-bought-193-million-more-170056759.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "AST SpaceMobile Is Soaring After State Dept. Endorses LEO Satellite Cooperation with Japan",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/technology/articles/ast-spacemobile-soaring-state-dept-160453066.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

@@ -1,6 +1,6 @@
 {
   "symbol": "IBM",
-  "last_price": 223.14,
+  "last_price": 221.29,
   "as_of": "2026-10-06 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
@@ -8,7 +8,7 @@
   "fit_score": 10.0,
   "confidence_grade": "C",
   "confidence_percentage": 10.0,
-  "vix": 15.33,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,119 +20,123 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 235.0,
-        "strike_formatted": "235",
+        "strike": 230.0,
+        "strike_formatted": "230",
         "option_type": "Call",
-        "delta": 0.206,
+        "delta": 0.275,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x IBM 20-Nov-2026 235 Call"
+        "dte": 44,
+        "summary": "Sell 1x IBM 20-Nov-2026 230 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 240.0,
-        "strike_formatted": "240",
+        "strike": 235.0,
+        "strike_formatted": "235",
         "option_type": "Call",
-        "delta": 0.113,
+        "delta": 0.156,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x IBM 20-Nov-2026 240 Call"
+        "dte": 44,
+        "summary": "Buy 1x IBM 20-Nov-2026 235 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 216.45,
-    "take_profit_price": 229.83,
-    "net_delta": -0.093,
-    "net_theta": 0.015,
+    "stop_loss_price": 214.65,
+    "take_profit_price": 227.93,
+    "net_delta": -0.119,
+    "net_theta": 0.016,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 178.51,
+        "price": 177.03,
         "pnl": -10.0
       },
       {
-        "price": 180.3,
+        "price": 178.8,
         "pnl": -10.0
       },
       {
-        "price": 182.08,
+        "price": 180.57,
         "pnl": -10.0
       },
       {
-        "price": 183.87,
+        "price": 182.34,
         "pnl": -10.0
       },
       {
-        "price": 185.65,
+        "price": 184.11,
         "pnl": -10.0
       },
       {
-        "price": 187.44,
+        "price": 185.88,
         "pnl": -10.0
       },
       {
-        "price": 189.22,
+        "price": 187.65,
         "pnl": -10.0
       },
       {
-        "price": 191.01,
+        "price": 189.42,
         "pnl": -10.0
       },
       {
-        "price": 192.79,
+        "price": 191.19,
         "pnl": -10.0
       },
       {
-        "price": 194.58,
+        "price": 192.96,
         "pnl": -10.0
       },
       {
-        "price": 196.36,
+        "price": 194.74,
         "pnl": -10.0
       },
       {
-        "price": 198.15,
+        "price": 196.51,
         "pnl": -10.0
       },
       {
-        "price": 199.93,
+        "price": 198.28,
         "pnl": -10.0
       },
       {
-        "price": 201.72,
+        "price": 200.05,
         "pnl": -10.0
       },
       {
-        "price": 203.5,
+        "price": 201.82,
         "pnl": -10.0
       },
       {
-        "price": 205.29,
+        "price": 203.59,
         "pnl": -10.0
       },
       {
-        "price": 207.07,
+        "price": 205.36,
         "pnl": -10.0
       },
       {
-        "price": 208.86,
+        "price": 207.13,
         "pnl": -10.0
       },
       {
-        "price": 210.64,
+        "price": 208.9,
         "pnl": -10.0
       },
       {
-        "price": 212.43,
+        "price": 210.67,
+        "pnl": -10.0
+      },
+      {
+        "price": 212.44,
         "pnl": -10.0
       },
       {
@@ -140,123 +144,119 @@
         "pnl": -10.0
       },
       {
-        "price": 216.0,
+        "price": 215.98,
         "pnl": -10.0
       },
       {
-        "price": 217.78,
+        "price": 217.75,
         "pnl": -10.0
       },
       {
-        "price": 219.57,
+        "price": 219.52,
         "pnl": -10.0
       },
       {
-        "price": 221.35,
+        "price": 221.29,
         "pnl": -10.0
       },
       {
-        "price": 223.14,
+        "price": 223.06,
         "pnl": -10.0
       },
       {
-        "price": 224.93,
+        "price": 224.83,
         "pnl": -10.0
       },
       {
-        "price": 226.71,
+        "price": 226.6,
         "pnl": -10.0
       },
       {
-        "price": 228.5,
+        "price": 228.37,
         "pnl": -10.0
       },
       {
-        "price": 230.28,
-        "pnl": -10.0
+        "price": 230.14,
+        "pnl": -10.14
       },
       {
-        "price": 232.07,
-        "pnl": -10.0
+        "price": 231.91,
+        "pnl": -11.91
       },
       {
-        "price": 233.85,
-        "pnl": -10.0
+        "price": 233.68,
+        "pnl": -13.68
       },
       {
-        "price": 235.64,
-        "pnl": -10.64
-      },
-      {
-        "price": 237.42,
-        "pnl": -12.42
-      },
-      {
-        "price": 239.21,
-        "pnl": -14.21
-      },
-      {
-        "price": 240.99,
+        "price": 235.45,
         "pnl": -15.0
       },
       {
-        "price": 242.78,
+        "price": 237.22,
         "pnl": -15.0
       },
       {
-        "price": 244.56,
+        "price": 238.99,
         "pnl": -15.0
       },
       {
-        "price": 246.35,
+        "price": 240.76,
         "pnl": -15.0
       },
       {
-        "price": 248.13,
+        "price": 242.53,
         "pnl": -15.0
       },
       {
-        "price": 249.92,
+        "price": 244.3,
         "pnl": -15.0
       },
       {
-        "price": 251.7,
+        "price": 246.07,
         "pnl": -15.0
       },
       {
-        "price": 253.49,
+        "price": 247.84,
         "pnl": -15.0
       },
       {
-        "price": 255.27,
+        "price": 249.62,
         "pnl": -15.0
       },
       {
-        "price": 257.06,
+        "price": 251.39,
         "pnl": -15.0
       },
       {
-        "price": 258.84,
+        "price": 253.16,
         "pnl": -15.0
       },
       {
-        "price": 260.63,
+        "price": 254.93,
         "pnl": -15.0
       },
       {
-        "price": 262.41,
+        "price": 256.7,
         "pnl": -15.0
       },
       {
-        "price": 264.2,
+        "price": 258.47,
         "pnl": -15.0
       },
       {
-        "price": 265.98,
+        "price": 260.24,
         "pnl": -15.0
       },
       {
-        "price": 267.77,
+        "price": 262.01,
+        "pnl": -15.0
+      },
+      {
+        "price": 263.78,
+        "pnl": -15.0
+      },
+      {
+        "price": 265.55,
         "pnl": -15.0
       }
     ],
@@ -277,16 +277,16 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x IBM 20-Nov-2026 235 Call<br> Buy 1x IBM 20-Nov-2026 240 Call"
+      "legs_summary": "Sell 1x IBM 20-Nov-2026 230 Call<br> Buy 1x IBM 20-Nov-2026 235 Call"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 69.4,
+      "score": 70.9,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 225 Put<br> Sell 1x IBM 20-Nov-2026 215 Put"
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 220 Put<br> Sell 1x IBM 20-Nov-2026 210 Put"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -295,28 +295,28 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x IBM 20-Nov-2026 223.1 Put"
+      "legs_summary": "Sell 1x IBM 20-Nov-2026 221.3 Put"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 40.6,
+      "score": 40.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 215 Put<br> Sell 1x IBM 20-Nov-2026 235 Call<br> Buy 1x IBM 20-Nov-2026 240 Call"
+      "legs_summary": "Buy 1x IBM 20-Nov-2026 205 Put<br> Sell 1x IBM 20-Nov-2026 210 Put<br> Sell 1x IBM 20-Nov-2026 230 Call<br> Buy 1x IBM 20-Nov-2026 235 Call"
     }
   ],
   "indicators": {
-    "EMA20": "227.98",
-    "EMA50": "233.57",
-    "EMA100": "240.66",
-    "EMA200": "249.30",
-    "RSI(14)": "42.56",
-    "ATR(14)": "6.29",
+    "EMA20": "227.80",
+    "EMA50": "233.50",
+    "EMA100": "240.62",
+    "EMA200": "249.29",
+    "RSI(14)": "40.29",
+    "ATR(14)": "6.33",
     "ADX(14)": "12.89",
-    "BB(20,2)": "0.28",
-    "P_SHAPE(20)": "34.03"
+    "BB(20,2)": "0.24",
+    "P_SHAPE(20)": "33.92"
   },
   "rules": [
     {
@@ -399,30 +399,44 @@
   ],
   "news": [
     {
-      "title": "What Are Palantir Stock Bulls Not Worried About?",
-      "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-bulls-not-worried-143418278.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Asset Performance Management Market Surges to $4.32 billion at a CAGR 10.3% by 2032 | Report by MarketsandMarkets\u2122",
-      "publisher": "GlobeNewswire",
-      "link": "https://finance.yahoo.com/technology/articles/asset-performance-management-market-surges-143000521.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Xanadu Quantum Taps GlobalFoundries to Mass Produce Its Computers",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/2b36e15e-19b1-3ab0-99d1-43de35a2a43b/xanadu-quantum-taps.html",
+      "title": "What is IBM\u2019s (IBM) Economic Moat, and is it Widening or Narrowing?",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ibm-ibm-economic-moat-widening-011339824.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Nvidia, Apple, and Microsoft are keeping the stock market afloat",
-      "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/article/nvidia-apple-and-microsoft-are-keeping-the-stock-market-afloat-140845362.html",
+      "title": "Jim Cramer Sticks to His Wait-a-Quarter Rule on IBM",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-sticks-wait-quarter-215134836.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Xanadu Quantum Stock Jumps on GlobalFoundries Pact to Mass-Produce Computers",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/2b36e15e-19b1-3ab0-99d1-43de35a2a43b/xanadu-quantum-stock-jumps-on.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "IBM Stock Rises 1% as Sarawak Quantum Hub Chases Post-Encryption Demand",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ibm-stock-rises-1-sarawak-195045366.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Should Dell Stock Be Part Of Your Portfolio?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dell-stock-part-portfolio-190051803.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Betting On AI Hardware: Is HPE Or Dell The Better Way?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/technology/ai/articles/betting-ai-hardware-hpe-dell-180954569.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

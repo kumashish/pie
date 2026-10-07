@@ -1,54 +1,54 @@
 {
   "symbol": "ONGC.NS",
-  "last_price": 224.2,
-  "as_of": "2026-10-06 03:45:00",
+  "last_price": 221.55,
+  "as_of": "2026-10-07 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.5,
-  "fit_score": 15.0,
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 15.0,
-  "vix": 13.61,
+  "confidence_percentage": 10.0,
+  "vix": 13.77,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (32.1) is oversold (< 35) [Synthetic PCR: 1.34]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 235.0,
-        "strike_formatted": "235",
+        "strike": 230.0,
+        "strike_formatted": "230",
         "option_type": "Call",
-        "delta": 0.216,
+        "delta": 0.277,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x ONGC.NS 24-Nov-2026 235 Call"
+        "dte": 48,
+        "summary": "Sell 1x ONGC.NS 24-Nov-2026 230 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 240.0,
-        "strike_formatted": "240",
+        "strike": 235.0,
+        "strike_formatted": "235",
         "option_type": "Call",
-        "delta": 0.114,
+        "delta": 0.153,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x ONGC.NS 24-Nov-2026 240 Call"
+        "dte": 48,
+        "summary": "Buy 1x ONGC.NS 24-Nov-2026 235 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 217.47,
-    "take_profit_price": 230.93,
-    "net_delta": -0.102,
+    "stop_loss_price": 214.9,
+    "take_profit_price": 228.2,
+    "net_delta": -0.124,
     "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,207 +56,207 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 179.36,
+        "price": 177.24,
         "pnl": -10.0
       },
       {
-        "price": 181.15,
+        "price": 179.01,
         "pnl": -10.0
       },
       {
-        "price": 182.95,
+        "price": 180.78,
         "pnl": -10.0
       },
       {
-        "price": 184.74,
+        "price": 182.56,
         "pnl": -10.0
       },
       {
-        "price": 186.53,
+        "price": 184.33,
         "pnl": -10.0
       },
       {
-        "price": 188.33,
+        "price": 186.1,
         "pnl": -10.0
       },
       {
-        "price": 190.12,
+        "price": 187.87,
         "pnl": -10.0
       },
       {
-        "price": 191.92,
+        "price": 189.65,
         "pnl": -10.0
       },
       {
-        "price": 193.71,
+        "price": 191.42,
         "pnl": -10.0
       },
       {
-        "price": 195.5,
+        "price": 193.19,
         "pnl": -10.0
       },
       {
-        "price": 197.3,
+        "price": 194.96,
         "pnl": -10.0
       },
       {
-        "price": 199.09,
+        "price": 196.74,
         "pnl": -10.0
       },
       {
-        "price": 200.88,
+        "price": 198.51,
         "pnl": -10.0
       },
       {
-        "price": 202.68,
+        "price": 200.28,
         "pnl": -10.0
       },
       {
-        "price": 204.47,
+        "price": 202.05,
         "pnl": -10.0
       },
       {
-        "price": 206.26,
+        "price": 203.83,
         "pnl": -10.0
       },
       {
-        "price": 208.06,
+        "price": 205.6,
         "pnl": -10.0
       },
       {
-        "price": 209.85,
+        "price": 207.37,
         "pnl": -10.0
       },
       {
-        "price": 211.64,
+        "price": 209.14,
         "pnl": -10.0
       },
       {
-        "price": 213.44,
+        "price": 210.92,
         "pnl": -10.0
       },
       {
-        "price": 215.23,
+        "price": 212.69,
         "pnl": -10.0
       },
       {
-        "price": 217.03,
+        "price": 214.46,
         "pnl": -10.0
       },
       {
-        "price": 218.82,
+        "price": 216.23,
         "pnl": -10.0
       },
       {
-        "price": 220.61,
+        "price": 218.01,
         "pnl": -10.0
       },
       {
-        "price": 222.41,
+        "price": 219.78,
         "pnl": -10.0
       },
       {
-        "price": 224.2,
+        "price": 221.55,
         "pnl": -10.0
       },
       {
-        "price": 225.99,
+        "price": 223.32,
         "pnl": -10.0
       },
       {
-        "price": 227.79,
+        "price": 225.09,
         "pnl": -10.0
       },
       {
-        "price": 229.58,
+        "price": 226.87,
         "pnl": -10.0
       },
       {
-        "price": 231.37,
+        "price": 228.64,
         "pnl": -10.0
       },
       {
-        "price": 233.17,
-        "pnl": -10.0
+        "price": 230.41,
+        "pnl": -10.41
       },
       {
-        "price": 234.96,
-        "pnl": -10.0
+        "price": 232.18,
+        "pnl": -12.18
       },
       {
-        "price": 236.76,
-        "pnl": -11.76
+        "price": 233.96,
+        "pnl": -13.96
       },
       {
-        "price": 238.55,
-        "pnl": -13.55
-      },
-      {
-        "price": 240.34,
+        "price": 235.73,
         "pnl": -15.0
       },
       {
-        "price": 242.14,
+        "price": 237.5,
         "pnl": -15.0
       },
       {
-        "price": 243.93,
+        "price": 239.27,
         "pnl": -15.0
       },
       {
-        "price": 245.72,
+        "price": 241.05,
         "pnl": -15.0
       },
       {
-        "price": 247.52,
+        "price": 242.82,
         "pnl": -15.0
       },
       {
-        "price": 249.31,
+        "price": 244.59,
         "pnl": -15.0
       },
       {
-        "price": 251.1,
+        "price": 246.36,
         "pnl": -15.0
       },
       {
-        "price": 252.9,
+        "price": 248.14,
         "pnl": -15.0
       },
       {
-        "price": 254.69,
+        "price": 249.91,
         "pnl": -15.0
       },
       {
-        "price": 256.48,
+        "price": 251.68,
         "pnl": -15.0
       },
       {
-        "price": 258.28,
+        "price": 253.45,
         "pnl": -15.0
       },
       {
-        "price": 260.07,
+        "price": 255.23,
         "pnl": -15.0
       },
       {
-        "price": 261.87,
+        "price": 257.0,
         "pnl": -15.0
       },
       {
-        "price": 263.66,
+        "price": 258.77,
         "pnl": -15.0
       },
       {
-        "price": 265.45,
+        "price": 260.54,
         "pnl": -15.0
       },
       {
-        "price": 267.25,
+        "price": 262.32,
         "pnl": -15.0
       },
       {
-        "price": 269.04,
+        "price": 264.09,
+        "pnl": -15.0
+      },
+      {
+        "price": 265.86,
         "pnl": -15.0
       }
     ],
@@ -277,57 +277,41 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-235CE-B1x-Nov-240CE"
+      "legs_summary": "S1x-Nov-230CE-B1x-Nov-235CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 71.6,
+      "score": 67.1,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-225PE-S1x-Nov-215PE"
+      "legs_summary": "B1x-Nov-220PE-S1x-Nov-210PE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 54.4,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-224.2PE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 47.5,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-210PE-S1x-Nov-215PE-S1x-Nov-235CE-B1x-Nov-240CE"
+      "legs_summary": "S1x-Nov-221.6PE"
     }
   ],
   "indicators": {
-    "EMA20": "229.93",
-    "EMA50": "235.31",
-    "EMA100": "242.89",
-    "EMA200": "249.37",
-    "RSI(14)": "35.58",
-    "ATR(14)": "3.81",
-    "ADX(14)": "19.79",
-    "BB(20,2)": "0.17",
-    "P_SHAPE(20)": "49.18"
+    "EMA20": "229.13",
+    "EMA50": "234.77",
+    "EMA100": "242.46",
+    "EMA200": "249.10",
+    "RSI(14)": "32.12",
+    "ATR(14)": "3.80",
+    "ADX(14)": "19.90",
+    "BB(20,2)": "0.10",
+    "P_SHAPE(20)": "44.78"
   },
   "rules": [
     {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -376,7 +360,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -384,6 +368,13 @@
     },
     {
       "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -434,10 +425,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Taking Stock: Sensex, Nifty end flat amid volatility; metal, pharma stocks drag",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNlFuRkRRZUhlRVJyZnBmVEdDeTdqdk5ENjRJX2ItNnhSUjdVRHdLUnN4UERueWt1M3I2TER3dm8zcU85QlN4Y2ZTNGdNcnpEeFhWbWx4WlBQOWVKdHdzcmpSS0oydktFczVQa2hvRGRrOThnTmpIQ3pwcFpTQXViZThZT29FT042UWx6LVlpNk0zZ1RuaDhWZlZXZ2wzbDhKSjN4RzJsWFIzZGZ0UGxFTFJXMllWWFFDYkZRUFhlc2tsRVQ3cVJIZ25GUFo2N0hHVzM1aHRsd9IB3AFBVV95cUxNTG1lRURYT0VLVEplb2p5emQyMDB3d3BhZUM4b1ZJZk10NEo0c195N2ZEc09rQUJsUXNjRmNMaFBoNGc3bVV3M2R1ZWNSZDRPMEJuWENZdkVlT2RUVEhGWVA3VEdLQnRtSUc0RmNWMzF0MlY2cVhjMEF1d0VSc3FCbXdwb1A1Q0hfOTZ1cndBbThOZ282N0ZKRWZhWTUtOFE4WTZRdU9xcEotMmxXczBkZjRsVmlHdW1KZmM1TFIyZzE5VFpHNVVTODNybUstU0oxSVhwOUhUMnVEZWhh?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
+      "title": "Mutual fund SIP returns: India averaged 8.4% over rolling 5-year periods; how did it compare with global markets?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZUpaa2QwbkRWaVVCMk1ST0N2TkcydjZ2eFZCSGZiUVQ1aDFCX0ZaTkozNWZMNEdnMEF1VDVlbU5HV3F2WDJzUWhzWEI1U2p3cE8xRWs5RWFwbkpKNU45bmhzNUdXNWhnSTFST2szWXd5RzdMSW9BZ3lVdUExNTFDZ3hCbTc1WjJxaVV6X2xkdlc4VkVjVlpnZXJrQmtsSk9weWZGZFlYZ0t1Z2ZvMWo0UlJLeElhRm1lWmxxVkNvQXlxRTIzYTYtSzh4azdxc0xfZlBSTjJqMWl5bVJvWVpfRGJFWWx2OXpRNFBETk9ucUh4U2ViWUVHal9YNlpPWWpUbHdDb3JsYnPSAY4CQVVfeXFMTzQxUUdWVjg2VVlHOHdoTWViajVOdHZjdHR2WDhnYkRPYXVaU1ZkQ0xDZG1qbzF3MzJTS1VoajRNbTRmZ2o0M1NtMDUtejBQc3BVbnlxWEx4Q0MxSkVLcF9KdG5nLXJxWnlzeS13Q2JjZ2lRcmxWakRsLUtITHRjWmRaVzYxQjNURE9xYWpxNEhnQkFWLWZqNkVDQkZFQV96X0Jmc1MxLUlKb2pjb3R1bk9JY1djblJLVjdKSktSZVQ2S25oZGtoZ2JFeWsxNzhGQlkzUk1DQ2lEd1JCT0NlcTBfRVAyX05UWHlSbDZGQmRzYktOaWJFRHpia0FBVUJjTXBXdEVtckR5TGtYRUtR?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     }
   ]

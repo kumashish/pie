@@ -1,6 +1,6 @@
 {
   "symbol": "GOOGL",
-  "last_price": 348.16,
+  "last_price": 347.68,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,12 +8,12 @@
   "fit_score": 62.5,
   "confidence_grade": "B",
   "confidence_percentage": 62.5,
-  "vix": 15.34,
+  "vix": 15.01,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (93.8% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (94.1% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 320.0,
         "strike_formatted": "320",
         "option_type": "Put",
-        "delta": -0.044,
+        "delta": -0.041,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x GOOGL 20-Nov-2026 320 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 330.0,
         "strike_formatted": "330",
         "option_type": "Put",
-        "delta": -0.128,
+        "delta": -0.126,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x GOOGL 20-Nov-2026 330 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 370.0,
         "strike_formatted": "370",
         "option_type": "Call",
-        "delta": 0.162,
+        "delta": 0.146,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x GOOGL 20-Nov-2026 370 Call"
       },
       {
@@ -59,10 +59,10 @@
         "strike": 380.0,
         "strike_formatted": "380",
         "option_type": "Call",
-        "delta": 0.069,
+        "delta": 0.059,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x GOOGL 20-Nov-2026 380 Call"
       }
     ],
@@ -70,9 +70,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 337.72,
-    "take_profit_price": 358.6,
-    "net_delta": -0.009,
+    "stop_loss_price": 337.25,
+    "take_profit_price": 358.11,
+    "net_delta": -0.002,
     "net_theta": 0.048,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
@@ -80,214 +80,214 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 278.53,
+        "price": 278.14,
         "pnl": -25.0
       },
       {
-        "price": 281.31,
+        "price": 280.93,
         "pnl": -25.0
       },
       {
-        "price": 284.1,
+        "price": 283.71,
         "pnl": -25.0
       },
       {
-        "price": 286.88,
+        "price": 286.49,
         "pnl": -25.0
       },
       {
-        "price": 289.67,
+        "price": 289.27,
         "pnl": -25.0
       },
       {
-        "price": 292.45,
+        "price": 292.05,
         "pnl": -25.0
       },
       {
-        "price": 295.24,
+        "price": 294.83,
         "pnl": -25.0
       },
       {
-        "price": 298.02,
+        "price": 297.61,
         "pnl": -25.0
       },
       {
-        "price": 300.81,
+        "price": 300.4,
         "pnl": -25.0
       },
       {
-        "price": 303.6,
+        "price": 303.18,
         "pnl": -25.0
       },
       {
-        "price": 306.38,
+        "price": 305.96,
         "pnl": -25.0
       },
       {
-        "price": 309.17,
+        "price": 308.74,
         "pnl": -25.0
       },
       {
-        "price": 311.95,
+        "price": 311.52,
         "pnl": -25.0
       },
       {
-        "price": 314.74,
+        "price": 314.3,
         "pnl": -25.0
       },
       {
-        "price": 317.52,
+        "price": 317.08,
         "pnl": -25.0
       },
       {
-        "price": 320.31,
-        "pnl": -24.69
+        "price": 319.87,
+        "pnl": -25.0
       },
       {
-        "price": 323.09,
-        "pnl": -21.91
+        "price": 322.65,
+        "pnl": -22.35
       },
       {
-        "price": 325.88,
-        "pnl": -19.12
+        "price": 325.43,
+        "pnl": -19.57
       },
       {
-        "price": 328.66,
-        "pnl": -16.34
+        "price": 328.21,
+        "pnl": -16.79
       },
       {
-        "price": 331.45,
+        "price": 330.99,
         "pnl": -15.0
       },
       {
-        "price": 334.23,
+        "price": 333.77,
         "pnl": -15.0
       },
       {
-        "price": 337.02,
+        "price": 336.55,
         "pnl": -15.0
       },
       {
-        "price": 339.8,
+        "price": 339.34,
         "pnl": -15.0
       },
       {
-        "price": 342.59,
+        "price": 342.12,
         "pnl": -15.0
       },
       {
-        "price": 345.37,
+        "price": 344.9,
         "pnl": -15.0
       },
       {
-        "price": 348.16,
+        "price": 347.68,
         "pnl": -15.0
       },
       {
-        "price": 350.95,
+        "price": 350.46,
         "pnl": -15.0
       },
       {
-        "price": 353.73,
+        "price": 353.24,
         "pnl": -15.0
       },
       {
-        "price": 356.52,
+        "price": 356.02,
         "pnl": -15.0
       },
       {
-        "price": 359.3,
+        "price": 358.81,
         "pnl": -15.0
       },
       {
-        "price": 362.09,
+        "price": 361.59,
         "pnl": -15.0
       },
       {
-        "price": 364.87,
+        "price": 364.37,
         "pnl": -15.0
       },
       {
-        "price": 367.66,
+        "price": 367.15,
         "pnl": -15.0
       },
       {
-        "price": 370.44,
-        "pnl": -15.44
+        "price": 369.93,
+        "pnl": -15.0
       },
       {
-        "price": 373.23,
-        "pnl": -18.23
+        "price": 372.71,
+        "pnl": -17.71
       },
       {
-        "price": 376.01,
-        "pnl": -21.01
+        "price": 375.49,
+        "pnl": -20.49
       },
       {
-        "price": 378.8,
-        "pnl": -23.8
+        "price": 378.28,
+        "pnl": -23.28
       },
       {
-        "price": 381.58,
+        "price": 381.06,
         "pnl": -25.0
       },
       {
-        "price": 384.37,
+        "price": 383.84,
         "pnl": -25.0
       },
       {
-        "price": 387.15,
+        "price": 386.62,
         "pnl": -25.0
       },
       {
-        "price": 389.94,
+        "price": 389.4,
         "pnl": -25.0
       },
       {
-        "price": 392.72,
+        "price": 392.18,
         "pnl": -25.0
       },
       {
-        "price": 395.51,
+        "price": 394.96,
         "pnl": -25.0
       },
       {
-        "price": 398.3,
+        "price": 397.75,
         "pnl": -25.0
       },
       {
-        "price": 401.08,
+        "price": 400.53,
         "pnl": -25.0
       },
       {
-        "price": 403.87,
+        "price": 403.31,
         "pnl": -25.0
       },
       {
-        "price": 406.65,
+        "price": 406.09,
         "pnl": -25.0
       },
       {
-        "price": 409.44,
+        "price": 408.87,
         "pnl": -25.0
       },
       {
-        "price": 412.22,
+        "price": 411.65,
         "pnl": -25.0
       },
       {
-        "price": 415.01,
+        "price": 414.43,
         "pnl": -25.0
       },
       {
-        "price": 417.79,
+        "price": 417.22,
         "pnl": -25.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.828,
+      "win_probability": 0.829,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3452,
+      "half_kelly_fraction": 0.3461,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,7 +297,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 93.8,
+      "score": 94.1,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 89.0,
+      "score": 88.9,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,7 +315,7 @@
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 68.1,
+      "score": 67.7,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -333,11 +333,20 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 59.7,
-      "grade": "C (Moderate)",
+      "score": 60.5,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x GOOGL 20-Nov-2026 340 Call<br> Sell 1x GOOGL 20-Nov-2026 350 Call<br> Sell 1x GOOGL 20-Nov-2026 350 Call<br> Buy 1x GOOGL 20-Nov-2026 360 Call"
+      "legs_summary": "Buy 1x GOOGL 20-Nov-2026 340 Call<br> Sell 1x GOOGL 20-Nov-2026 350 Call<br> Sell 1x GOOGL 20-Nov-2026 350 Call<br> Buy 1x GOOGL 20-Nov-2026 355 Call"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 58.7,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x GOOGL 20-Nov-2026 347.7 Call<br> Sell 1x GOOGL 20-Nov-2026 370 Call"
     },
     {
       "strategy_type": "wheel",
@@ -351,7 +360,7 @@
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 53.3,
+      "score": 53.2,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -360,11 +369,20 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 51.9,
+      "score": 52.2,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
       "legs_summary": "Buy 1x GOOGL 20-Nov-2026 330 Put<br> Sell 1x GOOGL 20-Nov-2026 350 Put<br> Sell 1x GOOGL 20-Nov-2026 350 Call<br> Buy 1x GOOGL 20-Nov-2026 365 Call"
+    },
+    {
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 51.2,
+      "grade": "C (Moderate)",
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x GOOGL 20-Nov-2026 347.7 Call<br> Buy 1x GOOGL 20-Nov-2026 330 Put"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -378,16 +396,16 @@
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 49.5,
+      "score": 49.6,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x GOOGL 20-Nov-2026 330 Call<br> Sell 1x GOOGL 20-Nov-2026 360 Call"
+      "legs_summary": "Buy 1x GOOGL 20-Nov-2026 330 Call<br> Sell 1x GOOGL 20-Nov-2026 355 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 45.2,
+      "score": 46.1,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -395,15 +413,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "343.94",
-    "EMA50": "345.46",
-    "EMA100": "345.11",
-    "EMA200": "329.50",
-    "RSI(14)": "53.77",
-    "ATR(14)": "8.41",
-    "ADX(14)": "13.73",
-    "BB(20,2)": "0.69",
-    "P_SHAPE(20)": "36.32"
+    "EMA20": "343.90",
+    "EMA50": "345.45",
+    "EMA100": "345.10",
+    "EMA200": "329.49",
+    "RSI(14)": "53.39",
+    "ATR(14)": "8.46",
+    "ADX(14)": "13.79",
+    "BB(20,2)": "0.67",
+    "P_SHAPE(20)": "36.29"
   },
   "rules": [
     {
@@ -486,44 +504,44 @@
   ],
   "news": [
     {
-      "title": "Google, Constellation Energy Strike 3.59-GW Power Deal",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/energy/articles/google-constellation-energy-strike-3-151828289.html",
+      "title": "Dow, S&P 500, Nasdaq Futures Mixed After S&P 500, Nasdaq Notch Record Highs: SPCX, NLST, PENG, WDC Stocks In Focus",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-024015617.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "S&P 500 Breaks Records But Analysts Split on Whether Rally Can Broaden",
+      "publisher": "BeInCrypto",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-breaks-records-analysts-023200824.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Has Nuclear Energy Trade Seen Its Bottom? What Jan Van Eck Sees In The Constellation-Google Deal",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/energy/articles/nuclear-energy-trade-seen-bottom-013354501.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "S&P 500's Vistra And Constellation Soar On AI Nuclear Energy Deals",
-      "publisher": "Investor's Business Daily",
-      "link": "https://finance.yahoo.com/m/95c4ecec-3f4e-3f41-8ce2-1886dd794c15/s%26p-500%27s-vistra-and.html",
+      "title": "Is NuScale Power (SMR) Undervalued After Google Fueled Fresh Interest In NRC Certified SMRs?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nuscale-power-smr-undervalued-google-010951265.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Why Do Investors Like Alphabet (GOOG, GOOGL) Despite AI Search Threats?",
-      "publisher": "Insider Monkey",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-investors-alphabet-goog-googl-150418735.html",
+      "title": "My Verdict on a Robotaxi Airport Ride: Relaxing, but Really Slow",
+      "publisher": "The Wall Street Journal",
+      "link": "https://finance.yahoo.com/m/3762d031-93df-3014-afce-8c8f192ca80b/my-verdict-on-a-robotaxi.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Anthropic Plans to Spend $518 Billion on Cloud and Computing Power",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/technology/ai/articles/anthropic-plans-spend-518-billion-150100670.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Alphabet Has the Biggest Upside in the Mag 7 Right Now: 64%",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-biggest-upside-mag-7-150009797.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cofounder.AI Names Former Google X Leader AJ Thomas Chief Operating Officer",
-      "publisher": "CNW Group",
-      "link": "https://finance.yahoo.com/small-business/articles/cofounder-ai-names-former-google-150000814.html",
+      "title": "Rezolve AI Targets $500M ARR as Agentic Commerce Platform Scales",
+      "publisher": "MarketBeat",
+      "link": "https://finance.yahoo.com/technology/ai/articles/rezolve-ai-targets-500m-arr-230217639.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

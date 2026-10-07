@@ -2,29 +2,30 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| SPY       | Oct 06, 20:53 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x SPY 20-Nov-2026 740 Put /  Buy 1x SPY 20-Nov-2026 725 Put | Active (Today, 20:53)  |
-| QQQ       | Oct 06, 20:53 IST | 🟡 Credit Spread   | 6.8/10    | Sell 1x QQQ 20-Nov-2026 725 Put /  Buy 1x QQQ 20-Nov-2026 715 Put | Active (Today, 20:53)  |
+| SPY       | Oct 07, 10:21 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x SPY 20-Nov-2026 740 Put /  Buy 1x SPY 20-Nov-2026 725 Put | Active (Today, 10:21)  |
+| QQQ       | Oct 07, 10:21 IST | 🟡 Credit Spread   | 6.8/10    | Sell 1x QQQ 20-Nov-2026 720 Put /  Buy 1x QQQ 20-Nov-2026 710 Put | Active (Today, 10:21)  |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ^NSEMDCP50 | Oct 06, 20:54 IST | 🟡 Credit Spread   | 3.2/10    | S1x-Nov-17950CE-B1x-Nov-18150CE | Active (Today, 20:54)  |
-| ^NSEI     | Oct 06, 20:54 IST | 🟡 Credit Spread   | 2.2/10    | S1x-Nov-23900CE-B1x-Nov-24100CE | Active (Today, 20:54)  |
-| ^BSESN    | Oct 06, 20:54 IST | 🟡 Credit Spread   | 2.0/10    | S1x-Nov-77000CE-B1x-Nov-77700CE | Active (Today, 20:54)  |
-| ^NSEBANK  | Oct 06, 20:54 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-57800CE-B1x-Nov-58400CE | New                    |
-| NIFTY_FIN_SERVICE.NS | Oct 06, 20:54 IST | 🟡 Credit Spread   | 0.8/10    | S1x-Nov-26200CE-B1x-Nov-26600CE | New                    |
+| ^NSEMDCP50 | Oct 07, 10:22 IST | 🟡 Credit Spread   | 3.2/10    | S1x-Nov-17950CE-B1x-Nov-18150CE | Active (Today, 10:22)  |
+| ^NSEI     | Oct 07, 10:22 IST | 🟡 Credit Spread   | 2.2/10    | S1x-Nov-23800CE-B1x-Nov-24000CE | Active (Today, 10:22)  |
+| ^BSESN    | Oct 07, 10:22 IST | 🟡 Credit Spread   | 2.2/10    | S1x-Nov-76400CE-B1x-Nov-77100CE | Active (Today, 10:22)  |
+| ^NSEBANK  | Oct 07, 10:22 IST | 🟡 Credit Spread   | 1.2/10    | S1x-Nov-58000CE-B1x-Nov-58600CE | Active (Today, 10:22)  |
+| NIFTY_FIN_SERVICE.NS | Oct 07, 10:22 IST | 🟡 Credit Spread   | 1.0/10    | S1x-Nov-26200CE-B1x-Nov-26600CE | Active (Today, 10:22)  |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 #### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| META      | Oct 06, 20:53 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 700 Put /  Buy 1x META 20-Nov-2026 675 Put | Active (Today, 20:53)  |
+| META      | Oct 07, 10:21 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 700 Put /  Buy 1x META 20-Nov-2026 675 Put | Active (Today, 10:21)  |
+| AMD       | Oct 07, 10:21 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x AMD 20-Nov-2026 615 Put /  Buy 1x AMD 20-Nov-2026 590 Put | Active (Today, 10:21)  |
+| AMAT      | Oct 07, 10:22 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x AMAT 20-Nov-2026 500 Put /  Buy 1x AMAT 20-Nov-2026 480 Put | Active (Today, 10:22)  |
 
 #### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| DIVISLAB.NS | Oct 06, 20:55 IST | 🟡 Credit Spread   | 9.0/10    | S1x-Nov-9000PE-B1x-Nov-8800PE | Active (Today, 20:55)  |
-| ADANIPORTS.NS | Oct 06, 20:55 IST | 🟡 Credit Spread   | 8.0/10    | S1x-Nov-1700PE-B1x-Nov-1650PE | Active (Today, 20:55)  |
+| DIVISLAB.NS | Oct 07, 10:23 IST | 🟡 Credit Spread   | 8.8/10    | S1x-Nov-9000PE-B1x-Nov-8800PE | Active (Today, 10:23)  |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 

@@ -1,6 +1,6 @@
 {
   "symbol": "MSTR",
-  "last_price": 167.51,
+  "last_price": 164.55,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,255 +8,255 @@
   "fit_score": 62.5,
   "confidence_grade": "B",
   "confidence_percentage": 62.5,
-  "vix": 15.34,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (66.6) is overbought (> 65) [Synthetic PCR: 0.72]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (65.0) is overbought (> 65) [Synthetic PCR: 0.75]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 155.0,
-        "strike_formatted": "155",
+        "strike": 150.0,
+        "strike_formatted": "150",
         "option_type": "Put",
-        "delta": -0.057,
+        "delta": -0.028,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Sell 1x MSTR 20-Nov-2026 155 Put"
+        "dte": 44,
+        "summary": "Sell 1x MSTR 20-Nov-2026 150 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 145.0,
-        "strike_formatted": "145",
+        "strike": 140.0,
+        "strike_formatted": "140",
         "option_type": "Put",
-        "delta": -0.002,
+        "delta": -0.001,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
-        "summary": "Buy 1x MSTR 20-Nov-2026 145 Put"
+        "dte": 44,
+        "summary": "Buy 1x MSTR 20-Nov-2026 140 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 162.49,
-    "take_profit_price": 172.54,
-    "net_delta": 0.055,
-    "net_theta": 0.009,
+    "stop_loss_price": 159.61,
+    "take_profit_price": 169.49,
+    "net_delta": 0.027,
+    "net_theta": 0.006,
     "probability_of_profit": 0.0,
-    "var_95": 1.11,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 134.01,
+        "price": 131.64,
         "pnl": -15.0
       },
       {
-        "price": 135.35,
+        "price": 132.96,
         "pnl": -15.0
       },
       {
-        "price": 136.69,
+        "price": 134.27,
         "pnl": -15.0
       },
       {
-        "price": 138.03,
+        "price": 135.59,
         "pnl": -15.0
       },
       {
-        "price": 139.37,
+        "price": 136.91,
         "pnl": -15.0
       },
       {
-        "price": 140.71,
+        "price": 138.22,
         "pnl": -15.0
       },
       {
-        "price": 142.05,
+        "price": 139.54,
         "pnl": -15.0
       },
       {
-        "price": 143.39,
-        "pnl": -15.0
+        "price": 140.85,
+        "pnl": -14.15
       },
       {
-        "price": 144.73,
-        "pnl": -15.0
+        "price": 142.17,
+        "pnl": -12.83
       },
       {
-        "price": 146.07,
-        "pnl": -13.93
+        "price": 143.49,
+        "pnl": -11.51
       },
       {
-        "price": 147.41,
-        "pnl": -12.59
+        "price": 144.8,
+        "pnl": -10.2
+      },
+      {
+        "price": 146.12,
+        "pnl": -8.88
+      },
+      {
+        "price": 147.44,
+        "pnl": -7.56
       },
       {
         "price": 148.75,
-        "pnl": -11.25
+        "pnl": -6.25
       },
       {
-        "price": 150.09,
-        "pnl": -9.91
-      },
-      {
-        "price": 151.43,
-        "pnl": -8.57
-      },
-      {
-        "price": 152.77,
-        "pnl": -7.23
-      },
-      {
-        "price": 154.11,
-        "pnl": -5.89
-      },
-      {
-        "price": 155.45,
+        "price": 150.07,
         "pnl": -5.0
       },
       {
-        "price": 156.79,
+        "price": 151.39,
         "pnl": -5.0
       },
       {
-        "price": 158.13,
+        "price": 152.7,
         "pnl": -5.0
       },
       {
-        "price": 159.47,
+        "price": 154.02,
         "pnl": -5.0
       },
       {
-        "price": 160.81,
+        "price": 155.34,
         "pnl": -5.0
       },
       {
-        "price": 162.15,
+        "price": 156.65,
         "pnl": -5.0
       },
       {
-        "price": 163.49,
+        "price": 157.97,
         "pnl": -5.0
       },
       {
-        "price": 164.83,
+        "price": 159.28,
         "pnl": -5.0
       },
       {
-        "price": 166.17,
+        "price": 160.6,
         "pnl": -5.0
       },
       {
-        "price": 167.51,
+        "price": 161.92,
         "pnl": -5.0
       },
       {
-        "price": 168.85,
+        "price": 163.23,
         "pnl": -5.0
       },
       {
-        "price": 170.19,
+        "price": 164.55,
         "pnl": -5.0
       },
       {
-        "price": 171.53,
+        "price": 165.87,
         "pnl": -5.0
       },
       {
-        "price": 172.87,
+        "price": 167.18,
         "pnl": -5.0
       },
       {
-        "price": 174.21,
+        "price": 168.5,
         "pnl": -5.0
       },
       {
-        "price": 175.55,
+        "price": 169.82,
         "pnl": -5.0
       },
       {
-        "price": 176.89,
+        "price": 171.13,
         "pnl": -5.0
       },
       {
-        "price": 178.23,
+        "price": 172.45,
         "pnl": -5.0
       },
       {
-        "price": 179.57,
+        "price": 173.76,
         "pnl": -5.0
       },
       {
-        "price": 180.91,
+        "price": 175.08,
         "pnl": -5.0
       },
       {
-        "price": 182.25,
+        "price": 176.4,
         "pnl": -5.0
       },
       {
-        "price": 183.6,
+        "price": 177.71,
         "pnl": -5.0
       },
       {
-        "price": 184.94,
+        "price": 179.03,
         "pnl": -5.0
       },
       {
-        "price": 186.28,
+        "price": 180.35,
         "pnl": -5.0
       },
       {
-        "price": 187.62,
+        "price": 181.66,
         "pnl": -5.0
       },
       {
-        "price": 188.96,
+        "price": 182.98,
         "pnl": -5.0
       },
       {
-        "price": 190.3,
+        "price": 184.3,
         "pnl": -5.0
       },
       {
-        "price": 191.64,
+        "price": 185.61,
         "pnl": -5.0
       },
       {
-        "price": 192.98,
+        "price": 186.93,
         "pnl": -5.0
       },
       {
-        "price": 194.32,
+        "price": 188.25,
         "pnl": -5.0
       },
       {
-        "price": 195.66,
+        "price": 189.56,
         "pnl": -5.0
       },
       {
-        "price": 197.0,
+        "price": 190.88,
         "pnl": -5.0
       },
       {
-        "price": 198.34,
+        "price": 192.19,
         "pnl": -5.0
       },
       {
-        "price": 199.68,
+        "price": 193.51,
         "pnl": -5.0
       },
       {
-        "price": 201.02,
+        "price": 194.83,
+        "pnl": -5.0
+      },
+      {
+        "price": 196.14,
+        "pnl": -5.0
+      },
+      {
+        "price": 197.46,
         "pnl": -5.0
       }
     ],
@@ -277,25 +277,25 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x MSTR 20-Nov-2026 155 Put<br> Buy 1x MSTR 20-Nov-2026 145 Put"
+      "legs_summary": "Sell 1x MSTR 20-Nov-2026 150 Put<br> Buy 1x MSTR 20-Nov-2026 140 Put"
     },
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 84.5,
+      "score": 84.7,
       "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x MSTR 20-Nov-2026 145 Put<br> Sell 1x MSTR 20-Nov-2026 155 Put<br> Sell 1x MSTR 20-Nov-2026 185 Call<br> Buy 1x MSTR 20-Nov-2026 195 Call"
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 140 Put<br> Sell 1x MSTR 20-Nov-2026 150 Put<br> Sell 1x MSTR 20-Nov-2026 180 Call<br> Buy 1x MSTR 20-Nov-2026 190 Call"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 65.1,
+      "score": 64.4,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x MSTR 20-Nov-2026 155 Put<br> Sell 1x MSTR 20-Nov-2026 185 Call<br> Buy 1x MSTR 20-Nov-2026 195 Call"
+      "legs_summary": "Sell 1x MSTR 20-Nov-2026 150 Put<br> Sell 1x MSTR 20-Nov-2026 180 Call<br> Buy 1x MSTR 20-Nov-2026 190 Call"
     },
     {
       "strategy_type": "ratio_put_spread",
@@ -304,16 +304,25 @@
       "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x MSTR 20-Nov-2026 170 Put<br> Sell 1x MSTR 20-Nov-2026 155 Put<br> Sell 1x MSTR 20-Nov-2026 155 Put"
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Put<br> Sell 1x MSTR 20-Nov-2026 150 Put<br> Sell 1x MSTR 20-Nov-2026 150 Put"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 52.1,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 164.6 Call<br> Sell 1x MSTR 20-Nov-2026 180 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 50.5,
+      "score": 51.1,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Buy 1x MSTR 20-Nov-2026 170 Call"
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 160 Call<br> Sell 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 165 Call<br> Buy 1x MSTR 20-Nov-2026 170 Call"
     },
     {
       "strategy_type": "wheel",
@@ -322,55 +331,64 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x MSTR 20-Nov-2026 155 Put"
+      "legs_summary": "Sell 1x MSTR 20-Nov-2026 150 Put"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 49.4,
+      "score": 49.0,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MSTR 20-Nov-2026 170 Call<br> Sell 1x MSTR 20-Nov-2026 175 Call"
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 44.1,
+      "score": 45.2,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Buy 1x MSTR 20-Nov-2026 175 Call"
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 160 Call<br> Sell 1x MSTR 20-Nov-2026 165 Call<br> Sell 1x MSTR 20-Nov-2026 165 Call<br> Buy 1x MSTR 20-Nov-2026 175 Call"
+    },
+    {
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 44.7,
+      "grade": "C (Moderate)",
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 164.6 Call<br> Buy 1x MSTR 20-Nov-2026 150 Put"
     },
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 42.6,
+      "score": 42.8,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x MSTR 20-Nov-2026 160 Put<br> Sell 1x MSTR 20-Nov-2026 170 Put<br> Sell 1x MSTR 20-Nov-2026 170 Call<br> Buy 1x MSTR 20-Nov-2026 175 Call"
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 155 Put<br> Sell 1x MSTR 20-Nov-2026 165 Put<br> Sell 1x MSTR 20-Nov-2026 165 Call<br> Buy 1x MSTR 20-Nov-2026 175 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 41.4,
+      "score": 41.2,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x MSTR 20-Nov-2026 160 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call"
+      "legs_summary": "Buy 1x MSTR 20-Nov-2026 155 Call<br> Sell 1x MSTR 20-Nov-2026 170 Call"
     }
   ],
   "indicators": {
-    "EMA20": "151.56",
-    "EMA50": "136.02",
-    "EMA100": "133.08",
-    "EMA200": "153.23",
-    "RSI(14)": "66.57",
-    "ATR(14)": "8.76",
+    "EMA20": "151.27",
+    "EMA50": "135.90",
+    "EMA100": "133.03",
+    "EMA200": "153.20",
+    "RSI(14)": "65.04",
+    "ATR(14)": "8.85",
     "ADX(14)": "39.65",
-    "BB(20,2)": "0.78",
-    "P_SHAPE(20)": "61.57"
+    "BB(20,2)": "0.74",
+    "P_SHAPE(20)": "61.45"
   },
   "rules": [
     {
@@ -477,20 +495,6 @@
       "title": "Peter Schiff Warns Bitcoin Vulnerable to Tech Stock Pullback",
       "publisher": "CryptoProwl",
       "link": "https://finance.yahoo.com/markets/crypto/articles/peter-schiff-warns-bitcoin-vulnerable-233800210.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Strategy (MSTR) Exceeds Market Returns: Some Facts to Consider",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-exceeds-market-returns-205004169.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Strategy (MSTR) Rallied 76%, but Jim Cramer Would Rather Own Bitcoin",
-      "publisher": "Insider Monkey",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/strategy-mstr-rallied-76-jim-201714549.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

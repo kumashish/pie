@@ -44,6 +44,10 @@ STRATEGY_DTE_CONFIGS = {
 
     # TradeCraft Put: 30-60 DTE monthly expiry
     StrategyType.TRADECRAFT_PUT: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window with 200 SMA bounce edge"},
+
+    # Futures Hybrid Strategies (Indian FnO Combination Trades)
+    StrategyType.COVERED_FUTURE: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for covered call leg theta yield on long future"},
+    StrategyType.PROTECTED_FUTURE: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for protective put hedging on long future"},
 }
 
 TARGET_DAYS_TO_EXPIRY = 45
@@ -356,6 +360,32 @@ def estimate_trade(
             "Ratio Put Spread (1x2 Net Credit): Manage winner at 50% max profit.",
             "Maximum PnL expansion occurs if price pins near the short put strike at expiration.",
             "Exit or roll at 21 DTE to avoid tail assignment risk.",
+        )
+
+    elif recommendation.strategy == StrategyType.COVERED_FUTURE:
+        # Long 1x Future + Sell 1x OTM Call (Synthetic Covered Call / Yield Overlay)
+        c_short = _round_to_increment(spot_price + short_dist, increment)
+        legs = (
+            TradeLeg(action="buy", right=OptionRight.CALL, strike=spot_price),  # Long Future proxy leg
+            TradeLeg(action="sell", right=OptionRight.CALL, strike=c_short),
+        )
+        exit_strategy = (
+            "Covered Future: Long 1x Future + Sell 1x 15-20 Delta OTM Call.",
+            "Manage short call at 50% max profit or roll up if breached.",
+            "Trailing stop loss on Future leg at EMA20 support.",
+        )
+
+    elif recommendation.strategy == StrategyType.PROTECTED_FUTURE:
+        # Long 1x Future + Buy 1x OTM Protective Put (Synthetic Collar / Hedged Long)
+        p_long = _round_to_increment(spot_price - short_dist, increment)
+        legs = (
+            TradeLeg(action="buy", right=OptionRight.CALL, strike=spot_price),  # Long Future proxy leg
+            TradeLeg(action="buy", right=OptionRight.PUT, strike=p_long),
+        )
+        exit_strategy = (
+            "Protected Future: Long 1x Future + Buy 1x 15-20 Delta OTM Protective Put.",
+            "Synthetic Collar structure eliminates catastrophic downside tail risk.",
+            "Hold future momentum while locking in downside floor.",
         )
 
     else:  # StrategyType.CREDIT_SPREAD

@@ -1,14 +1,14 @@
 {
   "symbol": "BEL.NS",
-  "last_price": 387.4,
-  "as_of": "2026-10-06 03:45:00",
+  "last_price": 381.05,
+  "as_of": "2026-10-07 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 1.5,
-  "fit_score": 15.0,
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 15.0,
-  "vix": 13.61,
+  "confidence_percentage": 10.0,
+  "vix": 13.76,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -20,35 +20,35 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 405.0,
-        "strike_formatted": "405",
+        "strike": 400.0,
+        "strike_formatted": "400",
         "option_type": "Call",
-        "delta": 0.232,
+        "delta": 0.207,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x BEL.NS 24-Nov-2026 405 Call"
+        "dte": 48,
+        "summary": "Sell 1x BEL.NS 24-Nov-2026 400 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 410.0,
-        "strike_formatted": "410",
+        "strike": 405.0,
+        "strike_formatted": "405",
         "option_type": "Call",
-        "delta": 0.164,
+        "delta": 0.144,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x BEL.NS 24-Nov-2026 410 Call"
+        "dte": 48,
+        "summary": "Buy 1x BEL.NS 24-Nov-2026 405 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 375.78,
-    "take_profit_price": 399.02,
-    "net_delta": -0.068,
+    "stop_loss_price": 369.62,
+    "take_profit_price": 392.48,
+    "net_delta": -0.063,
     "net_theta": 0.015,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
@@ -56,83 +56,91 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 309.92,
+        "price": 304.84,
         "pnl": -15.0
       },
       {
-        "price": 313.02,
+        "price": 307.89,
         "pnl": -15.0
       },
       {
-        "price": 316.12,
+        "price": 310.94,
         "pnl": -15.0
       },
       {
-        "price": 319.22,
+        "price": 313.99,
         "pnl": -15.0
       },
       {
-        "price": 322.32,
+        "price": 317.03,
         "pnl": -15.0
       },
       {
-        "price": 325.42,
+        "price": 320.08,
         "pnl": -15.0
       },
       {
-        "price": 328.52,
+        "price": 323.13,
         "pnl": -15.0
       },
       {
-        "price": 331.61,
+        "price": 326.18,
         "pnl": -15.0
       },
       {
-        "price": 334.71,
+        "price": 329.23,
         "pnl": -15.0
       },
       {
-        "price": 337.81,
+        "price": 332.28,
         "pnl": -15.0
       },
       {
-        "price": 340.91,
+        "price": 335.32,
         "pnl": -15.0
       },
       {
-        "price": 344.01,
+        "price": 338.37,
         "pnl": -15.0
       },
       {
-        "price": 347.11,
+        "price": 341.42,
         "pnl": -15.0
       },
       {
-        "price": 350.21,
+        "price": 344.47,
         "pnl": -15.0
       },
       {
-        "price": 353.31,
+        "price": 347.52,
         "pnl": -15.0
       },
       {
-        "price": 356.41,
+        "price": 350.57,
         "pnl": -15.0
       },
       {
-        "price": 359.51,
+        "price": 353.61,
         "pnl": -15.0
       },
       {
-        "price": 362.61,
+        "price": 356.66,
         "pnl": -15.0
       },
       {
-        "price": 365.71,
+        "price": 359.71,
         "pnl": -15.0
       },
       {
-        "price": 368.8,
+        "price": 362.76,
+        "pnl": -15.0
+      },
+      {
+        "price": 365.81,
+        "pnl": -15.0
+      },
+      {
+        "price": 368.86,
         "pnl": -15.0
       },
       {
@@ -140,123 +148,115 @@
         "pnl": -15.0
       },
       {
-        "price": 375.0,
+        "price": 374.95,
         "pnl": -15.0
       },
       {
-        "price": 378.1,
+        "price": 378.0,
         "pnl": -15.0
       },
       {
-        "price": 381.2,
+        "price": 381.05,
         "pnl": -15.0
       },
       {
-        "price": 384.3,
+        "price": 384.1,
         "pnl": -15.0
       },
       {
-        "price": 387.4,
+        "price": 387.15,
         "pnl": -15.0
       },
       {
-        "price": 390.5,
+        "price": 390.2,
         "pnl": -15.0
       },
       {
-        "price": 393.6,
+        "price": 393.24,
         "pnl": -15.0
       },
       {
-        "price": 396.7,
+        "price": 396.29,
         "pnl": -15.0
       },
       {
-        "price": 399.8,
+        "price": 399.34,
         "pnl": -15.0
       },
       {
-        "price": 402.9,
-        "pnl": -15.0
+        "price": 402.39,
+        "pnl": -17.39
       },
       {
-        "price": 406.0,
-        "pnl": -16.0
-      },
-      {
-        "price": 409.09,
-        "pnl": -19.09
-      },
-      {
-        "price": 412.19,
+        "price": 405.44,
         "pnl": -20.0
       },
       {
-        "price": 415.29,
+        "price": 408.49,
         "pnl": -20.0
       },
       {
-        "price": 418.39,
+        "price": 411.53,
         "pnl": -20.0
       },
       {
-        "price": 421.49,
+        "price": 414.58,
         "pnl": -20.0
       },
       {
-        "price": 424.59,
+        "price": 417.63,
         "pnl": -20.0
       },
       {
-        "price": 427.69,
+        "price": 420.68,
         "pnl": -20.0
       },
       {
-        "price": 430.79,
+        "price": 423.73,
         "pnl": -20.0
       },
       {
-        "price": 433.89,
+        "price": 426.78,
         "pnl": -20.0
       },
       {
-        "price": 436.99,
+        "price": 429.82,
         "pnl": -20.0
       },
       {
-        "price": 440.09,
+        "price": 432.87,
         "pnl": -20.0
       },
       {
-        "price": 443.19,
+        "price": 435.92,
         "pnl": -20.0
       },
       {
-        "price": 446.28,
+        "price": 438.97,
         "pnl": -20.0
       },
       {
-        "price": 449.38,
+        "price": 442.02,
         "pnl": -20.0
       },
       {
-        "price": 452.48,
+        "price": 445.07,
         "pnl": -20.0
       },
       {
-        "price": 455.58,
+        "price": 448.11,
         "pnl": -20.0
       },
       {
-        "price": 458.68,
+        "price": 451.16,
         "pnl": -20.0
       },
       {
-        "price": 461.78,
+        "price": 454.21,
         "pnl": -20.0
       },
       {
-        "price": 464.88,
+        "price": 457.26,
         "pnl": -20.0
       }
     ],
@@ -277,57 +277,41 @@
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-405CE-B1x-Nov-410CE"
+      "legs_summary": "S1x-Nov-400CE-B1x-Nov-405CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 67.6,
+      "score": 73.3,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-385PE-S1x-Nov-370PE"
+      "legs_summary": "B1x-Nov-380PE-S1x-Nov-365PE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 54.4,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-387.4PE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 47.5,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-360PE-S1x-Nov-365PE-S1x-Nov-405CE-B1x-Nov-410CE"
+      "legs_summary": "S1x-Nov-381PE"
     }
   ],
   "indicators": {
-    "EMA20": "391.58",
-    "EMA50": "398.67",
-    "EMA100": "405.30",
-    "EMA200": "406.84",
-    "RSI(14)": "42.23",
-    "ATR(14)": "6.24",
-    "ADX(14)": "26.37",
-    "BB(20,2)": "0.36",
-    "P_SHAPE(20)": "46.47"
+    "EMA20": "390.57",
+    "EMA50": "397.98",
+    "EMA100": "404.82",
+    "EMA200": "406.58",
+    "RSI(14)": "36.55",
+    "ATR(14)": "6.32",
+    "ADX(14)": "27.04",
+    "BB(20,2)": "0.17",
+    "P_SHAPE(20)": "44.01"
   },
   "rules": [
     {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -376,7 +360,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -384,6 +368,13 @@
     },
     {
       "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -420,13 +411,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB0R2VwWUFvZk1sUDJlTFJmcEx1dE50Sm1BdTFya0w4Q2w2dm1maWlhOU54YW5yb2hBbVpCT3MyTmthQ01HQ3o3WVdRWHRGd1VSNUF3R3FxQmN5Uks4UVdYS0FRdmJvQzN0eG9pSkFnNkgzZHNoVWFtZTYzY1A?oc=5",
-      "published_at": "Tue, 29 Sep 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Sensex jumps over 400 points, Nifty crosses 22,500 as markets snap 8-day losing streak",
       "publisher": "cfo.economictimes.indiatimes.com",
       "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNM3phM1ZRbFg0QjM4VnNJdUFHMDIxTzUxaWdHbWJfR2dUNWt4MjFubVlRY2dCVEpYVWh2cWxRXzdvbkx4TTZ1cFBoT3Y2ZmlyODJieVA0MTRUV3k5YV9RREV3SzRNd2NWNXBtOHNDbTBubnAtUHRYZ2IwZHpCUmNieDJoQ09LZFctRXd3c3d6RFlrSHlyZHJaNGRrdmpwNWZiSVJFQlFDYVRxTE5iOHQ5bVZGaTFHbGp3b1Jaa1hjWURRMWJGd0lsTTZJZDNuclN2SFJDeHJSTXQ4NkZQZnNUdExRZmt4d3VPOGFVUG1fZDBsbDNrQ3k2NHFsYWdPRGJXUHV4Yjd0cUFsVXhHN1h3SNIB3AFBVV95cUxNQmR6dEhHaUNEdEpTYnZhRXJ2NDczUjFaOG1WWVZuTk82Nm1DcURCVG9oc0E2Z3RqX25uYzZMZUlieHpscHViYm93em1PX0dHelB0LWV3T2Z4cGZ5eVY4V3RrNnBHUDVTaFY3anZzWGhfc0Fya0pPOW1RcnRKVHZ2MTZJY2kxbzJ4T3FmZXpQQ1NKa29tZkQyWlBqd0ljT2dpOERhN19nSm9lVU9iSm9SRjVUX3RVV0FsSWoyT1ZZYXRJdUo3YVc5ZXZYTTRoYnVIUk1BOWE1dFJIV3RL?oc=5",
@@ -438,6 +422,13 @@
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcnpmc1VZZGpudlQ5bEFKS0Zzc3ZwbXlnYWp0SGh3LUJIVEl6MTdES2dUZUV1OGxTWHBaVS0ydDNVZ0c1ZzVtamdZOEQ3aEVDX2xGNWNlaXlGUWpjWmgtQ3FqbzkzZndyamhLMW56TU5nckhZZjdIMzBSclpZMEJOZ21wSDlVcklhN3I4OW5NRlAxeFk5VTJsQWhjNDVZSm9QTjhnYS1qRkFPbENZeGtzR3FmVkh2dEhxcTRhREhSU3ZvcmRPMjk1NEVsalhoYmd0UU5j0gHYAUFVX3lxTE1LSkhFZUFWRU1EZHdNUGZsRmRmS0R4ZnhMTl9MNmVMZkxqWC1RUHdNVTB4V01SUG82T0JZUU8xem8xa3hrM0RWdlhKdzJ4Z3E2bVdNSGh1SV90aVBMb1B4QTU0aTNfeS1KUnRvbFRjYklfamRSNndiM3ZEaU9sbUdUSUVoUnljTml5NlV6TXJLWmZuVkI4Z0xBUFkzQVRYYjlPVUJpQUJyM2Fqa1Q0a0NEcVB5OVEtQjB4a0RTeDZEYlBld0hzNXM3NW1SaHJEVWlzaWVEQzZ4Ug?oc=5",
       "published_at": "Thu, 01 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Amit Goyal",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNR2o5Q3hhS3FGeG9EeHRqTDBoM1N4Y09mTFB2bC03SDF1V19KSnhCMGZyQVVvMGt6UWJTSzVOcFZMbjdkTEhXWjk2YzlEQ2UzYnYza25UdUFyZ0p3ZUhlSGtCRFB3dHljNjhWeHBncVZndVViUERBTnFoNGMxa1BPeDEwME81STdreDlvOFRNX0I3TUVQeVFYdmxhSTZDSDNPUEl6aw?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     }
   ]

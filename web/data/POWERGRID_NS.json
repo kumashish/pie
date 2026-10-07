@@ -1,14 +1,14 @@
 {
   "symbol": "POWERGRID.NS",
-  "last_price": 257.2,
-  "as_of": "2026-10-06 03:45:00",
+  "last_price": 254.9,
+  "as_of": "2026-10-07 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.8,
-  "fit_score": 7.5,
+  "trend_score": 0.5,
+  "fit_score": 5.0,
   "confidence_grade": "C",
-  "confidence_percentage": 7.5,
-  "vix": 13.61,
+  "confidence_percentage": 5.0,
+  "vix": 13.78,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 270.0,
         "strike_formatted": "270",
         "option_type": "Call",
-        "delta": 0.208,
+        "delta": 0.16,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Sell 1x POWERGRID.NS 24-Nov-2026 270 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 275.0,
         "strike_formatted": "275",
         "option_type": "Call",
-        "delta": 0.118,
+        "delta": 0.087,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Buy 1x POWERGRID.NS 24-Nov-2026 275 Call"
       }
     ],
@@ -46,57 +46,61 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 249.48,
-    "take_profit_price": 264.92,
-    "net_delta": -0.09,
-    "net_theta": 0.015,
+    "stop_loss_price": 247.25,
+    "take_profit_price": 262.55,
+    "net_delta": -0.073,
+    "net_theta": 0.014,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 205.76,
+        "price": 203.92,
         "pnl": -10.0
       },
       {
-        "price": 207.82,
+        "price": 205.96,
         "pnl": -10.0
       },
       {
-        "price": 209.88,
+        "price": 208.0,
         "pnl": -10.0
       },
       {
-        "price": 211.93,
+        "price": 210.04,
         "pnl": -10.0
       },
       {
-        "price": 213.99,
+        "price": 212.08,
         "pnl": -10.0
       },
       {
-        "price": 216.05,
+        "price": 214.12,
         "pnl": -10.0
       },
       {
-        "price": 218.11,
+        "price": 216.16,
         "pnl": -10.0
       },
       {
-        "price": 220.16,
+        "price": 218.19,
         "pnl": -10.0
       },
       {
-        "price": 222.22,
+        "price": 220.23,
         "pnl": -10.0
       },
       {
-        "price": 224.28,
+        "price": 222.27,
         "pnl": -10.0
       },
       {
-        "price": 226.34,
+        "price": 224.31,
+        "pnl": -10.0
+      },
+      {
+        "price": 226.35,
         "pnl": -10.0
       },
       {
@@ -104,159 +108,155 @@
         "pnl": -10.0
       },
       {
-        "price": 230.45,
+        "price": 230.43,
         "pnl": -10.0
       },
       {
-        "price": 232.51,
+        "price": 232.47,
         "pnl": -10.0
       },
       {
-        "price": 234.57,
+        "price": 234.51,
         "pnl": -10.0
       },
       {
-        "price": 236.62,
+        "price": 236.55,
         "pnl": -10.0
       },
       {
-        "price": 238.68,
+        "price": 238.59,
         "pnl": -10.0
       },
       {
-        "price": 240.74,
+        "price": 240.63,
         "pnl": -10.0
       },
       {
-        "price": 242.8,
+        "price": 242.66,
         "pnl": -10.0
       },
       {
-        "price": 244.85,
+        "price": 244.7,
         "pnl": -10.0
       },
       {
-        "price": 246.91,
+        "price": 246.74,
         "pnl": -10.0
       },
       {
-        "price": 248.97,
+        "price": 248.78,
         "pnl": -10.0
       },
       {
-        "price": 251.03,
+        "price": 250.82,
         "pnl": -10.0
       },
       {
-        "price": 253.08,
+        "price": 252.86,
         "pnl": -10.0
       },
       {
-        "price": 255.14,
+        "price": 254.9,
         "pnl": -10.0
       },
       {
-        "price": 257.2,
+        "price": 256.94,
         "pnl": -10.0
       },
       {
-        "price": 259.26,
+        "price": 258.98,
         "pnl": -10.0
       },
       {
-        "price": 261.32,
+        "price": 261.02,
         "pnl": -10.0
       },
       {
-        "price": 263.37,
+        "price": 263.06,
         "pnl": -10.0
       },
       {
-        "price": 265.43,
+        "price": 265.1,
         "pnl": -10.0
       },
       {
-        "price": 267.49,
+        "price": 267.14,
         "pnl": -10.0
       },
       {
-        "price": 269.55,
+        "price": 269.17,
         "pnl": -10.0
       },
       {
-        "price": 271.6,
-        "pnl": -11.6
+        "price": 271.21,
+        "pnl": -11.21
       },
       {
-        "price": 273.66,
-        "pnl": -13.66
+        "price": 273.25,
+        "pnl": -13.25
       },
       {
-        "price": 275.72,
+        "price": 275.29,
         "pnl": -15.0
       },
       {
-        "price": 277.78,
+        "price": 277.33,
         "pnl": -15.0
       },
       {
-        "price": 279.83,
+        "price": 279.37,
         "pnl": -15.0
       },
       {
-        "price": 281.89,
+        "price": 281.41,
         "pnl": -15.0
       },
       {
-        "price": 283.95,
+        "price": 283.45,
         "pnl": -15.0
       },
       {
-        "price": 286.01,
+        "price": 285.49,
         "pnl": -15.0
       },
       {
-        "price": 288.06,
+        "price": 287.53,
         "pnl": -15.0
       },
       {
-        "price": 290.12,
+        "price": 289.57,
         "pnl": -15.0
       },
       {
-        "price": 292.18,
+        "price": 291.61,
         "pnl": -15.0
       },
       {
-        "price": 294.24,
+        "price": 293.64,
         "pnl": -15.0
       },
       {
-        "price": 296.29,
+        "price": 295.68,
         "pnl": -15.0
       },
       {
-        "price": 298.35,
+        "price": 297.72,
         "pnl": -15.0
       },
       {
-        "price": 300.41,
+        "price": 299.76,
         "pnl": -15.0
       },
       {
-        "price": 302.47,
+        "price": 301.8,
         "pnl": -15.0
       },
       {
-        "price": 304.52,
+        "price": 303.84,
         "pnl": -15.0
       },
       {
-        "price": 306.58,
-        "pnl": -15.0
-      },
-      {
-        "price": 308.64,
+        "price": 305.88,
         "pnl": -15.0
       }
     ],
@@ -282,7 +282,7 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 73.6,
+      "score": 75.4,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -291,11 +291,11 @@
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 58.4,
+      "score": 59.8,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-257.2PE"
+      "legs_summary": "S1x-Nov-254.9PE"
     },
     {
       "strategy_type": "iron_condor",
@@ -308,24 +308,17 @@
     }
   ],
   "indicators": {
-    "EMA20": "262.10",
-    "EMA50": "268.03",
-    "EMA100": "275.11",
-    "EMA200": "281.18",
-    "RSI(14)": "39.35",
-    "ATR(14)": "4.31",
-    "ADX(14)": "14.52",
-    "BB(20,2)": "0.21",
-    "P_SHAPE(20)": "53.73"
+    "EMA20": "261.41",
+    "EMA50": "267.52",
+    "EMA100": "274.71",
+    "EMA200": "280.92",
+    "RSI(14)": "36.53",
+    "ATR(14)": "4.25",
+    "ADX(14)": "14.45",
+    "BB(20,2)": "0.14",
+    "P_SHAPE(20)": "49.18"
   },
   "rules": [
-    {
-      "name": "Price making higher highs",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
     {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
@@ -376,6 +369,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
@@ -420,13 +420,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "India's \u20b91.86 trillion grid plan: Motilal Oswal puts Power Grid, Adani Energy, Torrent and 3 more stocks in focus",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaDhKcEpVdjlmZDFtMG1tYXpjSHBoWk9aZS0ySE1lWHU3anNNQ2JOTlhVZnhYeDVYc1hzRm1RX1BmbHM3cl9td3ZmVzVoZHJHVm9MM2l6UGQ2bEc4SlQ5cTBTZkJCSmJvRy1XbXI0WWFNQWtSdlRrbnB5Q3Iya1RWa2hoczVYWlVEdlBXRk1CTjU0MWp5eWpvS3hYOEZKTUpZcUFHRXFyd3BVVEtGbTZJM2R5bWhNV1FSbzBqYkl1UWFSOUNKWFVzLU1qMUxxLWJjTG5yRTczc2tfUUR6akoxeTRWb2hWb2E1Q1N2VmgzekZLS3FWMUhCSENGb09XdUlsM2hqTzhSY1RTclpsX092ag?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Power stocks fall despite \u20b91.86 lakh crore PM-DHARA scheme: Tata Power, Adani Power, NTPC, Power Grid in focus",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQd1lNLS1fZDN6UkM5Z09fbEx6VUR2Y2xZM0g1c2lNNFJfNEx3bl9TTUh2N1FZMk9rNmluTWNOLUdFeGpQYVJ6MlpsMFNtNzFWazNEa0xRaVFWY1dJUnNWRXJKVDlnUy1CVWVSclFjLVR0cEtYV1N3OWZVcDd4SExVU3l5Qy14SkxONGJST2JVWmdlXzlGNThzY19rbERVbEJ6M0pUV2NJSlNIZlllLVozTUhwcWZuZlN6bWU2RGl1T3kwTTA0VEtzZW13Zl9WS0p5bnJ0V2FNakRYRVU1aWxITldHY3NpWHlhdjZIaW5mWTViY2liWjFIMGNkZnJOMXM1cjAxWGhpMW1xQdIBjwJBVV95cUxNMUlqZkZWM0RoRVhuc3NCektKWDNQYTFieWRyVmZsYXNxVWRXOTBmMFZrdGR5bVRPWTJmdkw0Qkd3YmdCUEw0dkdJRm5QbGQ1bmljOGRtbkVodlZxcTNiQWFYajZ4aURFNndxeF9Jam1tTlJLdEJPc2ZRaW1QUnRWdE9xTHVSQTYyVTZmUGtlSWNQSnNDRzhsV040c01JQlhaWG5JNl9sZ19yY1lZLVJLSVVmWkYwdVlSTDBCYnEwU0dZdFlfTGV5TXZfWGQxWENDa1lNLWJnUVVjTDZBQk5Da0M5RGZiNmVwb0xwYlB1NmlOZFo1cVlWQ0h5ekVjc3dNbENva1BPSy1CU2hPTVgw?oc=5",
@@ -434,10 +427,17 @@
       "sentiment": "bearish"
     },
     {
-      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "title": "India's \u20b91.86 trillion grid plan: Motilal Oswal puts Power Grid, Adani Energy, Torrent and 3 more stocks in focus",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Oc0UxSlowTGloTFpzX2pRUHd0MHlDUWJnRFZmcHdjWTg0U3lhbGhGbHhvVWZWWFNKWEFucHM1RkFGVXo5V2tmVUdtVzdzc0lpNWxscHNKamxZNjR2Z0lkalNSOFM4TmJaVGc?oc=5",
-      "published_at": "Sat, 03 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaDhKcEpVdjlmZDFtMG1tYXpjSHBoWk9aZS0ySE1lWHU3anNNQ2JOTlhVZnhYeDVYc1hzRm1RX1BmbHM3cl9td3ZmVzVoZHJHVm9MM2l6UGQ2bEc4SlQ5cTBTZkJCSmJvRy1XbXI0WWFNQWtSdlRrbnB5Q3Iya1RWa2hoczVYWlVEdlBXRk1CTjU0MWp5eWpvS3hYOEZKTUpZcUFHRXFyd3BVVEtGbTZJM2R5bWhNV1FSbzBqYkl1UWFSOUNKWFVzLU1qMUxxLWJjTG5yRTczc2tfUUR6akoxeTRWb2hWb2E1Q1N2VmgzekZLS3FWMUhCSENGb09XdUlsM2hqTzhSY1RTclpsX092ag?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Google signs 3.6-GW power deal with Constellation Energy",
+      "publisher": "ET Datacenters",
+      "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPeDhoMkdmNFg1b1Bnek5MQzlXVnRNQTc1elR1ay1sN0c2RnRtWXR1Mlp2cndMVENIa1BXUFBXNHFxSXp3V1VJd0dqUUdMS0tNZEFXeUhaQmJTTTVVcE93Z0Y5UE1aU1Bvd3ZpSlRYWFI5b1ZoUGYxcjVRQmFuekpLSmI1aVhXdTZkb2RwSGV6OUdVcXlOTU1aQXBaU1dya09zYXA3Rjdpb0ctcDRmUHFSZmhHV0lDTkNRM0ZzTnpzMUFsYmNqTlpkZFVDZkVoOXdaYmJjcHNBLWpZNVBXbGhyOWNVWEtUVG1ia1FYT2NERm5LbVlDa1NsTDR0emEyaEZSemZGTEplYmtLeW9DVzlQWjRKbTZaRnVSSFE?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
       "sentiment": "neutral"
     }
   ]

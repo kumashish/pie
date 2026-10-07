@@ -1,269 +1,269 @@
 {
   "symbol": "KOTAKBANK.NS",
-  "last_price": 431.9,
-  "as_of": "2026-10-06 03:45:00",
+  "last_price": 440.1,
+  "as_of": "2026-10-07 03:45:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 7.2,
-  "fit_score": 72.5,
+  "trend_score": 7.8,
+  "fit_score": 77.5,
   "confidence_grade": "B",
-  "confidence_percentage": 72.5,
-  "vix": 13.61,
+  "confidence_percentage": 77.5,
+  "vix": 13.8,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (66.8) is overbought (> 65) [Synthetic PCR: 0.56]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (71.6) is overbought (> 65) [Synthetic PCR: 0.51]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 410.0,
-        "strike_formatted": "410",
+        "strike": 420.0,
+        "strike_formatted": "420",
         "option_type": "Put",
-        "delta": -0.114,
+        "delta": -0.138,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 410 Put"
+        "dte": 48,
+        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 420 Put"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 400.0,
-        "strike_formatted": "400",
+        "strike": 410.0,
+        "strike_formatted": "410",
         "option_type": "Put",
-        "delta": -0.045,
+        "delta": -0.058,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
-        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 400 Put"
+        "dte": 48,
+        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 410 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 418.94,
-    "take_profit_price": 444.86,
-    "net_delta": 0.069,
-    "net_theta": 0.018,
+    "stop_loss_price": 426.9,
+    "take_profit_price": 453.3,
+    "net_delta": 0.08,
+    "net_theta": 0.019,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 345.52,
+        "price": 352.08,
         "pnl": -25.0
       },
       {
-        "price": 348.98,
+        "price": 355.6,
         "pnl": -25.0
       },
       {
-        "price": 352.43,
+        "price": 359.12,
         "pnl": -25.0
       },
       {
-        "price": 355.89,
+        "price": 362.64,
         "pnl": -25.0
       },
       {
-        "price": 359.34,
+        "price": 366.16,
         "pnl": -25.0
       },
       {
-        "price": 362.8,
+        "price": 369.68,
         "pnl": -25.0
       },
       {
-        "price": 366.25,
+        "price": 373.2,
         "pnl": -25.0
       },
       {
-        "price": 369.71,
+        "price": 376.73,
         "pnl": -25.0
       },
       {
-        "price": 373.16,
+        "price": 380.25,
         "pnl": -25.0
       },
       {
-        "price": 376.62,
+        "price": 383.77,
         "pnl": -25.0
       },
       {
-        "price": 380.07,
+        "price": 387.29,
         "pnl": -25.0
       },
       {
-        "price": 383.53,
+        "price": 390.81,
         "pnl": -25.0
       },
       {
-        "price": 386.98,
+        "price": 394.33,
         "pnl": -25.0
       },
       {
-        "price": 390.44,
+        "price": 397.85,
         "pnl": -25.0
       },
       {
-        "price": 393.89,
+        "price": 401.37,
         "pnl": -25.0
       },
       {
-        "price": 397.35,
+        "price": 404.89,
         "pnl": -25.0
       },
       {
-        "price": 400.8,
-        "pnl": -24.2
+        "price": 408.41,
+        "pnl": -25.0
       },
       {
-        "price": 404.26,
-        "pnl": -20.74
+        "price": 411.93,
+        "pnl": -23.07
       },
       {
-        "price": 407.71,
-        "pnl": -17.29
+        "price": 415.45,
+        "pnl": -19.55
       },
       {
-        "price": 411.17,
+        "price": 418.98,
+        "pnl": -16.02
+      },
+      {
+        "price": 422.5,
         "pnl": -15.0
       },
       {
-        "price": 414.62,
+        "price": 426.02,
         "pnl": -15.0
       },
       {
-        "price": 418.08,
+        "price": 429.54,
         "pnl": -15.0
       },
       {
-        "price": 421.53,
+        "price": 433.06,
         "pnl": -15.0
       },
       {
-        "price": 424.99,
+        "price": 436.58,
         "pnl": -15.0
       },
       {
-        "price": 428.44,
+        "price": 440.1,
         "pnl": -15.0
       },
       {
-        "price": 431.9,
+        "price": 443.62,
         "pnl": -15.0
       },
       {
-        "price": 435.36,
+        "price": 447.14,
         "pnl": -15.0
       },
       {
-        "price": 438.81,
+        "price": 450.66,
         "pnl": -15.0
       },
       {
-        "price": 442.27,
+        "price": 454.18,
         "pnl": -15.0
       },
       {
-        "price": 445.72,
+        "price": 457.7,
         "pnl": -15.0
       },
       {
-        "price": 449.18,
+        "price": 461.22,
         "pnl": -15.0
       },
       {
-        "price": 452.63,
+        "price": 464.75,
         "pnl": -15.0
       },
       {
-        "price": 456.09,
+        "price": 468.27,
         "pnl": -15.0
       },
       {
-        "price": 459.54,
+        "price": 471.79,
         "pnl": -15.0
       },
       {
-        "price": 463.0,
+        "price": 475.31,
         "pnl": -15.0
       },
       {
-        "price": 466.45,
+        "price": 478.83,
         "pnl": -15.0
       },
       {
-        "price": 469.91,
+        "price": 482.35,
         "pnl": -15.0
       },
       {
-        "price": 473.36,
+        "price": 485.87,
         "pnl": -15.0
       },
       {
-        "price": 476.82,
+        "price": 489.39,
         "pnl": -15.0
       },
       {
-        "price": 480.27,
+        "price": 492.91,
         "pnl": -15.0
       },
       {
-        "price": 483.73,
+        "price": 496.43,
         "pnl": -15.0
       },
       {
-        "price": 487.18,
+        "price": 499.95,
         "pnl": -15.0
       },
       {
-        "price": 490.64,
+        "price": 503.47,
         "pnl": -15.0
       },
       {
-        "price": 494.09,
+        "price": 507.0,
         "pnl": -15.0
       },
       {
-        "price": 497.55,
+        "price": 510.52,
         "pnl": -15.0
       },
       {
-        "price": 501.0,
+        "price": 514.04,
         "pnl": -15.0
       },
       {
-        "price": 504.46,
+        "price": 517.56,
         "pnl": -15.0
       },
       {
-        "price": 507.91,
+        "price": 521.08,
         "pnl": -15.0
       },
       {
-        "price": 511.37,
+        "price": 524.6,
         "pnl": -15.0
       },
       {
-        "price": 514.82,
-        "pnl": -15.0
-      },
-      {
-        "price": 518.28,
+        "price": 528.12,
         "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.849,
+      "win_probability": 0.85,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3641,
+      "half_kelly_fraction": 0.365,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,74 +273,92 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 99.7,
+      "score": 100.0,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-410PE-B1x-Nov-400PE"
+      "legs_summary": "S1x-Nov-420PE-B1x-Nov-410PE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 76.9,
+      "score": 79.0,
       "grade": "B (Good)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-410PE-S1x-Nov-450CE-B1x-Nov-460CE"
+      "legs_summary": "S1x-Nov-420PE-S1x-Nov-460CE-B1x-Nov-470CE"
     },
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 75.0,
+      "score": 77.2,
       "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "B1x-Nov-430PE-S1x-Nov-410PE-S1x-Nov-410PE"
+      "legs_summary": "B1x-Nov-440PE-S1x-Nov-420PE-S1x-Nov-420PE"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 72.0,
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 70.9,
       "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-400PE-S1x-Nov-410PE-S1x-Nov-450CE-B1x-Nov-460CE"
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-440.1CE-S1x-Nov-460CE"
     },
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 67.7,
+      "score": 70.1,
       "grade": "B (Good)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "S1x-Nov-410PE"
+      "legs_summary": "S1x-Nov-420PE"
     },
     {
-      "strategy_type": "poor_mans_covered_call",
-      "strategy_display": "Poor Mans Covered Call",
-      "score": 61.5,
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 66.5,
       "grade": "B (Good)",
-      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
-      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-410CE-S1x-Nov-445CE"
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-440.1CE-B1x-Nov-420PE"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 59.9,
-      "grade": "C (Moderate)",
+      "score": 64.4,
+      "grade": "B (Good)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-430CE-S1x-Nov-445CE"
+      "legs_summary": "B1x-Nov-440CE-S1x-Nov-455CE"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 63.7,
+      "grade": "B (Good)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "B1x-Nov-420CE-S1x-Nov-450CE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 58.0,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-410PE-S1x-Nov-420PE-S1x-Nov-460CE-B1x-Nov-470CE"
     },
     {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
-      "score": 47.6,
+      "score": 50.4,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-431.9CE"
+      "legs_summary": "B1x-Nov-440.1CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -349,46 +367,28 @@
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-410PE"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 43.5,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-420CE-S1x-Nov-430CE-S1x-Nov-430CE-B1x-Nov-445CE"
+      "legs_summary": "S1x-Nov-420PE"
     },
     {
       "strategy_type": "naked_put",
       "strategy_display": "Naked Put",
-      "score": 42.2,
+      "score": 44.1,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with upfront credit collection favors Naked Put selling.",
       "trade_profile": "Credit | 30-45 DTE | 15-25 Delta",
-      "legs_summary": "S1x-Nov-410PE"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 40.4,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-420CE-S1x-Nov-430CE-S1x-Nov-430CE-B1x-Nov-455CE"
+      "legs_summary": "S1x-Nov-420PE"
     }
   ],
   "indicators": {
-    "EMA20": "414.38",
-    "EMA50": "408.41",
-    "EMA100": "402.68",
-    "EMA200": "400.99",
-    "RSI(14)": "66.76",
-    "ATR(14)": "9.48",
-    "ADX(14)": "26.35",
-    "BB(20,2)": "1.17",
-    "P_SHAPE(20)": "36.82"
+    "EMA20": "417.25",
+    "EMA50": "410.05",
+    "EMA100": "403.73",
+    "EMA200": "401.55",
+    "RSI(14)": "71.61",
+    "ATR(14)": "9.17",
+    "ADX(14)": "30.32",
+    "BB(20,2)": "1.20",
+    "P_SHAPE(20)": "37.95"
   },
   "rules": [
     {
@@ -413,6 +413,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
@@ -427,7 +434,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -448,14 +455,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ADX above 30",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -471,17 +471,17 @@
   ],
   "news": [
     {
-      "title": "ICICI Bank, SBI, Kotak Bank: Why Motilal Oswal picked these banking stocks; check CAGR, target price and...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPaGllSUNBcXVYY1IzQ2NpWUVHc2Y3YmFLTkJ5Mjg3UGlPYXMzd19OZXVNdW52Vmw2WFRHODcwNVBXa1RNZk9DZVFyb3hROS1MQ3czTGN3MFpTeGphMk02ZndHQUQxM0JkVlRnN1lkRlB6OXdLQ3k3aWVMTExCdVhiZ2NnSWZlenlVLUpBRUowNmhhUkU2M3d0OVlqdHpIcHJ4TFlteEdJQXpSZlI1eTNXcUVjWERjamFfTGgtREtCZkNuVUR5XzJlanBxVEsyOWpRMTlMd3dMdkFXLXdSYnBZY2c1Nm1rWXU5RElkYUJVSzBHaHdvUUtnQ1VzSXXSAYICQVVfeXFMT3NPU2Z6XzBxdTQzVi1rMGp5aUI5bXN0TGliT2FyNUU2dTczY1FrWndicFljMDBBZi1OMGEwOGpITDl1bDE2WlFyb2pMcG9vZGszS3pseUhROWRyNVZLUHE0N3RINVg4aFQ2MHFsN0VNbVZRd0N5ZGk0V3RsdFg5R0hMNlV2c0w5SEJiYkI3R0JnQ3l3UG9Wa3h2OXB2d1NKOGY1REZtMUJkQlpPSEF3LUFGVlZVNEE4OEZvWHpwQ19RUGFPVlpKRUhDdjk3WEZza3M0N3BpZUVna1oyWDhXdkZMaTZBQlQ3UE8xT3hleEV1SlhCOGxRR1dCSlpPbUVyaGR3?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Kotak Mahindra Bank\u2019s stock returns under Vaswani outpace HDFC Bank\u2019s under Jagdishan",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUW0yM2RBTTlJbHJBX3EtU0xDaHpTMWh1dXdYbWJiTkxxczVRcEVGQzJyeFc3SVJWMngzakNZTVN4c0EwUnRKUjlZa3pVMkNkOHktSjhGN0xzbnRmUzVhd3o1VXJDbmpzYVRBODQ0a0RIYThCUlprc1FtVjNwY3JxN2xVam9PTlh2UXBpalZsLTQxMjJHMGozNGNCdnVaTi16bTVmbHctS0U0U2hVZkk2aXVWXy1HVUtSd3dhTzJHeTBvUkFjaUtENWJMS3ZSMlI1ZjRNQmFGanFrWkJkZDJybGVB0gHnAUFVX3lxTE9RYmdrSEFNRU5CYVliMlU2SW8xRTUwMDFUb0YydGxiMlJHc3gwZ3NsSkVCMEk1b0FzQWdHakVHSUtTUnFudjlMc0FqMmlpVDVOQlhpUHZzXzFpNW9zbEtyQUZUT2ZreVQ2Yy00YkxVenFZaVhVMkoxcjRfUExDSTAxYXpfZTc3NTRwcXhJWG5USGVvcy1GSUdlbkNpTG96ODdSOFpGVVZkdjRVdjNmdnRSdTVvMms5QkJ0VnhxcVhwUDJsZjhKbWZVUC1VV0VtMDNidmxEeXdhNk9KR2IyQW0tcFo3MDA3UQ?oc=5",
       "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "ICICI Bank, SBI, Kotak Bank: Why Motilal Oswal picked these banking stocks; check CAGR, target price and...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPaGllSUNBcXVYY1IzQ2NpWUVHc2Y3YmFLTkJ5Mjg3UGlPYXMzd19OZXVNdW52Vmw2WFRHODcwNVBXa1RNZk9DZVFyb3hROS1MQ3czTGN3MFpTeGphMk02ZndHQUQxM0JkVlRnN1lkRlB6OXdLQ3k3aWVMTExCdVhiZ2NnSWZlenlVLUpBRUowNmhhUkU2M3d0OVlqdHpIcHJ4TFlteEdJQXpSZlI1eTNXcUVjWERjamFfTGgtREtCZkNuVUR5XzJlanBxVEsyOWpRMTlMd3dMdkFXLXdSYnBZY2c1Nm1rWXU5RElkYUJVSzBHaHdvUUtnQ1VzSXXSAYICQVVfeXFMT3NPU2Z6XzBxdTQzVi1rMGp5aUI5bXN0TGliT2FyNUU2dTczY1FrWndicFljMDBBZi1OMGEwOGpITDl1bDE2WlFyb2pMcG9vZGszS3pseUhROWRyNVZLUHE0N3RINVg4aFQ2MHFsN0VNbVZRd0N5ZGk0V3RsdFg5R0hMNlV2c0w5SEJiYkI3R0JnQ3l3UG9Wa3h2OXB2d1NKOGY1REZtMUJkQlpPSEF3LUFGVlZVNEE4OEZvWHpwQ19RUGFPVlpKRUhDdjk3WEZza3M0N3BpZUVna1oyWDhXdkZMaTZBQlQ3UE8xT3hleEV1SlhCOGxRR1dCSlpPbUVyaGR3?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     },
     {

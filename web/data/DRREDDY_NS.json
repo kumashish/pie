@@ -1,14 +1,14 @@
 {
   "symbol": "DRREDDY.NS",
-  "last_price": 1208.0,
-  "as_of": "2026-10-06 03:45:00",
+  "last_price": 1215.4,
+  "as_of": "2026-10-07 03:45:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 4.5,
-  "fit_score": 45.0,
+  "trend_score": 4.2,
+  "fit_score": 42.5,
   "confidence_grade": "C",
-  "confidence_percentage": 45.0,
-  "vix": 13.61,
+  "confidence_percentage": 42.5,
+  "vix": 13.77,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -23,10 +23,10 @@
         "strike": 1100.0,
         "strike_formatted": "1100",
         "option_type": "Put",
-        "delta": -0.021,
+        "delta": -0.016,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1100 Put"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 1150.0,
         "strike_formatted": "1150",
         "option_type": "Put",
-        "delta": -0.126,
+        "delta": -0.103,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Sell 1x DRREDDY.NS 24-Nov-2026 1150 Put"
       },
       {
@@ -47,10 +47,10 @@
         "strike": 1250.0,
         "strike_formatted": "1250",
         "option_type": "Call",
-        "delta": 0.299,
+        "delta": 0.343,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Sell 1x DRREDDY.NS 24-Nov-2026 1250 Call"
       },
       {
@@ -59,10 +59,10 @@
         "strike": 1300.0,
         "strike_formatted": "1300",
         "option_type": "Call",
-        "delta": 0.095,
+        "delta": 0.117,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 49,
+        "dte": 48,
         "summary": "Buy 1x DRREDDY.NS 24-Nov-2026 1300 Call"
       }
     ],
@@ -70,217 +70,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1171.76,
-    "take_profit_price": 1244.24,
-    "net_delta": -0.099,
-    "net_theta": 0.222,
+    "stop_loss_price": 1178.94,
+    "take_profit_price": 1251.86,
+    "net_delta": -0.139,
+    "net_theta": 0.218,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 966.4,
+        "price": 972.32,
         "pnl": -100.0
       },
       {
-        "price": 976.06,
+        "price": 982.04,
         "pnl": -100.0
       },
       {
-        "price": 985.73,
+        "price": 991.77,
         "pnl": -100.0
       },
       {
-        "price": 995.39,
+        "price": 1001.49,
         "pnl": -100.0
       },
       {
-        "price": 1005.06,
+        "price": 1011.21,
         "pnl": -100.0
       },
       {
-        "price": 1014.72,
+        "price": 1020.94,
         "pnl": -100.0
       },
       {
-        "price": 1024.38,
+        "price": 1030.66,
         "pnl": -100.0
       },
       {
-        "price": 1034.05,
+        "price": 1040.38,
         "pnl": -100.0
       },
       {
-        "price": 1043.71,
+        "price": 1050.11,
         "pnl": -100.0
       },
       {
-        "price": 1053.38,
+        "price": 1059.83,
         "pnl": -100.0
       },
       {
-        "price": 1063.04,
+        "price": 1069.55,
         "pnl": -100.0
       },
       {
-        "price": 1072.7,
+        "price": 1079.28,
         "pnl": -100.0
       },
       {
-        "price": 1082.37,
+        "price": 1089.0,
         "pnl": -100.0
       },
       {
-        "price": 1092.03,
+        "price": 1098.72,
         "pnl": -100.0
       },
       {
-        "price": 1101.7,
-        "pnl": -98.3
+        "price": 1108.44,
+        "pnl": -91.56
       },
       {
-        "price": 1111.36,
-        "pnl": -88.64
+        "price": 1118.17,
+        "pnl": -81.83
       },
       {
-        "price": 1121.02,
-        "pnl": -78.98
+        "price": 1127.89,
+        "pnl": -72.11
       },
       {
-        "price": 1130.69,
-        "pnl": -69.31
+        "price": 1137.61,
+        "pnl": -62.39
       },
       {
-        "price": 1140.35,
-        "pnl": -59.65
+        "price": 1147.34,
+        "pnl": -52.66
       },
       {
-        "price": 1150.02,
+        "price": 1157.06,
         "pnl": -50.0
       },
       {
-        "price": 1159.68,
+        "price": 1166.78,
         "pnl": -50.0
       },
       {
-        "price": 1169.34,
+        "price": 1176.51,
         "pnl": -50.0
       },
       {
-        "price": 1179.01,
+        "price": 1186.23,
         "pnl": -50.0
       },
       {
-        "price": 1188.67,
+        "price": 1195.95,
         "pnl": -50.0
       },
       {
-        "price": 1198.34,
+        "price": 1205.68,
         "pnl": -50.0
       },
       {
-        "price": 1208.0,
+        "price": 1215.4,
         "pnl": -50.0
       },
       {
-        "price": 1217.66,
+        "price": 1225.12,
         "pnl": -50.0
       },
       {
-        "price": 1227.33,
+        "price": 1234.85,
         "pnl": -50.0
       },
       {
-        "price": 1236.99,
+        "price": 1244.57,
         "pnl": -50.0
       },
       {
-        "price": 1246.66,
-        "pnl": -50.0
+        "price": 1254.29,
+        "pnl": -54.29
       },
       {
-        "price": 1256.32,
-        "pnl": -56.32
+        "price": 1264.02,
+        "pnl": -64.02
       },
       {
-        "price": 1265.98,
-        "pnl": -65.98
+        "price": 1273.74,
+        "pnl": -73.74
       },
       {
-        "price": 1275.65,
-        "pnl": -75.65
+        "price": 1283.46,
+        "pnl": -83.46
       },
       {
-        "price": 1285.31,
-        "pnl": -85.31
+        "price": 1293.19,
+        "pnl": -93.19
       },
       {
-        "price": 1294.98,
-        "pnl": -94.98
-      },
-      {
-        "price": 1304.64,
+        "price": 1302.91,
         "pnl": -100.0
       },
       {
-        "price": 1314.3,
+        "price": 1312.63,
         "pnl": -100.0
       },
       {
-        "price": 1323.97,
+        "price": 1322.36,
         "pnl": -100.0
       },
       {
-        "price": 1333.63,
+        "price": 1332.08,
         "pnl": -100.0
       },
       {
-        "price": 1343.3,
+        "price": 1341.8,
         "pnl": -100.0
       },
       {
-        "price": 1352.96,
+        "price": 1351.52,
         "pnl": -100.0
       },
       {
-        "price": 1362.62,
+        "price": 1361.25,
         "pnl": -100.0
       },
       {
-        "price": 1372.29,
+        "price": 1370.97,
         "pnl": -100.0
       },
       {
-        "price": 1381.95,
+        "price": 1380.69,
         "pnl": -100.0
       },
       {
-        "price": 1391.62,
+        "price": 1390.42,
         "pnl": -100.0
       },
       {
-        "price": 1401.28,
+        "price": 1400.14,
         "pnl": -100.0
       },
       {
-        "price": 1410.94,
+        "price": 1409.86,
         "pnl": -100.0
       },
       {
-        "price": 1420.61,
+        "price": 1419.59,
         "pnl": -100.0
       },
       {
-        "price": 1430.27,
+        "price": 1429.31,
         "pnl": -100.0
       },
       {
-        "price": 1439.94,
+        "price": 1439.03,
         "pnl": -100.0
       },
       {
-        "price": 1449.6,
+        "price": 1448.76,
+        "pnl": -100.0
+      },
+      {
+        "price": 1458.48,
         "pnl": -100.0
       }
     ],
@@ -306,7 +306,7 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 83.7,
+      "score": 87.9,
       "grade": "A (Optimal)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -315,7 +315,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 72.7,
+      "score": 69.0,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -324,25 +324,25 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 62.5,
-      "grade": "B (Good)",
+      "score": 58.9,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-1150PE-S1x-Nov-1200PE-S1x-Nov-1200CE-B1x-Nov-1250CE"
+      "legs_summary": "B1x-Nov-1150PE-S1x-Nov-1200PE-S1x-Nov-1200CE-B1x-Nov-1300CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 58.0,
+      "score": 55.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1200CE-S1x-Nov-1200CE-S1x-Nov-1200CE-B1x-Nov-1250CE"
+      "legs_summary": "B1x-Nov-1200CE-S1x-Nov-1200CE-S1x-Nov-1200CE-B1x-Nov-1300CE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 54.0,
+      "score": 54.5,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
@@ -351,7 +351,7 @@
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 52.2,
+      "score": 51.6,
       "grade": "C (Moderate)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
@@ -360,7 +360,7 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 44.3,
+      "score": 45.2,
       "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -369,23 +369,32 @@
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 43.9,
+      "score": 41.5,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
       "legs_summary": "S1x-Nov-1150PE"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 40.9,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-1215.4CE-S1x-Nov-1250CE"
     }
   ],
   "indicators": {
-    "EMA20": "1198.03",
-    "EMA50": "1197.08",
-    "EMA100": "1215.33",
-    "EMA200": "1234.39",
-    "RSI(14)": "54.46",
-    "ATR(14)": "22.60",
-    "ADX(14)": "19.62",
-    "BB(20,2)": "0.64",
-    "P_SHAPE(20)": "47.74"
+    "EMA20": "1200.36",
+    "EMA50": "1198.14",
+    "EMA100": "1215.15",
+    "EMA200": "1233.92",
+    "RSI(14)": "56.79",
+    "ATR(14)": "20.72",
+    "ADX(14)": "17.62",
+    "BB(20,2)": "0.66",
+    "P_SHAPE(20)": "55.92"
   },
   "rules": [
     {
@@ -403,14 +412,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -452,7 +461,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -475,27 +484,6 @@
       "sentiment": "bearish"
     },
     {
-      "title": "Dr Reddy's shares gain over 1% after Nomura retains 'Buy'; Rs1,740 target, key biologics milestones ahead",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeTVkUFNxRmNINlh4UFBUNmRoZ3ZnbGFoZk8tS0FjTFR0VVJqUTAtOTdCYWgtZ1ItTXZVcmZFTF9JUE9kVDNQV0x1RGxSTVRrTHV1ckpEOF81RzFONFR3Vk92UE1EcHZQRjVSWTZxOC0yUWlpc0JKVmhXdXg5QjRfQzBvbTFMV2FIdHNreGs4R3E2SDZ6NmNpVjNMR2EyQWlYQy0xYl9yVVhvZUZjLVQzS3JrNXdxZldLd0NoSkVWNjFNSHJrX2dQOU1fQ3FZUFBGOUtqQTJHMTYxYW5HZGhaTC1xUk4xTmIycXJSZDdCLTA0LTQzYk800gH8AUFVX3lxTFBrRERVY19zeG9tNmk2LUVhdU9BUVdHWnVnTXBKMHpPMmtBRkVUcHVZLXlnM0cxTkhsQXd2MHlVNE1sSHV0eFlGNEh1M0FnYmx4WmxNRWwzbVBaa2Nfa1I5UHJSc181eWtaMDg3Ql9INzljWmJXNWJvLXlwVUd4VVJSUEVQTDExbHN4Vzk3VlM0SExEeDJzak8wdXdVb1dWdHJJNzlLdDQ4bjRJLVh4V2xadEkzSGZYam82RlFTMVlKYlBFcnFnRWlwRC01TjRMS3NUNjZ5VUZOb2FKVE5tZ0JFTERTMHNkOGZtSHdyYVdFbUllV3ZPYmt1QmlDNQ?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "NSE shares fall below IPO price amid broader market crash; here's how you should trade",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQSloyUGc1YUtMV0NidmhpdHFPMUpSTVZEZUdZelRhQUxBNUcyalVNUEJDa280RGNxRWR1dVVDSVZxSlJPWWpNTHpxM3YxblNHTlgzUmMtTm0tWF9vd1NNR2xycFZucEk4aTdva3ItbWdjLXZIWDhyNjFTWkRnTkhsSWNCQUJwSjhLSmhXQXI5WFp1LVdud05yZmxiME5WTElKcFlxTDlhejNuZ3psY3pGaGVlWHZ4OG4tZmVXbXFpeFNIbndQQkhGTGctR3YtQ3BEUktlTkFoWFNCaTdGNlVhZHpjSjbSAeoBQVVfeXFMUFR1bGtTN0xCNnVWRGowWXliNHI5TVVJUGw1T1BzaThYZ1RyOTR6eGhzMUJWV1U2VzdKRC1OMVY4NWV2czhrMjRpLXlHdDFremp5bE94WDFKSTFWcGE4UTJnX19IM2pwQXB4TExGVnE4ZDhyR2xwazhTbk8wZUZQdGMteVFIcERGaHMxeHlYYUwxeGIzWWZ3eTF1OUVMRlFqbWtqaUo2a0NaRGdhUEZIVWlnTkZIU3ZsNHNVTWhfNEExV0Fpd0s4YmRwdExZMnVaU1pUWGJkc2toQzFkMnFyYmZsNzdudnNjTEtn?oc=5",
-      "published_at": "Mon, 28 Sep 2026",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Small-cap or large-cap funds: Where should investors put fresh money?",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZVRvYXYyWG80U1NKaHRuclZfd2dsU2ZrbG1MUGNUUEVydUxZLS02ZnhvclRSVkhSMDdORjl0b3Q1aFoxZXdWclM4RE5WenR4TVlndXg0N2x1c1FURFRuQ00zUkg3MnJuRHVBTXlQbzluY2FiRlE1S2prVFFPS2xvX1RoVktGUzJOYlRtWERvWGZYZmxLRUd6dmtaaFo3VlVOM0FKcjlkTU9EQW1OUnZVcDVPcXBZb1lzXzhVdXIzQTRhcVJqdkNOWk1BRlh0TnloVXNBQ2xCeVrSAd4BQVVfeXFMUFBjejU2eVhES3VRNnJETnZEM3ByakJxcWxZNEpyU21yNHplbTNNVVFSZjlzZkhUZEk4ckxDOGozaDlxV0VWVVBoMUNPYjJBSDVpdmJtSzhkY0RZUzFndC1aaFR3VlV3V3JiOEJFQjRFLTA1Uy0tbHNlQ1BQMnpmb1ZUTEZtdW0zX242ZHl0VlVnZ2l5YUJZaWs1ZkNzaVdtVHRlMll0WENlTDZvZ1lJdFdxaXRiOEdJUXlLTDZJTU1idUxOV19KLVA0N2Q3T1h2SF8tY0h6cXZUYldhTGNn?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "HFCL shares rally 15% in 3 sessions; analysts flag Rs 260 resistance, consolidation risk",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZVVkMEpVcDZ5b25IbE9ieTQySWhZT3ZLbTNfNlh3bHJDMkdsUFZ4YXJEMGd5ZzZHQkdSMWp0UmtkczFOWjkxVDROM05tbXZ6dzhkMEZjaGU0VUE0SnVSWGw3YmpSVGFIQzhLWWdodXFCSFo5OTZjT3p1ZzZ5U2c2NFJIZjdUbzFONU91SHRXcUZLX1FNS0syTEtIT1g0NTBXc2lwQ1RvdzcwMVlMTGtHbmYwbXY0YjNBdU1yMVFTNXJvdkVEcXU3ZVp1M1RBaGpqWTFucWlyd3BiUEppaEJvX19aZ9IB6AFBVV95cUxOSktyNS1qbEZucGo0dWFsendCMFV4T0g1MU1kV21zUy1FQTlCR3Z5c3dRVTVWYWxqMjMyT1NFLXlQR0hZOWdtd2otaEJaTEgybkU3SU56S3p3Z2ppOFdPaXZyc0JzQVRLaG5RemJnWmoyUmRKa1hqZjZvV1hmWS1MQzNoSUR1M19xMHVOT3NzZUxrV01qY2VEbDZXTEpoVGtkQTJsVzYtZHNKM0lDd1o2X2djSTFPVF91NXhLc1V6NUExQi01a2tmQnVoOXhxY3dtZ2pvX256YmcxWUVwa1RUZkZpbGVRY2Zi?oc=5",
@@ -503,11 +491,32 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Sensex rises 500 pts from day's low, Nifty near 22,800: Buying in IT, bank shares among key factors behind...",
+      "title": "Stocks to Watch Today: HDFC Bank, AceVector, Orient Cables, Manipal Payment, Pranav Constructions, DLF,...",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPWGxGM3R4aS11UmZLYkl2ME83c3R6QmRPZlQ3RDRNZDRHaGFoZEgtLVJjUW9tb2wzWm81UnU5ZG04WkliMnZjUUlnN0pVVzRZNTdmUGljV2FaTTlvbncyYjFuTFlSS2Z6bFZDaVdjQXhVMmpUd0czQzlvckJmTjduZENldXBLd1BXZmdsQnpBTV9hNG5IMWhFaU5KakdSOXU3NVJsNWVTWEFlM25nNUo1ekN4c1NXV2l3VjdTWHNvdEI2VUh4OGhDOVZIS2FERDRRR0M0YU05RWFXWlZOMGQ1MHBnM2xkUnpZc1IycnZIZjlxSFpPOVh1S0RFTknSAYICQVVfeXFMUGxaLXVPWVR3T0VKS2dxSnhnTkdsUEg3bmE1TXBGZ1BZU1Q4SU1Uc0xQRHViV254cHlZc1JDVV9sV3hybkZCLVlhWnRqOXk0Uzk0ZWFUQVFRQ1ZPREh5VThaS1h6bUNTbVlyWU1sbG9RT2JYVXJNbF9nUWdjWG1vZTFCZ3JiTUN0WnlMWnNRSjNVc2hVUWkzdVBRLVJkTG1LUVlrRDgtTjBHOGI0SjRYUkowV2hGM1N1SFZjSkxDWXNOYUdCUHBGaEtMa0NnMEg4XzhUM3FhSTNDYzFUVjJUcmVPY3V4cjJRMXhYdS1KY0ZZZ05VUXdzaF9wNElqV0FISFh3?oc=5",
-      "published_at": "Wed, 30 Sep 2026",
-      "sentiment": "bullish"
+      "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQemVjQ05mZTZYbVJGdGk0cjFEOThKNDF5S3J3TmRyQlhRRGVJUnBRWWc3b2JGbjBMUnA0SkUxaWNxVHdmd24xZUQ5Y2pobE03dmVTVDk4MVZJTTNXMjdjZjVrQkEtZ1lwRlp0ZnlMbUREejFncXl0S2NIa0NYV3BXUURRcGlNN2NqOWtPQnZndjRUZlQtQjhoNGxvRXVPR0o5TGJhUVFWSXdfY3lvTFhwV25SYTJXWXJBSGhRdU9oQTFmMDdXZVVZSnRCMDJUbV9STmd5Rmo3aU5MU0FlZk1uMnB3ejl4cGpKOHU4S3NzSFktczdIblh0Y1lLWExwWGNFWl9IcF84RkhLdUNhQUlVTE5WSzZ0cVhIdlhfRjNabkxraDd2Z3BLdkVUWUIxMjR5WHVRQXFPV2p2UDV1ODE5bVVTNTRCcnR0SUgyU25FONIB1AJBVV95cUxOM0hNTVNOSWp4UFRpdjJ3akRpejRTN2tEel9iQlBHd19wWEU3Y2NsUE94MUppMmxwMWRhcWh3TmR6czQzRDdOVGxxSWJRa0VoNm5RdmtGLXZzZlNIOU15bGYyaWJBcndiY3V4T2paYldRQTY5andoMWx3YWk1N2taTWd1UjdmRnRjQVF6eUlGUERwV2NlMTR5X0llSTVwTHAyZ0FjMkFMaXVNdm9pWk9KTGdJZE9yOGZlbmpoMmc1QnMtVzFYVlFKR3loSVctUEV4RWpka2htOFBsQm9uLVJ0WDJKeThLU3BsWHI5bl8xd2pTT3pyWkZEUENkT2lkNW9JeXNFWF93clRmZmpWeWpzeDBId19EelYxTkJodUkyeDc0alJ0V3BjaF95cXJxNGc3MDVTM0FoeVhGdFVSb2VDOVlCemxsMWFyeWFHbnVBVlZCV2Zv?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Defence shares extend decline for 2nd session; BEL, MTAR drag index as HAL bucks trend; check gainers and...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOa3ZZX2RpaFN6RTNZcXZ1V0lOZ0s0Mk9wdVlfRVRiUjhNX0lBZVAzbTI2azJjcUMzcnpiblJBMV93RUNuTDNsMERpMjRrTzZ4a1pmaXFVX2dfcFpvaDF3aERXd2N5Y0pVSnI5RGxBNjVDT0lQNVhyVjR2b2R5clgyTHFNSVJ4NDVOaktOSmJ3QUVDNWpObUxOSnF6YjAtOVpJTElfMEFDQlpNM2R4VGpySGhkNGhuWUZWNnppQ3YtWUt2MzVlckRaM0dXRW5GV2Z0NXczMFVIVTg0WGI2Ylp3d2xUODc2ZXIxZzVhbm5NSXJha0Y1U1VWY2RnRG1BQTN5aE8wb9IBigJBVV95cUxNNDQtcGpXZjFFNWFuUjZRVEJIOFRuQVhKRGNicE95Rkk5cTUxazhTdjBISVo5RldfajVrNXpJS3BjakhldEtBbnIxWk5aQm01LUdZSllNMnhFdWpaX3JXWjlwNkNPOWdFbm1VSC1ZakFvMFV4Tjh2X0pwVHluWnpzLWdpaVR4SktQdlhudGxKQjI5ZHljSl9CMjlNVGZabVZ1M2JnMjVNbDBmZTlQb1F6dXBZMW1aVmhjVkg1RTNzekdIUHVMb0lfUml0Wjd5YnhydVdtQVNxeER2emZDTEpGZUpRTmx6XzFQX1FJdkJHMVVIaFFYZERlUlNFT1ZRbmxzb0VhWTM1RlJPUQ?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "SEBI: Latest News, Photos, Videos and Top Stories",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5aODBxLWszajVsSzQwNjJHR0RjaDZ5cUVzUUVHTzVkUDByUHYxeEV1MmY1cHpwRW9ldFZMelNUeDNKaTdvYV9DOVdER01BSy1TWHc?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Eli Lilly\u2019s obesity pill could reach India in 2027; CEO says launch awaits approval",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNV0VOYTZzak1TS29Eb3ZSdXUtUGVHaktzQWw5NnEyMG5rQmUyVjUxWXhpRlNPZGxjaW81dUFhUW5QdGxObkJfajB3WGFIS3ZMNWRlVWpBMXh1bGZDelQ0cnlsVmtMbTZzaGRPeG5Jc2NUclBqN2M0b29NdFBMZ1M3YWlZVV82aENXZk9DZ1ZzV3JTZW9vUm1vdzRZdXVtb3lpbmRnYVM0SXlsT3dTSE9lOV9DTUFSWjIwX045eEpoX1JVbGVZVWhSa3dTRDhuaGVlYzMzWXdB0gHbAUFVX3lxTE5QNnNTTTBFZVVMNUg0cTZxTy1sS2d4b0JPZVY5cDhzalVFLVpnY0xHaHhPRFhGM0lDc0ROZUE3VmhwNV9FRnZGZHVNNW9KVmI3SUxCT3g0dmstWkUzcmgtMFV5ZlcxTkNqek9UZFE1VGN5YmhITjB5ZjFWQWNqVjRtaFNzR3NzSjRPMzZZR2s1ZHd6VnpfN29PQUljbTZqMzcxR3l1Z1RiZ19RN19feExuZWEzTlFTYWF5NTlzWUxaa0Z5SW9paHFqOWE3aVZsSlRCMzd1a29Qb2cwWQ?oc=5",
+      "published_at": "Fri, 02 Oct 2026",
+      "sentiment": "neutral"
     }
   ]
 }

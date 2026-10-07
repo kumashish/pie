@@ -1,6 +1,6 @@
 {
   "symbol": "UVXY",
-  "last_price": 16.3,
+  "last_price": 16.07,
   "as_of": "2026-10-06 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
@@ -8,12 +8,12 @@
   "fit_score": 5.0,
   "confidence_grade": "C",
   "confidence_percentage": 5.0,
-  "vix": 15.33,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (90.0% fit - Grade A (Optimal)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Wait for Mean Reversion: RSI (33.8) is oversold (< 35) [Synthetic PCR: 1.34]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
   "cash_trade_setup": null,
   "estimated_trade": {
     "legs": [
@@ -23,10 +23,10 @@
         "strike": 17.0,
         "strike_formatted": "17",
         "option_type": "Call",
-        "delta": 0.259,
+        "delta": 0.174,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x UVXY 20-Nov-2026 17 Call"
       },
       {
@@ -35,10 +35,10 @@
         "strike": 18.0,
         "strike_formatted": "18",
         "option_type": "Call",
-        "delta": 0.044,
+        "delta": 0.021,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x UVXY 20-Nov-2026 18 Call"
       }
     ],
@@ -46,177 +46,185 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1.0,
-    "stop_loss_price": 15.81,
-    "take_profit_price": 16.78,
-    "net_delta": -0.215,
-    "net_theta": 0.003,
+    "stop_loss_price": 15.59,
+    "take_profit_price": 16.55,
+    "net_delta": -0.153,
+    "net_theta": 0.002,
     "probability_of_profit": 0.0,
-    "var_95": 0.87,
+    "var_95": 0.58,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 13.04,
+        "price": 12.86,
         "pnl": -1.0
       },
       {
-        "price": 13.17,
+        "price": 12.98,
         "pnl": -1.0
       },
       {
-        "price": 13.3,
+        "price": 13.11,
         "pnl": -1.0
       },
       {
-        "price": 13.43,
+        "price": 13.24,
         "pnl": -1.0
       },
       {
-        "price": 13.56,
+        "price": 13.37,
         "pnl": -1.0
       },
       {
-        "price": 13.69,
+        "price": 13.5,
         "pnl": -1.0
       },
       {
-        "price": 13.82,
+        "price": 13.63,
         "pnl": -1.0
       },
       {
-        "price": 13.95,
+        "price": 13.76,
         "pnl": -1.0
       },
       {
-        "price": 14.08,
+        "price": 13.88,
         "pnl": -1.0
       },
       {
-        "price": 14.21,
+        "price": 14.01,
         "pnl": -1.0
       },
       {
-        "price": 14.34,
+        "price": 14.14,
         "pnl": -1.0
       },
       {
-        "price": 14.47,
+        "price": 14.27,
         "pnl": -1.0
       },
       {
-        "price": 14.6,
+        "price": 14.4,
         "pnl": -1.0
       },
       {
-        "price": 14.73,
+        "price": 14.53,
         "pnl": -1.0
       },
       {
-        "price": 14.86,
+        "price": 14.66,
         "pnl": -1.0
       },
       {
-        "price": 14.99,
+        "price": 14.78,
         "pnl": -1.0
       },
       {
-        "price": 15.12,
+        "price": 14.91,
         "pnl": -1.0
       },
       {
-        "price": 15.25,
+        "price": 15.04,
         "pnl": -1.0
       },
       {
-        "price": 15.38,
+        "price": 15.17,
         "pnl": -1.0
       },
       {
-        "price": 15.51,
+        "price": 15.3,
         "pnl": -1.0
       },
       {
-        "price": 15.64,
+        "price": 15.43,
         "pnl": -1.0
       },
       {
-        "price": 15.77,
+        "price": 15.56,
         "pnl": -1.0
       },
       {
-        "price": 15.9,
+        "price": 15.68,
         "pnl": -1.0
       },
       {
-        "price": 16.03,
+        "price": 15.81,
         "pnl": -1.0
       },
       {
-        "price": 16.16,
+        "price": 15.94,
         "pnl": -1.0
       },
       {
-        "price": 16.3,
+        "price": 16.07,
         "pnl": -1.0
       },
       {
-        "price": 16.43,
+        "price": 16.2,
         "pnl": -1.0
       },
       {
-        "price": 16.56,
+        "price": 16.33,
         "pnl": -1.0
       },
       {
-        "price": 16.69,
+        "price": 16.46,
         "pnl": -1.0
       },
       {
-        "price": 16.82,
+        "price": 16.58,
         "pnl": -1.0
       },
       {
-        "price": 16.95,
+        "price": 16.71,
         "pnl": -1.0
       },
       {
-        "price": 17.08,
-        "pnl": -1.08
+        "price": 16.84,
+        "pnl": -1.0
       },
       {
-        "price": 17.21,
-        "pnl": -1.21
+        "price": 16.97,
+        "pnl": -1.0
       },
       {
-        "price": 17.34,
-        "pnl": -1.34
+        "price": 17.1,
+        "pnl": -1.1
       },
       {
-        "price": 17.47,
-        "pnl": -1.47
+        "price": 17.23,
+        "pnl": -1.23
       },
       {
-        "price": 17.6,
-        "pnl": -1.6
+        "price": 17.36,
+        "pnl": -1.36
       },
       {
-        "price": 17.73,
-        "pnl": -1.73
+        "price": 17.48,
+        "pnl": -1.48
       },
       {
-        "price": 17.86,
-        "pnl": -1.86
+        "price": 17.61,
+        "pnl": -1.61
       },
       {
-        "price": 17.99,
-        "pnl": -1.99
+        "price": 17.74,
+        "pnl": -1.74
       },
       {
-        "price": 18.12,
+        "price": 17.87,
+        "pnl": -1.87
+      },
+      {
+        "price": 18.0,
         "pnl": -2.0
       },
       {
-        "price": 18.25,
+        "price": 18.13,
+        "pnl": -2.0
+      },
+      {
+        "price": 18.26,
         "pnl": -2.0
       },
       {
@@ -248,15 +256,7 @@
         "pnl": -2.0
       },
       {
-        "price": 19.29,
-        "pnl": -2.0
-      },
-      {
-        "price": 19.42,
-        "pnl": -2.0
-      },
-      {
-        "price": 19.55,
+        "price": 19.28,
         "pnl": -2.0
       }
     ],
@@ -282,7 +282,7 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 74.7,
+      "score": 68.3,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -295,19 +295,19 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x UVXY 20-Nov-2026 16.3 Put"
+      "legs_summary": "Sell 1x UVXY 20-Nov-2026 16.1 Put"
     }
   ],
   "indicators": {
-    "EMA20": "17.45",
-    "EMA50": "19.58",
-    "EMA100": "24.03",
+    "EMA20": "17.43",
+    "EMA50": "19.57",
+    "EMA100": "24.02",
     "EMA200": "34.74",
-    "RSI(14)": "35.13",
-    "ATR(14)": "0.71",
-    "ADX(14)": "17.68",
-    "BB(20,2)": "0.11",
-    "P_SHAPE(20)": "36.47"
+    "RSI(14)": "33.79",
+    "ATR(14)": "0.73",
+    "ADX(14)": "18.04",
+    "BB(20,2)": "0.05",
+    "P_SHAPE(20)": "43.60"
   },
   "rules": [
     {

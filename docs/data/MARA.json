@@ -1,6 +1,6 @@
 {
   "symbol": "MARA",
-  "last_price": 11.14,
+  "last_price": 10.97,
   "as_of": "2026-10-06 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 22.5,
   "confidence_grade": "C",
   "confidence_percentage": 22.5,
-  "vix": 15.34,
+  "vix": 15.01,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -23,10 +23,10 @@
         "strike": 10.0,
         "strike_formatted": "10",
         "option_type": "Put",
-        "delta": -0.016,
+        "delta": -0.028,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Sell 1x MARA 20-Nov-2026 10 Put"
       },
       {
@@ -38,7 +38,7 @@
         "delta": -0.0,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 45,
+        "dte": 44,
         "summary": "Buy 1x MARA 20-Nov-2026 9 Put"
       }
     ],
@@ -46,9 +46,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1.0,
-    "stop_loss_price": 10.81,
-    "take_profit_price": 11.47,
-    "net_delta": 0.016,
+    "stop_loss_price": 10.64,
+    "take_profit_price": 11.3,
+    "net_delta": 0.028,
     "net_theta": 0.0,
     "probability_of_profit": 0.0,
     "var_95": 0.0,
@@ -56,107 +56,115 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 8.91,
+        "price": 8.78,
         "pnl": -2.0
       },
       {
-        "price": 9.0,
+        "price": 8.86,
         "pnl": -2.0
       },
       {
-        "price": 9.09,
-        "pnl": -1.91
+        "price": 8.95,
+        "pnl": -2.0
       },
       {
-        "price": 9.18,
-        "pnl": -1.82
+        "price": 9.04,
+        "pnl": -1.96
       },
       {
-        "price": 9.27,
-        "pnl": -1.73
+        "price": 9.13,
+        "pnl": -1.87
       },
       {
-        "price": 9.36,
-        "pnl": -1.64
+        "price": 9.21,
+        "pnl": -1.79
       },
       {
-        "price": 9.45,
-        "pnl": -1.55
+        "price": 9.3,
+        "pnl": -1.7
       },
       {
-        "price": 9.54,
-        "pnl": -1.46
+        "price": 9.39,
+        "pnl": -1.61
       },
       {
-        "price": 9.62,
-        "pnl": -1.38
+        "price": 9.48,
+        "pnl": -1.52
       },
       {
-        "price": 9.71,
-        "pnl": -1.29
+        "price": 9.57,
+        "pnl": -1.43
       },
       {
-        "price": 9.8,
-        "pnl": -1.2
+        "price": 9.65,
+        "pnl": -1.35
       },
       {
-        "price": 9.89,
-        "pnl": -1.11
+        "price": 9.74,
+        "pnl": -1.26
       },
       {
-        "price": 9.98,
-        "pnl": -1.02
+        "price": 9.83,
+        "pnl": -1.17
       },
       {
-        "price": 10.07,
+        "price": 9.92,
+        "pnl": -1.08
+      },
+      {
+        "price": 10.0,
         "pnl": -1.0
       },
       {
-        "price": 10.16,
+        "price": 10.09,
         "pnl": -1.0
       },
       {
-        "price": 10.25,
+        "price": 10.18,
         "pnl": -1.0
       },
       {
-        "price": 10.34,
+        "price": 10.27,
         "pnl": -1.0
       },
       {
-        "price": 10.43,
+        "price": 10.36,
         "pnl": -1.0
       },
       {
-        "price": 10.52,
+        "price": 10.44,
         "pnl": -1.0
       },
       {
-        "price": 10.6,
+        "price": 10.53,
         "pnl": -1.0
       },
       {
-        "price": 10.69,
+        "price": 10.62,
         "pnl": -1.0
       },
       {
-        "price": 10.78,
+        "price": 10.71,
         "pnl": -1.0
       },
       {
-        "price": 10.87,
+        "price": 10.79,
         "pnl": -1.0
       },
       {
-        "price": 10.96,
+        "price": 10.88,
         "pnl": -1.0
       },
       {
-        "price": 11.05,
+        "price": 10.97,
         "pnl": -1.0
       },
       {
-        "price": 11.14,
+        "price": 11.06,
+        "pnl": -1.0
+      },
+      {
+        "price": 11.15,
         "pnl": -1.0
       },
       {
@@ -176,7 +184,7 @@
         "pnl": -1.0
       },
       {
-        "price": 11.59,
+        "price": 11.58,
         "pnl": -1.0
       },
       {
@@ -196,67 +204,59 @@
         "pnl": -1.0
       },
       {
-        "price": 12.03,
+        "price": 12.02,
         "pnl": -1.0
       },
       {
-        "price": 12.12,
+        "price": 12.11,
         "pnl": -1.0
       },
       {
-        "price": 12.21,
+        "price": 12.2,
         "pnl": -1.0
       },
       {
-        "price": 12.3,
+        "price": 12.29,
         "pnl": -1.0
       },
       {
-        "price": 12.39,
+        "price": 12.37,
         "pnl": -1.0
       },
       {
-        "price": 12.48,
+        "price": 12.46,
         "pnl": -1.0
       },
       {
-        "price": 12.57,
+        "price": 12.55,
         "pnl": -1.0
       },
       {
-        "price": 12.65,
+        "price": 12.64,
         "pnl": -1.0
       },
       {
-        "price": 12.74,
+        "price": 12.73,
         "pnl": -1.0
       },
       {
-        "price": 12.83,
+        "price": 12.81,
         "pnl": -1.0
       },
       {
-        "price": 12.92,
+        "price": 12.9,
         "pnl": -1.0
       },
       {
-        "price": 13.01,
+        "price": 12.99,
         "pnl": -1.0
       },
       {
-        "price": 13.1,
+        "price": 13.08,
         "pnl": -1.0
       },
       {
-        "price": 13.19,
-        "pnl": -1.0
-      },
-      {
-        "price": 13.28,
-        "pnl": -1.0
-      },
-      {
-        "price": 13.37,
+        "price": 13.16,
         "pnl": -1.0
       }
     ],
@@ -282,7 +282,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 65.8,
+      "score": 65.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -291,7 +291,7 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 60.1,
+      "score": 61.3,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -304,19 +304,19 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x MARA 20-Nov-2026 11.1 Put"
+      "legs_summary": "Sell 1x MARA 20-Nov-2026 11.0 Put"
     }
   ],
   "indicators": {
-    "EMA20": "11.74",
-    "EMA50": "11.67",
+    "EMA20": "11.72",
+    "EMA50": "11.66",
     "EMA100": "11.70",
     "EMA200": "12.03",
-    "RSI(14)": "44.00",
-    "ATR(14)": "0.80",
+    "RSI(14)": "42.58",
+    "ATR(14)": "0.81",
     "ADX(14)": "17.08",
-    "BB(20,2)": "0.25",
-    "P_SHAPE(20)": "35.26"
+    "BB(20,2)": "0.21",
+    "P_SHAPE(20)": "35.16"
   },
   "rules": [
     {
@@ -399,6 +399,13 @@
   ],
   "news": [
     {
+      "title": "Marathon Digital Holdings, Inc. (MARA) Stock Dips While Market Gains: Key Facts",
+      "publisher": "Zacks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/marathon-digital-holdings-inc-mara-205004390.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
       "title": "Strategy Grows Bitcoin Holdings: Can Its Treasury Scale Drive More Value?",
       "publisher": "Zacks",
       "link": "https://finance.yahoo.com/markets/crypto/articles/strategy-grows-bitcoin-holdings-treasury-162200808.html",
@@ -432,13 +439,6 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/marathon-digital-holdings-inc-mara-205003673.html",
       "published_at": "Today",
       "sentiment": "bearish"
-    },
-    {
-      "title": "Strive Crosses 27,000 BTC After $94.5 Million Bitcoin Purchase",
-      "publisher": "CryptoProwl",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/strive-crosses-27-000-btc-195400613.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }
