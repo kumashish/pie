@@ -38,13 +38,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
 
-      - name: Update Market Snapshot & README
+      - name: Pre-compute Web Option Trade Data JSON & Market Dashboards
         run: |
-          python pie/reporting/readme_update.py
-
-      - name: Pre-compute Web Option Trade Data JSON
-        run: |
-          python pie/reporting/generate_web_data.py
+            python -m pie.reporting.split_market_runner
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
