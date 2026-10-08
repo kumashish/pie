@@ -184,21 +184,26 @@ def generate_all_web_data(output_dir: Path = Path("web/data"), docs_dir: Path = 
                     })
                     with open(high_path, "w", encoding="utf-8") as f:
                         json.dump(high_list, f, indent=2)
-            # Build snapshot entry for README & snapshot.json
-            leg_str = ""
-            if data.get("estimated_trade") and data["estimated_trade"].get("legs"):
+            # Build snapshot entry for README & snapshot.json using top unrolled candidate strategy
+            top_strat = data["ranked_strategies"][0] if data.get("ranked_strategies") else None
+            top_score = float(top_strat["score"]) if top_strat else data.get("fit_score", 0.0)
+            top_stype = top_strat.get("strategy_type", data.get("strategy_type", "")) if top_strat else data.get("strategy_type", "")
+            top_display = top_strat.get("strategy_display", data.get("strategy_display", "")) if top_strat else data.get("strategy_display", "")
+            top_legs = top_strat.get("legs_summary", "") if top_strat else ""
+
+            if not top_legs and data.get("estimated_trade") and data["estimated_trade"].get("legs"):
                 leg_summaries = [leg["summary"] for leg in data["estimated_trade"]["legs"]]
-                leg_str = "<br> ".join(leg_summaries)
+                top_legs = "<br> ".join(leg_summaries)
 
             snapshot_list.append({
                 "symbol": data["symbol"],
                 "market": data["symbol"],
                 "last_updated": datetime.now(UTC).isoformat(),
                 "trend": f"🟢 {data['regime_display']}" if "bull" in data["regime"].lower() else (f"🔴 {data['regime_display']}" if "bear" in data["regime"].lower() else f"🟡 {data['regime_display']}"),
-                "strategy": leg_str or data["strategy_display"],
-                "strategy_type": data["strategy_type"],
-                "fit_score": data["fit_score"],
-                "signal": "Active" if is_high else "New",
+                "strategy": top_legs or top_display,
+                "strategy_type": top_stype,
+                "fit_score": top_score,
+                "signal": "Active" if top_score >= 80.0 else "New",
                 "signal_since": datetime.now(UTC).isoformat(),
             })
         except Exception as e:

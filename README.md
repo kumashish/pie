@@ -2,31 +2,19 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| QQQ       | Oct 07, 12:56 IST | 🟡 Credit Spread   | 7.3/10    | Sell QQQ 20-Nov-2026 720 Put /  Buy QQQ 20-Nov-2026 710 Put | ⚠️ Stop Loss (Yesterday, 21:35) |
-| SPY       | Oct 07, 12:56 IST | 🟡 Credit Spread   | 7.0/10    | Sell SPY 20-Nov-2026 740 Put /  Buy SPY 20-Nov-2026 735 Put | ⚠️ Stop Loss (Yesterday, 18:52) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| ^NSEMDCP50 | Oct 07, 12:47 IST | 🟡 Iron Condor     | 3.2/10    | B1x-Nov-16000PE / S1x-Nov-16200PE / S1x-Nov-17900CE / B1x-Nov-18100CE | Active (Today, 12:47)  |
-| ^NSEI     | Oct 07, 12:47 IST | 🟡 Credit Spread   | 2.2/10    | S1x-Nov-23800CE / B1x-Nov-24000CE | Active (Today, 12:47)  |
-| ^BSESN    | Oct 07, 12:47 IST | 🔴 Put Debit Spread | 2.2/10    | B1x-Nov-72800PE / S1x-Nov-70000PE | Active (Today, 12:47)  |
-| ^NSEBANK  | Oct 07, 12:47 IST | 🟡 Credit Spread   | 1.2/10    | S1x-Nov-57900CE / B1x-Nov-58500CE | Active (Today, 12:47)  |
-| NIFTY_FIN_SERVICE.NS | Oct 07, 12:47 IST | 🟡 Credit Spread   | 0.5/10    | S1x-Nov-26200CE / B1x-Nov-26550CE | New                    |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 #### 🇺🇸 U.S. Stocks & ETFs
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| META      | Oct 07, 12:46 IST | 🟡 Credit Spread   | 8.8/10    | Sell 1x META 20-Nov-2026 700 Put /  Buy 1x META 20-Nov-2026 675 Put | Active (Today, 12:46)  |
-| AMAT      | Oct 07, 12:46 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x AMAT 20-Nov-2026 500 Put /  Buy 1x AMAT 20-Nov-2026 480 Put | Active (Today, 12:46)  |
-| AMD       | Oct 07, 12:46 IST | 🟡 Credit Spread   | 8.0/10    | Sell 1x AMD 20-Nov-2026 615 Put /  Buy 1x AMD 20-Nov-2026 590 Put | Active (Today, 12:46)  |
 
 #### 🇮🇳 Indian Equities
 | Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
 | --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
-| DIVISLAB.NS | Oct 07, 12:48 IST | 🟡 Credit Spread   | 9.2/10    | S1x-Nov-9100PE / B1x-Nov-8900PE | Active (Today, 12:48)  |
-| KOTAKBANK.NS | Oct 07, 12:47 IST | 🟡 Credit Spread   | 8.5/10    | S1x-Nov-420PE / B1x-Nov-410PE | Active (Today, 12:47)  |
 
 <a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
 
@@ -34,7 +22,7 @@
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 102 | 102 | 0 | N/A | N/A | N/A | N/A |
+| 23 | 23 | 0 | **78.4%** | +4.2% | **+34.8%** | -5.2% |
 <!-- MARKET-SNAPSHOT-END -->
 
 [![🇮🇳 Indian Market Dashboard](https://img.shields.io/badge/Market-🇮🇳_India_NSE/BSE-orange?style=for-the-badge)](README_INDIA.md)

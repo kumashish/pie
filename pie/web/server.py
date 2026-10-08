@@ -74,25 +74,24 @@ def _compute_cash_trade_setup(
     entry = round(last_price, 2)
 
     if is_bearish:
-        sl_atr  = round(entry + 1.5 * atr, 2)
-        sl_ema  = round(max(ema20, ema50) * 1.005, 2)
+        sl_atr  = round(entry + 2.0 * atr, 2)
+        sl_ema  = round(max(ema20, ema50) * 1.01, 2)
         stop    = round(min(sl_atr, sl_ema), 2)
-        target1 = round(entry - 1.5 * atr, 2)
-        target2 = round(entry - 3.0 * atr, 2)
+        target1 = round(entry * 0.85, 2)  # -15% Medium-Term Target
+        target2 = round(entry * 0.75, 2)  # -25% Macro Target (20-30% range)
         direction = "Short / Sell"
     else:
-        sl_atr  = round(entry - 1.5 * atr, 2)
-        sl_ema  = round(min(ema20, ema50) * 0.995, 2)
+        sl_atr  = round(entry - 2.0 * atr, 2)
+        sl_ema  = round(min(ema20, ema50) * 0.99, 2)
         stop    = round(max(sl_atr, sl_ema), 2)
-        target1 = round(entry + 1.5 * atr, 2)
-        target2 = round(entry + 3.0 * atr, 2)
+        target1 = round(entry * 1.15, 2)  # +15% Medium-Term Target 1
+        target2 = round(entry * 1.25, 2)  # +25% Macro Target 2 (20-30% range)
         direction = "Long / Buy"
 
     risk   = round(abs(entry - stop), 2)
     reward = round(abs(target2 - entry), 2)
-    rr     = round(reward / risk, 1) if risk > 0 else 2.0
-    atr_pct = atr / last_price
-    holding_days = 5 if atr_pct > 0.03 else (10 if atr_pct > 0.015 else 20)
+    rr     = round(reward / risk, 1) if risk > 0 else 3.5
+    holding_days = 90  # 3-Month Medium-Term Structural Hold Window
 
     return {
         "direction": direction,
@@ -104,6 +103,7 @@ def _compute_cash_trade_setup(
         "risk_reward": rr,
         "atr14": round(atr, 2),
         "holding_period_days": holding_days,
+        "horizon": "Medium-Term (2-6 Months / Trend Ride)",
     }
 
 
@@ -136,6 +136,10 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
     indicator_engine = IndicatorEngine.default()
     indicators = indicator_engine.calculate(history)
 
+    # Calculate HMM Regime Transition Probabilities
+    from pie.market.indicators.hmm import calculate_hmm_regime
+    hmm_probs = calculate_hmm_regime(history)
+    
     # 4. Evaluate trend & regime
     weights = {
         "ema200": 20.0,
@@ -153,6 +157,11 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
 
     snapshot = SnapshotBuilder().build(sym_upper, history)[-1]
     trend_analysis = trend_engine.analyze(snapshot, indicators, history)
+    
+    # Inject HMM transition probabilities into trend analysis indicator_values
+    trend_analysis.indicator_values["HMM_BULL_PROB"] = hmm_probs["hmm_bull_prob"]
+    trend_analysis.indicator_values["HMM_BEAR_PROB"] = hmm_probs["hmm_bear_prob"]
+    trend_analysis.indicator_values["HMM_NEUTRAL_PROB"] = hmm_probs["hmm_neutral_prob"]
 
     # 5. Select strategy & estimate option trade structure
     recommendation = select_strategy(trend_analysis, iv_rank=min(100.0, max(0.0, ((annualized_vix - 12.0) / 18.0) * 100.0)))
@@ -243,7 +252,7 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
             float(snapshot.last_price),
             indicators,
             trend_analysis.regime.value,
-        ) if _get_trade_category(sym_upper, recommendation.strategy.value) == "cash" else None,
+        ),
         "estimated_trade": {
             "legs": legs_data,
             "max_gain": "Defined Risk / Reward",

@@ -1,12 +1,20 @@
 # 🇮🇳 Indian Markets (NSE / BSE) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 07, 13:05 IST
+**Last Automated Run**: Oct 08, 17:14 IST
 
-> **Global Interleaved Ranking**: All candidate strategies across all target assets evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale**.
+> **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0**).
 
 ---
 
-### 🏆 Top Interleaved Multi-Strategy Opportunities (Ranked 1–30)
+## 📈 Part 1: Cash Market (Equity Swing Calls with Entry, Targets & Stop Loss)
+
+| Rank | Symbol | Price | Regime | Score / 10 | Action | Entry | Stop Loss | Target 1 | Target 2 | R:R | Position Status |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| - | *No qualifying setups* | - | - | - | - | - | - | - | - | - | *Score threshold < 7.0* |
+
+---
+
+## ⚡ Part 2: Derivatives Market (Options Spreads, Condors & Futures Leaderboard)
 
 | Rank | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |
@@ -23,29 +31,13 @@
 | **#11** | **KOTAKBANK.NS** | ₹440.30 | Strong Bull | **7.1** | Protected Future | `B1x-Nov-440.3CE / B1x-Nov-420PE` | B (Good) |
 | **#12** | **TATASTEEL.NS** | ₹174.88 | Strong Bear | **7.1** | Credit Spread | `S1x-Nov-185CE / B1x-Nov-190CE` | B (Good) |
 | **#13** | **EICHERMOT.NS** | ₹7,006.00 | Bear | **7.0** | Credit Spread | `S1x-Nov-7400CE / B1x-Nov-7500CE` | B (Good) |
-| **#14** | **HINDALCO.NS** | ₹918.40 | Bear | **7.0** | Credit Spread | `S1x-Nov-965CE / B1x-Nov-985CE` | B (Good) |
-| **#15** | **MARUTI.NS** | ₹11,435.00 | Strong Bear | **7.0** | Credit Spread | `S1x-Nov-12000CE / B1x-Nov-12500CE` | B (Good) |
-| **#16** | **BAJAJ-AUTO.NS** | ₹9,801.00 | Bear | **6.9** | Credit Spread | `S1x-Nov-10300CE / B1x-Nov-10500CE` | B (Good) |
-| **#17** | **GRASIM.NS** | ₹2,932.20 | Bear | **6.8** | Credit Spread | `S1x-Nov-3100CE / B1x-Nov-3150CE` | B (Good) |
-| **#18** | **DIVISLAB.NS** | ₹9,620.00 | Strong Bull | **6.8** | Ratio Put Spread | `B1x-Nov-9600PE / S1x-Nov-9100PE / S1x-Nov-9100PE` | B (Good) |
-| **#19** | **APOLLOHOSP.NS** | ₹7,890.50 | Bear | **6.8** | Credit Spread | `S1x-Nov-8300CE / B1x-Nov-8500CE` | B (Good) |
-| **#20** | **DIVISLAB.NS** | ₹9,620.00 | Strong Bull | **6.8** | Call Debit Spread | `B1x-Nov-9600CE / S1x-Nov-10000CE` | B (Good) |
-| **#21** | **DIVISLAB.NS** | ₹9,620.00 | Strong Bull | **6.8** | Covered Future | `B1x-Nov-9620CE / S1x-Nov-10100CE` | B (Good) |
-| **#22** | **HEROMOTOCO.NS** | ₹5,023.50 | Bear | **6.8** | Iron Condor | `B1x-Nov-4600PE / S1x-Nov-4700PE / S1x-Nov-5300CE / B1x-Nov-5400CE` | B (Good) |
-| **#23** | **KOTAKBANK.NS** | ₹440.30 | Strong Bull | **6.8** | Poor Mans Covered Call | `B1x-Nov-420CE / S1x-Nov-450CE` | B (Good) |
-| **#24** | **M&M.NS** | ₹2,815.00 | Bear | **6.7** | Credit Spread | `S1x-Nov-2950CE / B1x-Nov-3000CE` | B (Good) |
-| **#25** | **DIVISLAB.NS** | ₹9,620.00 | Strong Bull | **6.6** | Wheel | `S1x-Nov-9100PE` | B (Good) |
-| **#26** | **CIPLA.NS** | ₹1,327.90 | Strong Bear | **6.6** | Credit Spread | `S1x-Nov-1400CE / B1x-Nov-1450CE` | B (Good) |
-| **#27** | **BHARTIARTL.NS** | ₹1,851.20 | Bear | **6.6** | Iron Condor | `B1x-Nov-1700PE / S1x-Nov-1750PE / S1x-Nov-1950CE / B1x-Nov-2000CE` | B (Good) |
-| **#28** | **SBIN.NS** | ₹952.20 | Bear | **6.5** | Credit Spread | `S1x-Nov-1000CE / B1x-Nov-1015CE` | B (Good) |
-| **#29** | **BAJAJFINSV.NS** | ₹1,743.90 | Bear | **6.5** | Credit Spread | `S1x-Nov-1850CE / B1x-Nov-1900CE` | B (Good) |
-| **#30** | **BAJFINANCE.NS** | ₹968.90 | Neutral | **6.4** | Butterfly | `B1x-Nov-945CE / S1x-Nov-970CE / S1x-Nov-970CE / B1x-Nov-995CE` | B (Good) |
 
 ---
 
 ### 🛡️ Execution & Exit Guardrails
-- **Target DTE Window**: 30–60 DTE Target Expiration Cycle.
-- **Take Profit**: 50% max profit target for Spreads, Ratio Puts & Futures; 25% for Iron Flies & Jade Lizards.
+- **Cash Swing Exit Rules**: Medium-Term Position (2–6 Months). Target 1 (+15%) triggers partial profit taking & trailing stop loss at EMA20. Target 2 (+25% to 30%) exits full position. Let run as long as trend structure remains intact.
+- **Target DTE Window (Derivatives)**: 30–60 DTE Target Expiration Cycle.
+- **Take Profit (Derivatives)**: 50% max profit target for Spreads, Ratio Puts & Futures; 25% for Iron Flies & Jade Lizards.
 - **21 DTE Review Gate**: Review trade at 21 DTE; close/roll if delta expands past 0.30.
 - **14 DTE Mandatory Exit**: Hard exit at 14 DTE to eliminate gamma pin risk.
 - **1:1 Stop Loss**: Close position if net loss equals 100% of initial credit collected.

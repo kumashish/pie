@@ -162,8 +162,14 @@ def score_all_strategies(
     # Module 11: Volatility Squeeze & Non-Directional Breakout Module
     squeeze_breakout_bonus = 15.0 if (adx is not None and adx < 20.0 and pct_b is not None and 0.42 <= pct_b <= 0.58) else 0.0
 
-    # Module 12: High IV Theta Harvesting Module
-    theta_harvest_bonus = 12.0 if iv_rank >= 55.0 else 0.0
+    # Module 13: Hidden Markov Model (HMM) Regime Transition State Confluence
+    hmm_bull = analysis.indicator_values.get("HMM_BULL_PROB", 0.33)
+    hmm_bear = analysis.indicator_values.get("HMM_BEAR_PROB", 0.33)
+    hmm_neutral = analysis.indicator_values.get("HMM_NEUTRAL_PROB", 0.34)
+
+    hmm_bull_bonus = min(10.0, max(0.0, (hmm_bull - 0.40) * 20.0)) if hmm_bull > 0.40 else 0.0
+    hmm_bear_bonus = min(10.0, max(0.0, (hmm_bear - 0.40) * 20.0)) if hmm_bear > 0.40 else 0.0
+    hmm_neutral_bonus = min(10.0, max(0.0, (hmm_neutral - 0.40) * 20.0)) if hmm_neutral > 0.40 else 0.0
 
     # Sub-metrics
     bullishness = (trend_val / 10.0) * 100.0 if trend_val >= 5.0 else max(0.0, (trend_val - 2.0) * 20.0)
@@ -204,7 +210,7 @@ def score_all_strategies(
 
     # 4. Credit Spread (Bull Put / Bear Call): Preferred Upfront Credit Collection Strategy (Net Credit, Defined Risk)
     cs_directional_pen = (bm_bull_penalty + ema200_bull_pen + ema20_bull_pen) if trend_val >= 5.0 else (bm_bear_penalty + ema200_bear_pen + ema20_bear_pen)
-    cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - cs_directional_pen
+    cs_score = (directional * 0.85) + (iv_premium * 0.40) + adx_boost + rsi_bull_bonus + max(support_bonus, resistance_bonus) + max(weekly_bull_bonus, weekly_bear_bonus) + backtest_edge_bonus + max(overbought_fade_bonus, oversold_fade_bonus) + max(hmm_bull_bonus, hmm_bear_bonus) + credit_preference_bonus + credit_structure_bonus + p_shape_bonus - earnings_penalty - cs_directional_pen
     raw_scores[StrategyType.CREDIT_SPREAD] = (
         (cs_score / 1.55) * confidence_mult,
         "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",

@@ -148,8 +148,10 @@ def get_strategy_display_name(stype: str) -> str:
         return "🟡 Short Strangle"
     if clean in {"collar"}:
         return "🟡 Collar"
-    if clean in {"poor mans covered call", "poor_mans_covered_call"}:
-        return "🟢 Poor Man's Covered Call"
+    if clean in {"cash swing long", "cash_swing_long"}:
+        return "🟢 Cash Swing Long"
+    if clean in {"cash swing short", "cash_swing_short"}:
+        return "🔴 Cash Swing Short"
     return f"🟡 {clean.title()}"
 def get_trade_profile(stype: str) -> str:
     """Return deterministic strategy profile, target DTE, and short delta target."""
