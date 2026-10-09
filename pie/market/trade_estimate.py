@@ -217,9 +217,9 @@ def estimate_trade(
 
     elif recommendation.strategy == StrategyType.IRON_CONDOR:
         p_short = _round_to_increment(spot_price - short_dist, increment)
-        p_long = _round_to_increment(p_short - credit_wing_width, increment)
+        p_long = _round_to_increment(p_short - max(increment, credit_wing_width), increment)
         c_short = _round_to_increment(spot_price + short_dist, increment)
-        c_long = _round_to_increment(c_short + credit_wing_width, increment)
+        c_long = _round_to_increment(c_short + max(increment, credit_wing_width), increment)
         legs = (
             TradeLeg(action="buy", right=OptionRight.PUT, strike=p_long),
             TradeLeg(action="sell", right=OptionRight.PUT, strike=p_short),
@@ -579,6 +579,13 @@ def _strike_increment(symbol: str, spot_price: float = 0.0) -> float:
         return 100.0
     if sym_upper in {"NIFTY_FIN_SERVICE.NS", "FINNIFTY", "^NSEMDCP50", "MIDCAPNIFTY"}:
         return 50.0
+
+    # Specific Indian F&O liquid option strike step rules (prevents illiquid 50-strike intervals on ~₹1200+ stocks)
+    if "DRREDDY" in sym_upper or "BAJFINANCE" in sym_upper:
+        return 100.0  # DRREDDY option chain has major liquidity on 100-point strikes (1000, 1100, 1200, 1300)
+    if "DIVISLAB" in sym_upper or "MARUTI" in sym_upper or "BAJAJ-AUTO" in sym_upper:
+        return 200.0
+
     # Standard US liquid ETFs (SPY, QQQ, XLF, IWM, DIA, etc.) and lower priced stocks
     if sym_upper in {"SPY", "QQQ", "IWM", "DIA", "XLF", "XLE", "XLK", "SOXX"}:
         return 1.0 if spot_price < 100.0 else 5.0

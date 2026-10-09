@@ -1,6 +1,6 @@
 # 🇮🇳 Indian Markets (NSE / BSE) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 09, 11:16 IST
+**Last Automated Run**: Oct 09, 11:34 IST
 
 > **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0**).
 
