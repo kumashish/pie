@@ -1,6 +1,6 @@
 # 🇮🇳 Indian Markets (NSE / BSE) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 08, 17:14 IST
+**Last Automated Run**: Oct 09, 11:16 IST
 
 > **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0**).
 
@@ -19,7 +19,7 @@
 | Rank | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |
 | **#1** | **DRREDDY.NS** | ₹1,199.80 | Neutral | **8.8** | Iron Condor | `B1x-Nov-1100PE / S1x-Nov-1150PE / S1x-Nov-1250CE / B1x-Nov-1300CE` | A (Optimal) |
-| **#2** | **DRREDDY.NS** | ₹1,199.80 | Neutral | **8.4** | Butterfly | `B1x-Nov-1150CE / S1x-Nov-1200CE / S1x-Nov-1200CE / B1x-Nov-1250CE` | A (Optimal) |
+| **#2** | **DRREDDY.NS** | ₹1,199.80 | Neutral | **8.4** | Butterfly | `B1x-Nov-1150CE / S2x-Nov-1200CE / B1x-Nov-1250CE` | A (Optimal) |
 | **#3** | **BAJFINANCE.NS** | ₹968.90 | Neutral | **8.2** | Iron Condor | `B1x-Nov-895PE / S1x-Nov-920PE / S1x-Nov-1020CE / B1x-Nov-1045CE` | A (Optimal) |
 | **#4** | **ADANIENT.NS** | ₹2,797.70 | Neutral | **7.9** | Iron Condor | `B1x-Nov-2600PE / S1x-Nov-2650PE / S1x-Nov-2950CE / B1x-Nov-3000CE` | B (Good) |
 | **#5** | **KOTAKBANK.NS** | ₹440.30 | Strong Bull | **7.8** | Credit Spread | `S1x-Nov-420PE / B1x-Nov-410PE` | B (Good) |

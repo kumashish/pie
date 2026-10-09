@@ -191,8 +191,8 @@ def get_trade_profile(stype: str) -> str:
 
 def format_short_indian_strategy(strategy_str: str) -> str:
     """Shorten strategy leg descriptions for Indian markets (NSE/BSE).
-    Example: 'Sell 1x DIVISLAB.NS 24-Nov-2026 9700 Call / Buy 1x DIVISLAB.NS 24-Nov-2026 9900 Call'
-    Converts to: 'S1x-Nov-9700CE-B1x-Nov-9900CE'
+    Example: 'B1x-Nov-1150CE / S1x-Nov-1200CE / S1x-Nov-1200CE / B1x-Nov-1250CE'
+    Converts to: 'B1x-Nov-1150CE / S2x-Nov-1200CE / B1x-Nov-1250CE'
     """
     import re
     if not strategy_str:
@@ -200,24 +200,73 @@ def format_short_indian_strategy(strategy_str: str) -> str:
 
     # Normalize separators (convert <br> to /)
     raw_clean = strategy_str.replace("<br>", " / ").replace("<br/>", " / ")
-    if "/" not in raw_clean and not re.search(r'(Sell|Buy)\s+\d+x', raw_clean, re.IGNORECASE):
+    if "/" not in raw_clean and not re.search(r'(Sell|Buy|S\d+x|B\d+x)', raw_clean, re.IGNORECASE):
         return strategy_str
 
     parts = raw_clean.split("/")
-    short_parts = []
+    parsed_legs = []
+    
     for part in parts:
         part = part.strip()
-        # Regex match: Action Qty Symbol Expiration Strike OptionType
-        match = re.search(r'(Sell|Buy)\s+(\d+x)\s+\S+\s+(?:\d+-)?([A-Za-z]+)-\d{4}\s+(\d+(?:\.\d+)?)\s+(Call|Put|CE|PE)', part, re.IGNORECASE)
+        # 1) Try matching verbose format: Action Qty Symbol Expiration Strike OptionType
+        match = re.search(r'(Sell|Buy)\s+(\d+)x\s+\S+\s+(?:\d+-)?([A-Za-z]+)-\d{4}\s+(\d+(?:\.\d+)?)\s+(Call|Put|CE|PE)', part, re.IGNORECASE)
         if match:
             action, qty, month, strike, opt_type = match.groups()
             act_code = "S" if action.lower() == "sell" else "B"
             type_code = "CE" if opt_type.lower() in {"call", "ce"} else "PE"
-            # Format integer strike if whole
             strike_val = str(int(float(strike))) if float(strike).is_integer() else strike
-            short_parts.append(f"{act_code}{qty}-{month}-{strike_val}{type_code}")
+            parsed_legs.append({
+                "action": act_code,
+                "qty": int(qty),
+                "month": month,
+                "strike": strike_val,
+                "type": type_code,
+                "raw": part
+            })
+            continue
+
+        # 2) Try matching short format: S1x-Nov-1200CE
+        match_short = re.search(r'([SB])(\d+)x-([A-Za-z]+)-(\d+(?:\.\d+)?)(CE|PE)', part, re.IGNORECASE)
+        if match_short:
+            act_code, qty, month, strike, type_code = match_short.groups()
+            strike_val = str(int(float(strike))) if float(strike).is_integer() else strike
+            parsed_legs.append({
+                "action": act_code.upper(),
+                "qty": int(qty),
+                "month": month,
+                "strike": strike_val,
+                "type": type_code.upper(),
+                "raw": part
+            })
+            continue
+
+        parsed_legs.append({"raw": part})
+
+    # Group adjacent identical legs (same action, month, strike, type)
+    grouped_legs = []
+    for leg in parsed_legs:
+        if "action" not in leg:
+            grouped_legs.append(leg["raw"])
+            continue
+
+        if (
+            grouped_legs
+            and isinstance(grouped_legs[-1], dict)
+            and grouped_legs[-1]["action"] == leg["action"]
+            and grouped_legs[-1]["month"].lower() == leg["month"].lower()
+            and grouped_legs[-1]["strike"] == leg["strike"]
+            and grouped_legs[-1]["type"] == leg["type"]
+        ):
+            grouped_legs[-1]["qty"] += leg["qty"]
         else:
-            short_parts.append(part)
+            grouped_legs.append(leg)
+
+    short_parts = []
+    for item in grouped_legs:
+        if isinstance(item, dict):
+            short_parts.append(f"{item['action']}{item['qty']}x-{item['month']}-{item['strike']}{item['type']}")
+        else:
+            short_parts.append(str(item))
 
     return " / ".join(short_parts)
 
