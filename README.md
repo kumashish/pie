@@ -1,22 +1,31 @@
 <!-- MARKET-SNAPSHOT-START -->
+## 📊 Global Quantitative Snapshot
+
+[![🇮🇳 Indian Market Dashboard](https://img.shields.io/badge/Dashboard-🇮🇳_Indian_Markets_(NSE/BSE)-orange?style=for-the-badge&logo=google-analytics)](README_INDIA.md)
+[![🇺🇸 U.S. Market Dashboard](https://img.shields.io/badge/Dashboard-🇺🇸_U.S._Markets_(NYSE/NASDAQ)-blue?style=for-the-badge&logo=google-analytics)](README_US.md)
+
 ### 🌐 U.S. Macro Benchmark Indices
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
+| :--- | :--- | :--- | :---: | :--- | :--- |
+| - | - | - | - | *No active benchmark signals* | - |
 
 ### 🌐 Indian Macro Benchmark Indices
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
+| :--- | :--- | :--- | :---: | :--- | :--- |
+| - | - | - | - | *No active benchmark signals* | - |
 
 ### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies
 #### 🇺🇸 U.S. Stocks & ETFs
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
+| :--- | :--- | :--- | :---: | :--- | :--- |
+| - | - | - | - | *No high conviction setups (Score ≥ 8.0)* | - |
 
 #### 🇮🇳 Indian Equities
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
+| :--- | :--- | :--- | :---: | :--- | :--- |
+| - | - | - | - | *No high conviction setups (Score ≥ 8.0)* | - |
 
-<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>
+> 📜 **[View All Active & Range Trades (Score < 8.0) ➔](reports/market/all_trades.md)**
 
 
 ### 📈 Signal Performance & Win-Rate Analytics

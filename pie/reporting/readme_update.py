@@ -323,40 +323,55 @@ def generate_readme_snapshot(
     table3_other_trades.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
     table4_exits.sort(key=lambda x: float(x.get("fit_score", 0.0)), reverse=True)
 
-    header = "| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |\n| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |"
+    header = "| Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |\n| :--- | :--- | :--- | :---: | :--- | :--- |"
 
-    output_sections = ["### 🌐 U.S. Macro Benchmark Indices", header]
-    for data in table1_us:
-        updated_time = format_ist_time(data["last_updated"])
-        market = str(data.get("market") or data.get("symbol") or "")
-        stype = str(data.get("strategy_type") or "")
-        strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
-        signal_raw = str(data.get("signal") or "Hold")
-        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
-        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+    output_sections = [
+        "## 📊 Global Quantitative Snapshot",
+        "",
+        "[![🇮🇳 Indian Market Dashboard](https://img.shields.io/badge/Dashboard-🇮🇳_Indian_Markets_(NSE/BSE)-orange?style=for-the-badge&logo=google-analytics)](README_INDIA.md)",
+        "[![🇺🇸 U.S. Market Dashboard](https://img.shields.io/badge/Dashboard-🇺🇸_U.S._Markets_(NYSE/NASDAQ)-blue?style=for-the-badge&logo=google-analytics)](README_US.md)",
+        "",
+        "### 🌐 U.S. Macro Benchmark Indices",
+        header
+    ]
+    
+    if not table1_us:
+        output_sections.append("| - | - | - | - | *No active benchmark signals* | - |")
+    else:
+        for data in table1_us:
+            updated_time = format_ist_time(data["last_updated"])
+            market = str(data.get("market") or data.get("symbol") or "")
+            stype = str(data.get("strategy_type") or "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = f"**{float(data.get('fit_score') or 0.0) / 10.0:.1f}** / 10"
+            strategy = f"`{str(data.get('strategy') or 'No Trade').replace('<br>', ' / ').replace('<br/>', ' / ')}`"
+            signal_raw = str(data.get("signal") or "Hold")
+            since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+            signal_display = "🟢 New" if signal_raw.lower() == "new" else f"⚡ {signal_raw} ({since_text})"
 
-        output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
-        )
+            output_sections.append(
+                f"| **{market}** | {updated_time} | {strat_name} | {fit_badge} | {strategy} | {signal_display} |"
+            )
 
     output_sections.append("\n### 🌐 Indian Macro Benchmark Indices")
     output_sections.append(header)
-    for data in table2_in:
-        updated_time = format_ist_time(data["last_updated"])
-        market = str(data.get("market") or data.get("symbol") or "")
-        stype = str(data.get("strategy_type") or "")
-        strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = format_short_indian_strategy(str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / "))
-        signal_raw = str(data.get("signal") or "Hold")
-        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
-        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+    if not table2_in:
+        output_sections.append("| - | - | - | - | *No active benchmark signals* | - |")
+    else:
+        for data in table2_in:
+            updated_time = format_ist_time(data["last_updated"])
+            market = str(data.get("market") or data.get("symbol") or "")
+            stype = str(data.get("strategy_type") or "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = f"**{float(data.get('fit_score') or 0.0) / 10.0:.1f}** / 10"
+            strategy = f"`{format_short_indian_strategy(str(data.get('strategy') or 'No Trade').replace('<br>', ' / ').replace('<br/>', ' / '))}`"
+            signal_raw = str(data.get("signal") or "Hold")
+            since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+            signal_display = "🟢 New" if signal_raw.lower() == "new" else f"⚡ {signal_raw} ({since_text})"
 
-        output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
-        )
+            output_sections.append(
+                f"| **{market}** | {updated_time} | {strat_name} | {fit_badge} | {strategy} | {signal_display} |"
+            )
 
     output_sections.append("\n### 🎯 High-Conviction (Score ≥ 8.0/10) Strategies")
     
@@ -371,40 +386,46 @@ def generate_readme_snapshot(
 
     output_sections.append("#### 🇺🇸 U.S. Stocks & ETFs")
     output_sections.append(header)
-    for data in us_high:
-        updated_time = format_ist_time(data["last_updated"])
-        market = str(data.get("market") or data.get("symbol") or "")
-        stype = str(data.get("strategy_type") or "")
-        strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / ")
-        signal_raw = str(data.get("signal") or "Hold")
-        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
-        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+    if not us_high:
+        output_sections.append("| - | - | - | - | *No high conviction setups (Score ≥ 8.0)* | - |")
+    else:
+        for data in us_high:
+            updated_time = format_ist_time(data["last_updated"])
+            market = str(data.get("market") or data.get("symbol") or "")
+            stype = str(data.get("strategy_type") or "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = f"**{float(data.get('fit_score') or 0.0) / 10.0:.1f}** / 10"
+            strategy = f"`{str(data.get('strategy') or 'No Trade').replace('<br>', ' / ').replace('<br/>', ' / ')}`"
+            signal_raw = str(data.get("signal") or "Hold")
+            since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+            signal_display = "🟢 New" if signal_raw.lower() == "new" else f"⚡ {signal_raw} ({since_text})"
 
-        output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
-        )
+            output_sections.append(
+                f"| **{market}** | {updated_time} | {strat_name} | {fit_badge} | {strategy} | {signal_display} |"
+            )
 
     output_sections.append("\n#### 🇮🇳 Indian Equities")
     output_sections.append(header)
-    for data in in_high:
-        updated_time = format_ist_time(data["last_updated"])
-        market = str(data.get("market") or data.get("symbol") or "")
-        stype = str(data.get("strategy_type") or "")
-        strat_name = get_strategy_display_name(stype)
-        fit_badge = format_fit_score_badge(float(data.get("fit_score") or 0.0))
-        strategy = format_short_indian_strategy(str(data.get("strategy") or "No Trade").replace("<br>", " / ").replace("<br/>", " / "))
-        signal_raw = str(data.get("signal") or "Hold")
-        since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
-        signal_display = "New" if signal_raw.lower() == "new" else f"{signal_raw} ({since_text})"
+    if not in_high:
+        output_sections.append("| - | - | - | - | *No high conviction setups (Score ≥ 8.0)* | - |")
+    else:
+        for data in in_high:
+            updated_time = format_ist_time(data["last_updated"])
+            market = str(data.get("market") or data.get("symbol") or "")
+            stype = str(data.get("strategy_type") or "")
+            strat_name = get_strategy_display_name(stype)
+            fit_badge = f"**{float(data.get('fit_score') or 0.0) / 10.0:.1f}** / 10"
+            strategy = f"`{format_short_indian_strategy(str(data.get('strategy') or 'No Trade').replace('<br>', ' / ').replace('<br/>', ' / '))}`"
+            signal_raw = str(data.get("signal") or "Hold")
+            since_text, _ = calculate_since(data.get("signal_since") or data["last_updated"], current_time)
+            signal_display = "🟢 New" if signal_raw.lower() == "new" else f"⚡ {signal_raw} ({since_text})"
 
-        output_sections.append(
-            f"| {market:<9} | {updated_time:<9} | {strat_name:<17} | {fit_badge:<9} | {strategy:<17} | {signal_display:<22} |"
-        )
+            output_sections.append(
+                f"| **{market}** | {updated_time} | {strat_name} | {fit_badge} | {strategy} | {signal_display} |"
+            )
 
     output_sections.append(
-        '\n<a href="reports/market/all_trades.md" target="_blank">📜 View All Active & Range Trades (Score < 8.0) ➔</a>\n'
+        '\n> 📜 **[View All Active & Range Trades (Score < 8.0) ➔](reports/market/all_trades.md)**\n'
     )
 
     # Always generate reports/market/all_trades.md for lower score trades divided by market
