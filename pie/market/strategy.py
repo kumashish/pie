@@ -112,8 +112,11 @@ def score_all_strategies(
     weekly_bull_bonus = 5.0 if weekly_bullish else (-5.0 if weekly_bearish else 0.0)
     weekly_bear_bonus = 5.0 if weekly_bearish else (-5.0 if weekly_bullish else 0.0)
 
-    # Module 3: Binary Earnings Event Risk Guardrail
+    # Module 3: Binary Earnings Event Risk Guardrail (Blackout Window Filter)
     earnings_penalty = 0.0
+    news_titles = analysis.indicator_values.get("news_headlines", "")
+    if isinstance(news_titles, str) and any(w in news_titles.lower() for w in ("earnings", "q1", "q2", "q3", "q4", "quarterly results", "financial results")):
+        earnings_penalty = 30.0  # Heavily penalize or disqualify option spreads 14 days prior to earnings
 
     # Module 4: Sector Relative Strength (Relative Momentum vs Benchmark)
     rs_bull_bonus = 3.0 if (rsi is not None and 50.0 <= rsi <= 65.0 and trend_val >= 7.5) else 0.0
@@ -171,6 +174,10 @@ def score_all_strategies(
     hmm_bear_bonus = min(10.0, max(0.0, (hmm_bear - 0.40) * 20.0)) if hmm_bear > 0.40 else 0.0
     hmm_neutral_bonus = min(10.0, max(0.0, (hmm_neutral - 0.40) * 20.0)) if hmm_neutral > 0.40 else 0.0
 
+    # HMM Disagreement Penalties (if HMM conflicts with classical trend regime)
+    hmm_bull_disagreement_pen = 15.0 if (trend_val >= 6.5 and hmm_bear >= 0.45) else 0.0
+    hmm_bear_disagreement_pen = 15.0 if (trend_val <= 3.5 and hmm_bull >= 0.45) else 0.0
+
     # Sub-metrics
     bullishness = (trend_val / 10.0) * 100.0 if trend_val >= 5.0 else max(0.0, (trend_val - 2.0) * 20.0)
     bearishness = ((10.0 - trend_val) / 10.0) * 100.0 if trend_val <= 5.0 else max(0.0, (8.0 - trend_val) * 20.0)
@@ -185,17 +192,18 @@ def score_all_strategies(
     # Explicit Upfront Credit Collection Preference (+12.0 pts boost for net credit strategies)
     credit_preference_bonus = 12.0
     credit_structure_bonus = 8.0   # Enhanced score bonus for defined-risk 30-60 DTE credit structures
+    theta_harvest_bonus = 10.0      # Bonus for positive theta decay credit strategies
     naked_trade_penalty = 25.0     # Penalty for naked options or unhedged trades to manage tail risk
 
     # 1. Call Debit Spread: Bullish Trend or Oversold Dip Bounce (Net Debit)
-    cds_score = (bullishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm + p_shape_bonus - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen
+    cds_score = (bullishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bull_bonus + bb_upper_bonus + support_bonus + weekly_bull_bonus + rs_bull_bonus + atr_safety_bonus + backtest_edge_bonus + alpha_bonus + vol_compression_bonus + oversold_fade_bonus + ema_bull_confirm + p_shape_bonus - alpha_lag_penalty - earnings_penalty - bm_bull_penalty - ema200_bull_pen - ema20_bull_pen - hmm_bull_disagreement_pen
     raw_scores[StrategyType.CALL_DEBIT_SPREAD] = (
         (cds_score / 1.45) * confidence_mult,
         "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
     )
 
     # 2. Put Debit Spread: Bearish Trend or Overbought Exhaustion Fade (Net Debit)
-    pds_score = (bearishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen
+    pds_score = (bearishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen - hmm_bear_disagreement_pen
     raw_scores[StrategyType.PUT_DEBIT_SPREAD] = (
         (pds_score / 1.45) * confidence_mult,
         "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",

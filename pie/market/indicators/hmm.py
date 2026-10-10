@@ -21,6 +21,11 @@ def calculate_hmm_regime(df: pl.DataFrame, n_states: int = 3) -> dict[str, float
         return {"hmm_bull_prob": 0.33, "hmm_bear_prob": 0.33, "hmm_neutral_prob": 0.34}
 
     try:
+        from hmmlearn.hmm import GaussianHMM
+    except ImportError:
+        return {"hmm_bull_prob": 0.33, "hmm_bear_prob": 0.33, "hmm_neutral_prob": 0.34}
+
+    try:
         close = df["close"].to_numpy()
         returns = np.diff(np.log(close))
         volatility = np.abs(returns)
@@ -60,5 +65,6 @@ def calculate_hmm_regime(df: pl.DataFrame, n_states: int = 3) -> dict[str, float
             "hmm_neutral_prob": round(neutral_p, 3),
         }
     except Exception as e:
-        logger.warning("hmm_calculation_failed", error=str(e))
+        logger.warning(f"hmm_calculation_failed: {e}")
         return {"hmm_bull_prob": 0.33, "hmm_bear_prob": 0.33, "hmm_neutral_prob": 0.34}
+

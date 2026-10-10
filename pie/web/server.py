@@ -163,6 +163,14 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
     trend_analysis.indicator_values["HMM_BEAR_PROB"] = hmm_probs["hmm_bear_prob"]
     trend_analysis.indicator_values["HMM_NEUTRAL_PROB"] = hmm_probs["hmm_neutral_prob"]
 
+    # Fetch news headlines for Earnings Event Risk Guardrail
+    try:
+        articles = StockNewsProvider.fetch_news(sym_upper)
+        headlines_combined = " ".join([a.title for a in articles])
+        trend_analysis.indicator_values["news_headlines"] = headlines_combined
+    except Exception:
+        trend_analysis.indicator_values["news_headlines"] = ""
+
     # 5. Select strategy & estimate option trade structure
     recommendation = select_strategy(trend_analysis, iv_rank=min(100.0, max(0.0, ((annualized_vix - 12.0) / 18.0) * 100.0)))
     # Extract ATR14 / EMA20 / EMA50 for cash swing stop/target computation
