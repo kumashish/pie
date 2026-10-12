@@ -155,13 +155,22 @@ def estimate_trade(
     atr14: float | None = None,
     ema20: float | None = None,
     ema50: float | None = None,
+    trend_score: float | None = None,
 ) -> EstimatedTrade | None:
     """Estimate a debit spread from live spot/VIX inputs, without option pricing."""
     if recommendation.strategy == StrategyType.NO_TRADE:
         return None
 
     today = as_of or date.today()
-    expiration = _select_expiration(today, recommendation.strategy, symbol)
+    expiration = _select_expiration(
+        today,
+        recommendation.strategy,
+        symbol,
+        annualized_vix=annualized_vix,
+        atr14=atr14,
+        spot_price=spot_price,
+        trend_score=trend_score,
+    )
     days_to_expiry = (expiration - today).days
     expected_move = spot_price * (annualized_vix / 100.0) * math.sqrt(days_to_expiry / 365.0)
     increment = _strike_increment(symbol, spot_price)
@@ -504,6 +513,10 @@ def _select_expiration(
     today: date,
     strategy: StrategyType = StrategyType.CALL_DEBIT_SPREAD,
     symbol: str = "",
+    annualized_vix: float = 15.0,
+    atr14: float | None = None,
+    spot_price: float = 0.0,
+    trend_score: float | None = None,
 ) -> date:
     cfg = STRATEGY_DTE_CONFIGS.get(strategy, {"target": 37, "min": 30, "max": 45})
     target_dte = cfg["target"]
@@ -511,6 +524,27 @@ def _select_expiration(
     max_dte = cfg["max"]
 
     sym_upper = symbol.upper()
+    is_nifty = sym_upper in {"^NSEI", "NIFTY", "NIFTY 50", "NIFTY50"}
+    
+    # Dynamic DTE Selection for NIFTY based on volatility, recent momentum & best opportunity
+    if is_nifty:
+        # High Volatility (VIX > 18 or ATR expansion): shorter 7-21 DTE to capture rapid theta or fast directional momentum
+        # Normal Volatility (13 <= VIX <= 18): optimal 14-35 DTE for balance of risk/reward and theta curve slope
+        # Low Volatility (VIX < 13): 28-45 DTE to give trades adequate time to develop
+        if annualized_vix > 18.0 or (atr14 is not None and spot_price > 0 and (atr14 / spot_price) > 0.015):
+            target_dte = 14
+            min_dte = 7
+            max_dte = 24
+        elif annualized_vix < 13.0:
+            target_dte = 35
+            min_dte = 21
+            max_dte = 45
+        else:
+            # Optimal opportunity window: 14 to 30 days DTE has steepest theta decay per unit of gamma
+            target_dte = 21
+            min_dte = 10
+            max_dte = 35
+
     is_us = sym_upper in {"SPY", "QQQ"} or (bool(symbol) and not symbol.endswith(".NS") and not symbol.endswith(".BO") and not symbol.startswith("^NSE"))
     is_bse = symbol.endswith(".BO") or sym_upper.startswith("^BSE")
 
@@ -527,10 +561,20 @@ def _select_expiration(
         expirations.extend(_last_thursday(today.year + 2, month) for month in range(1, 13))
         target_weekday = 3  # Thursday
     else:
-        # India (NSE): Last Tuesday of every month (SEBI / NSE Rule)
-        expirations = [_last_tuesday(today.year, month) for month in range(1, 13)]
-        expirations.extend(_last_tuesday(today.year + 1, month) for month in range(1, 13))
-        expirations.extend(_last_tuesday(today.year + 2, month) for month in range(1, 13))
+        # India (NSE): Expirations
+        # For NIFTY, include weekly Tuesday expirations as well as monthly expirations to access best opportunity DTE
+        expirations = []
+        if is_nifty:
+            # Generate weekly Tuesdays for the next 120 days
+            cur = today
+            for _ in range(120):
+                if cur.weekday() == 1 and cur >= today:  # Tuesday
+                    expirations.append(cur)
+                cur += timedelta(days=1)
+        else:
+            expirations = [_last_tuesday(today.year, month) for month in range(1, 13)]
+            expirations.extend(_last_tuesday(today.year + 1, month) for month in range(1, 13))
+            expirations.extend(_last_tuesday(today.year + 2, month) for month in range(1, 13))
         target_weekday = 1  # Tuesday
 
     eligible = [

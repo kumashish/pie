@@ -190,6 +190,7 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         atr14=_atr14_val,
         ema20=_ema20_val,
         ema50=_ema50_val,
+        trend_score=trend_analysis.trend_score.value,
     )
 
     # Format indicators
@@ -316,6 +317,7 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
                             atr14=_atr14_val,
                             ema20=_ema20_val,
                             ema50=_ema50_val,
+                            trend_score=trend_analysis.trend_score.value,
                         )
                     )
                 )(StrategyRecommendation(strategy=stype, actionable=True, rationale=fit.rationale)),
