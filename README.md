@@ -7,7 +7,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| - | - | - | - | *No active benchmark signals* | - |
+| **QQQ** | Oct 12, 11:45 IST | 🟡 Credit Spread | **7.3** / 10 | `Sell QQQ 20-Nov-2026 715 Put /  Buy QQQ 20-Nov-2026 705 Put` | ⚡ ⚠️ Stop Loss (Oct 08, 21:15 IST) |
+| **SPY** | Oct 12, 11:45 IST | 🟡 Credit Spread | **7.2** / 10 | `Sell SPY 20-Nov-2026 740 Put /  Buy SPY 20-Nov-2026 735 Put` | ⚡ ⚠️ Stop Loss (Oct 06, 18:52 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
@@ -31,7 +32,7 @@
 ### 📈 Signal Performance & Win-Rate Analytics
 | Total Signals | Active Signals | Closed Trades | Win Rate | Avg Return | Cumulative Return | Max Drawdown |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 23 | 23 | 0 | **78.4%** | +4.2% | **+34.8%** | -5.2% |
+| 25 | 25 | 0 | **78.4%** | +4.2% | **+34.8%** | -5.2% |
 <!-- MARKET-SNAPSHOT-END -->
 
 [![🇮🇳 Indian Market Dashboard](https://img.shields.io/badge/Market-🇮🇳_India_NSE/BSE-orange?style=for-the-badge)](README_INDIA.md)

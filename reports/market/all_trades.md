@@ -1,9 +1,9 @@
 # 📜 Active & Range-Bound Strategies (Score < 8.0/10)
 
 ### 🇺🇸 U.S. Stocks & ETFs
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
+| :--- | :--- | :--- | :---: | :--- | :--- |
 
 ### 🇮🇳 Indian Equities
-| Market    | Updated   | Regime            | Score     | Strategy          | Signal                 |
-| --------- | --------- | ----------------- | --------- | ----------------- | ---------------------- |
+| Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
+| :--- | :--- | :--- | :---: | :--- | :--- |
