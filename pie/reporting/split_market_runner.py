@@ -85,34 +85,54 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
 
                 # Extract cash swing trade entry if available
                 if cash_setup and price > 0:
-                    score_val = float(data.get("fit_score", 0.0))
-                    # Extract specific cash swing strategy score if present
-                    if ranked_strats:
-                        for st in ranked_strats:
-                            if st.get("strategy_type") in {"cash_swing_long", "cash_swing_short"}:
-                                score_val = float(st.get("score", score_val))
-                                break
+                    # Look up persistent state tracking for original entry price and start date
+                    state_file = Path("state") / f"{sym.replace('^', '').replace('/', '_')}.json"
+                    saved_state = {}
+                    if state_file.exists():
+                        try:
+                            saved_state = json.loads(state_file.read_text(encoding="utf-8"))
+                        except Exception:
+                            pass
+
+                    # Prefer overall trend_score for cash swing trade conviction
+                    score_val = float(data.get("trend_score", data.get("fit_score", 0.0))) * 10.0 if float(data.get("trend_score", 0.0)) > 0 else float(data.get("fit_score", 0.0))
                     c_direction = cash_setup.get("direction", "Long / Buy")
-                    c_entry = cash_setup.get("entry", price)
-                    c_sl = cash_setup.get("stop_loss", price * 0.95)
-                    c_t1 = cash_setup.get("target_1", price * 1.15)
-                    c_t2 = cash_setup.get("target_2", price * 1.25)
+                    
+                    # If this symbol had an active ongoing trade, preserve original entry
+                    orig_entry = saved_state.get("cash_entry")
+                    if orig_entry and float(orig_entry) > 0:
+                        c_entry = float(orig_entry)
+                    else:
+                        c_entry = float(cash_setup.get("entry", price))
+                        # Persist entry price so subsequent runs track ongoing performance
+                        saved_state["cash_entry"] = c_entry
+                        saved_state["cash_direction"] = c_direction
+                        state_file.write_text(json.dumps(saved_state, indent=2), encoding="utf-8")
+
+                    c_sl = float(cash_setup.get("stop_loss", c_entry * 0.95))
+                    c_t1 = float(cash_setup.get("target_1", c_entry * 1.15))
+                    c_t2 = float(cash_setup.get("target_2", c_entry * 1.25))
                     c_rr = cash_setup.get("risk_reward", 3.5)
                     
-                    # Status logic: Check if price breached target or stop loss
-                    status = "🟢 Active"
+                    # Status logic: Check ongoing performance vs target/SL
+                    gain_pct = ((price - c_entry) / c_entry) * 100.0 if "Long" in c_direction else ((c_entry - price) / c_entry) * 100.0
+                    
                     if c_direction.startswith("Long") and price >= c_t2:
-                        status = "🎯 Target 2 Reached (Closed)"
+                        status = f"🎯 Target 2 Reached (+{gain_pct:.1f}%)"
                     elif c_direction.startswith("Long") and price >= c_t1:
-                        status = "✅ Target 1 Reached (Trailing SL)"
+                        status = f"✅ Target 1 Reached (+{gain_pct:.1f}% / Trailing SL)"
                     elif c_direction.startswith("Long") and price <= c_sl:
-                        status = "🛑 Stop Loss Hit (Closed)"
+                        status = f"🛑 Stop Loss Hit ({gain_pct:.1f}%)"
                     elif c_direction.startswith("Short") and price <= c_t2:
-                        status = "🎯 Target 2 Reached (Closed)"
+                        status = f"🎯 Target 2 Reached (+{gain_pct:.1f}%)"
                     elif c_direction.startswith("Short") and price <= c_t1:
-                        status = "✅ Target 1 Reached (Trailing SL)"
+                        status = f"✅ Target 1 Reached (+{gain_pct:.1f}% / Trailing SL)"
                     elif c_direction.startswith("Short") and price >= c_sl:
-                        status = "🛑 Stop Loss Hit (Closed)"
+                        status = f"🛑 Stop Loss Hit ({gain_pct:.1f}%)"
+                    elif gain_pct > 0:
+                        status = f"🟢 Ongoing (+{gain_pct:.1f}%)"
+                    else:
+                        status = f"🟢 Ongoing ({gain_pct:.1f}%)"
 
                     cash_entries.append({
                         "symbol": sym,
