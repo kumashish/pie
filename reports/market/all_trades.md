@@ -15,8 +15,8 @@
 | AMD       | Oct 14, 10:16 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x AMD 20-Nov-2026 570 Put /  Buy 1x AMD 20-Nov-2026 545 Put | New                    |
 | JPM       | Oct 14, 10:16 IST | 🟡 Iron Condor     | 7.0/10    | Buy 1x JPM 20-Nov-2026 310 Put /  Sell 1x JPM 20-Nov-2026 315 Put /  Sell 1x JPM 20-Nov-2026 345 Call /  Buy 1x JPM 20-Nov-2026 350 Call | New                    |
 | XLE       | Oct 14, 10:15 IST | 🟡 Iron Condor     | 7.0/10    | Buy 1x XLE 20-Nov-2026 63 Put /  Sell 1x XLE 20-Nov-2026 64 Put /  Sell 1x XLE 20-Nov-2026 70 Call /  Buy 1x XLE 20-Nov-2026 71 Call | New                    |
-| META      | Oct 14, 10:16 IST | 🟡 Credit Spread   | 7.0/10    | Sell 1x META 20-Nov-2026 730 Put /  Buy 1x META 20-Nov-2026 705 Put | New                    |
 | MA        | Oct 14, 10:16 IST | 🟡 Iron Condor     | 7.0/10    | Buy 1x MA 20-Nov-2026 565 Put /  Sell 1x MA 20-Nov-2026 575 Put /  Sell 1x MA 20-Nov-2026 635 Call /  Buy 1x MA 20-Nov-2026 645 Call | New                    |
+| META      | Oct 14, 10:16 IST | 🟡 Credit Spread   | 7.0/10    | Sell 1x META 20-Nov-2026 730 Put /  Buy 1x META 20-Nov-2026 705 Put | New                    |
 | GS        | Oct 14, 10:16 IST | 🟡 Iron Condor     | 6.9/10    | Buy 1x GS 20-Nov-2026 820 Put /  Sell 1x GS 20-Nov-2026 845 Put /  Sell 1x GS 20-Nov-2026 935 Call /  Buy 1x GS 20-Nov-2026 960 Call | New                    |
 | AAPL      | Oct 14, 10:16 IST | 🟡 Credit Spread   | 6.9/10    | Sell 1x AAPL 20-Nov-2026 325 Put /  Buy 1x AAPL 20-Nov-2026 320 Put | New                    |
 | VOO       | Oct 14, 10:15 IST | 🟡 Credit Spread   | 6.8/10    | Sell 1x VOO 20-Nov-2026 680 Put /  Buy 1x VOO 20-Nov-2026 675 Put | New                    |
@@ -39,8 +39,8 @@
 | INTC      | Oct 14, 10:16 IST | 🟡 Iron Condor     | 5.4/10    | Buy 1x INTC 20-Nov-2026 90 Put /  Sell 1x INTC 20-Nov-2026 95 Put /  Sell 1x INTC 20-Nov-2026 115 Call /  Buy 1x INTC 20-Nov-2026 120 Call | New                    |
 | XLF       | Oct 14, 10:15 IST | 🟡 Iron Condor     | 5.4/10    | Buy 1x XLF 20-Nov-2026 51 Put /  Sell 1x XLF 20-Nov-2026 52 Put /  Sell 1x XLF 20-Nov-2026 58 Call /  Buy 1x XLF 20-Nov-2026 59 Call | New                    |
 | UNH       | Oct 14, 10:17 IST | 🟡 Iron Condor     | 5.3/10    | Buy 1x UNH 20-Nov-2026 350 Put /  Sell 1x UNH 20-Nov-2026 360 Put /  Sell 1x UNH 20-Nov-2026 400 Call /  Buy 1x UNH 20-Nov-2026 410 Call | New                    |
-| XLK       | Oct 14, 10:15 IST | 🟡 Credit Spread   | 5.0/10    | Sell 1x XLK 20-Nov-2026 185 Put /  Buy 1x XLK 20-Nov-2026 180 Put | New                    |
 | AVGO      | Oct 14, 10:16 IST | 🟡 Iron Condor     | 5.0/10    | Buy 1x AVGO 20-Nov-2026 330 Put /  Sell 1x AVGO 20-Nov-2026 340 Put /  Sell 1x AVGO 20-Nov-2026 370 Call /  Buy 1x AVGO 20-Nov-2026 380 Call | New                    |
+| XLK       | Oct 14, 10:15 IST | 🟡 Credit Spread   | 5.0/10    | Sell 1x XLK 20-Nov-2026 185 Put /  Buy 1x XLK 20-Nov-2026 180 Put | New                    |
 | ORCL      | Oct 14, 10:16 IST | 🔴 Cash Swing Short | 4.6/10    | Sell 1x ORCL 20-Nov-2026 143.2 Put | New                    |
 | WFC       | Oct 14, 10:16 IST | 🟡 Iron Condor     | 4.5/10    | Buy 1x WFC 20-Nov-2026 75 Put /  Sell 1x WFC 20-Nov-2026 77 Put /  Sell 1x WFC 20-Nov-2026 85 Call /  Buy 1x WFC 20-Nov-2026 87 Call | New                    |
 | RIOT      | Oct 14, 10:16 IST | 🟡 Iron Condor     | 4.5/10    | Buy 1x RIOT 20-Nov-2026 14 Put /  Sell 1x RIOT 20-Nov-2026 15 Put /  Sell 1x RIOT 20-Nov-2026 19 Call /  Buy 1x RIOT 20-Nov-2026 20 Call | New                    |
@@ -56,8 +56,8 @@
 | GRASIM.NS | Oct 14, 10:18 IST | 🟡 Iron Condor     | 7.2/10    | B1x-Nov-2700PE / S1x-Nov-2750PE / S1x-Nov-3050CE / B1x-Nov-3100CE | New                    |
 | MARUTI.NS | Oct 14, 10:17 IST | 🟡 Credit Spread   | 6.8/10    | S1x-Nov-11800CE / B1x-Nov-12000CE | New                    |
 | HEROMOTOCO.NS | Oct 14, 10:18 IST | 🟡 Credit Spread   | 6.7/10    | S1x-Nov-5200CE / B1x-Nov-5300CE | New                    |
-| HINDALCO.NS | Oct 14, 10:17 IST | 🟡 Iron Condor     | 6.7/10    | B1x-Nov-830PE / S1x-Nov-850PE / S1x-Nov-940CE / B1x-Nov-960CE | New                    |
 | APOLLOHOSP.NS | Oct 14, 10:18 IST | 🟡 Iron Condor     | 6.7/10    | B1x-Nov-7200PE / S1x-Nov-7400PE / S1x-Nov-8200CE / B1x-Nov-8400CE | New                    |
+| HINDALCO.NS | Oct 14, 10:17 IST | 🟡 Iron Condor     | 6.7/10    | B1x-Nov-830PE / S1x-Nov-850PE / S1x-Nov-940CE / B1x-Nov-960CE | New                    |
 | KOTAKBANK.NS | Oct 14, 10:17 IST | 🟡 Protected Future | 6.7/10    | B1x-Nov-443.5CE / B1x-Nov-425PE | New                    |
 | TRENT.NS  | Oct 14, 10:18 IST | 🟡 Iron Condor     | 6.3/10    | B1x-Nov-2750PE / S1x-Nov-2850PE / S1x-Nov-3150CE / B1x-Nov-3250CE | New                    |
 | ADANIENT.NS | Oct 14, 10:17 IST | 🟡 Credit Spread   | 6.2/10    | S1x-Nov-2850CE / B1x-Nov-2950CE | New                    |
@@ -71,8 +71,8 @@
 | M&M.NS    | Oct 14, 10:17 IST | 🟡 Credit Spread   | 5.8/10    | S1x-Nov-3000CE / B1x-Nov-3050CE | New                    |
 | HCLTECH.NS | Oct 14, 10:17 IST | 🟡 Iron Condor     | 5.8/10    | B1x-Nov-1250PE / S1x-Nov-1300PE / S1x-Nov-1400CE / B1x-Nov-1450CE | New                    |
 | NTPC.NS   | Oct 14, 10:17 IST | 🔴 Put Debit Spread | 5.8/10    | B1x-Nov-310PE / S1x-Nov-300PE | New                    |
-| HDFCBANK.NS | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.7/10    | S1x-Nov-714.2PE   | New                    |
 | BHARTIARTL.NS | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.7/10    | S1x-Nov-1804.2PE  | New                    |
+| HDFCBANK.NS | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.7/10    | S1x-Nov-714.2PE   | New                    |
 | ITC.NS    | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.7/10    | S1x-Nov-260.5PE   | New                    |
 | TATASTEEL.NS | Oct 14, 10:18 IST | 🔴 Cash Swing Short | 5.7/10    | S1x-Nov-175.2PE   | New                    |
 | CIPLA.NS  | Oct 14, 10:18 IST | 🟡 Credit Spread   | 5.6/10    | S1x-Nov-1350CE / B1x-Nov-1400CE | New                    |
@@ -81,12 +81,12 @@
 | EICHERMOT.NS | Oct 14, 10:18 IST | 🟡 Iron Condor     | 5.4/10    | B1x-Nov-6700PE / S1x-Nov-6800PE / S1x-Nov-7400CE / B1x-Nov-7500CE | New                    |
 | BAJAJFINSV.NS | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.3/10    | S1x-Nov-1731.8PE  | New                    |
 | BEL.NS    | Oct 14, 10:18 IST | 🔴 Cash Swing Short | 5.2/10    | S1x-Nov-381.7PE   | New                    |
-| HINDUNILVR.NS | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.2/10    | S1x-Nov-1887.7PE  | New                    |
 | BRITANNIA.NS | Oct 14, 10:18 IST | 🔴 Cash Swing Short | 5.2/10    | S1x-Nov-4846.8PE  | New                    |
+| HINDUNILVR.NS | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.2/10    | S1x-Nov-1887.7PE  | New                    |
 | SBIN.NS   | Oct 14, 10:17 IST | 🟡 Credit Spread   | 5.1/10    | S1x-Nov-995CE / B1x-Nov-1010CE | New                    |
+| COALINDIA.NS | Oct 14, 10:18 IST | 🔴 Cash Swing Short | 5.0/10    | S1x-Nov-416.1PE   | New                    |
 | HDFCLIFE.NS | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.0/10    | S1x-Nov-552PE     | New                    |
 | WIPRO.NS  | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 5.0/10    | S1x-Nov-170.6PE   | New                    |
-| COALINDIA.NS | Oct 14, 10:18 IST | 🔴 Cash Swing Short | 5.0/10    | S1x-Nov-416.1PE   | New                    |
 | JSWSTEEL.NS | Oct 14, 10:17 IST | 🟡 Iron Condor     | 5.0/10    | B1x-Nov-1050PE / S1x-Nov-1100PE / S1x-Nov-1200CE / B1x-Nov-1250CE | New                    |
 | TCS.NS    | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 4.9/10    | S1x-Nov-2318.2PE  | New                    |
 | INFY.NS   | Oct 14, 10:17 IST | 🔴 Cash Swing Short | 4.8/10    | S1x-Nov-1088.2PE  | New                    |
