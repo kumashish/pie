@@ -9,11 +9,11 @@
   "confidence_grade": "B",
   "confidence_percentage": 72.5,
   "vix": 15.27,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (67.1% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (67.1% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": {
     "direction": "Long / Buy",
     "entry": 381.32,
@@ -29,18 +29,6 @@
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 355.0,
-        "strike_formatted": "355",
-        "option_type": "Put",
-        "delta": -0.055,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Buy 1x VTI 20-Nov-2026 355 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
         "strike": 360.0,
@@ -53,28 +41,16 @@
         "summary": "Sell 1x VTI 20-Nov-2026 360 Put"
       },
       {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 400.0,
-        "strike_formatted": "400",
-        "option_type": "Call",
-        "delta": 0.196,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Sell 1x VTI 20-Nov-2026 400 Call"
-      },
-      {
         "action": "Buy",
         "quantity": 1,
-        "strike": 405.0,
-        "strike_formatted": "405",
-        "option_type": "Call",
-        "delta": 0.133,
+        "strike": 355.0,
+        "strike_formatted": "355",
+        "option_type": "Put",
+        "delta": -0.055,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 37,
-        "summary": "Buy 1x VTI 20-Nov-2026 405 Call"
+        "summary": "Buy 1x VTI 20-Nov-2026 355 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
@@ -83,8 +59,8 @@
     "margin_required": 15.0,
     "stop_loss_price": 369.88,
     "take_profit_price": 392.76,
-    "net_delta": -0.023,
-    "net_theta": 0.03,
+    "net_delta": 0.04,
+    "net_theta": 0.012,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
@@ -220,79 +196,79 @@
       },
       {
         "price": 402.67,
-        "pnl": -17.67
+        "pnl": -15.0
       },
       {
         "price": 405.72,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 408.78,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 411.83,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 414.88,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 417.93,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 420.98,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 424.03,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 427.08,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 430.13,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 433.18,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 436.23,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 439.28,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 442.33,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 445.38,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 448.43,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 451.48,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 454.53,
-        "pnl": -20.0
+        "pnl": -15.0
       },
       {
         "price": 457.58,
-        "pnl": -20.0
+        "pnl": -15.0
       }
     ],
     "kelly_sizing": {
@@ -306,6 +282,15 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 67.1,
+      "grade": "B (Good)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x VTI 20-Nov-2026 360 Put<br> Buy 1x VTI 20-Nov-2026 355 Put"
+    },
+    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
       "score": 67.1,
@@ -313,15 +298,6 @@
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x VTI 20-Nov-2026 355 Put<br> Sell 1x VTI 20-Nov-2026 360 Put<br> Sell 1x VTI 20-Nov-2026 400 Call<br> Buy 1x VTI 20-Nov-2026 405 Call"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 66.6,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x VTI 20-Nov-2026 360 Put<br> Buy 1x VTI 20-Nov-2026 355 Put"
     },
     {
       "strategy_type": "ratio_put_spread",

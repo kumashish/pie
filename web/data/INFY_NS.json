@@ -1,6 +1,6 @@
 {
   "symbol": "INFY.NS",
-  "last_price": 1075.35,
+  "last_price": 1087.2,
   "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 27.5,
   "confidence_grade": "C",
   "confidence_percentage": 27.5,
-  "vix": 14.47,
+  "vix": 14.57,
   "strategy_type": "cash_swing_short",
   "strategy_display": "Cash Swing Short",
   "trade_profile": "Advisory | 30-45 DTE",
@@ -16,13 +16,13 @@
   "recommendation_reason": "Best fit strategy (47.6% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 1075.35,
-    "stop_loss": 1073.08,
-    "target_1": 914.05,
-    "target_2": 806.51,
-    "risk_per_share": 2.27,
-    "risk_reward": 118.4,
-    "atr14": 25.79,
+    "entry": 1087.2,
+    "stop_loss": 1073.55,
+    "target_1": 924.12,
+    "target_2": 815.4,
+    "risk_per_share": 13.65,
+    "risk_reward": 19.9,
+    "atr14": 26.03,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -31,232 +31,232 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1075.3499755859375,
-        "strike_formatted": "1075.3",
+        "strike": 1087.199951171875,
+        "strike_formatted": "1087.2",
         "option_type": "Put",
-        "delta": -0.444,
+        "delta": -0.445,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
-        "summary": "Sell 1x INFY.NS 24-Nov-2026 1075.3 Put"
+        "summary": "Sell 1x INFY.NS 24-Nov-2026 1087.2 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 38.69,
-    "stop_loss_price": 1067.77,
-    "take_profit_price": 997.97,
-    "net_delta": 0.444,
-    "net_theta": 0.183,
+    "margin_required": 39.04,
+    "stop_loss_price": 1068.24,
+    "take_profit_price": 1009.11,
+    "net_delta": 0.445,
+    "net_theta": 0.187,
     "probability_of_profit": 0.0,
-    "var_95": 78.86,
+    "var_95": 80.35,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 860.28,
-        "pnl": -253.76
+        "price": 869.76,
+        "pnl": -256.48
       },
       {
-        "price": 868.88,
-        "pnl": -245.16
+        "price": 878.46,
+        "pnl": -247.78
       },
       {
-        "price": 877.49,
-        "pnl": -236.55
+        "price": 887.16,
+        "pnl": -239.08
       },
       {
-        "price": 886.09,
-        "pnl": -227.95
+        "price": 895.85,
+        "pnl": -230.39
       },
       {
-        "price": 894.69,
-        "pnl": -219.35
+        "price": 904.55,
+        "pnl": -221.69
       },
       {
-        "price": 903.29,
-        "pnl": -210.75
+        "price": 913.25,
+        "pnl": -212.99
       },
       {
-        "price": 911.9,
-        "pnl": -202.14
+        "price": 921.95,
+        "pnl": -204.29
       },
       {
-        "price": 920.5,
-        "pnl": -193.54
+        "price": 930.64,
+        "pnl": -195.6
       },
       {
-        "price": 929.1,
-        "pnl": -184.94
+        "price": 939.34,
+        "pnl": -186.9
       },
       {
-        "price": 937.71,
-        "pnl": -176.33
+        "price": 948.04,
+        "pnl": -178.2
       },
       {
-        "price": 946.31,
-        "pnl": -167.73
+        "price": 956.74,
+        "pnl": -169.5
       },
       {
-        "price": 954.91,
-        "pnl": -159.13
+        "price": 965.43,
+        "pnl": -160.81
       },
       {
-        "price": 963.51,
-        "pnl": -150.53
+        "price": 974.13,
+        "pnl": -152.11
       },
       {
-        "price": 972.12,
-        "pnl": -141.92
+        "price": 982.83,
+        "pnl": -143.41
       },
       {
-        "price": 980.72,
-        "pnl": -133.32
+        "price": 991.53,
+        "pnl": -134.71
       },
       {
-        "price": 989.32,
-        "pnl": -124.72
+        "price": 1000.22,
+        "pnl": -126.02
       },
       {
-        "price": 997.92,
-        "pnl": -116.12
+        "price": 1008.92,
+        "pnl": -117.32
       },
       {
-        "price": 1006.53,
-        "pnl": -107.51
+        "price": 1017.62,
+        "pnl": -108.62
       },
       {
-        "price": 1015.13,
-        "pnl": -98.91
+        "price": 1026.32,
+        "pnl": -99.92
       },
       {
-        "price": 1023.73,
-        "pnl": -90.31
+        "price": 1035.01,
+        "pnl": -91.23
       },
       {
-        "price": 1032.34,
-        "pnl": -81.7
+        "price": 1043.71,
+        "pnl": -82.53
       },
       {
-        "price": 1040.94,
-        "pnl": -73.1
+        "price": 1052.41,
+        "pnl": -73.83
       },
       {
-        "price": 1049.54,
-        "pnl": -64.5
+        "price": 1061.11,
+        "pnl": -65.13
       },
       {
-        "price": 1058.14,
-        "pnl": -55.9
+        "price": 1069.8,
+        "pnl": -56.44
       },
       {
-        "price": 1066.75,
-        "pnl": -47.29
+        "price": 1078.5,
+        "pnl": -47.74
       },
       {
-        "price": 1075.35,
-        "pnl": -38.69
+        "price": 1087.2,
+        "pnl": -39.04
       },
       {
-        "price": 1083.95,
-        "pnl": -38.69
+        "price": 1095.9,
+        "pnl": -39.04
       },
       {
-        "price": 1092.56,
-        "pnl": -38.69
+        "price": 1104.6,
+        "pnl": -39.04
       },
       {
-        "price": 1101.16,
-        "pnl": -38.69
+        "price": 1113.29,
+        "pnl": -39.04
       },
       {
-        "price": 1109.76,
-        "pnl": -38.69
+        "price": 1121.99,
+        "pnl": -39.04
       },
       {
-        "price": 1118.36,
-        "pnl": -38.69
+        "price": 1130.69,
+        "pnl": -39.04
       },
       {
-        "price": 1126.97,
-        "pnl": -38.69
+        "price": 1139.39,
+        "pnl": -39.04
       },
       {
-        "price": 1135.57,
-        "pnl": -38.69
+        "price": 1148.08,
+        "pnl": -39.04
       },
       {
-        "price": 1144.17,
-        "pnl": -38.69
+        "price": 1156.78,
+        "pnl": -39.04
       },
       {
-        "price": 1152.78,
-        "pnl": -38.69
+        "price": 1165.48,
+        "pnl": -39.04
       },
       {
-        "price": 1161.38,
-        "pnl": -38.69
+        "price": 1174.18,
+        "pnl": -39.04
       },
       {
-        "price": 1169.98,
-        "pnl": -38.69
+        "price": 1182.87,
+        "pnl": -39.04
       },
       {
-        "price": 1178.58,
-        "pnl": -38.69
+        "price": 1191.57,
+        "pnl": -39.04
       },
       {
-        "price": 1187.19,
-        "pnl": -38.69
+        "price": 1200.27,
+        "pnl": -39.04
       },
       {
-        "price": 1195.79,
-        "pnl": -38.69
+        "price": 1208.97,
+        "pnl": -39.04
       },
       {
-        "price": 1204.39,
-        "pnl": -38.69
+        "price": 1217.66,
+        "pnl": -39.04
       },
       {
-        "price": 1212.99,
-        "pnl": -38.69
+        "price": 1226.36,
+        "pnl": -39.04
       },
       {
-        "price": 1221.6,
-        "pnl": -38.69
+        "price": 1235.06,
+        "pnl": -39.04
       },
       {
-        "price": 1230.2,
-        "pnl": -38.69
+        "price": 1243.76,
+        "pnl": -39.04
       },
       {
-        "price": 1238.8,
-        "pnl": -38.69
+        "price": 1252.45,
+        "pnl": -39.04
       },
       {
-        "price": 1247.41,
-        "pnl": -38.69
+        "price": 1261.15,
+        "pnl": -39.04
       },
       {
-        "price": 1256.01,
-        "pnl": -38.69
+        "price": 1269.85,
+        "pnl": -39.04
       },
       {
-        "price": 1264.61,
-        "pnl": -38.69
+        "price": 1278.55,
+        "pnl": -39.04
       },
       {
-        "price": 1273.21,
-        "pnl": -38.69
+        "price": 1287.24,
+        "pnl": -39.04
       },
       {
-        "price": 1281.82,
-        "pnl": -38.69
+        "price": 1295.94,
+        "pnl": -39.04
       },
       {
-        "price": 1290.42,
-        "pnl": -38.69
+        "price": 1304.64,
+        "pnl": -39.04
       }
     ],
     "kelly_sizing": {
@@ -276,12 +276,12 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1075.3PE"
+      "legs_summary": "S1x-Nov-1087.2PE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 40.0,
+      "score": 40.3,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -289,15 +289,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "1035.07",
-    "EMA50": "1062.46",
-    "EMA100": "1107.67",
-    "EMA200": "1204.95",
-    "RSI(14)": "58.74",
-    "ATR(14)": "25.79",
-    "ADX(14)": "23.80",
-    "BB(20,2)": "1.09",
-    "P_SHAPE(20)": "37.25"
+    "EMA20": "1036.20",
+    "EMA50": "1062.92",
+    "EMA100": "1107.90",
+    "EMA200": "1205.06",
+    "RSI(14)": "60.95",
+    "ATR(14)": "26.03",
+    "ADX(14)": "23.91",
+    "BB(20,2)": "1.17",
+    "P_SHAPE(20)": "36.97"
   },
   "rules": [
     {

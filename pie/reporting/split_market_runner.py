@@ -46,8 +46,8 @@ def is_indian_market_open(now_utc: datetime | None = None) -> bool:
         return False
     # IST = UTC + 5:30
     ist_minutes = now_utc.hour * 60 + now_utc.minute + 330
-    # 09:15 IST = 555 mins, 15:30 IST = 930 mins
-    return 555 <= ist_minutes <= 930
+    # 09:15 IST = 555 mins, 15:30 IST = 930 mins (plus 15‑min buffer)
+    return 555 <= ist_minutes <= 945
 
 
 def is_us_market_open(now_utc: datetime | None = None) -> bool:
@@ -281,8 +281,16 @@ def run_scheduled_pipeline() -> None:
     print(f"[{format_ist_time(now)}] Checking Market Hours: India Open={in_open}, US Open={us_open}")
 
     # Generate specialized README pages only for markets that are currently open
+    # Indian market: attempt generation even if closed, but log if market is closed.
     if in_open:
         generate_market_readme("india")
+    else:
+        try:
+            print("[WARN] Indian market closed – attempting fallback generation.")
+            generate_market_readme("india")
+        except Exception as e:
+            print(f"[ERROR] Fallback Indian README generation failed: {e}")
+    # US market: only generate when open
     if us_open:
         generate_market_readme("us")
 

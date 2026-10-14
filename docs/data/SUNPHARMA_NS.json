@@ -1,6 +1,6 @@
 {
   "symbol": "SUNPHARMA.NS",
-  "last_price": 1750.6,
+  "last_price": 1747.7,
   "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 27.5,
   "confidence_grade": "C",
   "confidence_percentage": 27.5,
-  "vix": 14.46,
+  "vix": 14.57,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -16,10 +16,10 @@
   "recommendation_reason": "Best fit strategy (61.0% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 1750.6,
-    "stop_loss": 1807.54,
-    "target_1": 1488.01,
-    "target_2": 1312.95,
+    "entry": 1747.7,
+    "stop_loss": 1804.64,
+    "target_1": 1485.55,
+    "target_2": 1310.78,
     "risk_per_share": 56.94,
     "risk_reward": 7.7,
     "atr14": 28.47,
@@ -34,7 +34,7 @@
         "strike": 1600.0,
         "strike_formatted": "1600",
         "option_type": "Put",
-        "delta": -0.023,
+        "delta": -0.026,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -46,7 +46,7 @@
         "strike": 1650.0,
         "strike_formatted": "1650",
         "option_type": "Put",
-        "delta": -0.087,
+        "delta": -0.094,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -58,7 +58,7 @@
         "strike": 1850.0,
         "strike_formatted": "1850",
         "option_type": "Call",
-        "delta": 0.159,
+        "delta": 0.153,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -70,7 +70,7 @@
         "strike": 1900.0,
         "strike_formatted": "1900",
         "option_type": "Call",
-        "delta": 0.061,
+        "delta": 0.058,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -81,217 +81,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1698.08,
-    "take_profit_price": 1803.12,
-    "net_delta": -0.034,
-    "net_theta": 0.24,
+    "stop_loss_price": 1695.27,
+    "take_profit_price": 1800.13,
+    "net_delta": -0.027,
+    "net_theta": 0.241,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1400.48,
+        "price": 1398.16,
         "pnl": -100.0
       },
       {
-        "price": 1414.48,
+        "price": 1412.14,
         "pnl": -100.0
       },
       {
-        "price": 1428.49,
+        "price": 1426.12,
         "pnl": -100.0
       },
       {
-        "price": 1442.49,
+        "price": 1440.1,
         "pnl": -100.0
       },
       {
-        "price": 1456.5,
+        "price": 1454.09,
         "pnl": -100.0
       },
       {
-        "price": 1470.5,
+        "price": 1468.07,
         "pnl": -100.0
       },
       {
-        "price": 1484.51,
+        "price": 1482.05,
         "pnl": -100.0
       },
       {
-        "price": 1498.51,
+        "price": 1496.03,
         "pnl": -100.0
       },
       {
-        "price": 1512.52,
+        "price": 1510.01,
         "pnl": -100.0
       },
       {
-        "price": 1526.52,
+        "price": 1523.99,
         "pnl": -100.0
       },
       {
-        "price": 1540.53,
+        "price": 1537.98,
         "pnl": -100.0
       },
       {
-        "price": 1554.53,
+        "price": 1551.96,
         "pnl": -100.0
       },
       {
-        "price": 1568.54,
+        "price": 1565.94,
         "pnl": -100.0
       },
       {
-        "price": 1582.54,
+        "price": 1579.92,
         "pnl": -100.0
       },
       {
-        "price": 1596.55,
+        "price": 1593.9,
         "pnl": -100.0
       },
       {
-        "price": 1610.55,
-        "pnl": -89.45
+        "price": 1607.88,
+        "pnl": -92.12
       },
       {
-        "price": 1624.56,
-        "pnl": -75.44
+        "price": 1621.87,
+        "pnl": -78.13
       },
       {
-        "price": 1638.56,
-        "pnl": -61.44
+        "price": 1635.85,
+        "pnl": -64.15
       },
       {
-        "price": 1652.57,
+        "price": 1649.83,
+        "pnl": -50.17
+      },
+      {
+        "price": 1663.81,
         "pnl": -50.0
       },
       {
-        "price": 1666.57,
+        "price": 1677.79,
         "pnl": -50.0
       },
       {
-        "price": 1680.58,
+        "price": 1691.77,
         "pnl": -50.0
       },
       {
-        "price": 1694.58,
+        "price": 1705.76,
         "pnl": -50.0
       },
       {
-        "price": 1708.59,
+        "price": 1719.74,
         "pnl": -50.0
       },
       {
-        "price": 1722.59,
+        "price": 1733.72,
         "pnl": -50.0
       },
       {
-        "price": 1736.6,
+        "price": 1747.7,
         "pnl": -50.0
       },
       {
-        "price": 1750.6,
+        "price": 1761.68,
         "pnl": -50.0
       },
       {
-        "price": 1764.6,
+        "price": 1775.66,
         "pnl": -50.0
       },
       {
-        "price": 1778.61,
+        "price": 1789.64,
         "pnl": -50.0
       },
       {
-        "price": 1792.61,
+        "price": 1803.63,
         "pnl": -50.0
       },
       {
-        "price": 1806.62,
+        "price": 1817.61,
         "pnl": -50.0
       },
       {
-        "price": 1820.62,
+        "price": 1831.59,
         "pnl": -50.0
       },
       {
-        "price": 1834.63,
+        "price": 1845.57,
         "pnl": -50.0
       },
       {
-        "price": 1848.63,
-        "pnl": -50.0
+        "price": 1859.55,
+        "pnl": -59.55
       },
       {
-        "price": 1862.64,
-        "pnl": -62.64
+        "price": 1873.53,
+        "pnl": -73.53
       },
       {
-        "price": 1876.64,
-        "pnl": -76.64
+        "price": 1887.52,
+        "pnl": -87.52
       },
       {
-        "price": 1890.65,
-        "pnl": -90.65
-      },
-      {
-        "price": 1904.65,
+        "price": 1901.5,
         "pnl": -100.0
       },
       {
-        "price": 1918.66,
+        "price": 1915.48,
         "pnl": -100.0
       },
       {
-        "price": 1932.66,
+        "price": 1929.46,
         "pnl": -100.0
       },
       {
-        "price": 1946.67,
+        "price": 1943.44,
         "pnl": -100.0
       },
       {
-        "price": 1960.67,
+        "price": 1957.42,
         "pnl": -100.0
       },
       {
-        "price": 1974.68,
+        "price": 1971.41,
         "pnl": -100.0
       },
       {
-        "price": 1988.68,
+        "price": 1985.39,
         "pnl": -100.0
       },
       {
-        "price": 2002.69,
+        "price": 1999.37,
         "pnl": -100.0
       },
       {
-        "price": 2016.69,
+        "price": 2013.35,
         "pnl": -100.0
       },
       {
-        "price": 2030.7,
+        "price": 2027.33,
         "pnl": -100.0
       },
       {
-        "price": 2044.7,
+        "price": 2041.31,
         "pnl": -100.0
       },
       {
-        "price": 2058.71,
+        "price": 2055.3,
         "pnl": -100.0
       },
       {
-        "price": 2072.71,
+        "price": 2069.28,
         "pnl": -100.0
       },
       {
-        "price": 2086.72,
+        "price": 2083.26,
         "pnl": -100.0
       },
       {
-        "price": 2100.72,
+        "price": 2097.24,
         "pnl": -100.0
       }
     ],
@@ -325,15 +325,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "1802.11",
-    "EMA50": "1843.86",
-    "EMA100": "1850.84",
-    "EMA200": "1823.42",
-    "RSI(14)": "33.05",
+    "EMA20": "1801.83",
+    "EMA50": "1843.75",
+    "EMA100": "1850.79",
+    "EMA200": "1823.39",
+    "RSI(14)": "32.60",
     "ATR(14)": "28.47",
     "ADX(14)": "20.89",
-    "BB(20,2)": "0.14",
-    "P_SHAPE(20)": "45.82"
+    "BB(20,2)": "0.13",
+    "P_SHAPE(20)": "45.78"
   },
   "rules": [
     {
@@ -430,17 +430,17 @@
       "sentiment": "bearish"
     },
     {
-      "title": "Sun Pharma to consider \u20b915,000 crore NCD issue; board meeting on 12 October",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaDNYLUctdnJvdnVZbWZSUmc1XzNiRi1UUXN0enV3aHhrMkJpY3BkTzJpNk1sb3dkN21saWthdUlieWNZMHF1aXZ4dXp3M3dLY2gzVkk1X2ktWE1GT3A2Wk1rUVpVWEJvTWFDT1Vhc3h0NkZZMkw1YW1DOEFLekVJY1RyN2ZMZzI2a0RzcFJTcTh1Rnh6MzFjQnV3eGRjWXV5YkR5d1QyaHJMNnNubW0tOXVyTzJYbk51czZLNk56WnhCcTR5Y0xqTU84UEVobzJXUUNULVlSQV9DOThXckRn0gHkAUFVX3lxTE1rb0ZOZjJob0lRbkZWSk03YUdPSjFQWnZvU2wtV3JyNVVOMEl2UXJKU0VFcXVyRGs2WDUxR3JnbE1ab0FDNkMwU01JVUtLSWo5Tm0xRDAyRm9XMDFERzVKb0dUYUpzNjU5NTJsMXhsZXFuTlByTC1TYUdLbjBVTmljeTkxbDJUelV6by15eHlXOGxQc2oxeTA1WWZIN2hqQWNhc3lLVE1CU2tOUzR2YlRkXzVnRFE1ZEJycUhNYUczYjFpbE9fRktZWjVLalYyOXd2a2xONkxFTkZrUkI5U3BDLVdFNA?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Top stocks to watch today: TCS, Tata Steel, Reliance, Sun Pharma shares in focus on Thursday, 8 October | Full list",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQSzI0Z3FLUjl2MFI0MFdPbzFMTkptN20zLUpUNVpBMzJ2NEF6OFZJZG01YUJ6cXdpcXVkSkhwaGNVZjlscU5nOVZzMUtiNmpyQWp0SVBqNm9LNkMyWEJCb3BPV1RlRWc5Y29sYUtPVUY2MFVlSXQxdlBtZzlNZl9hdmRtSTNfV3EzY2ktelZGU19HT0NTMTJxTzcyN01lOG9pTDNRamdjNEJ2QzRyTlJ1NEZhTnp5ZEhucUVFVk1KRS1VUmxGY19JR0ZpX3FJME1ISWNkQjk1R3FmZmx1RWJjeFdONFFQWElSbXFud090Q0VlMXVqd1h3dDBrMFhvSGFNWVF2aWkxak9lQdIBjwJBVV95cUxQMlVEZ2UxNDE1UkxPeG9EbkFKSG5kelkzM0RYUEZpRGNyeFZTZ3VPb0hrZmx4UTUtOVRyUGs2YUtTbmN0dGtUcGVVUEVEWnVxNWtFMVBEZE9oNWZXbzBuMWVEUlhpT1BpbDFUcDl0OENSYXZsZ3k0OURlc1F1ci11Z3pJZ2ExdHpMU0tzZ2FhNV84dHVTNkRDUFJnWFh5V3pULWhWQUxZV0oyMzNEQWNBNzJoVkxIZXgxdnJNZThBVkRXZFIxRzl5ZFRWdW84YzJzWEpyRVlIOHNiOFFsc2NXRGNLQnZFSVdhU2ViMS1KOUt2cktnY0t4Y05qSm16LVE5YWJ2dDVHU2VPSUNfSjJF?oc=5",
       "published_at": "Thu, 08 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Sun Pharma to consider \u20b915,000 crore NCD issue; board meeting on 12 October",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaDNYLUctdnJvdnVZbWZSUmc1XzNiRi1UUXN0enV3aHhrMkJpY3BkTzJpNk1sb3dkN21saWthdUlieWNZMHF1aXZ4dXp3M3dLY2gzVkk1X2ktWE1GT3A2Wk1rUVpVWEJvTWFDT1Vhc3h0NkZZMkw1YW1DOEFLekVJY1RyN2ZMZzI2a0RzcFJTcTh1Rnh6MzFjQnV3eGRjWXV5YkR5d1QyaHJMNnNubW0tOXVyTzJYbk51czZLNk56WnhCcTR5Y0xqTU84UEVobzJXUUNULVlSQV9DOThXckRn0gHkAUFVX3lxTE1rb0ZOZjJob0lRbkZWSk03YUdPSjFQWnZvU2wtV3JyNVVOMEl2UXJKU0VFcXVyRGs2WDUxR3JnbE1ab0FDNkMwU01JVUtLSWo5Tm0xRDAyRm9XMDFERzVKb0dUYUpzNjU5NTJsMXhsZXFuTlByTC1TYUdLbjBVTmljeTkxbDJUelV6by15eHlXOGxQc2oxeTA1WWZIN2hqQWNhc3lLVE1CU2tOUzR2YlRkXzVnRFE1ZEJycUhNYUczYjFpbE9fRktZWjVLalYyOXd2a2xONkxFTkZrUkI5U3BDLVdFNA?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
       "sentiment": "neutral"
     },
     {
