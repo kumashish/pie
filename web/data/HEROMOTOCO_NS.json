@@ -1,286 +1,273 @@
 {
   "symbol": "HEROMOTOCO.NS",
-  "last_price": 5023.5,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 5018.0,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 3.5,
-  "fit_score": 35.0,
+  "trend_score": 2.0,
+  "fit_score": 20.0,
   "confidence_grade": "C",
-  "confidence_percentage": 35.0,
-  "vix": 13.78,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "confidence_percentage": 20.0,
+  "vix": 14.49,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (67.6% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (67.6% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 5018.0,
+    "stop_loss": 5242.09,
+    "target_1": 4265.3,
+    "target_2": 3763.5,
+    "risk_per_share": 224.09,
+    "risk_reward": 5.6,
+    "atr14": 112.05,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 5200.0,
+        "strike_formatted": "5200",
+        "option_type": "Call",
+        "delta": 0.276,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Sell 1x HEROMOTOCO.NS 24-Nov-2026 5200 Call"
+      },
+      {
         "action": "Buy",
-        "quantity": 1,
-        "strike": 4600.0,
-        "strike_formatted": "4600",
-        "option_type": "Put",
-        "delta": -0.027,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x HEROMOTOCO.NS 24-Nov-2026 4600 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 4700.0,
-        "strike_formatted": "4700",
-        "option_type": "Put",
-        "delta": -0.068,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x HEROMOTOCO.NS 24-Nov-2026 4700 Put"
-      },
-      {
-        "action": "Sell",
         "quantity": 1,
         "strike": 5300.0,
         "strike_formatted": "5300",
         "option_type": "Call",
-        "delta": 0.18,
+        "delta": 0.162,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x HEROMOTOCO.NS 24-Nov-2026 5300 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 5400.0,
-        "strike_formatted": "5400",
-        "option_type": "Call",
-        "delta": 0.099,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x HEROMOTOCO.NS 24-Nov-2026 5400 Call"
+        "dte": 41,
+        "summary": "Buy 1x HEROMOTOCO.NS 24-Nov-2026 5300 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 200.0,
-    "stop_loss_price": 4872.8,
-    "take_profit_price": 5174.2,
-    "net_delta": -0.04,
-    "net_theta": 0.437,
+    "stop_loss_price": 4867.46,
+    "take_profit_price": 5168.54,
+    "net_delta": -0.114,
+    "net_theta": 0.34,
     "probability_of_profit": 0.0,
     "var_95": 100.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 4018.8,
-        "pnl": -300.0
-      },
-      {
-        "price": 4058.99,
-        "pnl": -300.0
-      },
-      {
-        "price": 4099.18,
-        "pnl": -300.0
-      },
-      {
-        "price": 4139.36,
-        "pnl": -300.0
-      },
-      {
-        "price": 4179.55,
-        "pnl": -300.0
-      },
-      {
-        "price": 4219.74,
-        "pnl": -300.0
-      },
-      {
-        "price": 4259.93,
-        "pnl": -300.0
-      },
-      {
-        "price": 4300.12,
-        "pnl": -300.0
-      },
-      {
-        "price": 4340.3,
-        "pnl": -300.0
-      },
-      {
-        "price": 4380.49,
-        "pnl": -300.0
-      },
-      {
-        "price": 4420.68,
-        "pnl": -300.0
-      },
-      {
-        "price": 4460.87,
-        "pnl": -300.0
-      },
-      {
-        "price": 4501.06,
-        "pnl": -300.0
-      },
-      {
-        "price": 4541.24,
-        "pnl": -300.0
-      },
-      {
-        "price": 4581.43,
-        "pnl": -300.0
-      },
-      {
-        "price": 4621.62,
-        "pnl": -278.38
-      },
-      {
-        "price": 4661.81,
-        "pnl": -238.19
-      },
-      {
-        "price": 4702.0,
+        "price": 4014.4,
         "pnl": -200.0
       },
       {
-        "price": 4742.18,
+        "price": 4054.54,
         "pnl": -200.0
       },
       {
-        "price": 4782.37,
+        "price": 4094.69,
         "pnl": -200.0
       },
       {
-        "price": 4822.56,
+        "price": 4134.83,
         "pnl": -200.0
       },
       {
-        "price": 4862.75,
+        "price": 4174.98,
         "pnl": -200.0
       },
       {
-        "price": 4902.94,
+        "price": 4215.12,
         "pnl": -200.0
       },
       {
-        "price": 4943.12,
+        "price": 4255.26,
         "pnl": -200.0
       },
       {
-        "price": 4983.31,
+        "price": 4295.41,
         "pnl": -200.0
       },
       {
-        "price": 5023.5,
+        "price": 4335.55,
         "pnl": -200.0
       },
       {
-        "price": 5063.69,
+        "price": 4375.7,
         "pnl": -200.0
       },
       {
-        "price": 5103.88,
+        "price": 4415.84,
         "pnl": -200.0
       },
       {
-        "price": 5144.06,
+        "price": 4455.98,
         "pnl": -200.0
       },
       {
-        "price": 5184.25,
+        "price": 4496.13,
         "pnl": -200.0
       },
       {
-        "price": 5224.44,
+        "price": 4536.27,
         "pnl": -200.0
       },
       {
-        "price": 5264.63,
+        "price": 4576.42,
         "pnl": -200.0
       },
       {
-        "price": 5304.82,
-        "pnl": -204.82
+        "price": 4616.56,
+        "pnl": -200.0
       },
       {
-        "price": 5345.0,
-        "pnl": -245.0
+        "price": 4656.7,
+        "pnl": -200.0
       },
       {
-        "price": 5385.19,
-        "pnl": -285.19
+        "price": 4696.85,
+        "pnl": -200.0
       },
       {
-        "price": 5425.38,
+        "price": 4736.99,
+        "pnl": -200.0
+      },
+      {
+        "price": 4777.14,
+        "pnl": -200.0
+      },
+      {
+        "price": 4817.28,
+        "pnl": -200.0
+      },
+      {
+        "price": 4857.42,
+        "pnl": -200.0
+      },
+      {
+        "price": 4897.57,
+        "pnl": -200.0
+      },
+      {
+        "price": 4937.71,
+        "pnl": -200.0
+      },
+      {
+        "price": 4977.86,
+        "pnl": -200.0
+      },
+      {
+        "price": 5018.0,
+        "pnl": -200.0
+      },
+      {
+        "price": 5058.14,
+        "pnl": -200.0
+      },
+      {
+        "price": 5098.29,
+        "pnl": -200.0
+      },
+      {
+        "price": 5138.43,
+        "pnl": -200.0
+      },
+      {
+        "price": 5178.58,
+        "pnl": -200.0
+      },
+      {
+        "price": 5218.72,
+        "pnl": -218.72
+      },
+      {
+        "price": 5258.86,
+        "pnl": -258.86
+      },
+      {
+        "price": 5299.01,
+        "pnl": -299.01
+      },
+      {
+        "price": 5339.15,
         "pnl": -300.0
       },
       {
-        "price": 5465.57,
+        "price": 5379.3,
         "pnl": -300.0
       },
       {
-        "price": 5505.76,
+        "price": 5419.44,
         "pnl": -300.0
       },
       {
-        "price": 5545.94,
+        "price": 5459.58,
         "pnl": -300.0
       },
       {
-        "price": 5586.13,
+        "price": 5499.73,
         "pnl": -300.0
       },
       {
-        "price": 5626.32,
+        "price": 5539.87,
         "pnl": -300.0
       },
       {
-        "price": 5666.51,
+        "price": 5580.02,
         "pnl": -300.0
       },
       {
-        "price": 5706.7,
+        "price": 5620.16,
         "pnl": -300.0
       },
       {
-        "price": 5746.88,
+        "price": 5660.3,
         "pnl": -300.0
       },
       {
-        "price": 5787.07,
+        "price": 5700.45,
         "pnl": -300.0
       },
       {
-        "price": 5827.26,
+        "price": 5740.59,
         "pnl": -300.0
       },
       {
-        "price": 5867.45,
+        "price": 5780.74,
         "pnl": -300.0
       },
       {
-        "price": 5907.64,
+        "price": 5820.88,
         "pnl": -300.0
       },
       {
-        "price": 5947.82,
+        "price": 5861.02,
         "pnl": -300.0
       },
       {
-        "price": 5988.01,
+        "price": 5901.17,
         "pnl": -300.0
       },
       {
-        "price": 6028.2,
+        "price": 5941.31,
+        "pnl": -300.0
+      },
+      {
+        "price": 5981.46,
+        "pnl": -300.0
+      },
+      {
+        "price": 6021.6,
         "pnl": -300.0
       }
     ],
@@ -295,70 +282,63 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 67.6,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-4600PE / S1x-Nov-4700PE / S1x-Nov-5300CE / B1x-Nov-5400CE"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 54.7,
-      "grade": "C (Moderate)",
+      "score": 67.6,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-5300CE / B1x-Nov-5400CE"
+      "legs_summary": "S1x-Nov-5200CE / B1x-Nov-5300CE"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 53.2,
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 50.0,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4900CE / S1x-Nov-5000CE / S1x-Nov-5000CE / B1x-Nov-5100CE"
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-4800PE"
     },
     {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 46.8,
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 46.0,
       "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-4900CE / S1x-Nov-5000CE / S1x-Nov-5000CE / B1x-Nov-5300CE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-4700PE / S1x-Nov-4800PE / S1x-Nov-5200CE / B1x-Nov-5300CE"
     },
     {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 43.1,
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 45.3,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-4800PE / S1x-Nov-5000PE / S1x-Nov-5000CE / B1x-Nov-5300CE"
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-5018PE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 43.8,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-5000PE / S1x-Nov-4800PE"
     }
   ],
   "indicators": {
-    "EMA20": "5225.85",
-    "EMA50": "5290.19",
-    "EMA100": "5278.34",
-    "EMA200": "5252.24",
-    "RSI(14)": "34.16",
-    "ATR(14)": "110.83",
-    "ADX(14)": "30.60",
-    "BB(20,2)": "0.04",
-    "P_SHAPE(20)": "54.43"
+    "EMA20": "5115.86",
+    "EMA50": "5226.86",
+    "EMA100": "5246.04",
+    "EMA200": "5236.92",
+    "RSI(14)": "40.59",
+    "ATR(14)": "112.05",
+    "ADX(14)": "39.30",
+    "BB(20,2)": "0.30",
+    "P_SHAPE(20)": "54.70"
   },
   "rules": [
-    {
-      "name": "EMA50 above EMA200",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
     {
       "name": "ADX above 30",
       "passed": true,
@@ -367,7 +347,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -395,6 +382,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "RSI between 50 and 65",
       "passed": false,
       "score": 0.0,
@@ -402,14 +396,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -432,17 +419,10 @@
   ],
   "news": [
     {
-      "title": "Stock Research Report for Hero MotoCorp Ltd",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU2FIRzRDb0x5bUgzSWdaSmZQMTdxeDJfSmdWeDRQQ2lEbVdTR18zTWhwN2V6aGhnWGdtV2N1enNIQW91VmtpZWdJNFpyanJ6NExpQ2c2UlplNnpEYW9SSnBmdTE4cXR2VlhYcnFHbGYzV3lpaWZacVR1RmZMNFl3Ri1jNTdTVmt1Q1RjY2lIZw?oc=5",
-      "published_at": "Wed, 02 Jun 2021",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Hero Motocorp Ltd.",
       "publisher": "Moneycontrol.com",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY0RhaTg0N0VHTXV5bWVMcXJPdDViVzh1ckM2RFBnbXV2UmJndXdoNHg1cTZ1WXdLSDRGdTZDLUZYeEM4Y0l0bjhDWGlReXB2dGhKSVhkMUItd2hOU05FQkxSbWNQS0oycElEYVplYkJMSXE1WXBSd21sQi1EZTJVeFY2QWNTOVNqTHNtTA?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     },
     {
@@ -450,6 +430,13 @@
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRUw3WWRGTFhObklab0I4SmkxM1JjdlBRdlBSd3lkenZ5WW54X0FBanFCZ2pRdE5kZ2RuY29xdmo5UHpqdmc4dl9iZjZFQ0JSNGhyNjItVzE5MGl3MkxTU05VeEJTc1VHNml0QkZTaHdtVkxFOFoyb3NTUGEybkJSS25VODMzdG45?oc=5",
       "published_at": "Wed, 12 Apr 2017",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Hero MotoCorp News - Hero MotoCorp Announcement, Latest News on Hero MotoCorp",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTjBZWDRjb280UExLQkxPQjJFWk54MGYyTHhPOGxHUTRTT2h1UjlBTVF4TWF6TkEzaXpEME84MlIzdVFMdktZbG5RcGxJaGwzWkNOY24yM29DTzJKQjQ3WFpMRXBBUFREMElOeFpmWmJpSVJMYnBQOVlSanBFSHlRaHJqYWtZNk41eVRaMlVNSl8?oc=5",
+      "published_at": "Mon, 05 Oct 2026",
       "sentiment": "neutral"
     },
     {
@@ -467,10 +454,10 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Hero MotoCorp Ltd.",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTjBZWDRjb280UExLQkxPQjJFWk54MGYyTHhPOGxHUTRTT2h1UjlBTVF4TWF6TkEzaXpEME84MlIzdVFMdktZbG5RcGxJaGwzWkNOY24yM29DTzJKQjQ3WFpMRXBBUFREMElOeFpmWmJpSVJMYnBQOVlSanBFSHlRaHJqYWtZNk41eVRaMlVNSl8?oc=5",
-      "published_at": "Thu, 30 Mar 2017",
+      "title": "HEROMOTOCO 27Oct2026",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VOS1UZmdPS0NILU5vSlhqd2JtTlVxTlFaWkdPcG9henNLSHdTeG9Wb0pmQXE4RFhSUU9qNVg4Z05PdnhzUFZMVzIyR3B5NHlacGczRm1fcm5hOVVIa215M1lRT2o2eUxoNGJvdl83MTJSaTVrT2kzZHFJWnh4UQ?oc=5",
+      "published_at": "Sat, 07 Nov 2020",
       "sentiment": "neutral"
     }
   ]

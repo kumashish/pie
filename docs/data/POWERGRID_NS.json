@@ -1,238 +1,265 @@
 {
   "symbol": "POWERGRID.NS",
-  "last_price": 255.3,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 248.45,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.5,
-  "fit_score": 5.0,
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 5.0,
-  "vix": 13.77,
+  "confidence_percentage": 10.0,
+  "vix": 14.48,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (62.4% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (60.7% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 248.45,
+    "stop_loss": 257.82,
+    "target_1": 211.18,
+    "target_2": 186.34,
+    "risk_per_share": 9.37,
+    "risk_reward": 6.6,
+    "atr14": 4.68,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 270.0,
-        "strike_formatted": "270",
+        "strike": 260.0,
+        "strike_formatted": "260",
         "option_type": "Call",
-        "delta": 0.168,
+        "delta": 0.213,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x POWERGRID.NS 24-Nov-2026 270 Call"
+        "dte": 41,
+        "summary": "Sell 1x POWERGRID.NS 24-Nov-2026 260 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 275.0,
-        "strike_formatted": "275",
+        "strike": 265.0,
+        "strike_formatted": "265",
         "option_type": "Call",
-        "delta": 0.092,
+        "delta": 0.117,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x POWERGRID.NS 24-Nov-2026 275 Call"
+        "dte": 41,
+        "summary": "Buy 1x POWERGRID.NS 24-Nov-2026 265 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 247.64,
-    "take_profit_price": 262.96,
-    "net_delta": -0.076,
-    "net_theta": 0.014,
+    "stop_loss_price": 241.0,
+    "take_profit_price": 255.9,
+    "net_delta": -0.096,
+    "net_theta": 0.017,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 204.24,
+        "price": 198.76,
         "pnl": -10.0
       },
       {
-        "price": 206.28,
+        "price": 200.75,
         "pnl": -10.0
       },
       {
-        "price": 208.32,
+        "price": 202.74,
         "pnl": -10.0
       },
       {
-        "price": 210.37,
+        "price": 204.72,
         "pnl": -10.0
       },
       {
-        "price": 212.41,
+        "price": 206.71,
         "pnl": -10.0
       },
       {
-        "price": 214.45,
+        "price": 208.7,
         "pnl": -10.0
       },
       {
-        "price": 216.49,
+        "price": 210.69,
         "pnl": -10.0
       },
       {
-        "price": 218.54,
+        "price": 212.67,
         "pnl": -10.0
       },
       {
-        "price": 220.58,
+        "price": 214.66,
         "pnl": -10.0
       },
       {
-        "price": 222.62,
+        "price": 216.65,
         "pnl": -10.0
       },
       {
-        "price": 224.66,
+        "price": 218.64,
         "pnl": -10.0
       },
       {
-        "price": 226.71,
+        "price": 220.62,
         "pnl": -10.0
       },
       {
-        "price": 228.75,
+        "price": 222.61,
         "pnl": -10.0
       },
       {
-        "price": 230.79,
+        "price": 224.6,
         "pnl": -10.0
       },
       {
-        "price": 232.83,
+        "price": 226.59,
         "pnl": -10.0
       },
       {
-        "price": 234.88,
+        "price": 228.57,
         "pnl": -10.0
       },
       {
-        "price": 236.92,
+        "price": 230.56,
         "pnl": -10.0
       },
       {
-        "price": 238.96,
+        "price": 232.55,
         "pnl": -10.0
       },
       {
-        "price": 241.0,
+        "price": 234.54,
         "pnl": -10.0
       },
       {
-        "price": 243.05,
+        "price": 236.52,
         "pnl": -10.0
       },
       {
-        "price": 245.09,
+        "price": 238.51,
         "pnl": -10.0
       },
       {
-        "price": 247.13,
+        "price": 240.5,
         "pnl": -10.0
       },
       {
-        "price": 249.17,
+        "price": 242.49,
         "pnl": -10.0
       },
       {
-        "price": 251.22,
+        "price": 244.47,
         "pnl": -10.0
       },
       {
-        "price": 253.26,
+        "price": 246.46,
         "pnl": -10.0
       },
       {
-        "price": 255.3,
+        "price": 248.45,
         "pnl": -10.0
       },
       {
-        "price": 257.34,
+        "price": 250.44,
         "pnl": -10.0
       },
       {
-        "price": 259.38,
+        "price": 252.43,
         "pnl": -10.0
       },
       {
-        "price": 261.43,
+        "price": 254.41,
         "pnl": -10.0
       },
       {
-        "price": 263.47,
+        "price": 256.4,
         "pnl": -10.0
       },
       {
-        "price": 265.51,
+        "price": 258.39,
         "pnl": -10.0
       },
       {
-        "price": 267.55,
-        "pnl": -10.0
+        "price": 260.38,
+        "pnl": -10.38
       },
       {
-        "price": 269.6,
-        "pnl": -10.0
+        "price": 262.36,
+        "pnl": -12.36
       },
       {
-        "price": 271.64,
-        "pnl": -11.64
+        "price": 264.35,
+        "pnl": -14.35
       },
       {
-        "price": 273.68,
-        "pnl": -13.68
-      },
-      {
-        "price": 275.72,
+        "price": 266.34,
         "pnl": -15.0
       },
       {
-        "price": 277.77,
+        "price": 268.33,
         "pnl": -15.0
       },
       {
-        "price": 279.81,
+        "price": 270.31,
         "pnl": -15.0
       },
       {
-        "price": 281.85,
+        "price": 272.3,
         "pnl": -15.0
       },
       {
-        "price": 283.89,
+        "price": 274.29,
         "pnl": -15.0
       },
       {
-        "price": 285.94,
+        "price": 276.28,
         "pnl": -15.0
       },
       {
-        "price": 287.98,
+        "price": 278.26,
         "pnl": -15.0
       },
       {
-        "price": 290.02,
+        "price": 280.25,
         "pnl": -15.0
       },
       {
-        "price": 292.06,
+        "price": 282.24,
         "pnl": -15.0
       },
       {
-        "price": 294.11,
+        "price": 284.23,
+        "pnl": -15.0
+      },
+      {
+        "price": 286.21,
+        "pnl": -15.0
+      },
+      {
+        "price": 288.2,
+        "pnl": -15.0
+      },
+      {
+        "price": 290.19,
+        "pnl": -15.0
+      },
+      {
+        "price": 292.18,
+        "pnl": -15.0
+      },
+      {
+        "price": 294.16,
         "pnl": -15.0
       },
       {
@@ -240,30 +267,14 @@
         "pnl": -15.0
       },
       {
-        "price": 298.19,
-        "pnl": -15.0
-      },
-      {
-        "price": 300.23,
-        "pnl": -15.0
-      },
-      {
-        "price": 302.28,
-        "pnl": -15.0
-      },
-      {
-        "price": 304.32,
-        "pnl": -15.0
-      },
-      {
-        "price": 306.36,
+        "price": 298.14,
         "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.718,
+      "win_probability": 0.712,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2462,
+      "half_kelly_fraction": 0.2408,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,43 +284,57 @@
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 62.4,
+      "score": 60.7,
       "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-270CE / B1x-Nov-275CE"
+      "legs_summary": "S1x-Nov-260CE / B1x-Nov-265CE"
     },
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 62.3,
+      "score": 60.5,
       "grade": "B (Good)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-255PE / S1x-Nov-245PE"
+      "legs_summary": "B1x-Nov-250PE / S1x-Nov-240PE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 59.8,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-255.3PE"
+      "legs_summary": "S1x-Nov-248.4PE"
     }
   ],
   "indicators": {
-    "EMA20": "261.45",
-    "EMA50": "267.53",
-    "EMA100": "274.72",
-    "EMA200": "280.92",
-    "RSI(14)": "36.99",
-    "ATR(14)": "4.25",
-    "ADX(14)": "14.45",
-    "BB(20,2)": "0.16",
-    "P_SHAPE(20)": "49.21"
+    "EMA20": "256.23",
+    "EMA50": "264.00",
+    "EMA100": "272.17",
+    "EMA200": "279.31",
+    "RSI(14)": "35.52",
+    "ATR(14)": "4.68",
+    "ADX(14)": "21.10",
+    "BB(20,2)": "0.19",
+    "P_SHAPE(20)": "53.91"
   },
   "rules": [
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
@@ -360,20 +385,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -390,45 +401,45 @@
   ],
   "news": [
     {
-      "title": "Akhilesh Pathak assumes charge as POWERGRID Director (Projects)",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWjVuMG41TmgwaTJrSEhmU3lPT1V6SE5ic2NmSmNfYzV5SEwzNHhjVWM3SzlWTzhzLUlWVk1Lemh6c1NESy0tbDNkRFdvSDQtUmFpeGRTUDN3ZW05YUIyVVlzWTFJU0xWNEhLQnlvZHlpdWxMRUY3andkTzdkb3RvUjFUY1RvQXpyVi03ZnZQTnNGSU5YeUR4MGtZdG42RzloYV83QVhJR2N3UHZwVm5EYlBn?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE53b3R5Vk9wMzdTYWt6MjN6TkludVNEMDFLaGV6TmZEYU0zZEpId1REZ0s3YXp6M015UVp4QUFJNTl6eXFSMzJCY3ZRYmh0c1c0MjRvdU02S1hEeHRQc0QzdkxlTFRJLTB6bFNxTDhIUXhVYldzTU83aGdB?oc=5",
-      "published_at": "Sat, 03 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Akhilesh Pathak assumes charge as Director (Projects), POWERGRID",
-      "publisher": "ET Government",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNV2ktR1h3bXlzVUVTeXRDTE1aNWRDckoyQTM1OFpuVldsVzZVeG1JVG01TURTbTI2NUVRX3hrdWk2T05ldF9KMUZ3bGZOQkdDc1ZMNzNEcS1NRjliZmZVTzRnakVPN1UxemZBWUtUNzBGcS01dWpTeHJuaWMtZ2pnUHBzc1BFNmlaRzJzcHZLMWpjc1I0aWF2Sk40Z1B4LXB4YXRUN1ZROEFrc01iVlc3eVR1Y0V0X1RjdzQzVTd5dk1heGNBVzFJ0gHMAUFVX3lxTE1mYktJbkdQVHRRdmZtUGNxVW9aRTVuRVROeUZSazh5dGt1WlVpUGpFT2NYY01qeHBJNlpNbFhkekNsNTJqZ3FvOUNuY0V0ZFpNNEN5eHBuYnVWaTA3YllzUDBNQTFoRmV1Rzk5c3VZZk9SR2lDNjVmWVhpdzc5aURxY3ptQlRtUnZ2U3ZYMTZWbXpPcTRXY3NCZW1NZ0ItV3hFdmpJS1NwY1dDbFBHMDRvMEFyYVJtNE1IeFpXNlAwMWM5c0xfa1JHN3hneA?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "India's \u20b91.86 trillion grid plan: Motilal Oswal puts Power Grid, Adani Energy, Torrent and 3 more stocks in focus",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQaDhKcEpVdjlmZDFtMG1tYXpjSHBoWk9aZS0ySE1lWHU3anNNQ2JOTlhVZnhYeDVYc1hzRm1RX1BmbHM3cl9td3ZmVzVoZHJHVm9MM2l6UGQ2bEc4SlQ5cTBTZkJCSmJvRy1XbXI0WWFNQWtSdlRrbnB5Q3Iya1RWa2hoczVYWlVEdlBXRk1CTjU0MWp5eWpvS3hYOEZKTUpZcUFHRXFyd3BVVEtGbTZJM2R5bWhNV1FSbzBqYkl1UWFSOUNKWFVzLU1qMUxxLWJjTG5yRTczc2tfUUR6akoxeTRWb2hWb2E1Q1N2VmgzekZLS3FWMUhCSENGb09XdUlsM2hqTzhSY1RTclpsX092ag?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Power stocks fall despite \u20b91.86 lakh crore PM-DHARA scheme: Tata Power, Adani Power, NTPC, Power Grid in focus",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQd1lNLS1fZDN6UkM5Z09fbEx6VUR2Y2xZM0g1c2lNNFJfNEx3bl9TTUh2N1FZMk9rNmluTWNOLUdFeGpQYVJ6MlpsMFNtNzFWazNEa0xRaVFWY1dJUnNWRXJKVDlnUy1CVWVSclFjLVR0cEtYV1N3OWZVcDd4SExVU3l5Qy14SkxONGJST2JVWmdlXzlGNThzY19rbERVbEJ6M0pUV2NJSlNIZlllLVozTUhwcWZuZlN6bWU2RGl1T3kwTTA0VEtzZW13Zl9WS0p5bnJ0V2FNakRYRVU1aWxITldHY3NpWHlhdjZIaW5mWTViY2liWjFIMGNkZnJOMXM1cjAxWGhpMW1xQdIBjwJBVV95cUxNMUlqZkZWM0RoRVhuc3NCektKWDNQYTFieWRyVmZsYXNxVWRXOTBmMFZrdGR5bVRPWTJmdkw0Qkd3YmdCUEw0dkdJRm5QbGQ1bmljOGRtbkVodlZxcTNiQWFYajZ4aURFNndxeF9Jam1tTlJLdEJPc2ZRaW1QUnRWdE9xTHVSQTYyVTZmUGtlSWNQSnNDRzhsV040c01JQlhaWG5JNl9sZ19yY1lZLVJLSVVmWkYwdVlSTDBCYnEwU0dZdFlfTGV5TXZfWGQxWENDa1lNLWJnUVVjTDZBQk5Da0M5RGZiNmVwb0xwYlB1NmlOZFo1cVlWQ0h5ekVjc3dNbENva1BPSy1CU2hPTVgw?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Google signs 3.6-GW power deal with Constellation Energy",
+      "title": "Linux Foundation launches OpenGrid for power grid planning",
       "publisher": "ET Datacenters",
-      "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPeDhoMkdmNFg1b1Bnek5MQzlXVnRNQTc1elR1ay1sN0c2RnRtWXR1Mlp2cndMVENIa1BXUFBXNHFxSXp3V1VJd0dqUUdMS0tNZEFXeUhaQmJTTTVVcE93Z0Y5UE1aU1Bvd3ZpSlRYWFI5b1ZoUGYxcjVRQmFuekpLSmI1aVhXdTZkb2RwSGV6OUdVcXlOTU1aQXBaU1dya09zYXA3Rjdpb0ctcDRmUHFSZmhHV0lDTkNRM0ZzTnpzMUFsYmNqTlpkZFVDZkVoOXdaYmJjcHNBLWpZNVBXbGhyOWNVWEtUVG1ia1FYT2NERm5LbVlDa1NsTDR0emEyaEZSemZGTEplYmtLeW9DVzlQWjRKbTZaRnVSSFE?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOUWNIN3lWOXYwM19HTGZaaFdGOEg0RGgtWmFab1hpaGhFZjd0SlM1UmFWNTg0TkZwSDFvVUFJQVhiVHhOVkZCejJ4SEhYaDRTZmlwb0RFcUR2UDdOVHlsLW4ySzNSOUJRWjE4VVNpVDlVcXBYTERndkNPc1ItRklzY1NURDdSUWhQSmdyaGEtMldNcHRUQ0FsQXRMd3oxV2F6Uk1NWEFpdlRzLTd5MDZqa0FLUDlOM05VenJoYldJeVVOUzROX285RGJJY2hjZnY0ekp4MGcwYVBGQm5wRGFOdnZUS3gzbHVNX0NVSi1YRGhzZjFKTlctX0ZFMG5ERHE3TXJyVDUyTjVNdmlWMGdBc2FhbjcxbmM0ZTlHVtIB6wFBVV95cUxOamxKWnF4ZnRkQ2dMZVg2NGdfdkhBWTlMOGVKRjJoeUN0YnBZeFAwUGc0NlV1YWs2NGdkSC1pdzNhck9tWUxOVS1RVmU0YmgySWNuV0Utd0gtY2tOMFlNWkZkeWNwZjBib3ltNXRUOE5aUjJqREpTcV9manVFazZwNGhzZUNiWFAzYTU0ZzhnNHUxTWQ3S2pEQVAwRENzVDFHM05HRk5ucTU2TmgxZzl5NUdzdEpGQi1qUXZBWXp6azBBVUd6Q2tiOWY4VHVhUzNqQWtIOTNYcG5mLWE0UlcxSE9SNkkxYlpBeG1v?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top stocks to watch today: Infosys, TCS, Wipro, ITC, Power Grid shares in focus on Friday, 9 October | Full list",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQaXJ1QUFTcE9kRnhFVnVGaGo4MlF0MVdaZ3pGUDFzalA2T2dmczJ0cUdPNTJUMnRtVS1rZllHZ3FzNmZiU2pkU2wyVUgwR1o4U3A4bWpEbEo5TjBRdmU5R2plTnIyVW5Ga2JUSDFZeTl5WllmTVVYWDVqZ09seXVOZGJNR0FiSVo2NlNKMTg2ZjI3ZXI3c1AtOFNYR0JvUWhUXzNtdVlXZllWZ2trcktGWlA4MnlFQ01xN084MTFQbUpUZUFDaTVXZHBlbHFXdWZCUURmSThKUlE3bDhtamZsTHpQVnlhSHhLYmxDX2VpTFE0MEVEbVZscEFSb3djMnZWZW54MtIBigJBVV95cUxPSmd0VDYzRk9MWXhFUUxoRkM4dnZ6TnNXZjVjS0txVktoamJlQ1NPdEgzU3RvTlh0bkdNMlN2SVRVRElFY2lZN2ZzMndRcGZLaU5pOUJzbTJyQzVVM2cyV0RaUXBIX0Z3NUNfbHRWNGZGNEJWOFJvNU5ZUnF0cFU2Y0F5X0NvSHgzZGJXcDZzLThVbjkxVHVKbFZ2SFF4WHJieGw5SlZTdTNYSXhNbkdpYTNfYzdsU0J1ZFF5Z2ZneVd0bEluT280RmpxMmNhRVZvRHVDcnlOMjhzQm1jem4tN1F6MjFRS29WUWtMZ3hmZ0d5WVFOa0ZweWtycnZaZHB2M25iN0RrWUVjUQ?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Power+grid+planning",
+      "publisher": "ET Datacenters",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5aMGpOcmlWcUVEaDlkeGFhNWJpWDdlLTVtY3VBVVFRT0lpbHlLOUdaQmkyZzh0MTg2ZnIzNmthOWdMdVNfWU9uLVd1QXpFYWJlYnN0V2ttQk85RVZSVTQzOFQyLUZqTDdoRnpjS19nSElzdmpSTUQ2NzNPSWw?oc=5",
+      "published_at": "Sat, 10 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Malaysia power grid faces strain from data center demand",
+      "publisher": "ET Datacenters",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdEdiSThPSmhUSkxFbDNhaHJpWXNsb1FYQWx2UjJHSW5Mbm9pSDV0Rzc0VWxYd2xkaGZBRnd4N1M0dFRlSDdSYWlzU2hLSi04cExzVUpYU0pNcFFpdUNDYzd1UkFoY1lRQ2VaLXFFYUNMZGdLcXgzU0kzZlBwcHVjdHRHT1pXVzkyTkxXczdQRnU5aVhtTFpSVm1pZjVVTUFvd0dCeDRLeG53ajV3OXNZNndJTThWRHFNYWJvSm94VDhCMGNSdGVLdVBIalNTRXJFVkRVTFY3NXdzNkNJZWVZUWViTUrSAegBQVVfeXFMTnlXNFRGQ3Uwb1dxNUNFdHVjVDQwejVWdWlTRG5POFUxd2dSUGw3cWZMVzlYVVBJUm13cGJhNXhTdTFybjZ2S3FoZkZUNkhvVnlfTWh1TGxjZ1VFWEtSVWxUSWlCSm1fQ0N0eTdkbVZkSzRnajMxRFF5RHE1cXlzRlZQYnZNQlpQeTFmZWhZRE5ORTUxNEthcHR0N2cxVWREUFRyWWl4NldvblNGS3U5SGRnTGJ2RVhGWmEtdVd4bi1qT0Vsbm1HVmRkSW1ESElKUVc1NGN0a2dtbjhid2pHa1U0YmVqbGN3Sw?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Momentum Stocks: Inox Wind, Bombay Burmah, Vishal Mega Mart, Power Grid Corp hit 52-week low",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPYm9CNzBTVHZ6cXU1QmhOcm16TjFqUHRnTmVxaWh0M1MzXzRpeUxvUmdqTkxjQXBiVWVHbGdEUFlQY2sxNktVQXY3Ty04eVFnRUNVcTZUMVdsbHhGclBOY2lBTW10QTByTWNNQTNwVTNmdEU1b3ROY3dKU1NRY3FMMTdWV3BtTV9jTFE2bGxVdmpJcy1lNm0tUGFKR1YtT0N6b1h4aDAzMjBLNXk0SWpOeW1sam15VUhwMm1aNzNjM1pJOGdqSWFIQVVaSWJ5MllOWkp6eFh4OHRVTGwzWHNtUVpqbm5tQkI20gHuAUFVX3lxTFA3VjlJSWdLS0c0eFlHWV9URlBmQVMwRm1CU0JIMi1sUmg1dnU1eW1LOWxjYjgxdzZnMFlpQmVqTGE5Q1hpRmFHb0NNZ2dKZlBobS15TWpkLXZqSDRaQXdfRkNtY285dlNqUXk1cmxOZ3lPa3o1amFtcVQ3SlJKYUttdjdrRWxlTTJxZGlSVlRtMHpRUEROak1FWDRXRkVEZ3pVTmp3TElFR1lBV1hlaFZIcnNOMkQ2LWZUTjJEczVLMTItWldpYzJRdVQyY1pLWG9FWDU1Rm1RRERWRVA3VWdRSi1ycTlZQnJyd09yZkE?oc=5",
+      "published_at": "Thu, 08 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top stocks to watch today: Hero Motors, HCL Tech, Power Grid, IHCL shares in focus on Tuesday, 13 Oct | Full list",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQTk1UYWs4blBJVEhPam9LanB0SHYxaFNXeEwta1ktQ2duX2VaZGgtOUJSYnUzazRNV1ZxRmdvRGNhX2k2dkwxVGRMZjBzSTVUdTZoTnRqWXB0U29yb2NCSHZJYWx2SzB6QmZYc2ZFVi1jcW1ER0FLcEUyUVh2OEdUTnRjVUptUzF5VFJzZ1VKYUFsdVc4S3dMUXg4bXV4cFVWcWhFV2duZlpUV2hrNk9KUkx1X191VUNhTkdvWVNkVS1Ha3pCQmpWZUdTcVBHYXYxMFJqa1pBd0Y0SlgxT2VHUDBRREpCRlJOUGllTDF0c1RUb1Y2c0xLUVR1N0RDWWFzdmdPREx2UdIBjAJBVV95cUxPMW41aWkxeDM4VGY5WUNpX3NoTEVJNHBMa2xqcGJMM2V3SUt4X0dIQ1NXVlVWTFNjdjNqUGNSOXJ1UW5LUFkxTUlTUVF1WDFoa1FDOHFoZ1EyYmVFSFMtQjBxSDlpbWxfcUlPd1ZpejY3a0ZOLTVnN3hkdTI1cDNtenh5SDlsWlRrTTJWX3I2R1A5bHltU29SbkpmXzBwX0dyNHZTQnZSd3FrRkFIckktWHFmaThxckJmZ0NaQUdyT3RIX2RjckdZNHFkd0J5TnY0dm5Sa3BmRkdMOTU3Z3kwS3RNVVFoZXZGaXlhd2toZkhaN2pQQ0pZVldRZkF5SnlxUUJJMEp1c0h2bW5v?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     }
   ]

@@ -1,269 +1,268 @@
 {
   "symbol": "HINDUNILVR.NS",
-  "last_price": 1874.0,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 1877.1,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "trend_score": 2.0,
+  "fit_score": 20.0,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 13.77,
-  "strategy_type": "put_debit_spread",
-  "strategy_display": "Put Debit Spread",
-  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-  "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (56.6% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-  "cash_trade_setup": null,
+  "confidence_percentage": 20.0,
+  "vix": 14.48,
+  "strategy_type": "cash_swing_short",
+  "strategy_display": "Cash Swing Short",
+  "trade_profile": "Advisory | 30-45 DTE",
+  "trade_category": "cash",
+  "recommendation_reason": "Best fit strategy (51.7% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 1877.1,
+    "stop_loss": 1942.97,
+    "target_1": 1595.53,
+    "target_2": 1407.82,
+    "risk_per_share": 65.87,
+    "risk_reward": 7.1,
+    "atr14": 32.93,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1850.0,
-        "strike_formatted": "1850",
-        "option_type": "Put",
-        "delta": -0.339,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x HINDUNILVR.NS 24-Nov-2026 1850 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
-        "strike": 1800.0,
-        "strike_formatted": "1800",
+        "strike": 1877.0999755859375,
+        "strike_formatted": "1877.1",
         "option_type": "Put",
-        "delta": -0.168,
+        "delta": -0.444,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x HINDUNILVR.NS 24-Nov-2026 1800 Put"
+        "dte": 41,
+        "summary": "Sell 1x HINDUNILVR.NS 24-Nov-2026 1877.1 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
-    "roc_percentage": 150.0,
-    "margin_required": 20.0,
-    "stop_loss_price": 1911.48,
-    "take_profit_price": 1800.0,
-    "net_delta": -0.171,
-    "net_theta": -0.067,
-    "probability_of_profit": 36.3,
-    "var_95": 0.0,
+    "roc_percentage": 65.0,
+    "margin_required": 49.4,
+    "stop_loss_price": 1926.5,
+    "take_profit_price": 1778.3,
+    "net_delta": 0.444,
+    "net_theta": 0.32,
+    "probability_of_profit": 0.0,
+    "var_95": 137.76,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1499.2,
-        "pnl": 30.0
+        "price": 1501.68,
+        "pnl": -424.82
       },
       {
-        "price": 1514.19,
-        "pnl": 30.0
+        "price": 1516.7,
+        "pnl": -409.8
       },
       {
-        "price": 1529.18,
-        "pnl": 30.0
+        "price": 1531.71,
+        "pnl": -394.79
       },
       {
-        "price": 1544.18,
-        "pnl": 30.0
+        "price": 1546.73,
+        "pnl": -379.77
       },
       {
-        "price": 1559.17,
-        "pnl": 30.0
+        "price": 1561.75,
+        "pnl": -364.75
       },
       {
-        "price": 1574.16,
-        "pnl": 30.0
+        "price": 1576.76,
+        "pnl": -349.74
       },
       {
-        "price": 1589.15,
-        "pnl": 30.0
+        "price": 1591.78,
+        "pnl": -334.72
       },
       {
-        "price": 1604.14,
-        "pnl": 30.0
+        "price": 1606.8,
+        "pnl": -319.7
       },
       {
-        "price": 1619.14,
-        "pnl": 30.0
+        "price": 1621.81,
+        "pnl": -304.69
       },
       {
-        "price": 1634.13,
-        "pnl": 30.0
+        "price": 1636.83,
+        "pnl": -289.67
       },
       {
-        "price": 1649.12,
-        "pnl": 30.0
+        "price": 1651.85,
+        "pnl": -274.65
       },
       {
-        "price": 1664.11,
-        "pnl": 30.0
+        "price": 1666.86,
+        "pnl": -259.64
       },
       {
-        "price": 1679.1,
-        "pnl": 30.0
+        "price": 1681.88,
+        "pnl": -244.62
       },
       {
-        "price": 1694.1,
-        "pnl": 30.0
+        "price": 1696.9,
+        "pnl": -229.6
       },
       {
-        "price": 1709.09,
-        "pnl": 30.0
+        "price": 1711.92,
+        "pnl": -214.58
       },
       {
-        "price": 1724.08,
-        "pnl": 30.0
+        "price": 1726.93,
+        "pnl": -199.57
       },
       {
-        "price": 1739.07,
-        "pnl": 30.0
+        "price": 1741.95,
+        "pnl": -184.55
       },
       {
-        "price": 1754.06,
-        "pnl": 30.0
+        "price": 1756.97,
+        "pnl": -169.53
       },
       {
-        "price": 1769.06,
-        "pnl": 30.0
+        "price": 1771.98,
+        "pnl": -154.52
       },
       {
-        "price": 1784.05,
-        "pnl": 30.0
+        "price": 1787.0,
+        "pnl": -139.5
       },
       {
-        "price": 1799.04,
-        "pnl": 30.0
+        "price": 1802.02,
+        "pnl": -124.48
       },
       {
-        "price": 1814.03,
-        "pnl": 15.97
+        "price": 1817.03,
+        "pnl": -109.47
       },
       {
-        "price": 1829.02,
-        "pnl": 0.98
+        "price": 1832.05,
+        "pnl": -94.45
       },
       {
-        "price": 1844.02,
-        "pnl": -14.02
+        "price": 1847.07,
+        "pnl": -79.43
       },
       {
-        "price": 1859.01,
-        "pnl": -20.0
+        "price": 1862.08,
+        "pnl": -64.42
       },
       {
-        "price": 1874.0,
-        "pnl": -20.0
+        "price": 1877.1,
+        "pnl": -49.4
       },
       {
-        "price": 1888.99,
-        "pnl": -20.0
+        "price": 1892.12,
+        "pnl": -49.4
       },
       {
-        "price": 1903.98,
-        "pnl": -20.0
+        "price": 1907.13,
+        "pnl": -49.4
       },
       {
-        "price": 1918.98,
-        "pnl": -20.0
+        "price": 1922.15,
+        "pnl": -49.4
       },
       {
-        "price": 1933.97,
-        "pnl": -20.0
+        "price": 1937.17,
+        "pnl": -49.4
       },
       {
-        "price": 1948.96,
-        "pnl": -20.0
+        "price": 1952.18,
+        "pnl": -49.4
       },
       {
-        "price": 1963.95,
-        "pnl": -20.0
+        "price": 1967.2,
+        "pnl": -49.4
       },
       {
-        "price": 1978.94,
-        "pnl": -20.0
+        "price": 1982.22,
+        "pnl": -49.4
       },
       {
-        "price": 1993.94,
-        "pnl": -20.0
+        "price": 1997.23,
+        "pnl": -49.4
       },
       {
-        "price": 2008.93,
-        "pnl": -20.0
+        "price": 2012.25,
+        "pnl": -49.4
       },
       {
-        "price": 2023.92,
-        "pnl": -20.0
+        "price": 2027.27,
+        "pnl": -49.4
       },
       {
-        "price": 2038.91,
-        "pnl": -20.0
+        "price": 2042.28,
+        "pnl": -49.4
       },
       {
-        "price": 2053.9,
-        "pnl": -20.0
+        "price": 2057.3,
+        "pnl": -49.4
       },
       {
-        "price": 2068.9,
-        "pnl": -20.0
+        "price": 2072.32,
+        "pnl": -49.4
       },
       {
-        "price": 2083.89,
-        "pnl": -20.0
+        "price": 2087.34,
+        "pnl": -49.4
       },
       {
-        "price": 2098.88,
-        "pnl": -20.0
+        "price": 2102.35,
+        "pnl": -49.4
       },
       {
-        "price": 2113.87,
-        "pnl": -20.0
+        "price": 2117.37,
+        "pnl": -49.4
       },
       {
-        "price": 2128.86,
-        "pnl": -20.0
+        "price": 2132.39,
+        "pnl": -49.4
       },
       {
-        "price": 2143.86,
-        "pnl": -20.0
+        "price": 2147.4,
+        "pnl": -49.4
       },
       {
-        "price": 2158.85,
-        "pnl": -20.0
+        "price": 2162.42,
+        "pnl": -49.4
       },
       {
-        "price": 2173.84,
-        "pnl": -20.0
+        "price": 2177.44,
+        "pnl": -49.4
       },
       {
-        "price": 2188.83,
-        "pnl": -20.0
+        "price": 2192.45,
+        "pnl": -49.4
       },
       {
-        "price": 2203.82,
-        "pnl": -20.0
+        "price": 2207.47,
+        "pnl": -49.4
       },
       {
-        "price": 2218.82,
-        "pnl": -20.0
+        "price": 2222.49,
+        "pnl": -49.4
       },
       {
-        "price": 2233.81,
-        "pnl": -20.0
+        "price": 2237.5,
+        "pnl": -49.4
       },
       {
-        "price": 2248.8,
-        "pnl": -20.0
+        "price": 2252.52,
+        "pnl": -49.4
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.698,
+      "win_probability": 0.681,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2282,
+      "half_kelly_fraction": 0.2129,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,52 +270,25 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 56.6,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-1850PE / S1x-Nov-1800PE"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 56.1,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-1950CE / B1x-Nov-2000CE"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 51.1,
+      "score": 51.7,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1874PE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 42.5,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1700PE / S1x-Nov-1750PE / S1x-Nov-1950CE / B1x-Nov-2000CE"
+      "legs_summary": "S1x-Nov-1877.1PE"
     }
   ],
   "indicators": {
-    "EMA20": "1901.56",
-    "EMA50": "1969.15",
-    "EMA100": "2046.52",
-    "EMA200": "2146.96",
-    "RSI(14)": "41.11",
-    "ATR(14)": "29.71",
-    "ADX(14)": "33.68",
-    "BB(20,2)": "0.32",
-    "P_SHAPE(20)": "57.71"
+    "EMA20": "1883.38",
+    "EMA50": "1948.29",
+    "EMA100": "2028.16",
+    "EMA200": "2132.64",
+    "RSI(14)": "46.08",
+    "ATR(14)": "32.93",
+    "ADX(14)": "30.32",
+    "BB(20,2)": "0.47",
+    "P_SHAPE(20)": "43.06"
   },
   "rules": [
     {
@@ -327,7 +299,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -376,7 +348,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -401,8 +373,8 @@
     {
       "title": "hul Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0yRjFXQUc2QkhHX1lvd2UxT3RhU2xxOU1kVHN3VzF1RWVYcnVNRkk1VHNtWDg0cWZJUUIyeWlidGl3bTRjbzRhWVhHS2hnakw2RHZ1bWkyN2pMQy1kN1g4Z0FTa2hKZ3VPSlE?oc=5",
-      "published_at": "Mon, 22 Sep 2025",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1aTE16TEE4NXdCMEh3YlBFM0hOeW5WSHl1bmY3S18tN0RSRHNrSW1kY1d0dkNIWnhacmlWbk8zc210bkJvZl96cDNuT0JMRmdlNUtnYlRUT2NmaTlNSWd2Qk1VN0NrNU9NWEZMTGZYSQ?oc=5",
+      "published_at": "Fri, 05 Jan 2018",
       "sentiment": "neutral"
     },
     {
@@ -437,7 +409,7 @@
       "title": "Hindustan Unilever Ltd.",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQalk4dW1LWkw1TXg4clV2WTlmZGsyR0NSYzFBOGtxclVnUmZlTGhiSkxydUNTRXdPWTRkam5weC13aUhBdWhSdkFteWQyX2RkSkJmY2JNWVVNWEFZRm5aM29mc01GNnRjOUgwVGdia0E5NUZWWmtDcDBjZk5FblQxZjNVR2xncllQeDRKN1VVaGJHQjV1RFNR?oc=5",
-      "published_at": "Wed, 29 Mar 2017",
+      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }
   ]

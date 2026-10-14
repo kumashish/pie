@@ -1,269 +1,304 @@
 {
   "symbol": "BAJAJ-AUTO.NS",
-  "last_price": 9801.0,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 10322.0,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
   "trend_score": 3.5,
   "fit_score": 35.0,
   "confidence_grade": "C",
   "confidence_percentage": 35.0,
-  "vix": 13.79,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 14.48,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (18.6) is oversold (< 35) [Synthetic PCR: 1.48]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (74.5% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 10322.0,
+    "stop_loss": 10793.81,
+    "target_1": 8773.7,
+    "target_2": 7741.5,
+    "risk_per_share": 471.81,
+    "risk_reward": 5.5,
+    "atr14": 235.9,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
+        "action": "Buy",
         "quantity": 1,
-        "strike": 10300.0,
-        "strike_formatted": "10300",
-        "option_type": "Call",
-        "delta": 0.201,
+        "strike": 9600.0,
+        "strike_formatted": "9600",
+        "option_type": "Put",
+        "delta": -0.051,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 10300 Call"
+        "dte": 41,
+        "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 9600 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 9800.0,
+        "strike_formatted": "9800",
+        "option_type": "Put",
+        "delta": -0.113,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 9800 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 11000.0,
+        "strike_formatted": "11000",
+        "option_type": "Call",
+        "delta": 0.121,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Sell 1x BAJAJ-AUTO.NS 24-Nov-2026 11000 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 10500.0,
-        "strike_formatted": "10500",
+        "strike": 11200.0,
+        "strike_formatted": "11200",
         "option_type": "Call",
-        "delta": 0.111,
+        "delta": 0.062,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 10500 Call"
+        "dte": 41,
+        "summary": "Buy 1x BAJAJ-AUTO.NS 24-Nov-2026 11200 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 400.0,
-    "stop_loss_price": 9506.97,
-    "take_profit_price": 10095.03,
-    "net_delta": -0.09,
-    "net_theta": 0.586,
+    "stop_loss_price": 10012.34,
+    "take_profit_price": 10631.66,
+    "net_delta": 0.003,
+    "net_theta": 1.008,
     "probability_of_profit": 0.0,
     "var_95": 200.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 7840.8,
-        "pnl": -400.0
-      },
-      {
-        "price": 7919.21,
-        "pnl": -400.0
-      },
-      {
-        "price": 7997.62,
-        "pnl": -400.0
-      },
-      {
-        "price": 8076.02,
-        "pnl": -400.0
-      },
-      {
-        "price": 8154.43,
-        "pnl": -400.0
-      },
-      {
-        "price": 8232.84,
-        "pnl": -400.0
-      },
-      {
-        "price": 8311.25,
-        "pnl": -400.0
-      },
-      {
-        "price": 8389.66,
-        "pnl": -400.0
-      },
-      {
-        "price": 8468.06,
-        "pnl": -400.0
-      },
-      {
-        "price": 8546.47,
-        "pnl": -400.0
-      },
-      {
-        "price": 8624.88,
-        "pnl": -400.0
-      },
-      {
-        "price": 8703.29,
-        "pnl": -400.0
-      },
-      {
-        "price": 8781.7,
-        "pnl": -400.0
-      },
-      {
-        "price": 8860.1,
-        "pnl": -400.0
-      },
-      {
-        "price": 8938.51,
-        "pnl": -400.0
-      },
-      {
-        "price": 9016.92,
-        "pnl": -400.0
-      },
-      {
-        "price": 9095.33,
-        "pnl": -400.0
-      },
-      {
-        "price": 9173.74,
-        "pnl": -400.0
-      },
-      {
-        "price": 9252.14,
-        "pnl": -400.0
-      },
-      {
-        "price": 9330.55,
-        "pnl": -400.0
-      },
-      {
-        "price": 9408.96,
-        "pnl": -400.0
-      },
-      {
-        "price": 9487.37,
-        "pnl": -400.0
-      },
-      {
-        "price": 9565.78,
-        "pnl": -400.0
-      },
-      {
-        "price": 9644.18,
-        "pnl": -400.0
-      },
-      {
-        "price": 9722.59,
-        "pnl": -400.0
-      },
-      {
-        "price": 9801.0,
-        "pnl": -400.0
-      },
-      {
-        "price": 9879.41,
-        "pnl": -400.0
-      },
-      {
-        "price": 9957.82,
-        "pnl": -400.0
-      },
-      {
-        "price": 10036.22,
-        "pnl": -400.0
-      },
-      {
-        "price": 10114.63,
-        "pnl": -400.0
-      },
-      {
-        "price": 10193.04,
-        "pnl": -400.0
-      },
-      {
-        "price": 10271.45,
-        "pnl": -400.0
-      },
-      {
-        "price": 10349.86,
-        "pnl": -449.86
-      },
-      {
-        "price": 10428.26,
-        "pnl": -528.26
-      },
-      {
-        "price": 10506.67,
+        "price": 8257.6,
         "pnl": -600.0
       },
       {
-        "price": 10585.08,
+        "price": 8340.18,
         "pnl": -600.0
       },
       {
-        "price": 10663.49,
+        "price": 8422.75,
         "pnl": -600.0
       },
       {
-        "price": 10741.9,
+        "price": 8505.33,
         "pnl": -600.0
       },
       {
-        "price": 10820.3,
+        "price": 8587.9,
         "pnl": -600.0
       },
       {
-        "price": 10898.71,
+        "price": 8670.48,
         "pnl": -600.0
       },
       {
-        "price": 10977.12,
+        "price": 8753.06,
         "pnl": -600.0
       },
       {
-        "price": 11055.53,
+        "price": 8835.63,
         "pnl": -600.0
       },
       {
-        "price": 11133.94,
+        "price": 8918.21,
         "pnl": -600.0
       },
       {
-        "price": 11212.34,
+        "price": 9000.78,
         "pnl": -600.0
       },
       {
-        "price": 11290.75,
+        "price": 9083.36,
         "pnl": -600.0
       },
       {
-        "price": 11369.16,
+        "price": 9165.94,
         "pnl": -600.0
       },
       {
-        "price": 11447.57,
+        "price": 9248.51,
         "pnl": -600.0
       },
       {
-        "price": 11525.98,
+        "price": 9331.09,
         "pnl": -600.0
       },
       {
-        "price": 11604.38,
+        "price": 9413.66,
         "pnl": -600.0
       },
       {
-        "price": 11682.79,
+        "price": 9496.24,
         "pnl": -600.0
       },
       {
-        "price": 11761.2,
+        "price": 9578.82,
+        "pnl": -600.0
+      },
+      {
+        "price": 9661.39,
+        "pnl": -538.61
+      },
+      {
+        "price": 9743.97,
+        "pnl": -456.03
+      },
+      {
+        "price": 9826.54,
+        "pnl": -400.0
+      },
+      {
+        "price": 9909.12,
+        "pnl": -400.0
+      },
+      {
+        "price": 9991.7,
+        "pnl": -400.0
+      },
+      {
+        "price": 10074.27,
+        "pnl": -400.0
+      },
+      {
+        "price": 10156.85,
+        "pnl": -400.0
+      },
+      {
+        "price": 10239.42,
+        "pnl": -400.0
+      },
+      {
+        "price": 10322.0,
+        "pnl": -400.0
+      },
+      {
+        "price": 10404.58,
+        "pnl": -400.0
+      },
+      {
+        "price": 10487.15,
+        "pnl": -400.0
+      },
+      {
+        "price": 10569.73,
+        "pnl": -400.0
+      },
+      {
+        "price": 10652.3,
+        "pnl": -400.0
+      },
+      {
+        "price": 10734.88,
+        "pnl": -400.0
+      },
+      {
+        "price": 10817.46,
+        "pnl": -400.0
+      },
+      {
+        "price": 10900.03,
+        "pnl": -400.0
+      },
+      {
+        "price": 10982.61,
+        "pnl": -400.0
+      },
+      {
+        "price": 11065.18,
+        "pnl": -465.18
+      },
+      {
+        "price": 11147.76,
+        "pnl": -547.76
+      },
+      {
+        "price": 11230.34,
+        "pnl": -600.0
+      },
+      {
+        "price": 11312.91,
+        "pnl": -600.0
+      },
+      {
+        "price": 11395.49,
+        "pnl": -600.0
+      },
+      {
+        "price": 11478.06,
+        "pnl": -600.0
+      },
+      {
+        "price": 11560.64,
+        "pnl": -600.0
+      },
+      {
+        "price": 11643.22,
+        "pnl": -600.0
+      },
+      {
+        "price": 11725.79,
+        "pnl": -600.0
+      },
+      {
+        "price": 11808.37,
+        "pnl": -600.0
+      },
+      {
+        "price": 11890.94,
+        "pnl": -600.0
+      },
+      {
+        "price": 11973.52,
+        "pnl": -600.0
+      },
+      {
+        "price": 12056.1,
+        "pnl": -600.0
+      },
+      {
+        "price": 12138.67,
+        "pnl": -600.0
+      },
+      {
+        "price": 12221.25,
+        "pnl": -600.0
+      },
+      {
+        "price": 12303.82,
+        "pnl": -600.0
+      },
+      {
+        "price": 12386.4,
         "pnl": -600.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.742,
+      "win_probability": 0.761,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2678,
+      "half_kelly_fraction": 0.2849,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,70 +306,70 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 69.1,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-10300CE / B1x-Nov-10500CE"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 63.4,
+      "score": 74.5,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-9100PE / S1x-Nov-9300PE / S1x-Nov-10300CE / B1x-Nov-10500CE"
+      "legs_summary": "B1x-Nov-9600PE / S1x-Nov-9800PE / S1x-Nov-11000CE / B1x-Nov-11200CE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 56.9,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-11000CE / B1x-Nov-11200CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 49.0,
+      "score": 50.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-9600CE / S1x-Nov-9800CE / S1x-Nov-9800CE / B1x-Nov-10000CE"
+      "legs_summary": "B1x-Nov-10000CE / S2x-Nov-10400CE / B1x-Nov-10600CE"
+    },
+    {
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 50.0,
+      "grade": "C (Moderate)",
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-9800PE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 46.8,
+      "score": 44.6,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-9600CE / S1x-Nov-9800CE / S1x-Nov-9800CE / B1x-Nov-10300CE"
+      "legs_summary": "B1x-Nov-10000CE / S2x-Nov-10400CE / B1x-Nov-10800CE"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 46.5,
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 41.7,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-9800CE / S1x-Nov-10200CE"
-    },
-    {
-      "strategy_type": "ratio_put_spread",
-      "strategy_display": "Ratio Put Spread",
-      "score": 42.5,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
-      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "B1x-Nov-9800PE / S1x-Nov-9300PE / S1x-Nov-9300PE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-9800PE / S1x-Nov-10400PE / S1x-Nov-10400CE / B1x-Nov-10800CE"
     }
   ],
   "indicators": {
-    "EMA20": "10746.54",
-    "EMA50": "11060.16",
-    "EMA100": "10871.56",
-    "EMA200": "10395.41",
-    "RSI(14)": "18.62",
-    "ATR(14)": "213.50",
-    "ADX(14)": "52.75",
-    "BB(20,2)": "0.08",
-    "P_SHAPE(20)": "62.17"
+    "EMA20": "10479.30",
+    "EMA50": "10876.62",
+    "EMA100": "10792.53",
+    "EMA200": "10377.97",
+    "RSI(14)": "41.49",
+    "ATR(14)": "235.90",
+    "ADX(14)": "53.79",
+    "BB(20,2)": "0.41",
+    "P_SHAPE(20)": "48.15"
   },
   "rules": [
     {
@@ -352,7 +387,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -387,14 +429,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -417,45 +452,45 @@
   ],
   "news": [
     {
-      "title": "Bajaj Auto - Negative Breakout: These 7 stocks cross below their 200 DMAs",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZTc1bHd2T1cwdWhFVFZzSEk0RGJCU3VMRFQ4Tm1McVdEaGhkZE1KZlhscm9uOHRQa0ZFU3hTQ3ByUjdYMGFDT1lMRS1GRmRKMlJLcWVLVXAtYlhucFVrbG5HV2N0UHphWEVTa2Y5TmtpeFJxV25OaG8yMUdFZTJGVVFZREI5Vkd3eDR5TXFGOUhTTGtsZDNKMlQ3VUlQd2xPeFEyQlBvZ3B1SHllS0dVbFVpcjhPLUhNX3U1TGNoTnJVTXh2TzliQThJd1doRkd6ZFlMbTBtZHBwUW9xZ3hIX1E2dWtjdw?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Auto crashes 8%, auto stocks slide on weak September sales; Maruti, M&M among top losers,...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNQl9WSzQ2LVJ3Um4zeVRCVmp2T0gwV2o1Q2g4TjNoT1U1cFJWendYbWZEWk1idXhPNTJQS2xCRzB0dHEwZ3FaVnBjYzJ3aGJaekxlbGFUVDg4VDU3ZGFOeHZBM1JmMmJzRUxMUGg3c0F1SHdKcTQ5cGtwNXVYdDdtRjNTRE9WNGc4ZkdfNTZaMENkWmw4TEduRTdyeEJNNWhvcnhacDBFYjFtMFhYTUg3V2JXamhrZnV3MGQ1bTBTdzJoekZPcncyU0VwM1BIOTFGd08yekRzMnB0bkpBN3dOeVZKUDljTTh0ei1wWE1LMEFUUmk0UVZDaFNUT1pCUdIBgwJBVV95cUxPRnY0NjdxQm5fdjVLRXhQWkQ0Y0JLTWRaZ0RaUWtxekpfMDlBaHZfYk1YQUMwLVFDNjBSRkwwT08wQXdxR190Vm1mT0d6MWVwLVNVRDBSeGxvLS1hQ2lMVUlKVjJUbFdBYmR2cUZnbDdCUVlSN0lXSVROY3dQWm5rSmRudUNidDNJSzJlREVTWXJLYnZwTURCS2xtdEhfSmkzc3d1eVpfR0JTM0NNWjFiSC1wSkJrTkVEYW03N3BMNXBhSjl5UVJXM3FhZE1TSXdBeFBLSFNGQWg2SG9Pblk5YlhaUDFMU1FjdWRkQzVyYnZ3a1ZPOVRhNTJWZ3RJSTQ1WEI4?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Best auto stocks to buy ahead of Q2 results: Eicher, Hyundai Motor, Tata Motors PV among Nuvama\u2019s top picks | Full list",
+      "title": "Bajaj Pulsar NS125 update brings new tech, styling; here's what changes in the 2026 model",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNZEdvSjNsVzY4amxrV1lnMnNheGVOOUJ6aUh3c2RXWVR0TlhhZ0U3eW5LMURpa3c3ZlJoOEdoNldrdm5hVi0zUUx5OGtRVndaOEdQQjlZZTdPQUE2TkxUM0ltaHlaSTR4cTY5akdNcTk0VEtUaXRrdXRjSmNWcUJyMjQ5cTY0QWRidVJVSXZRR3FxcWpoY0JyVDJ0N2tZVVYzTnpScjdtZ3BpSW5NS3NicDZxQ0lLQXgxNHo3MWFzVWhvdnB3WVl3ZDRNa3lVWjc3ZHhRTXBmS21rMmhuQnQ2QmpxYXlkNUt3VzR2VlBWSWNrRHU2UklDTE9ic1F2RFZIbXFGTFNFTHBoUHM4a0VKaTNR0gGXAkFVX3lxTE0zRkN5Z1VqNmZlV1dqSS1YQmJRTHp2RldzbkEzTDVmenBNSm5Jc0lDVjNQVXNiOW1QVk1ndFdwM2lsLTluV2UtY25aNlJTaVA4Q0lvTHNiakRPLXMtSEs2dzZkRWxfTmxCczNaMW92bzAzdEhYSDM5dUlOYkhOMVBvNlRBOWd1cVlOUEN4QnhNZVpBSWJDcks2TTVYOVBETS1OMWlRSld4bUNTNzJJUFo4T0w3MUdHQVZadmZra1RHRGJZckFqMzA1NVJtckhzeUowaFFFZUU2NTlFcUxpSThFXzM2cHZCeXVFV3VoM1F1TElzeDNuUGd6bmtGaDVMN2I1R0Q4S0xoa1EzUHhGQ0x4NjJTVm1VUQ?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdUxfTDZERzJGcjVXSmE2QllKVC1JY2RJTUZPSG9XWE1LQWtoQ0c4NjdvUkM4djZxQkdfVThjeHI4RERuX3hTZGN6QzF6bTVOcVhHWUNmS2g1RUxOVTFoa2NxMFJiUklwTFpoUkcwUWJiTTNfOTI3YU4tOUpTT0VXUFZDTlBjSThERWVoTWtvLTZscnBhTHkwMk9VdVN3WVQ5Z2FNSGF6cmJabXZ0R1VsaWxLeUdrQzN3TDFockg5cVJON25aUWlkN3NDSzc5c0ZrVVNfRnVYdVfSAd4BQVVfeXFMUHBRVzhsdGE1UkxlbHk0MGROd0kzVC1GM2hDRTFxRTlNdVVoNEd1U2lYdVJDNWpBcnc0WnNrcC1yb010YmpLWFRLaGhSOURIQTNBQmRTaURfU3N4NmhfbVN6empLbFd6NnpSR0hEOTBHZ2NvcV9ObllDRUx0ZzBtVDdWUnFBclkzZktfWHZZUF9lSmxvbnZkUnI1a3FjUEdOb2ZXb1NhMDBXLUVXUzNPLWR1eEJxcmlqZ1FFVDhuQVhZdEN1bHBUa0dNTG90M3BNRmZwek10cnZKbXUyQjR3?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "India's 'biggest' IPO coming up: But who really owns Jio?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORlFobDdNeEIwc3BmUEpWeWIyVktnUUJ4OE5JN0E0dDZleDhTNXQ0SVZ2U2lVQVI1RjdqQjZUMU80aHdod2V1WnBhMFd4TzZJNFhOY1dCWFNNMDJ2ektzMnUwc1I1M3pBTFBLb1UzSXlUeGpFNjY2RjlUNzd1X1p5Y0FNYWJYRThmenk4cW5Ld2JfSjFvNzgyMjRuanJBMUZuQWNDdEowbw?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Bajaj Alts hits first close of maiden real estate fund at \u20b9950 crore",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZnlJUi1sb1ZmUUE5LVk1UGxhdEtFS0N6T1kxYloybmVVNzRXMVhxYXhnTHF4VkZUV3lLOEFCdzMtdnV3V3FLXy1sdk1KZFRWaHlkOEtOZVktVXNXRmxodkg1NV9rektISE1RVzFtMVl6NU15N1h5amhsY1ZtRGRQMmhDaUJBeDRJelNEOXdBN29jZldCeGVUTnB5b0hsUG1IVEYyc0NzaWlNc25uX2xRbENiOWlVT3hwLUZjeTU4VdIBxAFBVV95cUxQMkIwRHdtQ0dVUEVvbV9VQUZnX0E5RHpGV2hFZ0RTeEZ4RjhsRDYyQnNuX0drODZfXzdvY1BMbkJNRWQ0aUJTd3djQm4xMkQ4NVliV0liVjREc3Q2ZnpRVm9uTDV3ejcwU3VEYUxEMTZ6QzFZalRoOFhSOWFzdlltUUg0UWNHSUgzdGZXZWJSNlhScTNoLXAyT1BuUXVmZE5QZW5US1piUGduVDRYVl8zQ21TSkJhX2pNWGNrbnJQZzhVb3NE?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Live: Nifty off 300 points from day's high; rupee appreciates 70 paise | Closing Bell",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPR2M1R1kwZGRVaU5WdWxhODF1eThQVmtOazV3ZkFlNm42aGduay1ySzNtWEpSMkVJbGJ0VWNITG85ekdxR0NReWo1SjFxYnF3WHBTRFY3VGY3d0o5TFFYZVVmYmxIQWROLWg3aWd2eGdyenJzdUw5V2ZYMzVISENSLUQ2elZCa3hBMkxlU0c3MkptbF95cTJlZmIzSU1kaWR5QmRDM29NXzZUTURsLUZDS1dZcmZfUm5uU3dkNVByQlh5OWdKWDBDWDZJa3IwTkZ6UEdER01YNzl2WDBsYm4zdXNhdjQybF9i0gHuAUFVX3lxTE5tWjVYUHRmWDJtSHA1ZmZpREZnSzBUc1JZMEJaOWhjWjN1eGNabFhpZDVlTTE0NTh2M2xQMDN5N0ZYRGhoamp1ZzNJVHowakJlSjFMXzdib1NWQ3MzR25ja2NjcFljNzVFUUZWYVhCX040RDUzajFTRTN4MDdRWUw5MmJOdW1uamR5Z3hZQzRRejRGSFVfcTNfaGlITjBoMUtFNC1Gdl9GM0ZrRU1uX1hNbmZsUWpyckx6QVJpcl8yQXdiSkVyUTNGaURVNWR6TnhJcUVpT0d0WjN1TTRoNHhpZTBtTXJLYTVZMDFVR2c?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "Bajaj Auto\u2019s domestic sales fall 9% to 2.94 lakh units in September",
-      "publisher": "ET Auto",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRG96MzFXYW1jOHhfWFFLdmMtLU53QU1IMTc3Yno0ZFUxaHRLUjNubTVleU9iekF3VGwzT0N6VzM0dXBKcGh3SmtncXpEZDZSN0xyOVVscTFFZzVXbkdOWnZMREJnanRWaXBDdldvLUZkTWMydzhNQ056Y241TWlrZ20tVmFDQzhPQ292aHFlOTNjakk2U3NDbkVaOUFJNW1KYUhZbTRwQkxFVTUtVFB2OWF6cXZzaU5vVnptSkMxUmdYTXNSYVNsT2syb9IB0AFBVV95cUxPc19GZWNvT05JUHB2T2x6NnBvS0d4bzJkMm10S1cwV0N0QkpXMnZmS015ZGgyckE2Yi0wTEtFR1ZYdDA4WVNEcm56TUI5Q1VDWFdCYlplbUlmMUFKeVRValE1YlpGd203QnRFQl91TG9ONjdSMkFSZlZmNFprTnVraVBQWkxDd0lvTzlrZ3Naak9VWlllZ29rTENnT0w1WTF4NHBtbFZ4Z1JIRTZLSE1pMnZaUnFtYkFoaThfdHNvSFMwaDhES2VhUU9zNFU5OHhq?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bearish"
+      "title": "Sensex settles 950 pts lower from day's high, Nifty ends near 22,350: Five key factors behind market crash",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOSkpJeU1JSlMtLU1HVF9PNDVxQWRqdFNlYmNlQjZsbUhEeTZJUzZ2VTRDUjJCczBtSGo5MDdKeUw1djRETFdhSUZ5RV9NdjVvOWlJQXdlclJCZXlqOWlVT1BLZzlsTEJUVlh1SENQd3ZlaUU1ZE9XUWtJVzQ0Skppb1VpMzRFRHp5SEJRZDFpZ2wyT1RCeDR5OWhtbUlrWjdKUkdnc0dGRG9ZOGdEQmlxZ2xnMkdqMEJIeGJzbWdBd1dxTGZOeDdidlJvbldJRllmTUNWYzhGNktiazhDR1dMajVWZGFJTXNSS2VRc25aUEJjeUx5X18wSVIyT0Nrc2VXWmotdGh30gGLAkFVX3lxTE1pc3VyMnkyRC1oUThORVFVd243SDZYSkt0ZzYxQm85V3VwVFhvSnpWdF92elk0WjROM3ZUU1NCQWRnajdEZkNTNTRMSEF5WWZxbldzLUpNbHJySGpKSjJldFE5OFkyRnVrX0hCTkdrR3RYZl9RYXpSdUF5ZjlBanQySFFuTEJ1Ung1YVVnOGhFQVVfYW1kNkhGMmhkRlhhRFNYeENIV1J3eGpYSFU3NW1vWUc3YVJUWXZMY0RtV0FCb2wzTFEzX2FWbW0wWFNoaDQzbk9ISHJVTlhtYnVVSFZGNHU2cjBWSy1DVndiQlRzQmZyU01KQkVPQ25xZVlBQnRDS1ZUSVd0MjduZw?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "bullish"
     },
     {
-      "title": "India auto sales gain momentum in September but tractors lag: Jefferies",
-      "publisher": "ET Manufacturing",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMEdGaEJBN2ZkUXl4dWswNDN5SEdwUGxMamw1NlNwUTJXUWxaV3dGWV8yUDFjWGllRS1UeDNGRElYLWZ0c2lEVkdzeTZvZ0J0Tk9vRktVcnFWcVZreGt1em9EMi1XbU42NVVyQmlSYnBSNzNwWHhJRGJlWEUtaF8teE9FQVFOaWVlZjdFeUpOXzljZEZKRldzVnRDbUExZEdzMm5rS1BUVWZmeTl6b3N3MU9SWWVhTlh3NW96TVRjemdGY1IwRWh2aEU4X1htY3EwdE1SMlZZdXBTbnR4bUJjYtIB5gFBVV95cUxQZ3YtT0w3R2hvOWEyN3l6TFBFYkI5R3BuVTBsSDJpTGdNVU1XTkV1MnBwYjRPMV82N2ItWjlaQnF3bm43NThhd0lZYWNNTXVibmRZTzlZZzRwdUV5T2NIOThZbkdlUzEzV0FjdmUyZi1uZXpqVGp3Q0l4eElIdkhDX0duY1F5VWFPTjhiYU9MalBsUE8xUWpMemRQTldxNXoySVRFTmpSMGJFUU5qLTFKeTZ4RFBKMzhFb0s4b2Nqc19leXJZT1ZMTkdJUXRodDE3SU4weWRhX0gtNHA2dnRfMVQ2NkVuZw?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bajaj Auto, Hero MotoCorp, M&M tumble: Nifty Auto falls over 3% to lead sectoral loss \u2014 what\u2019s next for the sector?",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNbTBJa19JUHVlZEdwc3AyZ1IwZHlYYktlMlFLcGhCSE9hdUNURmJwOUVaR21SZHIzTkVnZnBPMFdZNE1qTlFHWUlJcjhxREZNRzcway1TQWhTRklDa1FIVXVKd2N3YXR2YUp0T1AxU0FKckZQbVNoeWtWR1ZTa2R5VW5ZOXRYNF9RZm5LbTMyUl9Pdzl5YmZKXzA0djd3TjJlWi1kS2xGbTNKR2l1RTdkYzl4UVNXMXltS1pxZ3g1V3hiUHRVYVR3VldwQXpkOTdmWlgwY1BjcmxkRG9wZkpwYlZtbjhOWUlZZVAycDlObTJ6QmhhWkRadjVha3J5NHhHT3NhWVJ5WVBwNThF0gGSAkFVX3lxTE5TZ0d6b1pqejZ5WGRlelowaGF4d0M5czNTZ3lBTkFKS0V2RlVXLXRPZV9sa201N19Ca1ZsbmZQanJnSmk1WmhMa2ZhcVNCbXBwM0FwV1U2ZzZMeE14WjFKVlA4bEh1Ynp4M3Vkb3BObk00b0hGcFdCWWZWOFliYTNWcnRPeVZ4SGJVM0ttX0R2bFJqZjFvS1E0Ym9jVF9xWjAyNl9TaEFfZWNOdnZnVEVxV0JROHhPSUVDcWpBcHRPLU5mRU9XQ0hkb3IwQld1R2VqMjZxd2FMWUtsMU1LQl80dGxLRmdOQk5QNnJialNNMGloYzV3M1dacXZQdmowUVIwQ01uWC1MZ3NoUFlmUWlIalE?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
+      "title": "Taking Stock: Bears back in action; Nifty below 22,400, Sensex slumps 548 pts as IT, FMCG drag",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNSnZocThzZFVkNFZNRFB6cng4dERJMTVHaVlpSXBxMTB1RGhpVVp0VzR0M0c5cUpScThPWmRWY0pYck9pSUlyVkNEMmNmc0ZXdHRQenNUVEhWU1dpbVlxRU40dkpBc2tXaVpsOHc0LWlQU0ZfeDlpdURoLVY2Ul9fanpSeUg3cFdaYlR3TkZIVVdTZk43a3pFU2psaEVQT1BEVGJneFhpZjctWEZvdnMzSllrczR1SmxrUkhaeHkyQUxCb0dCeU9NWjhhSFBjc3ZwbWo3MGpLd1hUcVhxZ1FxMXl2TTBwakR3QXJJ0gHwAUFVX3lxTE50cml6OVFaOTgxTkdHb3BQQnZZa2E2X0VoalE0WWRiTWRfUjFfVWlrdHRGSXFkVnlwS3ExZFMtZFRQWTFFbkt2WkYyQ1BTUF9hU2dPQ05sNEticjU0ZDVrR1ltcHdUTVhVcGN5NWRlcFdsQTZqTVViOWwwYTNzdEFhd05SNGpyVWpnbHlCeS1FdEY2TGRQMGtBemZyaW1oUzJrSF9OU2o0Z0RsOVBnTGRyM2lfUVNudVpRdVItRHV0ZGlMSjNGbm82ZXNvSEVXT0dESnlvcU9PNVl4bE1XRXM0UE9iZ182NHNGSnVIWnZqdw?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
       "sentiment": "bearish"
     }
   ]

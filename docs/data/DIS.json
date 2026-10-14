@@ -1,293 +1,280 @@
 {
   "symbol": "DIS",
-  "last_price": 104.03,
-  "as_of": "2026-10-06 13:30:00",
-  "regime": "neutral",
-  "regime_display": "Neutral",
-  "trend_score": 4.0,
-  "fit_score": 40.0,
-  "confidence_grade": "C",
-  "confidence_percentage": 40.0,
-  "vix": 15.01,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "last_price": 108.58,
+  "as_of": "2026-10-13 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 9.0,
+  "fit_score": 90.0,
+  "confidence_grade": "A",
+  "confidence_percentage": 90.0,
+  "vix": 15.27,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (82.9% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (62.0% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "cash_trade_setup": {
+    "direction": "Long / Buy",
+    "entry": 108.58,
+    "stop_loss": 104.42,
+    "target_1": 124.87,
+    "target_2": 135.72,
+    "risk_per_share": 4.16,
+    "risk_reward": 6.5,
+    "atr14": 2.08,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
+        "action": "Sell",
         "quantity": 1,
-        "strike": 95.0,
-        "strike_formatted": "95",
+        "strike": 105.0,
+        "strike_formatted": "105",
         "option_type": "Put",
-        "delta": -0.03,
+        "delta": -0.207,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Buy 1x DIS 20-Nov-2026 95 Put"
+        "dte": 37,
+        "summary": "Sell 1x DIS 20-Nov-2026 105 Put"
       },
       {
-        "action": "Sell",
+        "action": "Buy",
         "quantity": 1,
         "strike": 100.0,
         "strike_formatted": "100",
         "option_type": "Put",
-        "delta": -0.184,
+        "delta": -0.034,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Sell 1x DIS 20-Nov-2026 100 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 110.0,
-        "strike_formatted": "110",
-        "option_type": "Call",
-        "delta": 0.176,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Sell 1x DIS 20-Nov-2026 110 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 115.0,
-        "strike_formatted": "115",
-        "option_type": "Call",
-        "delta": 0.037,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Buy 1x DIS 20-Nov-2026 115 Call"
+        "dte": 37,
+        "summary": "Buy 1x DIS 20-Nov-2026 100 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 100.91,
-    "take_profit_price": 107.15,
-    "net_delta": 0.015,
-    "net_theta": 0.022,
+    "stop_loss_price": 105.32,
+    "take_profit_price": 111.84,
+    "net_delta": 0.173,
+    "net_theta": 0.012,
     "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "var_95": 4.46,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 83.22,
+        "price": 86.86,
         "pnl": -10.0
       },
       {
-        "price": 84.06,
+        "price": 87.73,
         "pnl": -10.0
       },
       {
-        "price": 84.89,
+        "price": 88.6,
         "pnl": -10.0
       },
       {
-        "price": 85.72,
+        "price": 89.47,
         "pnl": -10.0
       },
       {
-        "price": 86.55,
+        "price": 90.34,
         "pnl": -10.0
       },
       {
-        "price": 87.39,
+        "price": 91.21,
         "pnl": -10.0
       },
       {
-        "price": 88.22,
+        "price": 92.08,
         "pnl": -10.0
       },
       {
-        "price": 89.05,
+        "price": 92.94,
         "pnl": -10.0
       },
       {
-        "price": 89.88,
+        "price": 93.81,
         "pnl": -10.0
       },
       {
-        "price": 90.71,
+        "price": 94.68,
         "pnl": -10.0
       },
       {
-        "price": 91.55,
+        "price": 95.55,
         "pnl": -10.0
       },
       {
-        "price": 92.38,
+        "price": 96.42,
         "pnl": -10.0
       },
       {
-        "price": 93.21,
+        "price": 97.29,
         "pnl": -10.0
       },
       {
-        "price": 94.04,
+        "price": 98.16,
         "pnl": -10.0
       },
       {
-        "price": 94.88,
+        "price": 99.02,
         "pnl": -10.0
       },
       {
-        "price": 95.71,
-        "pnl": -9.29
+        "price": 99.89,
+        "pnl": -10.0
       },
       {
-        "price": 96.54,
-        "pnl": -8.46
+        "price": 100.76,
+        "pnl": -9.24
       },
       {
-        "price": 97.37,
-        "pnl": -7.63
+        "price": 101.63,
+        "pnl": -8.37
       },
       {
-        "price": 98.2,
-        "pnl": -6.8
+        "price": 102.5,
+        "pnl": -7.5
       },
       {
-        "price": 99.04,
-        "pnl": -5.96
+        "price": 103.37,
+        "pnl": -6.63
       },
       {
-        "price": 99.87,
-        "pnl": -5.13
+        "price": 104.24,
+        "pnl": -5.76
       },
       {
-        "price": 100.7,
+        "price": 105.11,
         "pnl": -5.0
       },
       {
-        "price": 101.53,
+        "price": 105.97,
         "pnl": -5.0
       },
       {
-        "price": 102.37,
+        "price": 106.84,
         "pnl": -5.0
       },
       {
-        "price": 103.2,
+        "price": 107.71,
         "pnl": -5.0
       },
       {
-        "price": 104.03,
+        "price": 108.58,
         "pnl": -5.0
       },
       {
-        "price": 104.86,
+        "price": 109.45,
         "pnl": -5.0
       },
       {
-        "price": 105.69,
+        "price": 110.32,
         "pnl": -5.0
       },
       {
-        "price": 106.53,
+        "price": 111.19,
         "pnl": -5.0
       },
       {
-        "price": 107.36,
+        "price": 112.05,
         "pnl": -5.0
       },
       {
-        "price": 108.19,
+        "price": 112.92,
         "pnl": -5.0
       },
       {
-        "price": 109.02,
+        "price": 113.79,
         "pnl": -5.0
       },
       {
-        "price": 109.86,
+        "price": 114.66,
         "pnl": -5.0
       },
       {
-        "price": 110.69,
-        "pnl": -5.69
+        "price": 115.53,
+        "pnl": -5.0
       },
       {
-        "price": 111.52,
-        "pnl": -6.52
+        "price": 116.4,
+        "pnl": -5.0
       },
       {
-        "price": 112.35,
-        "pnl": -7.35
+        "price": 117.27,
+        "pnl": -5.0
       },
       {
-        "price": 113.18,
-        "pnl": -8.18
+        "price": 118.14,
+        "pnl": -5.0
       },
       {
-        "price": 114.02,
-        "pnl": -9.02
+        "price": 119.0,
+        "pnl": -5.0
       },
       {
-        "price": 114.85,
-        "pnl": -9.85
+        "price": 119.87,
+        "pnl": -5.0
       },
       {
-        "price": 115.68,
-        "pnl": -10.0
+        "price": 120.74,
+        "pnl": -5.0
       },
       {
-        "price": 116.51,
-        "pnl": -10.0
+        "price": 121.61,
+        "pnl": -5.0
       },
       {
-        "price": 117.35,
-        "pnl": -10.0
+        "price": 122.48,
+        "pnl": -5.0
       },
       {
-        "price": 118.18,
-        "pnl": -10.0
+        "price": 123.35,
+        "pnl": -5.0
       },
       {
-        "price": 119.01,
-        "pnl": -10.0
+        "price": 124.22,
+        "pnl": -5.0
       },
       {
-        "price": 119.84,
-        "pnl": -10.0
+        "price": 125.08,
+        "pnl": -5.0
       },
       {
-        "price": 120.67,
-        "pnl": -10.0
+        "price": 125.95,
+        "pnl": -5.0
       },
       {
-        "price": 121.51,
-        "pnl": -10.0
+        "price": 126.82,
+        "pnl": -5.0
       },
       {
-        "price": 122.34,
-        "pnl": -10.0
+        "price": 127.69,
+        "pnl": -5.0
       },
       {
-        "price": 123.17,
-        "pnl": -10.0
+        "price": 128.56,
+        "pnl": -5.0
       },
       {
-        "price": 124.0,
-        "pnl": -10.0
+        "price": 129.43,
+        "pnl": -5.0
       },
       {
-        "price": 124.84,
-        "pnl": -10.0
+        "price": 130.3,
+        "pnl": -5.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.79,
+      "win_probability": 0.717,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.311,
+      "half_kelly_fraction": 0.2453,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -295,63 +282,106 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 82.9,
-      "grade": "A (Optimal)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x DIS 20-Nov-2026 95 Put<br> Sell 1x DIS 20-Nov-2026 100 Put<br> Sell 1x DIS 20-Nov-2026 110 Call<br> Buy 1x DIS 20-Nov-2026 115 Call"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 65.1,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x DIS 20-Nov-2026 100 Call<br> Sell 1x DIS 20-Nov-2026 105 Call<br> Sell 1x DIS 20-Nov-2026 105 Call<br> Buy 1x DIS 20-Nov-2026 105 Call"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 56.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x DIS 20-Nov-2026 100 Put<br> Sell 1x DIS 20-Nov-2026 105 Put<br> Sell 1x DIS 20-Nov-2026 105 Call<br> Buy 1x DIS 20-Nov-2026 110 Call"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 47.5,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x DIS 20-Nov-2026 100 Call<br> Sell 1x DIS 20-Nov-2026 105 Call<br> Sell 1x DIS 20-Nov-2026 105 Call<br> Buy 1x DIS 20-Nov-2026 110 Call"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 46.1,
-      "grade": "C (Moderate)",
+      "score": 62.0,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x DIS 20-Nov-2026 100 Put<br> Buy 1x DIS 20-Nov-2026 95 Put"
+      "legs_summary": "Sell 1x DIS 20-Nov-2026 105 Put<br> Buy 1x DIS 20-Nov-2026 100 Put"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 56.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x DIS 20-Nov-2026 110 Put<br> Sell 1x DIS 20-Nov-2026 105 Put<br> Sell 1x DIS 20-Nov-2026 105 Put"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 56.1,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x DIS 20-Nov-2026 105 Put"
+    },
+    {
+      "strategy_type": "poor_mans_covered_call",
+      "strategy_display": "Poor Mans Covered Call",
+      "score": 53.2,
+      "grade": "C (Moderate)",
+      "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
+      "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
+      "legs_summary": "Buy 1x DIS 20-Nov-2026 105 Call<br> Sell 1x DIS 20-Nov-2026 110 Call"
+    },
+    {
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 52.7,
+      "grade": "C (Moderate)",
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x DIS 20-Nov-2026 108.6 Call<br> Buy 1x DIS 20-Nov-2026 105 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 49.6,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x DIS 20-Nov-2026 105 Put<br> Sell 1x DIS 20-Nov-2026 115 Call<br> Buy 1x DIS 20-Nov-2026 120 Call"
+    },
+    {
+      "strategy_type": "cash_swing_long",
+      "strategy_display": "Cash Swing Long",
+      "score": 48.8,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x DIS 20-Nov-2026 108.6 Call"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 48.8,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x DIS 20-Nov-2026 108.6 Call<br> Sell 1x DIS 20-Nov-2026 115 Call"
+    },
+    {
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 44.4,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x DIS 20-Nov-2026 110 Call<br> Sell 1x DIS 20-Nov-2026 115 Call"
     }
   ],
   "indicators": {
-    "EMA20": "104.55",
-    "EMA50": "104.12",
-    "EMA100": "103.44",
-    "EMA200": "104.05",
-    "RSI(14)": "48.18",
-    "ATR(14)": "2.05",
-    "ADX(14)": "13.45",
-    "BB(20,2)": "0.38",
-    "P_SHAPE(20)": "42.86"
+    "EMA20": "105.73",
+    "EMA50": "104.72",
+    "EMA100": "103.82",
+    "EMA200": "104.21",
+    "RSI(14)": "60.56",
+    "ATR(14)": "2.08",
+    "ADX(14)": "15.75",
+    "BB(20,2)": "0.93",
+    "P_SHAPE(20)": "41.58"
   },
   "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "EMA20 above EMA50",
       "passed": true,
@@ -361,6 +391,20 @@
     },
     {
       "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -381,6 +425,20 @@
       "explanation": "Condition met"
     },
     {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
       "score": 1.0,
@@ -388,42 +446,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Price above EMA200",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "ADX above 30",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -432,44 +455,44 @@
   ],
   "news": [
     {
-      "title": "3 Things Investors Need to Know Before Buying Skydance",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/b842fde3-e661-3f4c-b77a-f3e91bae09b5/3-things-investors-need-to.html",
+      "title": "The One Number Comcast Stock Investors Should Watch",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/one-number-comcast-stock-investors-204245227.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Meet the Disney Lawyer Leading Fight Against the FCC",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/345bac92-fcab-34e2-989f-9908b2ea2676/meet-the-disney-lawyer.html",
-      "published_at": "Today",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Skydance\u2019s Ambitious Goals Face a Steep Road",
-      "publisher": "Barrons.com",
-      "link": "https://finance.yahoo.com/m/3ebde375-892b-3f35-932b-8c9dbb781e44/skydance%E2%80%99s-ambitious-goals.html",
+      "title": "Epic Games\u2019 Disney Game Faces Delays and An AI Overhaul After $1.5 Billion Investment",
+      "publisher": "Benzinga Private Markets",
+      "link": "https://finance.yahoo.com/technology/ai/articles/epic-games-disney-game-faces-203250249.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Are Rising Live Sports Costs a Margin Threat to Netflix Stockholders?",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/media-advertising/articles/rising-live-sports-costs-margin-141200448.html",
+      "title": "Are You Overpaying For Disney Stock Versus Its Rivals?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/media-advertising/articles/overpaying-disney-stock-versus-rivals-201457249.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "How brands\u2019 deeper creator deals are unlocking cost efficiencies, results",
-      "publisher": "Marketing Dive",
-      "link": "https://finance.yahoo.com/media-advertising/articles/brands-deeper-creator-deals-unlocking-131500793.html",
+      "title": "Can You Make Money Off Netflix Stock Now?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/money-off-netflix-stock-now-194950698.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "The Walt Disney Company\u2019s (DIS) Experiences and Streaming Moats Support Earnings Acceleration",
-      "publisher": "Insider Monkey",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/walt-disney-company-dis-experiences-123843428.html",
+      "title": "Walt Disney vs. Netflix: Which Media Stock Is a Better Buy in 2026?",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/media-advertising/articles/walt-disney-vs-netflix-media-183502967.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Disney Makes $20 Million Bet on Bankrupt AI Pioneer",
+      "publisher": "GuruFocus.com",
+      "link": "https://finance.yahoo.com/technology/ai/articles/disney-makes-20-million-bet-181433362.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }

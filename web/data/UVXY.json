@@ -1,20 +1,31 @@
 {
   "symbol": "UVXY",
-  "last_price": 16.07,
-  "as_of": "2026-10-06 13:30:00",
+  "last_price": 15.94,
+  "as_of": "2026-10-13 13:30:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
   "trend_score": 0.5,
   "fit_score": 5.0,
   "confidence_grade": "C",
   "confidence_percentage": 5.0,
-  "vix": 15.01,
+  "vix": 15.27,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (33.8) is oversold (< 35) [Synthetic PCR: 1.34]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (62.4% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 15.94,
+    "stop_loss": 17.27,
+    "target_1": 13.55,
+    "target_2": 11.96,
+    "risk_per_share": 1.33,
+    "risk_reward": 3.0,
+    "atr14": 0.66,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
@@ -23,10 +34,10 @@
         "strike": 17.0,
         "strike_formatted": "17",
         "option_type": "Call",
-        "delta": 0.174,
+        "delta": 0.116,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
+        "dte": 37,
         "summary": "Sell 1x UVXY 20-Nov-2026 17 Call"
       },
       {
@@ -35,10 +46,10 @@
         "strike": 18.0,
         "strike_formatted": "18",
         "option_type": "Call",
-        "delta": 0.021,
+        "delta": 0.009,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
+        "dte": 37,
         "summary": "Buy 1x UVXY 20-Nov-2026 18 Call"
       }
     ],
@@ -46,69 +57,73 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 1.0,
-    "stop_loss_price": 15.59,
-    "take_profit_price": 16.55,
-    "net_delta": -0.153,
+    "stop_loss_price": 15.46,
+    "take_profit_price": 16.42,
+    "net_delta": -0.107,
     "net_theta": 0.002,
     "probability_of_profit": 0.0,
-    "var_95": 0.58,
+    "var_95": 0.32,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 12.86,
+        "price": 12.75,
         "pnl": -1.0
       },
       {
-        "price": 12.98,
+        "price": 12.88,
         "pnl": -1.0
       },
       {
-        "price": 13.11,
+        "price": 13.01,
         "pnl": -1.0
       },
       {
-        "price": 13.24,
+        "price": 13.13,
         "pnl": -1.0
       },
       {
-        "price": 13.37,
+        "price": 13.26,
         "pnl": -1.0
       },
       {
-        "price": 13.5,
+        "price": 13.39,
         "pnl": -1.0
       },
       {
-        "price": 13.63,
+        "price": 13.52,
         "pnl": -1.0
       },
       {
-        "price": 13.76,
+        "price": 13.64,
         "pnl": -1.0
       },
       {
-        "price": 13.88,
+        "price": 13.77,
         "pnl": -1.0
       },
       {
-        "price": 14.01,
+        "price": 13.9,
         "pnl": -1.0
       },
       {
-        "price": 14.14,
+        "price": 14.03,
         "pnl": -1.0
       },
       {
-        "price": 14.27,
+        "price": 14.15,
         "pnl": -1.0
       },
       {
-        "price": 14.4,
+        "price": 14.28,
         "pnl": -1.0
       },
       {
-        "price": 14.53,
+        "price": 14.41,
+        "pnl": -1.0
+      },
+      {
+        "price": 14.54,
         "pnl": -1.0
       },
       {
@@ -116,15 +131,15 @@
         "pnl": -1.0
       },
       {
-        "price": 14.78,
+        "price": 14.79,
         "pnl": -1.0
       },
       {
-        "price": 14.91,
+        "price": 14.92,
         "pnl": -1.0
       },
       {
-        "price": 15.04,
+        "price": 15.05,
         "pnl": -1.0
       },
       {
@@ -164,11 +179,11 @@
         "pnl": -1.0
       },
       {
-        "price": 16.33,
+        "price": 16.32,
         "pnl": -1.0
       },
       {
-        "price": 16.46,
+        "price": 16.45,
         "pnl": -1.0
       },
       {
@@ -180,83 +195,79 @@
         "pnl": -1.0
       },
       {
-        "price": 16.84,
+        "price": 16.83,
         "pnl": -1.0
       },
       {
-        "price": 16.97,
+        "price": 16.96,
         "pnl": -1.0
       },
       {
-        "price": 17.1,
-        "pnl": -1.1
+        "price": 17.09,
+        "pnl": -1.09
       },
       {
-        "price": 17.23,
-        "pnl": -1.23
+        "price": 17.22,
+        "pnl": -1.22
       },
       {
-        "price": 17.36,
-        "pnl": -1.36
+        "price": 17.34,
+        "pnl": -1.34
       },
       {
-        "price": 17.48,
-        "pnl": -1.48
+        "price": 17.47,
+        "pnl": -1.47
       },
       {
-        "price": 17.61,
-        "pnl": -1.61
+        "price": 17.6,
+        "pnl": -1.6
       },
       {
-        "price": 17.74,
-        "pnl": -1.74
+        "price": 17.73,
+        "pnl": -1.73
       },
       {
-        "price": 17.87,
-        "pnl": -1.87
+        "price": 17.85,
+        "pnl": -1.85
       },
       {
-        "price": 18.0,
+        "price": 17.98,
+        "pnl": -1.98
+      },
+      {
+        "price": 18.11,
         "pnl": -2.0
       },
       {
-        "price": 18.13,
+        "price": 18.24,
         "pnl": -2.0
       },
       {
-        "price": 18.26,
+        "price": 18.36,
         "pnl": -2.0
       },
       {
-        "price": 18.38,
+        "price": 18.49,
         "pnl": -2.0
       },
       {
-        "price": 18.51,
+        "price": 18.62,
         "pnl": -2.0
       },
       {
-        "price": 18.64,
+        "price": 18.75,
         "pnl": -2.0
       },
       {
-        "price": 18.77,
+        "price": 18.87,
         "pnl": -2.0
       },
       {
-        "price": 18.9,
+        "price": 19.0,
         "pnl": -2.0
       },
       {
-        "price": 19.03,
-        "pnl": -2.0
-      },
-      {
-        "price": 19.16,
-        "pnl": -2.0
-      },
-      {
-        "price": 19.28,
+        "price": 19.13,
         "pnl": -2.0
       }
     ],
@@ -280,34 +291,34 @@
       "legs_summary": "Sell 1x UVXY 20-Nov-2026 17 Call<br> Buy 1x UVXY 20-Nov-2026 18 Call"
     },
     {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 61.8,
+      "grade": "B (Good)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x UVXY 20-Nov-2026 16 Put<br> Sell 1x UVXY 20-Nov-2026 15 Put"
+    },
+    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
       "score": 59.8,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x UVXY 20-Nov-2026 16.1 Put"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 56.5,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x UVXY 20-Nov-2026 16 Put<br> Sell 1x UVXY 20-Nov-2026 15 Put"
+      "legs_summary": "Sell 1x UVXY 20-Nov-2026 15.9 Put"
     }
   ],
   "indicators": {
-    "EMA20": "17.43",
-    "EMA50": "19.57",
-    "EMA100": "24.02",
-    "EMA200": "34.74",
-    "RSI(14)": "33.79",
-    "ATR(14)": "0.73",
-    "ADX(14)": "18.04",
-    "BB(20,2)": "0.05",
-    "P_SHAPE(20)": "43.60"
+    "EMA20": "16.94",
+    "EMA50": "18.96",
+    "EMA100": "23.28",
+    "EMA200": "33.83",
+    "RSI(14)": "35.42",
+    "ATR(14)": "0.66",
+    "ADX(14)": "17.93",
+    "BB(20,2)": "0.12",
+    "P_SHAPE(20)": "27.86"
   },
   "rules": [
     {

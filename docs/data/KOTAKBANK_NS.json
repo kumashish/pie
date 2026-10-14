@@ -1,269 +1,280 @@
 {
   "symbol": "KOTAKBANK.NS",
-  "last_price": 440.3,
-  "as_of": "2026-10-07 03:45:00",
-  "regime": "strong_bull",
-  "regime_display": "Strong Bull",
-  "trend_score": 8.5,
-  "fit_score": 85.0,
-  "confidence_grade": "A",
-  "confidence_percentage": 85.0,
-  "vix": 13.78,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-  "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (71.7) is overbought (> 65) [Synthetic PCR: 0.50]. Wait for a pullback toward EMA20 support before entering Credit Spread.",
-  "cash_trade_setup": null,
+  "last_price": 442.3,
+  "as_of": "2026-10-14 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.8,
+  "fit_score": 77.5,
+  "confidence_grade": "B",
+  "confidence_percentage": 77.5,
+  "vix": 14.46,
+  "strategy_type": "protected_future",
+  "strategy_display": "Protected Future",
+  "trade_profile": "Advisory | 30-45 DTE",
+  "trade_category": "cash",
+  "recommendation_reason": "Best fit strategy (66.8% fit - Grade B (Good)): Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+  "cash_trade_setup": {
+    "direction": "Long / Buy",
+    "entry": 442.3,
+    "stop_loss": 425.38,
+    "target_1": 508.64,
+    "target_2": 552.88,
+    "risk_per_share": 16.92,
+    "risk_reward": 6.5,
+    "atr14": 8.46,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
+        "action": "Buy",
         "quantity": 1,
-        "strike": 420.0,
-        "strike_formatted": "420",
-        "option_type": "Put",
-        "delta": -0.135,
+        "strike": 442.29998779296875,
+        "strike_formatted": "442.3",
+        "option_type": "Call",
+        "delta": 0.556,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x KOTAKBANK.NS 24-Nov-2026 420 Put"
+        "dte": 41,
+        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 442.3 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 410.0,
-        "strike_formatted": "410",
+        "strike": 420.0,
+        "strike_formatted": "420",
         "option_type": "Put",
-        "delta": -0.057,
+        "delta": -0.114,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 410 Put"
+        "dte": 41,
+        "summary": "Buy 1x KOTAKBANK.NS 24-Nov-2026 420 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 427.09,
-    "take_profit_price": 453.51,
-    "net_delta": 0.078,
-    "net_theta": 0.018,
-    "probability_of_profit": 0.0,
-    "var_95": 10.0,
+    "stop_loss_price": 429.03,
+    "take_profit_price": 455.57,
+    "net_delta": 0.442,
+    "net_theta": -0.179,
+    "probability_of_profit": 65.7,
+    "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 352.24,
-        "pnl": -25.0
+        "price": 353.84,
+        "pnl": 51.16
       },
       {
-        "price": 355.76,
-        "pnl": -25.0
+        "price": 357.38,
+        "pnl": 47.62
       },
       {
-        "price": 359.28,
-        "pnl": -25.0
+        "price": 360.92,
+        "pnl": 44.08
       },
       {
-        "price": 362.81,
-        "pnl": -25.0
+        "price": 364.46,
+        "pnl": 40.54
       },
       {
-        "price": 366.33,
-        "pnl": -25.0
+        "price": 367.99,
+        "pnl": 37.01
       },
       {
-        "price": 369.85,
-        "pnl": -25.0
+        "price": 371.53,
+        "pnl": 33.47
       },
       {
-        "price": 373.37,
-        "pnl": -25.0
+        "price": 375.07,
+        "pnl": 29.93
       },
       {
-        "price": 376.9,
-        "pnl": -25.0
+        "price": 378.61,
+        "pnl": 26.39
       },
       {
-        "price": 380.42,
-        "pnl": -25.0
+        "price": 382.15,
+        "pnl": 22.85
       },
       {
-        "price": 383.94,
-        "pnl": -25.0
+        "price": 385.69,
+        "pnl": 19.31
       },
       {
-        "price": 387.46,
-        "pnl": -25.0
+        "price": 389.22,
+        "pnl": 15.78
       },
       {
-        "price": 390.99,
-        "pnl": -25.0
+        "price": 392.76,
+        "pnl": 12.24
       },
       {
-        "price": 394.51,
-        "pnl": -25.0
+        "price": 396.3,
+        "pnl": 8.7
       },
       {
-        "price": 398.03,
-        "pnl": -25.0
+        "price": 399.84,
+        "pnl": 5.16
       },
       {
-        "price": 401.55,
-        "pnl": -25.0
+        "price": 403.38,
+        "pnl": 1.62
       },
       {
-        "price": 405.08,
-        "pnl": -25.0
+        "price": 406.92,
+        "pnl": -1.92
       },
       {
-        "price": 408.6,
-        "pnl": -25.0
+        "price": 410.45,
+        "pnl": -5.45
       },
       {
-        "price": 412.12,
-        "pnl": -22.88
+        "price": 413.99,
+        "pnl": -8.99
       },
       {
-        "price": 415.64,
-        "pnl": -19.36
+        "price": 417.53,
+        "pnl": -12.53
       },
       {
-        "price": 419.17,
-        "pnl": -15.83
-      },
-      {
-        "price": 422.69,
+        "price": 421.07,
         "pnl": -15.0
       },
       {
-        "price": 426.21,
+        "price": 424.61,
         "pnl": -15.0
       },
       {
-        "price": 429.73,
+        "price": 428.15,
         "pnl": -15.0
       },
       {
-        "price": 433.26,
+        "price": 431.68,
         "pnl": -15.0
       },
       {
-        "price": 436.78,
+        "price": 435.22,
         "pnl": -15.0
       },
       {
-        "price": 440.3,
+        "price": 438.76,
         "pnl": -15.0
       },
       {
-        "price": 443.82,
+        "price": 442.3,
         "pnl": -15.0
       },
       {
-        "price": 447.34,
-        "pnl": -15.0
+        "price": 445.84,
+        "pnl": -11.46
       },
       {
-        "price": 450.87,
-        "pnl": -15.0
+        "price": 449.38,
+        "pnl": -7.92
       },
       {
-        "price": 454.39,
-        "pnl": -15.0
+        "price": 452.92,
+        "pnl": -4.38
       },
       {
-        "price": 457.91,
-        "pnl": -15.0
+        "price": 456.45,
+        "pnl": -0.85
       },
       {
-        "price": 461.43,
-        "pnl": -15.0
+        "price": 459.99,
+        "pnl": 2.69
       },
       {
-        "price": 464.96,
-        "pnl": -15.0
+        "price": 463.53,
+        "pnl": 6.23
       },
       {
-        "price": 468.48,
-        "pnl": -15.0
+        "price": 467.07,
+        "pnl": 9.77
       },
       {
-        "price": 472.0,
-        "pnl": -15.0
+        "price": 470.61,
+        "pnl": 13.31
       },
       {
-        "price": 475.52,
-        "pnl": -15.0
+        "price": 474.15,
+        "pnl": 16.85
       },
       {
-        "price": 479.05,
-        "pnl": -15.0
+        "price": 477.68,
+        "pnl": 20.38
       },
       {
-        "price": 482.57,
-        "pnl": -15.0
+        "price": 481.22,
+        "pnl": 23.92
       },
       {
-        "price": 486.09,
-        "pnl": -15.0
+        "price": 484.76,
+        "pnl": 27.46
       },
       {
-        "price": 489.61,
-        "pnl": -15.0
+        "price": 488.3,
+        "pnl": 31.0
       },
       {
-        "price": 493.14,
-        "pnl": -15.0
+        "price": 491.84,
+        "pnl": 34.54
       },
       {
-        "price": 496.66,
-        "pnl": -15.0
+        "price": 495.38,
+        "pnl": 38.08
       },
       {
-        "price": 500.18,
-        "pnl": -15.0
+        "price": 498.91,
+        "pnl": 41.61
       },
       {
-        "price": 503.7,
-        "pnl": -15.0
+        "price": 502.45,
+        "pnl": 45.15
       },
       {
-        "price": 507.23,
-        "pnl": -15.0
+        "price": 505.99,
+        "pnl": 48.69
       },
       {
-        "price": 510.75,
-        "pnl": -15.0
+        "price": 509.53,
+        "pnl": 52.23
       },
       {
-        "price": 514.27,
-        "pnl": -15.0
+        "price": 513.07,
+        "pnl": 55.77
       },
       {
-        "price": 517.79,
-        "pnl": -15.0
+        "price": 516.61,
+        "pnl": 59.31
       },
       {
-        "price": 521.32,
-        "pnl": -15.0
+        "price": 520.14,
+        "pnl": 62.84
       },
       {
-        "price": 524.84,
-        "pnl": -15.0
+        "price": 523.68,
+        "pnl": 66.38
       },
       {
-        "price": 528.36,
-        "pnl": -15.0
+        "price": 527.22,
+        "pnl": 69.92
+      },
+      {
+        "price": 530.76,
+        "pnl": 73.46
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.772,
+      "win_probability": 0.734,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2948,
+      "half_kelly_fraction": 0.2606,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,63 +282,72 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 66.8,
+      "grade": "B (Good)",
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-442.3CE / B1x-Nov-420PE"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 77.6,
+      "score": 65.3,
       "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-420PE / B1x-Nov-410PE"
     },
     {
-      "strategy_type": "protected_future",
-      "strategy_display": "Protected Future",
-      "score": 70.8,
-      "grade": "B (Good)",
-      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-440.3CE / B1x-Nov-420PE"
-    },
-    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 67.5,
+      "score": 62.8,
       "grade": "B (Good)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-420CE / S1x-Nov-450CE"
-    },
-    {
-      "strategy_type": "covered_future",
-      "strategy_display": "Covered Future",
-      "score": 63.6,
-      "grade": "B (Good)",
-      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-440.3CE / S1x-Nov-460CE"
+      "legs_summary": "B1x-Nov-420CE / S1x-Nov-455CE"
     },
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 63.1,
+      "score": 61.8,
       "grade": "B (Good)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "B1x-Nov-440PE / S1x-Nov-420PE / S1x-Nov-420PE"
+      "legs_summary": "B1x-Nov-440PE / S2x-Nov-420PE"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 61.3,
+      "grade": "B (Good)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-442.3CE / S1x-Nov-460CE"
     },
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 62.4,
-      "grade": "B (Good)",
+      "score": 58.8,
+      "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
       "legs_summary": "S1x-Nov-420PE"
     },
     {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 58.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "S1x-Nov-420PE / S1x-Nov-460CE / B1x-Nov-470CE"
+    },
+    {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 55.9,
+      "score": 54.5,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
@@ -336,20 +356,20 @@
     {
       "strategy_type": "cash_swing_long",
       "strategy_display": "Cash Swing Long",
-      "score": 54.4,
+      "score": 51.9,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-440.3CE"
+      "legs_summary": "B1x-Nov-442.3CE"
     },
     {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 52.4,
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 49.6,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "S1x-Nov-420PE / S1x-Nov-460CE / B1x-Nov-470CE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-410PE / S1x-Nov-420PE / S1x-Nov-460CE / B1x-Nov-470CE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -362,15 +382,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "417.27",
-    "EMA50": "410.05",
-    "EMA100": "403.73",
-    "EMA200": "401.55",
-    "RSI(14)": "71.70",
-    "ATR(14)": "9.21",
-    "ADX(14)": "30.35",
-    "BB(20,2)": "1.20",
-    "P_SHAPE(20)": "37.76"
+    "EMA20": "426.35",
+    "EMA50": "415.52",
+    "EMA100": "407.20",
+    "EMA200": "403.43",
+    "RSI(14)": "67.11",
+    "ATR(14)": "8.46",
+    "ADX(14)": "37.78",
+    "BB(20,2)": "0.87",
+    "P_SHAPE(20)": "51.13"
   },
   "rules": [
     {
@@ -402,13 +422,6 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
       "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
@@ -423,14 +436,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "20-Day Momentum Relative Strength",
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -444,7 +457,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -453,45 +473,45 @@
   ],
   "news": [
     {
-      "title": "Kotak Mahindra Bank\u2019s stock returns under Vaswani outpace HDFC Bank\u2019s under Jagdishan",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUW0yM2RBTTlJbHJBX3EtU0xDaHpTMWh1dXdYbWJiTkxxczVRcEVGQzJyeFc3SVJWMngzakNZTVN4c0EwUnRKUjlZa3pVMkNkOHktSjhGN0xzbnRmUzVhd3o1VXJDbmpzYVRBODQ0a0RIYThCUlprc1FtVjNwY3JxN2xVam9PTlh2UXBpalZsLTQxMjJHMGozNGNCdnVaTi16bTVmbHctS0U0U2hVZkk2aXVWXy1HVUtSd3dhTzJHeTBvUkFjaUtENWJMS3ZSMlI1ZjRNQmFGanFrWkJkZDJybGVB0gHnAUFVX3lxTE9RYmdrSEFNRU5CYVliMlU2SW8xRTUwMDFUb0YydGxiMlJHc3gwZ3NsSkVCMEk1b0FzQWdHakVHSUtTUnFudjlMc0FqMmlpVDVOQlhpUHZzXzFpNW9zbEtyQUZUT2ZreVQ2Yy00YkxVenFZaVhVMkoxcjRfUExDSTAxYXpfZTc3NTRwcXhJWG5USGVvcy1GSUdlbkNpTG96ODdSOFpGVVZkdjRVdjNmdnRSdTVvMms5QkJ0VnhxcVhwUDJsZjhKbWZVUC1VV0VtMDNidmxEeXdhNk9KR2IyQW0tcFo3MDA3UQ?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ICICI Bank, SBI, Kotak Bank: Why Motilal Oswal picked these banking stocks; check CAGR, target price and...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPaGllSUNBcXVYY1IzQ2NpWUVHc2Y3YmFLTkJ5Mjg3UGlPYXMzd19OZXVNdW52Vmw2WFRHODcwNVBXa1RNZk9DZVFyb3hROS1MQ3czTGN3MFpTeGphMk02ZndHQUQxM0JkVlRnN1lkRlB6OXdLQ3k3aWVMTExCdVhiZ2NnSWZlenlVLUpBRUowNmhhUkU2M3d0OVlqdHpIcHJ4TFlteEdJQXpSZlI1eTNXcUVjWERjamFfTGgtREtCZkNuVUR5XzJlanBxVEsyOWpRMTlMd3dMdkFXLXdSYnBZY2c1Nm1rWXU5RElkYUJVSzBHaHdvUUtnQ1VzSXXSAYICQVVfeXFMT3NPU2Z6XzBxdTQzVi1rMGp5aUI5bXN0TGliT2FyNUU2dTczY1FrWndicFljMDBBZi1OMGEwOGpITDl1bDE2WlFyb2pMcG9vZGszS3pseUhROWRyNVZLUHE0N3RINVg4aFQ2MHFsN0VNbVZRd0N5ZGk0V3RsdFg5R0hMNlV2c0w5SEJiYkI3R0JnQ3l3UG9Wa3h2OXB2d1NKOGY1REZtMUJkQlpPSEF3LUFGVlZVNEE4OEZvWHpwQ19RUGFPVlpKRUhDdjk3WEZza3M0N3BpZUVna1oyWDhXdkZMaTZBQlQ3UE8xT3hleEV1SlhCOGxRR1dCSlpPbUVyaGR3?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Live: Nifty above 22,700 on expiry day; Q2 update cheers Trent, Kotak Bank | Closing Bell",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSFFhWXZXYVRwMWpiakRYZmR4QXEwU1hMRDg0ZXN6Szhhbml1dlM2d01rc2FRdWxhT01DZHFLX2s3Um9yQkFtLW9jZF9SRm9FX0psY3k2Ti1nSjZibXBJdGc0UWZqNk4wSnlrMXNvRlU2SjBQNUNsdVY0UXk0SGJIS2pJOUhzUmY0V2d1WlJjRUNPeHRnUzZJb3lLZ3Q5cUtMX2ZkdjRyeW9tQmpSOEp4a2h5Q0R4VlRLN05jTVBnVlYwUXM3MUZaUUh0Q3ZOd2s0VlFnVk05V2c5MThrLWQ2Z2Yyc1NoNXFoNmNRZdIB8gFBVV95cUxPaEEtbHpZc3NYNWNUMEVNZTZic2tzaXVPa1o1VU5YdGkyQnBJVmxOcEcxVlZCaU9UZTBfcTAydkJEaTRnY0ctamZSRWtWblVhV2pDOThsOXp6RlM4VUZHNTYtam1xSFJZZTNfSnp2X050YzRXdXZHZk1sY0MwQl9rbHgxRlE1b3RGZnJoWEJHcjB0Z19FYWlxbW1BUzJFX3VCTV8yYmNiV21rMVhRckJNdXVhTFR1b0g1ZkMtd1RHWG8tUXVnZzBkVl8xLTVUcGFiRVVWak11MUxJR2lEWXZJa3QyVEdsU0lUcmRpaURfVHFkZw?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Price Action: Kotak Bank, IndusInd Bank rise on better monthly data; Trent surges 11% as Q2 revenue up 23%",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRlZrRWZIbklLS1JSOVN6ei14a1l4ekZIb2VGblNuNzFRQWFwc0VLWXppX1RSVFg2d2J3RklScmVQNHFvRVg0Ukt2RUxYZVBqZWY5QTNjcnVKN3VJUWdIUTFjYWRJWDl3cU9JVjhBdm5WVktWWTV1RnRkX3lRWUxac2t6WU5BemxBaGVfSjY2SVl1aUI1ZlpqTGRyV0MtU0huVmFlQlZyUzhUR0gwd200S0FHYUVseEg5Y1dDc2gzTGdnZEtUdmU3QzhibndVTWNjTGh5LXUzQXBObHpTbkV0RGVrVXJkemw1LWhRRlZha1l2RU00NXRaMU1B0gH_AUFVX3lxTE5SeFNOcllENjRSbTdwVVhiTzF4QW1fY2xqLURpNTJ3anQxREI1WE1KR0E3WU5jcjg0R3lHTWZtOFFnbEVTZ0NKOVAtOEtuRGdiMlMyU1hNYm1jSHBxZHRMZzZObDhTcjE5VFdKRC1leGlyMjBFdkRwTnVCekNzVC1rc0RhLW51c3hFTUhHOXpDNGJjUkpnSTZDX1Q4WUlKaW5iMlZOQVVmMlNYR28xLUhQOGRuU3Y5cVJ2R0hZSHg1bVhORnRDV3d4bnBhZUpzRGw2QTgyS2RfZUxGUVViXzZTYUhMZ2xzSGNkcFZVZk05cTZWVG92dFNZVXhqZVRTZw?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
+      "title": "Private banks\u2019 inoperative Jan Dhan accounts rise led by HDFC Bank, Kotak Mahindra Bank",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYTJma2lFMDRDaUpnZDc0SC1tZEM1QzVpLUZIZk9FOVk3cnlNdGc2cDVtMm5NVlliYjFBdTRnQzk0SHNlbE9penNJbldpc2N6eExOUnR5SWdyaVdtOEdPcVpub3hWNmp2SWh3aE1kYWp6Nmg1ZG4yUkVvQjRrTlpZRDBBUlh3MldGUVlLamN6OFYwT2k5cmE0R0w3TS1yQkhoQnlHaGlsRUxoX084UWdLWGVOYkRyOHNzVmhNRHROa0d0ZUEzU1VhUjJ3bG1zT3BvNUpNbkNBR3BiRVY2Y29Pc9IB5gFBVV95cUxPakZYdnBfRDJ2N1FCWmF4OGVDWTBWUHlyN1BHUlZGdWJ2RlBDcDVwU0dRU1hPZ1FmQmhqSWluMlhzVV83R3lVUGU1TTVGRjVRc0N6VUd2enFXRTVvNTZ6MFR0UjdEbk1Ma3N2VUtrWGRwTzE4a1FnYlpxT0w5Y2pzZWI1NkFOZmNLNXQ5SC1FOUhld2FZY3pKZHhMM20yVVEtRk00Uk5scjhNUVJSYXR2MFZHQWpfS0RHQ1BkajBFZzh0a2VqY2xGUElTVmhwVXBDelRBMjlJVU83T1BlTGEtOXpib3pxQQ?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "Four factors that likely helped Anup Saha get the top job at Kotak Mahindra Bank",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNT29LUzQ4eHpaTTNTNTlIZFhPaWw3SFZIZTdwbFNBejhTZVF5X3Y5aEY5ZE0xcVdTQTE2V1ZaVkxVdnVDV2Q4OVRyRG13NTNwLTNCTWp3clAtbjlxNGNrY2VXdE9MNGp2UzRLU0NJMGh6elFnbUQwMDVKbmtBYWZvRHVuUXZKTVJWWnc3eUpFb0pmUU5xdGRBd1IyOFBQMHpoYlFyMjNtY293VWdhalZSQTV3ekVxLWNnRXRNNWstMnZlLUs4ekg0Q0FuS1NJa2V3Zk5OOXhPaGgtazDSAeABQVVfeXFMT1Y4S1lNLXZDSGVHb1lvNUFEdV9RLXJKWDFVRXJtT2FidFZCR1JLd1E3M2JZOHY3Rlo3S00tZFdyRUtIM0U2Tmc1U2NJQnJ3d0hUaDBVcnI0NWtVaHhLSjFoTkFqQnptWmVULWcxd0w4S1ZqMEpITndIazN6RE1IRlp1QU5wd3FQOWxPMjFPME13NS0xTXhtNHJ0WkJ3bmJKTzF2Xzg1QVMydVZ4ZFdpU2ZIX1c1Szk5YkNFSXBzZnRrcTZ3eFRfM3ZKVkhuWjREWWpiSWE5ZlVOdUdxM0RpazI?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
+      "title": "Top stocks to buy for long term: Bharti Airtel, Kotak Bank, Eternal among 9 shares experts suggest - Check target price",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNZGNOZGt0bzZ4YXUtSFAwR01Ob2ZpOThqR1lmY2xVV0l0RjlHR2RiczJkWjBUbzBfM0FaR2JtTGhJTXREWnlfVmJ3bm9Kb0VkU0dsRVJsU3g3MENQbnpDdHBWZ2x6YTR6WktuakloOXBsUzRhUjRZQjVuZzNFOFZVeTRsNkItUUpBVG9TV2hfUmRsd2lpS3hpQlYyWVBlVW81V3praXloNloxY0xucnNWcTh3Rk1iRkxHUHJLNmkyano1UjlpU1Q5NWJ2azJmRUcyTUtsdzN2YUFOZV9ITTh3RVNkZ3pXMjU5T2R5a0NPYTZCVXRrLXNrei1ISW9vR0o5VXdjMUV1cE84YkNMb29JNUpn0gGXAkFVX3lxTE5TSUlSbmFHdm5iWGZGbkkxcHoyb3dNdThZVllxd3BXQmNlVlFuM091Vm9rZGUtN05KMnFsN19OZ3Z5SElDRVh6ZkROMmlzZUNIZXFRd2RLeWxDdXBLSm5kYkRmUEJkWS1oSllXd0VmdjkyeEszZ19GSWJLbU5ocW1TdXNyRDBKVXkxZl9yRnY0eHZoQ1F5UnZKVGdPdTBDWUV1NWtLNktCa2VFRkFkMmVMSHlSdmZSMGdjNmI4TXh3V2dDNjhyNUdWSzRWMkxxTmk5eHMtZEdaRFdpbzd5MF9lbFlOMWVjMXNVYWRta0RRZm9CM21zZ0kxMl96ZVlDeDlVT0dacS1JTWZEdmM0MGc1VTMxT1hDbw?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Best 3 stocks to buy: Balrampur Chini, Bluestone, Kotak Bank by Vaishali Parekh | Target, stop-loss, Nifty prediction",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOeXgtRUhpVlkxaFlGQnBBVDB6dHlmYnlzTFdKR21wMlhqMnpvc1Q3eUNPaDUxWmZyRmJnYUo1dE55VzMydWY2S25pOGljNnFrSE50WFRqaDFfM290bkVCMmJ5b2RDbDV3QmVMR256X1FZRXlwRHVhSUE2TGNvZFpJMlpUUUJ5WDdDV1lEWnA0LVoyNTFKNkFKN2ZIN1FJdkRlazFPcmNBTDlhZGxmNV9heXpzR0xKTDE2TWFLR1FSLWR3U0JnR3ZBQ01lcmRnUWh5LWxKeThvaUhNU2pIZUMyUTFvZWdzamlvOW5wT2pmeVRoVC14bFZHNVZiVksyeXNHX19DY2dUZEtuMk1s0gGSAkFVX3lxTFAwWHQybFVsR2N6Y0w2Rk5PRUZnU2R5MzFmT0V0bmRrclROaloyQmNNWElWTUN1QW1ZbDlrbTBvdzlyeW1pUUZRYjRfNVRJY1JoeTdhQ3N4MFFCTy0tNlI2TWpDVkxnM3FURUJzVzBDVGhORHNjcDd2dm4tYWJvMWZzc3dGdHlfTkptY1lpa05ub0EwMHBqaTJTTUxjYlhSREZpQjJwLTg0SUFXU2R1MHZhNjJKTkcyU1BKZ2pmUzQzZlVUZmlGd2NuS1NwOF9iX041RndiN1ZjRHBTZW1WTFNRZEpCQzRMZmZEODd3MmpXaGV6MGQxOGc4N00xSnF5UVhXU1ozNzhHczVZX1J6a2RPaWc?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Stocks in news: DMart, IREDA, TCS, ZEE, HUL, Glenmark Pharma",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBoR3hoUWJDWURCZlZMeFZ5bEc1WFBwTTVjZlVlVElNMmI1QThaTzEwdHRtNWxPY0ZwTG5MSDFEVnRMZmhPUUVvbGpqZlo2SHRMZEdGeGhpTWdNcm9Jb1ZNSzNqNTJZN0djeHRB?oc=5",
+      "published_at": "Sat, 10 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Price Action: Kotak Bank shares up 3% on MD, CEO appointment; IT stocks gain, autos slip",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWHRJMmUxbTVoZlliQVhtOThueXBDZkxid0J3bkJFZmo5R3dZWWFwVzdqc0psaThjMEpqQmRvTzhVbkRsVThjeEV2OHd0WTZLY0dOazlmNEdUSTVka0lmUmJqcmhnQVhoY0RHY0VSdmpHX0ZJRVdLcVVGSnZNbE5GOE9wSGYtenE4Tm9McFNrSlp4LXdLS3VKeVdVNEZ2RW9CckpFSUx4QWY5cG12RDZYSkV4QkxUVTdMdEFkeUloTlRHMEhtZ1FNdkp2M1F3aVJMRHd0LUlMc3ZKaHVPRDVvdjhR0gHnAUFVX3lxTE5OQVJDbDMzVmpueDlpZDdnUHRYajg5NG1RUnhyQUhhckdaLWlDbm1RV3NaVjRPVTBVTVZyeEcxUVpzMmRyeF83TThFMU9sSVo5bFd2R1RCWkw5WDRJT2hEWUE0dXZKbFhwODJBckx3VU9QeFJuaGdEYURfNGxmYjZ5ODdteWQ5UFgwN3RGWFdGUGJNWHhRbFdOYW5mSU44SjBQa2JEWndxQVhPc2ZZVWlhRUlFcFQtMnE2VUMzUlNmaEhXM1d4NDZuMGQzODlDX0tGUFNfVkFNbjQ5WUZxOE9UMjg0eHlRVQ?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
+      "title": "Why is market rising today? Sensex soars 1,000 points, Nifty above 22,550. 6 key factors driving D-Street rebound",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5lQkFvTWlCNm5RNFBDc2c1N0hoS2ZMODZ6X0lwQVF6MUxELWFBendlUW95aWtBRGhrSzBlRGZfVlBpUTFrcjYxVDNXa1Rac2xNc2JOUVR3TXRfWkhBOEhSMlY2elJWS1ExM3hDVHdIeE9sS3JVbFNEQ1NtUQ?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Market wrap: ITC, Apollo Hospital, Dr Reddy's Labs, Bajaj Auto top gainers and losers on Nifty and Sensex on Monday",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9RcFdHZnRGeXhMY2EwOG9VUUYyaG9WbW5NMU5QdUJMbzdaLUloLVBwRWFnZEQtWjZfd0N0d29mLTRmOXAxc01nWmlOUEVGOWdtWXRQcWdIZ2lvTmFpeGZEaTJ0UVdiMUs2NHNYQjhiME94RnRzV2tR?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     }
   ]

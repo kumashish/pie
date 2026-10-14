@@ -1,269 +1,268 @@
 {
   "symbol": "TCS.NS",
-  "last_price": 2094.9,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 2305.4,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
-  "trend_score": 0.5,
-  "fit_score": 5.0,
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 5.0,
-  "vix": 13.77,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-  "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (62.4% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-  "cash_trade_setup": null,
+  "confidence_percentage": 17.5,
+  "vix": 14.44,
+  "strategy_type": "cash_swing_short",
+  "strategy_display": "Cash Swing Short",
+  "trade_profile": "Advisory | 30-45 DTE",
+  "trade_category": "cash",
+  "recommendation_reason": "Best fit strategy (53.0% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 2305.4,
+    "stop_loss": 2214.23,
+    "target_1": 1959.59,
+    "target_2": 1729.05,
+    "risk_per_share": 91.17,
+    "risk_reward": 6.3,
+    "atr14": 64.78,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 2200.0,
-        "strike_formatted": "2200",
-        "option_type": "Call",
-        "delta": 0.205,
+        "strike": 2305.39990234375,
+        "strike_formatted": "2305.4",
+        "option_type": "Put",
+        "delta": -0.444,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x TCS.NS 24-Nov-2026 2200 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 2250.0,
-        "strike_formatted": "2250",
-        "option_type": "Call",
-        "delta": 0.101,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x TCS.NS 24-Nov-2026 2250 Call"
+        "dte": 41,
+        "summary": "Sell 1x TCS.NS 24-Nov-2026 2305.4 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 100.0,
-    "stop_loss_price": 2032.05,
-    "take_profit_price": 2157.75,
-    "net_delta": -0.104,
-    "net_theta": 0.145,
+    "margin_required": 97.17,
+    "stop_loss_price": 2203.27,
+    "take_profit_price": 2111.07,
+    "net_delta": 0.444,
+    "net_theta": 0.392,
     "probability_of_profit": 0.0,
-    "var_95": 50.0,
+    "var_95": 168.73,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1675.92,
-        "pnl": -100.0
+        "price": 1844.32,
+        "pnl": -558.25
       },
       {
-        "price": 1692.68,
-        "pnl": -100.0
+        "price": 1862.76,
+        "pnl": -539.81
       },
       {
-        "price": 1709.44,
-        "pnl": -100.0
+        "price": 1881.21,
+        "pnl": -521.36
       },
       {
-        "price": 1726.2,
-        "pnl": -100.0
+        "price": 1899.65,
+        "pnl": -502.92
       },
       {
-        "price": 1742.96,
-        "pnl": -100.0
+        "price": 1918.09,
+        "pnl": -484.48
       },
       {
-        "price": 1759.72,
-        "pnl": -100.0
+        "price": 1936.54,
+        "pnl": -466.03
       },
       {
-        "price": 1776.48,
-        "pnl": -100.0
+        "price": 1954.98,
+        "pnl": -447.59
       },
       {
-        "price": 1793.23,
-        "pnl": -100.0
+        "price": 1973.42,
+        "pnl": -429.15
       },
       {
-        "price": 1809.99,
-        "pnl": -100.0
+        "price": 1991.87,
+        "pnl": -410.7
       },
       {
-        "price": 1826.75,
-        "pnl": -100.0
+        "price": 2010.31,
+        "pnl": -392.26
       },
       {
-        "price": 1843.51,
-        "pnl": -100.0
+        "price": 2028.75,
+        "pnl": -373.82
       },
       {
-        "price": 1860.27,
-        "pnl": -100.0
+        "price": 2047.2,
+        "pnl": -355.37
       },
       {
-        "price": 1877.03,
-        "pnl": -100.0
+        "price": 2065.64,
+        "pnl": -336.93
       },
       {
-        "price": 1893.79,
-        "pnl": -100.0
+        "price": 2084.08,
+        "pnl": -318.49
       },
       {
-        "price": 1910.55,
-        "pnl": -100.0
+        "price": 2102.52,
+        "pnl": -300.05
       },
       {
-        "price": 1927.31,
-        "pnl": -100.0
+        "price": 2120.97,
+        "pnl": -281.6
       },
       {
-        "price": 1944.07,
-        "pnl": -100.0
+        "price": 2139.41,
+        "pnl": -263.16
       },
       {
-        "price": 1960.83,
-        "pnl": -100.0
+        "price": 2157.85,
+        "pnl": -244.72
       },
       {
-        "price": 1977.59,
-        "pnl": -100.0
+        "price": 2176.3,
+        "pnl": -226.27
       },
       {
-        "price": 1994.34,
-        "pnl": -100.0
+        "price": 2194.74,
+        "pnl": -207.83
       },
       {
-        "price": 2011.1,
-        "pnl": -100.0
+        "price": 2213.18,
+        "pnl": -189.39
       },
       {
-        "price": 2027.86,
-        "pnl": -100.0
+        "price": 2231.63,
+        "pnl": -170.94
       },
       {
-        "price": 2044.62,
-        "pnl": -100.0
+        "price": 2250.07,
+        "pnl": -152.5
       },
       {
-        "price": 2061.38,
-        "pnl": -100.0
+        "price": 2268.51,
+        "pnl": -134.06
       },
       {
-        "price": 2078.14,
-        "pnl": -100.0
+        "price": 2286.96,
+        "pnl": -115.61
       },
       {
-        "price": 2094.9,
-        "pnl": -100.0
+        "price": 2305.4,
+        "pnl": -97.17
       },
       {
-        "price": 2111.66,
-        "pnl": -100.0
+        "price": 2323.84,
+        "pnl": -97.17
       },
       {
-        "price": 2128.42,
-        "pnl": -100.0
+        "price": 2342.29,
+        "pnl": -97.17
       },
       {
-        "price": 2145.18,
-        "pnl": -100.0
+        "price": 2360.73,
+        "pnl": -97.17
       },
       {
-        "price": 2161.94,
-        "pnl": -100.0
+        "price": 2379.17,
+        "pnl": -97.17
       },
       {
-        "price": 2178.7,
-        "pnl": -100.0
+        "price": 2397.62,
+        "pnl": -97.17
       },
       {
-        "price": 2195.46,
-        "pnl": -100.0
+        "price": 2416.06,
+        "pnl": -97.17
       },
       {
-        "price": 2212.21,
-        "pnl": -112.21
+        "price": 2434.5,
+        "pnl": -97.17
       },
       {
-        "price": 2228.97,
-        "pnl": -128.97
+        "price": 2452.95,
+        "pnl": -97.17
       },
       {
-        "price": 2245.73,
-        "pnl": -145.73
+        "price": 2471.39,
+        "pnl": -97.17
       },
       {
-        "price": 2262.49,
-        "pnl": -150.0
+        "price": 2489.83,
+        "pnl": -97.17
       },
       {
-        "price": 2279.25,
-        "pnl": -150.0
+        "price": 2508.28,
+        "pnl": -97.17
       },
       {
-        "price": 2296.01,
-        "pnl": -150.0
+        "price": 2526.72,
+        "pnl": -97.17
       },
       {
-        "price": 2312.77,
-        "pnl": -150.0
+        "price": 2545.16,
+        "pnl": -97.17
       },
       {
-        "price": 2329.53,
-        "pnl": -150.0
+        "price": 2563.6,
+        "pnl": -97.17
       },
       {
-        "price": 2346.29,
-        "pnl": -150.0
+        "price": 2582.05,
+        "pnl": -97.17
       },
       {
-        "price": 2363.05,
-        "pnl": -150.0
+        "price": 2600.49,
+        "pnl": -97.17
       },
       {
-        "price": 2379.81,
-        "pnl": -150.0
+        "price": 2618.93,
+        "pnl": -97.17
       },
       {
-        "price": 2396.57,
-        "pnl": -150.0
+        "price": 2637.38,
+        "pnl": -97.17
       },
       {
-        "price": 2413.32,
-        "pnl": -150.0
+        "price": 2655.82,
+        "pnl": -97.17
       },
       {
-        "price": 2430.08,
-        "pnl": -150.0
+        "price": 2674.26,
+        "pnl": -97.17
       },
       {
-        "price": 2446.84,
-        "pnl": -150.0
+        "price": 2692.71,
+        "pnl": -97.17
       },
       {
-        "price": 2463.6,
-        "pnl": -150.0
+        "price": 2711.15,
+        "pnl": -97.17
       },
       {
-        "price": 2480.36,
-        "pnl": -150.0
+        "price": 2729.59,
+        "pnl": -97.17
       },
       {
-        "price": 2497.12,
-        "pnl": -150.0
+        "price": 2748.04,
+        "pnl": -97.17
       },
       {
-        "price": 2513.88,
-        "pnl": -150.0
+        "price": 2766.48,
+        "pnl": -97.17
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.718,
+      "win_probability": 0.685,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2462,
+      "half_kelly_fraction": 0.2165,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,47 +270,59 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 62.4,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-2200CE / B1x-Nov-2250CE"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 59.8,
+      "score": 53.0,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-2094.9PE"
+      "legs_summary": "S1x-Nov-2305.4PE"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 59.2,
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 40.1,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-2100PE / S1x-Nov-2000PE"
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-2400CE / B1x-Nov-2450CE"
     }
   ],
   "indicators": {
-    "EMA20": "2126.66",
-    "EMA50": "2193.18",
-    "EMA100": "2269.10",
-    "EMA200": "2462.86",
-    "RSI(14)": "40.52",
-    "ATR(14)": "49.21",
-    "ADX(14)": "19.25",
-    "BB(20,2)": "0.40",
-    "P_SHAPE(20)": "19.76"
+    "EMA20": "2153.84",
+    "EMA50": "2192.30",
+    "EMA100": "2261.18",
+    "EMA200": "2449.29",
+    "RSI(14)": "66.07",
+    "ATR(14)": "64.78",
+    "ADX(14)": "22.35",
+    "BB(20,2)": "1.23",
+    "P_SHAPE(20)": "19.51"
   },
   "rules": [
     {
-      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -353,27 +364,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -381,7 +371,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "20-Day Momentum Relative Strength",
+      "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -390,45 +380,45 @@
   ],
   "news": [
     {
-      "title": "TCS Q2 earnings: Five things to watch as Tata boardroom fight adds to scrutiny",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSUFHU1lmTTJfbE9DTHE4MzVHd2VOdXlyd1R6OVg0b0RYNUpoWDU4R3FQYlZNLXJ5QThadzVQemRJRnA0TThHUUZNRVRPdlpOcW05eENiSFJYd01ySHhKUlZYc1h6enlLOGs5cDBqLWVQbzNaN3FHQjVIci05RXNReUlvMWhRc0Q1Zy1SWjQ5YUk3THpxN2JQaWRtNEktNVJwV3hxTGU5Q251M0l2a1doM3dpeGtnb1ZncTFHb2phVWlvOTMyRzhRam9PTWlaenkxR1lj0gHYAUFVX3lxTE1oWmhuVzBuZUlGS1p6NVl0dkxHUE9YMXlyLWJaTE5vSFA3aWtYajJwYmNEQ0ZhQV9aVHZ5RTFWaWh5T3gzZzRRZG40TGRNVWdJZGxvNndQbmoyd2dTNWwxejcwTjZNYnlXc3d1Z3dLcE5TS2hpUVhvQkN6YVNfQlpNZHI1U3lUbW81X09ScUhQa0pOb0N3ZlM0VnRpdVJrakdWUUszZnFDVUNsRUFDSlNuOGJYNVFMOHE4MHJ1eXVjQkhoRC1jZWJNbVkwcW1YTE5DQzB2Vk5QeQ?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
+      "title": "TCS partners with Zoho Corp\u2019s ManageEngine to supercharge sovereign cloud adoption in India",
+      "publisher": "ET CIO",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQUzNwYWZLYUF0QVd4c2lINTBlNVhtaF9NdDJSTkExb2hQR0tURFh3VzNJQWZaUlJoUW5KSm9fckJjMGUzUkpxQ3VfRUIwanhMSG9rdnktbTZmczh3a1d4VlVJWnBVR1FvZk1TU3N0QVhLSUo2TWpTV2V3UVhVZi1Ecm1saUNSUUtBMjB2cFpBbVBNUVdVWG0xVndlUTBtbEw1aXZ1WmloenRrMmhZRE0wZVJlbUlCNWRJTDJTa3pnYzA0Wm81NmJmTGJQVVJ6NlNVanp5UXBYWDNGYTg2SlJsaTlUbmJDRDFPU0Z4U01wX1pQOHI3ZWhXddIB-AFBVV95cUxQUzNwYWZLYUF0QVd4c2lINTBlNVhtaF9NdDJSTkExb2hQR0tURFh3VzNJQWZaUlJoUW5KSm9fckJjMGUzUkpxQ3VfRUIwanhMSG9rdnktbTZmczh3a1d4VlVJWnBVR1FvZk1TU3N0QVhLSUo2TWpTV2V3UVhVZi1Ecm1saUNSUUtBMjB2cFpBbVBNUVdVWG0xVndlUTBtbEw1aXZ1WmloenRrMmhZRE0wZVJlbUlCNWRJTDJTa3pnYzA0Wm81NmJmTGJQVVJ6NlNVanp5UXBYWDNGYTg2SlJsaTlUbmJDRDFPU0Z4U01wX1pQOHI3ZWhXdQ?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Personal Finance",
+      "title": "TCS, Zoho's ManageEngine partner for AI-enabled sovereign cloud in India",
+      "publisher": "ET Telecom",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUVFfMjBXUVBRRElDeXBtd1FoZE54TDgzamxCbUpibmFBeUxYVGpLWDR4Qi1IODIwVHFnX01BOUc0NjZteE1kbF96LUpxU0ZUMXV0TFlhcndrVFNibjVfRHFWVWFodzh5bWp3bG5uZ3g4bS1rcjA3b1kzbHRmQnF3Vlc0dFRlOW54dXdJWDVtZUdsbEZNNVdreVVMTjJGZlA5WkFIM21jQ01WNl9DQmlEQ21CdEtaeHNpdTZXbndibFRxRklHTC1DcVlLdjJUSGM2NFZVLXI1WURlbG1LQ3d4V3YtQkLSAeoBQVVfeXFMUGVqQ3p6QVIxY3lxQWg2dFBqUDhYWTJOaTFWd0pNQkd4Vm9HczAyUWpWVHdCZHFyR1o1cnVhTVM2WHBVaHE2QXdrU0FoTVdub0VwSlp4cFc5RFpLZEZ6bjdEdWl3WDVmbWt5Z2pZMEtHX0l2cGswWDNMWmlCdzhRMlZ6V3NwMjd5NHpGX2l2STRxNWVZX1NXYkJMRHE4dVhHV2E1NS1DcDdzTnhueVFNM0E5RzliLWNhczBWdjV2bWlPZTd3WDQxVURfRUJzZWY2WldoOWt5UXNKX2FiQS1DXzhqUlltWUhTMmxR?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TCS plans 80% new hires with AI skills to boost profit margins and revenue growth",
+      "publisher": "ET Enterprise AI",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQY21tcjcyNjlZWWdQRVBmZ3NOdF9UTWhMVGY3d2hZdXJjN1RUcDBUV1VKTUJzS2NsN2ptcnJUZkkxWXdZRENLRFR2S0FUN2laNjRvbXBWT0FXMGVnMjR6SzZJV0tEVnIyeEJXMjVSVUFrQU15MzdKal84WTdqQ0tvbUN1VHlJbm1SeGRYRzR0MGxfN3poWFE1amRHUTdfNy1BU3pfTmtsczRSdE41T25ZZFNJY0E0aE9PRUxYN2tfMllBbnVPY1VHTXdKeDFCZlhtcWI4OGlHbDRpOFUtbU16MHVsY09COERYNHfSAe8BQVVfeXFMT09vN1Q2dkhZVUI2S3llbUFwc3RIaEVTbWMwQUx3MmpjREVZODVCcjhNY0l4bjVOLTJLcWlqQ3BXZFZjVU1sSE1CbUs2MzQ4bnBKMFozSjRXVWx3ZW80Z2hWMlRteENGeUt6dlozWk4tTmNTSHVNQlZ3S1JuYTRDeTVEWXkwZWQ3TmdpakhRUzRVUk95aC1tczF1a2Y2Z1NLcDVEYnVtZFBvUXNfWUl0NnY3Xy1mckNsb1B3THhoLW53bjhra3oxdU5ITzRCMTlPb0FkS0tFeVUwZS04bHBha0otLW1BbVh0anNJV3RBRVU?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9TUXRCVkN5WWZEeFA1bFhuTmtzVnhSZE1zRTlyNzNISVVQZ3BJSmlRSXFfRTBPWm1MN3dOVkJKanZuMWt1SlpCZVFwbldLZ05GeVRxa0pxQ3FCUjJiUHVJeDktUEYybTJWTDJOQ3Y0U29wX2ZvaEE?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "TCS to hire 80% of workforce with digital, AI skills; AI work to expand profitability",
+      "publisher": "ETHRWorld.com",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQU2VGQkFycmZPQWQ1bG5aR29kYXVGeVdwam9wZTdOR25CaElQR01JM0NubXFNSFJmbDZZS1J2ak81NzdUOFQ5ZlFiVm1xUG9ITkkySERuREs0dUlrbkpTUFloZXhwS3lMUmNCMHhJQ3BGNmVzQ25DeHY0Vjloa2JkdlR4NUc0aGMxcHRybHRHNDhsNUMyZkE0TVgxeW1RSFQ1S1hlNE9QNk1UX0xXUTJzOWxXRU05NjFHS1dGUzVEbUxSd081V080UkU4S0FQMlI4SkMxVGo5RFpYaUZyZk5r?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Nifty IT surges over 5% as strong HCL Tech earnings lift IT stocks; TCS, Infosys gain amid global AI...",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZi1sUy1qNkVTaEVXbFEyV19xaTNKM1dKbVI5ZHZkVlE2NU52ZzlFR0ROcUVYN19uUjJuSEliYjFwT0dXR0xXcUQwZzBzRkxOUUZSNkJzSVNXU0lxdXdCNWxEQy1COXRMZlEya3RPMHA5WHEwdW9wZmFhT294b3lsV0Y5ZWhJNXpiMnlrUW9hRmhEM1lrY1JDWEFfMEk?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Today: HDFC Bank, AceVector, Orient Cables, Manipal Payment, Pranav Constructions, DLF,...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQemVjQ05mZTZYbVJGdGk0cjFEOThKNDF5S3J3TmRyQlhRRGVJUnBRWWc3b2JGbjBMUnA0SkUxaWNxVHdmd24xZUQ5Y2pobE03dmVTVDk4MVZJTTNXMjdjZjVrQkEtZ1lwRlp0ZnlMbUREejFncXl0S2NIa0NYV3BXUURRcGlNN2NqOWtPQnZndjRUZlQtQjhoNGxvRXVPR0o5TGJhUVFWSXdfY3lvTFhwV25SYTJXWXJBSGhRdU9oQTFmMDdXZVVZSnRCMDJUbV9STmd5Rmo3aU5MU0FlZk1uMnB3ejl4cGpKOHU4S3NzSFktczdIblh0Y1lLWExwWGNFWl9IcF84RkhLdUNhQUlVTE5WSzZ0cVhIdlhfRjNabkxraDd2Z3BLdkVUWUIxMjR5WHVRQXFPV2p2UDV1ODE5bVVTNTRCcnR0SUgyU25FONIB1AJBVV95cUxOM0hNTVNOSWp4UFRpdjJ3akRpejRTN2tEel9iQlBHd19wWEU3Y2NsUE94MUppMmxwMWRhcWh3TmR6czQzRDdOVGxxSWJRa0VoNm5RdmtGLXZzZlNIOU15bGYyaWJBcndiY3V4T2paYldRQTY5andoMWx3YWk1N2taTWd1UjdmRnRjQVF6eUlGUERwV2NlMTR5X0llSTVwTHAyZ0FjMkFMaXVNdm9pWk9KTGdJZE9yOGZlbmpoMmc1QnMtVzFYVlFKR3loSVctUEV4RWpka2htOFBsQm9uLVJ0WDJKeThLU3BsWHI5bl8xd2pTT3pyWkZEUENkT2lkNW9JeXNFWF93clRmZmpWeWpzeDBId19EelYxTkJodUkyeDc0alJ0V3BjaF95cXJxNGc3MDVTM0FoeVhGdFVSb2VDOVlCemxsMWFyeWFHbnVBVlZCV2Zv?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "RBI MPC meeting Oct 2026: Why TCS, HDFC Bank, ICICI Lombard, Coal India shares may gain if 25 bps rate hike is announced",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNTjRBMjI2ZDV6ckw3Ym5SZEZQbzhEYmNNZ2tSMlNkQ1VvY2N4dmgyT0FQWkhENmlwR1FkN3QxalVZbG1DOWtnN2pyOWwzSHZ2U1hvVzhLRVhET01JRXJYVWtuMjZERmJNcThOdnVpRlU1Z01Yb1Q0a2xNX2JNVGIweEFfZ0lheE84bFE2cF9qdm02dHBtcmViVHdxTkF5UGxqQzJ1YkVOOUU1dzhLMTU0MFpvX05INzhtMFlOR05zRmNyLVJ0b2UwWVBjMXpzM0FFai04R04tdk5yMWtnZWVfa1NYWC0yNUxfcWtSTTAyNHVaekM4ZmF5dnZCaTNRZm5vcnZUYjJsZGtJM2xJbXJDMk9B0gGXAkFVX3lxTE9sX2d2T3JOR0ZqVFExdzFsbjFuUkhQNGdDZGYyNXJuOVlrVjVfMnBxeEMzbmgxazV5ajJISDRKTjJDNDFVQlZXRTVuSVFiSl9SYUFpTFlha1NJU2lTY0NHX0dkRGZlRU53WFBfVG9qMUNhZDlyUGk4OTh3V1VGNUxCMXowcTdjQ1F3M1BXdW5kdHF5cnliMWRSWGVlaEowVHI4WTNxQXdxajU5ZVVodHJ0VHBhQVlsbGp0Xy1xT09ZLU9zVGNTY3RCSmVTUjJqclc0eUNoVzRQaWRUWUUybElVLUQ0U2dmQXZSemYzZGJkejRfaWNBdXJpQWhleUxMbzRDeDVaWWF5NUlkX3dqLUEyblR5U2NINA?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "TCS, HCL Tech to Mphasis: IT stocks to add in portfolio ahead of Q2 results | Check target price, upside, preview",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOU01JejJUeUNvUm1Zdl9UeUNlcVRfM3Vob0FzelNpRVRKaVFuR3JNQ3MwcWNKVnk0Ny1yOVJFRVhaY2NBZkdaX0JyclpCV19GMU05X3JqTUQtanR2OUpYUWYyMWFYa28zcVdyeG9qOHBIMzB3bUhtdmw0NUlCZDBCOTNYY1ZMZFVnVHFwa2tEQVV4T1RkTm5jOWJMWFBZTFZYUTI0c0pkWTlMNGtCRXZOdzNqYXllVThlSU44a1NtaVdiYVJVZmlJVWt1eFp2WWY1cGtPdnlmNzg5R25Gdk5DRlJNQ2Z4NGw4UkJYZ3JPRm1tRlZhN2E4UWctRW1ITFRuWTg2OHo2RUnSAY4CQVVfeXFMTjRBN1NtMGk3ZldVSXV4UjMxUEU3ZWJxYURzQVpqcUJ4TGUwdlV5WFlPNlpMdmF3dzZaQVZEbnFORU9TZndiSE5wdVVhT25zSDl3VFZGNDVmbWJyM3ZLRlBuVy1kTXF3d2haQlpVbk1KanZjSGh2eEZjYlFvZDM0azlhbDlrRHZyVXQ4dUVWdG9kNVRBeXE3UUhvRHFsNEVSUDBfNFUtU3JsXzdyUF9iai0wSlpfSWtwY0pRMGktQ1p2OEFxeXBpTUx6S3hWMkRXOExOS3FwcGZfSVhvZ0dtQ25oalZGcmd0aXRQY2dUb2l2czB0c2RBR0R2cDhYRTF6b1FQUnYxd0JGLWJzWEV3?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Top 5 IT stocks to buy today: TCS, Infosys, Mphasis, Coforge, Persistent Systems | Experts' view; Nifty FPI 150 heatmap",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPLW4yMFdvQS1tQ2VUcE9abUxlY3BXRUc4TThyQXpFTFloRmxhOExwM1NaeXNHZmpzTGxyMUU2TFBoekNtWkZPc0Rvb2p1RG1oaVVVQ1VTU1ZzSUdSQlhncE5kZ1ljZm83cmVhNEtJdXk2UGtJRzdzaVYxTmhfMUpTRU1vSE0yS3VlU3Y3aFczdXA4bE5vZnlQTXBfc1pmVkF3X1ZoX3RMZGh5ZXZTaldZUE9XNDVma3kzRV9nWFJUcDBIZmo2YXBFWjh3cG8wUzVKSXN2RUJfVklYWUs1WTRXUlR6T01XRVdXaFptNnFON2xtUGN5YXlxdFgzSkRGQ1phUV9MQUxzdlDSAY4CQVVfeXFMTmhtUnh0TlJ1dlFLQ3g1WGFXdUZHbG0tSDdLSHBYcEQzeTljOGI5ckw2amhiMU9ObXc2V3d5TWhoU3dOamN6X2tVY0tyamt3S05oemxpWGo0ZG11S0JnOGhvYmhJWHB2ZU1NdWgycTNHbGVqU19MVEJRMjk5amVMVkExS2JCUk1oQzNJYVAzYk1tSTVJNXB1eVVoX2Q3WnlmbW5GbWxCaEdiZWdrazA0QmF5Mk5kNFlLR2lsdmtxOGVZcEFBX3FRbFJ2M0MzcGJVWllKTTVWcEtmM2tjbTcyYVpJNmF0N0psNURlQl9EOUctMm9jT2t0S0NkVXJfREp3ek5tOUN1X3hweS1hY2ZR?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPQ3E4V2Uyb0lZd3pvbTkxUXliZEVwZGVEbDNRMVdHYlBWbGt3WXNWMFpZMng4WTFPWXFQSmhGTnkwSC1GQ2RaTWdrTEJHck91WjAwVmRHVkJuWUVDeFZWZllzUGtNYVZsTk52TEU0NWppcUxJVFJmYVZMMUVCcUowTVJLckhvbWFqSnMxN05VMTFJTlNCU1cwVzkzcUhUTzFxelNuc2UtejhPOHpDYVpRcDZ5NFRTSmphYk9KUldmQlZIOHMzSzFMZVFxT3RMYWFoTG5BVWVJS0o1MWxVclJMQ0k0MktPM2h1eWFabXZ4cUlaWkRabHk2eNIB_gFBVV95cUxOcDRGaldUNmg2emlldUd3VHNtUFdzRTBYQ0laZzdid2xNaHRDVWZoWUFHYkNJYUJoWWthT0dPZ1FzdGE3N0xWNGE1LTFUVmRncE92QnJ3dndveE5NUGNGU0xtdlVQeDJlSTNGekVyWi1KeDRTUDFGaGtDTXZIVVg4YjVyNHBJZTNSZUtjLWZOUTNYR2FSVGdsY3VaOENaUVZOLW42OGNXM003MW1RT1RQeFVnYVd3VVR3ZW9BLXlyN1lNdlFZb1FoTGlzZ1paWFFXdEpkVUFfd1FhMmVyQnNHQUtkYU82S25NLXBXdVBvRWZTVlZRUXR0QXJKckRqQQ?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "bullish"
     }
   ]

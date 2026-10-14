@@ -1,269 +1,280 @@
 {
   "symbol": "NTPC.NS",
-  "last_price": 319.6,
-  "as_of": "2026-10-07 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 1.5,
-  "fit_score": 15.0,
+  "last_price": 311.3,
+  "as_of": "2026-10-14 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 15.0,
-  "vix": 13.78,
+  "confidence_percentage": 25.0,
+  "vix": 14.47,
   "strategy_type": "put_debit_spread",
   "strategy_display": "Put Debit Spread",
   "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (60.8% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (59.0% fit - Grade C (Moderate)): Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 311.3,
+    "stop_loss": 321.98,
+    "target_1": 264.61,
+    "target_2": 233.48,
+    "risk_per_share": 10.68,
+    "risk_reward": 7.3,
+    "atr14": 5.34,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 320.0,
-        "strike_formatted": "320",
+        "strike": 310.0,
+        "strike_formatted": "310",
         "option_type": "Put",
-        "delta": -0.448,
+        "delta": -0.41,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x NTPC.NS 24-Nov-2026 320 Put"
+        "dte": 41,
+        "summary": "Buy 1x NTPC.NS 24-Nov-2026 310 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 310.0,
-        "strike_formatted": "310",
+        "strike": 300.0,
+        "strike_formatted": "300",
         "option_type": "Put",
-        "delta": -0.222,
+        "delta": -0.183,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x NTPC.NS 24-Nov-2026 310 Put"
+        "dte": 41,
+        "summary": "Sell 1x NTPC.NS 24-Nov-2026 300 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 150.0,
     "margin_required": 4.0,
-    "stop_loss_price": 325.99,
-    "take_profit_price": 310.0,
-    "net_delta": -0.226,
-    "net_theta": -0.006,
-    "probability_of_profit": 47.3,
+    "stop_loss_price": 317.53,
+    "take_profit_price": 300.0,
+    "net_delta": -0.227,
+    "net_theta": -0.012,
+    "probability_of_profit": 43.5,
     "var_95": 0.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 255.68,
+        "price": 249.04,
         "pnl": 6.0
       },
       {
-        "price": 258.24,
+        "price": 251.53,
         "pnl": 6.0
       },
       {
-        "price": 260.79,
+        "price": 254.02,
         "pnl": 6.0
       },
       {
-        "price": 263.35,
+        "price": 256.51,
         "pnl": 6.0
       },
       {
-        "price": 265.91,
+        "price": 259.0,
         "pnl": 6.0
       },
       {
-        "price": 268.46,
+        "price": 261.49,
         "pnl": 6.0
       },
       {
-        "price": 271.02,
+        "price": 263.98,
         "pnl": 6.0
       },
       {
-        "price": 273.58,
+        "price": 266.47,
         "pnl": 6.0
       },
       {
-        "price": 276.13,
+        "price": 268.96,
         "pnl": 6.0
       },
       {
-        "price": 278.69,
+        "price": 271.45,
         "pnl": 6.0
       },
       {
-        "price": 281.25,
+        "price": 273.94,
         "pnl": 6.0
       },
       {
-        "price": 283.8,
+        "price": 276.43,
         "pnl": 6.0
       },
       {
-        "price": 286.36,
+        "price": 278.92,
         "pnl": 6.0
       },
       {
-        "price": 288.92,
+        "price": 281.42,
         "pnl": 6.0
       },
       {
-        "price": 291.48,
+        "price": 283.91,
         "pnl": 6.0
       },
       {
-        "price": 294.03,
+        "price": 286.4,
         "pnl": 6.0
       },
       {
-        "price": 296.59,
+        "price": 288.89,
         "pnl": 6.0
       },
       {
-        "price": 299.15,
+        "price": 291.38,
         "pnl": 6.0
       },
       {
-        "price": 301.7,
+        "price": 293.87,
         "pnl": 6.0
       },
       {
-        "price": 304.26,
+        "price": 296.36,
         "pnl": 6.0
       },
       {
-        "price": 306.82,
+        "price": 298.85,
         "pnl": 6.0
       },
       {
-        "price": 309.37,
-        "pnl": 6.0
+        "price": 301.34,
+        "pnl": 4.66
       },
       {
-        "price": 311.93,
-        "pnl": 4.07
+        "price": 303.83,
+        "pnl": 2.17
       },
       {
-        "price": 314.49,
-        "pnl": 1.51
+        "price": 306.32,
+        "pnl": -0.32
       },
       {
-        "price": 317.04,
-        "pnl": -1.04
+        "price": 308.81,
+        "pnl": -2.81
       },
       {
-        "price": 319.6,
-        "pnl": -3.6
-      },
-      {
-        "price": 322.16,
+        "price": 311.3,
         "pnl": -4.0
       },
       {
-        "price": 324.71,
+        "price": 313.79,
         "pnl": -4.0
       },
       {
-        "price": 327.27,
+        "price": 316.28,
         "pnl": -4.0
       },
       {
-        "price": 329.83,
+        "price": 318.77,
         "pnl": -4.0
       },
       {
-        "price": 332.38,
+        "price": 321.26,
         "pnl": -4.0
       },
       {
-        "price": 334.94,
+        "price": 323.75,
         "pnl": -4.0
       },
       {
-        "price": 337.5,
+        "price": 326.24,
         "pnl": -4.0
       },
       {
-        "price": 340.05,
+        "price": 328.73,
         "pnl": -4.0
       },
       {
-        "price": 342.61,
+        "price": 331.22,
         "pnl": -4.0
       },
       {
-        "price": 345.17,
+        "price": 333.71,
         "pnl": -4.0
       },
       {
-        "price": 347.72,
+        "price": 336.2,
         "pnl": -4.0
       },
       {
-        "price": 350.28,
+        "price": 338.69,
         "pnl": -4.0
       },
       {
-        "price": 352.84,
+        "price": 341.18,
         "pnl": -4.0
       },
       {
-        "price": 355.4,
+        "price": 343.68,
         "pnl": -4.0
       },
       {
-        "price": 357.95,
+        "price": 346.17,
         "pnl": -4.0
       },
       {
-        "price": 360.51,
+        "price": 348.66,
         "pnl": -4.0
       },
       {
-        "price": 363.07,
+        "price": 351.15,
         "pnl": -4.0
       },
       {
-        "price": 365.62,
+        "price": 353.64,
         "pnl": -4.0
       },
       {
-        "price": 368.18,
+        "price": 356.13,
         "pnl": -4.0
       },
       {
-        "price": 370.74,
+        "price": 358.62,
         "pnl": -4.0
       },
       {
-        "price": 373.29,
+        "price": 361.11,
         "pnl": -4.0
       },
       {
-        "price": 375.85,
+        "price": 363.6,
         "pnl": -4.0
       },
       {
-        "price": 378.41,
+        "price": 366.09,
         "pnl": -4.0
       },
       {
-        "price": 380.96,
+        "price": 368.58,
         "pnl": -4.0
       },
       {
-        "price": 383.52,
+        "price": 371.07,
+        "pnl": -4.0
+      },
+      {
+        "price": 373.56,
         "pnl": -4.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.713,
+      "win_probability": 0.707,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2417,
+      "half_kelly_fraction": 0.2363,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -273,45 +284,75 @@
     {
       "strategy_type": "put_debit_spread",
       "strategy_display": "Put Debit Spread",
-      "score": 60.8,
-      "grade": "B (Good)",
+      "score": 59.0,
+      "grade": "C (Moderate)",
       "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-320PE / S1x-Nov-310PE"
+      "legs_summary": "B1x-Nov-310PE / S1x-Nov-300PE"
     },
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 58.5,
+      "score": 56.4,
       "grade": "C (Moderate)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-335CE / B1x-Nov-340CE"
+      "legs_summary": "S1x-Nov-325CE / B1x-Nov-330CE"
+    },
+    {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 54.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "B1x-Nov-290PE / S1x-Nov-295PE / S1x-Nov-325CE / B1x-Nov-330CE"
     },
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 55.5,
+      "score": 51.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-319.6PE"
+      "legs_summary": "S1x-Nov-311.3PE"
     }
   ],
   "indicators": {
-    "EMA20": "324.16",
-    "EMA50": "332.07",
-    "EMA100": "342.07",
-    "EMA200": "348.93",
-    "RSI(14)": "39.23",
-    "ATR(14)": "4.80",
-    "ADX(14)": "35.43",
-    "BB(20,2)": "0.25",
-    "P_SHAPE(20)": "48.93"
+    "EMA20": "318.46",
+    "EMA50": "328.00",
+    "EMA100": "338.98",
+    "EMA200": "347.01",
+    "RSI(14)": "36.63",
+    "ATR(14)": "5.34",
+    "ADX(14)": "40.44",
+    "BB(20,2)": "0.19",
+    "P_SHAPE(20)": "60.71"
   },
   "rules": [
     {
       "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -353,27 +394,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -390,46 +410,46 @@
   ],
   "news": [
     {
-      "title": "NTPC turns to commercial mines as coal crisis grips power plants",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMXBQSkVfZ3lZMk9Hdi1DMmp1VFNrY29DaThJOGtrUmFXMXlwSWxJNjVLQU9qRndpOG56X0d1WHNHUHhHUDM5azZWeHc0bXc0cnJ2OUZmWUFDVTZIWGJrekZtQjBIc1VLcERCSUxORmVtNldTM2M3c1lzbGhZd0t5OWdWSW01bWJLOGdTbG9BUHhGS0lqODZBQUNHRVVFSTYwZS1ZaE5JVnVKX0hLeXF6TXdRRGtIOUZ3U1hweGF30gHDAUFVX3lxTE9vbEtOY1NXdUJUUlhQQ3NlVEVUY040cDZ5U21adENYc2JTQktrckJMck1DbERmNFM3UW9CaHgyOVNWYU81UlZzcXNEejNObjlHTVZZek94bW9ySmRIbWhFMzZKUFdzenlheFNpVDhDUEF1MWZoY0NhWFFHRGd3QnB0azBkNnlIXzRQY3RpSXIyNEdmRFYtUnhxYk15LTktYUpjeEJRaEhhejdJRUxMMzRRXzNUVHAxVWxoc0M3M2I4aklTcw?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
+      "title": "NTPC in talks with Japan, South Korea, Germany for green fuel exports",
+      "publisher": "ET Government",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPV3VqZjl0ZmJud2g3MzlpT1BMVk9fUGZveHNaSzVJX1dadXNSTnJkbVJhZERjN1RTSmIyN0hrOW1WSjF0VUR6Y2VOS20tSloyR3h2T0lwemVJV2x3YW1iUGhwNHo0WS1ESV9TSWVzdWJpWkJVSExLRm1VdEdZRTliUmltVEtFMEQ1aVYxSU9XU1BESkJxUEd6VG1hTTJpNlN4T09SME54TnBpMGtsaDZLT2dsMTBnNm11ejVHTXZnSEtlNW9MMGRjN0NfUVIyd3JFQkd6NNIB2gFBVV95cUxQUXc3djJmRUU3VkhpSTZFQnJDeDNPamR5STc2TEZZYjQteW94RGc4Qk5ma2tXWldPSExXMVN1bTgyY1hVRU9FYVV3a1BxY1hGbHpIYnJhNlpQcHkzX29qZHotUWVmWXI3ZjFlN2ZTUHAxbVRJRVpZTWlHckVIbVF4U285RmtVd1F6ZDREQjFLREJwY0g0cHBnSzJ2WF8ySlpBM0xDTmN2MXlCRlFhSzZQTHE1ek40a0ZuWmtaMV9VM05sVFBYb0lQdjJwUFJvQUNjNUhEQk4wM0VNUQ?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "NTPC may buy 10 million tonnes of coal from commercial mines",
+      "title": "NTPC in talks with Japan, South Korea, Germany for green fuel exports",
+      "publisher": "ET Manufacturing",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUHlkaDhscGZqd3UxVFB0azRBeC1qSTM5MThYblRDRGY2cGxaSV9Pc0p1UVQyN1lHS29SZTJDYmR0TUlrMmlBemZfUEpFQ2phbGZhamozODhzdUFoaDdXVjVvRzNxX3VqUUNHMFF0RXRzdlZJMzhqM3NVQkV1QjVWUGQ4eWxUb1FtUDVsRjVwV3dHWEdkRTd0ek9iMUFxckJiR2hkZDlNZHpXbUN6bW1LaHBPSGI1TnJlTjJfWW81V3J0NXhmMzdVS1VZX2FIaklhLXczcDBpanRmUEXSAeABQVVfeXFMUG5UcnZRNEM1Q2FTbkpfdDJISFVXUk15b1YxaXVJRG12UEgxOWNBQ2ZJVi1aQU5EMVJ1Tm1xRVhjT2tDQk9MMnRaZmhvRmFxNGRaWVFfd3hLQ200M1ZXSFlOOE1WTkxQUzg3MDBmV1o4ejFwU3lObE4zN09hQUtGckVBbjlRT0FsWVNIdkdBMHV6U2FYVFlRODEyMGh6eDVWZXU3cXJQU3BYckpNRjd5ZXc5Y1Y1QzhPbkFKS2JmdVlKRmZhbWJIWlpwdHowOVFUNWlNREtDOS1VcUtQeDZRd1A?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NTPC in talks with Japan, South Korea, Germany for green fuel exports",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQWWFIQ0JnY1RDQ3BpT0xpZjJFWHVwN0N1QkJZdmUxMDJIUDIyOXBwdFlmR1JabkYzVGhOWlJLX2ZFVGFqVnM5bmVsWWZJTXlVZkR4T3k2TW1GZ2k3ejZBSl9sSk81X2NzYWpjQW1BT3kxZ05sZW1iUkwxQWJULXNIQmIxbUh4bG14R3VIdGpiZUF5RE4tYnNrMW95UnFuUnpsSkNBV3QyX2pHLU9nNEJ6aEc4VlZpOVhkek5QTy1ZT3hvUjhnNl83NUI3YVVTZjU2aWx5VVRJbUNSY191WUJWSTNnc2pwUVo5RkNxMnJtbEdHSknSAewBQVVfeXFMTnhnWHNCeWNFY0N0NUVsbVVFVUxZQzFiTVhSOUc3SlpZRGVaMVZQQXNldlVDMVBIenp0RlZyMlJrWU9HVG9VbWpNbFlPV1duQnRoZzk2OE9nd0cxa3N5bTBUSHNmc0NDMzJGYWRDdjlWMklaWk5NZ0xLenUwWXlkZkdOYldwZWJSYjhCVGRHSUFuSS1DY2xBVVZrTm1yNnJ1aWJOZVR0VlNwemRDUHhzekxNMHhobHJKS2xncU1XbFFTeGVJa2NqYTdiblRHTHZtRTgyNG81UDVWUkhlRjFTSThDR2lwU2JSVXdKNXY?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOalFGdnN1WnB1YkEzOEpsdE05OEl5YVZJOU9IeDQ2UlU1N3Q5bHZ4Y1FRcnh4N0FUSkYtTExwamxoS3FBRGl0eXhzYkJfeERyOFMyMTItbnNnSzVmM0VaN0VIbDVlRV9HSXh5Q2tLSFNCelJSMi01NXR0a3BwdXh5UWJfSl9hRllLYnlmdmFBcmsyTWkwVUJPNmU4QnlkdWF6cjl6V0Q3WlFUNUt6aXE1OG1GbndGTy05YUVHbnp5RkMydTVZV0tKaVRFa0Z4MERzUnlZR2pmMjlNalgwZjlxdEZGOE_SAd4BQVVfeXFMUDgwaHRITnVtU1I3WDYwRFUtcjh1Mk5kUDFVN2FjNmdmQkx2YlhGbDh1enREeW5MYlNBZGVaajFJMWgzemlYeHUzQWNFSXNPdmtDSVN2TExBaVJEQ3dQb3huTm14NGVuakJsWENsZDhrSXRXS3pYUVc5UkkwTTBpNlVUeDRLd0REQWtBR200c0xrMG1XMkJIR2N3WFFfUURhaDBRSGMyeG0zbEFFWkdmWXItQ2p5aEgwOE1rejJnb3A1VnBsNE5xd19kdThsekx5UW9aVGM1S3VXWGVZeDhn?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "NTPC in talks with buyers in Japan, South Korea and Germany for green ammonia",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVjBVUWpIaDl3dlZSbEJMbk1DWDhWczNiRjRHSGMtajFENV9tNmJrZ19iNzhHdjFRRW1kUFdMTmlrU3RfVmh0bmZnRTFrdlotZERHLUZiR19TQ25HelA0LWgyRTduMEZVd0s3NDBVeWx4WEMwYUIxeER3elVuMmtzSV9jMlNZczdBUlVCbVZTdlhocjFWa3Zuejh4X1JEV1VVci1wQ0c1TFNvV0xsM3hKaEhFTi1EZFU3Ulc5ZExhcHRjQmdqWXloT0xlZnRUZlBDX05R0gHTAUFVX3lxTFBWMFVRakhoOXd2VlJsQkxuTUNYOFZzM2JGNEdIYy1qMUQ1X202YmtnX2I3OEd2MVFFbWRQV0xOaWtTdF9WaHRuZmdFMWt2Wi1kREctRmJHX1NDbkd6UDQtaDJFN24wRlV3Szc0MFV5bHhYQzBhQjF4RHd6VW4ya3NJX2MyU1lzN0FSVUJtVlN2WGhyMVZrdm56OHhfUkRXVVVyLXBDRzVMU29XTGwzeEpoSEVOLURkVTdSVzlkTGFwdGNCZ2pZeWhPTGVmdFRmUENfTlE?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "Power sector Q2 preview: NTPC, Tata Power, others profits seen jumping; likely to stay strong",
-      "publisher": "ET EnergyWorld",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPYjM4ck42eW1aQU1tajFZTjFteTRTY0cxZnpqTHQ2VDVBdC1pS2trc3NUT3h3aFlwQ0VQRUdMVUFpUEpSQlJhLS1YdkdWVVdfUlowSWdNTUFTZnhNQ0Z6bnFtdFV5VVN4bVBJOXFvVHV6a2duSHpGTU1VTGNPSV80Nko4R251aWFCZzlTYkVpTXRTR3lwd2lfNEhBZF9ZaTZaSERtVG8tei1qR1hQRTkzZ3RwZGhpRFB6MmlkdkdBVHlUd3doUnppTjV4b0dFVzFLYXZ3U2VJY1M5bDFBektsckdsV1ZVNG5Qcm9reW1HVDlucVBONzNpNHhLbTbSAYICQVVfeXFMT2ZNUHpmYldSVlhLclgwMVdHRm9wU2tXSkwzN1RfOGpfTVJCaXAydDViS1Q2N0VLeWtObEp1M3RKSzVkblpmQWg2aWRhb3RXUVYzLVpLdWtBY3BraHB3WGZMVEdGc0NhTEdhVWRKOTlzZnFpQ0RGRmRpYUdRYW9vWWNzT04yTDM5c19jX3VGMDAwcm1lTDM1TjdnZ1JVazJKeExyUWxtSURiS0NnaDdIejFrOGhQZUJNX3VRMHFZSW1UcWVNZHlDcTNQLXFSeTVPZ0tRVUZaUWp5eEUyQkY0bHFGV3BZZUk4ajM3ZVNPVXBKUXJSNmNmYlBBa0FvVU81VlRB?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "bullish"
+      "title": "NTPC Stocks Live Updates: NTPC Sees Slight Uptick in Price, Beta Indicates Moderate Volatility",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQNmtfOFpVbWt1VUozUkpCMjY3enpOSXAySDktX2U1d3NWNHVBcDVyTmdjdVZIaVc2VDd5bHg0RGF6Q1hpV09HRWdmb3FmdkpicnNFc3dNV09QOXg4V05BY1poNWROMHBMUHFRUUVKb21LZDRUeE4xbTV3SS1udERJaUVwRVQxSVQtZ1NaSXVOcTV3bVJ1aVlFUzN5TU4teENMdTk4d1hxbkMwXzFMWVlqdW42WlhZT2ZCMVZsQjYybENEeHU3Rm9rYmhDX1gtb25vclhHTWk4eWV3UHI2SkZRdG9aeTE5N0VsZmlSeVhEV2JoRmtMYUhfZGFId0VEN05NanBMT1psREVRLWxGRDRmQVhtaGxuUjh2MjZ1VVdJejJQY2ItSnNLMVQtWC1YTjNteC1wb21UOVQzNTZTWlZ4cVNtMFjSAb4CQVVfeXFMUHlhdXJKQTM1b28wWjdCVlctOGNqNm1ISHVONjJJcnZ3dmlNamhWZlZLbDR5ZjliNnZZd0xlN0NtRFVwVUFyal9EVHd0czFPd0VReGh6eXRhM3VIbVFPMzJ5cTVNSk5qVGs3dlVtVmVsY2Nmdkg4eWtoQzFyWTRPQ3ZSOEY0Njk3bTdjYWJWT1hXbjdTb1Z6OUctaU1Xc1JEaFp0dlVxTjItQlNIWG1kTDlLeG9VRGdrSE1sWk10R0FpRzdGUmlGWUowX2ozR2d4RXhFOVE5UnlzODJBX0g2dkpjT0F4bDU1a1oxbmIyWFhzcnBwLWdkeHMtN0lyUDFHd0V0R2xMdUkzcWNJTG4zenlIeUdZQ2NSSkRLRkVUZXdkNE9PbUVfUHVMdm4tVnpOTlM2RXItNGhpWWV4bnN3?oc=5",
+      "published_at": "Mon, 18 Mar 2024",
+      "sentiment": "neutral"
     },
     {
-      "title": "NTPC to buy 10 million tonnes of coal from commercial mines in H2 FY27 as power demand rises",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMUdjejNPT2J6UVlUdjB4bTFwNEdTOGtyaXFxaTRfSHBiTWhPYkJkLTVxSWY0X2F6Y0VLQVljOWlWemx3MHY5SHZMVElfNElaTTVhdnc3cy1qcXdrbkJ6X3NVV3JvWFh5eWdMOEtkTGptWU43cTZnX09lVlVTV2w5TXlBMDJtWlZpNXRlRWtlYlc4Z1ptdWRqcExtVVVLZFVGYWZIMlNEenExZnlJMEdTUmVoVGkxOTFnVGtlQ2RyYjlTLWtYMDhpUFVwTDBYVG1DM2pQVW1GWVpUMGo1aEVjSNIB5gFBVV95cUxNbWdTekhwdVp0SzIxTUpFSU1ZNG5uMlgtU2FoVXpfZDdyZ3ZVUURZSlV1Z1k2TUhVU1BTZmxQb2MtTFdBRURWbGpURVlfY3lBcmZ2MEo5eEhualh3NWhLVUtzazRDS1ZkV1FNcE83VFFPSFVma1NQYU1HZkh2aVBUR1hyUno3d0xlSTZBcnN4dzhBQThqUUdRZE4xRTQwTDk2MFRhOU9UcjJhZ0d4UWlCNUZSZ084OWtWWHVpLXdhdGZGcHAzZE5LaU1VRFVid081OEdaRm44czZiLVNNYTROUzVONHdVUQ?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "NTPC appoints Surya Narayan Panigrahi as Executive Director (HR)",
-      "publisher": "ETHRWorld.com",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTmNEWkh4OE5PcmMtZVhCakQ5Z3hVaHFGTU85ZXFmSmowNXpUZjNfNU9XWFVLVDdadUFUZDhBbjFOTU1MdWt6VUZDMk5nMkRKM0NkanhQdzNpbjJkMFllNUIwV2pRT2NwRmFDQ2dCc0hZVFh1TGdmbGZKd2NvXzl0blNWRkpyaTBkbmJacnpQUWxaZ1diWTF3VjBwRW5ab1FHU2V3ME1xMjBoQkE1aWpiUEZWYXI0N0hkMnEzNmo1YnU2elRT0gHKAUFVX3lxTE9wc0ZrbG40TlZ0ejhwTnFscWY3M1Q5VFFZcUFhSFMwLUphaFQyc0ptRkZsQks4elJZRUFlbUVyQWhXQWNOWV8wOXBlYTBoWnpDTk5NRmhkd0FTNFZyS1NINnk3b2lXRU1yaWV2NTdjcWtIRUpCQmdFbnM5R2ZFNEFWMU12cGpRaFB5RWhGbFNrZ3htdGZDR0dHQllXMDc1MTNwaERvekZHWEdCNXhUa0F6VXc2SDBzV2tBX3UzUFUzM2tNR3J2S2Y4SWc?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "NTPC power generation rises 13% to 117.9 billion units in Q2",
-      "publisher": "ET Government",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmVfUHRIVHpqN0kydG5DOERhS2VESDFTNnYwWkVxVE92dkNCdGhBYk50WXlHNVpxQ2doclZaTUtWa0IxMXFzSzBLZHJiTTVDUTUyc1VHVEY4OTE2U3B3NDNTM0NEWklGc1BtcFUtUG5mUk1xbWZzSEpuRzM2Q21CVFB6NUNrMUxXcGpXbXk3N1ZZSDRTMUhwR3BRbWpHX1k0UmJKRlYxejJzU3kzMURkYlZBY0x3TlZwd29MTWdRMzBMWFpO0gHKAUFVX3lxTE84NGdteEFNWk1KbUF2SzVqZVRJR0FWSGVoWGI4QWN6OWNNcmpOLVhWb0RFZXBqTGZWWTFwZHJwNlBRSjVreE5YT1p1bG5OSmJod2VTZE8tNWUzTXhOOUR4SERCZTFIQWNzUWR6Y2xuZF9IekNWMDhwUzlZNXZ1R19FelFwcDJvMmlqT3hRTkdjVW5uU29KLThmb21oaTRJMHpIcG14V0xTYWoxMFhJbE9EMThJR1F0cHppNjNIQjNQVlJHV20yUlNtNnc?oc=5",
-      "published_at": "Thu, 01 Oct 2026",
-      "sentiment": "bullish"
+      "title": "Trade Spotlight: How should you trade City Union Bank, NTPC Green Energy, Cyient, Persistent Systems,...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPQ21TeWdSOXgtQ0pvdjFHT1VfMzhDRlMzX3VhUWZEaVJTdVVHVmE5ZnZ5YnJkdGJvc2I0UDdybDlTX2FuRHpHMzhFQWhWdmZabUM3MGRwWkxyRjF5cEczZzc4X0d0OEgxazJIbXRPSzJsNW5IUzRDcVpSd3ZJZ28wa2VQR0RLb0J1MXNMUGQ1cEJqZXhVbEJIb04tNy1iMlVKSndvdFJYdW5HVWxveVZweHpHbFlQbjNaaUZSV3lEdWlpNjZidmdSUnZneE9HYXRERl95ZXhRUWNLNk82OUZGbkd2R2ZOMHhFVkVRNVc3RlYyTWRmWWpadTZSNzRxcEtuTVlReUxabjViRW50OG1hQVlsQV9YSnpyM3lPSdIBogJBVV95cUxPZEhxajZ5MVZwRzJBdGcwei1PVEJmYW4yQW5xdHMxRnkxQ0xoSm5HTVNnMWoyUVRXVTZsZkctcmFQcGF2LWNNOU5jb19WZjdaenN1THBQWnBnYzlzUWNmTU1QTW5vdFR0c3RRTHhDSGNSSUpKTi13VmVlUGFvVnNtTFp0eTcwOUVoZkFMc3ladGRYUUlGYmlIdHNZSEI1dlZhWkwyTGxBaWdxeGdDQnRDWWpqQm1NQndndlFmRE1rUXRJemFLaUhKM3hjb25ZRTJqaU1aTV90ODhoTXRUZWpaRlgwemx1MW1qN3poV2ZFajkyaC1lbzB4VzhVRm54NTlrLTU4WWpYcndNUzQyQW56blhKTmU1ZXNWMVB1SURtVS0yQQ?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "neutral"
     }
   ]
 }

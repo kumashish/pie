@@ -1,269 +1,304 @@
 {
   "symbol": "APOLLOHOSP.NS",
-  "last_price": 7890.5,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 7835.5,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
   "trend_score": 3.2,
   "fit_score": 32.5,
   "confidence_grade": "C",
   "confidence_percentage": 32.5,
-  "vix": 13.78,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "vix": 14.48,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (24.9) is oversold (< 35) [Synthetic PCR: 1.41]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (67.3% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 7835.5,
+    "stop_loss": 8226.67,
+    "target_1": 6660.18,
+    "target_2": 5876.62,
+    "risk_per_share": 391.17,
+    "risk_reward": 5.0,
+    "atr14": 195.59,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
+        "action": "Buy",
         "quantity": 1,
-        "strike": 8300.0,
-        "strike_formatted": "8300",
-        "option_type": "Call",
-        "delta": 0.196,
+        "strike": 7200.0,
+        "strike_formatted": "7200",
+        "option_type": "Put",
+        "delta": -0.03,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 8300 Call"
+        "dte": 41,
+        "summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 7200 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 7400.0,
+        "strike_formatted": "7400",
+        "option_type": "Put",
+        "delta": -0.094,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 7400 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 8200.0,
+        "strike_formatted": "8200",
+        "option_type": "Call",
+        "delta": 0.213,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Sell 1x APOLLOHOSP.NS 24-Nov-2026 8200 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 8500.0,
-        "strike_formatted": "8500",
+        "strike": 8400.0,
+        "strike_formatted": "8400",
         "option_type": "Call",
-        "delta": 0.091,
+        "delta": 0.098,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 8500 Call"
+        "dte": 41,
+        "summary": "Buy 1x APOLLOHOSP.NS 24-Nov-2026 8400 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 300.0,
-    "stop_loss_price": 7653.78,
-    "take_profit_price": 8127.22,
-    "net_delta": -0.105,
-    "net_theta": 0.572,
+    "stop_loss_price": 7600.43,
+    "take_profit_price": 8070.57,
+    "net_delta": -0.051,
+    "net_theta": 1.057,
     "probability_of_profit": 0.0,
     "var_95": 200.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 6312.4,
-        "pnl": -300.0
-      },
-      {
-        "price": 6375.52,
-        "pnl": -300.0
-      },
-      {
-        "price": 6438.65,
-        "pnl": -300.0
-      },
-      {
-        "price": 6501.77,
-        "pnl": -300.0
-      },
-      {
-        "price": 6564.9,
-        "pnl": -300.0
-      },
-      {
-        "price": 6628.02,
-        "pnl": -300.0
-      },
-      {
-        "price": 6691.14,
-        "pnl": -300.0
-      },
-      {
-        "price": 6754.27,
-        "pnl": -300.0
-      },
-      {
-        "price": 6817.39,
-        "pnl": -300.0
-      },
-      {
-        "price": 6880.52,
-        "pnl": -300.0
-      },
-      {
-        "price": 6943.64,
-        "pnl": -300.0
-      },
-      {
-        "price": 7006.76,
-        "pnl": -300.0
-      },
-      {
-        "price": 7069.89,
-        "pnl": -300.0
-      },
-      {
-        "price": 7133.01,
-        "pnl": -300.0
-      },
-      {
-        "price": 7196.14,
-        "pnl": -300.0
-      },
-      {
-        "price": 7259.26,
-        "pnl": -300.0
-      },
-      {
-        "price": 7322.38,
-        "pnl": -300.0
-      },
-      {
-        "price": 7385.51,
-        "pnl": -300.0
-      },
-      {
-        "price": 7448.63,
-        "pnl": -300.0
-      },
-      {
-        "price": 7511.76,
-        "pnl": -300.0
-      },
-      {
-        "price": 7574.88,
-        "pnl": -300.0
-      },
-      {
-        "price": 7638.0,
-        "pnl": -300.0
-      },
-      {
-        "price": 7701.13,
-        "pnl": -300.0
-      },
-      {
-        "price": 7764.25,
-        "pnl": -300.0
-      },
-      {
-        "price": 7827.38,
-        "pnl": -300.0
-      },
-      {
-        "price": 7890.5,
-        "pnl": -300.0
-      },
-      {
-        "price": 7953.62,
-        "pnl": -300.0
-      },
-      {
-        "price": 8016.75,
-        "pnl": -300.0
-      },
-      {
-        "price": 8079.87,
-        "pnl": -300.0
-      },
-      {
-        "price": 8143.0,
-        "pnl": -300.0
-      },
-      {
-        "price": 8206.12,
-        "pnl": -300.0
-      },
-      {
-        "price": 8269.24,
-        "pnl": -300.0
-      },
-      {
-        "price": 8332.37,
-        "pnl": -332.37
-      },
-      {
-        "price": 8395.49,
-        "pnl": -395.49
-      },
-      {
-        "price": 8458.62,
-        "pnl": -458.62
-      },
-      {
-        "price": 8521.74,
+        "price": 6268.4,
         "pnl": -500.0
       },
       {
-        "price": 8584.86,
+        "price": 6331.08,
         "pnl": -500.0
       },
       {
-        "price": 8647.99,
+        "price": 6393.77,
         "pnl": -500.0
       },
       {
-        "price": 8711.11,
+        "price": 6456.45,
         "pnl": -500.0
       },
       {
-        "price": 8774.24,
+        "price": 6519.14,
         "pnl": -500.0
       },
       {
-        "price": 8837.36,
+        "price": 6581.82,
         "pnl": -500.0
       },
       {
-        "price": 8900.48,
+        "price": 6644.5,
         "pnl": -500.0
       },
       {
-        "price": 8963.61,
+        "price": 6707.19,
         "pnl": -500.0
       },
       {
-        "price": 9026.73,
+        "price": 6769.87,
         "pnl": -500.0
       },
       {
-        "price": 9089.86,
+        "price": 6832.56,
         "pnl": -500.0
       },
       {
-        "price": 9152.98,
+        "price": 6895.24,
         "pnl": -500.0
       },
       {
-        "price": 9216.1,
+        "price": 6957.92,
         "pnl": -500.0
       },
       {
-        "price": 9279.23,
+        "price": 7020.61,
         "pnl": -500.0
       },
       {
-        "price": 9342.35,
+        "price": 7083.29,
         "pnl": -500.0
       },
       {
-        "price": 9405.48,
+        "price": 7145.98,
         "pnl": -500.0
       },
       {
-        "price": 9468.6,
+        "price": 7208.66,
+        "pnl": -491.34
+      },
+      {
+        "price": 7271.34,
+        "pnl": -428.66
+      },
+      {
+        "price": 7334.03,
+        "pnl": -365.97
+      },
+      {
+        "price": 7396.71,
+        "pnl": -303.29
+      },
+      {
+        "price": 7459.4,
+        "pnl": -300.0
+      },
+      {
+        "price": 7522.08,
+        "pnl": -300.0
+      },
+      {
+        "price": 7584.76,
+        "pnl": -300.0
+      },
+      {
+        "price": 7647.45,
+        "pnl": -300.0
+      },
+      {
+        "price": 7710.13,
+        "pnl": -300.0
+      },
+      {
+        "price": 7772.82,
+        "pnl": -300.0
+      },
+      {
+        "price": 7835.5,
+        "pnl": -300.0
+      },
+      {
+        "price": 7898.18,
+        "pnl": -300.0
+      },
+      {
+        "price": 7960.87,
+        "pnl": -300.0
+      },
+      {
+        "price": 8023.55,
+        "pnl": -300.0
+      },
+      {
+        "price": 8086.24,
+        "pnl": -300.0
+      },
+      {
+        "price": 8148.92,
+        "pnl": -300.0
+      },
+      {
+        "price": 8211.6,
+        "pnl": -311.6
+      },
+      {
+        "price": 8274.29,
+        "pnl": -374.29
+      },
+      {
+        "price": 8336.97,
+        "pnl": -436.97
+      },
+      {
+        "price": 8399.66,
+        "pnl": -499.66
+      },
+      {
+        "price": 8462.34,
+        "pnl": -500.0
+      },
+      {
+        "price": 8525.02,
+        "pnl": -500.0
+      },
+      {
+        "price": 8587.71,
+        "pnl": -500.0
+      },
+      {
+        "price": 8650.39,
+        "pnl": -500.0
+      },
+      {
+        "price": 8713.08,
+        "pnl": -500.0
+      },
+      {
+        "price": 8775.76,
+        "pnl": -500.0
+      },
+      {
+        "price": 8838.44,
+        "pnl": -500.0
+      },
+      {
+        "price": 8901.13,
+        "pnl": -500.0
+      },
+      {
+        "price": 8963.81,
+        "pnl": -500.0
+      },
+      {
+        "price": 9026.5,
+        "pnl": -500.0
+      },
+      {
+        "price": 9089.18,
+        "pnl": -500.0
+      },
+      {
+        "price": 9151.86,
+        "pnl": -500.0
+      },
+      {
+        "price": 9214.55,
+        "pnl": -500.0
+      },
+      {
+        "price": 9277.23,
+        "pnl": -500.0
+      },
+      {
+        "price": 9339.92,
+        "pnl": -500.0
+      },
+      {
+        "price": 9402.6,
         "pnl": -500.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.738,
+      "win_probability": 0.736,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2642,
+      "half_kelly_fraction": 0.2624,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,61 +306,61 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 67.9,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-8300CE / B1x-Nov-8500CE"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 59.0,
-      "grade": "C (Moderate)",
+      "score": 67.3,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-7300PE / S1x-Nov-7500PE / S1x-Nov-8300CE / B1x-Nov-8500CE"
+      "legs_summary": "B1x-Nov-7200PE / S1x-Nov-7400PE / S1x-Nov-8200CE / B1x-Nov-8400CE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 56.7,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-8200CE / B1x-Nov-8400CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 45.3,
+      "score": 44.4,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-7700CE / S1x-Nov-7900CE / S1x-Nov-7900CE / B1x-Nov-8100CE"
+      "legs_summary": "B1x-Nov-7600CE / S2x-Nov-7800CE / B1x-Nov-8000CE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 44.5,
+      "score": 42.2,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-7700CE / S1x-Nov-7900CE / S1x-Nov-7900CE / B1x-Nov-8300CE"
+      "legs_summary": "B1x-Nov-7600CE / S2x-Nov-7800CE / B1x-Nov-8200CE"
     },
     {
-      "strategy_type": "call_debit_spread",
-      "strategy_display": "Call Debit Spread",
-      "score": 42.0,
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 41.7,
       "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-7900CE / S1x-Nov-8200CE"
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-7400PE"
     }
   ],
   "indicators": {
-    "EMA20": "8418.09",
-    "EMA50": "8597.28",
-    "EMA100": "8517.79",
-    "EMA200": "8224.40",
-    "RSI(14)": "24.92",
-    "ATR(14)": "168.42",
-    "ADX(14)": "32.99",
-    "BB(20,2)": "0.10",
-    "P_SHAPE(20)": "62.72"
+    "EMA20": "8191.31",
+    "EMA50": "8460.18",
+    "EMA100": "8453.36",
+    "EMA200": "8205.68",
+    "RSI(14)": "35.49",
+    "ATR(14)": "195.59",
+    "ADX(14)": "39.91",
+    "BB(20,2)": "0.25",
+    "P_SHAPE(20)": "46.57"
   },
   "rules": [
     {
@@ -408,38 +443,38 @@
   ],
   "news": [
     {
-      "title": "APOLLOHOSP Stock Report - APOLLOHOSP Stock Insights, APOLLOHOSP Stock Analysis and details",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaGR3UVdwOUFVMjluMVFJbVI4NTlBT0hwOU5XN3N2YW44MnpoNHNZUzJCT2xqaVZ1WHZWdFRVTGZMQXQwTm41WEZ6bmFlU3JrNDFPa1EwYTQ4SlpSTm5oekJWcVVOTVozbjJDRjhEU09ETjNac21fbk1PUGJwaGJpV2w5ZnRTOU1tUUVsbXRUS1VjOTdhUHRjeG96S0ZscTBuNnln?oc=5",
-      "published_at": "Sat, 15 Aug 2026",
+      "title": "FNO Active by Value sort by Commodity or Symbol, Ascending Order",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNW5JNkxBX2xuTF93Z2xsVXgyYW91YXM0TjMzbjFlajROTkFEQnRyVHhBQUR2WHFnRXJBc093VERiaUt3b29vQmZZN3pkb0tNVGFIN3Z6QkdNX05wNDhEVzJ3TmVTbXNqZkhLQnNjdk43TE5VSnZiajVIUzFXclgxQlRkZWU3MFJCdVVpUE52S05QTDJ2aTJpQk9R?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Apollo Hospitals Enterprise News",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnJhSnJld212YnRvMzYyYjdINHVYLXVybk16Mm9HTXJYbWcyOVpNMnlxaWRZVkoxOG9uRUFZY3FKbi1Qa1lzUGdRc3lRZGt2NDFnN0NOMDdsMi1zUTlZMWctNFRSWlJQVVNjdkd6d0Myc3pwaU14Vmt0OEV2R2dXeFhYZkhuNEtyVkJhN1g5SFMxTXhqa1dHdlBGV3VaQmp0d3JVcmd0a3NzTUxL?oc=5",
-      "published_at": "Thu, 07 Jul 2022",
+      "title": "Trade Setup for October 13: Top 15 things to know before the opening bell",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSXB0MmVkOUFqbk1UeU9kNU5aTE5CZ3A2U0R5UF9PRjh2LXFfNmdPTkg2LUdPV2lUdVlVaTdiYlpOM3kwMGh5TDJ3Yk9uZDhFWTZjMzltNVdrSnMxek1xcUdpTnAzRUs3X002XzBuY3NwTEEtaXo1dGRlNkIzNnVDRUhPQUx0VzlQaHNBcmdPMm5wUXo0TWh5dEloN0lwU042V0owUnNuUTNlUE1uXzA1TmdUVTAxLVpRN01tbDljcDlDMFdFcGVSUnZpem9ZU19fUFhn0gHYAUFVX3lxTE5wX3ZRTGYzUHlUMmhieUQyUmpHQm9LQkhQdWQwS21RUWFncUpVN21nR2NLZlpBNzZJejl4NkR2WHBySHdZamtzc3NoLTZwZ0FpQmpiQUYzLXp5MVdJVi1fX094UVhod0wtTWxreldoeHlJejFncUVPUnJ2SURFS3liQjRDNzRxckVkYXVXN3UzOWI3aW5qbVpNMUFqWUxteDFhem5qQzN1S0FUWFNMRWhiYncxbzVZRG41amNYSDBYcUoyYnExV0RYMGQybXFsbEJueGNWVnc0Yg?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Nifty 50 stocks since last 52-week low: Eternal, Adani Enterprises lead gains; Infosys, ONGC lag",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdEFpbTloQ0dLMmExTHRMb1ZkUkFxRGoxNkZYbTFSQnZ3LTAwMi1za0Jwa0NSU1NGSkpWSUM5T0pYaUxVOEoxQzUyRDB5LUJoc1pZZkhPb1hLZG1DamJ1bmVLaUUtSzhidTlJTlFsd3J6X0Z6OVlrSGx4TEZDdkxDU1lQUERaRjFMdl9PaDdOQUE5ekxrcUdZWm5pdlJlMTZ0aFgyQ1JzVUxQMV90LUNhbEJZQkVmR1hxVEVsdXQ0SUtFT0VIdmRoVEl4Z3NUeUJvSzg2WTdRaEpVcTlNQmdGQm9FNFBSazRYS21jQUFR0gHzAUFVX3lxTE96V081X01MelpxeVNtckpMSVZZOHZUQ0R4bEJBcU16UDFhN3Flb0JObzVEdGozNmlITVhqZjNqdldGUHRrQUFFa3doZVY0Z1BmYnc2WEcxcXJTYS1PX1BxVGFRMmNzSXNVUEJEZURjdXRGZUp5TUhOYTJ4RnVBWE1ZeHR6b0J0UGZuRUtqbWxLR3N1akRrLWFPQjZiN0JmQXV2UXN4eS10RE5zZWlETDBVdk83MXpGS09fb0RiOW9IM0V4LWpGTW1CSkdsQXBxRWRfdGZaZmdtLUxWNWNod0J5UEFfQWNEUlMzYllzWUlSOHFVcw?oc=5",
+      "published_at": "Thu, 08 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "Apollo Hospitals Enterprise Q1 Results",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNlBWc1hkWV8xd2tWenpGaW1UVVNEV1RXcmVTcmpTc0ZqRGc4TjJ4NXNwcXdVc3hwdXFoa25JQkVOVXJlR2kwSnBTaUZhZkYzcDZoOVRyRXo0eFh6d2RuaERBaWJiSlI0R19fSGVSNFdiaE1VM0JpcXMxNWdXcnBGS01jRGRkdlRJU2ZIWlYxdnpZSlBiN0dj?oc=5",
-      "published_at": "Mon, 24 Jul 2023",
-      "sentiment": "bullish"
+      "title": "apollo hospital Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1OYUtkMEhfdGhERnRNZlVvSl9XdFNxOGxxY3ZoM3phMmZFbWd1dHc3WlhJbTdzOFE1YnBrQ0tXLUMwemNuQ2tQZ3M4LUlrS21WUUp2WUtDbHRVa25EWnE0NWtMX2tTWHUzS25wU2JKQ0tCVXhCcmJ5bk1JT2xsSWc?oc=5",
+      "published_at": "Fri, 05 Jan 2018",
+      "sentiment": "neutral"
     },
     {
       "title": "Apollo Hosp performs 8 spine surgeries using 'Mazor Robotics'",
       "publisher": "ET HealthWorld",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSTFDNmdGUS1XN2dZekNzRG1ob3kyMXJYSi1idHlySDRyWk1WS1JSTVBxTHJrRTBxWFNGQlZVYXZ1OTFpcWJyektLd1pjN3I3NTI0c0l3dlFxZDNqdUwtZDgwTDUyX0FrbUNPZmtkdV9GV0ZGajh2NmV1QVR2RG5NTEVGdk83aHhhRVE2TnNFOVRjeFAyVWdEc0hLSkRXWVAwNnRXMlgwaVVZdVJ4UzZiRXRJR09NNnhtbGxRVU9TT1lJcmYzSEHSAcsBQVVfeXFMTjQzNkpfSF9PcTg4QU9uYmx3bWRTVzZfdGVEeU9ibjZDOFlrU0RZSGdvQjc3dER2M0h4MFI2dXBjX0FnVUhadERPMmlfWHM3LVQtSVkwN2JNbmEzVFJJeFRYMXpWMUNuU3kyN2lGcEZDWS1hUHJ5SFZGd1dsLUliY2hkM0ZJUDJPbjRhQ0NFSkJLa2lyTjdWMTc5Uk1uS3dJc2ctTzVyT0JiY0dtNmhzekVUeW56d2hrVUV3aUVVRUNBci15dm0xZVYzZVk?oc=5",
       "published_at": "Wed, 24 Aug 2016",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Apollo Hospitals Enterprises",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUzR2UlNicHQ4dWVrdVMyTWhRR05uY1RMRHlqaXFMMkgwWDYyOTNNSHlid1dCSTBTd0JKcGtXLU5RclZZVkZOalFCQUlWZ3hoRml1SnNqNEl5WDhwS0hfemFlZzc1dHhya3VNMVE5cDdWdE5zd3ZBRG5jRGdUWEZIaWFfcHJFS05jODVlaFMxMHUxV0k?oc=5",
-      "published_at": "Thu, 14 Nov 2024",
       "sentiment": "bullish"
     },
     {

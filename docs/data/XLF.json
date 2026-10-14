@@ -1,293 +1,304 @@
 {
   "symbol": "XLF",
-  "last_price": 54.01,
-  "as_of": "2026-10-06 13:30:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 3.5,
-  "fit_score": 35.0,
-  "confidence_grade": "C",
-  "confidence_percentage": 35.0,
-  "vix": 15.01,
+  "last_price": 54.82,
+  "as_of": "2026-10-13 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.5,
+  "fit_score": 65.0,
+  "confidence_grade": "B",
+  "confidence_percentage": 65.0,
+  "vix": 15.27,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (68.1% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (53.8% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "cash_trade_setup": {
+    "direction": "Long / Buy",
+    "entry": 54.82,
+    "stop_loss": 54.26,
+    "target_1": 63.04,
+    "target_2": 68.53,
+    "risk_per_share": 0.56,
+    "risk_reward": 24.5,
+    "atr14": 0.69,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 50.0,
-        "strike_formatted": "50",
-        "option_type": "Put",
-        "delta": -0.052,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Buy 1x XLF 20-Nov-2026 50 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
         "strike": 51.0,
         "strike_formatted": "51",
         "option_type": "Put",
-        "delta": -0.107,
+        "delta": -0.053,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Sell 1x XLF 20-Nov-2026 51 Put"
+        "dte": 37,
+        "summary": "Buy 1x XLF 20-Nov-2026 51 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 57.0,
-        "strike_formatted": "57",
-        "option_type": "Call",
-        "delta": 0.186,
+        "strike": 52.0,
+        "strike_formatted": "52",
+        "option_type": "Put",
+        "delta": -0.112,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Sell 1x XLF 20-Nov-2026 57 Call"
+        "dte": 37,
+        "summary": "Sell 1x XLF 20-Nov-2026 52 Put"
       },
       {
-        "action": "Buy",
+        "action": "Sell",
         "quantity": 1,
         "strike": 58.0,
         "strike_formatted": "58",
         "option_type": "Call",
-        "delta": 0.11,
+        "delta": 0.151,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Buy 1x XLF 20-Nov-2026 58 Call"
+        "dte": 37,
+        "summary": "Sell 1x XLF 20-Nov-2026 58 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 59.0,
+        "strike_formatted": "59",
+        "option_type": "Call",
+        "delta": 0.083,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 37,
+        "summary": "Buy 1x XLF 20-Nov-2026 59 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 2.0,
-    "stop_loss_price": 52.39,
-    "take_profit_price": 55.63,
-    "net_delta": -0.021,
-    "net_theta": 0.005,
+    "stop_loss_price": 53.18,
+    "take_profit_price": 56.46,
+    "net_delta": -0.009,
+    "net_theta": 0.007,
     "probability_of_profit": 0.0,
     "var_95": 1.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 43.21,
+        "price": 43.86,
         "pnl": -3.0
       },
       {
-        "price": 43.64,
+        "price": 44.29,
         "pnl": -3.0
       },
       {
-        "price": 44.07,
+        "price": 44.73,
         "pnl": -3.0
       },
       {
-        "price": 44.5,
+        "price": 45.17,
         "pnl": -3.0
       },
       {
-        "price": 44.94,
+        "price": 45.61,
         "pnl": -3.0
       },
       {
-        "price": 45.37,
+        "price": 46.05,
         "pnl": -3.0
       },
       {
-        "price": 45.8,
+        "price": 46.49,
         "pnl": -3.0
       },
       {
-        "price": 46.23,
+        "price": 46.93,
         "pnl": -3.0
       },
       {
-        "price": 46.66,
+        "price": 47.36,
         "pnl": -3.0
       },
       {
-        "price": 47.1,
+        "price": 47.8,
         "pnl": -3.0
       },
       {
-        "price": 47.53,
+        "price": 48.24,
         "pnl": -3.0
       },
       {
-        "price": 47.96,
+        "price": 48.68,
         "pnl": -3.0
       },
       {
-        "price": 48.39,
+        "price": 49.12,
         "pnl": -3.0
       },
       {
-        "price": 48.83,
+        "price": 49.56,
         "pnl": -3.0
       },
       {
-        "price": 49.26,
+        "price": 50.0,
         "pnl": -3.0
       },
       {
-        "price": 49.69,
+        "price": 50.43,
         "pnl": -3.0
       },
       {
-        "price": 50.12,
-        "pnl": -2.88
+        "price": 50.87,
+        "pnl": -3.0
       },
       {
-        "price": 50.55,
-        "pnl": -2.45
+        "price": 51.31,
+        "pnl": -2.69
       },
       {
-        "price": 50.99,
-        "pnl": -2.01
+        "price": 51.75,
+        "pnl": -2.25
       },
       {
-        "price": 51.42,
+        "price": 52.19,
         "pnl": -2.0
       },
       {
-        "price": 51.85,
+        "price": 52.63,
         "pnl": -2.0
       },
       {
-        "price": 52.28,
+        "price": 53.07,
         "pnl": -2.0
       },
       {
-        "price": 52.71,
+        "price": 53.5,
         "pnl": -2.0
       },
       {
-        "price": 53.15,
+        "price": 53.94,
         "pnl": -2.0
       },
       {
-        "price": 53.58,
+        "price": 54.38,
         "pnl": -2.0
       },
       {
-        "price": 54.01,
+        "price": 54.82,
         "pnl": -2.0
       },
       {
-        "price": 54.44,
+        "price": 55.26,
         "pnl": -2.0
       },
       {
-        "price": 54.87,
+        "price": 55.7,
         "pnl": -2.0
       },
       {
-        "price": 55.31,
+        "price": 56.14,
         "pnl": -2.0
       },
       {
-        "price": 55.74,
+        "price": 56.57,
         "pnl": -2.0
       },
       {
-        "price": 56.17,
+        "price": 57.01,
         "pnl": -2.0
       },
       {
-        "price": 56.6,
+        "price": 57.45,
         "pnl": -2.0
       },
       {
-        "price": 57.03,
-        "pnl": -2.03
-      },
-      {
-        "price": 57.47,
-        "pnl": -2.47
-      },
-      {
-        "price": 57.9,
-        "pnl": -2.9
+        "price": 57.89,
+        "pnl": -2.0
       },
       {
         "price": 58.33,
+        "pnl": -2.33
+      },
+      {
+        "price": 58.77,
+        "pnl": -2.77
+      },
+      {
+        "price": 59.21,
         "pnl": -3.0
       },
       {
-        "price": 58.76,
+        "price": 59.64,
         "pnl": -3.0
       },
       {
-        "price": 59.19,
+        "price": 60.08,
         "pnl": -3.0
       },
       {
-        "price": 59.63,
+        "price": 60.52,
         "pnl": -3.0
       },
       {
-        "price": 60.06,
+        "price": 60.96,
         "pnl": -3.0
       },
       {
-        "price": 60.49,
+        "price": 61.4,
         "pnl": -3.0
       },
       {
-        "price": 60.92,
+        "price": 61.84,
         "pnl": -3.0
       },
       {
-        "price": 61.36,
+        "price": 62.28,
         "pnl": -3.0
       },
       {
-        "price": 61.79,
+        "price": 62.71,
         "pnl": -3.0
       },
       {
-        "price": 62.22,
+        "price": 63.15,
         "pnl": -3.0
       },
       {
-        "price": 62.65,
+        "price": 63.59,
         "pnl": -3.0
       },
       {
-        "price": 63.08,
+        "price": 64.03,
         "pnl": -3.0
       },
       {
-        "price": 63.52,
+        "price": 64.47,
         "pnl": -3.0
       },
       {
-        "price": 63.95,
+        "price": 64.91,
         "pnl": -3.0
       },
       {
-        "price": 64.38,
+        "price": 65.35,
         "pnl": -3.0
       },
       {
-        "price": 64.81,
+        "price": 65.78,
         "pnl": -3.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.738,
+      "win_probability": 0.688,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2642,
+      "half_kelly_fraction": 0.2192,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,61 +308,41 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 68.1,
-      "grade": "B (Good)",
+      "score": 53.8,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x XLF 20-Nov-2026 50 Put<br> Sell 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 55.1,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x XLF 20-Nov-2026 57 Call<br> Buy 1x XLF 20-Nov-2026 58 Call"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 52.0,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 55 Call"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 43.6,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 54 Put<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 57 Call"
+      "legs_summary": "Buy 1x XLF 20-Nov-2026 51 Put<br> Sell 1x XLF 20-Nov-2026 52 Put<br> Sell 1x XLF 20-Nov-2026 58 Call<br> Buy 1x XLF 20-Nov-2026 59 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 42.8,
+      "score": 42.0,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Sell 1x XLF 20-Nov-2026 54 Call<br> Buy 1x XLF 20-Nov-2026 57 Call"
+      "legs_summary": "Buy 1x XLF 20-Nov-2026 53 Call<br> Sell 1x XLF 20-Nov-2026 55 Call<br> Sell 1x XLF 20-Nov-2026 55 Call<br> Buy 1x XLF 20-Nov-2026 57 Call"
     }
   ],
   "indicators": {
-    "EMA20": "54.97",
-    "EMA50": "55.72",
-    "EMA100": "55.23",
-    "EMA200": "54.18",
-    "RSI(14)": "34.08",
-    "ATR(14)": "0.68",
-    "ADX(14)": "37.44",
-    "BB(20,2)": "0.28",
-    "P_SHAPE(20)": "50.78"
+    "EMA20": "54.81",
+    "EMA50": "55.51",
+    "EMA100": "55.16",
+    "EMA200": "54.19",
+    "RSI(14)": "46.82",
+    "ATR(14)": "0.69",
+    "ADX(14)": "31.55",
+    "BB(20,2)": "0.58",
+    "P_SHAPE(20)": "38.38"
   },
   "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "EMA50 above EMA200",
       "passed": true,
@@ -367,6 +358,13 @@
       "explanation": "Condition met"
     },
     {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
@@ -374,7 +372,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher lows",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -386,13 +384,6 @@
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
-    },
-    {
-      "name": "Price above EMA200",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
     },
     {
       "name": "EMA20 above EMA50",
@@ -409,14 +400,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -432,46 +416,46 @@
   ],
   "news": [
     {
-      "title": "Sector Update: Financial Stocks Advance Late Afternoon",
+      "title": "Sector Update: Financial Stocks Mixed Late Afternoon",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-advance-afternoon-194323991.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-mixed-afternoon-195728008.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
       "title": "Sector Update: Financial",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-192019274.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-193546497.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Sector Update: Financial Stocks Rise Tuesday Afternoon",
+      "title": "Sector Update: Financial Stocks Mixed Tuesday Afternoon",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-rise-tuesday-175415178.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-mixed-tuesday-173854575.html",
       "published_at": "Today",
-      "sentiment": "bullish"
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Exchange-Traded Funds Lower as US Equities Decline After Midday",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-lower-us-172017687.html",
+      "published_at": "Today",
+      "sentiment": "bearish"
     },
     {
       "title": "Sector Update: Financial",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-172227087.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-170741429.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Exchange-Traded Funds Mixed, US Equities Rise After Midday",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/news/exchange-traded-funds-mixed-us-170916680.html",
+      "title": "Goldman Sachs Rises on Equities-Led Earnings Beat; JPMorgan Chase Treads Water, Wells Fargo Declines 3%",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-rises-equities-led-140757029.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Sector Update: Financial Stocks Advance Premarket Tuesday",
-      "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-advance-premarket-132210677.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ]
 }

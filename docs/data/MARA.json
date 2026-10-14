@@ -1,269 +1,268 @@
 {
   "symbol": "MARA",
-  "last_price": 10.97,
-  "as_of": "2026-10-06 13:30:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.2,
-  "fit_score": 22.5,
+  "last_price": 9.11,
+  "as_of": "2026-10-13 13:30:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 22.5,
-  "vix": 15.01,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-  "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (51.5% fit - Grade C (Moderate)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-  "cash_trade_setup": null,
+  "confidence_percentage": 10.0,
+  "vix": 15.27,
+  "strategy_type": "cash_swing_short",
+  "strategy_display": "Cash Swing Short",
+  "trade_profile": "Advisory | 30-45 DTE",
+  "trade_category": "cash",
+  "recommendation_reason": "Best fit strategy (57.1% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 9.11,
+    "stop_loss": 10.58,
+    "target_1": 7.74,
+    "target_2": 6.83,
+    "risk_per_share": 1.47,
+    "risk_reward": 1.6,
+    "atr14": 0.73,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 10.0,
-        "strike_formatted": "10",
+        "strike": 9.109999656677246,
+        "strike_formatted": "9.1",
         "option_type": "Put",
-        "delta": -0.028,
+        "delta": -0.449,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Sell 1x MARA 20-Nov-2026 10 Put"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 9.0,
-        "strike_formatted": "9",
-        "option_type": "Put",
-        "delta": -0.0,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Buy 1x MARA 20-Nov-2026 9 Put"
+        "dte": 37,
+        "summary": "Sell 1x MARA 20-Nov-2026 9.1 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 1.0,
-    "stop_loss_price": 10.64,
-    "take_profit_price": 11.3,
-    "net_delta": 0.028,
-    "net_theta": 0.0,
+    "margin_required": 1.1,
+    "stop_loss_price": 10.21,
+    "take_profit_price": 6.91,
+    "net_delta": 0.449,
+    "net_theta": 0.002,
     "probability_of_profit": 0.0,
-    "var_95": 0.0,
+    "var_95": 0.67,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 8.78,
-        "pnl": -2.0
+        "price": 7.29,
+        "pnl": -2.92
       },
       {
-        "price": 8.86,
-        "pnl": -2.0
+        "price": 7.36,
+        "pnl": -2.85
       },
       {
-        "price": 8.95,
-        "pnl": -2.0
+        "price": 7.43,
+        "pnl": -2.78
       },
       {
-        "price": 9.04,
-        "pnl": -1.96
+        "price": 7.51,
+        "pnl": -2.7
       },
       {
-        "price": 9.13,
-        "pnl": -1.87
+        "price": 7.58,
+        "pnl": -2.63
       },
       {
-        "price": 9.21,
-        "pnl": -1.79
+        "price": 7.65,
+        "pnl": -2.56
       },
       {
-        "price": 9.3,
-        "pnl": -1.7
+        "price": 7.73,
+        "pnl": -2.48
       },
       {
-        "price": 9.39,
+        "price": 7.8,
+        "pnl": -2.41
+      },
+      {
+        "price": 7.87,
+        "pnl": -2.34
+      },
+      {
+        "price": 7.94,
+        "pnl": -2.27
+      },
+      {
+        "price": 8.02,
+        "pnl": -2.19
+      },
+      {
+        "price": 8.09,
+        "pnl": -2.12
+      },
+      {
+        "price": 8.16,
+        "pnl": -2.05
+      },
+      {
+        "price": 8.24,
+        "pnl": -1.97
+      },
+      {
+        "price": 8.31,
+        "pnl": -1.9
+      },
+      {
+        "price": 8.38,
+        "pnl": -1.83
+      },
+      {
+        "price": 8.45,
+        "pnl": -1.76
+      },
+      {
+        "price": 8.53,
+        "pnl": -1.68
+      },
+      {
+        "price": 8.6,
         "pnl": -1.61
       },
       {
-        "price": 9.48,
-        "pnl": -1.52
+        "price": 8.67,
+        "pnl": -1.54
       },
       {
-        "price": 9.57,
-        "pnl": -1.43
+        "price": 8.75,
+        "pnl": -1.46
       },
       {
-        "price": 9.65,
-        "pnl": -1.35
+        "price": 8.82,
+        "pnl": -1.39
       },
       {
-        "price": 9.74,
-        "pnl": -1.26
+        "price": 8.89,
+        "pnl": -1.32
       },
       {
-        "price": 9.83,
+        "price": 8.96,
+        "pnl": -1.25
+      },
+      {
+        "price": 9.04,
         "pnl": -1.17
       },
       {
-        "price": 9.92,
-        "pnl": -1.08
+        "price": 9.11,
+        "pnl": -1.1
       },
       {
-        "price": 10.0,
-        "pnl": -1.0
+        "price": 9.18,
+        "pnl": -1.1
       },
       {
-        "price": 10.09,
-        "pnl": -1.0
+        "price": 9.26,
+        "pnl": -1.1
       },
       {
-        "price": 10.18,
-        "pnl": -1.0
+        "price": 9.33,
+        "pnl": -1.1
       },
       {
-        "price": 10.27,
-        "pnl": -1.0
+        "price": 9.4,
+        "pnl": -1.1
       },
       {
-        "price": 10.36,
-        "pnl": -1.0
+        "price": 9.47,
+        "pnl": -1.1
       },
       {
-        "price": 10.44,
-        "pnl": -1.0
+        "price": 9.55,
+        "pnl": -1.1
       },
       {
-        "price": 10.53,
-        "pnl": -1.0
+        "price": 9.62,
+        "pnl": -1.1
       },
       {
-        "price": 10.62,
-        "pnl": -1.0
+        "price": 9.69,
+        "pnl": -1.1
+      },
+      {
+        "price": 9.77,
+        "pnl": -1.1
+      },
+      {
+        "price": 9.84,
+        "pnl": -1.1
+      },
+      {
+        "price": 9.91,
+        "pnl": -1.1
+      },
+      {
+        "price": 9.98,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.06,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.13,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.2,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.28,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.35,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.42,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.49,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.57,
+        "pnl": -1.1
+      },
+      {
+        "price": 10.64,
+        "pnl": -1.1
       },
       {
         "price": 10.71,
-        "pnl": -1.0
+        "pnl": -1.1
       },
       {
         "price": 10.79,
-        "pnl": -1.0
+        "pnl": -1.1
       },
       {
-        "price": 10.88,
-        "pnl": -1.0
+        "price": 10.86,
+        "pnl": -1.1
       },
       {
-        "price": 10.97,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.06,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.15,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.23,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.32,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.41,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.5,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.58,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.67,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.76,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.85,
-        "pnl": -1.0
-      },
-      {
-        "price": 11.94,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.02,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.11,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.2,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.29,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.37,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.46,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.55,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.64,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.73,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.81,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.9,
-        "pnl": -1.0
-      },
-      {
-        "price": 12.99,
-        "pnl": -1.0
-      },
-      {
-        "price": 13.08,
-        "pnl": -1.0
-      },
-      {
-        "price": 13.16,
-        "pnl": -1.0
+        "price": 10.93,
+        "pnl": -1.1
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.68,
+      "win_probability": 0.7,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.212,
+      "half_kelly_fraction": 0.23,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,63 +270,38 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 51.5,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x MARA 20-Nov-2026 10 Put<br> Buy 1x MARA 20-Nov-2026 9 Put"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 50.7,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x MARA 20-Nov-2026 11 Put<br> Sell 1x MARA 20-Nov-2026 10 Put"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 49.1,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x MARA 20-Nov-2026 9 Put<br> Sell 1x MARA 20-Nov-2026 10 Put<br> Sell 1x MARA 20-Nov-2026 12 Call<br> Buy 1x MARA 20-Nov-2026 13 Call"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 46.1,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x MARA 20-Nov-2026 11.0 Put"
+      "legs_summary": "Sell 1x MARA 20-Nov-2026 9.1 Put"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 52.0,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "Sell 1x MARA 20-Nov-2026 10 Call<br> Buy 1x MARA 20-Nov-2026 11 Call"
     }
   ],
   "indicators": {
-    "EMA20": "11.72",
-    "EMA50": "11.66",
-    "EMA100": "11.70",
-    "EMA200": "12.03",
-    "RSI(14)": "42.58",
-    "ATR(14)": "0.81",
-    "ADX(14)": "17.08",
-    "BB(20,2)": "0.21",
-    "P_SHAPE(20)": "35.16"
+    "EMA20": "10.90",
+    "EMA50": "11.30",
+    "EMA100": "11.51",
+    "EMA200": "11.91",
+    "RSI(14)": "29.74",
+    "ATR(14)": "0.73",
+    "ADX(14)": "18.19",
+    "BB(20,2)": "0.06",
+    "P_SHAPE(20)": "51.21"
   },
   "rules": [
     {
-      "name": "EMA20 above EMA50",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -342,6 +316,13 @@
     },
     {
       "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -369,14 +350,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -399,44 +380,44 @@
   ],
   "news": [
     {
-      "title": "Marathon Digital Holdings, Inc. (MARA) Stock Dips While Market Gains: Key Facts",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/marathon-digital-holdings-inc-mara-205004390.html",
+      "title": "Stock Market Today, Oct. 13: Cipher Digital Drops 13% on $850M Convertible Note Offering",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-13-220400714.html",
       "published_at": "Today",
-      "sentiment": "bullish"
+      "sentiment": "bearish"
     },
     {
-      "title": "Strategy Grows Bitcoin Holdings: Can Its Treasury Scale Drive More Value?",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/strategy-grows-bitcoin-holdings-treasury-162200808.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Strategy Is Up 30% in a Month and Citigroup Just Doubled Its Price Target to $240. Is It Time to Buy MSTR Stock Now?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/strategy-30-month-citigroup-just-155914578.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Has Buying Applied Digital Stock's Dips Paid Off?",
+      "title": "How Much Of Applied Digital\u2019s Fiscal Q1 Revenue Was Rent?",
       "publisher": "Trefis",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/buying-applied-digital-stocks-dips-200056168.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-applied-digital-fiscal-q1-182643294.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Which Public Companies Hold the Most Bitcoin?",
+      "title": "Strive Closes In on MARA After Largest Bitcoin Purchase Since January",
+      "publisher": "CryptoProwl",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/strive-closes-mara-largest-bitcoin-143800666.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What Could Derail Applied Digital Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/could-derail-applied-digital-stock-223218299.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Whales Bought 15,000 Bitcoin in Three Days While MARA Sold $81 Million. Who Has It Right?",
       "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/public-companies-hold-most-bitcoin-163024045.html",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/whales-bought-15-000-bitcoin-213038716.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Marathon Digital Holdings, Inc. (MARA) Falls More Steeply Than Broader Market: What Investors Need to Know",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/marathon-digital-holdings-inc-mara-205003673.html",
+      "title": "How Much Downside Is Left In MARA Stock?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/much-downside-left-mara-stock-003215210.html",
       "published_at": "Today",
       "sentiment": "bearish"
     }

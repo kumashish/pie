@@ -1,36 +1,35 @@
 {
   "symbol": "ONGC.NS",
-  "last_price": 222.44,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 222.97,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "strong_bear",
   "regime_display": "Strong Bear",
   "trend_score": 1.0,
   "fit_score": 10.0,
   "confidence_grade": "C",
   "confidence_percentage": 10.0,
-  "vix": 13.77,
+  "vix": 14.48,
   "strategy_type": "credit_spread",
   "strategy_display": "Credit Spread",
   "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (33.2) is oversold (< 35) [Synthetic PCR: 1.31]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (60.0% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 222.97,
+    "stop_loss": 230.39,
+    "target_1": 189.52,
+    "target_2": 167.23,
+    "risk_per_share": 7.42,
+    "risk_reward": 7.5,
+    "atr14": 3.71,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
-        "quantity": 1,
-        "strike": 230.0,
-        "strike_formatted": "230",
-        "option_type": "Call",
-        "delta": 0.304,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x ONGC.NS 24-Nov-2026 230 Call"
-      },
-      {
-        "action": "Buy",
         "quantity": 1,
         "strike": 235.0,
         "strike_formatted": "235",
@@ -38,225 +37,237 @@
         "delta": 0.173,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x ONGC.NS 24-Nov-2026 235 Call"
+        "dte": 41,
+        "summary": "Sell 1x ONGC.NS 24-Nov-2026 235 Call"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 240.0,
+        "strike_formatted": "240",
+        "option_type": "Call",
+        "delta": 0.084,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Buy 1x ONGC.NS 24-Nov-2026 240 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 215.77,
-    "take_profit_price": 229.11,
-    "net_delta": -0.131,
-    "net_theta": 0.014,
+    "stop_loss_price": 216.28,
+    "take_profit_price": 229.66,
+    "net_delta": -0.089,
+    "net_theta": 0.016,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 177.95,
+        "price": 178.38,
         "pnl": -10.0
       },
       {
-        "price": 179.73,
+        "price": 180.16,
         "pnl": -10.0
       },
       {
-        "price": 181.51,
+        "price": 181.94,
         "pnl": -10.0
       },
       {
-        "price": 183.29,
+        "price": 183.73,
         "pnl": -10.0
       },
       {
-        "price": 185.07,
+        "price": 185.51,
         "pnl": -10.0
       },
       {
-        "price": 186.85,
+        "price": 187.29,
         "pnl": -10.0
       },
       {
-        "price": 188.63,
+        "price": 189.08,
         "pnl": -10.0
       },
       {
-        "price": 190.41,
+        "price": 190.86,
         "pnl": -10.0
       },
       {
-        "price": 192.19,
+        "price": 192.65,
         "pnl": -10.0
       },
       {
-        "price": 193.97,
+        "price": 194.43,
         "pnl": -10.0
       },
       {
-        "price": 195.75,
+        "price": 196.21,
         "pnl": -10.0
       },
       {
-        "price": 197.53,
+        "price": 198.0,
         "pnl": -10.0
       },
       {
-        "price": 199.31,
+        "price": 199.78,
         "pnl": -10.0
       },
       {
-        "price": 201.09,
+        "price": 201.56,
         "pnl": -10.0
       },
       {
-        "price": 202.87,
+        "price": 203.35,
         "pnl": -10.0
       },
       {
-        "price": 204.64,
+        "price": 205.13,
         "pnl": -10.0
       },
       {
-        "price": 206.42,
+        "price": 206.92,
         "pnl": -10.0
       },
       {
-        "price": 208.2,
+        "price": 208.7,
         "pnl": -10.0
       },
       {
-        "price": 209.98,
+        "price": 210.48,
         "pnl": -10.0
       },
       {
-        "price": 211.76,
+        "price": 212.27,
         "pnl": -10.0
       },
       {
-        "price": 213.54,
+        "price": 214.05,
         "pnl": -10.0
       },
       {
-        "price": 215.32,
+        "price": 215.83,
         "pnl": -10.0
       },
       {
-        "price": 217.1,
+        "price": 217.62,
         "pnl": -10.0
       },
       {
-        "price": 218.88,
+        "price": 219.4,
         "pnl": -10.0
       },
       {
-        "price": 220.66,
+        "price": 221.19,
         "pnl": -10.0
       },
       {
-        "price": 222.44,
+        "price": 222.97,
         "pnl": -10.0
       },
       {
-        "price": 224.22,
+        "price": 224.75,
         "pnl": -10.0
       },
       {
-        "price": 226.0,
+        "price": 226.54,
         "pnl": -10.0
       },
       {
-        "price": 227.78,
+        "price": 228.32,
         "pnl": -10.0
       },
       {
-        "price": 229.56,
+        "price": 230.11,
         "pnl": -10.0
       },
       {
-        "price": 231.34,
-        "pnl": -11.34
+        "price": 231.89,
+        "pnl": -10.0
       },
       {
-        "price": 233.12,
-        "pnl": -13.12
+        "price": 233.67,
+        "pnl": -10.0
       },
       {
-        "price": 234.9,
-        "pnl": -14.9
+        "price": 235.46,
+        "pnl": -10.46
       },
       {
-        "price": 236.68,
+        "price": 237.24,
+        "pnl": -12.24
+      },
+      {
+        "price": 239.02,
+        "pnl": -14.02
+      },
+      {
+        "price": 240.81,
         "pnl": -15.0
       },
       {
-        "price": 238.46,
+        "price": 242.59,
         "pnl": -15.0
       },
       {
-        "price": 240.24,
+        "price": 244.38,
         "pnl": -15.0
       },
       {
-        "price": 242.01,
+        "price": 246.16,
         "pnl": -15.0
       },
       {
-        "price": 243.79,
+        "price": 247.94,
         "pnl": -15.0
       },
       {
-        "price": 245.57,
+        "price": 249.73,
         "pnl": -15.0
       },
       {
-        "price": 247.35,
+        "price": 251.51,
         "pnl": -15.0
       },
       {
-        "price": 249.13,
+        "price": 253.29,
         "pnl": -15.0
       },
       {
-        "price": 250.91,
+        "price": 255.08,
         "pnl": -15.0
       },
       {
-        "price": 252.69,
+        "price": 256.86,
         "pnl": -15.0
       },
       {
-        "price": 254.47,
+        "price": 258.65,
         "pnl": -15.0
       },
       {
-        "price": 256.25,
+        "price": 260.43,
         "pnl": -15.0
       },
       {
-        "price": 258.03,
+        "price": 262.21,
         "pnl": -15.0
       },
       {
-        "price": 259.81,
+        "price": 264.0,
         "pnl": -15.0
       },
       {
-        "price": 261.59,
+        "price": 265.78,
         "pnl": -15.0
       },
       {
-        "price": 263.37,
-        "pnl": -15.0
-      },
-      {
-        "price": 265.15,
-        "pnl": -15.0
-      },
-      {
-        "price": 266.93,
+        "price": 267.56,
         "pnl": -15.0
       }
     ],
@@ -277,7 +288,16 @@
       "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-230CE / B1x-Nov-235CE"
+      "legs_summary": "S1x-Nov-235CE / B1x-Nov-240CE"
+    },
+    {
+      "strategy_type": "put_debit_spread",
+      "strategy_display": "Put Debit Spread",
+      "score": 58.1,
+      "grade": "C (Moderate)",
+      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "B1x-Nov-225PE / S1x-Nov-215PE"
     },
     {
       "strategy_type": "cash_swing_short",
@@ -286,32 +306,30 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-222.4PE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 55.5,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-220PE / S1x-Nov-210PE"
+      "legs_summary": "S1x-Nov-223PE"
     }
   ],
   "indicators": {
-    "EMA20": "229.22",
-    "EMA50": "234.80",
-    "EMA100": "242.48",
-    "EMA200": "249.11",
-    "RSI(14)": "33.21",
-    "ATR(14)": "3.84",
-    "ADX(14)": "20.01",
-    "BB(20,2)": "0.14",
-    "P_SHAPE(20)": "44.86"
+    "EMA20": "226.14",
+    "EMA50": "232.36",
+    "EMA100": "240.46",
+    "EMA200": "247.75",
+    "RSI(14)": "39.71",
+    "ATR(14)": "3.71",
+    "ADX(14)": "21.54",
+    "BB(20,2)": "0.32",
+    "P_SHAPE(20)": "40.47"
   },
   "rules": [
     {
-      "name": "ATR increasing",
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -360,14 +378,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -390,46 +401,46 @@
   ],
   "news": [
     {
-      "title": "Govt raises deepwater gas price ceiling to $9.89 per MMBtu; APM gas cap at $7",
-      "publisher": "ET EnergyWorld",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOSWxsY3pfTEVVM3JBbVN5VWpkLTFaR1FXOVZTQ2E3RGJELVlkb1hOT2hsSEFOc1NnWEhtTTBzUXFRZ0JpN2w3aXhyY1ppMllsRUtlRERMX0gwMUU3V21wYXJmNHoyMFpWbVAwNjNzY3ZiM3F4blNWdnhCdEVFUUhWOGdTOVNsVFNXU0JfZFgxWExYYmd6V2RJNDJRTG9tR3g0cHNsdWRYRldNMGNJLTdYUzJfbUNwakd5cmpBOGp4OFRPOU1fR3R2NmZfSkRTNmNDZm5tWlJ6SXR0NkE3QWfSAeMBQVVfeXFMTTdMeDNpT3ZXTWctbjdORWFucE1CMDl5c3pjY1VYYnZWbE9XM0RpNnpZZTJZOFVGZ0pJeWM3d3c0aW9kTUxYRVdsMkRRV1JCUTBEdWJrQ1AtN2k0akhfclhfcjJXam1MS3Y2aDNrSU9RVjFMMUFuQy1SS0dRZ0I1enhCVmlKMzgtNldsNVFjendnS0NJdzQydmxpZ29UblFJREFJLTROY005N0xjM0lYNjNiMVVaaXI0eEFodGZOUFl5VGhXZDNxQ212ZzZmZk10N2pPcXh6SVJ4TlZTbWtKZGJwOEE?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOUUVCLURiLWRzMmNCZ1B2dWNRaDNCamgtMkMwZDlFQmZuYUdDY2hpbkhOdGpfQ1NrWmx4R1NRUmxDNWdYR29adEl6WjV2clAtRkFPcDJDNE1LZktFSVU0ZENESnk0T0dMVXdEWEFjRG5TQmZNYzEwZFNSaGowM19pU21pQjRKczdBeXFMcFRZSk15VVNici12V0dlWnozSnBjaUYtcDl4M182R3lpRTFHMkJMZkV2eGV6Y3RjV0hmc1E0eUUxbHBGbWd0TG96cFpaOF9MLVh4YmE3ZmluMnZsY1dsSEhvUGotcllwNUF6QjBjTW9FRkVOaEVKQ29na0dpemJZWkVlN1dJc25XR0VNLXpB0gGXAkFVX3lxTE01cmdSNXNuWW5kVEhFY0RBVExHZENMb3c1Z3hEYmk4NFZ6alB2REE4WUEyVXZoaFRfRW5LdjB0ajZIOTBkRDdadnNUNVZhSjRkVUFnQlprTTM4X1M1XzFEclV5ZTkyWE14WEw0WGVJSjd0WkRmMGxsLVVGOWRJU1FrNVUyenpWUV9ubjFIQjMzaC1DSlBWeko0R0tGZVZBYUEyaWU0TGhtWnNkcFlNY3dVd25TeUFMcDEzbmpqVV9kbUJqMWRxRFpIQlRqUnJPY2hfT240VUlrYXJESlFPSXpZNFE4bjZnRVp1aVJydjM1UGRhSVo4ZjNuRDhwQU1NdFJyNnNRRURvOGxIYS1sbXZYRGxJRzdaaw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Natural gas price ceiling raised to $9.89/MMBtu for difficult fields from October",
+      "title": "ONGC's Mumbai High platform catches fire after gas cooler rupture; no injuries reported",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWDRzdS05bFZjUFFkeFc3VjdHOFp5Z1pYQ3owdUp5dENJUmxMS2NLbUp6TjdyRlg1OWd6Y1c2T2lfNFp3Mms5RnRnTTRIdlNuNXc2UjJ4RndzMjNuRjdMMEd1SE9DLWFwQURHRmtqTUs1eUptS0Z2TUVFWmVUS1lwLV9QcUZNUjFTRjVNS3VhR2Fja05pR0lHQkhEeWpXeEl5bDdQYTZLRHdVZEpMeUwxQUV6T3I5VU40OGgwdTJOVFE4ZG1acXpIbzlJTW9BWkXSAdQBQVVfeXFMUEJvbEJUUVpZV2s4cmNrb0F2SHVsbFFndmpqLUVrZjczNUVqcnFnb3hQMl9pVVNscERwQldQNDIyQXFuQ3F1a0hGdHRxRlFDWmlGWmJhTFQ0UXZBYkJoWTVVc2poWEt1M2JIRXh0eWtRT21pTWRQT3RsVWJIMWNpYzdadDNSa3JFUG1XQlBIZ3lvMjI1NXhWdENtY2tqN0RYSmloQkFGQkh4b1BmUHp1UDNBdmJLNktpQ1JxOHRjcHF3NVpCdUpDN1U2VHFwd2FpTmpsa0Y?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Buy ONGC, Sell Oil India| Kotak raises FY27 oil price assumption to $90",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNaDI2MHRrYTJuUEtJTmhNMFlNR0p6Wk9qNzNOSXRtYjBYb3E0RExvLS1EY3FDSU5jc3dnenhtdUdGZjgyTDF1YjlaVng4cHVKc1dsWldoSnh4Smoyam1DWldYZFlFSXRhT19SaTJreElBdkVKdEY5LVEzdWxjY3hrVXVqWW4yOW5yVXdid1lVS2ppeHU2WktRV3RmbTFneWF6YjlUYy1zb0pONDVKWUpQQmFLejUwV2ZBdVdDZi1oLThfSmUzOFJ5cjIzRGlYLWNsbzNiaNIB2gFBVV95cUxOZHFJbVpnV1JZS1J4Ymlvcnd0cjZNWFpjT2JqSHlvbkNwbVk5LTZIOFBrSFpXTG1xNkd3UFNVYTN3YkF5Mk5YMW9rVE5SaUdTRmlRT1E5YXU3QzJSMWhHckRUTk1Ld2VTYUpHQ0JGNkhJcXJrX28tU1dBNlNVWjhWYURUdjNWT20xREl5QkphNjc1ZTFsZXdDeWk3S0R3YngxZFIxaWhpNnJ6Umd4MUREV0VnaTZiX2FBY2FxeHlLaE5IN0RkUUhlcVVNN0o1OWZBNlhjcVRYNnBLdw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVWFWUUdlYTNFQWtrbFl5RE1DWHVIZmVCWDdfc3ZBQURjMHlYWFY1N0RXanQxb05YVC1WYTdSejJEdjUtWHJZTHFVUGo3TE1adF84aDhWY2JNNTVuN2UtelBnNW0xYUpTNXUwcFROQzlOQkFnWUZreU9jVjgtUmJ1VGY2VEtRaXZveTN0ZHBud2U5dy1GNXJ2TnVlRHhpeUZWb1dKbW9JUDk0SzNoemFjcXJBSWVDZWFvTU9EUE1GU3NCS0YzS1pySnVaMFZZZVI2WHlFUGY3LUhyR1XSAeABQVVfeXFMT0U3ZlZ5WXlhamtQWV9SNWFHdG1XamRoRzV5Y2tPTWNjWElsRm1Kako2MkdSUGxOV08tRjJqc1ZxTjJjajlHeTZZSWZ0REhUN3dNTldKQjNVSTJVS3lzTEl2bDBCTFB5YXpqZUp6Sk5heUJVbnNwQ1dXQVVJamc0ZVhOWWQ0VXEzd3FwMHlYeTNxVkd3Z2tRLXUtanVHdmhJRnJsejRhTE5SNXU5RnZNS3FBQWRnSThrMUJreDA0SjA1eGdXTGlDcXVvOTNDbUdqaFBacFpzTGNRcTMyck9BMHc?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "India hikes deepwater gas price ceiling to $9.89 for difficult fields; Reliance-BP\u2019s KG-D6 to benefit",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPaXNpQlM2MVBoUzRYb0dLTWw2N0Z3UHRQZGtBY21oWFNqd2FBMkFOa2ZJYmNCM3Q4d2dmalhRbkhlMEhOVldIMjB5NkxzSlNRbU9MQUZPalVyTENsWUEwclo1S3QwQWd3WFNrREJEUUxuWlFhR0lmaWFfV09qcVZ6ZkI1OUFSM05zMlA4eWVPaExyN3Z0M2Uyd2lrcnFRNVY2Z0M3TGlLWnlOYkdWWlR0a0k2YzF3V240Ui1ITWNqSTF1ekVPYl9sZFI0WEE4WFZOdGZPazY2SnB6WFdwYjZvd1BjWkk0c1pxLXow0gHwAUFVX3lxTE9BYU93ZTUwTlJrYzdLWXluZnktTXNwci0zSkFnTXpGRTJVNlczbldLQ0xWR1ZMNlVMLTVGdm9vcDBjWEhMVndoYzM4cldfdHg0LXJrNkVpLW1JZi1sbTdEbWZVVXoyRnFESnNrQTMxeGRJSkVuQ3U1c19Pbk9NTDR0am9Dbkc1c2Y0bVlUMkNpRDNyRzZ5eHVRUzdGdVNqSjNyZWhFMUhLYzNyQUpXbVhzcWNjMTBiZ1QzbC1ObkhweUVBSVVZOWYySDI0bW9sem5sMm5QeHRHUE5RdzhBVWY4RlRoQlF5LXdCVVAyUmdsOA?oc=5",
-      "published_at": "Sun, 04 Oct 2026",
+      "title": "MRPL-backed petrochemicals venture begins marketing push",
+      "publisher": "Indiatimes",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVzFpSk1VVUg2MjVYcHVaSEoydEhZMmtUVFg4aDlHVFA1R3F3UHVhTFNwUE84d25jYzFyUl9pRl9sTHVhelduWHpMRFVUaXV5bWdqUGt0T0VFOUlTUlZhTF9aOWo0NTFYMTVSaHBrVmNRTHZzUzJXUTZQRW1ianVYRjF1SUc4QU1paTVvQ0tFTG1faVlaOGdHSEpWRjJHMHhSaHBxd0Q1YmMzRXFXUHIzYkNJQ3NFcWtIQjJFVmd2NnRjbTlRazNRZ3pJZkdBOVFFZG12cNIB2AFBVV95cUxNekdrYWlaVjc3aFZXaWV2ZWlDUFEzMFZ3WHVRdUpIVVVDZ09jNUZxN3QxQTQyNGw4b2xjRm9VWFE5UllLNDhKbEZabzlJa1BLMEo3RldQTmQxUkQ5blhhdHN1VVdvcTF0ZUoyc29VVDVrUEtzWGxIbTFqSndCeUhDQklBQ3JVU0hxS0JiMkJFSUhPaDB3VnA3VzV4ZmN3c2E2ZEJjZEMxcWg4Z2lLdjZzMmJxZnZqeDRlTUNPaHhhU2ZvUXVKOWNkRy1LY3pyV0lkS0NFWFdSN2I?oc=5",
+      "published_at": "Sun, 11 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Mutual fund SIP returns: India averaged 8.4% over rolling 5-year periods; how did it compare with global markets?",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOZUpaa2QwbkRWaVVCMk1ST0N2TkcydjZ2eFZCSGZiUVQ1aDFCX0ZaTkozNWZMNEdnMEF1VDVlbU5HV3F2WDJzUWhzWEI1U2p3cE8xRWs5RWFwbkpKNU45bmhzNUdXNWhnSTFST2szWXd5RzdMSW9BZ3lVdUExNTFDZ3hCbTc1WjJxaVV6X2xkdlc4VkVjVlpnZXJrQmtsSk9weWZGZFlYZ0t1Z2ZvMWo0UlJLeElhRm1lWmxxVkNvQXlxRTIzYTYtSzh4azdxc0xfZlBSTjJqMWl5bVJvWVpfRGJFWWx2OXpRNFBETk9ucUh4U2ViWUVHal9YNlpPWWpUbHdDb3JsYnPSAY4CQVVfeXFMTzQxUUdWVjg2VVlHOHdoTWViajVOdHZjdHR2WDhnYkRPYXVaU1ZkQ0xDZG1qbzF3MzJTS1VoajRNbTRmZ2o0M1NtMDUtejBQc3BVbnlxWEx4Q0MxSkVLcF9KdG5nLXJxWnlzeS13Q2JjZ2lRcmxWakRsLUtITHRjWmRaVzYxQjNURE9xYWpxNEhnQkFWLWZqNkVDQkZFQV96X0Jmc1MxLUlKb2pjb3R1bk9JY1djblJLVjdKSktSZVQ2S25oZGtoZ2JFeWsxNzhGQlkzUk1DQ2lEd1JCT0NlcTBfRVAyX05UWHlSbDZGQmRzYktOaWJFRHpia0FBVUJjTXBXdEVtckR5TGtYRUtR?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9NMzk5WE1KQmdkbHF6dzcySERTbkt4WmNYMzE1UGx5YjNTdkZoSjJLN2ZIcF8zUnFqUjBoUUtsVmh3MjRmQ25xWVd2a1ZfaDJaREI5S2FJbFdCMGZCenNOeXJvSWtKUjB3SnZUa0JHZm9IcEU?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
       "sentiment": "neutral"
+    },
+    {
+      "title": "BP Shell merger: Is the biggest merger ever in oil and gas industry happening? Check market cap, debt, valuation",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MTXV4VEgzbUFwSFZEYklJQ0N0M2U0RmMtTTZHWVNaYXprbHFwdEsya3k4S2ZsQlZpNDlNUkpfNzhzQ0wwZEVEeUdnWThZUHRJZ0lvUjVjbHNkRTA2eUhPbmc2Mk83R1N1THkzNg?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Why mirror-image molecules matter in chemistry and commerce",
+      "publisher": "Indiatimes",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdDAwa0xiVTBTMzJjWGxYdlB6eUFPd3lyQ0I4VFFLbXJ6M19IMDZaTlcyOUMtM0tVckRHUXFhYXZQa2NtcXl5Z2l0ZjdoUGR1dmtKRGk1c1JVWlg1UzdjTmM0OGd3ZGlVbjNWdnk3WDl2a3I2QzlJM2VlaU9WWDVldEpHS3VqbGRkT2RKc2FLXzNqbWVJRmtFM3g2eXdjUFBlZENvc1dQTVJxM1h3WGJQZ3p6MlYxNkVBU3l0Q2x4aFNxTlJnX01McVVBd3Q5dDBMMWNwYllSUDLSAdwBQVVfeXFMUHhNTk9heks5LUg3NnZ4eDBXd3FoU2RER1RKc2JKOXV1Uy1qQ0dpZkVrelc5WlVpOEh4a0NtZWdyTFZsZGs1VmMyMVR6MHduS3gxbzNYRHc4TldVZ1ZibDE4YW5IRktFRUJKQjZRM2pBY0xwbFFsbkJuYjVEYVY0R1BoY2hxbXZ5ZHlpd01tOHR0bmY2eWxGaDMwZ19XaFY0NnhTY01mSkh3aVFUclV6LUhkbmVsYnJFRkc2SUFuaWVSRXFtUTRsTDg2T1B4bDVXZS1vMVBrRVpUNEhfbw?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Trusting AI with your money is subject to market risks",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhPU3F3bzhENHBzaS1qYnVBcUtjendjeVdvLUNTd29DVWNYUGU5TGRUNW02S09Wc1p5cWhKV3hyN3FYQUFPRzg3RDNEd051M2xHMGhLMzM5NXRsRzAyRWkza0JWZ09LcUFMc2RQRk1yRzFGVlE0SVE4S3hETEJNejlvTDQ4UFNNd0tYQUhNbEZnN25qU3BZZXRKekVmNHdFX2c3dEVjSVFLd3ZFc2swT9IBtgFBVV95cUxQWDlkRFlnYUtnT0RnN0VaZUFwOVM5VF9JVDk4YUpHb3RRaHJncHJsdFlOdUR4UTFTYUdYTDNZbDViemZrcVRCU28tV0hncW93ZEJWMGwyUjFXenBndm5jTlpXeS0tSm1DZzhUWjVmUGRvdGQyLU56d2V5Z2FyTkE1ZWUtSnlURVpuQUFZbVlGOS1fYmpYcDd2RlJQN2E3TThwQXpvaGVQdzQ5cTNzbFhRbkFvZzE2dw?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "bearish"
     }
   ]
 }

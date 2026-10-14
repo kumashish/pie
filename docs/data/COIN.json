@@ -1,293 +1,304 @@
 {
   "symbol": "COIN",
-  "last_price": 185.74,
-  "as_of": "2026-10-06 13:30:00",
-  "regime": "neutral",
-  "regime_display": "Neutral",
-  "trend_score": 4.2,
-  "fit_score": 42.5,
+  "last_price": 181.79,
+  "as_of": "2026-10-13 13:30:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.0,
+  "fit_score": 30.0,
   "confidence_grade": "C",
-  "confidence_percentage": 42.5,
-  "vix": 15.01,
+  "confidence_percentage": 30.0,
+  "vix": 15.27,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (82.3% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (43.2% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 181.79,
+    "stop_loss": 185.17,
+    "target_1": 154.52,
+    "target_2": 136.34,
+    "risk_per_share": 3.38,
+    "risk_reward": 13.4,
+    "atr14": 10.1,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 160.0,
-        "strike_formatted": "160",
+        "strike": 155.0,
+        "strike_formatted": "155",
         "option_type": "Put",
-        "delta": -0.001,
+        "delta": -0.0,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Buy 1x COIN 20-Nov-2026 160 Put"
+        "dte": 37,
+        "summary": "Buy 1x COIN 20-Nov-2026 155 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 170.0,
-        "strike_formatted": "170",
+        "strike": 165.0,
+        "strike_formatted": "165",
         "option_type": "Put",
-        "delta": -0.033,
+        "delta": -0.017,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Sell 1x COIN 20-Nov-2026 170 Put"
+        "dte": 37,
+        "summary": "Sell 1x COIN 20-Nov-2026 165 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 200.0,
-        "strike_formatted": "200",
+        "strike": 195.0,
+        "strike_formatted": "195",
         "option_type": "Call",
-        "delta": 0.101,
+        "delta": 0.094,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Sell 1x COIN 20-Nov-2026 200 Call"
+        "dte": 37,
+        "summary": "Sell 1x COIN 20-Nov-2026 195 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 210.0,
-        "strike_formatted": "210",
+        "strike": 205.0,
+        "strike_formatted": "205",
         "option_type": "Call",
-        "delta": 0.013,
+        "delta": 0.01,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 44,
-        "summary": "Buy 1x COIN 20-Nov-2026 210 Call"
+        "dte": 37,
+        "summary": "Buy 1x COIN 20-Nov-2026 205 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 5.0,
-    "stop_loss_price": 180.17,
-    "take_profit_price": 191.31,
-    "net_delta": -0.056,
-    "net_theta": 0.025,
+    "stop_loss_price": 176.34,
+    "take_profit_price": 187.24,
+    "net_delta": -0.067,
+    "net_theta": 0.024,
     "probability_of_profit": 0.0,
-    "var_95": 4.41,
+    "var_95": 3.33,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 148.59,
+        "price": 145.43,
         "pnl": -15.0
       },
       {
-        "price": 150.08,
+        "price": 146.89,
         "pnl": -15.0
       },
       {
-        "price": 151.56,
+        "price": 148.34,
         "pnl": -15.0
       },
       {
-        "price": 153.05,
+        "price": 149.79,
         "pnl": -15.0
       },
       {
-        "price": 154.54,
+        "price": 151.25,
         "pnl": -15.0
       },
       {
-        "price": 156.02,
+        "price": 152.7,
         "pnl": -15.0
       },
       {
-        "price": 157.51,
+        "price": 154.16,
         "pnl": -15.0
       },
       {
-        "price": 158.99,
-        "pnl": -15.0
+        "price": 155.61,
+        "pnl": -14.39
       },
       {
-        "price": 160.48,
-        "pnl": -14.52
+        "price": 157.07,
+        "pnl": -12.93
       },
       {
-        "price": 161.97,
-        "pnl": -13.03
+        "price": 158.52,
+        "pnl": -11.48
       },
       {
-        "price": 163.45,
-        "pnl": -11.55
+        "price": 159.98,
+        "pnl": -10.02
       },
       {
-        "price": 164.94,
-        "pnl": -10.06
-      },
-      {
-        "price": 166.42,
-        "pnl": -8.58
-      },
-      {
-        "price": 167.91,
-        "pnl": -7.09
-      },
-      {
-        "price": 169.39,
-        "pnl": -5.61
-      },
-      {
-        "price": 170.88,
-        "pnl": -5.0
-      },
-      {
-        "price": 172.37,
-        "pnl": -5.0
-      },
-      {
-        "price": 173.85,
-        "pnl": -5.0
-      },
-      {
-        "price": 175.34,
-        "pnl": -5.0
-      },
-      {
-        "price": 176.82,
-        "pnl": -5.0
-      },
-      {
-        "price": 178.31,
-        "pnl": -5.0
-      },
-      {
-        "price": 179.8,
-        "pnl": -5.0
-      },
-      {
-        "price": 181.28,
-        "pnl": -5.0
-      },
-      {
-        "price": 182.77,
-        "pnl": -5.0
-      },
-      {
-        "price": 184.25,
-        "pnl": -5.0
-      },
-      {
-        "price": 185.74,
-        "pnl": -5.0
-      },
-      {
-        "price": 187.23,
-        "pnl": -5.0
-      },
-      {
-        "price": 188.71,
-        "pnl": -5.0
-      },
-      {
-        "price": 190.2,
-        "pnl": -5.0
-      },
-      {
-        "price": 191.68,
-        "pnl": -5.0
-      },
-      {
-        "price": 193.17,
-        "pnl": -5.0
-      },
-      {
-        "price": 194.66,
-        "pnl": -5.0
-      },
-      {
-        "price": 196.14,
-        "pnl": -5.0
-      },
-      {
-        "price": 197.63,
-        "pnl": -5.0
-      },
-      {
-        "price": 199.11,
-        "pnl": -5.0
-      },
-      {
-        "price": 200.6,
-        "pnl": -5.6
-      },
-      {
-        "price": 202.09,
-        "pnl": -7.09
-      },
-      {
-        "price": 203.57,
+        "price": 161.43,
         "pnl": -8.57
       },
       {
+        "price": 162.88,
+        "pnl": -7.12
+      },
+      {
+        "price": 164.34,
+        "pnl": -5.66
+      },
+      {
+        "price": 165.79,
+        "pnl": -5.0
+      },
+      {
+        "price": 167.25,
+        "pnl": -5.0
+      },
+      {
+        "price": 168.7,
+        "pnl": -5.0
+      },
+      {
+        "price": 170.16,
+        "pnl": -5.0
+      },
+      {
+        "price": 171.61,
+        "pnl": -5.0
+      },
+      {
+        "price": 173.06,
+        "pnl": -5.0
+      },
+      {
+        "price": 174.52,
+        "pnl": -5.0
+      },
+      {
+        "price": 175.97,
+        "pnl": -5.0
+      },
+      {
+        "price": 177.43,
+        "pnl": -5.0
+      },
+      {
+        "price": 178.88,
+        "pnl": -5.0
+      },
+      {
+        "price": 180.34,
+        "pnl": -5.0
+      },
+      {
+        "price": 181.79,
+        "pnl": -5.0
+      },
+      {
+        "price": 183.24,
+        "pnl": -5.0
+      },
+      {
+        "price": 184.7,
+        "pnl": -5.0
+      },
+      {
+        "price": 186.15,
+        "pnl": -5.0
+      },
+      {
+        "price": 187.61,
+        "pnl": -5.0
+      },
+      {
+        "price": 189.06,
+        "pnl": -5.0
+      },
+      {
+        "price": 190.52,
+        "pnl": -5.0
+      },
+      {
+        "price": 191.97,
+        "pnl": -5.0
+      },
+      {
+        "price": 193.42,
+        "pnl": -5.0
+      },
+      {
+        "price": 194.88,
+        "pnl": -5.0
+      },
+      {
+        "price": 196.33,
+        "pnl": -6.33
+      },
+      {
+        "price": 197.79,
+        "pnl": -7.79
+      },
+      {
+        "price": 199.24,
+        "pnl": -9.24
+      },
+      {
+        "price": 200.7,
+        "pnl": -10.7
+      },
+      {
+        "price": 202.15,
+        "pnl": -12.15
+      },
+      {
+        "price": 203.6,
+        "pnl": -13.6
+      },
+      {
         "price": 205.06,
-        "pnl": -10.06
-      },
-      {
-        "price": 206.54,
-        "pnl": -11.54
-      },
-      {
-        "price": 208.03,
-        "pnl": -13.03
-      },
-      {
-        "price": 209.51,
-        "pnl": -14.51
-      },
-      {
-        "price": 211.0,
         "pnl": -15.0
       },
       {
-        "price": 212.49,
+        "price": 206.51,
         "pnl": -15.0
       },
       {
-        "price": 213.97,
+        "price": 207.97,
         "pnl": -15.0
       },
       {
-        "price": 215.46,
+        "price": 209.42,
         "pnl": -15.0
       },
       {
-        "price": 216.94,
+        "price": 210.88,
         "pnl": -15.0
       },
       {
-        "price": 218.43,
+        "price": 212.33,
         "pnl": -15.0
       },
       {
-        "price": 219.92,
+        "price": 213.79,
         "pnl": -15.0
       },
       {
-        "price": 221.4,
+        "price": 215.24,
         "pnl": -15.0
       },
       {
-        "price": 222.89,
+        "price": 216.69,
+        "pnl": -15.0
+      },
+      {
+        "price": 218.15,
         "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.788,
+      "win_probability": 0.651,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3092,
+      "half_kelly_fraction": 0.1859,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,77 +308,36 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 82.3,
-      "grade": "A (Optimal)",
+      "score": 43.2,
+      "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x COIN 20-Nov-2026 160 Put<br> Sell 1x COIN 20-Nov-2026 170 Put<br> Sell 1x COIN 20-Nov-2026 200 Call<br> Buy 1x COIN 20-Nov-2026 210 Call"
+      "legs_summary": "Buy 1x COIN 20-Nov-2026 155 Put<br> Sell 1x COIN 20-Nov-2026 165 Put<br> Sell 1x COIN 20-Nov-2026 195 Call<br> Buy 1x COIN 20-Nov-2026 205 Call"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 63.8,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x COIN 20-Nov-2026 180 Call<br> Sell 1x COIN 20-Nov-2026 185 Call<br> Sell 1x COIN 20-Nov-2026 185 Call<br> Buy 1x COIN 20-Nov-2026 190 Call"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 55.5,
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 42.1,
       "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x COIN 20-Nov-2026 175 Put<br> Sell 1x COIN 20-Nov-2026 185 Put<br> Sell 1x COIN 20-Nov-2026 185 Call<br> Buy 1x COIN 20-Nov-2026 195 Call"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 50.1,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x COIN 20-Nov-2026 180 Call<br> Sell 1x COIN 20-Nov-2026 185 Call<br> Sell 1x COIN 20-Nov-2026 185 Call<br> Buy 1x COIN 20-Nov-2026 195 Call"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 42.9,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x COIN 20-Nov-2026 170 Put<br> Buy 1x COIN 20-Nov-2026 160 Put"
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Sell 1x COIN 20-Nov-2026 181.8 Put"
     }
   ],
   "indicators": {
-    "EMA20": "186.35",
-    "EMA50": "179.16",
-    "EMA100": "178.87",
-    "EMA200": "193.82",
-    "RSI(14)": "50.95",
-    "ATR(14)": "11.11",
-    "ADX(14)": "23.96",
-    "BB(20,2)": "0.49",
-    "P_SHAPE(20)": "53.38"
+    "EMA20": "183.34",
+    "EMA50": "179.05",
+    "EMA100": "178.83",
+    "EMA200": "193.07",
+    "RSI(14)": "49.47",
+    "ATR(14)": "10.10",
+    "ADX(14)": "18.57",
+    "BB(20,2)": "0.38",
+    "P_SHAPE(20)": "54.64"
   },
   "rules": [
     {
       "name": "EMA20 above EMA50",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "RSI between 50 and 65",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -409,6 +379,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "RSI between 50 and 65",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
@@ -417,6 +394,13 @@
     },
     {
       "name": "ATR increasing",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -432,39 +416,46 @@
   ],
   "news": [
     {
-      "title": "Once 'Nearly Impossible,' Now Reality: Brian Armstrong Cheers Citi Partnership, Says Coinbase 'Has Come a Long Way'",
-      "publisher": "Benzinga",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/once-nearly-impossible-now-reality-013006547.html",
+      "title": "Is Coinbase Stock Ready For A Longer Revenue Slide?",
+      "publisher": "Trefis",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/coinbase-stock-ready-longer-revenue-170026588.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Jordi Visser Says Bitcoin FOMO Will \u201cKick In Very, Very Soon.\u201d Can BTC Stay Above $82,000?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/jordi-visser-says-bitcoin-fomo-224337527.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Cathie Wood Says to Follow the AI Agents. First Ask How Much of Your Money They Can Spend",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/technology/ai/articles/cathie-wood-says-ai-agents-210003882.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Coinbase Global, Inc. (COIN) Stock Declines While Market Improves: Some Information for Investors",
-      "publisher": "Zacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/coinbase-global-inc-coin-stock-204504523.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Riot Platforms (RIOT) Is Down 10.6% After Retiring Secured Coinbase Loan Facility And Freeing Collateral",
+      "title": "What Does Coinbase Global (COIN) Entering Australian Stocks And Derivatives Mean?",
       "publisher": "Simply Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/riot-platforms-riot-down-10-200915624.html",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/does-coinbase-global-coin-entering-161300847.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citi Turns Bullish On GLXY, COIN, GEMI Stocks \u2013 Says Crypto Equities Have A \u2018Considerably Stronger Backdrop\u2019 Heading Into Earnings",
+      "publisher": "Stocktwits",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/citi-turns-bullish-glxy-coin-141945115.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "B.AI Wrote TRON\u2019s Agent Identity Standard. Now It Sells the Stack That Runs On It.",
+      "publisher": "Forkast News",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/b-ai-wrote-tron-agent-130507850.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Citi lifts Galaxy and Gemini, downgrades Securitize as crypto fundamentals improve",
+      "publisher": "Investing.com",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/citi-lifts-galaxy-gemini-downgrades-130333690.html",
       "published_at": "Today",
       "sentiment": "bearish"
+    },
+    {
+      "title": "Evernorth\u2019s Shareholders Watched 473 Million XRP Lose $443 Million Before the Stock Ever Traded. On Its First Day on Nasdaq the Market Put a Price on What Is Left.",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/evernorth-shareholders-watched-473-million-123311730.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
     }
   ]
 }

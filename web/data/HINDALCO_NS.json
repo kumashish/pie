@@ -1,269 +1,304 @@
 {
   "symbol": "HINDALCO.NS",
-  "last_price": 918.4,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 894.4,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 2.5,
-  "fit_score": 25.0,
+  "trend_score": 3.2,
+  "fit_score": 32.5,
   "confidence_grade": "C",
-  "confidence_percentage": 25.0,
-  "vix": 13.79,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "confidence_percentage": 32.5,
+  "vix": 14.47,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Wait for Mean Reversion: RSI (30.0) is oversold (< 35) [Synthetic PCR: 1.40]. Wait for a bounce toward EMA20 resistance before entering Credit Spread.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (67.3% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 894.4,
+    "stop_loss": 932.69,
+    "target_1": 760.24,
+    "target_2": 670.8,
+    "risk_per_share": 38.29,
+    "risk_reward": 5.8,
+    "atr14": 19.14,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
+        "action": "Buy",
         "quantity": 1,
-        "strike": 965.0,
-        "strike_formatted": "965",
-        "option_type": "Call",
-        "delta": 0.202,
+        "strike": 830.0,
+        "strike_formatted": "830",
+        "option_type": "Put",
+        "delta": -0.046,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x HINDALCO.NS 24-Nov-2026 965 Call"
+        "dte": 41,
+        "summary": "Buy 1x HINDALCO.NS 24-Nov-2026 830 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 850.0,
+        "strike_formatted": "850",
+        "option_type": "Put",
+        "delta": -0.117,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Sell 1x HINDALCO.NS 24-Nov-2026 850 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 940.0,
+        "strike_formatted": "940",
+        "option_type": "Call",
+        "delta": 0.188,
+        "expiration": "2026-11-24",
+        "expiration_display": "24-Nov-2026",
+        "dte": 41,
+        "summary": "Sell 1x HINDALCO.NS 24-Nov-2026 940 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 985.0,
-        "strike_formatted": "985",
+        "strike": 960.0,
+        "strike_formatted": "960",
         "option_type": "Call",
-        "delta": 0.107,
+        "delta": 0.093,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x HINDALCO.NS 24-Nov-2026 985 Call"
+        "dte": 41,
+        "summary": "Buy 1x HINDALCO.NS 24-Nov-2026 960 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 35.0,
-    "stop_loss_price": 890.85,
-    "take_profit_price": 945.95,
-    "net_delta": -0.095,
-    "net_theta": 0.059,
+    "stop_loss_price": 867.57,
+    "take_profit_price": 921.23,
+    "net_delta": -0.024,
+    "net_theta": 0.108,
     "probability_of_profit": 0.0,
     "var_95": 20.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 734.72,
-        "pnl": -35.0
-      },
-      {
-        "price": 742.07,
-        "pnl": -35.0
-      },
-      {
-        "price": 749.41,
-        "pnl": -35.0
-      },
-      {
-        "price": 756.76,
-        "pnl": -35.0
-      },
-      {
-        "price": 764.11,
-        "pnl": -35.0
-      },
-      {
-        "price": 771.46,
-        "pnl": -35.0
-      },
-      {
-        "price": 778.8,
-        "pnl": -35.0
-      },
-      {
-        "price": 786.15,
-        "pnl": -35.0
-      },
-      {
-        "price": 793.5,
-        "pnl": -35.0
-      },
-      {
-        "price": 800.84,
-        "pnl": -35.0
-      },
-      {
-        "price": 808.19,
-        "pnl": -35.0
-      },
-      {
-        "price": 815.54,
-        "pnl": -35.0
-      },
-      {
-        "price": 822.89,
-        "pnl": -35.0
-      },
-      {
-        "price": 830.23,
-        "pnl": -35.0
-      },
-      {
-        "price": 837.58,
-        "pnl": -35.0
-      },
-      {
-        "price": 844.93,
-        "pnl": -35.0
-      },
-      {
-        "price": 852.28,
-        "pnl": -35.0
-      },
-      {
-        "price": 859.62,
-        "pnl": -35.0
-      },
-      {
-        "price": 866.97,
-        "pnl": -35.0
-      },
-      {
-        "price": 874.32,
-        "pnl": -35.0
-      },
-      {
-        "price": 881.66,
-        "pnl": -35.0
-      },
-      {
-        "price": 889.01,
-        "pnl": -35.0
-      },
-      {
-        "price": 896.36,
-        "pnl": -35.0
-      },
-      {
-        "price": 903.71,
-        "pnl": -35.0
-      },
-      {
-        "price": 911.05,
-        "pnl": -35.0
-      },
-      {
-        "price": 918.4,
-        "pnl": -35.0
-      },
-      {
-        "price": 925.75,
-        "pnl": -35.0
-      },
-      {
-        "price": 933.09,
-        "pnl": -35.0
-      },
-      {
-        "price": 940.44,
-        "pnl": -35.0
-      },
-      {
-        "price": 947.79,
-        "pnl": -35.0
-      },
-      {
-        "price": 955.14,
-        "pnl": -35.0
-      },
-      {
-        "price": 962.48,
-        "pnl": -35.0
-      },
-      {
-        "price": 969.83,
-        "pnl": -39.83
-      },
-      {
-        "price": 977.18,
-        "pnl": -47.18
-      },
-      {
-        "price": 984.52,
-        "pnl": -54.52
-      },
-      {
-        "price": 991.87,
+        "price": 715.52,
         "pnl": -55.0
       },
       {
-        "price": 999.22,
+        "price": 722.68,
         "pnl": -55.0
       },
       {
-        "price": 1006.57,
+        "price": 729.83,
         "pnl": -55.0
       },
       {
-        "price": 1013.91,
+        "price": 736.99,
         "pnl": -55.0
       },
       {
-        "price": 1021.26,
+        "price": 744.14,
         "pnl": -55.0
       },
       {
-        "price": 1028.61,
+        "price": 751.3,
         "pnl": -55.0
       },
       {
-        "price": 1035.96,
+        "price": 758.45,
         "pnl": -55.0
       },
       {
-        "price": 1043.3,
+        "price": 765.61,
         "pnl": -55.0
       },
       {
-        "price": 1050.65,
+        "price": 772.76,
         "pnl": -55.0
       },
       {
-        "price": 1058.0,
+        "price": 779.92,
         "pnl": -55.0
       },
       {
-        "price": 1065.34,
+        "price": 787.07,
         "pnl": -55.0
       },
       {
-        "price": 1072.69,
+        "price": 794.23,
         "pnl": -55.0
       },
       {
-        "price": 1080.04,
+        "price": 801.38,
         "pnl": -55.0
       },
       {
-        "price": 1087.39,
+        "price": 808.54,
         "pnl": -55.0
       },
       {
-        "price": 1094.73,
+        "price": 815.69,
         "pnl": -55.0
       },
       {
-        "price": 1102.08,
+        "price": 822.85,
+        "pnl": -55.0
+      },
+      {
+        "price": 830.0,
+        "pnl": -55.0
+      },
+      {
+        "price": 837.16,
+        "pnl": -47.84
+      },
+      {
+        "price": 844.31,
+        "pnl": -40.69
+      },
+      {
+        "price": 851.47,
+        "pnl": -35.0
+      },
+      {
+        "price": 858.62,
+        "pnl": -35.0
+      },
+      {
+        "price": 865.78,
+        "pnl": -35.0
+      },
+      {
+        "price": 872.93,
+        "pnl": -35.0
+      },
+      {
+        "price": 880.09,
+        "pnl": -35.0
+      },
+      {
+        "price": 887.24,
+        "pnl": -35.0
+      },
+      {
+        "price": 894.4,
+        "pnl": -35.0
+      },
+      {
+        "price": 901.56,
+        "pnl": -35.0
+      },
+      {
+        "price": 908.71,
+        "pnl": -35.0
+      },
+      {
+        "price": 915.87,
+        "pnl": -35.0
+      },
+      {
+        "price": 923.02,
+        "pnl": -35.0
+      },
+      {
+        "price": 930.18,
+        "pnl": -35.0
+      },
+      {
+        "price": 937.33,
+        "pnl": -35.0
+      },
+      {
+        "price": 944.49,
+        "pnl": -39.49
+      },
+      {
+        "price": 951.64,
+        "pnl": -46.64
+      },
+      {
+        "price": 958.8,
+        "pnl": -53.8
+      },
+      {
+        "price": 965.95,
+        "pnl": -55.0
+      },
+      {
+        "price": 973.11,
+        "pnl": -55.0
+      },
+      {
+        "price": 980.26,
+        "pnl": -55.0
+      },
+      {
+        "price": 987.42,
+        "pnl": -55.0
+      },
+      {
+        "price": 994.57,
+        "pnl": -55.0
+      },
+      {
+        "price": 1001.73,
+        "pnl": -55.0
+      },
+      {
+        "price": 1008.88,
+        "pnl": -55.0
+      },
+      {
+        "price": 1016.04,
+        "pnl": -55.0
+      },
+      {
+        "price": 1023.19,
+        "pnl": -55.0
+      },
+      {
+        "price": 1030.35,
+        "pnl": -55.0
+      },
+      {
+        "price": 1037.5,
+        "pnl": -55.0
+      },
+      {
+        "price": 1044.66,
+        "pnl": -55.0
+      },
+      {
+        "price": 1051.81,
+        "pnl": -55.0
+      },
+      {
+        "price": 1058.97,
+        "pnl": -55.0
+      },
+      {
+        "price": 1066.12,
+        "pnl": -55.0
+      },
+      {
+        "price": 1073.28,
         "pnl": -55.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.744,
+      "win_probability": 0.736,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2696,
+      "half_kelly_fraction": 0.2624,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,34 +306,52 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 69.7,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-965CE / B1x-Nov-985CE"
-    },
-    {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 47.3,
-      "grade": "C (Moderate)",
+      "score": 67.3,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-855PE / S1x-Nov-875PE / S1x-Nov-965CE / B1x-Nov-985CE"
+      "legs_summary": "B1x-Nov-830PE / S1x-Nov-850PE / S1x-Nov-940CE / B1x-Nov-960CE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 55.4,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-940CE / B1x-Nov-960CE"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 44.4,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-875CE / S2x-Nov-895CE / B1x-Nov-915CE"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 42.3,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-875CE / S2x-Nov-895CE / B1x-Nov-940CE"
     }
   ],
   "indicators": {
-    "EMA20": "961.43",
-    "EMA50": "983.82",
-    "EMA100": "989.01",
-    "EMA200": "958.26",
-    "RSI(14)": "29.97",
-    "ATR(14)": "19.05",
-    "ADX(14)": "24.49",
-    "BB(20,2)": "0.01",
-    "P_SHAPE(20)": "53.98"
+    "EMA20": "934.50",
+    "EMA50": "967.29",
+    "EMA100": "979.83",
+    "EMA200": "955.05",
+    "RSI(14)": "33.25",
+    "ATR(14)": "19.14",
+    "ADX(14)": "31.72",
+    "BB(20,2)": "0.17",
+    "P_SHAPE(20)": "47.59"
   },
   "rules": [
     {
@@ -309,7 +362,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "ATR increasing",
+      "name": "ADX above 30",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -344,7 +404,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ADX above 30",
+      "name": "ATR increasing",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -352,13 +412,6 @@
     },
     {
       "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -381,46 +434,46 @@
   ],
   "news": [
     {
-      "title": "Stocks to Watch Today: HDFC Bank, AceVector, Orient Cables, Manipal Payment, Pranav Constructions, DLF,...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQemVjQ05mZTZYbVJGdGk0cjFEOThKNDF5S3J3TmRyQlhRRGVJUnBRWWc3b2JGbjBMUnA0SkUxaWNxVHdmd24xZUQ5Y2pobE03dmVTVDk4MVZJTTNXMjdjZjVrQkEtZ1lwRlp0ZnlMbUREejFncXl0S2NIa0NYV3BXUURRcGlNN2NqOWtPQnZndjRUZlQtQjhoNGxvRXVPR0o5TGJhUVFWSXdfY3lvTFhwV25SYTJXWXJBSGhRdU9oQTFmMDdXZVVZSnRCMDJUbV9STmd5Rmo3aU5MU0FlZk1uMnB3ejl4cGpKOHU4S3NzSFktczdIblh0Y1lLWExwWGNFWl9IcF84RkhLdUNhQUlVTE5WSzZ0cVhIdlhfRjNabkxraDd2Z3BLdkVUWUIxMjR5WHVRQXFPV2p2UDV1ODE5bVVTNTRCcnR0SUgyU25FONIB1AJBVV95cUxOM0hNTVNOSWp4UFRpdjJ3akRpejRTN2tEel9iQlBHd19wWEU3Y2NsUE94MUppMmxwMWRhcWh3TmR6czQzRDdOVGxxSWJRa0VoNm5RdmtGLXZzZlNIOU15bGYyaWJBcndiY3V4T2paYldRQTY5andoMWx3YWk1N2taTWd1UjdmRnRjQVF6eUlGUERwV2NlMTR5X0llSTVwTHAyZ0FjMkFMaXVNdm9pWk9KTGdJZE9yOGZlbmpoMmc1QnMtVzFYVlFKR3loSVctUEV4RWpka2htOFBsQm9uLVJ0WDJKeThLU3BsWHI5bl8xd2pTT3pyWkZEUENkT2lkNW9JeXNFWF93clRmZmpWeWpzeDBId19EelYxTkJodUkyeDc0alJ0V3BjaF95cXJxNGc3MDVTM0FoeVhGdFVSb2VDOVlCemxsMWFyeWFHbnVBVlZCV2Zv?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "title": "IMC 2026: Vodafone Idea's enterprise arm to deploy private network at Hindalco Bauxite mine in Odisha",
+      "publisher": "ET Telecom",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcUtLWkFWQ0lHdFFUc2I3SXlhSHVxMjBvMHpCcE5adjRkd0dMN2tmVlNQVmR4YmRQMVF2aUdvb210cUdDeEx1ZG1JVG1RbVllTmM0UDdObGZrUl94V1NhT0ZNZVVsRm1xbHRmRE1vOFh1c2lJTTdGV0lXWWVFcThzc00tLXduZEZ1T1g4RV9FNWl0d1RYLWU4UFJIZldydVJzUE9VV040cmhtdGZ0OTFSa2ZBUkItWXRSd1dURHV4VThDSlVIX1dFckFsaGlEcEpCbTdaSEZDZ0hVbVR1QWNvclpOVnJPODdEQTREcVZPNmFqX2l5ZVFtSWQ2R0tZZ9IBgwJBVV95cUxNREkzejc5MlVWZklTemswdUloWGkxSXg1aVh2OXM1TTYwWEhjWVR1QVYxX181Q2ttN0F6aHpwcjNwYjR4MTlVS2ZtY21MaVFUeWhQbTl0WVEwQnIyYU9FdnAzRFcwTEJZZHhnMmNEN050SnBhODA4SE9QYUVJYnRsbHZwWklhRkl2VU9oNUJ2MHlPU2RVNHRUREZuR252NXFDbUZqWG54cVZ2NTJrMUlueDREQTU3cW1UOEVHQzNBZ3lZX1JiNGZ0RVBlcGdMSGh1T2drTjQ3OGhENjBDNWNiMWcyNm40T1RaZkVOaE5tdUp0cHJKYTI2SHlBb04wWGZDWTln?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Hindalco Industries Stocks Live Updates: Hindalco Industries Trades at Rs 518.0 with 0.94% Increase; SMA5",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxOeURmMEVBNTBYaEotWDh1MGNhQ1doVFIzQVVPNFlPbkJsWkJUT3ExT1NlaVlWcmtiUk1GSUpHeGJMeENEbTY5WG9QTjRicVJReUljSi1hNXpha2l1YUZQM0lvNDBUZnFRaklfd3liYV8wY1pLTm9ObGV3NXJVVm1xNzB5QnJTd0wtcGpkd1haMWJmY2lEcm1hUGhKY0M5RDZzMFA4ekU4U2wtNFhmOVRPdU9jZ3oxOE53MHZQX3BoRGtUb2Vvc1BuMEh6RUNHRlVNR3Z0ZkpQOGhhQ1A5MHZyc2pTT256OWlDUHNiMzBNMUhpckpYMlpmTHp5WFJ4RGtaZ3ZwaGtmeHVZNWtpZ2hLRDB2V2NCakc1eHFvcW56Z2ZyUG5FMUVWUjRQM3d2dEhLRGNUVFpJRGZ1ZGp4R0loUmlNQlVuUmlHNEh2c3pOUTdvR3ZtdUtZM2VZNDB6b1R5c1BNSVI0NWo0SE53cUg0SEJIMS1ILUXSAfACQVVfeXFMTmY4enBkNDVIQUpLYXBReWR4MEpia3NmWDlDaHZER2s1dEdVSEpSMmFReTNjWGhSVlBRdjJUanVnQkdRSmhGYzk3aU5rUjU0RzQzTDJGamF2OENaWThKZUF2WHFFZE1aNjdpcmNmVG5qNW91ZU5lanhHTXlwQTl5a3BGcGE0N2d0Q2J2dlJ1WHV3NVFxc0kyWEh3NVZSOERGTjBLa0pwdWZJUzhqZ3BVZVFxOFZTN3BRanlMTVlzdzV2U0tBNnJlU3pTR0NqT3VRSkVZSEd3MmJBcVI4VTdRZU9jNVRBX3dVaFo4RlBCT2ZRSVo4VXdKNGlUV3NPUHg5RFRoR0VtdlVTWUNPRExqWnJfN0U2LXFhUlRTa1dGX1Zlc2VYY2FVckdTOGNKeXJIaTY3T0JQT3g3NE8xN2Ewa3UyZFk0Nlp0Ti1xbWsyNFRIcDZQSkJHQ1hRbWttQk5vRmxSWGNMLUlGY25Wc2lIWFE?oc=5",
+      "published_at": "Fri, 16 Feb 2024",
       "sentiment": "neutral"
     },
     {
-      "title": "Hindalco calls off AluChem acquisition amid prolonged closing delays",
-      "publisher": "ET Manufacturing",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNalZYbVZiT0xZajlUV0pxOFdZeWl2WDNvdlFGLXc1eFFJOVJGMUZiTXMtdTFVQkJ0YklqNzVXLVRkcUpOWnpuUFhreFB6T3ZzWkNqMXRKM244b0tOZEp0TDZHbjRvckpwaW5hb2U2bkJEc1VwTkw0eHlFVVlrLUVuWWhGT09RNjRxaDExU0pxY3JUbmNXVjR4TmRDSjZNUkNIN1M0T1dHSW1aQWdsNmJuWGlCam5TbEh3OGlqQzJoa2dldm1xaDVuQVFVckFpWk1qa0lWcVJObXV0MjjSAeABQVVfeXFMT2otRTViS1dhRlBoZzJ2VXdUSU1IbF85UHluTzloTFdrY0hCdHlsZUxhU1pJNVlpU3R0LURuV2xTX1N1S2ZvT2lOU1dDSC1LRUxkcXhZUFVsM0pCczJVbXNqTXVibEhScVBTV1M0VFpPenpGNnAzc3ByM2tTNzhzc1Y2UjRIS0lPNUFER0ZHc2JmUExuRDFhUU52UGwyUFVSYjJ4MTU4X3F0cW1yU2ljLTJxeGdQb3ZPZGstY2JCdG1Qb0pwTjNRQzQycHFiWkZwX19nT19YMGRVZVhPcGdrR2Q?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
+      "title": "1290.4",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQXZCeGZpcHVXZENUNllvVk1aWjROMnFScjQ2N0x3cXBoRjB3anNZcGFtYlFnaF9Ic0xsbi11a2lRZUxzbFpvN1d5c1hHdlRtc2NvUXBhWFd1bDVwLUljdERldVFVR01rY3NTYWxybTVsS1BLU0o3VFFEQ1RMRUdCXzVkX0VwWC1JSnJTM3I2RQ?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "",
+      "title": "Can I buy IPO, New Issues, Should I buy IPO, New Issues, Do I buy IPO, New Issues?",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOX3dwVlFhM3pQYXhtcEVLeTBNQ0V3MHBPRHJIM3d5bW5hVDRZYVhkV2t0b29GdklvekJhaHF6cmM2T3pNTGNEbVRfNWVYWXpxaXdXVUJCR2tORXdoX3FUSTNXX2huc095d2NfbU5qMkRPMjdNSDN2OUFLTHJNOXZxNUNXUmJsLVB4Zno1aTVjOA?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Who wins and who loses amid commodity volatility?",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc2x6TVpDbGloRU14a1ZjR21xMUs4aFNyV0JtQWpuLTdjNm55bFkxejhmTHEwSGxrTWpRVWlNRk8yb0RKb0ZIV3RBM2ZJbDA0ekQ0Tk5CbU52SkFpYVByZG5nUmRZWmZkSGM2NThFcGN0VEF0aVE2ZmpkZ1g3WWFkRFFQZnd1SjFXcTA3VHM2SGdjdXZKVUVRdkx3V25iMjBKN3cyTXZ5LS1MSFZFZENqakVCc3RoZmZybmfSAboBQVVfeXFMT3Nsek1aQ2xpaEVNeGtWY0dtcTFLOGhTcldCbUFqbi03YzZueWxZMXo4ZkxxMEhsa01qUVVpTUZPMm9ESm9GSFd0QTNmSWwwNHpENE5OQm1OdkpBaWFQcmRuZ1JkWVpmZEhjNjU4RXBjdFRBdGlRNmZqZGdYN1lhZERRUGZ3dUoxV3EwN1RzNkhnY3V2SlVFUXZMd1duYjIwSjd3Mk12eS0tTEhWRWRDampFQnN0aGZmcm5n?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBhd1g4amdjWENnY2lxSHJLNmxOa1FoVzd3U0tBV2dORHA3T0RRd1U2dVlteDRQcFByQkVwNHQ0SG1sSGhvbnZsLUFuLVdPQms0RDJEckNnbkI4MllMOEJ3MmMzZEYtOEZFLTVwbWk1dTVJRm1CTVJRRkEya1I?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
+      "sentiment": "bullish"
     },
     {
       "title": "Business News Live, Share Market News - Read Latest Finance News, IPO, Mutual Funds News",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1OYnczMWtaY1pzUkdJMEY0UEV3LUNzd3RjbzdhbHpaWWl2X29ma09Bd19pVmdJNlBPcjZCZUp6ZVF3VFZlbEg1Z1hvQU5pamRpeWt1QmlocTlyRkpUdGlkTGpLQkh2d28tY3NHZnd3?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1jdG03NDVkREs0ZnhFc2xYaE9DMGFBV3RBSTZhMy12TlBuZ2xLTDhPVXQtTmpUcFJHODJZdmIyb1A2ZVBCYVFnMkZRb1E1clFNNndUa1dCdVM1bTJQY0FmM01rSEdEOFg2VGNQeGw0ZmN4YUNzYnlJ?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "S&P projects 12-14% credit growth this fiscal, warns weak monsoon may hit rural lending",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPVUNRUFNWcm52bk8yMkZSaGpCY1NTSTlxanEyYzFVODk0clZqVTk1M0RQSUc5bHJMWDcwWVpRX04wQnlPYWk1WXROSWMxNkUtN0R1clFLMnRYUW00ZUtubzlyQ0tiUUhKWkk2LXNrU1o3N1QyeE56RmRQZlluak54aW1kMDVLWDNPSm8yTjFtdEVNS2hzRjFFeG1rV25fTlBBc0MxSG9pMGRaNFlWVFBrMkJ5MEc3emlEcjRvU2lGRnQ0anZlREw5bl8tbWdhSlBoeHdGOVV1TGNaYnpNbjdySXpOWXR2S0NBUkY2dGFIaV9GMU9BQ29NTWlpQdIB-wFBVV95cUxNUUdkc21PWVRESmRjcUZ3TXJ5ODF5NExKWU9uYUdNT2pRcFhGbGtkUkpLelI2QkJleDdQeVdmek4yY1o5ZlRvX3FEbG1tQkVoa2tGVEJjREE5bG1FT3ZPX0hQbHJoaFZTbGZraXV5QlROdTZuRjNxaUlIZ2tGOVp2RWFmdlBaSnBSWF9PZHpRYndzcHBGZGxhdGoySWZzNk8wX3RnUUxYZ3NIY2VSNnlGSUMzSXFNQ2VjSml3bTh0NkdZRkprVDFPem5BUzl3eDRfY0JTY0kyNmMyVzczanplbHRwN3dGOFNYUlR5WVlHWUdmUVFKTG0xRmVORQ?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "bullish"
+      "title": "Trusting AI with your money is subject to market risks",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhPU3F3bzhENHBzaS1qYnVBcUtjendjeVdvLUNTd29DVWNYUGU5TGRUNW02S09Wc1p5cWhKV3hyN3FYQUFPRzg3RDNEd051M2xHMGhLMzM5NXRsRzAyRWkza0JWZ09LcUFMc2RQRk1yRzFGVlE0SVE4S3hETEJNejlvTDQ4UFNNd0tYQUhNbEZnN25qU3BZZXRKekVmNHdFX2c3dEVjSVFLd3ZFc2swT9IBtgFBVV95cUxQWDlkRFlnYUtnT0RnN0VaZUFwOVM5VF9JVDk4YUpHb3RRaHJncHJsdFlOdUR4UTFTYUdYTDNZbDViemZrcVRCU28tV0hncW93ZEJWMGwyUjFXenBndm5jTlpXeS0tSm1DZzhUWjVmUGRvdGQyLU56d2V5Z2FyTkE1ZWUtSnlURVpuQUFZbVlGOS1fYmpYcDd2RlJQN2E3TThwQXpvaGVQdzQ5cTNzbFhRbkFvZzE2dw?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "bearish"
     }
   ]
 }

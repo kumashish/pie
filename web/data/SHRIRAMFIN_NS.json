@@ -1,293 +1,304 @@
 {
   "symbol": "SHRIRAMFIN.NS",
-  "last_price": 935.6,
-  "as_of": "2026-10-07 03:45:00",
+  "last_price": 967.3,
+  "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 3.5,
-  "fit_score": 35.0,
+  "trend_score": 3.8,
+  "fit_score": 37.5,
   "confidence_grade": "C",
-  "confidence_percentage": 35.0,
-  "vix": 13.77,
+  "confidence_percentage": 37.5,
+  "vix": 14.51,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (63.4% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-  "cash_trade_setup": null,
+  "recommendation_reason": "Best fit strategy (79.7% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 967.3,
+    "stop_loss": 1015.69,
+    "target_1": 822.2,
+    "target_2": 725.47,
+    "risk_per_share": 48.39,
+    "risk_reward": 5.0,
+    "atr14": 27.2,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 870.0,
-        "strike_formatted": "870",
+        "strike": 895.0,
+        "strike_formatted": "895",
         "option_type": "Put",
-        "delta": -0.053,
+        "delta": -0.041,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 870 Put"
+        "dte": 41,
+        "summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 895 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 890.0,
-        "strike_formatted": "890",
+        "strike": 920.0,
+        "strike_formatted": "920",
         "option_type": "Put",
-        "delta": -0.124,
+        "delta": -0.121,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 890 Put"
+        "dte": 41,
+        "summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 920 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 980.0,
-        "strike_formatted": "980",
+        "strike": 1010.0,
+        "strike_formatted": "1010",
         "option_type": "Call",
-        "delta": 0.22,
+        "delta": 0.227,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 980 Call"
+        "dte": 41,
+        "summary": "Sell 1x SHRIRAMFIN.NS 24-Nov-2026 1010 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1000.0,
-        "strike_formatted": "1000",
+        "strike": 1035.0,
+        "strike_formatted": "1035",
         "option_type": "Call",
-        "delta": 0.12,
+        "delta": 0.105,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 1000 Call"
+        "dte": 41,
+        "summary": "Buy 1x SHRIRAMFIN.NS 24-Nov-2026 1035 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 35.0,
-    "stop_loss_price": 907.53,
-    "take_profit_price": 963.67,
-    "net_delta": -0.029,
-    "net_theta": 0.097,
+    "stop_loss_price": 938.28,
+    "take_profit_price": 996.32,
+    "net_delta": -0.042,
+    "net_theta": 0.138,
     "probability_of_profit": 0.0,
-    "var_95": 20.0,
+    "var_95": 25.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 748.48,
-        "pnl": -55.0
+        "price": 773.84,
+        "pnl": -60.0
       },
       {
-        "price": 755.96,
-        "pnl": -55.0
+        "price": 781.58,
+        "pnl": -60.0
       },
       {
-        "price": 763.45,
-        "pnl": -55.0
+        "price": 789.32,
+        "pnl": -60.0
       },
       {
-        "price": 770.93,
-        "pnl": -55.0
+        "price": 797.06,
+        "pnl": -60.0
       },
       {
-        "price": 778.42,
-        "pnl": -55.0
+        "price": 804.79,
+        "pnl": -60.0
       },
       {
-        "price": 785.9,
-        "pnl": -55.0
+        "price": 812.53,
+        "pnl": -60.0
       },
       {
-        "price": 793.39,
-        "pnl": -55.0
+        "price": 820.27,
+        "pnl": -60.0
       },
       {
-        "price": 800.87,
-        "pnl": -55.0
+        "price": 828.01,
+        "pnl": -60.0
       },
       {
-        "price": 808.36,
-        "pnl": -55.0
+        "price": 835.75,
+        "pnl": -60.0
       },
       {
-        "price": 815.84,
-        "pnl": -55.0
+        "price": 843.49,
+        "pnl": -60.0
       },
       {
-        "price": 823.33,
-        "pnl": -55.0
+        "price": 851.22,
+        "pnl": -60.0
       },
       {
-        "price": 830.81,
-        "pnl": -55.0
+        "price": 858.96,
+        "pnl": -60.0
       },
       {
-        "price": 838.3,
-        "pnl": -55.0
+        "price": 866.7,
+        "pnl": -60.0
       },
       {
-        "price": 845.78,
-        "pnl": -55.0
+        "price": 874.44,
+        "pnl": -60.0
       },
       {
-        "price": 853.27,
-        "pnl": -55.0
+        "price": 882.18,
+        "pnl": -60.0
       },
       {
-        "price": 860.75,
-        "pnl": -55.0
+        "price": 889.92,
+        "pnl": -60.0
       },
       {
-        "price": 868.24,
-        "pnl": -55.0
+        "price": 897.65,
+        "pnl": -57.35
       },
       {
-        "price": 875.72,
-        "pnl": -49.28
+        "price": 905.39,
+        "pnl": -49.61
       },
       {
-        "price": 883.21,
-        "pnl": -41.79
+        "price": 913.13,
+        "pnl": -41.87
       },
       {
-        "price": 890.69,
+        "price": 920.87,
         "pnl": -35.0
       },
       {
-        "price": 898.18,
+        "price": 928.61,
         "pnl": -35.0
       },
       {
-        "price": 905.66,
+        "price": 936.35,
         "pnl": -35.0
       },
       {
-        "price": 913.15,
+        "price": 944.08,
         "pnl": -35.0
       },
       {
-        "price": 920.63,
+        "price": 951.82,
         "pnl": -35.0
       },
       {
-        "price": 928.12,
+        "price": 959.56,
         "pnl": -35.0
       },
       {
-        "price": 935.6,
+        "price": 967.3,
         "pnl": -35.0
       },
       {
-        "price": 943.08,
+        "price": 975.04,
         "pnl": -35.0
       },
       {
-        "price": 950.57,
+        "price": 982.78,
         "pnl": -35.0
       },
       {
-        "price": 958.05,
+        "price": 990.52,
         "pnl": -35.0
       },
       {
-        "price": 965.54,
+        "price": 998.25,
         "pnl": -35.0
       },
       {
-        "price": 973.02,
+        "price": 1005.99,
         "pnl": -35.0
       },
       {
-        "price": 980.51,
-        "pnl": -35.51
+        "price": 1013.73,
+        "pnl": -38.73
       },
       {
-        "price": 987.99,
-        "pnl": -42.99
+        "price": 1021.47,
+        "pnl": -46.47
       },
       {
-        "price": 995.48,
-        "pnl": -50.48
+        "price": 1029.21,
+        "pnl": -54.21
       },
       {
-        "price": 1002.96,
-        "pnl": -55.0
+        "price": 1036.95,
+        "pnl": -60.0
       },
       {
-        "price": 1010.45,
-        "pnl": -55.0
+        "price": 1044.68,
+        "pnl": -60.0
       },
       {
-        "price": 1017.93,
-        "pnl": -55.0
+        "price": 1052.42,
+        "pnl": -60.0
       },
       {
-        "price": 1025.42,
-        "pnl": -55.0
+        "price": 1060.16,
+        "pnl": -60.0
       },
       {
-        "price": 1032.9,
-        "pnl": -55.0
+        "price": 1067.9,
+        "pnl": -60.0
       },
       {
-        "price": 1040.39,
-        "pnl": -55.0
+        "price": 1075.64,
+        "pnl": -60.0
       },
       {
-        "price": 1047.87,
-        "pnl": -55.0
+        "price": 1083.38,
+        "pnl": -60.0
       },
       {
-        "price": 1055.36,
-        "pnl": -55.0
+        "price": 1091.11,
+        "pnl": -60.0
       },
       {
-        "price": 1062.84,
-        "pnl": -55.0
+        "price": 1098.85,
+        "pnl": -60.0
       },
       {
-        "price": 1070.33,
-        "pnl": -55.0
+        "price": 1106.59,
+        "pnl": -60.0
       },
       {
-        "price": 1077.81,
-        "pnl": -55.0
+        "price": 1114.33,
+        "pnl": -60.0
       },
       {
-        "price": 1085.3,
-        "pnl": -55.0
+        "price": 1122.07,
+        "pnl": -60.0
       },
       {
-        "price": 1092.78,
-        "pnl": -55.0
+        "price": 1129.81,
+        "pnl": -60.0
       },
       {
-        "price": 1100.27,
-        "pnl": -55.0
+        "price": 1137.54,
+        "pnl": -60.0
       },
       {
-        "price": 1107.75,
-        "pnl": -55.0
+        "price": 1145.28,
+        "pnl": -60.0
       },
       {
-        "price": 1115.24,
-        "pnl": -55.0
+        "price": 1153.02,
+        "pnl": -60.0
       },
       {
-        "price": 1122.72,
-        "pnl": -55.0
+        "price": 1160.76,
+        "pnl": -60.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.722,
+      "win_probability": 0.779,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2498,
+      "half_kelly_fraction": 0.3011,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -297,50 +308,68 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 63.4,
+      "score": 79.7,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-870PE / S1x-Nov-890PE / S1x-Nov-980CE / B1x-Nov-1000CE"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 54.8,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-980CE / B1x-Nov-1000CE"
+      "legs_summary": "B1x-Nov-895PE / S1x-Nov-920PE / S1x-Nov-1010CE / B1x-Nov-1035CE"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 49.0,
+      "score": 55.1,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-910CE / S1x-Nov-935CE / S1x-Nov-935CE / B1x-Nov-960CE"
+      "legs_summary": "B1x-Nov-945CE / S2x-Nov-965CE / B1x-Nov-990CE"
+    },
+    {
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 53.8,
+      "grade": "C (Moderate)",
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-1010CE / B1x-Nov-1035CE"
+    },
+    {
+      "strategy_type": "tradecraft_put",
+      "strategy_display": "Tradecraft Put",
+      "score": 50.0,
+      "grade": "C (Moderate)",
+      "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-920PE"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 46.9,
+      "score": 46.8,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-910CE / S1x-Nov-935CE / S1x-Nov-935CE / B1x-Nov-980CE"
+      "legs_summary": "B1x-Nov-945CE / S2x-Nov-965CE / B1x-Nov-1015CE"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 46.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-920PE / S1x-Nov-965PE / S1x-Nov-965CE / B1x-Nov-1015CE"
     }
   ],
   "indicators": {
-    "EMA20": "986.42",
-    "EMA50": "1017.55",
-    "EMA100": "1017.34",
-    "EMA200": "974.80",
-    "RSI(14)": "32.10",
-    "ATR(14)": "22.33",
-    "ADX(14)": "36.79",
-    "BB(20,2)": "0.03",
-    "P_SHAPE(20)": "46.24"
+    "EMA20": "973.35",
+    "EMA50": "1005.64",
+    "EMA100": "1011.06",
+    "EMA200": "973.65",
+    "RSI(14)": "46.38",
+    "ATR(14)": "27.20",
+    "ADX(14)": "35.72",
+    "BB(20,2)": "0.46",
+    "P_SHAPE(20)": "52.55"
   },
   "rules": [
     {
@@ -359,6 +388,13 @@
     },
     {
       "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -400,13 +436,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
@@ -425,22 +454,15 @@
     {
       "title": "Top Companies in India by Raw Material Costs - BSE",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZGVndWIweTQ4MTFOZVFfNkRrTFd2aEJBcEJqY2ZWeWk0SnF5eTJEczd5S0VkTC16QzgxR2QtZXJQZ3FKMVh6Z0tKbDVXZFFIN3JRODB4RVE1MUdCUDRISlZfWlkyeG1jTTJ2YWxrbERVaVNxMldoRTcwX0dBMm5GZGhkY1NJX1FKR21NNQ?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOczdtZ1lhc1loNzYxOVpfZ3hoWWkzVjJRdFB1bmdGaUM1b0F3Y3U3MkhIbVBBdy0tUFVENDdaZmlIak9fbkJsSmRFQ1F4eEhaenVJdUYxcnhlU1M5Mm1hQnRMUm9Ec0RxejhaQnJPWWpuX1d0QkZGRmhYVjBZSDZ6XzRIaXV2QQ?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Live Blog - Stocks - Markets",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jS2NEOWo3UUdIbExieXZvbE5Qa3ROTDFtSFBBNkN3T202QmJTNy1nZFRlN2FNdUhYVnJGTWZtOElJNGJ1VUFkWUFxeEFxUHB6Nk5rYXF1WUNxRGlFOXpZZ3dib2F3SG9CeGp2dw?oc=5",
-      "published_at": "Thu, 31 Aug 2017",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Shriram Finance Q3 Results 2026 - Find Shriram Finance Q3 Earnings Result | SHRIRAMFIN Q3 results",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVWJWXzRfQkZ3VnNEOVg1b3RrUzZpM04wR292eDZJMEdwV0xZdDFNN1pfRjJwM1Ixa0pCSnllbFdIZ3NkSEpDVDVoWUpKeTV2Zlk3ZkhZcng0SGtlYXZWakxmYm5RMHlTZlNhdlVXQVAwQS1rRW54UFhVY21ULVhPTHF5UVUxWjQ?oc=5",
-      "published_at": "Mon, 18 Sep 2023",
+      "title": "Shriram Finance",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE55VXlpemh3enFsLWltSVhPUHR2RHlLY24wZlU1bTd4LUgtVDVnSGxMYmdSaDJtVG51XzU4em9lNlJXQlhGdHVXb0ZEaTBZY3haRkYzOXF0NFdPY1NfUUp6SUFEb1F4aFI5cGg0V2lNNW9WcDI1N1ZLbA?oc=5",
+      "published_at": "Wed, 13 Nov 2024",
       "sentiment": "neutral"
     },
     {
@@ -458,10 +480,17 @@
       "sentiment": "bullish"
     },
     {
-      "title": "Shriram Finance",
+      "title": "shriram trans Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBWcVV1RXVxbllLN0ZrVjhEUW0wRTJmV1dTRWZRZ3F6Zk04TDI3YWhKWUZnRjA5aUFzMGNRbmQtVWJOakk4ZUFkNHpmNDZfaDYwNUF6VUNibkhtVEkxM3JfaEtZd3NvWks4cnJ2bmowOF9MN19nLTRF?oc=5",
-      "published_at": "Fri, 15 Nov 2024",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RcXlNYjFaY3VZZkNpaGRuSFZYNU9fOFAwaEx4bXJxZnhkaGZhTmx1WkJtbHlKX00tV1VtbjBGVWt3NWc4ZnRLdDNKV1ZyZ3pEeXdZOGxrcDBCSHVpQ2o1MW1nbmlpelF0cTgtLTQ1YV9rRUtqMVlWanRIVU9Ldw?oc=5",
+      "published_at": "Fri, 05 Jan 2018",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shriram Finance Ltd.",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcW9aSVU4QWpBOWdIZGdVMGZtbDd6YmxuY0lGRlB6OU5iM1JHMk5WLVJPZUtqSTBlazNLTS00M1BMOXJzWkRSM3BYMDF4WDNKQS0xOWpRQm5sNnVZSnpKWmt4Y1I5VkYzUGc4MWgwbWN0d1dkeVZtWnVIV0hERjdyMExqc19tZ0tuaGszdG9wYUQxajQ?oc=5",
+      "published_at": "Thu, 01 Oct 2026",
       "sentiment": "neutral"
     }
   ]

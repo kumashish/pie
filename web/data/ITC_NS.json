@@ -1,269 +1,268 @@
 {
   "symbol": "ITC.NS",
-  "last_price": 265.15,
-  "as_of": "2026-10-07 03:45:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 2.0,
-  "fit_score": 20.0,
+  "last_price": 260.95,
+  "as_of": "2026-10-14 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.0,
+  "fit_score": 10.0,
   "confidence_grade": "C",
-  "confidence_percentage": 20.0,
-  "vix": 13.78,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-  "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (57.9% fit - Grade C (Moderate)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-  "cash_trade_setup": null,
+  "confidence_percentage": 10.0,
+  "vix": 14.47,
+  "strategy_type": "cash_swing_short",
+  "strategy_display": "Cash Swing Short",
+  "trade_profile": "Advisory | 30-45 DTE",
+  "trade_category": "cash",
+  "recommendation_reason": "Best fit strategy (57.1% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 260.95,
+    "stop_loss": 270.32,
+    "target_1": 221.81,
+    "target_2": 195.71,
+    "risk_per_share": 9.37,
+    "risk_reward": 7.0,
+    "atr14": 5.84,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 280.0,
-        "strike_formatted": "280",
-        "option_type": "Call",
-        "delta": 0.175,
+        "strike": 260.95001220703125,
+        "strike_formatted": "261.0",
+        "option_type": "Put",
+        "delta": -0.444,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x ITC.NS 24-Nov-2026 280 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 285.0,
-        "strike_formatted": "285",
-        "option_type": "Call",
-        "delta": 0.099,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x ITC.NS 24-Nov-2026 285 Call"
+        "dte": 41,
+        "summary": "Sell 1x ITC.NS 24-Nov-2026 261.0 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 10.0,
-    "stop_loss_price": 257.2,
-    "take_profit_price": 273.1,
-    "net_delta": -0.076,
-    "net_theta": 0.014,
+    "margin_required": 8.76,
+    "stop_loss_price": 268.98,
+    "take_profit_price": 243.43,
+    "net_delta": 0.444,
+    "net_theta": 0.044,
     "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "var_95": 19.14,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 212.12,
-        "pnl": -10.0
+        "price": 208.76,
+        "pnl": -60.95
       },
       {
-        "price": 214.24,
-        "pnl": -10.0
+        "price": 210.85,
+        "pnl": -58.86
       },
       {
-        "price": 216.36,
-        "pnl": -10.0
+        "price": 212.94,
+        "pnl": -56.77
       },
       {
-        "price": 218.48,
-        "pnl": -10.0
+        "price": 215.02,
+        "pnl": -54.69
       },
       {
-        "price": 220.6,
-        "pnl": -10.0
+        "price": 217.11,
+        "pnl": -52.6
       },
       {
-        "price": 222.73,
-        "pnl": -10.0
+        "price": 219.2,
+        "pnl": -50.51
       },
       {
-        "price": 224.85,
-        "pnl": -10.0
+        "price": 221.29,
+        "pnl": -48.42
       },
       {
-        "price": 226.97,
-        "pnl": -10.0
+        "price": 223.37,
+        "pnl": -46.34
       },
       {
-        "price": 229.09,
-        "pnl": -10.0
+        "price": 225.46,
+        "pnl": -44.25
       },
       {
-        "price": 231.21,
-        "pnl": -10.0
+        "price": 227.55,
+        "pnl": -42.16
       },
       {
-        "price": 233.33,
-        "pnl": -10.0
+        "price": 229.64,
+        "pnl": -40.07
       },
       {
-        "price": 235.45,
-        "pnl": -10.0
+        "price": 231.72,
+        "pnl": -37.99
       },
       {
-        "price": 237.57,
-        "pnl": -10.0
+        "price": 233.81,
+        "pnl": -35.9
       },
       {
-        "price": 239.7,
-        "pnl": -10.0
+        "price": 235.9,
+        "pnl": -33.81
       },
       {
-        "price": 241.82,
-        "pnl": -10.0
+        "price": 237.99,
+        "pnl": -31.72
       },
       {
-        "price": 243.94,
-        "pnl": -10.0
+        "price": 240.07,
+        "pnl": -29.64
       },
       {
-        "price": 246.06,
-        "pnl": -10.0
+        "price": 242.16,
+        "pnl": -27.55
       },
       {
-        "price": 248.18,
-        "pnl": -10.0
+        "price": 244.25,
+        "pnl": -25.46
       },
       {
-        "price": 250.3,
-        "pnl": -10.0
+        "price": 246.34,
+        "pnl": -23.37
       },
       {
-        "price": 252.42,
-        "pnl": -10.0
+        "price": 248.42,
+        "pnl": -21.29
       },
       {
-        "price": 254.54,
-        "pnl": -10.0
+        "price": 250.51,
+        "pnl": -19.2
       },
       {
-        "price": 256.67,
-        "pnl": -10.0
+        "price": 252.6,
+        "pnl": -17.11
       },
       {
-        "price": 258.79,
-        "pnl": -10.0
+        "price": 254.69,
+        "pnl": -15.02
       },
       {
-        "price": 260.91,
-        "pnl": -10.0
+        "price": 256.77,
+        "pnl": -12.94
       },
       {
-        "price": 263.03,
-        "pnl": -10.0
+        "price": 258.86,
+        "pnl": -10.85
       },
       {
-        "price": 265.15,
-        "pnl": -10.0
+        "price": 260.95,
+        "pnl": -8.76
       },
       {
-        "price": 267.27,
-        "pnl": -10.0
+        "price": 263.04,
+        "pnl": -8.76
       },
       {
-        "price": 269.39,
-        "pnl": -10.0
+        "price": 265.13,
+        "pnl": -8.76
       },
       {
-        "price": 271.51,
-        "pnl": -10.0
+        "price": 267.21,
+        "pnl": -8.76
       },
       {
-        "price": 273.63,
-        "pnl": -10.0
+        "price": 269.3,
+        "pnl": -8.76
       },
       {
-        "price": 275.76,
-        "pnl": -10.0
+        "price": 271.39,
+        "pnl": -8.76
       },
       {
-        "price": 277.88,
-        "pnl": -10.0
+        "price": 273.48,
+        "pnl": -8.76
       },
       {
-        "price": 280.0,
-        "pnl": -10.0
+        "price": 275.56,
+        "pnl": -8.76
       },
       {
-        "price": 282.12,
-        "pnl": -12.12
+        "price": 277.65,
+        "pnl": -8.76
       },
       {
-        "price": 284.24,
-        "pnl": -14.24
+        "price": 279.74,
+        "pnl": -8.76
       },
       {
-        "price": 286.36,
-        "pnl": -15.0
+        "price": 281.83,
+        "pnl": -8.76
       },
       {
-        "price": 288.48,
-        "pnl": -15.0
+        "price": 283.91,
+        "pnl": -8.76
       },
       {
-        "price": 290.6,
-        "pnl": -15.0
+        "price": 286.0,
+        "pnl": -8.76
       },
       {
-        "price": 292.73,
-        "pnl": -15.0
+        "price": 288.09,
+        "pnl": -8.76
       },
       {
-        "price": 294.85,
-        "pnl": -15.0
+        "price": 290.18,
+        "pnl": -8.76
       },
       {
-        "price": 296.97,
-        "pnl": -15.0
+        "price": 292.26,
+        "pnl": -8.76
       },
       {
-        "price": 299.09,
-        "pnl": -15.0
+        "price": 294.35,
+        "pnl": -8.76
       },
       {
-        "price": 301.21,
-        "pnl": -15.0
+        "price": 296.44,
+        "pnl": -8.76
       },
       {
-        "price": 303.33,
-        "pnl": -15.0
+        "price": 298.53,
+        "pnl": -8.76
       },
       {
-        "price": 305.45,
-        "pnl": -15.0
+        "price": 300.61,
+        "pnl": -8.76
       },
       {
-        "price": 307.57,
-        "pnl": -15.0
+        "price": 302.7,
+        "pnl": -8.76
       },
       {
-        "price": 309.7,
-        "pnl": -15.0
+        "price": 304.79,
+        "pnl": -8.76
       },
       {
-        "price": 311.82,
-        "pnl": -15.0
+        "price": 306.88,
+        "pnl": -8.76
       },
       {
-        "price": 313.94,
-        "pnl": -15.0
+        "price": 308.96,
+        "pnl": -8.76
       },
       {
-        "price": 316.06,
-        "pnl": -15.0
+        "price": 311.05,
+        "pnl": -8.76
       },
       {
-        "price": 318.18,
-        "pnl": -15.0
+        "price": 313.14,
+        "pnl": -8.76
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.703,
+      "win_probability": 0.7,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2327,
+      "half_kelly_fraction": 0.23,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,63 +270,45 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 57.9,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-280CE / B1x-Nov-285CE"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 51.7,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-265.1PE"
+      "legs_summary": "S1x-Nov-261PE"
     },
     {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 50.9,
+      "strategy_type": "credit_spread",
+      "strategy_display": "Credit Spread",
+      "score": 46.1,
       "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-265PE / S1x-Nov-255PE"
-    },
-    {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 42.5,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-245PE / S1x-Nov-250PE / S1x-Nov-280CE / B1x-Nov-285CE"
+      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+      "legs_summary": "S1x-Nov-275CE / B1x-Nov-280CE"
     }
   ],
   "indicators": {
-    "EMA20": "264.99",
-    "EMA50": "269.26",
-    "EMA100": "279.36",
-    "EMA200": "303.20",
-    "RSI(14)": "49.32",
-    "ATR(14)": "4.71",
-    "ADX(14)": "21.66",
-    "BB(20,2)": "0.55",
-    "P_SHAPE(20)": "64.39"
+    "EMA20": "263.18",
+    "EMA50": "267.64",
+    "EMA100": "277.54",
+    "EMA200": "301.10",
+    "RSI(14)": "46.97",
+    "ATR(14)": "5.84",
+    "ADX(14)": "20.60",
+    "BB(20,2)": "0.34",
+    "P_SHAPE(20)": "64.04"
   },
   "rules": [
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher highs",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "20-Day Momentum Relative Strength",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -383,14 +364,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher highs",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Price making higher lows",
+      "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -399,45 +380,45 @@
   ],
   "news": [
     {
+      "title": "Ragas, ruby chocolate and dark stores: Inside ITC Fabelle\u2019s luxury chocolate gamble to deliver music to yo..",
+      "publisher": "ET BrandEquity",
+      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNTnR0N1VhUWdoWEZmZXhFb0FLNk5SOUV5Q3MyTWxtNkwwWnF5a19sdnRJdU1pSWU3Y1YzYkEwQlVFWFFwWXlVZ09ub0FDUkE4bEtXT2pvcWtKN2pHSGQ0OUhfSlpDZlVrZ3d6RE0yZ0diNk1DU1ZXRHZ2LUVPRDNrV0g2a2hZb0hYajdHcnhVU2ZjQmoySlM0TG5STmFVQ0luRFRwUUFDaVpyMkh4T2h6REJVRjlyUkRpcE5nSlFaOFp3ekg2aXdVNG1lMHhuYUp3UDl1bUgyQWlDTWJjWW5jQl9EbDZlbUpRZElhNWNYTmtuc1V5Qm9wVElwaG9hTGpwYzVUOUFiU2c1NzlwZVdFRS04eG95cS050gGeAkFVX3lxTFBSNjF3cHppb1dwZ0hZdjZ4eHU3a3Zyc0VVLUhrZ1U5azlhcFJnakNmVm1xQ2x3MWx1NEtZNTFjZkhya1dRTmxLQXRXOG9WNXBWOHVrR1VES1Atb0xBSkRtSEpoUEJSakVyZDFkS003a1F6dXZOanNhYWJKRk9XYXB5bFhKMmhfQjA5Nk1NUVJ6VmphaVJxMUtJVktYdm1ZM25wb0ZzTmw2YVlYMlJHa212ME5IWWVpY3hheVpjRlJFTE1Xa29JNVBvdzFFTFNrYnFOYTBmakh1X3BuVUs1Um55dmplUW5UR1pfYm1sRUZyNlZRLW5DWENKY203Zk90UFhudjlFb0R2ZlJHVGgwUnFoZk9CZnBVRWgzeUNpLXc?oc=5",
+      "published_at": "Thu, 08 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "GST Council likely to allow ITC on group insurance; ease rates on rare disease drugs and pharma services",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNU2RIMXBQZ3pKMUs3VHlZVGFvaU1hYVZJMTRIZWxXYms2dFZQWThGSFBsRE5wZUsyT1p1cFk4SXZ4QVFIcXFwVUM4c0hhdVVWX3FOY1FNaVlOaU4xS3NuU1FxNUxaeDdxc2x3M3ZoNmwxYmhWUzBiRVhaeGZ5amdwbzc0SF9UdDNPUzlrMGQtTG9fWVVJU2ZhRno0cHQ3SC1lYW5tOGh0d3hjWTRHT2w2YmNzckdsSEt5WmZqQ09mNWxVak01SzVkcnZmaWZhQUp4LXdUOUl2dmxoblo1eFEtVmNuVU4yLWVGLXk3OGNmMzBOQdIB9wFBVV95cUxQbGRDSmtZaWVjR0xKbWxNMEt5TG92c3hISVo2RkQ4bFZWRkhNUmM3Q0JXYUk2VHNDRHpKeTFyUGd5QmY1TDdUeUx6Q05tZlF1eVJ0dVNNazVOVkc4M2tOMUhqZHdLLXdsQXhHZDIteHlBdHNzNFJVc3k5TWxOUi1sOWplRmxNa2FLYkFZeFpIbDdMSHYtSWJRTmtsZXlyRm9hcmZBZndGeEpTb3J2UlJmbFFudXBqc1R4a3dJM0J3N3VPRGEwQ21nT0pjUE1VWXRfbjNPUjJKckxqRFR6dHkxVjAxUDR3S1lvaWJZbWNfM2VlRENUTUlZ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQTzVKbmdSLWJKNjJtamRGcS1xdGpZM3NnWEVYVWFaNUdrTldDOEpIV0VaY1JJcWJpMjcxM04xdDR4NWJWd1o3OTFBVk9jbWZtRzIyVThyQ191WncydTVuY0FXMkRLd2hWd1VMRTBGU1VjU0tCSVpfWDdkRVNyczVEcWtfR1dMdFI2Y0poQkhvTThmNWlaQmgyZGlLYU1hZ2wwMHo3R1I5eU9neWxKMml5NWlFRENQR08yOVFqYnFJXzRsUXVMV04ySzRfMG42WFNzTHdjNnNRVHp6Rm1NLWhpMzZnWTQyNjNZdkNzRjFSLVlLUVdlRFpfR0o0aHNiTHZxSUd0T1gyMzZOdVpGT0Yw0gGUAkFVX3lxTE5BOFg5RjQ5OWVSbEhwaDB4cEpVVkhOb2ZwUTVwZElmTXZLeEFZbGRqNXJqY2sxN2dham42Y3VmSk1NU0dKUXVfcXRVLUQydUYzMmVGODZJTUoyODVraGNmUVotUmExWUo1Z2tSYTE2X0o4UmtNSDUtMlFKNTcxbHg3d1Zlak92dFpCWlVYS3pFRDJGTVhlU0pHTEdaa0F2SmNheXZFaUN0a2FvNGM3aTBNSnlNZG9tTlBWSWM5YS1PTXFJVjgtU0l3UkRRNlRPRGVDcjFhYUdPWThUYlVCT0c4QWhkNDBhODkzb2dfMGo2eFlxQXpSQWQ4Mnl1eFE2SlJESzEtNEZzTkFsZXBsX3FjYzRhVA?oc=5",
       "published_at": "Tue, 06 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "ITC Hotels signs Storii Sanjay Dubri, unlocking a new wildlife destination in central India",
-      "publisher": "ET HospitalityWorld",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMHJkcmxHdUU5QWVNbG5uSVJfSFpEYVdfZUVIUUYwR0Flclk3ZmJpN1lSZGpvYWdqVXBSSXVJVXl1MWhyb3ZETkJLUGZiUUZ0ekxCN2o2cVpnc01kdjVKeEJPVzFHN3Z2aDRSV1h4Z1NaNEwyeGU5NkdOOU5zYVlvUnlqSnNmRXN1aDdQczdDMnZDdFdDUzJnRWFUa25OLUZrajlEbUN2dkRUQTJGbkFlSUFldXlVbmViU2FURXhabi1EbmFRZkZwdDkwbnJydUxadGZ2Mk1MWGFqWFRjbHRiU3NseUF2Vms5TF96SURfajhjb0HSAfcBQVVfeXFMUG9FTUNybExoOUlKQ04tVm5YX2xUUUZOR0tEUVZ1WTJKOFhaMndWSlNiUVhtVWhjM1NHM2xGQ3VFbUx5VWthM1o0NkpVX1lOQklRZWlTOTY0TFpNbzJWZ3hiUU90QkdHZ0Z3ZXZwMFlPNUV1cTM1NHhQcE4zYmYxMTdhV0Y2R3N4cThSTmhQS2dGRWhUbmRwSmhjVVVESEg1OUpmYVEwWWR0c2dySzEwOV90aWdtZDNLU002UURXOWRhNU5Ya0hzRTg1eGZDX3hyOTVfZ3lsNGdNZ3lwWE15S2luNGFUSnlWS2NORExRbGV2YWdVZzBpUQ?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "title": "Nestle vs ITC vs Britannia vs Marico: Which FMCG stock to buy before their Q2 results? Target price, earning expectation",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQU2VwVEZKc2d1N2JjcWtpVnA1aFhRR0pMLUtLOF9ldGZjTW5DYjNkbFlhZHhLQUhoNHFzNUd6QXZHcEJuRm0xYUxNcHV1VlZlN2xjVTJfQmJFX1Fwb2l2OVRvSkhnR1dvSGRUZkpqaTdqcEJtMzdHQjJNQzU4Vl9wREFsS3RRU3FmQVVFMGNSMHFpUHpoVndXSXhkOG1pdlVoRkVDVlo1MTZGRnRXUDlmdmphUEdDNTFBMk92cXpKY1lGMG8zU0ZTZU85cU1JeEx4Ul93QTVpNWFsUWlkUFBQNmVzZFJMVGd4cUJPWmVCZVU4WUhKRktQZDVrRU5YU3V4WDBKa0gtWnI1LXk0eHNVWXJlQlVxd9IBmwJBVV95cUxNU1Z6WWFpdWlvR1R2aDR5ZlFjdnUxXy1DOW42TVBIeUVDd0t2WVE4Z0hyWlp1NGlCTUhQZ21YYjlxZU9YR2JVNnVlLWhWSVBvb3RFaTJtUVVGeXdncXlhU1lhLTlzajlMZ1lBTkJmOFhDYmtEdzNKUzVZeHdxUGxDTUZTQmRjUmduSUR0RXhSNG9aWWhLZ2ZKa0xwYkExQmN0S0pUcHo0S1ltMnNYTmY5VmRtZEtkaTNXRlJ2Z1lVVGRsVVZwYUNLSl81ZzFsOUZRYWRQX3lRbC1uT2o5Nzdxa1loMGZhcU85aHpUek1vZ005a0RUZDlLRDRtM25DYllOWm5Wb3dEczMxMGZkUTlmU1BPZEtBYnQyTHNn?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "FMCG dividend giants: Colgate, Hindustan Unilever, ITC, Britannia: Which stock offers highest yield?",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPZHdCTEN4bGNaWHBGX0VqQlhBdGJWWENxUlVIU2ZTMjRaSjZ3OUZpR2UwZGJDYmZwMUZxZy1oREladmpHcENUR3FJSzZ0dmQxYkc0ZGhYOFAzQkpOZVdWcm8xU2J1TFJzVjhQRWhoaWs2MWgzYVQyWjBYVkxPVDBPRnFxTHQyUlpKazZuTHRlLVFwNEcxaDRObUg5ZWNReHJsN2M0MnY1anpjeWxKa1JfZEpzMTl2bTFVT0Z0OGRhREVQWTVTWWZGYWlrMzJUSHk3Q2RtWjFyNkJONG5mamhEUDY5bEU4WC1sYUY4UU9SdzI0d1V4NTNv0gH8AUFVX3lxTE9Gd1J4MURLeHFpRDN3eTFyNmpYcFJ5bzVYX2twU1NaV1RZOVRXaTdzOGtncFlYZ3VpRGN5S0VpV3FwRTlfQ3FBQ2ZtU1ZqOHM3VGtKVEt5azIyYW5pWE40UUJScU5qSGNiUnVtZGlsVzNscEFHZWFDMjFfWUVhTVM2THBBa1V5RHpsQU1UbGd2a2RUVVRrMU8yWUZkRUo0UWNweUFsbWRaclRNUEtzVmZhMThtY0JmVndKYy1xVzR2cnJnVV9CUDUzNXE3dWpnZE91OS1GdHF4MklXd1c4dUc4TXNCbmNsZHlPTGJrSVFCVHJvU3daQ0VLMEtUcw?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "GST council greenlights tax credit on input services, expired inventory stock",
+      "publisher": "pharma.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQOUltd1hjajhad3ZIWEtvRTdQOFRmNS1fZUxjalk4Qm16R2dGRU9ZQVJOVHQyYzJuQ1N6MUs3Q0pOS3gydlBaSGVzQzZDQy01VXg2SFdDc2Z2RUsxMUx2b2ZKQURXQXZKdkdJRk9rSHB4N2RLa1RfYjVvUmZ1M1R4VjAyX0I4WDVvM0JRdEtkTml6VzczRGNPQVdsV2VJczd4QV9zY1VVLWo4emM2b2RQYWhyVDltbG1WcGhzWm5qdDdqeHdORHNBNmNYQlc0YzR2dVlWV2hJcmh4elNzVVhqRFE5b0R0LS1DRzRtbnQxZ9IB9AFBVV95cUxQT1F2MV9obUNrYTg2MUVGeWlrb2Q2Q2dFaVhRUk5mLXlkejJTaHJTN21PMlBJWDRxOFgwV3hWaDhFYzdzcVhnSms1NGltSkp3RzZ1SlFDdFQtckZjOFRiMEFJNUNOQ1R6QWdiR1lQQXp1blJmM09meTZYRW12WGZ1YVcyemd1Z0QzeVc0NnhlRkp6XzJDaEFrYVNLZmVPdjNPdDVNWWVSWHhsdW8wU09jbVBtclJEcFdkV3lFQnhkTW5jZkhSdTYydlhkdlhGVkhlYXpnVEhQME9Xbmc4TDBUU2diREc3dmFBQkhKQWFLQUF0YnRs?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "GST Council Meet: Proposal to ease input tax credit restrictions on vehicles seating up to 13 persons",
+      "title": "GST Council permits pharma companies to claim ITC on free samples, goods destroyed upon expiry from FY'28",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNWjJJTDBlUUdoTDd5NEgxNkNQNHNGNDgzWXJfX0tiRDZQanBBVzdaUVVJRTNVSWNQMUg0Q3h3eGh1eEVHN3lwY0hRSnI2ZFpsM0JVSnBiYmgzNDhtd0hqbC1hMkVLSmJfcnRseXZjcW50Y3FxR2VHaXk2MVRRbjcybkwzVlc2RWxkOVMtb1FLNkM5Y1ZqcmV0b3BBTWZuekotX21yUlgwN0U5QUI4WWpZRG1oeDJtODM2c1FIMjFPSTZsQ0tneHFLbEVvNEhkZ1F6dEhTOXFWdUgwZ0l4S0FjQXNVNjFmdUhqSjRjNk530gHzAUFVX3lxTE5saUJJdmp0a213NGlGRnRxLWZZbllNaHdQa1U2bHRvQ0VQY1BMenZLaWVyenloampZdXI0ZUh2Z25fMmRHbW1xcnFReXdNSG5xamhjb1ZBZUFGeFEwZXFLbWxicEhwVG9PTDQxVFRwdnpodUNtdUdTSzJFNnd4X3p2MmxZdzIxeXlhMndHaVo4STRJbDFzYVlkNHJua0xWQUxJdzg0YjZ0ZW1rQ21tWV9qT1VEYkpxWS1FV1pIcVBBOVpub1dlc3IyR3l0Y2RMcHA4b29JZEk2eUpXTGgzZ2NFdEhXbjREb21la2RQNmtzODcwYw?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "DigiPlus Fest 2026: ITC uses AI to reduce decision-making latency across marketing: Shuvadip Banerjee",
-      "publisher": "ET BrandEquity",
-      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQbzlZNU5LNGRtaE82ZUwyODNFa0ZwcEtaRGhqSkNFZkVPRzg1VkVuUlh5U3NUdF9ZZmhDVXhUNXc2UDVPdy00Z3VVS3E1WlBMZUFXVmdyd3I5Z2ZoNHhSSE5QMTlMODVLd3ozUGVyc3RoaHJvTlE3VWt6bmVpb2NyNUkxTkI3azlKVFVOQ193ZktzM2Y2RHEzbFJ0bFBGLXJtYkU2TTdWREpVbTZjTXkyVlEzYW9VWTZTUVRrRUp2d3JQRG1qeGlYbEJkaHV4ZzVEeDBzUDlFOWZXQjYyZU5tYUJiSU9ZbGxtMHBUdjhVa1NHeEhNOGlGdWkzWG1ObXBjNW9v0gGIAkFVX3lxTE9XNzN2ZDZOaEJkX1pYN0VPMXFJN2Y5MHRFRjZwU1BNLXFySDgwb1Y2WmlhVE5kcnN4REJLaWEtdmNRQkQwUjgyZ1FmNXlTZzNBVGE5VlR4bm1EU0tTalo2VDV0a04yQ1NNeTlELTUwOEZxM0RaZUpIaEpZQWtSNDVCRmJEenB2NmFiSURfQlVxOFlWVlNibVN6UjBLb3ByYXJYcXJmTWJ5MVlneGJxYURkOWF2c1FyMU1RaXliMnZIY2c2Y0xweUFub2dxd0k3QXBjLXVYTEl4cEd2R1UwQlZucW15V3U5ZExBQVVrWlBHaW82TGJPUzNTWnRJR2xucTd6VDB0cFF5eA?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Employers may soon be able to claim ITC on GST paid for employee insurance cover",
-      "publisher": "cfo.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxObDRYZ1NGUTd4UENFbzRBTGc5SjZWaGhsTkVUeW9LYW1BRGNSV2k0a3hkZHR5SnotY0lINWFlNGY3LUpQVENvUE9KME0yZDhNc0pDT1lyMl9WRVFQd0d1VUlnb1BqSXJycWZFb3piaGVnWnRfQ1MteFc4T2hqR1cwVHotZ2xwTTlPTERqYjRJTVF4TmJZQVZmVjloMmJhU0pRUVVvaUxNLWdNNVpuS1JmMlBMb1huWi1rQldNUmZXQkwtbWZfdG5lX0RDZjlrTEpMdEItRDhfQmZlUEg5dkZGWFJWNUVWSEhPck43WGFB0gHzAUFVX3lxTE9pMWVwUlZXbW5WQU9vZzRBWXN0T2VpZTZyWklhbXlXVklpdnVjY3VZMUVtMHR4X2tyaXQtajlia0dQSVFCMXU0d3FSZTdlQjBUTVB2QUNUQ3hWNmRVWEkzd095SF9SWThxcEpVQ3d5dF9tdy1ONVJ4bjExNTVtS21hLTVnQXY4N202SHBJNmFpeFVDeGRFNDlqN2RNVDVSbG53QkNZOHRXbHBpR0hUQzR6Z2xqa1lvRTJXSDY3SmktNUlsQTJfWkppNzByWG9rbWdSNWdIRjFMaU9xV3llYkQ3SjNTd1dQQ2dqalJuNEZOQzk0aw?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Titan vs Radico vs RBA: Motilal Oswal picks top consumer stocks as input costs pressure margins",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxORXpXR2VhdzFvclRFdHBYajB3ejdCbHZ5UmtqMkxnSmZfU2dUUThRZEtyQ1BsRjVYcDZHT3V6RW1FQlNGaGRYU3hDSDVuUnhPb1Z2ZkpIWDJNelF5WlR5QjFNMnpJcm9ISW11aW9pdlR5XzBoQ0lDUFhJQnZ1bmVBRnluZHg2MlJEMl90bzl2aV9XWno4Nk9wTXBYNHBfM1VUbHd2cHBiM01GdGNTS3hBd0V2clRmTUZKOVJvNG1pRFphc2hWVVlwRF9KckE4UFpYQUJzaWI3WjFORGk3UUYxSHhabEY5Y29KdzhVelMySdIB9AFBVV95cUxPbEpNYUtSeTJiVVp6NTNBbzY4Y19oZWFIU3pZTlI5WlVXNkxhVXJ6Q0ROVFNZdnljQWVBUTBKUF9hZlFjemRXcGd0LV9OQzdVNkt2US00TnBTQTlkY21OeGZhNzZlSjU3RHltNVZ6cW5BNGRibHV2MW41TXh4NTdiNnI3SGlEVFVhZ2NVa0piM1FpQU5nMW9RSjYyai1haE9uclh6a0FadkZveFhRVFVFc3lwalk2aEFtQ29TZFpBbGkxcXFUX1djTEVnVXhoV0NoTXNsaVFxcDZVTzVOV1RJODBqazB3UGw2SFFBWVV3OWFnaHhR?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOM3JlWkVPMnRwYmp3MnJYdERKTWQxX3dMZG9vUXNmVDFsMjl6MjJQZ19SaTFlb2VqUXBIZ2s4NHRkbTdJbnRvV3RJSnlNTHBEdkZqQTkzTXVFNVJ3RHI0UERFUkVxR0xRWDVQOU50TnVvNFNfRkR0OXBsS2Zad2cxZ1JzRWtfMFg2MlBDNExtaFhqYWJJQjduMDUwNkZiUkZnamJacUM5YnJONWdTZWl0TkFDWURGTXJGMmM2QUVKSDVSQzFzQWhnR001MU5qZDUwZGZwdER5dmQzZDhQMllqNDl1R1N6d1ZuSXJOa3J5MFVlTXfSAfgBQVVfeXFMTnAwVTNkdGo3ZTBNaUlhTTRNd1l4U0FoSjhlTUJ0NzJoQlZsZ0ZfdjI3WTRTYUJJMVlpVXZfNTlseklrWk9Wd1RIN0hSNk45ZkFjOXNvX1ZDLWRfSzh2NHM3LXhYY0ZVNjZ0ZGpJcmtpeF81M08xX2hKSXZWYzBmbk5WVkZWZ3hveHJ6SDFiZ2N4aGtXNXk5QVhqenVjb0doRTdmN3d2OFBEM2N5dmZEU0VnZXhFRWlYS3dlaTVfX3RiTnVidlZweUZzZjlZUW5LUVd5N3VlODhfRUZZOHZuS1ktVTJMYkZPWHA1c1Rwa0RQU2VFOHJNOEY?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
       "sentiment": "neutral"
     }
   ]

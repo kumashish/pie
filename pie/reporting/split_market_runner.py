@@ -280,9 +280,11 @@ def run_scheduled_pipeline() -> None:
 
     print(f"[{format_ist_time(now)}] Checking Market Hours: India Open={in_open}, US Open={us_open}")
 
-    # Generate specialized README pages for both markets
-    generate_market_readme("india")
-    generate_market_readme("us")
+    # Generate specialized README pages only for markets that are currently open
+    if in_open:
+        generate_market_readme("india")
+    if us_open:
+        generate_market_readme("us")
 
 
 if __name__ == "__main__":

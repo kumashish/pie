@@ -1,269 +1,268 @@
 {
   "symbol": "HDFCBANK.NS",
-  "last_price": 704.3,
-  "as_of": "2026-10-07 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 0.8,
-  "fit_score": 7.5,
+  "last_price": 716.3,
+  "as_of": "2026-10-14 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.0,
+  "fit_score": 20.0,
   "confidence_grade": "C",
-  "confidence_percentage": 7.5,
-  "vix": 13.78,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-  "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (62.4% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-  "cash_trade_setup": null,
+  "confidence_percentage": 20.0,
+  "vix": 14.47,
+  "strategy_type": "cash_swing_short",
+  "strategy_display": "Cash Swing Short",
+  "trade_profile": "Advisory | 30-45 DTE",
+  "trade_category": "cash",
+  "recommendation_reason": "Best fit strategy (51.7% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 716.3,
+    "stop_loss": 730.54,
+    "target_1": 608.85,
+    "target_2": 537.22,
+    "risk_per_share": 14.24,
+    "risk_reward": 12.6,
+    "atr14": 12.72,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 740.0,
-        "strike_formatted": "740",
-        "option_type": "Call",
-        "delta": 0.203,
+        "strike": 716.2999877929688,
+        "strike_formatted": "716.3",
+        "option_type": "Put",
+        "delta": -0.444,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x HDFCBANK.NS 24-Nov-2026 740 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 755.0,
-        "strike_formatted": "755",
-        "option_type": "Call",
-        "delta": 0.109,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x HDFCBANK.NS 24-Nov-2026 755 Call"
+        "dte": 41,
+        "summary": "Sell 1x HDFCBANK.NS 24-Nov-2026 716.3 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 25.0,
-    "stop_loss_price": 683.17,
-    "take_profit_price": 725.43,
-    "net_delta": -0.094,
-    "net_theta": 0.043,
+    "margin_required": 19.08,
+    "stop_loss_price": 726.92,
+    "take_profit_price": 678.13,
+    "net_delta": 0.444,
+    "net_theta": 0.122,
     "probability_of_profit": 0.0,
-    "var_95": 15.0,
+    "var_95": 52.53,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 563.44,
-        "pnl": -25.0
+        "price": 573.04,
+        "pnl": -162.34
       },
       {
-        "price": 569.07,
-        "pnl": -25.0
+        "price": 578.77,
+        "pnl": -156.61
       },
       {
-        "price": 574.71,
-        "pnl": -25.0
+        "price": 584.5,
+        "pnl": -150.88
       },
       {
-        "price": 580.34,
-        "pnl": -25.0
+        "price": 590.23,
+        "pnl": -145.15
       },
       {
-        "price": 585.98,
-        "pnl": -25.0
+        "price": 595.96,
+        "pnl": -139.42
       },
       {
-        "price": 591.61,
-        "pnl": -25.0
+        "price": 601.69,
+        "pnl": -133.69
       },
       {
-        "price": 597.25,
-        "pnl": -25.0
+        "price": 607.42,
+        "pnl": -127.96
       },
       {
-        "price": 602.88,
-        "pnl": -25.0
+        "price": 613.15,
+        "pnl": -122.23
       },
       {
-        "price": 608.52,
-        "pnl": -25.0
+        "price": 618.88,
+        "pnl": -116.5
       },
       {
-        "price": 614.15,
-        "pnl": -25.0
+        "price": 624.61,
+        "pnl": -110.77
       },
       {
-        "price": 619.78,
-        "pnl": -25.0
+        "price": 630.34,
+        "pnl": -105.04
       },
       {
-        "price": 625.42,
-        "pnl": -25.0
+        "price": 636.07,
+        "pnl": -99.31
       },
       {
-        "price": 631.05,
-        "pnl": -25.0
+        "price": 641.8,
+        "pnl": -93.58
       },
       {
-        "price": 636.69,
-        "pnl": -25.0
+        "price": 647.54,
+        "pnl": -87.84
       },
       {
-        "price": 642.32,
-        "pnl": -25.0
+        "price": 653.27,
+        "pnl": -82.11
       },
       {
-        "price": 647.96,
-        "pnl": -25.0
+        "price": 659.0,
+        "pnl": -76.38
       },
       {
-        "price": 653.59,
-        "pnl": -25.0
+        "price": 664.73,
+        "pnl": -70.65
       },
       {
-        "price": 659.22,
-        "pnl": -25.0
+        "price": 670.46,
+        "pnl": -64.92
       },
       {
-        "price": 664.86,
-        "pnl": -25.0
+        "price": 676.19,
+        "pnl": -59.19
       },
       {
-        "price": 670.49,
-        "pnl": -25.0
+        "price": 681.92,
+        "pnl": -53.46
       },
       {
-        "price": 676.13,
-        "pnl": -25.0
+        "price": 687.65,
+        "pnl": -47.73
       },
       {
-        "price": 681.76,
-        "pnl": -25.0
+        "price": 693.38,
+        "pnl": -42.0
       },
       {
-        "price": 687.4,
-        "pnl": -25.0
+        "price": 699.11,
+        "pnl": -36.27
       },
       {
-        "price": 693.03,
-        "pnl": -25.0
+        "price": 704.84,
+        "pnl": -30.54
       },
       {
-        "price": 698.67,
-        "pnl": -25.0
+        "price": 710.57,
+        "pnl": -24.81
       },
       {
-        "price": 704.3,
-        "pnl": -25.0
+        "price": 716.3,
+        "pnl": -19.08
       },
       {
-        "price": 709.93,
-        "pnl": -25.0
+        "price": 722.03,
+        "pnl": -19.08
       },
       {
-        "price": 715.57,
-        "pnl": -25.0
+        "price": 727.76,
+        "pnl": -19.08
       },
       {
-        "price": 721.2,
-        "pnl": -25.0
+        "price": 733.49,
+        "pnl": -19.08
       },
       {
-        "price": 726.84,
-        "pnl": -25.0
+        "price": 739.22,
+        "pnl": -19.08
       },
       {
-        "price": 732.47,
-        "pnl": -25.0
+        "price": 744.95,
+        "pnl": -19.08
       },
       {
-        "price": 738.11,
-        "pnl": -25.0
+        "price": 750.68,
+        "pnl": -19.08
       },
       {
-        "price": 743.74,
-        "pnl": -28.74
+        "price": 756.41,
+        "pnl": -19.08
       },
       {
-        "price": 749.38,
-        "pnl": -34.38
+        "price": 762.14,
+        "pnl": -19.08
       },
       {
-        "price": 755.01,
-        "pnl": -40.0
+        "price": 767.87,
+        "pnl": -19.08
       },
       {
-        "price": 760.64,
-        "pnl": -40.0
+        "price": 773.6,
+        "pnl": -19.08
       },
       {
-        "price": 766.28,
-        "pnl": -40.0
+        "price": 779.33,
+        "pnl": -19.08
       },
       {
-        "price": 771.91,
-        "pnl": -40.0
+        "price": 785.06,
+        "pnl": -19.08
       },
       {
-        "price": 777.55,
-        "pnl": -40.0
+        "price": 790.8,
+        "pnl": -19.08
       },
       {
-        "price": 783.18,
-        "pnl": -40.0
+        "price": 796.53,
+        "pnl": -19.08
       },
       {
-        "price": 788.82,
-        "pnl": -40.0
+        "price": 802.26,
+        "pnl": -19.08
       },
       {
-        "price": 794.45,
-        "pnl": -40.0
+        "price": 807.99,
+        "pnl": -19.08
       },
       {
-        "price": 800.08,
-        "pnl": -40.0
+        "price": 813.72,
+        "pnl": -19.08
       },
       {
-        "price": 805.72,
-        "pnl": -40.0
+        "price": 819.45,
+        "pnl": -19.08
       },
       {
-        "price": 811.35,
-        "pnl": -40.0
+        "price": 825.18,
+        "pnl": -19.08
       },
       {
-        "price": 816.99,
-        "pnl": -40.0
+        "price": 830.91,
+        "pnl": -19.08
       },
       {
-        "price": 822.62,
-        "pnl": -40.0
+        "price": 836.64,
+        "pnl": -19.08
       },
       {
-        "price": 828.26,
-        "pnl": -40.0
+        "price": 842.37,
+        "pnl": -19.08
       },
       {
-        "price": 833.89,
-        "pnl": -40.0
+        "price": 848.1,
+        "pnl": -19.08
       },
       {
-        "price": 839.53,
-        "pnl": -40.0
+        "price": 853.83,
+        "pnl": -19.08
       },
       {
-        "price": 845.16,
-        "pnl": -40.0
+        "price": 859.56,
+        "pnl": -19.08
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.718,
+      "win_probability": 0.681,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2462,
+      "half_kelly_fraction": 0.2129,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,45 +270,41 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 62.4,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-740CE / B1x-Nov-755CE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 60.1,
-      "grade": "B (Good)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-705PE / S1x-Nov-680PE"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 58.4,
+      "score": 51.7,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-704.3PE"
+      "legs_summary": "S1x-Nov-716.3PE"
     }
   ],
   "indicators": {
-    "EMA20": "716.60",
-    "EMA50": "726.89",
-    "EMA100": "750.13",
-    "EMA200": "794.68",
-    "RSI(14)": "42.72",
-    "ATR(14)": "12.77",
-    "ADX(14)": "16.40",
-    "BB(20,2)": "0.18",
-    "P_SHAPE(20)": "56.51"
+    "EMA20": "713.13",
+    "EMA50": "723.30",
+    "EMA100": "746.01",
+    "EMA200": "790.39",
+    "RSI(14)": "50.64",
+    "ATR(14)": "12.72",
+    "ADX(14)": "14.78",
+    "BB(20,2)": "0.47",
+    "P_SHAPE(20)": "44.78"
   },
   "rules": [
+    {
+      "name": "RSI between 50 and 65",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
     {
       "name": "Price making higher lows",
       "passed": true,
@@ -346,13 +341,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
@@ -361,13 +349,6 @@
     },
     {
       "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -390,46 +371,46 @@
   ],
   "news": [
     {
-      "title": "Here's why HDFC Bank shares fell over 2% today despite optimism over appointment of new CEO",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOVFsbldZVnUwWWJYV1NWVlFaRU1HME9IbHFuQ05zY0xkUThtV2FuSkRvcGFCQ1BidGRIRnY5MUhoUUJETUc3bTF0cVA3d3ZaX2h1elhITjhoS1U3d2RncXNSVDlyMUxWbkZCWUdIOGJCNDl5ZEV5bmJBbkhXMkdPa0pGcVhMYjNZNFRoRUUtaWNCam91Q1FHb2hMV00tXzRNb3FlR2JwY0FWLTlSbmxoTTZtdnNFaXQzNWN0MGRzUzk1aDlicG80dlBVanYxMGJNTnZvbDNwdkswWFRkTEh6aTFXOXhld0NOTGZN0gHwAUFVX3lxTE50UlVjZWtYMHRtWFJYbEFPZktnQzN3VThNTFdxaVpGV1IxLVBCaEtWWFdRQ3g2akd5TWlJRjdTc0ljclJSeHNvYVpmX3ZKZlotZ21KN3VnZWp4elJwWkpYQXNLMHNuUDA3dkhianJUY1U2MkVRd2VuX1dPZHRXMHhPNm9RQ1M5Nm56bFpESGpoY3VmV3VMNWppZ29YeVlYUDFCRE1QdW5MRWpHRlozQnViR1NUSUFqS21jWGZvUEQ3d2FsUXlOX0hXM0ktcjZmY2duNmdrZU5xa0JjamxldGhrZVlBNk41MTVsdEU5WlF5Qg?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
+      "title": "HDFC Bank penalises 12 execs for role in mis-selling AT1 bonds",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUGZiN2dHRVNJT0U3LWxKSGhPMGwzRV82ZE9iczNyYW1ndXJFSkZ1Ym5SbGZneC04WGJxeURkeE10MkFhX1N2bGdGV1U1OUxKVjF3ZnVFSEtNNzBZYnA5Y09nZ28wMGxrRGRuZ2JLdXQxY0U5aGNWN1NEOU9RT2Y1Vlk2d2lvRXZBVHg3TVFKcDBHZ0pveUxhLVFPTkZmd21MWU0waTdTX2k0dEJlV2EzaHZSb0M4OTlaa3hVY3dWLUU?oc=5",
+      "published_at": "Fri, 03 Apr 2026",
+      "sentiment": "bearish"
     },
     {
-      "title": "Buy HDFC Bank; target of Rs 1225: Emkay Global Financial",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNd3JVVXdZWkMtaUNUeDRQemloRTQyOEFKSWNBRGczRkxCTm4yWFA0eHZYa1JVZG11TkZMZUE2MGZYMDFTLTVwQ25tWTJtMXdwSVB4cFl0ck1pYkZBb1dHcmVmSDRyRnQ3YlE1b21LLTBNalo0RzB0MkdZdkN1VXBTOU1nQ056UTB6ODdLZVgyQVFkWGJrOGQyLW1PY0Y4Y2JJSjVFR2ZTVkR4b1BmS2hja1ZZQWt2UXlwY1HSAb8BQVVfeXFMUFE1emtBeUNBYmtHR0dXWDFUUG1FR3A3YkwweDlUZkM3SzFDUnIzVHBxeTFrWXl5cG5WRDZXd19ha2FXZ1d0b3FZLVVsN0thNjltY25tNWVOMXRWaUFYMXlPVXlSZVRCOVowLVlSVnhLOXdxVmFNeVhEdFFGb1dLc0hYRVAtZFN5dFBTZHFkY1VZbThTRzlobTlJSndnYU4xbVFHUk9ETDcwd0VfTGJhOTc2VzlMRGp2MVlRakRNU0k?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
+      "title": "HDFC Bank may see 9 senior executives superannuate through 2030",
+      "publisher": "bfsi.economictimes.indiatimes.com",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNjdXblJRaEdaaDNkV1o4TkVOejEwWDZlZkxxU3lGZWtENWlzbjVPQ284M3FQa01NZEN5MTQ4LWh4ZEZWS0JjVWprN0hQXzl2S0lzS0c1NGRjQlpaNTdOdkdwLWthbXZSOUZ2Z1N2cjYwMmFjRGJVVHNYOWRPckttS05Kdk9WWVZYQUNMb0lBRkJLbGVxMWp0Mk5LdkVZOEhXVUtzYzNpamtJNTRZdllqa1ZtVGtLOGhaek1TaHQzczg5d9IBxwFBVV95cUxNbElJcEF5VmlpcVY5U0wzdlpJZkRmSXpZaU94Q2sxZ1VfbXhqbWRCeGlZNW1wbmFHX2xIOTZVSVNCZGRrVzRVTFBEWFR1REFSM3RyQjU0VW1OUk91UXp4cEszRHZGUFlYUVFlNFRRVkFfdHpLc2FkVlJxOHUtOHNPZm9faVRuYmt6MGJLUGhBNGp0WnRXY0dRdm9ONnBrbUxaYVl1Unh3bnVZcXQ4eC1VLVZ2RTNiSGhyYzdpdWw5SlJjQXg4TkZn?oc=5",
+      "published_at": "Tue, 06 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Private banks\u2019 inoperative Jan Dhan accounts rise led by HDFC Bank, Kotak Mahindra Bank",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYTJma2lFMDRDaUpnZDc0SC1tZEM1QzVpLUZIZk9FOVk3cnlNdGc2cDVtMm5NVlliYjFBdTRnQzk0SHNlbE9penNJbldpc2N6eExOUnR5SWdyaVdtOEdPcVpub3hWNmp2SWh3aE1kYWp6Nmg1ZG4yUkVvQjRrTlpZRDBBUlh3MldGUVlLamN6OFYwT2k5cmE0R0w3TS1yQkhoQnlHaGlsRUxoX084UWdLWGVOYkRyOHNzVmhNRHROa0d0ZUEzU1VhUjJ3bG1zT3BvNUpNbkNBR3BiRVY2Y29Pc9IB5gFBVV95cUxPakZYdnBfRDJ2N1FCWmF4OGVDWTBWUHlyN1BHUlZGdWJ2RlBDcDVwU0dRU1hPZ1FmQmhqSWluMlhzVV83R3lVUGU1TTVGRjVRc0N6VUd2enFXRTVvNTZ6MFR0UjdEbk1Ma3N2VUtrWGRwTzE4a1FnYlpxT0w5Y2pzZWI1NkFOZmNLNXQ5SC1FOUhld2FZY3pKZHhMM20yVVEtRk00Uk5scjhNUVJSYXR2MFZHQWpfS0RHQ1BkajBFZzh0a2VqY2xGUElTVmhwVXBDelRBMjlJVU83T1BlTGEtOXpib3pxQQ?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
       "sentiment": "bullish"
     },
     {
-      "title": "From backing Jagdishan to choosing Bagchi: How the search for HDFC Bank\u2019s next leader unfolded",
+      "title": "HDFC Bank shares fall nearly 1.5% after FIIs sell 2.4% stake in September quarter",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNNVBsalIxMjRnRFptMUhuQmEzQWM2T0NFV0ZTRjRJMGZlM1VWLVREMkd5OW15YnQzbkVpNGlldXcyZ2Y0MWRhT0ZUU1ZzMmtiNG1XYmZ5QXI1ZTgwcTdpUHpvRktJUDRTMkx2SjU5SjNJc3NMV29MaVg5ZVpwdFB3Nk13b0hEZE8yZTcycGVJbS1ybmU3b0psMnJsV2pFdGpSSnc5Rjd4WGM4Nmt1Zy1HNXo3dWlYTENxNnZfYjVzeloxR0lKWVBDUEx1bG1OQ19LenhNUE5xOEx3eURHZndneFJlaHJuQk1zYlBXbVpCdVZxbk42dVlrUHQ3MDNRS1YzdUHSAYcCQVVfeXFMTWRBV2VkcTZpMU9rbDAwNXA4M1dXM0hYUHNlZ3psQlFNZlRhQ0lCX1BzZnMtYVFsZUN1MDZfSktBUmtqYV9jTU9KWnlnSVc2LV9SMkxaUHMtLVkzWnZMUjNGMS04cVdnRVk4SDBSOWVKZnV4UlV5NEVkb0NmLW5XN0d6XzFUdXY2bTB6cGtQLUV5eE9QQ2pzYURFVlNoVDhDZlhpVmFGSmdLNTB5U0RrN282NnFFUUVHU2tXWVEwWkFLZ3pmTldUbUJIdjdmUVJ4WjBpSnoxR1lpQWhuNVdtN0VWamdYQ2NhcDFTUWE0N3NMLWI4djY0NjA4RENRYzFCSWg1bW04WWs?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMUQtVHhGd25QdjRLTUE1RUM3NGJxem1xdjg4dXI2UHVIVnFJSGEtUllJV2Rlb1pkNFlLTEVOOU1xREJuMzRpT1NiX0FfQk5GdGNsc3hrSHdXcWlWUXVtamZNaG9ydlB0Q2VjamwwNXRpZ1hkQjhuQXFUSnIzM3Z5bUdwUXdJVmw0TS12LXZPMjRkbU41OW4tLXdDak91SEE3ZXBZOG5paE85dEhXVkF1MnpaeXJTaWs1dEJfTFpzXzBESVlIdWNINHBXbjY5blZZMFgxczhEUDg4UVlq0gHiAUFVX3lxTE1Ya2NhVnBJem5qMzVtUng5SHBSWmJVR1gwemhuUjV3c1pacHJfMzAyQUFtaWFQb2l3MEhULXN0UGJpSjBxUEpBN0ZUSGQtamJad005NjBPSnFTZDlfUkcwTklTWEtWWlBVUE03dTdCa2tYU25JVkozUWJvOHFVR2RfcU1TM0h3bHVLb2hvV3o5elNMLWFZYTI5NFZzR1lhdm80N25LNEVRUklja0ZFbWRzdmR0MmRUS0VkU051bXhBUE1CUHpyNjNvQWtUSExGcndwdkhXUTM5QU9XREVXYWkyMkE?oc=5",
+      "published_at": "Thu, 08 Oct 2026",
+      "sentiment": "bearish"
     },
     {
-      "title": "Brokerages yet to revise price targets on HDFC Bank despite CEO appointment",
+      "title": "Nomura prefers HDFC Bank, Kotak Mahindra Bank, ICICI Bank; expects 17% core PPOP growth in Q2",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORGhHS21HTE02MVRIeVNQVjFSMGVZNWhGUXRnSlhIR2NrNklEVmNqOHpYZkc1Z0ZYMnVHdTRLR0MzOEdqV2cxdC01dFJiWVAyV2FqcHZ3a3hCMFBOTzNGTGE5dTFQdjBFNjZDTTNuNXlic0lZMnNfMFhHZ2lzSFdvNUtwQndSckZPNmdfTTFzcHpaSWlZS0EzZ1hyeUVNeEF4Skh2RXBGcUxCM29rbWpoR3FpSVZjS0RFMnA0WVJENUFrUE9JMTE2WGt4NGhzbDNOaHhWZ9IB2gFBVV95cUxPTmdqeTItWWVIZU41TU9YWlMwMlJOUjd2QTREOVBTTmdYYWMxMlU4SFg5LTJFWDFzTkdkbUhVbkhsUGR2UzVrek5pZmpBLWh0LWhtbHgtelVJeHM5NDB5aGdybDNJVnVpZDBpQmg4Y1pPX21wYTZ5TkZJZ3pVN2Z4d005UXJ1SV9saC1tNnpSY2ZQR0dLSTh0Z3NCY0t3TG53NUVjankwSkMwZlNkUHBHU2xzR0Y3OG5zRVRDOVRYalZBNnF3eXUwazV0ZlYzcDJKTjFDazJMUVNGdw?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUy10akhtSlJCbzhuSFR1ejZQbjEzTnAzODBlc0JGX3l4cjE3OUZPZE42UGx0QUE2eG4yVlRZSURyNjNMZnNSR2ljMlVpMldyNVo2amlNQk44STg1Y0VUTnk5S2Jwa0VfTFFrMms0WnpPT0NfejdVZHM4UVRzVXIzQWo3VEc1MnotODVaTTRhMmNYMEI0eEgtelRHX0RvRWdiaGVWN05MWjJlVWhHNnA3YV9yT1pnSXZ2U3RXYUhmY25peWFRZXVvV3NjMEk0QU9lYmdDOEtpQWRfNEMxX1lOc05KTV9Wanlu0gHuAUFVX3lxTE9sdU9NTy0wQkktU0MtTUJnSFlRRkxPSmJUSDlrWkhHeEJuLUdXb2JRdVZLRUVCOWQ3M3Y0bnB3aXJXVmNoX3FKUmhWSDRqN3ZvemxocXJRa3J2RDF6cU1UaHdjS2RJUjZwT2gxUm03RkVtQjRvcVF4cTRERWs3NlR6cFFLU2c3RGRpOEJPQkhPQUFNb2gxTm9qYVNvNlRMUHFkd0lrTHZ5bjY3U3ZBbHVpU2Z2YUNMWEluSXhUZFNGaTdoV29abWQ3OWRzMHlCQWlIVmlTSnhMUDFsR1VVRXhUM0ZuLTIwTVkzWS01VWc?oc=5",
+      "published_at": "Fri, 09 Oct 2026",
+      "sentiment": "bullish"
     },
     {
-      "title": "Kotak Mahindra Bank\u2019s stock returns under Vaswani outpace HDFC Bank\u2019s under Jagdishan",
+      "title": "HDFC Bank cuts MCLR rates across tenures: Check latest lending rates effective October 7",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOUW0yM2RBTTlJbHJBX3EtU0xDaHpTMWh1dXdYbWJiTkxxczVRcEVGQzJyeFc3SVJWMngzakNZTVN4c0EwUnRKUjlZa3pVMkNkOHktSjhGN0xzbnRmUzVhd3o1VXJDbmpzYVRBODQ0a0RIYThCUlprc1FtVjNwY3JxN2xVam9PTlh2UXBpalZsLTQxMjJHMGozNGNCdnVaTi16bTVmbHctS0U0U2hVZkk2aXVWXy1HVUtSd3dhTzJHeTBvUkFjaUtENWJMS3ZSMlI1ZjRNQmFGanFrWkJkZDJybGVB0gHnAUFVX3lxTE9RYmdrSEFNRU5CYVliMlU2SW8xRTUwMDFUb0YydGxiMlJHc3gwZ3NsSkVCMEk1b0FzQWdHakVHSUtTUnFudjlMc0FqMmlpVDVOQlhpUHZzXzFpNW9zbEtyQUZUT2ZreVQ2Yy00YkxVenFZaVhVMkoxcjRfUExDSTAxYXpfZTc3NTRwcXhJWG5USGVvcy1GSUdlbkNpTG96ODdSOFpGVVZkdjRVdjNmdnRSdTVvMms5QkJ0VnhxcVhwUDJsZjhKbWZVUC1VV0VtMDNidmxEeXdhNk9KR2IyQW0tcFo3MDA3UQ?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Stocks to Watch Today: HDFC Bank, AceVector, Orient Cables, Manipal Payment, Pranav Constructions, DLF,...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQemVjQ05mZTZYbVJGdGk0cjFEOThKNDF5S3J3TmRyQlhRRGVJUnBRWWc3b2JGbjBMUnA0SkUxaWNxVHdmd24xZUQ5Y2pobE03dmVTVDk4MVZJTTNXMjdjZjVrQkEtZ1lwRlp0ZnlMbUREejFncXl0S2NIa0NYV3BXUURRcGlNN2NqOWtPQnZndjRUZlQtQjhoNGxvRXVPR0o5TGJhUVFWSXdfY3lvTFhwV25SYTJXWXJBSGhRdU9oQTFmMDdXZVVZSnRCMDJUbV9STmd5Rmo3aU5MU0FlZk1uMnB3ejl4cGpKOHU4S3NzSFktczdIblh0Y1lLWExwWGNFWl9IcF84RkhLdUNhQUlVTE5WSzZ0cVhIdlhfRjNabkxraDd2Z3BLdkVUWUIxMjR5WHVRQXFPV2p2UDV1ODE5bVVTNTRCcnR0SUgyU25FONIB1AJBVV95cUxOM0hNTVNOSWp4UFRpdjJ3akRpejRTN2tEel9iQlBHd19wWEU3Y2NsUE94MUppMmxwMWRhcWh3TmR6czQzRDdOVGxxSWJRa0VoNm5RdmtGLXZzZlNIOU15bGYyaWJBcndiY3V4T2paYldRQTY5andoMWx3YWk1N2taTWd1UjdmRnRjQVF6eUlGUERwV2NlMTR5X0llSTVwTHAyZ0FjMkFMaXVNdm9pWk9KTGdJZE9yOGZlbmpoMmc1QnMtVzFYVlFKR3loSVctUEV4RWpka2htOFBsQm9uLVJ0WDJKeThLU3BsWHI5bl8xd2pTT3pyWkZEUENkT2lkNW9JeXNFWF93clRmZmpWeWpzeDBId19EelYxTkJodUkyeDc0alJ0V3BjaF95cXJxNGc3MDVTM0FoeVhGdFVSb2VDOVlCemxsMWFyeWFHbnVBVlZCV2Zv?oc=5",
-      "published_at": "Mon, 05 Oct 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNR2xOa3UzeEJoV2tFX25NQlU4T08yWTdzeUJ4X3EyRktxUnBHekh3a1VQZmRPM0M4ZmttS0lzNGFzRUt5Z2ZoNHF6ZkQ4N2tSYUFXc3QyWFRhc3Vnc1dIM2dXakViLVpqUER4R294aWN1UURydE5fTVJjUERObVhmZUtGYjJ0alN0dERCZmV3aVN0N3N3WE85bjFDZ0RWemRsaGFLYU9iQXdNV1pWdzFLd0VVdU92RzI4SnQtQ1k4QVh5LXhCc3VYWHY2OXU3QnB2LXBTOGsyVkNoUTZ2ckdjSjRUUVFyZllFbmxqZGN1TWRwcW_SAfgBQVVfeXFMTnRreWt6YXNTMF94d2o1bVlFNXV2dlJEOHlneXhvTlVnMDhKV3JPQ2R0aUFJWFJCWFAzSUtuSnNrRHdHZHBVVHVNdWZyU3Nld1RseWRzTUZpRlpCa3ZwbnE0dXk0V0FvSnRHN0FfbHo4TWQ2azRFeEkzc1ozV1pxOUZEbWVFNGJkbFpNU0hrWTZJTjJOa3RTNUpELXNCZF8xU2xab3dxTFlvdENsVzVpUGppc1ZBTktob2JLalRYeTBuQ3pNaEpBWVRrY1ZTTGNWRm5EbktmZXV2aGo1RXIzRHhRbTJYQUc1WVU2aEFaSXpqSWdES04zY3U?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
+      "sentiment": "bearish"
     }
   ]
 }

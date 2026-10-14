@@ -1,269 +1,268 @@
 {
   "symbol": "COALINDIA.NS",
-  "last_price": 414.95,
-  "as_of": "2026-10-07 03:45:00",
-  "regime": "strong_bear",
-  "regime_display": "Strong Bear",
-  "trend_score": 0.8,
-  "fit_score": 7.5,
+  "last_price": 416.05,
+  "as_of": "2026-10-14 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 2.2,
+  "fit_score": 22.5,
   "confidence_grade": "C",
-  "confidence_percentage": 7.5,
-  "vix": 13.78,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-  "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (61.7% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-  "cash_trade_setup": null,
+  "confidence_percentage": 22.5,
+  "vix": 14.48,
+  "strategy_type": "cash_swing_short",
+  "strategy_display": "Cash Swing Short",
+  "trade_profile": "Advisory | 30-45 DTE",
+  "trade_category": "cash",
+  "recommendation_reason": "Best fit strategy (50.3% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+  "cash_trade_setup": {
+    "direction": "Short / Sell",
+    "entry": 416.05,
+    "stop_loss": 422.86,
+    "target_1": 353.64,
+    "target_2": 312.04,
+    "risk_per_share": 6.81,
+    "risk_reward": 15.3,
+    "atr14": 7.96,
+    "holding_period_days": 90,
+    "horizon": "Medium-Term (2-6 Months / Trend Ride)"
+  },
   "estimated_trade": {
     "legs": [
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 435.0,
-        "strike_formatted": "435",
-        "option_type": "Call",
-        "delta": 0.215,
+        "strike": 416.04998779296875,
+        "strike_formatted": "416.0",
+        "option_type": "Put",
+        "delta": -0.444,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Sell 1x COALINDIA.NS 24-Nov-2026 435 Call"
-      },
-      {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 440.0,
-        "strike_formatted": "440",
-        "option_type": "Call",
-        "delta": 0.155,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 48,
-        "summary": "Buy 1x COALINDIA.NS 24-Nov-2026 440 Call"
+        "dte": 41,
+        "summary": "Sell 1x COALINDIA.NS 24-Nov-2026 416.0 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 15.0,
-    "stop_loss_price": 402.5,
-    "take_profit_price": 427.4,
-    "net_delta": -0.06,
-    "net_theta": 0.015,
+    "margin_required": 11.94,
+    "stop_loss_price": 420.77,
+    "take_profit_price": 392.17,
+    "net_delta": 0.444,
+    "net_theta": 0.071,
     "probability_of_profit": 0.0,
-    "var_95": 5.0,
+    "var_95": 30.53,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 331.96,
-        "pnl": -15.0
+        "price": 332.84,
+        "pnl": -95.15
       },
       {
-        "price": 335.28,
-        "pnl": -15.0
+        "price": 336.17,
+        "pnl": -91.82
       },
       {
-        "price": 338.6,
-        "pnl": -15.0
+        "price": 339.5,
+        "pnl": -88.49
       },
       {
-        "price": 341.92,
-        "pnl": -15.0
+        "price": 342.83,
+        "pnl": -85.16
       },
       {
-        "price": 345.24,
-        "pnl": -15.0
+        "price": 346.15,
+        "pnl": -81.84
       },
       {
-        "price": 348.56,
-        "pnl": -15.0
+        "price": 349.48,
+        "pnl": -78.51
       },
       {
-        "price": 351.88,
-        "pnl": -15.0
+        "price": 352.81,
+        "pnl": -75.18
       },
       {
-        "price": 355.2,
-        "pnl": -15.0
+        "price": 356.14,
+        "pnl": -71.85
       },
       {
-        "price": 358.52,
-        "pnl": -15.0
+        "price": 359.47,
+        "pnl": -68.52
       },
       {
-        "price": 361.84,
-        "pnl": -15.0
+        "price": 362.8,
+        "pnl": -65.19
       },
       {
-        "price": 365.16,
-        "pnl": -15.0
+        "price": 366.12,
+        "pnl": -61.87
       },
       {
-        "price": 368.48,
-        "pnl": -15.0
+        "price": 369.45,
+        "pnl": -58.54
       },
       {
-        "price": 371.8,
-        "pnl": -15.0
+        "price": 372.78,
+        "pnl": -55.21
       },
       {
-        "price": 375.11,
-        "pnl": -15.0
+        "price": 376.11,
+        "pnl": -51.88
       },
       {
-        "price": 378.43,
-        "pnl": -15.0
+        "price": 379.44,
+        "pnl": -48.55
       },
       {
-        "price": 381.75,
-        "pnl": -15.0
+        "price": 382.77,
+        "pnl": -45.22
       },
       {
-        "price": 385.07,
-        "pnl": -15.0
+        "price": 386.09,
+        "pnl": -41.9
       },
       {
-        "price": 388.39,
-        "pnl": -15.0
+        "price": 389.42,
+        "pnl": -38.57
       },
       {
-        "price": 391.71,
-        "pnl": -15.0
+        "price": 392.75,
+        "pnl": -35.24
       },
       {
-        "price": 395.03,
-        "pnl": -15.0
+        "price": 396.08,
+        "pnl": -31.91
       },
       {
-        "price": 398.35,
-        "pnl": -15.0
+        "price": 399.41,
+        "pnl": -28.58
       },
       {
-        "price": 401.67,
-        "pnl": -15.0
+        "price": 402.74,
+        "pnl": -25.25
       },
       {
-        "price": 404.99,
-        "pnl": -15.0
+        "price": 406.06,
+        "pnl": -21.93
       },
       {
-        "price": 408.31,
-        "pnl": -15.0
+        "price": 409.39,
+        "pnl": -18.6
       },
       {
-        "price": 411.63,
-        "pnl": -15.0
+        "price": 412.72,
+        "pnl": -15.27
       },
       {
-        "price": 414.95,
-        "pnl": -15.0
+        "price": 416.05,
+        "pnl": -11.94
       },
       {
-        "price": 418.27,
-        "pnl": -15.0
+        "price": 419.38,
+        "pnl": -11.94
       },
       {
-        "price": 421.59,
-        "pnl": -15.0
+        "price": 422.71,
+        "pnl": -11.94
       },
       {
-        "price": 424.91,
-        "pnl": -15.0
+        "price": 426.04,
+        "pnl": -11.94
       },
       {
-        "price": 428.23,
-        "pnl": -15.0
+        "price": 429.36,
+        "pnl": -11.94
       },
       {
-        "price": 431.55,
-        "pnl": -15.0
+        "price": 432.69,
+        "pnl": -11.94
       },
       {
-        "price": 434.87,
-        "pnl": -15.0
+        "price": 436.02,
+        "pnl": -11.94
       },
       {
-        "price": 438.19,
-        "pnl": -18.19
+        "price": 439.35,
+        "pnl": -11.94
       },
       {
-        "price": 441.51,
-        "pnl": -20.0
+        "price": 442.68,
+        "pnl": -11.94
       },
       {
-        "price": 444.83,
-        "pnl": -20.0
+        "price": 446.01,
+        "pnl": -11.94
       },
       {
-        "price": 448.15,
-        "pnl": -20.0
+        "price": 449.33,
+        "pnl": -11.94
       },
       {
-        "price": 451.47,
-        "pnl": -20.0
+        "price": 452.66,
+        "pnl": -11.94
       },
       {
-        "price": 454.79,
-        "pnl": -20.0
+        "price": 455.99,
+        "pnl": -11.94
       },
       {
-        "price": 458.1,
-        "pnl": -20.0
+        "price": 459.32,
+        "pnl": -11.94
       },
       {
-        "price": 461.42,
-        "pnl": -20.0
+        "price": 462.65,
+        "pnl": -11.94
       },
       {
-        "price": 464.74,
-        "pnl": -20.0
+        "price": 465.98,
+        "pnl": -11.94
       },
       {
-        "price": 468.06,
-        "pnl": -20.0
+        "price": 469.3,
+        "pnl": -11.94
       },
       {
-        "price": 471.38,
-        "pnl": -20.0
+        "price": 472.63,
+        "pnl": -11.94
       },
       {
-        "price": 474.7,
-        "pnl": -20.0
+        "price": 475.96,
+        "pnl": -11.94
       },
       {
-        "price": 478.02,
-        "pnl": -20.0
+        "price": 479.29,
+        "pnl": -11.94
       },
       {
-        "price": 481.34,
-        "pnl": -20.0
+        "price": 482.62,
+        "pnl": -11.94
       },
       {
-        "price": 484.66,
-        "pnl": -20.0
+        "price": 485.95,
+        "pnl": -11.94
       },
       {
-        "price": 487.98,
-        "pnl": -20.0
+        "price": 489.27,
+        "pnl": -11.94
       },
       {
-        "price": 491.3,
-        "pnl": -20.0
+        "price": 492.6,
+        "pnl": -11.94
       },
       {
-        "price": 494.62,
-        "pnl": -20.0
+        "price": 495.93,
+        "pnl": -11.94
       },
       {
-        "price": 497.94,
-        "pnl": -20.0
+        "price": 499.26,
+        "pnl": -11.94
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.716,
+      "win_probability": 0.676,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2444,
+      "half_kelly_fraction": 0.2084,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -271,47 +270,50 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 61.7,
-      "grade": "B (Good)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-435CE / B1x-Nov-440CE"
-    },
-    {
-      "strategy_type": "put_debit_spread",
-      "strategy_display": "Put Debit Spread",
-      "score": 59.5,
-      "grade": "C (Moderate)",
-      "rationale": "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
-      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "B1x-Nov-415PE / S1x-Nov-400PE"
-    },
-    {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 58.4,
+      "score": 50.3,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-415PE"
+      "legs_summary": "S1x-Nov-416PE"
     }
   ],
   "indicators": {
-    "EMA20": "420.06",
-    "EMA50": "420.58",
-    "EMA100": "425.05",
-    "EMA200": "425.53",
-    "RSI(14)": "45.59",
-    "ATR(14)": "7.49",
-    "ADX(14)": "18.31",
-    "BB(20,2)": "0.19",
-    "P_SHAPE(20)": "53.04"
+    "EMA20": "416.18",
+    "EMA50": "418.67",
+    "EMA100": "423.62",
+    "EMA200": "424.77",
+    "RSI(14)": "49.40",
+    "ATR(14)": "7.96",
+    "ADX(14)": "16.25",
+    "BB(20,2)": "0.42",
+    "P_SHAPE(20)": "54.98"
   },
   "rules": [
     {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -360,28 +362,7 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -390,6 +371,27 @@
   ],
   "news": [
     {
+      "title": "Metal stocks to buy ahead of Q2 results: Nuvama picks Coal India, Tata Steel; Jindal Steel an underperformer |Here\u2019s why",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNSWNUWGxFOU53dm5laXNOLWNodGVibFpkcXJRR25EZ2RkSlZSdERrdHhGeDkwWkl6aTlwSW9vX0NsLXZ6b3F0elQ3QnBZLWxYSmlYYTVxcFJpcks5aWFOTWljc0RYQWkwVUZ3dlV2VDUxZDIwTktoOTQ1X1ExZGdTSkhabjY1MElsaEJLN0l6SG1jaXNGci1XMlVUQTlidWUwaEYxbW5yei1iZzdHX1ZLR1dJaWpYbXRCNmVNVWxsbzJPeG1IOGlaVnpVdkRHVkpiYXM0aEIyaDBkTklkdmpGV2czM0N0Z1ZlMmFDaGdIcldYRS0yQkpEZEdsV1pVYkhwbGxidHY0Mmx5ZUJnTlhkeGowNDHSAZoCQVVfeXFMT2t5Rm5rVmJnbEF6VVJuZGwySm1UeWFnRlMxVnNBVVBMMDloSmdScnIyekpzTUM1QU9iNnZqTFBRbURWdVBtZWg2RGFvUi11U09jR0VMYmUycTlJd3ZNd012Rk0yMWRscm5kc1l2N1V3ZWhZS3BMZjladXlneVlYU2J3NGhNNjZxQTA2ZTg5TF9VTU8wR0dDb25zR1lzNGtsdXBaNmpUa29SU2xhUFRKYW52eHVkUV9lS1Z2VXQzNHlPQmRTZUVQODAyUS1oVG4wZ3N5MHJCRUpQRlNpTjViRnppaFBuc1MzLU44Yk1XcWY5Yy0tbDllanozaTRJUlhJUDRPX3UyYmRpMkFPQjRWcG1MSXY2bkZMeUdB?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Dividend powerhouse: Coal India, ITC, REC, NMDC, Aptech, Radiant Cash - Which stock is real dividend multiplier? Details",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPLVpMWE9QR2lkcW5QTGo5RW9GQWx3bVUtaFNhTS1Xcmg4Mnl6SHEwemVCYk5VeWFkUWFMd2ladGYzOTVvb3VvSmhoRVJWamdBQjdQZThHRm83cGNwaWdxN1ZnME9TOWNlaWNBN3ptQXRSZnpxbmRnUzBGUXNIekQ3SVdOQ3plN25FVEVKSWFSdVJTQTdzVjhPY0wwcDQzU0MyU2R2c0wzenpYNTdFblFldnRaV3dRNENxMUFPYkwyS0E0RGpVcVNxNk1JQk5veFhnWFBBTzF0T3d3YlNsR2cyRzF0OEtXNG13SXM2MUFMZGNWVlAzNnpLbThMd2RyaUNDdHVzelMxM2JybHdOTGfSAZMCQVVfeXFMTW41ekJCOElhSDF5VHlzdldYb2UxTzBNXzQwODZEbTFKSGFLNFJfNTVMM1FhbW8takU2aXFIOXRkTVRPb3VRcHZnbllTZ3N4WHJPN1RaU3lKWUlSZWIyUTgwQjNWTGlHbVhaM2dqTUhVc0pmTTM5NFdXQTYwS0NYX2huWEhRWGJKb1ZtY3BWR1JWdDhqSVJMQ3R4M3RpcDZIYjVvTlZpUXVReXhxaTJYaXRHYlBFQmpINml3SERmcmZJdVhTalVHUHBKaU9wc1ZUWlBTN2VRQkp3dDk3WDNFLV9KcGk1M1ZnWlpuSlJXaXl6eHVaQjhVN3IweXlsd0RRLWNEamNqVUJPLXBydXlOVWVhcHc?oc=5",
+      "published_at": "Thu, 08 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Top dividend yield stocks: PTC India, Coal India, REC among 10 shares with yields of up to 16.7% | List",
+      "publisher": "Livemint",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcW9SYXVxM29YSkpKZzZjdkg3bTc4VlptVXNTQjFoNGw0bnVVbnNKaHdrdUhUTFlzNlk0bXZxWjlPVHBEaXRsclk1Zk5NeUZmN2xCM0dQRDJJYThjN3h0NTdlaWtEUWxkajZuLWpwcGdIQTBXbHdpMWo1cklmemtVVzIwUlJCRGJtYVdHVE4tVWVELTZzWmJPeDdEU1c4aE1kMkpGSXYwVFlHQ3poeDJXWXhCSHBfNF85MEhNbUFsV1Bqa0szT2d1NFl1MDlyN3lLYkJQY202X1kyRXYybWQ2ZE5BWVRRYWlXakpJTDdDOVo5TGRJVlM40gH8AUFVX3lxTE9Ld1o0MHd0Ukxydmo1OGJRdDMxNGpZSTZPTDhOSHlFNFlkT0RMUGhnam5HMjdSUHJZRXB5dGRORVlhbHlTM2g0cWxia2kxcmNwR295T2YwTElCVE5RSFNOQUxLT0l6QUhia0s0TGlQcE1mX254cHBRY24tY0lhcTdoaGoxVVA0UC1TMTRFYkplZkhIUUI3aU1pNzZHa1hjSk5NbUN5SmFranV5V2I5Nk9neUdDaUV2M08wMjU2NDFsSzBRVVBWUGtfbmQwRmRNRnRtdG13MEJQbjg1LURoOXlUOW1DVWhacXM5MTBVeVVIMEhQSHpaMzlRdzhvNg?oc=5",
+      "published_at": "Wed, 07 Oct 2026",
+      "sentiment": "neutral"
+    },
+    {
       "title": "RBI MPC meeting Oct 2026: Why TCS, HDFC Bank, ICICI Lombard, Coal India shares may gain if 25 bps rate hike is announced",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNTjRBMjI2ZDV6ckw3Ym5SZEZQbzhEYmNNZ2tSMlNkQ1VvY2N4dmgyT0FQWkhENmlwR1FkN3QxalVZbG1DOWtnN2pyOWwzSHZ2U1hvVzhLRVhET01JRXJYVWtuMjZERmJNcThOdnVpRlU1Z01Yb1Q0a2xNX2JNVGIweEFfZ0lheE84bFE2cF9qdm02dHBtcmViVHdxTkF5UGxqQzJ1YkVOOUU1dzhLMTU0MFpvX05INzhtMFlOR05zRmNyLVJ0b2UwWVBjMXpzM0FFai04R04tdk5yMWtnZWVfa1NYWC0yNUxfcWtSTTAyNHVaekM4ZmF5dnZCaTNRZm5vcnZUYjJsZGtJM2xJbXJDMk9B0gGXAkFVX3lxTE9sX2d2T3JOR0ZqVFExdzFsbjFuUkhQNGdDZGYyNXJuOVlrVjVfMnBxeEMzbmgxazV5ajJISDRKTjJDNDFVQlZXRTVuSVFiSl9SYUFpTFlha1NJU2lTY0NHX0dkRGZlRU53WFBfVG9qMUNhZDlyUGk4OTh3V1VGNUxCMXowcTdjQ1F3M1BXdW5kdHF5cnliMWRSWGVlaEowVHI4WTNxQXdxajU5ZVVodHJ0VHBhQVlsbGp0Xy1xT09ZLU9zVGNTY3RCSmVTUjJqclc0eUNoVzRQaWRUWUUybElVLUQ0U2dmQXZSemYzZGJkejRfaWNBdXJpQWhleUxMbzRDeDVaWWF5NUlkX3dqLUEyblR5U2NINA?oc=5",
@@ -397,38 +399,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOUUVCLURiLWRzMmNCZ1B2dWNRaDNCamgtMkMwZDlFQmZuYUdDY2hpbkhOdGpfQ1NrWmx4R1NRUmxDNWdYR29adEl6WjV2clAtRkFPcDJDNE1LZktFSVU0ZENESnk0T0dMVXdEWEFjRG5TQmZNYzEwZFNSaGowM19pU21pQjRKczdBeXFMcFRZSk15VVNici12V0dlWnozSnBjaUYtcDl4M182R3lpRTFHMkJMZkV2eGV6Y3RjV0hmc1E0eUUxbHBGbWd0TG96cFpaOF9MLVh4YmE3ZmluMnZsY1dsSEhvUGotcllwNUF6QjBjTW9FRkVOaEVKQ29na0dpemJZWkVlN1dJc25XR0VNLXpB0gGXAkFVX3lxTE01cmdSNXNuWW5kVEhFY0RBVExHZENMb3c1Z3hEYmk4NFZ6alB2REE4WUEyVXZoaFRfRW5LdjB0ajZIOTBkRDdadnNUNVZhSjRkVUFnQlprTTM4X1M1XzFEclV5ZTkyWE14WEw0WGVJSjd0WkRmMGxsLVVGOWRJU1FrNVUyenpWUV9ubjFIQjMzaC1DSlBWeko0R0tGZVZBYUEyaWU0TGhtWnNkcFlNY3dVd25TeUFMcDEzbmpqVV9kbUJqMWRxRFpIQlRqUnJPY2hfT240VUlrYXJESlFPSXpZNFE4bjZnRVp1aVJydjM1UGRhSVo4ZjNuRDhwQU1NdFJyNnNRRURvOGxIYS1sbXZYRGxJRzdaaw?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Coal India shares | Nuvama upgrades to Buy, hikes target price on higher e-auction premium",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZ25vTDNNYzF3dzRQOGRWdDVkYUM3aEFQb1NnUkF5ejVLSFNPdDBoZ01OYjV3U0tvV0FkY3BXWG85VFVxNFB3WXpEUDlHYUIwZmNDLVVtYVR5NlktY0NnYjVyb1lvcHNvSVJjNnlnR3hRMWNNTGhxLUlqY3JLNkhLdFBSVnFNUGVsWUZ0NDdiWFdhMVBSV1hiUENfcWxnUWJmckdlbmdhbzBicllTNTVYbENsVmdFMDYwU0taQ0xRZXI1X3huQ2xJX1BkWDU4SmdyTl8tV200Q0RlRlVtLWQ1T3YyZ1pWNExGbWFjVEZ30gHzAUFVX3lxTFBOYmxmcFlIN0pLeUIyNFNac1U0RndiMmpxQzl2VVMxdGwzT3l0Y0dYc2R1R2h5MFFGLUtqeUpTYXZBUUpiaFdvenZSaDNkSTBpQ0l5T1hFU3RudVhMTE5rNEc5OTRvTEplUV9jUTA4Q3lEQmdsSXhHckdVbXJLbnhXMDBPajVVX2ZLbzZBZ0ZOaEVMNnVBOGFURXd3RnpxVzNfaWhEdjJaY0Nkb2Z2SnhHQWtnWUt4Y3BONEJZVGx6QUtxaERWTVBUMzlpSjUyUC1OZWFMV1pFc09hRkNfcGJmU0c3aE5NY0N6Ulk1VVRCeHRRTQ?oc=5",
-      "published_at": "Fri, 02 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "L&T gets initial nod for 1,600 MW Chandrapura thermal power project in Jharkhand",
+      "title": "Blackouts hit Indian factories as coal crunch feeds into economy",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxObUhlMEFiYXZZdl9YYUdNQVJwYnQ5Tnlrb2UtZ21TTVVkM1lkN09CY0ZRWEx1Um9DYVFBVUVxUzB6X1JILWRpdlRuNWhqVUhtb1I1X05rZWlfT1JsaU5IU1NYODdrZmdBUmh1LXJHYS1RWG94Q1N0VUljYVlTMGZJVjc0cXBwaDlQal96aDNmQmEzcHl4VXdyREZNSzNHQzg0RFZXRGdnSHp5NjNVQU80ZDVfZWM4S0xaTjd2YUlvUnVqZ1lxVGlmV05XNlRKSnlFWV9r0gHYAUFVX3lxTE8xMnpuU1pUeU40dDNrVTRZcGVMMmhfeHJUbHc2NW53cGZLeXE4WFJIT0RKVURzWVZ5QkR5MEx0QTJMOENJUnY5RkZSbVZkaHdGMG1URzZkLV9DSTFjUmNXUWNMUkhyVDNIdnl5T1NJT0N4QnVQRUVvc3Y1TzQ5blE4aVBZX0JsdnpwTnNlcFc0REY0V3dMNmtJV085SFNycjZscEczTFdzOHRPZjg0SWVFUmlWTkFELXFmWDlyRHdaaWZVcm55akxmc1pHVDd4Smt6aFhtRjJqRw?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMGtOd2YwWE9zMVItc0hxMHBOWVFfLW9qVXczaEs5enBvZktyX2hCQUVJX3hyc1A1M1hydmZMZ0MyT0Z2TnJXVGpPSmNId2FLNGVGLUJkb3NpZzhyOFZEaTBsUkFnXzB4SEZlLXVldndseEFkY1R0cGtEQWZpSFB1YVZOWTNNSWZ3QmYtek1mOC1CdVY4TWtxTlJGSkxfaFRYNDFYNmgybzFmOHlfNEdJd2xBRktwNXJyZUJYVEVNakxMaUJHZExIV9IBzgFBVV95cUxOSGF4WFNCVUtSRG5jM1pia284Q0FCa05ibnhmdlRVVWJ4dkFlWTJ6U3UxMUZqZ292NU1Vd01sZldMM3ptT294Z0k4aUdacEoxaDhfYlJBa1hMZWtQX0tnY0g0clUyTER3aTNfcHhlWEJlb1VtWjJURWVkaS04a2hBZzBFMHlYWTQ2cThyRk5UZG1Hejl2ZGtkVWlCSWhrbF9kVmVEYlhZM19ZOUJ6QTFCd3BPYlo4U3JOZ1luaHhSb1haSjFoWkVXcE9PRTBsQQ?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Max Estates sales bookings surge over 13-fold to Rs 2,100 crore in Q2",
+      "title": "Horoscope Today, October 14, 2026: Cancer, Leo and Virgo May Find Fresh Clarity in Relationships, Personal",
       "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOTlRqbGxLbkFHMW9GT0paTExEX1l5czB4dVZ4QXM3eDBmaXdaazFmT1BwS2Y2VE9pYXpxNWVPVjVHQ3hyMTdmcVdrX3JheDdjZG0tY29nbS1NVHpvZ1BQNHZzN1plRWFiRF8wZUVtZXB6M2xCXzY5ejVHcFA4T0sxX3NlMTExTHpEX2JnZnN3R00tSG1WRVc2ZzM0bGR4TFUtanRrbVo4MzZJdS1LMzlXMlQ1WTRuODBMeFZzZnpqVXF0VjJ4elRHUzhUdHFzYTB5U3pDYXFvZkV1emhQY0pvOEJyNzR3YzJBNWtYVzdMRm53bm5CSjk1TWpuRmtjRmVs0gH6AUFVX3lxTE5mM1ptR0htZjVGUXNIUERBdDFoUE12b2NuWEVEVnpaYlBMbU5Ga0RabUdZWUZFdGlhc1p4ZlMwVEJqNzFYbTE4SGNzTkpMY2pNYUdScFRQanhqcVVIZkxwUF96ajJVQmIxTmFZZzYweERWOE5kVUlJSWEycmpjeThfYzZOa2V3dzh1ak1aXzZrWi1odnBlXzlmM3JSU2Z1NG8yQ182QlpHaXMyRTI2Wi1NT19ONnMtTHgzclpOR0lCeVlBVWtlUWlvcUtHUHFZUTQtRnluM3Z4S0U5RG5TcnNSODJySWlhRjlvRHBZdmFiS3k4UlNLRnJkOXc?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
-      "sentiment": "bullish"
-    },
-    {
-      "title": "Taking Stock: Pullback continues on second day; Nifty above 22,700, Sensex up 685 pts",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQV3hzYUlYeXZYMll3ckk4MzdaLWY2ZGZrVk5EWGVST0NjNWVtZ1B5X1VNeVYzcE5Zam1DRW5mYktNeXdzWklOaHBTSEVBaDZqVXFKZm92S1hOLUExQUdhcjIzNUlLZmdnVVhvWHlPczBhVnVpbXlqQmNBcTNnV0JzbjBGM3VtRVBJUUtlSDlHWjZpVHA4bk5UOXJqVUh0Z0hzZmFQLXZfSEx1bGl1WERPbHI5MVNJazMwNVl4ajFNVjdWREpsLUpOcnFhUjBfWmVBOWJ4WFhQRnEwYUl4Nko4V9IB5gFBVV95cUxQRTJVWTJ5NnN1Y3l3X2NFeE0wZU9FalUwV0ZzY09qejBJVmV0dF8xMnZhNjBNYzhNRmt2eEd3UXVYampvYTk2ZndTV0V3aWJiZm56SmdPbDVsSE5XS0w4MW41U2otVEhZQkNEQjVxenZ5MzIyTG1HODQ0NkVRTlFONEpDajBJQWdtdnRnVUlvVFVWV2Y1bElpNGhYZFRndVRzei1GeXVjeUszbjFYRmV2WGhHaHI5cVRlODdDcWFkcGpQMVI3aEQtN0RBOEVKdDhaNUxkUncwYWpHajBtV1g0UjNheV9kQQ?oc=5",
-      "published_at": "Tue, 06 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQbzdWUGVNaV9qd2NXR1hQdUtYMmlrTzI3OUpfT2R1UVVINmh1aXQySTZyMXZOV2FuM2VYMFltQmJrczFzNENiaDlfX0pCeWhsN0Rva1Zra1BJdWJzWk1iRTNRWXJXZ2JMT2tDaXJFRHFJUy1YSTJOMW9vbTExMDNEa254WjJrR0oxVG9FX0lpcG5VSmNYWmt6NEJzQ0FSYVFpMGJoVG5JcjM2cUF0VkJuUXl4dlZlM2tFbVE4S1ZZRUJabk1IYXRRbDhBUXFnY2RuT3BuUTF5QUptMVZuUFNqcEFsbGRaeXpETENJWjNtNkRRaHFPTm04dTdUMXdRdWQ2VHRGcmYwTDkwWng2ZGJRcWV1YU5FNlg2WkM0b3ZRRldEdnZISEFmcXhNYUNVaXNrS2pjZEo5TThvNi05UDlTRlZWZULSAagCQVVfeXFMTVFOampZYUIwQk1vZVFXa3kyYmZ6enk1RVhjNzVVNXVzUW16ZjJldWY5cmh6a2NzQTZ3cDhJc0RkdGpZSUtlUzRrNlpFbnRvZGNmdnhHOXVwekpfR1E2eExsdGRkYUhnYW03U0hKdVN6eXNURFZCdndCTHJmUUlCWDFhVlVXRmVYNUtOc2Nvd3hqS05Id1lRR2tvVXJrMzF1V2g1MHYtX25zdVNXaW5CSUlHRUo0LU1kZGtzU182b01vUVdYanlSRkRKYi1XMTBHbllsaU96YTNJU1RJQlV1eTJuVFNXT3NFOWNaemMtQzFIajZsQmU0Yndvb21GLUZiS2hFLV9hTHpLRzJPZ28wTzRWdUpZU3JtREpGRm1OSnRsdE02MWNBOTA?oc=5",
+      "published_at": "Tue, 13 Oct 2026",
       "sentiment": "neutral"
     }
   ]
