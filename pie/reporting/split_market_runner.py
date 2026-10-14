@@ -199,13 +199,24 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
             except Exception:
                 pass
 
-    # Filter out anything with score < 70.0 (i.e. Score / 10 < 7.0)
+    # Separate indices to always run and display them
+    indian_index_set = {"^NSEI", "^NSEBANK", "NIFTY_FIN_SERVICE.NS", "^NSEMDCP50", "^BSESN"}
+    us_index_set = {"SPY", "QQQ", "IWM", "DIA", "VTI", "VOO"}
+    target_index_set = indian_index_set if market_type.lower() == "india" else us_index_set
+
+    index_entries = []
+    for entry in all_candidate_entries:
+        if entry["symbol"] in target_index_set:
+            index_entries.append(entry)
+
+    # Filter out regular equities with score < 70.0 (i.e. Score / 10 < 7.0)
     all_candidate_entries = [e for e in all_candidate_entries if e["score"] >= 70.0]
     cash_entries = [e for e in cash_entries if e["score"] >= 70.0]
 
     # Sort globally across all candidate strategies (Symbol x Strategy) in descending score order
     all_candidate_entries.sort(key=lambda x: x["score"], reverse=True)
     cash_entries.sort(key=lambda x: x["score"], reverse=True)
+    index_entries.sort(key=lambda x: x["score"], reverse=True)
 
     curr = "₹" if market_type.lower() == "india" else "$"
 
@@ -213,14 +224,41 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
 
 **Last Automated Run**: {format_ist_time(now)}
 
-> **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0**).
+> **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0** for individual stocks; Benchmark Indices always tracked).
 
 ---
 
-## 📈 Part 1: Cash Market (Equity Swing Calls with Entry, Targets & Stop Loss)
+## 🌐 Part 1: Macro Benchmark Indices (Always Tracked & Evaluated)
+
+| Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
+| :--- | :--- | :--- | :---: | :--- | :--- | :---: |
+"""
+    if not index_entries:
+        content += "| *No index data* | - | - | - | - | - | - |\n"
+    else:
+        seen_index_syms = set()
+        for item in index_entries:
+            sym = item["symbol"]
+            # Show top strategy per index
+            if sym in seen_index_syms:
+                continue
+            seen_index_syms.add(sym)
+            price = item["price"]
+            regime = item["regime"]
+            score_out_of_10 = item["score"] / 10.0
+            score_str = f"{score_out_of_10:.1f}"
+            strat = item["strategy"]
+            leg_str = item["legs"]
+            grade = item["grade"]
+            content += f"| **{sym}** | {curr}{price:,.2f} | {regime} | **{score_str}** | {strat} | `{leg_str}` | {grade} |\n"
+
+    content += f"""
+---
+
+## 📈 Part 2: Cash Market (Equity Swing Calls with Entry, Targets & Stop Loss)
 
 | Rank | Symbol | Price | Regime | Score / 10 | Action | Entry | Stop Loss | Target 1 | Target 2 | R:R | Position Status |
-| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 """
 
     if not cash_entries:
@@ -235,7 +273,7 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
     content += f"""
 ---
 
-## ⚡ Part 2: Derivatives Market (Options Spreads, Condors & Futures Leaderboard)
+## ⚡ Part 3: Derivatives Market (Options Spreads, Condors & Futures Leaderboard)
 
 | Rank | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |

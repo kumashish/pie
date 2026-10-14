@@ -1,21 +1,33 @@
 # 🇮🇳 Indian Markets (NSE / BSE) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 14, 10:18 IST
+**Last Automated Run**: Oct 14, 10:58 IST
 
-> **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0**).
+> **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0** for individual stocks; Benchmark Indices always tracked).
 
 ---
 
-## 📈 Part 1: Cash Market (Equity Swing Calls with Entry, Targets & Stop Loss)
+## 🌐 Part 1: Macro Benchmark Indices (Always Tracked & Evaluated)
+
+| Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
+| :--- | :--- | :--- | :---: | :--- | :--- | :---: |
+| **NIFTY_FIN_SERVICE.NS** | ₹25,116.25 | Bear | **5.9** | Credit Spread | `S1x-Nov-26300CE / B1x-Nov-26550CE` | C (Moderate) |
+| **^BSESN** | ₹73,114.65 | Bear | **5.8** | Credit Spread | `S1x-Nov-76700CE / B1x-Nov-77500CE` | C (Moderate) |
+| **^NSEI** | ₹22,730.75 | Bear | **5.7** | Credit Spread | `S1x-Nov-23500CE / B1x-Nov-23700CE` | C (Moderate) |
+| **^NSEMDCP50** | ₹17,026.80 | Bear | **4.9** | Iron Condor | `B1x-Nov-16050PE / S1x-Nov-16250PE / S1x-Nov-17850CE / B1x-Nov-18050CE` | C (Moderate) |
+| **^NSEBANK** | ₹55,466.70 | Strong Bear | **4.8** | Credit Spread | `S1x-Nov-58200CE / B1x-Nov-58800CE` | C (Moderate) |
+
+---
+
+## 📈 Part 2: Cash Market (Equity Swing Calls with Entry, Targets & Stop Loss)
 
 | Rank | Symbol | Price | Regime | Score / 10 | Action | Entry | Stop Loss | Target 1 | Target 2 | R:R | Position Status |
-| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | **#1** | **KOTAKBANK.NS** | ₹443.55 | Bull | **7.8** | 🟢 Buy | ₹441.50 | ₹426.63 | ₹510.08 | ₹554.44 | 6.6x | 🟢 Ongoing (+0.5%) |
 | **#2** | **NESTLEIND.NS** | ₹1,370.80 | Bull | **7.0** | 🟢 Buy | ₹1,339.00 | ₹1,331.36 | ₹1,576.42 | ₹1,713.50 | 8.7x | 🟢 Ongoing (+2.4%) |
 
 ---
 
-## ⚡ Part 2: Derivatives Market (Options Spreads, Condors & Futures Leaderboard)
+## ⚡ Part 3: Derivatives Market (Options Spreads, Condors & Futures Leaderboard)
 
 | Rank | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |

@@ -1,15 +1,28 @@
 # 🇺🇸 U.S. Markets (NYSE / NASDAQ) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 14, 10:24 IST
+**Last Automated Run**: Oct 14, 10:44 IST
 
-> **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0**).
+> **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0** for individual stocks; Benchmark Indices always tracked).
 
 ---
 
-## 📈 Part 1: Cash Market (Equity Swing Calls with Entry, Targets & Stop Loss)
+## 🌐 Part 1: Macro Benchmark Indices (Always Tracked & Evaluated)
+
+| Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
+| :--- | :--- | :--- | :---: | :--- | :--- | :---: |
+| **IWM** | $276.70 | Bear | **7.6** | Iron Condor | `Buy 1x IWM 20-Nov-2026 255 Put /  Sell 1x IWM 20-Nov-2026 260 Put /  Sell 1x IWM 20-Nov-2026 290 Call /  Buy 1x IWM 20-Nov-2026 295 Call` | B (Good) |
+| **DIA** | $516.21 | Neutral | **7.3** | Iron Condor | `Buy 1x DIA 20-Nov-2026 485 Put /  Sell 1x DIA 20-Nov-2026 490 Put /  Sell 1x DIA 20-Nov-2026 540 Call /  Buy 1x DIA 20-Nov-2026 545 Call` | B (Good) |
+| **VOO** | $715.20 | Bull | **6.8** | Credit Spread | `Sell 1x VOO 20-Nov-2026 680 Put /  Buy 1x VOO 20-Nov-2026 675 Put` | B (Good) |
+| **QQQ** | $743.57 | Bull | **6.8** | Credit Spread | `Sell 1x QQQ 20-Nov-2026 710 Put /  Buy 1x QQQ 20-Nov-2026 700 Put` | B (Good) |
+| **VTI** | $381.32 | Bull | **6.7** | Credit Spread | `Sell 1x VTI 20-Nov-2026 360 Put /  Buy 1x VTI 20-Nov-2026 355 Put` | B (Good) |
+| **SPY** | $778.01 | Bull | **4.6** | Credit Spread | `Sell 1x SPY 20-Nov-2026 740 Put /  Buy 1x SPY 20-Nov-2026 730 Put` | C (Moderate) |
+
+---
+
+## 📈 Part 2: Cash Market (Equity Swing Calls with Entry, Targets & Stop Loss)
 
 | Rank | Symbol | Price | Regime | Score / 10 | Action | Entry | Stop Loss | Target 1 | Target 2 | R:R | Position Status |
-| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | **#1** | **DIS** | $108.58 | Strong Bull | **9.0** | 🟢 Buy | $108.05 | $104.42 | $124.87 | $135.72 | 6.5x | 🟢 Ongoing (+0.5%) |
 | **#2** | **MSFT** | $543.45 | Strong Bull | **8.5** | 🟢 Buy | $535.07 | $520.59 | $624.97 | $679.31 | 5.9x | 🟢 Ongoing (+1.6%) |
 | **#3** | **AAPL** | $341.27 | Strong Bull | **8.2** | 🟢 Buy | $336.64 | $327.78 | $392.46 | $426.59 | 6.3x | 🟢 Ongoing (+1.4%) |
@@ -33,7 +46,7 @@
 
 ---
 
-## ⚡ Part 2: Derivatives Market (Options Spreads, Condors & Futures Leaderboard)
+## ⚡ Part 3: Derivatives Market (Options Spreads, Condors & Futures Leaderboard)
 
 | Rank | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |
