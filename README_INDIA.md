@@ -1,6 +1,6 @@
 # 🇮🇳 Indian Markets (NSE / BSE) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 14, 09:41 IST
+**Last Automated Run**: Oct 14, 10:18 IST
 
 > **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0**).
 
@@ -10,7 +10,8 @@
 
 | Rank | Symbol | Price | Regime | Score / 10 | Action | Entry | Stop Loss | Target 1 | Target 2 | R:R | Position Status |
 | :---: | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **#1** | **KOTAKBANK.NS** | ₹442.30 | Bull | **7.8** | 🟢 Buy | ₹441.50 | ₹425.38 | ₹508.64 | ₹552.88 | 6.5x | 🟢 Ongoing (+0.2%) |
+| **#1** | **KOTAKBANK.NS** | ₹443.55 | Bull | **7.8** | 🟢 Buy | ₹441.50 | ₹426.63 | ₹510.08 | ₹554.44 | 6.6x | 🟢 Ongoing (+0.5%) |
+| **#2** | **NESTLEIND.NS** | ₹1,370.80 | Bull | **7.0** | 🟢 Buy | ₹1,339.00 | ₹1,331.36 | ₹1,576.42 | ₹1,713.50 | 8.7x | 🟢 Ongoing (+2.4%) |
 
 ---
 
@@ -18,14 +19,14 @@
 
 | Rank | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- | :---: |
-| **#1** | **AXISBANK.NS** | ₹1,263.20 | Neutral | **9.6** | Iron Condor | `B1x-Nov-1150PE / S1x-Nov-1200PE / S1x-Nov-1300CE / B1x-Nov-1350CE` | A (Optimal) |
-| **#2** | **DRREDDY.NS** | ₹1,220.90 | Neutral | **9.5** | Iron Condor | `B1x-Nov-1000PE / S1x-Nov-1100PE / S1x-Nov-1300CE / B1x-Nov-1400CE` | A (Optimal) |
-| **#3** | **TITAN.NS** | ₹4,458.40 | Neutral | **9.0** | Iron Condor | `B1x-Nov-4150PE / S1x-Nov-4250PE / S1x-Nov-4650CE / B1x-Nov-4750CE` | A (Optimal) |
-| **#4** | **DIVISLAB.NS** | ₹9,160.50 | Bull | **8.2** | Iron Condor | `B1x-Nov-8600PE / S1x-Nov-8800PE / S1x-Nov-9600CE / B1x-Nov-9800CE` | A (Optimal) |
-| **#5** | **SHRIRAMFIN.NS** | ₹967.30 | Bear | **8.0** | Iron Condor | `B1x-Nov-895PE / S1x-Nov-920PE / S1x-Nov-1010CE / B1x-Nov-1035CE` | B (Good) |
-| **#6** | **TECHM.NS** | ₹1,545.20 | Bull | **7.7** | Iron Condor | `B1x-Nov-1400PE / S1x-Nov-1450PE / S1x-Nov-1650CE / B1x-Nov-1700CE` | B (Good) |
-| **#7** | **BAJAJ-AUTO.NS** | ₹10,322.00 | Bear | **7.5** | Iron Condor | `B1x-Nov-9600PE / S1x-Nov-9800PE / S1x-Nov-11000CE / B1x-Nov-11200CE` | B (Good) |
-| **#8** | **GRASIM.NS** | ₹2,894.40 | Bear | **7.2** | Iron Condor | `B1x-Nov-2700PE / S1x-Nov-2750PE / S1x-Nov-3050CE / B1x-Nov-3100CE` | B (Good) |
+| **#1** | **AXISBANK.NS** | ₹1,269.50 | Neutral | **9.6** | Iron Condor | `B1x-Nov-1150PE / S1x-Nov-1200PE / S1x-Nov-1300CE / B1x-Nov-1350CE` | A (Optimal) |
+| **#2** | **DRREDDY.NS** | ₹1,217.50 | Neutral | **9.6** | Iron Condor | `B1x-Nov-1000PE / S1x-Nov-1100PE / S1x-Nov-1300CE / B1x-Nov-1400CE` | A (Optimal) |
+| **#3** | **DIVISLAB.NS** | ₹9,090.00 | Bull | **8.2** | Iron Condor | `B1x-Nov-8400PE / S1x-Nov-8600PE / S1x-Nov-9400CE / B1x-Nov-9600CE` | A (Optimal) |
+| **#4** | **SHRIRAMFIN.NS** | ₹956.45 | Bear | **7.8** | Iron Condor | `B1x-Nov-880PE / S1x-Nov-910PE / S1x-Nov-1000CE / B1x-Nov-1030CE` | B (Good) |
+| **#5** | **TECHM.NS** | ₹1,554.60 | Bull | **7.6** | Iron Condor | `B1x-Nov-1400PE / S1x-Nov-1450PE / S1x-Nov-1650CE / B1x-Nov-1700CE` | B (Good) |
+| **#6** | **BAJAJ-AUTO.NS** | ₹10,312.00 | Bear | **7.4** | Iron Condor | `B1x-Nov-9600PE / S1x-Nov-9800PE / S1x-Nov-11000CE / B1x-Nov-11200CE` | B (Good) |
+| **#7** | **TITAN.NS** | ₹4,450.20 | Bear | **7.2** | Iron Condor | `B1x-Nov-4150PE / S1x-Nov-4250PE / S1x-Nov-4650CE / B1x-Nov-4750CE` | B (Good) |
+| **#8** | **GRASIM.NS** | ₹2,893.60 | Bear | **7.2** | Iron Condor | `B1x-Nov-2700PE / S1x-Nov-2750PE / S1x-Nov-3050CE / B1x-Nov-3100CE` | B (Good) |
 
 ---
 

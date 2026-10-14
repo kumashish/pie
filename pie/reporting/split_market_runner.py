@@ -161,7 +161,8 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
 
                         if not legs and data.get("estimated_trade") and data["estimated_trade"].get("legs"):
                             raw_legs = " / ".join([l["summary"] for l in data["estimated_trade"]["legs"]])
-                            legs = format_short_indian_strategy(raw_legs) if market_type.lower() == "india" else raw_legs
+                            # Apply formatter for both markets to collapse duplicate legs (e.g., butterfly 2x)
+                            legs = format_short_indian_strategy(raw_legs)
                         elif legs and market_type.lower() == "india":
                             legs = format_short_indian_strategy(legs.replace("<br>", " / "))
                         elif legs:

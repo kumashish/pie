@@ -1,6 +1,6 @@
 {
   "symbol": "HCLTECH.NS",
-  "last_price": 1335.2,
+  "last_price": 1339.1,
   "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 37.5,
   "confidence_grade": "C",
   "confidence_percentage": 37.5,
-  "vix": 14.47,
+  "vix": 14.58,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -16,12 +16,12 @@
   "recommendation_reason": "Best fit strategy (58.2% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 1335.2,
-    "stop_loss": 1267.48,
-    "target_1": 1134.92,
-    "target_2": 1001.4,
-    "risk_per_share": 67.72,
-    "risk_reward": 4.9,
+    "entry": 1339.1,
+    "stop_loss": 1267.63,
+    "target_1": 1138.23,
+    "target_2": 1004.32,
+    "risk_per_share": 71.47,
+    "risk_reward": 4.7,
     "atr14": 36.14,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
@@ -34,7 +34,7 @@
         "strike": 1250.0,
         "strike_formatted": "1250",
         "option_type": "Put",
-        "delta": -0.067,
+        "delta": -0.061,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -46,7 +46,7 @@
         "strike": 1300.0,
         "strike_formatted": "1300",
         "option_type": "Put",
-        "delta": -0.245,
+        "delta": -0.228,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -58,7 +58,7 @@
         "strike": 1400.0,
         "strike_formatted": "1400",
         "option_type": "Call",
-        "delta": 0.201,
+        "delta": 0.22,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -70,7 +70,7 @@
         "strike": 1450.0,
         "strike_formatted": "1450",
         "option_type": "Call",
-        "delta": 0.059,
+        "delta": 0.068,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -81,217 +81,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1295.14,
-    "take_profit_price": 1375.26,
-    "net_delta": 0.036,
-    "net_theta": 0.266,
+    "stop_loss_price": 1298.93,
+    "take_profit_price": 1379.27,
+    "net_delta": 0.015,
+    "net_theta": 0.272,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1068.16,
+        "price": 1071.28,
         "pnl": -100.0
       },
       {
-        "price": 1078.84,
+        "price": 1081.99,
         "pnl": -100.0
       },
       {
-        "price": 1089.52,
+        "price": 1092.71,
         "pnl": -100.0
       },
       {
-        "price": 1100.2,
+        "price": 1103.42,
         "pnl": -100.0
       },
       {
-        "price": 1110.89,
+        "price": 1114.13,
         "pnl": -100.0
       },
       {
-        "price": 1121.57,
+        "price": 1124.84,
         "pnl": -100.0
       },
       {
-        "price": 1132.25,
+        "price": 1135.56,
         "pnl": -100.0
       },
       {
-        "price": 1142.93,
+        "price": 1146.27,
         "pnl": -100.0
       },
       {
-        "price": 1153.61,
+        "price": 1156.98,
         "pnl": -100.0
       },
       {
-        "price": 1164.29,
+        "price": 1167.7,
         "pnl": -100.0
       },
       {
-        "price": 1174.98,
+        "price": 1178.41,
         "pnl": -100.0
       },
       {
-        "price": 1185.66,
+        "price": 1189.12,
         "pnl": -100.0
       },
       {
-        "price": 1196.34,
+        "price": 1199.83,
         "pnl": -100.0
       },
       {
-        "price": 1207.02,
+        "price": 1210.55,
         "pnl": -100.0
       },
       {
-        "price": 1217.7,
+        "price": 1221.26,
         "pnl": -100.0
       },
       {
-        "price": 1228.38,
+        "price": 1231.97,
         "pnl": -100.0
       },
       {
-        "price": 1239.07,
+        "price": 1242.68,
         "pnl": -100.0
       },
       {
-        "price": 1249.75,
-        "pnl": -100.0
+        "price": 1253.4,
+        "pnl": -96.6
       },
       {
-        "price": 1260.43,
-        "pnl": -89.57
+        "price": 1264.11,
+        "pnl": -85.89
       },
       {
-        "price": 1271.11,
-        "pnl": -78.89
+        "price": 1274.82,
+        "pnl": -75.18
       },
       {
-        "price": 1281.79,
-        "pnl": -68.21
+        "price": 1285.54,
+        "pnl": -64.46
       },
       {
-        "price": 1292.47,
-        "pnl": -57.53
+        "price": 1296.25,
+        "pnl": -53.75
       },
       {
-        "price": 1303.16,
+        "price": 1306.96,
         "pnl": -50.0
       },
       {
-        "price": 1313.84,
+        "price": 1317.67,
         "pnl": -50.0
       },
       {
-        "price": 1324.52,
+        "price": 1328.39,
         "pnl": -50.0
       },
       {
-        "price": 1335.2,
+        "price": 1339.1,
         "pnl": -50.0
       },
       {
-        "price": 1345.88,
+        "price": 1349.81,
         "pnl": -50.0
       },
       {
-        "price": 1356.56,
+        "price": 1360.53,
         "pnl": -50.0
       },
       {
-        "price": 1367.24,
+        "price": 1371.24,
         "pnl": -50.0
       },
       {
-        "price": 1377.93,
+        "price": 1381.95,
         "pnl": -50.0
       },
       {
-        "price": 1388.61,
+        "price": 1392.66,
         "pnl": -50.0
       },
       {
-        "price": 1399.29,
-        "pnl": -50.0
+        "price": 1403.38,
+        "pnl": -53.38
       },
       {
-        "price": 1409.97,
-        "pnl": -59.97
+        "price": 1414.09,
+        "pnl": -64.09
       },
       {
-        "price": 1420.65,
-        "pnl": -70.65
+        "price": 1424.8,
+        "pnl": -74.8
       },
       {
-        "price": 1431.33,
-        "pnl": -81.33
+        "price": 1435.52,
+        "pnl": -85.52
       },
       {
-        "price": 1442.02,
-        "pnl": -92.02
+        "price": 1446.23,
+        "pnl": -96.23
       },
       {
-        "price": 1452.7,
+        "price": 1456.94,
         "pnl": -100.0
       },
       {
-        "price": 1463.38,
+        "price": 1467.65,
         "pnl": -100.0
       },
       {
-        "price": 1474.06,
+        "price": 1478.37,
         "pnl": -100.0
       },
       {
-        "price": 1484.74,
+        "price": 1489.08,
         "pnl": -100.0
       },
       {
-        "price": 1495.42,
+        "price": 1499.79,
         "pnl": -100.0
       },
       {
-        "price": 1506.11,
+        "price": 1510.5,
         "pnl": -100.0
       },
       {
-        "price": 1516.79,
+        "price": 1521.22,
         "pnl": -100.0
       },
       {
-        "price": 1527.47,
+        "price": 1531.93,
         "pnl": -100.0
       },
       {
-        "price": 1538.15,
+        "price": 1542.64,
         "pnl": -100.0
       },
       {
-        "price": 1548.83,
+        "price": 1553.36,
         "pnl": -100.0
       },
       {
-        "price": 1559.51,
+        "price": 1564.07,
         "pnl": -100.0
       },
       {
-        "price": 1570.2,
+        "price": 1574.78,
         "pnl": -100.0
       },
       {
-        "price": 1580.88,
+        "price": 1585.49,
         "pnl": -100.0
       },
       {
-        "price": 1591.56,
+        "price": 1596.21,
         "pnl": -100.0
       },
       {
-        "price": 1602.24,
+        "price": 1606.92,
         "pnl": -100.0
       }
     ],
@@ -317,7 +317,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 47.0,
+      "score": 46.6,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -330,19 +330,19 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-1335.2PE"
+      "legs_summary": "S1x-Nov-1339.1PE"
     }
   ],
   "indicators": {
-    "EMA20": "1247.07",
-    "EMA50": "1254.93",
-    "EMA100": "1265.90",
-    "EMA200": "1320.02",
-    "RSI(14)": "65.84",
+    "EMA20": "1247.45",
+    "EMA50": "1255.08",
+    "EMA100": "1265.97",
+    "EMA200": "1320.06",
+    "RSI(14)": "66.30",
     "ATR(14)": "36.14",
     "ADX(14)": "19.87",
-    "BB(20,2)": "1.07",
-    "P_SHAPE(20)": "31.09"
+    "BB(20,2)": "1.09",
+    "P_SHAPE(20)": "31.13"
   },
   "rules": [
     {
@@ -460,11 +460,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "HCL Tech stock outlook: AI growth, strong Q2 results offer upside, but there's a catch; check target...",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSlZvdnhkMHdtaWlZVVpYSGIzM0hJdk1JWGZrV0tKYjV0ZjhmQzlmc2pyRTZZUUxtQ3VteEEzTk5uOV9WbHFBaVJ4Z19RZXIzcXF0SHR5dllDSVJBdjBIU2ZJcXZBV0UtSkhpcmd1OGR5RGN3TjBXWEI2WmJvT2lKd2ZSb2ZLWXppY2gxOWt0QnRKdzhnSDBOeDR2ZFlJRkRmVHZrTFYyRXNpRmg1NnpLSklhQWJkUG12eFU1aXNsMjNMTi1KZklYNEUtc3hHTWFzbjRuYzNLaXdxeHhpc0hGM0xpN2h6T2wwcW00TWItZjE4eVI3ek9GdDJEMjfSAYICQVVfeXFMUGRzblNHZGExbDNCa2ZTQXpVMGZoVFJ0ekZUMU5ZR3lvWlNmZ3ZmSmN1bnVQUUxGaGJSd1VHTENRd0d6OC1mSmpPWDM0U0MwYkctZ1hyOFQzNTZyNWswQWZ4RlAyZTlFaEJldDZqWjUtTm11dU54V3VqT3Q3Qno5cXZFZEdxcE11RC1wRlpCV2swZFZVNjlFVW9aS2tnbUg5eU9VTktUU2ZhQUVLLWM1LXlPUzA2Vjd5b3NON09UQnZaZ2J1NHlrU0JzYVZYWUF4ZkdocGllNGtGdXZVaEVGckVCS1dPMkJHaDczSWZiWWM2X25qSWtMbk1qQngtTFJyb1BB?oc=5",
-      "published_at": "Tue, 13 Oct 2026",
-      "sentiment": "bullish"
+      "title": "India's HCLTech signs a pact with Anthropic, to set up business unit",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNU0FXaEFiNG9vNmZGWFE0ak9UTTZmRUYxSmJvcTJNVzFlMkdTdHNxM2M3ZkZCallTZ0hlRHA4THpQWHlOcnAtZ214ankzbHpRYU1sSzh4Ti1QVXVaQkYzb1Fmb0ZJTi1FQmJnUDhONWRxYzNkWThQcWo1WURBZDlUdzJUaTJ1Mk9jUXpFSlVLWkFXWmFDMWVSbnR5YVBNRkg5bTEyeGhnUC1ISVgtdGZFNjJ6OHh6XzZ5dEF6XzFGLWx5TmNoNVBidmJ3dTNpTE9oT2R0VFU3UUl0MVRQamfSAdcBQVVfeXFMTTB2dzNReFNVb0tLZ2FGYTNzaUJ0NnZyLTM0UjhLdEdzckw2R21nTnFrMHBOemI3blB6MEpsbDdXMGZPb1JYNGVsRVNIQ25WMkxxci1ZcWl3UGV6V2dhaHo4S1A2bnJPRUlEeVNKZkJJTHY3OTliNmxKeE9HajBoYWI1VER5WEJWSW1iQ1Z5aFl2aEsxcFZBUXlTR29Hek9RcDdLRTZSdXZRUHZwOWEtU0xWUHBGWkhnNklKMFUxMFNpWEREZzNrLURMRGZDbTVVa0JpSmcxLTg?oc=5",
+      "published_at": "Mon, 12 Oct 2026",
+      "sentiment": "neutral"
     }
   ]
 }

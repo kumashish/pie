@@ -1,6 +1,6 @@
 {
   "symbol": "BEL.NS",
-  "last_price": 381.25,
+  "last_price": 381.7,
   "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 20.0,
   "confidence_grade": "C",
   "confidence_percentage": 20.0,
-  "vix": 14.48,
+  "vix": 14.56,
   "strategy_type": "cash_swing_short",
   "strategy_display": "Cash Swing Short",
   "trade_profile": "Advisory | 30-45 DTE",
@@ -16,10 +16,10 @@
   "recommendation_reason": "Best fit strategy (52.0% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 381.25,
-    "stop_loss": 395.53,
-    "target_1": 324.06,
-    "target_2": 285.94,
+    "entry": 381.7,
+    "stop_loss": 395.98,
+    "target_1": 324.44,
+    "target_2": 286.27,
     "risk_per_share": 14.28,
     "risk_reward": 6.7,
     "atr14": 7.14,
@@ -31,231 +31,231 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 381.25,
-        "strike_formatted": "381.2",
+        "strike": 381.70001220703125,
+        "strike_formatted": "381.7",
         "option_type": "Put",
-        "delta": -0.444,
+        "delta": -0.445,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
-        "summary": "Sell 1x BEL.NS 24-Nov-2026 381.2 Put"
+        "summary": "Sell 1x BEL.NS 24-Nov-2026 381.7 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.71,
-    "stop_loss_price": 391.96,
-    "take_profit_price": 359.83,
-    "net_delta": 0.444,
-    "net_theta": 0.065,
+    "stop_loss_price": 392.41,
+    "take_profit_price": 360.28,
+    "net_delta": 0.445,
+    "net_theta": 0.066,
     "probability_of_profit": 0.0,
-    "var_95": 27.98,
+    "var_95": 28.19,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 305.0,
-        "pnl": -86.96
+        "price": 305.36,
+        "pnl": -87.05
       },
       {
-        "price": 308.05,
-        "pnl": -83.91
+        "price": 308.41,
+        "pnl": -84.0
       },
       {
-        "price": 311.1,
-        "pnl": -80.86
+        "price": 311.47,
+        "pnl": -80.94
       },
       {
-        "price": 314.15,
-        "pnl": -77.81
+        "price": 314.52,
+        "pnl": -77.89
       },
       {
-        "price": 317.2,
-        "pnl": -74.76
+        "price": 317.57,
+        "pnl": -74.84
       },
       {
-        "price": 320.25,
-        "pnl": -71.71
+        "price": 320.63,
+        "pnl": -71.78
       },
       {
-        "price": 323.3,
-        "pnl": -68.66
+        "price": 323.68,
+        "pnl": -68.73
       },
       {
-        "price": 326.35,
-        "pnl": -65.61
+        "price": 326.74,
+        "pnl": -65.67
       },
       {
-        "price": 329.4,
-        "pnl": -62.56
+        "price": 329.79,
+        "pnl": -62.62
       },
       {
-        "price": 332.45,
-        "pnl": -59.51
+        "price": 332.84,
+        "pnl": -59.57
       },
       {
-        "price": 335.5,
-        "pnl": -56.46
+        "price": 335.9,
+        "pnl": -56.51
       },
       {
-        "price": 338.55,
-        "pnl": -53.41
+        "price": 338.95,
+        "pnl": -53.46
       },
       {
-        "price": 341.6,
-        "pnl": -50.36
+        "price": 342.0,
+        "pnl": -50.41
       },
       {
-        "price": 344.65,
-        "pnl": -47.31
+        "price": 345.06,
+        "pnl": -47.35
       },
       {
-        "price": 347.7,
-        "pnl": -44.26
+        "price": 348.11,
+        "pnl": -44.3
       },
       {
-        "price": 350.75,
-        "pnl": -41.21
+        "price": 351.16,
+        "pnl": -41.25
       },
       {
-        "price": 353.8,
-        "pnl": -38.16
+        "price": 354.22,
+        "pnl": -38.19
       },
       {
-        "price": 356.85,
-        "pnl": -35.11
+        "price": 357.27,
+        "pnl": -35.14
       },
       {
-        "price": 359.9,
-        "pnl": -32.06
+        "price": 360.32,
+        "pnl": -32.09
       },
       {
-        "price": 362.95,
-        "pnl": -29.01
+        "price": 363.38,
+        "pnl": -29.03
       },
       {
-        "price": 366.0,
-        "pnl": -25.96
+        "price": 366.43,
+        "pnl": -25.98
       },
       {
-        "price": 369.05,
-        "pnl": -22.91
+        "price": 369.49,
+        "pnl": -22.92
       },
       {
-        "price": 372.1,
-        "pnl": -19.86
+        "price": 372.54,
+        "pnl": -19.87
       },
       {
-        "price": 375.15,
-        "pnl": -16.81
+        "price": 375.59,
+        "pnl": -16.82
       },
       {
-        "price": 378.2,
+        "price": 378.65,
         "pnl": -13.76
       },
       {
-        "price": 381.25,
+        "price": 381.7,
         "pnl": -10.71
       },
       {
-        "price": 384.3,
+        "price": 384.75,
         "pnl": -10.71
       },
       {
-        "price": 387.35,
+        "price": 387.81,
         "pnl": -10.71
       },
       {
-        "price": 390.4,
+        "price": 390.86,
         "pnl": -10.71
       },
       {
-        "price": 393.45,
+        "price": 393.91,
         "pnl": -10.71
       },
       {
-        "price": 396.5,
+        "price": 396.97,
         "pnl": -10.71
       },
       {
-        "price": 399.55,
+        "price": 400.02,
         "pnl": -10.71
       },
       {
-        "price": 402.6,
+        "price": 403.08,
         "pnl": -10.71
       },
       {
-        "price": 405.65,
+        "price": 406.13,
         "pnl": -10.71
       },
       {
-        "price": 408.7,
+        "price": 409.18,
         "pnl": -10.71
       },
       {
-        "price": 411.75,
+        "price": 412.24,
         "pnl": -10.71
       },
       {
-        "price": 414.8,
+        "price": 415.29,
         "pnl": -10.71
       },
       {
-        "price": 417.85,
+        "price": 418.34,
         "pnl": -10.71
       },
       {
-        "price": 420.9,
+        "price": 421.4,
         "pnl": -10.71
       },
       {
-        "price": 423.95,
+        "price": 424.45,
         "pnl": -10.71
       },
       {
-        "price": 427.0,
+        "price": 427.5,
         "pnl": -10.71
       },
       {
-        "price": 430.05,
+        "price": 430.56,
         "pnl": -10.71
       },
       {
-        "price": 433.1,
+        "price": 433.61,
         "pnl": -10.71
       },
       {
-        "price": 436.15,
+        "price": 436.66,
         "pnl": -10.71
       },
       {
-        "price": 439.2,
+        "price": 439.72,
         "pnl": -10.71
       },
       {
-        "price": 442.25,
+        "price": 442.77,
         "pnl": -10.71
       },
       {
-        "price": 445.3,
+        "price": 445.83,
         "pnl": -10.71
       },
       {
-        "price": 448.35,
+        "price": 448.88,
         "pnl": -10.71
       },
       {
-        "price": 451.4,
+        "price": 451.93,
         "pnl": -10.71
       },
       {
-        "price": 454.45,
+        "price": 454.99,
         "pnl": -10.71
       },
       {
-        "price": 457.5,
+        "price": 458.04,
         "pnl": -10.71
       }
     ],
@@ -276,12 +276,12 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-381.2PE"
+      "legs_summary": "S1x-Nov-381.7PE"
     },
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 42.1,
+      "score": 43.5,
       "grade": "C (Moderate)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
@@ -289,15 +289,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "384.25",
-    "EMA50": "393.63",
-    "EMA100": "401.87",
+    "EMA20": "384.29",
+    "EMA50": "393.64",
+    "EMA100": "401.88",
     "EMA200": "404.98",
-    "RSI(14)": "44.31",
+    "RSI(14)": "44.76",
     "ATR(14)": "7.14",
     "ADX(14)": "31.65",
-    "BB(20,2)": "0.39",
-    "P_SHAPE(20)": "66.66"
+    "BB(20,2)": "0.40",
+    "P_SHAPE(20)": "66.68"
   },
   "rules": [
     {

@@ -1,6 +1,6 @@
 {
   "symbol": "HINDALCO.NS",
-  "last_price": 894.4,
+  "last_price": 894.55,
   "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 32.5,
   "confidence_grade": "C",
   "confidence_percentage": 32.5,
-  "vix": 14.47,
+  "vix": 14.57,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -16,13 +16,13 @@
   "recommendation_reason": "Best fit strategy (67.3% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 894.4,
-    "stop_loss": 932.69,
-    "target_1": 760.24,
-    "target_2": 670.8,
-    "risk_per_share": 38.29,
+    "entry": 894.55,
+    "stop_loss": 932.95,
+    "target_1": 760.37,
+    "target_2": 670.91,
+    "risk_per_share": 38.4,
     "risk_reward": 5.8,
-    "atr14": 19.14,
+    "atr14": 19.2,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -34,7 +34,7 @@
         "strike": 830.0,
         "strike_formatted": "830",
         "option_type": "Put",
-        "delta": -0.046,
+        "delta": -0.047,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -46,7 +46,7 @@
         "strike": 850.0,
         "strike_formatted": "850",
         "option_type": "Put",
-        "delta": -0.117,
+        "delta": -0.118,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -58,7 +58,7 @@
         "strike": 940.0,
         "strike_formatted": "940",
         "option_type": "Call",
-        "delta": 0.188,
+        "delta": 0.191,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -70,7 +70,7 @@
         "strike": 960.0,
         "strike_formatted": "960",
         "option_type": "Call",
-        "delta": 0.093,
+        "delta": 0.096,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -81,217 +81,217 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 35.0,
-    "stop_loss_price": 867.57,
-    "take_profit_price": 921.23,
+    "stop_loss_price": 867.71,
+    "take_profit_price": 921.39,
     "net_delta": -0.024,
-    "net_theta": 0.108,
+    "net_theta": 0.11,
     "probability_of_profit": 0.0,
     "var_95": 20.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 715.52,
+        "price": 715.64,
         "pnl": -55.0
       },
       {
-        "price": 722.68,
+        "price": 722.8,
         "pnl": -55.0
       },
       {
-        "price": 729.83,
+        "price": 729.95,
         "pnl": -55.0
       },
       {
-        "price": 736.99,
+        "price": 737.11,
         "pnl": -55.0
       },
       {
-        "price": 744.14,
+        "price": 744.27,
         "pnl": -55.0
       },
       {
-        "price": 751.3,
+        "price": 751.42,
         "pnl": -55.0
       },
       {
-        "price": 758.45,
+        "price": 758.58,
         "pnl": -55.0
       },
       {
-        "price": 765.61,
+        "price": 765.73,
         "pnl": -55.0
       },
       {
-        "price": 772.76,
+        "price": 772.89,
         "pnl": -55.0
       },
       {
-        "price": 779.92,
+        "price": 780.05,
         "pnl": -55.0
       },
       {
-        "price": 787.07,
+        "price": 787.2,
         "pnl": -55.0
       },
       {
-        "price": 794.23,
+        "price": 794.36,
         "pnl": -55.0
       },
       {
-        "price": 801.38,
+        "price": 801.52,
         "pnl": -55.0
       },
       {
-        "price": 808.54,
+        "price": 808.67,
         "pnl": -55.0
       },
       {
-        "price": 815.69,
+        "price": 815.83,
         "pnl": -55.0
       },
       {
-        "price": 822.85,
+        "price": 822.99,
         "pnl": -55.0
       },
       {
-        "price": 830.0,
-        "pnl": -55.0
+        "price": 830.14,
+        "pnl": -54.86
       },
       {
-        "price": 837.16,
-        "pnl": -47.84
+        "price": 837.3,
+        "pnl": -47.7
       },
       {
-        "price": 844.31,
-        "pnl": -40.69
+        "price": 844.46,
+        "pnl": -40.54
       },
       {
-        "price": 851.47,
+        "price": 851.61,
         "pnl": -35.0
       },
       {
-        "price": 858.62,
+        "price": 858.77,
         "pnl": -35.0
       },
       {
-        "price": 865.78,
+        "price": 865.92,
         "pnl": -35.0
       },
       {
-        "price": 872.93,
+        "price": 873.08,
         "pnl": -35.0
       },
       {
-        "price": 880.09,
+        "price": 880.24,
         "pnl": -35.0
       },
       {
-        "price": 887.24,
+        "price": 887.39,
         "pnl": -35.0
       },
       {
-        "price": 894.4,
+        "price": 894.55,
         "pnl": -35.0
       },
       {
-        "price": 901.56,
+        "price": 901.71,
         "pnl": -35.0
       },
       {
-        "price": 908.71,
+        "price": 908.86,
         "pnl": -35.0
       },
       {
-        "price": 915.87,
+        "price": 916.02,
         "pnl": -35.0
       },
       {
-        "price": 923.02,
+        "price": 923.18,
         "pnl": -35.0
       },
       {
-        "price": 930.18,
+        "price": 930.33,
         "pnl": -35.0
       },
       {
-        "price": 937.33,
+        "price": 937.49,
         "pnl": -35.0
       },
       {
-        "price": 944.49,
-        "pnl": -39.49
+        "price": 944.64,
+        "pnl": -39.64
       },
       {
-        "price": 951.64,
-        "pnl": -46.64
+        "price": 951.8,
+        "pnl": -46.8
       },
       {
-        "price": 958.8,
-        "pnl": -53.8
+        "price": 958.96,
+        "pnl": -53.96
       },
       {
-        "price": 965.95,
+        "price": 966.11,
         "pnl": -55.0
       },
       {
-        "price": 973.11,
+        "price": 973.27,
         "pnl": -55.0
       },
       {
-        "price": 980.26,
+        "price": 980.43,
         "pnl": -55.0
       },
       {
-        "price": 987.42,
+        "price": 987.58,
         "pnl": -55.0
       },
       {
-        "price": 994.57,
+        "price": 994.74,
         "pnl": -55.0
       },
       {
-        "price": 1001.73,
+        "price": 1001.9,
         "pnl": -55.0
       },
       {
-        "price": 1008.88,
+        "price": 1009.05,
         "pnl": -55.0
       },
       {
-        "price": 1016.04,
+        "price": 1016.21,
         "pnl": -55.0
       },
       {
-        "price": 1023.19,
+        "price": 1023.37,
         "pnl": -55.0
       },
       {
-        "price": 1030.35,
+        "price": 1030.52,
         "pnl": -55.0
       },
       {
-        "price": 1037.5,
+        "price": 1037.68,
         "pnl": -55.0
       },
       {
-        "price": 1044.66,
+        "price": 1044.83,
         "pnl": -55.0
       },
       {
-        "price": 1051.81,
+        "price": 1051.99,
         "pnl": -55.0
       },
       {
-        "price": 1058.97,
+        "price": 1059.15,
         "pnl": -55.0
       },
       {
-        "price": 1066.12,
+        "price": 1066.3,
         "pnl": -55.0
       },
       {
-        "price": 1073.28,
+        "price": 1073.46,
         "pnl": -55.0
       }
     ],
@@ -326,7 +326,7 @@
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 44.4,
+      "score": 44.2,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -335,7 +335,7 @@
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 42.3,
+      "score": 41.9,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -343,12 +343,12 @@
     }
   ],
   "indicators": {
-    "EMA20": "934.50",
-    "EMA50": "967.29",
+    "EMA20": "934.51",
+    "EMA50": "967.30",
     "EMA100": "979.83",
     "EMA200": "955.05",
-    "RSI(14)": "33.25",
-    "ATR(14)": "19.14",
+    "RSI(14)": "33.28",
+    "ATR(14)": "19.20",
     "ADX(14)": "31.72",
     "BB(20,2)": "0.17",
     "P_SHAPE(20)": "47.59"
@@ -469,11 +469,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Trusting AI with your money is subject to market risks",
+      "title": "Having health insurance is not the same as being adequately protected",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhPU3F3bzhENHBzaS1qYnVBcUtjendjeVdvLUNTd29DVWNYUGU5TGRUNW02S09Wc1p5cWhKV3hyN3FYQUFPRzg3RDNEd051M2xHMGhLMzM5NXRsRzAyRWkza0JWZ09LcUFMc2RQRk1yRzFGVlE0SVE4S3hETEJNejlvTDQ4UFNNd0tYQUhNbEZnN25qU3BZZXRKekVmNHdFX2c3dEVjSVFLd3ZFc2swT9IBtgFBVV95cUxQWDlkRFlnYUtnT0RnN0VaZUFwOVM5VF9JVDk4YUpHb3RRaHJncHJsdFlOdUR4UTFTYUdYTDNZbDViemZrcVRCU28tV0hncW93ZEJWMGwyUjFXenBndm5jTlpXeS0tSm1DZzhUWjVmUGRvdGQyLU56d2V5Z2FyTkE1ZWUtSnlURVpuQUFZbVlGOS1fYmpYcDd2RlJQN2E3TThwQXpvaGVQdzQ5cTNzbFhRbkFvZzE2dw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeV8xYlJmbUFTZUdzeDNYdTlkeGFGVXpQWFNFclFIblpvVXNfWWJ6NGNrdDRhU1VIaFBxSFdrSXE4VGVEdFhFbzByWE41dHJqMlhLUXFqbU12dUNXZGdNNE91aVdfbktsTGt3ZkJqY1hwSFhGcUpibVRIWjBNTEVjVHJyUHpaem5kd2xraEl2d2syNEd3RWx2RFZSTWNmb2oxZDNWaVppaEJWUXpxRDV4NGRzSVQzbE1jekozT1B30gHDAUFVX3lxTE1abjE2NnQxbHBDMUpvSUt4VlVDSTZodE1wTG5yT3VMU3JFSWxralY3RXNOQ1JkMEpacnBvOGZ1Ry10OHNuTUtfWng5VmV5UkJ4Z1NpMW9BOXJnb2lIOEVXMVk1SEhrZTZjMVk3UmlkOElfRWVlTjd3M01Rc3BKdlNXUzN6UFpZQVJHRHFvLWhsaG1UU3hyNXJvRnE5eFF5UXprWFZRMnktclNtLVhwd1NCaXptU05GdmxGMzBSWGphclNTMA?oc=5",
       "published_at": "Mon, 12 Oct 2026",
-      "sentiment": "bearish"
+      "sentiment": "neutral"
     }
   ]
 }

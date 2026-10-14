@@ -1,6 +1,6 @@
 {
   "symbol": "ICICIBANK.NS",
-  "last_price": 1349.1,
+  "last_price": 1349.6,
   "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,21 +8,21 @@
   "fit_score": 30.0,
   "confidence_grade": "C",
   "confidence_percentage": 30.0,
-  "vix": 14.57,
+  "vix": 14.56,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (44.5% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (44.4% fit - Grade C (Moderate)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 1349.1,
-    "stop_loss": 1378.53,
-    "target_1": 1146.73,
-    "target_2": 1011.82,
-    "risk_per_share": 29.43,
-    "risk_reward": 11.5,
-    "atr14": 20.39,
+    "entry": 1349.6,
+    "stop_loss": 1378.55,
+    "target_1": 1147.16,
+    "target_2": 1012.2,
+    "risk_per_share": 28.95,
+    "risk_reward": 11.7,
+    "atr14": 20.42,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -46,7 +46,7 @@
         "strike": 1300.0,
         "strike_formatted": "1300",
         "option_type": "Put",
-        "delta": -0.185,
+        "delta": -0.182,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -58,7 +58,7 @@
         "strike": 1400.0,
         "strike_formatted": "1400",
         "option_type": "Call",
-        "delta": 0.268,
+        "delta": 0.27,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -70,7 +70,7 @@
         "strike": 1450.0,
         "strike_formatted": "1450",
         "option_type": "Call",
-        "delta": 0.091,
+        "delta": 0.092,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
@@ -81,9 +81,9 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1308.63,
-    "take_profit_price": 1389.57,
-    "net_delta": -0.036,
+    "stop_loss_price": 1309.11,
+    "take_profit_price": 1390.09,
+    "net_delta": -0.04,
     "net_theta": 0.277,
     "probability_of_profit": 0.0,
     "var_95": 50.0,
@@ -91,214 +91,214 @@
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1079.28,
+        "price": 1079.68,
         "pnl": -100.0
       },
       {
-        "price": 1090.07,
+        "price": 1090.48,
         "pnl": -100.0
       },
       {
-        "price": 1100.87,
+        "price": 1101.27,
         "pnl": -100.0
       },
       {
-        "price": 1111.66,
+        "price": 1112.07,
         "pnl": -100.0
       },
       {
-        "price": 1122.45,
+        "price": 1122.87,
         "pnl": -100.0
       },
       {
-        "price": 1133.24,
+        "price": 1133.66,
         "pnl": -100.0
       },
       {
-        "price": 1144.04,
+        "price": 1144.46,
         "pnl": -100.0
       },
       {
-        "price": 1154.83,
+        "price": 1155.26,
         "pnl": -100.0
       },
       {
-        "price": 1165.62,
+        "price": 1166.05,
         "pnl": -100.0
       },
       {
-        "price": 1176.42,
+        "price": 1176.85,
         "pnl": -100.0
       },
       {
-        "price": 1187.21,
+        "price": 1187.65,
         "pnl": -100.0
       },
       {
-        "price": 1198.0,
+        "price": 1198.44,
         "pnl": -100.0
       },
       {
-        "price": 1208.79,
+        "price": 1209.24,
         "pnl": -100.0
       },
       {
-        "price": 1219.59,
+        "price": 1220.04,
         "pnl": -100.0
       },
       {
-        "price": 1230.38,
+        "price": 1230.84,
         "pnl": -100.0
       },
       {
-        "price": 1241.17,
+        "price": 1241.63,
         "pnl": -100.0
       },
       {
-        "price": 1251.96,
-        "pnl": -98.04
+        "price": 1252.43,
+        "pnl": -97.57
       },
       {
-        "price": 1262.76,
-        "pnl": -87.24
+        "price": 1263.23,
+        "pnl": -86.77
       },
       {
-        "price": 1273.55,
-        "pnl": -76.45
+        "price": 1274.02,
+        "pnl": -75.98
       },
       {
-        "price": 1284.34,
-        "pnl": -65.66
+        "price": 1284.82,
+        "pnl": -65.18
       },
       {
-        "price": 1295.14,
-        "pnl": -54.86
+        "price": 1295.62,
+        "pnl": -54.38
       },
       {
-        "price": 1305.93,
+        "price": 1306.41,
         "pnl": -50.0
       },
       {
-        "price": 1316.72,
+        "price": 1317.21,
         "pnl": -50.0
       },
       {
-        "price": 1327.51,
+        "price": 1328.01,
         "pnl": -50.0
       },
       {
-        "price": 1338.31,
+        "price": 1338.8,
         "pnl": -50.0
       },
       {
-        "price": 1349.1,
+        "price": 1349.6,
         "pnl": -50.0
       },
       {
-        "price": 1359.89,
+        "price": 1360.4,
         "pnl": -50.0
       },
       {
-        "price": 1370.69,
+        "price": 1371.19,
         "pnl": -50.0
       },
       {
-        "price": 1381.48,
+        "price": 1381.99,
         "pnl": -50.0
       },
       {
-        "price": 1392.27,
+        "price": 1392.79,
         "pnl": -50.0
       },
       {
-        "price": 1403.06,
-        "pnl": -53.06
+        "price": 1403.58,
+        "pnl": -53.58
       },
       {
-        "price": 1413.86,
-        "pnl": -63.86
+        "price": 1414.38,
+        "pnl": -64.38
       },
       {
-        "price": 1424.65,
-        "pnl": -74.65
+        "price": 1425.18,
+        "pnl": -75.18
       },
       {
-        "price": 1435.44,
-        "pnl": -85.44
+        "price": 1435.97,
+        "pnl": -85.97
       },
       {
-        "price": 1446.24,
-        "pnl": -96.24
+        "price": 1446.77,
+        "pnl": -96.77
       },
       {
-        "price": 1457.03,
+        "price": 1457.57,
         "pnl": -100.0
       },
       {
-        "price": 1467.82,
+        "price": 1468.36,
         "pnl": -100.0
       },
       {
-        "price": 1478.61,
+        "price": 1479.16,
         "pnl": -100.0
       },
       {
-        "price": 1489.41,
+        "price": 1489.96,
         "pnl": -100.0
       },
       {
-        "price": 1500.2,
+        "price": 1500.76,
         "pnl": -100.0
       },
       {
-        "price": 1510.99,
+        "price": 1511.55,
         "pnl": -100.0
       },
       {
-        "price": 1521.78,
+        "price": 1522.35,
         "pnl": -100.0
       },
       {
-        "price": 1532.58,
+        "price": 1533.15,
         "pnl": -100.0
       },
       {
-        "price": 1543.37,
+        "price": 1543.94,
         "pnl": -100.0
       },
       {
-        "price": 1554.16,
+        "price": 1554.74,
         "pnl": -100.0
       },
       {
-        "price": 1564.96,
+        "price": 1565.54,
         "pnl": -100.0
       },
       {
-        "price": 1575.75,
+        "price": 1576.33,
         "pnl": -100.0
       },
       {
-        "price": 1586.54,
+        "price": 1587.13,
         "pnl": -100.0
       },
       {
-        "price": 1597.33,
+        "price": 1597.93,
         "pnl": -100.0
       },
       {
-        "price": 1608.13,
+        "price": 1608.72,
         "pnl": -100.0
       },
       {
-        "price": 1618.92,
+        "price": 1619.52,
         "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.656,
+      "win_probability": 0.655,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.1904,
+      "half_kelly_fraction": 0.1895,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -308,7 +308,7 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 44.5,
+      "score": 44.4,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
@@ -316,15 +316,15 @@
     }
   ],
   "indicators": {
-    "EMA20": "1346.73",
-    "EMA50": "1364.88",
-    "EMA100": "1367.37",
+    "EMA20": "1346.78",
+    "EMA50": "1364.90",
+    "EMA100": "1367.38",
     "EMA200": "1362.56",
-    "RSI(14)": "49.02",
-    "ATR(14)": "20.39",
+    "RSI(14)": "49.18",
+    "ATR(14)": "20.42",
     "ADX(14)": "23.99",
-    "BB(20,2)": "0.70",
-    "P_SHAPE(20)": "61.36"
+    "BB(20,2)": "0.71",
+    "P_SHAPE(20)": "61.37"
   },
   "rules": [
     {

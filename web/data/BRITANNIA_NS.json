@@ -1,6 +1,6 @@
 {
   "symbol": "BRITANNIA.NS",
-  "last_price": 4826.5,
+  "last_price": 4846.8,
   "as_of": "2026-10-14 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
@@ -8,7 +8,7 @@
   "fit_score": 25.0,
   "confidence_grade": "C",
   "confidence_percentage": 25.0,
-  "vix": 14.49,
+  "vix": 14.55,
   "strategy_type": "cash_swing_short",
   "strategy_display": "Cash Swing Short",
   "trade_profile": "Advisory | 30-45 DTE",
@@ -16,13 +16,13 @@
   "recommendation_reason": "Best fit strategy (51.7% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 4826.5,
-    "stop_loss": 4988.25,
-    "target_1": 4102.52,
-    "target_2": 3619.88,
-    "risk_per_share": 161.75,
-    "risk_reward": 7.5,
-    "atr14": 80.88,
+    "entry": 4846.8,
+    "stop_loss": 5009.87,
+    "target_1": 4119.78,
+    "target_2": 3635.1,
+    "risk_per_share": 163.07,
+    "risk_reward": 7.4,
+    "atr14": 81.53,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -31,232 +31,232 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 4826.5,
-        "strike_formatted": "4826.5",
+        "strike": 4846.7998046875,
+        "strike_formatted": "4846.8",
         "option_type": "Put",
         "delta": -0.444,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
         "dte": 41,
-        "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 4826.5 Put"
+        "summary": "Sell 1x BRITANNIA.NS 24-Nov-2026 4846.8 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 121.32,
-    "stop_loss_price": 4947.82,
-    "take_profit_price": 4583.87,
+    "margin_required": 122.3,
+    "stop_loss_price": 4969.1,
+    "take_profit_price": 4602.2,
     "net_delta": 0.444,
-    "net_theta": 0.824,
+    "net_theta": 0.832,
     "probability_of_profit": 0.0,
-    "var_95": 354.47,
+    "var_95": 357.51,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 3861.2,
-        "pnl": -1086.62
+        "price": 3877.44,
+        "pnl": -1091.66
       },
       {
-        "price": 3899.81,
-        "pnl": -1048.01
+        "price": 3916.21,
+        "pnl": -1052.89
       },
       {
-        "price": 3938.42,
-        "pnl": -1009.4
+        "price": 3954.99,
+        "pnl": -1014.11
       },
       {
-        "price": 3977.04,
-        "pnl": -970.78
+        "price": 3993.76,
+        "pnl": -975.34
       },
       {
-        "price": 4015.65,
-        "pnl": -932.17
+        "price": 4032.54,
+        "pnl": -936.56
       },
       {
-        "price": 4054.26,
-        "pnl": -893.56
+        "price": 4071.31,
+        "pnl": -897.79
       },
       {
-        "price": 4092.87,
-        "pnl": -854.95
+        "price": 4110.09,
+        "pnl": -859.01
       },
       {
-        "price": 4131.48,
-        "pnl": -816.34
+        "price": 4148.86,
+        "pnl": -820.24
       },
       {
-        "price": 4170.1,
-        "pnl": -777.72
+        "price": 4187.64,
+        "pnl": -781.46
       },
       {
-        "price": 4208.71,
-        "pnl": -739.11
+        "price": 4226.41,
+        "pnl": -742.69
       },
       {
-        "price": 4247.32,
-        "pnl": -700.5
+        "price": 4265.18,
+        "pnl": -703.92
       },
       {
-        "price": 4285.93,
-        "pnl": -661.89
+        "price": 4303.96,
+        "pnl": -665.14
       },
       {
-        "price": 4324.54,
-        "pnl": -623.28
+        "price": 4342.73,
+        "pnl": -626.37
       },
       {
-        "price": 4363.16,
-        "pnl": -584.66
+        "price": 4381.51,
+        "pnl": -587.59
       },
       {
-        "price": 4401.77,
-        "pnl": -546.05
+        "price": 4420.28,
+        "pnl": -548.82
       },
       {
-        "price": 4440.38,
-        "pnl": -507.44
+        "price": 4459.06,
+        "pnl": -510.04
       },
       {
-        "price": 4478.99,
-        "pnl": -468.83
+        "price": 4497.83,
+        "pnl": -471.27
       },
       {
-        "price": 4517.6,
-        "pnl": -430.22
+        "price": 4536.6,
+        "pnl": -432.5
       },
       {
-        "price": 4556.22,
-        "pnl": -391.6
+        "price": 4575.38,
+        "pnl": -393.72
       },
       {
-        "price": 4594.83,
-        "pnl": -352.99
+        "price": 4614.15,
+        "pnl": -354.95
       },
       {
-        "price": 4633.44,
-        "pnl": -314.38
+        "price": 4652.93,
+        "pnl": -316.17
       },
       {
-        "price": 4672.05,
-        "pnl": -275.77
+        "price": 4691.7,
+        "pnl": -277.4
       },
       {
-        "price": 4710.66,
-        "pnl": -237.16
+        "price": 4730.48,
+        "pnl": -238.62
       },
       {
-        "price": 4749.28,
-        "pnl": -198.54
+        "price": 4769.25,
+        "pnl": -199.85
       },
       {
-        "price": 4787.89,
-        "pnl": -159.93
+        "price": 4808.03,
+        "pnl": -161.07
       },
       {
-        "price": 4826.5,
-        "pnl": -121.32
+        "price": 4846.8,
+        "pnl": -122.3
       },
       {
-        "price": 4865.11,
-        "pnl": -121.32
+        "price": 4885.57,
+        "pnl": -122.3
       },
       {
-        "price": 4903.72,
-        "pnl": -121.32
+        "price": 4924.35,
+        "pnl": -122.3
       },
       {
-        "price": 4942.34,
-        "pnl": -121.32
+        "price": 4963.12,
+        "pnl": -122.3
       },
       {
-        "price": 4980.95,
-        "pnl": -121.32
+        "price": 5001.9,
+        "pnl": -122.3
       },
       {
-        "price": 5019.56,
-        "pnl": -121.32
+        "price": 5040.67,
+        "pnl": -122.3
       },
       {
-        "price": 5058.17,
-        "pnl": -121.32
+        "price": 5079.45,
+        "pnl": -122.3
       },
       {
-        "price": 5096.78,
-        "pnl": -121.32
+        "price": 5118.22,
+        "pnl": -122.3
       },
       {
-        "price": 5135.4,
-        "pnl": -121.32
+        "price": 5156.99,
+        "pnl": -122.3
       },
       {
-        "price": 5174.01,
-        "pnl": -121.32
+        "price": 5195.77,
+        "pnl": -122.3
       },
       {
-        "price": 5212.62,
-        "pnl": -121.32
+        "price": 5234.54,
+        "pnl": -122.3
       },
       {
-        "price": 5251.23,
-        "pnl": -121.32
+        "price": 5273.32,
+        "pnl": -122.3
       },
       {
-        "price": 5289.84,
-        "pnl": -121.32
+        "price": 5312.09,
+        "pnl": -122.3
       },
       {
-        "price": 5328.46,
-        "pnl": -121.32
+        "price": 5350.87,
+        "pnl": -122.3
       },
       {
-        "price": 5367.07,
-        "pnl": -121.32
+        "price": 5389.64,
+        "pnl": -122.3
       },
       {
-        "price": 5405.68,
-        "pnl": -121.32
+        "price": 5428.42,
+        "pnl": -122.3
       },
       {
-        "price": 5444.29,
-        "pnl": -121.32
+        "price": 5467.19,
+        "pnl": -122.3
       },
       {
-        "price": 5482.9,
-        "pnl": -121.32
+        "price": 5505.96,
+        "pnl": -122.3
       },
       {
-        "price": 5521.52,
-        "pnl": -121.32
+        "price": 5544.74,
+        "pnl": -122.3
       },
       {
-        "price": 5560.13,
-        "pnl": -121.32
+        "price": 5583.51,
+        "pnl": -122.3
       },
       {
-        "price": 5598.74,
-        "pnl": -121.32
+        "price": 5622.29,
+        "pnl": -122.3
       },
       {
-        "price": 5637.35,
-        "pnl": -121.32
+        "price": 5661.06,
+        "pnl": -122.3
       },
       {
-        "price": 5675.96,
-        "pnl": -121.32
+        "price": 5699.84,
+        "pnl": -122.3
       },
       {
-        "price": 5714.58,
-        "pnl": -121.32
+        "price": 5738.61,
+        "pnl": -122.3
       },
       {
-        "price": 5753.19,
-        "pnl": -121.32
+        "price": 5777.39,
+        "pnl": -122.3
       },
       {
-        "price": 5791.8,
-        "pnl": -121.32
+        "price": 5816.16,
+        "pnl": -122.3
       }
     ],
     "kelly_sizing": {
@@ -276,19 +276,19 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-4826.5PE"
+      "legs_summary": "S1x-Nov-4846.8PE"
     }
   ],
   "indicators": {
-    "EMA20": "4864.00",
-    "EMA50": "5028.15",
-    "EMA100": "5192.26",
-    "EMA200": "5369.48",
-    "RSI(14)": "42.79",
-    "ATR(14)": "80.88",
-    "ADX(14)": "43.14",
-    "BB(20,2)": "0.42",
-    "P_SHAPE(20)": "39.79"
+    "EMA20": "4865.94",
+    "EMA50": "5028.94",
+    "EMA100": "5192.66",
+    "EMA200": "5369.68",
+    "RSI(14)": "44.65",
+    "ATR(14)": "81.53",
+    "ADX(14)": "42.93",
+    "BB(20,2)": "0.48",
+    "P_SHAPE(20)": "39.93"
   },
   "rules": [
     {
@@ -399,11 +399,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Trusting AI with your money is subject to market risks",
+      "title": "Having health insurance is not the same as being adequately protected",
       "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhPU3F3bzhENHBzaS1qYnVBcUtjendjeVdvLUNTd29DVWNYUGU5TGRUNW02S09Wc1p5cWhKV3hyN3FYQUFPRzg3RDNEd051M2xHMGhLMzM5NXRsRzAyRWkza0JWZ09LcUFMc2RQRk1yRzFGVlE0SVE4S3hETEJNejlvTDQ4UFNNd0tYQUhNbEZnN25qU3BZZXRKekVmNHdFX2c3dEVjSVFLd3ZFc2swT9IBtgFBVV95cUxQWDlkRFlnYUtnT0RnN0VaZUFwOVM5VF9JVDk4YUpHb3RRaHJncHJsdFlOdUR4UTFTYUdYTDNZbDViemZrcVRCU28tV0hncW93ZEJWMGwyUjFXenBndm5jTlpXeS0tSm1DZzhUWjVmUGRvdGQyLU56d2V5Z2FyTkE1ZWUtSnlURVpuQUFZbVlGOS1fYmpYcDd2RlJQN2E3TThwQXpvaGVQdzQ5cTNzbFhRbkFvZzE2dw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeV8xYlJmbUFTZUdzeDNYdTlkeGFGVXpQWFNFclFIblpvVXNfWWJ6NGNrdDRhU1VIaFBxSFdrSXE4VGVEdFhFbzByWE41dHJqMlhLUXFqbU12dUNXZGdNNE91aVdfbktsTGt3ZkJqY1hwSFhGcUpibVRIWjBNTEVjVHJyUHpaem5kd2xraEl2d2syNEd3RWx2RFZSTWNmb2oxZDNWaVppaEJWUXpxRDV4NGRzSVQzbE1jekozT1B30gHDAUFVX3lxTE1abjE2NnQxbHBDMUpvSUt4VlVDSTZodE1wTG5yT3VMU3JFSWxralY3RXNOQ1JkMEpacnBvOGZ1Ry10OHNuTUtfWng5VmV5UkJ4Z1NpMW9BOXJnb2lIOEVXMVk1SEhrZTZjMVk3UmlkOElfRWVlTjd3M01Rc3BKdlNXUzN6UFpZQVJHRHFvLWhsaG1UU3hyNXJvRnE5eFF5UXprWFZRMnktclNtLVhwd1NCaXptU05GdmxGMzBSWGphclNTMA?oc=5",
       "published_at": "Mon, 12 Oct 2026",
-      "sentiment": "bearish"
+      "sentiment": "neutral"
     },
     {
       "title": "Uncapped coverage: Is your health policy really \u2018unlimited\u2019?",
