@@ -23,9 +23,24 @@
           <span class="brand-subtitle">Quantitative Stock & Options Engine</span>
         </div>
       </div>
+      
+      <!-- Top Market Switcher Toggle -->
+      <div class="market-switcher-container">
+        <div class="market-toggle-pill" id="market-switcher-pill">
+          <button type="button" class="market-toggle-btn active" id="btn-mkt-india" data-market="india">
+            <span class="flag-icon">🇮🇳</span>
+            <span class="mkt-name">India (NSE / BSE)</span>
+          </button>
+          <button type="button" class="market-toggle-btn" id="btn-mkt-us" data-market="us">
+            <span class="flag-icon">🇺🇸</span>
+            <span class="mkt-name">U.S. (NYSE / NASDAQ)</span>
+          </button>
+        </div>
+      </div>
+
       <div class="market-status">
         <span class="pulse-dot"></span>
-        <span class="status-text">LIVE MARKET ENGINE</span>
+        <span class="status-text" id="market-status-badge">NSE/BSE ACTIVE</span>
       </div>
     </header>
 
@@ -33,12 +48,12 @@
     <section class="search-section">
       <div class="search-card">
         <h2>Enter Stock or Index Ticker</h2>
-        <p class="search-hint">Type any ticker (e.g. <code>SPY</code>, <code>QQQ</code>, <code>NIFTY 50</code>, <code>BANKNIFTY</code>, <code>FINNIFTY</code>, <code>TITAN.NS</code>, <code>NVDA</code>, <code>AAPL</code>)</p>
+        <p class="search-hint" id="search-hint-text">Type any ticker (e.g. <code>NIFTY 50</code>, <code>BANKNIFTY</code>, <code>FINNIFTY</code>, <code>TITAN.NS</code>, <code>RELIANCE.NS</code>, <code>TCS.NS</code>)</p>
         
         <form id="search-form" class="search-form">
           <div class="input-wrapper">
             <span class="search-icon">🔍</span>
-            <input type="text" id="symbol-input" placeholder="Search company name or ticker (e.g. Titan, Reliance, Apple, Nifty 50, SPY)..." autocomplete="off" value="SPY">
+            <input type="text" id="symbol-input" placeholder="Search Indian company or ticker (e.g. Nifty 50, Bank Nifty, Titan, Reliance)..." autocomplete="off" value="^NSEI">
             <div id="search-autocomplete" class="search-autocomplete" style="display: none;"></div>
             <button type="submit" id="analyze-btn" class="btn-primary">
               <span class="btn-text">Generate Trade Structure</span>
@@ -49,15 +64,15 @@
 
         <div class="quick-chips" id="quick-chips">
           <span class="chip-label">Quick Select:</span>
-          <button class="chip" data-symbol="SPY">SPY</button>
-          <button class="chip" data-symbol="QQQ">QQQ</button>
           <button class="chip" data-symbol="^NSEI">NIFTY 50</button>
           <button class="chip" data-symbol="^NSEBANK">BANKNIFTY</button>
           <button class="chip" data-symbol="NIFTY_FIN_SERVICE.NS">FINNIFTY</button>
           <button class="chip" data-symbol="^NSEMDCP50">MIDCAPNIFTY</button>
           <button class="chip" data-symbol="^BSESN">SENSEX</button>
           <button class="chip" data-symbol="TITAN.NS">TITAN.NS</button>
-          <button class="chip" data-symbol="NVDA">NVDA</button>
+          <button class="chip" data-symbol="RELIANCE.NS">RELIANCE</button>
+          <button class="chip" data-symbol="TCS.NS">TCS</button>
+          <button class="chip" data-symbol="KOTAKBANK.NS">KOTAKBANK</button>
         </div>
       </div>
     </section>
@@ -85,10 +100,10 @@
           <button class="market-tab active" id="tab-options" data-category="options">📊 Options Strategies</button>
           <button class="market-tab" id="tab-cash" data-category="cash" style="display: none;">💵 Cash / Equity</button>
         </div>
-        <div class="market-filter-pills">
-          <button class="filter-pill active" id="pill-all" data-market="all">🌐 All</button>
+        <div class="market-filter-pills" style="display: none;">
+          <button class="filter-pill" id="pill-all" data-market="all">🌐 All</button>
           <button class="filter-pill" id="pill-us" data-market="us">🇺🇸 U.S.</button>
-          <button class="filter-pill" id="pill-india" data-market="india">🇮🇳 India</button>
+          <button class="filter-pill active" id="pill-india" data-market="india">🇮🇳 India</button>
         </div>
 
         <div id="top-trades-grid" class="top-trades-grid">

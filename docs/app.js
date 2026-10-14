@@ -67,14 +67,34 @@ document.addEventListener("DOMContentLoaded", () => {
     "GOOGLE": "GOOGL",
   };
 
-  const DEFAULT_20_TRACKED = [
-    { symbol: "SPY", name: "S&P 500 ETF Trust", market: "US" },
-    { symbol: "QQQ", name: "Invesco Nasdaq 100 ETF", market: "US" },
+  const DEFAULT_TRACKED_IN = [
     { symbol: "^NSEI", name: "Nifty 50 Index", market: "IN" },
     { symbol: "^NSEBANK", name: "Bank Nifty Index", market: "IN" },
     { symbol: "NIFTY_FIN_SERVICE.NS", name: "Fin Nifty Index", market: "IN" },
     { symbol: "^NSEMDCP50", name: "Midcap Nifty Index", market: "IN" },
     { symbol: "^BSESN", name: "BSE Sensex Index", market: "IN" },
+    { symbol: "RELIANCE.NS", name: "Reliance Industries", market: "IN" },
+    { symbol: "TCS.NS", name: "Tata Consultancy Services", market: "IN" },
+    { symbol: "HDFCBANK.NS", name: "HDFC Bank Ltd.", market: "IN" },
+    { symbol: "ICICIBANK.NS", name: "ICICI Bank Ltd.", market: "IN" },
+    { symbol: "INFY.NS", name: "Infosys Ltd.", market: "IN" },
+    { symbol: "BHARTIARTL.NS", name: "Bharti Airtel Ltd.", market: "IN" },
+    { symbol: "SBIN.NS", name: "State Bank of India", market: "IN" },
+    { symbol: "TITAN.NS", name: "Titan Company Ltd.", market: "IN" },
+    { symbol: "SUNPHARMA.NS", name: "Sun Pharmaceutical", market: "IN" },
+    { symbol: "BAJAJ-AUTO.NS", name: "Bajaj Auto Ltd.", market: "IN" },
+    { symbol: "KOTAKBANK.NS", name: "Kotak Mahindra Bank", market: "IN" },
+    { symbol: "TECHM.NS", name: "Tech Mahindra", market: "IN" },
+    { symbol: "DIVISLAB.NS", name: "Divi's Laboratories", market: "IN" },
+    { symbol: "DRREDDY.NS", name: "Dr. Reddy's Laboratories", market: "IN" },
+    { symbol: "SHRIRAMFIN.NS", name: "Shriram Finance", market: "IN" }
+  ];
+
+  const DEFAULT_TRACKED_US = [
+    { symbol: "SPY", name: "S&P 500 ETF Trust", market: "US" },
+    { symbol: "QQQ", name: "Invesco Nasdaq 100 ETF", market: "US" },
+    { symbol: "IWM", name: "iShares Russell 2000 ETF", market: "US" },
+    { symbol: "DIA", name: "SPDR Dow Jones Industrial Average", market: "US" },
     { symbol: "NVDA", name: "NVIDIA Corporation", market: "US" },
     { symbol: "AAPL", name: "Apple Inc.", market: "US" },
     { symbol: "MSFT", name: "Microsoft Corporation", market: "US" },
@@ -82,23 +102,29 @@ document.addEventListener("DOMContentLoaded", () => {
     { symbol: "GOOGL", name: "Alphabet Inc.", market: "US" },
     { symbol: "META", name: "Meta Platforms Inc.", market: "US" },
     { symbol: "TSLA", name: "Tesla Inc.", market: "US" },
-    { symbol: "RELIANCE.NS", name: "Reliance Industries", market: "IN" },
-    { symbol: "TCS.NS", name: "Tata Consultancy Services", market: "IN" },
-    { symbol: "HDFCBANK.NS", name: "HDFC Bank Ltd.", market: "IN" },
-    { symbol: "ICICIBANK.NS", name: "ICICI Bank Ltd.", market: "IN" },
-    { symbol: "TITAN.NS", name: "Titan Company Ltd.", market: "IN" },
-    { symbol: "SUNPHARMA.NS", name: "Sun Pharmaceutical", market: "IN" }
+    { symbol: "AMD", name: "Advanced Micro Devices", market: "US" },
+    { symbol: "PLTR", name: "Palantir Technologies", market: "US" },
+    { symbol: "MSTR", name: "MicroStrategy Inc.", market: "US" },
+    { symbol: "COST", name: "Costco Wholesale", market: "US" },
+    { symbol: "BAC", name: "Bank of America", market: "US" },
+    { symbol: "LLY", name: "Eli Lilly and Company", market: "US" },
+    { symbol: "QCOM", name: "QUALCOMM Inc.", market: "US" },
+    { symbol: "XOM", name: "Exxon Mobil Corporation", market: "US" },
+    { symbol: "V", name: "Visa Inc.", market: "US" }
   ];
+
+  let activeMarket = localStorage.getItem("pie_active_market") || "india"; // default "india"
 
   function getTrackedCache() {
     try {
-      const stored = localStorage.getItem("pie_20_tracked_cache");
+      const cacheKey = activeMarket === "us" ? "pie_20_tracked_cache_us" : "pie_20_tracked_cache_in";
+      const stored = localStorage.getItem(cacheKey);
       if (stored) {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) return parsed;
       }
     } catch (e) {}
-    return DEFAULT_20_TRACKED;
+    return activeMarket === "us" ? DEFAULT_TRACKED_US : DEFAULT_TRACKED_IN;
   }
 
   function saveTrackedCache(symbol) {
@@ -110,7 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       list = list.filter(item => item.symbol.toUpperCase() !== targetSym.toUpperCase());
 
-      const match = DEFAULT_20_TRACKED.find(d => d.symbol.toUpperCase() === targetSym.toUpperCase());
+      const defaults = activeMarket === "us" ? DEFAULT_TRACKED_US : DEFAULT_TRACKED_IN;
+      const match = defaults.find(d => d.symbol.toUpperCase() === targetSym.toUpperCase());
       const name = match ? match.name : targetSym;
       const isIndia = isIndianSymbol(targetSym);
 
@@ -121,7 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       list = list.slice(0, 20);
-      localStorage.setItem("pie_20_tracked_cache", JSON.stringify(list));
+      const cacheKey = activeMarket === "us" ? "pie_20_tracked_cache_us" : "pie_20_tracked_cache_in";
+      localStorage.setItem(cacheKey, JSON.stringify(list));
       renderQuickSelectChips();
     } catch (e) {}
   }
@@ -138,9 +166,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    const titleText = activeMarket === "us" ? "⭐ TOP U.S. STOCKS & ETFS" : "⭐ TOP INDIAN STOCKS & INDICES";
     searchAutocomplete.innerHTML = `
       <div style="padding: 8px 12px; font-size: 11px; font-weight: 800; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(0,0,0,0.3); display: flex; justify-content: space-between;">
-        <span>⭐ TOP 20 MOST TRACKED STOCKS & ETFS</span>
+        <span>${titleText}</span>
         <span>CACHE ACTIVE</span>
       </div>
       ${list.map(item => `
@@ -168,8 +197,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const trackedList = getTrackedCache();
     chipsContainer.innerHTML = `
-      <span class="chip-label">Quick Select (Top 20 Tracked):</span>
-      ${trackedList.map(item => {
+      <span class="chip-label">Quick Select (${activeMarket === "us" ? "U.S." : "India"}):</span>
+      ${trackedList.slice(0, 10).map(item => {
         const flag = item.market === "IN" ? "🇮🇳" : "🇺🇸";
         const label = item.symbol === "^NSEI" ? "NIFTY 50" :
                       item.symbol === "^NSEBANK" ? "BANKNIFTY" :
@@ -281,11 +310,59 @@ document.addEventListener("DOMContentLoaded", () => {
   const pillIndia = document.getElementById("pill-india");
   const topTradesGrid = document.getElementById("top-trades-grid");
 
+  // Top Market Switcher Buttons
+  const btnMktIndia = document.getElementById("btn-mkt-india");
+  const btnMktUS = document.getElementById("btn-mkt-us");
+  const marketStatusBadge = document.getElementById("market-status-badge");
+  const searchHintText = document.getElementById("search-hint-text");
+
   let currentCategory = "options"; // "options" | "cash"
-  let currentMarketFilter = "all";  // "all" | "us" | "india"
+  let currentMarketFilter = activeMarket; // default "india"
+
+  function switchActiveMarket(market) {
+    activeMarket = market;
+    currentMarketFilter = market;
+    localStorage.setItem("pie_active_market", market);
+
+    if (btnMktIndia && btnMktUS) {
+      if (market === "india") {
+        btnMktIndia.classList.add("active");
+        btnMktUS.classList.remove("active");
+        if (marketStatusBadge) marketStatusBadge.textContent = "NSE/BSE ACTIVE";
+        if (searchHintText) searchHintText.innerHTML = `Type any ticker (e.g. <code>NIFTY 50</code>, <code>BANKNIFTY</code>, <code>FINNIFTY</code>, <code>TITAN.NS</code>, <code>RELIANCE.NS</code>, <code>TCS.NS</code>)`;
+        if (symbolInput) {
+          symbolInput.placeholder = "Search Indian company or ticker (e.g. Nifty 50, Bank Nifty, Titan, Reliance)...";
+          symbolInput.value = "^NSEI";
+        }
+      } else {
+        btnMktUS.classList.add("active");
+        btnMktIndia.classList.remove("active");
+        if (marketStatusBadge) marketStatusBadge.textContent = "NYSE/NASDAQ ACTIVE";
+        if (searchHintText) searchHintText.innerHTML = `Type any ticker (e.g. <code>SPY</code>, <code>QQQ</code>, <code>IWM</code>, <code>DIA</code>, <code>NVDA</code>, <code>AAPL</code>, <code>MSFT</code>)`;
+        if (symbolInput) {
+          symbolInput.placeholder = "Search U.S. company or ticker (e.g. SPY, QQQ, NVDA, Apple, Tesla)...";
+          symbolInput.value = "SPY";
+        }
+      }
+    }
+
+    renderQuickSelectChips();
+    renderLeaderboard();
+
+    // Trigger analysis for the default market ticker
+    const defaultSym = market === "india" ? "^NSEI" : "SPY";
+    fetchQuietly(defaultSym);
+  }
+
+  if (btnMktIndia) {
+    btnMktIndia.addEventListener("click", () => switchActiveMarket("india"));
+  }
+  if (btnMktUS) {
+    btnMktUS.addEventListener("click", () => switchActiveMarket("us"));
+  }
 
   // Cache version: bump this whenever the fit_score scale or data format changes
-  const LEADERBOARD_CACHE_VERSION = "v5"; // options/cash split & leg shorthand
+  const LEADERBOARD_CACHE_VERSION = "v6"; // default Indian market & market toggle
   if (localStorage.getItem("pie_leaderboard_cache_v") !== LEADERBOARD_CACHE_VERSION) {
     localStorage.removeItem("pie_top5_us");
     localStorage.removeItem("pie_top5_india");
@@ -318,14 +395,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Market filter pills
+  // Market filter pills (if present)
   function setFilterPill(market) {
-    currentMarketFilter = market;
-    [pillAll, pillUS, pillIndia].forEach(p => p && p.classList.remove("active"));
-    if (market === "all" && pillAll) pillAll.classList.add("active");
-    if (market === "us" && pillUS) pillUS.classList.add("active");
-    if (market === "india" && pillIndia) pillIndia.classList.add("active");
-    renderLeaderboard();
+    switchActiveMarket(market);
   }
   if (pillAll)   pillAll.addEventListener("click",   () => setFilterPill("all"));
   if (pillUS)    pillUS.addEventListener("click",    () => setFilterPill("us"));
@@ -382,8 +454,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Initial Silent Load for default symbol SPY (No blocking loading spinner on landing page)
-  fetchQuietly("SPY");
+  // Initialize UI with saved or default market
+  if (activeMarket === "us") {
+    if (btnMktUS) btnMktUS.classList.add("active");
+    if (btnMktIndia) btnMktIndia.classList.remove("active");
+    if (marketStatusBadge) marketStatusBadge.textContent = "NYSE/NASDAQ ACTIVE";
+    if (searchHintText) searchHintText.innerHTML = `Type any ticker (e.g. <code>SPY</code>, <code>QQQ</code>, <code>IWM</code>, <code>DIA</code>, <code>NVDA</code>, <code>AAPL</code>, <code>MSFT</code>)`;
+    if (symbolInput) {
+      symbolInput.placeholder = "Search U.S. company or ticker (e.g. SPY, QQQ, NVDA, Apple, Tesla)...";
+      symbolInput.value = "SPY";
+    }
+    fetchQuietly("SPY");
+  } else {
+    if (btnMktIndia) btnMktIndia.classList.add("active");
+    if (btnMktUS) btnMktUS.classList.remove("active");
+    if (marketStatusBadge) marketStatusBadge.textContent = "NSE/BSE ACTIVE";
+    if (searchHintText) searchHintText.innerHTML = `Type any ticker (e.g. <code>NIFTY 50</code>, <code>BANKNIFTY</code>, <code>FINNIFTY</code>, <code>TITAN.NS</code>, <code>RELIANCE.NS</code>, <code>TCS.NS</code>)`;
+    if (symbolInput) {
+      symbolInput.placeholder = "Search Indian company or ticker (e.g. Nifty 50, Bank Nifty, Titan, Reliance)...";
+      symbolInput.value = "^NSEI";
+    }
+    fetchQuietly("^NSEI");
+  }
 
   function getStaticDataPath(relativePath) {
     const pathname = window.location.pathname;
@@ -399,10 +491,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function fetchQuietly(symbol) {
     try {
-      const response = await fetchWithTimeout(getStaticDataPath(`data/${symbol}.json`), 4000);
-      if (response.ok) {
-        const data = await response.json();
-        renderResults(data, false);
+      const safeSymbol = symbol.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(/\s+/g, "_");
+      const staticUrls = [
+        `data/${safeSymbol}.json`,
+        `./data/${safeSymbol}.json`,
+        getStaticDataPath(`data/${safeSymbol}.json`)
+      ];
+      for (const url of staticUrls) {
+        try {
+          const response = await fetchWithTimeout(url, 2500);
+          if (response.ok) {
+            const data = await response.json();
+            renderResults(data, false);
+            return;
+          }
+        } catch (err) {}
       }
     } catch (e) {
       // Quiet fallback
@@ -740,7 +843,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Populate initial news drawer on page load
-  renderNews({ symbol: "SPY" });
+  const initialNewsSymbol = activeMarket === "us" ? "SPY" : "^NSEI";
+  renderNews({ symbol: initialNewsSymbol });
 
   function getRegimeBadgeText(regime) {
     const map = {
