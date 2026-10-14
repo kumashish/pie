@@ -43,7 +43,8 @@ def _get_trade_category(symbol: str, strategy_type: str = "") -> str:
     if strat in {
         "call_debit_spread", "put_debit_spread", "naked_put", "naked_call",
         "butterfly", "broken_wing_butterfly", "iron_condor", "iron_butterfly",
-        "jade_lizard", "credit_spread", "poor_mans_covered_call", "short_strangle", "collar"
+        "jade_lizard", "credit_spread", "poor_mans_covered_call", "short_strangle", "collar",
+        "nifty_mean_reversion",
     }:
         return "options"
 
@@ -191,6 +192,27 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         ema20=_ema20_val,
         ema50=_ema50_val,
         trend_score=trend_analysis.trend_score.value,
+    )
+
+    # 6. Evaluate Playbook v1.4 NIFTY Mean-Reversion Signal & IV Regime
+    from pie.market.nifty_income import evaluate_nifty_mean_reversion, classify_iv_regime
+    iv_rank_val = min(100.0, max(0.0, ((annualized_vix - 12.0) / 18.0) * 100.0))
+    iv_analysis = classify_iv_regime(vix=annualized_vix, iv_rank=iv_rank_val)
+
+    day_low_val = None
+    try:
+        if "low" in history.columns:
+            day_low_val = float(history.select("low").tail(1).item())
+    except Exception:
+        pass
+
+    playbook_signal = evaluate_nifty_mean_reversion(
+        symbol=sym_upper,
+        last_price=float(snapshot.last_price),
+        indicators=indicators,
+        day_low=day_low_val,
+        vix=annualized_vix,
+        iv_rank=iv_rank_val,
     )
 
     # Format indicators
@@ -345,6 +367,37 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
             }
             for item in StockNewsProvider.fetch_news(sym_upper)
         ],
+        "playbook_mean_reversion": {
+            "status": playbook_signal.status.value,
+            "is_triggered": playbook_signal.is_triggered,
+            "close_price": playbook_signal.close_price,
+            "sma200": playbook_signal.sma200,
+            "sma20": playbook_signal.sma20,
+            "sma20_slope": playbook_signal.sma20_slope,
+            "lower_bb": playbook_signal.lower_bb,
+            "upper_bb": playbook_signal.upper_bb,
+            "pct_b": playbook_signal.pct_b,
+            "rsi2": playbook_signal.rsi2,
+            "rsi14": playbook_signal.rsi14,
+            "atr14": playbook_signal.atr14,
+            "close_above_sma200": playbook_signal.close_above_sma200,
+            "close_below_lower_bb": playbook_signal.close_below_lower_bb,
+            "rsi2_below_10": playbook_signal.rsi2_below_10,
+            "adequate_liquidity": playbook_signal.adequate_liquidity,
+            "risk_limits_pass": playbook_signal.risk_limits_pass,
+            "target_exit_price": playbook_signal.target_exit_price,
+            "stop_loss_spot_price": playbook_signal.stop_loss_spot_price,
+            "strategy_name": playbook_signal.strategy_name,
+            "suggested_structure": playbook_signal.suggested_structure,
+            "target_dte_range": playbook_signal.target_dte_range,
+            "target_short_delta": playbook_signal.target_short_delta,
+            "exit_rules": playbook_signal.exit_rules,
+            "rationale": playbook_signal.rationale,
+            "warnings": playbook_signal.warnings,
+            "iv_regime": iv_analysis.regime.value,
+            "iv_recommendations": iv_analysis.recommended_strategies,
+            "iv_guidance": iv_analysis.guidance,
+        },
     }
 
 

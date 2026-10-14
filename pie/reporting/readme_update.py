@@ -152,10 +152,14 @@ def get_strategy_display_name(stype: str) -> str:
         return "🟢 Cash Swing Long"
     if clean in {"cash swing short", "cash_swing_short"}:
         return "🔴 Cash Swing Short"
+    if clean in {"nifty mean reversion", "nifty_mean_reversion"}:
+        return "⚡ NIFTY Mean Reversion"
     return f"🟡 {clean.title()}"
 def get_trade_profile(stype: str) -> str:
     """Return deterministic strategy profile, target DTE, and short delta target."""
     clean = stype.lower().replace("_", " ").strip()
+    if clean in {"nifty mean reversion", "nifty_mean_reversion"}:
+        return "Credit | 30-45 DTE | ~30 Delta Bull Put"
     if clean in {"covered call", "covered_call"}:
         return "Credit | 30-45 DTE | 20-30 Delta"
     if clean in {"cash secured put", "cash_secured_put", "naked put", "naked_put"}:

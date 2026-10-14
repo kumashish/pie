@@ -29,6 +29,18 @@ def write_market_report(
         else f"{name:<12}: N/A"
         for name, result in indicators.items()
     ]
+    playbook_res = None
+    if snapshot.symbol.upper() in {"^NSEI", "^NSEBANK", "NIFTY_FIN_SERVICE.NS"} or snapshot.symbol.upper().startswith("^NSE"):
+        from pie.market.nifty_income import evaluate_nifty_mean_reversion
+        try:
+            playbook_res = evaluate_nifty_mean_reversion(
+                symbol=snapshot.symbol,
+                last_price=float(snapshot.last_price),
+                indicators=indicators,
+            )
+        except Exception:
+            playbook_res = None
+
     limitation_lines = [f"- {limitation}" for limitation in recommendation.limitations]
     trade_lines = _trade_lines(estimated_trade)
     dashboard = "\n".join(
@@ -71,6 +83,22 @@ def write_market_report(
             "TREND EXPLANATION",
             "-" * 17,
             trend.explanation,
+            *(
+                [
+                    "",
+                    "NIFTY INCOME PLAYBOOK v1.4 (MEAN REVERSION)",
+                    "-" * 43,
+                    f"Status       : {playbook_res.status.value}",
+                    f"Close vs 200 : {'Above 200 SMA (Pass)' if playbook_res.close_above_sma200 else 'Below 200 SMA (Defensive)'} [SMA200: {playbook_res.sma200:,.1f}]" if playbook_res.sma200 else "Close vs 200 : N/A",
+                    f"Lower BB (20): {'Penetrated (Pass)' if playbook_res.close_below_lower_bb else 'Inside (No Trigger)'} [Lower: {playbook_res.lower_bb:,.1f}]" if playbook_res.lower_bb else "Lower BB (20): N/A",
+                    f"RSI(2)       : {playbook_res.rsi2:.1f} [{'Pass (<10)' if playbook_res.rsi2_below_10 else 'No'}]" if playbook_res.rsi2 is not None else "RSI(2)       : N/A",
+                    f"Diagnosis    : {playbook_res.rationale}",
+                    f"Target Exit  : {playbook_res.target_exit_price:,.1f} (20-day SMA)" if playbook_res.target_exit_price else "Target Exit  : N/A",
+                    f"Stop-Loss    : {playbook_res.stop_loss_spot_price:,.1f} (1.5 ATR below entry low)" if playbook_res.stop_loss_spot_price else "Stop-Loss    : N/A",
+                ]
+                if playbook_res
+                else []
+            ),
         ]
     )
     output_dir.mkdir(parents=True, exist_ok=True)

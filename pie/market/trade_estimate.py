@@ -45,6 +45,9 @@ STRATEGY_DTE_CONFIGS = {
     # TradeCraft Put: 30-60 DTE monthly expiry
     StrategyType.TRADECRAFT_PUT: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window with 200 SMA bounce edge"},
 
+    # NIFTY Mean-Reversion Bull Put Spread (Playbook v1.4): 30-45 DTE monthly expiry
+    StrategyType.NIFTY_MEAN_REVERSION: {"target": 37, "min": 30, "max": 45, "why": "30-45 DTE monthly expiry window per NIFTY Income Portfolio Playbook v1.4"},
+
     # Futures Hybrid Strategies (Indian FnO Combination Trades)
     StrategyType.COVERED_FUTURE: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for covered call leg theta yield on long future"},
     StrategyType.PROTECTED_FUTURE: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for protective put hedging on long future"},
@@ -344,6 +347,26 @@ def estimate_trade(
             "TradeCraft Put: Close at 50% max profit (premium decay).",
             "Exit immediately if spot closes more than 1×ATR below the 200 SMA (support breakdown).",
             "Roll down and out if tested within 21 DTE.",
+        )
+
+    elif recommendation.strategy == StrategyType.NIFTY_MEAN_REVERSION:
+        # Playbook Section 8: Monthly NIFTY Bull Put Spread
+        # Screen near ~0.25-0.30 absolute delta short put; pair 1:1 with protective put (strictly defined risk)
+        p_short = _round_to_increment(spot_price - short_dist * 0.80, increment)
+        wing = max(increment * 2, credit_wing_width)
+        p_long = _round_to_increment(p_short - wing, increment)
+        legs = (
+            TradeLeg(action="sell", right=OptionRight.PUT, strike=p_short, delta=0.28),
+            TradeLeg(action="buy", right=OptionRight.PUT, strike=p_long, delta=0.12),
+        )
+        stop_spot = round(spot_price - 1.5 * (atr14 or (spot_price * 0.012)), 2)
+        target_ema20_str = f" (~{round(ema20, 2)})" if ema20 else ""
+        exit_strategy = (
+            f"Mean-Reversion Target Exit: Daily close touches 20-day SMA{target_ema20_str}.",
+            f"Structural Stop-Loss: Exit if spot closes > 1.5 ATR(14) below entry-day low (Spot <= {stop_spot}).",
+            "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
+            "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
+            "Profit Harvest Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%.",
         )
 
     elif recommendation.strategy == StrategyType.WHEEL:

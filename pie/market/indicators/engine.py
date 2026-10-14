@@ -12,12 +12,16 @@ from pie.market.indicators.bollinger import BollingerBands
 from pie.market.indicators.ema import EMA
 from pie.market.indicators.p_shape import PShapeProfile
 from pie.market.indicators.rsi import RSI
+from pie.market.indicators.sma import SMA
 
 DEFAULT_INDICATORS: tuple[Indicator, ...] = (
     EMA(20),
     EMA(50),
     EMA(100),
     EMA(200),
+    SMA(20),
+    SMA(200),
+    RSI(2),
     RSI(14),
     ATR(14),
     ADX(14),
@@ -69,6 +73,8 @@ class IndicatorEngine:
                     indicators.append(BollingerBands(period))
                 case "p_shape":
                     indicators.append(PShapeProfile(period))
+                case "sma":
+                    indicators.append(SMA(period))
                 case _:
                     msg = f"Unsupported indicator '{indicator_type}'."
                     raise ValueError(msg)

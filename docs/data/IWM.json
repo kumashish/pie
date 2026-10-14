@@ -1,28 +1,28 @@
 {
   "symbol": "IWM",
-  "last_price": 276.7,
-  "as_of": "2026-10-13 13:30:00",
+  "last_price": 270.6,
+  "as_of": "2026-10-14 13:30:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 3.8,
-  "fit_score": 37.5,
+  "trend_score": 3.5,
+  "fit_score": 35.0,
   "confidence_grade": "C",
-  "confidence_percentage": 37.5,
-  "vix": 15.27,
+  "confidence_percentage": 35.0,
+  "vix": 16.85,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (76.2% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (74.3% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 276.7,
-    "stop_loss": 283.57,
-    "target_1": 235.19,
-    "target_2": 207.52,
-    "risk_per_share": 6.87,
-    "risk_reward": 10.1,
-    "atr14": 3.44,
+    "entry": 270.6,
+    "stop_loss": 277.86,
+    "target_1": 230.01,
+    "target_2": 202.95,
+    "risk_per_share": 7.26,
+    "risk_reward": 9.3,
+    "atr14": 3.63,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -31,274 +31,274 @@
       {
         "action": "Buy",
         "quantity": 1,
+        "strike": 250.0,
+        "strike_formatted": "250",
+        "option_type": "Put",
+        "delta": -0.055,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 37,
+        "summary": "Buy 1x IWM 20-Nov-2026 250 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
         "strike": 255.0,
         "strike_formatted": "255",
         "option_type": "Put",
-        "delta": -0.035,
+        "delta": -0.11,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 37,
-        "summary": "Buy 1x IWM 20-Nov-2026 255 Put"
+        "summary": "Sell 1x IWM 20-Nov-2026 255 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 260.0,
-        "strike_formatted": "260",
-        "option_type": "Put",
-        "delta": -0.079,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Sell 1x IWM 20-Nov-2026 260 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 290.0,
-        "strike_formatted": "290",
+        "strike": 285.0,
+        "strike_formatted": "285",
         "option_type": "Call",
-        "delta": 0.201,
+        "delta": 0.199,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 37,
-        "summary": "Sell 1x IWM 20-Nov-2026 290 Call"
+        "summary": "Sell 1x IWM 20-Nov-2026 285 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 295.0,
-        "strike_formatted": "295",
+        "strike": 290.0,
+        "strike_formatted": "290",
         "option_type": "Call",
-        "delta": 0.117,
+        "delta": 0.121,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
         "dte": 37,
-        "summary": "Buy 1x IWM 20-Nov-2026 295 Call"
+        "summary": "Buy 1x IWM 20-Nov-2026 290 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 10.0,
-    "stop_loss_price": 268.4,
-    "take_profit_price": 285.0,
-    "net_delta": -0.04,
-    "net_theta": 0.03,
+    "stop_loss_price": 262.48,
+    "take_profit_price": 278.72,
+    "net_delta": -0.023,
+    "net_theta": 0.031,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 221.36,
+        "price": 216.48,
         "pnl": -15.0
       },
       {
-        "price": 223.57,
+        "price": 218.64,
         "pnl": -15.0
       },
       {
-        "price": 225.79,
+        "price": 220.81,
         "pnl": -15.0
       },
       {
-        "price": 228.0,
+        "price": 222.97,
         "pnl": -15.0
       },
       {
-        "price": 230.21,
+        "price": 225.14,
         "pnl": -15.0
       },
       {
-        "price": 232.43,
+        "price": 227.3,
         "pnl": -15.0
       },
       {
-        "price": 234.64,
+        "price": 229.47,
         "pnl": -15.0
       },
       {
-        "price": 236.86,
+        "price": 231.63,
         "pnl": -15.0
       },
       {
-        "price": 239.07,
+        "price": 233.8,
         "pnl": -15.0
       },
       {
-        "price": 241.28,
+        "price": 235.96,
         "pnl": -15.0
       },
       {
-        "price": 243.5,
+        "price": 238.13,
         "pnl": -15.0
       },
       {
-        "price": 245.71,
+        "price": 240.29,
         "pnl": -15.0
       },
       {
-        "price": 247.92,
+        "price": 242.46,
         "pnl": -15.0
       },
       {
-        "price": 250.14,
+        "price": 244.62,
         "pnl": -15.0
       },
       {
-        "price": 252.35,
+        "price": 246.79,
         "pnl": -15.0
       },
       {
-        "price": 254.56,
+        "price": 248.95,
         "pnl": -15.0
       },
       {
-        "price": 256.78,
-        "pnl": -13.22
+        "price": 251.12,
+        "pnl": -13.88
       },
       {
-        "price": 258.99,
-        "pnl": -11.01
+        "price": 253.28,
+        "pnl": -11.72
       },
       {
-        "price": 261.2,
+        "price": 255.45,
         "pnl": -10.0
       },
       {
-        "price": 263.42,
+        "price": 257.61,
         "pnl": -10.0
       },
       {
-        "price": 265.63,
+        "price": 259.78,
         "pnl": -10.0
       },
       {
-        "price": 267.85,
+        "price": 261.94,
         "pnl": -10.0
       },
       {
-        "price": 270.06,
+        "price": 264.11,
         "pnl": -10.0
       },
       {
-        "price": 272.27,
+        "price": 266.27,
         "pnl": -10.0
       },
       {
-        "price": 274.49,
+        "price": 268.44,
         "pnl": -10.0
       },
       {
-        "price": 276.7,
+        "price": 270.6,
         "pnl": -10.0
       },
       {
-        "price": 278.91,
+        "price": 272.76,
         "pnl": -10.0
       },
       {
-        "price": 281.13,
+        "price": 274.93,
         "pnl": -10.0
       },
       {
-        "price": 283.34,
+        "price": 277.09,
         "pnl": -10.0
       },
       {
-        "price": 285.55,
+        "price": 279.26,
         "pnl": -10.0
       },
       {
-        "price": 287.77,
+        "price": 281.42,
         "pnl": -10.0
       },
       {
-        "price": 289.98,
+        "price": 283.59,
         "pnl": -10.0
       },
       {
-        "price": 292.2,
-        "pnl": -12.2
+        "price": 285.75,
+        "pnl": -10.75
+      },
+      {
+        "price": 287.92,
+        "pnl": -12.92
+      },
+      {
+        "price": 290.08,
+        "pnl": -15.0
+      },
+      {
+        "price": 292.25,
+        "pnl": -15.0
       },
       {
         "price": 294.41,
-        "pnl": -14.41
-      },
-      {
-        "price": 296.62,
         "pnl": -15.0
       },
       {
-        "price": 298.84,
+        "price": 296.58,
         "pnl": -15.0
       },
       {
-        "price": 301.05,
+        "price": 298.74,
         "pnl": -15.0
       },
       {
-        "price": 303.26,
+        "price": 300.91,
         "pnl": -15.0
       },
       {
-        "price": 305.48,
+        "price": 303.07,
         "pnl": -15.0
       },
       {
-        "price": 307.69,
+        "price": 305.24,
         "pnl": -15.0
       },
       {
-        "price": 309.9,
+        "price": 307.4,
         "pnl": -15.0
       },
       {
-        "price": 312.12,
+        "price": 309.57,
         "pnl": -15.0
       },
       {
-        "price": 314.33,
+        "price": 311.73,
         "pnl": -15.0
       },
       {
-        "price": 316.54,
+        "price": 313.9,
         "pnl": -15.0
       },
       {
-        "price": 318.76,
+        "price": 316.06,
         "pnl": -15.0
       },
       {
-        "price": 320.97,
+        "price": 318.23,
         "pnl": -15.0
       },
       {
-        "price": 323.19,
+        "price": 320.39,
         "pnl": -15.0
       },
       {
-        "price": 325.4,
+        "price": 322.56,
         "pnl": -15.0
       },
       {
-        "price": 327.61,
-        "pnl": -15.0
-      },
-      {
-        "price": 329.83,
-        "pnl": -15.0
-      },
-      {
-        "price": 332.04,
+        "price": 324.72,
         "pnl": -15.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.767,
+      "win_probability": 0.76,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2903,
+      "half_kelly_fraction": 0.284,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -308,59 +308,71 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 76.2,
+      "score": 74.3,
       "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x IWM 20-Nov-2026 255 Put<br> Sell 1x IWM 20-Nov-2026 260 Put<br> Sell 1x IWM 20-Nov-2026 290 Call<br> Buy 1x IWM 20-Nov-2026 295 Call"
+      "legs_summary": "Buy 1x IWM 20-Nov-2026 250 Put<br> Sell 1x IWM 20-Nov-2026 255 Put<br> Sell 1x IWM 20-Nov-2026 285 Call<br> Buy 1x IWM 20-Nov-2026 290 Call"
     },
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 53.8,
-      "grade": "C (Moderate)",
+      "score": 68.8,
+      "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x IWM 20-Nov-2026 290 Call<br> Buy 1x IWM 20-Nov-2026 295 Call"
+      "legs_summary": "Sell 1x IWM 20-Nov-2026 285 Call<br> Buy 1x IWM 20-Nov-2026 290 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 50.6,
+      "score": 44.7,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x IWM 20-Nov-2026 270 Call<br> Sell 1x IWM 20-Nov-2026 275 Call<br> Sell 1x IWM 20-Nov-2026 275 Call<br> Buy 1x IWM 20-Nov-2026 285 Call"
+      "legs_summary": "Buy 1x IWM 20-Nov-2026 265 Call<br> Sell 1x IWM 20-Nov-2026 270 Call<br> Sell 1x IWM 20-Nov-2026 270 Call<br> Buy 1x IWM 20-Nov-2026 280 Call"
     },
     {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 44.4,
+      "strategy_type": "call_debit_spread",
+      "strategy_display": "Call Debit Spread",
+      "score": 41.8,
       "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x IWM 20-Nov-2026 270 Call<br> Sell 1x IWM 20-Nov-2026 275 Call<br> Sell 1x IWM 20-Nov-2026 275 Call<br> Buy 1x IWM 20-Nov-2026 290 Call"
+      "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
+      "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+      "legs_summary": "Buy 1x IWM 20-Nov-2026 270 Call<br> Sell 1x IWM 20-Nov-2026 280 Call"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 41.1,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "Buy 1x IWM 20-Nov-2026 270 Put<br> Sell 1x IWM 20-Nov-2026 255 Put<br> Sell 1x IWM 20-Nov-2026 255 Put"
     },
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 42.6,
+      "score": 40.4,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x IWM 20-Nov-2026 265 Put<br> Sell 1x IWM 20-Nov-2026 275 Put<br> Sell 1x IWM 20-Nov-2026 275 Call<br> Buy 1x IWM 20-Nov-2026 290 Call"
+      "legs_summary": "Buy 1x IWM 20-Nov-2026 255 Put<br> Sell 1x IWM 20-Nov-2026 270 Put<br> Sell 1x IWM 20-Nov-2026 270 Call<br> Buy 1x IWM 20-Nov-2026 285 Call"
     }
   ],
   "indicators": {
-    "EMA20": "281.68",
-    "EMA50": "286.62",
-    "EMA100": "286.05",
-    "EMA200": "276.83",
-    "RSI(14)": "34.98",
-    "ATR(14)": "3.44",
-    "ADX(14)": "39.04",
-    "BB(20,2)": "0.14",
-    "P_SHAPE(20)": "45.36"
+    "EMA20": "280.63",
+    "EMA50": "285.99",
+    "EMA100": "285.74",
+    "EMA200": "276.77",
+    "SMA20": "280.47",
+    "SMA200": "277.41",
+    "RSI(2)": "2.70",
+    "RSI(14)": "27.40",
+    "ATR(14)": "3.63",
+    "ADX(14)": "40.06",
+    "BB(20,2)": "-0.15",
+    "P_SHAPE(20)": "56.60"
   },
   "rules": [
     {
@@ -378,7 +390,7 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -413,13 +425,6 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
@@ -434,6 +439,13 @@
       "explanation": "Condition unfulfilled"
     },
     {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
       "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
@@ -442,6 +454,13 @@
     }
   ],
   "news": [
+    {
+      "title": "Catching a Turn in the Market Can Pay Off Big. Here\u2019s One Way to Do It.",
+      "publisher": "Barrons.com",
+      "link": "https://finance.yahoo.com/m/ee4fed31-a631-3bad-b372-b092c77f625f/catching-a-turn-in-the-market.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
     {
       "title": "AI Can Help Small-Caps Beat Megacap Tech Rivals. That Gives This ETF 20% Upside.",
       "publisher": "Barrons.com",
@@ -476,13 +495,46 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/5-oversold-corners-market-could-145500663.html",
       "published_at": "Today",
       "sentiment": "neutral"
-    },
-    {
-      "title": "The stock market is anything but normal right now \u2014 and these charts show it",
-      "publisher": "MarketWatch",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-anything-normal-now-114800310.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
-  ]
+  ],
+  "playbook_mean_reversion": {
+    "status": "INELIGIBLE",
+    "is_triggered": false,
+    "close_price": 270.6000061035156,
+    "sma200": 277.41,
+    "sma20": 280.47,
+    "sma20_slope": -0.916,
+    "lower_bb": 272.89,
+    "upper_bb": 288.06,
+    "pct_b": -0.151,
+    "rsi2": 2.704882012365033,
+    "rsi14": 27.401100928564304,
+    "atr14": 3.6314696437811627,
+    "close_above_sma200": false,
+    "close_below_lower_bb": true,
+    "rsi2_below_10": true,
+    "adequate_liquidity": false,
+    "risk_limits_pass": true,
+    "target_exit_price": 280.47,
+    "stop_loss_spot_price": 265.09,
+    "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
+    "suggested_structure": "Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)",
+    "target_dte_range": "30 - 45 DTE Monthly Expiry",
+    "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
+    "exit_rules": [
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~280.47).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 265.09).",
+      "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
+      "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
+      "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."
+    ],
+    "rationale": "IWM is not part of the approved Playbook F&O Index Universe (NIFTY/BANKNIFTY/FINNIFTY).",
+    "warnings": [],
+    "iv_regime": "Low",
+    "iv_recommendations": [
+      "Calendars",
+      "Risk-Defined Iron Butterflies"
+    ],
+    "iv_guidance": "Low IV: favor tight risk-defined iron butterflies or debit diagonals; avoid wide unhedged premium selling."
+  }
 }

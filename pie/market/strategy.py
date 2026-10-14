@@ -40,6 +40,7 @@ class StrategyType(StrEnum):
     RATIO_PUT_SPREAD = "ratio_put_spread"
     COVERED_FUTURE = "covered_future"
     PROTECTED_FUTURE = "protected_future"
+    NIFTY_MEAN_REVERSION = "nifty_mean_reversion"
 
 
 class StrategyRecommendation(DomainModel):
@@ -165,6 +166,9 @@ def score_all_strategies(
     # Module 11: Volatility Squeeze & Non-Directional Breakout Module
     squeeze_breakout_bonus = 15.0 if (adx is not None and adx < 20.0 and pct_b is not None and 0.42 <= pct_b <= 0.58) else 0.0
 
+    # Module 12: Playbook Section 8 Guardrail: Never mechanically short upper Bollinger touches in an uptrend
+    bb_upper_uptrend_penalty = 35.0 if (trend_val >= 6.0 and pct_b is not None and pct_b >= 0.95) else 0.0
+
     # Module 13: Hidden Markov Model (HMM) Regime Transition State Confluence
     hmm_bull = analysis.indicator_values.get("HMM_BULL_PROB", 0.33)
     hmm_bear = analysis.indicator_values.get("HMM_BEAR_PROB", 0.33)
@@ -203,7 +207,7 @@ def score_all_strategies(
     )
 
     # 2. Put Debit Spread: Bearish Trend or Overbought Exhaustion Fade (Net Debit)
-    pds_score = (bearishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen - hmm_bear_disagreement_pen
+    pds_score = (bearishness * 0.50) + (max(0.0, 100.0 - iv_rank) * 0.15) + adx_boost + rsi_bear_bonus + bb_lower_bonus + resistance_bonus + weekly_bear_bonus + rs_bear_bonus + atr_safety_bonus + backtest_edge_bonus + vol_compression_bonus + overbought_fade_bonus + ema_bear_confirm - earnings_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen - hmm_bear_disagreement_pen - bb_upper_uptrend_penalty
     raw_scores[StrategyType.PUT_DEBIT_SPREAD] = (
         (pds_score / 1.45) * confidence_mult,
         "Bearish trend with Weekly alignment, EMA resistance anchoring, and Volatility Compression favors Put Debit Spread.",
@@ -298,7 +302,7 @@ def score_all_strategies(
     )
 
     # 11. Naked Call: Strong Bearish & High IV (IV Rank >= 60, Unhedged)
-    nc_score = (bearishness * 0.40) + (iv_premium * 0.50) + rsi_bear_bonus - naked_trade_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen
+    nc_score = (bearishness * 0.40) + (iv_premium * 0.50) + rsi_bear_bonus - naked_trade_penalty - bm_bear_penalty - ema200_bear_pen - ema20_bear_pen - bb_upper_uptrend_penalty
     raw_scores[StrategyType.NAKED_CALL] = (
         (nc_score / 1.20) * confidence_mult,
         "Strong bearish resistance with elevated IV favors Naked Call selling.",
@@ -360,7 +364,43 @@ def score_all_strategies(
         "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
     )
 
-    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.CREDIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT, StrategyType.COVERED_FUTURE, StrategyType.PROTECTED_FUTURE}
+    # 17. NIFTY Mean-Reversion Bull Put Spread (Playbook v1.4 Section 8)
+    # Entry requires: (1) close < lower BB (pct_b < 0); (2) RSI(2) < 10; (3) close > 200 SMA; (4) liquid F&O
+    rsi2 = analysis.indicator_values.get("RSI(2)")
+    sma200_val = analysis.indicator_values.get("SMA200") or ema200
+    is_above_sma200 = (last_price is not None and sma200_val is not None and last_price > sma200_val)
+    is_below_lower_bb = (pct_b is not None and pct_b < 0.0)
+    is_rsi2_crash = (rsi2 is not None and rsi2 < 10.0)
+
+    if not is_above_sma200 and sma200_val is not None:
+        # Playbook Section 8 rule: "Enter only if daily close is above 200-day SMA; below it, stand aside or be defensive."
+        nmr_score = 0.0
+        nmr_rationale = (
+            "NIFTY Income Playbook v1.4: Daily close is below 200-day SMA — Stand aside or be defensive (bull put spreads prohibited)."
+        )
+    elif is_below_lower_bb and is_rsi2_crash:
+        nmr_score = 96.0 + min(4.0, (iv_premium * 0.1))
+        nmr_rationale = (
+            f"⚡ NIFTY Mean-Reversion Trigger (Playbook v1.4): Daily close below lower Bollinger Band with "
+            f"extreme oversold RSI(2)={rsi2:.1f} (<10) above 200-day SMA. Monthly defined-risk Bull Put Spread qualified."
+        )
+    elif rsi2 is not None and rsi2 < 25.0 and is_above_sma200:
+        nmr_score = 65.0 + max(0.0, (25.0 - rsi2))
+        nmr_rationale = (
+            f"NIFTY Mean-Reversion Watchlist (Playbook v1.4): Oversold pullback in progress (RSI(2)={rsi2:.1f} < 25) "
+            f"above 200-day SMA. Monitoring for lower Bollinger touch and RSI(2) < 10 trigger."
+        )
+    else:
+        nmr_score = 25.0 if is_above_sma200 else 0.0
+        nmr_rationale = (
+            "NIFTY Mean-Reversion Strategy (Playbook v1.4): Primary trend is above 200 SMA, but no extreme oversold dip condition."
+        )
+    raw_scores[StrategyType.NIFTY_MEAN_REVERSION] = (
+        nmr_score * confidence_mult,
+        nmr_rationale,
+    )
+
+    bullish_types = {StrategyType.CALL_DEBIT_SPREAD, StrategyType.CREDIT_SPREAD, StrategyType.JADE_LIZARD, StrategyType.POOR_MANS_COVERED_CALL, StrategyType.NAKED_PUT, StrategyType.COLLAR, StrategyType.TRADECRAFT_PUT, StrategyType.COVERED_FUTURE, StrategyType.PROTECTED_FUTURE, StrategyType.NIFTY_MEAN_REVERSION}
     bearish_types = {StrategyType.PUT_DEBIT_SPREAD, StrategyType.NAKED_CALL}
 
     results: dict[StrategyType, StrategyFitScore] = {}

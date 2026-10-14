@@ -252,6 +252,48 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
             grade = item["grade"]
             content += f"| **{sym}** | {curr}{price:,.2f} | {regime} | **{score_str}** | {strat} | `{leg_str}` | {grade} |\n"
 
+    if market_type.lower() == "india":
+        content += """
+---
+
+## 🛡️ Part 1B: NIFTY Income Portfolio Playbook v1.4 — Mean-Reversion Signal Status
+
+| Index | Price | 200 SMA Trend Guardrail | Lower BB (20,2σ) | RSI(2) | Signal Status | Diagnosis & Guidance | Proposed Structure |
+| :--- | :--- | :--- | :--- | :---: | :---: | :--- | :--- |
+"""
+        playbook_indices = ["^NSEI", "^NSEBANK", "NIFTY_FIN_SERVICE.NS"]
+        for p_sym in playbook_indices:
+            file_key = p_sym.replace("^", "").replace(".NS", "_NS").replace(".BO", "_BO").replace(" ", "_")
+            json_file = docs_dir / f"{file_key}.json"
+            if json_file.exists():
+                try:
+                    p_data = json.loads(json_file.read_text(encoding="utf-8"))
+                    pmr = p_data.get("playbook_mean_reversion")
+                    if pmr:
+                        p_price = p_data.get("last_price", 0.0)
+                        sma200_val = pmr.get("sma200")
+                        sma200_str = f"₹{sma200_val:,.1f}" if sma200_val else "N/A"
+                        trend_ok = "✅ Above" if pmr.get("close_above_sma200") else "❌ Below (Defensive)"
+                        lower_bb_val = pmr.get("lower_bb")
+                        lower_bb_str = f"₹{lower_bb_val:,.1f}" if lower_bb_val else "N/A"
+                        bb_touch = "✅ Penetrated" if pmr.get("close_below_lower_bb") else "⚪ Inside"
+                        rsi2_val = pmr.get("rsi2")
+                        rsi2_str = f"{rsi2_val:.1f}" if rsi2_val is not None else "N/A"
+                        status_val = pmr.get("status", "NEUTRAL")
+                        status_badge = {
+                            "TRIGGERED": "🟢 **ACTIVE TRIGGER**",
+                            "WATCHLIST": "🟡 **WATCHLIST**",
+                            "STAND_ASIDE": "🔴 **STAND ASIDE**",
+                            "NEUTRAL": "⚪ **NEUTRAL**",
+                        }.get(status_val, status_val)
+                        diag = pmr.get("rationale", "")
+                        if len(diag) > 120:
+                            diag = diag[:117] + "..."
+                        struct = pmr.get("suggested_structure", "Bull Put Spread")
+                        content += f"| **{p_sym}** | ₹{p_price:,.2f} | {trend_ok} ({sma200_str}) | {bb_touch} ({lower_bb_str}) | `{rsi2_str}` | {status_badge} | {diag} | `{struct}` |\n"
+                except Exception:
+                    pass
+
     content += f"""
 ---
 
