@@ -7,8 +7,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **SPY** | Oct 15, 22:43 IST | 🟡 Credit Spread | **6.9** / 10 | `Sell SPY 20-Nov-2026 730 Put /  Buy SPY 20-Nov-2026 725 Put` | ⚡ ⚠️ Stop Loss (Today, 22:43) |
-| **QQQ** | Oct 15, 22:43 IST | 🟡 Credit Spread | **6.5** / 10 | `Sell QQQ 20-Nov-2026 685 Put /  Buy QQQ 20-Nov-2026 675 Put` | ⚡ ⚠️ Stop Loss (Today, 00:16) |
+| **SPY** | Oct 16, 01:56 IST | 🟡 Credit Spread | **7.0** / 10 | `Sell SPY 20-Nov-2026 730 Put /  Buy SPY 20-Nov-2026 725 Put` | ⚡ ⚠️ Stop Loss (Yesterday, 22:43) |
+| **QQQ** | Oct 16, 01:56 IST | 🟡 Credit Spread | **6.4** / 10 | `Sell QQQ 20-Nov-2026 690 Put /  Buy QQQ 20-Nov-2026 680 Put` | ⚡ ⚠️ Stop Loss (Yesterday, 00:16) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
@@ -23,19 +23,19 @@
 #### 🇺🇸 U.S. Stocks & ETFs
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **COST** | Oct 14, 10:16 IST | 🟡 Iron Condor | **10.0** / 10 | `Buy 1x COST 20-Nov-2026 895 Put /  Sell 1x COST 20-Nov-2026 910 Put /  Sell 1x COST 20-Nov-2026 1000 Call /  Buy 1x COST 20-Nov-2026 1015 Call` | ⚡ Active (Yesterday, 10:16) |
-| **MSTR** | Oct 14, 10:16 IST | 🟡 Iron Condor | **10.0** / 10 | `Buy 1x MSTR 20-Nov-2026 125 Put /  Sell 1x MSTR 20-Nov-2026 135 Put /  Sell 1x MSTR 20-Nov-2026 165 Call /  Buy 1x MSTR 20-Nov-2026 175 Call` | ⚡ Active (Yesterday, 10:16) |
-| **TSLA** | Oct 14, 10:16 IST | 🟡 Iron Condor | **8.6** / 10 | `Buy 1x TSLA 20-Nov-2026 345 Put /  Sell 1x TSLA 20-Nov-2026 355 Put /  Sell 1x TSLA 20-Nov-2026 395 Call /  Buy 1x TSLA 20-Nov-2026 405 Call` | ⚡ Active (Yesterday, 10:16) |
-| **BAC** | Oct 14, 10:16 IST | 🟡 Iron Condor | **8.6** / 10 | `Buy 1x BAC 20-Nov-2026 50 Put /  Sell 1x BAC 20-Nov-2026 51 Put /  Sell 1x BAC 20-Nov-2026 57 Call /  Buy 1x BAC 20-Nov-2026 58 Call` | ⚡ Active (Yesterday, 10:16) |
-| **LLY** | Oct 14, 10:17 IST | 🟡 Iron Condor | **8.3** / 10 | `Buy 1x LLY 20-Nov-2026 1050 Put /  Sell 1x LLY 20-Nov-2026 1100 Put /  Sell 1x LLY 20-Nov-2026 1200 Call /  Buy 1x LLY 20-Nov-2026 1250 Call` | ⚡ Active (Yesterday, 10:17) |
-| **QCOM** | Oct 14, 10:16 IST | 🟡 Iron Condor | **8.0** / 10 | `Buy 1x QCOM 20-Nov-2026 160 Put /  Sell 1x QCOM 20-Nov-2026 165 Put /  Sell 1x QCOM 20-Nov-2026 185 Call /  Buy 1x QCOM 20-Nov-2026 190 Call` | ⚡ Active (Yesterday, 10:16) |
+| **COST** | Oct 14, 10:16 IST | 🟡 Iron Condor | **10.0** / 10 | `Buy 1x COST 20-Nov-2026 895 Put /  Sell 1x COST 20-Nov-2026 910 Put /  Sell 1x COST 20-Nov-2026 1000 Call /  Buy 1x COST 20-Nov-2026 1015 Call` | ⚡ Active (Oct 14, 10:16 IST) |
+| **MSTR** | Oct 14, 10:16 IST | 🟡 Iron Condor | **10.0** / 10 | `Buy 1x MSTR 20-Nov-2026 125 Put /  Sell 1x MSTR 20-Nov-2026 135 Put /  Sell 1x MSTR 20-Nov-2026 165 Call /  Buy 1x MSTR 20-Nov-2026 175 Call` | ⚡ Active (Oct 14, 10:16 IST) |
+| **TSLA** | Oct 14, 10:16 IST | 🟡 Iron Condor | **8.6** / 10 | `Buy 1x TSLA 20-Nov-2026 345 Put /  Sell 1x TSLA 20-Nov-2026 355 Put /  Sell 1x TSLA 20-Nov-2026 395 Call /  Buy 1x TSLA 20-Nov-2026 405 Call` | ⚡ Active (Oct 14, 10:16 IST) |
+| **BAC** | Oct 14, 10:16 IST | 🟡 Iron Condor | **8.6** / 10 | `Buy 1x BAC 20-Nov-2026 50 Put /  Sell 1x BAC 20-Nov-2026 51 Put /  Sell 1x BAC 20-Nov-2026 57 Call /  Buy 1x BAC 20-Nov-2026 58 Call` | ⚡ Active (Oct 14, 10:16 IST) |
+| **LLY** | Oct 14, 10:17 IST | 🟡 Iron Condor | **8.3** / 10 | `Buy 1x LLY 20-Nov-2026 1050 Put /  Sell 1x LLY 20-Nov-2026 1100 Put /  Sell 1x LLY 20-Nov-2026 1200 Call /  Buy 1x LLY 20-Nov-2026 1250 Call` | ⚡ Active (Oct 14, 10:17 IST) |
+| **QCOM** | Oct 14, 10:16 IST | 🟡 Iron Condor | **8.0** / 10 | `Buy 1x QCOM 20-Nov-2026 160 Put /  Sell 1x QCOM 20-Nov-2026 165 Put /  Sell 1x QCOM 20-Nov-2026 185 Call /  Buy 1x QCOM 20-Nov-2026 190 Call` | ⚡ Active (Oct 14, 10:16 IST) |
 
 #### 🇮🇳 Indian Equities
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **AXISBANK.NS** | Oct 14, 10:17 IST | 🟡 Iron Condor | **9.6** / 10 | `B1x-Nov-1150PE / S1x-Nov-1200PE / S1x-Nov-1300CE / B1x-Nov-1350CE` | ⚡ Active (Yesterday, 10:17) |
-| **DRREDDY.NS** | Oct 14, 10:18 IST | 🟡 Iron Condor | **9.6** / 10 | `B1x-Nov-1000PE / S1x-Nov-1100PE / S1x-Nov-1300CE / B1x-Nov-1400CE` | ⚡ Active (Yesterday, 10:18) |
-| **DIVISLAB.NS** | Oct 14, 10:18 IST | 🟡 Iron Condor | **8.2** / 10 | `B1x-Nov-8400PE / S1x-Nov-8600PE / S1x-Nov-9400CE / B1x-Nov-9600CE` | ⚡ Active (Yesterday, 10:18) |
+| **AXISBANK.NS** | Oct 14, 10:17 IST | 🟡 Iron Condor | **9.6** / 10 | `B1x-Nov-1150PE / S1x-Nov-1200PE / S1x-Nov-1300CE / B1x-Nov-1350CE` | ⚡ Active (Oct 14, 10:17 IST) |
+| **DRREDDY.NS** | Oct 14, 10:18 IST | 🟡 Iron Condor | **9.6** / 10 | `B1x-Nov-1000PE / S1x-Nov-1100PE / S1x-Nov-1300CE / B1x-Nov-1400CE` | ⚡ Active (Oct 14, 10:18 IST) |
+| **DIVISLAB.NS** | Oct 14, 10:18 IST | 🟡 Iron Condor | **8.2** / 10 | `B1x-Nov-8400PE / S1x-Nov-8600PE / S1x-Nov-9400CE / B1x-Nov-9600CE` | ⚡ Active (Oct 14, 10:18 IST) |
 
 > 📜 **[View All Active & Range Trades (Score < 8.0) ➔](reports/market/all_trades.md)**
 
