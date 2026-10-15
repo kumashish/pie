@@ -1,6 +1,6 @@
 # 🇮🇳 Indian Markets (NSE / BSE) Quantitative Multi-Strategy Interleaved Leaderboard
 
-**Last Automated Run**: Oct 14, 23:22 IST
+**Last Automated Run**: Oct 15, 11:23 IST
 
 > **Global Interleaved Ranking**: Evaluated and ordered strictly by quantitative fit score on a **0–10.0 scale** (Minimum Quality Threshold: **Score ≥ 7.0** for individual stocks; Benchmark Indices always tracked).
 
@@ -10,11 +10,11 @@
 
 | Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
 | :--- | :--- | :--- | :---: | :--- | :--- | :---: |
-| **NIFTY_FIN_SERVICE.NS** | ₹24,948.70 | Strong Bear | **6.4** | Credit Spread | `S1x-Nov-26150CE / B1x-Nov-26400CE` | B (Good) |
-| **^BSESN** | ₹72,781.89 | Bear | **5.9** | Iron Condor | `B1x-Nov-68100PE / S1x-Nov-68900PE / S1x-Nov-76700CE / B1x-Nov-77500CE` | C (Moderate) |
-| **^NSEI** | ₹22,622.70 | Bear | **5.9** | Credit Spread | `S1x-Nov-23400CE / B1x-Nov-23600CE` | C (Moderate) |
-| **^NSEMDCP50** | ₹16,997.35 | Bear | **4.9** | Iron Condor | `B1x-Nov-15950PE / S1x-Nov-16150PE / S1x-Nov-17850CE / B1x-Nov-18050CE` | C (Moderate) |
-| **^NSEBANK** | ₹55,316.00 | Strong Bear | **4.5** | Credit Spread | `S1x-Nov-58000CE / B1x-Nov-58600CE` | C (Moderate) |
+| **^BSESN** | ₹73,841.13 | Bear | **6.7** | Iron Condor | `B1x-Nov-69000PE / S1x-Nov-69900PE / S1x-Nov-77700CE / B1x-Nov-78600CE` | B (Good) |
+| **NIFTY_FIN_SERVICE.NS** | ₹25,201.90 | Bear | **6.7** | Iron Condor | `B1x-Nov-23700PE / S1x-Nov-23950PE / S1x-Nov-26450CE / B1x-Nov-26700CE` | B (Good) |
+| **^NSEI** | ₹22,920.75 | Bear | **5.7** | Credit Spread | `S1x-Nov-23700CE / B1x-Nov-24000CE` | C (Moderate) |
+| **^NSEMDCP50** | ₹17,018.95 | Bear | **5.0** | Iron Condor | `B1x-Nov-15950PE / S1x-Nov-16150PE / S1x-Nov-17850CE / B1x-Nov-18050CE` | C (Moderate) |
+| **^NSEBANK** | ₹55,720.05 | Bear | **4.3** | Credit Spread | `S1x-Nov-58400CE / B1x-Nov-59000CE` | C (Moderate) |
 
 ---
 
@@ -22,9 +22,9 @@
 
 | Index | Price | 200 SMA Trend Guardrail | Lower BB (20,2σ) | RSI(2) | Signal Status | Diagnosis & Guidance | Proposed Structure |
 | :--- | :--- | :--- | :--- | :---: | :---: | :--- | :--- |
-| **^NSEI** | ₹22,622.70 | ❌ Below (Defensive) (₹24,186.1) | ⚪ Inside (₹22,061.8) | `56.6` | 🔴 **STAND ASIDE** | Daily close (22,622.70) is below 200-day SMA (24,186.06). Per Playbook Section 8: Stand aside or remain defensive. Do... | `Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)` |
-| **^NSEBANK** | ₹55,316.00 | ❌ Below (Defensive) (₹56,922.6) | ⚪ Inside (₹53,826.1) | `57.0` | 🔴 **STAND ASIDE** | Daily close (55,316.00) is below 200-day SMA (56,922.64). Per Playbook Section 8: Stand aside or remain defensive. Do... | `Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)` |
-| **NIFTY_FIN_SERVICE.NS** | ₹24,948.70 | ❌ Below (Defensive) (₹26,183.1) | ⚪ Inside (₹24,814.9) | `5.8` | 🔴 **STAND ASIDE** | Daily close (24,948.70) is below 200-day SMA (26,183.10). Per Playbook Section 8: Stand aside or remain defensive. Do... | `Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)` |
+| **^NSEI** | ₹22,920.75 | ❌ Below (Defensive) (₹24,170.0) | ⚪ Inside (₹22,084.7) | `82.9` | 🔴 **STAND ASIDE** | Daily close (22,920.75) is below 200-day SMA (24,169.96). Per Playbook Section 8: Stand aside or remain defensive. Do... | `Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)` |
+| **^NSEBANK** | ₹55,720.05 | ❌ Below (Defensive) (₹56,905.3) | ⚪ Inside (₹53,875.4) | `80.6` | 🔴 **STAND ASIDE** | Daily close (55,720.05) is below 200-day SMA (56,905.33). Per Playbook Section 8: Stand aside or remain defensive. Do... | `Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)` |
+| **NIFTY_FIN_SERVICE.NS** | ₹25,201.90 | ❌ Below (Defensive) (₹26,169.7) | ⚪ Inside (₹24,811.3) | `73.7` | 🔴 **STAND ASIDE** | Daily close (25,201.90) is below 200-day SMA (26,169.70). Per Playbook Section 8: Stand aside or remain defensive. Do... | `Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)` |
 
 ---
 

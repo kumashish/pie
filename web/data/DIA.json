@@ -1,28 +1,28 @@
 {
   "symbol": "DIA",
-  "last_price": 513.57,
+  "last_price": 515.63,
   "as_of": "2026-10-14 13:30:00",
   "regime": "neutral",
   "regime_display": "Neutral",
-  "trend_score": 4.5,
-  "fit_score": 45.0,
+  "trend_score": 5.2,
+  "fit_score": 52.5,
   "confidence_grade": "C",
-  "confidence_percentage": 45.0,
-  "vix": 16.85,
+  "confidence_percentage": 52.5,
+  "vix": 16.87,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (77.2% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (80.9% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Long / Buy",
-    "entry": 513.57,
-    "stop_loss": 510.66,
-    "target_1": 590.61,
-    "target_2": 641.96,
-    "risk_per_share": 2.91,
-    "risk_reward": 44.1,
-    "atr14": 4.94,
+    "entry": 515.63,
+    "stop_loss": 510.85,
+    "target_1": 592.97,
+    "target_2": 644.54,
+    "risk_per_share": 4.78,
+    "risk_reward": 27.0,
+    "atr14": 4.97,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -31,274 +31,274 @@
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 480.0,
-        "strike_formatted": "480",
-        "option_type": "Put",
-        "delta": -0.084,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Buy 1x DIA 20-Nov-2026 480 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
         "strike": 485.0,
         "strike_formatted": "485",
         "option_type": "Put",
-        "delta": -0.117,
+        "delta": -0.101,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Sell 1x DIA 20-Nov-2026 485 Put"
+        "dte": 36,
+        "summary": "Buy 1x DIA 20-Nov-2026 485 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 545.0,
-        "strike_formatted": "545",
-        "option_type": "Call",
-        "delta": 0.162,
+        "strike": 490.0,
+        "strike_formatted": "490",
+        "option_type": "Put",
+        "delta": -0.14,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Sell 1x DIA 20-Nov-2026 545 Call"
+        "dte": 36,
+        "summary": "Sell 1x DIA 20-Nov-2026 490 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 540.0,
+        "strike_formatted": "540",
+        "option_type": "Call",
+        "delta": 0.226,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 36,
+        "summary": "Sell 1x DIA 20-Nov-2026 540 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 550.0,
-        "strike_formatted": "550",
+        "strike": 545.0,
+        "strike_formatted": "545",
         "option_type": "Call",
-        "delta": 0.124,
+        "delta": 0.177,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Buy 1x DIA 20-Nov-2026 550 Call"
+        "dte": 36,
+        "summary": "Buy 1x DIA 20-Nov-2026 545 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 20.0,
-    "stop_loss_price": 498.16,
-    "take_profit_price": 528.98,
-    "net_delta": -0.005,
-    "net_theta": 0.031,
+    "stop_loss_price": 500.16,
+    "take_profit_price": 531.1,
+    "net_delta": -0.01,
+    "net_theta": 0.033,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 410.86,
+        "price": 412.5,
         "pnl": -25.0
       },
       {
-        "price": 414.96,
+        "price": 416.63,
         "pnl": -25.0
       },
       {
-        "price": 419.07,
+        "price": 420.75,
         "pnl": -25.0
       },
       {
-        "price": 423.18,
+        "price": 424.88,
         "pnl": -25.0
       },
       {
-        "price": 427.29,
+        "price": 429.0,
         "pnl": -25.0
       },
       {
-        "price": 431.4,
+        "price": 433.13,
         "pnl": -25.0
       },
       {
-        "price": 435.51,
+        "price": 437.25,
         "pnl": -25.0
       },
       {
-        "price": 439.62,
+        "price": 441.38,
         "pnl": -25.0
       },
       {
-        "price": 443.72,
+        "price": 445.5,
         "pnl": -25.0
       },
       {
-        "price": 447.83,
+        "price": 449.63,
         "pnl": -25.0
       },
       {
-        "price": 451.94,
+        "price": 453.75,
         "pnl": -25.0
       },
       {
-        "price": 456.05,
+        "price": 457.88,
         "pnl": -25.0
       },
       {
-        "price": 460.16,
+        "price": 462.0,
         "pnl": -25.0
       },
       {
-        "price": 464.27,
+        "price": 466.13,
         "pnl": -25.0
       },
       {
-        "price": 468.38,
+        "price": 470.25,
         "pnl": -25.0
       },
       {
-        "price": 472.48,
+        "price": 474.38,
         "pnl": -25.0
       },
       {
-        "price": 476.59,
+        "price": 478.5,
         "pnl": -25.0
       },
       {
-        "price": 480.7,
-        "pnl": -24.3
+        "price": 482.63,
+        "pnl": -25.0
       },
       {
-        "price": 484.81,
-        "pnl": -20.19
+        "price": 486.75,
+        "pnl": -23.25
       },
       {
-        "price": 488.92,
+        "price": 490.88,
         "pnl": -20.0
       },
       {
-        "price": 493.03,
+        "price": 495.0,
         "pnl": -20.0
       },
       {
-        "price": 497.14,
+        "price": 499.13,
         "pnl": -20.0
       },
       {
-        "price": 501.24,
+        "price": 503.25,
         "pnl": -20.0
       },
       {
-        "price": 505.35,
+        "price": 507.38,
         "pnl": -20.0
       },
       {
-        "price": 509.46,
+        "price": 511.5,
         "pnl": -20.0
       },
       {
-        "price": 513.57,
+        "price": 515.63,
         "pnl": -20.0
       },
       {
-        "price": 517.68,
+        "price": 519.76,
         "pnl": -20.0
       },
       {
-        "price": 521.79,
+        "price": 523.88,
         "pnl": -20.0
       },
       {
-        "price": 525.9,
+        "price": 528.01,
         "pnl": -20.0
       },
       {
-        "price": 530.0,
+        "price": 532.13,
         "pnl": -20.0
       },
       {
-        "price": 534.11,
+        "price": 536.26,
         "pnl": -20.0
       },
       {
-        "price": 538.22,
-        "pnl": -20.0
+        "price": 540.38,
+        "pnl": -20.38
       },
       {
-        "price": 542.33,
-        "pnl": -20.0
+        "price": 544.51,
+        "pnl": -24.51
       },
       {
-        "price": 546.44,
-        "pnl": -21.44
-      },
-      {
-        "price": 550.55,
+        "price": 548.63,
         "pnl": -25.0
       },
       {
-        "price": 554.66,
+        "price": 552.76,
         "pnl": -25.0
       },
       {
-        "price": 558.76,
+        "price": 556.88,
         "pnl": -25.0
       },
       {
-        "price": 562.87,
+        "price": 561.01,
         "pnl": -25.0
       },
       {
-        "price": 566.98,
+        "price": 565.13,
         "pnl": -25.0
       },
       {
-        "price": 571.09,
+        "price": 569.26,
         "pnl": -25.0
       },
       {
-        "price": 575.2,
+        "price": 573.38,
         "pnl": -25.0
       },
       {
-        "price": 579.31,
+        "price": 577.51,
         "pnl": -25.0
       },
       {
-        "price": 583.42,
+        "price": 581.63,
         "pnl": -25.0
       },
       {
-        "price": 587.52,
+        "price": 585.76,
         "pnl": -25.0
       },
       {
-        "price": 591.63,
+        "price": 589.88,
         "pnl": -25.0
       },
       {
-        "price": 595.74,
+        "price": 594.01,
         "pnl": -25.0
       },
       {
-        "price": 599.85,
+        "price": 598.13,
         "pnl": -25.0
       },
       {
-        "price": 603.96,
+        "price": 602.26,
         "pnl": -25.0
       },
       {
-        "price": 608.07,
+        "price": 606.38,
         "pnl": -25.0
       },
       {
-        "price": 612.18,
+        "price": 610.51,
         "pnl": -25.0
       },
       {
-        "price": 616.28,
+        "price": 614.63,
+        "pnl": -25.0
+      },
+      {
+        "price": 618.76,
         "pnl": -25.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.77,
+      "win_probability": 0.783,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.293,
+      "half_kelly_fraction": 0.3047,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -308,53 +308,53 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 77.2,
-      "grade": "B (Good)",
+      "score": 80.9,
+      "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 480 Put<br> Sell 1x DIA 20-Nov-2026 485 Put<br> Sell 1x DIA 20-Nov-2026 545 Call<br> Buy 1x DIA 20-Nov-2026 550 Call"
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 485 Put<br> Sell 1x DIA 20-Nov-2026 490 Put<br> Sell 1x DIA 20-Nov-2026 540 Call<br> Buy 1x DIA 20-Nov-2026 545 Call"
     },
     {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 46.3,
+      "score": 48.5,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 500 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Buy 1x DIA 20-Nov-2026 540 Call"
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 500 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Buy 1x DIA 20-Nov-2026 545 Call"
     },
     {
       "strategy_type": "butterfly",
       "strategy_display": "Butterfly",
-      "score": 44.5,
+      "score": 47.3,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 500 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Buy 1x DIA 20-Nov-2026 525 Call"
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 500 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Buy 1x DIA 20-Nov-2026 530 Call"
     },
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 40.2,
+      "score": 43.0,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x DIA 20-Nov-2026 485 Put<br> Sell 1x DIA 20-Nov-2026 515 Put<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Buy 1x DIA 20-Nov-2026 540 Call"
+      "legs_summary": "Buy 1x DIA 20-Nov-2026 490 Put<br> Sell 1x DIA 20-Nov-2026 515 Put<br> Sell 1x DIA 20-Nov-2026 515 Call<br> Buy 1x DIA 20-Nov-2026 545 Call"
     }
   ],
   "indicators": {
-    "EMA20": "515.82",
-    "EMA50": "519.56",
-    "EMA100": "516.60",
-    "EMA200": "504.32",
-    "SMA20": "514.24",
-    "SMA200": "503.95",
-    "RSI(2)": "23.43",
-    "RSI(14)": "44.77",
-    "ATR(14)": "4.94",
-    "ADX(14)": "20.12",
-    "BB(20,2)": "0.45",
-    "P_SHAPE(20)": "55.07"
+    "EMA20": "516.01",
+    "EMA50": "519.64",
+    "EMA100": "516.64",
+    "EMA200": "504.35",
+    "SMA20": "514.34",
+    "SMA200": "503.96",
+    "RSI(2)": "41.64",
+    "RSI(14)": "47.38",
+    "ATR(14)": "4.97",
+    "ADX(14)": "20.21",
+    "BB(20,2)": "0.60",
+    "P_SHAPE(20)": "57.30"
   },
   "rules": [
     {
@@ -373,6 +373,13 @@
     },
     {
       "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -415,13 +422,6 @@
     },
     {
       "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -482,30 +482,30 @@
   "playbook_mean_reversion": {
     "status": "INELIGIBLE",
     "is_triggered": false,
-    "close_price": 513.5700073242188,
-    "sma200": 503.95,
-    "sma20": 514.24,
-    "sma20_slope": -0.31,
-    "lower_bb": 507.81,
-    "upper_bb": 520.67,
-    "pct_b": 0.4479,
-    "rsi2": 23.42870530657987,
-    "rsi14": 44.76749313164816,
-    "atr14": 4.935079409569637,
+    "close_price": 515.6300048828125,
+    "sma200": 503.96,
+    "sma20": 514.34,
+    "sma20_slope": -0.29,
+    "lower_bb": 507.9,
+    "upper_bb": 520.79,
+    "pct_b": 0.5999,
+    "rsi2": 41.641203448606774,
+    "rsi14": 47.384607862514834,
+    "atr14": 4.972219302147762,
     "close_above_sma200": true,
     "close_below_lower_bb": false,
     "rsi2_below_10": false,
     "adequate_liquidity": false,
     "risk_limits_pass": true,
-    "target_exit_price": 514.24,
-    "stop_loss_spot_price": 506.02,
+    "target_exit_price": 514.34,
+    "stop_loss_spot_price": 505.5,
     "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
     "suggested_structure": "Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)",
     "target_dte_range": "30 - 45 DTE Monthly Expiry",
     "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
     "exit_rules": [
-      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~514.24).",
-      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 506.02).",
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~514.34).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 505.50).",
       "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
       "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
       "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."

@@ -1,6 +1,6 @@
 {
   "symbol": "VOO",
-  "last_price": 705.48,
+  "last_price": 707.43,
   "as_of": "2026-10-14 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
@@ -8,21 +8,21 @@
   "fit_score": 67.5,
   "confidence_grade": "B",
   "confidence_percentage": 67.5,
-  "vix": 16.85,
+  "vix": 16.87,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (79.8% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (81.3% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Long / Buy",
-    "entry": 705.48,
-    "stop_loss": 696.84,
-    "target_1": 811.3,
-    "target_2": 881.85,
-    "risk_per_share": 8.64,
-    "risk_reward": 20.4,
-    "atr14": 5.9,
+    "entry": 707.43,
+    "stop_loss": 696.91,
+    "target_1": 813.54,
+    "target_2": 884.29,
+    "risk_per_share": 10.52,
+    "risk_reward": 16.8,
+    "atr14": 5.95,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -31,274 +31,274 @@
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 660.0,
-        "strike_formatted": "660",
-        "option_type": "Put",
-        "delta": -0.086,
-        "expiration": "2026-11-20",
-        "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Buy 1x VOO 20-Nov-2026 660 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
         "strike": 665.0,
         "strike_formatted": "665",
         "option_type": "Put",
-        "delta": -0.111,
+        "delta": -0.099,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Sell 1x VOO 20-Nov-2026 665 Put"
+        "dte": 36,
+        "summary": "Buy 1x VOO 20-Nov-2026 665 Put"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 745.0,
-        "strike_formatted": "745",
-        "option_type": "Call",
-        "delta": 0.185,
+        "strike": 670.0,
+        "strike_formatted": "670",
+        "option_type": "Put",
+        "delta": -0.126,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Sell 1x VOO 20-Nov-2026 745 Call"
+        "dte": 36,
+        "summary": "Sell 1x VOO 20-Nov-2026 670 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 740.0,
+        "strike_formatted": "740",
+        "option_type": "Call",
+        "delta": 0.233,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 36,
+        "summary": "Sell 1x VOO 20-Nov-2026 740 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 750.0,
-        "strike_formatted": "750",
+        "strike": 745.0,
+        "strike_formatted": "745",
         "option_type": "Call",
-        "delta": 0.154,
+        "delta": 0.196,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
-        "summary": "Buy 1x VOO 20-Nov-2026 750 Call"
+        "dte": 36,
+        "summary": "Buy 1x VOO 20-Nov-2026 745 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 30.0,
-    "stop_loss_price": 684.32,
-    "take_profit_price": 726.64,
-    "net_delta": -0.006,
-    "net_theta": 0.032,
+    "stop_loss_price": 686.21,
+    "take_profit_price": 728.65,
+    "net_delta": -0.01,
+    "net_theta": 0.033,
     "probability_of_profit": 0.0,
     "var_95": 5.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 564.38,
+        "price": 565.94,
         "pnl": -35.0
       },
       {
-        "price": 570.03,
+        "price": 571.6,
         "pnl": -35.0
       },
       {
-        "price": 575.67,
+        "price": 577.26,
         "pnl": -35.0
       },
       {
-        "price": 581.32,
+        "price": 582.92,
         "pnl": -35.0
       },
       {
-        "price": 586.96,
+        "price": 588.58,
         "pnl": -35.0
       },
       {
-        "price": 592.6,
+        "price": 594.24,
         "pnl": -35.0
       },
       {
-        "price": 598.25,
+        "price": 599.9,
         "pnl": -35.0
       },
       {
-        "price": 603.89,
+        "price": 605.56,
         "pnl": -35.0
       },
       {
-        "price": 609.53,
+        "price": 611.22,
         "pnl": -35.0
       },
       {
-        "price": 615.18,
+        "price": 616.88,
         "pnl": -35.0
       },
       {
-        "price": 620.82,
+        "price": 622.54,
         "pnl": -35.0
       },
       {
-        "price": 626.47,
+        "price": 628.2,
         "pnl": -35.0
       },
       {
-        "price": 632.11,
+        "price": 633.86,
         "pnl": -35.0
       },
       {
-        "price": 637.75,
+        "price": 639.52,
         "pnl": -35.0
       },
       {
-        "price": 643.4,
+        "price": 645.18,
         "pnl": -35.0
       },
       {
-        "price": 649.04,
+        "price": 650.84,
         "pnl": -35.0
       },
       {
-        "price": 654.69,
+        "price": 656.5,
         "pnl": -35.0
       },
       {
-        "price": 660.33,
-        "pnl": -34.67
+        "price": 662.15,
+        "pnl": -35.0
       },
       {
-        "price": 665.97,
+        "price": 667.81,
+        "pnl": -32.19
+      },
+      {
+        "price": 673.47,
         "pnl": -30.0
       },
       {
-        "price": 671.62,
+        "price": 679.13,
         "pnl": -30.0
       },
       {
-        "price": 677.26,
+        "price": 684.79,
         "pnl": -30.0
       },
       {
-        "price": 682.9,
+        "price": 690.45,
         "pnl": -30.0
       },
       {
-        "price": 688.55,
+        "price": 696.11,
         "pnl": -30.0
       },
       {
-        "price": 694.19,
+        "price": 701.77,
         "pnl": -30.0
       },
       {
-        "price": 699.84,
+        "price": 707.43,
         "pnl": -30.0
       },
       {
-        "price": 705.48,
+        "price": 713.09,
         "pnl": -30.0
       },
       {
-        "price": 711.12,
+        "price": 718.75,
         "pnl": -30.0
       },
       {
-        "price": 716.77,
+        "price": 724.41,
         "pnl": -30.0
       },
       {
-        "price": 722.41,
+        "price": 730.07,
         "pnl": -30.0
       },
       {
-        "price": 728.06,
+        "price": 735.73,
         "pnl": -30.0
       },
       {
-        "price": 733.7,
-        "pnl": -30.0
+        "price": 741.39,
+        "pnl": -31.39
       },
       {
-        "price": 739.34,
-        "pnl": -30.0
-      },
-      {
-        "price": 744.99,
-        "pnl": -30.0
-      },
-      {
-        "price": 750.63,
+        "price": 747.05,
         "pnl": -35.0
       },
       {
-        "price": 756.27,
+        "price": 752.71,
         "pnl": -35.0
       },
       {
-        "price": 761.92,
+        "price": 758.36,
         "pnl": -35.0
       },
       {
-        "price": 767.56,
+        "price": 764.02,
         "pnl": -35.0
       },
       {
-        "price": 773.21,
+        "price": 769.68,
         "pnl": -35.0
       },
       {
-        "price": 778.85,
+        "price": 775.34,
         "pnl": -35.0
       },
       {
-        "price": 784.49,
+        "price": 781.0,
         "pnl": -35.0
       },
       {
-        "price": 790.14,
+        "price": 786.66,
         "pnl": -35.0
       },
       {
-        "price": 795.78,
+        "price": 792.32,
         "pnl": -35.0
       },
       {
-        "price": 801.43,
+        "price": 797.98,
         "pnl": -35.0
       },
       {
-        "price": 807.07,
+        "price": 803.64,
         "pnl": -35.0
       },
       {
-        "price": 812.71,
+        "price": 809.3,
         "pnl": -35.0
       },
       {
-        "price": 818.36,
+        "price": 814.96,
         "pnl": -35.0
       },
       {
-        "price": 824.0,
+        "price": 820.62,
         "pnl": -35.0
       },
       {
-        "price": 829.64,
+        "price": 826.28,
         "pnl": -35.0
       },
       {
-        "price": 835.29,
+        "price": 831.94,
         "pnl": -35.0
       },
       {
-        "price": 840.93,
+        "price": 837.6,
         "pnl": -35.0
       },
       {
-        "price": 846.58,
+        "price": 843.26,
+        "pnl": -35.0
+      },
+      {
+        "price": 848.92,
         "pnl": -35.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.779,
+      "win_probability": 0.785,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3011,
+      "half_kelly_fraction": 0.3065,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -308,20 +308,29 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 79.8,
-      "grade": "B (Good)",
+      "score": 81.3,
+      "grade": "A (Optimal)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 660 Put<br> Sell 1x VOO 20-Nov-2026 665 Put<br> Sell 1x VOO 20-Nov-2026 745 Call<br> Buy 1x VOO 20-Nov-2026 750 Call"
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 665 Put<br> Sell 1x VOO 20-Nov-2026 670 Put<br> Sell 1x VOO 20-Nov-2026 740 Call<br> Buy 1x VOO 20-Nov-2026 745 Call"
+    },
+    {
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 64.9,
+      "grade": "B (Good)",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 690 Call<br> Sell 1x VOO 20-Nov-2026 705 Call<br> Sell 1x VOO 20-Nov-2026 705 Call<br> Buy 1x VOO 20-Nov-2026 725 Call"
     },
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 64.3,
+      "score": 62.3,
       "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x VOO 20-Nov-2026 665 Put<br> Buy 1x VOO 20-Nov-2026 660 Put"
+      "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put<br> Buy 1x VOO 20-Nov-2026 665 Put"
     },
     {
       "strategy_type": "ratio_put_spread",
@@ -330,7 +339,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 705 Put<br> Sell 1x VOO 20-Nov-2026 665 Put<br> Sell 1x VOO 20-Nov-2026 665 Put"
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 705 Put<br> Sell 1x VOO 20-Nov-2026 670 Put<br> Sell 1x VOO 20-Nov-2026 670 Put"
     },
     {
       "strategy_type": "wheel",
@@ -339,7 +348,7 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x VOO 20-Nov-2026 665 Put"
+      "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put"
     },
     {
       "strategy_type": "covered_future",
@@ -348,43 +357,34 @@
       "grade": "C (Moderate)",
       "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 705.5 Call<br> Sell 1x VOO 20-Nov-2026 745 Call"
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 707.4 Call<br> Sell 1x VOO 20-Nov-2026 740 Call"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 56.3,
+      "score": 56.4,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x VOO 20-Nov-2026 665 Put"
+      "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put"
     },
     {
       "strategy_type": "protected_future",
       "strategy_display": "Protected Future",
-      "score": 54.9,
+      "score": 54.8,
       "grade": "C (Moderate)",
       "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 705.5 Call<br> Buy 1x VOO 20-Nov-2026 665 Put"
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 707.4 Call<br> Buy 1x VOO 20-Nov-2026 670 Put"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 53.3,
+      "score": 53.4,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x VOO 20-Nov-2026 665 Put<br> Sell 1x VOO 20-Nov-2026 745 Call<br> Buy 1x VOO 20-Nov-2026 750 Call"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 51.0,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 685 Call<br> Sell 1x VOO 20-Nov-2026 705 Call<br> Sell 1x VOO 20-Nov-2026 705 Call<br> Buy 1x VOO 20-Nov-2026 725 Call"
+      "legs_summary": "Sell 1x VOO 20-Nov-2026 670 Put<br> Sell 1x VOO 20-Nov-2026 740 Call<br> Buy 1x VOO 20-Nov-2026 745 Call"
     },
     {
       "strategy_type": "poor_mans_covered_call",
@@ -398,7 +398,7 @@
     {
       "strategy_type": "iron_butterfly",
       "strategy_display": "Iron Butterfly",
-      "score": 46.7,
+      "score": 48.1,
       "grade": "C (Moderate)",
       "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
       "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
@@ -411,7 +411,7 @@
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x VOO 20-Nov-2026 705.5 Call"
+      "legs_summary": "Buy 1x VOO 20-Nov-2026 707.4 Call"
     },
     {
       "strategy_type": "call_debit_spread",
@@ -424,18 +424,18 @@
     }
   ],
   "indicators": {
-    "EMA20": "709.01",
-    "EMA50": "703.88",
-    "EMA100": "692.77",
-    "EMA200": "669.88",
-    "SMA20": "708.81",
-    "SMA200": "665.94",
-    "RSI(2)": "6.45",
-    "RSI(14)": "47.46",
-    "ATR(14)": "5.90",
-    "ADX(14)": "9.04",
-    "BB(20,2)": "0.35",
-    "P_SHAPE(20)": "55.59"
+    "EMA20": "709.20",
+    "EMA50": "703.95",
+    "EMA100": "692.81",
+    "EMA200": "669.90",
+    "SMA20": "708.90",
+    "SMA200": "665.95",
+    "RSI(2)": "7.87",
+    "RSI(14)": "49.37",
+    "ATR(14)": "5.95",
+    "ADX(14)": "9.13",
+    "BB(20,2)": "0.43",
+    "P_SHAPE(20)": "55.78"
   },
   "rules": [
     {
@@ -518,6 +518,27 @@
   ],
   "news": [
     {
+      "title": "History Says This ETF Could Turn $100 per Month Into $167,690 in 20 Years. Here's How.",
+      "publisher": "Motley Fool",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/history-says-etf-could-turn-002000533.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "$10,000 in VNQ Dividends Can Qualify for a 20 Percent Deduction. Three Rules Decide How Much You Can Claim",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/real-estate/articles/10-000-vnq-dividends-qualify-000340603.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Is ETF Innovation Inviting a Regulatory Sledgehammer?",
+      "publisher": "etf.com",
+      "link": "https://finance.yahoo.com/markets/options/articles/etf-innovation-inviting-regulatory-sledgehammer-234052019.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
       "title": "The S&P 500 Is Dangerously Concentrated in 5 Tech Giants. Are They Still Buys?",
       "publisher": "Motley Fool",
       "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-dangerously-concentrated-5-114000817.html",
@@ -537,56 +558,35 @@
       "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-just-hit-record-052000977.html",
       "published_at": "Today",
       "sentiment": "bullish"
-    },
-    {
-      "title": "Intel Stock Has Nearly Tripled in 2026. A $10,000 Stake From 2016 Still Trails the S&P 500.",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/intel-stock-nearly-tripled-2026-050301545.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "USMV Cut the Worst Drawdown to 8.91%. On $300,000 That Protection Cost $131,460",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/usmv-cut-worst-drawdown-8-213342964.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "SCHD\u2019s Overlooked Schwab Sibling Turned $90,000 of Monthly Deposits Into $390,000",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/schd-overlooked-schwab-sibling-turned-161540982.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
     }
   ],
   "playbook_mean_reversion": {
     "status": "INELIGIBLE",
     "is_triggered": false,
-    "close_price": 705.47998046875,
-    "sma200": 665.94,
-    "sma20": 708.81,
-    "sma20_slope": 0.53,
-    "lower_bb": 697.89,
+    "close_price": 707.4299926757812,
+    "sma200": 665.95,
+    "sma20": 708.9,
+    "sma20_slope": 0.544,
+    "lower_bb": 698.08,
     "upper_bb": 719.72,
-    "pct_b": 0.3476,
-    "rsi2": 6.449134975395225,
-    "rsi14": 47.4622474869182,
-    "atr14": 5.898763270517873,
+    "pct_b": 0.4319,
+    "rsi2": 7.87272156018382,
+    "rsi14": 49.365572005793965,
+    "atr14": 5.950189749312516,
     "close_above_sma200": true,
     "close_below_lower_bb": false,
     "rsi2_below_10": true,
     "adequate_liquidity": false,
     "risk_limits_pass": true,
-    "target_exit_price": 708.81,
-    "stop_loss_spot_price": 696.63,
+    "target_exit_price": 708.9,
+    "stop_loss_spot_price": 695.83,
     "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
     "suggested_structure": "Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)",
     "target_dte_range": "30 - 45 DTE Monthly Expiry",
     "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
     "exit_rules": [
-      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~708.81).",
-      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 696.63).",
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~708.90).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 695.83).",
       "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
       "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
       "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."
