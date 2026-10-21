@@ -245,11 +245,18 @@ def score_all_strategies(
         "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
     )
 
-    # 7. Butterfly: Neutral & Low IV / Volatility Squeeze Pinning
-    fly_score = (neutrality * 0.70) + (iv_discount * 0.15) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + squeeze_breakout_bonus - earnings_penalty
+    # 7. Butterfly: Playbook Tier 3/4 — 30 DTE ATM Butterfly (Only with Strong Price-Level Thesis) vs Long Debit (Lowest Priority)
+    # Requires strong price-level pinning thesis (Max Pain or tight S/R band); penalized if thesis is absent
+    has_strong_price_thesis = (max_pain_bonus > 0.0) or (bb_center_bonus > 0.0 and range_bonus > 0.0)
+    fly_score = (neutrality * 0.60) + (iv_discount * 0.15) + neutral_adx_bonus + bb_center_bonus + range_bonus + max_pain_bonus + backtest_edge_bonus + squeeze_breakout_bonus - earnings_penalty
+    if not has_strong_price_thesis:
+        fly_score *= 0.65  # Playbook Rule: 30 DTE ATM Butterfly only with strong price-level thesis; debit butterfly lowest priority
+        fly_rationale = "Playbook Tier 3: 30 DTE ATM Butterfly requires a strong price-level thesis (Max Pain / S/R pin). Disfavored without pinpoint level conviction."
+    else:
+        fly_rationale = "Playbook Tier 3: 30 DTE ATM Butterfly qualified by strong price-level thesis and Max Pain pinning."
     raw_scores[StrategyType.BUTTERFLY] = (
         (fly_score / 1.20) * range_confidence_mult,
-        "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+        fly_rationale,
     )
 
     # 8. Cash Swing Long: Bullish Equity Swing Trade
@@ -294,11 +301,23 @@ def score_all_strategies(
         "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
     )
 
-    # 10. Broken Wing Butterfly: Slight Skew & Low IV
-    bwb_score = (neutrality * 0.45) + (iv_discount * 0.35) + rsi_bull_bonus
+    # 10. Broken Wing Butterfly: Playbook Tier 1/2 — 45/60 DTE BWB, 25-30 Delta Body, Net Credit
+    # Tastytrade-style defined risk + asymmetric payoff + credit entry; fits premium-selling framework
+    bwb_score = (
+        (neutrality * 0.75)
+        + (iv_discount * 0.25)
+        + credit_preference_bonus
+        + credit_structure_bonus
+        + theta_harvest_bonus
+        + backtest_edge_bonus
+        + range_bonus
+        + neutral_adx_bonus
+        + (support_bonus * 0.5)
+        - earnings_penalty
+    )
     raw_scores[StrategyType.BROKEN_WING_BUTTERFLY] = (
-        (bwb_score / 1.20) * confidence_mult,
-        "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+        (bwb_score / 1.18) * range_confidence_mult,
+        "Playbook Tier 1/2: Broken-Wing Butterfly (45/60 DTE, 25-30 Delta body, net credit). Tastytrade defined-risk with asymmetric payoff & zero-risk side.",
     )
 
     # 11. Naked Call: Strong Bearish & High IV (IV Rank >= 60, Unhedged)

@@ -5,6 +5,7 @@
 | :--- | :--- | :--- | :---: | :--- | :--- |
 | XOM       | Oct 13, 13:30 IST | 🟡 Iron Condor     | 7.9/10    | Buy 1x XOM 20-Nov-2026 160 Put /  Sell 1x XOM 20-Nov-2026 165 Put /  Sell 1x XOM 20-Nov-2026 185 Call /  Buy 1x XOM 20-Nov-2026 190 Call | New                    |
 | MSFT      | Oct 13, 13:30 IST | 🟡 Credit Spread   | 7.9/10    | Sell 1x MSFT 20-Nov-2026 520 Put /  Buy 1x MSFT 20-Nov-2026 510 Put | New                    |
+| IWM       | Oct 21, 13:30 IST | 🟡 Broken Wing Butterfly (Credit) | 7.8/10    | Buy 1x IWM 18-Dec-2026 285 Call /  Sell 1x IWM 18-Dec-2026 290 Call /  Sell 1x IWM 18-Dec-2026 290 Call /  Buy 1x IWM 18-Dec-2026 300 Call | New                    |
 | SMCI      | Oct 13, 13:30 IST | 🟡 Iron Condor     | 7.7/10    | Buy 1x SMCI 20-Nov-2026 34 Put /  Sell 1x SMCI 20-Nov-2026 36 Put /  Sell 1x SMCI 20-Nov-2026 42 Call /  Buy 1x SMCI 20-Nov-2026 44 Call | New                    |
 | BAC       | Oct 20, 13:30 IST | 🟡 Iron Condor     | 7.6/10    | Buy 1x BAC 20-Nov-2026 47 Put /  Sell 1x BAC 20-Nov-2026 48 Put /  Sell 1x BAC 20-Nov-2026 54 Call /  Buy 1x BAC 20-Nov-2026 55 Call | New                    |
 | TGT       | Oct 13, 13:30 IST | 🟡 Iron Condor     | 7.6/10    | Buy 1x TGT 20-Nov-2026 140 Put /  Sell 1x TGT 20-Nov-2026 145 Put /  Sell 1x TGT 20-Nov-2026 155 Call /  Buy 1x TGT 20-Nov-2026 160 Call | New                    |
@@ -13,6 +14,7 @@
 | V         | Oct 13, 13:30 IST | 🟡 Credit Spread   | 7.3/10    | Sell 1x V 20-Nov-2026 375 Put /  Buy 1x V 20-Nov-2026 370 Put | New                    |
 | LLY       | Oct 20, 13:30 IST | 🟡 Iron Condor     | 7.3/10    | Buy 1x LLY 20-Nov-2026 1200 Put /  Sell 1x LLY 20-Nov-2026 1250 Put /  Sell 1x LLY 20-Nov-2026 1350 Call /  Buy 1x LLY 20-Nov-2026 1400 Call | New                    |
 | PLTR      | Oct 13, 13:30 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x PLTR 20-Nov-2026 200 Put /  Buy 1x PLTR 20-Nov-2026 195 Put | New                    |
+| DIA       | Oct 21, 13:30 IST | 🟡 Broken Wing Butterfly (Credit) | 7.2/10    | Buy 1x DIA 18-Dec-2026 545 Call /  Sell 1x DIA 18-Dec-2026 550 Call /  Sell 1x DIA 18-Dec-2026 550 Call /  Buy 1x DIA 18-Dec-2026 560 Call | New                    |
 | AMD       | Oct 13, 13:30 IST | 🟡 Credit Spread   | 7.2/10    | Sell 1x AMD 20-Nov-2026 570 Put /  Buy 1x AMD 20-Nov-2026 545 Put | New                    |
 | JPM       | Oct 13, 13:30 IST | 🟡 Iron Condor     | 7.0/10    | Buy 1x JPM 20-Nov-2026 310 Put /  Sell 1x JPM 20-Nov-2026 315 Put /  Sell 1x JPM 20-Nov-2026 345 Call /  Buy 1x JPM 20-Nov-2026 350 Call | New                    |
 | XLE       | Oct 13, 13:30 IST | 🟡 Iron Condor     | 7.0/10    | Buy 1x XLE 20-Nov-2026 63 Put /  Sell 1x XLE 20-Nov-2026 64 Put /  Sell 1x XLE 20-Nov-2026 70 Call /  Buy 1x XLE 20-Nov-2026 71 Call | New                    |
@@ -21,6 +23,8 @@
 | TSLA      | Oct 20, 13:30 IST | 🟡 Iron Condor     | 7.0/10    | Buy 1x TSLA 20-Nov-2026 345 Put /  Sell 1x TSLA 20-Nov-2026 355 Put /  Sell 1x TSLA 20-Nov-2026 395 Call /  Buy 1x TSLA 20-Nov-2026 405 Call | New                    |
 | GS        | Oct 13, 13:30 IST | 🟡 Iron Condor     | 6.9/10    | Buy 1x GS 20-Nov-2026 820 Put /  Sell 1x GS 20-Nov-2026 845 Put /  Sell 1x GS 20-Nov-2026 935 Call /  Buy 1x GS 20-Nov-2026 960 Call | New                    |
 | AAPL      | Oct 13, 13:30 IST | 🟡 Credit Spread   | 6.9/10    | Sell 1x AAPL 20-Nov-2026 325 Put /  Buy 1x AAPL 20-Nov-2026 320 Put | New                    |
+| VOO       | Oct 21, 13:30 IST | 🟡 Broken Wing Butterfly (Credit) | 6.9/10    | Buy 1x VOO 18-Dec-2026 665 Put /  Sell 1x VOO 18-Dec-2026 675 Put /  Sell 1x VOO 18-Dec-2026 675 Put /  Buy 1x VOO 18-Dec-2026 680 Put | New                    |
+| VTI       | Oct 21, 13:30 IST | 🟡 Broken Wing Butterfly (Credit) | 6.9/10    | Buy 1x VTI 18-Dec-2026 350 Put /  Sell 1x VTI 18-Dec-2026 360 Put /  Sell 1x VTI 18-Dec-2026 360 Put /  Buy 1x VTI 18-Dec-2026 365 Put | New                    |
 | SOXX      | Oct 13, 13:30 IST | 🟡 Credit Spread   | 6.7/10    | Sell 1x SOXX 20-Nov-2026 520 Put /  Buy 1x SOXX 20-Nov-2026 505 Put | New                    |
 | MU        | Oct 13, 13:30 IST | 🟡 Credit Spread   | 6.7/10    | Sell 1x MU 20-Nov-2026 885 Put /  Buy 1x MU 20-Nov-2026 840 Put | New                    |
 | AMZN      | Oct 13, 13:30 IST | 🟡 Iron Condor     | 6.7/10    | Buy 1x AMZN 20-Nov-2026 240 Put /  Sell 1x AMZN 20-Nov-2026 245 Put /  Sell 1x AMZN 20-Nov-2026 275 Call /  Buy 1x AMZN 20-Nov-2026 280 Call | New                    |
@@ -34,7 +38,7 @@
 | ARM       | Oct 13, 13:30 IST | 🟡 Credit Spread   | 6.3/10    | Sell 1x ARM 20-Nov-2026 230 Put /  Buy 1x ARM 20-Nov-2026 215 Put | New                    |
 | UVXY      | Oct 13, 13:30 IST | 🟡 Credit Spread   | 6.2/10    | Sell 1x UVXY 20-Nov-2026 17 Call /  Buy 1x UVXY 20-Nov-2026 18 Call | New                    |
 | DIS       | Oct 13, 13:30 IST | 🟡 Credit Spread   | 6.2/10    | Sell 1x DIS 20-Nov-2026 105 Put /  Buy 1x DIS 20-Nov-2026 100 Put | New                    |
-| JNJ       | Aug 03, 13:30 IST | 🟡 Long Butterfly  | 6.0/10    | Buy 1x JNJ 18-Sep-2026 245 Call / Sell 2x JNJ 18-Sep-2026 255 Call / Buy 1x JNJ 18-Sep-2026 260 Call | New                    |
+| JNJ       | Aug 03, 13:30 IST | 🟡 ATM Butterfly   | 6.0/10    | Buy 1x JNJ 18-Sep-2026 245 Call / Sell 2x JNJ 18-Sep-2026 255 Call / Buy 1x JNJ 18-Sep-2026 260 Call | New                    |
 | NFLX      | Oct 13, 13:30 IST | 🔴 Cash Swing Short | 6.0/10    | Sell 1x NFLX 20-Nov-2026 70.5 Put | New                    |
 | MARA      | Oct 13, 13:30 IST | 🔴 Cash Swing Short | 5.7/10    | Sell 1x MARA 20-Nov-2026 9.1 Put | New                    |
 | IBM       | Oct 13, 13:30 IST | 🟡 Credit Spread   | 5.6/10    | Sell 1x IBM 20-Nov-2026 240 Call /  Buy 1x IBM 20-Nov-2026 245 Call | New                    |
@@ -43,12 +47,11 @@
 | UNH       | Oct 13, 13:30 IST | 🟡 Iron Condor     | 5.3/10    | Buy 1x UNH 20-Nov-2026 350 Put /  Sell 1x UNH 20-Nov-2026 360 Put /  Sell 1x UNH 20-Nov-2026 400 Call /  Buy 1x UNH 20-Nov-2026 410 Call | New                    |
 | AVGO      | Oct 13, 13:30 IST | 🟡 Iron Condor     | 5.0/10    | Buy 1x AVGO 20-Nov-2026 330 Put /  Sell 1x AVGO 20-Nov-2026 340 Put /  Sell 1x AVGO 20-Nov-2026 370 Call /  Buy 1x AVGO 20-Nov-2026 380 Call | New                    |
 | XLK       | Oct 13, 13:30 IST | 🟡 Credit Spread   | 5.0/10    | Sell 1x XLK 20-Nov-2026 185 Put /  Buy 1x XLK 20-Nov-2026 180 Put | New                    |
-| DIA       | Oct 20, 13:30 IST | 🟡 Iron Condor     | 4.9/10    | Buy 1x DIA 20-Nov-2026 495 Put /  Sell 1x DIA 20-Nov-2026 500 Put /  Sell 1x DIA 20-Nov-2026 550 Call /  Buy 1x DIA 20-Nov-2026 555 Call | New                    |
 | ORCL      | Oct 13, 13:30 IST | 🔴 Cash Swing Short | 4.6/10    | Sell 1x ORCL 20-Nov-2026 143.2 Put | New                    |
 | WFC       | Oct 13, 13:30 IST | 🟡 Iron Condor     | 4.5/10    | Buy 1x WFC 20-Nov-2026 75 Put /  Sell 1x WFC 20-Nov-2026 77 Put /  Sell 1x WFC 20-Nov-2026 85 Call /  Buy 1x WFC 20-Nov-2026 87 Call | New                    |
 | RIOT      | Oct 13, 13:30 IST | 🟡 Iron Condor     | 4.5/10    | Buy 1x RIOT 20-Nov-2026 14 Put /  Sell 1x RIOT 20-Nov-2026 15 Put /  Sell 1x RIOT 20-Nov-2026 19 Call /  Buy 1x RIOT 20-Nov-2026 20 Call | New                    |
 | COIN      | Oct 13, 13:30 IST | 🟡 Iron Condor     | 4.3/10    | Buy 1x COIN 20-Nov-2026 155 Put /  Sell 1x COIN 20-Nov-2026 165 Put /  Sell 1x COIN 20-Nov-2026 195 Call /  Buy 1x COIN 20-Nov-2026 205 Call | New                    |
-| CAT       | Aug 03, 13:30 IST | 🟡 Long Butterfly  | 4.0/10    | Buy 1x CAT 18-Sep-2026 800 Call / Sell 2x CAT 18-Sep-2026 825 Call / Buy 1x CAT 18-Sep-2026 845 Call | New                    |
+| CAT       | Aug 03, 13:30 IST | 🟡 ATM Butterfly   | 4.0/10    | Buy 1x CAT 18-Sep-2026 800 Call / Sell 2x CAT 18-Sep-2026 825 Call / Buy 1x CAT 18-Sep-2026 845 Call | New                    |
 | PFE       | Aug 03, 13:30 IST | 🔴 Put Debit Spread | 3.2/10    | Buy 1x PFE 18-Sep-2026 25 Put / Sell 1x PFE 18-Sep-2026 24 Put | New                    |
 
 ### 🇮🇳 Indian Equities

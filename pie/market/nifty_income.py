@@ -5,12 +5,17 @@ Implements systematic signal generation, regime screening, and defined-risk trad
    - Primary: NIFTY (^NSEI)
    - Selective: BANKNIFTY (^NSEBANK)
    - Liquidity-qualified: FINNIFTY (NIFTY_FIN_SERVICE.NS)
-2. IV Regime Classification (Playbook Section 2):
-   - Very Low (VIX < 12 / IVR < 20): Calendars, Diagonals, Broken-Wing Butterflies
-   - Low (VIX 12-15 / IVR 20-40): Calendars, Risk-defined Iron Butterflies
-   - Normal (VIX 15-20 / IVR 40-60): Credit Spreads, Covered Calls
+2. IV Regime Classification & Butterfly Hierarchy (Playbook Section 2):
+   - Very Low (VIX < 12 / IVR < 20): Broken-Wing Butterflies (45 DTE 25-30 Delta Credit), Calendars, Diagonals
+   - Low (VIX 12-15 / IVR 20-40): Broken-Wing Butterflies (60 DTE 25-30 Delta Credit), Risk-defined Iron Butterflies, Calendars
+   - Normal (VIX 15-20 / IVR 40-60): Credit Spreads, Covered Calls, Bull Put Spreads
    - Elevated (VIX 20-25 / IVR 60-80): Defined-Risk Condors, Credit Spreads
    - High / Unstable (VIX > 25 / IVR > 80): Smaller, Defined-Risk Positions (Capital Preservation)
+   - Preferred Butterfly Hierarchy:
+     1. 45 DTE BWB, 25-30 Delta body, credit — BEST (Tastytrade-style defined risk + asymmetric payoff + credit entry)
+     2. 60 DTE BWB, 25-30 Delta body, credit — GOOD (Extended duration / slower gamma ramp)
+     3. 30 DTE ATM butterfly — ONLY with a strong price-level thesis (Max Pain / S/R pin)
+     4. Long debit butterfly — LOWEST PRIORITY (debit drag)
 3. NIFTY Mean-Reversion Strategy (Playbook Section 8):
    - Trend Guardrail: Enter only if daily close is above 200-day SMA (below it, stand aside / defensive).
    - Entry Trigger (all 5 required):
@@ -116,16 +121,63 @@ class PlaybookMeanReversionSignal:
     warnings: list[str] = field(default_factory=list)
 
 
+# Playbook Butterfly Strategy Hierarchy
+BUTTERFLY_HIERARCHY = [
+    {
+        "tier": 1,
+        "name": "Broken-Wing Butterfly (Credit)",
+        "dte": "45 DTE",
+        "delta": "25-30 Delta body",
+        "type": "Net Credit",
+        "rank": "Best",
+        "rationale": "Tastytrade-style defined risk + asymmetric payoff + credit entry; fits premium-selling framework.",
+    },
+    {
+        "tier": 2,
+        "name": "Broken-Wing Butterfly (Credit)",
+        "dte": "60 DTE",
+        "delta": "25-30 Delta body",
+        "type": "Net Credit",
+        "rank": "Good",
+        "rationale": "Extended duration, slower gamma ramp, defined risk with asymmetric payout.",
+    },
+    {
+        "tier": 3,
+        "name": "ATM Butterfly",
+        "dte": "30 DTE",
+        "delta": "50 Delta (ATM) body",
+        "type": "Debit / Minimal Credit",
+        "rank": "Conditional (Thesis Required)",
+        "rationale": "Requires strong price-level pinning thesis (Max Pain / S/R pin).",
+    },
+    {
+        "tier": 4,
+        "name": "Long Debit Butterfly",
+        "dte": "30-45 DTE",
+        "delta": "Directional body",
+        "type": "Net Debit",
+        "rank": "Lowest Priority",
+        "rationale": "High theta drag and low probability of profit; lowest priority.",
+    },
+]
+
+
 def classify_iv_regime(vix: float = 15.0, iv_rank: float = 50.0) -> IVRegimeAnalysis:
     """Classify current market volatility regime per Playbook Section 2."""
     if vix < 12.0 or iv_rank < 20.0:
         regime = IVRegime.VERY_LOW
-        strategies = ["Calendars", "Diagonals", "Broken-Wing Butterflies"]
-        guidance = "Very low IV: options are cheap. Prefer long vega / positive convexity structures (calendars/diagonals)."
+        strategies = ["Broken-Wing Butterfly (45 DTE 25-30 Delta Credit)", "Calendars", "Diagonals"]
+        guidance = (
+            "Very low IV: options are cheap. Favor Tier 1 Broken-Wing Butterfly (45 DTE, 25-30 Delta body, net credit) "
+            "for defined-risk asymmetric payout, or long vega structures (calendars/diagonals)."
+        )
     elif vix < 15.0 or iv_rank < 40.0:
         regime = IVRegime.LOW
-        strategies = ["Calendars", "Risk-Defined Iron Butterflies"]
-        guidance = "Low IV: favor tight risk-defined iron butterflies or debit diagonals; avoid wide unhedged premium selling."
+        strategies = ["Broken-Wing Butterfly (60 DTE 25-30 Delta Credit)", "Risk-Defined Iron Butterflies", "Calendars"]
+        guidance = (
+            "Low IV: favor Tier 2 Broken-Wing Butterfly (60 DTE, 25-30 Delta body, credit) or tight risk-defined iron butterflies; "
+            "avoid wide unhedged premium selling."
+        )
     elif vix < 20.0 or iv_rank < 60.0:
         regime = IVRegime.NORMAL
         strategies = ["Credit Spreads", "Covered Calls", "Bull Put Spreads"]

@@ -24,8 +24,8 @@ STRATEGY_DTE_CONFIGS = {
     StrategyType.IRON_CONDOR: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window to benefit from premium decay"},
     StrategyType.IRON_BUTTERFLY: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for range-bound theta harvesting"},
     StrategyType.JADE_LIZARD: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for net credit without excessive gamma"},
-    StrategyType.BUTTERFLY: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for peak pin risk decay"},
-    StrategyType.BROKEN_WING_BUTTERFLY: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for skewed butterfly entry"},
+    StrategyType.BUTTERFLY: {"target": 30, "min": 21, "max": 35, "why": "Playbook Tier 3: 30 DTE ATM butterfly requiring strong price-level pinning thesis"},
+    StrategyType.BROKEN_WING_BUTTERFLY: {"target": 45, "min": 35, "max": 65, "why": "Playbook Tier 1 (45 DTE Best) / Tier 2 (60 DTE Good): 25-30 Delta body net credit BWB for defined risk & asymmetric payoff"},
 
     # Spreads & Directional Overlays (30-60 Days)
     StrategyType.CALL_DEBIT_SPREAD: {"target": 37, "min": 30, "max": 60, "why": "30-60 DTE window for optimal theta decay vs upside capture"},
@@ -274,8 +274,8 @@ def estimate_trade(
         )
 
     elif recommendation.strategy == StrategyType.BUTTERFLY:
-        c_low = _round_to_increment(spot_price - expected_move * 0.5, increment)
-        c_high = _round_to_increment(spot_price + expected_move * 0.5, increment)
+        c_low = max(increment, _round_to_increment(atm_strike - credit_wing_width, increment))
+        c_high = _round_to_increment(atm_strike + credit_wing_width, increment)
         legs = (
             TradeLeg(action="buy", right=OptionRight.CALL, strike=c_low),
             TradeLeg(action="sell", right=OptionRight.CALL, strike=atm_strike),
@@ -283,22 +283,40 @@ def estimate_trade(
             TradeLeg(action="buy", right=OptionRight.CALL, strike=c_high),
         )
         exit_strategy = (
-            "Target 50% of maximum potential profit.",
-            "Close at 21 days to expiry.",
+            "Playbook Tier 3: 30 DTE ATM Butterfly (Requires strong price-level thesis / Max Pain pin).",
+            "Target 25%-50% of maximum potential profit early.",
+            "Close position at 21 days to expiry to eliminate pin and gamma risk.",
         )
 
     elif recommendation.strategy == StrategyType.BROKEN_WING_BUTTERFLY:
-        c_low = _round_to_increment(spot_price - expected_move * 0.5, increment)
-        c_high = _round_to_increment(spot_price + expected_move * 1.0, increment)
-        legs = (
-            TradeLeg(action="buy", right=OptionRight.CALL, strike=c_low),
-            TradeLeg(action="sell", right=OptionRight.CALL, strike=atm_strike),
-            TradeLeg(action="sell", right=OptionRight.CALL, strike=atm_strike),
-            TradeLeg(action="buy", right=OptionRight.CALL, strike=c_high),
-        )
+        is_bearish = ("bearish" in recommendation.rationale.lower()) or (ema20 is not None and ema50 is not None and ema20 < ema50 and "bullish" not in recommendation.rationale.lower())
+        if is_bearish:
+            # Bearish / Neutral: Call BWB (25-30 Delta Call Body, Net Credit)
+            body_strike = _round_to_increment(spot_price + 0.70 * expected_move, increment)
+            c_near = max(increment, _round_to_increment(body_strike - credit_wing_width, increment))
+            c_far = _round_to_increment(body_strike + 2.0 * credit_wing_width, increment)
+            legs = (
+                TradeLeg(action="buy", right=OptionRight.CALL, strike=c_near),
+                TradeLeg(action="sell", right=OptionRight.CALL, strike=body_strike),
+                TradeLeg(action="sell", right=OptionRight.CALL, strike=body_strike),
+                TradeLeg(action="buy", right=OptionRight.CALL, strike=c_far),
+            )
+        else:
+            # Bullish / Neutral: Put BWB (25-30 Delta Put Body, Net Credit)
+            body_strike = _round_to_increment(spot_price - 0.70 * expected_move, increment)
+            p_near = _round_to_increment(body_strike + credit_wing_width, increment)
+            p_far = max(increment, _round_to_increment(body_strike - 2.0 * credit_wing_width, increment))
+            legs = (
+                TradeLeg(action="buy", right=OptionRight.PUT, strike=p_far),
+                TradeLeg(action="sell", right=OptionRight.PUT, strike=body_strike),
+                TradeLeg(action="sell", right=OptionRight.PUT, strike=body_strike),
+                TradeLeg(action="buy", right=OptionRight.PUT, strike=p_near),
+            )
         exit_strategy = (
-            "Structured for zero or positive credit on downside return.",
-            "Close position at 21 days to expiry.",
+            "Playbook Tier 1/2: Broken-Wing Butterfly with 25-30 Delta body entered for Net Credit.",
+            "Tastytrade-style defined risk + asymmetric payoff + credit entry with zero-risk side.",
+            "Manage winner at 50% max profit target; peak gain if spot pins near the 25-30 Delta body at expiration.",
+            "Close or roll position at 21 DTE to eliminate gamma pin risk.",
         )
 
     elif recommendation.strategy == StrategyType.POOR_MANS_COVERED_CALL:
@@ -528,7 +546,19 @@ def estimate_trade(
         payoff_points=payoff_pts,
         take_profit_rule="25% Max Profit (Iron Fly Target)" if recommendation.strategy == StrategyType.IRON_BUTTERFLY else "50% Max Profit",
         stop_loss_rule="100% Credit Loss (1:1 Risk Limit) or EMA20 Breach",
-        target_dte_window="35-45 DTE" if recommendation.strategy in (StrategyType.IRON_BUTTERFLY, StrategyType.IRON_CONDOR) else "30-60 DTE",
+        target_dte_window=(
+            "45-60 DTE (Tier 1/2 BWB)"
+            if recommendation.strategy == StrategyType.BROKEN_WING_BUTTERFLY
+            else (
+                "30 DTE (Tier 3 Pin)"
+                if recommendation.strategy == StrategyType.BUTTERFLY
+                else (
+                    "35-45 DTE"
+                    if recommendation.strategy in (StrategyType.IRON_BUTTERFLY, StrategyType.IRON_CONDOR)
+                    else "30-60 DTE"
+                )
+            )
+        ),
     )
 
 

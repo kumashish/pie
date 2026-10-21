@@ -129,9 +129,9 @@ def get_strategy_display_name(stype: str) -> str:
     if clean in {"put debit spread", "put_debit_spread"}:
         return "🔴 Put Debit Spread"
     if clean in {"butterfly", "long butterfly", "long_butterfly"}:
-        return "🟡 Long Butterfly"
+        return "🟡 ATM Butterfly"
     if clean in {"broken wing butterfly", "broken_wing_butterfly"}:
-        return "🟡 Broken Wing Butterfly"
+        return "🟡 Broken Wing Butterfly (Credit)"
     if clean in {"iron condor", "iron_condor"}:
         return "🟡 Iron Condor"
     if clean in {"iron butterfly", "iron_butterfly"}:
@@ -176,8 +176,10 @@ def get_trade_profile(stype: str) -> str:
         return "Credit | 30-45 DTE | 15-20 Delta"
     if clean in {"short strangle", "short_strangle"}:
         return "Credit | 30-45 DTE | 15-20 Delta"
-    if clean in {"butterfly", "long_butterfly", "broken wing butterfly", "broken_wing_butterfly"}:
-        return "Debit | 30-45 DTE | ATM Pin Target"
+    if clean in {"broken wing butterfly", "broken_wing_butterfly"}:
+        return "Credit | 45-60 DTE | 25-30 Delta Body (Tier 1 BWB)"
+    if clean in {"butterfly", "long_butterfly"}:
+        return "Debit | 30 DTE | ATM Pin Target (Tier 3 - Strong Thesis)"
     if clean in {"call debit spread", "call_debit_spread", "put debit spread", "put_debit_spread"}:
         return "Debit | 30-60 DTE | 50 Delta ITM"
     if clean in {"long call", "long_call", "long put", "long_put"}:
