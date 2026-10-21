@@ -1,5 +1,49 @@
 [
   {
+    "symbol": "^NSEI",
+    "market": "^NSEI",
+    "last_updated": "2026-10-21 03:45:00",
+    "trend": "\ud83d\udd34 Bear",
+    "strategy": "S1x-Nov-23600CE / B1x-Nov-23900CE",
+    "strategy_type": "credit_spread",
+    "fit_score": 56.4,
+    "signal": "New",
+    "signal_since": "2026-10-21 03:45:00"
+  },
+  {
+    "symbol": "^NSEBANK",
+    "market": "^NSEBANK",
+    "last_updated": "2026-10-21 03:45:00",
+    "trend": "\ud83d\udd34 Strong Bear",
+    "strategy": "S1x-Nov-54976.9PE",
+    "strategy_type": "cash_swing_short",
+    "fit_score": 57.1,
+    "signal": "New",
+    "signal_since": "2026-10-21 03:45:00"
+  },
+  {
+    "symbol": "SPY",
+    "market": "SPY",
+    "last_updated": "2026-10-21T17:29:00.492962+00:00",
+    "trend": "\ud83d\udfe2 Strong Bull",
+    "strategy": "Buy SPY 20-Nov-2026 773.9000244140625 Call<br> Buy SPY 20-Nov-2026 740 Put",
+    "strategy_type": "protected_future",
+    "fit_score": 69.4,
+    "signal": "\ud83c\udfaf Take Profit (50%+ Max Profit)",
+    "signal_since": "2026-10-21T17:29:00.493106+00:00"
+  },
+  {
+    "symbol": "QQQ",
+    "market": "QQQ",
+    "last_updated": "2026-10-21T17:29:01.199533+00:00",
+    "trend": "\ud83d\udfe2 Strong Bull",
+    "strategy": "Sell QQQ 20-Nov-2026 690 Put<br> Buy QQQ 20-Nov-2026 680 Put",
+    "strategy_type": "credit_spread",
+    "fit_score": 67.9,
+    "signal": "\u26a0\ufe0f Stop Loss",
+    "signal_since": "2026-10-21T17:29:01.199707+00:00"
+  },
+  {
     "symbol": "AAPL",
     "market": "AAPL",
     "last_updated": "2026-10-13 13:30:00",
@@ -196,17 +240,6 @@
     "fit_score": 51.7,
     "signal": "New",
     "signal_since": "2026-10-14 03:45:00"
-  },
-  {
-    "symbol": "^BSESN",
-    "market": "^BSESN",
-    "last_updated": "2026-10-21 03:45:00",
-    "trend": "\ud83d\udd34 Bear",
-    "strategy": "B1x-Dec-76200CE / S2x-Dec-77100CE / B1x-Dec-78900CE",
-    "strategy_type": "broken_wing_butterfly",
-    "fit_score": 58.5,
-    "signal": "New",
-    "signal_since": "2026-10-21 03:45:00"
   },
   {
     "symbol": "CAT",
@@ -715,39 +748,6 @@
     "signal_since": "2026-10-13 13:30:00"
   },
   {
-    "symbol": "^NSEBANK",
-    "market": "^NSEBANK",
-    "last_updated": "2026-10-21 03:45:00",
-    "trend": "\ud83d\udd34 Strong Bear",
-    "strategy": "S1x-Nov-54976.9PE",
-    "strategy_type": "cash_swing_short",
-    "fit_score": 57.1,
-    "signal": "New",
-    "signal_since": "2026-10-21 03:45:00"
-  },
-  {
-    "symbol": "^NSEI",
-    "market": "^NSEI",
-    "last_updated": "2026-10-21 03:45:00",
-    "trend": "\ud83d\udd34 Bear",
-    "strategy": "S1x-Nov-23600CE / B1x-Nov-23900CE",
-    "strategy_type": "credit_spread",
-    "fit_score": 56.4,
-    "signal": "New",
-    "signal_since": "2026-10-21 03:45:00"
-  },
-  {
-    "symbol": "^NSEMDCP50",
-    "market": "^NSEMDCP50",
-    "last_updated": "2026-10-21 03:45:00",
-    "trend": "\ud83d\udd34 Bear",
-    "strategy": "B1x-Dec-17100CE / S2x-Dec-17300CE / B1x-Dec-17700CE",
-    "strategy_type": "broken_wing_butterfly",
-    "fit_score": 54.8,
-    "signal": "New",
-    "signal_since": "2026-10-21 03:45:00"
-  },
-  {
     "symbol": "NTPC.NS",
     "market": "NTPC.NS",
     "last_updated": "2026-10-14 03:45:00",
@@ -836,17 +836,6 @@
     "signal_since": "2026-10-20 13:30:00"
   },
   {
-    "symbol": "QQQ",
-    "market": "QQQ",
-    "last_updated": "2026-10-21 13:30:00",
-    "trend": "\ud83d\udfe2 Bull",
-    "strategy": "Buy 1x QQQ 18-Dec-2026 670 Put<br> Sell 1x QQQ 18-Dec-2026 690 Put<br> Sell 1x QQQ 18-Dec-2026 690 Put<br> Buy 1x QQQ 18-Dec-2026 700 Put",
-    "strategy_type": "broken_wing_butterfly",
-    "fit_score": 61.4,
-    "signal": "New",
-    "signal_since": "2026-10-21 13:30:00"
-  },
-  {
     "symbol": "RELIANCE.NS",
     "market": "RELIANCE.NS",
     "last_updated": "2026-10-14 03:45:00",
@@ -933,17 +922,6 @@
     "fit_score": 67.4,
     "signal": "New",
     "signal_since": "2026-10-13 13:30:00"
-  },
-  {
-    "symbol": "SPY",
-    "market": "SPY",
-    "last_updated": "2026-10-21 13:30:00",
-    "trend": "\ud83d\udfe2 Bull",
-    "strategy": "Buy 1x SPY 20-Nov-2026 772.3 Call",
-    "strategy_type": "cash_swing_long",
-    "fit_score": 50.3,
-    "signal": "New",
-    "signal_since": "2026-10-21 13:30:00"
   },
   {
     "symbol": "SUNPHARMA.NS",
@@ -1175,5 +1153,27 @@
     "fit_score": 79.4,
     "signal": "New",
     "signal_since": "2026-10-13 13:30:00"
+  },
+  {
+    "symbol": "^BSESN",
+    "market": "^BSESN",
+    "last_updated": "2026-10-21 03:45:00",
+    "trend": "\ud83d\udd34 Bear",
+    "strategy": "B1x-Dec-76200CE / S2x-Dec-77100CE / B1x-Dec-78900CE",
+    "strategy_type": "broken_wing_butterfly",
+    "fit_score": 58.5,
+    "signal": "New",
+    "signal_since": "2026-10-21 03:45:00"
+  },
+  {
+    "symbol": "^NSEMDCP50",
+    "market": "^NSEMDCP50",
+    "last_updated": "2026-10-21 03:45:00",
+    "trend": "\ud83d\udd34 Bear",
+    "strategy": "B1x-Dec-17100CE / S2x-Dec-17300CE / B1x-Dec-17700CE",
+    "strategy_type": "broken_wing_butterfly",
+    "fit_score": 54.8,
+    "signal": "New",
+    "signal_since": "2026-10-21 03:45:00"
   }
 ]
