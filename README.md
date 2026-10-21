@@ -7,8 +7,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **QQQ** | Oct 21, 11:44 IST | 🟡 Credit Spread | **6.6** / 10 | `Sell QQQ 20-Nov-2026 685 Put /  Buy QQQ 20-Nov-2026 675 Put` | ⚡ ⚠️ Stop Loss (Oct 15, 00:16 IST) |
-| **SPY** | Oct 21, 11:44 IST | 🟡 Protected Future | **6.5** / 10 | `Buy SPY 20-Nov-2026 769.0499877929688 Call /  Buy SPY 20-Nov-2026 730 Put` | ⚡ 🎯 Take Profit (50%+ Max Profit) (Today, 11:44) |
+| **QQQ** | Oct 21, 17:38 IST | 🟡 Credit Spread | **6.6** / 10 | `Sell QQQ 20-Nov-2026 685 Put /  Buy QQQ 20-Nov-2026 675 Put` | ⚡ ⚠️ Stop Loss (Oct 15, 00:16 IST) |
+| **SPY** | Oct 21, 17:38 IST | 🟡 Protected Future | **6.5** / 10 | `Buy SPY 20-Nov-2026 769.0499877929688 Call /  Buy SPY 20-Nov-2026 730 Put` | ⚡ 🎯 Take Profit (50%+ Max Profit) (Today, 11:44) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
