@@ -7,8 +7,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **QQQ** | Oct 20, 13:30 IST | 🟡 Iron Condor | **9.1** / 10 | `Buy 1x QQQ 20-Nov-2026 675 Put /  Sell 1x QQQ 20-Nov-2026 685 Put /  Sell 1x QQQ 20-Nov-2026 755 Call /  Buy 1x QQQ 20-Nov-2026 765 Call` | ⚡ Active (Yesterday, 13:30) |
-| **SPY** | Oct 20, 13:30 IST | 🟢 Cash Swing Long | **5.2** / 10 | `Buy 1x SPY 20-Nov-2026 769.0 Call` | 🟢 New |
+| **QQQ** | Oct 21, 11:44 IST | 🟡 Credit Spread | **6.6** / 10 | `Sell QQQ 20-Nov-2026 685 Put /  Buy QQQ 20-Nov-2026 675 Put` | ⚡ ⚠️ Stop Loss (Oct 15, 00:16 IST) |
+| **SPY** | Oct 21, 11:44 IST | 🟡 Protected Future | **6.5** / 10 | `Buy SPY 20-Nov-2026 769.0499877929688 Call /  Buy SPY 20-Nov-2026 730 Put` | ⚡ 🎯 Take Profit (50%+ Max Profit) (Today, 11:44) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
@@ -23,12 +23,12 @@
 #### 🇺🇸 U.S. Stocks & ETFs
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **QCOM** | Oct 20, 13:30 IST | 🟡 Iron Condor | **9.4** / 10 | `Buy 1x QCOM 20-Nov-2026 160 Put /  Sell 1x QCOM 20-Nov-2026 165 Put /  Sell 1x QCOM 20-Nov-2026 185 Call /  Buy 1x QCOM 20-Nov-2026 190 Call` | ⚡ Active (Yesterday, 13:30) |
-| **VOO** | Oct 20, 13:30 IST | 🟡 Iron Condor | **9.1** / 10 | `Buy 1x VOO 20-Nov-2026 665 Put /  Sell 1x VOO 20-Nov-2026 670 Put /  Sell 1x VOO 20-Nov-2026 740 Call /  Buy 1x VOO 20-Nov-2026 745 Call` | ⚡ Active (Yesterday, 13:30) |
-| **VTI** | Oct 20, 13:30 IST | 🟡 Iron Condor | **9.0** / 10 | `Buy 1x VTI 20-Nov-2026 350 Put /  Sell 1x VTI 20-Nov-2026 355 Put /  Sell 1x VTI 20-Nov-2026 395 Call /  Buy 1x VTI 20-Nov-2026 400 Call` | ⚡ Active (Yesterday, 13:30) |
-| **IWM** | Oct 20, 13:30 IST | 🟡 Iron Condor | **8.6** / 10 | `Buy 1x IWM 20-Nov-2026 255 Put /  Sell 1x IWM 20-Nov-2026 260 Put /  Sell 1x IWM 20-Nov-2026 290 Call /  Buy 1x IWM 20-Nov-2026 295 Call` | ⚡ Active (Yesterday, 13:30) |
-| **COST** | Oct 20, 13:30 IST | 🟡 Iron Condor | **8.4** / 10 | `Buy 1x COST 20-Nov-2026 930 Put /  Sell 1x COST 20-Nov-2026 945 Put /  Sell 1x COST 20-Nov-2026 1045 Call /  Buy 1x COST 20-Nov-2026 1060 Call` | ⚡ Active (Yesterday, 13:30) |
-| **CVX** | Aug 03, 13:30 IST | 🟢 Call Debit Spread | **8.0** / 10 | `Buy 1x CVX 18-Sep-2026 195 Call / Sell 1x CVX 18-Sep-2026 205 Call` | ⚡ Active (Aug 03, 13:30 IST) |
+| **QCOM** | Oct 20, 13:30 IST | 🟡 Iron Condor | **9.4** / 10 | `Buy 1x QCOM 20-Nov-2026 160 Put /  Sell 1x QCOM 20-Nov-2026 165 Put /  Sell 1x QCOM 20-Nov-2026 185 Call /  Buy 1x QCOM 20-Nov-2026 190 Call` | ⚡ Active (Yesterday, 19:00) |
+| **VOO** | Oct 20, 13:30 IST | 🟡 Iron Condor | **9.1** / 10 | `Buy 1x VOO 20-Nov-2026 665 Put /  Sell 1x VOO 20-Nov-2026 670 Put /  Sell 1x VOO 20-Nov-2026 740 Call /  Buy 1x VOO 20-Nov-2026 745 Call` | ⚡ Active (Yesterday, 19:00) |
+| **VTI** | Oct 20, 13:30 IST | 🟡 Iron Condor | **9.0** / 10 | `Buy 1x VTI 20-Nov-2026 350 Put /  Sell 1x VTI 20-Nov-2026 355 Put /  Sell 1x VTI 20-Nov-2026 395 Call /  Buy 1x VTI 20-Nov-2026 400 Call` | ⚡ Active (Yesterday, 19:00) |
+| **IWM** | Oct 20, 13:30 IST | 🟡 Iron Condor | **8.6** / 10 | `Buy 1x IWM 20-Nov-2026 255 Put /  Sell 1x IWM 20-Nov-2026 260 Put /  Sell 1x IWM 20-Nov-2026 290 Call /  Buy 1x IWM 20-Nov-2026 295 Call` | ⚡ Active (Yesterday, 19:00) |
+| **COST** | Oct 20, 13:30 IST | 🟡 Iron Condor | **8.4** / 10 | `Buy 1x COST 20-Nov-2026 930 Put /  Sell 1x COST 20-Nov-2026 945 Put /  Sell 1x COST 20-Nov-2026 1045 Call /  Buy 1x COST 20-Nov-2026 1060 Call` | ⚡ Active (Yesterday, 19:00) |
+| **CVX** | Aug 03, 13:30 IST | 🟢 Call Debit Spread | **8.0** / 10 | `Buy 1x CVX 18-Sep-2026 195 Call / Sell 1x CVX 18-Sep-2026 205 Call` | ⚡ Active (Aug 03, 19:00 IST) |
 
 #### 🇮🇳 Indian Equities
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
