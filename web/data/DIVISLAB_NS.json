@@ -1,28 +1,30 @@
 {
   "symbol": "DIVISLAB.NS",
-  "last_price": 9090.0,
-  "as_of": "2026-10-14 03:45:00",
+  "last_price": 9087.0,
+  "high_52w": 9740.0,
+  "dist_52w_pct": -6.7,
+  "as_of": "2026-10-19 03:45:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 6.0,
-  "fit_score": 60.0,
+  "trend_score": 6.5,
+  "fit_score": 65.0,
   "confidence_grade": "B",
-  "confidence_percentage": 60.0,
-  "vix": 14.57,
+  "confidence_percentage": 65.0,
+  "vix": 14.77,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (82.3% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (74.0% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Long / Buy",
-    "entry": 9090.0,
-    "stop_loss": 8894.89,
-    "target_1": 10453.5,
-    "target_2": 11362.5,
-    "risk_per_share": 195.11,
-    "risk_reward": 11.6,
-    "atr14": 196.71,
+    "entry": 9087.0,
+    "stop_loss": 8904.13,
+    "target_1": 10450.05,
+    "target_2": 11358.75,
+    "risk_per_share": 182.87,
+    "risk_reward": 12.4,
+    "atr14": 212.56,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -34,10 +36,10 @@
         "strike": 8400.0,
         "strike_formatted": "8400",
         "option_type": "Put",
-        "delta": -0.04,
+        "delta": -0.032,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 41,
+        "dte": 35,
         "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 8400 Put"
       },
       {
@@ -46,10 +48,10 @@
         "strike": 8600.0,
         "strike_formatted": "8600",
         "option_type": "Put",
-        "delta": -0.101,
+        "delta": -0.091,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 41,
+        "dte": 35,
         "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 8600 Put"
       },
       {
@@ -58,10 +60,10 @@
         "strike": 9400.0,
         "strike_formatted": "9400",
         "option_type": "Call",
-        "delta": 0.292,
+        "delta": 0.27,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 41,
+        "dte": 35,
         "summary": "Sell 1x DIVISLAB.NS 24-Nov-2026 9400 Call"
       },
       {
@@ -70,10 +72,10 @@
         "strike": 9600.0,
         "strike_formatted": "9600",
         "option_type": "Call",
-        "delta": 0.164,
+        "delta": 0.142,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 41,
+        "dte": 35,
         "summary": "Buy 1x DIVISLAB.NS 24-Nov-2026 9600 Call"
       }
     ],
@@ -81,224 +83,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 400.0,
-    "stop_loss_price": 8817.3,
-    "take_profit_price": 9362.7,
-    "net_delta": -0.067,
-    "net_theta": 1.094,
+    "stop_loss_price": 8814.39,
+    "take_profit_price": 9359.61,
+    "net_delta": -0.069,
+    "net_theta": 1.255,
     "probability_of_profit": 0.0,
     "var_95": 200.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 7272.0,
+        "price": 7269.6,
         "pnl": -600.0
       },
       {
-        "price": 7344.72,
+        "price": 7342.3,
         "pnl": -600.0
       },
       {
-        "price": 7417.44,
+        "price": 7414.99,
         "pnl": -600.0
       },
       {
-        "price": 7490.16,
+        "price": 7487.69,
         "pnl": -600.0
       },
       {
-        "price": 7562.88,
+        "price": 7560.38,
         "pnl": -600.0
       },
       {
-        "price": 7635.6,
+        "price": 7633.08,
         "pnl": -600.0
       },
       {
-        "price": 7708.32,
+        "price": 7705.78,
         "pnl": -600.0
       },
       {
-        "price": 7781.04,
+        "price": 7778.47,
         "pnl": -600.0
       },
       {
-        "price": 7853.76,
+        "price": 7851.17,
         "pnl": -600.0
       },
       {
-        "price": 7926.48,
+        "price": 7923.86,
         "pnl": -600.0
       },
       {
-        "price": 7999.2,
+        "price": 7996.56,
         "pnl": -600.0
       },
       {
-        "price": 8071.92,
+        "price": 8069.26,
         "pnl": -600.0
       },
       {
-        "price": 8144.64,
+        "price": 8141.95,
         "pnl": -600.0
       },
       {
-        "price": 8217.36,
+        "price": 8214.65,
         "pnl": -600.0
       },
       {
-        "price": 8290.08,
+        "price": 8287.34,
         "pnl": -600.0
       },
       {
-        "price": 8362.8,
+        "price": 8360.04,
         "pnl": -600.0
       },
       {
-        "price": 8435.52,
-        "pnl": -564.48
+        "price": 8432.74,
+        "pnl": -567.26
       },
       {
-        "price": 8508.24,
-        "pnl": -491.76
+        "price": 8505.43,
+        "pnl": -494.57
       },
       {
-        "price": 8580.96,
-        "pnl": -419.04
+        "price": 8578.13,
+        "pnl": -421.87
       },
       {
-        "price": 8653.68,
+        "price": 8650.82,
         "pnl": -400.0
       },
       {
-        "price": 8726.4,
+        "price": 8723.52,
         "pnl": -400.0
       },
       {
-        "price": 8799.12,
+        "price": 8796.22,
         "pnl": -400.0
       },
       {
-        "price": 8871.84,
+        "price": 8868.91,
         "pnl": -400.0
       },
       {
-        "price": 8944.56,
+        "price": 8941.61,
         "pnl": -400.0
       },
       {
-        "price": 9017.28,
+        "price": 9014.3,
         "pnl": -400.0
       },
       {
-        "price": 9090.0,
+        "price": 9087.0,
         "pnl": -400.0
       },
       {
-        "price": 9162.72,
+        "price": 9159.7,
         "pnl": -400.0
       },
       {
-        "price": 9235.44,
+        "price": 9232.39,
         "pnl": -400.0
       },
       {
-        "price": 9308.16,
+        "price": 9305.09,
         "pnl": -400.0
       },
       {
-        "price": 9380.88,
+        "price": 9377.78,
         "pnl": -400.0
       },
       {
-        "price": 9453.6,
-        "pnl": -453.6
+        "price": 9450.48,
+        "pnl": -450.48
       },
       {
-        "price": 9526.32,
-        "pnl": -526.32
+        "price": 9523.18,
+        "pnl": -523.18
       },
       {
-        "price": 9599.04,
-        "pnl": -599.04
+        "price": 9595.87,
+        "pnl": -595.87
       },
       {
-        "price": 9671.76,
+        "price": 9668.57,
         "pnl": -600.0
       },
       {
-        "price": 9744.48,
+        "price": 9741.26,
         "pnl": -600.0
       },
       {
-        "price": 9817.2,
+        "price": 9813.96,
         "pnl": -600.0
       },
       {
-        "price": 9889.92,
+        "price": 9886.66,
         "pnl": -600.0
       },
       {
-        "price": 9962.64,
+        "price": 9959.35,
         "pnl": -600.0
       },
       {
-        "price": 10035.36,
+        "price": 10032.05,
         "pnl": -600.0
       },
       {
-        "price": 10108.08,
+        "price": 10104.74,
         "pnl": -600.0
       },
       {
-        "price": 10180.8,
+        "price": 10177.44,
         "pnl": -600.0
       },
       {
-        "price": 10253.52,
+        "price": 10250.14,
         "pnl": -600.0
       },
       {
-        "price": 10326.24,
+        "price": 10322.83,
         "pnl": -600.0
       },
       {
-        "price": 10398.96,
+        "price": 10395.53,
         "pnl": -600.0
       },
       {
-        "price": 10471.68,
+        "price": 10468.22,
         "pnl": -600.0
       },
       {
-        "price": 10544.4,
+        "price": 10540.92,
         "pnl": -600.0
       },
       {
-        "price": 10617.12,
+        "price": 10613.62,
         "pnl": -600.0
       },
       {
-        "price": 10689.84,
+        "price": 10686.31,
         "pnl": -600.0
       },
       {
-        "price": 10762.56,
+        "price": 10759.01,
         "pnl": -600.0
       },
       {
-        "price": 10835.28,
+        "price": 10831.7,
         "pnl": -600.0
       },
       {
-        "price": 10908.0,
+        "price": 10904.4,
         "pnl": -600.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.788,
+      "win_probability": 0.759,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3092,
+      "half_kelly_fraction": 0.2831,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -308,38 +310,38 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 82.3,
-      "grade": "A (Optimal)",
+      "score": 74.0,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "B1x-Nov-8400PE / S1x-Nov-8600PE / S1x-Nov-9400CE / B1x-Nov-9600CE"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 56.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-8800CE / S2x-Nov-9000CE / B1x-Nov-9400CE"
-    },
-    {
       "strategy_type": "protected_future",
       "strategy_display": "Protected Future",
-      "score": 55.0,
+      "score": 57.5,
       "grade": "C (Moderate)",
       "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-9090CE / B1x-Nov-8600PE"
+      "legs_summary": "B1x-Nov-9087CE / B1x-Nov-8600PE"
     },
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 54.2,
+      "score": 57.4,
       "grade": "C (Moderate)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-8600PE / B1x-Nov-8400PE"
+    },
+    {
+      "strategy_type": "ratio_put_spread",
+      "strategy_display": "Ratio Put Spread",
+      "score": 55.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
+      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
+      "legs_summary": "B1x-Nov-9000PE / S2x-Nov-8600PE"
     },
     {
       "strategy_type": "tradecraft_put",
@@ -351,97 +353,100 @@
       "legs_summary": "S1x-Nov-8600PE"
     },
     {
-      "strategy_type": "ratio_put_spread",
-      "strategy_display": "Ratio Put Spread",
-      "score": 52.2,
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 53.0,
       "grade": "C (Moderate)",
-      "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
-      "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "B1x-Nov-9000PE / S2x-Nov-8600PE"
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-9087CE / S1x-Nov-9400CE"
     },
     {
       "strategy_type": "wheel",
       "strategy_display": "Wheel",
-      "score": 50.4,
+      "score": 52.8,
       "grade": "C (Moderate)",
       "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
       "legs_summary": "S1x-Nov-8600PE"
     },
     {
-      "strategy_type": "covered_future",
-      "strategy_display": "Covered Future",
-      "score": 50.4,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-9090CE / S1x-Nov-9400CE"
-    },
-    {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 49.8,
+      "score": 52.0,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "B1x-Nov-8600CE / S1x-Nov-9400CE"
+      "legs_summary": "B1x-Nov-8600CE / S1x-Nov-9200CE"
     },
     {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 48.9,
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 49.8,
       "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-8800CE / S2x-Nov-9000CE / B1x-Nov-9600CE"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 47.9,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-8600PE / S1x-Nov-9000PE / S1x-Nov-9000CE / B1x-Nov-9600CE"
+      "legs_summary": "B1x-Nov-8800CE / S2x-Nov-9000CE / B1x-Nov-9200CE"
     },
     {
       "strategy_type": "jade_lizard",
       "strategy_display": "Jade Lizard",
-      "score": 47.3,
+      "score": 49.5,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
       "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
       "legs_summary": "S1x-Nov-8600PE / S1x-Nov-9400CE / B1x-Nov-9600CE"
     },
     {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 43.6,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "B1x-Nov-8800CE / S2x-Nov-9000CE / B1x-Nov-9600CE"
+    },
+    {
+      "strategy_type": "cash_swing_long",
+      "strategy_display": "Cash Swing Long",
+      "score": 43.5,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "B1x-Nov-9087CE"
+    },
+    {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 41.3,
+      "score": 43.4,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
       "legs_summary": "B1x-Nov-9000CE / S1x-Nov-9400CE"
     },
     {
-      "strategy_type": "cash_swing_long",
-      "strategy_display": "Cash Swing Long",
-      "score": 40.8,
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 41.2,
       "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "B1x-Nov-9090CE"
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "B1x-Nov-8600PE / S1x-Nov-9000PE / S1x-Nov-9000CE / B1x-Nov-9600CE"
     }
   ],
   "indicators": {
-    "EMA20": "9320.42",
-    "EMA50": "8984.74",
-    "EMA100": "8354.56",
-    "EMA200": "7627.70",
-    "RSI(14)": "43.59",
-    "ATR(14)": "196.71",
-    "ADX(14)": "24.10",
-    "BB(20,2)": "0.03",
-    "P_SHAPE(20)": "46.37"
+    "EMA20": "9255.66",
+    "EMA50": "8994.07",
+    "EMA100": "8396.00",
+    "EMA200": "7670.19",
+    "SMA20": "9342.12",
+    "SMA200": "7243.27",
+    "RSI(2)": "38.19",
+    "RSI(14)": "44.62",
+    "ATR(14)": "212.56",
+    "ADX(14)": "22.03",
+    "BB(20,2)": "0.18",
+    "P_SHAPE(20)": "52.17"
   },
   "rules": [
     {
@@ -473,6 +478,20 @@
       "explanation": "Condition met"
     },
     {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
       "name": "Bollinger Band Non-Overextended (%B <= 1.02)",
       "passed": true,
       "score": 1.0,
@@ -488,20 +507,6 @@
     },
     {
       "name": "ADX above 30",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -524,10 +529,10 @@
   ],
   "news": [
     {
-      "title": "Moneycontrol Pro Panorama | Riding to the rupee\u2019s rescue",
+      "title": "Eli Lilly. | Latest & Breaking News on Eli Lilly. | Photos, Videos, Breaking Stories and Articles on Eli Lilly.",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVDI3eEJGcjhSLThZa1hsZl9NajlhM2h4bXRpYlZsSHJmRGI0ZjRTZlBPSDBTYVVhS0FmUTZuMHItdXV4d1FDbDRFeWNHcHhyTHJqTlR4OGVFSER0eXJXY2tjRjVEUGJlZTJSTGw2Rlh0X05nVU9jSU5WT1hnS25ERzRmMVhXdmZfMnpUeXZlVnBHM2J2OTRwdkp1bUxsdmJCMmVkOHNtN0l6R2R6TzBOZHExaHJpeHo3cXZz0gHAAUFVX3lxTE5BR3JuX0VXYzBZNXVueC0zSHdxRE1BNHZ1ME92S1VTNW5OUzVGNEh3WXlFX1BxSWJfWnNSWHVXSjBUZkcwUS1mTUhvUGdvRFpuRUZjX3lZbDJ4R0NvTVYxOUFCT1dHdDUwM3daemg4OER5X0cxMjdYTmpyZXZUcGtOeUdyb0hXUm1JeE5oWi1FbTI0dmhvcWhyQ0xwR3NBQ184bDdUcUUzUUVtM0Y5T0h3RFlCOG1rbWcwbm9GM1h3Ug?oc=5",
-      "published_at": "Mon, 12 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Rbl9GdWJJRmlCT2xFMXBnUENDYnNaVHF3ZnJhSUZDS205OTUyZzZDVk1TT1FaWERnejlaWmtLcmltb0g3N3JHY1FYTzZ6cTRvVFg5a040cWdKY2dXN2VBeUxZNTc?oc=5",
+      "published_at": "Sat, 17 Oct 2026",
       "sentiment": "neutral"
     },
     {
@@ -545,13 +550,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Divis Laboratories Ltd.",
-      "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamN4b1EwYW5ndTA2M2hYVGJPcWhiY0JNbGttMmk5ZXk5R1h4Z2lFWlh5LWVIVENfZF9GekM0Tk1XV0w2Vl9XdEZKdnBFNFM4QWJKLWZVamxBNTBnMmluU2l2a01YbnBjQjdLU0R5ajJOTV91NzhJaU5DY3AycDBobFpMcjBaWGhXbDJabmVzUXd1eEk?oc=5",
-      "published_at": "Tue, 19 Jul 2011",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Divis Labs Share Price Today, Divis Labs Stock Price Live NSE/BSE Updates",
       "publisher": "The Economic Times",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYUpmNzM4eTlZWWlpYVZSZm1XOV9tOXI1NndFYTlPdlpTTnBSNFhMaVlqVzF3QUhNZU1ia0hJd0NRUFZITWZyekZfTkl1dUpWSDZFWlR2LXkxWWxqOU5RelZaVmg5WHc4RlF5Ym0wb2ZJSDk4UnhaVlNDU1AxbkxhX1U1THFqWnJYbzhyYkFR?oc=5",
@@ -559,11 +557,62 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Divis Lab gets 5 observations from USFDA for Vizag plant",
-      "publisher": "ET HealthWorld",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTnNoZXBkR0hCUl9sVElnOExkYlpxT09jT3dLWjRoWWgwZGtFU2tNOVYxNFlFbVVCQzZyRUNic2JCczNyYzAxOVhnTk13ZXZDQUY5NjhUYmVFUmgxWjBRcXBJVklBSVhYdG85OHdKUXdSYUVTUU00a1VielM2WGtVbXJNc09RRHRnYWoyTE9xMXN3eTVPcE04aVdfMV90d2Zycm9haDVhM2NQTkIybVpaNzF2QS1ZUGJCemFLS0NR0gHDAUFVX3lxTE9OenJsMGFzdW1iczFoUlA5YnVmUXhmVngwV29tdUxsdG53Z0pqTDN3QmNZM2F5ZTFoUW9hTjBOdFpydE9wazFUOU5TUU5pWDdFbjBscXZHMzRocjZWSlhiV3R6QVpQTHVRQ3RSSHppWHdrbm4zWWZITmh2M0h5WkpFMWlsRlcxQUplYzRadUtXQ2s3ZjN5QUo0YTg5bWFJUEFIbloyaHdnbDMybFc5NDhRSWtKYTd1cGxJQkxaNW0wMnNCUQ?oc=5",
-      "published_at": "Thu, 08 Dec 2016",
+      "title": "Divis Laboratories Ltd.",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamN4b1EwYW5ndTA2M2hYVGJPcWhiY0JNbGttMmk5ZXk5R1h4Z2lFWlh5LWVIVENfZF9GekM0Tk1XV0w2Vl9XdEZKdnBFNFM4QWJKLWZVamxBNTBnMmluU2l2a01YbnBjQjdLU0R5ajJOTV91NzhJaU5DY3AycDBobFpMcjBaWGhXbDJabmVzUXd1eEk?oc=5",
+      "published_at": "Tue, 19 Jul 2011",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Divis Laboratories | Rights > Pharmaceuticals > Rights declared by Divis Laboratories - BSE: 532488, NSE: DIVISLAB",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE54clVhUnYxWHZwOElfOEZrcy1tSklZQjFCWnNsWmhqS1NSZkRTWklBQl9rRk1HZU1OOHZIeUhsX2lPaEtfOEMwVUZvaWlnWWJPWHJqOXB4ODJCa2Z6djhSck91OHZYY3dPN2Z6Q1QtdXMtOFBabUJNSkF1dEpKQQ?oc=5",
+      "published_at": "Fri, 13 Dec 2019",
       "sentiment": "neutral"
     }
-  ]
+  ],
+  "playbook_mean_reversion": {
+    "status": "INELIGIBLE",
+    "is_triggered": false,
+    "close_price": 9087.0,
+    "sma200": 7243.27,
+    "sma20": 9342.12,
+    "sma20_slope": -0.558,
+    "lower_bb": 8943.34,
+    "upper_bb": 9740.91,
+    "pct_b": 0.1801,
+    "rsi2": 38.18820763240623,
+    "rsi14": 44.61725386865465,
+    "atr14": 212.55614805983026,
+    "close_above_sma200": true,
+    "close_below_lower_bb": false,
+    "rsi2_below_10": false,
+    "adequate_liquidity": false,
+    "risk_limits_pass": true,
+    "target_exit_price": 9342.12,
+    "stop_loss_spot_price": 8726.17,
+    "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
+    "suggested_structure": "S1x-Nov-8800PE / B1x-Nov-8400PE",
+    "actual_trade": "S1x-Nov-8800PE / B1x-Nov-8400PE",
+    "target_dte_range": "30 - 45 DTE Monthly Expiry",
+    "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
+    "exit_rules": [
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~9,342.12).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 8,726.17).",
+      "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
+      "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
+      "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."
+    ],
+    "rationale": "DIVISLAB.NS is not part of the approved Playbook F&O Index Universe (NIFTY/BANKNIFTY/FINNIFTY).",
+    "warnings": [],
+    "iv_regime": "Very Low",
+    "iv_recommendations": [
+      "Calendars",
+      "Diagonals",
+      "Broken-Wing Butterflies"
+    ],
+    "iv_guidance": "Very low IV: options are cheap. Prefer long vega / positive convexity structures (calendars/diagonals).",
+    "high_52w": 9740.0,
+    "dist_52w_pct": -6.7
+  }
 }

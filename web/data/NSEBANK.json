@@ -1,28 +1,30 @@
 {
   "symbol": "^NSEBANK",
-  "last_price": 55720.05,
-  "as_of": "2026-10-15 03:45:00",
+  "last_price": 55803.25,
+  "high_52w": 61764.85,
+  "dist_52w_pct": -9.65,
+  "as_of": "2026-10-21 03:45:00",
   "regime": "bear",
   "regime_display": "Bear",
-  "trend_score": 2.0,
-  "fit_score": 20.0,
+  "trend_score": 2.5,
+  "fit_score": 25.0,
   "confidence_grade": "C",
-  "confidence_percentage": 20.0,
-  "vix": 14.77,
+  "confidence_percentage": 25.0,
+  "vix": 14.82,
   "strategy_type": "cash_swing_short",
   "strategy_display": "Cash Swing Short",
   "trade_profile": "Advisory | 30-45 DTE",
   "trade_category": "cash",
-  "recommendation_reason": "Best fit strategy (51.7% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+  "recommendation_reason": "Best fit strategy (49.0% fit - Grade C (Moderate)): Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
   "cash_trade_setup": {
     "direction": "Short / Sell",
-    "entry": 55720.05,
-    "stop_loss": 56566.11,
-    "target_1": 47362.04,
-    "target_2": 41790.04,
-    "risk_per_share": 846.06,
-    "risk_reward": 16.5,
-    "atr14": 629.81,
+    "entry": 55803.25,
+    "stop_loss": 56535.62,
+    "target_1": 47432.76,
+    "target_2": 41852.44,
+    "risk_per_share": 732.37,
+    "risk_reward": 19.0,
+    "atr14": 606.68,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -31,238 +33,238 @@
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 55720.05078125,
-        "strike_formatted": "55720.1",
+        "strike": 55803.25,
+        "strike_formatted": "55803.2",
         "option_type": "Put",
-        "delta": -0.446,
+        "delta": -0.45,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 40,
-        "summary": "Sell 1x ^NSEBANK 24-Nov-2026 55720.1 Put"
+        "dte": 34,
+        "summary": "Sell 1x ^NSEBANK 24-Nov-2026 55803.2 Put"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 944.72,
-    "stop_loss_price": 56286.08,
-    "take_profit_price": 53830.61,
-    "net_delta": 0.446,
-    "net_theta": 9.925,
+    "margin_required": 910.02,
+    "stop_loss_price": 56255.74,
+    "take_profit_price": 53983.22,
+    "net_delta": 0.45,
+    "net_theta": 11.136,
     "probability_of_profit": 0.0,
-    "var_95": 4127.81,
+    "var_95": 3854.93,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 44576.04,
-        "pnl": -12088.73
+        "price": 44642.6,
+        "pnl": -12070.67
       },
       {
-        "price": 45021.8,
-        "pnl": -11642.97
+        "price": 45089.03,
+        "pnl": -11624.24
       },
       {
-        "price": 45467.56,
-        "pnl": -11197.21
+        "price": 45535.45,
+        "pnl": -11177.82
       },
       {
-        "price": 45913.32,
-        "pnl": -10751.45
+        "price": 45981.88,
+        "pnl": -10731.39
       },
       {
-        "price": 46359.08,
-        "pnl": -10305.69
+        "price": 46428.3,
+        "pnl": -10284.97
       },
       {
-        "price": 46804.84,
-        "pnl": -9859.93
+        "price": 46874.73,
+        "pnl": -9838.54
       },
       {
-        "price": 47250.6,
-        "pnl": -9414.17
+        "price": 47321.16,
+        "pnl": -9392.11
       },
       {
-        "price": 47696.36,
-        "pnl": -8968.41
+        "price": 47767.58,
+        "pnl": -8945.69
       },
       {
-        "price": 48142.12,
-        "pnl": -8522.65
+        "price": 48214.01,
+        "pnl": -8499.26
       },
       {
-        "price": 48587.88,
-        "pnl": -8076.89
+        "price": 48660.43,
+        "pnl": -8052.84
       },
       {
-        "price": 49033.64,
-        "pnl": -7631.13
+        "price": 49106.86,
+        "pnl": -7606.41
       },
       {
-        "price": 49479.41,
-        "pnl": -7185.36
+        "price": 49553.29,
+        "pnl": -7159.98
       },
       {
-        "price": 49925.17,
-        "pnl": -6739.6
+        "price": 49999.71,
+        "pnl": -6713.56
       },
       {
-        "price": 50370.93,
-        "pnl": -6293.84
+        "price": 50446.14,
+        "pnl": -6267.13
       },
       {
-        "price": 50816.69,
-        "pnl": -5848.08
+        "price": 50892.56,
+        "pnl": -5820.71
       },
       {
-        "price": 51262.45,
-        "pnl": -5402.32
+        "price": 51338.99,
+        "pnl": -5374.28
       },
       {
-        "price": 51708.21,
-        "pnl": -4956.56
+        "price": 51785.42,
+        "pnl": -4927.85
       },
       {
-        "price": 52153.97,
-        "pnl": -4510.8
+        "price": 52231.84,
+        "pnl": -4481.43
       },
       {
-        "price": 52599.73,
-        "pnl": -4065.04
+        "price": 52678.27,
+        "pnl": -4035.0
       },
       {
-        "price": 53045.49,
-        "pnl": -3619.28
+        "price": 53124.69,
+        "pnl": -3588.58
       },
       {
-        "price": 53491.25,
-        "pnl": -3173.52
+        "price": 53571.12,
+        "pnl": -3142.15
       },
       {
-        "price": 53937.01,
-        "pnl": -2727.76
+        "price": 54017.55,
+        "pnl": -2695.72
       },
       {
-        "price": 54382.77,
-        "pnl": -2282.0
+        "price": 54463.97,
+        "pnl": -2249.3
       },
       {
-        "price": 54828.53,
-        "pnl": -1836.24
+        "price": 54910.4,
+        "pnl": -1802.87
       },
       {
-        "price": 55274.29,
-        "pnl": -1390.48
+        "price": 55356.82,
+        "pnl": -1356.45
       },
       {
-        "price": 55720.05,
-        "pnl": -944.72
+        "price": 55803.25,
+        "pnl": -910.02
       },
       {
-        "price": 56165.81,
-        "pnl": -944.72
+        "price": 56249.68,
+        "pnl": -910.02
       },
       {
-        "price": 56611.57,
-        "pnl": -944.72
+        "price": 56696.1,
+        "pnl": -910.02
       },
       {
-        "price": 57057.33,
-        "pnl": -944.72
+        "price": 57142.53,
+        "pnl": -910.02
       },
       {
-        "price": 57503.09,
-        "pnl": -944.72
+        "price": 57588.95,
+        "pnl": -910.02
       },
       {
-        "price": 57948.85,
-        "pnl": -944.72
+        "price": 58035.38,
+        "pnl": -910.02
       },
       {
-        "price": 58394.61,
-        "pnl": -944.72
+        "price": 58481.81,
+        "pnl": -910.02
       },
       {
-        "price": 58840.37,
-        "pnl": -944.72
+        "price": 58928.23,
+        "pnl": -910.02
       },
       {
-        "price": 59286.13,
-        "pnl": -944.72
+        "price": 59374.66,
+        "pnl": -910.02
       },
       {
-        "price": 59731.89,
-        "pnl": -944.72
+        "price": 59821.08,
+        "pnl": -910.02
       },
       {
-        "price": 60177.65,
-        "pnl": -944.72
+        "price": 60267.51,
+        "pnl": -910.02
       },
       {
-        "price": 60623.42,
-        "pnl": -944.72
+        "price": 60713.94,
+        "pnl": -910.02
       },
       {
-        "price": 61069.18,
-        "pnl": -944.72
+        "price": 61160.36,
+        "pnl": -910.02
       },
       {
-        "price": 61514.94,
-        "pnl": -944.72
+        "price": 61606.79,
+        "pnl": -910.02
       },
       {
-        "price": 61960.7,
-        "pnl": -944.72
+        "price": 62053.21,
+        "pnl": -910.02
       },
       {
-        "price": 62406.46,
-        "pnl": -944.72
+        "price": 62499.64,
+        "pnl": -910.02
       },
       {
-        "price": 62852.22,
-        "pnl": -944.72
+        "price": 62946.07,
+        "pnl": -910.02
       },
       {
-        "price": 63297.98,
-        "pnl": -944.72
+        "price": 63392.49,
+        "pnl": -910.02
       },
       {
-        "price": 63743.74,
-        "pnl": -944.72
+        "price": 63838.92,
+        "pnl": -910.02
       },
       {
-        "price": 64189.5,
-        "pnl": -944.72
+        "price": 64285.34,
+        "pnl": -910.02
       },
       {
-        "price": 64635.26,
-        "pnl": -944.72
+        "price": 64731.77,
+        "pnl": -910.02
       },
       {
-        "price": 65081.02,
-        "pnl": -944.72
+        "price": 65178.2,
+        "pnl": -910.02
       },
       {
-        "price": 65526.78,
-        "pnl": -944.72
+        "price": 65624.62,
+        "pnl": -910.02
       },
       {
-        "price": 65972.54,
-        "pnl": -944.72
+        "price": 66071.05,
+        "pnl": -910.02
       },
       {
-        "price": 66418.3,
-        "pnl": -944.72
+        "price": 66517.47,
+        "pnl": -910.02
       },
       {
-        "price": 66864.06,
-        "pnl": -944.72
+        "price": 66963.9,
+        "pnl": -910.02
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.681,
+      "win_probability": 0.671,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2129,
+      "half_kelly_fraction": 0.2039,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -272,35 +274,35 @@
     {
       "strategy_type": "cash_swing_short",
       "strategy_display": "Cash Swing Short",
-      "score": 51.7,
+      "score": 49.0,
       "grade": "C (Moderate)",
       "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "S1x-Nov-55720.1PE"
+      "legs_summary": "S1x-Nov-55803.2PE"
     },
     {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 43.4,
+      "score": 41.0,
       "grade": "C (Moderate)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "S1x-Nov-58400CE / B1x-Nov-59000CE"
+      "legs_summary": "S1x-Nov-58300CE / B1x-Nov-58900CE"
     }
   ],
   "indicators": {
-    "EMA20": "55381.37",
-    "EMA50": "56006.05",
-    "EMA100": "56359.54",
-    "EMA200": "56464.07",
-    "SMA20": "55198.84",
-    "SMA200": "56905.33",
-    "RSI(2)": "80.58",
-    "RSI(14)": "51.74",
-    "ATR(14)": "629.81",
-    "ADX(14)": "20.23",
-    "BB(20,2)": "0.70",
-    "P_SHAPE(20)": "44.59"
+    "EMA20": "55473.20",
+    "EMA50": "55975.86",
+    "EMA100": "56323.49",
+    "EMA200": "56442.71",
+    "SMA20": "55098.38",
+    "SMA200": "56855.88",
+    "RSI(2)": "67.62",
+    "RSI(14)": "52.38",
+    "ATR(14)": "606.68",
+    "ADX(14)": "16.93",
+    "BB(20,2)": "0.86",
+    "P_SHAPE(20)": "59.03"
   },
   "rules": [
     {
@@ -311,14 +313,14 @@
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher highs",
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "Price making higher lows",
+      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -367,14 +369,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher highs",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "20-Day Momentum Relative Strength",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -407,35 +409,36 @@
   "playbook_mean_reversion": {
     "status": "STAND_ASIDE",
     "is_triggered": false,
-    "close_price": 55720.05078125,
-    "sma200": 56905.33,
-    "sma20": 55198.84,
-    "sma20_slope": -0.398,
-    "lower_bb": 53875.43,
-    "upper_bb": 56522.26,
-    "pct_b": 0.6969,
-    "rsi2": 80.57862652542137,
-    "rsi14": 51.73832915587672,
-    "atr14": 629.8147682257967,
+    "close_price": 55803.25,
+    "sma200": 56855.88,
+    "sma20": 55098.38,
+    "sma20_slope": -0.306,
+    "lower_bb": 54113.09,
+    "upper_bb": 56083.67,
+    "pct_b": 0.8577,
+    "rsi2": 67.62373007318904,
+    "rsi14": 52.3789971312302,
+    "atr14": 606.6781450842827,
     "close_above_sma200": false,
     "close_below_lower_bb": false,
     "rsi2_below_10": false,
     "adequate_liquidity": true,
     "risk_limits_pass": true,
-    "target_exit_price": 55198.84,
-    "stop_loss_spot_price": 54334.28,
+    "target_exit_price": 55098.38,
+    "stop_loss_spot_price": 54685.33,
     "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
-    "suggested_structure": "Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)",
+    "suggested_structure": "S1x-Nov-53800PE / B1x-Nov-53200PE",
+    "actual_trade": "S1x-Nov-53800PE / B1x-Nov-53200PE",
     "target_dte_range": "30 - 45 DTE Monthly Expiry",
     "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
     "exit_rules": [
-      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~55,198.84).",
-      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 54,334.28).",
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~55,098.38).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 54,685.33).",
       "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
       "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
       "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."
     ],
-    "rationale": "Daily close (55,720.05) is below 200-day SMA (56,905.33). Per Playbook Section 8: Stand aside or remain defensive. Do NOT initiate bull put spreads.",
+    "rationale": "Daily close (55,803.25) is below 200-day SMA (56,855.88). Per Playbook Section 8: Stand aside or remain defensive. Do NOT initiate bull put spreads.",
     "warnings": [
       "Macro structural downtrend: 200 SMA breached. Long put spreads prohibited."
     ],
@@ -445,6 +448,8 @@
       "Diagonals",
       "Broken-Wing Butterflies"
     ],
-    "iv_guidance": "Very low IV: options are cheap. Prefer long vega / positive convexity structures (calendars/diagonals)."
+    "iv_guidance": "Very low IV: options are cheap. Prefer long vega / positive convexity structures (calendars/diagonals).",
+    "high_52w": 61764.85,
+    "dist_52w_pct": -9.65
   }
 }

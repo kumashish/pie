@@ -10,6 +10,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from pie.web.server import analyze_symbol
+from pie.market.strategy import StrategyRecommendation, StrategyType
+from pie.market.trade_estimate import estimate_trade
 from pie.reporting.readme_update import format_ist_time, get_strategy_display_name, format_fit_score_badge, calculate_since, format_short_indian_strategy
 
 INDIAN_SYMBOLS = [
@@ -176,7 +178,9 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
                             "strategy": sdisplay,
                             "legs": legs,
                             "grade": strat_item.get("grade", "N/A"),
-                            "rationale": strat_item.get("rationale", "")
+                            "rationale": strat_item.get("rationale", ""),
+                            "high_52w": data.get("high_52w"),
+                            "dist_52w": data.get("dist_52w_pct"),
                         })
                 else:
                     score_val = float(data.get("fit_score", 0.0))
@@ -194,7 +198,9 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
                         "strategy": sdisplay,
                         "legs": legs,
                         "grade": "N/A",
-                        "rationale": ""
+                        "rationale": "",
+                        "high_52w": data.get("high_52w"),
+                        "dist_52w": data.get("dist_52w_pct"),
                     })
             except Exception:
                 pass
@@ -230,11 +236,11 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
 
 ## 🌐 Part 1: Macro Benchmark Indices (Always Tracked & Evaluated)
 
-| Symbol | Price | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
-| :--- | :--- | :--- | :---: | :--- | :--- | :---: |
+| Symbol | Price | Away from 52W High | Market Regime | Score / 10 | Strategy | Structure / Leg Shorthand | Grade |
+| :--- | :--- | :---: | :--- | :---: | :--- | :--- | :---: |
 """
     if not index_entries:
-        content += "| *No index data* | - | - | - | - | - | - |\n"
+        content += "| *No index data* | - | - | - | - | - | - | - |\n"
     else:
         seen_index_syms = set()
         for item in index_entries:
@@ -250,7 +256,10 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
             strat = item["strategy"]
             leg_str = item["legs"]
             grade = item["grade"]
-            content += f"| **{sym}** | {curr}{price:,.2f} | {regime} | **{score_str}** | {strat} | `{leg_str}` | {grade} |\n"
+            dist_52w = item.get("dist_52w")
+            high_52w = item.get("high_52w")
+            dist_str = f"`{dist_52w:+.1f}%` ({curr}{high_52w:,.1f})" if dist_52w is not None and high_52w else "N/A"
+            content += f"| **{sym}** | {curr}{price:,.2f} | {dist_str} | {regime} | **{score_str}** | {strat} | `{leg_str}` | {grade} |\n"
 
     if market_type.lower() == "india":
         content += """
@@ -258,8 +267,8 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
 
 ## 🛡️ Part 1B: NIFTY Income Portfolio Playbook v1.4 — Mean-Reversion Signal Status
 
-| Index | Price | 200 SMA Trend Guardrail | Lower BB (20,2σ) | RSI(2) | Signal Status | Diagnosis & Guidance | Proposed Structure |
-| :--- | :--- | :--- | :--- | :---: | :---: | :--- | :--- |
+| Index | Price | Away from 52W High | 200 SMA Trend Guardrail | Lower BB (20,2σ) | RSI(2) | Signal Status | Diagnosis & Guidance | Proposed Trade (Leg Shorthand) |
+| :--- | :--- | :---: | :--- | :--- | :---: | :---: | :--- | :--- |
 """
         playbook_indices = ["^NSEI", "^NSEBANK", "NIFTY_FIN_SERVICE.NS"]
         for p_sym in playbook_indices:
@@ -271,6 +280,12 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
                     pmr = p_data.get("playbook_mean_reversion")
                     if pmr:
                         p_price = p_data.get("last_price", 0.0)
+                        dist_52w = pmr.get("dist_52w_pct") if pmr else None
+                        high_52w = pmr.get("high_52w") if pmr else None
+                        if dist_52w is None:
+                            dist_52w = p_data.get("dist_52w_pct")
+                            high_52w = p_data.get("high_52w")
+                        dist_str = f"`{dist_52w:+.1f}%` (₹{high_52w:,.1f})" if dist_52w is not None and high_52w else "N/A"
                         sma200_val = pmr.get("sma200")
                         sma200_str = f"₹{sma200_val:,.1f}" if sma200_val else "N/A"
                         trend_ok = "✅ Above" if pmr.get("close_above_sma200") else "❌ Below (Defensive)"
@@ -289,8 +304,30 @@ def generate_market_readme(market_type: str = "india", docs_dir: Path = Path("do
                         diag = pmr.get("rationale", "")
                         if len(diag) > 120:
                             diag = diag[:117] + "..."
-                        struct = pmr.get("suggested_structure", "Bull Put Spread")
-                        content += f"| **{p_sym}** | ₹{p_price:,.2f} | {trend_ok} ({sma200_str}) | {bb_touch} ({lower_bb_str}) | `{rsi2_str}` | {status_badge} | {diag} | `{struct}` |\n"
+                        trade_str = pmr.get("actual_trade") or pmr.get("suggested_structure", "Bull Put Spread")
+                        if not trade_str or "Sell 1x OTM" in trade_str:
+                            try:
+                                dyn_trade = estimate_trade(
+                                    symbol=p_sym,
+                                    spot_price=float(p_price),
+                                    annualized_vix=float(p_data.get("vix", 15.0)),
+                                    recommendation=StrategyRecommendation(
+                                        strategy=StrategyType.NIFTY_MEAN_REVERSION,
+                                        actionable=True,
+                                        rationale="Playbook Bull Put Spread",
+                                    ),
+                                    vix_source="live",
+                                )
+                                if dyn_trade and dyn_trade.legs:
+                                    exp_str = dyn_trade.expiration.strftime("%d-%b-%Y")
+                                    raw_legs = " / ".join([
+                                        f"{'Buy' if (leg.action.value if hasattr(leg.action, 'value') else str(leg.action)).upper() in {'BUY','LONG'} else 'Sell'} 1x {p_sym} {exp_str} {int(leg.strike)} {'Call' if (leg.right.value if hasattr(leg.right, 'value') else str(leg.right)).upper() in {'CALL','CE','C'} else 'Put'}"
+                                        for leg in dyn_trade.legs
+                                    ])
+                                    trade_str = format_short_indian_strategy(raw_legs)
+                            except Exception:
+                                pass
+                        content += f"| **{p_sym}** | ₹{p_price:,.2f} | {dist_str} | {trend_ok} ({sma200_str}) | {bb_touch} ({lower_bb_str}) | `{rsi2_str}` | {status_badge} | {diag} | `{trade_str}` |\n"
                 except Exception:
                     pass
 

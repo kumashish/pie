@@ -1,67 +1,45 @@
 {
   "symbol": "AXISBANK.NS",
-  "last_price": 1269.5,
-  "as_of": "2026-10-14 03:45:00",
-  "regime": "neutral",
-  "regime_display": "Neutral",
-  "trend_score": 4.5,
-  "fit_score": 45.0,
+  "last_price": 1236.0,
+  "high_52w": 1418.3,
+  "dist_52w_pct": -12.85,
+  "as_of": "2026-10-19 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.8,
+  "fit_score": 17.5,
   "confidence_grade": "C",
-  "confidence_percentage": 45.0,
-  "vix": 14.57,
-  "strategy_type": "iron_condor",
-  "strategy_display": "Iron Condor",
-  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "confidence_percentage": 17.5,
+  "vix": 14.77,
+  "strategy_type": "credit_spread",
+  "strategy_display": "Credit Spread",
+  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (96.1% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (47.9% fit - Grade C (Moderate)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
   "cash_trade_setup": {
-    "direction": "Long / Buy",
-    "entry": 1269.5,
-    "stop_loss": 1230.77,
-    "target_1": 1459.92,
-    "target_2": 1586.88,
-    "risk_per_share": 38.73,
-    "risk_reward": 8.2,
-    "atr14": 23.19,
+    "direction": "Short / Sell",
+    "entry": 1236.0,
+    "stop_loss": 1262.5,
+    "target_1": 1050.6,
+    "target_2": 927.0,
+    "risk_per_share": 26.5,
+    "risk_reward": 11.7,
+    "atr14": 27.21,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Buy",
-        "quantity": 1,
-        "strike": 1150.0,
-        "strike_formatted": "1150",
-        "option_type": "Put",
-        "delta": -0.015,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 41,
-        "summary": "Buy 1x AXISBANK.NS 24-Nov-2026 1150 Put"
-      },
-      {
-        "action": "Sell",
-        "quantity": 1,
-        "strike": 1200.0,
-        "strike_formatted": "1200",
-        "option_type": "Put",
-        "delta": -0.098,
-        "expiration": "2026-11-24",
-        "expiration_display": "24-Nov-2026",
-        "dte": 41,
-        "summary": "Sell 1x AXISBANK.NS 24-Nov-2026 1200 Put"
-      },
-      {
         "action": "Sell",
         "quantity": 1,
         "strike": 1300.0,
         "strike_formatted": "1300",
         "option_type": "Call",
-        "delta": 0.364,
+        "delta": 0.165,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 41,
+        "dte": 35,
         "summary": "Sell 1x AXISBANK.NS 24-Nov-2026 1300 Call"
       },
       {
@@ -70,10 +48,10 @@
         "strike": 1350.0,
         "strike_formatted": "1350",
         "option_type": "Call",
-        "delta": 0.131,
+        "delta": 0.036,
         "expiration": "2026-11-24",
         "expiration_display": "24-Nov-2026",
-        "dte": 41,
+        "dte": 35,
         "summary": "Buy 1x AXISBANK.NS 24-Nov-2026 1350 Call"
       }
     ],
@@ -81,224 +59,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 50.0,
-    "stop_loss_price": 1231.41,
-    "take_profit_price": 1307.59,
-    "net_delta": -0.15,
-    "net_theta": 0.249,
+    "stop_loss_price": 1198.92,
+    "take_profit_price": 1273.08,
+    "net_delta": -0.129,
+    "net_theta": 0.157,
     "probability_of_profit": 0.0,
-    "var_95": 50.0,
+    "var_95": 36.63,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 1015.6,
-        "pnl": -100.0
-      },
-      {
-        "price": 1025.76,
-        "pnl": -100.0
-      },
-      {
-        "price": 1035.91,
-        "pnl": -100.0
-      },
-      {
-        "price": 1046.07,
-        "pnl": -100.0
-      },
-      {
-        "price": 1056.22,
-        "pnl": -100.0
-      },
-      {
-        "price": 1066.38,
-        "pnl": -100.0
-      },
-      {
-        "price": 1076.54,
-        "pnl": -100.0
-      },
-      {
-        "price": 1086.69,
-        "pnl": -100.0
-      },
-      {
-        "price": 1096.85,
-        "pnl": -100.0
-      },
-      {
-        "price": 1107.0,
-        "pnl": -100.0
-      },
-      {
-        "price": 1117.16,
-        "pnl": -100.0
-      },
-      {
-        "price": 1127.32,
-        "pnl": -100.0
-      },
-      {
-        "price": 1137.47,
-        "pnl": -100.0
-      },
-      {
-        "price": 1147.63,
-        "pnl": -100.0
-      },
-      {
-        "price": 1157.78,
-        "pnl": -92.22
-      },
-      {
-        "price": 1167.94,
-        "pnl": -82.06
-      },
-      {
-        "price": 1178.1,
-        "pnl": -71.9
-      },
-      {
-        "price": 1188.25,
-        "pnl": -61.75
-      },
-      {
-        "price": 1198.41,
-        "pnl": -51.59
-      },
-      {
-        "price": 1208.56,
+        "price": 988.8,
         "pnl": -50.0
       },
       {
-        "price": 1218.72,
+        "price": 998.69,
         "pnl": -50.0
       },
       {
-        "price": 1228.88,
+        "price": 1008.58,
         "pnl": -50.0
       },
       {
-        "price": 1239.03,
+        "price": 1018.46,
         "pnl": -50.0
       },
       {
-        "price": 1249.19,
+        "price": 1028.35,
         "pnl": -50.0
       },
       {
-        "price": 1259.34,
+        "price": 1038.24,
         "pnl": -50.0
       },
       {
-        "price": 1269.5,
+        "price": 1048.13,
         "pnl": -50.0
       },
       {
-        "price": 1279.66,
+        "price": 1058.02,
         "pnl": -50.0
       },
       {
-        "price": 1289.81,
+        "price": 1067.9,
         "pnl": -50.0
       },
       {
-        "price": 1299.97,
+        "price": 1077.79,
         "pnl": -50.0
       },
       {
-        "price": 1310.12,
-        "pnl": -60.12
+        "price": 1087.68,
+        "pnl": -50.0
       },
       {
-        "price": 1320.28,
-        "pnl": -70.28
+        "price": 1097.57,
+        "pnl": -50.0
       },
       {
-        "price": 1330.44,
-        "pnl": -80.44
+        "price": 1107.46,
+        "pnl": -50.0
       },
       {
-        "price": 1340.59,
-        "pnl": -90.59
+        "price": 1117.34,
+        "pnl": -50.0
       },
       {
-        "price": 1350.75,
+        "price": 1127.23,
+        "pnl": -50.0
+      },
+      {
+        "price": 1137.12,
+        "pnl": -50.0
+      },
+      {
+        "price": 1147.01,
+        "pnl": -50.0
+      },
+      {
+        "price": 1156.9,
+        "pnl": -50.0
+      },
+      {
+        "price": 1166.78,
+        "pnl": -50.0
+      },
+      {
+        "price": 1176.67,
+        "pnl": -50.0
+      },
+      {
+        "price": 1186.56,
+        "pnl": -50.0
+      },
+      {
+        "price": 1196.45,
+        "pnl": -50.0
+      },
+      {
+        "price": 1206.34,
+        "pnl": -50.0
+      },
+      {
+        "price": 1216.22,
+        "pnl": -50.0
+      },
+      {
+        "price": 1226.11,
+        "pnl": -50.0
+      },
+      {
+        "price": 1236.0,
+        "pnl": -50.0
+      },
+      {
+        "price": 1245.89,
+        "pnl": -50.0
+      },
+      {
+        "price": 1255.78,
+        "pnl": -50.0
+      },
+      {
+        "price": 1265.66,
+        "pnl": -50.0
+      },
+      {
+        "price": 1275.55,
+        "pnl": -50.0
+      },
+      {
+        "price": 1285.44,
+        "pnl": -50.0
+      },
+      {
+        "price": 1295.33,
+        "pnl": -50.0
+      },
+      {
+        "price": 1305.22,
+        "pnl": -55.22
+      },
+      {
+        "price": 1315.1,
+        "pnl": -65.1
+      },
+      {
+        "price": 1324.99,
+        "pnl": -74.99
+      },
+      {
+        "price": 1334.88,
+        "pnl": -84.88
+      },
+      {
+        "price": 1344.77,
+        "pnl": -94.77
+      },
+      {
+        "price": 1354.66,
         "pnl": -100.0
       },
       {
-        "price": 1360.9,
+        "price": 1364.54,
         "pnl": -100.0
       },
       {
-        "price": 1371.06,
+        "price": 1374.43,
         "pnl": -100.0
       },
       {
-        "price": 1381.22,
+        "price": 1384.32,
         "pnl": -100.0
       },
       {
-        "price": 1391.37,
+        "price": 1394.21,
         "pnl": -100.0
       },
       {
-        "price": 1401.53,
+        "price": 1404.1,
         "pnl": -100.0
       },
       {
-        "price": 1411.68,
+        "price": 1413.98,
         "pnl": -100.0
       },
       {
-        "price": 1421.84,
+        "price": 1423.87,
         "pnl": -100.0
       },
       {
-        "price": 1432.0,
+        "price": 1433.76,
         "pnl": -100.0
       },
       {
-        "price": 1442.15,
+        "price": 1443.65,
         "pnl": -100.0
       },
       {
-        "price": 1452.31,
+        "price": 1453.54,
         "pnl": -100.0
       },
       {
-        "price": 1462.46,
+        "price": 1463.42,
         "pnl": -100.0
       },
       {
-        "price": 1472.62,
+        "price": 1473.31,
         "pnl": -100.0
       },
       {
-        "price": 1482.78,
-        "pnl": -100.0
-      },
-      {
-        "price": 1492.93,
-        "pnl": -100.0
-      },
-      {
-        "price": 1503.09,
-        "pnl": -100.0
-      },
-      {
-        "price": 1513.24,
-        "pnl": -100.0
-      },
-      {
-        "price": 1523.4,
+        "price": 1483.2,
         "pnl": -100.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.836,
+      "win_probability": 0.668,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3524,
+      "half_kelly_fraction": 0.2012,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -306,86 +284,48 @@
   },
   "ranked_strategies": [
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 96.1,
-      "grade": "A (Optimal)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "B1x-Nov-1150PE / S1x-Nov-1200PE / S1x-Nov-1300CE / B1x-Nov-1350CE"
-    },
-    {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 69.1,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1250CE / S2x-Nov-1250CE / B1x-Nov-1300CE"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 60.2,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "B1x-Nov-1200PE / S1x-Nov-1250PE / S1x-Nov-1250CE / B1x-Nov-1350CE"
-    },
-    {
-      "strategy_type": "broken_wing_butterfly",
-      "strategy_display": "Broken Wing Butterfly",
-      "score": 56.4,
-      "grade": "C (Moderate)",
-      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "B1x-Nov-1250CE / S2x-Nov-1250CE / B1x-Nov-1350CE"
-    },
-    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 48.2,
+      "score": 47.9,
       "grade": "C (Moderate)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
       "legs_summary": "S1x-Nov-1300CE / B1x-Nov-1350CE"
+    },
+    {
+      "strategy_type": "cash_swing_short",
+      "strategy_display": "Cash Swing Short",
+      "score": 44.7,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Short: Downtrend momentum below EMA20 resistance.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "S1x-Nov-1236PE"
     }
   ],
   "indicators": {
-    "EMA20": "1243.21",
-    "EMA50": "1247.56",
-    "EMA100": "1259.48",
-    "EMA200": "1259.64",
-    "RSI(14)": "59.76",
-    "ATR(14)": "23.19",
-    "ADX(14)": "21.16",
-    "BB(20,2)": "0.89",
-    "P_SHAPE(20)": "65.21"
+    "EMA20": "1249.70",
+    "EMA50": "1250.00",
+    "EMA100": "1260.06",
+    "EMA200": "1259.93",
+    "SMA20": "1238.66",
+    "SMA200": "1285.62",
+    "RSI(2)": "12.91",
+    "RSI(14)": "46.75",
+    "ATR(14)": "27.21",
+    "ADX(14)": "21.82",
+    "BB(20,2)": "0.48",
+    "P_SHAPE(20)": "53.44"
   },
   "rules": [
     {
-      "name": "Price above EMA200",
+      "name": "ATR increasing",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
     },
     {
-      "name": "RSI between 50 and 65",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -397,6 +337,13 @@
       "score": 1.0,
       "max_score": 1.0,
       "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
     },
     {
       "name": "EMA20 above EMA50",
@@ -413,14 +360,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ADX above 30",
+      "name": "RSI between 50 and 65",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
+      "name": "ADX above 30",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -434,7 +381,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -443,46 +397,90 @@
   ],
   "news": [
     {
-      "title": "RBI MPC 25 bps rate hike: Banks stocks vs NBFCs - Why Jefferies India picked SBI, ICICI Bank, Axis Bank shares",
-      "publisher": "Livemint",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNbzBncmtuV3BfR2xEMzFxbG9DYVN2XzRXOUVBd3gxUmEtTWNNRk5ON2wxak1lZjZzOXV1aVFSZlVMeHpNOWpsNkZCRHhaalNJczc3QVdyai1tamJVTm02d3Zlc3VUSi1lT1FXUmxyYVZVQ1JNTHlkSE5OWHJyRzUwMzhsZmZURjJuRUdsV3lhLVU1SXBfS3ljYjVDSThqdkloMEJaeFJ5OVdEQnM2dU9DbkxObENFZDc5OC1kbUNMOUN6cjBvTXloNHhDN2pUV2NlUkNZM0pBR09mVTJ1WVpzSmFYUnJlU1l0bS1wRE5tb1dRLVBPcnN3VzctYnNjb1ZwZ0cyQ1pR0gGLAkFVX3lxTFB5WVVOVllpYmIwSlNyNzZEMzNtMnFLMnRnUXlLNEtlTElPWlhkQzhHbXg4TFlZNzhQazMzOGhMaTkwYlR0emxRUnpwdm42MHM4dGZhOTdaS0hveUluVTJnUGczNjdrMGRjYnh6LWpIS2tVVTBiUkxDMFh2N1o2NWlYTG9NaW9xSlFTLXgzcWRaMmRMZElyWjV1YXNKd1NzU3gxLTkzTnp1LUpXTGVxMGQyRzNYY01RQWEwbEQ1eURnbnJIZGpWZ3hXeUZ0S1RqcTQ1NkxuWVp4QmQzYWxKRjhyZS11SWNvT1k2N2xTaVQwVzdPbUJlZ2xGVElPVU1ZVC1ORjl1Njh5VHYtUQ?oc=5",
-      "published_at": "Wed, 07 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Nexedge Capital appoints former Avendus Wealth CEO Apurva Sahijwani as Co-founder",
-      "publisher": "bfsi.economictimes.indiatimes.com",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNczVBZkROaTREcnBaMmNkTm9SNnVJd0dlV1Y3SDcybGc2Q2VXeFF0VjVGWl9QQjNHLWdXSHJvMGl6V2hhTlRvZDk3M0Jka3dTZ19ZX1c3NXYzeW1ZSC1JOHFmVzgtRGNocjcteXl1WU5fSF9qR09RZng2MHRVVkY2S1B0SUp3LXctOHh2SVlhRFphbzZKTjlyc3FoOHN1a3lodmEzbUc2WjA5a2V3QmE0TEhGcWVhbzdKZURrR2tlVXpxUnVQR2kzNHpzSWNnajZpN29td21KMDZfQdIB3wFBVV95cUxPUEdWb0RyRHV1ak9SQ3VuR1NVT0hYMUQ1R2dXZlNSWjZfQ1RpaXFMaU12WERFamphS25ScG1uSkNPMFRWelYtSW5aVzhqZXFjUW85OEc3UTBqMGhfUkVpeWFjbFRlcU1kTEg4MFVKQTUwTkduejFoSXhWUEY5VlVTc2hFSXZseTZEX3Z6N3ZCR21GTXY1SE5UbEFSZVJJYU1lOS1QWEJjN3hZSFU3MGNObkNneWhVUzBwQi1tdjFnZDZjakE4QUlFN3lmYVVUWXMzcmU1N2M2THRwdVJjRG1N?oc=5",
-      "published_at": "Tue, 13 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Bank Nifty slides nearly 500 points as RBI liquidity measures, rising bond yields weigh on bank stocks",
+      "title": "Axis Bank Q2 net profit jumps 38% to Rs 7,003 crore, misses estimates; NII beats poll, asset quality...",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTXphcUFzTGNtXzU2aFJjOFdoUnN2YnpjbnZwd28tZWNuLWZJTldpSjk3ZnM2Qmw3QUZ5cDE4NllmY05uaC1lSzdoT0NYcFMzXzBTYnN2ZDJpcFJUaDdwNXZrT0dhcERuNU9iNWVvWU5BZjl0aDV0RkxhbkVDUUxXVzZhc3dOYTJuVXdLRkxFX29VLU0wYzBheUF1V1QwSlpmMFB2bHJQUVYyYUxWVlJwdWdkOHVYRlR4V2dKc1VEV0JTU21YcWFrdXZyR1VUZHVSOWJSbzZlY1p0WmFLNnlLbjhJMEtSRnh4Qi0wQUZKLUvSAfYBQVVfeXFMTWRZVjFaelVGNXhSUy03SkVFZ3FKNDhhbXV0TzltQXZnR2x2eGlQbE15WXZydTNQejFQSHBLVmp0VHZjVWVSejVUSDQ5NVNZanFUVlpUS2hDVWJUQWlYbGhGeFI0ZVpaX2poMHRkUVFvQlhGRnFVaEJ5MXI0MFZlM2lLUFYwU0Q4dHFwVGN4bUVMbkh4V3dsekUyQXNGUE9pYUhBWWMyc0FTWW41YVEtWUlWX2RvemlrSC02LVpzek9XWlptZEJNTUh5bU8yY2U1eGlsRU8xclJ1b29abVptVU1YRDE0TllfWWZmdFV4QnJjZEtPd0ZB?oc=5",
-      "published_at": "Mon, 12 Oct 2026",
-      "sentiment": "neutral"
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSURnSHEzd2NiYUxDRVA1Ul8xdm5qYjYyenR4ZFpPQ0dqRl81YWJsQTUtcHVnZHRlVnR5a1o2SzkwN3liYUxYQVBub2M3SE4yYmg4TGFJcGNtMVY2U082Y3hYZTdqb2NPWHg2eGVhcDFmbTNJaU1NYklQeE9qNXd2cTRrMTh6cGgyUWlBMzkyU3Z4UUFYMTMySzE4UjdVbHBzSEVHNXpOMHUtUXFEMG5Tb1JqVzg1VHFfZnN0T3NqR1ZXQkFSaTkwb3FSWkIyNUNCMTN1SloxQ0dTTHRTOERWc0drRWFYSlpYSEJvakxNcXJnRTB3N2tZ0gH8AUFVX3lxTE8xSmZSQzVhcy1POEU3TVZvY0VyaVl4dGo1UHNjeGs1dlg2Q000UE84Qmh2dkhmZmJUbzZDT0tNa3A2NVJ5NklVTzZ4RXA5TDlWUGpiQlluQ0RSVmYxR0Z0djFCaWUyYmRzZVZTQWF5dXI0djd4QlozQ2ZZNXRvSEpPZ0Fsa1Ftc0NKOHR0ZnhzYWZ4WC1tRElsWGlQWG5kYWZEMWV6Z19lTmZGdHZ5ZjNvT3RnMU9pdTZaR2pmYmZUdlR0YzRlcXRqVDZidGxqeWFIdF9xajBvbUtXUms3SHVuNUFKV014Y3BuZm5EZlpnaXdhakRCN0lnMXk3TQ?oc=5",
+      "published_at": "Sat, 17 Oct 2026",
+      "sentiment": "bullish"
     },
     {
-      "title": "Amazon, Flipkart festive sales stat: Which credit cards offer the most?",
+      "title": "Axis Bank stock tumbles 4%, tops Nifty losers after Q2 results; brokerages bullish, check target prices,...",
       "publisher": "Moneycontrol.com",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdm1RNW5mYjNPSUJfV1pCUTlTZzMxREFPTXBNZHBFMEo0M2RXT1BBUWkzUWo0MUdnRjV4ODBLUEQ1allXN2tjSnQ1R0hwVE1VTzVZbXRCeFFHSVJWbGZRcjR5Nk1aZERDZGVjTGlFVnNab1BfV2Jlc2Fjc2JpOWFmSDF4VE55d2QzMmZ6VW5VeUJmNTdhWElTSmczSExtcmJqQ2NON3RRX3A4X0dSWHNsVkU0VW5VWmR2MWlKa3U0QUstblB0dERXMnpEN0kzQUtMdF8xUGRXVkRVd9IB3wFBVV95cUxPNnZkMmFlYjhFblZnaHU0eDM4OW9PWTh1ejVkSVFNbC1uSi1UMHBWWGFQdVdFVFdiZFJFY1ExWGZzRm9XMkVFSC0zVC1QY1dtNGZydV9YMDktbEdtbTJFMm8wU19nOXlhTVlhQkZOTWp5OVBoc0QtU2ZZdGNlRGpXWHJWUnlQVXk3XzZ6MGlUdmFWV2ROdjFCOUhzdG1hR0o3c2kyNmdxTWlwcWxXa1NMUDYtYkh5QU9kZmEyRDZ0dUpqZ2tHWHFtQWdKSkpsY21hcExwbVMyTjMtTmNnUFJF?oc=5",
-      "published_at": "Thu, 08 Oct 2026",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQYXloZXZ5UWVROUZsb3hqM29HQ1RHdV9tNFVFRWU3V2VDZ1JzbjF2bHZsY1lwS2pMYzZvakJhWUpXSG9pMHBLbkxNS2Y2UEUzZUxCMk5kUHVLOTFKQmZUTE5ReVVkZWRTMDg4Vy1mR2F6dk9mUHM1TThpWXJHNUtEMjVkY2R2enZ2YkhWTkg0QUlIRlp6RG51em95TDFaUk5ZcXdIbWFFVUdUdzJ1RzR2THpiRVd0NzZOSVFNYU9jRkNYWDEwZnhySGJoaUZLdUJiYlhndjFiSWI0dDRsZ2JiZng2M09qT1RCZW5nUW10SnlnMkh2Z3pST0swU2lYT0130gGGAkFVX3lxTE8zakc5Q3pUak9IUEEwVUZKZXRCc1hrcGlReXlqdWZMajQ2eUVQNFdRWmpoQWRjZVFhSWtRUm5ERVhqUWIxRm1lVzMwQ0xLZ2ZqcVNfdnlmbUJ2Z1BaenJ5a2V4MVJQX0RHXzBQWXZlZGFSMzVlRXBNVTltcVdHdGpjdG5uTXRtbGdpNVBFczJzTzdKS1FHXzZHcmNicUJKUGZnTm9zRzRicHpKX20xZV9LYTlGQnNBRXJraUhxaXRwc3FBbHJ5aUZPMnU2eFoxZ3JmMlBodXd2SWlKMW9EUnhoWXF5WEg5UHlDR21VTk1DYVJOVDJvbWJsYi14VkRWMUZWNTR6dnc?oc=5",
+      "published_at": "Mon, 19 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Buy Axis Bank; target of Rs 1620: ICICI Securities",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSDBZcFMwWkhxeV9DQ1JkbXByT3pYS29NZFNnUEwwcFZ1VUVqLVQzdm80RFhlRzdzWGxEakpxeEdmQkltMW0yTHh2OTRURkY4Y0ExRFdVNDNLd3JRWEZsQUNUUFRkc0VGZm9adkNRcEFwdkRVQ25OOVd1NnJuNHJhQnhKWTFacy1talNGaUMwei1yeEdZVGxFVTE4VGlucXNyV2xqREdPWGREb3Fxd1lJWGE1dHZQMTjSAbwBQVVfeXFMT3Bjb3FrcDdYWW53dWxTU2RRM0E0Y0hBZER0RVJNbXdXZXNjbnFQaHl1dlRselByRkZXSXVjc0VYZ2Nxel9mTDJ6YmlzNlAwVW10dGZXaTVrdXFRQnh1V3Jta1ZweUJSOHFvSlhzazVsUE5JNFBOM25QWUc2N2VULThNOXp5NVpEMW0ybkFkMWoxNkQzaXVnVW5fN2w1NmpYS3NadlpBY0tPSDhzNXhGelFOaEZNNlN3RHFVUjA?oc=5",
+      "published_at": "Mon, 19 Oct 2026",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "Axis Bank appoints former HDFC Bank executive Rahul Shukla as head of Commercial and Bharat Banking",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPX3BkWmFRV18wMkhFOXBLbEpUSDN5aks1dnNBSjVRN1JUWXU2ZDlhM0FaMDF0UnVyczFOX0FteldMMURzVTFYVGd4S3UtYkhscTRaZTNpa2JkOFVKcGc4dkt5cU5sT2hQcTBnNnpkdUh2NDJ1alROaF9LdXNGSTcyV2gtU0taMHBwZVFwUjA1V2VqZWZsbEtRS25LMzh2SFFzY2l6RktpN3dXSDhlNkMyUEt3bWV6ZzF6U3dMT1V3RWVhMnBOcGV5NFhjajJOOFhqUm1EWUgyc1I4LVpGTmh5cUtpaFEtaF9uMmV0eWFET194ZDk40gH6AUFVX3lxTE5KYXBGMHJ2YVJvVnZOVmpzcXhfQjhnT0dUOXMtX2hDeklrRXlHaVlhanVTeDNoWEpxY1U0LTdNdXl0aXY3UHVIc2htQzNjSTN4cV9YNFBfNk1OQkN3WW9EZVhCTFFLRE40OW9IQkUxVmFvOWNjT01iQVJ0WjBNOVZzcWdjU0gxbktTNUJvM1FCMkZTUmxERE5DQXFMWDV2S05vbG5YMk9aRnV5R3NhUTZ4STR1b2t0WkJzLUxRWG5wVUJQNFM3U28zUEtjdmMtWEpwZ3pBZlpGMjJzUm8xYUJQY2tjV0VHTTVrQ3JUR3pnV280dV9UdWFBcEE?oc=5",
+      "published_at": "Sat, 17 Oct 2026",
+      "sentiment": "bearish"
+    },
+    {
+      "title": "Stocks to Watch Today: ICICI Bank, HDFC Bank, Axis Bank, GPT Infra, RailTel, ACME Solar, Yes Bank, Urban...",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQanVmOGVrNW9UdkRrVjQ5ZnVCUjdtOWdWeUN0Z192aHYxWnN2Z2FiU2U5cHdYbWxYbEJ6NUFEYnpMa0FCRG51aHpTS1dFYXh3NnIwTno0V3BHVFVhX1ZzU0JHRjVWbWN4TU8yVHZvSklGZFpBMEVQQzhLVEZnTG5lci1iRXV6Rm1lSlNhOGduQlpELWs0NzFESFF0Sk1mR0lZSEZZSjRhRnlNZWNnZmk1SFFsR3NTNVNoZE00c0FtN3oyUVB6eGh2R0V0WnE0MHpnalZjaGVTVmZuQnBhM1dOcFNsLWdPQ19nSnZERzMwVS1zNkVYSEJzaVlZR2MwNzFWQlV2c0NkT0xGWEZkWjRDdkZpTHo1RkZWT29GOW9ENVVWR0lEVFhGOTc0MHlRZ3QxMG42ZGhOdlhHUUFyNzI4dHJn0gHHAkFVX3lxTE9GWjBPRHRYbG82NFdOS1NLY3MwRUN0WEdXNmwxSTVWT1dvbjVBNWxqQkYzc2JHN18zSXpla2NuZ3FYSFdBS0hNWHlJQ1ZhbGdXTXdBRG9TVW1fazRuWEMwVjJFb1QzYXEzdEFYaG9YMFlvbnItN2JucGJxbEpDUXkxdVpWUXpwRVhoMExrNU5PeTBnNU55dlNrdERWM3VraUo1eDhwS2RHbzdtVWZFOFVCdmUydlJrYm1ab1VlNjlObjhHM2tkQjg3aF9uNWlyQkxNQTA4NmlCN3NOUnJqdVJWdU1MTEF0U2dLZ1hNbF9qQ3BTSHBKTldtd25saVlBS0I3eXJxakdMU0I0b293dm9oRVY2VFFHTjd2OWZnV1NiZ09zWHVXRm1vb0dSbVFtUU5sWTN4MXdVR0Zfb3NETGlpRktnOVhBWQ?oc=5",
+      "published_at": "Mon, 19 Oct 2026",
       "sentiment": "neutral"
     },
     {
-      "title": "Rupee outpaces Asian peers on fresh FX curbs, RBI intervention",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUmw3UHNkUW9vMkk5VWo0aFdtbWhYSXhZaFZUWHNjUkE5bnFtRG4tTXZDekJ5bDJMRGFBU0h1bHFxdUN2SlY1QUlYSDdjeUd3UFV5NkgxVkMzckRXRkpLVjhUNUJDMkRBb2lyVC0zbjRSVzBVNGgyRENGRTFoemhrekhZazNXOFYwUDUyOGJ2T0kzZ0EzT0RNRVBvZDQ1YTlxRUlmdnlEVFp4UzVzR0tad3lMR1NUeS1ISDQxeXp6UXVGbkJOTXpsQXVTSkpCTTZZY3ZlT9IBzgFBVV95cUxOdV9CNVZxLUV2TXlnVDNLTWdHX25iZjU3SU84V0VEaFZpbXZpUmQ0bk4tMlIycVlVS21OMFE2X1pLellZaFlHaFJzVHYzQ3VFNHB2dE1jaWhzdUFHYkM5ZEVtQmJBRDNpdkI4THo1VXU2MFEzQTJqczU1OGx4b09XNmtlMjJ1LWJTTThNVUt6QXlUWl92alRDbS1ZRFgzMkk0eHNsY1d3OS05ei1DOEhaczdZZ3NsdmtXaW1pdGJ4U1ZzTlVwLTNtME1BTjZLQQ?oc=5",
-      "published_at": "Tue, 13 Oct 2026",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Vaibhav Vyapaar IPO opens for subscription today: Check price band and other key details",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPMURQVnRObnc3NkpVQUdTTkdBVUM0VktYbkMwUGFlMU1Zc2pJUXBjNVM0Z0NISW5FSDZybE02YkZiSG9fODFmdXJvbjFzSWxZS243SEd5YnJNcXdpcnY0YzlxOWc4TWQxQ2RpWWhyQjlwZVF1cGZ2MXVYdVRpNWVPaTY4SjFVY2g0T3ZmTkM4bER4YjlDanlHbEFjUEtEZEZPV3FSQkpHZ3lUcVNNeDFTNzl1RmtKQ0p3Qkk5QXVoM2VWY2NGSFFVMDFpNVpHbWs5Ym5Hb1FtSnFwN3hmMmpRanQzRmR3TUVIM3lTZ1JPUm9mcFBnQkVBU0kzWHTSAfYBQVVfeXFMTjZ4WW9tNHAwTkVLZnBERXZLOXYxd3VnMzA3RDFYejZQN0o2RXBqSjBnNWtUeW5BY2kxWEF2SU04cDgtTDY2V2xiYTZyMm51T0k2U2pJTnFONk1sYndoRTQ2OG5xVktzemtUYm10LTdwSVczRlJmVHloTWZIeFR0TmRJbGVId3hBRnBnRkJaREpOeUxBMWVPS2k3dmtxV2x4TGVZTHFCZGwxR3ZUUTBsYVYtQnVTYlBaSkEtUUgxUmtWc3Q3bzBVb1pHQm55UmVvQ2pmU1RSRnJ0cnB2bmJMVng4WktHWVZ5aGRkZHI1cFpKMGhYYXFn?oc=5",
-      "published_at": "Tue, 13 Oct 2026",
+      "title": "Neutral Axis Bank; target of Rs 1475: Motilal Oswal",
+      "publisher": "Moneycontrol.com",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaGNrUUNPTmNDazRtV1BDVG1LOFB2Z1dMTGtuQWNDNUJ5TG5SUkNKMFNscVhOM1lBenhhdzZWM2otU0VNVFgtU3RCeVZ1aFVqMVVfenpaYU5aN2dBR05SdTdvaVB5b2VsRkk3SUlNMEhraWdMLWNXaEoyVkw4QnEyZnBvMzJlQVg0akVWdDBsRkNld1ZwaWRlN0RNT1J2S2ZoQTdZSW9lZjlZdTNH0gGyAUFVX3lxTE5seWdFUnY2YTM1R2FwbU5laDJaQ1dHQ0JsZlJQaU5CTnV4UGpiaklFWEJsMzdkWVN3NG14cWR2Uko0RGdlcU5oVEpJazZoZ0dHai1lbDlFVHA2SUpva1VYQVRYQ3cya3NXZ2Q2RnV3SlNNX29rclFweUduc2dIVm84cmlwZmRNOFRpb1BmcUhWN0hlU1UxYjRJZG0yczh2cTkybHZJZ1JNTE0zcE1uUUtaQ0E?oc=5",
+      "published_at": "Mon, 19 Oct 2026",
       "sentiment": "neutral"
     }
-  ]
+  ],
+  "playbook_mean_reversion": {
+    "status": "INELIGIBLE",
+    "is_triggered": false,
+    "close_price": 1236.0,
+    "sma200": 1285.62,
+    "sma20": 1238.66,
+    "sma20_slope": 0.472,
+    "lower_bb": 1185.21,
+    "upper_bb": 1292.12,
+    "pct_b": 0.4751,
+    "rsi2": 12.909342207992893,
+    "rsi14": 46.75352518336798,
+    "atr14": 27.205278422523154,
+    "close_above_sma200": false,
+    "close_below_lower_bb": false,
+    "rsi2_below_10": false,
+    "adequate_liquidity": false,
+    "risk_limits_pass": true,
+    "target_exit_price": 1238.66,
+    "stop_loss_spot_price": 1184.49,
+    "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
+    "suggested_structure": "S1x-Nov-1200PE / B1x-Nov-1100PE",
+    "actual_trade": "S1x-Nov-1200PE / B1x-Nov-1100PE",
+    "target_dte_range": "30 - 45 DTE Monthly Expiry",
+    "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
+    "exit_rules": [
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~1,238.66).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 1,184.49).",
+      "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
+      "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
+      "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."
+    ],
+    "rationale": "AXISBANK.NS is not part of the approved Playbook F&O Index Universe (NIFTY/BANKNIFTY/FINNIFTY).",
+    "warnings": [],
+    "iv_regime": "Very Low",
+    "iv_recommendations": [
+      "Calendars",
+      "Diagonals",
+      "Broken-Wing Butterflies"
+    ],
+    "iv_guidance": "Very low IV: options are cheap. Prefer long vega / positive convexity structures (calendars/diagonals).",
+    "high_52w": 1418.3,
+    "dist_52w_pct": -12.85
+  }
 }

@@ -1,280 +1,306 @@
 {
   "symbol": "QQQ",
-  "last_price": 728.95,
-  "as_of": "2026-10-14 13:30:00",
+  "last_price": 717.63,
+  "high_52w": 762.86,
+  "dist_52w_pct": -5.93,
+  "as_of": "2026-10-20 13:30:00",
   "regime": "bull",
   "regime_display": "Bull",
-  "trend_score": 7.5,
-  "fit_score": 75.0,
+  "trend_score": 6.0,
+  "fit_score": 60.0,
   "confidence_grade": "B",
-  "confidence_percentage": 75.0,
-  "vix": 16.87,
-  "strategy_type": "credit_spread",
-  "strategy_display": "Credit Spread",
-  "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
+  "confidence_percentage": 60.0,
+  "vix": 17.31,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (67.1% fit - Grade B (Good)): Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
+  "recommendation_reason": "Best fit strategy (90.9% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
     "direction": "Long / Buy",
-    "entry": 728.95,
-    "stop_loss": 721.42,
-    "target_1": 838.29,
-    "target_2": 911.19,
-    "risk_per_share": 7.53,
-    "risk_reward": 24.2,
-    "atr14": 9.43,
+    "entry": 717.63,
+    "stop_loss": 719.9,
+    "target_1": 825.27,
+    "target_2": 897.04,
+    "risk_per_share": 2.27,
+    "risk_reward": 79.0,
+    "atr14": 10.95,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
   "estimated_trade": {
     "legs": [
       {
-        "action": "Sell",
+        "action": "Buy",
         "quantity": 1,
-        "strike": 690.0,
-        "strike_formatted": "690",
+        "strike": 675.0,
+        "strike_formatted": "675",
         "option_type": "Put",
-        "delta": -0.124,
+        "delta": -0.09,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 36,
-        "summary": "Sell 1x QQQ 20-Nov-2026 690 Put"
+        "dte": 30,
+        "summary": "Buy 1x QQQ 20-Nov-2026 675 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 685.0,
+        "strike_formatted": "685",
+        "option_type": "Put",
+        "delta": -0.148,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 30,
+        "summary": "Sell 1x QQQ 20-Nov-2026 685 Put"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 755.0,
+        "strike_formatted": "755",
+        "option_type": "Call",
+        "delta": 0.18,
+        "expiration": "2026-11-20",
+        "expiration_display": "20-Nov-2026",
+        "dte": 30,
+        "summary": "Sell 1x QQQ 20-Nov-2026 755 Call"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 680.0,
-        "strike_formatted": "680",
-        "option_type": "Put",
-        "delta": -0.076,
+        "strike": 765.0,
+        "strike_formatted": "765",
+        "option_type": "Call",
+        "delta": 0.119,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 36,
-        "summary": "Buy 1x QQQ 20-Nov-2026 680 Put"
+        "dte": 30,
+        "summary": "Buy 1x QQQ 20-Nov-2026 765 Call"
       }
     ],
     "max_gain": "Defined Risk / Reward",
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
-    "margin_required": 30.0,
-    "stop_loss_price": 707.08,
-    "take_profit_price": 750.82,
-    "net_delta": 0.048,
-    "net_theta": 0.028,
+    "margin_required": 25.0,
+    "stop_loss_price": 696.1,
+    "take_profit_price": 739.16,
+    "net_delta": -0.003,
+    "net_theta": 0.079,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 583.16,
-        "pnl": -40.0
+        "price": 574.1,
+        "pnl": -35.0
       },
       {
-        "price": 588.99,
-        "pnl": -40.0
+        "price": 579.85,
+        "pnl": -35.0
       },
       {
-        "price": 594.82,
-        "pnl": -40.0
+        "price": 585.59,
+        "pnl": -35.0
       },
       {
-        "price": 600.65,
-        "pnl": -40.0
+        "price": 591.33,
+        "pnl": -35.0
       },
       {
-        "price": 606.49,
-        "pnl": -40.0
+        "price": 597.07,
+        "pnl": -35.0
       },
       {
-        "price": 612.32,
-        "pnl": -40.0
+        "price": 602.81,
+        "pnl": -35.0
       },
       {
-        "price": 618.15,
-        "pnl": -40.0
+        "price": 608.55,
+        "pnl": -35.0
       },
       {
-        "price": 623.98,
-        "pnl": -40.0
+        "price": 614.29,
+        "pnl": -35.0
       },
       {
-        "price": 629.81,
-        "pnl": -40.0
+        "price": 620.03,
+        "pnl": -35.0
       },
       {
-        "price": 635.64,
-        "pnl": -40.0
+        "price": 625.77,
+        "pnl": -35.0
       },
       {
-        "price": 641.48,
-        "pnl": -40.0
+        "price": 631.51,
+        "pnl": -35.0
       },
       {
-        "price": 647.31,
-        "pnl": -40.0
+        "price": 637.26,
+        "pnl": -35.0
       },
       {
-        "price": 653.14,
-        "pnl": -40.0
+        "price": 643.0,
+        "pnl": -35.0
       },
       {
-        "price": 658.97,
-        "pnl": -40.0
+        "price": 648.74,
+        "pnl": -35.0
       },
       {
-        "price": 664.8,
-        "pnl": -40.0
+        "price": 654.48,
+        "pnl": -35.0
       },
       {
-        "price": 670.63,
-        "pnl": -40.0
+        "price": 660.22,
+        "pnl": -35.0
       },
       {
-        "price": 676.47,
-        "pnl": -40.0
+        "price": 665.96,
+        "pnl": -35.0
       },
       {
-        "price": 682.3,
-        "pnl": -37.7
+        "price": 671.7,
+        "pnl": -35.0
       },
       {
-        "price": 688.13,
-        "pnl": -31.87
+        "price": 677.44,
+        "pnl": -32.56
       },
       {
-        "price": 693.96,
-        "pnl": -30.0
+        "price": 683.18,
+        "pnl": -26.82
       },
       {
-        "price": 699.79,
-        "pnl": -30.0
+        "price": 688.92,
+        "pnl": -25.0
       },
       {
-        "price": 705.62,
-        "pnl": -30.0
+        "price": 694.67,
+        "pnl": -25.0
       },
       {
-        "price": 711.46,
-        "pnl": -30.0
+        "price": 700.41,
+        "pnl": -25.0
       },
       {
-        "price": 717.29,
-        "pnl": -30.0
+        "price": 706.15,
+        "pnl": -25.0
       },
       {
-        "price": 723.12,
-        "pnl": -30.0
+        "price": 711.89,
+        "pnl": -25.0
       },
       {
-        "price": 728.95,
-        "pnl": -30.0
+        "price": 717.63,
+        "pnl": -25.0
       },
       {
-        "price": 734.78,
-        "pnl": -30.0
+        "price": 723.37,
+        "pnl": -25.0
       },
       {
-        "price": 740.61,
-        "pnl": -30.0
+        "price": 729.11,
+        "pnl": -25.0
       },
       {
-        "price": 746.44,
-        "pnl": -30.0
+        "price": 734.85,
+        "pnl": -25.0
       },
       {
-        "price": 752.28,
-        "pnl": -30.0
+        "price": 740.59,
+        "pnl": -25.0
       },
       {
-        "price": 758.11,
-        "pnl": -30.0
+        "price": 746.34,
+        "pnl": -25.0
       },
       {
-        "price": 763.94,
-        "pnl": -30.0
+        "price": 752.08,
+        "pnl": -25.0
       },
       {
-        "price": 769.77,
-        "pnl": -30.0
+        "price": 757.82,
+        "pnl": -27.82
       },
       {
-        "price": 775.6,
-        "pnl": -30.0
+        "price": 763.56,
+        "pnl": -33.56
       },
       {
-        "price": 781.43,
-        "pnl": -30.0
+        "price": 769.3,
+        "pnl": -35.0
       },
       {
-        "price": 787.27,
-        "pnl": -30.0
+        "price": 775.04,
+        "pnl": -35.0
       },
       {
-        "price": 793.1,
-        "pnl": -30.0
+        "price": 780.78,
+        "pnl": -35.0
       },
       {
-        "price": 798.93,
-        "pnl": -30.0
+        "price": 786.52,
+        "pnl": -35.0
       },
       {
-        "price": 804.76,
-        "pnl": -30.0
+        "price": 792.26,
+        "pnl": -35.0
       },
       {
-        "price": 810.59,
-        "pnl": -30.0
+        "price": 798.0,
+        "pnl": -35.0
       },
       {
-        "price": 816.42,
-        "pnl": -30.0
+        "price": 803.75,
+        "pnl": -35.0
       },
       {
-        "price": 822.26,
-        "pnl": -30.0
+        "price": 809.49,
+        "pnl": -35.0
       },
       {
-        "price": 828.09,
-        "pnl": -30.0
+        "price": 815.23,
+        "pnl": -35.0
       },
       {
-        "price": 833.92,
-        "pnl": -30.0
+        "price": 820.97,
+        "pnl": -35.0
       },
       {
-        "price": 839.75,
-        "pnl": -30.0
+        "price": 826.71,
+        "pnl": -35.0
       },
       {
-        "price": 845.58,
-        "pnl": -30.0
+        "price": 832.45,
+        "pnl": -35.0
       },
       {
-        "price": 851.41,
-        "pnl": -30.0
+        "price": 838.19,
+        "pnl": -35.0
       },
       {
-        "price": 857.25,
-        "pnl": -30.0
+        "price": 843.93,
+        "pnl": -35.0
       },
       {
-        "price": 863.08,
-        "pnl": -30.0
+        "price": 849.67,
+        "pnl": -35.0
       },
       {
-        "price": 868.91,
-        "pnl": -30.0
+        "price": 855.41,
+        "pnl": -35.0
       },
       {
-        "price": 874.74,
-        "pnl": -30.0
+        "price": 861.16,
+        "pnl": -35.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.735,
+      "win_probability": 0.818,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.2615,
+      "half_kelly_fraction": 0.3362,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -282,118 +308,145 @@
   },
   "ranked_strategies": [
     {
+      "strategy_type": "iron_condor",
+      "strategy_display": "Iron Condor",
+      "score": 90.9,
+      "grade": "A (Optimal)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 675 Put<br> Sell 1x QQQ 20-Nov-2026 685 Put<br> Sell 1x QQQ 20-Nov-2026 755 Call<br> Buy 1x QQQ 20-Nov-2026 765 Call"
+    },
+    {
       "strategy_type": "credit_spread",
       "strategy_display": "Credit Spread",
-      "score": 67.1,
+      "score": 60.6,
       "grade": "B (Good)",
       "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
       "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x QQQ 20-Nov-2026 690 Put<br> Buy 1x QQQ 20-Nov-2026 680 Put"
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 685 Put<br> Buy 1x QQQ 20-Nov-2026 675 Put"
     },
     {
       "strategy_type": "ratio_put_spread",
       "strategy_display": "Ratio Put Spread",
-      "score": 64.2,
-      "grade": "B (Good)",
+      "score": 59.3,
+      "grade": "C (Moderate)",
       "rationale": "Bullish consolidation with P-Shape support favors Ratio Put Spread (1x2 Net Credit).",
       "trade_profile": "Credit | 30-45 DTE | 1x2 Ratio Put",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 730 Put<br> Sell 1x QQQ 20-Nov-2026 690 Put<br> Sell 1x QQQ 20-Nov-2026 690 Put"
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 720 Put<br> Sell 1x QQQ 20-Nov-2026 685 Put<br> Sell 1x QQQ 20-Nov-2026 685 Put"
     },
     {
-      "strategy_type": "iron_condor",
-      "strategy_display": "Iron Condor",
-      "score": 60.8,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
-      "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 680 Put<br> Sell 1x QQQ 20-Nov-2026 690 Put<br> Sell 1x QQQ 20-Nov-2026 770 Call<br> Buy 1x QQQ 20-Nov-2026 780 Call"
-    },
-    {
-      "strategy_type": "covered_future",
-      "strategy_display": "Covered Future",
-      "score": 60.6,
-      "grade": "B (Good)",
-      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 729.0 Call<br> Sell 1x QQQ 20-Nov-2026 770 Call"
-    },
-    {
-      "strategy_type": "wheel",
-      "strategy_display": "Wheel",
-      "score": 60.3,
-      "grade": "B (Good)",
-      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
-      "legs_summary": "Sell 1x QQQ 20-Nov-2026 690 Put"
-    },
-    {
-      "strategy_type": "protected_future",
-      "strategy_display": "Protected Future",
-      "score": 59.1,
+      "strategy_type": "butterfly",
+      "strategy_display": "Butterfly",
+      "score": 58.2,
       "grade": "C (Moderate)",
-      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 729.0 Call<br> Buy 1x QQQ 20-Nov-2026 690 Put"
-    },
-    {
-      "strategy_type": "jade_lizard",
-      "strategy_display": "Jade Lizard",
-      "score": 57.2,
-      "grade": "C (Moderate)",
-      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
-      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
-      "legs_summary": "Sell 1x QQQ 20-Nov-2026 690 Put<br> Sell 1x QQQ 20-Nov-2026 770 Call<br> Buy 1x QQQ 20-Nov-2026 780 Call"
+      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 700 Call<br> Sell 1x QQQ 20-Nov-2026 720 Call<br> Sell 1x QQQ 20-Nov-2026 720 Call<br> Buy 1x QQQ 20-Nov-2026 735 Call"
     },
     {
       "strategy_type": "tradecraft_put",
       "strategy_display": "Tradecraft Put",
-      "score": 56.4,
+      "score": 57.1,
       "grade": "C (Moderate)",
       "rationale": "Stock touched 200 SMA support with weekly bull alignment \u2014 sell 20-delta OTM Put to collect bounce premium (TradeCraft Put).",
       "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Sell 1x QQQ 20-Nov-2026 690 Put"
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 685 Put"
+    },
+    {
+      "strategy_type": "iron_butterfly",
+      "strategy_display": "Iron Butterfly",
+      "score": 55.1,
+      "grade": "C (Moderate)",
+      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
+      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 680 Put<br> Sell 1x QQQ 20-Nov-2026 720 Put<br> Sell 1x QQQ 20-Nov-2026 720 Call<br> Buy 1x QQQ 20-Nov-2026 755 Call"
+    },
+    {
+      "strategy_type": "wheel",
+      "strategy_display": "Wheel",
+      "score": 54.0,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish support with liquid equity accumulation edge favors The Wheel (Cash-Secured Put / Covered Call loop).",
+      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta Put",
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 685 Put"
+    },
+    {
+      "strategy_type": "jade_lizard",
+      "strategy_display": "Jade Lizard",
+      "score": 53.6,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish trend with Volatility Expansion favors Jade Lizard zero-upside-risk credit structure.",
+      "trade_profile": "Credit | 30-45 DTE | 20 Delta Put",
+      "legs_summary": "Sell 1x QQQ 20-Nov-2026 685 Put<br> Sell 1x QQQ 20-Nov-2026 755 Call<br> Buy 1x QQQ 20-Nov-2026 765 Call"
+    },
+    {
+      "strategy_type": "covered_future",
+      "strategy_display": "Covered Future",
+      "score": 53.5,
+      "grade": "C (Moderate)",
+      "rationale": "Bullish momentum with elevated IV favors Covered Future (Long Future + Short OTM Call) for premium yield enhancement.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 717.6 Call<br> Sell 1x QQQ 20-Nov-2026 755 Call"
+    },
+    {
+      "strategy_type": "protected_future",
+      "strategy_display": "Protected Future",
+      "score": 49.7,
+      "grade": "C (Moderate)",
+      "rationale": "Strong bullish momentum favors Protected Future (Long Future + Long OTM Protective Put) for downside capital protection.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 717.6 Call<br> Buy 1x QQQ 20-Nov-2026 685 Put"
     },
     {
       "strategy_type": "poor_mans_covered_call",
       "strategy_display": "Poor Mans Covered Call",
-      "score": 54.1,
+      "score": 46.0,
       "grade": "C (Moderate)",
       "rationale": "Sustained bullish trend with cheap options favors Poor Man's Covered Call.",
       "trade_profile": "Diagonal | Long 60-90 / Short 20-30 DTE",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 690 Call<br> Sell 1x QQQ 20-Nov-2026 750 Call"
-    },
-    {
-      "strategy_type": "cash_swing_long",
-      "strategy_display": "Cash Swing Long",
-      "score": 44.8,
-      "grade": "C (Moderate)",
-      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
-      "trade_profile": "Advisory | 30-45 DTE",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 729.0 Call"
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 680 Call<br> Sell 1x QQQ 20-Nov-2026 735 Call"
     },
     {
       "strategy_type": "call_debit_spread",
       "strategy_display": "Call Debit Spread",
-      "score": 44.2,
+      "score": 42.9,
       "grade": "C (Moderate)",
       "rationale": "Bullish trend with Weekly alignment, EMA support anchoring, and Volatility Compression favors Call Debit Spread.",
       "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
-      "legs_summary": "Buy 1x QQQ 20-Nov-2026 730 Call<br> Sell 1x QQQ 20-Nov-2026 760 Call"
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 720 Call<br> Sell 1x QQQ 20-Nov-2026 745 Call"
+    },
+    {
+      "strategy_type": "cash_swing_long",
+      "strategy_display": "Cash Swing Long",
+      "score": 40.8,
+      "grade": "C (Moderate)",
+      "rationale": "Cash Equity Swing Long: Strong momentum above EMA20 support.",
+      "trade_profile": "Advisory | 30-45 DTE",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 717.6 Call"
+    },
+    {
+      "strategy_type": "broken_wing_butterfly",
+      "strategy_display": "Broken Wing Butterfly",
+      "score": 40.1,
+      "grade": "C (Moderate)",
+      "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
+      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+      "legs_summary": "Buy 1x QQQ 20-Nov-2026 700 Call<br> Sell 1x QQQ 20-Nov-2026 720 Call<br> Sell 1x QQQ 20-Nov-2026 720 Call<br> Buy 1x QQQ 20-Nov-2026 755 Call"
     }
   ],
   "indicators": {
-    "EMA20": "740.09",
-    "EMA50": "728.71",
-    "EMA100": "712.82",
-    "EMA200": "681.41",
-    "SMA20": "742.55",
-    "SMA200": "673.92",
-    "RSI(2)": "3.27",
-    "RSI(14)": "44.65",
-    "ATR(14)": "9.43",
-    "ADX(14)": "13.72",
-    "BB(20,2)": "0.19",
-    "P_SHAPE(20)": "61.60"
+    "EMA20": "732.86",
+    "EMA50": "727.18",
+    "EMA100": "713.25",
+    "EMA200": "682.86",
+    "SMA20": "739.87",
+    "SMA200": "675.95",
+    "RSI(2)": "39.86",
+    "RSI(14)": "40.79",
+    "ATR(14)": "10.95",
+    "ADX(14)": "20.30",
+    "BB(20,2)": "0.09",
+    "P_SHAPE(20)": "64.47"
   },
   "rules": [
     {
@@ -419,20 +472,6 @@
     },
     {
       "name": "ATR increasing",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
-      "passed": true,
-      "score": 1.0,
-      "max_score": 1.0,
-      "explanation": "Condition met"
-    },
-    {
-      "name": "20-Day Momentum Relative Strength",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -472,79 +511,94 @@
       "score": 0.0,
       "max_score": 1.0,
       "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
     }
   ],
   "news": [
     {
-      "title": "Invesco QQQ Doesn't Own a Single Bank, and That's Not the Only Thing the Nasdaq-100 Leaves Out",
-      "publisher": "Motley Fool",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-doesnt-own-single-234301632.html",
+      "title": "ETF League Tables: Invesco Inflows Total $4.3B",
+      "publisher": "etf.com",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/etf-league-tables-invesco-inflows-210004269.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Super Micro Is Up 22% in 2026 but It\u2019s Down Today: Take Profits, or Hold On for the Ride?",
+      "title": "What You Don't Own Matters: Active ETFs in Today's Market",
+      "publisher": "etf.com",
+      "link": "https://finance.yahoo.com/markets/options/articles/dont-own-matters-active-etfs-204534040.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Shopify Just Rallied 35% in a Month: Take Profits, or Buy More?",
       "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/super-micro-22-2026-down-190731752.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/shopify-just-rallied-35-month-184150572.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "Palantir Is Up 16% in a Month but It\u2019s Falling Today: Take Profits, or Buy More?",
+      "title": "Coca-Cola Is Up 35% This Year: Take Profits, or Hold On for the Ride?",
       "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-16-month-falling-today-190037569.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-35-profits-hold-183809656.html",
       "published_at": "Today",
       "sentiment": "bullish"
     },
     {
-      "title": "SK Hynix Sinks 5% as China\u2019s CXMT Aims at Server Memory; Western Digital Drops 4%, Micron Falls 3%",
-      "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-sinks-5-china-180104796.html",
-      "published_at": "Today",
-      "sentiment": "bearish"
-    },
-    {
-      "title": "Exchange-Traded Funds Lower as US Equities Drop After Midday",
+      "title": "Exchange-Traded Funds Gain as US Equities Advance After Midday",
       "publisher": "MT Newswires",
-      "link": "https://finance.yahoo.com/markets/articles/exchange-traded-funds-lower-us-170825191.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-gain-us-171124946.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "neutral"
     },
     {
-      "title": "Palo Alto Falls 4% as Report of OpenAI Cybersecurity Deal Hits Sector; CrowdStrike Drops 3%, Fortinet Slips",
+      "title": "IREN Sinks 6%, Then Recovers After Co-CEO\u2019s No-Debt Reassurance as Neocloud Worries Persist; TeraWulf and Applied Digital Rise 3%",
       "publisher": "24/7 Wall St.",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-falls-4-report-143624267.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/iren-sinks-6-then-recovers-143912554.html",
       "published_at": "Today",
-      "sentiment": "bearish"
+      "sentiment": "bullish"
     }
   ],
   "playbook_mean_reversion": {
     "status": "INELIGIBLE",
     "is_triggered": false,
-    "close_price": 728.9500122070312,
-    "sma200": 673.92,
-    "sma20": 742.55,
-    "sma20_slope": 1.195,
-    "lower_bb": 720.74,
-    "upper_bb": 764.36,
-    "pct_b": 0.1882,
-    "rsi2": 3.2719701504613568,
-    "rsi14": 44.651351134768355,
-    "atr14": 9.433766456959042,
+    "close_price": 717.6300048828125,
+    "sma200": 675.95,
+    "sma20": 739.87,
+    "sma20_slope": -0.197,
+    "lower_bb": 712.81,
+    "upper_bb": 766.93,
+    "pct_b": 0.0891,
+    "rsi2": 39.858544998604295,
+    "rsi14": 40.79309619213983,
+    "atr14": 10.954146145818255,
     "close_above_sma200": true,
     "close_below_lower_bb": false,
-    "rsi2_below_10": true,
+    "rsi2_below_10": false,
     "adequate_liquidity": false,
     "risk_limits_pass": true,
-    "target_exit_price": 742.55,
-    "stop_loss_spot_price": 712.24,
+    "target_exit_price": 739.87,
+    "stop_loss_spot_price": 693.96,
     "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
-    "suggested_structure": "Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)",
+    "suggested_structure": "S1x-Nov-690PE / B1x-Nov-680PE",
+    "actual_trade": "S1x-Nov-690PE / B1x-Nov-680PE",
     "target_dte_range": "30 - 45 DTE Monthly Expiry",
     "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
     "exit_rules": [
-      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~742.55).",
-      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 712.24).",
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~739.87).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 693.96).",
       "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
       "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
       "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."
@@ -556,6 +610,8 @@
       "Calendars",
       "Risk-Defined Iron Butterflies"
     ],
-    "iv_guidance": "Low IV: favor tight risk-defined iron butterflies or debit diagonals; avoid wide unhedged premium selling."
+    "iv_guidance": "Low IV: favor tight risk-defined iron butterflies or debit diagonals; avoid wide unhedged premium selling.",
+    "high_52w": 762.86,
+    "dist_52w_pct": -5.93
   }
 }

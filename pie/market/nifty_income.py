@@ -110,6 +110,9 @@ class PlaybookMeanReversionSignal:
     target_short_delta: str
     exit_rules: list[str]
     rationale: str
+    high_52w: float | None = None
+    dist_52w_pct: float | None = None
+    actual_trade: str = ""
     warnings: list[str] = field(default_factory=list)
 
 
@@ -154,6 +157,9 @@ def evaluate_nifty_mean_reversion(
     iv_rank: float = 50.0,
     is_liquid_fno: bool = True,
     risk_limits_passed: bool = True,
+    actual_trade: str = "",
+    high_52w: float | None = None,
+    dist_52w_pct: float | None = None,
 ) -> PlaybookMeanReversionSignal:
     """Evaluate NIFTY Mean-Reversion Strategy Signal per Playbook Section 8."""
     # 1. Universe filter check
@@ -282,11 +288,14 @@ def evaluate_nifty_mean_reversion(
         target_exit_price=target_exit,
         stop_loss_spot_price=stop_loss_spot,
         strategy_name="NIFTY Monthly Bull Put Spread (Playbook v1.4)",
-        suggested_structure="Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)",
+        suggested_structure=actual_trade if actual_trade else "Sell 1x OTM Put (~0.25-0.30 Delta) + Buy 1x OTM Put (Defined Risk Wing 1:1, Never Naked)",
         target_dte_range="30 - 45 DTE Monthly Expiry",
         target_short_delta="~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
         exit_rules=exit_rules,
         rationale=rationale,
+        high_52w=high_52w,
+        dist_52w_pct=dist_52w_pct,
+        actual_trade=actual_trade,
         warnings=warnings,
     )
 
@@ -302,9 +311,10 @@ def format_playbook_signal_markdown(signal: PlaybookMeanReversionSignal, iv_anal
     }
     status_str = status_icons.get(signal.status, str(signal.status))
 
+    ath_info = f" | **52W High**: `{signal.high_52w:,.2f}` (`{signal.dist_52w_pct:+.1f}%`)" if signal.high_52w else ""
     lines = [
         f"### 🛡️ NIFTY Income Portfolio Playbook v1.4 — Mean-Reversion Signal",
-        f"- **Instrument**: `{signal.symbol}` | **Last Close**: `{signal.close_price:,.2f}`",
+        f"- **Instrument**: `{signal.symbol}` | **Last Close**: `{signal.close_price:,.2f}`{ath_info}",
         f"- **Signal Status**: {status_str}",
         "",
         "| Rule / Filter | Indicator Reading | Threshold Requirement | Condition Met? |",

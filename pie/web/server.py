@@ -8,7 +8,7 @@ from typing import Any
 import urllib.parse
 
 from pie.market.indicators.engine import IndicatorEngine
-from pie.market.strategy import StrategyRecommendation, score_all_strategies, select_strategy
+from pie.market.strategy import StrategyRecommendation, StrategyType, score_all_strategies, select_strategy
 from pie.market.trade_estimate import estimate_trade
 from pie.market.trend.engine import TrendEngine
 from pie.market_data.csv_loader import save_market_data
@@ -206,6 +206,47 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
     except Exception:
         pass
 
+    # Estimate actual trade legs shorthand for NIFTY Mean-Reversion Bull Put Spread
+    pb_actual_trade = ""
+    try:
+        pb_trade = estimate_trade(
+            symbol=sym_upper,
+            spot_price=float(snapshot.last_price),
+            annualized_vix=annualized_vix,
+            recommendation=StrategyRecommendation(
+                strategy=StrategyType.NIFTY_MEAN_REVERSION,
+                actionable=True,
+                rationale="Playbook v1.4 NIFTY Mean-Reversion Bull Put Spread",
+            ),
+            vix_source="live",
+            atr14=_atr14_val,
+            ema20=_ema20_val,
+            ema50=_ema50_val,
+            trend_score=trend_analysis.trend_score.value,
+        )
+        if pb_trade and pb_trade.legs:
+            exp_str = pb_trade.expiration.strftime("%d-%b-%Y")
+            raw_legs = " / ".join([
+                f"{'Buy' if (leg.action.value if hasattr(leg.action, 'value') else str(leg.action)).upper() in {'BUY','LONG'} else 'Sell'} 1x {sym_upper} {exp_str} {_format_strike(leg.strike)} {'Call' if (leg.right.value if hasattr(leg.right, 'value') else str(leg.right)).upper() in {'CALL','CE','C'} else 'Put'}"
+                for leg in pb_trade.legs
+            ])
+            pb_actual_trade = format_short_indian_strategy(raw_legs)
+    except Exception:
+        pb_actual_trade = ""
+
+    # Calculate 52-Week High and Distance %
+    high_52w = None
+    dist_52w_pct = None
+    try:
+        col = "high" if "high" in history.columns else "close"
+        tail_len = min(len(history), 252)
+        high_52w = float(history.select(col).tail(tail_len).max().item())
+        last_px = float(snapshot.last_price)
+        if high_52w > 0:
+            dist_52w_pct = round(((last_px - high_52w) / high_52w) * 100.0, 2)
+    except Exception:
+        pass
+
     playbook_signal = evaluate_nifty_mean_reversion(
         symbol=sym_upper,
         last_price=float(snapshot.last_price),
@@ -213,6 +254,9 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         day_low=day_low_val,
         vix=annualized_vix,
         iv_rank=iv_rank_val,
+        actual_trade=pb_actual_trade,
+        high_52w=high_52w,
+        dist_52w_pct=dist_52w_pct,
     )
 
     # Format indicators
@@ -266,6 +310,8 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
     return {
         "symbol": sym_upper,
         "last_price": round(float(snapshot.last_price), 2),
+        "high_52w": round(high_52w, 2) if high_52w is not None else None,
+        "dist_52w_pct": round(dist_52w_pct, 2) if dist_52w_pct is not None else None,
         "as_of": snapshot.observed_at.strftime("%Y-%m-%d %H:%M:%S"),
         "regime": trend_analysis.regime.value,
         "regime_display": trend_analysis.regime.value.replace("_", " ").title(),
@@ -389,6 +435,7 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
             "stop_loss_spot_price": playbook_signal.stop_loss_spot_price,
             "strategy_name": playbook_signal.strategy_name,
             "suggested_structure": playbook_signal.suggested_structure,
+            "actual_trade": playbook_signal.actual_trade or playbook_signal.suggested_structure,
             "target_dte_range": playbook_signal.target_dte_range,
             "target_short_delta": playbook_signal.target_short_delta,
             "exit_rules": playbook_signal.exit_rules,
@@ -397,6 +444,8 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
             "iv_regime": iv_analysis.regime.value,
             "iv_recommendations": iv_analysis.recommended_strategies,
             "iv_guidance": iv_analysis.guidance,
+            "high_52w": round(high_52w, 2) if high_52w is not None else None,
+            "dist_52w_pct": round(dist_52w_pct, 2) if dist_52w_pct is not None else None,
         },
     }
 

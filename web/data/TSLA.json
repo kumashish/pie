@@ -1,28 +1,30 @@
 {
   "symbol": "TSLA",
-  "last_price": 375.23,
-  "as_of": "2026-10-13 13:30:00",
-  "regime": "bear",
-  "regime_display": "Bear",
-  "trend_score": 3.8,
-  "fit_score": 37.5,
+  "last_price": 376.36,
+  "high_52w": 498.83,
+  "dist_52w_pct": -24.55,
+  "as_of": "2026-10-20 13:30:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.0,
+  "fit_score": 40.0,
   "confidence_grade": "C",
-  "confidence_percentage": 37.5,
-  "vix": 15.27,
+  "confidence_percentage": 40.0,
+  "vix": 17.59,
   "strategy_type": "iron_condor",
   "strategy_display": "Iron Condor",
   "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
   "trade_category": "options",
-  "recommendation_reason": "Best fit strategy (86.4% fit - Grade A (Optimal)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
+  "recommendation_reason": "Best fit strategy (69.5% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
   "cash_trade_setup": {
-    "direction": "Short / Sell",
-    "entry": 375.23,
-    "stop_loss": 374.25,
-    "target_1": 318.95,
-    "target_2": 281.42,
-    "risk_per_share": 0.98,
-    "risk_reward": 95.7,
-    "atr14": 11.04,
+    "direction": "Long / Buy",
+    "entry": 376.36,
+    "stop_loss": 362.23,
+    "target_1": 432.81,
+    "target_2": 470.45,
+    "risk_per_share": 14.13,
+    "risk_reward": 6.7,
+    "atr14": 12.21,
     "holding_period_days": 90,
     "horizon": "Medium-Term (2-6 Months / Trend Ride)"
   },
@@ -34,10 +36,10 @@
         "strike": 345.0,
         "strike_formatted": "345",
         "option_type": "Put",
-        "delta": -0.032,
+        "delta": -0.035,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
+        "dte": 31,
         "summary": "Buy 1x TSLA 20-Nov-2026 345 Put"
       },
       {
@@ -46,10 +48,10 @@
         "strike": 355.0,
         "strike_formatted": "355",
         "option_type": "Put",
-        "delta": -0.102,
+        "delta": -0.106,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
+        "dte": 31,
         "summary": "Sell 1x TSLA 20-Nov-2026 355 Put"
       },
       {
@@ -58,10 +60,10 @@
         "strike": 395.0,
         "strike_formatted": "395",
         "option_type": "Call",
-        "delta": 0.177,
+        "delta": 0.202,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
+        "dte": 31,
         "summary": "Sell 1x TSLA 20-Nov-2026 395 Call"
       },
       {
@@ -70,10 +72,10 @@
         "strike": 405.0,
         "strike_formatted": "405",
         "option_type": "Call",
-        "delta": 0.075,
+        "delta": 0.093,
         "expiration": "2026-11-20",
         "expiration_display": "20-Nov-2026",
-        "dte": 37,
+        "dte": 31,
         "summary": "Buy 1x TSLA 20-Nov-2026 405 Call"
       }
     ],
@@ -81,224 +83,224 @@
     "max_loss": "Defined Risk Limit",
     "roc_percentage": 65.0,
     "margin_required": 15.0,
-    "stop_loss_price": 363.97,
-    "take_profit_price": 386.49,
-    "net_delta": -0.032,
-    "net_theta": 0.057,
+    "stop_loss_price": 365.07,
+    "take_profit_price": 387.65,
+    "net_delta": -0.038,
+    "net_theta": 0.071,
     "probability_of_profit": 0.0,
     "var_95": 10.0,
     "vol_skew_25d": 0.0,
     "backtest_sharpe": 3.14,
     "payoff_points": [
       {
-        "price": 300.18,
+        "price": 301.09,
         "pnl": -25.0
       },
       {
-        "price": 303.19,
+        "price": 304.1,
         "pnl": -25.0
       },
       {
-        "price": 306.19,
+        "price": 307.11,
         "pnl": -25.0
       },
       {
-        "price": 309.19,
+        "price": 310.12,
         "pnl": -25.0
       },
       {
-        "price": 312.19,
+        "price": 313.13,
         "pnl": -25.0
       },
       {
-        "price": 315.19,
+        "price": 316.14,
         "pnl": -25.0
       },
       {
-        "price": 318.2,
+        "price": 319.15,
         "pnl": -25.0
       },
       {
-        "price": 321.2,
+        "price": 322.16,
         "pnl": -25.0
       },
       {
-        "price": 324.2,
+        "price": 325.18,
         "pnl": -25.0
       },
       {
-        "price": 327.2,
+        "price": 328.19,
         "pnl": -25.0
       },
       {
-        "price": 330.2,
+        "price": 331.2,
         "pnl": -25.0
       },
       {
-        "price": 333.2,
+        "price": 334.21,
         "pnl": -25.0
       },
       {
-        "price": 336.21,
+        "price": 337.22,
         "pnl": -25.0
       },
       {
-        "price": 339.21,
+        "price": 340.23,
         "pnl": -25.0
       },
       {
-        "price": 342.21,
+        "price": 343.24,
         "pnl": -25.0
       },
       {
-        "price": 345.21,
-        "pnl": -24.79
+        "price": 346.25,
+        "pnl": -23.75
       },
       {
-        "price": 348.21,
-        "pnl": -21.79
+        "price": 349.26,
+        "pnl": -20.74
       },
       {
-        "price": 351.22,
-        "pnl": -18.78
+        "price": 352.27,
+        "pnl": -17.73
       },
       {
-        "price": 354.22,
-        "pnl": -15.78
-      },
-      {
-        "price": 357.22,
+        "price": 355.28,
         "pnl": -15.0
       },
       {
-        "price": 360.22,
+        "price": 358.29,
         "pnl": -15.0
       },
       {
-        "price": 363.22,
+        "price": 361.31,
         "pnl": -15.0
       },
       {
-        "price": 366.22,
+        "price": 364.32,
         "pnl": -15.0
       },
       {
-        "price": 369.23,
+        "price": 367.33,
         "pnl": -15.0
       },
       {
-        "price": 372.23,
+        "price": 370.34,
         "pnl": -15.0
       },
       {
-        "price": 375.23,
+        "price": 373.35,
         "pnl": -15.0
       },
       {
-        "price": 378.23,
+        "price": 376.36,
         "pnl": -15.0
       },
       {
-        "price": 381.23,
+        "price": 379.37,
         "pnl": -15.0
       },
       {
-        "price": 384.24,
+        "price": 382.38,
         "pnl": -15.0
       },
       {
-        "price": 387.24,
+        "price": 385.39,
         "pnl": -15.0
       },
       {
-        "price": 390.24,
+        "price": 388.4,
         "pnl": -15.0
       },
       {
-        "price": 393.24,
+        "price": 391.41,
         "pnl": -15.0
       },
       {
-        "price": 396.24,
-        "pnl": -16.24
+        "price": 394.43,
+        "pnl": -15.0
       },
       {
-        "price": 399.24,
-        "pnl": -19.24
+        "price": 397.44,
+        "pnl": -17.44
       },
       {
-        "price": 402.25,
-        "pnl": -22.25
+        "price": 400.45,
+        "pnl": -20.45
       },
       {
-        "price": 405.25,
+        "price": 403.46,
+        "pnl": -23.46
+      },
+      {
+        "price": 406.47,
         "pnl": -25.0
       },
       {
-        "price": 408.25,
+        "price": 409.48,
         "pnl": -25.0
       },
       {
-        "price": 411.25,
+        "price": 412.49,
         "pnl": -25.0
       },
       {
-        "price": 414.25,
+        "price": 415.5,
         "pnl": -25.0
       },
       {
-        "price": 417.26,
+        "price": 418.51,
         "pnl": -25.0
       },
       {
-        "price": 420.26,
+        "price": 421.52,
         "pnl": -25.0
       },
       {
-        "price": 423.26,
+        "price": 424.53,
         "pnl": -25.0
       },
       {
-        "price": 426.26,
+        "price": 427.54,
         "pnl": -25.0
       },
       {
-        "price": 429.26,
+        "price": 430.56,
         "pnl": -25.0
       },
       {
-        "price": 432.26,
+        "price": 433.57,
         "pnl": -25.0
       },
       {
-        "price": 435.27,
+        "price": 436.58,
         "pnl": -25.0
       },
       {
-        "price": 438.27,
+        "price": 439.59,
         "pnl": -25.0
       },
       {
-        "price": 441.27,
+        "price": 442.6,
         "pnl": -25.0
       },
       {
-        "price": 444.27,
+        "price": 445.61,
         "pnl": -25.0
       },
       {
-        "price": 447.27,
+        "price": 448.62,
         "pnl": -25.0
       },
       {
-        "price": 450.28,
+        "price": 451.63,
         "pnl": -25.0
       }
     ],
     "kelly_sizing": {
-      "win_probability": 0.802,
+      "win_probability": 0.743,
       "payout_ratio": 1.25,
-      "half_kelly_fraction": 0.3218,
+      "half_kelly_fraction": 0.2687,
       "recommended_allocation_pct": 5.0,
       "suggested_lots": 5,
       "max_risk_amount": 5000.0
@@ -308,43 +310,16 @@
     {
       "strategy_type": "iron_condor",
       "strategy_display": "Iron Condor",
-      "score": 86.4,
-      "grade": "A (Optimal)",
+      "score": 69.5,
+      "grade": "B (Good)",
       "rationale": "Range-bound trend with elevated IV favors Iron Condor upfront premium collection and theta harvesting.",
       "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
       "legs_summary": "Buy 1x TSLA 20-Nov-2026 345 Put<br> Sell 1x TSLA 20-Nov-2026 355 Put<br> Sell 1x TSLA 20-Nov-2026 395 Call<br> Buy 1x TSLA 20-Nov-2026 405 Call"
     },
     {
-      "strategy_type": "butterfly",
-      "strategy_display": "Butterfly",
-      "score": 60.7,
-      "grade": "B (Good)",
-      "rationale": "Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
-      "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
-      "legs_summary": "Buy 1x TSLA 20-Nov-2026 365 Call<br> Sell 1x TSLA 20-Nov-2026 375 Call<br> Sell 1x TSLA 20-Nov-2026 375 Call<br> Buy 1x TSLA 20-Nov-2026 385 Call"
-    },
-    {
-      "strategy_type": "iron_butterfly",
-      "strategy_display": "Iron Butterfly",
-      "score": 52.8,
-      "grade": "C (Moderate)",
-      "rationale": "Range-bound trend with elevated IV favors Iron Butterfly straddle selling.",
-      "trade_profile": "Credit | 35-45 DTE | ATM Straddle",
-      "legs_summary": "Buy 1x TSLA 20-Nov-2026 355 Put<br> Sell 1x TSLA 20-Nov-2026 375 Put<br> Sell 1x TSLA 20-Nov-2026 375 Call<br> Buy 1x TSLA 20-Nov-2026 395 Call"
-    },
-    {
-      "strategy_type": "credit_spread",
-      "strategy_display": "Credit Spread",
-      "score": 47.4,
-      "grade": "C (Moderate)",
-      "rationale": "Directional trend with high-probability upfront credit collection and positive theta decay edge favors Credit Spread (Bull Put / Bear Call).",
-      "trade_profile": "Credit | 30-45 DTE | 15-20 Delta",
-      "legs_summary": "Sell 1x TSLA 20-Nov-2026 355 Put<br> Buy 1x TSLA 20-Nov-2026 345 Put"
-    },
-    {
       "strategy_type": "broken_wing_butterfly",
       "strategy_display": "Broken Wing Butterfly",
-      "score": 45.6,
+      "score": 40.6,
       "grade": "C (Moderate)",
       "rationale": "Slight directional bias with low IV favors Broken Wing Butterfly for zero-risk side.",
       "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
@@ -352,15 +327,18 @@
     }
   ],
   "indicators": {
-    "EMA20": "370.54",
-    "EMA50": "365.88",
-    "EMA100": "370.95",
-    "EMA200": "377.83",
-    "RSI(14)": "54.51",
-    "ATR(14)": "11.04",
-    "ADX(14)": "16.35",
-    "BB(20,2)": "0.62",
-    "P_SHAPE(20)": "62.12"
+    "EMA20": "368.86",
+    "EMA50": "365.89",
+    "EMA100": "370.47",
+    "EMA200": "377.24",
+    "SMA20": "369.84",
+    "SMA200": "387.27",
+    "RSI(2)": "82.45",
+    "RSI(14)": "54.99",
+    "ATR(14)": "12.21",
+    "ADX(14)": "12.79",
+    "BB(20,2)": "0.66",
+    "P_SHAPE(20)": "59.46"
   },
   "rules": [
     {
@@ -378,7 +356,21 @@
       "explanation": "Condition met"
     },
     {
-      "name": "20-Day Momentum Relative Strength",
+      "name": "ATR increasing",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": 1.0,
+      "max_score": 1.0,
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
       "passed": true,
       "score": 1.0,
       "max_score": 1.0,
@@ -413,28 +405,14 @@
       "explanation": "Condition unfulfilled"
     },
     {
-      "name": "ATR increasing",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher highs",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
-      "name": "Price making higher lows",
-      "passed": false,
-      "score": 0.0,
-      "max_score": 1.0,
-      "explanation": "Condition unfulfilled"
-    },
-    {
       "name": "Institutional Liquidity & Volume Flow (>500k 20d Avg Vol)",
+      "passed": false,
+      "score": 0.0,
+      "max_score": 1.0,
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "20-Day Momentum Relative Strength",
       "passed": false,
       "score": 0.0,
       "max_score": 1.0,
@@ -443,46 +421,89 @@
   ],
   "news": [
     {
-      "title": "Kimbal Musk Says Tesla Cybercab Is \u2018Amazing to Use\u2019 as Driverless Fleet Explodes in Austin and Raises Stakes for Elon Musk\u2019s Robotaxi Bet",
-      "publisher": "Benzinga",
-      "link": "https://finance.yahoo.com/technology/ai/articles/kimbal-musk-says-tesla-cybercab-033013115.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Could Tesla's Roadster Reveal Trigger Another Stock Crash?",
-      "publisher": "BeInCrypto",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/could-teslas-roadster-reveal-trigger-224801701.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Uber Robotaxi Leader to Depart Next Month",
-      "publisher": "The Wall Street Journal",
-      "link": "https://finance.yahoo.com/m/221ee01a-c156-3163-8628-831b5757edbe/uber-robotaxi-leader-to.html",
-      "published_at": "Today",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Rivian spinoff Mind Robotics hires ex-Ford EV chief Doug Field",
+      "title": "Stock market today: Dow rises, S&P 500, Nasdaq turn green as dip buying resumes",
       "publisher": "Yahoo Finance",
-      "link": "https://finance.yahoo.com/markets/article/rivian-spinoff-mind-robotics-hires-ex-ford-ev-chief-doug-field-213702515.html",
+      "link": "https://finance.yahoo.com/markets/live/copy-stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-111612062.html",
+      "published_at": "Today",
+      "sentiment": "bullish"
+    },
+    {
+      "title": "SpaceX Earnings Prediction Market Preview: What Will Elon Musk Say?",
+      "publisher": "Benzinga Prediction Markets",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-earnings-prediction-market-preview-145246368.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Tesla Robotaxi Fleet in Austin Soars 8x in a Month While Elon Musk Admits TSLA Is Still Working on Not Running Over Cats",
-      "publisher": "Benzinga",
-      "link": "https://finance.yahoo.com/technology/ai/articles/tesla-robotaxi-fleet-austin-soars-213024117.html",
+      "title": "What to Watch for in SpaceX\u2019s Earnings Report",
+      "publisher": "The Wall Street Journal",
+      "link": "https://finance.yahoo.com/m/7d4d71fb-a75d-3ce1-bbec-db3cf8285faa/what-to-watch-for-in-spacex%E2%80%99s.html",
       "published_at": "Today",
       "sentiment": "neutral"
     },
     {
-      "title": "Tesla target lowered by analysts worried about runaway $25 billion spending",
-      "publisher": "TheStreet",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-target-lowered-analysts-worried-203300332.html",
+      "title": "SpaceX And Tesla Prepare Side By Side Earnings Reports Amid Merger Speculation",
+      "publisher": "TIKR",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-tesla-prepare-side-side-131333836.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "What could a Tesla-SpaceX merger earn? Cathie Wood's Ark Invest has a $2.7 trillion answer.",
+      "publisher": "Yahoo Finance",
+      "link": "https://finance.yahoo.com/markets/article/what-could-a-tesla-spacex-merger-earn-cathie-woods-ark-invest-has-a-27-trillion-answer-130802955.html",
+      "published_at": "Today",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Tesla Reports With 21 Analysts on Hold. Here\u2019s What Would Change Their Minds",
+      "publisher": "24/7 Wall St.",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-reports-21-analysts-hold-130023849.html",
       "published_at": "Today",
       "sentiment": "neutral"
     }
-  ]
+  ],
+  "playbook_mean_reversion": {
+    "status": "INELIGIBLE",
+    "is_triggered": false,
+    "close_price": 376.3599853515625,
+    "sma200": 387.27,
+    "sma20": 369.84,
+    "sma20_slope": -0.189,
+    "lower_bb": 349.44,
+    "upper_bb": 390.25,
+    "pct_b": 0.6597,
+    "rsi2": 82.44758773538072,
+    "rsi14": 54.99375865920673,
+    "atr14": 12.214470732746923,
+    "close_above_sma200": false,
+    "close_below_lower_bb": false,
+    "rsi2_below_10": false,
+    "adequate_liquidity": false,
+    "risk_limits_pass": true,
+    "target_exit_price": 369.84,
+    "stop_loss_spot_price": 345.32,
+    "strategy_name": "NIFTY Monthly Bull Put Spread (Playbook v1.4)",
+    "suggested_structure": "S1x-Nov-360PE / B1x-Nov-350PE",
+    "actual_trade": "S1x-Nov-360PE / B1x-Nov-350PE",
+    "target_dte_range": "30 - 45 DTE Monthly Expiry",
+    "target_short_delta": "~0.30 Absolute Delta (0.15 - 0.25 Delta conservative alternative)",
+    "exit_rules": [
+      "Mean-Reversion Target Exit: Daily close touches 20-day SMA (~369.84).",
+      "Structural Stop-Loss: Daily close > 1.5 ATR(14) below entry-day low (Spot <= 345.32).",
+      "Credit Stop-Loss: Exit if structure loss exceeds 1.5x - 2.0x initial credit received.",
+      "Gamma / Expiry Guardrail: Mandatory review and exit at DTE <= 14 or if short put delta expands > 0.35.",
+      "Profit Management Ladder: Review closing at 50% max profit; harvest gains systematically at 75%; close > 90%."
+    ],
+    "rationale": "TSLA is not part of the approved Playbook F&O Index Universe (NIFTY/BANKNIFTY/FINNIFTY).",
+    "warnings": [],
+    "iv_regime": "Low",
+    "iv_recommendations": [
+      "Calendars",
+      "Risk-Defined Iron Butterflies"
+    ],
+    "iv_guidance": "Low IV: favor tight risk-defined iron butterflies or debit diagonals; avoid wide unhedged premium selling.",
+    "high_52w": 498.83,
+    "dist_52w_pct": -24.55
+  }
 }
