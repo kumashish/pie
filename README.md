@@ -7,8 +7,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **QQQ** | Oct 29, 22:30 IST | 🟡 Broken Wing Butterfly (Credit) | **7.0** / 10 | `Buy QQQ 18-Dec-2026 665 Put /  Sell 2x QQQ 18-Dec-2026 685 Put /  Buy QQQ 18-Dec-2026 695 Put` | ⚡ ⚠️ Stop Loss (Today, 00:27) |
-| **SPY** | Oct 29, 22:30 IST | 🟡 Broken Wing Butterfly (Credit) | **7.0** / 10 | `Buy SPY 18-Dec-2026 725 Put /  Sell 2x SPY 18-Dec-2026 735 Put /  Buy SPY 18-Dec-2026 740 Put` | ⚡ ⚠️ Stop Loss (Today, 22:30) |
+| **QQQ** | Oct 30, 03:24 IST | 🟡 Broken Wing Butterfly (Credit) | **9.9** / 10 | `Buy QQQ 18-Dec-2026 735 Call /  Sell 2x QQQ 18-Dec-2026 745 Call /  Buy QQQ 18-Dec-2026 765 Call` | ⚡ ⚠️ Stop Loss (Today, 03:24) |
+| **SPY** | Oct 30, 03:24 IST | 🟡 Credit Spread | **6.9** / 10 | `Sell SPY 18-Dec-2026 720 Put /  Buy SPY 18-Dec-2026 715 Put` | ⚡ ⚠️ Stop Loss (Today, 03:24) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
