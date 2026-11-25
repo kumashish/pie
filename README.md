@@ -7,8 +7,8 @@
 ### 🌐 U.S. Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
 | :--- | :--- | :--- | :---: | :--- | :--- |
-| **QQQ** | Nov 25, 15:33 IST | 🟡 Iron Condor | **9.5** / 10 | `Buy QQQ 15-Jan-2027 550 Put /  Sell QQQ 15-Jan-2027 570 Put /  Sell QQQ 15-Jan-2027 710 Call /  Buy QQQ 15-Jan-2027 730 Call` | ⚡ ⚠️ Stop Loss (Yesterday, 21:34) |
-| **SPY** | Nov 25, 15:33 IST | 🟡 Credit Spread | **8.1** / 10 | `Sell SPY 15-Jan-2027 800 Call /  Buy SPY 15-Jan-2027 815 Call` | ⚡ ⚠️ Stop Loss (Yesterday, 21:34) |
+| **QQQ** | Nov 26, 01:30 IST | 🟡 Iron Condor | **8.5** / 10 | `Buy QQQ 15-Jan-2027 545 Put /  Sell QQQ 15-Jan-2027 565 Put /  Sell QQQ 15-Jan-2027 695 Call /  Buy QQQ 15-Jan-2027 715 Call` | ⚡ ⚠️ Stop Loss (Nov 24, 21:34 IST) |
+| **SPY** | Nov 26, 01:30 IST | 🟡 Credit Spread | **8.0** / 10 | `Sell SPY 15-Jan-2027 790 Call /  Buy SPY 15-Jan-2027 805 Call` | ⚡ ⚠️ Stop Loss (Nov 24, 21:34 IST) |
 
 ### 🌐 Indian Macro Benchmark Indices
 | Symbol | Updated | Market Regime | Fit Score | Strategy Structure | Signal Status |
